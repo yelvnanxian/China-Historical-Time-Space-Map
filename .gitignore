@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.DS_Store
+artifacts/
+*.log
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example

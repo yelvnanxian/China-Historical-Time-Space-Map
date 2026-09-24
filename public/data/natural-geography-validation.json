@@ -1,0 +1,531 @@
+{
+  "checkedAt": "2026-09-24T10:33:34.122122+00:00",
+  "checks": [
+    "valid geometries and coordinates inside 70–142E / 10–56N",
+    "required label property schema and count <=100",
+    "all label coordinates lie on or inside original source geometries within 0.000002 degrees of rounding tolerance",
+    "all source-point labels preserve exact source coordinates",
+    "output SHA256 matches provenance manifest"
+  ],
+  "riverFeatures": 277,
+  "lakeFeatures": 234,
+  "labelFeatures": 86,
+  "labelResults": [
+    {
+      "id": "river-changjiang",
+      "kind": "river",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "editorial-translation"
+    },
+    {
+      "id": "river-huanghe",
+      "kind": "river",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "editorial-translation"
+    },
+    {
+      "id": "river-hanjiang",
+      "kind": "river",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "editorial-translation"
+    },
+    {
+      "id": "river-huaihe",
+      "kind": "river",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "editorial-translation"
+    },
+    {
+      "id": "river-weihe",
+      "kind": "river",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "editorial-translation"
+    },
+    {
+      "id": "river-jinghe",
+      "kind": "river",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "editorial-translation"
+    },
+    {
+      "id": "river-fenhe",
+      "kind": "river",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "editorial-translation"
+    },
+    {
+      "id": "river-qinhe",
+      "kind": "river",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "editorial-translation"
+    },
+    {
+      "id": "river-ganjiang",
+      "kind": "river",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "editorial-translation"
+    },
+    {
+      "id": "river-xiangjiang",
+      "kind": "river",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "editorial-translation"
+    },
+    {
+      "id": "river-yuanjiang",
+      "kind": "river",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "editorial-translation"
+    },
+    {
+      "id": "river-jialingjiang",
+      "kind": "river",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "editorial-translation"
+    },
+    {
+      "id": "river-daduhe",
+      "kind": "river",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "editorial-translation"
+    },
+    {
+      "id": "river-minjiang-sichuan",
+      "kind": "river",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "editorial-translation"
+    },
+    {
+      "id": "river-yalongjiang",
+      "kind": "river",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "editorial-translation"
+    },
+    {
+      "id": "river-wujiang",
+      "kind": "river",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "editorial-translation"
+    },
+    {
+      "id": "river-songhuajiang",
+      "kind": "river",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "editorial-translation"
+    },
+    {
+      "id": "river-nenjiang",
+      "kind": "river",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "editorial-translation"
+    },
+    {
+      "id": "river-heilongjiang",
+      "kind": "river",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "editorial-translation"
+    },
+    {
+      "id": "river-liaohe",
+      "kind": "river",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "editorial-translation"
+    },
+    {
+      "id": "river-haihe",
+      "kind": "river",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "editorial-translation"
+    },
+    {
+      "id": "river-yongdinghe",
+      "kind": "river",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "editorial-translation"
+    },
+    {
+      "id": "river-luanhe",
+      "kind": "river",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "editorial-translation"
+    },
+    {
+      "id": "river-xijiang",
+      "kind": "river",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "editorial-translation"
+    },
+    {
+      "id": "river-beijiang",
+      "kind": "river",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "editorial-translation"
+    },
+    {
+      "id": "river-dongjiang",
+      "kind": "river",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "editorial-translation"
+    },
+    {
+      "id": "river-minjiang-fujian",
+      "kind": "river",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "editorial-translation"
+    },
+    {
+      "id": "river-fuchunjiang",
+      "kind": "river",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "editorial-translation"
+    },
+    {
+      "id": "river-tarim",
+      "kind": "river",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "editorial-translation"
+    },
+    {
+      "id": "river-yarlung",
+      "kind": "river",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "editorial-translation"
+    },
+    {
+      "id": "river-lancang",
+      "kind": "river",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "editorial-translation"
+    },
+    {
+      "id": "river-nujiang",
+      "kind": "river",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "editorial-translation"
+    },
+    {
+      "id": "lake-ne_10m_lakes-473",
+      "kind": "lake",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "lake-ne_10m_lakes-474",
+      "kind": "lake",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "lake-ne_10m_lakes-488",
+      "kind": "lake",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "lake-ne_10m_lakes-492",
+      "kind": "lake",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "lake-ne_10m_lakes-498",
+      "kind": "lake",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "lake-ne_10m_lakes-504",
+      "kind": "lake",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "lake-ne_10m_lakes-506",
+      "kind": "lake",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "lake-ne_10m_lakes-524",
+      "kind": "lake",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "lake-ne_10m_lakes-529",
+      "kind": "lake",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "lake-ne_10m_lakes-533",
+      "kind": "lake",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "lake-ne_10m_lakes-546",
+      "kind": "lake",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "lake-ne_10m_lakes-558",
+      "kind": "lake",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "lake-ne_10m_lakes-577",
+      "kind": "lake",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "lake-ne_10m_lakes-584",
+      "kind": "lake",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "lake-ne_10m_lakes-586",
+      "kind": "lake",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "lake-ne_10m_lakes-591",
+      "kind": "lake",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "lake-ne_10m_lakes-650",
+      "kind": "lake",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "lake-ne_10m_lakes-1290",
+      "kind": "lake",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "lake-ne_10m_lakes-1294",
+      "kind": "lake",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "lake-ne_10m_lakes-1295",
+      "kind": "lake",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "mountain-ne_10m_geography_regions_polys-425",
+      "kind": "mountain",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "mountain-ne_10m_geography_regions_polys-429",
+      "kind": "mountain",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "mountain-ne_10m_geography_regions_polys-430",
+      "kind": "mountain",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "mountain-ne_10m_geography_regions_polys-431",
+      "kind": "mountain",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "mountain-ne_10m_geography_regions_polys-546",
+      "kind": "mountain",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "mountain-ne_10m_geography_regions_polys-550",
+      "kind": "mountain",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "mountain-ne_10m_geography_regions_polys-553",
+      "kind": "mountain",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "mountain-ne_10m_geography_regions_polys-554",
+      "kind": "mountain",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "mountain-ne_10m_geography_regions_polys-558",
+      "kind": "mountain",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "mountain-ne_10m_geography_regions_polys-560",
+      "kind": "mountain",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "mountain-ne_10m_geography_regions_polys-665",
+      "kind": "mountain",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "mountain-ne_10m_geography_regions_polys-666",
+      "kind": "mountain",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "mountain-ne_10m_geography_regions_polys-670",
+      "kind": "mountain",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "mountain-ne_10m_geography_regions_polys-671",
+      "kind": "mountain",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "mountain-ne_10m_geography_regions_polys-672",
+      "kind": "mountain",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "mountain-ne_10m_geography_regions_polys-673",
+      "kind": "mountain",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "mountain-ne_10m_geography_regions_polys-713",
+      "kind": "mountain",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "mountain-ne_10m_geography_regions_polys-716",
+      "kind": "mountain",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "mountain-ne_10m_geography_regions_elevation_points-192",
+      "kind": "mountain",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "mountain-ne_10m_geography_regions_elevation_points-217",
+      "kind": "mountain",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "mountain-ne_10m_geography_regions_elevation_points-231",
+      "kind": "mountain",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "mountain-ne_10m_geography_regions_elevation_points-232",
+      "kind": "mountain",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "mountain-ne_10m_geography_regions_elevation_points-236",
+      "kind": "mountain",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "mountain-ne_10m_geography_regions_elevation_points-237",
+      "kind": "mountain",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "mountain-ne_10m_geography_regions_elevation_points-243",
+      "kind": "mountain",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "mountain-ne_10m_geography_regions_elevation_points-245",
+      "kind": "mountain",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "sea-ne_10m_geography_marine_polys-8",
+      "kind": "sea",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "sea-ne_10m_geography_marine_polys-11",
+      "kind": "sea",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "sea-ne_10m_geography_marine_polys-12",
+      "kind": "sea",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "sea-ne_10m_geography_marine_polys-44",
+      "kind": "sea",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "sea-ne_10m_geography_marine_polys-45",
+      "kind": "sea",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "sea-ne_10m_geography_marine_polys-91",
+      "kind": "sea",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "sea-ne_10m_geography_marine_polys-103",
+      "kind": "sea",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    },
+    {
+      "id": "sea-ne_10m_geography_marine_polys-304",
+      "kind": "sea",
+      "sourceCoordinateCheck": "passed",
+      "nameOrigin": "natural-earth-name_zh"
+    }
+  ]
+}

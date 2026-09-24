@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "entries": 12111,
+  "assignedRegionsChecked": 24040,
+  "incorrectDirectSpatialAssignments": 0,
+  "parentRelationOutsideOwnGeometry": [],
+  "unmatchedCheckedAgainstEverySourcePolygon": 11,
+  "sourceCRS": "All 4 geographic references explicitly declare CRS84, WGS84 longitude/latitude",
+  "method": "Independently check each selected source geometry covers the historical representative point; separately test every unmatched point against all polygons. No nearest-neighbour fallback."
+}

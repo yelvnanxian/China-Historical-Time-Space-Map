@@ -1,0 +1,16 @@
+{
+  "id": "context-changan",
+  "title": "长安 — 维基百科",
+  "url": "https://zh.wikipedia.org/wiki/%E9%95%BF%E5%AE%89",
+  "retrievedAt": "2026-09-24T12:07:35.142639+00:00",
+  "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证。引文保留本次页面原字形。",
+  "snapshotPath": "data/evidence/historical-context/changan.txt",
+  "snapshotSha256": "4790dd08832b2fc25445879da1aa59ce04e9c89e6bf823c8666a72bd561bc452",
+  "pageId": 23302,
+  "revision": {
+    "revid": 94228176,
+    "parentid": 92955029,
+    "timestamp": "2026-09-07T06:40:34Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E9%95%BF%E5%AE%89&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

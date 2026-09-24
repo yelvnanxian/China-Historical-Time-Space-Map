@@ -1,0 +1,121 @@
+.physical-marker {
+  background: transparent;
+  border: 0;
+  padding: 4px;
+  color: #477f8b;
+  cursor: pointer;
+  white-space: nowrap;
+  font-family: var(--serif);
+  font-size: 12px;
+  text-shadow:
+    0 1px 2px #f6f7ed,
+    1px 0 2px #f6f7ed,
+    -1px 0 2px #f6f7ed;
+}
+.physical-mountain {
+  color: #727850;
+  letter-spacing: 2px;
+}
+.physical-sea {
+  color: #628f9b;
+  letter-spacing: 5px;
+  font-size: 15px;
+}
+.physical-marker:hover .physical-label {
+  color: #245664;
+  background: #f9fbf0dc;
+  border-radius: 3px;
+}
+.marker-label.name-comparison {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  line-height: 1.4;
+}
+.name-comparison > small {
+  color: #5f7776;
+  font: 10px/1.4 sans-serif;
+  letter-spacing: 0;
+  font-weight: normal;
+}
+.layer-panel .layer-data-note {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  border-top: 1px solid #dce1d1;
+  max-width: 210px;
+  font-size: 11px;
+  line-height: 1.7;
+  color: #78846f;
+}
+.physical-detail {
+  position: absolute;
+  z-index: 45;
+  left: 24px;
+  bottom: 65px;
+  width: 280px;
+  padding: 18px 20px;
+  border: 1px solid #cdd9c8;
+  border-radius: 8px;
+  background: #fbfcf5f5;
+  box-shadow: 0 8px 35px #263d3420;
+}
+.physical-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 5px;
+}
+.physical-kind {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #6c887a;
+  font-size: 11px;
+}
+.physical-detail h3 {
+  font: 24px/1.4 var(--serif);
+  margin: 12px 0 2px;
+  color: #36594e;
+}
+.physical-english {
+  font-size: 11px;
+  color: #7a8b80;
+}
+.physical-detail p {
+  font-size: 12px;
+  line-height: 1.8;
+  color: #738273;
+  margin: 14px 0;
+}
+.physical-detail a {
+  font-size: 11px;
+  color: #49797b;
+}
+.physical-error {
+  position: absolute;
+  bottom: 30px;
+  left: 18px;
+  color: #8e6646;
+  font-size: 11px;
+  background: #fff9e8;
+  padding: 6px 10px;
+}
+.map-legend > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+@media (max-width: 720px) {
+  .physical-detail {
+    left: 12px;
+    bottom: 52px;
+    max-width: calc(100% - 70px);
+    padding: 15px;
+  }
+  .physical-marker {
+    font-size: 11px;
+  }
+  .name-comparison > small {
+    font-size: 9px;
+  }
+}

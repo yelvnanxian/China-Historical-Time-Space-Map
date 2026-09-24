@@ -1,0 +1,520 @@
+{
+  "title": "CHGIS V6 1911: v6_1911_pref_pgn_gbk.zip",
+  "sourceUrl": "https://doi.org/10.7910/DVN/0P89R9",
+  "sourceFileId": 2966676,
+  "sourceArchiveMD5": "8c98df9ba122c8810c89e0bebaa7e93e",
+  "citation": "\"CHGIS Version 6.\" (c) Fairbank Center for Chinese Studies and the Institute for Chinese Historical Geography at Fudan University, Dec 2016.",
+  "sourceCRS": "EPSG:2333",
+  "targetCRS": "EPSG:4326",
+  "transformation": "Inverse of unnnamed (Gauss Kruger) + Ballpark geographic offset from Xian 1980 to WGS 84 (with axis order normalized for visualization)",
+  "transformationAccuracyMetres": -1.0,
+  "coordinatePrecisionDegrees": 1e-06,
+  "simplified": false,
+  "yearBasis": "Official dataset title and filename; original date fields are retained.",
+  "warning": "官方文件标为 1911 年，但 1 个区域的原始 BEG_YR / END_YR 字段与该年冲突（[(3822, 3822)]）；异常原值已保留，年份尚未核实。",
+  "featureCount": 381,
+  "sourceFields": [
+    "Object_ID",
+    "NAME_PY",
+    "NAME_CH",
+    "NAME_FT",
+    "TYPE_PY",
+    "TYPE_CH",
+    "LEV_RANK",
+    "BEG_YR",
+    "BEG_RULE",
+    "END_YR",
+    "END_RULE",
+    "DYN_PY",
+    "DYN_CH",
+    "LEV1_PY",
+    "LEV1_CH",
+    "NOTE_ID",
+    "OBJ_TYPE",
+    "SYS_ID",
+    "GEO_SRC",
+    "COMPILER",
+    "GEOCOMP",
+    "CHECKER",
+    "ENT_DATE",
+    "Shape_Leng",
+    "Shape_Area",
+    "X_COORD",
+    "Y_COORD"
+  ],
+  "sourceVertexCount": 464323,
+  "outputVertexCount": 464228,
+  "invalidSourceFeatureCount": 18,
+  "invalidOutputFeatureCount": 0,
+  "sourceDatePairs": [
+    [
+      1911,
+      1911
+    ],
+    [
+      3822,
+      3822
+    ]
+  ],
+  "yearConflictCount": 1,
+  "duplicateSourceRecordIds": [],
+  "sourceWarnings": [],
+  "geometryCorrections": [
+    {
+      "recordIndex": 9,
+      "sourceId": "195110",
+      "name": "海门厅",
+      "verticesBeforePrecision": 180,
+      "verticesAfterPrecision": 176
+    },
+    {
+      "recordIndex": 26,
+      "sourceId": "195127",
+      "name": "黄州府",
+      "sourceValidity": "Ring Self-intersection[19863886.8167657 3488818.5412347]",
+      "makeValidResultType": "Polygon",
+      "originalAreaSquareMetres": 17570235309.22937,
+      "repairedAreaSquareMetres": 17570235309.229385
+    },
+    {
+      "recordIndex": 29,
+      "sourceId": "195130",
+      "name": "荆门州",
+      "verticesBeforePrecision": 1182,
+      "verticesAfterPrecision": 1181
+    },
+    {
+      "recordIndex": 36,
+      "sourceId": "195137",
+      "name": "长沙府",
+      "verticesBeforePrecision": 2809,
+      "verticesAfterPrecision": 2805
+    },
+    {
+      "recordIndex": 39,
+      "sourceId": "195140",
+      "name": "辰州府",
+      "verticesBeforePrecision": 1283,
+      "verticesAfterPrecision": 1279
+    },
+    {
+      "recordIndex": 52,
+      "sourceId": "195153",
+      "name": "广州府",
+      "verticesBeforePrecision": 3380,
+      "verticesAfterPrecision": 3376
+    },
+    {
+      "recordIndex": 53,
+      "sourceId": "195154",
+      "name": "肇庆府",
+      "verticesBeforePrecision": 1470,
+      "verticesAfterPrecision": 1466
+    },
+    {
+      "recordIndex": 54,
+      "sourceId": "195155",
+      "name": "高州府",
+      "verticesBeforePrecision": 1433,
+      "verticesAfterPrecision": 1432
+    },
+    {
+      "recordIndex": 72,
+      "sourceId": "195173",
+      "name": "安庆府",
+      "verticesBeforePrecision": 1142,
+      "verticesAfterPrecision": 1141
+    },
+    {
+      "recordIndex": 86,
+      "sourceId": "195188",
+      "name": "扬州府",
+      "verticesBeforePrecision": 1623,
+      "verticesAfterPrecision": 1615
+    },
+    {
+      "recordIndex": 87,
+      "sourceId": "195189",
+      "name": "通州",
+      "verticesBeforePrecision": 865,
+      "verticesAfterPrecision": 864
+    },
+    {
+      "recordIndex": 89,
+      "sourceId": "195191",
+      "name": "镇江府",
+      "sourceValidity": "Self-intersection[20320791.616312 3606269.00514431]",
+      "makeValidResultType": "Polygon",
+      "originalAreaSquareMetres": 5039558853.859015,
+      "repairedAreaSquareMetres": 5039558852.617458,
+      "verticesBeforePrecision": 1102,
+      "verticesAfterPrecision": 1094
+    },
+    {
+      "recordIndex": 92,
+      "sourceId": "195194",
+      "name": "太仓州",
+      "verticesBeforePrecision": 759,
+      "verticesAfterPrecision": 755
+    },
+    {
+      "recordIndex": 99,
+      "sourceId": "195201",
+      "name": "处州府",
+      "verticesBeforePrecision": 1281,
+      "verticesAfterPrecision": 1280
+    },
+    {
+      "recordIndex": 114,
+      "sourceId": "195219",
+      "name": "金华府",
+      "verticesBeforePrecision": 1132,
+      "verticesAfterPrecision": 1127
+    },
+    {
+      "recordIndex": 116,
+      "sourceId": "195221",
+      "name": "台州府",
+      "verticesBeforePrecision": 1378,
+      "verticesAfterPrecision": 1374
+    },
+    {
+      "recordIndex": 123,
+      "sourceId": "195229",
+      "name": "九江府",
+      "verticesBeforePrecision": 1140,
+      "verticesAfterPrecision": 1139
+    },
+    {
+      "recordIndex": 124,
+      "sourceId": "195230",
+      "name": "南康府",
+      "verticesBeforePrecision": 1047,
+      "verticesAfterPrecision": 1046
+    },
+    {
+      "recordIndex": 128,
+      "sourceId": "195237",
+      "name": "南安府",
+      "verticesBeforePrecision": 461,
+      "verticesAfterPrecision": 459
+    },
+    {
+      "recordIndex": 133,
+      "sourceId": "195257",
+      "name": "卫辉府",
+      "verticesBeforePrecision": 1042,
+      "verticesAfterPrecision": 1038
+    },
+    {
+      "recordIndex": 138,
+      "sourceId": "195262",
+      "name": "汝宁府",
+      "verticesBeforePrecision": 1495,
+      "verticesAfterPrecision": 1494
+    },
+    {
+      "recordIndex": 144,
+      "sourceId": "195268",
+      "name": "沂州府",
+      "sourceValidity": "Ring Self-intersection[20217321.1527806 3905598.90597239]",
+      "makeValidResultType": "Polygon",
+      "originalAreaSquareMetres": 24320782956.98273,
+      "repairedAreaSquareMetres": 24320782956.9827,
+      "verticesBeforePrecision": 1753,
+      "verticesAfterPrecision": 1751
+    },
+    {
+      "recordIndex": 147,
+      "sourceId": "195272",
+      "name": "登州府",
+      "sourceValidity": "Ring Self-intersection[20323075.0544744 4150140.03320224]",
+      "makeValidResultType": "MultiPolygon",
+      "originalAreaSquareMetres": 19237068469.56603,
+      "repairedAreaSquareMetres": 19237068469.566055
+    },
+    {
+      "recordIndex": 160,
+      "sourceId": "195286",
+      "name": "沁州",
+      "verticesBeforePrecision": 594,
+      "verticesAfterPrecision": 593
+    },
+    {
+      "recordIndex": 167,
+      "sourceId": "195294",
+      "name": "霍州",
+      "verticesBeforePrecision": 372,
+      "verticesAfterPrecision": 370
+    },
+    {
+      "recordIndex": 173,
+      "sourceId": "195300",
+      "name": "兖州府",
+      "verticesBeforePrecision": 1553,
+      "verticesAfterPrecision": 1552
+    },
+    {
+      "recordIndex": 177,
+      "sourceId": "195185",
+      "name": "徐州府",
+      "verticesBeforePrecision": 1611,
+      "verticesAfterPrecision": 1610
+    },
+    {
+      "recordIndex": 180,
+      "sourceId": "195224",
+      "name": "吉安府",
+      "sourceValidity": "Ring Self-intersection[19883504.525153 3054190.65127436]",
+      "makeValidResultType": "Polygon",
+      "originalAreaSquareMetres": 24270074297.57766,
+      "repairedAreaSquareMetres": 24270074297.577667
+    },
+    {
+      "recordIndex": 183,
+      "sourceId": "195310",
+      "name": "肃州",
+      "sourceValidity": "Ring Self-intersection[18467481.7140842 4380373.71732148]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 27509361676.24059,
+      "repairedAreaSquareMetres": 27509361676.240623
+    },
+    {
+      "recordIndex": 197,
+      "sourceId": "195324",
+      "name": "庆阳府",
+      "sourceValidity": "Ring Self-intersection[19108448.8011682 4061392.74464691]",
+      "makeValidResultType": "MultiPolygon",
+      "originalAreaSquareMetres": 22989116421.61024,
+      "repairedAreaSquareMetres": 22989116421.610226
+    },
+    {
+      "recordIndex": 200,
+      "sourceId": "195333",
+      "name": "多伦诺尔厅",
+      "sourceValidity": "Self-intersection[20088588.2381106 4750946.94642242]",
+      "makeValidResultType": "MultiPolygon",
+      "originalAreaSquareMetres": 43799130621.402275,
+      "repairedAreaSquareMetres": 43799130899.35174
+    },
+    {
+      "recordIndex": 206,
+      "sourceId": "195346",
+      "name": "太平府",
+      "sourceValidity": "Ring Self-intersection[19139664.3040674 2461857.2227159]",
+      "makeValidResultType": "Polygon",
+      "originalAreaSquareMetres": 14519257004.325197,
+      "repairedAreaSquareMetres": 14519257004.325218
+    },
+    {
+      "recordIndex": 231,
+      "sourceId": "195378",
+      "name": "镇沅厅",
+      "verticesBeforePrecision": 269,
+      "verticesAfterPrecision": 268
+    },
+    {
+      "recordIndex": 232,
+      "sourceId": "195379",
+      "name": "景东厅",
+      "verticesBeforePrecision": 463,
+      "verticesAfterPrecision": 462
+    },
+    {
+      "recordIndex": 244,
+      "sourceId": "195391",
+      "name": "石阡府",
+      "sourceValidity": "Ring Self-intersection[19192810.7579191 3089173.98222608]",
+      "makeValidResultType": "MultiPolygon",
+      "originalAreaSquareMetres": 3122453194.6151857,
+      "repairedAreaSquareMetres": 3122453194.6151843
+    },
+    {
+      "recordIndex": 245,
+      "sourceId": "195392",
+      "name": "铜仁府",
+      "sourceValidity": "Ring Self-intersection[19270731.8578573 3060905.59167192]",
+      "makeValidResultType": "MultiPolygon",
+      "originalAreaSquareMetres": 2978915444.487562,
+      "repairedAreaSquareMetres": 2978915444.487558
+    },
+    {
+      "recordIndex": 254,
+      "sourceId": "195401",
+      "name": "思南府",
+      "sourceValidity": "Ring Self-intersection[19239732.0108744 3176374.76695139]",
+      "makeValidResultType": "MultiPolygon",
+      "originalAreaSquareMetres": 12197912900.018644,
+      "repairedAreaSquareMetres": 12197912900.018658
+    },
+    {
+      "recordIndex": 258,
+      "sourceId": "195345",
+      "name": "萨拉齐厅",
+      "verticesBeforePrecision": 263,
+      "verticesAfterPrecision": 261
+    },
+    {
+      "recordIndex": 264,
+      "sourceId": "195421",
+      "name": "理番厅",
+      "verticesBeforePrecision": 1193,
+      "verticesAfterPrecision": 1191
+    },
+    {
+      "recordIndex": 265,
+      "sourceId": "195422",
+      "name": "懋功厅",
+      "verticesBeforePrecision": 1106,
+      "verticesAfterPrecision": 1105
+    },
+    {
+      "recordIndex": 288,
+      "sourceId": "195445",
+      "name": "依兰府",
+      "verticesBeforePrecision": 850,
+      "verticesAfterPrecision": 849
+    },
+    {
+      "recordIndex": 292,
+      "sourceId": "195449",
+      "name": "双城府",
+      "verticesBeforePrecision": 632,
+      "verticesAfterPrecision": 631
+    },
+    {
+      "recordIndex": 293,
+      "sourceId": "195450",
+      "name": "五常府",
+      "verticesBeforePrecision": 735,
+      "verticesAfterPrecision": 733
+    },
+    {
+      "recordIndex": 299,
+      "sourceId": "195456",
+      "name": "吉林府",
+      "verticesBeforePrecision": 497,
+      "verticesAfterPrecision": 496
+    },
+    {
+      "recordIndex": 301,
+      "sourceId": "195458",
+      "name": "伊通州",
+      "verticesBeforePrecision": 478,
+      "verticesAfterPrecision": 477
+    },
+    {
+      "recordIndex": 302,
+      "sourceId": "195459",
+      "name": "长春府",
+      "verticesBeforePrecision": 348,
+      "verticesAfterPrecision": 346
+    },
+    {
+      "recordIndex": 309,
+      "sourceId": "195466",
+      "name": "西布特哈",
+      "verticesBeforePrecision": 1432,
+      "verticesAfterPrecision": 1430
+    },
+    {
+      "recordIndex": 317,
+      "sourceId": "195474",
+      "name": "呼伦厅",
+      "verticesBeforePrecision": 3030,
+      "verticesAfterPrecision": 3020
+    },
+    {
+      "recordIndex": 319,
+      "sourceId": "195476",
+      "name": "兴京府",
+      "sourceValidity": "Ring Self-intersection[20689994.0450549 4744228.92869067]",
+      "makeValidResultType": "Polygon",
+      "originalAreaSquareMetres": 24354069850.425804,
+      "repairedAreaSquareMetres": 24354069850.425777
+    },
+    {
+      "recordIndex": 339,
+      "sourceId": "195496",
+      "name": "察哈尔",
+      "sourceValidity": "Self-intersection[19871487.1195357 4787697.40851218]",
+      "makeValidResultType": "MultiPolygon",
+      "originalAreaSquareMetres": 28400969092.86193,
+      "repairedAreaSquareMetres": 28400971694.816284
+    },
+    {
+      "recordIndex": 343,
+      "sourceId": "195500",
+      "name": "乌里雅苏台",
+      "sourceValidity": "Ring Self-intersection[18361498.215183 5361051.12638829]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 12525064315.889702,
+      "repairedAreaSquareMetres": 12525064315.889704
+    },
+    {
+      "recordIndex": 344,
+      "sourceId": "195501",
+      "name": "阿拉善厄鲁特旗",
+      "verticesBeforePrecision": 2125,
+      "verticesAfterPrecision": 2124
+    },
+    {
+      "recordIndex": 346,
+      "sourceId": "195503",
+      "name": "土谢图汗部",
+      "verticesBeforePrecision": 1367,
+      "verticesAfterPrecision": 1363
+    },
+    {
+      "recordIndex": 357,
+      "sourceId": "195515",
+      "name": "和硕特部",
+      "verticesBeforePrecision": 9165,
+      "verticesAfterPrecision": 9166
+    },
+    {
+      "recordIndex": 363,
+      "sourceId": "195521",
+      "name": "镇西厅",
+      "sourceValidity": "Self-intersection[18205217.9146324 5041489.50823671]",
+      "makeValidResultType": "Polygon",
+      "originalAreaSquareMetres": 60348401899.36031,
+      "repairedAreaSquareMetres": 60348401899.36031
+    },
+    {
+      "recordIndex": 366,
+      "sourceId": "195524",
+      "name": "库尔喀喇乌苏厅",
+      "sourceValidity": "Ring Self-intersection[17435037.1711659 5249050.77727612]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 18428758832.194393,
+      "repairedAreaSquareMetres": 18428758832.19442
+    },
+    {
+      "recordIndex": 368,
+      "sourceId": "195526",
+      "name": "塔尔巴哈台厅",
+      "sourceValidity": "Ring Self-intersection[17338405.0184839 5553524.31060243]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 41329246464.37962,
+      "repairedAreaSquareMetres": 41329246464.37957
+    },
+    {
+      "recordIndex": 369,
+      "sourceId": "195527",
+      "name": "精河厅",
+      "verticesBeforePrecision": 1512,
+      "verticesAfterPrecision": 1511
+    },
+    {
+      "recordIndex": 373,
+      "sourceId": "195531",
+      "name": "乌什厅",
+      "verticesBeforePrecision": 2027,
+      "verticesAfterPrecision": 2025
+    }
+  ],
+  "outputBytes": 10906373,
+  "outputSHA256": "783a4012ec0a9634eaaf66944a70127cc006d17a5d59e88dd80ca8513f45609f",
+  "output": "public/data/boundaries/chgis-1911-prefecture.geojson"
+}

@@ -1,0 +1,38 @@
+Hartwell GIS
+China Historical GIS
+CHGIS
+About
+Intro
+Project History
+Team Members
+Meetings and Workshops
+Database Design
+How To Use
+Contact
+Data
+CHGIS
+Hartwell
+Japan
+Russian Maps
+Skinner
+Other datasets
+Gazetteers
+Maps
+Papers
+Tools
+Download Hartwell Data
+The CHGIS project began with a bequest from the estate of
+Prof. Robert Hartwell
+who passed away in 1996.
+Hartwell bequeathed datasets that he and Marianne Colson Hartwell created under the auspices of his
+Chinese Historical Software, Ltd
+. to Harvard Yenching Institute. These materials included a functioning set of GIS datasets for the Chinese Dynasties, from Tang to Ming, which were based on the concept of "co-location," or the use of GIS representations of modern county-level administrative units as building blocks to depict the approximate shapes of historical areas.
+See:
+The Late Robert M. Hartwell "Chinese Historical Studies, Ltd." Software Project
+by Peter Bol.
+The Hartwell datasets are available at the permanent repository URL:
+http://dx.doi.org/10.7910/DVN/29302
+© CHGIS 2001 -
+document.write(new Date().getFullYear())
+design:
+Lex Berman

@@ -1,0 +1,70 @@
+{
+  "version": "chgis-v6-local-1",
+  "datasets": [
+    {
+      "id": "chgis-v6-1820",
+      "title": "清代 · CHGIS 1820 年资料",
+      "year": 1820,
+      "periodId": "qing",
+      "sourceName": "CHGIS V6 · 哈佛大学 / 复旦大学",
+      "sourceUrl": "https://dataverse.harvard.edu/dataverse/chgis_v6_1820",
+      "accuracy": "historical-gis",
+      "note": "官方 CHGIS 历史 GIS 面，经原始投影转换为 WGS84。保留原始档案和属性，仅修复无效拓扑与坐标精度；没有手绘、平滑或补造边界。省/府层含边疆大区域、特殊区域与岛礁，并非全部属于同一种行政建制；投影转换仅有 ballpark datum offset，不代表米级精度。 府级官方文件名为1820，但全部320条起止年字段均为1911，年份存在未决冲突。未找到1820县级面，未用点构造县界。千里石塘源环有自交及孤立环，拓扑修复后的计算面积变化约2.63%，该修复不代表史学核定。",
+      "coverage": "省及大区域 32 个源区域；府 / 州等（年份字段冲突） 320 个源区域。仅显示源资料已有的面，不代表经过核定的国家疆界。",
+      "layers": [
+        {
+          "id": "chgis-1820-province",
+          "level": "province",
+          "label": "省及大区域",
+          "url": "/data/boundaries/chgis-1820-province.geojson",
+          "featureCount": 32
+        },
+        {
+          "id": "chgis-1820-prefecture",
+          "level": "prefecture",
+          "label": "府 / 州等（年份字段冲突）",
+          "url": "/data/boundaries/chgis-1820-prefecture.geojson",
+          "featureCount": 320,
+          "warning": "官方文件标为 1820 年，但 320 个区域的原始 BEG_YR / END_YR 字段与该年冲突（[(1911, 1911)]）；异常原值已保留，年份尚未核实。"
+        }
+      ]
+    },
+    {
+      "id": "chgis-v6-1911",
+      "title": "清代 · CHGIS 1911 年资料",
+      "year": 1911,
+      "periodId": "qing",
+      "sourceName": "CHGIS V6 · 哈佛大学 / 复旦大学",
+      "sourceUrl": "https://dataverse.harvard.edu/dataverse/chgis_v6_1911",
+      "accuracy": "historical-gis",
+      "note": "官方 CHGIS 历史 GIS 面，经原始投影转换为 WGS84。保留原始档案和属性，仅修复无效拓扑与坐标精度；没有手绘、平滑或补造边界。省/府层含边疆大区域、特殊区域与岛礁，并非全部属于同一种行政建制；投影转换仅有 ballpark datum offset，不代表米级精度。 官方文件标为 1911 年，但 1 个区域的原始 BEG_YR / END_YR 字段与该年冲突（[(3822, 3822)]）；异常原值已保留，年份尚未核实。 官方文件标为 1911 年，但 1 个区域的原始 BEG_YR / END_YR 字段与该年冲突（[(3822, 3822)]）；异常原值已保留，年份尚未核实。 官方文件标为 1911 年，但 2 个区域的原始 BEG_YR / END_YR 字段与该年冲突（[(1146, 1146), (3822, 3822)]）；异常原值已保留，年份尚未核实。",
+      "coverage": "省及大区域（年份字段冲突） 27 个源区域；府 / 州等（年份字段冲突） 381 个源区域；县级区域（年份字段冲突） 1986 个源区域。仅显示源资料已有的面，不代表经过核定的国家疆界。",
+      "layers": [
+        {
+          "id": "chgis-1911-province",
+          "level": "province",
+          "label": "省及大区域（年份字段冲突）",
+          "url": "/data/boundaries/chgis-1911-province.geojson",
+          "featureCount": 27,
+          "warning": "官方文件标为 1911 年，但 1 个区域的原始 BEG_YR / END_YR 字段与该年冲突（[(3822, 3822)]）；异常原值已保留，年份尚未核实。"
+        },
+        {
+          "id": "chgis-1911-prefecture",
+          "level": "prefecture",
+          "label": "府 / 州等（年份字段冲突）",
+          "url": "/data/boundaries/chgis-1911-prefecture.geojson",
+          "featureCount": 381,
+          "warning": "官方文件标为 1911 年，但 1 个区域的原始 BEG_YR / END_YR 字段与该年冲突（[(3822, 3822)]）；异常原值已保留，年份尚未核实。"
+        },
+        {
+          "id": "chgis-1911-county",
+          "level": "county",
+          "label": "县级区域（年份字段冲突）",
+          "url": "/data/boundaries/chgis-1911-county.geojson",
+          "featureCount": 1986,
+          "warning": "官方文件标为 1911 年，但 2 个区域的原始 BEG_YR / END_YR 字段与该年冲突（[(1146, 1146), (3822, 3822)]）；异常原值已保留，年份尚未核实。"
+        }
+      ]
+    }
+  ]
+}

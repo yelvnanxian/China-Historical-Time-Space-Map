@@ -1,0 +1,78 @@
+{
+  "url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/da7a4b735ecef70aebdc9c73e409d8a2500d50f3/geojson/world_700.geojson",
+  "commit": "da7a4b735ecef70aebdc9c73e409d8a2500d50f3",
+  "filename": "world_700.geojson",
+  "sha256": "bb66ebee15e57f5d43b0ca524dd9a230651bb821e7e002882b1981a25fd42a38",
+  "topLevelKeys": [
+    "type",
+    "name",
+    "crs",
+    "features"
+  ],
+  "featureCount": 253,
+  "propertyKeys": [
+    "ABBREVN",
+    "BORDERPRECISION",
+    "NAME",
+    "PARTOF",
+    "SUBJECTO"
+  ],
+  "selectedFeatures": [
+    {
+      "featureIndex": 132,
+      "properties": {
+        "NAME": "Tufan Empire",
+        "ABBREVN": "Tufan Empire",
+        "SUBJECTO": "Tufan Empire",
+        "BORDERPRECISION": 1,
+        "PARTOF": "Tufan Empire"
+      },
+      "geometryType": "MultiPolygon",
+      "coordinateCount": 6,
+      "bbox": [
+        96.41333866302432,
+        37.58789014265722,
+        99.35231210297073,
+        38.44916027620063
+      ]
+    },
+    {
+      "featureIndex": 238,
+      "properties": {
+        "NAME": "Tufan Empire",
+        "ABBREVN": "Tufan Empire",
+        "SUBJECTO": "Tufan Empire",
+        "BORDERPRECISION": 1,
+        "PARTOF": "Tufan Empire"
+      },
+      "geometryType": "MultiPolygon",
+      "coordinateCount": 41,
+      "bbox": [
+        72.31577517459549,
+        25.670711079117225,
+        101.78956935299207,
+        40.62877811823046
+      ]
+    }
+  ],
+  "featuresContaining110E34N": [
+    {
+      "featureIndex": 37,
+      "properties": {
+        "NAME": "Sui Empire",
+        "ABBREVN": "Sui Empire",
+        "SUBJECTO": "Sui Empire",
+        "BORDERPRECISION": 1,
+        "PARTOF": "Sui Empire"
+      },
+      "geometryType": "MultiPolygon",
+      "coordinateCount": 282,
+      "bbox": [
+        96.41333866302433,
+        16.187961290965557,
+        124.70226816912908,
+        43.05291351841873
+      ]
+    }
+  ]
+}

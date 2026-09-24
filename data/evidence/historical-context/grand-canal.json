@@ -1,0 +1,16 @@
+{
+  "id": "context-grand-canal",
+  "title": "京杭大运河 — 维基百科",
+  "url": "https://zh.wikipedia.org/wiki/%E4%BA%AC%E6%9D%AD%E5%A4%A7%E8%BF%90%E6%B2%B3",
+  "retrievedAt": "2026-09-24T12:07:35.152654+00:00",
+  "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证。引文保留本次页面原字形。",
+  "snapshotPath": "data/evidence/historical-context/grand-canal.txt",
+  "snapshotSha256": "5ecc67c191f90cc6fe32d7f667f65f39c3c75b3dc9e356175996dfc529553828",
+  "pageId": 20876,
+  "revision": {
+    "revid": 94273921,
+    "parentid": 94063606,
+    "timestamp": "2026-09-10T05:17:59Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E4%BA%AC%E6%9D%AD%E5%A4%A7%E8%BF%90%E6%B2%B3&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

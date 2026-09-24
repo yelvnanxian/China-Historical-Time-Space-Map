@@ -1,0 +1,236 @@
+{
+  "datasetCount": 5,
+  "layerCount": 20,
+  "featureCount": 9365,
+  "outputVertices": 2917516,
+  "sourceDegenerateRingPadding": [
+    {
+      "id": "hartwell-1200-province-v5_1200_chin_chn_1200_l-33",
+      "originalVertices": 1912,
+      "outputVertices": 1913,
+      "extraRepeatedVertices": 1
+    },
+    {
+      "id": "hartwell-1200-province-v5_1200_chin_chn_1200_l-36",
+      "originalVertices": 1371,
+      "outputVertices": 1372,
+      "extraRepeatedVertices": 1
+    },
+    {
+      "id": "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-335",
+      "originalVertices": 277,
+      "outputVertices": 278,
+      "extraRepeatedVertices": 1
+    },
+    {
+      "id": "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-366",
+      "originalVertices": 292,
+      "outputVertices": 293,
+      "extraRepeatedVertices": 1
+    }
+  ],
+  "maxCoordinateRoundTripErrorMeters": 3.839941346661803e-09,
+  "countryClassification": "Only original H_ADMIN_TY Independent State/Tribe/Tribes; no national dissolve",
+  "checks": [
+    {
+      "file": "hartwell-741-country.geojson",
+      "features": 3,
+      "vertices": 8280,
+      "bytes": 323593,
+      "sha256": "489a46ccaf6281e5937c0f4acb0345767eb1fb75d17f4b752bddd09bf7dceec1",
+      "allOriginalVerticesPreserved": true,
+      "sourceRecordsMatch": true,
+      "labelPointsCovered": true
+    },
+    {
+      "file": "hartwell-741-province.geojson",
+      "features": 10,
+      "vertices": 66404,
+      "bytes": 2612082,
+      "sha256": "3e7972b1274cfe1bcea0058ec4dc894a0656a2a3262b596ca5467d83efcb1801",
+      "allOriginalVerticesPreserved": true,
+      "sourceRecordsMatch": true,
+      "labelPointsCovered": true
+    },
+    {
+      "file": "hartwell-741-prefecture.geojson",
+      "features": 336,
+      "vertices": 187406,
+      "bytes": 7580039,
+      "sha256": "ac9211af939ef3f9f6d94bb16977e313426795908703ad4d7db916f6ea89d635",
+      "allOriginalVerticesPreserved": true,
+      "sourceRecordsMatch": true,
+      "labelPointsCovered": true
+    },
+    {
+      "file": "hartwell-741-county.geojson",
+      "features": 1495,
+      "vertices": 302124,
+      "bytes": 12844852,
+      "sha256": "54081ec310344d24da387eced81bc4aa9aa547fd80629a2d7f844235d276cc54",
+      "allOriginalVerticesPreserved": true,
+      "sourceRecordsMatch": true,
+      "labelPointsCovered": true
+    },
+    {
+      "file": "hartwell-1080-country.geojson",
+      "features": 8,
+      "vertices": 17996,
+      "bytes": 702314,
+      "sha256": "b6aa8ec37e6a2b354e9d7c3611d1318e67ef0e43b447b53a7c18a0107b8072cc",
+      "allOriginalVerticesPreserved": true,
+      "sourceRecordsMatch": true,
+      "labelPointsCovered": true
+    },
+    {
+      "file": "hartwell-1080-province.geojson",
+      "features": 30,
+      "vertices": 81797,
+      "bytes": 3233600,
+      "sha256": "46c2a254c95d371e3b6e84ab9f855acaac4a730656ddf5116c2412df7a7bc282",
+      "allOriginalVerticesPreserved": true,
+      "sourceRecordsMatch": true,
+      "labelPointsCovered": true
+    },
+    {
+      "file": "hartwell-1080-prefecture.geojson",
+      "features": 402,
+      "vertices": 182031,
+      "bytes": 7422741,
+      "sha256": "ac1588c8713c71fbbdf51c994173ae5044b625e0b35bf20669bcc429260ff7c6",
+      "allOriginalVerticesPreserved": true,
+      "sourceRecordsMatch": true,
+      "labelPointsCovered": true
+    },
+    {
+      "file": "hartwell-1080-county.geojson",
+      "features": 1479,
+      "vertices": 289671,
+      "bytes": 12365881,
+      "sha256": "b27c4794d12a770bf5a90bdc71fc2ac0d4f1cb21403c0ed36ac2a8e08b49bedd",
+      "allOriginalVerticesPreserved": true,
+      "sourceRecordsMatch": true,
+      "labelPointsCovered": true
+    },
+    {
+      "file": "hartwell-1200-country.geojson",
+      "features": 8,
+      "vertices": 19141,
+      "bytes": 747291,
+      "sha256": "73ca2050660b071f56fd27bff24de417cdd58567fa949442e88096c42681fa14",
+      "allOriginalVerticesPreserved": true,
+      "sourceRecordsMatch": true,
+      "labelPointsCovered": true
+    },
+    {
+      "file": "hartwell-1200-province.geojson",
+      "features": 36,
+      "vertices": 81647,
+      "bytes": 3232721,
+      "sha256": "afe53b2c8edfd3c1708e6e0e1deb7d94af457d55accbdda19734076645601608",
+      "allOriginalVerticesPreserved": true,
+      "sourceRecordsMatch": true,
+      "labelPointsCovered": true
+    },
+    {
+      "file": "hartwell-1200-prefecture.geojson",
+      "features": 390,
+      "vertices": 183966,
+      "bytes": 7491683,
+      "sha256": "efa3333cd7986a8f019f05daae908322e3bc987454d51331c5ec43517cb28747",
+      "allOriginalVerticesPreserved": true,
+      "sourceRecordsMatch": true,
+      "labelPointsCovered": true
+    },
+    {
+      "file": "hartwell-1200-county.geojson",
+      "features": 1450,
+      "vertices": 293561,
+      "bytes": 12502320,
+      "sha256": "2a2d1012f5d2d4893b1cef501319cc61b17a98d2ed5b62c0fd88e08b5abe7c98",
+      "allOriginalVerticesPreserved": true,
+      "sourceRecordsMatch": true,
+      "labelPointsCovered": true
+    },
+    {
+      "file": "hartwell-1290-country.geojson",
+      "features": 1,
+      "vertices": 1504,
+      "bytes": 60158,
+      "sha256": "8fa232fa1aac9c2d9deb5b934e148499f9fd6828c72144943bc7e99e3effacd9",
+      "allOriginalVerticesPreserved": true,
+      "sourceRecordsMatch": true,
+      "labelPointsCovered": true
+    },
+    {
+      "file": "hartwell-1290-province.geojson",
+      "features": 16,
+      "vertices": 75771,
+      "bytes": 2978868,
+      "sha256": "f24d8aec754417d1c99cc7724aec35565daf2a36431ffa0dddd929ff063be24f",
+      "allOriginalVerticesPreserved": true,
+      "sourceRecordsMatch": true,
+      "labelPointsCovered": true
+    },
+    {
+      "file": "hartwell-1290-prefecture.geojson",
+      "features": 280,
+      "vertices": 186302,
+      "bytes": 7499216,
+      "sha256": "f3b64a6b20ae462d4818d0a09e823f7bea3b75fea8a46d557b93bc610f1a9c70",
+      "allOriginalVerticesPreserved": true,
+      "sourceRecordsMatch": true,
+      "labelPointsCovered": true
+    },
+    {
+      "file": "hartwell-1290-county.geojson",
+      "features": 1475,
+      "vertices": 328384,
+      "bytes": 13863351,
+      "sha256": "d44cfa05d3ed433ebe5ffff314db28ed74c61a426262c0c4a015a1021dfa7443",
+      "allOriginalVerticesPreserved": true,
+      "sourceRecordsMatch": true,
+      "labelPointsCovered": true
+    },
+    {
+      "file": "hartwell-1391-country.geojson",
+      "features": 5,
+      "vertices": 9695,
+      "bytes": 377252,
+      "sha256": "03caa3f39190bcf74406e3c7eb0df5a974d86927c3a8b456dc8adae240f645b4",
+      "allOriginalVerticesPreserved": true,
+      "sourceRecordsMatch": true,
+      "labelPointsCovered": true
+    },
+    {
+      "file": "hartwell-1391-province.geojson",
+      "features": 21,
+      "vertices": 80339,
+      "bytes": 3166335,
+      "sha256": "ef124f4804425d93099dc18aa2ac1c38f3ed3c108e03cfb6d1cb440fa549f2eb",
+      "allOriginalVerticesPreserved": true,
+      "sourceRecordsMatch": true,
+      "labelPointsCovered": true
+    },
+    {
+      "file": "hartwell-1391-prefecture.geojson",
+      "features": 300,
+      "vertices": 182709,
+      "bytes": 7375948,
+      "sha256": "5b8940f9733254424df68934f1a9a7588dbb7cadb344629436a0e6a04c1cb9f7",
+      "allOriginalVerticesPreserved": true,
+      "sourceRecordsMatch": true,
+      "labelPointsCovered": true
+    },
+    {
+      "file": "hartwell-1391-county.geojson",
+      "features": 1620,
+      "vertices": 338788,
+      "bytes": 14381847,
+      "sha256": "fc7542e6b451b92f08bdc070129962489a78c65836712b5e1db7662de938c33f",
+      "allOriginalVerticesPreserved": true,
+      "sourceRecordsMatch": true,
+      "labelPointsCovered": true
+    }
+  ]
+}

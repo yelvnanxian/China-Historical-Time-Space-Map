@@ -1,0 +1,244 @@
+{
+  "datasetPersistentId": "doi:10.7910/DVN/29302",
+  "versionNumber": 2,
+  "versionMinorNumber": 0,
+  "releaseTime": "2016-09-01T22:40:38Z",
+  "license": {
+    "name": "CC0 1.0",
+    "uri": "http://creativecommons.org/publicdomain/zero/1.0",
+    "iconUri": "https://licensebuttons.net/p/zero/1.0/88x31.png",
+    "rightsIdentifier": "CC0-1.0",
+    "rightsIdentifierScheme": "SPDX",
+    "schemeUri": "https://spdx.org/licenses/",
+    "languageCode": "en"
+  },
+  "termsOfUse": null,
+  "restrictions": null,
+  "termsOfAccess": null,
+  "metadataBlocks": {
+    "citation": {
+      "displayName": "Citation Metadata",
+      "name": "citation",
+      "fields": [
+        {
+          "typeName": "title",
+          "multiple": false,
+          "typeClass": "primitive",
+          "value": "Hartwell China Historical GIS"
+        },
+        {
+          "typeName": "author",
+          "multiple": true,
+          "typeClass": "compound",
+          "value": [
+            {
+              "authorName": {
+                "typeName": "authorName",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "Hartwell, Robert"
+              },
+              "authorAffiliation": {
+                "typeName": "authorAffiliation",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "University of Pennsylvania"
+              }
+            }
+          ]
+        },
+        {
+          "typeName": "datasetContact",
+          "multiple": true,
+          "typeClass": "compound",
+          "value": [
+            {
+              "datasetContactEmail": {
+                "typeName": "datasetContactEmail",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "N/A"
+              }
+            }
+          ]
+        },
+        {
+          "typeName": "dsDescription",
+          "multiple": true,
+          "typeClass": "compound",
+          "value": [
+            {
+              "dsDescriptionValue": {
+                "typeName": "dsDescriptionValue",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "Prof. Robert Hartwell (1932 - 1996)  created his China Historical GIS under the auspices of his company Chinese Historical Studies.  His estate left the data to Harvard University. These materials include functional GIS datasets for the Chinese Dynasties, from Tang to Ming, which were based on the concept of \"co-location,\" or the use of GIS representations of modern county-level administrative units as building blocks to depict the approximate shapes of historical areas.  Making use of county boundary data for 1992, (obtained from Crissman's ACASIAN data), Hartwell represented historical units that occupied roughly the same areas by merging or splitting the 1992 counties. Where the contemporary boundaries could not be \"co-located\" in this fashion, Hartwell drew in approximate line boundaries to divide the contemporary units to fit the historical situations and therefore provide an approximation of the historical unit's area. Although the resulting boundaries are, in many cases, problematic representations, the GIS remains an interesting hueristic GIS tool for sorting, querying, and creating digital maps for selected areas within the major dynasties up to the Ming.  Harvard University released the original Hartwell datasets on April 2nd, 2001, in conjunction with the CHGIS project, as a useful means of generating approximate spatial entities correlating to historical administrative units.  For Version 5, the Hartwell Datasets were renamed according to a filenaming convention (described above) and projected to match the CHGIS V5 standard (2014)."
+              },
+              "dsDescriptionDate": {
+                "typeName": "dsDescriptionDate",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "2015"
+              }
+            }
+          ]
+        },
+        {
+          "typeName": "publication",
+          "multiple": true,
+          "typeClass": "compound",
+          "value": [
+            {
+              "publicationCitation": {
+                "typeName": "publicationCitation",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "\"Hartwell China Historical GIS,\"  Hartwell, Robert.  Cambridge: CHGIS V5 (2010).  (c) Harvard Fairbank Center for Chinese Studies."
+              }
+            }
+          ]
+        },
+        {
+          "typeName": "producer",
+          "multiple": true,
+          "typeClass": "compound",
+          "value": [
+            {
+              "producerName": {
+                "typeName": "producerName",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "CHGIS"
+              },
+              "producerAffiliation": {
+                "typeName": "producerAffiliation",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "Data publisher"
+              },
+              "producerURL": {
+                "typeName": "producerURL",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CB8QFjAA&url=http%3A%2F%2Fwww.fas.harvard.edu%2F~chgis%2F&ei=tOv0VIrvJanHsQSx3IKgDQ&usg=AFQjCNEblwzI78WjrXHCxckc-iAWHxP-Qw&sig2=TYVopA5vbxWOC4q7AlA0Xw&bvm=bv.87269000,d.cW"
+              },
+              "producerLogoURL": {
+                "typeName": "producerLogoURL",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "http://www.fas.harvard.edu/~chgis/btns/B5chop.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "typeName": "productionDate",
+          "multiple": false,
+          "typeClass": "primitive",
+          "value": "2014"
+        },
+        {
+          "typeName": "distributor",
+          "multiple": true,
+          "typeClass": "compound",
+          "value": [
+            {
+              "distributorName": {
+                "typeName": "distributorName",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "Harvard Dataverse Network"
+              },
+              "distributorURL": {
+                "typeName": "distributorURL",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "http://thedata.harvard.edu/dvn/"
+              }
+            }
+          ]
+        },
+        {
+          "typeName": "distributionDate",
+          "multiple": false,
+          "typeClass": "primitive",
+          "value": "2014"
+        },
+        {
+          "typeName": "dateOfDeposit",
+          "multiple": false,
+          "typeClass": "primitive",
+          "value": "2015-03-02"
+        },
+        {
+          "typeName": "timePeriodCovered",
+          "multiple": true,
+          "typeClass": "compound",
+          "value": [
+            {
+              "timePeriodCoveredStart": {
+                "typeName": "timePeriodCoveredStart",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "0741"
+              },
+              "timePeriodCoveredEnd": {
+                "typeName": "timePeriodCoveredEnd",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "1391"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "geospatial": {
+      "displayName": "Geospatial Metadata",
+      "name": "geospatial",
+      "fields": [
+        {
+          "typeName": "geographicCoverage",
+          "multiple": true,
+          "typeClass": "compound",
+          "value": [
+            {
+              "otherGeographicCoverage": {
+                "typeName": "otherGeographicCoverage",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "china"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "files": [
+    {
+      "id": 2867264,
+      "filename": "Hartwell_Reprojection_Info_28sep10.pdf",
+      "restricted": false,
+      "description": null
+    },
+    {
+      "id": 2867263,
+      "filename": "README_CHGIS_V5_HARTWELL.txt",
+      "restricted": false,
+      "description": null
+    },
+    {
+      "id": 2542562,
+      "filename": "v1_Hartwell_2002.zip",
+      "restricted": false,
+      "description": "Original Hartwel GIS files, unprojected, in nested folders (2002)"
+    },
+    {
+      "id": 2542563,
+      "filename": "v5_Hartwell_2010.zip",
+      "restricted": false,
+      "description": "Renamed Hartwell GIS Files, Xian Zone 19 projections, all files in single folder"
+    }
+  ]
+}

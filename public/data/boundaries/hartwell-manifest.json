@@ -1,0 +1,210 @@
+{
+  "version": "1.0",
+  "datasets": [
+    {
+      "id": "hartwell-741",
+      "title": "唐及周边 · 741 年",
+      "year": 741,
+      "periodId": "tang",
+      "sourceName": "Hartwell China Historical GIS · CHGIS V5",
+      "sourceUrl": "https://doi.org/10.7910/DVN/29302",
+      "accuracy": "approximate-model",
+      "note": "Hartwell 近似行政模型；现代县界拼合、分割所得，保留原始轮廓。独立政权/诸部来自源记录分类；未构造唐、宋、辽、金、元、明的完整国界。原始文件为 741 年，README 写 742 年；按文件年份展示，不能代表 755 年实控疆界。",
+      "coverage": "原数据覆盖的历史行政区与部分周边独立政权/诸部；不保证完整疆域。层级为原图层的显示分组，具体行政类型保留在每条记录中。",
+      "layers": [
+        {
+          "id": "hartwell-741-country",
+          "level": "country",
+          "label": "独立政权 / 诸部（源分类）",
+          "url": "/data/boundaries/hartwell-741-country.geojson",
+          "featureCount": 3
+        },
+        {
+          "id": "hartwell-741-province",
+          "level": "province",
+          "label": "道 / 路 / 省及同层单位",
+          "url": "/data/boundaries/hartwell-741-province.geojson",
+          "featureCount": 10
+        },
+        {
+          "id": "hartwell-741-prefecture",
+          "level": "prefecture",
+          "label": "府 / 州及同层单位",
+          "url": "/data/boundaries/hartwell-741-prefecture.geojson",
+          "featureCount": 336
+        },
+        {
+          "id": "hartwell-741-county",
+          "level": "county",
+          "label": "县及同层单位",
+          "url": "/data/boundaries/hartwell-741-county.geojson",
+          "featureCount": 1495
+        }
+      ]
+    },
+    {
+      "id": "hartwell-1080",
+      "title": "宋辽及周边 · 1080 年",
+      "year": 1080,
+      "periodId": "song",
+      "sourceName": "Hartwell China Historical GIS · CHGIS V5",
+      "sourceUrl": "https://doi.org/10.7910/DVN/29302",
+      "accuracy": "approximate-model",
+      "note": "Hartwell 近似行政模型；现代县界拼合、分割所得，保留原始轮廓。独立政权/诸部来自源记录分类；未构造唐、宋、辽、金、元、明的完整国界。",
+      "coverage": "原数据覆盖的历史行政区与部分周边独立政权/诸部；不保证完整疆域。层级为原图层的显示分组，具体行政类型保留在每条记录中。",
+      "layers": [
+        {
+          "id": "hartwell-1080-country",
+          "level": "country",
+          "label": "独立政权 / 诸部（源分类）",
+          "url": "/data/boundaries/hartwell-1080-country.geojson",
+          "featureCount": 8
+        },
+        {
+          "id": "hartwell-1080-province",
+          "level": "province",
+          "label": "道 / 路 / 省及同层单位",
+          "url": "/data/boundaries/hartwell-1080-province.geojson",
+          "featureCount": 30
+        },
+        {
+          "id": "hartwell-1080-prefecture",
+          "level": "prefecture",
+          "label": "府 / 州及同层单位",
+          "url": "/data/boundaries/hartwell-1080-prefecture.geojson",
+          "featureCount": 402
+        },
+        {
+          "id": "hartwell-1080-county",
+          "level": "county",
+          "label": "县及同层单位",
+          "url": "/data/boundaries/hartwell-1080-county.geojson",
+          "featureCount": 1479
+        }
+      ]
+    },
+    {
+      "id": "hartwell-1200",
+      "title": "宋金及周边 · 1200 年",
+      "year": 1200,
+      "periodId": "song",
+      "sourceName": "Hartwell China Historical GIS · CHGIS V5",
+      "sourceUrl": "https://doi.org/10.7910/DVN/29302",
+      "accuracy": "approximate-model",
+      "note": "Hartwell 近似行政模型；现代县界拼合、分割所得，保留原始轮廓。独立政权/诸部来自源记录分类；未构造唐、宋、辽、金、元、明的完整国界。",
+      "coverage": "原数据覆盖的历史行政区与部分周边独立政权/诸部；不保证完整疆域。层级为原图层的显示分组，具体行政类型保留在每条记录中。",
+      "layers": [
+        {
+          "id": "hartwell-1200-country",
+          "level": "country",
+          "label": "独立政权 / 诸部（源分类）",
+          "url": "/data/boundaries/hartwell-1200-country.geojson",
+          "featureCount": 8
+        },
+        {
+          "id": "hartwell-1200-province",
+          "level": "province",
+          "label": "道 / 路 / 省及同层单位",
+          "url": "/data/boundaries/hartwell-1200-province.geojson",
+          "featureCount": 36
+        },
+        {
+          "id": "hartwell-1200-prefecture",
+          "level": "prefecture",
+          "label": "府 / 州及同层单位",
+          "url": "/data/boundaries/hartwell-1200-prefecture.geojson",
+          "featureCount": 390
+        },
+        {
+          "id": "hartwell-1200-county",
+          "level": "county",
+          "label": "县及同层单位",
+          "url": "/data/boundaries/hartwell-1200-county.geojson",
+          "featureCount": 1450
+        }
+      ]
+    },
+    {
+      "id": "hartwell-1290",
+      "title": "元及周边 · 1290 年",
+      "year": 1290,
+      "periodId": "yuan",
+      "sourceName": "Hartwell China Historical GIS · CHGIS V5",
+      "sourceUrl": "https://doi.org/10.7910/DVN/29302",
+      "accuracy": "approximate-model",
+      "note": "Hartwell 近似行政模型；现代县界拼合、分割所得，保留原始轮廓。独立政权/诸部来自源记录分类；未构造唐、宋、辽、金、元、明的完整国界。原始文件为 1290 年，README 写 1280 年；按文件年份展示。",
+      "coverage": "原数据覆盖的历史行政区与部分周边独立政权/诸部；不保证完整疆域。层级为原图层的显示分组，具体行政类型保留在每条记录中。",
+      "layers": [
+        {
+          "id": "hartwell-1290-country",
+          "level": "country",
+          "label": "独立政权 / 诸部（源分类）",
+          "url": "/data/boundaries/hartwell-1290-country.geojson",
+          "featureCount": 1
+        },
+        {
+          "id": "hartwell-1290-province",
+          "level": "province",
+          "label": "道 / 路 / 省及同层单位",
+          "url": "/data/boundaries/hartwell-1290-province.geojson",
+          "featureCount": 16
+        },
+        {
+          "id": "hartwell-1290-prefecture",
+          "level": "prefecture",
+          "label": "府 / 州及同层单位",
+          "url": "/data/boundaries/hartwell-1290-prefecture.geojson",
+          "featureCount": 280
+        },
+        {
+          "id": "hartwell-1290-county",
+          "level": "county",
+          "label": "县及同层单位",
+          "url": "/data/boundaries/hartwell-1290-county.geojson",
+          "featureCount": 1475
+        }
+      ]
+    },
+    {
+      "id": "hartwell-1391",
+      "title": "明及周边 · 1391 年",
+      "year": 1391,
+      "periodId": "ming",
+      "sourceName": "Hartwell China Historical GIS · CHGIS V5",
+      "sourceUrl": "https://doi.org/10.7910/DVN/29302",
+      "accuracy": "approximate-model",
+      "note": "Hartwell 近似行政模型；现代县界拼合、分割所得，保留原始轮廓。独立政权/诸部来自源记录分类；未构造唐、宋、辽、金、元、明的完整国界。",
+      "coverage": "原数据覆盖的历史行政区与部分周边独立政权/诸部；不保证完整疆域。层级为原图层的显示分组，具体行政类型保留在每条记录中。",
+      "layers": [
+        {
+          "id": "hartwell-1391-country",
+          "level": "country",
+          "label": "独立政权 / 诸部（源分类）",
+          "url": "/data/boundaries/hartwell-1391-country.geojson",
+          "featureCount": 5
+        },
+        {
+          "id": "hartwell-1391-province",
+          "level": "province",
+          "label": "道 / 路 / 省及同层单位",
+          "url": "/data/boundaries/hartwell-1391-province.geojson",
+          "featureCount": 21
+        },
+        {
+          "id": "hartwell-1391-prefecture",
+          "level": "prefecture",
+          "label": "府 / 州及同层单位",
+          "url": "/data/boundaries/hartwell-1391-prefecture.geojson",
+          "featureCount": 300
+        },
+        {
+          "id": "hartwell-1391-county",
+          "level": "county",
+          "label": "县及同层单位",
+          "url": "/data/boundaries/hartwell-1391-county.geojson",
+          "featureCount": 1620
+        }
+      ]
+    }
+  ]
+}

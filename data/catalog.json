@@ -1,0 +1,4237 @@
+{
+  "periods": [
+    {
+      "id": "qin",
+      "label": "秦",
+      "name": "秦统一时期",
+      "year": -221,
+      "startYear": -221,
+      "endYear": -207,
+      "subtitle": "天下初定",
+      "description": "从咸阳出发，认识统一后的政治空间。",
+      "color": "#b68452",
+      "regimeIds": [
+        "qin-empire"
+      ]
+    },
+    {
+      "id": "han",
+      "label": "汉",
+      "name": "两汉",
+      "year": 2,
+      "startYear": -202,
+      "endYear": 220,
+      "subtitle": "长安与帝国",
+      "description": "以公元2年为代表截面，连接两汉的重要地点与事件。",
+      "color": "#bc7459",
+      "regimeIds": [
+        "han-empire"
+      ]
+    },
+    {
+      "id": "sanguo",
+      "label": "三国",
+      "name": "三国并立",
+      "year": 230,
+      "startYear": 220,
+      "endYear": 280,
+      "subtitle": "三分天下",
+      "description": "魏、蜀、吴并立；通过已收录地点与事件认识三国时期。",
+      "color": "#ba8753",
+      "regimeIds": [
+        "wei",
+        "shu",
+        "wu"
+      ]
+    },
+    {
+      "id": "jin",
+      "label": "晋",
+      "name": "两晋",
+      "year": 280,
+      "startYear": 266,
+      "endYear": 420,
+      "subtitle": "统一与南迁",
+      "description": "从西晋统一的代表截面，回看此后政治重心的变化。",
+      "color": "#a59061",
+      "regimeIds": [
+        "jin-empire"
+      ]
+    },
+    {
+      "id": "nanbei",
+      "label": "南北朝",
+      "name": "南北朝",
+      "year": 500,
+      "startYear": 420,
+      "endYear": 589,
+      "subtitle": "南北相望",
+      "description": "以公元500年为截面，展示北魏与南齐并立。",
+      "color": "#898869",
+      "regimeIds": [
+        "northern-wei",
+        "southern-qi"
+      ]
+    },
+    {
+      "id": "sui",
+      "label": "隋",
+      "name": "隋朝",
+      "year": 609,
+      "startYear": 581,
+      "endYear": 618,
+      "subtitle": "山河重聚",
+      "description": "从统一与运河建设观察隋代的空间联系。",
+      "color": "#a98955",
+      "regimeIds": [
+        "sui-empire"
+      ]
+    },
+    {
+      "id": "tang",
+      "label": "唐",
+      "name": "唐朝",
+      "year": 755,
+      "startYear": 618,
+      "endYear": 907,
+      "subtitle": "山河之间，盛世转折",
+      "description": "以公元755年为入口，探索长安、洛阳与安史之乱。",
+      "color": "#bd7752",
+      "regimeIds": [
+        "tang-empire"
+      ]
+    },
+    {
+      "id": "song",
+      "label": "宋",
+      "name": "宋代诸政权",
+      "year": 1200,
+      "startYear": 960,
+      "endYear": 1279,
+      "subtitle": "并立的山河",
+      "description": "南宋、金、西夏同时存在；不是单一王朝的全国地图。",
+      "color": "#809786",
+      "regimeIds": [
+        "southern-song",
+        "jin-jurchen",
+        "western-xia"
+      ]
+    },
+    {
+      "id": "yuan",
+      "label": "元",
+      "name": "元朝",
+      "year": 1330,
+      "startYear": 1271,
+      "endYear": 1368,
+      "subtitle": "大都与南北",
+      "description": "以公元1330年为截面，连接大都、上都与江南。",
+      "color": "#8b94a7",
+      "regimeIds": [
+        "yuan-empire"
+      ]
+    },
+    {
+      "id": "ming",
+      "label": "明",
+      "name": "明朝",
+      "year": 1582,
+      "startYear": 1368,
+      "endYear": 1644,
+      "subtitle": "两京与天下",
+      "description": "从北京、南京和改革事件认识明代的政治空间。",
+      "color": "#a56c64",
+      "regimeIds": [
+        "ming-empire"
+      ]
+    },
+    {
+      "id": "qing",
+      "label": "清",
+      "name": "清朝",
+      "year": 1820,
+      "startYear": 1636,
+      "endYear": 1912,
+      "subtitle": "清代的城市网络",
+      "description": "以公元1820年为代表截面，浏览清代城市与事件。",
+      "color": "#889782",
+      "regimeIds": [
+        "qing-empire"
+      ]
+    }
+  ],
+  "regimes": [
+    {
+      "id": "qin-empire",
+      "name": "秦",
+      "periodId": "qin",
+      "color": "#b68452",
+      "labelPosition": [
+        110,
+        34
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103,
+              29
+            ],
+            [
+              103,
+              34
+            ],
+            [
+              109,
+              38
+            ],
+            [
+              115,
+              40
+            ],
+            [
+              121,
+              37
+            ],
+            [
+              121,
+              32
+            ],
+            [
+              118,
+              28
+            ],
+            [
+              109,
+              26
+            ],
+            [
+              103,
+              29
+            ]
+          ]
+        ]
+      },
+      "description": "本色块仅为人工简化的交互示意，不可当作考据疆域、实际控制范围或精确国界。参考书目用于历史背景，不能证明这一示意轮廓；同年不同月份的变化尚未建模。",
+      "sourceIds": [
+        "shiji"
+      ],
+      "certainty": "schematic"
+    },
+    {
+      "id": "han-empire",
+      "name": "西汉",
+      "periodId": "han",
+      "color": "#bc7459",
+      "labelPosition": [
+        110,
+        34
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103,
+              29
+            ],
+            [
+              102,
+              33
+            ],
+            [
+              107,
+              38
+            ],
+            [
+              114,
+              41
+            ],
+            [
+              120,
+              40
+            ],
+            [
+              122,
+              35
+            ],
+            [
+              120,
+              29
+            ],
+            [
+              116,
+              25
+            ],
+            [
+              109,
+              24
+            ],
+            [
+              103,
+              29
+            ]
+          ]
+        ]
+      },
+      "description": "本色块仅为人工简化的交互示意，不可当作考据疆域、实际控制范围或精确国界。参考书目用于历史背景，不能证明这一示意轮廓；同年不同月份的变化尚未建模。",
+      "sourceIds": [
+        "hanshu"
+      ],
+      "certainty": "schematic"
+    },
+    {
+      "id": "wei",
+      "name": "魏",
+      "periodId": "sanguo",
+      "color": "#b4946c",
+      "labelPosition": [
+        114,
+        36
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104,
+              34
+            ],
+            [
+              108,
+              39
+            ],
+            [
+              117,
+              42
+            ],
+            [
+              122,
+              39
+            ],
+            [
+              120,
+              34
+            ],
+            [
+              114,
+              32
+            ],
+            [
+              108,
+              33
+            ],
+            [
+              104,
+              34
+            ]
+          ]
+        ]
+      },
+      "description": "本色块仅为人工简化的交互示意，不可当作考据疆域、实际控制范围或精确国界。参考书目用于历史背景，不能证明这一示意轮廓；同年不同月份的变化尚未建模。",
+      "sourceIds": [
+        "sanguozhi"
+      ],
+      "certainty": "schematic"
+    },
+    {
+      "id": "shu",
+      "name": "蜀汉",
+      "periodId": "sanguo",
+      "color": "#829c82",
+      "labelPosition": [
+        104,
+        30
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              100,
+              26
+            ],
+            [
+              99,
+              32
+            ],
+            [
+              105,
+              34
+            ],
+            [
+              108,
+              31
+            ],
+            [
+              107,
+              27
+            ],
+            [
+              103,
+              25
+            ],
+            [
+              100,
+              26
+            ]
+          ]
+        ]
+      },
+      "description": "本色块仅为人工简化的交互示意，不可当作考据疆域、实际控制范围或精确国界。参考书目用于历史背景，不能证明这一示意轮廓；同年不同月份的变化尚未建模。",
+      "sourceIds": [
+        "sanguozhi"
+      ],
+      "certainty": "schematic"
+    },
+    {
+      "id": "wu",
+      "name": "吴",
+      "periodId": "sanguo",
+      "color": "#ae827b",
+      "labelPosition": [
+        115,
+        28
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              108,
+              24
+            ],
+            [
+              108,
+              30
+            ],
+            [
+              114,
+              32
+            ],
+            [
+              120,
+              32
+            ],
+            [
+              122,
+              28
+            ],
+            [
+              118,
+              23
+            ],
+            [
+              112,
+              22
+            ],
+            [
+              108,
+              24
+            ]
+          ]
+        ]
+      },
+      "description": "本色块仅为人工简化的交互示意，不可当作考据疆域、实际控制范围或精确国界。参考书目用于历史背景，不能证明这一示意轮廓；同年不同月份的变化尚未建模。",
+      "sourceIds": [
+        "sanguozhi"
+      ],
+      "certainty": "schematic"
+    },
+    {
+      "id": "jin-empire",
+      "name": "西晋",
+      "periodId": "jin",
+      "color": "#a59061",
+      "labelPosition": [
+        111,
+        34
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103,
+              29
+            ],
+            [
+              102,
+              33
+            ],
+            [
+              107,
+              38
+            ],
+            [
+              114,
+              41
+            ],
+            [
+              120,
+              40
+            ],
+            [
+              122,
+              35
+            ],
+            [
+              120,
+              29
+            ],
+            [
+              116,
+              25
+            ],
+            [
+              109,
+              24
+            ],
+            [
+              103,
+              29
+            ]
+          ]
+        ]
+      },
+      "description": "本色块仅为人工简化的交互示意，不可当作考据疆域、实际控制范围或精确国界。参考书目用于历史背景，不能证明这一示意轮廓；同年不同月份的变化尚未建模。",
+      "sourceIds": [
+        "jinshu"
+      ],
+      "certainty": "schematic"
+    },
+    {
+      "id": "northern-wei",
+      "name": "北魏",
+      "periodId": "nanbei",
+      "color": "#a79778",
+      "labelPosition": [
+        113,
+        36
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104,
+              34
+            ],
+            [
+              108,
+              39
+            ],
+            [
+              117,
+              42
+            ],
+            [
+              122,
+              39
+            ],
+            [
+              120,
+              34
+            ],
+            [
+              114,
+              32
+            ],
+            [
+              108,
+              33
+            ],
+            [
+              104,
+              34
+            ]
+          ]
+        ]
+      },
+      "description": "本色块仅为人工简化的交互示意，不可当作考据疆域、实际控制范围或精确国界。参考书目用于历史背景，不能证明这一示意轮廓；同年不同月份的变化尚未建模。",
+      "sourceIds": [
+        "tongjian"
+      ],
+      "certainty": "schematic"
+    },
+    {
+      "id": "southern-qi",
+      "name": "南齐",
+      "periodId": "nanbei",
+      "color": "#809d8b",
+      "labelPosition": [
+        115,
+        28
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              106,
+              26
+            ],
+            [
+              105,
+              30
+            ],
+            [
+              111,
+              33
+            ],
+            [
+              118,
+              33
+            ],
+            [
+              121,
+              29
+            ],
+            [
+              116,
+              24
+            ],
+            [
+              110,
+              23
+            ],
+            [
+              106,
+              26
+            ]
+          ]
+        ]
+      },
+      "description": "本色块仅为人工简化的交互示意，不可当作考据疆域、实际控制范围或精确国界。参考书目用于历史背景，不能证明这一示意轮廓；同年不同月份的变化尚未建模。",
+      "sourceIds": [
+        "tongjian"
+      ],
+      "certainty": "schematic"
+    },
+    {
+      "id": "sui-empire",
+      "name": "隋",
+      "periodId": "sui",
+      "color": "#a98955",
+      "labelPosition": [
+        110,
+        34
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103,
+              29
+            ],
+            [
+              102,
+              33
+            ],
+            [
+              107,
+              38
+            ],
+            [
+              114,
+              41
+            ],
+            [
+              120,
+              40
+            ],
+            [
+              122,
+              35
+            ],
+            [
+              120,
+              29
+            ],
+            [
+              116,
+              25
+            ],
+            [
+              109,
+              24
+            ],
+            [
+              103,
+              29
+            ]
+          ]
+        ]
+      },
+      "description": "本色块仅为人工简化的交互示意，不可当作考据疆域、实际控制范围或精确国界。参考书目用于历史背景，不能证明这一示意轮廓；同年不同月份的变化尚未建模。",
+      "sourceIds": [
+        "suishu"
+      ],
+      "certainty": "schematic"
+    },
+    {
+      "id": "tang-empire",
+      "name": "唐",
+      "periodId": "tang",
+      "color": "#bd7752",
+      "labelPosition": [
+        109,
+        35
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97,
+              34
+            ],
+            [
+              100,
+              39
+            ],
+            [
+              108,
+              42
+            ],
+            [
+              117,
+              42
+            ],
+            [
+              123,
+              39
+            ],
+            [
+              121,
+              34
+            ],
+            [
+              120,
+              29
+            ],
+            [
+              115,
+              24
+            ],
+            [
+              108,
+              23
+            ],
+            [
+              102,
+              29
+            ],
+            [
+              97,
+              34
+            ]
+          ]
+        ]
+      },
+      "description": "本色块仅为人工简化的交互示意，不可当作考据疆域、实际控制范围或精确国界。参考书目用于历史背景，不能证明这一示意轮廓；同年不同月份的变化尚未建模。",
+      "sourceIds": [
+        "jiutangshu"
+      ],
+      "certainty": "schematic"
+    },
+    {
+      "id": "southern-song",
+      "name": "南宋",
+      "periodId": "song",
+      "color": "#7c9b89",
+      "labelPosition": [
+        115,
+        28
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103,
+              27
+            ],
+            [
+              103,
+              32
+            ],
+            [
+              108,
+              33
+            ],
+            [
+              112,
+              31
+            ],
+            [
+              118,
+              33
+            ],
+            [
+              122,
+              30
+            ],
+            [
+              119,
+              25
+            ],
+            [
+              111,
+              23
+            ],
+            [
+              106,
+              24
+            ],
+            [
+              103,
+              27
+            ]
+          ]
+        ]
+      },
+      "description": "本色块仅为人工简化的交互示意，不可当作考据疆域、实际控制范围或精确国界。参考书目用于历史背景，不能证明这一示意轮廓；同年不同月份的变化尚未建模。",
+      "sourceIds": [
+        "songshi"
+      ],
+      "certainty": "schematic"
+    },
+    {
+      "id": "jin-jurchen",
+      "name": "金",
+      "periodId": "song",
+      "color": "#ba9d6a",
+      "labelPosition": [
+        116,
+        37
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              108,
+              34
+            ],
+            [
+              109,
+              38
+            ],
+            [
+              116,
+              42
+            ],
+            [
+              123,
+              43
+            ],
+            [
+              125,
+              39
+            ],
+            [
+              121,
+              35
+            ],
+            [
+              119,
+              33
+            ],
+            [
+              114,
+              32
+            ],
+            [
+              108,
+              34
+            ]
+          ]
+        ]
+      },
+      "description": "本色块仅为人工简化的交互示意，不可当作考据疆域、实际控制范围或精确国界。参考书目用于历史背景，不能证明这一示意轮廓；同年不同月份的变化尚未建模。",
+      "sourceIds": [
+        "songshi"
+      ],
+      "certainty": "schematic"
+    },
+    {
+      "id": "western-xia",
+      "name": "西夏",
+      "periodId": "song",
+      "color": "#a588a3",
+      "labelPosition": [
+        105,
+        38
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              98,
+              37
+            ],
+            [
+              101,
+              41
+            ],
+            [
+              106,
+              41
+            ],
+            [
+              108,
+              38
+            ],
+            [
+              106,
+              35
+            ],
+            [
+              102,
+              35
+            ],
+            [
+              98,
+              37
+            ]
+          ]
+        ]
+      },
+      "description": "本色块仅为人工简化的交互示意，不可当作考据疆域、实际控制范围或精确国界。参考书目用于历史背景，不能证明这一示意轮廓；同年不同月份的变化尚未建模。",
+      "sourceIds": [
+        "songshi"
+      ],
+      "certainty": "schematic"
+    },
+    {
+      "id": "yuan-empire",
+      "name": "元",
+      "periodId": "yuan",
+      "color": "#8b94a7",
+      "labelPosition": [
+        110,
+        35
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              98,
+              29
+            ],
+            [
+              97,
+              37
+            ],
+            [
+              104,
+              43
+            ],
+            [
+              115,
+              46
+            ],
+            [
+              126,
+              44
+            ],
+            [
+              129,
+              39
+            ],
+            [
+              121,
+              33
+            ],
+            [
+              121,
+              28
+            ],
+            [
+              114,
+              23
+            ],
+            [
+              104,
+              24
+            ],
+            [
+              98,
+              29
+            ]
+          ]
+        ]
+      },
+      "description": "本色块仅为人工简化的交互示意，不可当作考据疆域、实际控制范围或精确国界。参考书目用于历史背景，不能证明这一示意轮廓；同年不同月份的变化尚未建模。",
+      "sourceIds": [
+        "yuanshi"
+      ],
+      "certainty": "schematic"
+    },
+    {
+      "id": "ming-empire",
+      "name": "明",
+      "periodId": "ming",
+      "color": "#a56c64",
+      "labelPosition": [
+        112,
+        34
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              101,
+              27
+            ],
+            [
+              102,
+              34
+            ],
+            [
+              108,
+              39
+            ],
+            [
+              116,
+              41
+            ],
+            [
+              123,
+              41
+            ],
+            [
+              125,
+              38
+            ],
+            [
+              121,
+              33
+            ],
+            [
+              121,
+              28
+            ],
+            [
+              114,
+              23
+            ],
+            [
+              107,
+              23
+            ],
+            [
+              101,
+              27
+            ]
+          ]
+        ]
+      },
+      "description": "本色块仅为人工简化的交互示意，不可当作考据疆域、实际控制范围或精确国界。参考书目用于历史背景，不能证明这一示意轮廓；同年不同月份的变化尚未建模。",
+      "sourceIds": [
+        "mingshi"
+      ],
+      "certainty": "schematic"
+    },
+    {
+      "id": "qing-empire",
+      "name": "清",
+      "periodId": "qing",
+      "color": "#889782",
+      "labelPosition": [
+        109,
+        36
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91,
+              30
+            ],
+            [
+              87,
+              39
+            ],
+            [
+              94,
+              46
+            ],
+            [
+              109,
+              49
+            ],
+            [
+              121,
+              50
+            ],
+            [
+              132,
+              46
+            ],
+            [
+              134,
+              41
+            ],
+            [
+              125,
+              38
+            ],
+            [
+              121,
+              32
+            ],
+            [
+              121,
+              27
+            ],
+            [
+              114,
+              22
+            ],
+            [
+              104,
+              24
+            ],
+            [
+              97,
+              28
+            ],
+            [
+              91,
+              30
+            ]
+          ]
+        ]
+      },
+      "description": "本色块仅为人工简化的交互示意，不可当作考据疆域、实际控制范围或精确国界。参考书目用于历史背景，不能证明这一示意轮廓；同年不同月份的变化尚未建模。",
+      "sourceIds": [
+        "qingshigao"
+      ],
+      "certainty": "schematic"
+    }
+  ],
+  "places": [
+    {
+      "id": "changan",
+      "name": "长安",
+      "modernName": "陕西西安地区",
+      "coordinates": [
+        108.94,
+        34.3
+      ],
+      "type": "city",
+      "summary": "长安是西汉、隋、唐的重要都城，也是认识关中政治与交通空间的入口。隋代大兴城后来成为唐长安城；汉长安城、隋唐长安城与明清西安城的城址和范围不同，应分别理解。",
+      "aliases": [
+        "大兴",
+        "京兆",
+        "奉元",
+        "西安"
+      ],
+      "periodIds": [
+        "han",
+        "sanguo",
+        "jin",
+        "nanbei",
+        "sui",
+        "tang",
+        "song",
+        "yuan",
+        "ming",
+        "qing"
+      ],
+      "sourceIds": [
+        "hanshu",
+        "sanguozhi",
+        "jinshu",
+        "tongjian",
+        "suishu",
+        "jiutangshu",
+        "songshi",
+        "yuanshi",
+        "mingshi",
+        "qingshigao",
+        "zizhitongjian-220"
+      ],
+      "nameByPeriod": {
+        "sui": "大兴城",
+        "yuan": "奉元",
+        "ming": "西安",
+        "qing": "西安"
+      },
+      "typeByPeriod": {
+        "han": "capital",
+        "sui": "capital",
+        "tang": "capital"
+      },
+      "evidence": [
+        {
+          "id": "place-changan-text",
+          "sourceId": "zizhitongjian-220",
+          "locator": "卷220·至德二年九月壬寅",
+          "supports": "原文直接出现长安城西及香积寺北，支持长安作为收复战事地点。",
+          "quote": "庚子，諸軍俱發；壬寅，至長安城西，陳於香積寺北澧水之東。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T10:02:13.416376+00:00",
+          "note": "不支持地图坐标或城址精确边界。"
+        }
+      ],
+      "location": {
+        "accuracy": "approximate",
+        "note": "坐标仅用于现代对应地区的近似展示；本次原文核查支持地名与相关事件，不验证经纬度、古城界或遗址位置。",
+        "sourceIds": []
+      }
+    },
+    {
+      "id": "luoyang",
+      "name": "洛阳",
+      "modernName": "河南洛阳地区",
+      "coordinates": [
+        112.45,
+        34.62
+      ],
+      "type": "city",
+      "summary": "洛阳曾是东汉、曹魏、西晋及北魏等政权的都城，隋唐时期又有东都地位。汉魏洛阳城与隋唐洛阳城是不同城址，本入口按洛阳地区关联史事。",
+      "aliases": [
+        "雒阳",
+        "东都"
+      ],
+      "periodIds": [
+        "qin",
+        "han",
+        "sanguo",
+        "jin",
+        "nanbei",
+        "sui",
+        "tang",
+        "song",
+        "yuan",
+        "ming",
+        "qing"
+      ],
+      "sourceIds": [
+        "shiji",
+        "hanshu",
+        "sanguozhi",
+        "jinshu",
+        "tongjian",
+        "suishu",
+        "jiutangshu",
+        "songshi",
+        "yuanshi",
+        "mingshi",
+        "qingshigao",
+        "zizhitongjian-220"
+      ],
+      "nameByPeriod": {
+        "han": "雒阳",
+        "sanguo": "洛阳"
+      },
+      "typeByPeriod": {
+        "sanguo": "capital",
+        "jin": "capital",
+        "nanbei": "capital",
+        "sui": "capital",
+        "tang": "capital"
+      },
+      "evidence": [
+        {
+          "id": "place-luoyang-text",
+          "sourceId": "zizhitongjian-220",
+          "locator": "卷220·至德二年十月·收复东京前",
+          "supports": "原文直称洛阳，支持洛阳为本段事件地点。",
+          "quote": "嚴莊先入洛陽告安慶緒。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T10:02:13.416376+00:00",
+          "note": "只核对地名及事件联系，不支持现代坐标。"
+        }
+      ],
+      "location": {
+        "accuracy": "approximate",
+        "note": "坐标仅用于现代对应地区的近似展示；本次原文核查支持地名与相关事件，不验证经纬度、古城界或遗址位置。",
+        "sourceIds": []
+      }
+    },
+    {
+      "id": "xianyang",
+      "name": "咸阳",
+      "modernName": "陕西咸阳地区",
+      "coordinates": [
+        108.75,
+        34.39
+      ],
+      "type": "city",
+      "summary": "咸阳是秦的都城，秦统一六国后继续以此为政治中心。秦都的历史范围不能等同于现代咸阳市区。",
+      "aliases": [
+        "秦咸阳"
+      ],
+      "periodIds": [
+        "qin"
+      ],
+      "sourceIds": [
+        "shiji"
+      ],
+      "nameByPeriod": {},
+      "typeByPeriod": {
+        "qin": "capital"
+      }
+    },
+    {
+      "id": "beijing",
+      "name": "北京",
+      "modernName": "北京地区",
+      "coordinates": [
+        116.4,
+        39.9
+      ],
+      "type": "city",
+      "summary": "北京地区经历了蓟、幽州、金中都、元大都及明清北京等不同历史阶段。金、元、明、清的都城建设先后改变了这一地区的城市格局，各代城址和范围并不完全重合。",
+      "aliases": [
+        "蓟",
+        "幽州",
+        "燕京",
+        "中都",
+        "大都"
+      ],
+      "periodIds": [
+        "han",
+        "sanguo",
+        "jin",
+        "nanbei",
+        "sui",
+        "tang",
+        "song",
+        "yuan",
+        "ming",
+        "qing"
+      ],
+      "sourceIds": [
+        "hanshu",
+        "sanguozhi",
+        "jinshu",
+        "tongjian",
+        "suishu",
+        "jiutangshu",
+        "songshi",
+        "yuanshi",
+        "mingshi",
+        "qingshigao"
+      ],
+      "nameByPeriod": {
+        "han": "蓟",
+        "sanguo": "蓟",
+        "jin": "蓟",
+        "nanbei": "蓟",
+        "sui": "蓟",
+        "tang": "幽州",
+        "song": "中都",
+        "yuan": "大都"
+      },
+      "typeByPeriod": {
+        "song": "capital",
+        "yuan": "capital",
+        "ming": "capital",
+        "qing": "capital"
+      }
+    },
+    {
+      "id": "kaifeng",
+      "name": "开封",
+      "modernName": "河南开封地区",
+      "coordinates": [
+        114.31,
+        34.8
+      ],
+      "type": "city",
+      "summary": "开封地区连接了战国大梁、秦汉浚仪、隋唐汴州以及五代北宋都城的历史。不同称谓有时指城邑，有时指行政区，不能完全等同。1200年时这里由金统治，并非南宋都城。",
+      "aliases": [
+        "大梁",
+        "浚仪",
+        "汴州",
+        "汴京",
+        "东京"
+      ],
+      "periodIds": [
+        "qin",
+        "han",
+        "sanguo",
+        "jin",
+        "nanbei",
+        "sui",
+        "tang",
+        "song",
+        "yuan",
+        "ming",
+        "qing"
+      ],
+      "sourceIds": [
+        "shiji",
+        "hanshu",
+        "sanguozhi",
+        "jinshu",
+        "tongjian",
+        "suishu",
+        "jiutangshu",
+        "songshi",
+        "yuanshi",
+        "mingshi",
+        "qingshigao"
+      ],
+      "nameByPeriod": {
+        "qin": "大梁",
+        "han": "浚仪",
+        "sanguo": "浚仪",
+        "jin": "浚仪",
+        "nanbei": "浚仪",
+        "sui": "浚仪",
+        "tang": "汴州",
+        "song": "开封"
+      }
+    },
+    {
+      "id": "nanjing",
+      "name": "南京",
+      "modernName": "江苏南京地区",
+      "coordinates": [
+        118.78,
+        32.06
+      ],
+      "type": "city",
+      "summary": "南京地区曾以建业、建康等名称成为孙吴、东晋和南朝的政治中心。元代称集庆，明初建都于此，迁都北京后保留陪都地位。历代城市、行政单位及其范围需分别理解。",
+      "aliases": [
+        "秣陵",
+        "建业",
+        "建康",
+        "江宁",
+        "集庆",
+        "金陵"
+      ],
+      "periodIds": [
+        "han",
+        "sanguo",
+        "jin",
+        "nanbei",
+        "sui",
+        "tang",
+        "song",
+        "yuan",
+        "ming",
+        "qing"
+      ],
+      "sourceIds": [
+        "hanshu",
+        "sanguozhi",
+        "jinshu",
+        "tongjian",
+        "suishu",
+        "jiutangshu",
+        "songshi",
+        "yuanshi",
+        "mingshi",
+        "qingshigao"
+      ],
+      "nameByPeriod": {
+        "han": "秣陵",
+        "sanguo": "建业",
+        "jin": "建业",
+        "nanbei": "建康",
+        "sui": "江宁",
+        "tang": "江宁",
+        "song": "建康",
+        "yuan": "集庆"
+      },
+      "typeByPeriod": {
+        "sanguo": "capital",
+        "nanbei": "capital",
+        "ming": "capital"
+      }
+    },
+    {
+      "id": "hangzhou",
+      "name": "杭州",
+      "modernName": "浙江杭州地区",
+      "coordinates": [
+        120.16,
+        30.25
+      ],
+      "type": "city",
+      "summary": "杭州地区在秦汉时期已有钱唐等历史名称，后来因水陆交通发展成为江南重要城市。南宋时临安府成为朝廷长期驻地，是理解南宋政治与城市生活的入口。",
+      "aliases": [
+        "钱唐",
+        "钱塘",
+        "临安"
+      ],
+      "periodIds": [
+        "han",
+        "sanguo",
+        "jin",
+        "nanbei",
+        "sui",
+        "tang",
+        "song",
+        "yuan",
+        "ming",
+        "qing"
+      ],
+      "sourceIds": [
+        "hanshu",
+        "sanguozhi",
+        "jinshu",
+        "tongjian",
+        "suishu",
+        "jiutangshu",
+        "songshi",
+        "yuanshi",
+        "mingshi",
+        "qingshigao"
+      ],
+      "nameByPeriod": {
+        "han": "钱唐",
+        "sanguo": "钱唐",
+        "jin": "钱唐",
+        "nanbei": "钱唐",
+        "song": "临安"
+      },
+      "typeByPeriod": {
+        "song": "capital"
+      }
+    },
+    {
+      "id": "chengdu",
+      "name": "成都",
+      "modernName": "四川成都地区",
+      "coordinates": [
+        104.07,
+        30.67
+      ],
+      "type": "city",
+      "summary": "成都是成都平原的重要城市，三国时期成为蜀汉都城。安史之乱期间，唐玄宗曾来到蜀地，成都也由此与唐朝的重要政治转折相联系。",
+      "aliases": [
+        "益州"
+      ],
+      "periodIds": [
+        "qin",
+        "han",
+        "sanguo",
+        "jin",
+        "nanbei",
+        "sui",
+        "tang",
+        "song",
+        "yuan",
+        "ming",
+        "qing"
+      ],
+      "sourceIds": [
+        "shiji",
+        "hanshu",
+        "sanguozhi",
+        "jinshu",
+        "tongjian",
+        "suishu",
+        "jiutangshu",
+        "songshi",
+        "yuanshi",
+        "mingshi",
+        "qingshigao",
+        "zizhitongjian-218"
+      ],
+      "nameByPeriod": {},
+      "typeByPeriod": {
+        "sanguo": "capital"
+      },
+      "evidence": [
+        {
+          "id": "place-chengdu-text",
+          "sourceId": "zizhitongjian-218",
+          "locator": "卷218·七月庚辰",
+          "supports": "原文直接记上皇至成都。",
+          "quote": "庚辰，上皇至成都，從官及六軍至者千三百人而已。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T10:02:13.416376+00:00",
+          "note": "不核验唐成都城垣与行宫坐标。"
+        }
+      ],
+      "location": {
+        "accuracy": "approximate",
+        "note": "坐标仅用于现代对应地区的近似展示；本次原文核查支持地名与相关事件，不验证经纬度、古城界或遗址位置。",
+        "sourceIds": []
+      }
+    },
+    {
+      "id": "guangzhou",
+      "name": "广州",
+      "modernName": "广东广州地区",
+      "coordinates": [
+        113.27,
+        23.13
+      ],
+      "type": "city",
+      "summary": "广州地区以番禺等历史名称见于记载，是岭南的重要政治和交通中心。港口与海上往来也是理解这一地区历史的重要线索。",
+      "aliases": [
+        "番禺"
+      ],
+      "periodIds": [
+        "han",
+        "sanguo",
+        "jin",
+        "nanbei",
+        "sui",
+        "tang",
+        "song",
+        "yuan",
+        "ming",
+        "qing"
+      ],
+      "sourceIds": [
+        "hanshu",
+        "sanguozhi",
+        "jinshu",
+        "tongjian",
+        "suishu",
+        "jiutangshu",
+        "songshi",
+        "yuanshi",
+        "mingshi",
+        "qingshigao"
+      ],
+      "nameByPeriod": {
+        "han": "番禺",
+        "sui": "番禺"
+      }
+    },
+    {
+      "id": "yangzhou",
+      "name": "扬州",
+      "modernName": "江苏扬州地区",
+      "coordinates": [
+        119.42,
+        32.4
+      ],
+      "type": "city",
+      "summary": "江都、广陵与后世扬州的城市历史同运河及江淮交通密切相关。古代“扬州”也曾指范围很大的行政区域，不能直接等同于今天的城市。",
+      "aliases": [
+        "江都",
+        "广陵"
+      ],
+      "periodIds": [
+        "han",
+        "sanguo",
+        "jin",
+        "nanbei",
+        "sui",
+        "tang",
+        "song",
+        "yuan",
+        "ming",
+        "qing"
+      ],
+      "sourceIds": [
+        "hanshu",
+        "sanguozhi",
+        "jinshu",
+        "tongjian",
+        "suishu",
+        "jiutangshu",
+        "songshi",
+        "yuanshi",
+        "mingshi",
+        "qingshigao"
+      ],
+      "nameByPeriod": {
+        "han": "江都",
+        "sanguo": "广陵",
+        "jin": "广陵",
+        "nanbei": "广陵",
+        "sui": "江都"
+      }
+    },
+    {
+      "id": "xiangyang",
+      "name": "襄阳",
+      "modernName": "湖北襄阳地区",
+      "coordinates": [
+        112.14,
+        32.04
+      ],
+      "type": "city",
+      "summary": "襄阳位于汉水沿线，是连接中原与江汉地区的重要城市。交通位置使其多次成为南北政权争夺的据点。",
+      "aliases": [],
+      "periodIds": [
+        "han",
+        "sanguo",
+        "jin",
+        "nanbei",
+        "sui",
+        "tang",
+        "song",
+        "yuan",
+        "ming",
+        "qing"
+      ],
+      "sourceIds": [
+        "hanshu",
+        "sanguozhi",
+        "jinshu",
+        "tongjian",
+        "suishu",
+        "jiutangshu",
+        "songshi",
+        "yuanshi",
+        "mingshi",
+        "qingshigao"
+      ],
+      "nameByPeriod": {}
+    },
+    {
+      "id": "jingzhou",
+      "name": "江陵",
+      "modernName": "湖北荆州地区",
+      "coordinates": [
+        112.24,
+        30.34
+      ],
+      "type": "city",
+      "summary": "江陵位于长江中游，是楚汉以来的重要城邑，也曾成为区域政治中心。江陵城与范围更广的荆州行政区是不同概念。",
+      "aliases": [
+        "荆州"
+      ],
+      "periodIds": [
+        "qin",
+        "han",
+        "sanguo",
+        "jin",
+        "nanbei",
+        "sui",
+        "tang",
+        "song",
+        "yuan",
+        "ming",
+        "qing"
+      ],
+      "sourceIds": [
+        "shiji",
+        "hanshu",
+        "sanguozhi",
+        "jinshu",
+        "tongjian",
+        "suishu",
+        "jiutangshu",
+        "songshi",
+        "yuanshi",
+        "mingshi",
+        "qingshigao"
+      ],
+      "nameByPeriod": {}
+    },
+    {
+      "id": "jinyang",
+      "name": "晋阳",
+      "modernName": "山西太原地区",
+      "coordinates": [
+        112.45,
+        37.73
+      ],
+      "type": "city",
+      "summary": "晋阳是山西地区的重要古城，隋唐时期与太原地区的政治活动联系密切。晋阳古城与后世太原城并非同一城址，应分别理解。",
+      "aliases": [
+        "太原"
+      ],
+      "periodIds": [
+        "qin",
+        "han",
+        "sanguo",
+        "jin",
+        "nanbei",
+        "sui",
+        "tang",
+        "song",
+        "yuan",
+        "ming",
+        "qing"
+      ],
+      "sourceIds": [
+        "shiji",
+        "hanshu",
+        "sanguozhi",
+        "jinshu",
+        "tongjian",
+        "suishu",
+        "jiutangshu",
+        "songshi",
+        "yuanshi",
+        "mingshi",
+        "qingshigao"
+      ],
+      "nameByPeriod": {
+        "song": "太原",
+        "yuan": "太原",
+        "ming": "太原",
+        "qing": "太原"
+      }
+    },
+    {
+      "id": "datong",
+      "name": "平城",
+      "modernName": "山西大同地区",
+      "coordinates": [
+        113.3,
+        40.08
+      ],
+      "type": "city",
+      "summary": "平城曾是北魏都城，494年北魏迁都洛阳。后世大同仍是北方重要城市，但各时期的政治地位与城市范围有所变化。",
+      "aliases": [
+        "大同",
+        "云州",
+        "西京"
+      ],
+      "periodIds": [
+        "han",
+        "sanguo",
+        "jin",
+        "nanbei",
+        "sui",
+        "tang",
+        "song",
+        "yuan",
+        "ming",
+        "qing"
+      ],
+      "sourceIds": [
+        "hanshu",
+        "sanguozhi",
+        "jinshu",
+        "tongjian",
+        "suishu",
+        "jiutangshu",
+        "songshi",
+        "yuanshi",
+        "mingshi",
+        "qingshigao"
+      ],
+      "nameByPeriod": {
+        "sui": "云内地区",
+        "tang": "云州",
+        "song": "西京大同府",
+        "yuan": "大同",
+        "ming": "大同",
+        "qing": "大同"
+      }
+    },
+    {
+      "id": "linzi",
+      "name": "临淄",
+      "modernName": "山东淄博临淄地区",
+      "coordinates": [
+        118.31,
+        36.82
+      ],
+      "type": "city",
+      "summary": "临淄是战国齐国都城所在地区，秦汉以后仍是山东的重要历史城邑。古城遗址与现代城区并不重合。",
+      "aliases": [],
+      "periodIds": [
+        "qin",
+        "han",
+        "sanguo",
+        "jin",
+        "nanbei",
+        "sui",
+        "tang",
+        "song",
+        "yuan",
+        "ming",
+        "qing"
+      ],
+      "sourceIds": [
+        "shiji",
+        "hanshu",
+        "sanguozhi",
+        "jinshu",
+        "tongjian",
+        "suishu",
+        "jiutangshu",
+        "songshi",
+        "yuanshi",
+        "mingshi",
+        "qingshigao"
+      ],
+      "nameByPeriod": {}
+    },
+    {
+      "id": "handan",
+      "name": "邯郸",
+      "modernName": "河北邯郸地区",
+      "coordinates": [
+        114.49,
+        36.61
+      ],
+      "type": "city",
+      "summary": "邯郸曾是战国赵国都城，秦统一过程中成为重要战事地点。秦汉以后的城邑历史继续延续，但城市范围随时代变化。",
+      "aliases": [],
+      "periodIds": [
+        "qin",
+        "han",
+        "sanguo",
+        "jin",
+        "nanbei",
+        "sui",
+        "tang",
+        "song",
+        "yuan",
+        "ming",
+        "qing"
+      ],
+      "sourceIds": [
+        "shiji",
+        "hanshu",
+        "sanguozhi",
+        "jinshu",
+        "tongjian",
+        "suishu",
+        "jiutangshu",
+        "songshi",
+        "yuanshi",
+        "mingshi",
+        "qingshigao"
+      ],
+      "nameByPeriod": {}
+    },
+    {
+      "id": "tongguan",
+      "name": "潼关",
+      "modernName": "陕西潼关地区",
+      "coordinates": [
+        110.25,
+        34.55
+      ],
+      "type": "pass",
+      "summary": "关中东部的关隘入口。历代关址有所变化，当前标记仅为地区示意。",
+      "aliases": [],
+      "periodIds": [
+        "sanguo",
+        "jin",
+        "nanbei",
+        "sui",
+        "tang",
+        "song",
+        "yuan",
+        "ming",
+        "qing"
+      ],
+      "sourceIds": [
+        "sanguozhi",
+        "jinshu",
+        "tongjian",
+        "suishu",
+        "jiutangshu",
+        "songshi",
+        "yuanshi",
+        "mingshi",
+        "qingshigao",
+        "zizhitongjian-218"
+      ],
+      "nameByPeriod": {},
+      "evidence": [
+        {
+          "id": "place-tongguan-text",
+          "sourceId": "zizhitongjian-218",
+          "locator": "卷218·六月辛卯",
+          "supports": "原文直接记潼关被攻取。",
+          "quote": "辛卯，乾祐進攻潼關，克之。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T10:02:13.416376+00:00",
+          "note": "不核验历代关址变迁。"
+        }
+      ],
+      "location": {
+        "accuracy": "approximate",
+        "note": "坐标仅用于现代对应地区的近似展示；本次原文核查支持地名与相关事件，不验证经纬度、古城界或遗址位置。",
+        "sourceIds": []
+      }
+    },
+    {
+      "id": "fanyang",
+      "name": "范阳",
+      "modernName": "北京西南地区",
+      "coordinates": [
+        116.35,
+        39.88
+      ],
+      "type": "city",
+      "summary": "安史之乱起兵叙事中的范阳与幽州、蓟城相联系。范阳也用于不同层级的地名；本专题使用北京西南地区的近似入口，不等同于所有记载中的范阳县。",
+      "aliases": [
+        "涿郡",
+        "涿州"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "sourceIds": [
+        "jiutangshu",
+        "zizhitongjian-217"
+      ],
+      "nameByPeriod": {},
+      "evidence": [
+        {
+          "id": "place-fanyang-text",
+          "sourceId": "zizhitongjian-217",
+          "locator": "卷217·天宝十四年十一月甲子后",
+          "supports": "原文将范阳起兵与次日出蓟城南联系；支持专题里的幽州地区入口。",
+          "quote": "詰朝，祿山出薊城南，大閱誓眾，以討楊國忠為名，榜軍中曰：",
+          "status": "checked",
+          "checkedAt": "2026-09-24T10:02:13.416376+00:00",
+          "note": "只支持历史地名与事件关联，不能据此确定现代起兵点；范阳亦用于不同层级的历史地名。"
+        }
+      ],
+      "location": {
+        "accuracy": "approximate",
+        "note": "坐标仅用于现代对应地区的近似展示；本次原文核查支持地名与相关事件，不验证经纬度、古城界或遗址位置。",
+        "sourceIds": []
+      }
+    },
+    {
+      "id": "yinchuan",
+      "name": "兴庆府",
+      "modernName": "宁夏银川地区",
+      "coordinates": [
+        106.23,
+        38.49
+      ],
+      "type": "city",
+      "summary": "西夏都城兴庆府所在地区；城址细节和历史名称仍需专题核验。",
+      "aliases": [
+        "银川",
+        "宁夏",
+        "中兴"
+      ],
+      "periodIds": [
+        "song",
+        "yuan",
+        "ming",
+        "qing"
+      ],
+      "sourceIds": [
+        "songshi",
+        "yuanshi",
+        "mingshi",
+        "qingshigao"
+      ],
+      "nameByPeriod": {
+        "yuan": "中兴路",
+        "ming": "宁夏",
+        "qing": "宁夏"
+      },
+      "typeByPeriod": {
+        "song": "capital"
+      }
+    },
+    {
+      "id": "shangdu",
+      "name": "上都",
+      "modernName": "内蒙古正蓝旗上都遗址地区",
+      "coordinates": [
+        116.18,
+        42.36
+      ],
+      "type": "city",
+      "summary": "元上都与大都是理解元代两都制度的重要地点。",
+      "aliases": [
+        "开平"
+      ],
+      "periodIds": [
+        "yuan"
+      ],
+      "sourceIds": [
+        "yuanshi"
+      ],
+      "nameByPeriod": {},
+      "typeByPeriod": {
+        "yuan": "capital"
+      }
+    },
+    {
+      "id": "quanzhou",
+      "name": "泉州",
+      "modernName": "福建泉州地区",
+      "coordinates": [
+        118.68,
+        24.88
+      ],
+      "type": "city",
+      "summary": "泉州是唐宋元时期的重要海港，商贸与海上交通带来了多元的城市文化。宋元时期的港口活动，是理解这座城市历史的重要线索。",
+      "aliases": [
+        "刺桐"
+      ],
+      "periodIds": [
+        "tang",
+        "song",
+        "yuan",
+        "ming",
+        "qing"
+      ],
+      "sourceIds": [
+        "jiutangshu",
+        "songshi",
+        "yuanshi",
+        "mingshi",
+        "qingshigao"
+      ],
+      "nameByPeriod": {}
+    },
+    {
+      "id": "dali",
+      "name": "大理",
+      "modernName": "云南大理地区",
+      "coordinates": [
+        100.17,
+        25.69
+      ],
+      "type": "city",
+      "summary": "南诏太和城、后来的羊苴咩城、大理国都城与明清大理城并非完全相同的城址。本版以现代大理地区的近似点连接，不能将其理解为跨朝代精确不变的首都坐标。",
+      "aliases": [
+        "羊苴咩城",
+        "太和城"
+      ],
+      "periodIds": [
+        "tang",
+        "song",
+        "yuan",
+        "ming",
+        "qing"
+      ],
+      "sourceIds": [
+        "jiutangshu",
+        "songshi",
+        "yuanshi",
+        "mingshi",
+        "qingshigao"
+      ],
+      "nameByPeriod": {
+        "tang": "太和城"
+      },
+      "typeByPeriod": {
+        "tang": "capital",
+        "song": "capital"
+      }
+    },
+    {
+      "id": "dunhuang",
+      "name": "敦煌",
+      "modernName": "甘肃敦煌地区",
+      "coordinates": [
+        94.66,
+        40.14
+      ],
+      "type": "city",
+      "summary": "敦煌位于河西走廊西端，是中原与西域之间的重要交通节点。其政权归属和地区名称随时期变化，不能仅根据示意色块判断归属。",
+      "aliases": [
+        "沙州"
+      ],
+      "periodIds": [
+        "han",
+        "sanguo",
+        "jin",
+        "nanbei",
+        "sui",
+        "tang",
+        "song",
+        "yuan",
+        "qing"
+      ],
+      "sourceIds": [
+        "hanshu",
+        "sanguozhi",
+        "jinshu",
+        "tongjian",
+        "suishu",
+        "jiutangshu",
+        "songshi",
+        "yuanshi",
+        "qingshigao"
+      ],
+      "nameByPeriod": {}
+    },
+    {
+      "id": "mawei",
+      "name": "马嵬驿",
+      "modernName": "陕西兴平马嵬一带",
+      "coordinates": [
+        108.49,
+        34.33
+      ],
+      "type": "city",
+      "summary": "玄宗西行途中发生马嵬之变的驿站。本入口用于理解记载中的停驻地点，未核定唐驿站遗址。",
+      "aliases": [
+        "马嵬"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "sourceIds": [
+        "zizhitongjian-218"
+      ],
+      "evidence": [
+        {
+          "id": "place-mawei-text",
+          "sourceId": "zizhitongjian-218",
+          "locator": "卷218·六月丙申",
+          "supports": "原文直接出现马嵬驿，并作为停驻地点。",
+          "quote": "丙申，至馬嵬驛，將士饑疲，皆憤怒。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T10:02:13.416376+00:00",
+          "note": "不核验现存景点与唐驿遗址的对应。"
+        }
+      ],
+      "location": {
+        "accuracy": "approximate",
+        "note": "坐标仅用于现代对应地区的近似展示；本次原文核查支持地名与相关事件，不验证经纬度、古城界或遗址位置。",
+        "sourceIds": []
+      }
+    },
+    {
+      "id": "lingwu",
+      "name": "灵武",
+      "modernName": "宁夏吴忠—灵武地区",
+      "coordinates": [
+        106.2,
+        38.0
+      ],
+      "type": "city",
+      "summary": "唐肃宗在灵武即位，并在此组织军事力量。历史灵州、灵武与今天同名行政区并不完全等同，不能直接以现代市中心代替古城南楼。",
+      "aliases": [
+        "灵州"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "sourceIds": [
+        "zizhitongjian-218"
+      ],
+      "evidence": [
+        {
+          "id": "place-lingwu-text",
+          "sourceId": "zizhitongjian-218",
+          "locator": "卷218·七月甲子条",
+          "supports": "原文记肃宗即位于灵武城南楼。",
+          "quote": "是日，肅宗即位於靈武城南樓，群臣舞蹈，上流涕歔欷。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T10:02:13.416376+00:00",
+          "note": "不核验唐灵武城与今天灵武市的空间对应。"
+        }
+      ],
+      "location": {
+        "accuracy": "approximate",
+        "note": "坐标仅用于现代对应地区的近似展示；本次原文核查支持地名与相关事件，不验证经纬度、古城界或遗址位置。",
+        "sourceIds": []
+      }
+    },
+    {
+      "id": "suiyang",
+      "name": "睢阳",
+      "modernName": "河南商丘睢阳地区",
+      "coordinates": [
+        115.65,
+        34.38
+      ],
+      "type": "city",
+      "summary": "张巡、许远守城的睢阳，是战争中河南东部的重要据点。唐代城址范围仍需专门核定。",
+      "aliases": [
+        "宋州"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "sourceIds": [
+        "zizhitongjian-220"
+      ],
+      "evidence": [
+        {
+          "id": "place-suiyang-text",
+          "sourceId": "zizhitongjian-220",
+          "locator": "卷220·十月睢阳围城条",
+          "supports": "原文直接记尹子奇围睢阳。",
+          "quote": "尹子奇久圍睢陽，城中食盡，議棄城東走",
+          "status": "checked",
+          "checkedAt": "2026-09-24T10:02:13.416376+00:00",
+          "note": "只支持历史名称及围城事件，不支持唐城精确位置。"
+        }
+      ],
+      "location": {
+        "accuracy": "approximate",
+        "note": "坐标仅用于现代对应地区的近似展示；本次原文核查支持地名与相关事件，不验证经纬度、古城界或遗址位置。",
+        "sourceIds": []
+      }
+    },
+    {
+      "id": "xiangzhou",
+      "name": "相州",
+      "modernName": "河南安阳地区",
+      "coordinates": [
+        114.39,
+        36.1
+      ],
+      "type": "city",
+      "summary": "相州行营之战与唐代邺郡的围城叙事相连。本入口按安阳地区展示，不把唐代邺郡与三国邺城遗址直接混为一处。",
+      "aliases": [
+        "邺郡",
+        "安阳"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "sourceIds": [
+        "jiutangshu-10"
+      ],
+      "evidence": [
+        {
+          "id": "place-xiangzhou-text",
+          "sourceId": "jiutangshu-10",
+          "locator": "卷10·肃宗·乾元二年三月壬申",
+          "supports": "原文直接记相州行营与交战。",
+          "quote": "壬申，相州行營郭子儀等與賊史思明戰，王師不利，九節度兵潰，子儀斷河陽橋，以餘眾保東京。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T10:02:13.416376+00:00",
+          "note": "未据本条证明现代安阳坐标，也未将唐代相州与其他时代邺城等同。"
+        }
+      ],
+      "location": {
+        "accuracy": "approximate",
+        "note": "坐标仅用于现代对应地区的近似展示；本次原文核查支持地名与相关事件，不验证经纬度、古城界或遗址位置。",
+        "sourceIds": []
+      }
+    },
+    {
+      "id": "heyang",
+      "name": "河阳",
+      "modernName": "河南孟州—孟津黄河沿线",
+      "coordinates": [
+        112.8,
+        34.87
+      ],
+      "type": "city",
+      "summary": "河阳之战围绕黄河两岸与河中城防展开。古河道及三城位置不能依据现代河流线直接推定。",
+      "aliases": [
+        "河阳三城"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "sourceIds": [
+        "zizhitongjian-221"
+      ],
+      "evidence": [
+        {
+          "id": "place-heyang-text",
+          "sourceId": "zizhitongjian-221",
+          "locator": "卷221·乾元二年十月",
+          "supports": "原文直接记河阳攻防。",
+          "quote": "史思明引兵攻河陽，使驍將劉龍仙詣城下挑戰。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T10:02:13.416376+00:00",
+          "note": "不核验三城、渡口和古黄河的位置。"
+        }
+      ],
+      "location": {
+        "accuracy": "approximate",
+        "note": "坐标仅用于现代对应地区的近似展示；本次原文核查支持地名与相关事件，不验证经纬度、古城界或遗址位置。",
+        "sourceIds": []
+      }
+    },
+    {
+      "id": "shanzhou",
+      "name": "陕州",
+      "modernName": "河南三门峡地区",
+      "coordinates": [
+        111.19287,
+        34.78081
+      ],
+      "type": "city",
+      "summary": "陕州位于洛阳以西、潼关以东，是观察关中和河南联系的重要入口。《通鉴》记载来瑱出任陕州刺史，也记当地战事。",
+      "aliases": [
+        "陕郡",
+        "三门峡"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "sourceIds": [
+        "zizhitongjian-221",
+        "geonames-modern-cities"
+      ],
+      "evidence": [
+        {
+          "id": "place-shanzhou-text",
+          "sourceId": "zizhitongjian-221",
+          "locator": "卷221·乾元二年·来瑱任陕州刺史条",
+          "supports": "原文直接记陕州刺史及陕、虢、华州军务，支持唐代陕州名称出现。",
+          "quote": "以河西節度使來瑱行陝州刺史，充陝、虢、華州節度使。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T11:04:48.163401+00:00",
+          "note": "只核对引文中的名称和叙事，不核验古今城址对应、行政边界或现代经纬度。入口使用唐代通行名称，不据此断定755年当天的州郡称谓。"
+        }
+      ],
+      "location": {
+        "accuracy": "approximate",
+        "note": "取GeoNames现代Sanmenxia地区点（记录1796669）。与唐代城址的偏移距离未测定；只作近似地区入口，不表示古城中心或边界。",
+        "sourceIds": [
+          "geonames-modern-cities"
+        ]
+      }
+    },
+    {
+      "id": "zhengzhou",
+      "name": "郑州",
+      "modernName": "河南郑州地区",
+      "coordinates": [
+        113.663147,
+        34.756942
+      ],
+      "type": "city",
+      "summary": "《通鉴》记史思明西攻郑州，随后叙述李光弼在洛阳与河阳之间的军事部署。它是认识河南中部战局的一个入口。",
+      "aliases": [
+        "荥阳郡",
+        "管城"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "sourceIds": [
+        "zizhitongjian-221",
+        "natural-earth-modern-cities"
+      ],
+      "evidence": [
+        {
+          "id": "place-zhengzhou-text",
+          "sourceId": "zizhitongjian-221",
+          "locator": "卷221·乾元二年九月·史思明攻郑州条",
+          "supports": "原文直接记史思明攻郑州，支持唐代郑州与本次战事的关联。",
+          "quote": "思明乘勝西攻鄭州。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T11:04:48.163401+00:00",
+          "note": "只核对引文中的名称和叙事，不核验古今城址对应、行政边界或现代经纬度。入口使用唐代通行名称，不据此断定755年当天的州郡称谓。"
+        }
+      ],
+      "location": {
+        "accuracy": "approximate",
+        "note": "取Natural Earth现代Zhengzhou地区点（记录1159151375）。与唐代城址的偏移距离未测定；只作近似地区入口，不表示古城中心或边界。",
+        "sourceIds": [
+          "natural-earth-modern-cities"
+        ]
+      }
+    },
+    {
+      "id": "huazhou-hua",
+      "name": "滑州",
+      "modernName": "河南滑县道口地区",
+      "coordinates": [
+        114.51593,
+        35.56895
+      ],
+      "type": "city",
+      "summary": "滑州在唐代军事部署中多次见于记载。《旧唐书》记许叔冀兼滑州刺史，并领青滑六州军务。",
+      "aliases": [
+        "滑县",
+        "道口",
+        "灵昌郡"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "sourceIds": [
+        "jiutangshu-10",
+        "geonames-modern-cities"
+      ],
+      "evidence": [
+        {
+          "id": "place-huazhou-hua-text",
+          "sourceId": "jiutangshu-10",
+          "locator": "卷10·肃宗·八月壬寅授官条",
+          "supports": "原文记许叔冀兼滑州刺史，支持唐代滑州名称出现；不与华州混同。",
+          "quote": "以青州刺史許叔冀兼滑州刺史，充青滑六州節度使。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T11:04:48.163401+00:00",
+          "note": "只核对引文中的名称和叙事，不核验古今城址对应、行政边界或现代经纬度。入口使用唐代通行名称，不据此断定755年当天的州郡称谓。"
+        }
+      ],
+      "location": {
+        "accuracy": "approximate",
+        "note": "取GeoNames现代Daokou地区点（记录1813775）。与唐代城址的偏移距离未测定；只作近似地区入口，不表示古城中心或边界。",
+        "sourceIds": [
+          "geonames-modern-cities"
+        ]
+      }
+    },
+    {
+      "id": "huaizhou",
+      "name": "怀州",
+      "modernName": "河南沁阳地区",
+      "coordinates": [
+        112.92805,
+        35.09061
+      ],
+      "type": "city",
+      "summary": "《旧唐书》记荔非元礼担任怀州刺史，相关叙事与河阳一带的战事相连。本入口用于浏览河内地区的唐代军事地理。",
+      "aliases": [
+        "沁阳",
+        "河内郡"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "sourceIds": [
+        "jiutangshu-10",
+        "geonames-modern-cities"
+      ],
+      "evidence": [
+        {
+          "id": "place-huaizhou-text",
+          "sourceId": "jiutangshu-10",
+          "locator": "卷10·肃宗·乾元二年三月辛卯",
+          "supports": "原文记荔非元礼为怀州刺史，支持唐代怀州名称出现。",
+          "quote": "辛卯，以衛尉卿荔非元禮為懷州刺史，權鎮西、北庭行營節度使",
+          "status": "checked",
+          "checkedAt": "2026-09-24T11:04:48.163401+00:00",
+          "note": "只核对引文中的名称和叙事，不核验古今城址对应、行政边界或现代经纬度。入口使用唐代通行名称，不据此断定755年当天的州郡称谓。"
+        }
+      ],
+      "location": {
+        "accuracy": "approximate",
+        "note": "取GeoNames现代Qinyang地区点（记录1797557）。与唐代城址的偏移距离未测定；只作近似地区入口，不表示古城中心或边界。",
+        "sourceIds": [
+          "geonames-modern-cities"
+        ]
+      }
+    },
+    {
+      "id": "hengzhou",
+      "name": "恒州",
+      "modernName": "河北正定地区",
+      "coordinates": [
+        114.56556,
+        38.14501
+      ],
+      "type": "city",
+      "summary": "《通鉴》将常山太守与恒州刺史的任命连写，并提到井陉道路。本入口按正定地区关联这些记载，古今行政范围仍须分别理解。",
+      "aliases": [
+        "常山",
+        "常山郡",
+        "正定"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "sourceIds": [
+        "zizhitongjian-220",
+        "geonames-modern-cities"
+      ],
+      "evidence": [
+        {
+          "id": "place-hengzhou-text",
+          "sourceId": "zizhitongjian-220",
+          "locator": "卷220·史思明归降后·常山与恒州授官条",
+          "supports": "原文同段出现常山太守、恒州刺史与井陉路，支持唐代恒州名称及相关事件。",
+          "quote": "先是，慶緒以張忠志為常山太守，思明召忠志還范陽，以其將薛萼攝恆州刺史，開井陘路，招趙郡太守陸濟，降之；",
+          "status": "checked",
+          "checkedAt": "2026-09-24T11:04:48.163401+00:00",
+          "note": "只核对引文中的名称和叙事，不核验古今城址对应、行政边界或现代经纬度。入口使用唐代通行名称，不据此断定755年当天的州郡称谓。"
+        }
+      ],
+      "location": {
+        "accuracy": "approximate",
+        "note": "取GeoNames现代Zhengding地区点（记录1784712）。与唐代城址的偏移距离未测定；只作近似地区入口，不表示古城中心或边界。",
+        "sourceIds": [
+          "geonames-modern-cities"
+        ]
+      }
+    },
+    {
+      "id": "beizhou",
+      "name": "贝州",
+      "modernName": "河北清河葛仙庄地区",
+      "coordinates": [
+        115.66174,
+        37.07119
+      ],
+      "type": "city",
+      "summary": "史朝义北走时曾到贝州，与部将会合。《通鉴》随后叙述唐军追至临清，串联起河北东部的战事。",
+      "aliases": [
+        "清河",
+        "清河郡",
+        "葛仙庄"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "sourceIds": [
+        "zizhitongjian-222",
+        "geonames-modern-cities"
+      ],
+      "evidence": [
+        {
+          "id": "place-beizhou-text",
+          "sourceId": "zizhitongjian-222",
+          "locator": "卷222·宝应元年·史朝义北走贝州条",
+          "supports": "原文直接记史朝义至贝州，支持唐代贝州名称及事件关联。",
+          "quote": "史朝義走至貝州，與其大將薛忠義等兩節度合，僕固瑒追之至臨清。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T11:04:48.163401+00:00",
+          "note": "只核对引文中的名称和叙事，不核验古今城址对应、行政边界或现代经纬度。入口使用唐代通行名称，不据此断定755年当天的州郡称谓。"
+        }
+      ],
+      "location": {
+        "accuracy": "approximate",
+        "note": "取GeoNames现代Gexianzhuang地区点（记录1810178）。与唐代城址的偏移距离未测定；只作近似地区入口，不表示古城中心或边界。",
+        "sourceIds": [
+          "geonames-modern-cities"
+        ]
+      }
+    },
+    {
+      "id": "pingyuan",
+      "name": "平原郡",
+      "modernName": "山东德州陵城地区",
+      "coordinates": [
+        116.57045,
+        37.33501
+      ],
+      "type": "city",
+      "summary": "颜真卿任平原太守时修缮城防、储备粮食，后来起兵抵抗安禄山。这里指史料中的平原郡入口，不把现代平原县名直接等同于郡治。",
+      "aliases": [
+        "平原",
+        "安德",
+        "陵城"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "sourceIds": [
+        "zizhitongjian-217",
+        "geonames-modern-cities"
+      ],
+      "evidence": [
+        {
+          "id": "place-pingyuan-text",
+          "sourceId": "zizhitongjian-217",
+          "locator": "卷217·天宝十四年·颜真卿预备城守条",
+          "supports": "原文记颜真卿为平原太守并准备城守，支持唐代平原郡名称及城防叙事。",
+          "quote": "初，平原太守顏真卿知祿山且反，因霖雨，完城浚壕，料丁壯，實倉廩。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T11:04:48.163401+00:00",
+          "note": "只核对引文中的名称和叙事，不核验古今城址对应、行政边界或现代经纬度。入口使用唐代通行名称，不据此断定755年当天的州郡称谓。"
+        }
+      ],
+      "location": {
+        "accuracy": "approximate",
+        "note": "取GeoNames现代Lingcheng地区点（记录1803437）。与唐代城址的偏移距离未测定；只作近似地区入口，不表示古城中心或边界。",
+        "sourceIds": [
+          "geonames-modern-cities"
+        ]
+      }
+    },
+    {
+      "id": "fuzhou-fu",
+      "name": "鄜州",
+      "modernName": "陕西富县富城地区",
+      "coordinates": [
+        109.36833,
+        35.99139
+      ],
+      "type": "city",
+      "summary": "《通鉴》记鄜州刺史杜冕参与鄜坊节度军务。它与邠宁、丹延等地共同呈现战乱期间关中北部的军事配置。",
+      "aliases": [
+        "富县",
+        "富城",
+        "洛交郡"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "sourceIds": [
+        "zizhitongjian-221",
+        "geonames-modern-cities"
+      ],
+      "evidence": [
+        {
+          "id": "place-fuzhou-fu-text",
+          "sourceId": "zizhitongjian-221",
+          "locator": "卷221·乾元二年·分置鄜坊丹延节度条",
+          "supports": "原文直接记鄜州刺史杜冕，支持唐代鄜州名称出现。",
+          "quote": "以邠州刺史桑如珪領邠寧，鄜州刺史杜冕領鄜坊節度副使，分道招討。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T11:04:48.163401+00:00",
+          "note": "只核对引文中的名称和叙事，不核验古今城址对应、行政边界或现代经纬度。入口使用唐代通行名称，不据此断定755年当天的州郡称谓。"
+        }
+      ],
+      "location": {
+        "accuracy": "approximate",
+        "note": "取GeoNames现代Fucheng地区点（记录1811074）。与唐代城址的偏移距离未测定；只作近似地区入口，不表示古城中心或边界。",
+        "sourceIds": [
+          "geonames-modern-cities"
+        ]
+      }
+    },
+    {
+      "id": "luzhou",
+      "name": "潞州",
+      "modernName": "山西长治地区",
+      "coordinates": [
+        113.105282,
+        36.183875
+      ],
+      "type": "city",
+      "summary": "《旧唐书》记程千里任潞州长史，并参与讨伐安禄山。潞州是了解山西东南部战局的重要入口。",
+      "aliases": [
+        "长治",
+        "上党",
+        "上党郡"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "sourceIds": [
+        "jiutangshu-9",
+        "natural-earth-modern-cities"
+      ],
+      "evidence": [
+        {
+          "id": "place-luzhou-text",
+          "sourceId": "jiutangshu-9",
+          "locator": "卷9·玄宗下·天宝十四载十一月任将讨贼条",
+          "supports": "原文记程千里为潞州长史，支持唐代潞州名称出现。",
+          "quote": "以金吾將軍程千里為潞州長史，並令討賊。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T11:04:48.163401+00:00",
+          "note": "只核对引文中的名称和叙事，不核验古今城址对应、行政边界或现代经纬度。入口使用唐代通行名称，不据此断定755年当天的州郡称谓。"
+        }
+      ],
+      "location": {
+        "accuracy": "approximate",
+        "note": "取Natural Earth现代Changzhi地区点（记录1159140757）。与唐代城址的偏移距离未测定；只作近似地区入口，不表示古城中心或边界。",
+        "sourceIds": [
+          "natural-earth-modern-cities"
+        ]
+      }
+    },
+    {
+      "id": "dengzhou",
+      "name": "邓州",
+      "modernName": "河南邓州地区",
+      "coordinates": [
+        112.080022,
+        32.680368
+      ],
+      "type": "city",
+      "summary": "邓州与鲁炅在安史之乱中的军事活动相连。《通鉴》记以邓州刺史鲁炅领陈、郑、亳军务。",
+      "aliases": [
+        "南阳郡",
+        "穰县"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "sourceIds": [
+        "zizhitongjian-221",
+        "natural-earth-modern-cities"
+      ],
+      "evidence": [
+        {
+          "id": "place-dengzhou-text",
+          "sourceId": "zizhitongjian-221",
+          "locator": "卷221·乾元二年·置陈郑亳节度使条",
+          "supports": "原文记邓州刺史鲁炅，支持唐代邓州名称；未另建可能重叠的南阳郡实体。",
+          "quote": "甲辰，置陳、鄭、亳節度使，以鄧州刺史魯炅為之；",
+          "status": "checked",
+          "checkedAt": "2026-09-24T11:04:48.163401+00:00",
+          "note": "只核对引文中的名称和叙事，不核验古今城址对应、行政边界或现代经纬度。入口使用唐代通行名称，不据此断定755年当天的州郡称谓。"
+        }
+      ],
+      "location": {
+        "accuracy": "approximate",
+        "note": "取Natural Earth现代Dengzhou地区点（记录1159140903）。与唐代城址的偏移距离未测定；只作近似地区入口，不表示古城中心或边界。",
+        "sourceIds": [
+          "natural-earth-modern-cities"
+        ]
+      }
+    },
+    {
+      "id": "xuzhou-xuchang",
+      "name": "许州",
+      "modernName": "河南许昌地区",
+      "coordinates": [
+        113.820019,
+        34.02039
+      ],
+      "type": "city",
+      "summary": "李光弼曾攻取许州，并在城下击败来援的叛军。原文同段也提到颍川太守，展示了河南战场上的城邑争夺。",
+      "aliases": [
+        "许昌",
+        "颍川",
+        "颍川郡"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "sourceIds": [
+        "zizhitongjian-222",
+        "natural-earth-modern-cities"
+      ],
+      "evidence": [
+        {
+          "id": "place-xuzhou-xuchang-text",
+          "sourceId": "zizhitongjian-222",
+          "locator": "卷222·宝应元年·李光弼攻取许州条",
+          "supports": "原文直接记攻取许州及城下战斗；同段出现颍川太守，当前不另建颍川城实体。",
+          "quote": "李光弼拔許州，擒史朝義所署穎川太守李春；朝義將史參救之，丙午，戰於城下，又破之。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T11:04:48.163401+00:00",
+          "note": "只核对引文中的名称和叙事，不核验古今城址对应、行政边界或现代经纬度。入口使用唐代通行名称，不据此断定755年当天的州郡称谓。"
+        }
+      ],
+      "location": {
+        "accuracy": "approximate",
+        "note": "取Natural Earth现代Xuchang地区点（记录1159140893）。与唐代城址的偏移距离未测定；只作近似地区入口，不表示古城中心或边界。",
+        "sourceIds": [
+          "natural-earth-modern-cities"
+        ]
+      }
+    },
+    {
+      "id": "xuzhou-pengcheng",
+      "name": "徐州",
+      "modernName": "江苏徐州地区",
+      "coordinates": [
+        117.178074,
+        34.281958
+      ],
+      "type": "city",
+      "summary": "《通鉴》记李光弼前往徐州，并调动田神功攻击史朝义。这里是观察河南东部与淮北局势的一个入口。",
+      "aliases": [
+        "彭城",
+        "彭城郡"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "sourceIds": [
+        "zizhitongjian-222",
+        "natural-earth-modern-cities"
+      ],
+      "evidence": [
+        {
+          "id": "place-xuzhou-pengcheng-text",
+          "sourceId": "zizhitongjian-222",
+          "locator": "卷222·宝应元年·李光弼赴徐州条",
+          "supports": "同段主语为李光弼；原文直接记赴徐州并调动田神功，支持唐代徐州名称及军事活动。",
+          "quote": "遂徑趣徐州，使兗鄆節度使田神功進擊朝義，大破之。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T11:04:48.163401+00:00",
+          "note": "只核对引文中的名称和叙事，不核验古今城址对应、行政边界或现代经纬度。入口使用唐代通行名称，不据此断定755年当天的州郡称谓。"
+        }
+      ],
+      "location": {
+        "accuracy": "approximate",
+        "note": "取Natural Earth现代Xuzhou地区点（记录1159149147）。与唐代城址的偏移距离未测定；只作近似地区入口，不表示古城中心或边界。",
+        "sourceIds": [
+          "natural-earth-modern-cities"
+        ]
+      }
+    }
+  ],
+  "events": [
+    {
+      "id": "qin-unification",
+      "title": "秦统一六国",
+      "year": -221,
+      "dateLabel": "公元前221年",
+      "summary": "秦完成对六国的兼并，以咸阳为政治中心。",
+      "category": "政治",
+      "placeIds": [
+        "xianyang",
+        "handan",
+        "linzi"
+      ],
+      "personNames": [
+        "秦始皇"
+      ],
+      "sourceIds": [
+        "shiji"
+      ],
+      "periodIds": [
+        "qin"
+      ]
+    },
+    {
+      "id": "qin-book-ban",
+      "title": "秦朝焚书令",
+      "year": -213,
+      "dateLabel": "公元前213年",
+      "summary": "秦廷采纳限制部分书籍流传的建议，这一事件影响了后世对秦代文化政策的讨论。",
+      "category": "文化",
+      "placeIds": [
+        "xianyang"
+      ],
+      "personNames": [
+        "秦始皇",
+        "李斯"
+      ],
+      "sourceIds": [
+        "shiji"
+      ],
+      "periodIds": [
+        "qin"
+      ]
+    },
+    {
+      "id": "zhang-qian",
+      "title": "张骞出使西域",
+      "year": -138,
+      "dateLabel": "公元前138年起",
+      "summary": "张骞从汉朝出发前往西域；初版只标记长安这一叙事入口，没有复原完整路线。",
+      "category": "外交",
+      "placeIds": [
+        "changan"
+      ],
+      "personNames": [
+        "张骞",
+        "汉武帝"
+      ],
+      "sourceIds": [
+        "hanshu"
+      ],
+      "periodIds": [
+        "han"
+      ]
+    },
+    {
+      "id": "eastern-han",
+      "title": "东汉建立",
+      "year": 25,
+      "dateLabel": "公元25年",
+      "summary": "刘秀建立东汉政权，洛阳成为此后东汉的都城。",
+      "category": "建都",
+      "placeIds": [
+        "luoyang"
+      ],
+      "personNames": [
+        "汉光武帝刘秀"
+      ],
+      "sourceIds": [
+        "tongjian"
+      ],
+      "periodIds": [
+        "han"
+      ]
+    },
+    {
+      "id": "wei-founded",
+      "title": "曹魏建立",
+      "year": 220,
+      "dateLabel": "公元220年",
+      "summary": "曹丕代汉称帝，曹魏以洛阳为都城。",
+      "category": "政治",
+      "placeIds": [
+        "luoyang"
+      ],
+      "personNames": [
+        "曹丕"
+      ],
+      "sourceIds": [
+        "sanguozhi"
+      ],
+      "periodIds": [
+        "sanguo"
+      ]
+    },
+    {
+      "id": "wu-capital",
+      "title": "孙吴迁都建业",
+      "year": 229,
+      "dateLabel": "公元229年",
+      "summary": "孙权称帝后将都城从武昌迁至建业。",
+      "category": "迁都",
+      "placeIds": [
+        "nanjing"
+      ],
+      "personNames": [
+        "孙权"
+      ],
+      "sourceIds": [
+        "sanguozhi"
+      ],
+      "periodIds": [
+        "sanguo"
+      ]
+    },
+    {
+      "id": "jin-unification",
+      "title": "西晋灭吴",
+      "year": 280,
+      "dateLabel": "公元280年",
+      "summary": "西晋灭孙吴，结束三国鼎立局面；建业与洛阳是理解这一变化的两个地点。",
+      "category": "战争",
+      "placeIds": [
+        "nanjing",
+        "luoyang"
+      ],
+      "personNames": [
+        "晋武帝司马炎",
+        "孙皓"
+      ],
+      "sourceIds": [
+        "jinshu"
+      ],
+      "periodIds": [
+        "jin"
+      ]
+    },
+    {
+      "id": "eastern-jin",
+      "title": "东晋政权建立",
+      "year": 317,
+      "dateLabel": "公元317年",
+      "summary": "司马睿在建康建立政权，次年称帝，史称东晋。",
+      "category": "政治",
+      "placeIds": [
+        "nanjing"
+      ],
+      "personNames": [
+        "晋元帝司马睿"
+      ],
+      "sourceIds": [
+        "jinshu"
+      ],
+      "periodIds": [
+        "jin"
+      ]
+    },
+    {
+      "id": "wei-move-luoyang",
+      "title": "北魏迁都洛阳",
+      "year": 494,
+      "dateLabel": "公元494年",
+      "summary": "北魏孝文帝将都城由平城迁至洛阳，推动政治与社会制度变化。",
+      "category": "迁都",
+      "placeIds": [
+        "datong",
+        "luoyang"
+      ],
+      "personNames": [
+        "北魏孝文帝"
+      ],
+      "sourceIds": [
+        "tongjian"
+      ],
+      "periodIds": [
+        "nanbei"
+      ]
+    },
+    {
+      "id": "liang-founded",
+      "title": "梁朝建立",
+      "year": 502,
+      "dateLabel": "公元502年",
+      "summary": "萧衍代齐建立梁朝，继续以建康为都城。",
+      "category": "政治",
+      "placeIds": [
+        "nanjing"
+      ],
+      "personNames": [
+        "梁武帝萧衍"
+      ],
+      "sourceIds": [
+        "tongjian"
+      ],
+      "periodIds": [
+        "nanbei"
+      ]
+    },
+    {
+      "id": "sui-unification",
+      "title": "隋灭陈",
+      "year": 589,
+      "dateLabel": "公元589年",
+      "summary": "隋军攻入建康，陈朝灭亡，南北分立局面结束。",
+      "category": "战争",
+      "placeIds": [
+        "nanjing",
+        "changan"
+      ],
+      "personNames": [
+        "隋文帝杨坚",
+        "陈后主陈叔宝"
+      ],
+      "sourceIds": [
+        "suishu"
+      ],
+      "periodIds": [
+        "sui"
+      ]
+    },
+    {
+      "id": "sui-canal",
+      "title": "隋代开凿通济渠",
+      "year": 605,
+      "dateLabel": "公元605年",
+      "summary": "隋炀帝时期的运河建设强化了洛阳与江淮地区之间的水路联系。",
+      "category": "交通",
+      "placeIds": [
+        "luoyang",
+        "yangzhou"
+      ],
+      "personNames": [
+        "隋炀帝杨广"
+      ],
+      "sourceIds": [
+        "suishu"
+      ],
+      "periodIds": [
+        "sui"
+      ]
+    },
+    {
+      "id": "an-lushan",
+      "title": "安史之乱",
+      "year": 755,
+      "dateLabel": "公元755—763年",
+      "summary": "安禄山在范阳起兵，战事先后波及洛阳、潼关和长安等地。持续多年的战乱深刻改变了唐朝的政治与社会。",
+      "category": "战争",
+      "placeIds": [
+        "fanyang",
+        "luoyang",
+        "tongguan",
+        "changan"
+      ],
+      "personNames": [
+        "安禄山",
+        "唐玄宗",
+        "史思明"
+      ],
+      "sourceIds": [
+        "jiutangshu",
+        "tongjian",
+        "zizhitongjian-217",
+        "zizhitongjian-222"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "endYear": 763,
+      "route": [
+        [
+          116.35,
+          39.88
+        ],
+        [
+          112.45,
+          34.62
+        ],
+        [
+          110.25,
+          34.55
+        ],
+        [
+          108.94,
+          34.3
+        ]
+      ],
+      "evidence": [
+        {
+          "id": "ev-anshi-overview-start",
+          "sourceId": "zizhitongjian-217",
+          "locator": "卷217·天宝十四年十一月甲子",
+          "supports": "原文记安禄山十一月甲子在范阳起兵；数字755仅作天宝十四年的纪年索引，不代表已换算事件的公历年份。",
+          "quote": "十一月，甲子，祿山發所部兵及同羅、奚、契丹、室韋凡十五萬眾，號二十萬，反於范陽。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T10:02:13.416376+00:00",
+          "note": "记日采用《通鉴》。当前维基《旧唐书》卷9相应段落作“丙寅”，数字文本存在差异，未据纸本校勘；不将两者当作日期一致的互证。"
+        },
+        {
+          "id": "ev-anshi-overview-end",
+          "sourceId": "zizhitongjian-222",
+          "locator": "卷222·广德元年正月·史朝义败亡条",
+          "supports": "原文记史朝义自缢、李怀仙取其首献唐；该叙述位于正月条内。",
+          "quote": "朝義窮蹙，縊於林中，懷仙取其首以獻。僕固懷恩與諸軍皆還。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T10:02:13.416376+00:00",
+          "note": "只给原文所在月份，不把自缢日等同于其后首级到京的甲辰。原文“温泉栅”对应现代位置未核定，地图仅关联后续收受首级的京师。"
+        }
+      ]
+    },
+    {
+      "id": "xuanzong-sichuan",
+      "title": "唐玄宗入蜀",
+      "year": 756,
+      "dateLabel": "公元756年",
+      "summary": "安史之乱期间，唐玄宗离开长安，前往蜀地。长安与成都连接起这次政治转折的两个重要地点。",
+      "category": "人物活动",
+      "placeIds": [
+        "changan",
+        "chengdu"
+      ],
+      "personNames": [
+        "唐玄宗"
+      ],
+      "sourceIds": [
+        "jiutangshu",
+        "tongjian",
+        "zizhitongjian-218"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "route": [
+        [
+          108.94,
+          34.3
+        ],
+        [
+          104.07,
+          30.67
+        ]
+      ],
+      "evidence": [
+        {
+          "id": "ev-xuanzong-overview-arrival",
+          "sourceId": "zizhitongjian-218",
+          "locator": "卷218·至德元年七月庚辰",
+          "supports": "原文记上皇在庚辰到成都；该条位于七月条内、八月条前。",
+          "quote": "庚辰，上皇至成都，從官及六軍至者千三百人而已。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T10:02:13.416376+00:00",
+          "note": "采用《通鉴》七月庚辰；《旧唐书》卷9相应记“庚辰，车驾至蜀郡”，卷10“八月壬午”段另有到成都语。网页记载有差异，未校勘底本。"
+        }
+      ]
+    },
+    {
+      "id": "jingkang",
+      "title": "靖康之变",
+      "year": 1127,
+      "dateLabel": "公元1127年",
+      "summary": "金军攻破北宋都城开封，徽宗、钦宗被掳，北宋灭亡。",
+      "category": "战争",
+      "placeIds": [
+        "kaifeng"
+      ],
+      "personNames": [
+        "宋徽宗",
+        "宋钦宗"
+      ],
+      "sourceIds": [
+        "songshi"
+      ],
+      "periodIds": [
+        "song"
+      ]
+    },
+    {
+      "id": "linan-capital",
+      "title": "临安成为南宋行在",
+      "year": 1138,
+      "dateLabel": "公元1138年",
+      "summary": "南宋朝廷稳定驻于临安，杭州地区成为此后南宋的政治中心。",
+      "category": "建都",
+      "placeIds": [
+        "hangzhou"
+      ],
+      "personNames": [
+        "宋高宗赵构"
+      ],
+      "sourceIds": [
+        "songshi"
+      ],
+      "periodIds": [
+        "song"
+      ]
+    },
+    {
+      "id": "yuan-name",
+      "title": "忽必烈定国号为大元",
+      "year": 1271,
+      "dateLabel": "公元1271年",
+      "summary": "忽必烈采用“大元”国号，大都与上都此后构成元代政治活动的重要空间。",
+      "category": "政治",
+      "placeIds": [
+        "beijing",
+        "shangdu"
+      ],
+      "personNames": [
+        "忽必烈"
+      ],
+      "sourceIds": [
+        "yuanshi"
+      ],
+      "periodIds": [
+        "yuan"
+      ]
+    },
+    {
+      "id": "yuan-linan",
+      "title": "元军进入临安",
+      "year": 1276,
+      "dateLabel": "公元1276年",
+      "summary": "元军进入临安，宋恭帝降元；南宋残余力量此后仍继续抵抗。",
+      "category": "战争",
+      "placeIds": [
+        "hangzhou"
+      ],
+      "personNames": [
+        "宋恭帝",
+        "伯颜"
+      ],
+      "sourceIds": [
+        "yuanshi",
+        "songshi"
+      ],
+      "periodIds": [
+        "yuan"
+      ]
+    },
+    {
+      "id": "ming-beijing",
+      "title": "明迁都北京",
+      "year": 1421,
+      "dateLabel": "公元1421年",
+      "summary": "明成祖迁都北京，南京保留陪都地位。",
+      "category": "迁都",
+      "placeIds": [
+        "beijing",
+        "nanjing"
+      ],
+      "personNames": [
+        "明成祖朱棣"
+      ],
+      "sourceIds": [
+        "mingshi"
+      ],
+      "periodIds": [
+        "ming"
+      ]
+    },
+    {
+      "id": "single-whip",
+      "title": "一条鞭法推广",
+      "year": 1581,
+      "dateLabel": "公元1581年前后",
+      "summary": "张居正执政时期推动一条鞭法推广，各地施行情况与时间存在差异；北京标记表示政策背景入口。",
+      "category": "改革",
+      "placeIds": [
+        "beijing"
+      ],
+      "personNames": [
+        "张居正",
+        "明神宗"
+      ],
+      "sourceIds": [
+        "mingshi"
+      ],
+      "periodIds": [
+        "ming"
+      ]
+    },
+    {
+      "id": "kangxi-tour",
+      "title": "康熙首次南巡",
+      "year": 1684,
+      "dateLabel": "公元1684年",
+      "summary": "康熙帝首次南巡，初版以北京与扬州为相关地点展示，不复原完整巡视路线。",
+      "category": "政治",
+      "placeIds": [
+        "beijing",
+        "yangzhou"
+      ],
+      "personNames": [
+        "康熙帝"
+      ],
+      "sourceIds": [
+        "qingshigao"
+      ],
+      "periodIds": [
+        "qing"
+      ]
+    },
+    {
+      "id": "daoguang-accession",
+      "title": "道光帝即位",
+      "year": 1820,
+      "dateLabel": "公元1820年",
+      "summary": "嘉庆帝去世后，旻宁即位，次年改元道光；公元1820年仍属嘉庆二十五年。",
+      "category": "政治",
+      "placeIds": [
+        "beijing"
+      ],
+      "personNames": [
+        "道光帝旻宁"
+      ],
+      "sourceIds": [
+        "qingshigao"
+      ],
+      "periodIds": [
+        "qing"
+      ]
+    },
+    {
+      "id": "anshi-755-fanyang",
+      "title": "安禄山在范阳起兵",
+      "year": 755,
+      "dateLabel": "天宝十四年十一月甲子",
+      "summary": "安禄山以讨伐杨国忠为名举兵，从范阳向南进军。专题从这条有明确地点和传统记日的记录开始。",
+      "category": "战争",
+      "placeIds": [
+        "fanyang"
+      ],
+      "personNames": [
+        "安禄山"
+      ],
+      "sourceIds": [
+        "zizhitongjian-217"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "time": {
+        "year": 755,
+        "precision": "day",
+        "calendar": "traditional-chinese",
+        "original": "天宝十四年十一月甲子",
+        "month": 11,
+        "certainty": "recorded",
+        "dayLabel": "甲子"
+      },
+      "evidence": [
+        {
+          "id": "ev-anshi-rise",
+          "sourceId": "zizhitongjian-217",
+          "locator": "卷217·天宝十四年十一月甲子",
+          "supports": "原文记安禄山十一月甲子在范阳起兵；数字755仅作天宝十四年的纪年索引，不代表已换算事件的公历年份。",
+          "quote": "十一月，甲子，祿山發所部兵及同羅、奚、契丹、室韋凡十五萬眾，號二十萬，反於范陽。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T10:02:13.416376+00:00",
+          "note": "记日采用《通鉴》。当前维基《旧唐书》卷9相应段落作“丙寅”，数字文本存在差异，未据纸本校勘；不将两者当作日期一致的互证。"
+        }
+      ]
+    },
+    {
+      "id": "anshi-755-luoyang",
+      "title": "洛阳陷落",
+      "year": 755,
+      "dateLabel": "天宝十四年十二月丁酉",
+      "summary": "安禄山军攻入唐东都，封常清退向陕地。战事从河北扩展到洛阳，随后逼近关中门户。",
+      "category": "战争",
+      "placeIds": [
+        "luoyang"
+      ],
+      "personNames": [
+        "安禄山",
+        "封常清"
+      ],
+      "sourceIds": [
+        "zizhitongjian-217",
+        "jiutangshu-9"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "time": {
+        "year": 755,
+        "precision": "day",
+        "calendar": "traditional-chinese",
+        "original": "天宝十四年十二月丁酉",
+        "month": 12,
+        "certainty": "recorded",
+        "dayLabel": "丁酉"
+      },
+      "evidence": [
+        {
+          "id": "ev-anshi-luoyang-fall",
+          "sourceId": "zizhitongjian-217",
+          "locator": "卷217·天宝十四年十二月丁酉",
+          "supports": "原文记十二月丁酉安禄山军攻陷东京；所在段落记封常清的洛阳防御。",
+          "quote": "丁酉，祿山陷東京，賊鼓噪自四門入，縱兵殺掠。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T10:02:13.416376+00:00",
+          "note": "月份承接本卷“十二月，丙戌”段；东京在本专题按唐东都洛阳解释，没有核验门址坐标。"
+        },
+        {
+          "id": "ev-anshi-luoyang-fall-j9",
+          "sourceId": "jiutangshu-9",
+          "locator": "卷9·玄宗下·天宝十四载十二月丁酉",
+          "supports": "《旧唐书》玄宗纪亦记丁酉攻陷东京。",
+          "quote": "丁酉，祿山陷東京，殺留守李憕、中丞盧奕、判官蔣清。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T10:02:13.416376+00:00",
+          "note": "仅核对本条记日和东京陷落，未将整卷标为verified。"
+        }
+      ]
+    },
+    {
+      "id": "anshi-756-tongguan",
+      "title": "潼关失守",
+      "year": 756,
+      "dateLabel": "天宝十五载六月辛卯（《通鉴》系于至德元年）",
+      "summary": "哥舒翰军在灵宝西原战败后，潼关被攻取。关中门户失守，朝廷随后决定离开长安。",
+      "category": "战争",
+      "placeIds": [
+        "tongguan"
+      ],
+      "personNames": [
+        "哥舒翰",
+        "崔乾祐"
+      ],
+      "sourceIds": [
+        "zizhitongjian-218"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "time": {
+        "year": 756,
+        "precision": "day",
+        "calendar": "traditional-chinese",
+        "original": "天宝十五载六月辛卯（《通鉴》系于至德元年）",
+        "month": 6,
+        "certainty": "recorded",
+        "dayLabel": "辛卯"
+      },
+      "evidence": [
+        {
+          "id": "ev-anshi-tongguan",
+          "sourceId": "zizhitongjian-218",
+          "locator": "卷218·至德元年六月辛卯",
+          "supports": "原文记辛卯崔乾祐攻取潼关；该段前记哥舒翰军在灵宝西原战败。",
+          "quote": "辛卯，乾祐進攻潼關，克之。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T10:02:13.416376+00:00",
+          "note": "卷218将本年系于“至德元年”；六月当时仍为天宝十五载。保留史书记年体系，不换算公历月日。"
+        }
+      ]
+    },
+    {
+      "id": "anshi-756-mawei",
+      "title": "马嵬之变",
+      "year": 756,
+      "dateLabel": "天宝十五载六月丙申（《通鉴》记日）",
+      "summary": "玄宗西行到马嵬驿时发生军变，杨国忠被杀，杨贵妃亦在此死亡。其后玄宗继续入蜀，太子转向北方。",
+      "category": "政治",
+      "placeIds": [
+        "mawei"
+      ],
+      "personNames": [
+        "唐玄宗",
+        "杨国忠",
+        "杨贵妃",
+        "陈玄礼"
+      ],
+      "sourceIds": [
+        "zizhitongjian-218"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "time": {
+        "year": 756,
+        "precision": "day",
+        "calendar": "traditional-chinese",
+        "original": "天宝十五载六月丙申（《通鉴》记日）",
+        "month": 6,
+        "certainty": "recorded",
+        "dayLabel": "丙申"
+      },
+      "evidence": [
+        {
+          "id": "ev-anshi-mawei",
+          "sourceId": "zizhitongjian-218",
+          "locator": "卷218·至德元年六月丙申",
+          "supports": "原文记玄宗行至马嵬驿时将士愤怒；下文记杨国忠被杀与杨贵妃之死。",
+          "quote": "丙申，至馬嵬驛，將士饑疲，皆憤怒。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T10:02:13.416376+00:00",
+          "note": "采用《通鉴》的丙申。现存网页《旧唐书》卷9作丙辰，卷10相关叙事作丁酉；仅记录可见差异，未做版本校勘。"
+        },
+        {
+          "id": "ev-anshi-mawei-killing",
+          "sourceId": "zizhitongjian-218",
+          "locator": "卷218·六月丙申·马嵬驿条",
+          "supports": "同一条下原文记军士追杀杨国忠。",
+          "quote": "國忠走至西門內，軍士追殺之，屠割支體，以槍揭其首於驛門外，並殺其子戶部侍郎暄及韓國、秦國夫人。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T10:02:13.416376+00:00",
+          "note": "该引文核对的是原文所述军变内容，不支持现代马嵬驿遗址的准确位置。"
+        }
+      ]
+    },
+    {
+      "id": "anshi-756-lingwu",
+      "title": "肃宗在灵武即位",
+      "year": 756,
+      "dateLabel": "至德元年七月甲子",
+      "summary": "太子李亨在灵武即位为唐肃宗，改元至德。灵武成为唐廷重新组织军事力量的重要据点。",
+      "category": "政治",
+      "placeIds": [
+        "lingwu"
+      ],
+      "personNames": [
+        "唐肃宗李亨",
+        "裴冕",
+        "杜鸿渐"
+      ],
+      "sourceIds": [
+        "jiutangshu-10",
+        "zizhitongjian-218"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "time": {
+        "year": 756,
+        "precision": "day",
+        "calendar": "traditional-chinese",
+        "original": "至德元年七月甲子",
+        "month": 7,
+        "certainty": "recorded",
+        "dayLabel": "甲子"
+      },
+      "evidence": [
+        {
+          "id": "ev-anshi-lingwu",
+          "sourceId": "jiutangshu-10",
+          "locator": "卷10·肃宗·至德元年七月甲子",
+          "supports": "原文明确记七月甲子即皇帝位于灵武，并在同一制书中改元至德。",
+          "quote": "乃以七月甲子，即皇帝位於靈武。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T10:02:13.416376+00:00",
+          "note": "只核对即位的传统日期与历史地点名称；不支持城南楼遗址的现代坐标。"
+        },
+        {
+          "id": "ev-anshi-lingwu-tongjian",
+          "sourceId": "zizhitongjian-218",
+          "locator": "卷218·至德元年七月甲子条",
+          "supports": "《通鉴》同一甲子条记肃宗在灵武城南楼即位。",
+          "quote": "是日，肅宗即位於靈武城南樓，群臣舞蹈，上流涕歔欷。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T10:02:13.416376+00:00",
+          "note": "“是日”承接前文七月甲子；《旧唐书》提供完整月、干支日的直接文字。"
+        }
+      ]
+    },
+    {
+      "id": "anshi-756-chengdu",
+      "title": "玄宗抵达成都",
+      "year": 756,
+      "dateLabel": "至德元年七月庚辰（《通鉴》纪年）",
+      "summary": "玄宗一行进入成都，唐廷的政治活动一度分处蜀地与灵武。两处地点呈现了战乱中皇室分行的空间变化。",
+      "category": "人物活动",
+      "placeIds": [
+        "chengdu"
+      ],
+      "personNames": [
+        "唐玄宗"
+      ],
+      "sourceIds": [
+        "zizhitongjian-218",
+        "jiutangshu-9"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "time": {
+        "year": 756,
+        "precision": "day",
+        "calendar": "traditional-chinese",
+        "original": "至德元年七月庚辰（《通鉴》纪年）",
+        "month": 7,
+        "certainty": "recorded",
+        "dayLabel": "庚辰"
+      },
+      "evidence": [
+        {
+          "id": "ev-anshi-chengdu",
+          "sourceId": "zizhitongjian-218",
+          "locator": "卷218·至德元年七月庚辰",
+          "supports": "原文记上皇在庚辰到成都；该条位于七月条内、八月条前。",
+          "quote": "庚辰，上皇至成都，從官及六軍至者千三百人而已。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T10:02:13.416376+00:00",
+          "note": "采用《通鉴》七月庚辰；《旧唐书》卷9相应记“庚辰，车驾至蜀郡”，卷10“八月壬午”段另有到成都语。网页记载有差异，未校勘底本。"
+        },
+        {
+          "id": "ev-anshi-chengdu-j9",
+          "sourceId": "jiutangshu-9",
+          "locator": "卷9·玄宗下·天宝十五载秋七月庚辰",
+          "supports": "玄宗纪七月条记车驾庚辰至蜀郡，与本专题的入蜀叙事相连。",
+          "quote": "庚辰，車駕至蜀郡，扈從官吏軍士到者一千三百人，宮女二十四人而已。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T10:02:13.416376+00:00"
+        }
+      ]
+    },
+    {
+      "id": "anshi-757-changan",
+      "title": "唐军收复长安",
+      "year": 757,
+      "dateLabel": "至德二年九月癸卯",
+      "summary": "在长安城西战胜守军后，广平王李俶率领的唐军进入西京。专题采用入城日作为节点，区别于前一日的战斗。",
+      "category": "战争",
+      "placeIds": [
+        "changan"
+      ],
+      "personNames": [
+        "广平王李俶",
+        "郭子仪",
+        "李嗣业"
+      ],
+      "sourceIds": [
+        "zizhitongjian-220"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "time": {
+        "year": 757,
+        "precision": "day",
+        "calendar": "traditional-chinese",
+        "original": "至德二年九月癸卯",
+        "month": 9,
+        "certainty": "recorded",
+        "dayLabel": "癸卯"
+      },
+      "evidence": [
+        {
+          "id": "ev-anshi-changan-return",
+          "sourceId": "zizhitongjian-220",
+          "locator": "卷220·至德二年九月癸卯",
+          "supports": "原文记唐军癸卯进入西京；前条明记战场在长安城西。",
+          "quote": "癸卯，大軍入西京。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T10:02:13.416376+00:00",
+          "note": "记日采用入城日，不将前一日香积寺战斗与入城混为同日。月份承接卷首九月。"
+        },
+        {
+          "id": "ev-anshi-changan-battle",
+          "sourceId": "zizhitongjian-220",
+          "locator": "卷220·至德二年九月壬寅",
+          "supports": "前一条明确记大军抵达长安城西，在香积寺北列阵。",
+          "quote": "庚子，諸軍俱發；壬寅，至長安城西，陳於香積寺北澧水之東。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T10:02:13.416376+00:00",
+          "note": "未核验香积寺、澧水与战场的现代坐标。"
+        }
+      ]
+    },
+    {
+      "id": "anshi-757-suiyang",
+      "title": "睢阳陷落",
+      "year": 757,
+      "dateLabel": "至德二年十月癸丑",
+      "summary": "长期围困后，睢阳城陷，张巡、许远被俘。这里呈现了两京争夺之外，河南东部同样持续的战争。",
+      "category": "战争",
+      "placeIds": [
+        "suiyang"
+      ],
+      "personNames": [
+        "张巡",
+        "许远",
+        "尹子奇"
+      ],
+      "sourceIds": [
+        "zizhitongjian-220",
+        "jiutangshu-10"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "time": {
+        "year": 757,
+        "precision": "day",
+        "calendar": "traditional-chinese",
+        "original": "至德二年十月癸丑",
+        "month": 10,
+        "certainty": "recorded",
+        "dayLabel": "癸丑"
+      },
+      "evidence": [
+        {
+          "id": "ev-anshi-suiyang",
+          "sourceId": "zizhitongjian-220",
+          "locator": "卷220·至德二年十月癸丑",
+          "supports": "原文记癸丑城陷，张巡、许远被执；上一条明确地点为睢阳。",
+          "quote": "癸丑，賊登城，將士病，不能戰。巡西向再拜曰：「臣力竭矣，不能全城，生既無以報陛下，死當為厲鬼以殺賊！」城遂陷，巡、遠俱被執。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T10:02:13.416376+00:00"
+        },
+        {
+          "id": "ev-anshi-suiyang-j10",
+          "sourceId": "jiutangshu-10",
+          "locator": "卷10·肃宗·至德二载冬十月癸丑",
+          "supports": "肃宗纪亦记十月癸丑睢阳陷落。",
+          "quote": "癸丑，賊將尹子奇陷睢陽，害張巡、姚訚、許遠。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T10:02:13.416376+00:00",
+          "note": "仅互证睢阳陷落的地点与记日；许远具体死亡地点和时间在不同叙述间另有差异，不在此合并断定。"
+        }
+      ]
+    },
+    {
+      "id": "anshi-757-luoyang",
+      "title": "唐军收复洛阳",
+      "year": 757,
+      "dateLabel": "至德二年十月壬戌",
+      "summary": "安庆绪离开洛阳后，广平王李俶进入东京。两京恢复由唐廷控制，但河北战事尚未结束。",
+      "category": "战争",
+      "placeIds": [
+        "luoyang"
+      ],
+      "personNames": [
+        "广平王李俶",
+        "郭子仪",
+        "安庆绪"
+      ],
+      "sourceIds": [
+        "zizhitongjian-220",
+        "jiutangshu-10"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "time": {
+        "year": 757,
+        "precision": "day",
+        "calendar": "traditional-chinese",
+        "original": "至德二年十月壬戌",
+        "month": 10,
+        "certainty": "recorded",
+        "dayLabel": "壬戌"
+      },
+      "evidence": [
+        {
+          "id": "ev-anshi-luoyang-return",
+          "sourceId": "zizhitongjian-220",
+          "locator": "卷220·至德二年十月壬戌",
+          "supports": "原文记壬戌广平王进入东京，前文交代安庆绪离开洛阳。",
+          "quote": "壬戌，廣平王俶入東京。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T10:02:13.416376+00:00"
+        },
+        {
+          "id": "ev-anshi-luoyang-return-j10",
+          "sourceId": "jiutangshu-10",
+          "locator": "卷10·肃宗·至德二载冬十月壬戌",
+          "supports": "肃宗纪亦记广平王壬戌入东京，陈兵天津桥南。",
+          "quote": "壬戌，廣平王入東京，陳兵天津橋南，士庶歡呼路側。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T10:02:13.416376+00:00"
+        }
+      ]
+    },
+    {
+      "id": "anshi-759-xiangzhou",
+      "title": "相州之战，唐军溃退",
+      "year": 759,
+      "dateLabel": "乾元二年三月壬申",
+      "summary": "围攻邺城的唐军与史思明军交战，九节度兵溃。郭子仪退保东京，战局再次转折。",
+      "category": "战争",
+      "placeIds": [
+        "xiangzhou"
+      ],
+      "personNames": [
+        "郭子仪",
+        "史思明",
+        "李光弼"
+      ],
+      "sourceIds": [
+        "jiutangshu-10",
+        "zizhitongjian-221"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "time": {
+        "year": 759,
+        "precision": "day",
+        "calendar": "traditional-chinese",
+        "original": "乾元二年三月壬申",
+        "month": 3,
+        "certainty": "recorded",
+        "dayLabel": "壬申"
+      },
+      "evidence": [
+        {
+          "id": "ev-anshi-xiangzhou",
+          "sourceId": "jiutangshu-10",
+          "locator": "卷10·肃宗·乾元二年三月壬申",
+          "supports": "原文明确记相州行营、三月壬申与史思明交战及九节度兵溃。",
+          "quote": "壬申，相州行營郭子儀等與賊史思明戰，王師不利，九節度兵潰，子儀斷河陽橋，以餘眾保東京。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T10:02:13.416376+00:00"
+        },
+        {
+          "id": "ev-anshi-xiangzhou-tongjian",
+          "sourceId": "zizhitongjian-221",
+          "locator": "卷221·乾元二年三月壬申",
+          "supports": "《通鉴》同日条下记两军在大风中溃散。",
+          "quote": "兩軍大驚，官軍潰而南，賊潰而北，棄甲仗輜重委積於路。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T10:02:13.416376+00:00",
+          "note": "本条前有“三月，壬申”，交战位置原文为“安阳河北”；未核定河道和战场边界。"
+        }
+      ]
+    },
+    {
+      "id": "anshi-759-heyang",
+      "title": "李光弼守河阳",
+      "year": 759,
+      "dateLabel": "乾元二年十月",
+      "summary": "李光弼据守河阳，与史思明军展开多阶段攻防。史思明最终退去，河阳成为这一阶段的重要防守据点。",
+      "category": "战争",
+      "placeIds": [
+        "heyang"
+      ],
+      "personNames": [
+        "李光弼",
+        "史思明",
+        "李抱玉"
+      ],
+      "sourceIds": [
+        "zizhitongjian-221"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "time": {
+        "year": 759,
+        "precision": "month",
+        "calendar": "traditional-chinese",
+        "original": "乾元二年十月",
+        "month": 10,
+        "certainty": "recorded"
+      },
+      "evidence": [
+        {
+          "id": "ev-anshi-heyang",
+          "sourceId": "zizhitongjian-221",
+          "locator": "卷221·乾元二年冬十月·河阳之战条",
+          "supports": "原文在十月条记史思明进攻河阳；本节点按月呈现多阶段战斗。",
+          "quote": "史思明引兵攻河陽，使驍將劉龍仙詣城下挑戰。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T10:02:13.416376+00:00",
+          "note": "不把持续多阶段的河阳战事压缩成某一个干支日；三城及古黄河河道的位置未核验。"
+        },
+        {
+          "id": "ev-anshi-heyang-withdrawal",
+          "sourceId": "zizhitongjian-221",
+          "locator": "卷221·乾元二年冬十月·周挚败后",
+          "supports": "同一战事叙述中记李光弼展示俘虏，史思明撤退。",
+          "quote": "思明不知摯敗，尚攻南城，光弼驅俘囚臨河示之，乃遁。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T10:02:13.416376+00:00"
+        }
+      ]
+    },
+    {
+      "id": "anshi-763-end",
+      "title": "史朝义首级抵京",
+      "year": 763,
+      "dateLabel": "广德元年正月甲辰（《通鉴》纪年）",
+      "summary": "《通鉴》先记史朝义在逃亡中自缢，随后记其首级于正月甲辰抵达京师。本节点地图标记的是首级送抵的京师，不是史朝义自缢地点。",
+      "category": "战争",
+      "placeIds": [
+        "changan"
+      ],
+      "personNames": [
+        "史朝义",
+        "李怀仙",
+        "仆固怀恩"
+      ],
+      "sourceIds": [
+        "zizhitongjian-222"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "time": {
+        "year": 763,
+        "precision": "day",
+        "calendar": "traditional-chinese",
+        "original": "广德元年正月甲辰（《通鉴》纪年）",
+        "month": 1,
+        "dayLabel": "甲辰",
+        "certainty": "recorded"
+      },
+      "evidence": [
+        {
+          "id": "ev-anshi-end-changan",
+          "sourceId": "zizhitongjian-222",
+          "locator": "卷222·广德元年正月甲辰",
+          "supports": "原文只证明正月甲辰史朝义首级送抵京师；本节点据此关联长安，不表示史朝义死于长安。",
+          "quote": "甲辰，朝義首至京師。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T10:02:13.416376+00:00",
+          "note": "“广德元年”为本卷编年标题；未推算公历月日，也不以抵京日推断自缢日。"
+        },
+        {
+          "id": "ev-anshi-end",
+          "sourceId": "zizhitongjian-222",
+          "locator": "卷222·广德元年正月·史朝义败亡条",
+          "supports": "只核对抵京节点的败亡背景：原文记史朝义自缢、李怀仙取其首献唐；不据本条为自缢定位。",
+          "quote": "朝義窮蹙，縊於林中，懷仙取其首以獻。僕固懷恩與諸軍皆還。",
+          "status": "checked",
+          "checkedAt": "2026-09-24T10:02:13.416376+00:00",
+          "note": "该背景引文不支持将死亡地点标在长安；原文“温泉栅”的现代位置未核定。"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "shiji",
+      "title": "《史记》",
+      "author": "司马迁",
+      "locator": "书目入口；具体卷、章节与版本待逐条核验",
+      "note": "秦代纪事及秦汉人物的参考书目。 链接提供公开阅读入口，不表示本项目已完成逐条核验；本版没有摘录原文。",
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98",
+      "verification": "reference"
+    },
+    {
+      "id": "hanshu",
+      "title": "《汉书》",
+      "author": "班固等",
+      "locator": "书目入口；具体卷、章节与版本待逐条核验",
+      "note": "西汉历史、地理与人物的参考书目。 链接提供公开阅读入口，不表示本项目已完成逐条核验；本版没有摘录原文。",
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8",
+      "verification": "reference"
+    },
+    {
+      "id": "sanguozhi",
+      "title": "《三国志》",
+      "author": "陈寿；裴松之注",
+      "locator": "书目入口；具体卷、章节与版本待逐条核验",
+      "note": "魏、蜀、吴政权与人物的参考书目。 链接提供公开阅读入口，不表示本项目已完成逐条核验；本版没有摘录原文。",
+      "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97",
+      "verification": "reference"
+    },
+    {
+      "id": "jinshu",
+      "title": "《晋书》",
+      "author": "房玄龄等",
+      "locator": "书目入口；具体卷、章节与版本待逐条核验",
+      "note": "两晋历史与人物的参考书目。 链接提供公开阅读入口，不表示本项目已完成逐条核验；本版没有摘录原文。",
+      "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8",
+      "verification": "reference"
+    },
+    {
+      "id": "tongjian",
+      "title": "《资治通鉴》",
+      "author": "司马光等",
+      "locator": "书目入口；具体卷、章节与版本待逐条核验",
+      "note": "先秦至五代编年史参考；不用于宋元明清史实的直接依据。 链接提供公开阅读入口，不表示本项目已完成逐条核验；本版没有摘录原文。",
+      "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91",
+      "verification": "reference"
+    },
+    {
+      "id": "suishu",
+      "title": "《隋书》",
+      "author": "魏徵、令狐德棻等",
+      "locator": "书目入口；具体卷、章节与版本待逐条核验",
+      "note": "隋代历史与制度地理的参考书目。 链接提供公开阅读入口，不表示本项目已完成逐条核验；本版没有摘录原文。",
+      "url": "https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8",
+      "verification": "reference"
+    },
+    {
+      "id": "jiutangshu",
+      "title": "《旧唐书》",
+      "author": "刘昫等",
+      "locator": "书目入口；具体卷、章节与版本待逐条核验",
+      "note": "唐代纪事、地理及人物的参考书目。 链接提供公开阅读入口，不表示本项目已完成逐条核验；本版没有摘录原文。",
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8",
+      "verification": "reference"
+    },
+    {
+      "id": "songshi",
+      "title": "《宋史》",
+      "author": "脱脱等",
+      "locator": "书目入口；具体卷、章节与版本待逐条核验",
+      "note": "宋代历史、城市与对外关系的参考书目。 链接提供公开阅读入口，不表示本项目已完成逐条核验；本版没有摘录原文。",
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2",
+      "verification": "reference"
+    },
+    {
+      "id": "yuanshi",
+      "title": "《元史》",
+      "author": "宋濂等",
+      "locator": "书目入口；具体卷、章节与版本待逐条核验",
+      "note": "元代历史、两都及地理的参考书目。 链接提供公开阅读入口，不表示本项目已完成逐条核验；本版没有摘录原文。",
+      "url": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2",
+      "verification": "reference"
+    },
+    {
+      "id": "mingshi",
+      "title": "《明史》",
+      "author": "张廷玉等",
+      "locator": "书目入口；具体卷、章节与版本待逐条核验",
+      "note": "明代历史、两京及人物的参考书目。 链接提供公开阅读入口，不表示本项目已完成逐条核验；本版没有摘录原文。",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2",
+      "verification": "reference"
+    },
+    {
+      "id": "qingshigao",
+      "title": "《清史稿》",
+      "author": "赵尔巽等",
+      "locator": "书目入口；具体卷、章节与版本待逐条核验",
+      "note": "清代史事参考；本书为未定稿史书，使用时需要与其他研究互证。 链接提供公开阅读入口，不表示本项目已完成逐条核验；本版没有摘录原文。",
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF",
+      "verification": "reference"
+    },
+    {
+      "id": "zizhitongjian-217",
+      "title": "《资治通鉴》卷217",
+      "author": "司马光等",
+      "locator": "卷217；各引证进一步定位纪年、月及干支日",
+      "note": "本次实际读取并保存该卷网页文本；仅具体引证的 supports 所列事实已核对。没有校勘全卷、核定现代坐标或完成学术互证。",
+      "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91/%E5%8D%B7217",
+      "verification": "reference",
+      "retrievedAt": "2026-09-24T09:53:56.947664+00:00",
+      "edition": "维基文库公开数字文本；本次未核定所据纸本底本及校勘谱系。",
+      "license": "古籍原文属公有领域；维基文库页面文字按 CC BY-SA 4.0 提供，附加条款可能适用。引文与快照保留来源及修订信息。",
+      "revisionId": "617834",
+      "snapshotPath": "data/evidence/zizhitongjian-217.txt"
+    },
+    {
+      "id": "zizhitongjian-218",
+      "title": "《资治通鉴》卷218",
+      "author": "司马光等",
+      "locator": "卷218；各引证进一步定位纪年、月及干支日",
+      "note": "本次实际读取并保存该卷网页文本；仅具体引证的 supports 所列事实已核对。没有校勘全卷、核定现代坐标或完成学术互证。",
+      "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91/%E5%8D%B7218",
+      "verification": "reference",
+      "retrievedAt": "2026-09-24T09:53:56.851081+00:00",
+      "edition": "维基文库公开数字文本；本次未核定所据纸本底本及校勘谱系。",
+      "license": "古籍原文属公有领域；维基文库页面文字按 CC BY-SA 4.0 提供，附加条款可能适用。引文与快照保留来源及修订信息。",
+      "revisionId": "1996147",
+      "snapshotPath": "data/evidence/zizhitongjian-218.txt"
+    },
+    {
+      "id": "zizhitongjian-219",
+      "title": "《资治通鉴》卷219",
+      "author": "司马光等",
+      "locator": "卷219；各引证进一步定位纪年、月及干支日",
+      "note": "本次实际读取并保存该卷网页文本；仅具体引证的 supports 所列事实已核对。没有校勘全卷、核定现代坐标或完成学术互证。",
+      "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91/%E5%8D%B7219",
+      "verification": "reference",
+      "retrievedAt": "2026-09-24T09:53:56.847060+00:00",
+      "edition": "维基文库公开数字文本；本次未核定所据纸本底本及校勘谱系。",
+      "license": "古籍原文属公有领域；维基文库页面文字按 CC BY-SA 4.0 提供，附加条款可能适用。引文与快照保留来源及修订信息。",
+      "revisionId": "2062230",
+      "snapshotPath": "data/evidence/zizhitongjian-219.txt"
+    },
+    {
+      "id": "zizhitongjian-220",
+      "title": "《资治通鉴》卷220",
+      "author": "司马光等",
+      "locator": "卷220；各引证进一步定位纪年、月及干支日",
+      "note": "本次实际读取并保存该卷网页文本；仅具体引证的 supports 所列事实已核对。没有校勘全卷、核定现代坐标或完成学术互证。",
+      "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91/%E5%8D%B7220",
+      "verification": "reference",
+      "retrievedAt": "2026-09-24T09:53:57.844814+00:00",
+      "edition": "维基文库公开数字文本；本次未核定所据纸本底本及校勘谱系。",
+      "license": "古籍原文属公有领域；维基文库页面文字按 CC BY-SA 4.0 提供，附加条款可能适用。引文与快照保留来源及修订信息。",
+      "revisionId": "2564831",
+      "snapshotPath": "data/evidence/zizhitongjian-220.txt"
+    },
+    {
+      "id": "zizhitongjian-221",
+      "title": "《资治通鉴》卷221",
+      "author": "司马光等",
+      "locator": "卷221；各引证进一步定位纪年、月及干支日",
+      "note": "本次实际读取并保存该卷网页文本；仅具体引证的 supports 所列事实已核对。没有校勘全卷、核定现代坐标或完成学术互证。",
+      "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91/%E5%8D%B7221",
+      "verification": "reference",
+      "retrievedAt": "2026-09-24T09:53:58.219641+00:00",
+      "edition": "维基文库公开数字文本；本次未核定所据纸本底本及校勘谱系。",
+      "license": "古籍原文属公有领域；维基文库页面文字按 CC BY-SA 4.0 提供，附加条款可能适用。引文与快照保留来源及修订信息。",
+      "revisionId": "982302",
+      "snapshotPath": "data/evidence/zizhitongjian-221.txt"
+    },
+    {
+      "id": "zizhitongjian-222",
+      "title": "《资治通鉴》卷222",
+      "author": "司马光等",
+      "locator": "卷222；各引证进一步定位纪年、月及干支日",
+      "note": "本次实际读取并保存该卷网页文本；仅具体引证的 supports 所列事实已核对。没有校勘全卷、核定现代坐标或完成学术互证。",
+      "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91/%E5%8D%B7222",
+      "verification": "reference",
+      "retrievedAt": "2026-09-24T09:53:58.219816+00:00",
+      "edition": "维基文库公开数字文本；本次未核定所据纸本底本及校勘谱系。",
+      "license": "古籍原文属公有领域；维基文库页面文字按 CC BY-SA 4.0 提供，附加条款可能适用。引文与快照保留来源及修订信息。",
+      "revisionId": "982271",
+      "snapshotPath": "data/evidence/zizhitongjian-222.txt"
+    },
+    {
+      "id": "jiutangshu-9",
+      "title": "《旧唐书》卷9·玄宗下",
+      "author": "刘昫等",
+      "locator": "卷9；各引证进一步定位纪年、月及干支日",
+      "note": "本次实际读取并保存该卷网页文本；仅具体引证的 supports 所列事实已核对。没有校勘全卷、核定现代坐标或完成学术互证。",
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B79",
+      "verification": "reference",
+      "retrievedAt": "2026-09-24T09:56:33.490369+00:00",
+      "edition": "维基文库公开数字文本；本次未核定所据纸本底本及校勘谱系。",
+      "license": "古籍原文属公有领域；维基文库页面文字按 CC BY-SA 4.0 提供，附加条款可能适用。引文与快照保留来源及修订信息。",
+      "revisionId": "2307860",
+      "snapshotPath": "data/evidence/jiutangshu-9.txt"
+    },
+    {
+      "id": "jiutangshu-10",
+      "title": "《旧唐书》卷10·肃宗",
+      "author": "刘昫等",
+      "locator": "卷10；各引证进一步定位纪年、月及干支日",
+      "note": "本次实际读取并保存该卷网页文本；仅具体引证的 supports 所列事实已核对。没有校勘全卷、核定现代坐标或完成学术互证。",
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B710",
+      "verification": "reference",
+      "retrievedAt": "2026-09-24T09:56:33.241597+00:00",
+      "edition": "维基文库公开数字文本；本次未核定所据纸本底本及校勘谱系。",
+      "license": "古籍原文属公有领域；维基文库页面文字按 CC BY-SA 4.0 提供，附加条款可能适用。引文与快照保留来源及修订信息。",
+      "revisionId": "2317162",
+      "snapshotPath": "data/evidence/jiutangshu-10.txt"
+    },
+    {
+      "id": "natural-earth-modern-cities",
+      "title": "Natural Earth 1:10m现代城市点",
+      "author": "Natural Earth contributors",
+      "locator": "ne_10m_populated_places 5.1.2；选定记录见本地快照",
+      "note": "坐标仅来自现代居民点，支持地图的近似地区入口，不证明唐城址位置或古今城区重合。",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_populated_places.geojson",
+      "verification": "reference",
+      "retrievedAt": "2026-09-24T10:57:12.455849+00:00",
+      "edition": "数据版本5.1.2；固定仓库提交ca96624a56bd078437bca8184e78163e5039ad19",
+      "license": "Natural Earth public domain",
+      "revisionId": "ca96624a56bd078437bca8184e78163e5039ad19",
+      "snapshotPath": "data/evidence/city-natural-earth-selection.json"
+    },
+    {
+      "id": "geonames-modern-cities",
+      "title": "GeoNames中国现代居民点",
+      "author": "GeoNames contributors",
+      "locator": "中国CN.zip导出；各地区采用具体GeoNames ID记录",
+      "note": "为NE未覆盖的县城及城区提供现代参考点。原始CN.zip URL、下载时间、SHA256和所选原记录已保存；不是唐城址考古数据。",
+      "url": "https://www.geonames.org/export/",
+      "verification": "reference",
+      "retrievedAt": "2026-09-24T10:59:45.916153+00:00",
+      "edition": "CN.zip于2026-09-24T10:59:45.916153+00:00实际下载；单条修改日期另存",
+      "license": "Creative Commons Attribution 4.0 (CC BY 4.0)，署名 GeoNames：https://www.geonames.org/",
+      "snapshotPath": "data/evidence/city-geonames-selection.json"
+    }
+  ],
+  "metadata": {
+    "title": "山河纪 · 中国历史时空地图",
+    "version": "0.6.0-preview",
+    "dataNotice": "本版含11个代表历史截面、40个地点档案（唐代37个）与本期历史事件。历史行政界已接入CHGIS 1820/1911和Hartwell 741/1080/1200/1290/1391资料，按原始图层显示省道、府州、县级区域及部分独立政权或诸部。资料年份独立标注，不能直接等同当前事件年份。Hartwell是基于现代县界构建的近似历史行政模型，CHGIS部分记录有原始年份字段冲突，界面提供说明。行政区界不等于古城墙或完整国家边界；完整政权范围另提供《中国历史地图集》18张纸图影像参考。地点和事件的已核对标识只支持列出的具体原文事实；位置仍为近似地区入口。事件连线不是实际行军路线，传统纪年未换算公历。 新增8条历史地理概述与10城35条历代大事记，原文摘录保留资料性质与出处。已为现有12111条历史行政记录提供简体显示，12100条有代表点所在现代地区参考；这不证明古今行政实体相同。",
+    "geographicNotice": "自然背景来自现代地理底图，不能视为古代河流、海岸线或山川复原。地点坐标为近似地区入口；历代城址、行政范围和同名实体不能简单等同。 山影与立体起伏采用本地真实现代高程，立体夸张1.5倍，适合区域观察；历史河流改道条目只标示参考地区，尚未复原古河道线路。"
+  },
+  "topics": []
+}

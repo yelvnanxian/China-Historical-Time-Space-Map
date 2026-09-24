@@ -1,0 +1,418 @@
+{
+  "version": "boundary-label-audit-1",
+  "date": "2026-09-24",
+  "inspectedLayers": 25,
+  "inspectedFeatures": 12111,
+  "displayPlaceholderCount": 1,
+  "rawChineseNameEmptyWithExistingLatinFallbackCount": 7,
+  "allRawNamesEmptyWithExistingUnnamedLabelCount": 2,
+  "recordsWithNameFieldFindings": [
+    {
+      "id": "hartwell-741-county-v5_0741_chin_chn_0741_c-316",
+      "name": "Yinshui",
+      "invalidFields": {
+        "sourceName": ""
+      },
+      "allNameFields": {
+        "name": "Yinshui",
+        "sourceName": ""
+      }
+    },
+    {
+      "id": "hartwell-741-county-v5_0741_chin_chn_0741_c-1315",
+      "name": "Hankuang",
+      "invalidFields": {
+        "sourceName": ""
+      },
+      "allNameFields": {
+        "name": "Hankuang",
+        "sourceName": ""
+      }
+    },
+    {
+      "id": "hartwell-1080-country-v5_1080_chin_chn_1080_l-28",
+      "name": "Aboriginal Tribal Lands",
+      "invalidFields": {
+        "sourceName": ""
+      },
+      "allNameFields": {
+        "name": "Aboriginal Tribal Lands",
+        "sourceName": ""
+      }
+    },
+    {
+      "id": "hartwell-1080-prefecture-v5_1080_chin_chn_1080_p-306",
+      "name": "Weimo",
+      "invalidFields": {
+        "sourceName": ""
+      },
+      "allNameFields": {
+        "name": "Weimo",
+        "sourceName": ""
+      }
+    },
+    {
+      "id": "hartwell-1080-county-v5_1080_chin_chn_1080_c-1315",
+      "name": "Weimo",
+      "invalidFields": {
+        "sourceName": ""
+      },
+      "allNameFields": {
+        "name": "Weimo",
+        "sourceName": ""
+      }
+    },
+    {
+      "id": "hartwell-1200-province-v5_1200_chin_chn_1200_l-19",
+      "name": "00",
+      "invalidFields": {
+        "name": "00",
+        "sourceName": "00"
+      },
+      "allNameFields": {
+        "name": "00",
+        "sourceName": "00"
+      }
+    },
+    {
+      "id": "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-111",
+      "name": "Ao Zhou",
+      "invalidFields": {
+        "sourceName": ""
+      },
+      "allNameFields": {
+        "name": "Ao Zhou",
+        "sourceName": ""
+      }
+    },
+    {
+      "id": "hartwell-1391-county-v5_1391_chin_chn_1391_c-1432",
+      "name": "Ejia",
+      "invalidFields": {
+        "sourceName": ""
+      },
+      "allNameFields": {
+        "name": "Ejia",
+        "sourceName": ""
+      }
+    },
+    {
+      "id": "chgis-1820-prefecture-2106",
+      "name": "非政区辖地（原图未命名） · 2106",
+      "invalidFields": {
+        "NAME_CH": "",
+        "NAME_PY": "",
+        "NAME_FT": ""
+      },
+      "allNameFields": {
+        "name": "非政区辖地（原图未命名） · 2106",
+        "NAME_CH": "",
+        "NAME_PY": "",
+        "NAME_FT": ""
+      }
+    },
+    {
+      "id": "chgis-1820-prefecture-2105",
+      "name": "非政区辖地（原图未命名） · 2105",
+      "invalidFields": {
+        "NAME_CH": "",
+        "NAME_PY": "",
+        "NAME_FT": ""
+      },
+      "allNameFields": {
+        "name": "非政区辖地（原图未命名） · 2105",
+        "NAME_CH": "",
+        "NAME_PY": "",
+        "NAME_FT": ""
+      }
+    }
+  ],
+  "correction": {
+    "boundaryId": "hartwell-1200-province-v5_1200_chin_chn_1200_l-19",
+    "sourceUrl": "https://doi.org/10.7910/DVN/29302",
+    "sourceArchive": "data/evidence/hartwell/source-layers.zip",
+    "sourceArchiveSHA256": "cccf3d490ea07c48e094729c5ef19518fca9dc7bc549aa988abc12ddffd12ee0",
+    "sourceLayer": "v5_1200_chin_chn_1200_l",
+    "sourceRecordIndex": 18,
+    "rawSourceRecord": {
+      "CHN1200L_I": 19.0,
+      "CODE": "J003200000000",
+      "LEVEL1_H": "00",
+      "LEVEL2_H": "32",
+      "H_PINYIN_N": "00",
+      "H_UNICODE_": "00",
+      "H_ADMIN_TY": "21",
+      "H_SUP_PROV": "Dongping Fu",
+      "H_SUP_CHPV": "東平府",
+      "H_PROVINCE": "Fu",
+      "H_CHINPROV": "Jin dynasty",
+      "Shape_Leng": 2260797.87305,
+      "Shape_Area": 55346895144.0
+    },
+    "sourceMembersSHA256": {
+      "v5_1200_chin_chn_1200_l.dbf": "b1e6adda4d53df69b67040b65eeb3932f9343135bd72ff126ee1a964a1eb618d",
+      "v5_1200_chin_chn_1200_p.dbf": "bf980841b172c25d7b4633481ed7e5f1dc2b1cb5b710a1dd7934422a3112e56a"
+    },
+    "restoredTraditionalName": "山東西路",
+    "restoredSimplifiedName": "山东西路",
+    "childSourceRecords": [
+      {
+        "sourceLayer": "v5_1200_chin_chn_1200_p",
+        "sourceRecordIndex": 99,
+        "recordId": "100",
+        "fields": {
+          "CODE": "J003200002100",
+          "H_UNICODE_": "東平府",
+          "H_ADMIN_TY": "Fu",
+          "H_SUP_CHPV": "金代",
+          "H_PROVINCE": "Shandong Xi Lu",
+          "H_CHINPROV": "山東西路"
+        }
+      },
+      {
+        "sourceLayer": "v5_1200_chin_chn_1200_p",
+        "sourceRecordIndex": 100,
+        "recordId": "101",
+        "fields": {
+          "CODE": "J003200002300",
+          "H_UNICODE_": "徐州",
+          "H_ADMIN_TY": "Zhou",
+          "H_SUP_CHPV": "金代",
+          "H_PROVINCE": "Shandong Xi Lu",
+          "H_CHINPROV": "山東西路"
+        }
+      },
+      {
+        "sourceLayer": "v5_1200_chin_chn_1200_p",
+        "sourceRecordIndex": 101,
+        "recordId": "102",
+        "fields": {
+          "CODE": "J003200002400",
+          "H_UNICODE_": "邳州",
+          "H_ADMIN_TY": "Zhou",
+          "H_SUP_CHPV": "金代",
+          "H_PROVINCE": "Shandong Xi Lu",
+          "H_CHINPROV": "山東西路"
+        }
+      },
+      {
+        "sourceLayer": "v5_1200_chin_chn_1200_p",
+        "sourceRecordIndex": 102,
+        "recordId": "103",
+        "fields": {
+          "CODE": "J003200002500",
+          "H_UNICODE_": "滕州",
+          "H_ADMIN_TY": "Zhou",
+          "H_SUP_CHPV": "金代",
+          "H_PROVINCE": "Shandong Xi Lu",
+          "H_CHINPROV": "山東西路"
+        }
+      },
+      {
+        "sourceLayer": "v5_1200_chin_chn_1200_p",
+        "sourceRecordIndex": 103,
+        "recordId": "104",
+        "fields": {
+          "CODE": "J003200002600",
+          "H_UNICODE_": "博州",
+          "H_ADMIN_TY": "Zhou",
+          "H_SUP_CHPV": "金代",
+          "H_PROVINCE": "Shandong Xi Lu",
+          "H_CHINPROV": "山東西路"
+        }
+      },
+      {
+        "sourceLayer": "v5_1200_chin_chn_1200_p",
+        "sourceRecordIndex": 104,
+        "recordId": "105",
+        "fields": {
+          "CODE": "J003200002700",
+          "H_UNICODE_": "兗州",
+          "H_ADMIN_TY": "Zhou",
+          "H_SUP_CHPV": "金代",
+          "H_PROVINCE": "Shandong Xi Lu",
+          "H_CHINPROV": "山東西路"
+        }
+      },
+      {
+        "sourceLayer": "v5_1200_chin_chn_1200_p",
+        "sourceRecordIndex": 105,
+        "recordId": "106",
+        "fields": {
+          "CODE": "J003200002800",
+          "H_UNICODE_": "泰安州",
+          "H_ADMIN_TY": "Zhou",
+          "H_SUP_CHPV": "金代",
+          "H_PROVINCE": "Shandong Xi Lu",
+          "H_CHINPROV": "山東西路"
+        }
+      },
+      {
+        "sourceLayer": "v5_1200_chin_chn_1200_p",
+        "sourceRecordIndex": 106,
+        "recordId": "107",
+        "fields": {
+          "CODE": "J003200003100",
+          "H_UNICODE_": "曹州",
+          "H_ADMIN_TY": "Zhou",
+          "H_SUP_CHPV": "金代",
+          "H_PROVINCE": "Shandong Xi Lu",
+          "H_CHINPROV": "山東西路"
+        }
+      },
+      {
+        "sourceLayer": "v5_1200_chin_chn_1200_p",
+        "sourceRecordIndex": 107,
+        "recordId": "108",
+        "fields": {
+          "CODE": "J003200002200",
+          "H_UNICODE_": "濟州",
+          "H_ADMIN_TY": "Zhou",
+          "H_SUP_CHPV": "金代",
+          "H_PROVINCE": "Shandong Xi Lu",
+          "H_CHINPROV": "山東西路"
+        }
+      },
+      {
+        "sourceLayer": "v5_1200_chin_chn_1200_p",
+        "sourceRecordIndex": 188,
+        "recordId": "189",
+        "fields": {
+          "CODE": "J003200002900",
+          "H_UNICODE_": "德州",
+          "H_ADMIN_TY": "Zhou",
+          "H_SUP_CHPV": "金代",
+          "H_PROVINCE": "Shandong Xi Lu",
+          "H_CHINPROV": "山東西路"
+        }
+      }
+    ],
+    "spatialEvidence": {
+      "sourceCRS": "EPSG:2333",
+      "method": "Union the 10 original prefecture geometries whose CODE starts J0032, compare against original province record19. Invalid source geometries are repaired only in memory for robust set operations; no source coordinates or files are rewritten.",
+      "parentAreaSquareMetres": 55346878356.82963,
+      "childUnionAreaSquareMetres": 55346878351.49313,
+      "symmetricDifferenceAreaSquareMetres": 5.336619983499986,
+      "intersectionOverUnion": 0.9999999999035787
+    },
+    "conclusion": "Use 山東西路/山东西路 for display; 東平府 is one child, not the whole region. Keep original 00 and original geometry unchanged."
+  },
+  "modernCorrespondencePropagation": {
+    "affectedEntries": 1,
+    "boundaryId": "hartwell-1200-province-v5_1200_chin_chn_1200_l-19",
+    "historicalName": "00",
+    "simplifiedName": "00",
+    "modernNames": [
+      "山东",
+      "济宁市"
+    ],
+    "decision": "Preserve historicalName and modern spatial names. Apply the same verified display-name resolver ahead of the cached simplifiedName."
+  },
+  "originalHartwellDBFAudit": {
+    "counts": {
+      "inspectedHartwellOriginalRecords": 9365,
+      "H_UNICODE_": 8,
+      "H_PINYIN_N": 1
+    },
+    "findings": [
+      {
+        "boundaryId": "hartwell-741-county-v5_0741_chin_chn_0741_c-316",
+        "displayName": "Yinshui",
+        "fields": {
+          "H_UNICODE_": "",
+          "H_PINYIN_N": "Yinshui"
+        },
+        "placeholderFields": {
+          "H_UNICODE_": ""
+        }
+      },
+      {
+        "boundaryId": "hartwell-741-county-v5_0741_chin_chn_0741_c-1315",
+        "displayName": "Hankuang",
+        "fields": {
+          "H_UNICODE_": "",
+          "H_PINYIN_N": "Hankuang"
+        },
+        "placeholderFields": {
+          "H_UNICODE_": ""
+        }
+      },
+      {
+        "boundaryId": "hartwell-1080-country-v5_1080_chin_chn_1080_l-28",
+        "displayName": "Aboriginal Tribal Lands",
+        "fields": {
+          "H_UNICODE_": "",
+          "H_PINYIN_N": "Aboriginal Tribal Lands"
+        },
+        "placeholderFields": {
+          "H_UNICODE_": ""
+        }
+      },
+      {
+        "boundaryId": "hartwell-1080-prefecture-v5_1080_chin_chn_1080_p-306",
+        "displayName": "Weimo",
+        "fields": {
+          "H_UNICODE_": "",
+          "H_PINYIN_N": "Weimo"
+        },
+        "placeholderFields": {
+          "H_UNICODE_": ""
+        }
+      },
+      {
+        "boundaryId": "hartwell-1080-county-v5_1080_chin_chn_1080_c-1315",
+        "displayName": "Weimo",
+        "fields": {
+          "H_UNICODE_": "",
+          "H_PINYIN_N": "Weimo"
+        },
+        "placeholderFields": {
+          "H_UNICODE_": ""
+        }
+      },
+      {
+        "boundaryId": "hartwell-1200-province-v5_1200_chin_chn_1200_l-19",
+        "displayName": "00",
+        "fields": {
+          "H_UNICODE_": "00",
+          "H_PINYIN_N": "00"
+        },
+        "placeholderFields": {
+          "H_UNICODE_": "00",
+          "H_PINYIN_N": "00"
+        }
+      },
+      {
+        "boundaryId": "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-111",
+        "displayName": "Ao Zhou",
+        "fields": {
+          "H_UNICODE_": "",
+          "H_PINYIN_N": "Ao Zhou"
+        },
+        "placeholderFields": {
+          "H_UNICODE_": ""
+        }
+      },
+      {
+        "boundaryId": "hartwell-1391-county-v5_1391_chin_chn_1391_c-1432",
+        "displayName": "Ejia",
+        "fields": {
+          "H_UNICODE_": "",
+          "H_PINYIN_N": "Ejia"
+        },
+        "placeholderFields": {
+          "H_UNICODE_": ""
+        }
+      }
+    ],
+    "legitimateNamesNotClassifiedAsPlaceholders": [
+      {
+        "boundaryId": "hartwell-741-prefecture-v5_0741_chin_chn_0741_p-201",
+        "displayName": "南州",
+        "field": "H_PINYIN_N",
+        "value": "Nan",
+        "reason": "南州的有效拼音Nan，不等于数值哨兵NaN。"
+      }
+    ]
+  }
+}

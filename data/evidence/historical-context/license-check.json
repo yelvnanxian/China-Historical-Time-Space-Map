@@ -1,0 +1,13 @@
+{
+  "retrievedAt": "2026-09-24T12:21:17.135138+00:00",
+  "url": "https://zh.wikipedia.org/w/api.php?action=query&meta=siteinfo&siprop=rightsinfo&format=json&formatversion=2",
+  "response": {
+    "batchcomplete": true,
+    "query": {
+      "rightsinfo": {
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.zh",
+        "text": "Creative Commons Attribution-Share Alike 4.0"
+      }
+    }
+  }
+}

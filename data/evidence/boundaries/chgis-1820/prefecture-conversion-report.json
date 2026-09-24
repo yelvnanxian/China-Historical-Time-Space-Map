@@ -1,0 +1,207 @@
+{
+  "title": "CHGIS V6 1820: v6_1820_pref_pgn_gbk.zip",
+  "sourceUrl": "https://doi.org/10.7910/DVN/2K4FHX",
+  "sourceFileId": 2966700,
+  "sourceArchiveMD5": "c5ef2efd04978ce0d71e3a3bcfcf5cb0",
+  "citation": "\"CHGIS Version 6.\" (c) Fairbank Center for Chinese Studies and the Institute for Chinese Historical Geography at Fudan University, Dec 2016.",
+  "sourceCRS": "EPSG:2333",
+  "targetCRS": "EPSG:4326",
+  "transformation": "Inverse of unnnamed (Gauss Kruger) + Ballpark geographic offset from Xian 1980 to WGS 84 (with axis order normalized for visualization)",
+  "transformationAccuracyMetres": -1.0,
+  "coordinatePrecisionDegrees": 1e-06,
+  "simplified": false,
+  "yearBasis": "Official dataset title and filename; original date fields are retained.",
+  "warning": "官方文件标为 1820 年，但 320 个区域的原始 BEG_YR / END_YR 字段与该年冲突（[(1911, 1911)]）；异常原值已保留，年份尚未核实。",
+  "featureCount": 320,
+  "sourceFields": [
+    "NAME_PY",
+    "NAME_CH",
+    "NAME_FT",
+    "PRES_LOC",
+    "TYPE_PY",
+    "TYPE_CH",
+    "LEV_RANK",
+    "BEG_YR",
+    "BEG_RULE",
+    "END_YR",
+    "END_RULE",
+    "DYN_PY",
+    "DYN_CH",
+    "LEV1_PY",
+    "LEV1_CH",
+    "NOTE_ID",
+    "OBJ_TYPE",
+    "SYS_ID",
+    "GEO_SRC",
+    "COMPILER",
+    "GEOCOMP",
+    "CHECKER",
+    "ENT_DATE",
+    "X_COORD",
+    "Y_COORD",
+    "AREA"
+  ],
+  "sourceVertexCount": 288783,
+  "outputVertexCount": 288698,
+  "invalidSourceFeatureCount": 2,
+  "invalidOutputFeatureCount": 0,
+  "sourceDatePairs": [
+    [
+      1911,
+      1911
+    ]
+  ],
+  "yearConflictCount": 320,
+  "duplicateSourceRecordIds": [
+    {
+      "recordId": "1927",
+      "sourceRowIndex": 298
+    },
+    {
+      "recordId": "1834",
+      "sourceRowIndex": 318
+    }
+  ],
+  "sourceWarnings": [
+    "Possible issue encountered when converting Shape #152 to GeoJSON: Shapefile format requires that all polygon interior holes be contained by an exterior ring, but the Shape contained interior holes (defined by counter-clockwise orientation in the shapefile format) that were orphaned, i.e. not contained by any exterior rings. The rings were still included but were encoded as GeoJSON exterior rings instead of holes."
+  ],
+  "geometryCorrections": [
+    {
+      "recordIndex": 125,
+      "sourceId": "2028",
+      "name": "太仓州",
+      "verticesBeforePrecision": 689,
+      "verticesAfterPrecision": 685
+    },
+    {
+      "recordIndex": 152,
+      "sourceId": "2104",
+      "name": "千里石塘",
+      "sourceValidity": "Self-intersection[20115818.5409638 1080634.76644348]",
+      "makeValidResultType": "MultiPolygon",
+      "originalAreaSquareMetres": 845555592.8089908,
+      "repairedAreaSquareMetres": 823309948.4791632,
+      "verticesBeforePrecision": 2924,
+      "verticesAfterPrecision": 2916
+    },
+    {
+      "recordIndex": 195,
+      "sourceId": "1956",
+      "name": "荆门州",
+      "verticesBeforePrecision": 1182,
+      "verticesAfterPrecision": 1181
+    },
+    {
+      "recordIndex": 200,
+      "sourceId": "1977",
+      "name": "安庆府",
+      "verticesBeforePrecision": 1142,
+      "verticesAfterPrecision": 1141
+    },
+    {
+      "recordIndex": 225,
+      "sourceId": "2027",
+      "name": "苏州府",
+      "sourceValidity": "Self-intersection[20446876.8960247 3561004.03941416]",
+      "makeValidResultType": "MultiPolygon",
+      "originalAreaSquareMetres": 7253801870.852975,
+      "repairedAreaSquareMetres": 7253801874.285601,
+      "verticesBeforePrecision": 732,
+      "verticesAfterPrecision": 729
+    },
+    {
+      "recordIndex": 245,
+      "sourceId": "2011",
+      "name": "处州府",
+      "verticesBeforePrecision": 1281,
+      "verticesAfterPrecision": 1280
+    },
+    {
+      "recordIndex": 255,
+      "sourceId": "1941",
+      "name": "长沙府",
+      "verticesBeforePrecision": 2809,
+      "verticesAfterPrecision": 2805
+    },
+    {
+      "recordIndex": 258,
+      "sourceId": "1944",
+      "name": "辰州府",
+      "verticesBeforePrecision": 1283,
+      "verticesAfterPrecision": 1279
+    },
+    {
+      "recordIndex": 270,
+      "sourceId": "2059",
+      "name": "广州府",
+      "verticesBeforePrecision": 3380,
+      "verticesAfterPrecision": 3376
+    },
+    {
+      "recordIndex": 271,
+      "sourceId": "2047",
+      "name": "高州府",
+      "verticesBeforePrecision": 1433,
+      "verticesAfterPrecision": 1432
+    },
+    {
+      "recordIndex": 276,
+      "sourceId": "1835",
+      "name": "凤翔府",
+      "verticesBeforePrecision": 1223,
+      "verticesAfterPrecision": 1212
+    },
+    {
+      "recordIndex": 282,
+      "sourceId": "1834",
+      "name": "汉中府",
+      "verticesBeforePrecision": 749,
+      "verticesAfterPrecision": 575
+    },
+    {
+      "recordIndex": 285,
+      "sourceId": "1824",
+      "name": "蒲州府",
+      "verticesBeforePrecision": 205,
+      "verticesAfterPrecision": 204
+    },
+    {
+      "recordIndex": 287,
+      "sourceId": "1858",
+      "name": "酉阳州",
+      "verticesBeforePrecision": 1133,
+      "verticesAfterPrecision": 1119
+    },
+    {
+      "recordIndex": 289,
+      "sourceId": "1879",
+      "name": "太平厅",
+      "verticesBeforePrecision": 536,
+      "verticesAfterPrecision": 535
+    },
+    {
+      "recordIndex": 298,
+      "sourceId": "1927",
+      "name": "太平府",
+      "verticesBeforePrecision": 573,
+      "verticesAfterPrecision": 572
+    },
+    {
+      "recordIndex": 305,
+      "sourceId": "1988",
+      "name": "南昌府",
+      "verticesBeforePrecision": 983,
+      "verticesAfterPrecision": 982
+    },
+    {
+      "recordIndex": 309,
+      "sourceId": "2048",
+      "name": "肇庆府",
+      "verticesBeforePrecision": 1873,
+      "verticesAfterPrecision": 1869
+    }
+  ],
+  "outputBytes": 6868075,
+  "outputSHA256": "6fbe350ed47212606e93b6ca1175b4a51957399e71bee134ee04a04fb28ace18",
+  "output": "public/data/boundaries/chgis-1820-prefecture.geojson"
+}

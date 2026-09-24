@@ -1,0 +1,16 @@
+{
+  "id": "context-jingzhou",
+  "title": "荆州市 — 维基百科",
+  "url": "https://zh.wikipedia.org/wiki/%E8%8D%86%E5%B7%9E%E5%B8%82",
+  "retrievedAt": "2026-09-24T12:08:55.073397+00:00",
+  "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证。引文保留本次页面原字形。",
+  "snapshotPath": "data/evidence/historical-context/jingzhou.txt",
+  "snapshotSha256": "551725178b786700668943f0c31444c66367273d2b7c2159573eb2d0e5a46e11",
+  "pageId": 2797,
+  "revision": {
+    "revid": 94477256,
+    "parentid": 94418285,
+    "timestamp": "2026-09-21T08:58:59Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E8%8D%86%E5%B7%9E%E5%B8%82&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

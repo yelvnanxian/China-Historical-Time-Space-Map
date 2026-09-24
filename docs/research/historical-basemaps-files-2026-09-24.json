@@ -1,0 +1,882 @@
+[
+  {
+    "name": "places.geojson",
+    "path": "geojson/places.geojson",
+    "sha": "46273dda1858421f3615266cd7b477f017915bca",
+    "size": 4845378,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/places.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/places.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/46273dda1858421f3615266cd7b477f017915bca",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/places.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/places.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/46273dda1858421f3615266cd7b477f017915bca",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/places.geojson"
+    }
+  },
+  {
+    "name": "world_100.geojson",
+    "path": "geojson/world_100.geojson",
+    "sha": "64bc1d9800e25c707382d00aaea48215d195367f",
+    "size": 1182426,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_100.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_100.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/64bc1d9800e25c707382d00aaea48215d195367f",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_100.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_100.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/64bc1d9800e25c707382d00aaea48215d195367f",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_100.geojson"
+    }
+  },
+  {
+    "name": "world_1000.geojson",
+    "path": "geojson/world_1000.geojson",
+    "sha": "c0cd99f28d0b490a7147c391f2d2ac72c0434015",
+    "size": 1040461,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1000.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1000.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/c0cd99f28d0b490a7147c391f2d2ac72c0434015",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1000.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1000.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/c0cd99f28d0b490a7147c391f2d2ac72c0434015",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1000.geojson"
+    }
+  },
+  {
+    "name": "world_1100.geojson",
+    "path": "geojson/world_1100.geojson",
+    "sha": "91bf7f8ccf391a3c7cdbfc903df26601f7c5771b",
+    "size": 1065110,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1100.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1100.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/91bf7f8ccf391a3c7cdbfc903df26601f7c5771b",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1100.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1100.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/91bf7f8ccf391a3c7cdbfc903df26601f7c5771b",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1100.geojson"
+    }
+  },
+  {
+    "name": "world_1200.geojson",
+    "path": "geojson/world_1200.geojson",
+    "sha": "bc10a1689d3de3a84ea88ccedf5a7bbc066431b0",
+    "size": 1050917,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1200.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1200.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/bc10a1689d3de3a84ea88ccedf5a7bbc066431b0",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1200.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1200.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/bc10a1689d3de3a84ea88ccedf5a7bbc066431b0",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1200.geojson"
+    }
+  },
+  {
+    "name": "world_1279.geojson",
+    "path": "geojson/world_1279.geojson",
+    "sha": "a2d1bcc0ca4c487adf1cfdf34bfb5ccac10509a4",
+    "size": 1028721,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1279.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1279.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/a2d1bcc0ca4c487adf1cfdf34bfb5ccac10509a4",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1279.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1279.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/a2d1bcc0ca4c487adf1cfdf34bfb5ccac10509a4",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1279.geojson"
+    }
+  },
+  {
+    "name": "world_1300.geojson",
+    "path": "geojson/world_1300.geojson",
+    "sha": "a6cce36670aa365898624546a1a9879ec9aa51fd",
+    "size": 1021630,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1300.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1300.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/a6cce36670aa365898624546a1a9879ec9aa51fd",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1300.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1300.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/a6cce36670aa365898624546a1a9879ec9aa51fd",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1300.geojson"
+    }
+  },
+  {
+    "name": "world_1400.geojson",
+    "path": "geojson/world_1400.geojson",
+    "sha": "290b30d8a1d4936ea94f61583fb52559e057d50a",
+    "size": 1053803,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1400.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1400.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/290b30d8a1d4936ea94f61583fb52559e057d50a",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1400.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1400.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/290b30d8a1d4936ea94f61583fb52559e057d50a",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1400.geojson"
+    }
+  },
+  {
+    "name": "world_1492.geojson",
+    "path": "geojson/world_1492.geojson",
+    "sha": "7a415ea2f68aa2f010fff3830cab76203699e6a9",
+    "size": 3468360,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1492.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1492.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/7a415ea2f68aa2f010fff3830cab76203699e6a9",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1492.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1492.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/7a415ea2f68aa2f010fff3830cab76203699e6a9",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1492.geojson"
+    }
+  },
+  {
+    "name": "world_1500.geojson",
+    "path": "geojson/world_1500.geojson",
+    "sha": "8fc8290dc64ff384a55a50528c20e652c16b1977",
+    "size": 1170331,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1500.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1500.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/8fc8290dc64ff384a55a50528c20e652c16b1977",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1500.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1500.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/8fc8290dc64ff384a55a50528c20e652c16b1977",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1500.geojson"
+    }
+  },
+  {
+    "name": "world_1530.geojson",
+    "path": "geojson/world_1530.geojson",
+    "sha": "743b3db1fd414891e5d9e9eb868c2aaf2b04810e",
+    "size": 1401257,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1530.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1530.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/743b3db1fd414891e5d9e9eb868c2aaf2b04810e",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1530.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1530.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/743b3db1fd414891e5d9e9eb868c2aaf2b04810e",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1530.geojson"
+    }
+  },
+  {
+    "name": "world_1600.geojson",
+    "path": "geojson/world_1600.geojson",
+    "sha": "ea95bd8fcfb7cdf889739aa6222cbc62329d93ec",
+    "size": 1680222,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1600.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1600.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/ea95bd8fcfb7cdf889739aa6222cbc62329d93ec",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1600.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1600.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/ea95bd8fcfb7cdf889739aa6222cbc62329d93ec",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1600.geojson"
+    }
+  },
+  {
+    "name": "world_1650.geojson",
+    "path": "geojson/world_1650.geojson",
+    "sha": "aa7eeaf7af87481d751866728054c2f26e3c0417",
+    "size": 1650748,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1650.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1650.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/aa7eeaf7af87481d751866728054c2f26e3c0417",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1650.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1650.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/aa7eeaf7af87481d751866728054c2f26e3c0417",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1650.geojson"
+    }
+  },
+  {
+    "name": "world_1700.geojson",
+    "path": "geojson/world_1700.geojson",
+    "sha": "0b920146a9d929389b0ac9f0272dad9b42479469",
+    "size": 1625990,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1700.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1700.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/0b920146a9d929389b0ac9f0272dad9b42479469",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1700.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1700.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/0b920146a9d929389b0ac9f0272dad9b42479469",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1700.geojson"
+    }
+  },
+  {
+    "name": "world_1715.geojson",
+    "path": "geojson/world_1715.geojson",
+    "sha": "52c432274ede6a1d6cd92b3ad65a63a3a452e140",
+    "size": 1695707,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1715.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1715.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/52c432274ede6a1d6cd92b3ad65a63a3a452e140",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1715.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1715.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/52c432274ede6a1d6cd92b3ad65a63a3a452e140",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1715.geojson"
+    }
+  },
+  {
+    "name": "world_1783.geojson",
+    "path": "geojson/world_1783.geojson",
+    "sha": "ed2c0ba43e1f57cd027b41950dc87f3d2fc5b010",
+    "size": 1668045,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1783.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1783.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/ed2c0ba43e1f57cd027b41950dc87f3d2fc5b010",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1783.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1783.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/ed2c0ba43e1f57cd027b41950dc87f3d2fc5b010",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1783.geojson"
+    }
+  },
+  {
+    "name": "world_1800.geojson",
+    "path": "geojson/world_1800.geojson",
+    "sha": "88cdb14b75acc2d5f4cdd3f4582adef21b6ae7ee",
+    "size": 1638994,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1800.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1800.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/88cdb14b75acc2d5f4cdd3f4582adef21b6ae7ee",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1800.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1800.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/88cdb14b75acc2d5f4cdd3f4582adef21b6ae7ee",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1800.geojson"
+    }
+  },
+  {
+    "name": "world_1815.geojson",
+    "path": "geojson/world_1815.geojson",
+    "sha": "4aac1a9d1fa0ab1271b23dcf24eff8ba8298e48d",
+    "size": 2413409,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1815.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1815.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/4aac1a9d1fa0ab1271b23dcf24eff8ba8298e48d",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1815.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1815.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/4aac1a9d1fa0ab1271b23dcf24eff8ba8298e48d",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1815.geojson"
+    }
+  },
+  {
+    "name": "world_1878.geojson",
+    "path": "geojson/world_1878.geojson",
+    "sha": "e7b4d0c6115f97dd541a32ac2f2d1f8663ddf999",
+    "size": 1713853,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1878.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1878.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/e7b4d0c6115f97dd541a32ac2f2d1f8663ddf999",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1878.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1878.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/e7b4d0c6115f97dd541a32ac2f2d1f8663ddf999",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1878.geojson"
+    }
+  },
+  {
+    "name": "world_1880.geojson",
+    "path": "geojson/world_1880.geojson",
+    "sha": "2234cfa861fc0546029e8530675fa46aa6aa3810",
+    "size": 1302639,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1880.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1880.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/2234cfa861fc0546029e8530675fa46aa6aa3810",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1880.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1880.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/2234cfa861fc0546029e8530675fa46aa6aa3810",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1880.geojson"
+    }
+  },
+  {
+    "name": "world_1900.geojson",
+    "path": "geojson/world_1900.geojson",
+    "sha": "805712b9a5ad91b35362960b251a8a5707f02071",
+    "size": 1296950,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1900.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1900.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/805712b9a5ad91b35362960b251a8a5707f02071",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1900.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1900.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/805712b9a5ad91b35362960b251a8a5707f02071",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1900.geojson"
+    }
+  },
+  {
+    "name": "world_1914.geojson",
+    "path": "geojson/world_1914.geojson",
+    "sha": "75d7fdfbe7b365efdd703908860b4fe4985ca176",
+    "size": 1289554,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1914.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1914.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/75d7fdfbe7b365efdd703908860b4fe4985ca176",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1914.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1914.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/75d7fdfbe7b365efdd703908860b4fe4985ca176",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1914.geojson"
+    }
+  },
+  {
+    "name": "world_1920.geojson",
+    "path": "geojson/world_1920.geojson",
+    "sha": "be6722f403fc64af4f584b67a17ac59af617fa1e",
+    "size": 1685651,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1920.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1920.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/be6722f403fc64af4f584b67a17ac59af617fa1e",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1920.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1920.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/be6722f403fc64af4f584b67a17ac59af617fa1e",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1920.geojson"
+    }
+  },
+  {
+    "name": "world_1930.geojson",
+    "path": "geojson/world_1930.geojson",
+    "sha": "8300e2b5fdd2a8c24de699847c6dd15ec7d794d9",
+    "size": 1403416,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1930.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1930.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/8300e2b5fdd2a8c24de699847c6dd15ec7d794d9",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1930.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1930.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/8300e2b5fdd2a8c24de699847c6dd15ec7d794d9",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1930.geojson"
+    }
+  },
+  {
+    "name": "world_1938.geojson",
+    "path": "geojson/world_1938.geojson",
+    "sha": "27fa58024df898bfdc0e530ac6b856e0fa560cb4",
+    "size": 1637285,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1938.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1938.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/27fa58024df898bfdc0e530ac6b856e0fa560cb4",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1938.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1938.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/27fa58024df898bfdc0e530ac6b856e0fa560cb4",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1938.geojson"
+    }
+  },
+  {
+    "name": "world_1945.geojson",
+    "path": "geojson/world_1945.geojson",
+    "sha": "08b7fb87faf31e534fc31cc7d8cc9e3d415fa133",
+    "size": 1563965,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1945.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1945.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/08b7fb87faf31e534fc31cc7d8cc9e3d415fa133",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1945.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1945.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/08b7fb87faf31e534fc31cc7d8cc9e3d415fa133",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1945.geojson"
+    }
+  },
+  {
+    "name": "world_1960.geojson",
+    "path": "geojson/world_1960.geojson",
+    "sha": "ee10df0ad424fdaab567ee768279d0c10b6c1c7b",
+    "size": 1502004,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1960.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1960.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/ee10df0ad424fdaab567ee768279d0c10b6c1c7b",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1960.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1960.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/ee10df0ad424fdaab567ee768279d0c10b6c1c7b",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1960.geojson"
+    }
+  },
+  {
+    "name": "world_1994.geojson",
+    "path": "geojson/world_1994.geojson",
+    "sha": "931b7ed93d8c4fcf23a4e9a351b4e179d00ba451",
+    "size": 1952340,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1994.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1994.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/931b7ed93d8c4fcf23a4e9a351b4e179d00ba451",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1994.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_1994.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/931b7ed93d8c4fcf23a4e9a351b4e179d00ba451",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1994.geojson"
+    }
+  },
+  {
+    "name": "world_200.geojson",
+    "path": "geojson/world_200.geojson",
+    "sha": "8a2fe3fee3524d776c4ea235215f9449264ee540",
+    "size": 1165201,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_200.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_200.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/8a2fe3fee3524d776c4ea235215f9449264ee540",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_200.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_200.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/8a2fe3fee3524d776c4ea235215f9449264ee540",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_200.geojson"
+    }
+  },
+  {
+    "name": "world_2000.geojson",
+    "path": "geojson/world_2000.geojson",
+    "sha": "30859c6562dc15cdd6138e1f064b1801d6fb3e1b",
+    "size": 1893869,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_2000.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_2000.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/30859c6562dc15cdd6138e1f064b1801d6fb3e1b",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_2000.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_2000.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/30859c6562dc15cdd6138e1f064b1801d6fb3e1b",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_2000.geojson"
+    }
+  },
+  {
+    "name": "world_2010.geojson",
+    "path": "geojson/world_2010.geojson",
+    "sha": "6d068f008340baebf292d367c5d2305e31c47010",
+    "size": 1893860,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_2010.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_2010.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/6d068f008340baebf292d367c5d2305e31c47010",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_2010.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_2010.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/6d068f008340baebf292d367c5d2305e31c47010",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_2010.geojson"
+    }
+  },
+  {
+    "name": "world_300.geojson",
+    "path": "geojson/world_300.geojson",
+    "sha": "3095be508179342384e1cec2c79d0b8168ad4aa0",
+    "size": 1184706,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_300.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_300.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/3095be508179342384e1cec2c79d0b8168ad4aa0",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_300.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_300.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/3095be508179342384e1cec2c79d0b8168ad4aa0",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_300.geojson"
+    }
+  },
+  {
+    "name": "world_400.geojson",
+    "path": "geojson/world_400.geojson",
+    "sha": "f1ee4b8a7b7327a39e70f919b146471bc473ef04",
+    "size": 1123300,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_400.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_400.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/f1ee4b8a7b7327a39e70f919b146471bc473ef04",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_400.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_400.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/f1ee4b8a7b7327a39e70f919b146471bc473ef04",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_400.geojson"
+    }
+  },
+  {
+    "name": "world_500.geojson",
+    "path": "geojson/world_500.geojson",
+    "sha": "9583a0c3fbbb5454664f5a05814b5d7866fc8282",
+    "size": 968264,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_500.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_500.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/9583a0c3fbbb5454664f5a05814b5d7866fc8282",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_500.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_500.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/9583a0c3fbbb5454664f5a05814b5d7866fc8282",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_500.geojson"
+    }
+  },
+  {
+    "name": "world_600.geojson",
+    "path": "geojson/world_600.geojson",
+    "sha": "a677b61865c3888b6c136eb2c96f5a3fe0738695",
+    "size": 1025118,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_600.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_600.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/a677b61865c3888b6c136eb2c96f5a3fe0738695",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_600.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_600.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/a677b61865c3888b6c136eb2c96f5a3fe0738695",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_600.geojson"
+    }
+  },
+  {
+    "name": "world_700.geojson",
+    "path": "geojson/world_700.geojson",
+    "sha": "7a061dc13aa9ea6dc2f0a47fe225c624b2b42029",
+    "size": 966976,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_700.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_700.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/7a061dc13aa9ea6dc2f0a47fe225c624b2b42029",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_700.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_700.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/7a061dc13aa9ea6dc2f0a47fe225c624b2b42029",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_700.geojson"
+    }
+  },
+  {
+    "name": "world_800.geojson",
+    "path": "geojson/world_800.geojson",
+    "sha": "3bc0394a066bae9b39e0c8ca0dc5ec15d422d179",
+    "size": 977296,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_800.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_800.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/3bc0394a066bae9b39e0c8ca0dc5ec15d422d179",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_800.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_800.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/3bc0394a066bae9b39e0c8ca0dc5ec15d422d179",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_800.geojson"
+    }
+  },
+  {
+    "name": "world_900.geojson",
+    "path": "geojson/world_900.geojson",
+    "sha": "7278850058019e30979e6cb3374c8eb191eeb71c",
+    "size": 1056118,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_900.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_900.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/7278850058019e30979e6cb3374c8eb191eeb71c",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_900.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_900.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/7278850058019e30979e6cb3374c8eb191eeb71c",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_900.geojson"
+    }
+  },
+  {
+    "name": "world_bc1.geojson",
+    "path": "geojson/world_bc1.geojson",
+    "sha": "fb014dbd41d0a86f73de57efdbbe9952341653d4",
+    "size": 1185421,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_bc1.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_bc1.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/fb014dbd41d0a86f73de57efdbbe9952341653d4",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_bc1.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_bc1.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/fb014dbd41d0a86f73de57efdbbe9952341653d4",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_bc1.geojson"
+    }
+  },
+  {
+    "name": "world_bc100.geojson",
+    "path": "geojson/world_bc100.geojson",
+    "sha": "74cc5b5c4a1412b3ceb5179b8c3875ed2035e5e7",
+    "size": 958695,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_bc100.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_bc100.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/74cc5b5c4a1412b3ceb5179b8c3875ed2035e5e7",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_bc100.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_bc100.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/74cc5b5c4a1412b3ceb5179b8c3875ed2035e5e7",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_bc100.geojson"
+    }
+  },
+  {
+    "name": "world_bc1000.geojson",
+    "path": "geojson/world_bc1000.geojson",
+    "sha": "92bd5242fce7bb973cfcb2e75003ba19b650f673",
+    "size": 875454,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_bc1000.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_bc1000.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/92bd5242fce7bb973cfcb2e75003ba19b650f673",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_bc1000.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_bc1000.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/92bd5242fce7bb973cfcb2e75003ba19b650f673",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_bc1000.geojson"
+    }
+  },
+  {
+    "name": "world_bc10000.geojson",
+    "path": "geojson/world_bc10000.geojson",
+    "sha": "457d2eca5bad3fcf9ddd3280a3f63cb58758d01e",
+    "size": 782341,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_bc10000.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_bc10000.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/457d2eca5bad3fcf9ddd3280a3f63cb58758d01e",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_bc10000.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_bc10000.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/457d2eca5bad3fcf9ddd3280a3f63cb58758d01e",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_bc10000.geojson"
+    }
+  },
+  {
+    "name": "world_bc123000.geojson",
+    "path": "geojson/world_bc123000.geojson",
+    "sha": "0e2c16c09df8c609fec3085bd279c2baf2edd5cf",
+    "size": 719044,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_bc123000.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_bc123000.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/0e2c16c09df8c609fec3085bd279c2baf2edd5cf",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_bc123000.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_bc123000.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/0e2c16c09df8c609fec3085bd279c2baf2edd5cf",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_bc123000.geojson"
+    }
+  },
+  {
+    "name": "world_bc1500.geojson",
+    "path": "geojson/world_bc1500.geojson",
+    "sha": "89bd098b3c5fd48c70031e97c05a8ea82824d476",
+    "size": 874767,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_bc1500.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_bc1500.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/89bd098b3c5fd48c70031e97c05a8ea82824d476",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_bc1500.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_bc1500.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/89bd098b3c5fd48c70031e97c05a8ea82824d476",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_bc1500.geojson"
+    }
+  },
+  {
+    "name": "world_bc200.geojson",
+    "path": "geojson/world_bc200.geojson",
+    "sha": "c0b624c4df0b74fac50c1736e65f8c41666846df",
+    "size": 948654,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_bc200.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_bc200.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/c0b624c4df0b74fac50c1736e65f8c41666846df",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_bc200.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_bc200.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/c0b624c4df0b74fac50c1736e65f8c41666846df",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_bc200.geojson"
+    }
+  },
+  {
+    "name": "world_bc2000.geojson",
+    "path": "geojson/world_bc2000.geojson",
+    "sha": "2371095bd723c90ec19301cf82eac9ff2c07453a",
+    "size": 858855,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_bc2000.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_bc2000.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/2371095bd723c90ec19301cf82eac9ff2c07453a",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_bc2000.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_bc2000.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/2371095bd723c90ec19301cf82eac9ff2c07453a",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_bc2000.geojson"
+    }
+  },
+  {
+    "name": "world_bc300.geojson",
+    "path": "geojson/world_bc300.geojson",
+    "sha": "bc84cfebc6b78ff0589d481f3253d27986716620",
+    "size": 909380,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_bc300.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_bc300.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/bc84cfebc6b78ff0589d481f3253d27986716620",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_bc300.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_bc300.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/bc84cfebc6b78ff0589d481f3253d27986716620",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_bc300.geojson"
+    }
+  },
+  {
+    "name": "world_bc3000.geojson",
+    "path": "geojson/world_bc3000.geojson",
+    "sha": "f526d020f9994379312c6bafb827996d00c9d88c",
+    "size": 789242,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_bc3000.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_bc3000.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/f526d020f9994379312c6bafb827996d00c9d88c",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_bc3000.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_bc3000.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/f526d020f9994379312c6bafb827996d00c9d88c",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_bc3000.geojson"
+    }
+  },
+  {
+    "name": "world_bc323.geojson",
+    "path": "geojson/world_bc323.geojson",
+    "sha": "2f0474308fb3ce3a0f6cef89653c941876bdb43d",
+    "size": 888982,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_bc323.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_bc323.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/2f0474308fb3ce3a0f6cef89653c941876bdb43d",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_bc323.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_bc323.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/2f0474308fb3ce3a0f6cef89653c941876bdb43d",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_bc323.geojson"
+    }
+  },
+  {
+    "name": "world_bc400.geojson",
+    "path": "geojson/world_bc400.geojson",
+    "sha": "7605f63fab39dd0f8c1f8e2c8a93886ff34a9fd9",
+    "size": 899211,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_bc400.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_bc400.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/7605f63fab39dd0f8c1f8e2c8a93886ff34a9fd9",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_bc400.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_bc400.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/7605f63fab39dd0f8c1f8e2c8a93886ff34a9fd9",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_bc400.geojson"
+    }
+  },
+  {
+    "name": "world_bc4000.geojson",
+    "path": "geojson/world_bc4000.geojson",
+    "sha": "4323e981c869b8536dd486e0705aea86792c0bf7",
+    "size": 786563,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_bc4000.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_bc4000.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/4323e981c869b8536dd486e0705aea86792c0bf7",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_bc4000.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_bc4000.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/4323e981c869b8536dd486e0705aea86792c0bf7",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_bc4000.geojson"
+    }
+  },
+  {
+    "name": "world_bc500.geojson",
+    "path": "geojson/world_bc500.geojson",
+    "sha": "2b60d392c22f25cc006ba6b73770dbaf9f915e97",
+    "size": 915851,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_bc500.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_bc500.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/2b60d392c22f25cc006ba6b73770dbaf9f915e97",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_bc500.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_bc500.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/2b60d392c22f25cc006ba6b73770dbaf9f915e97",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_bc500.geojson"
+    }
+  },
+  {
+    "name": "world_bc5000.geojson",
+    "path": "geojson/world_bc5000.geojson",
+    "sha": "14f62f5e8bfc930eb5cb665d6864f28b584dc6e4",
+    "size": 3686090,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_bc5000.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_bc5000.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/14f62f5e8bfc930eb5cb665d6864f28b584dc6e4",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_bc5000.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_bc5000.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/14f62f5e8bfc930eb5cb665d6864f28b584dc6e4",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_bc5000.geojson"
+    }
+  },
+  {
+    "name": "world_bc700.geojson",
+    "path": "geojson/world_bc700.geojson",
+    "sha": "d6303f72176ec21cc7762c536225bf5da3cb2612",
+    "size": 881812,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_bc700.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_bc700.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/d6303f72176ec21cc7762c536225bf5da3cb2612",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_bc700.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_bc700.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/d6303f72176ec21cc7762c536225bf5da3cb2612",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_bc700.geojson"
+    }
+  },
+  {
+    "name": "world_bc8000.geojson",
+    "path": "geojson/world_bc8000.geojson",
+    "sha": "e6e68769e4cd98f31ec294ca42b938d20c0dd25f",
+    "size": 779787,
+    "url": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_bc8000.geojson?ref=master",
+    "html_url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_bc8000.geojson",
+    "git_url": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/e6e68769e4cd98f31ec294ca42b938d20c0dd25f",
+    "download_url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_bc8000.geojson",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/aourednik/historical-basemaps/contents/geojson/world_bc8000.geojson?ref=master",
+      "git": "https://api.github.com/repos/aourednik/historical-basemaps/git/blobs/e6e68769e4cd98f31ec294ca42b938d20c0dd25f",
+      "html": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_bc8000.geojson"
+    }
+  }
+]

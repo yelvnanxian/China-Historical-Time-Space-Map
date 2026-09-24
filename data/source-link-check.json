@@ -1,0 +1,82 @@
+{
+  "checkedAt": "2026-09-24",
+  "sources": [
+    {
+      "id": "shiji",
+      "status": 200,
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98",
+      "pageTitle": "史記 - 维基文库，自由的图书馆",
+      "checkedFor": "public reading entry only; not assertion verification"
+    },
+    {
+      "id": "hanshu",
+      "status": 200,
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8",
+      "pageTitle": "漢書 - 维基文库，自由的图书馆",
+      "checkedFor": "public reading entry only; not assertion verification"
+    },
+    {
+      "id": "sanguozhi",
+      "status": 200,
+      "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97",
+      "pageTitle": "三國志 - 维基文库，自由的图书馆",
+      "checkedFor": "public reading entry only; not assertion verification"
+    },
+    {
+      "id": "jinshu",
+      "status": 200,
+      "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8",
+      "pageTitle": "晉書 - 维基文库，自由的图书馆",
+      "checkedFor": "public reading entry only; not assertion verification"
+    },
+    {
+      "id": "tongjian",
+      "status": 200,
+      "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91",
+      "pageTitle": "資治通鑑 - 维基文库，自由的图书馆",
+      "checkedFor": "public reading entry only; not assertion verification"
+    },
+    {
+      "id": "suishu",
+      "status": 200,
+      "url": "https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8",
+      "pageTitle": "隋書 - 维基文库，自由的图书馆",
+      "checkedFor": "public reading entry only; not assertion verification"
+    },
+    {
+      "id": "jiutangshu",
+      "status": 200,
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8",
+      "pageTitle": "舊唐書 - 维基文库，自由的图书馆",
+      "checkedFor": "public reading entry only; not assertion verification"
+    },
+    {
+      "id": "songshi",
+      "status": 200,
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2",
+      "pageTitle": "宋史 - 维基文库，自由的图书馆",
+      "checkedFor": "public reading entry only; not assertion verification"
+    },
+    {
+      "id": "yuanshi",
+      "status": 200,
+      "url": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2",
+      "pageTitle": "元史 - 维基文库，自由的图书馆",
+      "checkedFor": "public reading entry only; not assertion verification"
+    },
+    {
+      "id": "mingshi",
+      "status": 200,
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2",
+      "pageTitle": "明史 - 维基文库，自由的图书馆",
+      "checkedFor": "public reading entry only; not assertion verification"
+    },
+    {
+      "id": "qingshigao",
+      "status": 200,
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF",
+      "pageTitle": "清史稿 - 维基文库，自由的图书馆",
+      "checkedFor": "public reading entry only; not assertion verification"
+    }
+  ]
+}

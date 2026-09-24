@@ -1,0 +1,135 @@
+{
+  "datasetPersistentId": "doi:10.7910/DVN/H3OB28",
+  "versionNumber": 1,
+  "versionMinorNumber": 0,
+  "releaseTime": "2019-02-21T22:10:09Z",
+  "license": {
+    "name": "CC0 1.0",
+    "uri": "http://creativecommons.org/publicdomain/zero/1.0",
+    "iconUri": "https://licensebuttons.net/p/zero/1.0/88x31.png",
+    "rightsIdentifier": "CC0-1.0",
+    "rightsIdentifierScheme": "SPDX",
+    "schemeUri": "https://spdx.org/licenses/",
+    "languageCode": "en"
+  },
+  "termsOfUse": null,
+  "restrictions": null,
+  "termsOfAccess": null,
+  "metadataBlocks": {
+    "citation": {
+      "displayName": "Citation Metadata",
+      "name": "citation",
+      "fields": [
+        {
+          "typeName": "title",
+          "multiple": false,
+          "typeClass": "primitive",
+          "value": "TGAZ  (Temporal Gazetteer)"
+        },
+        {
+          "typeName": "author",
+          "multiple": true,
+          "typeClass": "compound",
+          "value": [
+            {
+              "authorName": {
+                "typeName": "authorName",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "Berman, Lex"
+              },
+              "authorAffiliation": {
+                "typeName": "authorAffiliation",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "CGA, Harvard Univ"
+              }
+            }
+          ]
+        },
+        {
+          "typeName": "datasetContact",
+          "multiple": true,
+          "typeClass": "compound",
+          "value": [
+            {
+              "datasetContactName": {
+                "typeName": "datasetContactName",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "Berman, Lex"
+              },
+              "datasetContactAffiliation": {
+                "typeName": "datasetContactAffiliation",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "CGA, Harvard Univ"
+              },
+              "datasetContactEmail": {
+                "typeName": "datasetContactEmail",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "mberman@fas.harvard.edu"
+              }
+            }
+          ]
+        },
+        {
+          "typeName": "dsDescription",
+          "multiple": true,
+          "typeClass": "compound",
+          "value": [
+            {
+              "dsDescriptionValue": {
+                "typeName": "dsDescriptionValue",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "The Temporal Gazetteer is a database of Chinese, Russian and Tibetan Historical Placenames, made available as an online search engine and machine-readable API webservice.   Developed by Merrick Lex Berman and William Hays."
+              },
+              "dsDescriptionDate": {
+                "typeName": "dsDescriptionDate",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "2019-02-21"
+              }
+            }
+          ]
+        },
+        {
+          "typeName": "subject",
+          "multiple": true,
+          "typeClass": "controlledVocabulary",
+          "value": [
+            "Arts and Humanities"
+          ]
+        },
+        {
+          "typeName": "depositor",
+          "multiple": false,
+          "typeClass": "primitive",
+          "value": "Berman, Lex"
+        },
+        {
+          "typeName": "dateOfDeposit",
+          "multiple": false,
+          "typeClass": "primitive",
+          "value": "2019-02-21"
+        }
+      ]
+    }
+  },
+  "files": [
+    {
+      "id": 3370560,
+      "filename": "README_TGAZ_DataVerse.txt",
+      "restricted": false,
+      "description": null
+    },
+    {
+      "id": 3370559,
+      "filename": "tgaz_bak_2018.zip",
+      "restricted": false,
+      "description": "mysql dump to .sql with create table statements"
+    }
+  ]
+}

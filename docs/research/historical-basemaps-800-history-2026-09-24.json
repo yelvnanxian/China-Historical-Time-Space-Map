@@ -1,0 +1,182 @@
+[
+  {
+    "sha": "7bed003529d66488532c3a3256568b9725602bbf",
+    "date": "2026-09-13T20:11:54Z",
+    "message": "DWH3-299",
+    "html_url": "https://github.com/aourednik/historical-basemaps/commit/7bed003529d66488532c3a3256568b9725602bbf"
+  },
+  {
+    "sha": "f4720f25b9f797939bf8cf4e05683391fe43f148",
+    "date": "2026-04-13T00:13:56Z",
+    "message": "DWH3-299 Fix other 20 name typos in GeoJSON files",
+    "html_url": "https://github.com/aourednik/historical-basemaps/commit/f4720f25b9f797939bf8cf4e05683391fe43f148"
+  },
+  {
+    "sha": "6b2937c1267b9bcf091ed938c003fb9ba335aae4",
+    "date": "2026-04-11T21:07:39Z",
+    "message": "DWH3-299: Name corrections .\n\n  Typos: Scottalnd→Scotland,and  Illinnois→Illinois, Nothumbria→Northumbria,\n  Cherookee→Cherokee, Dutchy→Duchy, Zhow→Zhou, Bantou→Bantu, Papous→Papuans,\n  Khoiasan→Khoisan, Anglo-Egyption→Anglo-Egyptian, Kingfom→Kingdom.\n  Encoding: Teotihuacan, Monte Alban, Cochimi variants fixed.\n  Naming: Vice-Royalty→Viceroyalty, Expansionist Kingdom of Merina→Merina Kingdom,\n  United Provinces of La Plata→United Provinces of the Rio de la Plata,\n  Chola state→Chola Empire, Hindu Kingdoms→Hindu kingdoms.\n  39 files, 508 property values corrected.",
+    "html_url": "https://github.com/aourednik/historical-basemaps/commit/6b2937c1267b9bcf091ed938c003fb9ba335aae4"
+  },
+  {
+    "sha": "2d6c27bd845eee9d0d7b84da58cbcaae5dae688c",
+    "date": "2024-01-17T01:04:25Z",
+    "message": "Replaces 'Pamaps cultures' by 'Pampas cultures'",
+    "html_url": "https://github.com/aourednik/historical-basemaps/commit/2d6c27bd845eee9d0d7b84da58cbcaae5dae688c"
+  },
+  {
+    "sha": "26647c11f20f4ccf621d65ee188fadbb0c3fc8c1",
+    "date": "2022-07-04T15:59:10Z",
+    "message": " India",
+    "html_url": "https://github.com/aourednik/historical-basemaps/commit/26647c11f20f4ccf621d65ee188fadbb0c3fc8c1"
+  },
+  {
+    "sha": "6c4b8e8b8d8a7166cf5ecb65eed338c417b25227",
+    "date": "2022-06-18T00:41:37Z",
+    "message": " Europe",
+    "html_url": "https://github.com/aourednik/historical-basemaps/commit/6c4b8e8b8d8a7166cf5ecb65eed338c417b25227"
+  },
+  {
+    "sha": "cb7109ea58e8ab826d1bb9b544fdf546bfd4cbb2",
+    "date": "2022-06-17T23:00:48Z",
+    "message": " Arctic",
+    "html_url": "https://github.com/aourednik/historical-basemaps/commit/cb7109ea58e8ab826d1bb9b544fdf546bfd4cbb2"
+  },
+  {
+    "sha": "d41b69274ed07f5d3fbc7f241af40c535bc451c1",
+    "date": "2022-03-24T14:38:13Z",
+    "message": " nodejs-repaired geoms",
+    "html_url": "https://github.com/aourednik/historical-basemaps/commit/d41b69274ed07f5d3fbc7f241af40c535bc451c1"
+  },
+  {
+    "sha": "090b270b652ae7a546ac6484eef2da30f85d78eb",
+    "date": "2022-03-22T02:47:29Z",
+    "message": " Slavs",
+    "html_url": "https://github.com/aourednik/historical-basemaps/commit/090b270b652ae7a546ac6484eef2da30f85d78eb"
+  },
+  {
+    "sha": "605d7cb6c762cb47824a40867f6d5dd546f32249",
+    "date": "2022-03-21T20:22:31Z",
+    "message": " Slavs",
+    "html_url": "https://github.com/aourednik/historical-basemaps/commit/605d7cb6c762cb47824a40867f6d5dd546f32249"
+  },
+  {
+    "sha": "3a16f6a06e40b93c89adc84a3ecc1b2e2c2156b6",
+    "date": "2022-03-16T03:47:21Z",
+    "message": " Kyiv Rus",
+    "html_url": "https://github.com/aourednik/historical-basemaps/commit/3a16f6a06e40b93c89adc84a3ecc1b2e2c2156b6"
+  },
+  {
+    "sha": "37dbd606146ce9ee0ae697ef3c24778ac11c939f",
+    "date": "2022-03-16T02:49:23Z",
+    "message": " Kyiv Rus",
+    "html_url": "https://github.com/aourednik/historical-basemaps/commit/37dbd606146ce9ee0ae697ef3c24778ac11c939f"
+  },
+  {
+    "sha": "89db540f2af2a96777bd70372e573bf5c27a2ed7",
+    "date": "2022-02-19T18:16:47Z",
+    "message": "fix geojson:\nrewind the geometries according to the d3-geo/leaflet custom\nfix coordinates below latitude -90",
+    "html_url": "https://github.com/aourednik/historical-basemaps/commit/89db540f2af2a96777bd70372e573bf5c27a2ed7"
+  },
+  {
+    "sha": "1807fe769da7f2165c1a4c479e128a178c8f1e3f",
+    "date": "2021-12-29T13:27:51Z",
+    "message": " Prehistory, Korea, Okinawa",
+    "html_url": "https://github.com/aourednik/historical-basemaps/commit/1807fe769da7f2165c1a4c479e128a178c8f1e3f"
+  },
+  {
+    "sha": "3db8250eaa8359d6e669b080626d6581b1fb3038",
+    "date": "2021-12-02T01:12:09Z",
+    "message": " Islands Ireland, Scotland, England",
+    "html_url": "https://github.com/aourednik/historical-basemaps/commit/3db8250eaa8359d6e669b080626d6581b1fb3038"
+  },
+  {
+    "sha": "132a30ac6fd2f0d0c3c1ede76b060055502f5ac7",
+    "date": "2021-11-11T14:07:08Z",
+    "message": " Documentation",
+    "html_url": "https://github.com/aourednik/historical-basemaps/commit/132a30ac6fd2f0d0c3c1ede76b060055502f5ac7"
+  },
+  {
+    "sha": "f6f6054c58edbb420c4a3aa15e9d72293442019f",
+    "date": "2021-11-02T16:50:27Z",
+    "message": " QGIS 3.22",
+    "html_url": "https://github.com/aourednik/historical-basemaps/commit/f6f6054c58edbb420c4a3aa15e9d72293442019f"
+  },
+  {
+    "sha": "e140908b189e4bdc095ba4326d816656bbb31e0c",
+    "date": "2021-10-20T13:10:31Z",
+    "message": " Britany",
+    "html_url": "https://github.com/aourednik/historical-basemaps/commit/e140908b189e4bdc095ba4326d816656bbb31e0c"
+  },
+  {
+    "sha": "8429330990ebd66856e4b1c91a4ac858d4e3e22f",
+    "date": "2021-10-15T14:44:57Z",
+    "message": " Adena",
+    "html_url": "https://github.com/aourednik/historical-basemaps/commit/8429330990ebd66856e4b1c91a4ac858d4e3e22f"
+  },
+  {
+    "sha": "eb141c159b4fbb25ea16a4977e122a00ca87aed3",
+    "date": "2021-10-15T13:28:53Z",
+    "message": " No linestrings",
+    "html_url": "https://github.com/aourednik/historical-basemaps/commit/eb141c159b4fbb25ea16a4977e122a00ca87aed3"
+  },
+  {
+    "sha": "153e3027bf5ed4ad157efc1f007e8be2e47b0297",
+    "date": "2021-10-14T11:04:10Z",
+    "message": " Hopewell and Middle East",
+    "html_url": "https://github.com/aourednik/historical-basemaps/commit/153e3027bf5ed4ad157efc1f007e8be2e47b0297"
+  },
+  {
+    "sha": "accda73cb0095180d68040d4e3a3e7662a2dc8e2",
+    "date": "2021-10-12T00:52:57Z",
+    "message": " Non-Urban Societies",
+    "html_url": "https://github.com/aourednik/historical-basemaps/commit/accda73cb0095180d68040d4e3a3e7662a2dc8e2"
+  },
+  {
+    "sha": "4eea4b0498b97e00d4d1982211da5e0924161aa6",
+    "date": "2021-10-11T11:42:52Z",
+    "message": " Hunters-gatherers",
+    "html_url": "https://github.com/aourednik/historical-basemaps/commit/4eea4b0498b97e00d4d1982211da5e0924161aa6"
+  },
+  {
+    "sha": "29f5ae4ee1d71142f9956230f23519b0243a23e1",
+    "date": "2021-10-11T09:57:31Z",
+    "message": " Hun and Australians",
+    "html_url": "https://github.com/aourednik/historical-basemaps/commit/29f5ae4ee1d71142f9956230f23519b0243a23e1"
+  },
+  {
+    "sha": "2fa210219642cb69af213528a6e9706f18d9355c",
+    "date": "2021-09-30T01:59:47Z",
+    "message": " 900 Europe",
+    "html_url": "https://github.com/aourednik/historical-basemaps/commit/2fa210219642cb69af213528a6e9706f18d9355c"
+  },
+  {
+    "sha": "92aab43da96463f82378db024d4437eac1d8976d",
+    "date": "2021-09-30T01:36:50Z",
+    "message": " 800 Europe",
+    "html_url": "https://github.com/aourednik/historical-basemaps/commit/92aab43da96463f82378db024d4437eac1d8976d"
+  },
+  {
+    "sha": "8cc141f6ab6c6d90f941265241dafcff8179b374",
+    "date": "2021-09-30T01:25:43Z",
+    "message": " 800 Europe",
+    "html_url": "https://github.com/aourednik/historical-basemaps/commit/8cc141f6ab6c6d90f941265241dafcff8179b374"
+  },
+  {
+    "sha": "95009b4ff70d128f6462c88c15198a1ddaaac307",
+    "date": "2021-09-30T01:20:47Z",
+    "message": " 800 Europe",
+    "html_url": "https://github.com/aourednik/historical-basemaps/commit/95009b4ff70d128f6462c88c15198a1ddaaac307"
+  },
+  {
+    "sha": "f1d88e049abf7d68aec0d7a634306d7c46cf7464",
+    "date": "2021-09-28T17:37:18Z",
+    "message": "gpkg, unicode, more years",
+    "html_url": "https://github.com/aourednik/historical-basemaps/commit/f1d88e049abf7d68aec0d7a634306d7c46cf7464"
+  },
+  {
+    "sha": "89e9ece2aa3fb00768f2cd4b632165150733b998",
+    "date": "2021-09-28T02:23:54Z",
+    "message": "Manhattan",
+    "html_url": "https://github.com/aourednik/historical-basemaps/commit/89e9ece2aa3fb00768f2cd4b632165150733b998"
+  }
+]

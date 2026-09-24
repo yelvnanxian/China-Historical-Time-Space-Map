@@ -1,0 +1,175 @@
+{
+  "title": "CHGIS V6 1911: v6_1911_prov_pgn_gbk.zip",
+  "sourceUrl": "https://doi.org/10.7910/DVN/0P89R9",
+  "sourceFileId": 2966679,
+  "sourceArchiveMD5": "1ac381f0823e32748d2db278ea4e5dda",
+  "citation": "\"CHGIS Version 6.\" (c) Fairbank Center for Chinese Studies and the Institute for Chinese Historical Geography at Fudan University, Dec 2016.",
+  "sourceCRS": "EPSG:2333",
+  "targetCRS": "EPSG:4326",
+  "transformation": "Inverse of unnnamed (Gauss Kruger) + Ballpark geographic offset from Xian 1980 to WGS 84 (with axis order normalized for visualization)",
+  "transformationAccuracyMetres": -1.0,
+  "coordinatePrecisionDegrees": 1e-06,
+  "simplified": false,
+  "yearBasis": "Official dataset title and filename; original date fields are retained.",
+  "warning": "官方文件标为 1911 年，但 1 个区域的原始 BEG_YR / END_YR 字段与该年冲突（[(3822, 3822)]）；异常原值已保留，年份尚未核实。",
+  "featureCount": 27,
+  "sourceFields": [
+    "Object_ID",
+    "NAME_PY",
+    "NAME_CH",
+    "NAME_FT",
+    "TYPE_PY",
+    "TYPE_CH",
+    "LEV_RANK",
+    "BEG_YR",
+    "BEG_RULE",
+    "END_YR",
+    "END_RULE",
+    "DYN_PY",
+    "DYN_CH",
+    "NOTE_ID",
+    "OBJ_TYPE",
+    "SYS_ID",
+    "GEO_SRC",
+    "COMPILER",
+    "GEOCOMP",
+    "CHECKER",
+    "ENT_DATE",
+    "X_COORD",
+    "Y_COORD"
+  ],
+  "sourceVertexCount": 184778,
+  "outputVertexCount": 184741,
+  "invalidSourceFeatureCount": 5,
+  "invalidOutputFeatureCount": 0,
+  "sourceDatePairs": [
+    [
+      1911,
+      1911
+    ],
+    [
+      3822,
+      3822
+    ]
+  ],
+  "yearConflictCount": 1,
+  "duplicateSourceRecordIds": [],
+  "sourceWarnings": [],
+  "geometryCorrections": [
+    {
+      "recordIndex": 0,
+      "sourceId": "195001",
+      "name": "江苏",
+      "verticesBeforePrecision": 5132,
+      "verticesAfterPrecision": 5127
+    },
+    {
+      "recordIndex": 1,
+      "sourceId": "195002",
+      "name": "湖北",
+      "sourceValidity": "Ring Self-intersection[19863886.8167657 3488818.5412347]",
+      "makeValidResultType": "Polygon",
+      "originalAreaSquareMetres": 183760993511.1234,
+      "repairedAreaSquareMetres": 183760993511.124
+    },
+    {
+      "recordIndex": 3,
+      "sourceId": "195004",
+      "name": "安徽",
+      "sourceValidity": "Ring Self-intersection[20223185.0151018 3635797.5321107]",
+      "makeValidResultType": "Polygon",
+      "originalAreaSquareMetres": 144789501374.2919,
+      "repairedAreaSquareMetres": 144789501374.29153
+    },
+    {
+      "recordIndex": 6,
+      "sourceId": "195007",
+      "name": "广东",
+      "verticesBeforePrecision": 12241,
+      "verticesAfterPrecision": 12234
+    },
+    {
+      "recordIndex": 7,
+      "sourceId": "195016",
+      "name": "广西",
+      "verticesBeforePrecision": 5550,
+      "verticesAfterPrecision": 5549
+    },
+    {
+      "recordIndex": 9,
+      "sourceId": "195010",
+      "name": "江西",
+      "verticesBeforePrecision": 4513,
+      "verticesAfterPrecision": 4511
+    },
+    {
+      "recordIndex": 10,
+      "sourceId": "195011",
+      "name": "山西",
+      "verticesBeforePrecision": 4200,
+      "verticesAfterPrecision": 4199
+    },
+    {
+      "recordIndex": 11,
+      "sourceId": "195012",
+      "name": "河南",
+      "verticesBeforePrecision": 5558,
+      "verticesAfterPrecision": 5556
+    },
+    {
+      "recordIndex": 12,
+      "sourceId": "195013",
+      "name": "山东",
+      "sourceValidity": "Ring Self-intersection[20282210.6680678 3976080.46763967]",
+      "makeValidResultType": "MultiPolygon",
+      "originalAreaSquareMetres": 155328153750.8103,
+      "repairedAreaSquareMetres": 155328153750.81036,
+      "verticesBeforePrecision": 7577,
+      "verticesAfterPrecision": 7574
+    },
+    {
+      "recordIndex": 14,
+      "sourceId": "195015",
+      "name": "甘肃",
+      "sourceValidity": "Ring Self-intersection[19221615.4482351 3908856.248518]",
+      "makeValidResultType": "Polygon",
+      "originalAreaSquareMetres": 486799516607.6152,
+      "repairedAreaSquareMetres": 486799516607.6162,
+      "verticesBeforePrecision": 11477,
+      "verticesAfterPrecision": 11473
+    },
+    {
+      "recordIndex": 16,
+      "sourceId": "195018",
+      "name": "贵州",
+      "sourceValidity": "Ring Self-intersection[19239732.0108744 3176374.76695139]",
+      "makeValidResultType": "Polygon",
+      "originalAreaSquareMetres": 176419252596.53635,
+      "repairedAreaSquareMetres": 176419252596.5356
+    },
+    {
+      "recordIndex": 18,
+      "sourceId": "195020",
+      "name": "黑龙江",
+      "verticesBeforePrecision": 5050,
+      "verticesAfterPrecision": 5040
+    },
+    {
+      "recordIndex": 20,
+      "sourceId": "195025",
+      "name": "青海",
+      "verticesBeforePrecision": 10674,
+      "verticesAfterPrecision": 10666
+    },
+    {
+      "recordIndex": 24,
+      "sourceId": "195019",
+      "name": "四川",
+      "verticesBeforePrecision": 9926,
+      "verticesAfterPrecision": 9925
+    }
+  ],
+  "outputBytes": 4194185,
+  "outputSHA256": "bede8f4b2d8ed99e2de8f1d712485f5de216226b27d88a6fa6ec4b864f3a712a",
+  "output": "public/data/boundaries/chgis-1911-province.geojson"
+}

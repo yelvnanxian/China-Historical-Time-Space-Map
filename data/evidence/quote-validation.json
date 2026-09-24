@@ -1,0 +1,256 @@
+{
+  "checkedAt": "2026-09-24T11:04:48.163401+00:00",
+  "topicId": "anshi",
+  "topicEvents": 12,
+  "topicPlaces": 10,
+  "sourceSnapshots": 10,
+  "checkedEvidenceCount": 47,
+  "checks": [
+    "entity/source reference membership",
+    "unique evidence ids",
+    "all quoted text is a literal substring of saved source snapshot",
+    "topic event/place counts",
+    "topic dateLabel preserves source calendar without an apparent CE-year prefix",
+    "763 endpoint maps the delivery of the head to the capital, not the place of death",
+    "12 additional Tang regional places reference literal quotations and separately attributed modern coordinate records"
+  ],
+  "scope": "文本回查不验证历史断言学术最终正确性、数字文本底本或坐标。",
+  "results": [
+    {
+      "evidenceId": "place-changan-text",
+      "sourceId": "zizhitongjian-220",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "place-luoyang-text",
+      "sourceId": "zizhitongjian-220",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "place-chengdu-text",
+      "sourceId": "zizhitongjian-218",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "place-tongguan-text",
+      "sourceId": "zizhitongjian-218",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "place-fanyang-text",
+      "sourceId": "zizhitongjian-217",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "place-mawei-text",
+      "sourceId": "zizhitongjian-218",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "place-lingwu-text",
+      "sourceId": "zizhitongjian-218",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "place-suiyang-text",
+      "sourceId": "zizhitongjian-220",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "place-xiangzhou-text",
+      "sourceId": "jiutangshu-10",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "place-heyang-text",
+      "sourceId": "zizhitongjian-221",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "place-shanzhou-text",
+      "sourceId": "zizhitongjian-221",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "place-zhengzhou-text",
+      "sourceId": "zizhitongjian-221",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "place-huazhou-hua-text",
+      "sourceId": "jiutangshu-10",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "place-huaizhou-text",
+      "sourceId": "jiutangshu-10",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "place-hengzhou-text",
+      "sourceId": "zizhitongjian-220",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "place-beizhou-text",
+      "sourceId": "zizhitongjian-222",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "place-pingyuan-text",
+      "sourceId": "zizhitongjian-217",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "place-fuzhou-fu-text",
+      "sourceId": "zizhitongjian-221",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "place-luzhou-text",
+      "sourceId": "jiutangshu-9",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "place-dengzhou-text",
+      "sourceId": "zizhitongjian-221",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "place-xuzhou-xuchang-text",
+      "sourceId": "zizhitongjian-222",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "place-xuzhou-pengcheng-text",
+      "sourceId": "zizhitongjian-222",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "ev-anshi-overview-start",
+      "sourceId": "zizhitongjian-217",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "ev-anshi-overview-end",
+      "sourceId": "zizhitongjian-222",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "ev-xuanzong-overview-arrival",
+      "sourceId": "zizhitongjian-218",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "ev-anshi-rise",
+      "sourceId": "zizhitongjian-217",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "ev-anshi-luoyang-fall",
+      "sourceId": "zizhitongjian-217",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "ev-anshi-luoyang-fall-j9",
+      "sourceId": "jiutangshu-9",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "ev-anshi-tongguan",
+      "sourceId": "zizhitongjian-218",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "ev-anshi-mawei",
+      "sourceId": "zizhitongjian-218",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "ev-anshi-mawei-killing",
+      "sourceId": "zizhitongjian-218",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "ev-anshi-lingwu",
+      "sourceId": "jiutangshu-10",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "ev-anshi-lingwu-tongjian",
+      "sourceId": "zizhitongjian-218",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "ev-anshi-chengdu",
+      "sourceId": "zizhitongjian-218",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "ev-anshi-chengdu-j9",
+      "sourceId": "jiutangshu-9",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "ev-anshi-changan-return",
+      "sourceId": "zizhitongjian-220",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "ev-anshi-changan-battle",
+      "sourceId": "zizhitongjian-220",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "ev-anshi-suiyang",
+      "sourceId": "zizhitongjian-220",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "ev-anshi-suiyang-j10",
+      "sourceId": "jiutangshu-10",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "ev-anshi-luoyang-return",
+      "sourceId": "zizhitongjian-220",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "ev-anshi-luoyang-return-j10",
+      "sourceId": "jiutangshu-10",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "ev-anshi-xiangzhou",
+      "sourceId": "jiutangshu-10",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "ev-anshi-xiangzhou-tongjian",
+      "sourceId": "zizhitongjian-221",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "ev-anshi-heyang",
+      "sourceId": "zizhitongjian-221",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "ev-anshi-heyang-withdrawal",
+      "sourceId": "zizhitongjian-221",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "ev-anshi-end-changan",
+      "sourceId": "zizhitongjian-222",
+      "quoteMatched": true
+    },
+    {
+      "evidenceId": "ev-anshi-end",
+      "sourceId": "zizhitongjian-222",
+      "quoteMatched": true
+    }
+  ],
+  "cityExpansionPlaces": 12
+}

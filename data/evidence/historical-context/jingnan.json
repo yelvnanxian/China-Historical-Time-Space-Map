@@ -1,0 +1,16 @@
+{
+  "id": "context-jingnan",
+  "title": "荆南 — 维基百科",
+  "url": "https://zh.wikipedia.org/wiki/%E8%8D%86%E5%8D%97",
+  "retrievedAt": "2026-09-24T12:11:27.613989+00:00",
+  "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证。引文保留本次页面原字形。",
+  "snapshotPath": "data/evidence/historical-context/jingnan.txt",
+  "snapshotSha256": "2f0006a908fa74c872fd1515294d3fd37aebfae1f9f34651dd29d058241e4c01",
+  "pageId": 141959,
+  "revision": {
+    "revid": 93025289,
+    "parentid": 91127201,
+    "timestamp": "2026-06-11T09:56:18Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E8%8D%86%E5%8D%97&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

@@ -1,0 +1,62 @@
+{
+  "createdAt": "2026-09-24T12:22:01.255877+00:00",
+  "sources": 22,
+  "geographyEntries": 8,
+  "cityTimelines": 10,
+  "cityEntries": 35,
+  "quotesMatched": 52,
+  "cities": [
+    {
+      "placeId": "changan",
+      "name": "长安",
+      "entries": 4
+    },
+    {
+      "placeId": "luoyang",
+      "name": "洛阳",
+      "entries": 4
+    },
+    {
+      "placeId": "kaifeng",
+      "name": "开封",
+      "entries": 4
+    },
+    {
+      "placeId": "nanjing",
+      "name": "南京",
+      "entries": 4
+    },
+    {
+      "placeId": "beijing",
+      "name": "北京",
+      "entries": 3
+    },
+    {
+      "placeId": "hangzhou",
+      "name": "杭州",
+      "entries": 3
+    },
+    {
+      "placeId": "chengdu",
+      "name": "成都",
+      "entries": 4
+    },
+    {
+      "placeId": "jingzhou",
+      "name": "江陵",
+      "entries": 3
+    },
+    {
+      "placeId": "guangzhou",
+      "name": "广州",
+      "entries": 3
+    },
+    {
+      "placeId": "yangzhou",
+      "name": "扬州",
+      "entries": 3
+    }
+  ],
+  "referenceCoordinates": "All copied exactly from existing catalog places; location roles and caveats explicit.",
+  "outputSha256": "8df498b824fa65d00a4db74c5f3ee584180ba24fb7db5e4ed611570c5c215ebc"
+}

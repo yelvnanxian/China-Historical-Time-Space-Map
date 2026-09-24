@@ -1,0 +1,29 @@
+.map-first .atlas-workspace { --map-topline-height: 42px; }
+.map-first .map-column .map-topline { height: var(--map-topline-height); gap: 13px; padding: 0 16px; }
+.map-first .atlas-workspace .detail-panel { top: calc(var(--map-topline-height) + 12px); }
+.map-display-mode { display: inline-flex; flex-shrink: 0; align-items: center; padding: 3px; border: 1px solid #d9dfd1; border-radius: 5px; background: #edf0e6; }
+.map-display-mode > button { min-height: 25px; padding: 3px 10px; border-radius: 3px; color: #849075; font-size: 10px; white-space: nowrap; }
+.map-display-mode > button[aria-pressed="true"] { background: #fffef8; color: #426044; box-shadow: 0 1px 3px #344b2c15; font-weight: 600; }
+.map-display-mode > button:hover { color: #426044; }
+.map-topline .map-place-controls { display: flex; flex-shrink: 0; align-items: center; gap: 13px; margin-left: auto; }
+.map-topline .map-place-controls > button { display: inline-flex; align-items: center; gap: 5px; padding: 5px 0; color: #6e8160; font-size: 10px; white-space: nowrap; }
+.map-topline .map-place-controls > button[aria-expanded="true"] { color: #405f3b; font-weight: 600; }
+.map-topline .map-place-controls .map-details-launch { position: static; }
+.map-topline .modern-toggle { flex-shrink: 0; white-space: nowrap; }
+@media (max-width: 1100px) {
+  .map-first .map-topline .map-view-label > small,
+  .map-first .map-topline .map-view-label > i,
+  .map-first .map-topline .modern-toggle > small { display: none; }
+  .map-first .map-column .map-topline { gap: 10px; padding: 0 11px; }
+  .map-topline .map-place-controls { gap: 10px; }
+}
+@media (max-width: 720px) {
+  .map-first .atlas-workspace { --map-topline-height: 72px; }
+  .map-first .map-column .map-topline { flex-wrap: wrap; align-content: center; gap: 4px 9px; padding: 5px 10px; }
+  .map-topline .map-display-mode { order: 1; flex: 1 1 calc(100% - 90px); }
+  .map-display-mode > button { flex: 1; padding: 3px 7px; min-height: 23px; font-size: 10px; }
+  .map-first .map-topline .modern-toggle { order: 2; font-size: 10px; }
+  .map-first .map-topline .map-view-label { order: 3; flex: 1; font-size: 10px; }
+  .map-topline .map-place-controls { order: 4; margin-left: auto; gap: 15px; }
+  .map-topline .map-place-controls > button { padding: 2px 0; font-size: 10px; }
+}

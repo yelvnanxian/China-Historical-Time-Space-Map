@@ -1,0 +1,11 @@
+{
+  "sourceId": "jiutangshu-10",
+  "page": "舊唐書/卷10",
+  "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B710",
+  "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&page=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B710&prop=text%7Crevid&format=json",
+  "revisionId": "2317162",
+  "retrievedAt": "2026-09-24T09:56:33.241597+00:00",
+  "format": "plain text extracted from MediaWiki rendered page; whitespace normalized",
+  "license": "古籍原文公版；维基文库页面文字按 CC BY-SA 4.0 使用，附加条款可能适用，参见来源页页脚。",
+  "snapshotPath": "data/evidence/jiutangshu-10.txt"
+}

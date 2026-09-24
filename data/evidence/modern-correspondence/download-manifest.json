@@ -1,0 +1,47 @@
+{
+  "retrievedDate": "2026-09-24",
+  "assets": [
+    {
+      "file": "gadm41_CHN_1.json.zip",
+      "url": "https://geodata.ucdavis.edu/gadm/gadm4.1/json/gadm41_CHN_1.json.zip",
+      "bytes": 714043,
+      "sha256": "656ea3e576a95f1172503c1f416c8a3b8267bc87e6c090c730a676e96d551478"
+    },
+    {
+      "file": "gadm41_CHN_2.json.zip",
+      "url": "https://geodata.ucdavis.edu/gadm/gadm4.1/json/gadm41_CHN_2.json.zip",
+      "bytes": 1417217,
+      "sha256": "ea39517b2c01bdc2375eef87bbed66e84ebb6168c645b3b362abbecae8b7fccd"
+    },
+    {
+      "file": "chn-adm1.geojson",
+      "url": "https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/9469f09/releaseData/gbOpen/CHN/ADM1/geoBoundaries-CHN-ADM1.geojson",
+      "bytes": 270578,
+      "sha256": "3a00467a0db9b4136facb5f2f3d0edbfd96adb15651cfdf63991da9281030e85"
+    },
+    {
+      "file": "ne-countries.geojson",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_admin_0_countries.geojson",
+      "bytes": 13287234,
+      "sha256": "239eec57ac17f100a11e2536cffc56752c318b50ae765b0918ff7aab4ce8f255"
+    },
+    {
+      "file": "gadm-license.html",
+      "url": "https://gadm.org/license.html",
+      "bytes": 2590,
+      "sha256": "db0d4d92dff907a43480b3ea96441f40374e728f72c9d6fe6b5d1a3e12a0b599"
+    },
+    {
+      "file": "chn-adm1-metadata.json",
+      "url": "https://www.geoboundaries.org/api/current/gbOpen/CHN/ADM1/",
+      "bytes": 1697,
+      "sha256": "b5816c51ebefc26b1154872e663cd5a8eda830008f738a965d5dd610e72b09d0"
+    },
+    {
+      "file": "ne-countries-version.txt",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/10m_cultural/ne_10m_admin_0_countries.VERSION.txt",
+      "bytes": 6,
+      "sha256": "f9893302cd3158f3b5aea394dcd2a91574869e9e6ff69e9235b10a3bf8c983fb"
+    }
+  ]
+}

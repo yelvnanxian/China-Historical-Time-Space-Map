@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "sourceId": "geonames-cn",
+    "url": "https://download.geonames.org/export/dump/CN.zip",
+    "downloadedAt": "2026-09-24T10:59:45.916153+00:00",
+    "sha256": "9a3396204a9d2cf3ad418da8614a8e1e300dafeb869a9dc3827f28b9fbc275c2",
+    "bytes": 32195246
+  },
+  "license": "CC BY 4.0; attribution GeoNames, https://www.geonames.org/",
+  "selectedRecords": [
+    {
+      "placeId": "shanzhou",
+      "geonameId": "1796669",
+      "rawRecord": "1796669\tSanmenxia\tSanmenxia\tHui-hsing,Sam-bun-kiap-chhi,Sam-bûn-kiap-chhī,San'mehn'sja,San'myn'sya,San-men-hsia,San-men-hsia-shih,San-men-sia,Sang-muong-hiek,Sanmensja,Sanmenxia,San’myn’sya,Shan-hsien,Săng-muòng-hiĕk,Tam Mon Hiep,Tam Môn Hiệp,samynshya,san men xia,san men xia shi,ssanmeonsya si,Санменсја,Саньмэнься,سامینشیا,三門峡市,三門峽,三门峡,三门峡市,싼먼샤 시\t34.78081\t111.19287\tP\tPPLA2\tCN\t\t09\t\t\t\t669307\t\t385\tAsia/Shanghai\t2025-01-10"
+    },
+    {
+      "placeId": "huazhou-hua",
+      "geonameId": "1813775",
+      "rawRecord": "1813775\tDaokou\tDaokou\tDaokou,Hua-hsien,Huaxian,Tao-k'ou,Tao-k'ou-chen,Tao-k’ou,Tao-k’ou-chen,Taokow,dao kou,道口\t35.56895\t114.51593\tP\tPPLA3\tCN\t\t09\t4105\t\t\t56637\t\t62\tAsia/Shanghai\t2025-02-18"
+    },
+    {
+      "placeId": "huaizhou",
+      "geonameId": "1797557",
+      "rawRecord": "1797557\tQinyang\tQinyang\tCh'in-yang,Ch'in-yang-hsien,Ch’in-yang,Ch’in-yang-hsien,Huai-ching,Hwai-king-fu,Hwaiking,Qinyang,Tanbei,Tsinyang-hsien,qin bei,qin yang,沁阳,覃杯\t35.09061\t112.92805\tP\tPPLA3\tCN\t\t09\t4108\t\t\t0\t\t113\tAsia/Shanghai\t2025-05-15"
+    },
+    {
+      "placeId": "hengzhou",
+      "geonameId": "1784712",
+      "rawRecord": "1784712\tZhengding\tZhengding\tCheng-ting,Cheng-ting-ch'eng-kuan,Cheng-ting-ch’eng-kuan,Cheng-ting-hsien,Chengtingfu,Chzhendin,Zhehndin,Zhengding,zheng ding,Жэндин,正定\t38.14501\t114.56556\tP\tPPLA3\tCN\t\t10\t1301\t\t\t193524\t\t64\tAsia/Shanghai\t2026-09-14"
+    },
+    {
+      "placeId": "beizhou",
+      "geonameId": "1810178",
+      "rawRecord": "1810178\tGexianzhuang\tGexianzhuang\tCh'ing-ho,Ch’ing-ho,Gexianzhuang,Ko-chuang,Ko-hsien-chuang,Qinghe,ge xian zhuang,葛仙庄\t37.07119\t115.66174\tP\tPPLA3\tCN\t\t10\t1305\t\t\t0\t\t36\tAsia/Shanghai\t2024-02-08"
+    },
+    {
+      "placeId": "pingyuan",
+      "geonameId": "1803437",
+      "rawRecord": "1803437\tLingcheng\tLingcheng\tChiu-ling-hsien,Ling,Ling-hsien,Lingcheng,Lingxian,Linsyan',Linsyan’,Te-hsien,ling cheng,陵城\t37.33501\t116.57045\tP\tPPLA3\tCN\t\t25\t3714\t\t\t0\t\t24\tAsia/Shanghai\t2021-09-20"
+    },
+    {
+      "placeId": "fuzhou-fu",
+      "geonameId": "1811074",
+      "rawRecord": "1811074\tFucheng\tFucheng\tFu,Fu-hsien,Fu-hsien-ch'eng,Fu-hsien-ch’eng,Fucheng,Fuchow,Fuxian\t35.99139\t109.36833\tP\tPPL\tCN\t\t26\t6106\t\t\t0\t\t1075\tAsia/Shanghai\t2021-09-20"
+    }
+  ]
+}

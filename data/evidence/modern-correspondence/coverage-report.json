@@ -1,0 +1,588 @@
+{
+  "statistics": {
+    "prefecture": 11940,
+    "total": 12111,
+    "simplifiedNameChanged": 8056,
+    "province-supplement": 9,
+    "unmatched": 11,
+    "country-or-area": 151,
+    "matched": 12100,
+    "coverageRate": 0.999092,
+    "layerCount": 25,
+    "unmatchedReasons": {
+      "water-or-source-geometry-gap": 11
+    },
+    "byLayer": [
+      {
+        "datasetId": "hartwell-741",
+        "layerId": "hartwell-741-country",
+        "prefecture": 2,
+        "total": 3,
+        "simplifiedNameChanged": 2,
+        "province-supplement": 1,
+        "matched": 3,
+        "coverageRate": 1.0
+      },
+      {
+        "datasetId": "hartwell-741",
+        "layerId": "hartwell-741-province",
+        "prefecture": 10,
+        "total": 10,
+        "simplifiedNameChanged": 5,
+        "matched": 10,
+        "coverageRate": 1.0
+      },
+      {
+        "datasetId": "hartwell-741",
+        "layerId": "hartwell-741-prefecture",
+        "prefecture": 336,
+        "total": 336,
+        "simplifiedNameChanged": 122,
+        "matched": 336,
+        "coverageRate": 1.0
+      },
+      {
+        "datasetId": "hartwell-741",
+        "layerId": "hartwell-741-county",
+        "prefecture": 1495,
+        "total": 1495,
+        "simplifiedNameChanged": 1480,
+        "matched": 1495,
+        "coverageRate": 1.0
+      },
+      {
+        "datasetId": "hartwell-1080",
+        "layerId": "hartwell-1080-country",
+        "prefecture": 7,
+        "total": 8,
+        "simplifiedNameChanged": 3,
+        "province-supplement": 1,
+        "matched": 8,
+        "coverageRate": 1.0
+      },
+      {
+        "datasetId": "hartwell-1080",
+        "layerId": "hartwell-1080-province",
+        "prefecture": 30,
+        "total": 30,
+        "simplifiedNameChanged": 14,
+        "matched": 30,
+        "coverageRate": 1.0
+      },
+      {
+        "datasetId": "hartwell-1080",
+        "layerId": "hartwell-1080-prefecture",
+        "prefecture": 402,
+        "total": 402,
+        "simplifiedNameChanged": 191,
+        "matched": 402,
+        "coverageRate": 1.0
+      },
+      {
+        "datasetId": "hartwell-1080",
+        "layerId": "hartwell-1080-county",
+        "prefecture": 1479,
+        "total": 1479,
+        "simplifiedNameChanged": 1413,
+        "matched": 1479,
+        "coverageRate": 1.0
+      },
+      {
+        "datasetId": "hartwell-1200",
+        "layerId": "hartwell-1200-country",
+        "prefecture": 7,
+        "total": 8,
+        "simplifiedNameChanged": 3,
+        "province-supplement": 1,
+        "matched": 8,
+        "coverageRate": 1.0
+      },
+      {
+        "datasetId": "hartwell-1200",
+        "layerId": "hartwell-1200-province",
+        "prefecture": 36,
+        "total": 36,
+        "simplifiedNameChanged": 16,
+        "matched": 36,
+        "coverageRate": 1.0
+      },
+      {
+        "datasetId": "hartwell-1200",
+        "layerId": "hartwell-1200-prefecture",
+        "prefecture": 389,
+        "total": 390,
+        "simplifiedNameChanged": 177,
+        "province-supplement": 1,
+        "matched": 390,
+        "coverageRate": 1.0
+      },
+      {
+        "datasetId": "hartwell-1200",
+        "layerId": "hartwell-1200-county",
+        "prefecture": 1450,
+        "total": 1450,
+        "simplifiedNameChanged": 1430,
+        "matched": 1450,
+        "coverageRate": 1.0
+      },
+      {
+        "datasetId": "hartwell-1290",
+        "layerId": "hartwell-1290-country",
+        "province-supplement": 1,
+        "total": 1,
+        "simplifiedNameChanged": 0,
+        "matched": 1,
+        "coverageRate": 1.0
+      },
+      {
+        "datasetId": "hartwell-1290",
+        "layerId": "hartwell-1290-province",
+        "prefecture": 16,
+        "total": 16,
+        "simplifiedNameChanged": 8,
+        "matched": 16,
+        "coverageRate": 1.0
+      },
+      {
+        "datasetId": "hartwell-1290",
+        "layerId": "hartwell-1290-prefecture",
+        "prefecture": 280,
+        "total": 280,
+        "simplifiedNameChanged": 154,
+        "matched": 280,
+        "coverageRate": 1.0
+      },
+      {
+        "datasetId": "hartwell-1290",
+        "layerId": "hartwell-1290-county",
+        "prefecture": 1475,
+        "total": 1475,
+        "simplifiedNameChanged": 1320,
+        "matched": 1475,
+        "coverageRate": 1.0
+      },
+      {
+        "datasetId": "hartwell-1391",
+        "layerId": "hartwell-1391-country",
+        "prefecture": 4,
+        "total": 5,
+        "simplifiedNameChanged": 2,
+        "province-supplement": 1,
+        "matched": 5,
+        "coverageRate": 1.0
+      },
+      {
+        "datasetId": "hartwell-1391",
+        "layerId": "hartwell-1391-province",
+        "prefecture": 21,
+        "total": 21,
+        "simplifiedNameChanged": 10,
+        "matched": 21,
+        "coverageRate": 1.0
+      },
+      {
+        "datasetId": "hartwell-1391",
+        "layerId": "hartwell-1391-prefecture",
+        "prefecture": 300,
+        "total": 300,
+        "simplifiedNameChanged": 205,
+        "matched": 300,
+        "coverageRate": 1.0
+      },
+      {
+        "datasetId": "hartwell-1391",
+        "layerId": "hartwell-1391-county",
+        "prefecture": 1619,
+        "total": 1620,
+        "simplifiedNameChanged": 1492,
+        "unmatched": 1,
+        "matched": 1619,
+        "coverageRate": 0.999383
+      },
+      {
+        "datasetId": "chgis-v6-1820",
+        "layerId": "chgis-1820-province",
+        "prefecture": 24,
+        "total": 32,
+        "simplifiedNameChanged": 0,
+        "country-or-area": 3,
+        "unmatched": 5,
+        "matched": 27,
+        "coverageRate": 0.84375
+      },
+      {
+        "datasetId": "chgis-v6-1820",
+        "layerId": "chgis-1820-prefecture",
+        "prefecture": 301,
+        "total": 320,
+        "simplifiedNameChanged": 2,
+        "country-or-area": 13,
+        "unmatched": 5,
+        "province-supplement": 1,
+        "matched": 315,
+        "coverageRate": 0.984375
+      },
+      {
+        "datasetId": "chgis-v6-1911",
+        "layerId": "chgis-1911-province",
+        "prefecture": 25,
+        "total": 27,
+        "simplifiedNameChanged": 0,
+        "province-supplement": 1,
+        "country-or-area": 1,
+        "matched": 27,
+        "coverageRate": 1.0
+      },
+      {
+        "datasetId": "chgis-v6-1911",
+        "layerId": "chgis-1911-prefecture",
+        "prefecture": 374,
+        "total": 381,
+        "simplifiedNameChanged": 2,
+        "country-or-area": 7,
+        "matched": 381,
+        "coverageRate": 1.0
+      },
+      {
+        "datasetId": "chgis-v6-1911",
+        "layerId": "chgis-1911-county",
+        "prefecture": 1858,
+        "total": 1986,
+        "simplifiedNameChanged": 5,
+        "province-supplement": 1,
+        "country-or-area": 127,
+        "matched": 1986,
+        "coverageRate": 1.0
+      }
+    ]
+  },
+  "unmatched": [
+    {
+      "id": "hartwell-1391-county-v5_1391_chin_chn_1391_c-1079",
+      "historicalName": "連江縣",
+      "coordinates": [
+        119.93796210203055,
+        26.14613593191901
+      ],
+      "datasetId": "hartwell-1391",
+      "level": "county",
+      "reason": "water-or-source-geometry-gap"
+    },
+    {
+      "id": "chgis-1820-province-25047",
+      "historicalName": "万里长沙",
+      "coordinates": [
+        112.01708159450027,
+        16.3456305
+      ],
+      "datasetId": "chgis-v6-1820",
+      "level": "province",
+      "reason": "water-or-source-geometry-gap"
+    },
+    {
+      "id": "chgis-1820-province-25048",
+      "historicalName": "千里石塘",
+      "coordinates": [
+        112.58494920013851,
+        8.8381235
+      ],
+      "datasetId": "chgis-v6-1820",
+      "level": "province",
+      "reason": "water-or-source-geometry-gap"
+    },
+    {
+      "id": "chgis-1820-province-25049",
+      "historicalName": "曾母暗沙",
+      "coordinates": [
+        112.28121328549787,
+        3.8835905
+      ],
+      "datasetId": "chgis-v6-1820",
+      "level": "province",
+      "reason": "water-or-source-geometry-gap"
+    },
+    {
+      "id": "chgis-1820-province-25050",
+      "historicalName": "东沙",
+      "coordinates": [
+        116.90915392018684,
+        20.676353499999998
+      ],
+      "datasetId": "chgis-v6-1820",
+      "level": "province",
+      "reason": "water-or-source-geometry-gap"
+    },
+    {
+      "id": "chgis-1820-province-25051",
+      "historicalName": "中沙",
+      "coordinates": [
+        117.793526,
+        15.17347
+      ],
+      "datasetId": "chgis-v6-1820",
+      "level": "province",
+      "reason": "water-or-source-geometry-gap"
+    },
+    {
+      "id": "chgis-1820-prefecture-2103",
+      "historicalName": "万里长沙",
+      "coordinates": [
+        112.01708159450027,
+        16.3456305
+      ],
+      "datasetId": "chgis-v6-1820",
+      "level": "prefecture",
+      "reason": "water-or-source-geometry-gap"
+    },
+    {
+      "id": "chgis-1820-prefecture-2104",
+      "historicalName": "千里石塘",
+      "coordinates": [
+        112.58494920013851,
+        8.8381235
+      ],
+      "datasetId": "chgis-v6-1820",
+      "level": "prefecture",
+      "reason": "water-or-source-geometry-gap"
+    },
+    {
+      "id": "chgis-1820-prefecture-2106",
+      "historicalName": "非政区辖地（原图未命名） · 2106",
+      "coordinates": [
+        112.28121328549787,
+        3.8835905
+      ],
+      "datasetId": "chgis-v6-1820",
+      "level": "prefecture",
+      "reason": "water-or-source-geometry-gap"
+    },
+    {
+      "id": "chgis-1820-prefecture-2107",
+      "historicalName": "东沙",
+      "coordinates": [
+        116.90915392018684,
+        20.676353499999998
+      ],
+      "datasetId": "chgis-v6-1820",
+      "level": "prefecture",
+      "reason": "water-or-source-geometry-gap"
+    },
+    {
+      "id": "chgis-1820-prefecture-2105",
+      "historicalName": "非政区辖地（原图未命名） · 2105",
+      "coordinates": [
+        117.793526,
+        15.17347
+      ],
+      "datasetId": "chgis-v6-1820",
+      "level": "prefecture",
+      "reason": "water-or-source-geometry-gap"
+    }
+  ],
+  "historicalInputs": [
+    {
+      "file": "public/data/boundaries/hartwell-741-country.geojson",
+      "sha256": "489a46ccaf6281e5937c0f4acb0345767eb1fb75d17f4b752bddd09bf7dceec1"
+    },
+    {
+      "file": "public/data/boundaries/hartwell-741-province.geojson",
+      "sha256": "3e7972b1274cfe1bcea0058ec4dc894a0656a2a3262b596ca5467d83efcb1801"
+    },
+    {
+      "file": "public/data/boundaries/hartwell-741-prefecture.geojson",
+      "sha256": "ac9211af939ef3f9f6d94bb16977e313426795908703ad4d7db916f6ea89d635"
+    },
+    {
+      "file": "public/data/boundaries/hartwell-741-county.geojson",
+      "sha256": "54081ec310344d24da387eced81bc4aa9aa547fd80629a2d7f844235d276cc54"
+    },
+    {
+      "file": "public/data/boundaries/hartwell-1080-country.geojson",
+      "sha256": "b6aa8ec37e6a2b354e9d7c3611d1318e67ef0e43b447b53a7c18a0107b8072cc"
+    },
+    {
+      "file": "public/data/boundaries/hartwell-1080-province.geojson",
+      "sha256": "46c2a254c95d371e3b6e84ab9f855acaac4a730656ddf5116c2412df7a7bc282"
+    },
+    {
+      "file": "public/data/boundaries/hartwell-1080-prefecture.geojson",
+      "sha256": "ac1588c8713c71fbbdf51c994173ae5044b625e0b35bf20669bcc429260ff7c6"
+    },
+    {
+      "file": "public/data/boundaries/hartwell-1080-county.geojson",
+      "sha256": "b27c4794d12a770bf5a90bdc71fc2ac0d4f1cb21403c0ed36ac2a8e08b49bedd"
+    },
+    {
+      "file": "public/data/boundaries/hartwell-1200-country.geojson",
+      "sha256": "73ca2050660b071f56fd27bff24de417cdd58567fa949442e88096c42681fa14"
+    },
+    {
+      "file": "public/data/boundaries/hartwell-1200-province.geojson",
+      "sha256": "afe53b2c8edfd3c1708e6e0e1deb7d94af457d55accbdda19734076645601608"
+    },
+    {
+      "file": "public/data/boundaries/hartwell-1200-prefecture.geojson",
+      "sha256": "efa3333cd7986a8f019f05daae908322e3bc987454d51331c5ec43517cb28747"
+    },
+    {
+      "file": "public/data/boundaries/hartwell-1200-county.geojson",
+      "sha256": "2a2d1012f5d2d4893b1cef501319cc61b17a98d2ed5b62c0fd88e08b5abe7c98"
+    },
+    {
+      "file": "public/data/boundaries/hartwell-1290-country.geojson",
+      "sha256": "8fa232fa1aac9c2d9deb5b934e148499f9fd6828c72144943bc7e99e3effacd9"
+    },
+    {
+      "file": "public/data/boundaries/hartwell-1290-province.geojson",
+      "sha256": "f24d8aec754417d1c99cc7724aec35565daf2a36431ffa0dddd929ff063be24f"
+    },
+    {
+      "file": "public/data/boundaries/hartwell-1290-prefecture.geojson",
+      "sha256": "f3b64a6b20ae462d4818d0a09e823f7bea3b75fea8a46d557b93bc610f1a9c70"
+    },
+    {
+      "file": "public/data/boundaries/hartwell-1290-county.geojson",
+      "sha256": "d44cfa05d3ed433ebe5ffff314db28ed74c61a426262c0c4a015a1021dfa7443"
+    },
+    {
+      "file": "public/data/boundaries/hartwell-1391-country.geojson",
+      "sha256": "03caa3f39190bcf74406e3c7eb0df5a974d86927c3a8b456dc8adae240f645b4"
+    },
+    {
+      "file": "public/data/boundaries/hartwell-1391-province.geojson",
+      "sha256": "ef124f4804425d93099dc18aa2ac1c38f3ed3c108e03cfb6d1cb440fa549f2eb"
+    },
+    {
+      "file": "public/data/boundaries/hartwell-1391-prefecture.geojson",
+      "sha256": "5b8940f9733254424df68934f1a9a7588dbb7cadb344629436a0e6a04c1cb9f7"
+    },
+    {
+      "file": "public/data/boundaries/hartwell-1391-county.geojson",
+      "sha256": "fc7542e6b451b92f08bdc070129962489a78c65836712b5e1db7662de938c33f"
+    },
+    {
+      "file": "public/data/boundaries/chgis-1820-province.geojson",
+      "sha256": "b48348d0f5c5cacdd2b1a41e9ab3813566bad5dc4cecd95d4664f060f4314e0d"
+    },
+    {
+      "file": "public/data/boundaries/chgis-1820-prefecture.geojson",
+      "sha256": "6fbe350ed47212606e93b6ca1175b4a51957399e71bee134ee04a04fb28ace18"
+    },
+    {
+      "file": "public/data/boundaries/chgis-1911-province.geojson",
+      "sha256": "bede8f4b2d8ed99e2de8f1d712485f5de216226b27d88a6fa6ec4b864f3a712a"
+    },
+    {
+      "file": "public/data/boundaries/chgis-1911-prefecture.geojson",
+      "sha256": "783a4012ec0a9634eaaf66944a70127cc006d17a5d59e88dd80ca8513f45609f"
+    },
+    {
+      "file": "public/data/boundaries/chgis-1911-county.geojson",
+      "sha256": "b94d74b7016372601687d8823e3eeab9c4af5ea6502076703e0e77938f6ade75"
+    }
+  ],
+  "sourceFeatureCounts": {
+    "gadm41-chn-adm1": 37,
+    "gadm41-chn-adm2": 368,
+    "geoboundaries-chn-adm1-2019": 34,
+    "natural-earth-countries-5.1.1": 258
+  },
+  "sourceGeometryRepairs": {
+    "gadm41-chn-adm1": [],
+    "gadm41-chn-adm2": [],
+    "geoboundaries-chn-adm1-2019": [],
+    "natural-earth-countries-5.1.1": [
+      161
+    ]
+  },
+  "provinceEnglishTranslations": {
+    "HongKong": "香港特别行政区",
+    "Macau": "澳门特别行政区"
+  },
+  "supplementProvinceTranslations": {
+    "Hainan Province": "海南省",
+    "Taiwan Province": "台湾省",
+    "Guangxi Zhuang Autonomous Region": "广西壮族自治区",
+    "Fujian Province": "福建省",
+    "Yunnan Province": "云南省",
+    "Guizhou Province": "贵州省",
+    "Jiangxi Province": "江西省",
+    "Hunan Province": "湖南省",
+    "Zhejiang Province": "浙江省",
+    "Shanghai Municipality": "上海市",
+    "Chongqing Municipality": "重庆市",
+    "Hubei Province": "湖北省",
+    "Sichuan Province": "四川省",
+    "Anhui Province": "安徽省",
+    "Jiangsu Province": "江苏省",
+    "Henan Province": "河南省",
+    "Tibet Autonomous Region": "西藏自治区",
+    "Shandong Province": "山东省",
+    "Qinghai Province": "青海省",
+    "Ningxia Ningxia Hui Autonomous Region": "宁夏回族自治区",
+    "Shaanxi Province": "陕西省",
+    "Tianjin Municipality": "天津市",
+    "Shanxi Province": "山西省",
+    "Beijing Municipality": "北京市",
+    "Gansu Province": "甘肃省",
+    "Hebei Province": "河北省",
+    "Liaoning Province": "辽宁省",
+    "Jilin Province": "吉林省",
+    "Xinjiang Uyghur Autonomous Region": "新疆维吾尔自治区",
+    "Inner Mongolia Autonomous Region": "内蒙古自治区",
+    "Heilongjiang Province": "黑龙江省",
+    "Macau Special Administrative Region": "澳门特别行政区",
+    "Hong Kong Special Administrative Region": "香港特别行政区",
+    "Guangzhou Province": "广东省"
+  },
+  "sourceDownloads": {
+    "retrievedDate": "2026-09-24",
+    "assets": [
+      {
+        "file": "gadm41_CHN_1.json.zip",
+        "url": "https://geodata.ucdavis.edu/gadm/gadm4.1/json/gadm41_CHN_1.json.zip",
+        "bytes": 714043,
+        "sha256": "656ea3e576a95f1172503c1f416c8a3b8267bc87e6c090c730a676e96d551478"
+      },
+      {
+        "file": "gadm41_CHN_2.json.zip",
+        "url": "https://geodata.ucdavis.edu/gadm/gadm4.1/json/gadm41_CHN_2.json.zip",
+        "bytes": 1417217,
+        "sha256": "ea39517b2c01bdc2375eef87bbed66e84ebb6168c645b3b362abbecae8b7fccd"
+      },
+      {
+        "file": "chn-adm1.geojson",
+        "url": "https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/9469f09/releaseData/gbOpen/CHN/ADM1/geoBoundaries-CHN-ADM1.geojson",
+        "bytes": 270578,
+        "sha256": "3a00467a0db9b4136facb5f2f3d0edbfd96adb15651cfdf63991da9281030e85"
+      },
+      {
+        "file": "ne-countries.geojson",
+        "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_admin_0_countries.geojson",
+        "bytes": 13287234,
+        "sha256": "239eec57ac17f100a11e2536cffc56752c318b50ae765b0918ff7aab4ce8f255"
+      },
+      {
+        "file": "gadm-license.html",
+        "url": "https://gadm.org/license.html",
+        "bytes": 2590,
+        "sha256": "db0d4d92dff907a43480b3ea96441f40374e728f72c9d6fe6b5d1a3e12a0b599"
+      },
+      {
+        "file": "chn-adm1-metadata.json",
+        "url": "https://www.geoboundaries.org/api/current/gbOpen/CHN/ADM1/",
+        "bytes": 1697,
+        "sha256": "b5816c51ebefc26b1154872e663cd5a8eda830008f738a965d5dd610e72b09d0"
+      },
+      {
+        "file": "ne-countries-version.txt",
+        "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/10m_cultural/ne_10m_admin_0_countries.VERSION.txt",
+        "bytes": 6,
+        "sha256": "f9893302cd3158f3b5aea394dcd2a91574869e9e6ff69e9235b10a3bf8c983fb"
+      }
+    ]
+  },
+  "outputBytes": 12808847,
+  "outputSHA256": "e92a393d8c9f2e98455e0a2633b3f50d24609f7731e2d325c8402ebfd47e5be4",
+  "historicalGeoJSONUnchanged": true
+}

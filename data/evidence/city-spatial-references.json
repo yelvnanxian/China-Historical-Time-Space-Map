@@ -1,0 +1,188 @@
+{
+  "createdAt": "2026-09-24T11:04:48.163401+00:00",
+  "note": "All points are modern regional references. Ancient-to-modern identity is provisional, ancient city limits and offsets are not measured.",
+  "records": [
+    {
+      "placeId": "shanzhou",
+      "provider": "GeoNames",
+      "sourceId": "geonames-modern-cities",
+      "sourceRecordId": "1796669",
+      "sourceName": "Sanmenxia",
+      "coordinates": [
+        111.19287,
+        34.78081
+      ],
+      "sourceFeatureCode": "PPLA2",
+      "sourceModifiedAt": "2025-01-10",
+      "recordUrl": "https://www.geonames.org/1796669/",
+      "method": "exact copy of modern GeoNames WGS84 longitude/latitude",
+      "ancientSiteOffset": "not measured; this is not an ancient-site coordinate"
+    },
+    {
+      "placeId": "zhengzhou",
+      "provider": "Natural Earth",
+      "sourceId": "natural-earth-modern-cities",
+      "sourceRecordId": "1159151375",
+      "sourceFeatureIndex": 7172,
+      "sourceName": "Zhengzhou",
+      "coordinates": [
+        113.663147,
+        34.756942
+      ],
+      "method": "exact copy of modern populated-place Point",
+      "ancientSiteOffset": "not measured; this is not an ancient-site coordinate"
+    },
+    {
+      "placeId": "huazhou-hua",
+      "provider": "GeoNames",
+      "sourceId": "geonames-modern-cities",
+      "sourceRecordId": "1813775",
+      "sourceName": "Daokou",
+      "coordinates": [
+        114.51593,
+        35.56895
+      ],
+      "sourceFeatureCode": "PPLA3",
+      "sourceModifiedAt": "2025-02-18",
+      "recordUrl": "https://www.geonames.org/1813775/",
+      "method": "exact copy of modern GeoNames WGS84 longitude/latitude",
+      "ancientSiteOffset": "not measured; this is not an ancient-site coordinate"
+    },
+    {
+      "placeId": "huaizhou",
+      "provider": "GeoNames",
+      "sourceId": "geonames-modern-cities",
+      "sourceRecordId": "1797557",
+      "sourceName": "Qinyang",
+      "coordinates": [
+        112.92805,
+        35.09061
+      ],
+      "sourceFeatureCode": "PPLA3",
+      "sourceModifiedAt": "2025-05-15",
+      "recordUrl": "https://www.geonames.org/1797557/",
+      "method": "exact copy of modern GeoNames WGS84 longitude/latitude",
+      "ancientSiteOffset": "not measured; this is not an ancient-site coordinate"
+    },
+    {
+      "placeId": "hengzhou",
+      "provider": "GeoNames",
+      "sourceId": "geonames-modern-cities",
+      "sourceRecordId": "1784712",
+      "sourceName": "Zhengding",
+      "coordinates": [
+        114.56556,
+        38.14501
+      ],
+      "sourceFeatureCode": "PPLA3",
+      "sourceModifiedAt": "2026-09-14",
+      "recordUrl": "https://www.geonames.org/1784712/",
+      "method": "exact copy of modern GeoNames WGS84 longitude/latitude",
+      "ancientSiteOffset": "not measured; this is not an ancient-site coordinate"
+    },
+    {
+      "placeId": "beizhou",
+      "provider": "GeoNames",
+      "sourceId": "geonames-modern-cities",
+      "sourceRecordId": "1810178",
+      "sourceName": "Gexianzhuang",
+      "coordinates": [
+        115.66174,
+        37.07119
+      ],
+      "sourceFeatureCode": "PPLA3",
+      "sourceModifiedAt": "2024-02-08",
+      "recordUrl": "https://www.geonames.org/1810178/",
+      "method": "exact copy of modern GeoNames WGS84 longitude/latitude",
+      "ancientSiteOffset": "not measured; this is not an ancient-site coordinate"
+    },
+    {
+      "placeId": "pingyuan",
+      "provider": "GeoNames",
+      "sourceId": "geonames-modern-cities",
+      "sourceRecordId": "1803437",
+      "sourceName": "Lingcheng",
+      "coordinates": [
+        116.57045,
+        37.33501
+      ],
+      "sourceFeatureCode": "PPLA3",
+      "sourceModifiedAt": "2021-09-20",
+      "recordUrl": "https://www.geonames.org/1803437/",
+      "method": "exact copy of modern GeoNames WGS84 longitude/latitude",
+      "ancientSiteOffset": "not measured; this is not an ancient-site coordinate"
+    },
+    {
+      "placeId": "fuzhou-fu",
+      "provider": "GeoNames",
+      "sourceId": "geonames-modern-cities",
+      "sourceRecordId": "1811074",
+      "sourceName": "Fucheng",
+      "coordinates": [
+        109.36833,
+        35.99139
+      ],
+      "sourceFeatureCode": "PPL",
+      "sourceModifiedAt": "2021-09-20",
+      "recordUrl": "https://www.geonames.org/1811074/",
+      "method": "exact copy of modern GeoNames WGS84 longitude/latitude",
+      "ancientSiteOffset": "not measured; this is not an ancient-site coordinate"
+    },
+    {
+      "placeId": "luzhou",
+      "provider": "Natural Earth",
+      "sourceId": "natural-earth-modern-cities",
+      "sourceRecordId": "1159140757",
+      "sourceFeatureIndex": 3646,
+      "sourceName": "Changzhi",
+      "coordinates": [
+        113.105282,
+        36.183875
+      ],
+      "method": "exact copy of modern populated-place Point",
+      "ancientSiteOffset": "not measured; this is not an ancient-site coordinate"
+    },
+    {
+      "placeId": "dengzhou",
+      "provider": "Natural Earth",
+      "sourceId": "natural-earth-modern-cities",
+      "sourceRecordId": "1159140903",
+      "sourceFeatureIndex": 3678,
+      "sourceName": "Dengzhou",
+      "coordinates": [
+        112.080022,
+        32.680368
+      ],
+      "method": "exact copy of modern populated-place Point",
+      "ancientSiteOffset": "not measured; this is not an ancient-site coordinate"
+    },
+    {
+      "placeId": "xuzhou-xuchang",
+      "provider": "Natural Earth",
+      "sourceId": "natural-earth-modern-cities",
+      "sourceRecordId": "1159140893",
+      "sourceFeatureIndex": 3676,
+      "sourceName": "Xuchang",
+      "coordinates": [
+        113.820019,
+        34.02039
+      ],
+      "method": "exact copy of modern populated-place Point",
+      "ancientSiteOffset": "not measured; this is not an ancient-site coordinate"
+    },
+    {
+      "placeId": "xuzhou-pengcheng",
+      "provider": "Natural Earth",
+      "sourceId": "natural-earth-modern-cities",
+      "sourceRecordId": "1159149147",
+      "sourceFeatureIndex": 6182,
+      "sourceName": "Xuzhou",
+      "coordinates": [
+        117.178074,
+        34.281958
+      ],
+      "method": "exact copy of modern populated-place Point",
+      "ancientSiteOffset": "not measured; this is not an ancient-site coordinate"
+    }
+  ]
+}

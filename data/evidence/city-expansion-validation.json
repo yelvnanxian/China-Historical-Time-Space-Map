@@ -1,0 +1,84 @@
+{
+  "checkedAt": "2026-09-24T11:04:48.163401+00:00",
+  "addedPlaces": 12,
+  "totalPlaces": 40,
+  "tangVisiblePlaces": 37,
+  "modernCoordinatesExactCopies": 12,
+  "historicalQuotesAdded": 12,
+  "allHistoricalQuotes": 47,
+  "npmTestPassed": 25,
+  "records": [
+    {
+      "placeId": "shanzhou",
+      "sourceRecordId": "1796669",
+      "coordinatesMatchSource": true,
+      "locationAccuracy": "approximate"
+    },
+    {
+      "placeId": "zhengzhou",
+      "sourceRecordId": "1159151375",
+      "coordinatesMatchSource": true,
+      "locationAccuracy": "approximate"
+    },
+    {
+      "placeId": "huazhou-hua",
+      "sourceRecordId": "1813775",
+      "coordinatesMatchSource": true,
+      "locationAccuracy": "approximate"
+    },
+    {
+      "placeId": "huaizhou",
+      "sourceRecordId": "1797557",
+      "coordinatesMatchSource": true,
+      "locationAccuracy": "approximate"
+    },
+    {
+      "placeId": "hengzhou",
+      "sourceRecordId": "1784712",
+      "coordinatesMatchSource": true,
+      "locationAccuracy": "approximate"
+    },
+    {
+      "placeId": "beizhou",
+      "sourceRecordId": "1810178",
+      "coordinatesMatchSource": true,
+      "locationAccuracy": "approximate"
+    },
+    {
+      "placeId": "pingyuan",
+      "sourceRecordId": "1803437",
+      "coordinatesMatchSource": true,
+      "locationAccuracy": "approximate"
+    },
+    {
+      "placeId": "fuzhou-fu",
+      "sourceRecordId": "1811074",
+      "coordinatesMatchSource": true,
+      "locationAccuracy": "approximate"
+    },
+    {
+      "placeId": "luzhou",
+      "sourceRecordId": "1159140757",
+      "coordinatesMatchSource": true,
+      "locationAccuracy": "approximate"
+    },
+    {
+      "placeId": "dengzhou",
+      "sourceRecordId": "1159140903",
+      "coordinatesMatchSource": true,
+      "locationAccuracy": "approximate"
+    },
+    {
+      "placeId": "xuzhou-xuchang",
+      "sourceRecordId": "1159140893",
+      "coordinatesMatchSource": true,
+      "locationAccuracy": "approximate"
+    },
+    {
+      "placeId": "xuzhou-pengcheng",
+      "sourceRecordId": "1159149147",
+      "coordinatesMatchSource": true,
+      "locationAccuracy": "approximate"
+    }
+  ]
+}

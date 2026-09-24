@@ -1,0 +1,16 @@
+{
+  "id": "context-hangzhou",
+  "title": "杭州市 — 维基百科",
+  "url": "https://zh.wikipedia.org/wiki/%E6%9D%AD%E5%B7%9E%E5%B8%82",
+  "retrievedAt": "2026-09-24T12:07:36.839874+00:00",
+  "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证。引文保留本次页面原字形。",
+  "snapshotPath": "data/evidence/historical-context/hangzhou.txt",
+  "snapshotSha256": "c0c9e9f499c47525e614022bb7b4cd14cd5d1e344fd3c316b828421352dd7950",
+  "pageId": 4651,
+  "revision": {
+    "revid": 94228857,
+    "parentid": 94103316,
+    "timestamp": "2026-09-07T07:29:43Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E6%9D%AD%E5%B7%9E&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

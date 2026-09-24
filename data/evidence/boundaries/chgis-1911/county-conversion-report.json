@@ -1,0 +1,2996 @@
+{
+  "title": "CHGIS V6 1911: v6_1911_cnty_pgn_gbk.zip",
+  "sourceUrl": "https://doi.org/10.7910/DVN/0P89R9",
+  "sourceFileId": 2966678,
+  "sourceArchiveMD5": "7b9fcd350486a52c6b4d1cb5e44a36f8",
+  "citation": "\"CHGIS Version 6.\" (c) Fairbank Center for Chinese Studies and the Institute for Chinese Historical Geography at Fudan University, Dec 2016.",
+  "sourceCRS": "EPSG:2333",
+  "targetCRS": "EPSG:4326",
+  "transformation": "Inverse of unnnamed (Gauss Kruger) + Ballpark geographic offset from Xian 1980 to WGS 84 (with axis order normalized for visualization)",
+  "transformationAccuracyMetres": -1.0,
+  "coordinatePrecisionDegrees": 1e-06,
+  "simplified": false,
+  "yearBasis": "Official dataset title and filename; original date fields are retained.",
+  "warning": "官方文件标为 1911 年，但 2 个区域的原始 BEG_YR / END_YR 字段与该年冲突（[(1146, 1146), (3822, 3822)]）；异常原值已保留，年份尚未核实。",
+  "featureCount": 1986,
+  "sourceFields": [
+    "Object_ID",
+    "NAME_PY",
+    "NAME_CH",
+    "NAME_FT",
+    "TYPE_PY",
+    "TYPE_CH",
+    "LEV_RANK",
+    "BEG_YR",
+    "BEG_RULE",
+    "END_YR",
+    "END_RULE",
+    "DYN_PY",
+    "DYN_CH",
+    "LEV1_PY",
+    "LEV1_CH",
+    "LEV2_PY",
+    "LEV2_CH",
+    "NOTE_ID",
+    "OBJ_TYPE",
+    "SYS_ID",
+    "GEO_SRC",
+    "COMPILER",
+    "GEOCOMP",
+    "CHECKER",
+    "ENT_DATE",
+    "Shape_Leng",
+    "Shape_Area",
+    "X_COORD",
+    "Y_COORD"
+  ],
+  "sourceVertexCount": 781331,
+  "outputVertexCount": 780810,
+  "invalidSourceFeatureCount": 58,
+  "invalidOutputFeatureCount": 0,
+  "sourceDatePairs": [
+    [
+      1146,
+      1146
+    ],
+    [
+      1911,
+      1911
+    ],
+    [
+      3822,
+      3822
+    ]
+  ],
+  "yearConflictCount": 2,
+  "duplicateSourceRecordIds": [],
+  "sourceWarnings": [
+    "Possible issue encountered when converting Shape #1723 to GeoJSON: Shapefile format requires that all polygon interior holes be contained by an exterior ring, but the Shape contained interior holes (defined by counter-clockwise orientation in the shapefile format) that were orphaned, i.e. not contained by any exterior rings. The rings were still included but were encoded as GeoJSON exterior rings instead of holes."
+  ],
+  "geometryCorrections": [
+    {
+      "recordIndex": 14,
+      "sourceId": "196015",
+      "name": "归善县",
+      "verticesBeforePrecision": 798,
+      "verticesAfterPrecision": 797
+    },
+    {
+      "recordIndex": 72,
+      "sourceId": "196073",
+      "name": "宁陕厅",
+      "sourceValidity": "Self-intersection[19255137.6401277 3682769.74886234]",
+      "makeValidResultType": "MultiPolygon",
+      "originalAreaSquareMetres": 3911498630.5995655,
+      "repairedAreaSquareMetres": 3911498630.5995636,
+      "verticesBeforePrecision": 381,
+      "verticesAfterPrecision": 373
+    },
+    {
+      "recordIndex": 76,
+      "sourceId": "196077",
+      "name": "麟游县",
+      "sourceValidity": "Self-intersection[19221020.4120277 3863466.1844979]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 1768832111.004467,
+      "repairedAreaSquareMetres": 1768832111.0044682
+    },
+    {
+      "recordIndex": 93,
+      "sourceId": "196094",
+      "name": "佛坪厅",
+      "sourceValidity": "Self-intersection[19217172.9336914 3766355.26726398]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 3279248896.3287864,
+      "repairedAreaSquareMetres": 3279248896.3287873
+    },
+    {
+      "recordIndex": 116,
+      "sourceId": "196117",
+      "name": "襄阳县",
+      "sourceValidity": "Self-intersection[19593721.8372248 3593397.87636933]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 3479660115.7224636,
+      "repairedAreaSquareMetres": 3479660115.7224636
+    },
+    {
+      "recordIndex": 142,
+      "sourceId": "196143",
+      "name": "远安县",
+      "sourceValidity": "Self-intersection[19564955.2640043 3427131.02240417]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 1306822919.3705518,
+      "repairedAreaSquareMetres": 1306822919.3705504
+    },
+    {
+      "recordIndex": 144,
+      "sourceId": "196145",
+      "name": "荆门州",
+      "verticesBeforePrecision": 906,
+      "verticesAfterPrecision": 905
+    },
+    {
+      "recordIndex": 249,
+      "sourceId": "196254",
+      "name": "潮阳县",
+      "verticesBeforePrecision": 303,
+      "verticesAfterPrecision": 305
+    },
+    {
+      "recordIndex": 254,
+      "sourceId": "196260",
+      "name": "嘉应州",
+      "sourceValidity": "Self-intersection[19983672.9556093 2719209.7868628]",
+      "makeValidResultType": "MultiPolygon",
+      "originalAreaSquareMetres": 3063931925.49436,
+      "repairedAreaSquareMetres": 3063931950.067916,
+      "verticesBeforePrecision": 435,
+      "verticesAfterPrecision": 431
+    },
+    {
+      "recordIndex": 274,
+      "sourceId": "196282",
+      "name": "番禺县",
+      "verticesBeforePrecision": 271,
+      "verticesAfterPrecision": 270
+    },
+    {
+      "recordIndex": 291,
+      "sourceId": "196300",
+      "name": "开平县",
+      "verticesBeforePrecision": 258,
+      "verticesAfterPrecision": 257
+    },
+    {
+      "recordIndex": 298,
+      "sourceId": "196308",
+      "name": "茂名县",
+      "verticesBeforePrecision": 346,
+      "verticesAfterPrecision": 342
+    },
+    {
+      "recordIndex": 330,
+      "sourceId": "196340",
+      "name": "贵池县",
+      "verticesBeforePrecision": 620,
+      "verticesAfterPrecision": 619
+    },
+    {
+      "recordIndex": 345,
+      "sourceId": "196355",
+      "name": "太湖县",
+      "verticesBeforePrecision": 536,
+      "verticesAfterPrecision": 535
+    },
+    {
+      "recordIndex": 394,
+      "sourceId": "196404",
+      "name": "晋江县",
+      "sourceValidity": "Ring Self-intersection[20252654.2724894 2757253.39467235]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 1349769753.4618335,
+      "repairedAreaSquareMetres": 1349769753.4618366
+    },
+    {
+      "recordIndex": 462,
+      "sourceId": "196474",
+      "name": "江都县",
+      "sourceValidity": "Self-intersection[20320791.616312 3606269.00514431]",
+      "makeValidResultType": "MultiPolygon",
+      "originalAreaSquareMetres": 1081898483.126475,
+      "repairedAreaSquareMetres": 1081898484.3680236,
+      "verticesBeforePrecision": 428,
+      "verticesAfterPrecision": 420
+    },
+    {
+      "recordIndex": 477,
+      "sourceId": "196490",
+      "name": "丹徒县",
+      "verticesBeforePrecision": 595,
+      "verticesAfterPrecision": 593
+    },
+    {
+      "recordIndex": 492,
+      "sourceId": "196505",
+      "name": "昆山县",
+      "sourceValidity": "Ring Self-intersection[20446680.7324321 3488720.88783305]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 485383098.4107217,
+      "repairedAreaSquareMetres": 485383098.41072136
+    },
+    {
+      "recordIndex": 504,
+      "sourceId": "196517",
+      "name": "上海县",
+      "sourceValidity": "Self-intersection[20512400.6841415 3517374.69501088]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 573373467.5791076,
+      "repairedAreaSquareMetres": 573373467.5791075
+    },
+    {
+      "recordIndex": 510,
+      "sourceId": "196523",
+      "name": "崇明县",
+      "verticesBeforePrecision": 407,
+      "verticesAfterPrecision": 403
+    },
+    {
+      "recordIndex": 541,
+      "sourceId": "196555",
+      "name": "平阳县",
+      "verticesBeforePrecision": 479,
+      "verticesAfterPrecision": 478
+    },
+    {
+      "recordIndex": 546,
+      "sourceId": "196560",
+      "name": "景宁县",
+      "sourceValidity": "Ring Self-intersection[20376953.2944504 3149955.64510927]",
+      "makeValidResultType": "MultiPolygon",
+      "originalAreaSquareMetres": 2011351539.1986206,
+      "repairedAreaSquareMetres": 2011351539.1986206
+    },
+    {
+      "recordIndex": 651,
+      "sourceId": "196672",
+      "name": "顺义县",
+      "sourceValidity": "Ring Self-intersection[19991921.0749964 4448534.61542318]",
+      "makeValidResultType": "MultiPolygon",
+      "originalAreaSquareMetres": 671620789.8846903,
+      "repairedAreaSquareMetres": 671620789.8846902
+    },
+    {
+      "recordIndex": 652,
+      "sourceId": "196673",
+      "name": "通州",
+      "sourceValidity": "Ring Self-intersection[19991921.0749964 4448534.61542318]",
+      "makeValidResultType": "Polygon",
+      "originalAreaSquareMetres": 1093039670.001705,
+      "repairedAreaSquareMetres": 1093039670.001704
+    },
+    {
+      "recordIndex": 659,
+      "sourceId": "196680",
+      "name": "蓟州",
+      "sourceValidity": "Ring Self-intersection[20049790.6146429 4476333.83574087]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 1482303657.7669106,
+      "repairedAreaSquareMetres": 1482303657.7669122
+    },
+    {
+      "recordIndex": 671,
+      "sourceId": "196692",
+      "name": "怀安县",
+      "sourceValidity": "Self-intersection[19764208.143584 4515988.20339202]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 1990568964.73481,
+      "repairedAreaSquareMetres": 1990568964.734812
+    },
+    {
+      "recordIndex": 691,
+      "sourceId": "196711",
+      "name": "西安县",
+      "verticesBeforePrecision": 384,
+      "verticesAfterPrecision": 372
+    },
+    {
+      "recordIndex": 693,
+      "sourceId": "196713",
+      "name": "汤溪县",
+      "verticesBeforePrecision": 208,
+      "verticesAfterPrecision": 207
+    },
+    {
+      "recordIndex": 695,
+      "sourceId": "196715",
+      "name": "兰溪县",
+      "verticesBeforePrecision": 274,
+      "verticesAfterPrecision": 270
+    },
+    {
+      "recordIndex": 696,
+      "sourceId": "196716",
+      "name": "金华县",
+      "verticesBeforePrecision": 276,
+      "verticesAfterPrecision": 275
+    },
+    {
+      "recordIndex": 707,
+      "sourceId": "196728",
+      "name": "仙居县",
+      "verticesBeforePrecision": 481,
+      "verticesAfterPrecision": 477
+    },
+    {
+      "recordIndex": 714,
+      "sourceId": "196735",
+      "name": "象山县",
+      "verticesBeforePrecision": 322,
+      "verticesAfterPrecision": 321
+    },
+    {
+      "recordIndex": 720,
+      "sourceId": "196741",
+      "name": "山阴县",
+      "verticesBeforePrecision": 246,
+      "verticesAfterPrecision": 245
+    },
+    {
+      "recordIndex": 754,
+      "sourceId": "196775",
+      "name": "星子县",
+      "verticesBeforePrecision": 253,
+      "verticesAfterPrecision": 252
+    },
+    {
+      "recordIndex": 766,
+      "sourceId": "196790",
+      "name": "长宁县",
+      "verticesBeforePrecision": 325,
+      "verticesAfterPrecision": 324
+    },
+    {
+      "recordIndex": 786,
+      "sourceId": "196812",
+      "name": "乐平县",
+      "verticesBeforePrecision": 438,
+      "verticesAfterPrecision": 434
+    },
+    {
+      "recordIndex": 852,
+      "sourceId": "196900",
+      "name": "滑县",
+      "verticesBeforePrecision": 548,
+      "verticesAfterPrecision": 544
+    },
+    {
+      "recordIndex": 854,
+      "sourceId": "196902",
+      "name": "封丘县",
+      "verticesBeforePrecision": 282,
+      "verticesAfterPrecision": 281
+    },
+    {
+      "recordIndex": 898,
+      "sourceId": "196947",
+      "name": "西平县",
+      "verticesBeforePrecision": 234,
+      "verticesAfterPrecision": 233
+    },
+    {
+      "recordIndex": 935,
+      "sourceId": "196984",
+      "name": "长治县",
+      "sourceValidity": "Ring Self-intersection[19695294.8875848 4002739.68353671]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 656793174.1800412,
+      "repairedAreaSquareMetres": 656793174.1800414
+    },
+    {
+      "recordIndex": 974,
+      "sourceId": "197024",
+      "name": "武乡县",
+      "verticesBeforePrecision": 370,
+      "verticesAfterPrecision": 369
+    },
+    {
+      "recordIndex": 1005,
+      "sourceId": "197056",
+      "name": "霍州",
+      "verticesBeforePrecision": 146,
+      "verticesAfterPrecision": 145
+    },
+    {
+      "recordIndex": 1006,
+      "sourceId": "197057",
+      "name": "赵城县",
+      "verticesBeforePrecision": 108,
+      "verticesAfterPrecision": 107
+    },
+    {
+      "recordIndex": 1038,
+      "sourceId": "197092",
+      "name": "滋阳县",
+      "sourceValidity": "Self-intersection[20033289.8347773 3945955.3388966]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 589397375.815304,
+      "repairedAreaSquareMetres": 589397375.815304
+    },
+    {
+      "recordIndex": 1051,
+      "sourceId": "197105",
+      "name": "鱼台县",
+      "verticesBeforePrecision": 284,
+      "verticesAfterPrecision": 280
+    },
+    {
+      "recordIndex": 1144,
+      "sourceId": "197249",
+      "name": "通渭县",
+      "sourceValidity": "Ring Self-intersection[18942307.7990745 3880057.81007625]",
+      "makeValidResultType": "MultiPolygon",
+      "originalAreaSquareMetres": 3078613962.363985,
+      "repairedAreaSquareMetres": 3078613964.407605
+    },
+    {
+      "recordIndex": 1149,
+      "sourceId": "197229",
+      "name": "环县",
+      "sourceValidity": "Ring Self-intersection[19108448.8011682 4061392.74464691]",
+      "makeValidResultType": "MultiPolygon",
+      "originalAreaSquareMetres": 8073978822.113063,
+      "repairedAreaSquareMetres": 8073981515.137013
+    },
+    {
+      "recordIndex": 1152,
+      "sourceId": "197259",
+      "name": "正宁县",
+      "sourceValidity": "Ring Self-intersection[19222103.1933329 3909444.61528813]",
+      "makeValidResultType": "MultiPolygon",
+      "originalAreaSquareMetres": 1314982448.6359174,
+      "repairedAreaSquareMetres": 1314982448.6973114,
+      "verticesBeforePrecision": 220,
+      "verticesAfterPrecision": 215
+    },
+    {
+      "recordIndex": 1169,
+      "sourceId": "197250",
+      "name": "秦安县",
+      "sourceValidity": "Self-intersection[19057907.5111123 3900218.4619697]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 2165703598.1952286,
+      "repairedAreaSquareMetres": 2165703598.1952286
+    },
+    {
+      "recordIndex": 1211,
+      "sourceId": "197300",
+      "name": "平乐县",
+      "sourceValidity": "Ring Self-intersection[19467104.7464028 2753696.39953834]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 1908385402.8228886,
+      "repairedAreaSquareMetres": 1908385402.8228881
+    },
+    {
+      "recordIndex": 1222,
+      "sourceId": "197311",
+      "name": "岑溪县",
+      "sourceValidity": "Ring Self-intersection[19508819.1422177 2510976.42410741]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 2016259234.4760807,
+      "repairedAreaSquareMetres": 2016259234.476079
+    },
+    {
+      "recordIndex": 1229,
+      "sourceId": "197318",
+      "name": "宁明州",
+      "verticesBeforePrecision": 133,
+      "verticesAfterPrecision": 132
+    },
+    {
+      "recordIndex": 1230,
+      "sourceId": "197319",
+      "name": "上下冻土州",
+      "verticesBeforePrecision": 54,
+      "verticesAfterPrecision": 53
+    },
+    {
+      "recordIndex": 1239,
+      "sourceId": "197328",
+      "name": "上思直隶厅本厅",
+      "verticesBeforePrecision": 238,
+      "verticesAfterPrecision": 237
+    },
+    {
+      "recordIndex": 1240,
+      "sourceId": "197329",
+      "name": "忠州土州",
+      "verticesBeforePrecision": 193,
+      "verticesAfterPrecision": 192
+    },
+    {
+      "recordIndex": 1243,
+      "sourceId": "197332",
+      "name": "养利州",
+      "verticesBeforePrecision": 90,
+      "verticesAfterPrecision": 89
+    },
+    {
+      "recordIndex": 1245,
+      "sourceId": "197334",
+      "name": "都康土州",
+      "verticesBeforePrecision": 31,
+      "verticesAfterPrecision": 30
+    },
+    {
+      "recordIndex": 1247,
+      "sourceId": "197336",
+      "name": "归顺直隶州本州",
+      "verticesBeforePrecision": 478,
+      "verticesAfterPrecision": 477
+    },
+    {
+      "recordIndex": 1249,
+      "sourceId": "197338",
+      "name": "结安土州",
+      "verticesBeforePrecision": 88,
+      "verticesAfterPrecision": 87
+    },
+    {
+      "recordIndex": 1250,
+      "sourceId": "197339",
+      "name": "结伦土州",
+      "verticesBeforePrecision": 60,
+      "verticesAfterPrecision": 59
+    },
+    {
+      "recordIndex": 1252,
+      "sourceId": "197341",
+      "name": "果化土州",
+      "verticesBeforePrecision": 66,
+      "verticesAfterPrecision": 65
+    },
+    {
+      "recordIndex": 1259,
+      "sourceId": "197348",
+      "name": "陆川县",
+      "verticesBeforePrecision": 353,
+      "verticesAfterPrecision": 352
+    },
+    {
+      "recordIndex": 1262,
+      "sourceId": "197351",
+      "name": "桂平县",
+      "verticesBeforePrecision": 447,
+      "verticesAfterPrecision": 446
+    },
+    {
+      "recordIndex": 1268,
+      "sourceId": "197357",
+      "name": "上林土县",
+      "verticesBeforePrecision": 80,
+      "verticesAfterPrecision": 78
+    },
+    {
+      "recordIndex": 1270,
+      "sourceId": "197359",
+      "name": "定罗土司",
+      "verticesBeforePrecision": 87,
+      "verticesAfterPrecision": 86
+    },
+    {
+      "recordIndex": 1272,
+      "sourceId": "197361",
+      "name": "上林县",
+      "verticesBeforePrecision": 435,
+      "verticesAfterPrecision": 434
+    },
+    {
+      "recordIndex": 1274,
+      "sourceId": "197363",
+      "name": "宾州",
+      "verticesBeforePrecision": 240,
+      "verticesAfterPrecision": 239
+    },
+    {
+      "recordIndex": 1276,
+      "sourceId": "197365",
+      "name": "迁江县",
+      "verticesBeforePrecision": 263,
+      "verticesAfterPrecision": 262
+    },
+    {
+      "recordIndex": 1280,
+      "sourceId": "197370",
+      "name": "向武土州",
+      "verticesBeforePrecision": 183,
+      "verticesAfterPrecision": 182
+    },
+    {
+      "recordIndex": 1284,
+      "sourceId": "197374",
+      "name": "安定土司",
+      "verticesBeforePrecision": 154,
+      "verticesAfterPrecision": 153
+    },
+    {
+      "recordIndex": 1286,
+      "sourceId": "197376",
+      "name": "百色直隶厅本厅",
+      "verticesBeforePrecision": 192,
+      "verticesAfterPrecision": 191
+    },
+    {
+      "recordIndex": 1287,
+      "sourceId": "197377",
+      "name": "东兰州",
+      "verticesBeforePrecision": 294,
+      "verticesAfterPrecision": 293
+    },
+    {
+      "recordIndex": 1289,
+      "sourceId": "197379",
+      "name": "临桂县",
+      "verticesBeforePrecision": 433,
+      "verticesAfterPrecision": 432
+    },
+    {
+      "recordIndex": 1290,
+      "sourceId": "197380",
+      "name": "荔浦县",
+      "sourceValidity": "Self-intersection[19455886.6188034 2695713.56821]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 1553279047.4786224,
+      "repairedAreaSquareMetres": 1553279047.4786224
+    },
+    {
+      "recordIndex": 1291,
+      "sourceId": "197381",
+      "name": "永福县",
+      "sourceValidity": "Self-intersection[19410397.994155 2707174.30928105]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 2679793950.4400644,
+      "repairedAreaSquareMetres": 2679793950.4400625
+    },
+    {
+      "recordIndex": 1292,
+      "sourceId": "197382",
+      "name": "阳朔县",
+      "verticesBeforePrecision": 324,
+      "verticesAfterPrecision": 323
+    },
+    {
+      "recordIndex": 1293,
+      "sourceId": "197383",
+      "name": "兴安县",
+      "sourceValidity": "Self-intersection[19492393.06185 2821184.8493807]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 2616720124.744471,
+      "repairedAreaSquareMetres": 2616720124.7444715
+    },
+    {
+      "recordIndex": 1294,
+      "sourceId": "197384",
+      "name": "灵川县",
+      "verticesBeforePrecision": 362,
+      "verticesAfterPrecision": 361
+    },
+    {
+      "recordIndex": 1295,
+      "sourceId": "197385",
+      "name": "龙胜厅",
+      "verticesBeforePrecision": 470,
+      "verticesAfterPrecision": 469
+    },
+    {
+      "recordIndex": 1296,
+      "sourceId": "197386",
+      "name": "怀远县",
+      "verticesBeforePrecision": 530,
+      "verticesAfterPrecision": 529
+    },
+    {
+      "recordIndex": 1297,
+      "sourceId": "197387",
+      "name": "天河县",
+      "verticesBeforePrecision": 183,
+      "verticesAfterPrecision": 182
+    },
+    {
+      "recordIndex": 1298,
+      "sourceId": "197388",
+      "name": "罗城县",
+      "verticesBeforePrecision": 443,
+      "verticesAfterPrecision": 442
+    },
+    {
+      "recordIndex": 1320,
+      "sourceId": "197531",
+      "name": "阿墩子辖区",
+      "verticesBeforePrecision": 540,
+      "verticesAfterPrecision": 539
+    },
+    {
+      "recordIndex": 1321,
+      "sourceId": "197532",
+      "name": "维西厅",
+      "verticesBeforePrecision": 760,
+      "verticesAfterPrecision": 759
+    },
+    {
+      "recordIndex": 1323,
+      "sourceId": "197534",
+      "name": "盏达司",
+      "verticesBeforePrecision": 213,
+      "verticesAfterPrecision": 212
+    },
+    {
+      "recordIndex": 1325,
+      "sourceId": "197536",
+      "name": "剑川州",
+      "verticesBeforePrecision": 262,
+      "verticesAfterPrecision": 260
+    },
+    {
+      "recordIndex": 1326,
+      "sourceId": "197537",
+      "name": "鹤庆州",
+      "verticesBeforePrecision": 226,
+      "verticesAfterPrecision": 225
+    },
+    {
+      "recordIndex": 1327,
+      "sourceId": "197538",
+      "name": "华坪县",
+      "verticesBeforePrecision": 350,
+      "verticesAfterPrecision": 349
+    },
+    {
+      "recordIndex": 1328,
+      "sourceId": "197539",
+      "name": "太和县",
+      "verticesBeforePrecision": 110,
+      "verticesAfterPrecision": 109
+    },
+    {
+      "recordIndex": 1330,
+      "sourceId": "197541",
+      "name": "车里司",
+      "verticesBeforePrecision": 967,
+      "verticesAfterPrecision": 966
+    },
+    {
+      "recordIndex": 1331,
+      "sourceId": "197542",
+      "name": "威远厅",
+      "verticesBeforePrecision": 299,
+      "verticesAfterPrecision": 298
+    },
+    {
+      "recordIndex": 1332,
+      "sourceId": "197543",
+      "name": "耿马司",
+      "verticesBeforePrecision": 286,
+      "verticesAfterPrecision": 285
+    },
+    {
+      "recordIndex": 1334,
+      "sourceId": "197545",
+      "name": "顺宁县",
+      "verticesBeforePrecision": 492,
+      "verticesAfterPrecision": 491
+    },
+    {
+      "recordIndex": 1335,
+      "sourceId": "197546",
+      "name": "缅宁厅",
+      "verticesBeforePrecision": 381,
+      "verticesAfterPrecision": 380
+    },
+    {
+      "recordIndex": 1336,
+      "sourceId": "197547",
+      "name": "镇南州",
+      "verticesBeforePrecision": 479,
+      "verticesAfterPrecision": 478
+    },
+    {
+      "recordIndex": 1337,
+      "sourceId": "197548",
+      "name": "楚雄县",
+      "verticesBeforePrecision": 496,
+      "verticesAfterPrecision": 495
+    },
+    {
+      "recordIndex": 1338,
+      "sourceId": "197549",
+      "name": "元谋县",
+      "verticesBeforePrecision": 142,
+      "verticesAfterPrecision": 141
+    },
+    {
+      "recordIndex": 1341,
+      "sourceId": "197552",
+      "name": "安宁州",
+      "verticesBeforePrecision": 219,
+      "verticesAfterPrecision": 218
+    },
+    {
+      "recordIndex": 1342,
+      "sourceId": "197553",
+      "name": "罗次县",
+      "verticesBeforePrecision": 145,
+      "verticesAfterPrecision": 144
+    },
+    {
+      "recordIndex": 1350,
+      "sourceId": "197561",
+      "name": "南安州",
+      "verticesBeforePrecision": 388,
+      "verticesAfterPrecision": 387
+    },
+    {
+      "recordIndex": 1351,
+      "sourceId": "197562",
+      "name": "新平县",
+      "verticesBeforePrecision": 365,
+      "verticesAfterPrecision": 364
+    },
+    {
+      "recordIndex": 1358,
+      "sourceId": "197569",
+      "name": "绥江县",
+      "verticesBeforePrecision": 162,
+      "verticesAfterPrecision": 161
+    },
+    {
+      "recordIndex": 1360,
+      "sourceId": "197571",
+      "name": "会泽县",
+      "verticesBeforePrecision": 351,
+      "verticesAfterPrecision": 350
+    },
+    {
+      "recordIndex": 1361,
+      "sourceId": "197572",
+      "name": "宣威州",
+      "verticesBeforePrecision": 341,
+      "verticesAfterPrecision": 340
+    },
+    {
+      "recordIndex": 1363,
+      "sourceId": "197574",
+      "name": "平彝县",
+      "verticesBeforePrecision": 467,
+      "verticesAfterPrecision": 466
+    },
+    {
+      "recordIndex": 1369,
+      "sourceId": "197580",
+      "name": "河阳县",
+      "verticesBeforePrecision": 177,
+      "verticesAfterPrecision": 175
+    },
+    {
+      "recordIndex": 1370,
+      "sourceId": "197581",
+      "name": "江川县",
+      "verticesBeforePrecision": 133,
+      "verticesAfterPrecision": 132
+    },
+    {
+      "recordIndex": 1371,
+      "sourceId": "197582",
+      "name": "宁州",
+      "verticesBeforePrecision": 238,
+      "verticesAfterPrecision": 237
+    },
+    {
+      "recordIndex": 1377,
+      "sourceId": "197588",
+      "name": "弥勒县",
+      "verticesBeforePrecision": 279,
+      "verticesAfterPrecision": 277
+    },
+    {
+      "recordIndex": 1378,
+      "sourceId": "197589",
+      "name": "恩安县",
+      "verticesBeforePrecision": 337,
+      "verticesAfterPrecision": 336
+    },
+    {
+      "recordIndex": 1379,
+      "sourceId": "197590",
+      "name": "永善县",
+      "verticesBeforePrecision": 330,
+      "verticesAfterPrecision": 329
+    },
+    {
+      "recordIndex": 1380,
+      "sourceId": "197591",
+      "name": "浪穹县",
+      "verticesBeforePrecision": 154,
+      "verticesAfterPrecision": 153
+    },
+    {
+      "recordIndex": 1415,
+      "sourceId": "197626",
+      "name": "陇川司",
+      "verticesBeforePrecision": 166,
+      "verticesAfterPrecision": 165
+    },
+    {
+      "recordIndex": 1424,
+      "sourceId": "197635",
+      "name": "安平厅",
+      "verticesBeforePrecision": 684,
+      "verticesAfterPrecision": 679
+    },
+    {
+      "recordIndex": 1427,
+      "sourceId": "197638",
+      "name": "桐梓县",
+      "verticesBeforePrecision": 600,
+      "verticesAfterPrecision": 599
+    },
+    {
+      "recordIndex": 1428,
+      "sourceId": "197639",
+      "name": "贞丰州",
+      "verticesBeforePrecision": 396,
+      "verticesAfterPrecision": 395
+    },
+    {
+      "recordIndex": 1429,
+      "sourceId": "197640",
+      "name": "兴义府",
+      "sourceValidity": "Ring Self-intersection[18932885.5638398 2819544.38968934]",
+      "makeValidResultType": "Polygon",
+      "originalAreaSquareMetres": 2114864489.8052893,
+      "repairedAreaSquareMetres": 2114864489.8052886
+    },
+    {
+      "recordIndex": 1431,
+      "sourceId": "197642",
+      "name": "归化厅",
+      "verticesBeforePrecision": 302,
+      "verticesAfterPrecision": 301
+    },
+    {
+      "recordIndex": 1438,
+      "sourceId": "197649",
+      "name": "贵定县",
+      "verticesBeforePrecision": 327,
+      "verticesAfterPrecision": 326
+    },
+    {
+      "recordIndex": 1439,
+      "sourceId": "197650",
+      "name": "麻哈州",
+      "sourceValidity": "Ring Self-intersection[19181935.7443398 2926601.67062276]",
+      "makeValidResultType": "Polygon",
+      "originalAreaSquareMetres": 1423412292.366291,
+      "repairedAreaSquareMetres": 1196219385.892256
+    },
+    {
+      "recordIndex": 1440,
+      "sourceId": "197651",
+      "name": "八寨厅",
+      "verticesBeforePrecision": 190,
+      "verticesAfterPrecision": 189
+    },
+    {
+      "recordIndex": 1445,
+      "sourceId": "197656",
+      "name": "水城厅",
+      "verticesBeforePrecision": 335,
+      "verticesAfterPrecision": 334
+    },
+    {
+      "recordIndex": 1447,
+      "sourceId": "197658",
+      "name": "开州",
+      "verticesBeforePrecision": 236,
+      "verticesAfterPrecision": 235
+    },
+    {
+      "recordIndex": 1449,
+      "sourceId": "197660",
+      "name": "平越州",
+      "verticesBeforePrecision": 273,
+      "verticesAfterPrecision": 272
+    },
+    {
+      "recordIndex": 1462,
+      "sourceId": "197673",
+      "name": "铜仁府",
+      "sourceValidity": "Ring Self-intersection[19270731.8578573 3060905.59167192]",
+      "makeValidResultType": "MultiPolygon",
+      "originalAreaSquareMetres": 1737958454.3165004,
+      "repairedAreaSquareMetres": 1737958454.316501
+    },
+    {
+      "recordIndex": 1474,
+      "sourceId": "197685",
+      "name": "龙泉县",
+      "sourceValidity": "Ring Self-intersection[19192810.7579191 3089173.98222608]",
+      "makeValidResultType": "MultiPolygon",
+      "originalAreaSquareMetres": 2368552891.331235,
+      "repairedAreaSquareMetres": 2368552891.3312364
+    },
+    {
+      "recordIndex": 1503,
+      "sourceId": "197755",
+      "name": "大宁县",
+      "verticesBeforePrecision": 735,
+      "verticesAfterPrecision": 734
+    },
+    {
+      "recordIndex": 1504,
+      "sourceId": "197756",
+      "name": "奉节县",
+      "verticesBeforePrecision": 868,
+      "verticesAfterPrecision": 867
+    },
+    {
+      "recordIndex": 1505,
+      "sourceId": "197757",
+      "name": "万县",
+      "verticesBeforePrecision": 664,
+      "verticesAfterPrecision": 663
+    },
+    {
+      "recordIndex": 1508,
+      "sourceId": "197760",
+      "name": "城口厅",
+      "verticesBeforePrecision": 566,
+      "verticesAfterPrecision": 565
+    },
+    {
+      "recordIndex": 1511,
+      "sourceId": "197763",
+      "name": "新宁县",
+      "verticesBeforePrecision": 279,
+      "verticesAfterPrecision": 278
+    },
+    {
+      "recordIndex": 1512,
+      "sourceId": "197764",
+      "name": "酉阳州",
+      "verticesBeforePrecision": 851,
+      "verticesAfterPrecision": 850
+    },
+    {
+      "recordIndex": 1516,
+      "sourceId": "197768",
+      "name": "酆都县",
+      "verticesBeforePrecision": 476,
+      "verticesAfterPrecision": 475
+    },
+    {
+      "recordIndex": 1517,
+      "sourceId": "197769",
+      "name": "涪州",
+      "verticesBeforePrecision": 643,
+      "verticesAfterPrecision": 641
+    },
+    {
+      "recordIndex": 1519,
+      "sourceId": "197771",
+      "name": "綦江县",
+      "verticesBeforePrecision": 553,
+      "verticesAfterPrecision": 552
+    },
+    {
+      "recordIndex": 1520,
+      "sourceId": "197772",
+      "name": "巴县",
+      "verticesBeforePrecision": 532,
+      "verticesAfterPrecision": 530
+    },
+    {
+      "recordIndex": 1521,
+      "sourceId": "197773",
+      "name": "巴州",
+      "verticesBeforePrecision": 743,
+      "verticesAfterPrecision": 742
+    },
+    {
+      "recordIndex": 1528,
+      "sourceId": "197780",
+      "name": "江北厅",
+      "verticesBeforePrecision": 339,
+      "verticesAfterPrecision": 338
+    },
+    {
+      "recordIndex": 1532,
+      "sourceId": "197784",
+      "name": "渠县",
+      "verticesBeforePrecision": 407,
+      "verticesAfterPrecision": 406
+    },
+    {
+      "recordIndex": 1533,
+      "sourceId": "197785",
+      "name": "营山县",
+      "verticesBeforePrecision": 296,
+      "verticesAfterPrecision": 294
+    },
+    {
+      "recordIndex": 1534,
+      "sourceId": "197786",
+      "name": "蓬州",
+      "verticesBeforePrecision": 389,
+      "verticesAfterPrecision": 388
+    },
+    {
+      "recordIndex": 1535,
+      "sourceId": "197787",
+      "name": "仪陇县",
+      "verticesBeforePrecision": 283,
+      "verticesAfterPrecision": 282
+    },
+    {
+      "recordIndex": 1536,
+      "sourceId": "197788",
+      "name": "南江县",
+      "verticesBeforePrecision": 712,
+      "verticesAfterPrecision": 711
+    },
+    {
+      "recordIndex": 1538,
+      "sourceId": "197790",
+      "name": "苍溪县",
+      "verticesBeforePrecision": 550,
+      "verticesAfterPrecision": 549
+    },
+    {
+      "recordIndex": 1539,
+      "sourceId": "197791",
+      "name": "昭化县",
+      "verticesBeforePrecision": 632,
+      "verticesAfterPrecision": 631
+    },
+    {
+      "recordIndex": 1540,
+      "sourceId": "197792",
+      "name": "阆中县",
+      "verticesBeforePrecision": 382,
+      "verticesAfterPrecision": 381
+    },
+    {
+      "recordIndex": 1541,
+      "sourceId": "197793",
+      "name": "铜梁县",
+      "verticesBeforePrecision": 337,
+      "verticesAfterPrecision": 336
+    },
+    {
+      "recordIndex": 1544,
+      "sourceId": "197796",
+      "name": "岳池县",
+      "verticesBeforePrecision": 426,
+      "verticesAfterPrecision": 425
+    },
+    {
+      "recordIndex": 1545,
+      "sourceId": "197797",
+      "name": "南充县",
+      "verticesBeforePrecision": 466,
+      "verticesAfterPrecision": 465
+    },
+    {
+      "recordIndex": 1546,
+      "sourceId": "197798",
+      "name": "南部县",
+      "verticesBeforePrecision": 592,
+      "verticesAfterPrecision": 590
+    },
+    {
+      "recordIndex": 1547,
+      "sourceId": "197799",
+      "name": "蓬溪县",
+      "verticesBeforePrecision": 754,
+      "verticesAfterPrecision": 753
+    },
+    {
+      "recordIndex": 1548,
+      "sourceId": "197800",
+      "name": "西充县",
+      "verticesBeforePrecision": 246,
+      "verticesAfterPrecision": 244
+    },
+    {
+      "recordIndex": 1552,
+      "sourceId": "197804",
+      "name": "剑州",
+      "verticesBeforePrecision": 602,
+      "verticesAfterPrecision": 601
+    },
+    {
+      "recordIndex": 1553,
+      "sourceId": "197805",
+      "name": "梓潼县",
+      "verticesBeforePrecision": 330,
+      "verticesAfterPrecision": 329
+    },
+    {
+      "recordIndex": 1560,
+      "sourceId": "197812",
+      "name": "兴文县",
+      "verticesBeforePrecision": 163,
+      "verticesAfterPrecision": 162
+    },
+    {
+      "recordIndex": 1562,
+      "sourceId": "197814",
+      "name": "纳溪县",
+      "verticesBeforePrecision": 162,
+      "verticesAfterPrecision": 161
+    },
+    {
+      "recordIndex": 1564,
+      "sourceId": "197816",
+      "name": "泸州",
+      "verticesBeforePrecision": 455,
+      "verticesAfterPrecision": 454
+    },
+    {
+      "recordIndex": 1567,
+      "sourceId": "197819",
+      "name": "遂宁县",
+      "verticesBeforePrecision": 594,
+      "verticesAfterPrecision": 592
+    },
+    {
+      "recordIndex": 1568,
+      "sourceId": "197820",
+      "name": "安岳县",
+      "verticesBeforePrecision": 459,
+      "verticesAfterPrecision": 456
+    },
+    {
+      "recordIndex": 1569,
+      "sourceId": "197821",
+      "name": "中江县",
+      "verticesBeforePrecision": 494,
+      "verticesAfterPrecision": 493
+    },
+    {
+      "recordIndex": 1570,
+      "sourceId": "197822",
+      "name": "简州",
+      "sourceValidity": "Ring Self-intersection[18908026.4289856 3375048.27146353]",
+      "makeValidResultType": "Polygon",
+      "originalAreaSquareMetres": 2705242271.8878264,
+      "repairedAreaSquareMetres": 2705242271.887831
+    },
+    {
+      "recordIndex": 1572,
+      "sourceId": "197824",
+      "name": "资州",
+      "verticesBeforePrecision": 458,
+      "verticesAfterPrecision": 457
+    },
+    {
+      "recordIndex": 1575,
+      "sourceId": "197827",
+      "name": "富顺县",
+      "verticesBeforePrecision": 398,
+      "verticesAfterPrecision": 397
+    },
+    {
+      "recordIndex": 1576,
+      "sourceId": "197828",
+      "name": "威远县",
+      "verticesBeforePrecision": 301,
+      "verticesAfterPrecision": 299
+    },
+    {
+      "recordIndex": 1577,
+      "sourceId": "197829",
+      "name": "金堂县",
+      "verticesBeforePrecision": 343,
+      "verticesAfterPrecision": 341
+    },
+    {
+      "recordIndex": 1582,
+      "sourceId": "197834",
+      "name": "石泉县",
+      "verticesBeforePrecision": 359,
+      "verticesAfterPrecision": 358
+    },
+    {
+      "recordIndex": 1585,
+      "sourceId": "197837",
+      "name": "德阳县",
+      "verticesBeforePrecision": 157,
+      "verticesAfterPrecision": 156
+    },
+    {
+      "recordIndex": 1586,
+      "sourceId": "197838",
+      "name": "罗江县",
+      "verticesBeforePrecision": 162,
+      "verticesAfterPrecision": 161
+    },
+    {
+      "recordIndex": 1588,
+      "sourceId": "197840",
+      "name": "灌县",
+      "verticesBeforePrecision": 332,
+      "verticesAfterPrecision": 331
+    },
+    {
+      "recordIndex": 1589,
+      "sourceId": "197841",
+      "name": "彭县",
+      "verticesBeforePrecision": 283,
+      "verticesAfterPrecision": 282
+    },
+    {
+      "recordIndex": 1591,
+      "sourceId": "197843",
+      "name": "华阳县",
+      "verticesBeforePrecision": 218,
+      "verticesAfterPrecision": 217
+    },
+    {
+      "recordIndex": 1592,
+      "sourceId": "197844",
+      "name": "温江县",
+      "verticesBeforePrecision": 160,
+      "verticesAfterPrecision": 159
+    },
+    {
+      "recordIndex": 1594,
+      "sourceId": "197846",
+      "name": "仁寿县",
+      "verticesBeforePrecision": 499,
+      "verticesAfterPrecision": 498
+    },
+    {
+      "recordIndex": 1596,
+      "sourceId": "197848",
+      "name": "长宁县",
+      "verticesBeforePrecision": 318,
+      "verticesAfterPrecision": 317
+    },
+    {
+      "recordIndex": 1598,
+      "sourceId": "197850",
+      "name": "高县",
+      "verticesBeforePrecision": 396,
+      "verticesAfterPrecision": 395
+    },
+    {
+      "recordIndex": 1608,
+      "sourceId": "197860",
+      "name": "邛州",
+      "verticesBeforePrecision": 349,
+      "verticesAfterPrecision": 348
+    },
+    {
+      "recordIndex": 1609,
+      "sourceId": "197861",
+      "name": "蒲江县",
+      "verticesBeforePrecision": 182,
+      "verticesAfterPrecision": 180
+    },
+    {
+      "recordIndex": 1610,
+      "sourceId": "197862",
+      "name": "丹棱县",
+      "verticesBeforePrecision": 220,
+      "verticesAfterPrecision": 219
+    },
+    {
+      "recordIndex": 1614,
+      "sourceId": "197866",
+      "name": "芦山县",
+      "verticesBeforePrecision": 123,
+      "verticesAfterPrecision": 122
+    },
+    {
+      "recordIndex": 1615,
+      "sourceId": "197867",
+      "name": "洪雅县",
+      "verticesBeforePrecision": 494,
+      "verticesAfterPrecision": 493
+    },
+    {
+      "recordIndex": 1618,
+      "sourceId": "197870",
+      "name": "盐边厅",
+      "verticesBeforePrecision": 436,
+      "verticesAfterPrecision": 435
+    },
+    {
+      "recordIndex": 1620,
+      "sourceId": "197872",
+      "name": "天全州",
+      "verticesBeforePrecision": 605,
+      "verticesAfterPrecision": 603
+    },
+    {
+      "recordIndex": 1621,
+      "sourceId": "197873",
+      "name": "荥经县",
+      "verticesBeforePrecision": 339,
+      "verticesAfterPrecision": 337
+    },
+    {
+      "recordIndex": 1622,
+      "sourceId": "197874",
+      "name": "泸定桥委员",
+      "verticesBeforePrecision": 234,
+      "verticesAfterPrecision": 232
+    },
+    {
+      "recordIndex": 1623,
+      "sourceId": "197875",
+      "name": "清溪县",
+      "verticesBeforePrecision": 256,
+      "verticesAfterPrecision": 255
+    },
+    {
+      "recordIndex": 1626,
+      "sourceId": "197878",
+      "name": "盐源县",
+      "verticesBeforePrecision": 1226,
+      "verticesAfterPrecision": 1225
+    },
+    {
+      "recordIndex": 1627,
+      "sourceId": "197879",
+      "name": "康定府",
+      "verticesBeforePrecision": 1293,
+      "verticesAfterPrecision": 1291
+    },
+    {
+      "recordIndex": 1628,
+      "sourceId": "197880",
+      "name": "道孚委员",
+      "verticesBeforePrecision": 430,
+      "verticesAfterPrecision": 429
+    },
+    {
+      "recordIndex": 1629,
+      "sourceId": "197881",
+      "name": "河口县",
+      "verticesBeforePrecision": 606,
+      "verticesAfterPrecision": 605
+    },
+    {
+      "recordIndex": 1630,
+      "sourceId": "197882",
+      "name": "三坝厅",
+      "verticesBeforePrecision": 195,
+      "verticesAfterPrecision": 194
+    },
+    {
+      "recordIndex": 1631,
+      "sourceId": "197883",
+      "name": "峨边厅",
+      "verticesBeforePrecision": 263,
+      "verticesAfterPrecision": 262
+    },
+    {
+      "recordIndex": 1635,
+      "sourceId": "197887",
+      "name": "登科府地方",
+      "verticesBeforePrecision": 2797,
+      "verticesAfterPrecision": 2793
+    },
+    {
+      "recordIndex": 1641,
+      "sourceId": "197893",
+      "name": "呼兰府",
+      "verticesBeforePrecision": 377,
+      "verticesAfterPrecision": 376
+    },
+    {
+      "recordIndex": 1643,
+      "sourceId": "197895",
+      "name": "兰西县",
+      "verticesBeforePrecision": 303,
+      "verticesAfterPrecision": 302
+    },
+    {
+      "recordIndex": 1654,
+      "sourceId": "197906",
+      "name": "穆棱县",
+      "verticesBeforePrecision": 538,
+      "verticesAfterPrecision": 537
+    },
+    {
+      "recordIndex": 1656,
+      "sourceId": "197908",
+      "name": "长寿县",
+      "verticesBeforePrecision": 749,
+      "verticesAfterPrecision": 748
+    },
+    {
+      "recordIndex": 1658,
+      "sourceId": "197910",
+      "name": "滨江厅",
+      "verticesBeforePrecision": 278,
+      "verticesAfterPrecision": 277
+    },
+    {
+      "recordIndex": 1659,
+      "sourceId": "197911",
+      "name": "直属兴东道辖地",
+      "verticesBeforePrecision": 1264,
+      "verticesAfterPrecision": 1263
+    },
+    {
+      "recordIndex": 1665,
+      "sourceId": "197917",
+      "name": "额穆县",
+      "verticesBeforePrecision": 540,
+      "verticesAfterPrecision": 539
+    },
+    {
+      "recordIndex": 1666,
+      "sourceId": "197918",
+      "name": "珲春厅",
+      "verticesBeforePrecision": 504,
+      "verticesAfterPrecision": 503
+    },
+    {
+      "recordIndex": 1670,
+      "sourceId": "197922",
+      "name": "抚松县",
+      "verticesBeforePrecision": 354,
+      "verticesAfterPrecision": 353
+    },
+    {
+      "recordIndex": 1673,
+      "sourceId": "197925",
+      "name": "临江县",
+      "verticesBeforePrecision": 401,
+      "verticesAfterPrecision": 400
+    },
+    {
+      "recordIndex": 1674,
+      "sourceId": "197926",
+      "name": "辑安县",
+      "verticesBeforePrecision": 491,
+      "verticesAfterPrecision": 490
+    },
+    {
+      "recordIndex": 1675,
+      "sourceId": "197927",
+      "name": "柳河县",
+      "verticesBeforePrecision": 272,
+      "verticesAfterPrecision": 270
+    },
+    {
+      "recordIndex": 1677,
+      "sourceId": "197929",
+      "name": "海龙府",
+      "verticesBeforePrecision": 271,
+      "verticesAfterPrecision": 269
+    },
+    {
+      "recordIndex": 1679,
+      "sourceId": "197931",
+      "name": "德惠县",
+      "verticesBeforePrecision": 414,
+      "verticesAfterPrecision": 412
+    },
+    {
+      "recordIndex": 1680,
+      "sourceId": "197932",
+      "name": "双阳县",
+      "verticesBeforePrecision": 310,
+      "verticesAfterPrecision": 308
+    },
+    {
+      "recordIndex": 1683,
+      "sourceId": "197935",
+      "name": "安广县",
+      "verticesBeforePrecision": 306,
+      "verticesAfterPrecision": 305
+    },
+    {
+      "recordIndex": 1684,
+      "sourceId": "197936",
+      "name": "东平县",
+      "verticesBeforePrecision": 321,
+      "verticesAfterPrecision": 320
+    },
+    {
+      "recordIndex": 1685,
+      "sourceId": "197937",
+      "name": "西安县",
+      "verticesBeforePrecision": 307,
+      "verticesAfterPrecision": 306
+    },
+    {
+      "recordIndex": 1686,
+      "sourceId": "197938",
+      "name": "怀德县",
+      "verticesBeforePrecision": 350,
+      "verticesAfterPrecision": 348
+    },
+    {
+      "recordIndex": 1687,
+      "sourceId": "197939",
+      "name": "奉化县",
+      "verticesBeforePrecision": 287,
+      "verticesAfterPrecision": 286
+    },
+    {
+      "recordIndex": 1688,
+      "sourceId": "197940",
+      "name": "镇东县",
+      "verticesBeforePrecision": 590,
+      "verticesAfterPrecision": 589
+    },
+    {
+      "recordIndex": 1689,
+      "sourceId": "197941",
+      "name": "靖安县",
+      "verticesBeforePrecision": 1247,
+      "verticesAfterPrecision": 1246
+    },
+    {
+      "recordIndex": 1690,
+      "sourceId": "197942",
+      "name": "洮南府",
+      "verticesBeforePrecision": 639,
+      "verticesAfterPrecision": 638
+    },
+    {
+      "recordIndex": 1693,
+      "sourceId": "197945",
+      "name": "开原县",
+      "verticesBeforePrecision": 331,
+      "verticesAfterPrecision": 330
+    },
+    {
+      "recordIndex": 1695,
+      "sourceId": "197947",
+      "name": "兴京府",
+      "verticesBeforePrecision": 373,
+      "verticesAfterPrecision": 371
+    },
+    {
+      "recordIndex": 1696,
+      "sourceId": "197948",
+      "name": "宽甸县",
+      "verticesBeforePrecision": 509,
+      "verticesAfterPrecision": 508
+    },
+    {
+      "recordIndex": 1697,
+      "sourceId": "197949",
+      "name": "抚顺县",
+      "verticesBeforePrecision": 342,
+      "verticesAfterPrecision": 341
+    },
+    {
+      "recordIndex": 1698,
+      "sourceId": "197950",
+      "name": "本溪县",
+      "verticesBeforePrecision": 369,
+      "verticesAfterPrecision": 368
+    },
+    {
+      "recordIndex": 1699,
+      "sourceId": "197951",
+      "name": "铁岭县",
+      "verticesBeforePrecision": 354,
+      "verticesAfterPrecision": 353
+    },
+    {
+      "recordIndex": 1701,
+      "sourceId": "197953",
+      "name": "康平县",
+      "verticesBeforePrecision": 347,
+      "verticesAfterPrecision": 346
+    },
+    {
+      "recordIndex": 1705,
+      "sourceId": "197957",
+      "name": "辽阳州",
+      "verticesBeforePrecision": 454,
+      "verticesAfterPrecision": 453
+    },
+    {
+      "recordIndex": 1706,
+      "sourceId": "197958",
+      "name": "安东县",
+      "verticesBeforePrecision": 199,
+      "verticesAfterPrecision": 198
+    },
+    {
+      "recordIndex": 1708,
+      "sourceId": "197960",
+      "name": "盖平县",
+      "verticesBeforePrecision": 357,
+      "verticesAfterPrecision": 356
+    },
+    {
+      "recordIndex": 1713,
+      "sourceId": "197965",
+      "name": "广宁县",
+      "verticesBeforePrecision": 243,
+      "verticesAfterPrecision": 242
+    },
+    {
+      "recordIndex": 1714,
+      "sourceId": "197966",
+      "name": "辽中县",
+      "verticesBeforePrecision": 261,
+      "verticesAfterPrecision": 260
+    },
+    {
+      "recordIndex": 1715,
+      "sourceId": "197967",
+      "name": "绥中县",
+      "verticesBeforePrecision": 200,
+      "verticesAfterPrecision": 199
+    },
+    {
+      "recordIndex": 1722,
+      "sourceId": "197974",
+      "name": "吉拉林设治局",
+      "verticesBeforePrecision": 2618,
+      "verticesAfterPrecision": 2616
+    },
+    {
+      "recordIndex": 1723,
+      "sourceId": "197975",
+      "name": "呼伦厅",
+      "sourceValidity": "Self-intersection[20165131.244329 5809877.39259148]",
+      "makeValidResultType": "MultiPolygon",
+      "originalAreaSquareMetres": 40701213240.11326,
+      "repairedAreaSquareMetres": 40701213406.19923,
+      "verticesBeforePrecision": 1817,
+      "verticesAfterPrecision": 1789
+    },
+    {
+      "recordIndex": 1742,
+      "sourceId": "197994",
+      "name": "乌珠穆沁右翼旗",
+      "verticesBeforePrecision": 415,
+      "verticesAfterPrecision": 412
+    },
+    {
+      "recordIndex": 1743,
+      "sourceId": "197995",
+      "name": "浩齐特左翼旗",
+      "verticesBeforePrecision": 305,
+      "verticesAfterPrecision": 303
+    },
+    {
+      "recordIndex": 1746,
+      "sourceId": "197998",
+      "name": "苏尼特右翼旗",
+      "verticesBeforePrecision": 503,
+      "verticesAfterPrecision": 502
+    },
+    {
+      "recordIndex": 1747,
+      "sourceId": "197999",
+      "name": "苏尼特左翼旗",
+      "verticesBeforePrecision": 879,
+      "verticesAfterPrecision": 877
+    },
+    {
+      "recordIndex": 1748,
+      "sourceId": "198000",
+      "name": "洞巴司",
+      "verticesBeforePrecision": 186,
+      "verticesAfterPrecision": 185
+    },
+    {
+      "recordIndex": 1750,
+      "sourceId": "198002",
+      "name": "吹冷多尔司",
+      "verticesBeforePrecision": 139,
+      "verticesAfterPrecision": 138
+    },
+    {
+      "recordIndex": 1751,
+      "sourceId": "198003",
+      "name": "桑巴尔司",
+      "verticesBeforePrecision": 278,
+      "verticesAfterPrecision": 277
+    },
+    {
+      "recordIndex": 1752,
+      "sourceId": "198004",
+      "name": "苏尔莽司",
+      "verticesBeforePrecision": 488,
+      "verticesAfterPrecision": 487
+    },
+    {
+      "recordIndex": 1753,
+      "sourceId": "198005",
+      "name": "班石司",
+      "verticesBeforePrecision": 92,
+      "verticesAfterPrecision": 91
+    },
+    {
+      "recordIndex": 1754,
+      "sourceId": "198006",
+      "name": "拉尔吉司",
+      "verticesBeforePrecision": 49,
+      "verticesAfterPrecision": 48
+    },
+    {
+      "recordIndex": 1755,
+      "sourceId": "198007",
+      "name": "觉巴拉司",
+      "verticesBeforePrecision": 323,
+      "verticesAfterPrecision": 322
+    },
+    {
+      "recordIndex": 1756,
+      "sourceId": "198008",
+      "name": "哈尔受司",
+      "verticesBeforePrecision": 129,
+      "verticesAfterPrecision": 128
+    },
+    {
+      "recordIndex": 1757,
+      "sourceId": "198009",
+      "name": "典巴司",
+      "verticesBeforePrecision": 95,
+      "verticesAfterPrecision": 94
+    },
+    {
+      "recordIndex": 1758,
+      "sourceId": "198010",
+      "name": "列玉司",
+      "verticesBeforePrecision": 261,
+      "verticesAfterPrecision": 260
+    },
+    {
+      "recordIndex": 1759,
+      "sourceId": "198011",
+      "name": "隆东司",
+      "sourceValidity": "Self-intersection[18069217.7006242 3781521.72017096]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 1060975093.1572951,
+      "repairedAreaSquareMetres": 1060975093.1572964
+    },
+    {
+      "recordIndex": 1760,
+      "sourceId": "198012",
+      "name": "隆布司",
+      "verticesBeforePrecision": 56,
+      "verticesAfterPrecision": 55
+    },
+    {
+      "recordIndex": 1762,
+      "sourceId": "198014",
+      "name": "拉布司",
+      "verticesBeforePrecision": 233,
+      "verticesAfterPrecision": 232
+    },
+    {
+      "recordIndex": 1763,
+      "sourceId": "198015",
+      "name": "称多司",
+      "verticesBeforePrecision": 104,
+      "verticesAfterPrecision": 103
+    },
+    {
+      "recordIndex": 1764,
+      "sourceId": "198016",
+      "name": "上下阿拉克硕二司",
+      "sourceValidity": "Self-intersection[18135715.2040756 3778687.84105409]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 831505054.5014445,
+      "repairedAreaSquareMetres": 831505054.5014446
+    },
+    {
+      "recordIndex": 1766,
+      "sourceId": "198018",
+      "name": "安图司",
+      "verticesBeforePrecision": 80,
+      "verticesAfterPrecision": 79
+    },
+    {
+      "recordIndex": 1769,
+      "sourceId": "198021",
+      "name": "阿永司",
+      "verticesBeforePrecision": 443,
+      "verticesAfterPrecision": 442
+    },
+    {
+      "recordIndex": 1770,
+      "sourceId": "198022",
+      "name": "绰大尔司",
+      "sourceValidity": "Ring Self-intersection[18069333.4510354 3781442.54595849]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 6923272715.84937,
+      "repairedAreaSquareMetres": 6923272715.849367
+    },
+    {
+      "recordIndex": 1771,
+      "sourceId": "198023",
+      "name": "阿萨克司",
+      "verticesBeforePrecision": 288,
+      "verticesAfterPrecision": 287
+    },
+    {
+      "recordIndex": 1772,
+      "sourceId": "198024",
+      "name": "永沙普司",
+      "sourceValidity": "Ring Self-intersection[18331373.6355155 3821654.33315066]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 16331185463.262196,
+      "repairedAreaSquareMetres": 16331185463.26222
+    },
+    {
+      "recordIndex": 1773,
+      "sourceId": "198025",
+      "name": "尼牙木错司",
+      "verticesBeforePrecision": 343,
+      "verticesAfterPrecision": 342
+    },
+    {
+      "recordIndex": 1774,
+      "sourceId": "198026",
+      "name": "白利司",
+      "verticesBeforePrecision": 330,
+      "verticesAfterPrecision": 329
+    },
+    {
+      "recordIndex": 1775,
+      "sourceId": "198027",
+      "name": "高日司",
+      "verticesBeforePrecision": 67,
+      "verticesAfterPrecision": 66
+    },
+    {
+      "recordIndex": 1776,
+      "sourceId": "198028",
+      "name": "和硕特南左翼中旗",
+      "verticesBeforePrecision": 751,
+      "verticesAfterPrecision": 750
+    },
+    {
+      "recordIndex": 1778,
+      "sourceId": "198030",
+      "name": "和硕特西右翼后旗",
+      "verticesBeforePrecision": 1219,
+      "verticesAfterPrecision": 1218
+    },
+    {
+      "recordIndex": 1779,
+      "sourceId": "198031",
+      "name": "和硕特西左翼后旗",
+      "verticesBeforePrecision": 593,
+      "verticesAfterPrecision": 591
+    },
+    {
+      "recordIndex": 1780,
+      "sourceId": "198032",
+      "name": "土尔扈特西旗",
+      "verticesBeforePrecision": 975,
+      "verticesAfterPrecision": 974
+    },
+    {
+      "recordIndex": 1785,
+      "sourceId": "198037",
+      "name": "和硕特西后旗",
+      "verticesBeforePrecision": 562,
+      "verticesAfterPrecision": 560
+    },
+    {
+      "recordIndex": 1787,
+      "sourceId": "198039",
+      "name": "和硕特南左翼后旗",
+      "verticesBeforePrecision": 386,
+      "verticesAfterPrecision": 385
+    },
+    {
+      "recordIndex": 1788,
+      "sourceId": "198040",
+      "name": "和硕特南右翼后旗",
+      "verticesBeforePrecision": 196,
+      "verticesAfterPrecision": 195
+    },
+    {
+      "recordIndex": 1789,
+      "sourceId": "198041",
+      "name": "和硕特北右翼旗",
+      "sourceValidity": "Ring Self-intersection[18528017.9655564 4141191.43948582]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 2458862179.453826,
+      "repairedAreaSquareMetres": 2458862179.4538264
+    },
+    {
+      "recordIndex": 1790,
+      "sourceId": "198042",
+      "name": "绰罗斯北中旗",
+      "sourceValidity": "Ring Self-intersection[18470198.1288369 4186808.00659034]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 1658322208.5777407,
+      "repairedAreaSquareMetres": 1658322208.5777416
+    },
+    {
+      "recordIndex": 1791,
+      "sourceId": "198043",
+      "name": "和硕特前左翼头旗",
+      "verticesBeforePrecision": 693,
+      "verticesAfterPrecision": 692
+    },
+    {
+      "recordIndex": 1793,
+      "sourceId": "198045",
+      "name": "和硕特北前旗",
+      "sourceValidity": "Ring Self-intersection[18449591.1991444 4162021.45291732]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 12942864844.776505,
+      "repairedAreaSquareMetres": 12942864844.776499
+    },
+    {
+      "recordIndex": 1794,
+      "sourceId": "198046",
+      "name": "和硕特北右末旗",
+      "verticesBeforePrecision": 1091,
+      "verticesAfterPrecision": 1090
+    },
+    {
+      "recordIndex": 1797,
+      "sourceId": "198049",
+      "name": "玉树一司",
+      "verticesBeforePrecision": 685,
+      "verticesAfterPrecision": 684
+    },
+    {
+      "recordIndex": 1800,
+      "sourceId": "198052",
+      "name": "车臣汗左翼前旗",
+      "verticesBeforePrecision": 306,
+      "verticesAfterPrecision": 305
+    },
+    {
+      "recordIndex": 1801,
+      "sourceId": "198053",
+      "name": "车臣汗中右旗",
+      "verticesBeforePrecision": 186,
+      "verticesAfterPrecision": 185
+    },
+    {
+      "recordIndex": 1802,
+      "sourceId": "198054",
+      "name": "车臣汗右翼后旗",
+      "sourceValidity": "Ring Self-intersection[19694957.5512534 4962993.47256326]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 36664325804.12051,
+      "repairedAreaSquareMetres": 36664325804.12047
+    },
+    {
+      "recordIndex": 1805,
+      "sourceId": "198057",
+      "name": "车臣汗左翼后旗",
+      "verticesBeforePrecision": 88,
+      "verticesAfterPrecision": 87
+    },
+    {
+      "recordIndex": 1806,
+      "sourceId": "198058",
+      "name": "车臣汗左翼左旗",
+      "verticesBeforePrecision": 345,
+      "verticesAfterPrecision": 344
+    },
+    {
+      "recordIndex": 1807,
+      "sourceId": "198059",
+      "name": "车臣汗中左旗",
+      "verticesBeforePrecision": 105,
+      "verticesAfterPrecision": 104
+    },
+    {
+      "recordIndex": 1808,
+      "sourceId": "198060",
+      "name": "车臣汗中左前旗",
+      "verticesBeforePrecision": 109,
+      "verticesAfterPrecision": 108
+    },
+    {
+      "recordIndex": 1809,
+      "sourceId": "198061",
+      "name": "车臣汗中末次旗",
+      "verticesBeforePrecision": 191,
+      "verticesAfterPrecision": 190
+    },
+    {
+      "recordIndex": 1810,
+      "sourceId": "198062",
+      "name": "车臣汗左翼中旗",
+      "verticesBeforePrecision": 50,
+      "verticesAfterPrecision": 49
+    },
+    {
+      "recordIndex": 1811,
+      "sourceId": "198063",
+      "name": "土谢图汗中次旗",
+      "verticesBeforePrecision": 265,
+      "verticesAfterPrecision": 264
+    },
+    {
+      "recordIndex": 1812,
+      "sourceId": "198064",
+      "name": "车臣汗中末右旗",
+      "verticesBeforePrecision": 155,
+      "verticesAfterPrecision": 154
+    },
+    {
+      "recordIndex": 1813,
+      "sourceId": "198065",
+      "name": "车臣汗左翼右旗",
+      "verticesBeforePrecision": 136,
+      "verticesAfterPrecision": 135
+    },
+    {
+      "recordIndex": 1815,
+      "sourceId": "198067",
+      "name": "车臣汗中末旗",
+      "verticesBeforePrecision": 101,
+      "verticesAfterPrecision": 100
+    },
+    {
+      "recordIndex": 1817,
+      "sourceId": "198069",
+      "name": "车臣汗右翼前旗",
+      "verticesBeforePrecision": 51,
+      "verticesAfterPrecision": 50
+    },
+    {
+      "recordIndex": 1818,
+      "sourceId": "198070",
+      "name": "车臣汗中后旗",
+      "verticesBeforePrecision": 95,
+      "verticesAfterPrecision": 94
+    },
+    {
+      "recordIndex": 1819,
+      "sourceId": "198071",
+      "name": "土谢图汗左翼中旗",
+      "sourceValidity": "Self-intersection[19445460.352926 4733608.52080006]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 41253685827.81463,
+      "repairedAreaSquareMetres": 41253685827.81463
+    },
+    {
+      "recordIndex": 1820,
+      "sourceId": "198072",
+      "name": "土谢图汗左翼末旗",
+      "verticesBeforePrecision": 88,
+      "verticesAfterPrecision": 87
+    },
+    {
+      "recordIndex": 1825,
+      "sourceId": "198077",
+      "name": "车臣汗中右后旗",
+      "verticesBeforePrecision": 130,
+      "verticesAfterPrecision": 129
+    },
+    {
+      "recordIndex": 1826,
+      "sourceId": "198078",
+      "name": "车臣汗右翼中左旗",
+      "verticesBeforePrecision": 63,
+      "verticesAfterPrecision": 62
+    },
+    {
+      "recordIndex": 1828,
+      "sourceId": "198080",
+      "name": "土谢图汗右翼左末旗",
+      "sourceValidity": "Self-intersection[19185950.5098871 5520123.24306834]",
+      "makeValidResultType": "MultiPolygon",
+      "originalAreaSquareMetres": 15598743913.095974,
+      "repairedAreaSquareMetres": 15600023052.380781
+    },
+    {
+      "recordIndex": 1830,
+      "sourceId": "198082",
+      "name": "土谢图汗中左翼末旗",
+      "sourceValidity": "Self-intersection[19185950.5098871 5520123.24306834]",
+      "makeValidResultType": "Polygon",
+      "originalAreaSquareMetres": 17488679960.81026,
+      "repairedAreaSquareMetres": 17487400821.52545
+    },
+    {
+      "recordIndex": 1831,
+      "sourceId": "198083",
+      "name": "土谢图汗右翼右末次旗",
+      "verticesBeforePrecision": 249,
+      "verticesAfterPrecision": 248
+    },
+    {
+      "recordIndex": 1832,
+      "sourceId": "198084",
+      "name": "库苏古尔乌梁海旗",
+      "verticesBeforePrecision": 287,
+      "verticesAfterPrecision": 286
+    },
+    {
+      "recordIndex": 1833,
+      "sourceId": "198085",
+      "name": "土谢图汗右翼左旗",
+      "verticesBeforePrecision": 392,
+      "verticesAfterPrecision": 391
+    },
+    {
+      "recordIndex": 1834,
+      "sourceId": "198086",
+      "name": "赛音诺颜右翼前旗",
+      "verticesBeforePrecision": 197,
+      "verticesAfterPrecision": 196
+    },
+    {
+      "recordIndex": 1835,
+      "sourceId": "198087",
+      "name": "土谢图汗中右末旗",
+      "verticesBeforePrecision": 506,
+      "verticesAfterPrecision": 505
+    },
+    {
+      "recordIndex": 1836,
+      "sourceId": "198088",
+      "name": "土谢图汗左翼中左旗",
+      "verticesBeforePrecision": 68,
+      "verticesAfterPrecision": 67
+    },
+    {
+      "recordIndex": 1837,
+      "sourceId": "198089",
+      "name": "土谢图汗左翼后旗",
+      "verticesBeforePrecision": 145,
+      "verticesAfterPrecision": 144
+    },
+    {
+      "recordIndex": 1838,
+      "sourceId": "198090",
+      "name": "土谢图汗右翼右旗",
+      "verticesBeforePrecision": 57,
+      "verticesAfterPrecision": 56
+    },
+    {
+      "recordIndex": 1839,
+      "sourceId": "198091",
+      "name": "赛音诺颜中前旗",
+      "verticesBeforePrecision": 178,
+      "verticesAfterPrecision": 177
+    },
+    {
+      "recordIndex": 1840,
+      "sourceId": "198092",
+      "name": "土谢图汗左翼左中末旗",
+      "sourceValidity": "Ring Self-intersection[19032369.1481687 5221086.35538084]",
+      "makeValidResultType": "MultiPolygon",
+      "originalAreaSquareMetres": 10253089167.90862,
+      "repairedAreaSquareMetres": 10256102676.788193
+    },
+    {
+      "recordIndex": 1841,
+      "sourceId": "198093",
+      "name": "土谢图汗中右旗",
+      "sourceValidity": "Ring Self-intersection[19032369.1481687 5221086.35538084]",
+      "makeValidResultType": "MultiPolygon",
+      "originalAreaSquareMetres": 5468479585.284587,
+      "repairedAreaSquareMetres": 5465466412.624211
+    },
+    {
+      "recordIndex": 1844,
+      "sourceId": "198096",
+      "name": "土谢图汗左翼前旗",
+      "verticesBeforePrecision": 541,
+      "verticesAfterPrecision": 540
+    },
+    {
+      "recordIndex": 1845,
+      "sourceId": "198097",
+      "name": "乌梁海二佐领",
+      "verticesBeforePrecision": 75,
+      "verticesAfterPrecision": 74
+    },
+    {
+      "recordIndex": 1846,
+      "sourceId": "198098",
+      "name": "扎萨克图汗部乌梁海一佐领",
+      "verticesBeforePrecision": 302,
+      "verticesAfterPrecision": 300
+    },
+    {
+      "recordIndex": 1847,
+      "sourceId": "198099",
+      "name": "哲布尊丹巴呼图克图属乌梁海三佐",
+      "verticesBeforePrecision": 423,
+      "verticesAfterPrecision": 422
+    },
+    {
+      "recordIndex": 1848,
+      "sourceId": "198100",
+      "name": "赛音诺颜左翼右旗",
+      "sourceValidity": "Ring Self-intersection[18836318.9978535 4685316.78291636]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 97642715288.67648,
+      "repairedAreaSquareMetres": 97642722168.76732
+    },
+    {
+      "recordIndex": 1849,
+      "sourceId": "198101",
+      "name": "乌梁海二佐领",
+      "verticesBeforePrecision": 422,
+      "verticesAfterPrecision": 421
+    },
+    {
+      "recordIndex": 1850,
+      "sourceId": "198102",
+      "name": "扎萨克图汗中左翼末旗",
+      "verticesBeforePrecision": 189,
+      "verticesAfterPrecision": 188
+    },
+    {
+      "recordIndex": 1854,
+      "sourceId": "198106",
+      "name": "扎萨克图汗右翼右末旗",
+      "verticesBeforePrecision": 272,
+      "verticesAfterPrecision": 271
+    },
+    {
+      "recordIndex": 1856,
+      "sourceId": "198108",
+      "name": "额鲁特前旗",
+      "verticesBeforePrecision": 68,
+      "verticesAfterPrecision": 67
+    },
+    {
+      "recordIndex": 1857,
+      "sourceId": "198109",
+      "name": "土谢图汗旗",
+      "verticesBeforePrecision": 200,
+      "verticesAfterPrecision": 199
+    },
+    {
+      "recordIndex": 1859,
+      "sourceId": "198111",
+      "name": "赛音诺颜旗",
+      "sourceValidity": "Ring Self-intersection[18881991.9634748 5151623.92200785]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 10400642055.747684,
+      "repairedAreaSquareMetres": 10400642055.747692
+    },
+    {
+      "recordIndex": 1860,
+      "sourceId": "198112",
+      "name": "扎萨克图汗左翼后旗",
+      "verticesBeforePrecision": 87,
+      "verticesAfterPrecision": 86
+    },
+    {
+      "recordIndex": 1861,
+      "sourceId": "198113",
+      "name": "扎萨克图汗右翼前旗",
+      "verticesBeforePrecision": 204,
+      "verticesAfterPrecision": 203
+    },
+    {
+      "recordIndex": 1863,
+      "sourceId": "198115",
+      "name": "赛音诺颜有翼左末旗",
+      "verticesBeforePrecision": 196,
+      "verticesAfterPrecision": 195
+    },
+    {
+      "recordIndex": 1864,
+      "sourceId": "198116",
+      "name": "额鲁特旗",
+      "verticesBeforePrecision": 76,
+      "verticesAfterPrecision": 75
+    },
+    {
+      "recordIndex": 1865,
+      "sourceId": "198117",
+      "name": "赛音诺颜右翼中右旗",
+      "verticesBeforePrecision": 164,
+      "verticesAfterPrecision": 163
+    },
+    {
+      "recordIndex": 1866,
+      "sourceId": "198118",
+      "name": "赛音诺颜中后末旗",
+      "verticesBeforePrecision": 64,
+      "verticesAfterPrecision": 63
+    },
+    {
+      "recordIndex": 1867,
+      "sourceId": "198119",
+      "name": "赛音诺颜中右翼末旗",
+      "verticesBeforePrecision": 192,
+      "verticesAfterPrecision": 191
+    },
+    {
+      "recordIndex": 1868,
+      "sourceId": "198120",
+      "name": "赛音诺颜中左末旗",
+      "verticesBeforePrecision": 150,
+      "verticesAfterPrecision": 149
+    },
+    {
+      "recordIndex": 1869,
+      "sourceId": "198121",
+      "name": "赛音诺颜右翼中末旗",
+      "verticesBeforePrecision": 97,
+      "verticesAfterPrecision": 96
+    },
+    {
+      "recordIndex": 1870,
+      "sourceId": "198122",
+      "name": "赛音诺颜右翼末旗",
+      "verticesBeforePrecision": 120,
+      "verticesAfterPrecision": 119
+    },
+    {
+      "recordIndex": 1872,
+      "sourceId": "198124",
+      "name": "扎萨克图汗右翼后末旗",
+      "verticesBeforePrecision": 932,
+      "verticesAfterPrecision": 931
+    },
+    {
+      "recordIndex": 1875,
+      "sourceId": "198127",
+      "name": "扎萨克图汗中左翼右旗",
+      "verticesBeforePrecision": 114,
+      "verticesAfterPrecision": 113
+    },
+    {
+      "recordIndex": 1876,
+      "sourceId": "198128",
+      "name": "赛音诺颜右末旗",
+      "verticesBeforePrecision": 34,
+      "verticesAfterPrecision": 33
+    },
+    {
+      "recordIndex": 1878,
+      "sourceId": "198130",
+      "name": "赛音诺颜左翼左旗",
+      "verticesBeforePrecision": 97,
+      "verticesAfterPrecision": 96
+    },
+    {
+      "recordIndex": 1880,
+      "sourceId": "198132",
+      "name": "辉特旗",
+      "verticesBeforePrecision": 88,
+      "verticesAfterPrecision": 87
+    },
+    {
+      "recordIndex": 1881,
+      "sourceId": "198133",
+      "name": "扎萨克图汗后翼后旗",
+      "verticesBeforePrecision": 72,
+      "verticesAfterPrecision": 71
+    },
+    {
+      "recordIndex": 1882,
+      "sourceId": "198134",
+      "name": "扎萨克图汗左翼中旗",
+      "verticesBeforePrecision": 224,
+      "verticesAfterPrecision": 223
+    },
+    {
+      "recordIndex": 1883,
+      "sourceId": "198135",
+      "name": "赛音诺颜中后旗",
+      "sourceValidity": "Ring Self-intersection[18381785.4766773 5363365.52128289]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 6941644574.208052,
+      "repairedAreaSquareMetres": 6941644574.208055
+    },
+    {
+      "recordIndex": 1884,
+      "sourceId": "198136",
+      "name": "乌里雅苏台",
+      "sourceValidity": "Ring Self-intersection[18361498.215183 5361051.12638829]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 12525064315.889702,
+      "repairedAreaSquareMetres": 12525064315.889704
+    },
+    {
+      "recordIndex": 1885,
+      "sourceId": "198137",
+      "name": "扎萨克图汗中右翼末次旗",
+      "verticesBeforePrecision": 56,
+      "verticesAfterPrecision": 55
+    },
+    {
+      "recordIndex": 1886,
+      "sourceId": "198138",
+      "name": "扎萨克图汗中左翼左旗",
+      "verticesBeforePrecision": 452,
+      "verticesAfterPrecision": 451
+    },
+    {
+      "recordIndex": 1887,
+      "sourceId": "198139",
+      "name": "扎萨克图汗中右翼末旗",
+      "verticesBeforePrecision": 105,
+      "verticesAfterPrecision": 104
+    },
+    {
+      "recordIndex": 1888,
+      "sourceId": "198140",
+      "name": "扎萨克图汗左翼右旗",
+      "verticesBeforePrecision": 103,
+      "verticesAfterPrecision": 102
+    },
+    {
+      "recordIndex": 1889,
+      "sourceId": "198141",
+      "name": "扎萨克图汗左翼左旗",
+      "verticesBeforePrecision": 46,
+      "verticesAfterPrecision": 45
+    },
+    {
+      "recordIndex": 1890,
+      "sourceId": "198142",
+      "name": "扎萨克图汗左翼前旗",
+      "verticesBeforePrecision": 110,
+      "verticesAfterPrecision": 109
+    },
+    {
+      "recordIndex": 1891,
+      "sourceId": "198143",
+      "name": "扎萨克图汗左翼后末旗",
+      "verticesBeforePrecision": 186,
+      "verticesAfterPrecision": 185
+    },
+    {
+      "recordIndex": 1893,
+      "sourceId": "198145",
+      "name": "新土尔扈特左旗",
+      "verticesBeforePrecision": 215,
+      "verticesAfterPrecision": 214
+    },
+    {
+      "recordIndex": 1894,
+      "sourceId": "198146",
+      "name": "扎哈沁旗",
+      "verticesBeforePrecision": 116,
+      "verticesAfterPrecision": 115
+    },
+    {
+      "recordIndex": 1895,
+      "sourceId": "198147",
+      "name": "新和硕特旗",
+      "verticesBeforePrecision": 399,
+      "verticesAfterPrecision": 398
+    },
+    {
+      "recordIndex": 1896,
+      "sourceId": "198148",
+      "name": "科布多",
+      "verticesBeforePrecision": 703,
+      "verticesAfterPrecision": 702
+    },
+    {
+      "recordIndex": 1897,
+      "sourceId": "198149",
+      "name": "明阿特旗",
+      "verticesBeforePrecision": 219,
+      "verticesAfterPrecision": 218
+    },
+    {
+      "recordIndex": 1899,
+      "sourceId": "198151",
+      "name": "额鲁特旗",
+      "verticesBeforePrecision": 348,
+      "verticesAfterPrecision": 347
+    },
+    {
+      "recordIndex": 1900,
+      "sourceId": "198152",
+      "name": "乌梁海四佐领",
+      "verticesBeforePrecision": 512,
+      "verticesAfterPrecision": 511
+    },
+    {
+      "recordIndex": 1901,
+      "sourceId": "198153",
+      "name": "托锦乌梁海旗",
+      "verticesBeforePrecision": 428,
+      "verticesAfterPrecision": 427
+    },
+    {
+      "recordIndex": 1902,
+      "sourceId": "198154",
+      "name": "扎萨克图汗部乌梁海一佐领",
+      "verticesBeforePrecision": 671,
+      "verticesAfterPrecision": 670
+    },
+    {
+      "recordIndex": 1903,
+      "sourceId": "198155",
+      "name": "萨拉吉克乌梁海旗",
+      "verticesBeforePrecision": 357,
+      "verticesAfterPrecision": 356
+    },
+    {
+      "recordIndex": 1905,
+      "sourceId": "198157",
+      "name": "乌梁海三佐领",
+      "verticesBeforePrecision": 227,
+      "verticesAfterPrecision": 226
+    },
+    {
+      "recordIndex": 1906,
+      "sourceId": "198158",
+      "name": "扎萨克图汗部乌梁海一佐领",
+      "verticesBeforePrecision": 285,
+      "verticesAfterPrecision": 283
+    },
+    {
+      "recordIndex": 1907,
+      "sourceId": "198159",
+      "name": "扎萨克图汗部乌梁海一佐领",
+      "sourceValidity": "Ring Self-intersection[18194472.314307 5807708.82309483]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 11683149424.494226,
+      "repairedAreaSquareMetres": 11683149424.494225
+    },
+    {
+      "recordIndex": 1908,
+      "sourceId": "198160",
+      "name": "克穆齐克乌梁海旗",
+      "verticesBeforePrecision": 249,
+      "verticesAfterPrecision": 248
+    },
+    {
+      "recordIndex": 1909,
+      "sourceId": "198161",
+      "name": "乌梁海四佐领",
+      "verticesBeforePrecision": 288,
+      "verticesAfterPrecision": 287
+    },
+    {
+      "recordIndex": 1910,
+      "sourceId": "198162",
+      "name": "赛音诺颜部乌梁海十三佐领",
+      "verticesBeforePrecision": 32,
+      "verticesAfterPrecision": 31
+    },
+    {
+      "recordIndex": 1911,
+      "sourceId": "198163",
+      "name": "杜尔伯特前旗",
+      "verticesBeforePrecision": 454,
+      "verticesAfterPrecision": 453
+    },
+    {
+      "recordIndex": 1912,
+      "sourceId": "198164",
+      "name": "杜尔伯特前右旗",
+      "verticesBeforePrecision": 454,
+      "verticesAfterPrecision": 453
+    },
+    {
+      "recordIndex": 1913,
+      "sourceId": "198165",
+      "name": "杜尔伯特中右旗",
+      "verticesBeforePrecision": 454,
+      "verticesAfterPrecision": 453
+    },
+    {
+      "recordIndex": 1914,
+      "sourceId": "198166",
+      "name": "辉特下后旗",
+      "verticesBeforePrecision": 454,
+      "verticesAfterPrecision": 453
+    },
+    {
+      "recordIndex": 1915,
+      "sourceId": "198167",
+      "name": "杜尔伯特中左旗",
+      "verticesBeforePrecision": 454,
+      "verticesAfterPrecision": 453
+    },
+    {
+      "recordIndex": 1916,
+      "sourceId": "198168",
+      "name": "扎萨克特固斯库鲁克达赖汗旗",
+      "verticesBeforePrecision": 454,
+      "verticesAfterPrecision": 453
+    },
+    {
+      "recordIndex": 1917,
+      "sourceId": "198169",
+      "name": "杜尔伯特中前左旗",
+      "verticesBeforePrecision": 454,
+      "verticesAfterPrecision": 453
+    },
+    {
+      "recordIndex": 1918,
+      "sourceId": "198170",
+      "name": "杜尔伯特中后左旗",
+      "verticesBeforePrecision": 454,
+      "verticesAfterPrecision": 453
+    },
+    {
+      "recordIndex": 1919,
+      "sourceId": "198171",
+      "name": "辉特下前旗",
+      "verticesBeforePrecision": 454,
+      "verticesAfterPrecision": 453
+    },
+    {
+      "recordIndex": 1920,
+      "sourceId": "198172",
+      "name": "杜尔伯特中前旗",
+      "verticesBeforePrecision": 454,
+      "verticesAfterPrecision": 453
+    },
+    {
+      "recordIndex": 1921,
+      "sourceId": "198173",
+      "name": "杜尔伯特中后旗",
+      "verticesBeforePrecision": 454,
+      "verticesAfterPrecision": 453
+    },
+    {
+      "recordIndex": 1922,
+      "sourceId": "198174",
+      "name": "杜尔伯特中上旗",
+      "verticesBeforePrecision": 454,
+      "verticesAfterPrecision": 453
+    },
+    {
+      "recordIndex": 1923,
+      "sourceId": "198175",
+      "name": "杜尔伯特中下旗",
+      "verticesBeforePrecision": 454,
+      "verticesAfterPrecision": 453
+    },
+    {
+      "recordIndex": 1924,
+      "sourceId": "198176",
+      "name": "杜尔伯特中前右旗",
+      "verticesBeforePrecision": 454,
+      "verticesAfterPrecision": 453
+    },
+    {
+      "recordIndex": 1925,
+      "sourceId": "198177",
+      "name": "杜尔伯特中后右旗",
+      "verticesBeforePrecision": 454,
+      "verticesAfterPrecision": 453
+    },
+    {
+      "recordIndex": 1926,
+      "sourceId": "198178",
+      "name": "杜尔伯特中旗",
+      "verticesBeforePrecision": 454,
+      "verticesAfterPrecision": 453
+    },
+    {
+      "recordIndex": 1927,
+      "sourceId": "198179",
+      "name": "阿尔泰办事大臣",
+      "sourceValidity": "Ring Self-intersection[17692597.1550272 5528232.48644225]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 13729867831.693087,
+      "repairedAreaSquareMetres": 13729867831.693083
+    },
+    {
+      "recordIndex": 1928,
+      "sourceId": "198180",
+      "name": "鄂尔多斯右翼前旗",
+      "sourceValidity": "Ring Self-intersection[19261804.2485478 4170440.48240575]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 18174628902.355797,
+      "repairedAreaSquareMetres": 18174628902.355766
+    },
+    {
+      "recordIndex": 1929,
+      "sourceId": "198181",
+      "name": "鄂尔多斯右翼中旗",
+      "sourceValidity": "Self-intersection[19281561.6187418 4176027.21555371]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 36855031962.90594,
+      "repairedAreaSquareMetres": 36855031962.906044
+    },
+    {
+      "recordIndex": 1930,
+      "sourceId": "198182",
+      "name": "鄂尔多斯右翼后旗",
+      "verticesBeforePrecision": 350,
+      "verticesAfterPrecision": 349
+    },
+    {
+      "recordIndex": 1931,
+      "sourceId": "198183",
+      "name": "阿拉善厄鲁特旗",
+      "verticesBeforePrecision": 2125,
+      "verticesAfterPrecision": 2124
+    },
+    {
+      "recordIndex": 1932,
+      "sourceId": "198184",
+      "name": "和硕特前头旗",
+      "verticesBeforePrecision": 538,
+      "verticesAfterPrecision": 537
+    },
+    {
+      "recordIndex": 1941,
+      "sourceId": "198193",
+      "name": "和硕特南右翼末旗",
+      "sourceValidity": "Self-intersection[18588163.2966476 4045679.82516612]",
+      "makeValidResultType": "MultiPolygon",
+      "originalAreaSquareMetres": 1316134822.760816,
+      "repairedAreaSquareMetres": 1316134822.7608147,
+      "verticesBeforePrecision": 232,
+      "verticesAfterPrecision": 229
+    },
+    {
+      "recordIndex": 1949,
+      "sourceId": "198201",
+      "name": "喀尔喀右翼旗",
+      "sourceValidity": "Self-intersection[19484684.8286135 4592706.19064774]",
+      "makeValidResultType": "MultiPolygon",
+      "originalAreaSquareMetres": 15306262610.729904,
+      "repairedAreaSquareMetres": 15306263097.541788
+    },
+    {
+      "recordIndex": 1953,
+      "sourceId": "198206",
+      "name": "奇台县",
+      "sourceValidity": "Ring Self-intersection[17792469.4670102 5218853.32289445]",
+      "makeValidResultType": "GeometryCollection",
+      "originalAreaSquareMetres": 32838223425.441185,
+      "repairedAreaSquareMetres": 32838223629.216373
+    },
+    {
+      "recordIndex": 1955,
+      "sourceId": "198210",
+      "name": "吐鲁番厅本厅",
+      "verticesBeforePrecision": 551,
+      "verticesAfterPrecision": 550
+    },
+    {
+      "recordIndex": 1956,
+      "sourceId": "198211",
+      "name": "阜康县",
+      "verticesBeforePrecision": 812,
+      "verticesAfterPrecision": 811
+    },
+    {
+      "recordIndex": 1961,
+      "sourceId": "198219",
+      "name": "宁远县",
+      "verticesBeforePrecision": 2870,
+      "verticesAfterPrecision": 2869
+    },
+    {
+      "recordIndex": 1962,
+      "sourceId": "198220",
+      "name": "焉耆府本府",
+      "verticesBeforePrecision": 1736,
+      "verticesAfterPrecision": 1735
+    },
+    {
+      "recordIndex": 1963,
+      "sourceId": "198221",
+      "name": "轮台县",
+      "verticesBeforePrecision": 870,
+      "verticesAfterPrecision": 869
+    },
+    {
+      "recordIndex": 1964,
+      "sourceId": "198222",
+      "name": "鄯善县",
+      "verticesBeforePrecision": 789,
+      "verticesAfterPrecision": 788
+    },
+    {
+      "recordIndex": 1965,
+      "sourceId": "198223",
+      "name": "婼羌县",
+      "verticesBeforePrecision": 3530,
+      "verticesAfterPrecision": 3529
+    },
+    {
+      "recordIndex": 1967,
+      "sourceId": "198225",
+      "name": "库车州本州",
+      "verticesBeforePrecision": 2307,
+      "verticesAfterPrecision": 2306
+    },
+    {
+      "recordIndex": 1969,
+      "sourceId": "198227",
+      "name": "温宿县",
+      "verticesBeforePrecision": 1727,
+      "verticesAfterPrecision": 1726
+    },
+    {
+      "recordIndex": 1970,
+      "sourceId": "198228",
+      "name": "温宿府本府",
+      "verticesBeforePrecision": 2266,
+      "verticesAfterPrecision": 2264
+    },
+    {
+      "recordIndex": 1972,
+      "sourceId": "198231",
+      "name": "疏附县",
+      "verticesBeforePrecision": 1225,
+      "verticesAfterPrecision": 1223
+    },
+    {
+      "recordIndex": 1973,
+      "sourceId": "198232",
+      "name": "疏勒府本府",
+      "verticesBeforePrecision": 394,
+      "verticesAfterPrecision": 393
+    },
+    {
+      "recordIndex": 1975,
+      "sourceId": "198234",
+      "name": "巴楚州",
+      "verticesBeforePrecision": 797,
+      "verticesAfterPrecision": 795
+    },
+    {
+      "recordIndex": 1977,
+      "sourceId": "198236",
+      "name": "洛浦县",
+      "verticesBeforePrecision": 799,
+      "verticesAfterPrecision": 798
+    },
+    {
+      "recordIndex": 1978,
+      "sourceId": "198237",
+      "name": "和阗州本州",
+      "verticesBeforePrecision": 1545,
+      "verticesAfterPrecision": 1543
+    },
+    {
+      "recordIndex": 1979,
+      "sourceId": "198238",
+      "name": "皮山县",
+      "sourceValidity": "Ring Self-intersection[16709547.0607133 4813188.28461842]",
+      "makeValidResultType": "Polygon",
+      "originalAreaSquareMetres": 49069055622.57646,
+      "repairedAreaSquareMetres": 49069055622.57635
+    },
+    {
+      "recordIndex": 1980,
+      "sourceId": "198239",
+      "name": "叶城县",
+      "sourceValidity": "Self-intersection[16709547.0607133 4813188.28461842]",
+      "makeValidResultType": "Polygon",
+      "originalAreaSquareMetres": 42966753753.72194,
+      "repairedAreaSquareMetres": 42966753753.72201
+    },
+    {
+      "recordIndex": 1981,
+      "sourceId": "198240",
+      "name": "莎车府本府",
+      "verticesBeforePrecision": 462,
+      "verticesAfterPrecision": 461
+    },
+    {
+      "recordIndex": 1982,
+      "sourceId": "198242",
+      "name": "蒲犁厅",
+      "verticesBeforePrecision": 995,
+      "verticesAfterPrecision": 993
+    }
+  ],
+  "outputBytes": 19892120,
+  "outputSHA256": "b94d74b7016372601687d8823e3eeab9c4af5ea6502076703e0e77938f6ade75",
+  "output": "public/data/boundaries/chgis-1911-county.geojson"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "context-luoyang-palace",
+  "title": "隋唐洛阳城遗址 — 维基百科",
+  "url": "https://zh.wikipedia.org/wiki/%E9%9A%8B%E5%94%90%E6%B4%9B%E9%98%B3%E5%9F%8E%E9%81%97%E5%9D%80",
+  "retrievedAt": "2026-09-24T12:09:21.745372+00:00",
+  "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证。引文保留本次页面原字形。",
+  "snapshotPath": "data/evidence/historical-context/luoyang-palace.txt",
+  "snapshotSha256": "e51f2fbcdab1be1dc83f547de60b0f0ded79f79a51feec736a0e2856bf735c77",
+  "pageId": 1455413,
+  "revision": {
+    "revid": 92235432,
+    "parentid": 91218237,
+    "timestamp": "2026-04-10T15:02:52Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E9%9A%8B%E5%94%90%E6%B4%9B%E9%98%B3%E5%9F%8E&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

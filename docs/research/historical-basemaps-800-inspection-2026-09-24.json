@@ -1,0 +1,80 @@
+{
+  "url": "https://raw.githubusercontent.com/aourednik/historical-basemaps/da7a4b735ecef70aebdc9c73e409d8a2500d50f3/geojson/world_800.geojson",
+  "commit": "da7a4b735ecef70aebdc9c73e409d8a2500d50f3",
+  "filename": "world_800.geojson",
+  "sha256": "9d046cdc4662109c3f803ae46e2c8cba941aa092ec86eccc7823e6cf1554920c",
+  "topLevelKeys": [
+    "type",
+    "name",
+    "crs",
+    "features"
+  ],
+  "featureCount": 225,
+  "propertyKeys": [
+    "ABBREVN",
+    "BORDERPRECISION",
+    "NAME",
+    "PARTOF",
+    "SUBJECTO",
+    "wikipedia"
+  ],
+  "selectedFeatures": [
+    {
+      "featureIndex": 38,
+      "properties": {
+        "NAME": "Nan Chao",
+        "ABBREVN": "Nan Chao",
+        "wikipedia": null,
+        "SUBJECTO": "Nan Chao",
+        "BORDERPRECISION": 1,
+        "PARTOF": "Nan Chao"
+      },
+      "geometryType": "MultiPolygon",
+      "coordinateCount": 20,
+      "bbox": [
+        100.12273530839072,
+        19.47885849129998,
+        108.75453791481954,
+        26.61448197928114
+      ]
+    },
+    {
+      "featureIndex": 45,
+      "properties": {
+        "NAME": "Tang Empire",
+        "ABBREVN": "Tang Empire",
+        "wikipedia": null,
+        "SUBJECTO": "Tang Empire",
+        "BORDERPRECISION": 1,
+        "PARTOF": "Tang Empire"
+      },
+      "geometryType": "MultiPolygon",
+      "coordinateCount": 279,
+      "bbox": [
+        102.42454933677173,
+        16.187961290965557,
+        126.01814312767718,
+        42.957361580786376
+      ]
+    },
+    {
+      "featureIndex": 148,
+      "properties": {
+        "NAME": "Tibetan Empire",
+        "ABBREVN": "Tibet",
+        "wikipedia": null,
+        "SUBJECTO": "Tibetan Empire",
+        "BORDERPRECISION": 1,
+        "PARTOF": "Tibetan Empire"
+      },
+      "geometryType": "MultiPolygon",
+      "coordinateCount": 62,
+      "bbox": [
+        75.14805310045668,
+        21.89576322110005,
+        104.26600055947657,
+        43.76299649071973
+      ]
+    }
+  ]
+}

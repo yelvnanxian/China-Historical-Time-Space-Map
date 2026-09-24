@@ -1,0 +1,420 @@
+{
+  "version": "1.0.0",
+  "sourceManifestUrl": "/data/physical-geography-sources.json",
+  "coordinateSystem": "WGS84 longitude/latitude, EPSG:4326",
+  "scale": "Natural Earth 1:10m (1:10,000,000)",
+  "modernBackgroundOnly": true,
+  "repositoryCommit": "ca96624a56bd078437bca8184e78163e5039ad19",
+  "license": "Natural Earth public domain",
+  "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
+  "selectionWindow": [
+    70,
+    10,
+    142,
+    56
+  ],
+  "sources": [
+    {
+      "dataset": "ne_10m_geography_regions_polys",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_geography_regions_polys.geojson",
+      "repositoryCommit": "ca96624a56bd078437bca8184e78163e5039ad19",
+      "downloadedAt": "2026-09-24T10:31:53.773264+00:00",
+      "sha256": "b7b26e50ea917d3696aec87f932def2bf5f890f5770e441d59c162c6f4c92a77",
+      "bytes": 5583870,
+      "datasetVersion": "5.0.0",
+      "versionUrl": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/10m_physical/ne_10m_geography_regions_polys.VERSION.txt",
+      "snapshotPath": "data/evidence/physical-geography/ne_10m_geography_regions_polys.geojson"
+    },
+    {
+      "dataset": "ne_10m_geography_marine_polys",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_geography_marine_polys.geojson",
+      "repositoryCommit": "ca96624a56bd078437bca8184e78163e5039ad19",
+      "downloadedAt": "2026-09-24T10:31:54.589131+00:00",
+      "sha256": "53f865e8ffa966cdd402145c82c5cd14ee7ce974cd0eb9a3f59f03a4cfd2d66c",
+      "bytes": 1692635,
+      "datasetVersion": "5.1.0",
+      "versionUrl": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/10m_physical/ne_10m_geography_marine_polys.VERSION.txt",
+      "snapshotPath": "data/evidence/physical-geography/ne_10m_geography_marine_polys.geojson"
+    }
+  ],
+  "readOnlyInputs": [
+    {
+      "path": "public/data/rivers.geojson",
+      "sha256": "3decc7bf75ae2eda039c4269c29ffa10a1b5ee8397646c2935b7832e26353f6c"
+    },
+    {
+      "path": "public/data/lakes.geojson",
+      "sha256": "9a83a27d9cfdc316423b039ad29e7f589e06a944882075da4b298add2bb46b27"
+    },
+    {
+      "path": "public/data/physical-labels.geojson",
+      "sha256": "9755dccf13fbc61480a22215b3f2ae8d89aa77430e6e588f9aec4ab1ba5cc39d"
+    }
+  ],
+  "featureCounts": {
+    "river": 277,
+    "lake": 234,
+    "mountain": 52,
+    "plateau": 10,
+    "sea": 8
+  },
+  "groupCounts": {
+    "river": 236,
+    "mountain": 52,
+    "sea": 8,
+    "lake": 234,
+    "plateau": 10
+  },
+  "outputs": {
+    "physical-interactive.geojson": {
+      "sha256": "61f473d0246ec879f64afeec280d4e75a6d06c3e3ca83c601938505418e15d89",
+      "bytes": 1254081
+    },
+    "physical-regions.geojson": {
+      "sha256": "e68e681c7ba186562e199f73aa3e255f283ed832c516eb4114483e6fc959b83b",
+      "bytes": 159431
+    },
+    "physical-interactions.json": {
+      "sha256": "19150bf954b770e11dc00171a960c22dd8e8efe97ddb50692e77e7a64791b743",
+      "bytes": 394313
+    }
+  },
+  "selection": "Every Range/mtn and Plateau source polygon intersecting the selection window; eight marine label regions already in the existing label inventory.",
+  "geometryDerivation": {
+    "mountainPlateauSea": "Exact original source geometry. No clipping, simplification, buffering, hull, rounding or invented boundary.",
+    "riverLake": "Exact copy of existing display geometry. Prior clipping, simplification and repairs remain documented in natural-geography-sources.json.",
+    "selectionWindow": "Used only to select region records; complete selected source geometries may extend outside the window.",
+    "labelCoordinates": {
+      "planar-length-midpoint-of-longest-existing-line-part": 277,
+      "interior-representative-point-of-feature-polygon": 304
+    }
+  },
+  "selectedRegions": [
+    {
+      "featureId": "ne_10m_geography_regions_polys-223",
+      "sourceFeatureIndex": 223,
+      "sourceId": 1159103037
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-224",
+      "sourceFeatureIndex": 224,
+      "sourceId": 1159103039
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-225",
+      "sourceFeatureIndex": 225,
+      "sourceId": 1159103041
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-228",
+      "sourceFeatureIndex": 228,
+      "sourceId": 1730071613
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-231",
+      "sourceFeatureIndex": 231,
+      "sourceId": 1159103055
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-232",
+      "sourceFeatureIndex": 232,
+      "sourceId": 1730071631
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-233",
+      "sourceFeatureIndex": 233,
+      "sourceId": 1159103059
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-310",
+      "sourceFeatureIndex": 310,
+      "sourceId": 1159103231
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-418",
+      "sourceFeatureIndex": 418,
+      "sourceId": 1159103543
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-419",
+      "sourceFeatureIndex": 419,
+      "sourceId": 1159103545
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-424",
+      "sourceFeatureIndex": 424,
+      "sourceId": 1159103557
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-425",
+      "sourceFeatureIndex": 425,
+      "sourceId": 1730072653
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-426",
+      "sourceFeatureIndex": 426,
+      "sourceId": 1730072659
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-427",
+      "sourceFeatureIndex": 427,
+      "sourceId": 1730072663
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-428",
+      "sourceFeatureIndex": 428,
+      "sourceId": 1159103567
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-429",
+      "sourceFeatureIndex": 429,
+      "sourceId": 1159103569
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-430",
+      "sourceFeatureIndex": 430,
+      "sourceId": 1159103571
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-431",
+      "sourceFeatureIndex": 431,
+      "sourceId": 1159103573
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-432",
+      "sourceFeatureIndex": 432,
+      "sourceId": 1159103575
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-433",
+      "sourceFeatureIndex": 433,
+      "sourceId": 1159103577
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-434",
+      "sourceFeatureIndex": 434,
+      "sourceId": 1159103579
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-435",
+      "sourceFeatureIndex": 435,
+      "sourceId": 1159103581
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-436",
+      "sourceFeatureIndex": 436,
+      "sourceId": 1730072703
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-437",
+      "sourceFeatureIndex": 437,
+      "sourceId": 1159103587
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-438",
+      "sourceFeatureIndex": 438,
+      "sourceId": 1730072715
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-439",
+      "sourceFeatureIndex": 439,
+      "sourceId": 1159103591
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-440",
+      "sourceFeatureIndex": 440,
+      "sourceId": 1730072723
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-441",
+      "sourceFeatureIndex": 441,
+      "sourceId": 1159103595
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-493",
+      "sourceFeatureIndex": 493,
+      "sourceId": 1730072971
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-495",
+      "sourceFeatureIndex": 495,
+      "sourceId": 1730072981
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-496",
+      "sourceFeatureIndex": 496,
+      "sourceId": 1159103717
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-546",
+      "sourceFeatureIndex": 546,
+      "sourceId": 1159103895
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-547",
+      "sourceFeatureIndex": 547,
+      "sourceId": 1159103897
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-549",
+      "sourceFeatureIndex": 549,
+      "sourceId": 1730073365
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-550",
+      "sourceFeatureIndex": 550,
+      "sourceId": 1159103903
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-551",
+      "sourceFeatureIndex": 551,
+      "sourceId": 1730073373
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-552",
+      "sourceFeatureIndex": 552,
+      "sourceId": 1730073379
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-553",
+      "sourceFeatureIndex": 553,
+      "sourceId": 1159103911
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-554",
+      "sourceFeatureIndex": 554,
+      "sourceId": 1159103913
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-555",
+      "sourceFeatureIndex": 555,
+      "sourceId": 1159103915
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-556",
+      "sourceFeatureIndex": 556,
+      "sourceId": 1159103917
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-557",
+      "sourceFeatureIndex": 557,
+      "sourceId": 1159103919
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-558",
+      "sourceFeatureIndex": 558,
+      "sourceId": 1159103921
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-559",
+      "sourceFeatureIndex": 559,
+      "sourceId": 1159103923
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-560",
+      "sourceFeatureIndex": 560,
+      "sourceId": 1159103927
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-605",
+      "sourceFeatureIndex": 605,
+      "sourceId": 1159104027
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-606",
+      "sourceFeatureIndex": 606,
+      "sourceId": 1159104029
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-607",
+      "sourceFeatureIndex": 607,
+      "sourceId": 1159104031
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-665",
+      "sourceFeatureIndex": 665,
+      "sourceId": 1159104169
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-666",
+      "sourceFeatureIndex": 666,
+      "sourceId": 1159104171
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-667",
+      "sourceFeatureIndex": 667,
+      "sourceId": 1159104173
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-668",
+      "sourceFeatureIndex": 668,
+      "sourceId": 1730073913
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-669",
+      "sourceFeatureIndex": 669,
+      "sourceId": 1159104179
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-670",
+      "sourceFeatureIndex": 670,
+      "sourceId": 1159104181
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-671",
+      "sourceFeatureIndex": 671,
+      "sourceId": 1159104183
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-672",
+      "sourceFeatureIndex": 672,
+      "sourceId": 1159104185
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-673",
+      "sourceFeatureIndex": 673,
+      "sourceId": 1159104187
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-692",
+      "sourceFeatureIndex": 692,
+      "sourceId": 1159104229
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-693",
+      "sourceFeatureIndex": 693,
+      "sourceId": 1159104233
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-713",
+      "sourceFeatureIndex": 713,
+      "sourceId": 1159104299
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-716",
+      "sourceFeatureIndex": 716,
+      "sourceId": 1159104307
+    },
+    {
+      "featureId": "ne_10m_geography_regions_polys-733",
+      "sourceFeatureIndex": 733,
+      "sourceId": 1159104345
+    }
+  ],
+  "grouping": "River parts with the same sourceId join; the existing physical-labels explicit sourceFeatureIndices additionally join Yangtze and Huang He records. Matching river-centerline IDs inherit that group. Names alone are never used to merge rivers.",
+  "displayNames": {
+    "simplification": "opencc-js tw→cn",
+    "editorialRegionTranslations": {
+      "Borohoro Mts.": "博罗科努山",
+      "EASTERN SAYAN MTS.": "东萨彦岭"
+    },
+    "riverTranslations": "Reuse existing physical-labels checked source-index mappings; unknown original names retained, empty/numeric names explicitly marked unnamed.",
+    "rawNames": "sourceName/rawDisplayName/rawNameEn and original snapshots retain the original values."
+  },
+  "coverageLimitations": [
+    "A source cartographic naming extent is not a surveyed physical boundary; overlapping ranges and plateaus are intentional.",
+    "Natural Earth does not provide a named Hengduan or Changbai mountain polygon in this pinned dataset; no guessed substitute was created.",
+    "Modern lakes may include reservoirs and modern rivers may include lake centerlines; these are not historical reconstructions.",
+    "Source English names and Chinese transliterations are not a complete authoritative Chinese gazetteer."
+  ]
+}

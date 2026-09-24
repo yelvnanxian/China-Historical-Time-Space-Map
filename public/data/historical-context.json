@@ -1,0 +1,1153 @@
+{
+  "version": "1.0",
+  "generatedAt": "2026-09-24T12:22:01.255877+00:00",
+  "notes": [
+    "历史地理条目只提供地区参考点；没有可靠古河道几何时不绘制复原线路。",
+    "城市大事记跨时期展示，不随当前朝代筛除；同名城市的古今城址可能不同。",
+    "引文已与实际取得的文本快照逐字比对；百科概述不等于原始史料或逐段考古核定。",
+    "年份用于排序；约年保留在日期标签中，古籍年号、月份和干支日不作未经核对的逐日公历换算。"
+  ],
+  "sources": [
+    {
+      "id": "context-grand-canal",
+      "title": "京杭大运河 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E4%BA%AC%E6%9D%AD%E5%A4%A7%E8%BF%90%E6%B2%B3&oldid=94273921",
+      "retrievedAt": "2026-09-24T12:07:35.152654+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证。引文保留本次页面原字形。 本次读取页面修订号：94273921。",
+      "snapshotPath": "data/evidence/historical-context/grand-canal.txt",
+      "snapshotSha256": "5ecc67c191f90cc6fe32d7f667f65f39c3c75b3dc9e356175996dfc529553828"
+    },
+    {
+      "id": "context-dujiangyan",
+      "title": "都江堰 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E9%83%BD%E6%B1%9F%E5%A0%B0&oldid=94276193",
+      "retrievedAt": "2026-09-24T12:07:35.056468+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证。引文保留本次页面原字形。 本次读取页面修订号：94276193。",
+      "snapshotPath": "data/evidence/historical-context/dujiangyan.txt",
+      "snapshotSha256": "e8771ae327cc6cf6905cc86a45baebe0ff738a72f21030a9b0ea9764a89e2d4b"
+    },
+    {
+      "id": "context-sui-canal",
+      "title": "隋唐大运河 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E9%9A%8B%E5%94%90%E5%A4%A7%E8%BF%90%E6%B2%B3&oldid=89572044",
+      "retrievedAt": "2026-09-24T12:08:54.450769+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证。引文保留本次页面原字形。 本次读取页面修订号：89572044。",
+      "snapshotPath": "data/evidence/historical-context/sui-canal.txt",
+      "snapshotSha256": "8b035a816368e9c2527e74d9a0f955228a05950080e089234d678dfdf4d3bb0b"
+    },
+    {
+      "id": "context-yellow-river",
+      "title": "黄河 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E9%BB%84%E6%B2%B3&oldid=94359222",
+      "retrievedAt": "2026-09-24T12:07:35.123651+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证。引文保留本次页面原字形。 本次读取页面修订号：94359222。",
+      "snapshotPath": "data/evidence/historical-context/yellow-river.txt",
+      "snapshotSha256": "70cc9c9d4598afe7efc31a35810171e45b99ee5709d881be57f941298a8dcbad"
+    },
+    {
+      "id": "context-huayuankou",
+      "title": "花园口决堤 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E8%8A%B1%E5%9B%AD%E5%8F%A3%E5%86%B3%E5%A0%A4&oldid=93695033",
+      "retrievedAt": "2026-09-24T12:07:35.061222+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证。引文保留本次页面原字形。 本次读取页面修订号：93695033。",
+      "snapshotPath": "data/evidence/historical-context/huayuankou.txt",
+      "snapshotSha256": "d2c0b736e213d8bf0a986edf3311df9d52bdfa75ecb107f889a4208be774609f"
+    },
+    {
+      "id": "context-changan",
+      "title": "长安 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E9%95%BF%E5%AE%89&oldid=94228176",
+      "retrievedAt": "2026-09-24T12:07:35.142639+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证。引文保留本次页面原字形。 本次读取页面修订号：94228176。",
+      "snapshotPath": "data/evidence/historical-context/changan.txt",
+      "snapshotSha256": "4790dd08832b2fc25445879da1aa59ce04e9c89e6bf823c8666a72bd561bc452"
+    },
+    {
+      "id": "context-luoyang",
+      "title": "洛阳市 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E6%B4%9B%E9%98%B3%E5%B8%82&oldid=94239083",
+      "retrievedAt": "2026-09-24T12:07:36.001723+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证。引文保留本次页面原字形。 本次读取页面修订号：94239083。",
+      "snapshotPath": "data/evidence/historical-context/luoyang.txt",
+      "snapshotSha256": "a6874769bfa762f6560f601251fa0721f244de8cd19cbf279fc51a75d69e674a"
+    },
+    {
+      "id": "context-luoyang-palace",
+      "title": "隋唐洛阳城遗址 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E9%9A%8B%E5%94%90%E6%B4%9B%E9%98%B3%E5%9F%8E%E9%81%97%E5%9D%80&oldid=92235432",
+      "retrievedAt": "2026-09-24T12:09:21.745372+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证。引文保留本次页面原字形。 本次读取页面修订号：92235432。",
+      "snapshotPath": "data/evidence/historical-context/luoyang-palace.txt",
+      "snapshotSha256": "e51f2fbcdab1be1dc83f547de60b0f0ded79f79a51feec736a0e2856bf735c77"
+    },
+    {
+      "id": "zizhitongjian-220",
+      "title": "《资治通鉴》卷220",
+      "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91/%E5%8D%B7220",
+      "retrievedAt": "2026-09-24T09:53:57.844814+00:00",
+      "note": "复用本项目已取得的古籍原文快照。年号、月、干支日保留原文，排序年份不是逐日公历换算。",
+      "snapshotPath": "data/evidence/zizhitongjian-220.txt",
+      "snapshotSha256": "339e41f45fbc062c2d6af21ab35ab9177b46d40b65615f871139ed57a0b3fa59"
+    },
+    {
+      "id": "jiutangshu-10",
+      "title": "《旧唐书》卷10·肃宗",
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B710",
+      "retrievedAt": "2026-09-24T09:56:33.241597+00:00",
+      "note": "复用本项目已取得的古籍原文快照。年号、月、干支日保留原文，排序年份不是逐日公历换算。",
+      "snapshotPath": "data/evidence/jiutangshu-10.txt",
+      "snapshotSha256": "601fd88086061249dd9b1f7c84ce80cc027e99798e162546fe091472b8ee31b9"
+    },
+    {
+      "id": "context-kaifeng",
+      "title": "开封市 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E5%BC%80%E5%B0%81%E5%B8%82&oldid=94239076",
+      "retrievedAt": "2026-09-24T12:07:35.330249+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证。引文保留本次页面原字形。 本次读取页面修订号：94239076。",
+      "snapshotPath": "data/evidence/historical-context/kaifeng.txt",
+      "snapshotSha256": "8afcea79d9dbe16502b24705a54da33e60d84a5f043dd462811ae4a8291d3fe7"
+    },
+    {
+      "id": "context-nanjing",
+      "title": "南京市 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E5%8D%97%E4%BA%AC%E5%B8%82&oldid=94430858",
+      "retrievedAt": "2026-09-24T12:07:36.700620+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证。引文保留本次页面原字形。 本次读取页面修订号：94430858。",
+      "snapshotPath": "data/evidence/historical-context/nanjing.txt",
+      "snapshotSha256": "69a5c172113af7fbd9d94b6892c3f0d574b2a1a8f5f492bf637f6ec4e82af456"
+    },
+    {
+      "id": "context-beijing-history",
+      "title": "北京历史 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E5%8C%97%E4%BA%AC%E5%8E%86%E5%8F%B2&oldid=94230399",
+      "retrievedAt": "2026-09-24T12:09:22.854866+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证。引文保留本次页面原字形。 本次读取页面修订号：94230399。",
+      "snapshotPath": "data/evidence/historical-context/beijing-history.txt",
+      "snapshotSha256": "8d554fdcf78c2109451c7dd0990184f5ca948e812a015520547f3d190e0698c7"
+    },
+    {
+      "id": "context-hangzhou",
+      "title": "杭州市 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E6%9D%AD%E5%B7%9E%E5%B8%82&oldid=94228857",
+      "retrievedAt": "2026-09-24T12:07:36.839874+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证。引文保留本次页面原字形。 本次读取页面修订号：94228857。",
+      "snapshotPath": "data/evidence/historical-context/hangzhou.txt",
+      "snapshotSha256": "c0c9e9f499c47525e614022bb7b4cd14cd5d1e344fd3c316b828421352dd7950"
+    },
+    {
+      "id": "context-chengdu",
+      "title": "成都市 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E6%88%90%E9%83%BD%E5%B8%82&oldid=94514746",
+      "retrievedAt": "2026-09-24T12:08:21.273132+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证。引文保留本次页面原字形。 本次读取页面修订号：94514746。",
+      "snapshotPath": "data/evidence/historical-context/chengdu.txt",
+      "snapshotSha256": "c798327fb6862f8cbb73e99aba1a47528c27246014826aac36fdcd73cb2defd5"
+    },
+    {
+      "id": "zizhitongjian-218",
+      "title": "《资治通鉴》卷218",
+      "url": "https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91/%E5%8D%B7218",
+      "retrievedAt": "2026-09-24T09:53:56.851081+00:00",
+      "note": "复用本项目已取得的古籍原文快照。年号、月、干支日保留原文，排序年份不是逐日公历换算。",
+      "snapshotPath": "data/evidence/zizhitongjian-218.txt",
+      "snapshotSha256": "309207b02b6595d7a79958104511818652ad450894db51588f7db520044a7fb6"
+    },
+    {
+      "id": "jiutangshu-9",
+      "title": "《旧唐书》卷9·玄宗下",
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B79",
+      "retrievedAt": "2026-09-24T09:56:33.490369+00:00",
+      "note": "复用本项目已取得的古籍原文快照。年号、月、干支日保留原文，排序年份不是逐日公历换算。",
+      "snapshotPath": "data/evidence/jiutangshu-9.txt",
+      "snapshotSha256": "26e9c44168bd7ef395fa737382aa59f63c8f9cd4a41ba7d3202b20b01af3fc90"
+    },
+    {
+      "id": "context-jingzhou",
+      "title": "荆州市 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E8%8D%86%E5%B7%9E%E5%B8%82&oldid=94477256",
+      "retrievedAt": "2026-09-24T12:08:55.073397+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证。引文保留本次页面原字形。 本次读取页面修订号：94477256。",
+      "snapshotPath": "data/evidence/historical-context/jingzhou.txt",
+      "snapshotSha256": "551725178b786700668943f0c31444c66367273d2b7c2159573eb2d0e5a46e11"
+    },
+    {
+      "id": "context-jingnan",
+      "title": "荆南 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E8%8D%86%E5%8D%97&oldid=93025289",
+      "retrievedAt": "2026-09-24T12:11:27.613989+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证。引文保留本次页面原字形。 本次读取页面修订号：93025289。",
+      "snapshotPath": "data/evidence/historical-context/jingnan.txt",
+      "snapshotSha256": "2f0006a908fa74c872fd1515294d3fd37aebfae1f9f34651dd29d058241e4c01"
+    },
+    {
+      "id": "context-guangzhou",
+      "title": "广州市 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E5%B9%BF%E5%B7%9E%E5%B8%82&oldid=94228892",
+      "retrievedAt": "2026-09-24T12:08:21.357504+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证。引文保留本次页面原字形。 本次读取页面修订号：94228892。",
+      "snapshotPath": "data/evidence/historical-context/guangzhou.txt",
+      "snapshotSha256": "152c9df48c233545a63f5bc1704c6a555b6fe09658ee007380e6d504113d45bd"
+    },
+    {
+      "id": "context-yangzhou",
+      "title": "扬州市 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E6%89%AC%E5%B7%9E%E5%B8%82&oldid=94241368",
+      "retrievedAt": "2026-09-24T12:08:20.991811+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证。引文保留本次页面原字形。 本次读取页面修订号：94241368。",
+      "snapshotPath": "data/evidence/historical-context/yangzhou.txt",
+      "snapshotSha256": "79ff40e04f221f0bafc8d57dcfc5558ada54449b02bc6aae071cf098072ad722"
+    },
+    {
+      "id": "context-yangzhou-massacre",
+      "title": "扬州十日 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E6%89%AC%E5%B7%9E%E5%8D%81%E6%97%A5&oldid=93601486",
+      "retrievedAt": "2026-09-24T12:09:22.131775+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证。引文保留本次页面原字形。 本次读取页面修订号：93601486。",
+      "snapshotPath": "data/evidence/historical-context/yangzhou-massacre.txt",
+      "snapshotSha256": "2810189168db30c580f9b0d769ded1ff315a43da33da3d8325954bd26ed509ed"
+    }
+  ],
+  "geographyEntries": [
+    {
+      "id": "geo-hangou-486",
+      "year": -486,
+      "dateLabel": "公元前486年",
+      "title": "邗沟开凿，连接江淮",
+      "summary": "吴王夫差在今扬州附近筑邗城，并开凿连接长江、淮河的水道，服务北上运输。",
+      "sourceIds": [
+        "context-grand-canal"
+      ],
+      "evidence": [
+        {
+          "sourceId": "context-grand-canal",
+          "quote": "春秋末年，位于太湖流域的吴王夫差为了与中原的晋国争霸，于前486年修筑邗城（今扬州附近），作为北上据点，并在城下开凿运河到末口（今江苏淮安市淮安区城北北辰坊），沟通长江與淮河，以运输军队和辎重。",
+          "supports": "邗沟开凿，连接江淮及概述中的直接事实。"
+        }
+      ],
+      "impact": "江淮之间形成有明确纪年的人工水运联系；后来运河体系利用并改造了这一交通基础。",
+      "kind": "canal",
+      "affectedPlaceIds": [
+        "yangzhou"
+      ],
+      "referenceCoordinates": [
+        119.42,
+        32.4
+      ],
+      "referencePlaceId": "yangzhou",
+      "locationRole": "regional-reference",
+      "coordinateNote": "扬州地区参考点；邗沟为区域性水道工程，此点不表示渠首或整条古河道。"
+    },
+    {
+      "id": "geo-dujiangyan-256",
+      "year": -256,
+      "dateLabel": "约公元前256—前251年（传统年代）",
+      "title": "都江堰建设与成都平原水利",
+      "summary": "传统记载把李冰主持都江堰建设放在战国后期，常用年代约为前256年至前251年。工程经过历代整修，长期承担分水、灌溉等功能。",
+      "sourceIds": [
+        "context-dujiangyan"
+      ],
+      "evidence": [
+        {
+          "sourceId": "context-dujiangyan",
+          "quote": "據《史記·河渠書》、《漢書·溝洫志》記載，都江堰是由战国时期秦国蜀郡郡守李冰及其子于约前256年至前251年主持始建，另有一說法是古蜀國開明王朝期間所建。经过历代整修，两千多年来都发挥巨大的作用。",
+          "supports": "都江堰建设与成都平原水利及概述中的直接事实。"
+        },
+        {
+          "sourceId": "context-dujiangyan",
+          "quote": "都江堰工程以引水灌溉为主，兼有防洪排沙、水运、城市供水等综合效用。它所灌溉的成都平原是闻名中国的“天府之国”。",
+          "supports": "工程水利功能及成都平原受益关系；不是工程精确坐标证据。"
+        }
+      ],
+      "impact": "成都平原的农业与聚落发展和岷江水利体系紧密相关；这里只标示受益地区，不复原战国河渠形状。",
+      "kind": "water-management",
+      "affectedPlaceIds": [
+        "chengdu"
+      ],
+      "referenceCoordinates": [
+        104.07,
+        30.67
+      ],
+      "referencePlaceId": "chengdu",
+      "locationRole": "affected-area",
+      "coordinateNote": "成都地区参考点表示受益地区；都江堰工程位于今都江堰市，并不位于此坐标。"
+    },
+    {
+      "id": "geo-tongji-605",
+      "year": 605,
+      "dateLabel": "隋大业元年（605年）",
+      "title": "通济渠开凿，连接洛阳与黄淮水运",
+      "summary": "隋大业元年开通济渠，西段利用洛水等水系连接洛阳与黄河，东段经汴水通向淮河。",
+      "sourceIds": [
+        "context-sui-canal",
+        "context-grand-canal"
+      ],
+      "evidence": [
+        {
+          "sourceId": "context-sui-canal",
+          "quote": "隋炀帝大业元年605年，开通济渠，工程西段自今洛阳西郊引谷、洛二水入黄河，东段自荥阳汜水镇东北引黄河水，循汴水（原淮河支流），经商丘、宿县、泗县入淮通济渠，又名汴渠，是漕运的干道。",
+          "supports": "通济渠开凿，连接洛阳与黄淮水运及概述中的直接事实。"
+        },
+        {
+          "sourceId": "context-grand-canal",
+          "quote": "東段西起滎陽西北黃河邊上的板渚（zhǔ），引黃河水進入淮河的支流汴水，經今開封市及杞縣、睢縣、寧陵、商丘、夏邑、永城等縣",
+          "supports": "通济渠东段经过今开封地区，支持关联开封入口。"
+        }
+      ],
+      "impact": "洛阳、开封等地被纳入新的漕运联系；渠道由旧河道和人工工程共同组成，不能直接等同今天的河流线。",
+      "kind": "canal",
+      "affectedPlaceIds": [
+        "luoyang",
+        "kaifeng"
+      ],
+      "referenceCoordinates": [
+        112.45,
+        34.62
+      ],
+      "referencePlaceId": "luoyang",
+      "locationRole": "event-area",
+      "coordinateNote": "洛阳地区作为工程西段的区域参考；不表示已测定的隋代渠首坐标。"
+    },
+    {
+      "id": "geo-jiangnan-canal-610",
+      "year": 610,
+      "dateLabel": "610年",
+      "title": "江南运河连接镇江与杭州",
+      "summary": "隋代继续开凿、整治江南运河，由今镇江引江水，经常州、无锡、苏州、嘉兴至杭州，联系钱塘江水系。",
+      "sourceIds": [
+        "context-sui-canal"
+      ],
+      "evidence": [
+        {
+          "sourceId": "context-sui-canal",
+          "quote": "公元610年继开江南运河，由今镇江引江水经常州、无锡、苏州、嘉兴至杭州通钱塘江。",
+          "supports": "江南运河连接镇江与杭州及概述中的直接事实。"
+        }
+      ],
+      "impact": "杭州成为南北水运网络的重要节点。这里记录的是工程及交通关系，不把现代运河全部认定为610年的原线位。",
+      "kind": "canal",
+      "affectedPlaceIds": [
+        "hangzhou"
+      ],
+      "referenceCoordinates": [
+        120.16,
+        30.25
+      ],
+      "referencePlaceId": "hangzhou",
+      "locationRole": "regional-reference",
+      "coordinateNote": "杭州地区参考点表示江南运河的南端联系区域，非610年终点遗址定位。"
+    },
+    {
+      "id": "geo-yellow-river-1128",
+      "year": 1128,
+      "dateLabel": "南宋建炎二年（1128年）",
+      "title": "杜充决河与黄河南徙",
+      "summary": "南宋建炎二年，东京守将杜充为阻挡金兵，在滑州决开黄河堤防。下游水流转向东南，开启此后长期以南向摆动为主的阶段。",
+      "sourceIds": [
+        "context-yellow-river"
+      ],
+      "evidence": [
+        {
+          "sourceId": "context-yellow-river",
+          "quote": "南宋建炎二年（1128年），为防御金兵南下，东京守将杜充在滑州人为决开黄河堤防，造成黄河改道，向东南分由泗水和济水入海。黄河至此由北入渤海改而南入黄海。直到1855年，黄河主要是在南面摆动，虽然时有北冲，但均被人力强行逼堵南流。",
+          "supports": "杜充决河与黄河南徙及概述中的直接事实。"
+        }
+      ],
+      "impact": "黄河与泗、淮水系的关系发生重大变化。条目概述下游格局转换，不把1128年的一次决口画成固定、持续七百余年的单一路线。",
+      "kind": "river-change",
+      "affectedPlaceIds": [
+        "huazhou-hua"
+      ],
+      "referenceCoordinates": [
+        114.51593,
+        35.56895
+      ],
+      "referencePlaceId": "huazhou-hua",
+      "locationRole": "event-area",
+      "coordinateNote": "使用已有滑州入口对应的今滑县道口地区点；这是发生地区参考，不是1128年决口遗址坐标。"
+    },
+    {
+      "id": "geo-yellow-river-1855",
+      "year": 1855,
+      "dateLabel": "清咸丰五年（1855年）",
+      "title": "铜瓦厢决口，黄河改向渤海",
+      "summary": "清咸丰五年，黄河在今河南兰考一带的铜瓦厢决口，改向东北，在山东借大清河入渤海。",
+      "sourceIds": [
+        "context-yellow-river",
+        "context-grand-canal"
+      ],
+      "evidence": [
+        {
+          "sourceId": "context-yellow-river",
+          "quote": "最近的一次黃河大改道是在清咸丰年间。咸丰五年六月十九日（1855年8月1日），黄河在河南兰考北岸的铜瓦厢决口，改東北走向，在山東境內借济水（又名大清河）入渤海。",
+          "supports": "铜瓦厢决口，黄河改向渤海及概述中的直接事实。"
+        },
+        {
+          "sourceId": "context-grand-canal",
+          "quote": "1855年黄河改道后，运河山东段逐渐淤废。从此漕运主要改经海路。",
+          "supports": "1855年改道后山东运河与漕运受到影响。"
+        }
+      ],
+      "impact": "下游入海方向改变，山东运河逐渐淤废，漕运更加依赖海路。",
+      "kind": "river-change",
+      "affectedPlaceIds": [
+        "kaifeng"
+      ],
+      "referenceCoordinates": [
+        114.31,
+        34.8
+      ],
+      "referencePlaceId": "kaifeng",
+      "locationRole": "regional-reference",
+      "coordinateNote": "开封市区为邻近区域参考入口；决口位于兰考铜瓦厢一带，此点不代表决口位置或受淹范围。"
+    },
+    {
+      "id": "geo-huayuankou-1938",
+      "year": 1938,
+      "dateLabel": "1938年6月9日",
+      "title": "花园口决堤，黄河再度南泛",
+      "summary": "1938年6月9日，国民政府军队为阻挡日军进攻，在郑州附近花园口破坏黄河南岸堤防。黄河水转向南流，形成广泛黄泛区。",
+      "sourceIds": [
+        "context-yellow-river",
+        "context-huayuankou"
+      ],
+      "evidence": [
+        {
+          "sourceId": "context-yellow-river",
+          "quote": "1938年6月9日，国军为阻挡日军，破壞郑州黄河南岸花园口大堤，全河又向南流，沿贾鲁河、颍河、涡河入淮河。直到1947年堵复花园口后，黄河才回归北道。",
+          "supports": "花园口决堤，黄河再度南泛及概述中的直接事实。"
+        },
+        {
+          "sourceId": "context-huayuankou",
+          "quote": "尉氏七万口，通许2.5万口，开封西南突出部分有五千口",
+          "supports": "所读灾情材料明确涉及开封西南地区；本条不采用其中人口数作为核定统计。"
+        }
+      ],
+      "impact": "水流经贾鲁河、颍河、涡河等进入淮河，给沿线居民和农业带来严重灾害。不同资料的伤亡统计口径不一，本条不采用未经交叉核定的总人数。",
+      "kind": "flood",
+      "affectedPlaceIds": [
+        "zhengzhou",
+        "kaifeng"
+      ],
+      "referenceCoordinates": [
+        113.663147,
+        34.756942
+      ],
+      "referencePlaceId": "zhengzhou",
+      "locationRole": "event-area",
+      "coordinateNote": "郑州市区参考点；花园口在城市北部黄河沿岸，本点不是决堤现场定位。"
+    },
+    {
+      "id": "geo-huayuankou-1947",
+      "year": 1947,
+      "dateLabel": "1947年（堵口归故）",
+      "title": "花园口堵口，黄河归故道",
+      "summary": "1947年花园口堤防修复，黄河结束自1938年以来的主要南泛状态，回到北向入海的河道。",
+      "sourceIds": [
+        "context-huayuankou",
+        "context-yellow-river"
+      ],
+      "evidence": [
+        {
+          "sourceId": "context-huayuankou",
+          "quote": "1947年3月15日，國民政府進行的花園口堤防修復工程完工，並於5月4日在花園口舉行典禮慶祝黃河大堤合龍。",
+          "supports": "花园口堵口，黄河归故道及概述中的直接事实。"
+        },
+        {
+          "sourceId": "context-yellow-river",
+          "quote": "直到1947年堵复花园口后，黄河才回归北道。",
+          "supports": "黄河在1947年堵复花园口后回归北道。"
+        },
+        {
+          "sourceId": "context-huayuankou",
+          "quote": "沿岸40万军民，在黄河滩上开辟了田地，建筑了村庄。",
+          "supports": "恢复旧道涉及已经形成的农田与村庄；概述不采用原文人口数。"
+        }
+      ],
+      "impact": "堵口与下游复堤相互关联；河水回归旧道也涉及沿线已经形成的耕地、村庄与居民迁移问题，不能只理解为河线上移。",
+      "kind": "water-management",
+      "affectedPlaceIds": [
+        "zhengzhou"
+      ],
+      "referenceCoordinates": [
+        113.663147,
+        34.756942
+      ],
+      "referencePlaceId": "zhengzhou",
+      "locationRole": "event-area",
+      "coordinateNote": "郑州市区参考点；工程发生在花园口，此点不表示堵口工程的具体坐标。"
+    }
+  ],
+  "cityTimelines": [
+    {
+      "placeId": "changan",
+      "entries": [
+        {
+          "id": "changan-han-palace-200",
+          "year": -200,
+          "dateLabel": "公元前200年",
+          "title": "汉代未央宫营建",
+          "summary": "汉高祖七年营建未央宫，是汉长安城建设的重要节点。汉长安城与后来的隋唐长安城位置、城垣范围不同。",
+          "sourceIds": [
+            "context-changan"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-changan",
+              "quote": "太祖七年（前200年）建造了未央宫，同一年由栎阳城迁都至此，因地处长安乡，故命名为长安城。",
+              "supports": "汉代未央宫营建及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "changan-daxing-582",
+          "year": 582,
+          "dateLabel": "隋开皇二年（582年）",
+          "title": "隋营建大兴城",
+          "summary": "隋朝在汉长安城东南另建新都，由宇文恺主持规划营建；次年迁入，称大兴城。",
+          "sourceIds": [
+            "context-changan"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-changan",
+              "quote": "开皇二年（582年）起，在宇文恺的主持下，仅用9个月左右的时间就建成了宫城和皇城。开皇三年（583年），隋王朝迁至新都",
+              "supports": "隋营建大兴城及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "changan-tang-618",
+          "year": 618,
+          "dateLabel": "618年",
+          "title": "唐建国，改大兴为长安",
+          "summary": "李渊建立唐朝，沿用隋大兴城为都并恢复长安之名，随后继续扩建宫城和城市设施。",
+          "sourceIds": [
+            "context-changan"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-changan",
+              "quote": "618年，李淵建立唐朝，定都大興，并更名为長安，此后进一步修建和完善。",
+              "supports": "唐建国，改大兴为长安及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "changan-move-904",
+          "year": 904,
+          "dateLabel": "904年",
+          "title": "唐昭宗被迫迁都洛阳",
+          "summary": "朱全忠迫使唐昭宗迁往洛阳，并拆运长安宫室、迁走居民。此后长安失去长期承担的帝国都城地位。",
+          "sourceIds": [
+            "context-changan"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-changan",
+              "quote": "（904年）朱全忠逼迫唐昭宗迁都洛阳，不仅将所有宫殿房屋拆毁迁移，亦将人口悉数迁移。长安被毁，帝气殆尽，后虽重建，但不再被作为首都。",
+              "supports": "唐昭宗被迫迁都洛阳及概述中的直接事实。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "placeId": "luoyang",
+      "entries": [
+        {
+          "id": "luoyang-zhou-770",
+          "year": -770,
+          "dateLabel": "公元前770年",
+          "title": "周平王东迁洛邑",
+          "summary": "周平王迁都洛邑，洛阳地区进入东周都城时期。历代洛阳都城并非全部位于同一城址。",
+          "sourceIds": [
+            "context-luoyang"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-luoyang",
+              "quote": "公元前770年，平王迁都洛邑，人口渐增。",
+              "supports": "周平王东迁洛邑及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "luoyang-sui-605",
+          "year": 605,
+          "dateLabel": "605年",
+          "title": "隋营建新的洛阳城",
+          "summary": "隋大业元年，在汉魏洛阳城西南营建新都，形成后来隋唐洛阳城的基本结构。",
+          "sourceIds": [
+            "context-luoyang-palace"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-luoyang-palace",
+              "quote": "隋煬帝大业元年（605年），为促进经济发展和加强中央集权。故于汉魏洛阳城西南方向设计兴建新都洛阳城",
+              "supports": "隋营建新的洛阳城及概述中的直接事实。"
+            }
+          ],
+          "relatedEventId": "sui-canal"
+        },
+        {
+          "id": "chronicle-anshi-757-luoyang",
+          "year": 757,
+          "dateLabel": "至德二年十月壬戌",
+          "title": "唐军收复洛阳",
+          "summary": "安庆绪离开洛阳后，广平王李俶进入东京。两京恢复由唐廷控制，但河北战事尚未结束。",
+          "sourceIds": [
+            "zizhitongjian-220",
+            "jiutangshu-10"
+          ],
+          "relatedEventId": "anshi-757-luoyang",
+          "evidence": [
+            {
+              "sourceId": "zizhitongjian-220",
+              "quote": "壬戌，廣平王俶入東京。",
+              "supports": "原文记壬戌广平王进入东京，前文交代安庆绪离开洛阳。"
+            },
+            {
+              "sourceId": "jiutangshu-10",
+              "quote": "壬戌，廣平王入東京，陳兵天津橋南，士庶歡呼路側。",
+              "supports": "肃宗纪亦记广平王壬戌入东京，陈兵天津桥南。"
+            }
+          ]
+        },
+        {
+          "id": "luoyang-wartime-1932",
+          "year": 1932,
+          "dateLabel": "1932年",
+          "title": "国民政府一度迁洛办公",
+          "summary": "日军进攻上海后，国民政府将洛阳定为行都，并一度在此办公。",
+          "sourceIds": [
+            "context-luoyang"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-luoyang",
+              "quote": "1932年，日军进攻上海，国民政府定洛阳为行都，并一度迁洛办公。",
+              "supports": "国民政府一度迁洛办公及概述中的直接事实。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "placeId": "kaifeng",
+      "entries": [
+        {
+          "id": "kaifeng-song-960",
+          "year": 960,
+          "dateLabel": "960年",
+          "title": "北宋建立，以开封为都",
+          "summary": "赵匡胤在开封以北发动陈桥兵变，建立北宋；开封成为北宋的政治与城市经济中心。",
+          "sourceIds": [
+            "context-kaifeng"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-kaifeng",
+              "quote": "960年，后周殿前都点检赵匡胤在开封城北40里的陈桥驿（现属新乡市封丘县）发动陈桥兵变，建立北宋",
+              "supports": "北宋建立，以开封为都及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "kaifeng-jingkang-1127",
+          "year": 1127,
+          "dateLabel": "1127年",
+          "title": "靖康之变，东京失陷",
+          "summary": "金军占领北宋东京，宋徽宗、宋钦宗及大批宗室被俘；城市随后改称汴京。",
+          "sourceIds": [
+            "context-kaifeng"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-kaifeng",
+              "quote": "靖康二年（1127年），靖康之難，金軍佔領東京，徽欽二帝與大量宋朝皇室被俘，东京改称汴京。",
+              "supports": "靖康之变，东京失陷及概述中的直接事实。"
+            }
+          ],
+          "relatedEventId": "jingkang"
+        },
+        {
+          "id": "kaifeng-jin-1214",
+          "year": 1214,
+          "dateLabel": "1214年",
+          "title": "金宣宗迁都南京开封府",
+          "summary": "为避蒙古军队进攻，金宣宗把都城迁往当时称南京开封府的开封。这里的“南京”是金代陪都、都城名称。",
+          "sourceIds": [
+            "context-kaifeng"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-kaifeng",
+              "quote": "貞祐二年（1214年），金宣宗为避蒙古军锋，迁都“南京開封府”。",
+              "supports": "金宣宗迁都南京开封府及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "kaifeng-flood-1642",
+          "year": 1642,
+          "dateLabel": "明崇祯十五年（1642年）",
+          "title": "围城战中的黄河洪灾",
+          "summary": "李自成围攻开封期间，黄河决水淹城，城市受到严重破坏。",
+          "sourceIds": [
+            "context-kaifeng"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-kaifeng",
+              "quote": "崇祯十五年（1642年）李自成的叛军三次攻打开封",
+              "supports": "围城战中的黄河洪灾及概述中的直接事实。"
+            },
+            {
+              "sourceId": "context-kaifeng",
+              "quote": "顿时开封变成一片汪洋，城里水深数丈，整座开封城，淤于水下",
+              "supports": "围城期间开封遭遇严重洪水；不采用单一条目的责任与人数结论。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "placeId": "nanjing",
+      "entries": [
+        {
+          "id": "nanjing-wu-229",
+          "year": 229,
+          "dateLabel": "229年",
+          "title": "孙吴迁都建业",
+          "summary": "孙权将都城由武昌迁至建业，南京地区开始其重要的六朝都城阶段。",
+          "sourceIds": [
+            "context-nanjing"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-nanjing",
+              "quote": "229年，孙权称帝建立东吴，将都城从武昌迁至有“钟山龙盘，石头虎踞”之称的建业，开启了南京的都城史。",
+              "supports": "孙吴迁都建业及概述中的直接事实。"
+            }
+          ],
+          "relatedEventId": "wu-capital"
+        },
+        {
+          "id": "nanjing-ming-1368",
+          "year": 1368,
+          "dateLabel": "明洪武元年（1368年）",
+          "title": "明朝建立，以应天为京师",
+          "summary": "朱元璋建立明朝，将应天府作为京师；南京城墙、宫城等重要城市遗存与明初建设密切相关。",
+          "sourceIds": [
+            "context-nanjing"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-nanjing",
+              "quote": "1368年，朱元璋建立明朝，以应天为京师",
+              "supports": "明朝建立，以应天为京师及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "nanjing-secondary-1421",
+          "year": 1421,
+          "dateLabel": "1421年",
+          "title": "迁都北京后成为南京",
+          "summary": "明成祖迁都北京，应天府成为南京陪都，保留南京六部等机构。",
+          "sourceIds": [
+            "context-nanjing"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-nanjing",
+              "quote": "1421年，迁都顺天府，将应天府改为南京陪都，设南京六部等机构。",
+              "supports": "迁都北京后成为南京及概述中的直接事实。"
+            }
+          ],
+          "relatedEventId": "ming-beijing"
+        },
+        {
+          "id": "nanjing-republic-1912",
+          "year": 1912,
+          "dateLabel": "1912年1月1日",
+          "title": "中华民国临时政府成立",
+          "summary": "1912年1月1日，中华民国临时政府在南京成立，孙中山就任临时大总统。",
+          "sourceIds": [
+            "context-nanjing"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-nanjing",
+              "quote": "1912年1月1日，中华民国临时政府在南京成立，孫中山就任临时大总统",
+              "supports": "中华民国临时政府成立及概述中的直接事实。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "placeId": "beijing",
+      "entries": [
+        {
+          "id": "beijing-jin-1153",
+          "year": 1153,
+          "dateLabel": "1153年",
+          "title": "金迁都燕京，称中都",
+          "summary": "金海陵王完颜亮迁都燕京，称为中都，北京地区由区域中心转为王朝都城。",
+          "sourceIds": [
+            "context-beijing-history"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-beijing-history",
+              "quote": "1153年（贞元元年），金朝皇帝海陵王完颜亮正式建都于燕京，称为中都。",
+              "supports": "金迁都燕京，称中都及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "beijing-yuan-1267",
+          "year": 1267,
+          "dateLabel": "1267年",
+          "title": "元大都开始营建",
+          "summary": "元大都的营建始于1267年，宫城与全城建设分阶段展开，直到1285年全城竣工。",
+          "sourceIds": [
+            "context-beijing-history"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-beijing-history",
+              "quote": "大都营建始于1267年，次年首座宫殿落成，1274年完成宫城整体建设，至1285年全城竣工。",
+              "supports": "元大都开始营建及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "beijing-ming-1421",
+          "year": 1421,
+          "dateLabel": "明永乐十九年正月（1421年）",
+          "title": "明朝正式迁都北京",
+          "summary": "朱棣迁都北京，以顺天府北京为京师，应天府改为南京。明代都城建设奠定此后北京的重要城市格局。",
+          "sourceIds": [
+            "context-beijing-history"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-beijing-history",
+              "quote": "1421年正月，朱棣迁都北京，以顺天府北京为“京师”，而原本的京师“应天府”改为“南京”。",
+              "supports": "明朝正式迁都北京及概述中的直接事实。"
+            }
+          ],
+          "relatedEventId": "ming-beijing"
+        }
+      ]
+    },
+    {
+      "placeId": "hangzhou",
+      "entries": [
+        {
+          "id": "hangzhou-name-589",
+          "year": 589,
+          "dateLabel": "589年",
+          "title": "隋代首称杭州并筑城",
+          "summary": "隋灭陈后改称杭州并开建城垣；杭州这一行政地名由此沿用。",
+          "sourceIds": [
+            "context-hangzhou"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-hangzhou",
+              "quote": "隋文帝开皇九年（589年），隋灭南陈，首度改称杭州，开建城垣，是为杭州得名之始。",
+              "supports": "隋代首称杭州并筑城及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "hangzhou-southern-song-1138",
+          "year": 1138,
+          "dateLabel": "1138年",
+          "title": "临安成为南宋行在",
+          "summary": "绍兴八年起，临安长期承担南宋实际都城职能，成为政治、经济与文化中心。",
+          "sourceIds": [
+            "context-hangzhou"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-hangzhou",
+              "quote": "紹興八年（1138年）起，杭州成為宋朝實際意義上的首都。杭州是南宋的政治、经济、文化中心。",
+              "supports": "临安成为南宋行在及概述中的直接事实。"
+            }
+          ],
+          "relatedEventId": "linan-capital"
+        },
+        {
+          "id": "hangzhou-yuan-1276",
+          "year": 1276,
+          "dateLabel": "1276年",
+          "title": "元军占领临安",
+          "summary": "元军占领杭州后，临安府改为杭州路，成为江浙行省治所；城市角色由王朝行在转向区域行政中心。",
+          "sourceIds": [
+            "context-hangzhou"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-hangzhou",
+              "quote": "1276年，蒙元占领杭州后，杭州基本保持原貌，但是南宋皇城於第二年被民間火災殃及而被焚毀。临安府改名杭州路，是江浙等处行中书省的治所",
+              "supports": "元军占领临安及概述中的直接事实。"
+            }
+          ],
+          "relatedEventId": "yuan-linan"
+        }
+      ]
+    },
+    {
+      "placeId": "chengdu",
+      "entries": [
+        {
+          "id": "chengdu-qin-311",
+          "year": -311,
+          "dateLabel": "公元前311年",
+          "title": "秦代修筑成都城墙",
+          "summary": "秦经营蜀地时期修筑成都城墙，形成相并的大城与少城。",
+          "sourceIds": [
+            "context-chengdu"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-chengdu",
+              "quote": "前311年，秦国张仪按首都咸阳建制修筑成都城墙，筑有相并的大城和少城",
+              "supports": "秦代修筑成都城墙及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "chengdu-shuhan-221",
+          "year": 221,
+          "dateLabel": "221年",
+          "title": "刘备称帝，成都成为蜀汉都城",
+          "summary": "刘备在成都称帝，沿用汉国号，史称蜀汉；成都成为蜀汉政权中心。",
+          "sourceIds": [
+            "context-chengdu"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-chengdu",
+              "quote": "蜀汉章武元年（221年），汉中王刘备在诸葛亮等人的辅佐下称帝，继承汉统，沿定国号为汉（史称蜀汉，亦简称蜀）",
+              "supports": "刘备称帝，成都成为蜀汉都城及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "chronicle-anshi-756-chengdu",
+          "year": 756,
+          "dateLabel": "至德元年七月庚辰（《通鉴》纪年）",
+          "title": "玄宗抵达成都",
+          "summary": "玄宗一行进入成都，唐廷的政治活动一度分处蜀地与灵武。两处地点呈现了战乱中皇室分行的空间变化。",
+          "sourceIds": [
+            "zizhitongjian-218",
+            "jiutangshu-9"
+          ],
+          "relatedEventId": "anshi-756-chengdu",
+          "evidence": [
+            {
+              "sourceId": "zizhitongjian-218",
+              "quote": "庚辰，上皇至成都，從官及六軍至者千三百人而已。",
+              "supports": "原文记上皇在庚辰到成都；该条位于七月条内、八月条前。"
+            },
+            {
+              "sourceId": "jiutangshu-9",
+              "quote": "庚辰，車駕至蜀郡，扈從官吏軍士到者一千三百人，宮女二十四人而已。",
+              "supports": "玄宗纪七月条记车驾庚辰至蜀郡，与本专题的入蜀叙事相连。"
+            }
+          ]
+        },
+        {
+          "id": "chengdu-former-shu-907",
+          "year": 907,
+          "dateLabel": "907年",
+          "title": "王建建立前蜀",
+          "summary": "唐亡后王建称帝，定都成都，国号蜀，后世称前蜀。",
+          "sourceIds": [
+            "context-chengdu"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-chengdu",
+              "quote": "后梁开平元年（907年），蜀王王建自立为帝，定都成都，国号蜀，史称前蜀。",
+              "supports": "王建建立前蜀及概述中的直接事实。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "placeId": "jingzhou",
+      "entries": [
+        {
+          "id": "jingzhou-qin-278",
+          "year": -278,
+          "dateLabel": "公元前278年",
+          "title": "秦军拔郢，设置江陵",
+          "summary": "白起攻占楚都郢，秦设置江陵。此处联系荆州地区历史，楚纪南城与后世江陵城不能视作同一城址。",
+          "sourceIds": [
+            "context-jingzhou"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-jingzhou",
+              "quote": "公元前278年秦将白起拔郢置江陵。",
+              "supports": "秦军拔郢，设置江陵及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "jingzhou-liang-552",
+          "year": 552,
+          "dateLabel": "552年",
+          "title": "梁元帝建都江陵",
+          "summary": "南朝梁元帝一度在江陵建都，江陵成为梁末重要政治中心。",
+          "sourceIds": [
+            "context-jingzhou"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-jingzhou",
+              "quote": "552年梁元帝一度在江陵建都。",
+              "supports": "梁元帝建都江陵及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "jingzhou-song-963",
+          "year": 963,
+          "dateLabel": "963年",
+          "title": "荆南纳地，江陵归宋",
+          "summary": "宋军在荆湖之战中进入江陵，高继冲纳地归降，荆南政权结束。",
+          "sourceIds": [
+            "context-jingnan"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-jingnan",
+              "quote": "直到第五主高继冲，于宋太祖建隆四年荆湖之战（963年）时被宋军夺占江陵城，被迫纳地归降。",
+              "supports": "荆南纳地，江陵归宋及概述中的直接事实。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "placeId": "guangzhou",
+      "entries": [
+        {
+          "id": "guangzhou-panyu-214",
+          "year": -214,
+          "dateLabel": "公元前214年",
+          "title": "秦代番禺筑城",
+          "summary": "秦统一岭南后在番山一带修筑番禺城，是广州早期行政建制和城市建设的重要节点。",
+          "sourceIds": [
+            "context-guangzhou"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-guangzhou",
+              "quote": "公元前214年，秦攻佔岭南，选址白云山和珠江之间南越人聚居的高地（番山）修築番禺城（史称任嚣城），为廣州设立行政区和建城的开始。",
+              "supports": "秦代番禺筑城及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "guangzhou-southern-han-917",
+          "year": 917,
+          "dateLabel": "917年",
+          "title": "南汉定都兴王府",
+          "summary": "刘龑建立南汉，以兴王府即广州为都；对外贸易是当时广州财政的重要来源。",
+          "sourceIds": [
+            "context-guangzhou"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-guangzhou",
+              "quote": "917年，刘龑建立南汉国，定都兴王府（广州）。这是广州在历史上第二次建都。此时广州的财政收入主要仍靠对外贸易。",
+              "supports": "南汉定都兴王府及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "guangzhou-treaty-port-1842",
+          "year": 1842,
+          "dateLabel": "1842年",
+          "title": "《南京条约》下的五口通商",
+          "summary": "《南京条约》将广州等五处列为通商口岸，广州此前在对西方贸易中的独口格局发生变化。",
+          "sourceIds": [
+            "context-guangzhou"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-guangzhou",
+              "quote": "1842年，清政府战败，签订《南京条约》开通广州等五处为通商口岸。",
+              "supports": "《南京条约》下的五口通商及概述中的直接事实。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "placeId": "yangzhou",
+      "entries": [
+        {
+          "id": "yangzhou-hancheng-486",
+          "year": -486,
+          "dateLabel": "公元前486年",
+          "title": "邗城与邗沟兴建",
+          "summary": "吴国在今扬州地区筑邗城、开邗沟，把长江与淮河水运联系起来。",
+          "sourceIds": [
+            "context-yangzhou"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-yangzhou",
+              "quote": "前486年，吴国灭邗，筑邗城，开邗沟，连接长江，淮河。邗城是今扬州属地上最早的城市。",
+              "supports": "邗城与邗沟兴建及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "yangzhou-jiangdu-607",
+          "year": 607,
+          "dateLabel": "607年",
+          "title": "隋改置江都郡",
+          "summary": "隋大业三年改扬州为江都郡，治所在江阳县。江都、广陵和扬州等名称应结合各自历史时期理解。",
+          "sourceIds": [
+            "context-yangzhou"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-yangzhou",
+              "quote": "隋炀帝大业三年(607年)，改扬州为江都郡，治江阳县",
+              "supports": "隋改置江都郡及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "yangzhou-siege-1645",
+          "year": 1645,
+          "dateLabel": "1645年（明弘光元年、清顺治二年）",
+          "title": "扬州陷落与屠城",
+          "summary": "清军攻破史可法守卫的扬州后，对城中居民实施屠杀，后世称“扬州十日”。遇害人数在史料与研究中存在争议，本条不列定数。",
+          "sourceIds": [
+            "context-yangzhou-massacre"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-yangzhou-massacre",
+              "quote": "扬州十日是公元1645年5月20日，即明弘光元年、清順治二年四月二十五日，清军攻破扬州城后对城中平民进行大屠杀的事件。",
+              "supports": "扬州陷落与屠城及概述中的直接事实。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

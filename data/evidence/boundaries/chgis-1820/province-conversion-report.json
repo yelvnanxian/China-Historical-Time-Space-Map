@@ -1,0 +1,139 @@
+{
+  "title": "CHGIS V6 1820: v6_1820_prov_pgn_utf.zip",
+  "sourceUrl": "https://doi.org/10.7910/DVN/ST5KKM",
+  "sourceFileId": 2966720,
+  "sourceArchiveMD5": "f6fe747a6b65efefd72481002b8e60c8",
+  "citation": "\"CHGIS Version 6.\" (c) Fairbank Center for Chinese Studies and the Institute for Chinese Historical Geography at Fudan University, Dec 2016.",
+  "sourceCRS": "EPSG:2333",
+  "targetCRS": "EPSG:4326",
+  "transformation": "Inverse of unnnamed (Gauss Kruger) + Ballpark geographic offset from Xian 1980 to WGS 84 (with axis order normalized for visualization)",
+  "transformationAccuracyMetres": -1.0,
+  "coordinatePrecisionDegrees": 1e-06,
+  "simplified": false,
+  "yearBasis": "Official dataset title and filename; original date fields are retained.",
+  "featureCount": 32,
+  "sourceFields": [
+    "SYS_ID",
+    "NAME_PY",
+    "NAME_CH",
+    "NAME_FT",
+    "NOTE_ID",
+    "OBJ_TYPE",
+    "GEO_SRC",
+    "COMPILER",
+    "GEOCOMP",
+    "CHECKER",
+    "ENT_DATE",
+    "X_COORD",
+    "Y_COORD",
+    "AREA"
+  ],
+  "sourceVertexCount": 154129,
+  "outputVertexCount": 154218,
+  "invalidSourceFeatureCount": 4,
+  "invalidOutputFeatureCount": 0,
+  "sourceDatePairs": [],
+  "yearConflictCount": 0,
+  "duplicateSourceRecordIds": [],
+  "sourceWarnings": [
+    "Possible issue encountered when converting Shape #28 to GeoJSON: Shapefile format requires that all polygon interior holes be contained by an exterior ring, but the Shape contained interior holes (defined by counter-clockwise orientation in the shapefile format) that were orphaned, i.e. not contained by any exterior rings. The rings were still included but were encoded as GeoJSON exterior rings instead of holes."
+  ],
+  "geometryCorrections": [
+    {
+      "recordIndex": 9,
+      "sourceId": "25029",
+      "name": "陕西",
+      "verticesBeforePrecision": 6343,
+      "verticesAfterPrecision": 6342
+    },
+    {
+      "recordIndex": 10,
+      "sourceId": "25030",
+      "name": "安徽",
+      "sourceValidity": "Ring Self-intersection[20223185.0151018 3635797.5321107]",
+      "makeValidResultType": "Polygon",
+      "originalAreaSquareMetres": 144892842516.71613,
+      "repairedAreaSquareMetres": 144892842516.71704,
+      "verticesBeforePrecision": 5917,
+      "verticesAfterPrecision": 5913
+    },
+    {
+      "recordIndex": 11,
+      "sourceId": "25031",
+      "name": "湖北",
+      "verticesBeforePrecision": 6344,
+      "verticesAfterPrecision": 6343
+    },
+    {
+      "recordIndex": 12,
+      "sourceId": "25032",
+      "name": "湖南",
+      "sourceValidity": "Nested shells[19668359.3996744 3226924.59716391]",
+      "makeValidResultType": "Polygon",
+      "originalAreaSquareMetres": 212573720679.83194,
+      "repairedAreaSquareMetres": 212573720679.8146,
+      "verticesBeforePrecision": 5992,
+      "verticesAfterPrecision": 5980
+    },
+    {
+      "recordIndex": 13,
+      "sourceId": "25033",
+      "name": "广东",
+      "verticesBeforePrecision": 12180,
+      "verticesAfterPrecision": 12165
+    },
+    {
+      "recordIndex": 15,
+      "sourceId": "25035",
+      "name": "浙江",
+      "sourceValidity": "Ring Self-intersection[20515767.188169 3312367.10697178]",
+      "makeValidResultType": "MultiPolygon",
+      "originalAreaSquareMetres": 103867003425.851,
+      "repairedAreaSquareMetres": 103867003425.85164,
+      "verticesBeforePrecision": 4562,
+      "verticesAfterPrecision": 4558
+    },
+    {
+      "recordIndex": 16,
+      "sourceId": "25036",
+      "name": "直隶",
+      "verticesBeforePrecision": 4516,
+      "verticesAfterPrecision": 4506
+    },
+    {
+      "recordIndex": 20,
+      "sourceId": "25040",
+      "name": "甘肃",
+      "verticesBeforePrecision": 5581,
+      "verticesAfterPrecision": 5580
+    },
+    {
+      "recordIndex": 21,
+      "sourceId": "25041",
+      "name": "四川",
+      "verticesBeforePrecision": 8005,
+      "verticesAfterPrecision": 8004
+    },
+    {
+      "recordIndex": 26,
+      "sourceId": "25046",
+      "name": "江苏",
+      "verticesBeforePrecision": 4631,
+      "verticesAfterPrecision": 4625
+    },
+    {
+      "recordIndex": 28,
+      "sourceId": "25048",
+      "name": "千里石塘",
+      "sourceValidity": "Self-intersection[20115818.5409638 1080634.76644348]",
+      "makeValidResultType": "MultiPolygon",
+      "originalAreaSquareMetres": 845555592.8089908,
+      "repairedAreaSquareMetres": 823309948.4791632,
+      "verticesBeforePrecision": 2924,
+      "verticesAfterPrecision": 2916
+    }
+  ],
+  "outputBytes": 3514163,
+  "outputSHA256": "b48348d0f5c5cacdd2b1a41e9ab3813566bad5dc4cecd95d4664f060f4314e0d",
+  "output": "public/data/boundaries/chgis-1820-province.geojson"
+}

@@ -1,0 +1,17 @@
+{
+  "version": "boundary-name-corrections-1",
+  "entries": {
+    "hartwell-1200-province-v5_1200_chin_chn_1200_l-19": {
+      "expectedOriginalName": "00",
+      "expectedSourceId": "hartwell-chgis-v5",
+      "expectedSourceCode": "J003200000000",
+      "expectedYear": 1200,
+      "traditionalName": "山東西路",
+      "simplifiedName": "山东西路",
+      "method": "same-source-code-hierarchy-and-geometry",
+      "note": "原始名称字段为占位符00；同源10个J0032编码府/州均记上级为山東西路，其几何并集与本面几乎一致，据此恢复显示名称。原字段及边界保留。 该条其余原始分类字段有错位迹象，不作为行政归属展示。",
+      "sourceUrl": "https://doi.org/10.7910/DVN/29302",
+      "evidenceFile": "data/evidence/boundary-labels/placeholder-audit.json"
+    }
+  }
+}

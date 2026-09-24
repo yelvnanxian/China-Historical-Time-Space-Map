@@ -1,0 +1,12 @@
+{
+  "unusedCountySource": "geoBoundaries CHN ADM2, 2017 metadata, original county DBF from e1195c46081e9bac9e8d8dd7075dca34e03163e9",
+  "issue": "Original DBF Chinese NAME field does not consistently match its ENAME or geometry; not used for modern correspondence.",
+  "example": {
+    "rowIndex": 0,
+    "NAME": "南充市",
+    "ENAME": "mohexian",
+    "GB1999": 440825,
+    "geoboundariesShapeName": "Mohexian"
+  },
+  "decision": "Use GADM4.1 Chinese NL_NAME fields and declared CRS84 geometry instead. Keep rejected files only as audit evidence."
+}

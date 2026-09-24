@@ -1,0 +1,370 @@
+{
+  "version": "1.0",
+  "importedAt": "2026-09-24",
+  "title": "《中国历史地图集》纸图影像参考",
+  "sourceName": "《中国历史地图集》（谭其骧主编）扫描图 · imbian/chinese_historical_map",
+  "sourceKind": "third-party-paper-atlas-scans",
+  "sourceNote": "仓库 README 将这些影像标注为谭其骧主编《中国历史地图集》的纸图扫描版。此处接入的是第三方保存的纸图影像，不是编制机构的官方数字发布。",
+  "dateNote": "原图年代独立于当前截面，见原图图例。仅目视读出的年代另行标注，未换用当前截面的年份。",
+  "rightsNote": "原图及图集权利归原权利人；该仓库未提供明确的影像再分发许可证。",
+  "repository": "https://github.com/imbian/chinese_historical_map",
+  "sourceCommit": "7aa0c7b4f627e3becd444b37d03b00d3173cf420",
+  "readmeUrl": "https://github.com/imbian/chinese_historical_map/blob/7aa0c7b4f627e3becd444b37d03b00d3173cf420/README.md",
+  "readmeGitBlobSha": "571f62e62d88a4a94d0f1b1b9895765d173341f9",
+  "treeUrl": "https://api.github.com/repos/imbian/chinese_historical_map/git/trees/7aa0c7b4f627e3becd444b37d03b00d3173cf420?recursive=1",
+  "totalBytes": 28149231,
+  "images": [
+    {
+      "id": "qin-full",
+      "periodId": "qin",
+      "title": "秦时期全图",
+      "imageUrl": "/data/atlas/qin-full.jpg",
+      "width": 2900,
+      "height": 2033,
+      "bytes": 1375809,
+      "sourcePath": "秦/秦时期全图.jpg",
+      "sourceUrl": "https://github.com/imbian/chinese_historical_map/blob/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E7%A7%A6/%E7%A7%A6%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE.jpg",
+      "rawSourceUrl": "https://raw.githubusercontent.com/imbian/chinese_historical_map/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E7%A7%A6/%E7%A7%A6%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE.jpg",
+      "sourceCommit": "7aa0c7b4f627e3becd444b37d03b00d3173cf420",
+      "gitBlobSha": "e4d34a32dd5ff144cbe111e4e522cb14f12523b2",
+      "sha256": "1eefe11f6a2f666e738a42395fd37c8c4108be8a3a547202c2be08fc21d6ec8f",
+      "imageDate": null
+    },
+    {
+      "id": "han-western-full",
+      "periodId": "han",
+      "title": "西汉时期全图",
+      "imageUrl": "/data/atlas/han-western-full.jpg",
+      "width": 2908,
+      "height": 2029,
+      "bytes": 1585100,
+      "sourcePath": "西汉/西汉时期全图.jpg",
+      "sourceUrl": "https://github.com/imbian/chinese_historical_map/blob/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E8%A5%BF%E6%B1%89/%E8%A5%BF%E6%B1%89%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE.jpg",
+      "rawSourceUrl": "https://raw.githubusercontent.com/imbian/chinese_historical_map/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E8%A5%BF%E6%B1%89/%E8%A5%BF%E6%B1%89%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE.jpg",
+      "sourceCommit": "7aa0c7b4f627e3becd444b37d03b00d3173cf420",
+      "gitBlobSha": "f4881cbabaeb9488134977291edcd7855ed635a8",
+      "sha256": "c898302badb7c8ae7658e3df1167d62d8a6f7312dce3f1ad8a8549193ba98494",
+      "imageDate": null
+    },
+    {
+      "id": "sanguo-full",
+      "periodId": "sanguo",
+      "title": "三国时期全图",
+      "imageUrl": "/data/atlas/sanguo-full.jpg",
+      "width": 2900,
+      "height": 2031,
+      "bytes": 1477861,
+      "sourcePath": "三国/三国时期全图.jpg",
+      "sourceUrl": "https://github.com/imbian/chinese_historical_map/blob/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E4%B8%89%E5%9B%BD/%E4%B8%89%E5%9B%BD%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE.jpg",
+      "rawSourceUrl": "https://raw.githubusercontent.com/imbian/chinese_historical_map/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E4%B8%89%E5%9B%BD/%E4%B8%89%E5%9B%BD%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE.jpg",
+      "sourceCommit": "7aa0c7b4f627e3becd444b37d03b00d3173cf420",
+      "gitBlobSha": "89c796c661fe9fab982b9dd4ce3466f5dd5f9ff9",
+      "sha256": "b54d0acb7f20e7d6133449df02217a3113e0886c398f2b6d0059405935e52d28",
+      "imageDate": {
+        "label": "魏景元三年、蜀汉景耀五年、吴永安五年（262年）",
+        "year": 262,
+        "verification": "visually-read-from-scan"
+      }
+    },
+    {
+      "id": "jin-western-full",
+      "periodId": "jin",
+      "title": "西晋时期全图",
+      "imageUrl": "/data/atlas/jin-western-full.jpg",
+      "width": 2900,
+      "height": 2045,
+      "bytes": 1510645,
+      "sourcePath": "西晋/西晋时期全图.jpg",
+      "sourceUrl": "https://github.com/imbian/chinese_historical_map/blob/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E8%A5%BF%E6%99%8B/%E8%A5%BF%E6%99%8B%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE.jpg",
+      "rawSourceUrl": "https://raw.githubusercontent.com/imbian/chinese_historical_map/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E8%A5%BF%E6%99%8B/%E8%A5%BF%E6%99%8B%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE.jpg",
+      "sourceCommit": "7aa0c7b4f627e3becd444b37d03b00d3173cf420",
+      "gitBlobSha": "813e9f2d2859fc44889dd2f6ec751d2ff05f10ac",
+      "sha256": "666e7a5d8880143b1be1dace60222e7acff76b8bdf2b0a2dcf05ae2ef94e4e9c",
+      "imageDate": {
+        "label": "太康二年（281年）",
+        "year": 281,
+        "verification": "visually-read-from-scan"
+      }
+    },
+    {
+      "id": "nanbei-qi-wei-full",
+      "periodId": "nanbei",
+      "title": "齐、魏时期全图",
+      "imageUrl": "/data/atlas/nanbei-qi-wei-full.jpg",
+      "width": 2908,
+      "height": 2037,
+      "bytes": 1555452,
+      "sourcePath": "南北朝/齐、魏时期全图.jpg",
+      "sourceUrl": "https://github.com/imbian/chinese_historical_map/blob/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E5%8D%97%E5%8C%97%E6%9C%9D/%E9%BD%90%E3%80%81%E9%AD%8F%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE.jpg",
+      "rawSourceUrl": "https://raw.githubusercontent.com/imbian/chinese_historical_map/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E5%8D%97%E5%8C%97%E6%9C%9D/%E9%BD%90%E3%80%81%E9%AD%8F%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE.jpg",
+      "sourceCommit": "7aa0c7b4f627e3becd444b37d03b00d3173cf420",
+      "gitBlobSha": "f2d17c42470bf5462d85470cd54579fb6fbce6a1",
+      "sha256": "773ad090c78c572ddfc314e76bb24c2800fa9ee101ff62171c24a2c6ef10a193",
+      "imageDate": {
+        "label": "齐建武四年、魏太和二十一年（497年）",
+        "year": 497,
+        "verification": "visually-read-from-scan"
+      }
+    },
+    {
+      "id": "sui-full",
+      "periodId": "sui",
+      "title": "隋时期全图",
+      "imageUrl": "/data/atlas/sui-full.jpg",
+      "width": 2892,
+      "height": 2026,
+      "bytes": 1610241,
+      "sourcePath": "隋/隋时期全图.jpg",
+      "sourceUrl": "https://github.com/imbian/chinese_historical_map/blob/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E9%9A%8B/%E9%9A%8B%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE.jpg",
+      "rawSourceUrl": "https://raw.githubusercontent.com/imbian/chinese_historical_map/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E9%9A%8B/%E9%9A%8B%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE.jpg",
+      "sourceCommit": "7aa0c7b4f627e3becd444b37d03b00d3173cf420",
+      "gitBlobSha": "b7a3119fa4d3041486b5fdd19908da889ce1bbec",
+      "sha256": "4d9f35d8061a7545714b1b50f7359b978f6bf2a61a7e4d5c750c91f83f17202b",
+      "imageDate": {
+        "label": "大业八年（612年）",
+        "year": 612,
+        "verification": "visually-read-from-scan"
+      }
+    },
+    {
+      "id": "tang-full-1",
+      "periodId": "tang",
+      "title": "唐时期全图（一）",
+      "imageUrl": "/data/atlas/tang-full-1.jpg",
+      "width": 3028,
+      "height": 2027,
+      "bytes": 1586602,
+      "sourcePath": "唐/唐时期全图（一）.jpg",
+      "sourceUrl": "https://github.com/imbian/chinese_historical_map/blob/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E5%94%90/%E5%94%90%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE%EF%BC%88%E4%B8%80%EF%BC%89.jpg",
+      "rawSourceUrl": "https://raw.githubusercontent.com/imbian/chinese_historical_map/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E5%94%90/%E5%94%90%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE%EF%BC%88%E4%B8%80%EF%BC%89.jpg",
+      "sourceCommit": "7aa0c7b4f627e3becd444b37d03b00d3173cf420",
+      "gitBlobSha": "8b9201f9267fc78dbacb31f0ae2ddf35fbfb08fa",
+      "sha256": "71ed45c5ed1629fe058e3a90d87a152795acbaa9470cbae3a0619e69f4ef77e9",
+      "imageDate": {
+        "label": "总章二年（669年）",
+        "year": 669,
+        "verification": "visually-read-from-scan"
+      }
+    },
+    {
+      "id": "tang-full-2",
+      "periodId": "tang",
+      "title": "唐时期全图（二）",
+      "imageUrl": "/data/atlas/tang-full-2.jpg",
+      "width": 2884,
+      "height": 2025,
+      "bytes": 1618036,
+      "sourcePath": "唐/唐时期全图（二）.jpg",
+      "sourceUrl": "https://github.com/imbian/chinese_historical_map/blob/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E5%94%90/%E5%94%90%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE%EF%BC%88%E4%BA%8C%EF%BC%89.jpg",
+      "rawSourceUrl": "https://raw.githubusercontent.com/imbian/chinese_historical_map/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E5%94%90/%E5%94%90%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE%EF%BC%88%E4%BA%8C%EF%BC%89.jpg",
+      "sourceCommit": "7aa0c7b4f627e3becd444b37d03b00d3173cf420",
+      "gitBlobSha": "e272dc1ff3536067944f0f7447b92947e52bc1ce",
+      "sha256": "6ae7eff70e4a40eb48a96de2f7a5e385a7b985abff3436401d9fb874be440c10",
+      "imageDate": {
+        "label": "开元二十九年（741年）",
+        "year": 741,
+        "verification": "visually-read-from-scan"
+      }
+    },
+    {
+      "id": "tang-full-3",
+      "periodId": "tang",
+      "title": "唐时期全图（三）",
+      "imageUrl": "/data/atlas/tang-full-3.jpg",
+      "width": 2896,
+      "height": 2030,
+      "bytes": 1677916,
+      "sourcePath": "唐/唐时期全图（三）.jpg",
+      "sourceUrl": "https://github.com/imbian/chinese_historical_map/blob/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E5%94%90/%E5%94%90%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE%EF%BC%88%E4%B8%89%EF%BC%89.jpg",
+      "rawSourceUrl": "https://raw.githubusercontent.com/imbian/chinese_historical_map/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E5%94%90/%E5%94%90%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE%EF%BC%88%E4%B8%89%EF%BC%89.jpg",
+      "sourceCommit": "7aa0c7b4f627e3becd444b37d03b00d3173cf420",
+      "gitBlobSha": "a897708a8294596902232ec6a571d821a3c661a2",
+      "sha256": "6006c806f38e062ca923cc51eabdc1aa8ded8104a2684c412260000a25769a80",
+      "imageDate": {
+        "label": "元和十五年（820年）",
+        "year": 820,
+        "verification": "visually-read-from-scan"
+      }
+    },
+    {
+      "id": "song-liao-northern-full",
+      "periodId": "song",
+      "title": "辽、北宋时期全图",
+      "imageUrl": "/data/atlas/song-liao-northern-full.jpg",
+      "width": 2908,
+      "height": 2033,
+      "bytes": 1544021,
+      "sourcePath": "辽 北宋/辽，北宋时期全图.jpg",
+      "sourceUrl": "https://github.com/imbian/chinese_historical_map/blob/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E8%BE%BD%20%E5%8C%97%E5%AE%8B/%E8%BE%BD%EF%BC%8C%E5%8C%97%E5%AE%8B%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE.jpg",
+      "rawSourceUrl": "https://raw.githubusercontent.com/imbian/chinese_historical_map/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E8%BE%BD%20%E5%8C%97%E5%AE%8B/%E8%BE%BD%EF%BC%8C%E5%8C%97%E5%AE%8B%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE.jpg",
+      "sourceCommit": "7aa0c7b4f627e3becd444b37d03b00d3173cf420",
+      "gitBlobSha": "16bc27f4e7c3f92c21ea356a18930caa044bc186",
+      "sha256": "887a6b7f2f0e54053de1f7a13b45b5f97a8ac06030933826fe4b5ac0831cb551",
+      "imageDate": {
+        "label": "辽天庆元年、北宋政和元年（1111年）",
+        "year": 1111,
+        "verification": "visually-read-from-scan"
+      }
+    },
+    {
+      "id": "song-jin-southern-full-1",
+      "periodId": "song",
+      "title": "金、南宋时期全图（一）",
+      "imageUrl": "/data/atlas/song-jin-southern-full-1.jpg",
+      "width": 2904,
+      "height": 2035,
+      "bytes": 1629120,
+      "sourcePath": "金 南宋/金，南宋时期全图（一）.jpg",
+      "sourceUrl": "https://github.com/imbian/chinese_historical_map/blob/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E9%87%91%20%E5%8D%97%E5%AE%8B/%E9%87%91%EF%BC%8C%E5%8D%97%E5%AE%8B%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE%EF%BC%88%E4%B8%80%EF%BC%89.jpg",
+      "rawSourceUrl": "https://raw.githubusercontent.com/imbian/chinese_historical_map/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E9%87%91%20%E5%8D%97%E5%AE%8B/%E9%87%91%EF%BC%8C%E5%8D%97%E5%AE%8B%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE%EF%BC%88%E4%B8%80%EF%BC%89.jpg",
+      "sourceCommit": "7aa0c7b4f627e3becd444b37d03b00d3173cf420",
+      "gitBlobSha": "c145e38480f3c6aca1a292d6c3097368ba2f1b21",
+      "sha256": "455e200ac05eb6a93371b8d8cd686a65a59f7c213f6c42ef8bbaaa9f17db3ab3",
+      "imageDate": {
+        "label": "金皇统二年、南宋绍兴十二年（1142年）",
+        "year": 1142,
+        "verification": "visually-read-from-scan"
+      }
+    },
+    {
+      "id": "song-jin-southern-full-2",
+      "periodId": "song",
+      "title": "金、南宋时期全图（二）",
+      "imageUrl": "/data/atlas/song-jin-southern-full-2.jpg",
+      "width": 2904,
+      "height": 2031,
+      "bytes": 1683752,
+      "sourcePath": "金 南宋/金，南宋时期全图（二）.jpg",
+      "sourceUrl": "https://github.com/imbian/chinese_historical_map/blob/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E9%87%91%20%E5%8D%97%E5%AE%8B/%E9%87%91%EF%BC%8C%E5%8D%97%E5%AE%8B%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE%EF%BC%88%E4%BA%8C%EF%BC%89.jpg",
+      "rawSourceUrl": "https://raw.githubusercontent.com/imbian/chinese_historical_map/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E9%87%91%20%E5%8D%97%E5%AE%8B/%E9%87%91%EF%BC%8C%E5%8D%97%E5%AE%8B%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE%EF%BC%88%E4%BA%8C%EF%BC%89.jpg",
+      "sourceCommit": "7aa0c7b4f627e3becd444b37d03b00d3173cf420",
+      "gitBlobSha": "c82b983502407204e8bca6debd0a1491602655df",
+      "sha256": "7689b62553435bd3d09642921cebd90a732c85ab49834c0676f65bfa0ba30906",
+      "imageDate": {
+        "label": "金泰和八年、南宋嘉定元年（1208年）",
+        "year": 1208,
+        "verification": "visually-read-from-scan"
+      }
+    },
+    {
+      "id": "yuan-full-1",
+      "periodId": "yuan",
+      "title": "元时期全图（一）",
+      "imageUrl": "/data/atlas/yuan-full-1.jpg",
+      "width": 2900,
+      "height": 2034,
+      "bytes": 1531179,
+      "sourcePath": "元/元时期全图（一）.jpg",
+      "sourceUrl": "https://github.com/imbian/chinese_historical_map/blob/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E5%85%83/%E5%85%83%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE%EF%BC%88%E4%B8%80%EF%BC%89.jpg",
+      "rawSourceUrl": "https://raw.githubusercontent.com/imbian/chinese_historical_map/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E5%85%83/%E5%85%83%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE%EF%BC%88%E4%B8%80%EF%BC%89.jpg",
+      "sourceCommit": "7aa0c7b4f627e3becd444b37d03b00d3173cf420",
+      "gitBlobSha": "94d043e90c344d98e37187a5a43bbf9b98c2c061",
+      "sha256": "421b6e71fbe35768fb8441c06c8b301b6623bc455c87138ce4dbea5d743433ce",
+      "imageDate": {
+        "label": "至元十七年（1280年）",
+        "year": 1280,
+        "verification": "visually-read-from-scan"
+      }
+    },
+    {
+      "id": "yuan-full-2",
+      "periodId": "yuan",
+      "title": "元时期全图（二）",
+      "imageUrl": "/data/atlas/yuan-full-2.jpg",
+      "width": 2900,
+      "height": 2034,
+      "bytes": 1520552,
+      "sourcePath": "元/元时期全图（二）.jpg",
+      "sourceUrl": "https://github.com/imbian/chinese_historical_map/blob/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E5%85%83/%E5%85%83%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE%EF%BC%88%E4%BA%8C%EF%BC%89.jpg",
+      "rawSourceUrl": "https://raw.githubusercontent.com/imbian/chinese_historical_map/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E5%85%83/%E5%85%83%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE%EF%BC%88%E4%BA%8C%EF%BC%89.jpg",
+      "sourceCommit": "7aa0c7b4f627e3becd444b37d03b00d3173cf420",
+      "gitBlobSha": "844bacfd6196c198f3dd64cf2db1c6d17e6fe9de",
+      "sha256": "b703f5f44ecdadbd697d150c310d6a87b0a1847400e1fd612a1cd1144dd2c9e4",
+      "imageDate": {
+        "label": "至顺元年（1330年）",
+        "year": 1330,
+        "verification": "visually-read-from-scan"
+      }
+    },
+    {
+      "id": "ming-full-1",
+      "periodId": "ming",
+      "title": "明时期全图（一）",
+      "imageUrl": "/data/atlas/ming-full-1.jpg",
+      "width": 2908,
+      "height": 2036,
+      "bytes": 1655989,
+      "sourcePath": "明/明时期全图（一）.jpg",
+      "sourceUrl": "https://github.com/imbian/chinese_historical_map/blob/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E6%98%8E/%E6%98%8E%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE%EF%BC%88%E4%B8%80%EF%BC%89.jpg",
+      "rawSourceUrl": "https://raw.githubusercontent.com/imbian/chinese_historical_map/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E6%98%8E/%E6%98%8E%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE%EF%BC%88%E4%B8%80%EF%BC%89.jpg",
+      "sourceCommit": "7aa0c7b4f627e3becd444b37d03b00d3173cf420",
+      "gitBlobSha": "01c1b45f5d946ce0f0202049bc27a07f53fc1ff3",
+      "sha256": "5cc42d13ddb6e9d42eaf1cff47c1f432dea2a43dc02bb56e581d5f756382752b",
+      "imageDate": {
+        "label": "宣德八年（1433年）",
+        "year": 1433,
+        "verification": "visually-read-from-scan"
+      }
+    },
+    {
+      "id": "ming-full-2",
+      "periodId": "ming",
+      "title": "明时期全图（二）",
+      "imageUrl": "/data/atlas/ming-full-2.jpg",
+      "width": 2900,
+      "height": 2037,
+      "bytes": 1462219,
+      "sourcePath": "明/明时期全图（二）.jpg",
+      "sourceUrl": "https://github.com/imbian/chinese_historical_map/blob/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E6%98%8E/%E6%98%8E%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE%EF%BC%88%E4%BA%8C%EF%BC%89.jpg",
+      "rawSourceUrl": "https://raw.githubusercontent.com/imbian/chinese_historical_map/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E6%98%8E/%E6%98%8E%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE%EF%BC%88%E4%BA%8C%EF%BC%89.jpg",
+      "sourceCommit": "7aa0c7b4f627e3becd444b37d03b00d3173cf420",
+      "gitBlobSha": "f0601a503bcd35f560f2d7101a877e854fe2351c",
+      "sha256": "d09d39ee8d346298109d56fb1ab5f0835e4e537566441e4286b98a9056f16e72",
+      "imageDate": {
+        "label": "万历十年（1582年）",
+        "year": 1582,
+        "verification": "visually-read-from-scan"
+      }
+    },
+    {
+      "id": "qing-full-1",
+      "periodId": "qing",
+      "title": "清时期全图（一）",
+      "imageUrl": "/data/atlas/qing-full-1.jpg",
+      "width": 2900,
+      "height": 2029,
+      "bytes": 1514981,
+      "sourcePath": "清/清时期全图（一）.jpg",
+      "sourceUrl": "https://github.com/imbian/chinese_historical_map/blob/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E6%B8%85/%E6%B8%85%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE%EF%BC%88%E4%B8%80%EF%BC%89.jpg",
+      "rawSourceUrl": "https://raw.githubusercontent.com/imbian/chinese_historical_map/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E6%B8%85/%E6%B8%85%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE%EF%BC%88%E4%B8%80%EF%BC%89.jpg",
+      "sourceCommit": "7aa0c7b4f627e3becd444b37d03b00d3173cf420",
+      "gitBlobSha": "8e0873a04b6f29f3eef6c3b8b1eb600f0cac1111",
+      "sha256": "4bd7821a54ddaa31a8f1682e277427f0bca86943b707fc2bd12aef2676262ae7",
+      "imageDate": {
+        "label": "嘉庆二十五年（1820年）",
+        "year": 1820,
+        "verification": "visually-read-from-scan"
+      }
+    },
+    {
+      "id": "qing-full-2",
+      "periodId": "qing",
+      "title": "清时期全图（二）",
+      "imageUrl": "/data/atlas/qing-full-2.jpg",
+      "width": 2900,
+      "height": 2029,
+      "bytes": 1609756,
+      "sourcePath": "清/清时期全图（二）.jpg",
+      "sourceUrl": "https://github.com/imbian/chinese_historical_map/blob/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E6%B8%85/%E6%B8%85%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE%EF%BC%88%E4%BA%8C%EF%BC%89.jpg",
+      "rawSourceUrl": "https://raw.githubusercontent.com/imbian/chinese_historical_map/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E6%B8%85/%E6%B8%85%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE%EF%BC%88%E4%BA%8C%EF%BC%89.jpg",
+      "sourceCommit": "7aa0c7b4f627e3becd444b37d03b00d3173cf420",
+      "gitBlobSha": "37f4a41d22b23f3ea869ea3687f4df3b47324db8",
+      "sha256": "d5f1fd7b5aea9d9f4bcd44e066b20ed9573661ecd4c56767c78f591fee3ef2ce",
+      "imageDate": {
+        "label": "光绪三十四年（1908年）",
+        "year": 1908,
+        "verification": "visually-read-from-scan"
+      }
+    }
+  ]
+}

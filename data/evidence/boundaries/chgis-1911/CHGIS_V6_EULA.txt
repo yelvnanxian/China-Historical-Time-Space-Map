@@ -1,0 +1,31 @@
+﻿CHGIS V6 End Users License Agreement
+
+As a condition of access to this data, you hereby agree to the following terms and conditions.
+(1) You, the end user, will obtain the official version of the data by direct download from authorized distributor(s) approved by the CHGIS Management Committee, or the contributing institutions.   The CHGIS data is not for sale or license by any third party.    The contributing institutions are:
+Center for Historical Geographical Studies, Fudan University (Shanghai, China)
+CHGIS, Fairbank Center for Chinese Studies, Harvard University (Cambridge, USA)
+
+---  
+(2) authorized distributors:
+If your primary residence is within the People's Republic of China, the official distribution is maintained by the
+Center for Historical Geographical Studies, Fudan University, 220 Handan Lu, Shanghai, CHINA, 200433 http://yugong.fudan.edu.cn/
+For all other countries, the main point of distribution for the official CHGIS data is:
+www.fas.harvard.edu/~chgis
+
+---  
+(3) terms of use:   Access to, and use of, these data is restricted to non-commercial use for academic research and educational purposes. Commercial use requires a separate CHGIS Commercial Data License agreement, which may be obtained only from the CHGIS Management Committee. Any organization or individual that would like to develop commercial or revenue generating use of the CHGIS Datasets, must first obtain a licensing agreement from CHGIS Management Committee. Acceptance of this agreement acknowledges understanding of this liability by the end-user.
+
+---  
+(4) citation:   Academic use of CHGIS data is allowed, and encouraged, provided that any derived data or digital images of maps give proper citation to CHGIS as stated below:
+Mandatory Citation: "CHGIS Version 6." (c) Fairbank Center for Chinese Studies and the Institute for Chinese Historical Geography at Fudan University, Dec 2016."
+You may use portions of the CHGIS data in your research and publications, but in your publications you must:
+follow normal scholarly practices and conventions for attributing the source of the CHGIS Data as specified above.   Clearly describe any changes you have made to the CHGIS Data that are included in your work.  
+
+---  
+(5) redistribution: You may not incorporate the entirety of CHGIS Data Layers in a work of your own intended for public dissemination, whether modified or not, without the express permission of the Management Committee in a separate License Agreement. No commercial use or repackaging of this dataset is allowed, in any form. Redistribution of CHGIS datasets in electronic media format, or by downloadable distribution over the Internet is not allowed, except under written agreement with CHGIS Management Committee.
+
+---  
+(6) disclaimer:  While every reasonable effort has been made to insure the accuracy of the data, neither the Management Committee nor any contributing institution can guarantee its accuracy or its suitability for any specific purpose. Use of the data is entirely your responsibility.
+
+---  
+(7) agreement:  Your download and/or use of the CHGIS Data under any circumstances implies your acceptance of this License and all of its conditions.

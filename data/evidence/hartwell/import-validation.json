@@ -1,0 +1,1101 @@
+{
+  "createdAt": "2026-09-24T11:31:20.284078+00:00",
+  "sourceId": "hartwell-chgis-v5",
+  "sourceUrl": "https://doi.org/10.7910/DVN/29302",
+  "sourceFileId": 2542563,
+  "inputCrs": "EPSG:2333",
+  "outputCrs": "EPSG:4326",
+  "originalCrsCaveat": "The 2010 projection notes assume the undefined original coordinates are WGS84. PROJ uses a ballpark Xian 1980 to WGS84 datum offset; accuracy is unknown.",
+  "geometryOperations": [
+    "Inverse Gauss-Kruger projection and ballpark datum transformation only",
+    "No dissolve, manual boundary editing, repair, smoothing or simplification"
+  ],
+  "libraries": {
+    "pyshp": "3.1.6",
+    "pyproj": "3.8.0",
+    "shapely": "2.1.2"
+  },
+  "sourceMembers": [
+    {
+      "name": "v5_0741_chin_chn_0741_c.shp",
+      "bytes": 5052932,
+      "sha256": "00113c4316e89dde823c6d7eea9109807f10d992e12dd44114394e8319b59934",
+      "crc32": "647b7fb5"
+    },
+    {
+      "name": "v5_0741_chin_chn_0741_c.dbf",
+      "bytes": 1169498,
+      "sha256": "6c2348883368b07add5cb2c4f4ae955504e58cc26c40a46eb3db2e6ebf0279d9",
+      "crc32": "f3df2898"
+    },
+    {
+      "name": "v5_0741_chin_chn_0741_c.shx",
+      "bytes": 12084,
+      "sha256": "aea77ecac9a80548f75aee7e63836a112d2cb78bf5bb3bde8553ea3c5b3fddca",
+      "crc32": "27e18bd5"
+    },
+    {
+      "name": "v5_0741_chin_chn_0741_c.prj",
+      "bytes": 390,
+      "sha256": "6a189a7542f5fd9cb3b608575de4abb9ae46824fc9d8cfe711c04324994d651e",
+      "crc32": "7bdf5f07"
+    },
+    {
+      "name": "v5_0741_chin_chn_0741_p.shp",
+      "bytes": 3152512,
+      "sha256": "932d957653757582150b93c3708b8b3e9be666703517514ae2bb9e25ddc4295b",
+      "crc32": "6f104777"
+    },
+    {
+      "name": "v5_0741_chin_chn_0741_p.dbf",
+      "bytes": 146783,
+      "sha256": "f104779710d53cec9dbfee53cc401d3c5646147496051d93f02de3fbbc458cee",
+      "crc32": "02149683"
+    },
+    {
+      "name": "v5_0741_chin_chn_0741_p.shx",
+      "bytes": 2812,
+      "sha256": "bbda1050e79e87a07d8d320a6c36f93ece6f912d624e9f10f52f48c07689e9e4",
+      "crc32": "d703ec3d"
+    },
+    {
+      "name": "v5_0741_chin_chn_0741_p.prj",
+      "bytes": 390,
+      "sha256": "6a189a7542f5fd9cb3b608575de4abb9ae46824fc9d8cfe711c04324994d651e",
+      "crc32": "7bdf5f07"
+    },
+    {
+      "name": "v5_0741_circ_gn_0741_d.shp",
+      "bytes": 62988,
+      "sha256": "41252932ea3f036c2f44cca91db09fdc578a7f935571f4ee4474e6f3ff07b7b7",
+      "crc32": "4463ff44"
+    },
+    {
+      "name": "v5_0741_circ_gn_0741_d.dbf",
+      "bytes": 823,
+      "sha256": "fb05a3489dcefda1b94c31d78afafe53ab21bb05fc4da45b6fc5508f3a448fe6",
+      "crc32": "ac25d232"
+    },
+    {
+      "name": "v5_0741_circ_gn_0741_d.shx",
+      "bytes": 108,
+      "sha256": "1d23a9af0949f247d25fa4827631a71738b42c7d5f28000e0bc892af18c4e187",
+      "crc32": "899b5286"
+    },
+    {
+      "name": "v5_0741_circ_gn_0741_d.prj",
+      "bytes": 390,
+      "sha256": "6a189a7542f5fd9cb3b608575de4abb9ae46824fc9d8cfe711c04324994d651e",
+      "crc32": "7bdf5f07"
+    },
+    {
+      "name": "v5_0741_circ_hb_0741_d.shp",
+      "bytes": 154752,
+      "sha256": "16a9dc7915495efa3dbacde608b9802dc57da9dcc4913ded205d98f03ca53f4a",
+      "crc32": "a6aa1abb"
+    },
+    {
+      "name": "v5_0741_circ_hb_0741_d.dbf",
+      "bytes": 755,
+      "sha256": "740213859572f3326ecc5e4145687521b871b87428be3f6e17a9f2285fe0f8ff",
+      "crc32": "cd48f201"
+    },
+    {
+      "name": "v5_0741_circ_hb_0741_d.shx",
+      "bytes": 108,
+      "sha256": "9543dfde3535958e12a79da5c17e5cb7e80885f61e752a6e8eeb32efdd8e3d2c",
+      "crc32": "20d87e97"
+    },
+    {
+      "name": "v5_0741_circ_hb_0741_d.prj",
+      "bytes": 390,
+      "sha256": "6a189a7542f5fd9cb3b608575de4abb9ae46824fc9d8cfe711c04324994d651e",
+      "crc32": "7bdf5f07"
+    },
+    {
+      "name": "v5_0741_circ_hd_0741_d.shp",
+      "bytes": 33964,
+      "sha256": "22e4622b0baaa5a1bde9ef999b331a7a9cc2a6fcc80aabd82d3cc7e2120a54c2",
+      "crc32": "eca033e6"
+    },
+    {
+      "name": "v5_0741_circ_hd_0741_d.dbf",
+      "bytes": 823,
+      "sha256": "9f9265a9f0a273efaed166c5cb646cba2598989e4f7bcc454ea1fae42e706485",
+      "crc32": "0607b76d"
+    },
+    {
+      "name": "v5_0741_circ_hd_0741_d.shx",
+      "bytes": 108,
+      "sha256": "83bb636bb664e498a8639c21b08bf6881d737a9be2597676d3d36204057b2eb0",
+      "crc32": "8f567b9d"
+    },
+    {
+      "name": "v5_0741_circ_hd_0741_d.prj",
+      "bytes": 390,
+      "sha256": "6a189a7542f5fd9cb3b608575de4abb9ae46824fc9d8cfe711c04324994d651e",
+      "crc32": "7bdf5f07"
+    },
+    {
+      "name": "v5_0741_circ_hn_0741_d.shp",
+      "bytes": 85716,
+      "sha256": "6bbb00c29429136f823b113c0fdbb215c61d097e7c34ff469bf245a07f11af6f",
+      "crc32": "fa18d391"
+    },
+    {
+      "name": "v5_0741_circ_hn_0741_d.dbf",
+      "bytes": 755,
+      "sha256": "bdb79f2b5a5f309193e39aad132f18e2fc36f7f14d83e7b10f96952ce847e612",
+      "crc32": "d5816d1c"
+    },
+    {
+      "name": "v5_0741_circ_hn_0741_d.shx",
+      "bytes": 108,
+      "sha256": "d596ed724150f8af83c205c7ef7a7f43a0b1076803974fd09424b0c32aacca77",
+      "crc32": "a7e7dc47"
+    },
+    {
+      "name": "v5_0741_circ_hn_0741_d.prj",
+      "bytes": 390,
+      "sha256": "6a189a7542f5fd9cb3b608575de4abb9ae46824fc9d8cfe711c04324994d651e",
+      "crc32": "7bdf5f07"
+    },
+    {
+      "name": "v5_0741_circ_hun_0741_d.shp",
+      "bytes": 39784,
+      "sha256": "b8d225a78287c556973d76dbcf0ba42d534f48836a9909fb6306eb03c4a5fae9",
+      "crc32": "051141a8"
+    },
+    {
+      "name": "v5_0741_circ_hun_0741_d.dbf",
+      "bytes": 823,
+      "sha256": "e5ec12569c162304fa778f4a163bbd60b62e5e48d4419ca986989e5566af9a12",
+      "crc32": "de635420"
+    },
+    {
+      "name": "v5_0741_circ_hun_0741_d.shx",
+      "bytes": 108,
+      "sha256": "493623c2c8159465e258107d8b7aade28cc1bae0d725bcf346c78c817e0c4f54",
+      "crc32": "6f76e38d"
+    },
+    {
+      "name": "v5_0741_circ_hun_0741_d.prj",
+      "bytes": 390,
+      "sha256": "6a189a7542f5fd9cb3b608575de4abb9ae46824fc9d8cfe711c04324994d651e",
+      "crc32": "7bdf5f07"
+    },
+    {
+      "name": "v5_0741_circ_jgn_0741_d.shp",
+      "bytes": 271388,
+      "sha256": "05e84863ff7fd408bb1f7b22fa6f8b68e0f11fb5a6501539641abd7ea952dd45",
+      "crc32": "aefa4b94"
+    },
+    {
+      "name": "v5_0741_circ_jgn_0741_d.dbf",
+      "bytes": 823,
+      "sha256": "1fb1d2e87d25a5dd4a310cfedcb85ea72852969945dc3096cd20b06a435f2116",
+      "crc32": "f47f2293"
+    },
+    {
+      "name": "v5_0741_circ_jgn_0741_d.shx",
+      "bytes": 108,
+      "sha256": "3c6ae82c88b46bec016a42cc0d045abb153653926f762f853d6bf652c33c889c",
+      "crc32": "78e99b0f"
+    },
+    {
+      "name": "v5_0741_circ_jgn_0741_d.prj",
+      "bytes": 390,
+      "sha256": "6a189a7542f5fd9cb3b608575de4abb9ae46824fc9d8cfe711c04324994d651e",
+      "crc32": "7bdf5f07"
+    },
+    {
+      "name": "v5_0741_circ_jnn_0741_d.shp",
+      "bytes": 59184,
+      "sha256": "b5d11b7ce58c5f84c27a6d42f54e365c5b9a6e8b6d234117d58ce861bf8587c1",
+      "crc32": "0d1d3fdb"
+    },
+    {
+      "name": "v5_0741_circ_jnn_0741_d.dbf",
+      "bytes": 823,
+      "sha256": "81f94a72bfe255241ab27e3e30244e6aff09defcd4c2d820bfa38a414294bf87",
+      "crc32": "4fa58e4e"
+    },
+    {
+      "name": "v5_0741_circ_jnn_0741_d.shx",
+      "bytes": 108,
+      "sha256": "54e2e90a355d5f058e484c569e4cef465fb7d84a74005e31af41e71a756a0067",
+      "crc32": "e4aaf424"
+    },
+    {
+      "name": "v5_0741_circ_jnn_0741_d.prj",
+      "bytes": 390,
+      "sha256": "6a189a7542f5fd9cb3b608575de4abb9ae46824fc9d8cfe711c04324994d651e",
+      "crc32": "7bdf5f07"
+    },
+    {
+      "name": "v5_0741_circ_ln_0741_d.shp",
+      "bytes": 212076,
+      "sha256": "ee767069eb6a69bf655475c85db3c7c5858405fdf3a30e85c476bc6defde9740",
+      "crc32": "9989dfc6"
+    },
+    {
+      "name": "v5_0741_circ_ln_0741_d.dbf",
+      "bytes": 823,
+      "sha256": "362beceb3d23560cc8a571f338008b2b68cfa4f18e32c6f7682fa87358850404",
+      "crc32": "6cffea32"
+    },
+    {
+      "name": "v5_0741_circ_ln_0741_d.shx",
+      "bytes": 108,
+      "sha256": "65d0c408db3c0aa7f3e572479cc2cabc20a0fa66d8893e3def9ffda91ead34c3",
+      "crc32": "66c67b26"
+    },
+    {
+      "name": "v5_0741_circ_ln_0741_d.prj",
+      "bytes": 390,
+      "sha256": "6a189a7542f5fd9cb3b608575de4abb9ae46824fc9d8cfe711c04324994d651e",
+      "crc32": "7bdf5f07"
+    },
+    {
+      "name": "v5_0741_circ_ly_0741_d.shp",
+      "bytes": 85244,
+      "sha256": "76c507a5709ef270207a9adfd40385f38425188e82a63dafd5a5cf7cb7cab002",
+      "crc32": "51db2222"
+    },
+    {
+      "name": "v5_0741_circ_ly_0741_d.dbf",
+      "bytes": 823,
+      "sha256": "8f932f2ae381027fb7753c2222f408ec81abddca2f1f99e6b78604ca32f6b881",
+      "crc32": "95495ac6"
+    },
+    {
+      "name": "v5_0741_circ_ly_0741_d.shx",
+      "bytes": 108,
+      "sha256": "67f01b4c5a7ea57e1503ad265ab28a9bb5e17d018b951a0c1c8bb7f06c4b2bc7",
+      "crc32": "a82fb918"
+    },
+    {
+      "name": "v5_0741_circ_ly_0741_d.prj",
+      "bytes": 390,
+      "sha256": "6a189a7542f5fd9cb3b608575de4abb9ae46824fc9d8cfe711c04324994d651e",
+      "crc32": "7bdf5f07"
+    },
+    {
+      "name": "v5_0741_circ_sn_0741_d.shp",
+      "bytes": 61268,
+      "sha256": "1763da24a242585e3639165e7ae271181069cebb693a0c3f399e89dd57aa25a5",
+      "crc32": "38700c28"
+    },
+    {
+      "name": "v5_0741_circ_sn_0741_d.dbf",
+      "bytes": 823,
+      "sha256": "1d299fabce25bf9a1550952677b21abd83eb828b7cd064a443cfb7cba651bb10",
+      "crc32": "cedf5594"
+    },
+    {
+      "name": "v5_0741_circ_sn_0741_d.shx",
+      "bytes": 108,
+      "sha256": "6b8a92f4fee66b0d9c6d9f89152e4f758bf912e2c4a4a6fd32ce70b72e3dbc52",
+      "crc32": "d699758c"
+    },
+    {
+      "name": "v5_0741_circ_sn_0741_d.prj",
+      "bytes": 390,
+      "sha256": "6a189a7542f5fd9cb3b608575de4abb9ae46824fc9d8cfe711c04324994d651e",
+      "crc32": "7bdf5f07"
+    },
+    {
+      "name": "v5_1080_chin_chn_1080_c.shp",
+      "bytes": 5008516,
+      "sha256": "ba116ada9f2655a34790fb0a763e7b71c3697275623d5f02315610af82d6162d",
+      "crc32": "bc337e53"
+    },
+    {
+      "name": "v5_1080_chin_chn_1080_c.dbf",
+      "bytes": 1224827,
+      "sha256": "99f32fa17f5063a490c13e297776047cb8f1465c9ec20d81365bb05c77be52cc",
+      "crc32": "f7b6d3e6"
+    },
+    {
+      "name": "v5_1080_chin_chn_1080_c.shx",
+      "bytes": 11996,
+      "sha256": "9be4e69a62a639b08d2e676159b1835bc080615d50f252ec6a7a80bba1e225fb",
+      "crc32": "ca9d3c75"
+    },
+    {
+      "name": "v5_1080_chin_chn_1080_c.prj",
+      "bytes": 390,
+      "sha256": "6a189a7542f5fd9cb3b608575de4abb9ae46824fc9d8cfe711c04324994d651e",
+      "crc32": "7bdf5f07"
+    },
+    {
+      "name": "v5_1080_chin_chn_1080_p.shp",
+      "bytes": 3225936,
+      "sha256": "89580513ef110925e9ef10029e7b44baff13aaae088a93fe64b5e3abf9d1cbbe",
+      "crc32": "8fffa743"
+    },
+    {
+      "name": "v5_1080_chin_chn_1080_p.dbf",
+      "bytes": 175680,
+      "sha256": "2f86e866574369cae2cc75ca062346a785db864174b4f7b0fcda17b228fbd0f6",
+      "crc32": "2b331d1b"
+    },
+    {
+      "name": "v5_1080_chin_chn_1080_p.shx",
+      "bytes": 3380,
+      "sha256": "7a9ba914377f0d5189dea65b1ba4266808cc6ef3c00ddc7572f5f0e59f57f2d9",
+      "crc32": "50282097"
+    },
+    {
+      "name": "v5_1080_chin_chn_1080_p.prj",
+      "bytes": 390,
+      "sha256": "6a189a7542f5fd9cb3b608575de4abb9ae46824fc9d8cfe711c04324994d651e",
+      "crc32": "7bdf5f07"
+    },
+    {
+      "name": "v5_1080_chin_chn_1080_l.shp",
+      "bytes": 1601308,
+      "sha256": "6beffebf6ad2564371a9e87febd362ea6214596b85c539ad4ca802666e9c8111",
+      "crc32": "ad165c90"
+    },
+    {
+      "name": "v5_1080_chin_chn_1080_l.dbf",
+      "bytes": 12040,
+      "sha256": "5c14dfc2d92c26ced0991f148900c6d0917fd40bd2ef51caf2318f723cd85a61",
+      "crc32": "cf02e751"
+    },
+    {
+      "name": "v5_1080_chin_chn_1080_l.shx",
+      "bytes": 404,
+      "sha256": "fb7e9d05a673572fb317da44cdac4e401e4de9c977750a12c8c7a669aec5ccae",
+      "crc32": "14b9c8b4"
+    },
+    {
+      "name": "v5_1080_chin_chn_1080_l.prj",
+      "bytes": 390,
+      "sha256": "6a189a7542f5fd9cb3b608575de4abb9ae46824fc9d8cfe711c04324994d651e",
+      "crc32": "7bdf5f07"
+    },
+    {
+      "name": "v5_1200_chin_chn_1200_c.shp",
+      "bytes": 5087412,
+      "sha256": "35ba911f9f6ef724644aa404dac071da0e0098e7711306c8ba884c94d3c314d1",
+      "crc32": "ba69a3cd"
+    },
+    {
+      "name": "v5_1200_chin_chn_1200_c.dbf",
+      "bytes": 1179186,
+      "sha256": "339b6b0862e3c1eae70031db56ae29f8c139b5a93e6af8971b86a8ea9b83cf56",
+      "crc32": "e28aa650"
+    },
+    {
+      "name": "v5_1200_chin_chn_1200_c.shx",
+      "bytes": 11764,
+      "sha256": "c2bfbbc9b4cc4f703b6a3de2defa5f31ed5cfdc258221f0e9e578fa2f5d7df64",
+      "crc32": "45e7167a"
+    },
+    {
+      "name": "v5_1200_chin_chn_1200_c.prj",
+      "bytes": 390,
+      "sha256": "6a189a7542f5fd9cb3b608575de4abb9ae46824fc9d8cfe711c04324994d651e",
+      "crc32": "7bdf5f07"
+    },
+    {
+      "name": "v5_1200_chin_chn_1200_p.shp",
+      "bytes": 3274528,
+      "sha256": "57e781f17bb6f697ac6f813b43ee5415ccb3e4c7b6836252765ee9a206300a7d",
+      "crc32": "22e1197a"
+    },
+    {
+      "name": "v5_1200_chin_chn_1200_p.dbf",
+      "bytes": 172212,
+      "sha256": "bf980841b172c25d7b4633481ed7e5f1dc2b1cb5b710a1dd7934422a3112e56a",
+      "crc32": "9ef15f61"
+    },
+    {
+      "name": "v5_1200_chin_chn_1200_p.shx",
+      "bytes": 3284,
+      "sha256": "1cea731d9c5b64600d0282b5758a0508c6a080c9f8a6e3dfea0ae2eda6440dd1",
+      "crc32": "2a9cc793"
+    },
+    {
+      "name": "v5_1200_chin_chn_1200_p.prj",
+      "bytes": 390,
+      "sha256": "6a189a7542f5fd9cb3b608575de4abb9ae46824fc9d8cfe711c04324994d651e",
+      "crc32": "7bdf5f07"
+    },
+    {
+      "name": "v5_1200_chin_chn_1200_l.shp",
+      "bytes": 1617552,
+      "sha256": "327d00f188e1a1cb5fcb1917a462f82a161ecbbe007e2158042597f72caee508",
+      "crc32": "4c7b111c"
+    },
+    {
+      "name": "v5_1200_chin_chn_1200_l.dbf",
+      "bytes": 13870,
+      "sha256": "b1e6adda4d53df69b67040b65eeb3932f9343135bd72ff126ee1a964a1eb618d",
+      "crc32": "2a8b2cbc"
+    },
+    {
+      "name": "v5_1200_chin_chn_1200_l.shx",
+      "bytes": 452,
+      "sha256": "11ecae8fad81839f106e93020c9915ddaed91bc0d632f42647dea443b72db721",
+      "crc32": "577325ba"
+    },
+    {
+      "name": "v5_1200_chin_chn_1200_l.prj",
+      "bytes": 390,
+      "sha256": "6a189a7542f5fd9cb3b608575de4abb9ae46824fc9d8cfe711c04324994d651e",
+      "crc32": "7bdf5f07"
+    },
+    {
+      "name": "v5_1290_chin_chn_1290_c.shp",
+      "bytes": 5363408,
+      "sha256": "978416093d1f36d0429f63a9fb395fef224924173d8bebc218e3cda14e869fb8",
+      "crc32": "4b2fa165"
+    },
+    {
+      "name": "v5_1290_chin_chn_1290_c.dbf",
+      "bytes": 1697110,
+      "sha256": "3a458bbe2ff2a3d74e355e2d8b9a587f388a3e3fb7c75aaa7546ea5001dadee2",
+      "crc32": "ef7a26db"
+    },
+    {
+      "name": "v5_1290_chin_chn_1290_c.shx",
+      "bytes": 11908,
+      "sha256": "d483f84e97a3dbb4899bf708515cdc4b081f2ffa4ab2da6703640a07b3889546",
+      "crc32": "7e8eab87"
+    },
+    {
+      "name": "v5_1290_chin_chn_1290_c.prj",
+      "bytes": 390,
+      "sha256": "6a189a7542f5fd9cb3b608575de4abb9ae46824fc9d8cfe711c04324994d651e",
+      "crc32": "7bdf5f07"
+    },
+    {
+      "name": "v5_1290_chin_chn_1290_l.shp",
+      "bytes": 3023272,
+      "sha256": "2bfa047a7a45e27344d9d8bdc4aad0941a0e1a4e6584dea1269cb38c4dd189d5",
+      "crc32": "957b7b1b"
+    },
+    {
+      "name": "v5_1290_chin_chn_1290_l.dbf",
+      "bytes": 138709,
+      "sha256": "5062ec02055d1e3ccadd8407574b1390f2caa3c07128bb44b17f4e4994c23074",
+      "crc32": "5f156e5e"
+    },
+    {
+      "name": "v5_1290_chin_chn_1290_l.shx",
+      "bytes": 2348,
+      "sha256": "5ce7e21711dd6a05097edf45b1533bba1ab79d48f9b5b79b0396faf39945946d",
+      "crc32": "b60f31c6"
+    },
+    {
+      "name": "v5_1290_chin_chn_1290_l.prj",
+      "bytes": 390,
+      "sha256": "6a189a7542f5fd9cb3b608575de4abb9ae46824fc9d8cfe711c04324994d651e",
+      "crc32": "7bdf5f07"
+    },
+    {
+      "name": "v5_1290_chin_chn_1290_s.shp",
+      "bytes": 1239836,
+      "sha256": "2c4a41fc5a3678228659a041a33cf03fb8e478a345c9e93ef493e028ce818488",
+      "crc32": "c9d3ceac"
+    },
+    {
+      "name": "v5_1290_chin_chn_1290_s.dbf",
+      "bytes": 4485,
+      "sha256": "d0aa7202bf1a222f35e61ef37593111324546d4e82772b1848c16d8eef98d108",
+      "crc32": "bce2f9d1"
+    },
+    {
+      "name": "v5_1290_chin_chn_1290_s.shx",
+      "bytes": 236,
+      "sha256": "ba8287cb1c141761e73c35db6b41d31542541c7d4457509ecd8f6b9cda877dc4",
+      "crc32": "b7462092"
+    },
+    {
+      "name": "v5_1290_chin_chn_1290_s.prj",
+      "bytes": 390,
+      "sha256": "6a189a7542f5fd9cb3b608575de4abb9ae46824fc9d8cfe711c04324994d651e",
+      "crc32": "7bdf5f07"
+    },
+    {
+      "name": "v5_1391_chin_chn_1391_c.shp",
+      "bytes": 5669248,
+      "sha256": "1e30b6edbf2a51fe4f0e34156d625a07755854e8efc552cf6a260d8da2767d42",
+      "crc32": "3fb1e712"
+    },
+    {
+      "name": "v5_1391_chin_chn_1391_c.dbf",
+      "bytes": 1868311,
+      "sha256": "4e2f9f311d973ab0bc3316499ccb59b82d3a5b75b3170bbe00f96b682bf8a55b",
+      "crc32": "d4b344b9"
+    },
+    {
+      "name": "v5_1391_chin_chn_1391_c.shx",
+      "bytes": 13100,
+      "sha256": "c6ad0730e0890b79040095db67db58f9c0035b74b37be777daa85503204762b9",
+      "crc32": "88a16f22"
+    },
+    {
+      "name": "v5_1391_chin_chn_1391_c.prj",
+      "bytes": 390,
+      "sha256": "6a189a7542f5fd9cb3b608575de4abb9ae46824fc9d8cfe711c04324994d651e",
+      "crc32": "7bdf5f07"
+    },
+    {
+      "name": "v5_1391_chin_chn_1391_p.shp",
+      "bytes": 3098124,
+      "sha256": "460811d45dbc62769fbd86b015c725bed0d5349d145b5ac81d2bf6e15357f95b",
+      "crc32": "1826f085"
+    },
+    {
+      "name": "v5_1391_chin_chn_1391_p.dbf",
+      "bytes": 150493,
+      "sha256": "e3a4263b3d7d95fbd4e7bd98c33be2686c16ab4267fe225f513578f01cb432c5",
+      "crc32": "5d6bd73d"
+    },
+    {
+      "name": "v5_1391_chin_chn_1391_p.shx",
+      "bytes": 2540,
+      "sha256": "efbb1ef6102b1003305d0032a17940c041863f3ce33fc2b0bfccd27be16ff3ad",
+      "crc32": "8c86cab8"
+    },
+    {
+      "name": "v5_1391_chin_chn_1391_p.prj",
+      "bytes": 390,
+      "sha256": "6a189a7542f5fd9cb3b608575de4abb9ae46824fc9d8cfe711c04324994d651e",
+      "crc32": "7bdf5f07"
+    },
+    {
+      "name": "v5_1391_chin_chn_1391_s.shp",
+      "bytes": 1444528,
+      "sha256": "f72096caa8cb3746a6c8c18a4eebc5f849230993ec0daf6aa24a14553ef930de",
+      "crc32": "0b1d4f97"
+    },
+    {
+      "name": "v5_1391_chin_chn_1391_s.dbf",
+      "bytes": 10004,
+      "sha256": "1007c7d515213ba31adbf4be6d70e1e07d3c8348d029d896b678567c1bcaf4a4",
+      "crc32": "bca8cd5b"
+    },
+    {
+      "name": "v5_1391_chin_chn_1391_s.shx",
+      "bytes": 308,
+      "sha256": "c8243fc48f9be20823b6add75c245cc4d75a2418908d60df8ed7dc6ce53318c6",
+      "crc32": "848d3fef"
+    },
+    {
+      "name": "v5_1391_chin_chn_1391_s.prj",
+      "bytes": 390,
+      "sha256": "6a189a7542f5fd9cb3b608575de4abb9ae46824fc9d8cfe711c04324994d651e",
+      "crc32": "7bdf5f07"
+    }
+  ],
+  "datasets": [
+    {
+      "year": 741,
+      "sourceLayers": [
+        {
+          "name": "v5_0741_chin_chn_0741_c",
+          "originalFeatureCount": 1498,
+          "exportedByLevel": {
+            "county": 1495
+          },
+          "crs": "EPSG:2333",
+          "transform": "Inverse of unnnamed (Gauss Kruger) + Ballpark geographic offset from Xian 1980 to WGS 84 (with axis order normalized for visualization)",
+          "transformAccuracyMeters": -1.0
+        },
+        {
+          "name": "v5_0741_chin_chn_0741_p",
+          "originalFeatureCount": 339,
+          "exportedByLevel": {
+            "prefecture": 336,
+            "country": 3
+          },
+          "crs": "EPSG:2333",
+          "transform": "Inverse of unnnamed (Gauss Kruger) + Ballpark geographic offset from Xian 1980 to WGS 84 (with axis order normalized for visualization)",
+          "transformAccuracyMeters": -1.0
+        },
+        {
+          "name": "v5_0741_circ_gn_0741_d",
+          "originalFeatureCount": 1,
+          "exportedByLevel": {
+            "province": 1
+          },
+          "crs": "EPSG:2333",
+          "transform": "Inverse of unnnamed (Gauss Kruger) + Ballpark geographic offset from Xian 1980 to WGS 84 (with axis order normalized for visualization)",
+          "transformAccuracyMeters": -1.0
+        },
+        {
+          "name": "v5_0741_circ_hb_0741_d",
+          "originalFeatureCount": 1,
+          "exportedByLevel": {
+            "province": 1
+          },
+          "crs": "EPSG:2333",
+          "transform": "Inverse of unnnamed (Gauss Kruger) + Ballpark geographic offset from Xian 1980 to WGS 84 (with axis order normalized for visualization)",
+          "transformAccuracyMeters": -1.0
+        },
+        {
+          "name": "v5_0741_circ_hd_0741_d",
+          "originalFeatureCount": 1,
+          "exportedByLevel": {
+            "province": 1
+          },
+          "crs": "EPSG:2333",
+          "transform": "Inverse of unnnamed (Gauss Kruger) + Ballpark geographic offset from Xian 1980 to WGS 84 (with axis order normalized for visualization)",
+          "transformAccuracyMeters": -1.0
+        },
+        {
+          "name": "v5_0741_circ_hn_0741_d",
+          "originalFeatureCount": 1,
+          "exportedByLevel": {
+            "province": 1
+          },
+          "crs": "EPSG:2333",
+          "transform": "Inverse of unnnamed (Gauss Kruger) + Ballpark geographic offset from Xian 1980 to WGS 84 (with axis order normalized for visualization)",
+          "transformAccuracyMeters": -1.0
+        },
+        {
+          "name": "v5_0741_circ_hun_0741_d",
+          "originalFeatureCount": 1,
+          "exportedByLevel": {
+            "province": 1
+          },
+          "crs": "EPSG:2333",
+          "transform": "Inverse of unnnamed (Gauss Kruger) + Ballpark geographic offset from Xian 1980 to WGS 84 (with axis order normalized for visualization)",
+          "transformAccuracyMeters": -1.0
+        },
+        {
+          "name": "v5_0741_circ_jgn_0741_d",
+          "originalFeatureCount": 1,
+          "exportedByLevel": {
+            "province": 1
+          },
+          "crs": "EPSG:2333",
+          "transform": "Inverse of unnnamed (Gauss Kruger) + Ballpark geographic offset from Xian 1980 to WGS 84 (with axis order normalized for visualization)",
+          "transformAccuracyMeters": -1.0
+        },
+        {
+          "name": "v5_0741_circ_jnn_0741_d",
+          "originalFeatureCount": 1,
+          "exportedByLevel": {
+            "province": 1
+          },
+          "crs": "EPSG:2333",
+          "transform": "Inverse of unnnamed (Gauss Kruger) + Ballpark geographic offset from Xian 1980 to WGS 84 (with axis order normalized for visualization)",
+          "transformAccuracyMeters": -1.0
+        },
+        {
+          "name": "v5_0741_circ_ln_0741_d",
+          "originalFeatureCount": 1,
+          "exportedByLevel": {
+            "province": 1
+          },
+          "crs": "EPSG:2333",
+          "transform": "Inverse of unnnamed (Gauss Kruger) + Ballpark geographic offset from Xian 1980 to WGS 84 (with axis order normalized for visualization)",
+          "transformAccuracyMeters": -1.0
+        },
+        {
+          "name": "v5_0741_circ_ly_0741_d",
+          "originalFeatureCount": 1,
+          "exportedByLevel": {
+            "province": 1
+          },
+          "crs": "EPSG:2333",
+          "transform": "Inverse of unnnamed (Gauss Kruger) + Ballpark geographic offset from Xian 1980 to WGS 84 (with axis order normalized for visualization)",
+          "transformAccuracyMeters": -1.0
+        },
+        {
+          "name": "v5_0741_circ_sn_0741_d",
+          "originalFeatureCount": 1,
+          "exportedByLevel": {
+            "province": 1
+          },
+          "crs": "EPSG:2333",
+          "transform": "Inverse of unnnamed (Gauss Kruger) + Ballpark geographic offset from Xian 1980 to WGS 84 (with axis order normalized for visualization)",
+          "transformAccuracyMeters": -1.0
+        }
+      ],
+      "invalidSourceFeatures": [
+        "v5_0741_chin_chn_0741_c#1119",
+        "v5_0741_chin_chn_0741_c#1147",
+        "v5_0741_chin_chn_0741_c#1149",
+        "v5_0741_chin_chn_0741_c#1153",
+        "v5_0741_chin_chn_0741_c#1154",
+        "v5_0741_chin_chn_0741_c#1331",
+        "v5_0741_chin_chn_0741_c#1332",
+        "v5_0741_chin_chn_0741_c#1375",
+        "v5_0741_chin_chn_0741_c#1376",
+        "v5_0741_chin_chn_0741_p#3",
+        "v5_0741_chin_chn_0741_p#21",
+        "v5_0741_chin_chn_0741_p#308",
+        "v5_0741_chin_chn_0741_p#311",
+        "v5_0741_circ_jgn_0741_d#0",
+        "v5_0741_circ_jnn_0741_d#0"
+      ],
+      "invalidTransformedFeatures": [
+        "v5_0741_chin_chn_0741_c#1021",
+        "v5_0741_chin_chn_0741_c#1022",
+        "v5_0741_chin_chn_0741_c#1119",
+        "v5_0741_chin_chn_0741_c#1147",
+        "v5_0741_chin_chn_0741_c#1149",
+        "v5_0741_chin_chn_0741_c#1153",
+        "v5_0741_chin_chn_0741_c#1154",
+        "v5_0741_chin_chn_0741_c#1331",
+        "v5_0741_chin_chn_0741_c#1332",
+        "v5_0741_chin_chn_0741_c#1375",
+        "v5_0741_chin_chn_0741_c#1376",
+        "v5_0741_chin_chn_0741_p#3",
+        "v5_0741_chin_chn_0741_p#21",
+        "v5_0741_chin_chn_0741_p#308",
+        "v5_0741_chin_chn_0741_p#311",
+        "v5_0741_circ_jgn_0741_d#0",
+        "v5_0741_circ_jnn_0741_d#0"
+      ],
+      "nameFallbacks": [
+        {
+          "sourceLayer": "v5_0741_chin_chn_0741_c",
+          "recordId": "316",
+          "displayName": "Yinshui"
+        },
+        {
+          "sourceLayer": "v5_0741_chin_chn_0741_c",
+          "recordId": "1315",
+          "displayName": "Hankuang"
+        }
+      ],
+      "repeatedVerticesForRingEncoding": [],
+      "exportedCounts": {
+        "country": 3,
+        "province": 10,
+        "prefecture": 336,
+        "county": 1495
+      }
+    },
+    {
+      "year": 1080,
+      "sourceLayers": [
+        {
+          "name": "v5_1080_chin_chn_1080_c",
+          "originalFeatureCount": 1487,
+          "exportedByLevel": {
+            "county": 1479
+          },
+          "crs": "EPSG:2333",
+          "transform": "Inverse of unnnamed (Gauss Kruger) + Ballpark geographic offset from Xian 1980 to WGS 84 (with axis order normalized for visualization)",
+          "transformAccuracyMeters": -1.0
+        },
+        {
+          "name": "v5_1080_chin_chn_1080_p",
+          "originalFeatureCount": 410,
+          "exportedByLevel": {
+            "prefecture": 402
+          },
+          "crs": "EPSG:2333",
+          "transform": "Inverse of unnnamed (Gauss Kruger) + Ballpark geographic offset from Xian 1980 to WGS 84 (with axis order normalized for visualization)",
+          "transformAccuracyMeters": -1.0
+        },
+        {
+          "name": "v5_1080_chin_chn_1080_l",
+          "originalFeatureCount": 38,
+          "exportedByLevel": {
+            "province": 30,
+            "country": 8
+          },
+          "crs": "EPSG:2333",
+          "transform": "Inverse of unnnamed (Gauss Kruger) + Ballpark geographic offset from Xian 1980 to WGS 84 (with axis order normalized for visualization)",
+          "transformAccuracyMeters": -1.0
+        }
+      ],
+      "invalidSourceFeatures": [
+        "v5_1080_chin_chn_1080_c#413",
+        "v5_1080_chin_chn_1080_c#890",
+        "v5_1080_chin_chn_1080_c#1435",
+        "v5_1080_chin_chn_1080_c#1436",
+        "v5_1080_chin_chn_1080_p#2",
+        "v5_1080_chin_chn_1080_p#3",
+        "v5_1080_chin_chn_1080_p#138",
+        "v5_1080_chin_chn_1080_p#234",
+        "v5_1080_chin_chn_1080_p#236",
+        "v5_1080_chin_chn_1080_p#286",
+        "v5_1080_chin_chn_1080_p#291",
+        "v5_1080_chin_chn_1080_p#348",
+        "v5_1080_chin_chn_1080_l#2",
+        "v5_1080_chin_chn_1080_l#10",
+        "v5_1080_chin_chn_1080_l#19",
+        "v5_1080_chin_chn_1080_l#20",
+        "v5_1080_chin_chn_1080_l#23",
+        "v5_1080_chin_chn_1080_l#24",
+        "v5_1080_chin_chn_1080_l#35"
+      ],
+      "invalidTransformedFeatures": [
+        "v5_1080_chin_chn_1080_c#413",
+        "v5_1080_chin_chn_1080_c#457",
+        "v5_1080_chin_chn_1080_c#890",
+        "v5_1080_chin_chn_1080_c#1435",
+        "v5_1080_chin_chn_1080_c#1436",
+        "v5_1080_chin_chn_1080_p#2",
+        "v5_1080_chin_chn_1080_p#3",
+        "v5_1080_chin_chn_1080_p#69",
+        "v5_1080_chin_chn_1080_p#138",
+        "v5_1080_chin_chn_1080_p#234",
+        "v5_1080_chin_chn_1080_p#236",
+        "v5_1080_chin_chn_1080_p#286",
+        "v5_1080_chin_chn_1080_p#291",
+        "v5_1080_chin_chn_1080_p#348",
+        "v5_1080_chin_chn_1080_l#2",
+        "v5_1080_chin_chn_1080_l#10",
+        "v5_1080_chin_chn_1080_l#19",
+        "v5_1080_chin_chn_1080_l#20",
+        "v5_1080_chin_chn_1080_l#23",
+        "v5_1080_chin_chn_1080_l#24",
+        "v5_1080_chin_chn_1080_l#35"
+      ],
+      "nameFallbacks": [
+        {
+          "sourceLayer": "v5_1080_chin_chn_1080_c",
+          "recordId": "1315",
+          "displayName": "Weimo"
+        },
+        {
+          "sourceLayer": "v5_1080_chin_chn_1080_p",
+          "recordId": "306",
+          "displayName": "Weimo"
+        },
+        {
+          "sourceLayer": "v5_1080_chin_chn_1080_l",
+          "recordId": "28",
+          "displayName": "Aboriginal Tribal Lands"
+        }
+      ],
+      "repeatedVerticesForRingEncoding": [],
+      "exportedCounts": {
+        "country": 8,
+        "province": 30,
+        "prefecture": 402,
+        "county": 1479
+      }
+    },
+    {
+      "year": 1200,
+      "sourceLayers": [
+        {
+          "name": "v5_1200_chin_chn_1200_c",
+          "originalFeatureCount": 1458,
+          "exportedByLevel": {
+            "county": 1450
+          },
+          "crs": "EPSG:2333",
+          "transform": "Inverse of unnnamed (Gauss Kruger) + Ballpark geographic offset from Xian 1980 to WGS 84 (with axis order normalized for visualization)",
+          "transformAccuracyMeters": -1.0
+        },
+        {
+          "name": "v5_1200_chin_chn_1200_p",
+          "originalFeatureCount": 398,
+          "exportedByLevel": {
+            "prefecture": 390
+          },
+          "crs": "EPSG:2333",
+          "transform": "Inverse of unnnamed (Gauss Kruger) + Ballpark geographic offset from Xian 1980 to WGS 84 (with axis order normalized for visualization)",
+          "transformAccuracyMeters": -1.0
+        },
+        {
+          "name": "v5_1200_chin_chn_1200_l",
+          "originalFeatureCount": 44,
+          "exportedByLevel": {
+            "province": 36,
+            "country": 8
+          },
+          "crs": "EPSG:2333",
+          "transform": "Inverse of unnnamed (Gauss Kruger) + Ballpark geographic offset from Xian 1980 to WGS 84 (with axis order normalized for visualization)",
+          "transformAccuracyMeters": -1.0
+        }
+      ],
+      "invalidSourceFeatures": [
+        "v5_1200_chin_chn_1200_c#510",
+        "v5_1200_chin_chn_1200_c#722",
+        "v5_1200_chin_chn_1200_p#87",
+        "v5_1200_chin_chn_1200_p#95",
+        "v5_1200_chin_chn_1200_p#188",
+        "v5_1200_chin_chn_1200_p#334",
+        "v5_1200_chin_chn_1200_p#365",
+        "v5_1200_chin_chn_1200_l#4",
+        "v5_1200_chin_chn_1200_l#17",
+        "v5_1200_chin_chn_1200_l#18",
+        "v5_1200_chin_chn_1200_l#32",
+        "v5_1200_chin_chn_1200_l#35"
+      ],
+      "invalidTransformedFeatures": [
+        "v5_1200_chin_chn_1200_c#510",
+        "v5_1200_chin_chn_1200_c#722",
+        "v5_1200_chin_chn_1200_p#87",
+        "v5_1200_chin_chn_1200_p#95",
+        "v5_1200_chin_chn_1200_p#188",
+        "v5_1200_chin_chn_1200_p#212",
+        "v5_1200_chin_chn_1200_p#334",
+        "v5_1200_chin_chn_1200_p#365",
+        "v5_1200_chin_chn_1200_l#4",
+        "v5_1200_chin_chn_1200_l#17",
+        "v5_1200_chin_chn_1200_l#18",
+        "v5_1200_chin_chn_1200_l#32",
+        "v5_1200_chin_chn_1200_l#35"
+      ],
+      "nameFallbacks": [
+        {
+          "sourceLayer": "v5_1200_chin_chn_1200_p",
+          "recordId": "111",
+          "displayName": "Ao Zhou"
+        }
+      ],
+      "repeatedVerticesForRingEncoding": [
+        {
+          "sourceLayer": "v5_1200_chin_chn_1200_p",
+          "sourceRecordIndex": 334,
+          "repeatedVertices": 1
+        },
+        {
+          "sourceLayer": "v5_1200_chin_chn_1200_p",
+          "sourceRecordIndex": 365,
+          "repeatedVertices": 1
+        },
+        {
+          "sourceLayer": "v5_1200_chin_chn_1200_l",
+          "sourceRecordIndex": 32,
+          "repeatedVertices": 1
+        },
+        {
+          "sourceLayer": "v5_1200_chin_chn_1200_l",
+          "sourceRecordIndex": 35,
+          "repeatedVertices": 1
+        }
+      ],
+      "exportedCounts": {
+        "country": 8,
+        "province": 36,
+        "prefecture": 390,
+        "county": 1450
+      }
+    },
+    {
+      "year": 1290,
+      "sourceLayers": [
+        {
+          "name": "v5_1290_chin_chn_1290_c",
+          "originalFeatureCount": 1476,
+          "exportedByLevel": {
+            "county": 1475
+          },
+          "crs": "EPSG:2333",
+          "transform": "Inverse of unnnamed (Gauss Kruger) + Ballpark geographic offset from Xian 1980 to WGS 84 (with axis order normalized for visualization)",
+          "transformAccuracyMeters": -1.0
+        },
+        {
+          "name": "v5_1290_chin_chn_1290_l",
+          "originalFeatureCount": 281,
+          "exportedByLevel": {
+            "prefecture": 280
+          },
+          "crs": "EPSG:2333",
+          "transform": "Inverse of unnnamed (Gauss Kruger) + Ballpark geographic offset from Xian 1980 to WGS 84 (with axis order normalized for visualization)",
+          "transformAccuracyMeters": -1.0
+        },
+        {
+          "name": "v5_1290_chin_chn_1290_s",
+          "originalFeatureCount": 17,
+          "exportedByLevel": {
+            "province": 16,
+            "country": 1
+          },
+          "crs": "EPSG:2333",
+          "transform": "Inverse of unnnamed (Gauss Kruger) + Ballpark geographic offset from Xian 1980 to WGS 84 (with axis order normalized for visualization)",
+          "transformAccuracyMeters": -1.0
+        }
+      ],
+      "invalidSourceFeatures": [
+        "v5_1290_chin_chn_1290_l#22",
+        "v5_1290_chin_chn_1290_l#136",
+        "v5_1290_chin_chn_1290_l#140",
+        "v5_1290_chin_chn_1290_l#252"
+      ],
+      "invalidTransformedFeatures": [
+        "v5_1290_chin_chn_1290_c#1139",
+        "v5_1290_chin_chn_1290_l#22",
+        "v5_1290_chin_chn_1290_l#136",
+        "v5_1290_chin_chn_1290_l#140",
+        "v5_1290_chin_chn_1290_l#252"
+      ],
+      "nameFallbacks": [],
+      "repeatedVerticesForRingEncoding": [],
+      "exportedCounts": {
+        "country": 1,
+        "province": 16,
+        "prefecture": 280,
+        "county": 1475
+      }
+    },
+    {
+      "year": 1391,
+      "sourceLayers": [
+        {
+          "name": "v5_1391_chin_chn_1391_c",
+          "originalFeatureCount": 1625,
+          "exportedByLevel": {
+            "county": 1620
+          },
+          "crs": "EPSG:2333",
+          "transform": "Inverse of unnnamed (Gauss Kruger) + Ballpark geographic offset from Xian 1980 to WGS 84 (with axis order normalized for visualization)",
+          "transformAccuracyMeters": -1.0
+        },
+        {
+          "name": "v5_1391_chin_chn_1391_p",
+          "originalFeatureCount": 305,
+          "exportedByLevel": {
+            "prefecture": 300
+          },
+          "crs": "EPSG:2333",
+          "transform": "Inverse of unnnamed (Gauss Kruger) + Ballpark geographic offset from Xian 1980 to WGS 84 (with axis order normalized for visualization)",
+          "transformAccuracyMeters": -1.0
+        },
+        {
+          "name": "v5_1391_chin_chn_1391_s",
+          "originalFeatureCount": 26,
+          "exportedByLevel": {
+            "province": 21,
+            "country": 5
+          },
+          "crs": "EPSG:2333",
+          "transform": "Inverse of unnnamed (Gauss Kruger) + Ballpark geographic offset from Xian 1980 to WGS 84 (with axis order normalized for visualization)",
+          "transformAccuracyMeters": -1.0
+        }
+      ],
+      "invalidSourceFeatures": [
+        "v5_1391_chin_chn_1391_p#275"
+      ],
+      "invalidTransformedFeatures": [
+        "v5_1391_chin_chn_1391_c#837",
+        "v5_1391_chin_chn_1391_p#275"
+      ],
+      "nameFallbacks": [
+        {
+          "sourceLayer": "v5_1391_chin_chn_1391_c",
+          "recordId": "1432",
+          "displayName": "Ejia"
+        }
+      ],
+      "repeatedVerticesForRingEncoding": [],
+      "exportedCounts": {
+        "country": 5,
+        "province": 21,
+        "prefecture": 300,
+        "county": 1620
+      }
+    }
+  ],
+  "preservedOriginalMembersArchive": {
+    "path": "data/evidence/hartwell/source-layers.zip",
+    "sha256": "cccf3d490ea07c48e094729c5ef19518fca9dc7bc549aa988abc12ddffd12ee0"
+  }
+}

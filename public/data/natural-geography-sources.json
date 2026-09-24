@@ -1,0 +1,357 @@
+{
+  "generatedAt": "2026-09-24T10:31:55.688684+00:00",
+  "repositoryCommit": "ca96624a56bd078437bca8184e78163e5039ad19",
+  "coordinateSystem": "WGS84 longitude/latitude, EPSG:4326",
+  "clipBounds": [
+    70,
+    10,
+    142,
+    56
+  ],
+  "scale": "Natural Earth 1:10m (1:10,000,000)",
+  "license": "Natural Earth public domain",
+  "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
+  "sources": [
+    {
+      "dataset": "ne_10m_rivers_lake_centerlines",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_rivers_lake_centerlines.geojson",
+      "repositoryCommit": "ca96624a56bd078437bca8184e78163e5039ad19",
+      "downloadedAt": "2026-09-24T10:31:51.649831+00:00",
+      "sha256": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+      "bytes": 7307743,
+      "datasetVersion": "5.0.0",
+      "versionUrl": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/10m_physical/ne_10m_rivers_lake_centerlines.VERSION.txt"
+    },
+    {
+      "dataset": "ne_10m_lakes",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_lakes.geojson",
+      "repositoryCommit": "ca96624a56bd078437bca8184e78163e5039ad19",
+      "downloadedAt": "2026-09-24T10:31:52.654413+00:00",
+      "sha256": "2d036f53dedec578001c5c30c2959ee7d4eebc1306900fa4367c49929ec8f2d9",
+      "bytes": 5043554,
+      "datasetVersion": "5.0.0",
+      "versionUrl": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/10m_physical/ne_10m_lakes.VERSION.txt"
+    },
+    {
+      "dataset": "ne_10m_geography_regions_polys",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_geography_regions_polys.geojson",
+      "repositoryCommit": "ca96624a56bd078437bca8184e78163e5039ad19",
+      "downloadedAt": "2026-09-24T10:31:53.773264+00:00",
+      "sha256": "b7b26e50ea917d3696aec87f932def2bf5f890f5770e441d59c162c6f4c92a77",
+      "bytes": 5583870,
+      "datasetVersion": "5.0.0",
+      "versionUrl": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/10m_physical/ne_10m_geography_regions_polys.VERSION.txt"
+    },
+    {
+      "dataset": "ne_10m_geography_marine_polys",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_geography_marine_polys.geojson",
+      "repositoryCommit": "ca96624a56bd078437bca8184e78163e5039ad19",
+      "downloadedAt": "2026-09-24T10:31:54.589131+00:00",
+      "sha256": "53f865e8ffa966cdd402145c82c5cd14ee7ce974cd0eb9a3f59f03a4cfd2d66c",
+      "bytes": 1692635,
+      "datasetVersion": "5.1.0",
+      "versionUrl": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/10m_physical/ne_10m_geography_marine_polys.VERSION.txt"
+    },
+    {
+      "dataset": "ne_10m_geography_regions_elevation_points",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_geography_regions_elevation_points.geojson",
+      "repositoryCommit": "ca96624a56bd078437bca8184e78163e5039ad19",
+      "downloadedAt": "2026-09-24T10:31:55.244030+00:00",
+      "sha256": "f98a16867867146ec4146d6d4b18c823eeedb2825947de666116cf9a4e3f43cb",
+      "bytes": 862686,
+      "datasetVersion": "5.0.0",
+      "versionUrl": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/10m_physical/ne_10m_geography_regions_elevation_points.VERSION.txt"
+    }
+  ],
+  "outputs": {
+    "rivers.geojson": {
+      "features": 277,
+      "bytes": 418641,
+      "sha256": "3decc7bf75ae2eda039c4269c29ffa10a1b5ee8397646c2935b7832e26353f6c"
+    },
+    "lakes.geojson": {
+      "features": 234,
+      "bytes": 249768,
+      "sha256": "9a83a27d9cfdc316423b039ad29e7f589e06a944882075da4b298add2bb46b27"
+    },
+    "physical-labels.geojson": {
+      "features": 86,
+      "bytes": 38783,
+      "sha256": "9755dccf13fbc61480a22215b3f2ae8d89aa77430e6e588f9aec4ab1ba5cc39d"
+    }
+  },
+  "labelCounts": {
+    "river": 32,
+    "lake": 20,
+    "mountain": 26,
+    "sea": 8
+  },
+  "derivation": {
+    "rivers": "Clip source linework to bbox; topology-preserving simplify at 0.012 degrees.",
+    "lakes": "Repair invalid input if required; clip polygons; topology-preserving simplify at 0.006 degrees.",
+    "riverLabels": "Merge explicitly listed original segments, take longest continuous line, interpolate midpoint by coordinate-space length.",
+    "polygonLabels": "Shapely representative_point inside clipped original polygon (no simplification used for label position).",
+    "mountainPeaks": "Copy Natural Earth elevation-point geometry; not a new survey.",
+    "minZoom": "Project editorial display thresholds; not a claim of measurement accuracy.",
+    "precision": "Derived/display geometries rounded to 6 decimals; retained precision does not indicate metre-level accuracy."
+  },
+  "editorialRiverTranslations": [
+    {
+      "labelId": "changjiang",
+      "sourceFeatureIndices": [
+        289,
+        301
+      ],
+      "name": "长江"
+    },
+    {
+      "labelId": "huanghe",
+      "sourceFeatureIndices": [
+        954,
+        1326
+      ],
+      "name": "黄河"
+    },
+    {
+      "labelId": "hanjiang",
+      "sourceFeatureIndices": [
+        412
+      ],
+      "name": "汉江"
+    },
+    {
+      "labelId": "huaihe",
+      "sourceFeatureIndices": [
+        683
+      ],
+      "name": "淮河"
+    },
+    {
+      "labelId": "weihe",
+      "sourceFeatureIndices": [
+        1228
+      ],
+      "name": "渭河"
+    },
+    {
+      "labelId": "jinghe",
+      "sourceFeatureIndices": [
+        1238
+      ],
+      "name": "泾河"
+    },
+    {
+      "labelId": "fenhe",
+      "sourceFeatureIndices": [
+        90
+      ],
+      "name": "汾河"
+    },
+    {
+      "labelId": "qinhe",
+      "sourceFeatureIndices": [
+        1241
+      ],
+      "name": "沁河"
+    },
+    {
+      "labelId": "ganjiang",
+      "sourceFeatureIndices": [
+        426
+      ],
+      "name": "赣江"
+    },
+    {
+      "labelId": "xiangjiang",
+      "sourceFeatureIndices": [
+        682
+      ],
+      "name": "湘江"
+    },
+    {
+      "labelId": "yuanjiang",
+      "sourceFeatureIndices": [
+        364
+      ],
+      "name": "沅江"
+    },
+    {
+      "labelId": "jialingjiang",
+      "sourceFeatureIndices": [
+        775
+      ],
+      "name": "嘉陵江"
+    },
+    {
+      "labelId": "daduhe",
+      "sourceFeatureIndices": [
+        465
+      ],
+      "name": "大渡河"
+    },
+    {
+      "labelId": "minjiang-sichuan",
+      "sourceFeatureIndices": [
+        531
+      ],
+      "name": "岷江"
+    },
+    {
+      "labelId": "yalongjiang",
+      "sourceFeatureIndices": [
+        778
+      ],
+      "name": "雅砻江"
+    },
+    {
+      "labelId": "wujiang",
+      "sourceFeatureIndices": [
+        681
+      ],
+      "name": "乌江"
+    },
+    {
+      "labelId": "songhuajiang",
+      "sourceFeatureIndices": [
+        530
+      ],
+      "name": "松花江"
+    },
+    {
+      "labelId": "nenjiang",
+      "sourceFeatureIndices": [
+        1306
+      ],
+      "name": "嫩江"
+    },
+    {
+      "labelId": "heilongjiang",
+      "sourceFeatureIndices": [
+        1305
+      ],
+      "name": "黑龙江"
+    },
+    {
+      "labelId": "liaohe",
+      "sourceFeatureIndices": [
+        362
+      ],
+      "name": "辽河"
+    },
+    {
+      "labelId": "haihe",
+      "sourceFeatureIndices": [
+        882
+      ],
+      "name": "海河"
+    },
+    {
+      "labelId": "yongdinghe",
+      "sourceFeatureIndices": [
+        855
+      ],
+      "name": "永定河"
+    },
+    {
+      "labelId": "luanhe",
+      "sourceFeatureIndices": [
+        1269
+      ],
+      "name": "滦河"
+    },
+    {
+      "labelId": "xijiang",
+      "sourceFeatureIndices": [
+        1337
+      ],
+      "name": "西江"
+    },
+    {
+      "labelId": "beijiang",
+      "sourceFeatureIndices": [
+        791
+      ],
+      "name": "北江"
+    },
+    {
+      "labelId": "dongjiang",
+      "sourceFeatureIndices": [
+        776
+      ],
+      "name": "东江"
+    },
+    {
+      "labelId": "minjiang-fujian",
+      "sourceFeatureIndices": [
+        700
+      ],
+      "name": "闽江"
+    },
+    {
+      "labelId": "fuchunjiang",
+      "sourceFeatureIndices": [
+        557
+      ],
+      "name": "富春江"
+    },
+    {
+      "labelId": "tarim",
+      "sourceFeatureIndices": [
+        511
+      ],
+      "name": "塔里木河"
+    },
+    {
+      "labelId": "yarlung",
+      "sourceFeatureIndices": [
+        651
+      ],
+      "name": "雅鲁藏布江"
+    },
+    {
+      "labelId": "lancang",
+      "sourceFeatureIndices": [
+        609
+      ],
+      "name": "澜沧江"
+    },
+    {
+      "labelId": "nujiang",
+      "sourceFeatureIndices": [
+        222
+      ],
+      "name": "怒江"
+    }
+  ],
+  "withheldNameZh": [
+    {
+      "sourceName": "Nam Ngum Reservoir",
+      "upstreamValue": "塔什幹日本滯留者墓地",
+      "reason": "Clearly unrelated translated name; original source name retained instead."
+    }
+  ],
+  "geometryRepairs": [
+    {
+      "dataset": "ne_10m_lakes",
+      "featureIndex": 412,
+      "operation": "Shapely make_valid"
+    },
+    {
+      "dataset": "ne_10m_lakes",
+      "featureIndex": 1186,
+      "operation": "Shapely make_valid"
+    }
+  ],
+  "limitations": [
+    "All layers are modern natural-geography context, not reconstructed ancient coastlines, waterways or lakes.",
+    "Some lake polygons are modern reservoirs; no inference is made about their existence in an ancient period.",
+    "Mountain-range and sea label polygons are cartographic naming areas, not surveyed boundaries.",
+    "No forest or grassland historical distribution was invented or supplied."
+  ],
+  "licenseCheck": {
+    "url": "https://www.naturalearthdata.com/about/terms-of-use/",
+    "status": 200,
+    "checkedAt": "2026-09-24T10:33:45.333920+00:00",
+    "excerpt": "erms of Use All versions of Natural Earth raster + vector map data found on this website are in the public domain. You may use the maps in any manner, including modifying the content and design, electronic dissemination, and offset printing. The primary authors, Tom Patterson and Nathaniel Vaughn Kelso , and all other contributors renounce all financial claim to the maps and invites you to use them for personal, educational, and commercial purposes. No permission is needed to use Natural Earth. Crediting the author"
+  }
+}

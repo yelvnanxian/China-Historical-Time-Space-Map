@@ -1,0 +1,1342 @@
+{
+  "comparison": "official 1820 prefecture GBK vs official 1911 prefecture GBK",
+  "method": "SHA256 of original projected shape point coordinates and part offsets, independent of DBF IDs",
+  "1820FeatureCount": 320,
+  "1911FeatureCount": 381,
+  "identicalRawGeometryCount": 0,
+  "allGeometriesIdentical": false,
+  "conclusion": "The two official layers are not identical; the 1820 filename / 1911 DBF date conflict remains unresolved. Do not relabel one as the other.",
+  "sourceCRS": "Both layers EPSG:2333",
+  "uniqueMatchingNameComparison": {
+    "pairs": 265,
+    "equalPairs": 0,
+    "method": "Shapely polygon comparison in the same original projected CRS, after repairing invalid source topology. Matching names are compared only when each layer has one record with that name.",
+    "results": [
+      {
+        "name": "唐努乌梁海",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.664073
+      },
+      {
+        "name": "土谢图汗部",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.800791
+      },
+      {
+        "name": "车臣汗部",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.752881
+      },
+      {
+        "name": "科布多",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.303385
+      },
+      {
+        "name": "扎萨克图汗部",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.603694
+      },
+      {
+        "name": "忻州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.772081
+      },
+      {
+        "name": "沁州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.847439
+      },
+      {
+        "name": "霍州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.725987
+      },
+      {
+        "name": "辽州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.86395
+      },
+      {
+        "name": "潞安府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.89745
+      },
+      {
+        "name": "泽州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.941759
+      },
+      {
+        "name": "平阳府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.857663
+      },
+      {
+        "name": "解州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.895932
+      },
+      {
+        "name": "隰州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.846742
+      },
+      {
+        "name": "汾州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.864828
+      },
+      {
+        "name": "宁武府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.767816
+      },
+      {
+        "name": "太原府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.829427
+      },
+      {
+        "name": "保德州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.687502
+      },
+      {
+        "name": "凉州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.805372
+      },
+      {
+        "name": "甘州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.551024
+      },
+      {
+        "name": "安西州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.570044
+      },
+      {
+        "name": "肃州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.657052
+      },
+      {
+        "name": "宁夏府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.844361
+      },
+      {
+        "name": "西宁府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.689641
+      },
+      {
+        "name": "兰州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.71754
+      },
+      {
+        "name": "巩昌府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.817098
+      },
+      {
+        "name": "忠州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.588994
+      },
+      {
+        "name": "叙州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.829604
+      },
+      {
+        "name": "嘉定府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.743115
+      },
+      {
+        "name": "松潘厅",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.802333
+      },
+      {
+        "name": "懋功厅",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.802247
+      },
+      {
+        "name": "雅州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.056786
+      },
+      {
+        "name": "宁远府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.778668
+      },
+      {
+        "name": "邛州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.697355
+      },
+      {
+        "name": "眉州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.766084
+      },
+      {
+        "name": "茂州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.683839
+      },
+      {
+        "name": "泸州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.717594
+      },
+      {
+        "name": "重庆府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.894257
+      },
+      {
+        "name": "龙安府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.663702
+      },
+      {
+        "name": "成都府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.795279
+      },
+      {
+        "name": "绵州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.601084
+      },
+      {
+        "name": "资州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.789226
+      },
+      {
+        "name": "潼川府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.854444
+      },
+      {
+        "name": "顺庆府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.805713
+      },
+      {
+        "name": "绥定府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.514992
+      },
+      {
+        "name": "石砫厅",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.454869
+      },
+      {
+        "name": "开化府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.810223
+      },
+      {
+        "name": "昭通府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.564597
+      },
+      {
+        "name": "东川府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.846668
+      },
+      {
+        "name": "永北厅",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.915175
+      },
+      {
+        "name": "武定州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.843968
+      },
+      {
+        "name": "曲靖府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.888463
+      },
+      {
+        "name": "楚雄府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.898366
+      },
+      {
+        "name": "云南府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.834242
+      },
+      {
+        "name": "元江州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.587676
+      },
+      {
+        "name": "临安府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.612836
+      },
+      {
+        "name": "丽江府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.911531
+      },
+      {
+        "name": "大理府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.774853
+      },
+      {
+        "name": "永昌府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.508672
+      },
+      {
+        "name": "蒙化厅",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.63378
+      },
+      {
+        "name": "顺宁府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.453518
+      },
+      {
+        "name": "景东厅",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.820433
+      },
+      {
+        "name": "普洱府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.844248
+      },
+      {
+        "name": "广西州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.828716
+      },
+      {
+        "name": "广南府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.87871
+      },
+      {
+        "name": "遵义府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.810389
+      },
+      {
+        "name": "大定府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.891546
+      },
+      {
+        "name": "安顺府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.814775
+      },
+      {
+        "name": "兴义府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.768089
+      },
+      {
+        "name": "贵阳府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.877354
+      },
+      {
+        "name": "平越州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.750238
+      },
+      {
+        "name": "都匀府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.785863
+      },
+      {
+        "name": "思南府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.697953
+      },
+      {
+        "name": "石阡府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.459085
+      },
+      {
+        "name": "柳州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.87569
+      },
+      {
+        "name": "平乐府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.91622
+      },
+      {
+        "name": "镇安府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.402706
+      },
+      {
+        "name": "思恩府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.634761
+      },
+      {
+        "name": "庆远府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.950789
+      },
+      {
+        "name": "泗城府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.973577
+      },
+      {
+        "name": "许州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.796498
+      },
+      {
+        "name": "南阳府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.882958
+      },
+      {
+        "name": "陈州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.862563
+      },
+      {
+        "name": "汝州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.90506
+      },
+      {
+        "name": "河南府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.912344
+      },
+      {
+        "name": "怀庆府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.942408
+      },
+      {
+        "name": "南康府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.823119
+      },
+      {
+        "name": "吉安府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.942042
+      },
+      {
+        "name": "宁都州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.824919
+      },
+      {
+        "name": "瑞州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.903426
+      },
+      {
+        "name": "袁州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.928947
+      },
+      {
+        "name": "抚州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.867223
+      },
+      {
+        "name": "广信府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.93458
+      },
+      {
+        "name": "南安府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.964178
+      },
+      {
+        "name": "嘉兴府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.998711
+      },
+      {
+        "name": "湖州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.999153
+      },
+      {
+        "name": "镇江府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.933831
+      },
+      {
+        "name": "常州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.999781
+      },
+      {
+        "name": "太仓州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.919307
+      },
+      {
+        "name": "松江府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.964147
+      },
+      {
+        "name": "青州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.882161
+      },
+      {
+        "name": "泰安府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.890289
+      },
+      {
+        "name": "莱州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.493881
+      },
+      {
+        "name": "登州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.963579
+      },
+      {
+        "name": "琼州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.999729
+      },
+      {
+        "name": "奉天府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.532828
+      },
+      {
+        "name": "哲里木盟",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.107796
+      },
+      {
+        "name": "额济纳土尔扈特旗",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.669292
+      },
+      {
+        "name": "锡林郭勒盟",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.921954
+      },
+      {
+        "name": "阿拉善厄鲁特旗",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.769385
+      },
+      {
+        "name": "乌兰察布盟",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.794305
+      },
+      {
+        "name": "朔平府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.478705
+      },
+      {
+        "name": "大名府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.981912
+      },
+      {
+        "name": "广平府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.984249
+      },
+      {
+        "name": "顺德府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "赵州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "冀州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "深州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "河间府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.994806
+      },
+      {
+        "name": "保定府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "定州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "正定府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "天津府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.994386
+      },
+      {
+        "name": "顺天府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "易州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "宣化府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "遵化州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.791507
+      },
+      {
+        "name": "永平府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "锦州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.568556
+      },
+      {
+        "name": "承德府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.307724
+      },
+      {
+        "name": "大同府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.527569
+      },
+      {
+        "name": "代州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.897587
+      },
+      {
+        "name": "平定州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.931739
+      },
+      {
+        "name": "彰德府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.955401
+      },
+      {
+        "name": "临清州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.804391
+      },
+      {
+        "name": "东昌府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.87592
+      },
+      {
+        "name": "武定府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.790799
+      },
+      {
+        "name": "济南府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.924268
+      },
+      {
+        "name": "卫辉府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.828098
+      },
+      {
+        "name": "开封府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.76604
+      },
+      {
+        "name": "郧阳府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "襄阳府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "德安府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "汉阳府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "黄州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.999995
+      },
+      {
+        "name": "武昌府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "安陆府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "荆门州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "宜昌府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "荆州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "施南府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.996685
+      },
+      {
+        "name": "徽州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.994276
+      },
+      {
+        "name": "安庆府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "池州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "宁国府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "庐州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "凤阳府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.997907
+      },
+      {
+        "name": "颍州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.997683
+      },
+      {
+        "name": "泗州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "滁州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "和州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "广德州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "六安州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "徐州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.980095
+      },
+      {
+        "name": "海州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "榆林府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "绥德州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "延安府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "鄜州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "同州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "商州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "兴安府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "淮安府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.939867
+      },
+      {
+        "name": "扬州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.91335
+      },
+      {
+        "name": "江宁府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.99253
+      },
+      {
+        "name": "海门厅",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.758844
+      },
+      {
+        "name": "苏州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.998518
+      },
+      {
+        "name": "通州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.918366
+      },
+      {
+        "name": "沂州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.949771
+      },
+      {
+        "name": "兖州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.85909
+      },
+      {
+        "name": "济宁州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.873158
+      },
+      {
+        "name": "归德府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.858554
+      },
+      {
+        "name": "光州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.972013
+      },
+      {
+        "name": "汝宁府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.936998
+      },
+      {
+        "name": "漳州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "汀州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "泉州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "龙岩州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "兴化府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "福州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "福宁府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "建宁府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "邵武府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "延平府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "永春州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "温州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "处州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "永绥厅",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "乾州厅",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "晃州厅",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "佛冈厅",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "连山厅",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "澧州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "常德府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "岳州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "长沙府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "宝庆府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "永顺府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "辰州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "沅州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "靖州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "衡州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "永州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "桂阳州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "郴州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "韶州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "南雄州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "连州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "惠州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "嘉应州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "广州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "高州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "罗定州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "雷州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "西安府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.920237
+      },
+      {
+        "name": "平凉府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.281152
+      },
+      {
+        "name": "凤翔府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.924108
+      },
+      {
+        "name": "泾州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.907263
+      },
+      {
+        "name": "庆阳府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.926639
+      },
+      {
+        "name": "伊克昭盟",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.643534
+      },
+      {
+        "name": "阶州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.765124
+      },
+      {
+        "name": "保宁府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.88629
+      },
+      {
+        "name": "秦州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.853218
+      },
+      {
+        "name": "绛州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.84196
+      },
+      {
+        "name": "蒲州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.901117
+      },
+      {
+        "name": "陕州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.90902
+      },
+      {
+        "name": "夔州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.932104
+      },
+      {
+        "name": "松桃厅",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.54842
+      },
+      {
+        "name": "铜仁府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.650423
+      },
+      {
+        "name": "思州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.639356
+      },
+      {
+        "name": "镇远府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.773944
+      },
+      {
+        "name": "黎平府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.693549
+      },
+      {
+        "name": "桂林府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.926791
+      },
+      {
+        "name": "廉州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.524655
+      },
+      {
+        "name": "南宁府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.732152
+      },
+      {
+        "name": "郁林州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.964408
+      },
+      {
+        "name": "浔州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.868193
+      },
+      {
+        "name": "梧州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.933245
+      },
+      {
+        "name": "赣州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.944033
+      },
+      {
+        "name": "建昌府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.885975
+      },
+      {
+        "name": "九江府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.910132
+      },
+      {
+        "name": "南昌府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.914491
+      },
+      {
+        "name": "饶州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.930287
+      },
+      {
+        "name": "杭州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.989449
+      },
+      {
+        "name": "严州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.99957
+      },
+      {
+        "name": "肇庆府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.8541
+      },
+      {
+        "name": "潮州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.994698
+      },
+      {
+        "name": "台州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.996305
+      },
+      {
+        "name": "衢州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "金华府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.999997
+      },
+      {
+        "name": "绍兴府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.995278
+      },
+      {
+        "name": "宁波府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.831468
+      },
+      {
+        "name": "邠州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.995074
+      },
+      {
+        "name": "乾州",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 1.0
+      },
+      {
+        "name": "曹州府",
+        "topologicallyEqual": false,
+        "intersectionOverUnion": 0.924762
+      }
+    ]
+  }
+}

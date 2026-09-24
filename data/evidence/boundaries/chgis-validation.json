@@ -1,0 +1,117 @@
+{
+  "status": "passed",
+  "checks": [
+    "Official archive MD5",
+    "Source/output feature counts",
+    "All original DBF properties preserved",
+    "Finite legal longitude/latitude extent",
+    "Polygon/MultiPolygon validity",
+    "Unique application IDs",
+    "Nonempty honest display names",
+    "Representative label point inside geometry",
+    "Manifest URLs resolve"
+  ],
+  "totalFeatures": 2746,
+  "layers": [
+    {
+      "year": 1820,
+      "level": "province",
+      "featureCount": 32,
+      "sourcePropertiesCompared": 448,
+      "validGeometries": 32,
+      "interiorLabelPoints": 32,
+      "uniqueIds": true,
+      "sourceMD5MatchesOfficial": true,
+      "sourceDateConflicts": 0,
+      "dateConflictRecords": [],
+      "unnamedDisplayFallbacks": [],
+      "outputSHA256": "b48348d0f5c5cacdd2b1a41e9ab3813566bad5dc4cecd95d4664f060f4314e0d"
+    },
+    {
+      "year": 1820,
+      "level": "prefecture",
+      "featureCount": 320,
+      "sourcePropertiesCompared": 8320,
+      "validGeometries": 320,
+      "interiorLabelPoints": 320,
+      "uniqueIds": true,
+      "sourceMD5MatchesOfficial": true,
+      "sourceDateConflicts": 320,
+      "dateConflictRecords": "All 320 records; see original fields in GeoJSON",
+      "unnamedDisplayFallbacks": [
+        "非政区辖地（原图未命名） · 2106",
+        "非政区辖地（原图未命名） · 2105"
+      ],
+      "outputSHA256": "6fbe350ed47212606e93b6ca1175b4a51957399e71bee134ee04a04fb28ace18"
+    },
+    {
+      "year": 1911,
+      "level": "province",
+      "featureCount": 27,
+      "sourcePropertiesCompared": 621,
+      "validGeometries": 27,
+      "interiorLabelPoints": 27,
+      "uniqueIds": true,
+      "sourceMD5MatchesOfficial": true,
+      "sourceDateConflicts": 1,
+      "dateConflictRecords": [
+        {
+          "id": "195024",
+          "name": "乌里雅苏台",
+          "BEG_YR": 3822,
+          "END_YR": 3822
+        }
+      ],
+      "unnamedDisplayFallbacks": [],
+      "outputSHA256": "bede8f4b2d8ed99e2de8f1d712485f5de216226b27d88a6fa6ec4b864f3a712a"
+    },
+    {
+      "year": 1911,
+      "level": "prefecture",
+      "featureCount": 381,
+      "sourcePropertiesCompared": 10287,
+      "validGeometries": 381,
+      "interiorLabelPoints": 381,
+      "uniqueIds": true,
+      "sourceMD5MatchesOfficial": true,
+      "sourceDateConflicts": 1,
+      "dateConflictRecords": [
+        {
+          "id": "195507",
+          "name": "阿尔泰地区",
+          "BEG_YR": 3822,
+          "END_YR": 3822
+        }
+      ],
+      "unnamedDisplayFallbacks": [],
+      "outputSHA256": "783a4012ec0a9634eaaf66944a70127cc006d17a5d59e88dd80ca8513f45609f"
+    },
+    {
+      "year": 1911,
+      "level": "county",
+      "featureCount": 1986,
+      "sourcePropertiesCompared": 57594,
+      "validGeometries": 1986,
+      "interiorLabelPoints": 1986,
+      "uniqueIds": true,
+      "sourceMD5MatchesOfficial": true,
+      "sourceDateConflicts": 2,
+      "dateConflictRecords": [
+        {
+          "id": "196707",
+          "name": "乐清县",
+          "BEG_YR": 3822,
+          "END_YR": 3822
+        },
+        {
+          "id": "196708",
+          "name": "玉环厅",
+          "BEG_YR": 1146,
+          "END_YR": 1146
+        }
+      ],
+      "unnamedDisplayFallbacks": [],
+      "outputSHA256": "b94d74b7016372601687d8823e3eeab9c4af5ea6502076703e0e77938f6ade75"
+    }
+  ]
+}

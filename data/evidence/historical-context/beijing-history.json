@@ -1,0 +1,16 @@
+{
+  "id": "context-beijing-history",
+  "title": "北京历史 — 维基百科",
+  "url": "https://zh.wikipedia.org/wiki/%E5%8C%97%E4%BA%AC%E5%8E%86%E5%8F%B2",
+  "retrievedAt": "2026-09-24T12:09:22.854866+00:00",
+  "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证。引文保留本次页面原字形。",
+  "snapshotPath": "data/evidence/historical-context/beijing-history.txt",
+  "snapshotSha256": "8d554fdcf78c2109451c7dd0990184f5ca948e812a015520547f3d190e0698c7",
+  "pageId": 156536,
+  "revision": {
+    "revid": 94230399,
+    "parentid": 93667597,
+    "timestamp": "2026-09-07T09:39:33Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E5%8C%97%E4%BA%AC%E5%8E%86%E5%8F%B2&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

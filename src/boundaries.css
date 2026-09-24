@@ -1,0 +1,365 @@
+.boundary-controls {
+  position: absolute;
+  z-index: 6;
+  top: 116px;
+  right: 16px;
+  width: 265px;
+  max-width: calc(100% - 32px);
+  max-height: calc(100% - 148px);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #cedbc2;
+  border-radius: 6px;
+  color: #506746;
+  background: #fafcf4f5;
+  box-shadow: 0 4px 19px #29451e16;
+  backdrop-filter: blur(10px);
+  font-size: 11px;
+}
+.boundary-region-label {
+  font-family: "Songti SC", "STSong", serif;
+  font-size: 12px;
+  white-space: nowrap;
+  color: #4e6358;
+  text-shadow: 0 0 3px #fffdf1, 1px 1px 2px #fffdf1, -1px -1px 2px #fffdf1;
+  letter-spacing: 1px;
+  z-index: 0;
+}
+.boundary-region-province { font-size: 15px; color: #735a7b; letter-spacing: 3px; }
+.boundary-region-country { font-size: 17px; color: #824f3f; letter-spacing: 4px; }
+.boundary-region-county { font-size: 10px; color: #8b784e; }
+.boundary-region-label > small { display: block; font-family: system-ui, sans-serif; font-size: 9px; letter-spacing: 0; color: #52664f; text-align: center; }
+.boundary-original-name { margin: -7px 0 13px; font-size: 10px; color: #87927e; }
+.boundary-modern-comparison { padding: 10px 0; margin-bottom: 10px; border-block: 1px solid #d3ddc8; }
+.boundary-modern-comparison strong { font-size: 12px; line-height: 1.6; font-weight: 500; }
+.boundary-modern-comparison p { color: #7b856f; font-size: 10px; line-height: 1.8; margin: 7px 0; }
+.boundary-modern-comparison a { display: block; font-size: 10px; margin-top: 4px; color: #8c7250; }
+.boundary-region-search { margin-bottom: 14px; }
+.boundary-region-search label { display: block; margin-bottom: 7px; font-size: 11px; }
+.boundary-region-search input { width: 100%; min-width: 0; padding: 9px; border: 1px solid #cbd4c1; border-radius: 4px; background: #fffef8; font: inherit; color: #42593b; }
+.boundary-search-results { max-height: 180px; overflow-y: auto; border: 1px solid #d8e1ce; border-top: 0; }
+.boundary-search-results button { display: flex; width: 100%; justify-content: space-between; gap: 10px; padding: 10px 8px; border-bottom: 1px solid #e5e9de; text-align: left; }
+.boundary-search-results button:hover { background: #eaf0df; }
+.boundary-search-results span { color: #7a8c6a; }
+.boundary-search-results p { padding: 10px; margin: 0; }
+.boundary-controls-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  min-height: 37px;
+  flex-shrink: 0;
+  padding: 10px 12px;
+  text-align: left;
+  color: #667f54;
+}
+.boundary-controls-heading > strong {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.boundary-heading-year {
+  margin-left: 2px;
+  color: #a08058;
+  font-family: Georgia, "Songti SC", serif;
+  font-size: 11px;
+}
+.boundary-expansion-icon {
+  margin-left: auto;
+  transition: transform 0.18s;
+}
+.boundary-expansion-icon.rotated {
+  transform: rotate(180deg);
+}
+.boundary-year-notice,
+.boundary-model-notice,
+.boundary-empty-notice {
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0 12px 9px;
+  color: #a18d6c;
+  font-size: 9px;
+  line-height: 1.8;
+}
+.boundary-model-notice {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #a47b53;
+}
+.boundary-empty-notice {
+  color: #98a789;
+}
+.boundary-controls-body {
+  max-height: min(440px, 58vh);
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: #cfdec0 transparent;
+  padding: 13px 12px 14px;
+  border-top: 1px solid #e0e8d5;
+}
+.boundary-dataset-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 17px;
+}
+.boundary-dataset-picker > span {
+  font-size: 10px;
+  color: #8b9d77;
+}
+.boundary-dataset-picker select {
+  width: 100%;
+  min-width: 0;
+  height: 34px;
+  padding: 0 7px;
+  border: 1px solid #d5e1c8;
+  border-radius: 4px;
+  background: #f3f7e9;
+  color: #70885c;
+  font: inherit;
+  font-size: 11px;
+  cursor: pointer;
+}
+.boundary-layer-list {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+.boundary-layer-list legend {
+  color: #6f875b;
+  font-size: 11px;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+.boundary-level-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 30px;
+  cursor: pointer;
+  font-size: 11px;
+  color: #788f65;
+}
+.boundary-level-control input {
+  width: 13px;
+  height: 13px;
+  margin: 0;
+  accent-color: #758d5e;
+}
+.boundary-level-control small {
+  margin-left: auto;
+  font-size: 9px;
+  color: #a0b08c;
+  white-space: nowrap;
+}
+.boundary-level-swatch {
+  width: 20px;
+  border-top-style: solid;
+  flex-shrink: 0;
+}
+.boundary-level-country {
+  border-top-width: 3px;
+  border-color: #8a5742;
+}
+.boundary-level-province {
+  border-top-width: 2.5px;
+  border-color: #83658d;
+}
+.boundary-level-prefecture {
+  border-top-width: 2px;
+  border-color: #527767;
+}
+.boundary-level-county {
+  border-top-width: 1.5px;
+  border-color: #a58957;
+}
+.boundary-unavailable-levels {
+  color: #a7b398;
+  font-size: 9px;
+  line-height: 1.9;
+  margin: 10px 0 0;
+}
+.boundary-dataset-description {
+  border-top: 1px solid #e1e9d6;
+  margin-top: 15px;
+  padding-top: 12px;
+}
+.boundary-controls dl {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  font-size: 10px;
+  line-height: 1.75;
+}
+.boundary-controls dl > div {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.boundary-controls dt {
+  width: 45px;
+  flex-shrink: 0;
+  color: #9cac8b;
+}
+.boundary-controls dd {
+  margin: 0;
+  color: #778e65;
+  overflow-wrap: anywhere;
+}
+.boundary-dataset-description > p,
+.boundary-selection-caveat {
+  color: #98a887;
+  font-size: 10px;
+  line-height: 1.9;
+  margin: 11px 0;
+}
+.boundary-source-link {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+  color: #9a7953;
+  font-size: 10px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+.boundary-source-link > svg {
+  align-self: center;
+}
+.boundary-source-link:hover {
+  text-decoration: underline;
+}
+.boundary-no-data {
+  margin: 0;
+  color: #96a787;
+  font-size: 11px;
+  line-height: 1.95;
+}
+.boundary-selection {
+  border: 1px solid #d4e0c6;
+  background: #edf4e2;
+  border-radius: 4px;
+  padding: 12px;
+  margin: 0 0 16px;
+}
+.boundary-selection-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.boundary-selection-heading > span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 9px;
+  color: #8da576;
+}
+.boundary-selection-heading > button {
+  padding: 2px;
+  color: #839b6e;
+}
+.boundary-selection > h3 {
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin: 10px 0 13px;
+  color: #637c4f;
+}
+.boundary-selection .boundary-record-id {
+  font-family: monospace;
+  font-size: 9px;
+}
+.boundary-selection .boundary-selection-caveat {
+  color: #a08a65;
+}
+.boundary-error {
+  margin: 0;
+  padding: 0 12px 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  color: #ad7457;
+  font-size: 10px;
+  line-height: 1.8;
+}
+.boundary-error > svg {
+  margin-top: 3px;
+}
+.boundary-loading-status {
+  color: #9cae89;
+  font-size: 10px;
+  margin: 0 0 12px;
+}
+.boundary-loading-icon {
+  color: #91a77b;
+  animation: boundary-turn 1.5s linear infinite;
+}
+.details-open .boundary-controls {
+  right: 370px;
+}
+@keyframes boundary-turn {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 1100px) and (min-width: 721px) {
+  .details-open .boundary-controls {
+    right: 342px;
+  }
+}
+@media (max-width: 720px) {
+  .boundary-controls,
+  .details-open .boundary-controls {
+    top: auto;
+    bottom: 42px;
+    left: 10px;
+    right: 55px;
+    width: auto;
+    max-width: none;
+    max-height: calc(100% - 108px);
+  }
+  .boundary-controls-heading {
+    min-height: 36px;
+    padding: 9px 11px;
+  }
+  .boundary-controls-body {
+    max-height: min(300px, 39vh);
+    padding: 12px 11px;
+  }
+  .boundary-year-notice,
+  .boundary-model-notice,
+  .boundary-empty-notice {
+    padding-left: 11px;
+    padding-right: 11px;
+    font-size: 9px;
+  }
+  .boundary-controls.is-expanded {
+    z-index: 10;
+  }
+  .details-open .boundary-controls:not(.is-expanded) {
+    z-index: 9;
+  }
+  .boundary-level-control {
+    min-height: 33px;
+    font-size: 12px;
+  }
+  .boundary-level-control input {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .boundary-loading-icon {
+    animation: none;
+  }
+  .boundary-expansion-icon {
+    transition: none;
+  }
+}

@@ -1,0 +1,90 @@
+.atlas-launch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 36px;
+  padding: 8px 12px;
+  border: 1px solid #c9c5b9;
+  border-radius: 7px;
+  background: #f8f6ed;
+  color: #344d40;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.atlas-launch:hover { background: #eeede2; border-color: #9caa97; }
+.map-bottomline .atlas-launch { min-height: 25px; padding: 3px 9px; font-size: 10px; gap: 5px; flex-shrink: 0; }
+.map-bottomline .atlas-launch svg { width: 12px; height: 12px; }
+.map-first .map-bottomline { min-height: 34px; gap: 10px; }
+.map-first .map-bottomline > span:not(.map-count) { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.atlas-dialog {
+  width: min(1600px, calc(100vw - 36px));
+  height: calc(100dvh - 36px);
+  max-width: none;
+  max-height: none;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #c5c4b5;
+  border-radius: 12px;
+  background: #f6f3e9;
+  color: #304238;
+  box-shadow: 0 25px 100px #12261bd0;
+}
+.atlas-dialog::backdrop { background: #13271ed6; backdrop-filter: blur(4px); }
+.atlas-shell { display: flex; flex-direction: column; height: 100%; min-height: 0; }
+.atlas-header { display: flex; align-items: center; gap: 24px; padding: 16px 21px 14px; border-bottom: 1px solid #d9d6c9; }
+.atlas-heading { flex-shrink: 0; }
+.atlas-eyebrow { color: #94775b; letter-spacing: 3px; font-size: 10px; }
+.atlas-heading h2 { margin: 3px 0 0; color: #294033; font-family: "Noto Serif SC", "Songti SC", serif; font-size: 22px; letter-spacing: 2px; font-weight: 600; }
+.atlas-header > p { margin: 6px 0 0; color: #806d54; font-size: 12px; line-height: 1.7; }
+.atlas-icon-button { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; flex-shrink: 0; padding: 0; border: 1px solid #d6d4c7; border-radius: 5px; background: #fcfaf4; color: #3d5243; cursor: pointer; }
+.atlas-icon-button:hover:not(:disabled), .atlas-fit-button:hover { background: #e6e9de; }
+.atlas-icon-button:disabled { opacity: .35; cursor: default; }
+.atlas-close { margin-left: auto; border-color: transparent; background: transparent; }
+.atlas-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 11px 21px 8px; }
+.atlas-image-choice { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.atlas-image-choice label { flex-shrink: 0; color: #7c806e; font-size: 11px; }
+.atlas-image-choice select { max-width: 100%; min-width: 180px; height: 34px; padding: 0 31px 0 10px; border: 1px solid #cfcdbf; border-radius: 5px; background: #fcfaf4; color: #304639; font: inherit; font-size: 12px; }
+.atlas-zoom-tools { display: flex; align-items: center; gap: 5px; flex-shrink: 0; }
+.atlas-zoom-tools output { min-width: 46px; text-align: center; color: #6c705f; font: 11px ui-monospace, monospace; }
+.atlas-fit-button { display: inline-flex; align-items: center; gap: 6px; height: 34px; margin-left: 7px; padding: 0 10px; border: 1px solid #d6d4c7; border-radius: 5px; color: #3d5243; background: #fcfaf4; font-size: 11px; cursor: pointer; }
+.atlas-date-row { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 0 22px 10px; font-size: 11px; line-height: 1.6; }
+.atlas-date-row strong { color: #986149; font-weight: 500; }
+.atlas-date-row span { color: #888a7c; font-size: 10px; }
+.atlas-image-area { position: relative; flex: 1; min-height: 0; margin: 0 12px; border: 1px solid #d5d5c9; border-radius: 5px; overflow: hidden; background: #dedfd4; }
+.atlas-viewport { width: 100%; height: 100%; overflow: auto; overscroll-behavior: contain; touch-action: pan-x pan-y; scrollbar-color: #a5ac9c #d9dcd2; scrollbar-width: thin; }
+.atlas-viewport.is-zoomed { cursor: grab; }
+.atlas-viewport.is-dragging { cursor: grabbing; user-select: none; }
+.atlas-image-canvas { display: flex; align-items: center; justify-content: center; }
+.atlas-image-canvas img { display: block; max-width: none; max-height: none; flex-shrink: 0; object-fit: contain; box-shadow: 0 2px 10px #2533232b; user-select: none; }
+.atlas-image-loading { position: absolute; left: 50%; top: 50%; display: flex; align-items: center; gap: 10px; transform: translate(-50%, -50%); padding: 16px 20px; border-radius: 7px; background: #f8f6eff2; color: #5c6b59; font-size: 12px; pointer-events: none; }
+.atlas-footer { display: flex; align-items: center; justify-content: space-between; gap: 15px; padding: 10px 21px 12px; font-size: 11px; }
+.atlas-footer strong { color: #55664e; font-weight: 500; }
+.atlas-footer p { margin: 3px 0 0; color: #8a8b7b; font-size: 10px; }
+.atlas-source-links { display: flex; gap: 18px; }
+.atlas-source-links a { display: inline-flex; align-items: center; gap: 4px; color: #536f55; text-decoration: none; white-space: nowrap; }
+.atlas-source-links a:hover { text-decoration: underline; }
+.atlas-status { display: flex; flex: 1; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: #6e795f; font-size: 13px; }
+.atlas-status button { padding: 8px 16px; border: 1px solid #bdc5b0; border-radius: 5px; background: #e9ecdf; color: #405b42; cursor: pointer; }
+.atlas-spinner { animation: atlas-spin 1s linear infinite; }
+.atlas-dialog :focus-visible, .atlas-launch:focus-visible { outline: 2px solid #7b9166; outline-offset: 3px; }
+@keyframes atlas-spin { to { transform: rotate(360deg); } }
+@media (max-width: 700px) {
+  .atlas-dialog { width: 100vw; height: 100dvh; border: 0; border-radius: 0; }
+  .atlas-header { flex-wrap: wrap; gap: 5px 10px; padding: 12px 14px 10px; }
+  .atlas-heading h2 { font-size: 20px; }
+  .atlas-header > p { order: 3; flex-basis: 100%; margin: 0; font-size: 11px; }
+  .atlas-toolbar { flex-wrap: wrap; gap: 8px; padding: 9px 12px; }
+  .atlas-image-choice { width: 100%; }
+  .atlas-image-choice select { flex: 1; min-width: 0; }
+  .atlas-zoom-tools { margin-left: auto; }
+  .atlas-date-row { padding: 0 13px 8px; }
+  .atlas-date-row span { display: none; }
+  .atlas-image-area { margin: 0 5px; }
+  .atlas-footer { flex-wrap: wrap; gap: 7px; padding: 9px 13px 12px; }
+  .atlas-source-links { font-size: 10px; }
+}
+@media (prefers-reduced-motion: reduce) { .atlas-spinner { animation: none; } }

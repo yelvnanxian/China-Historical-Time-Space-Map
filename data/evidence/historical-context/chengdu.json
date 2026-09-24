@@ -1,0 +1,16 @@
+{
+  "id": "context-chengdu",
+  "title": "成都市 — 维基百科",
+  "url": "https://zh.wikipedia.org/wiki/%E6%88%90%E9%83%BD%E5%B8%82",
+  "retrievedAt": "2026-09-24T12:08:21.273132+00:00",
+  "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证。引文保留本次页面原字形。",
+  "snapshotPath": "data/evidence/historical-context/chengdu.txt",
+  "snapshotSha256": "c798327fb6862f8cbb73e99aba1a47528c27246014826aac36fdcd73cb2defd5",
+  "pageId": 2847,
+  "revision": {
+    "revid": 94514746,
+    "parentid": 94428810,
+    "timestamp": "2026-09-23T09:09:18Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E6%88%90%E9%83%BD&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

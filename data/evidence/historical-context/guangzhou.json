@@ -1,0 +1,16 @@
+{
+  "id": "context-guangzhou",
+  "title": "广州市 — 维基百科",
+  "url": "https://zh.wikipedia.org/wiki/%E5%B9%BF%E5%B7%9E%E5%B8%82",
+  "retrievedAt": "2026-09-24T12:08:21.357504+00:00",
+  "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证。引文保留本次页面原字形。",
+  "snapshotPath": "data/evidence/historical-context/guangzhou.txt",
+  "snapshotSha256": "152c9df48c233545a63f5bc1704c6a555b6fe09658ee007380e6d504113d45bd",
+  "pageId": 1329,
+  "revision": {
+    "revid": 94228892,
+    "parentid": 94206131,
+    "timestamp": "2026-09-07T07:32:33Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E5%B9%BF%E5%B7%9E&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

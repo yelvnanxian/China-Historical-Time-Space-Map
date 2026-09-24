@@ -1,0 +1,16 @@
+{
+  "id": "context-yellow-river",
+  "title": "黄河 — 维基百科",
+  "url": "https://zh.wikipedia.org/wiki/%E9%BB%84%E6%B2%B3",
+  "retrievedAt": "2026-09-24T12:07:35.123651+00:00",
+  "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证。引文保留本次页面原字形。",
+  "snapshotPath": "data/evidence/historical-context/yellow-river.txt",
+  "snapshotSha256": "70cc9c9d4598afe7efc31a35810171e45b99ee5709d881be57f941298a8dcbad",
+  "pageId": 1443,
+  "revision": {
+    "revid": 94359222,
+    "parentid": 94318104,
+    "timestamp": "2026-09-14T15:17:25Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E9%BB%84%E6%B2%B3&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}
