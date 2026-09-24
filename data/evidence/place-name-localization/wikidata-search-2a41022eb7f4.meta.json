@@ -1,0 +1,6 @@
+{
+  "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&search=Shishged+River&language=en&uselang=zh&limit=2",
+  "retrievedAt": "2026-09-24T14:44:14.803270+00:00",
+  "sha256": "5874501d972bfd86f1ecb9e6696c807b6599b90a25b14e26dc620287053735f3",
+  "path": "data/evidence/place-name-localization/wikidata-search-2a41022eb7f4.json"
+}

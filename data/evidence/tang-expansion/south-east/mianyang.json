@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-mianyang",
+  "title": "绵阳市 — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E7%BB%B5%E9%98%B3%E5%B8%82&oldid=94240820",
+  "retrievedAt": "2026-09-24T14:36:10.552160+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/mianyang.txt",
+  "snapshotSha256": "8319e382f9b9c5832d2695fd177b7451090959eaacb6790a818f6debf22aa6c6",
+  "pageId": 33763,
+  "revision": {
+    "revid": 94240820,
+    "parentid": 91752370,
+    "timestamp": "2026-09-08T04:52:51Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E7%BB%B5%E9%98%B3%E5%B8%82&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

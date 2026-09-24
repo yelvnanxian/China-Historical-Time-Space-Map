@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-suizhou-prefecture",
+  "title": "遂州 — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E9%81%82%E5%B7%9E&oldid=93495515",
+  "retrievedAt": "2026-09-24T14:38:03.462496+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/suizhou-prefecture.txt",
+  "snapshotSha256": "bd43897ec3ac6d323df4db65fe2a3811211dd3a44e2df3d9dbbfb146b098699d",
+  "pageId": 1259909,
+  "revision": {
+    "revid": 93495515,
+    "parentid": 93493716,
+    "timestamp": "2026-07-15T22:27:12Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E9%81%82%E5%B7%9E&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

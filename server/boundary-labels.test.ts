@@ -44,7 +44,7 @@ test("修补只作用于核实过的源记录，不按上级、现代名或相�
   assert.equal(getBoundaryDisplayLabel({ id: affectedId, name: "00", year: 1391 }).nameStatus, "unnamed");
   assert.equal(boundaryDisplayName({ name: "山東東路" }, "00"), "山东东路");
   assert.equal(boundaryDisplayName({ name: "", NAME_CH: "藍田縣" }), "蓝田县");
-  assert.equal(boundaryDisplayName({ name: "Yinshui", sourceName: "" }), "Yinshui");
+  assert.equal(boundaryDisplayName({ name: "Yinshui", sourceName: "" }), "未定名行政区");
 });
 
 test("核查记录以同一编码组10个府州及几何一致性支持山东西路，不误用東平府", async () => {

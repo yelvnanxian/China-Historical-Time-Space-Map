@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-hengzhou-prefecture",
+  "title": "衡州 — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E8%A1%A1%E5%B7%9E&oldid=93494694",
+  "retrievedAt": "2026-09-24T14:37:09.373521+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/hengzhou-prefecture.txt",
+  "snapshotSha256": "9803872a5d62c2ba9e4fe8f8302ca8c0f59b60bf4a7cf1bd74e10992e6199b32",
+  "pageId": 587922,
+  "revision": {
+    "revid": 93494694,
+    "parentid": 93492536,
+    "timestamp": "2026-07-15T21:27:03Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E8%A1%A1%E5%B7%9E&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

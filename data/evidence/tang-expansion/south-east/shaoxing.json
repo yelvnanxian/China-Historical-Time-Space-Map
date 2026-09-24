@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-shaoxing",
+  "title": "绍兴市 — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E7%BB%8D%E5%85%B4%E5%B8%82&oldid=94241304",
+  "retrievedAt": "2026-09-24T14:35:46.314369+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/shaoxing.txt",
+  "snapshotSha256": "2b25d5a70e7b89306aa557c296511915425e2b694574c07673004d8103c26b90",
+  "pageId": 6652,
+  "revision": {
+    "revid": 94241304,
+    "parentid": 94112024,
+    "timestamp": "2026-09-08T05:45:37Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E7%BB%8D%E5%85%B4%E5%B8%82&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

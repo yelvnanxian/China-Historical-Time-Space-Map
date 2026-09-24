@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-chengdu",
+  "title": "成都市 — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E6%88%90%E9%83%BD%E5%B8%82&oldid=94514746",
+  "retrievedAt": "2026-09-24T14:34:39.891936+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/chengdu.txt",
+  "snapshotSha256": "c798327fb6862f8cbb73e99aba1a47528c27246014826aac36fdcd73cb2defd5",
+  "pageId": 2847,
+  "revision": {
+    "revid": 94514746,
+    "parentid": 94428810,
+    "timestamp": "2026-09-23T09:09:18Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E6%88%90%E9%83%BD%E5%B8%82&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

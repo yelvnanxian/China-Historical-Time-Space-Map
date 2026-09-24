@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-guangzhou",
+  "title": "广州市 — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E5%B9%BF%E5%B7%9E%E5%B8%82&oldid=94228892",
+  "retrievedAt": "2026-09-24T14:34:39.277884+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/guangzhou.txt",
+  "snapshotSha256": "152c9df48c233545a63f5bc1704c6a555b6fe09658ee007380e6d504113d45bd",
+  "pageId": 1329,
+  "revision": {
+    "revid": 94228892,
+    "parentid": 94206131,
+    "timestamp": "2026-09-07T07:32:33Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E5%B9%BF%E5%B7%9E%E5%B8%82&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

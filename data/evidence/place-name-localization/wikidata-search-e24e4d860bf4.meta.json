@@ -1,0 +1,6 @@
+{
+  "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&search=Bogcang+Zangbo&language=en&uselang=zh&limit=2",
+  "retrievedAt": "2026-09-24T14:44:14.229630+00:00",
+  "sha256": "5e2189615b8a69e3e7d9156870cd4608de6e16a55e5b8b43de0ecc395e8f63ed",
+  "path": "data/evidence/place-name-localization/wikidata-search-e24e4d860bf4.json"
+}

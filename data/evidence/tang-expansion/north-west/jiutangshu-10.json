@@ -1,0 +1,11 @@
+{
+  "id": "tang-nw-jiutangshu-10",
+  "title": "《旧唐书》卷10·肃宗",
+  "url": "https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B710&oldid=2317162",
+  "retrievedAt": "2026-09-24T09:56:33.241597+00:00",
+  "note": "复用本项目实际取得的固定修订古籍全文，另存本批证据目录；摘录支持事件叙事，不核定地图坐标。",
+  "snapshotPath": "data/evidence/tang-expansion/north-west/jiutangshu-10.txt",
+  "snapshotSha256": "601fd88086061249dd9b1f7c84ce80cc027e99798e162546fe091472b8ee31b9",
+  "revisionId": "2317162",
+  "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&page=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B710&prop=text%7Crevid&format=json"
+}

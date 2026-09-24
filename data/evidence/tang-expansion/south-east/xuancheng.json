@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-xuancheng",
+  "title": "宣城市 — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E5%AE%A3%E5%9F%8E%E5%B8%82&oldid=94241284",
+  "retrievedAt": "2026-09-24T14:36:03.254334+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/xuancheng.txt",
+  "snapshotSha256": "9fb412a4492a00803f91356b55e83d6280c889837bdbda217c63da7b0d4fbeeb",
+  "pageId": 16476,
+  "revision": {
+    "revid": 94241284,
+    "parentid": 93847992,
+    "timestamp": "2026-09-08T05:42:43Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E5%AE%A3%E5%9F%8E%E5%B8%82&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

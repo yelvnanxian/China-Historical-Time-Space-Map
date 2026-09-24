@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-changsha",
+  "title": "长沙市 — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E9%95%BF%E6%B2%99%E5%B8%82&oldid=94240882",
+  "retrievedAt": "2026-09-24T14:35:51.347933+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/changsha.txt",
+  "snapshotSha256": "ef5bf1840416f7b54b8d03fbb63938b3ea8ec1edc1d9b470b6985b5a481093f0",
+  "pageId": 4664,
+  "revision": {
+    "revid": 94240882,
+    "parentid": 93930804,
+    "timestamp": "2026-09-08T05:01:33Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E9%95%BF%E6%B2%99%E5%B8%82&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

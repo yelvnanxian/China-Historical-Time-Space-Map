@@ -1,0 +1,6 @@
+{
+  "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&search=Indravati+River&language=en&uselang=zh&limit=2",
+  "retrievedAt": "2026-09-24T14:44:16.012874+00:00",
+  "sha256": "ccfffc238f516639df6029ce030ff71f9ed6eec5c3f902847ace7f479ed22720",
+  "path": "data/evidence/place-name-localization/wikidata-search-43bcec2a6de5.json"
+}

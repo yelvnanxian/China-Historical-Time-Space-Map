@@ -1,0 +1,728 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "redirects": [
+      {
+        "from": "河内市",
+        "to": "河內市"
+      }
+    ],
+    "pages": [
+      {
+        "pageid": 465,
+        "ns": 0,
+        "title": "重庆市",
+        "revisions": [
+          {
+            "revid": 94401201,
+            "parentid": 94328022,
+            "timestamp": "2026-09-17T03:42:31Z"
+          }
+        ]
+      },
+      {
+        "pageid": 657,
+        "ns": 0,
+        "title": "合肥市",
+        "revisions": [
+          {
+            "revid": 94445233,
+            "parentid": 94241223,
+            "timestamp": "2026-09-19T16:19:58Z"
+          }
+        ]
+      },
+      {
+        "pageid": 1168,
+        "ns": 0,
+        "title": "苏州市",
+        "coordinates": [
+          {
+            "lat": 31.3,
+            "lon": 120.61666667,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 94529993,
+            "parentid": 94410317,
+            "timestamp": "2026-09-24T04:02:36Z"
+          }
+        ]
+      },
+      {
+        "pageid": 1329,
+        "ns": 0,
+        "title": "广州市",
+        "coordinates": [
+          {
+            "lat": 23.128795,
+            "lon": 113.258976,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 94228892,
+            "parentid": 94206131,
+            "timestamp": "2026-09-07T07:32:33Z"
+          }
+        ]
+      },
+      {
+        "pageid": 2797,
+        "ns": 0,
+        "title": "荆州市",
+        "coordinates": [
+          {
+            "lat": 30.335,
+            "lon": 112.24,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 94477256,
+            "parentid": 94418285,
+            "timestamp": "2026-09-21T08:58:59Z"
+          }
+        ]
+      },
+      {
+        "pageid": 2847,
+        "ns": 0,
+        "title": "成都市",
+        "coordinates": [
+          {
+            "lat": 30.65833333,
+            "lon": 104.06444444,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 94514746,
+            "parentid": 94428810,
+            "timestamp": "2026-09-23T09:09:18Z"
+          }
+        ]
+      },
+      {
+        "pageid": 2980,
+        "ns": 0,
+        "title": "南京市",
+        "coordinates": [
+          {
+            "lat": 32.04388889,
+            "lon": 118.77861111,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 94430858,
+            "parentid": 94422589,
+            "timestamp": "2026-09-18T20:50:04Z"
+          }
+        ]
+      },
+      {
+        "pageid": 4378,
+        "ns": 0,
+        "title": "南宁市",
+        "coordinates": [
+          {
+            "lat": 22.8161,
+            "lon": 108.3664,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 94285717,
+            "parentid": 94239805,
+            "timestamp": "2026-09-10T19:40:54Z"
+          }
+        ]
+      },
+      {
+        "pageid": 4379,
+        "ns": 0,
+        "title": "桂林市",
+        "coordinates": [
+          {
+            "lat": 25.2344,
+            "lon": 110.1799,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 94239887,
+            "parentid": 94239540,
+            "timestamp": "2026-09-08T03:15:03Z"
+          }
+        ]
+      },
+      {
+        "pageid": 4380,
+        "ns": 0,
+        "title": "柳州市",
+        "coordinates": [
+          {
+            "lat": 24.3262,
+            "lon": 109.4284,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 94378786,
+            "parentid": 94239844,
+            "timestamp": "2026-09-15T19:29:01Z"
+          }
+        ]
+      },
+      {
+        "pageid": 4651,
+        "ns": 0,
+        "title": "杭州市",
+        "coordinates": [
+          {
+            "lat": 30.24916667,
+            "lon": 120.20527778,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 94228857,
+            "parentid": 94103316,
+            "timestamp": "2026-09-07T07:29:43Z"
+          }
+        ]
+      },
+      {
+        "pageid": 4664,
+        "ns": 0,
+        "title": "长沙市",
+        "revisions": [
+          {
+            "revid": 94240882,
+            "parentid": 93930804,
+            "timestamp": "2026-09-08T05:01:33Z"
+          }
+        ]
+      },
+      {
+        "pageid": 6652,
+        "ns": 0,
+        "title": "绍兴市",
+        "coordinates": [
+          {
+            "lat": 29.995,
+            "lon": 120.586,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 94241304,
+            "parentid": 94112024,
+            "timestamp": "2026-09-08T05:45:37Z"
+          }
+        ]
+      },
+      {
+        "pageid": 8299,
+        "ns": 0,
+        "title": "福州市",
+        "coordinates": [
+          {
+            "lat": 26.15,
+            "lon": 119.28333333,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 94466186,
+            "parentid": 94465342,
+            "timestamp": "2026-09-20T17:14:28Z"
+          }
+        ]
+      },
+      {
+        "pageid": 10244,
+        "ns": 0,
+        "title": "温州市",
+        "coordinates": [
+          {
+            "lat": 27.993,
+            "lon": 120.699,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 94320146,
+            "parentid": 94241289,
+            "timestamp": "2026-09-12T15:53:18Z"
+          }
+        ]
+      },
+      {
+        "pageid": 10735,
+        "ns": 0,
+        "title": "襄阳市",
+        "coordinates": [
+          {
+            "lat": 32.009,
+            "lon": 112.123,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 94422629,
+            "parentid": 94387171,
+            "timestamp": "2026-09-18T09:11:53Z"
+          }
+        ]
+      },
+      {
+        "pageid": 10997,
+        "ns": 0,
+        "title": "宁波市",
+        "revisions": [
+          {
+            "revid": 94056732,
+            "parentid": 93543793,
+            "timestamp": "2026-08-26T17:06:47Z"
+          }
+        ]
+      },
+      {
+        "pageid": 12533,
+        "ns": 0,
+        "title": "湖州市",
+        "coordinates": [
+          {
+            "lat": 30.894,
+            "lon": 120.087,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 94241298,
+            "parentid": 94112021,
+            "timestamp": "2026-09-08T05:44:53Z"
+          }
+        ]
+      },
+      {
+        "pageid": 13048,
+        "ns": 0,
+        "title": "南昌市",
+        "revisions": [
+          {
+            "revid": 94295103,
+            "parentid": 94269532,
+            "timestamp": "2026-09-11T08:40:11Z"
+          }
+        ]
+      },
+      {
+        "pageid": 13473,
+        "ns": 0,
+        "title": "大理市",
+        "coordinates": [
+          {
+            "lat": 25.68083333,
+            "lon": 100.30027778,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 93661459,
+            "parentid": 92428010,
+            "timestamp": "2026-07-27T01:09:17Z"
+          }
+        ]
+      },
+      {
+        "pageid": 15807,
+        "ns": 0,
+        "title": "衡阳市",
+        "coordinates": [
+          {
+            "lat": 26.893,
+            "lon": 112.572,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 94240899,
+            "parentid": 94186529,
+            "timestamp": "2026-09-08T05:03:36Z"
+          }
+        ]
+      },
+      {
+        "pageid": 16476,
+        "ns": 0,
+        "title": "宣城市",
+        "coordinates": [
+          {
+            "lat": 30.94,
+            "lon": 118.758,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 94241284,
+            "parentid": 93847992,
+            "timestamp": "2026-09-08T05:42:43Z"
+          }
+        ]
+      },
+      {
+        "pageid": 16623,
+        "ns": 0,
+        "title": "泉州市",
+        "coordinates": [
+          {
+            "lat": 24.8741,
+            "lon": 118.6757,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 94466328,
+            "parentid": 94445706,
+            "timestamp": "2026-09-20T17:24:48Z"
+          }
+        ]
+      },
+      {
+        "pageid": 17407,
+        "ns": 0,
+        "title": "常州市",
+        "coordinates": [
+          {
+            "lat": 31.81,
+            "lon": 119.976,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 94402662,
+            "parentid": 94241344,
+            "timestamp": "2026-09-17T05:36:42Z"
+          }
+        ]
+      },
+      {
+        "pageid": 17588,
+        "ns": 0,
+        "title": "扬州市",
+        "coordinates": [
+          {
+            "lat": 32.393,
+            "lon": 119.415,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 94241368,
+            "parentid": 93791995,
+            "timestamp": "2026-09-08T05:52:06Z"
+          }
+        ]
+      },
+      {
+        "pageid": 24982,
+        "ns": 0,
+        "title": "九江市",
+        "coordinates": [
+          {
+            "lat": 29.7054,
+            "lon": 116.0026,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 94241127,
+            "parentid": 93911299,
+            "timestamp": "2026-09-08T05:27:43Z"
+          }
+        ]
+      },
+      {
+        "pageid": 25360,
+        "ns": 0,
+        "title": "镇江市",
+        "coordinates": [
+          {
+            "lat": 32.188,
+            "lon": 119.428,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 94241373,
+            "parentid": 94092778,
+            "timestamp": "2026-09-08T05:52:29Z"
+          }
+        ]
+      },
+      {
+        "pageid": 33763,
+        "ns": 0,
+        "title": "绵阳市",
+        "coordinates": [
+          {
+            "lat": 31.467,
+            "lon": 104.6779,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 94240820,
+            "parentid": 91752370,
+            "timestamp": "2026-09-08T04:52:51Z"
+          }
+        ]
+      },
+      {
+        "pageid": 33766,
+        "ns": 0,
+        "title": "遂宁市",
+        "coordinates": [
+          {
+            "lat": 30.5333,
+            "lon": 105.5923,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 94240826,
+            "parentid": 92437194,
+            "timestamp": "2026-09-08T04:53:37Z"
+          }
+        ]
+      },
+      {
+        "pageid": 46900,
+        "ns": 0,
+        "title": "阆中市",
+        "revisions": [
+          {
+            "revid": 93542864,
+            "parentid": 93087760,
+            "timestamp": "2026-07-19T09:41:46Z"
+          }
+        ]
+      },
+      {
+        "pageid": 50530,
+        "ns": 0,
+        "title": "寿县",
+        "revisions": [
+          {
+            "revid": 88598062,
+            "parentid": 83848367,
+            "timestamp": "2025-08-05T08:42:55Z"
+          }
+        ]
+      },
+      {
+        "pageid": 53908,
+        "ns": 0,
+        "title": "歙县",
+        "coordinates": [
+          {
+            "lat": 29.87,
+            "lon": 118.42,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 93198356,
+            "parentid": 91698040,
+            "timestamp": "2026-06-25T09:09:15Z"
+          }
+        ]
+      },
+      {
+        "pageid": 58570,
+        "ns": 0,
+        "title": "武昌区",
+        "coordinates": [
+          {
+            "lat": 30.55472222,
+            "lon": 114.31277778,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 89717148,
+            "parentid": 89023778,
+            "timestamp": "2025-10-28T14:14:23Z"
+          }
+        ]
+      },
+      {
+        "pageid": 100008,
+        "ns": 0,
+        "title": "河內市",
+        "revisions": [
+          {
+            "revid": 94123701,
+            "parentid": 93239988,
+            "timestamp": "2026-08-31T15:04:06Z"
+          }
+        ]
+      },
+      {
+        "pageid": 100342,
+        "ns": 0,
+        "title": "汉中市",
+        "coordinates": [
+          {
+            "lat": 33.0675,
+            "lon": 107.0233,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 94240425,
+            "parentid": 92772581,
+            "timestamp": "2026-09-08T04:01:54Z"
+          }
+        ]
+      },
+      {
+        "pageid": 102970,
+        "ns": 0,
+        "title": "奉节县",
+        "coordinates": [
+          {
+            "lat": 31.0175,
+            "lon": 109.465,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 92967587,
+            "parentid": 92534548,
+            "timestamp": "2026-06-06T10:31:17Z"
+          }
+        ]
+      },
+      {
+        "pageid": 110310,
+        "ns": 0,
+        "title": "广汉市",
+        "revisions": [
+          {
+            "revid": 92635617,
+            "parentid": 91358280,
+            "timestamp": "2026-05-12T18:49:21Z"
+          }
+        ]
+      },
+      {
+        "pageid": 159641,
+        "ns": 0,
+        "title": "三台县",
+        "revisions": [
+          {
+            "revid": 86102879,
+            "parentid": 85595508,
+            "timestamp": "2025-02-14T15:33:41Z"
+          }
+        ]
+      },
+      {
+        "pageid": 301104,
+        "ns": 0,
+        "title": "金华市",
+        "coordinates": [
+          {
+            "lat": 29.0788,
+            "lon": 119.6475,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 94241308,
+            "parentid": 93133886,
+            "timestamp": "2026-09-08T05:46:08Z"
+          }
+        ]
+      },
+      {
+        "pageid": 308719,
+        "ns": 0,
+        "title": "剑阁县",
+        "revisions": [
+          {
+            "revid": 92787869,
+            "parentid": 92784412,
+            "timestamp": "2026-05-25T07:30:35Z"
+          }
+        ]
+      }
+    ]
+  },
+  "limits": {
+    "coordinates": 500
+  }
+}

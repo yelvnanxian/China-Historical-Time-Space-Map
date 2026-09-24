@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-zhenjiang",
+  "title": "镇江市 — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E9%95%87%E6%B1%9F%E5%B8%82&oldid=94241373",
+  "retrievedAt": "2026-09-24T14:35:46.321946+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/zhenjiang.txt",
+  "snapshotSha256": "f1af04cc893acb2e6137a08411fc11f25826941bd10acf0190fab2cae4b6bacd",
+  "pageId": 25360,
+  "revision": {
+    "revid": 94241373,
+    "parentid": 94092778,
+    "timestamp": "2026-09-08T05:52:29Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E9%95%87%E6%B1%9F%E5%B8%82&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

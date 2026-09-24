@@ -1,6 +1,7 @@
 import { readFile } from 'node:fs/promises';
 import type { Catalog, Coordinates, SearchResult } from '../shared/types';
 import { validateEnrichment } from './validation';
+import { boundarySearchKey } from '../shared/boundary-search';
 
 /** Fail at startup when imported history data has broken references or geometry. */
 export function validateCatalog(value: unknown): asserts value is Catalog {
@@ -105,7 +106,7 @@ export async function loadCatalog(path: string): Promise<Catalog> {
   return data;
 }
 
-const normalized = (value: string) => value.normalize('NFKC').toLocaleLowerCase().replace(/\s+/g, '');
+const normalized = (value: string) => boundarySearchKey(value).replace(/\s+/g, '');
 export function formatYear(year: number): string {
   return year < 0 ? `公元前 ${Math.abs(year)} 年` : `${year} 年`;
 }

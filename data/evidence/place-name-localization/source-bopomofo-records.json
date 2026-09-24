@@ -1,0 +1,93 @@
+[
+  {
+    "sourceLayer": "v5_1391_chin_chn_1391_c",
+    "CODE": "M002800000043",
+    "H_PINYIN_N": "Shi`erwuchi Wei",
+    "H_UNICODE_": "失ㄦ兀赤衛",
+    "H_ADMIN_TY": "Wei"
+  },
+  {
+    "sourceLayer": "v5_1391_chin_chn_1391_c",
+    "CODE": "M002800000030",
+    "H_PINYIN_N": "Ta`erhe Wei",
+    "H_UNICODE_": "塔ㄦ河衛",
+    "H_ADMIN_TY": "Wei"
+  },
+  {
+    "sourceLayer": "v5_1391_chin_chn_1391_c",
+    "CODE": "M002800000047",
+    "H_PINYIN_N": "Hu`erhai Wei",
+    "H_UNICODE_": "忽ㄦ海衛",
+    "H_ADMIN_TY": "Wei"
+  },
+  {
+    "sourceLayer": "v5_1391_chin_chn_1391_c",
+    "CODE": "M002800000049",
+    "H_PINYIN_N": "Fu`erhe Wei",
+    "H_UNICODE_": "甫ㄦ河衛",
+    "H_ADMIN_TY": "Wei"
+  },
+  {
+    "sourceLayer": "v5_1391_chin_chn_1391_c",
+    "CODE": "M002800000023",
+    "H_PINYIN_N": "Hu`erwen Wei",
+    "H_UNICODE_": "虎ㄦ文衛",
+    "H_ADMIN_TY": "Wei"
+  },
+  {
+    "sourceLayer": "v5_1391_chin_chn_1391_c",
+    "CODE": "M002800000036",
+    "H_PINYIN_N": "Haila`er Suo",
+    "H_UNICODE_": "海剌ㄦ所",
+    "H_ADMIN_TY": "Suo"
+  },
+  {
+    "sourceLayer": "v5_1391_chin_chn_1391_p",
+    "CODE": "M002800000043",
+    "H_PINYIN_N": "Shi`erwuchi Wei",
+    "H_UNICODE_": "失ㄦ兀赤衛",
+    "H_ADMIN_TY": "Wei"
+  },
+  {
+    "sourceLayer": "v5_1391_chin_chn_1391_p",
+    "CODE": "M002800000030",
+    "H_PINYIN_N": "Ta`erhe Wei",
+    "H_UNICODE_": "塔ㄦ河衛",
+    "H_ADMIN_TY": "Wei"
+  },
+  {
+    "sourceLayer": "v5_1391_chin_chn_1391_p",
+    "CODE": "M002800000047",
+    "H_PINYIN_N": "Hu`erhai Wei",
+    "H_UNICODE_": "忽ㄦ海衛",
+    "H_ADMIN_TY": "Wei"
+  },
+  {
+    "sourceLayer": "v5_1391_chin_chn_1391_p",
+    "CODE": "M002800000049",
+    "H_PINYIN_N": "Fu`erhe Wei",
+    "H_UNICODE_": "甫ㄦ河衛",
+    "H_ADMIN_TY": "Wei"
+  },
+  {
+    "sourceLayer": "v5_1391_chin_chn_1391_p",
+    "CODE": "M002800000023",
+    "H_PINYIN_N": "Hu`erwen Wei",
+    "H_UNICODE_": "虎ㄦ文衛",
+    "H_ADMIN_TY": "Wei"
+  },
+  {
+    "sourceLayer": "v5_1391_chin_chn_1391_p",
+    "CODE": "M002800000036",
+    "H_PINYIN_N": "Haila`er Suo",
+    "H_UNICODE_": "海剌ㄦ所",
+    "H_ADMIN_TY": "Suo"
+  },
+  {
+    "sourceLayer": "v5_1391_chin_chn_1391_s",
+    "CODE": "M002800000000",
+    "H_PINYIN_N": "Nu`ergan Dusi",
+    "H_UNICODE_": "奴ㄦ干都司",
+    "H_ADMIN_TY": "Dusi"
+  }
+]

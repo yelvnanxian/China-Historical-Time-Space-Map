@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-fengjie",
+  "title": "奉节县 — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E5%A5%89%E8%8A%82%E5%8E%BF&oldid=92967587",
+  "retrievedAt": "2026-09-24T14:36:15.497035+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/fengjie.txt",
+  "snapshotSha256": "d6d638bf5681a71d7880056c426d8ec50dd35d40deaaa2f707329cfe621e517a",
+  "pageId": 102970,
+  "revision": {
+    "revid": 92967587,
+    "parentid": 92534548,
+    "timestamp": "2026-06-06T10:31:17Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E5%A5%89%E8%8A%82%E5%8E%BF&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

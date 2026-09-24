@@ -36,13 +36,15 @@ export interface BoundarySelection {
   recordId?: string;
   polity?: string;
   sourceAdminType?: string;
+  originalPolity?: string;
+  originalAdminType?: string;
   originalName?: string;
   modernNames?: string[];
   correspondenceNote?: string;
   correspondenceSourceIds?: string[];
   nameCorrectionNote?: string;
   nameSourceUrl?: string;
-  nameStatus?: "source" | "source-field" | "source-recovered" | "unnamed";
+  nameStatus?: "source" | "source-field" | "source-recovered" | "translated" | "unresolved" | "unnamed";
 }
 
 export const boundaryLevelNames: Record<BoundaryLevel, string> = {

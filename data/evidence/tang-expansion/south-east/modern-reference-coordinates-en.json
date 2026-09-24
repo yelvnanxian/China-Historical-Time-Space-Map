@@ -1,0 +1,9 @@
+{
+  "id": "tang-se-modern-reference-coordinates-en",
+  "title": "现代对应行政区坐标补充 — 英文维基百科坐标API",
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=coordinates%7Crevisions&titles=Chongqing%7CHefei%7CChangsha%7CNingbo%7CNanchang%7CLangzhong%7CShou+County%7CHanoi%7CGuanghan%7CSantai+County%7CJiange+County&redirects=1&colimit=max&coprimary=primary&rvprop=ids%7Ctimestamp&format=json&formatversion=2",
+  "retrievedAt": "2026-09-24T14:40:31.667992+00:00",
+  "note": "本次API返回现代行政区主坐标及页面修订号，仅用于地区参考点；不是唐代城址、城垣或治所测绘。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/modern-reference-coordinates-en.api.json",
+  "snapshotSha256": "2e93f55eaa0dea1b99ff37785cef5901d6c71fa0657a684e325d80c5d0540d0e"
+}

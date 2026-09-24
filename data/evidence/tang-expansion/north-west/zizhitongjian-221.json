@@ -1,0 +1,11 @@
+{
+  "id": "tang-nw-zizhitongjian-221",
+  "title": "《资治通鉴》卷221",
+  "url": "https://zh.wikisource.org/w/index.php?title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91/%E5%8D%B7221&oldid=982302",
+  "retrievedAt": "2026-09-24T09:53:58.219641+00:00",
+  "note": "复用本项目实际取得的固定修订古籍全文，另存本批证据目录；摘录支持事件叙事，不核定地图坐标。",
+  "snapshotPath": "data/evidence/tang-expansion/north-west/zizhitongjian-221.txt",
+  "snapshotSha256": "7d7358c0807bb977bc322744bbdccef1c775c22e83816570cae5c2085c6e33bf",
+  "revisionId": "982302",
+  "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&page=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7221&prop=text%7Crevid&format=json"
+}

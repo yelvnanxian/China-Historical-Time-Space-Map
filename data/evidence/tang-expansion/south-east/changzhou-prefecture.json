@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-changzhou-prefecture",
+  "title": "常州 (古代) — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E5%B8%B8%E5%B7%9E%20%28%E5%8F%A4%E4%BB%A3%29&oldid=93495557",
+  "retrievedAt": "2026-09-24T14:38:11.722583+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/changzhou-prefecture.txt",
+  "snapshotSha256": "fb015edaa83c30361d2b76691687152d12ed16cbdf4c542050e8d8de80eaa496",
+  "pageId": 302548,
+  "revision": {
+    "revid": 93495557,
+    "parentid": 93489572,
+    "timestamp": "2026-07-15T22:29:21Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E5%B8%B8%E5%B7%9E+%28%E5%8F%A4%E4%BB%A3%29&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

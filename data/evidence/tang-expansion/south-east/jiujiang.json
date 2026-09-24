@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-jiujiang",
+  "title": "九江市 — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E4%B9%9D%E6%B1%9F%E5%B8%82&oldid=94241127",
+  "retrievedAt": "2026-09-24T14:35:49.532891+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/jiujiang.txt",
+  "snapshotSha256": "fd033653468caef6c531b9a28e39e3fc46ab7d5cdd23b344f47e15da75119860",
+  "pageId": 24982,
+  "revision": {
+    "revid": 94241127,
+    "parentid": 93911299,
+    "timestamp": "2026-09-08T05:27:43Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E4%B9%9D%E6%B1%9F%E5%B8%82&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

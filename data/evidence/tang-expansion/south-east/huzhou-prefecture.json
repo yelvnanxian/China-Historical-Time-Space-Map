@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-huzhou-prefecture",
+  "title": "湖州 (古代) — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E6%B9%96%E5%B7%9E%20%28%E5%8F%A4%E4%BB%A3%29&oldid=28745760",
+  "retrievedAt": "2026-09-24T14:37:02.970982+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/huzhou-prefecture.txt",
+  "snapshotSha256": "f711bae67e94d673511b73820a018b3db6c00d8d3aab791555e0d49cf5641a32",
+  "pageId": 301054,
+  "revision": {
+    "revid": 28745760,
+    "parentid": 25166586,
+    "timestamp": "2013-09-28T18:49:02Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E6%B9%96%E5%B7%9E+%28%E5%8F%A4%E4%BB%A3%29&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

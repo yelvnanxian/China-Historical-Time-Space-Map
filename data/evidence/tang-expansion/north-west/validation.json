@@ -1,0 +1,16 @@
+{
+  "profiles": 50,
+  "existingEntrances": 28,
+  "newPlaces": 22,
+  "sources": 11,
+  "quotesMatched": 118,
+  "allSnapshotHashesMatch": true,
+  "coordinatePrecision": "rounded to 0.01 degree modern reference only",
+  "outputSha256": "25e6f9700af263cf4b672b748786d250e1f053c79eed284d076729fc9d181478",
+  "regions": {
+    "关中与两京": 9,
+    "河北与河东": 14,
+    "中原与山东": 14,
+    "河西与西域": 13
+  }
+}

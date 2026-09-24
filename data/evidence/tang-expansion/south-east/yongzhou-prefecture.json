@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-yongzhou-prefecture",
+  "title": "邕州 — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E9%82%95%E5%B7%9E&oldid=93482376",
+  "retrievedAt": "2026-09-24T14:38:08.306746+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/yongzhou-prefecture.txt",
+  "snapshotSha256": "9e4137f210262fb7d9934efc509cc3cf6c9cf0152ac62dd2304ad3fd6fb60f63",
+  "pageId": 380425,
+  "revision": {
+    "revid": 93482376,
+    "parentid": 93481312,
+    "timestamp": "2026-07-15T11:15:31Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E9%82%95%E5%B7%9E&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

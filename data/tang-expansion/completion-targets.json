@@ -1,0 +1,533 @@
+{
+  "version": "1.0",
+  "periodId": "tang",
+  "scope": "唐朝主要城镇第一轮完整清单",
+  "selectionCriteria": [
+    "覆盖两京及重要区域军政中心、运河商贸城镇、主要港口和河西西域据点。",
+    "补齐全部37个既有唐朝入口，新增66个城镇入口，并增加咸阳的唐代县城资料。",
+    "清单按阅读入口计数，含关隘、驿站和同时期南诏入口；幽州与范阳沿用既有不同入口，不冒充互不重合的古城址。",
+    "本清单为可核查的精选覆盖，不声称穷尽唐代全部州县。"
+  ],
+  "towns": [
+    {
+      "placeId": "changan",
+      "name": "长安",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "luoyang",
+      "name": "洛阳",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "beijing",
+      "name": "幽州",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "kaifeng",
+      "name": "汴州",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "nanjing",
+      "name": "江宁",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "hangzhou",
+      "name": "杭州",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "chengdu",
+      "name": "成都",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "guangzhou",
+      "name": "广州",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "yangzhou",
+      "name": "扬州",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "xiangyang",
+      "name": "襄阳",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "jingzhou",
+      "name": "江陵",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "jinyang",
+      "name": "晋阳",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "datong",
+      "name": "云州",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "linzi",
+      "name": "临淄",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "handan",
+      "name": "邯郸",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "tongguan",
+      "name": "潼关",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "fanyang",
+      "name": "范阳",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "quanzhou",
+      "name": "泉州",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "dali",
+      "name": "太和城",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "dunhuang",
+      "name": "敦煌",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "mawei",
+      "name": "马嵬驿",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "lingwu",
+      "name": "灵武",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "suiyang",
+      "name": "睢阳",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "xiangzhou",
+      "name": "相州",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "heyang",
+      "name": "河阳",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "shanzhou",
+      "name": "陕州",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "zhengzhou",
+      "name": "郑州",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "huazhou-hua",
+      "name": "滑州",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "huaizhou",
+      "name": "怀州",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "hengzhou",
+      "name": "恒州",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "beizhou",
+      "name": "贝州",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "pingyuan",
+      "name": "平原郡",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "fuzhou-fu",
+      "name": "鄜州",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "luzhou",
+      "name": "潞州",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "dengzhou",
+      "name": "邓州",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "xuzhou-xuchang",
+      "name": "许州",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "xuzhou-pengcheng",
+      "name": "徐州",
+      "group": "既有唐朝入口"
+    },
+    {
+      "placeId": "xianyang",
+      "name": "咸阳",
+      "group": "既有地点补唐代关系"
+    },
+    {
+      "placeId": "fengxiang",
+      "name": "凤翔",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "tongzhou-dali",
+      "name": "同州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "huazhou-shaanxi",
+      "name": "华州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "puzhou",
+      "name": "蒲州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "jiangzhou",
+      "name": "绛州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "weizhou-daming",
+      "name": "魏州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "bozhou-liaocheng",
+      "name": "博州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "qizhou-jinan",
+      "name": "齐州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "yanzhou",
+      "name": "兖州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "qingzhou",
+      "name": "青州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "dengzhou-penglai",
+      "name": "登州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "liangzhou-wuwei",
+      "name": "凉州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "ganzhou-zhangye",
+      "name": "甘州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "suzhou-jiuquan",
+      "name": "肃州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "guazhou-jinchang",
+      "name": "瓜州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "xizhou-gaochang",
+      "name": "西州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "yizhou-hami",
+      "name": "伊州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "tingzhou-beiting",
+      "name": "庭州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "qiuci",
+      "name": "龟兹",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "yutian-hotan",
+      "name": "于阗",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "shule-kashgar",
+      "name": "疏勒",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "yanqi",
+      "name": "焉耆",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "suzhou",
+      "name": "苏州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "runzhou",
+      "name": "润州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "yuezhou",
+      "name": "越州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "mingzhou",
+      "name": "明州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "huzhou",
+      "name": "湖州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "wuzhou-jinhua",
+      "name": "婺州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "hongzhou",
+      "name": "洪州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "jiangzhou-jiujiang",
+      "name": "江州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "tanzhou",
+      "name": "潭州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "hengzhou-hunan",
+      "name": "衡州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "ezhou-jiangxia",
+      "name": "鄂州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "fuzhou-fujian",
+      "name": "福州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "wenzhou",
+      "name": "温州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "xuanzhou",
+      "name": "宣州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "shezhou",
+      "name": "歙州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "shouzhou",
+      "name": "寿州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "luzhou-hefei",
+      "name": "庐州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "zizhou",
+      "name": "梓州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "mianzhou",
+      "name": "绵州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "hanzhou",
+      "name": "汉州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "jianzhou",
+      "name": "剑州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "hanzhong",
+      "name": "梁州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "kuizhou",
+      "name": "夔州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "yuzhou-chongqing",
+      "name": "渝州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "langzhou",
+      "name": "阆州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "suizhou-suining",
+      "name": "遂州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "guizhou-guilin",
+      "name": "桂州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "liuzhou",
+      "name": "柳州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "yongzhou-nanning",
+      "name": "邕州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "annan-songping",
+      "name": "安南府",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "changzhou",
+      "name": "常州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "cangzhou",
+      "name": "沧州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "yingzhou-hejian",
+      "name": "瀛州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "dingzhou",
+      "name": "定州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "yizhou-hebei",
+      "name": "易州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "yingzhou-liaoxi",
+      "name": "营州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "chenzhou-huaiyang",
+      "name": "陈州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "bozhou-qiao",
+      "name": "亳州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "caizhou-runan",
+      "name": "蔡州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "yuezhou-baling",
+      "name": "岳州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "jizhou-luling",
+      "name": "吉州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "qianzhou-gan",
+      "name": "虔州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "shaozhou",
+      "name": "韶州",
+      "group": "本批新增城镇"
+    },
+    {
+      "placeId": "qianzhou-wuling",
+      "name": "黔州",
+      "group": "本批新增城镇"
+    }
+  ]
+}

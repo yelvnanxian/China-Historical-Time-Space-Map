@@ -1,0 +1,1043 @@
+{
+  "version": "1.0",
+  "region": "central-links",
+  "sources": [
+    {
+      "id": "tang-nw-jiutangshu-38",
+      "title": "舊唐書/卷38 — 维基文库",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B738&oldid=7904832",
+      "retrievedAt": "2026-09-24T14:33:56.292603+00:00",
+      "note": "实际取得的固定修订全文；引文逐字核对。古籍可支持建置或事件叙事，不单独验证古城经纬度。",
+      "snapshotPath": "data/evidence/tang-expansion/north-west/jiutangshu-38.txt",
+      "snapshotSha256": "ba14df7bbdbb7c8219d3601ab2032593153a90fa6362620037344d69e632e92b",
+      "revisionId": "7904832",
+      "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&page=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B738&prop=text%7Crevid&format=json"
+    },
+    {
+      "id": "tang-nw-jiutangshu-39",
+      "title": "舊唐書/卷39 — 维基文库",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B739&oldid=2691264",
+      "retrievedAt": "2026-09-24T14:33:58.474669+00:00",
+      "note": "实际取得的固定修订全文；引文逐字核对。古籍可支持建置或事件叙事，不单独验证古城经纬度。",
+      "snapshotPath": "data/evidence/tang-expansion/north-west/jiutangshu-39.txt",
+      "snapshotSha256": "a0d0a6c1b521023043cdc9fc1352f1eaa7c0534e05e9f99fdbc41f47991f88e6",
+      "revisionId": "2691264",
+      "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&page=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B739&prop=text%7Crevid&format=json"
+    },
+    {
+      "id": "tang-nw-jiutangshu-40",
+      "title": "舊唐書/卷40 — 维基文库",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B740&oldid=2690566",
+      "retrievedAt": "2026-09-24T14:33:51.697456+00:00",
+      "note": "实际取得的固定修订全文；引文逐字核对。古籍可支持建置或事件叙事，不单独验证古城经纬度。",
+      "snapshotPath": "data/evidence/tang-expansion/north-west/jiutangshu-40.txt",
+      "snapshotSha256": "5b50ad935e1c2d99766a35bb0f6db644df29afb19f759b7ed5a9fa787318f31f",
+      "revisionId": "2690566",
+      "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&page=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B740&prop=text%7Crevid&format=json"
+    },
+    {
+      "id": "tang-se-jiutangshu-41",
+      "title": "舊唐書/卷41 — 维基文库",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B741&oldid=2690053",
+      "retrievedAt": "2026-09-24T14:38:52.760137+00:00",
+      "note": "实际取得固定修订全文，引文逐字核对；古籍支持建置及名称，不单独验证古城经纬度。",
+      "snapshotPath": "data/evidence/tang-expansion/south-east/jiutangshu-41.txt",
+      "snapshotSha256": "4188ecd5ae351c2ab6507d809cd91085450fffd3574928581f0d9f3ba60e7f9e",
+      "revisionId": "2690053"
+    },
+    {
+      "id": "tang-central-location-cangzhou",
+      "title": "河北沧州市地区 — 现代位置参考",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E6%B2%A7%E5%B7%9E%E5%B8%82&oldid=94238944",
+      "retrievedAt": "2026-09-24T14:41:51.900608+00:00",
+      "note": "API返回的现代行政区/城镇代表点，仅作古今地区对照和导航，不是唐代城址实测坐标；逐页修订号与坐标保存在本地快照。",
+      "snapshotPath": "data/evidence/tang-expansion/central-links/modern-coordinates.json",
+      "snapshotSha256": "44b352e52a4853bf25d6f7afa837156cdbfd12333eee2b31e79bfda9b70aa856"
+    },
+    {
+      "id": "tang-central-location-yingzhou-hejian",
+      "title": "河北河间市 — 现代位置参考",
+      "url": "https://en.wikipedia.org/w/index.php?title=Hejian&oldid=1374426676",
+      "retrievedAt": "2026-09-24T14:42:14.133007+00:00",
+      "note": "仅用于现代地区定位；不是唐代城址实测。原始标题、修订号和坐标保存在快照。",
+      "snapshotPath": "data/evidence/tang-expansion/central-links/modern-coordinates-en.json",
+      "snapshotSha256": "3519ce49020cc592c3e7542d7c312934c17ee94536b50f2fe74a8286f9742ae0"
+    },
+    {
+      "id": "tang-central-location-dingzhou",
+      "title": "河北定州市 — 现代位置参考",
+      "url": "https://en.wikipedia.org/w/index.php?title=Dingzhou&oldid=1375778945",
+      "retrievedAt": "2026-09-24T14:42:14.133007+00:00",
+      "note": "仅用于现代地区定位；不是唐代城址实测。原始标题、修订号和坐标保存在快照。",
+      "snapshotPath": "data/evidence/tang-expansion/central-links/modern-coordinates-en.json",
+      "snapshotSha256": "3519ce49020cc592c3e7542d7c312934c17ee94536b50f2fe74a8286f9742ae0"
+    },
+    {
+      "id": "tang-central-location-yizhou-hebei",
+      "title": "河北保定易县 — 现代位置参考",
+      "url": "https://en.wikipedia.org/w/index.php?title=Yi%20County%2C%20Hebei&oldid=1355413917",
+      "retrievedAt": "2026-09-24T14:42:14.133007+00:00",
+      "note": "仅用于现代地区定位；不是唐代城址实测。原始标题、修订号和坐标保存在快照。",
+      "snapshotPath": "data/evidence/tang-expansion/central-links/modern-coordinates-en.json",
+      "snapshotSha256": "3519ce49020cc592c3e7542d7c312934c17ee94536b50f2fe74a8286f9742ae0"
+    },
+    {
+      "id": "tang-central-location-yingzhou-liaoxi",
+      "title": "辽宁朝阳市 — 现代位置参考",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E6%9C%9D%E9%98%B3%E5%B8%82&oldid=94241593",
+      "retrievedAt": "2026-09-24T14:41:51.900608+00:00",
+      "note": "API返回的现代行政区/城镇代表点，仅作古今地区对照和导航，不是唐代城址实测坐标；逐页修订号与坐标保存在本地快照。",
+      "snapshotPath": "data/evidence/tang-expansion/central-links/modern-coordinates.json",
+      "snapshotSha256": "44b352e52a4853bf25d6f7afa837156cdbfd12333eee2b31e79bfda9b70aa856"
+    },
+    {
+      "id": "tang-central-location-chenzhou-huaiyang",
+      "title": "河南周口淮阳区 — 现代位置参考",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E6%B7%AE%E9%98%B3%E5%8C%BA&oldid=92576468",
+      "retrievedAt": "2026-09-24T14:41:51.900608+00:00",
+      "note": "API返回的现代行政区/城镇代表点，仅作古今地区对照和导航，不是唐代城址实测坐标；逐页修订号与坐标保存在本地快照。",
+      "snapshotPath": "data/evidence/tang-expansion/central-links/modern-coordinates.json",
+      "snapshotSha256": "44b352e52a4853bf25d6f7afa837156cdbfd12333eee2b31e79bfda9b70aa856"
+    },
+    {
+      "id": "tang-central-location-bozhou-qiao",
+      "title": "安徽亳州市 — 现代位置参考",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E4%BA%B3%E5%B7%9E%E5%B8%82&oldid=94241278",
+      "retrievedAt": "2026-09-24T14:41:51.900608+00:00",
+      "note": "API返回的现代行政区/城镇代表点，仅作古今地区对照和导航，不是唐代城址实测坐标；逐页修订号与坐标保存在本地快照。",
+      "snapshotPath": "data/evidence/tang-expansion/central-links/modern-coordinates.json",
+      "snapshotSha256": "44b352e52a4853bf25d6f7afa837156cdbfd12333eee2b31e79bfda9b70aa856"
+    },
+    {
+      "id": "tang-central-location-caizhou-runan",
+      "title": "河南驻马店汝南县 — 现代位置参考",
+      "url": "https://en.wikipedia.org/w/index.php?title=Runan%20County&oldid=1343107814",
+      "retrievedAt": "2026-09-24T14:42:14.133007+00:00",
+      "note": "仅用于现代地区定位；不是唐代城址实测。原始标题、修订号和坐标保存在快照。",
+      "snapshotPath": "data/evidence/tang-expansion/central-links/modern-coordinates-en.json",
+      "snapshotSha256": "3519ce49020cc592c3e7542d7c312934c17ee94536b50f2fe74a8286f9742ae0"
+    },
+    {
+      "id": "tang-central-location-yuezhou-baling",
+      "title": "湖南岳阳市 — 现代位置参考",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E5%B2%B3%E9%98%B3%E5%B8%82&oldid=94529543",
+      "retrievedAt": "2026-09-24T14:41:51.900608+00:00",
+      "note": "API返回的现代行政区/城镇代表点，仅作古今地区对照和导航，不是唐代城址实测坐标；逐页修订号与坐标保存在本地快照。",
+      "snapshotPath": "data/evidence/tang-expansion/central-links/modern-coordinates.json",
+      "snapshotSha256": "44b352e52a4853bf25d6f7afa837156cdbfd12333eee2b31e79bfda9b70aa856"
+    },
+    {
+      "id": "tang-central-location-jizhou-luling",
+      "title": "江西吉安市 — 现代位置参考",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E5%90%89%E5%AE%89%E5%B8%82&oldid=94448634",
+      "retrievedAt": "2026-09-24T14:41:51.900608+00:00",
+      "note": "API返回的现代行政区/城镇代表点，仅作古今地区对照和导航，不是唐代城址实测坐标；逐页修订号与坐标保存在本地快照。",
+      "snapshotPath": "data/evidence/tang-expansion/central-links/modern-coordinates.json",
+      "snapshotSha256": "44b352e52a4853bf25d6f7afa837156cdbfd12333eee2b31e79bfda9b70aa856"
+    },
+    {
+      "id": "tang-central-location-qianzhou-gan",
+      "title": "江西赣州市 — 现代位置参考",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E8%B5%A3%E5%B7%9E%E5%B8%82&oldid=94241134",
+      "retrievedAt": "2026-09-24T14:41:51.900608+00:00",
+      "note": "API返回的现代行政区/城镇代表点，仅作古今地区对照和导航，不是唐代城址实测坐标；逐页修订号与坐标保存在本地快照。",
+      "snapshotPath": "data/evidence/tang-expansion/central-links/modern-coordinates.json",
+      "snapshotSha256": "44b352e52a4853bf25d6f7afa837156cdbfd12333eee2b31e79bfda9b70aa856"
+    },
+    {
+      "id": "tang-central-location-shaozhou",
+      "title": "广东韶关市 — 现代位置参考",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E9%9F%B6%E5%85%B3%E5%B8%82&oldid=94240103",
+      "retrievedAt": "2026-09-24T14:41:51.900608+00:00",
+      "note": "API返回的现代行政区/城镇代表点，仅作古今地区对照和导航，不是唐代城址实测坐标；逐页修订号与坐标保存在本地快照。",
+      "snapshotPath": "data/evidence/tang-expansion/central-links/modern-coordinates.json",
+      "snapshotSha256": "44b352e52a4853bf25d6f7afa837156cdbfd12333eee2b31e79bfda9b70aa856"
+    },
+    {
+      "id": "tang-central-location-qianzhou-wuling",
+      "title": "重庆彭水地区 — 现代位置参考",
+      "url": "https://en.wikipedia.org/w/index.php?title=Pengshui%20Miao%20and%20Tujia%20Autonomous%20County&oldid=1370645567",
+      "retrievedAt": "2026-09-24T14:42:14.133007+00:00",
+      "note": "仅用于现代地区定位；不是唐代城址实测。原始标题、修订号和坐标保存在快照。",
+      "snapshotPath": "data/evidence/tang-expansion/central-links/modern-coordinates-en.json",
+      "snapshotSha256": "3519ce49020cc592c3e7542d7c312934c17ee94536b50f2fe74a8286f9742ae0"
+    }
+  ],
+  "newPlaces": [
+    {
+      "id": "cangzhou",
+      "name": "沧州",
+      "modernName": "河北沧州市地区",
+      "coordinates": [
+        116.84,
+        38.3
+      ],
+      "type": "city",
+      "summary": "沧州在唐初多次迁治，经历清池、饶安、胡苏，贞观初又归清池。天宝时期的景城郡也是河北军事网络的一环，《旧唐书》记横海军驻沧州城。今沧州市点位仅供区域定位，不能代替东南方向的古州治。",
+      "aliases": [
+        "沧州",
+        "景城郡",
+        "沧州市地区"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "sourceIds": [
+        "tang-nw-jiutangshu-39",
+        "tang-nw-jiutangshu-38",
+        "tang-central-location-cangzhou"
+      ],
+      "nameByPeriod": {
+        "tang": "景城郡"
+      },
+      "location": {
+        "accuracy": "approximate",
+        "note": "使用河北沧州市地区的现代地区代表坐标，四舍五入至0.01度供浏览定位；未考古核定唐代城址，不能用于判定唐代街道、城垣或治所范围。唐沧州清池治所在今城区东南，点位仅为地区参考。",
+        "sourceIds": [
+          "tang-central-location-cangzhou"
+        ]
+      }
+    },
+    {
+      "id": "yingzhou-hejian",
+      "name": "瀛州",
+      "modernName": "河北河间市",
+      "coordinates": [
+        116.1,
+        38.45
+      ],
+      "type": "city",
+      "summary": "瀛州承接隋河间郡，唐初平定河北后恢复州名，周围县份的归属多次调整。天宝改称河间郡，乾元又复瀛州；河间县与所领高阳、平舒等县构成其行政网络，应区分治所城镇与整个州郡范围。",
+      "aliases": [
+        "瀛州",
+        "河间郡",
+        "河间市"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "sourceIds": [
+        "tang-nw-jiutangshu-39",
+        "tang-central-location-yingzhou-hejian"
+      ],
+      "nameByPeriod": {
+        "tang": "河间郡"
+      },
+      "location": {
+        "accuracy": "approximate",
+        "note": "使用河北河间市的现代地区代表坐标，四舍五入至0.01度供浏览定位；未考古核定唐代城址，不能用于判定唐代街道、城垣或治所范围。",
+        "sourceIds": [
+          "tang-central-location-yingzhou-hejian"
+        ]
+      }
+    },
+    {
+      "id": "dingzhou",
+      "name": "定州",
+      "modernName": "河北定州市",
+      "coordinates": [
+        114.99,
+        38.52
+      ],
+      "type": "city",
+      "summary": "定州以安喜县为治所，唐初一度设大总管府，统辖河北众多州。天宝时期称博陵郡，州城西还设北平军。它既是地方行政中心，也能帮助理解河北中部与幽州方向之间的军事联系。",
+      "aliases": [
+        "定州",
+        "博陵郡",
+        "定州市"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "sourceIds": [
+        "tang-nw-jiutangshu-39",
+        "tang-nw-jiutangshu-38",
+        "tang-central-location-dingzhou"
+      ],
+      "nameByPeriod": {
+        "tang": "博陵郡"
+      },
+      "location": {
+        "accuracy": "approximate",
+        "note": "使用河北定州市的现代地区代表坐标，四舍五入至0.01度供浏览定位；未考古核定唐代城址，不能用于判定唐代街道、城垣或治所范围。",
+        "sourceIds": [
+          "tang-central-location-dingzhou"
+        ]
+      }
+    },
+    {
+      "id": "yizhou-hebei",
+      "name": "易州",
+      "modernName": "河北保定易县",
+      "coordinates": [
+        115.5,
+        39.35
+      ],
+      "type": "city",
+      "summary": "易州连接河北北部诸县，州内置高阳军。开元二十三年又分置五回、楼亭、板城三县，展示出治下行政组织的变化。易州、上谷郡是前后使用的州郡名，不能因此把同名上谷地区在各时代的范围视为一致。",
+      "aliases": [
+        "易州",
+        "上谷郡",
+        "保定易县"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "sourceIds": [
+        "tang-nw-jiutangshu-38",
+        "tang-nw-jiutangshu-39",
+        "tang-central-location-yizhou-hebei"
+      ],
+      "nameByPeriod": {
+        "tang": "上谷郡"
+      },
+      "location": {
+        "accuracy": "approximate",
+        "note": "使用河北保定易县的现代地区代表坐标，四舍五入至0.01度供浏览定位；未考古核定唐代城址，不能用于判定唐代街道、城垣或治所范围。",
+        "sourceIds": [
+          "tang-central-location-yizhou-hebei"
+        ]
+      }
+    },
+    {
+      "id": "yingzhou-liaoxi",
+      "name": "营州",
+      "modernName": "辽宁朝阳市",
+      "coordinates": [
+        120.45,
+        41.57
+      ],
+      "type": "city",
+      "summary": "营州是唐朝东北方向的重要军政城镇，平卢节度使治所在此。契丹战争之后，营州府曾在柳城与渔阳之间迁移，开元十一年又归柳城旧治。阅读它的沿革，关键是把军府名称、驻地变化和边境关系分开。",
+      "aliases": [
+        "营州",
+        "柳城郡",
+        "朝阳市"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "sourceIds": [
+        "tang-nw-jiutangshu-39",
+        "tang-nw-jiutangshu-38",
+        "tang-central-location-yingzhou-liaoxi"
+      ],
+      "nameByPeriod": {
+        "tang": "柳城郡"
+      },
+      "location": {
+        "accuracy": "approximate",
+        "note": "使用辽宁朝阳市的现代地区代表坐标，四舍五入至0.01度供浏览定位；未考古核定唐代城址，不能用于判定唐代街道、城垣或治所范围。",
+        "sourceIds": [
+          "tang-central-location-yingzhou-liaoxi"
+        ]
+      }
+    },
+    {
+      "id": "chenzhou-huaiyang",
+      "name": "陈州",
+      "modernName": "河南周口淮阳区",
+      "coordinates": [
+        114.85,
+        33.73
+      ],
+      "type": "city",
+      "summary": "陈州以宛丘为州治，唐初设置后经历领县裁并，天宝改为淮阳郡。它与汴州、许州、蔡州可组成中原城镇的对照：州名、县名与旧国地望交织，却并不指同一层级的行政单位。",
+      "aliases": [
+        "陈州",
+        "淮阳郡",
+        "周口淮阳区"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "sourceIds": [
+        "tang-nw-jiutangshu-38",
+        "tang-central-location-chenzhou-huaiyang"
+      ],
+      "nameByPeriod": {
+        "tang": "淮阳郡"
+      },
+      "location": {
+        "accuracy": "approximate",
+        "note": "使用河南周口淮阳区的现代地区代表坐标，四舍五入至0.01度供浏览定位；未考古核定唐代城址，不能用于判定唐代街道、城垣或治所范围。",
+        "sourceIds": [
+          "tang-central-location-chenzhou-huaiyang"
+        ]
+      }
+    },
+    {
+      "id": "bozhou-qiao",
+      "name": "亳州",
+      "modernName": "安徽亳州市",
+      "coordinates": [
+        115.78,
+        33.84
+      ],
+      "type": "city",
+      "summary": "亳州在唐初设总管府，后改都督府，再撤府而保留州。州治谯县在贞观十七年由古谯城移入州城；这个迁治细节说明，即使同一州县名称延续，城市内部或附近的治所仍会变化。",
+      "aliases": [
+        "亳州",
+        "谯郡",
+        "亳州市"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "sourceIds": [
+        "tang-nw-jiutangshu-38",
+        "tang-central-location-bozhou-qiao"
+      ],
+      "nameByPeriod": {
+        "tang": "谯郡"
+      },
+      "location": {
+        "accuracy": "approximate",
+        "note": "使用安徽亳州市的现代地区代表坐标，四舍五入至0.01度供浏览定位；未考古核定唐代城址，不能用于判定唐代街道、城垣或治所范围。",
+        "sourceIds": [
+          "tang-central-location-bozhou-qiao"
+        ]
+      }
+    },
+    {
+      "id": "caizhou-runan",
+      "name": "蔡州",
+      "modernName": "河南驻马店汝南县",
+      "coordinates": [
+        114.36,
+        33.01
+      ],
+      "type": "city",
+      "summary": "唐代这一区域先称豫州，天宝称汝南郡，宝应元年才改称蔡州，治县为汝阳。元和年间讨吴元济的战争还改变了附近县份建置；读到“蔡州”时，要特别分清所指年代与今天的汝南地区。",
+      "aliases": [
+        "蔡州",
+        "汝南郡",
+        "驻马店汝南县"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "sourceIds": [
+        "tang-nw-jiutangshu-38",
+        "tang-central-location-caizhou-runan"
+      ],
+      "nameByPeriod": {
+        "tang": "汝南郡"
+      },
+      "location": {
+        "accuracy": "approximate",
+        "note": "使用河南驻马店汝南县的现代地区代表坐标，四舍五入至0.01度供浏览定位；未考古核定唐代城址，不能用于判定唐代街道、城垣或治所范围。",
+        "sourceIds": [
+          "tang-central-location-caizhou-runan"
+        ]
+      }
+    },
+    {
+      "id": "yuezhou-baling",
+      "name": "岳州",
+      "modernName": "湖南岳阳市",
+      "coordinates": [
+        113.13,
+        29.36
+      ],
+      "type": "city",
+      "summary": "唐初平定萧铣后先置巴州，随后改为岳州，治巴陵县。它与潭州、鄂州构成长江与湖南方向的城镇阅读路线。巴陵既曾是县名，也是天宝时期郡名，古今对照时需要先判断材料所说的行政层级。",
+      "aliases": [
+        "岳州",
+        "巴陵郡",
+        "岳阳市"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "sourceIds": [
+        "tang-nw-jiutangshu-40",
+        "tang-central-location-yuezhou-baling"
+      ],
+      "nameByPeriod": {
+        "tang": "巴陵郡"
+      },
+      "location": {
+        "accuracy": "approximate",
+        "note": "使用湖南岳阳市的现代地区代表坐标，四舍五入至0.01度供浏览定位；未考古核定唐代城址，不能用于判定唐代街道、城垣或治所范围。",
+        "sourceIds": [
+          "tang-central-location-yuezhou-baling"
+        ]
+      }
+    },
+    {
+      "id": "jizhou-luling",
+      "name": "吉州",
+      "modernName": "江西吉安市",
+      "coordinates": [
+        114.96,
+        27.09
+      ],
+      "type": "city",
+      "summary": "吉州在唐初平定林士弘后设置，以庐陵县为州治。庐陵旧治子阳城，永淳元年迁治；州治迁移是理解吉安地区城市沿革的关键。天宝时用庐陵郡名，乾元又复吉州，郡与县同名而层级不同。",
+      "aliases": [
+        "吉州",
+        "庐陵郡",
+        "吉安市"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "sourceIds": [
+        "tang-nw-jiutangshu-40",
+        "tang-central-location-jizhou-luling"
+      ],
+      "nameByPeriod": {
+        "tang": "庐陵郡"
+      },
+      "location": {
+        "accuracy": "approximate",
+        "note": "使用江西吉安市的现代地区代表坐标，四舍五入至0.01度供浏览定位；未考古核定唐代城址，不能用于判定唐代街道、城垣或治所范围。",
+        "sourceIds": [
+          "tang-central-location-jizhou-luling"
+        ]
+      }
+    },
+    {
+      "id": "qianzhou-gan",
+      "name": "虔州",
+      "modernName": "江西赣州市",
+      "coordinates": [
+        114.93,
+        25.83
+      ],
+      "type": "city",
+      "summary": "虔州在赣县设治，天宝时改称南康郡。唐代又从南康县分置大庾、信丰等县，展示了赣南地方建置的展开。南康既是郡名也有同名县，不能直接把整个南康郡定位到今天的南康城区。",
+      "aliases": [
+        "虔州",
+        "南康郡",
+        "赣州市"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "sourceIds": [
+        "tang-nw-jiutangshu-40",
+        "tang-central-location-qianzhou-gan"
+      ],
+      "nameByPeriod": {
+        "tang": "南康郡"
+      },
+      "location": {
+        "accuracy": "approximate",
+        "note": "使用江西赣州市的现代地区代表坐标，四舍五入至0.01度供浏览定位；未考古核定唐代城址，不能用于判定唐代街道、城垣或治所范围。",
+        "sourceIds": [
+          "tang-central-location-qianzhou-gan"
+        ]
+      }
+    },
+    {
+      "id": "shaozhou",
+      "name": "韶州",
+      "modernName": "广东韶关市",
+      "coordinates": [
+        113.6,
+        24.81
+      ],
+      "type": "city",
+      "summary": "韶州的治县是曲江，唐初曾称番州，贞观初改称韶州。其所领始兴县与大庾岭相联系，可与北面的虔州对照岭南内外的城镇分布。始兴郡不是始兴县城，两者同名却有不同的空间层级。",
+      "aliases": [
+        "韶州",
+        "始兴郡",
+        "韶关市"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "sourceIds": [
+        "tang-se-jiutangshu-41",
+        "tang-central-location-shaozhou"
+      ],
+      "nameByPeriod": {
+        "tang": "始兴郡"
+      },
+      "location": {
+        "accuracy": "approximate",
+        "note": "使用广东韶关市的现代地区代表坐标，四舍五入至0.01度供浏览定位；未考古核定唐代城址，不能用于判定唐代街道、城垣或治所范围。",
+        "sourceIds": [
+          "tang-central-location-shaozhou"
+        ]
+      }
+    },
+    {
+      "id": "qianzhou-wuling",
+      "name": "黔州",
+      "modernName": "重庆彭水地区",
+      "coordinates": [
+        108.16,
+        29.29
+      ],
+      "type": "city",
+      "summary": "黔州以彭水地区为中心，是黔中道的重要军政据点。州府除本领县外，还联系多个羁縻州；《旧唐书》明确把这些州写作“皆羁縻，寄治山谷”。这类关系与常规州县直接管理不同，地图上的单一边界无法完整表达。",
+      "aliases": [
+        "黔州",
+        "黔中郡",
+        "重庆彭水地区"
+      ],
+      "periodIds": [
+        "tang"
+      ],
+      "sourceIds": [
+        "tang-nw-jiutangshu-40",
+        "tang-nw-jiutangshu-38",
+        "tang-central-location-qianzhou-wuling"
+      ],
+      "nameByPeriod": {
+        "tang": "黔中郡"
+      },
+      "location": {
+        "accuracy": "approximate",
+        "note": "使用重庆彭水地区的现代地区代表坐标，四舍五入至0.01度供浏览定位；未考古核定唐代城址，不能用于判定唐代街道、城垣或治所范围。",
+        "sourceIds": [
+          "tang-central-location-qianzhou-wuling"
+        ]
+      }
+    }
+  ],
+  "placeUpdates": [
+    {
+      "id": "xianyang",
+      "addPeriodIds": [
+        "tang"
+      ],
+      "nameByPeriod": {
+        "tang": "咸阳"
+      },
+      "typeByPeriod": {
+        "tang": "city"
+      },
+      "addAliases": [
+        "唐咸阳县",
+        "杜邮",
+        "鲍桥"
+      ],
+      "addSourceIds": [
+        "tang-nw-jiutangshu-38"
+      ]
+    }
+  ],
+  "profiles": [
+    {
+      "id": "tang-xianyang",
+      "placeId": "xianyang",
+      "periodId": "tang",
+      "region": "关中与两京",
+      "summary": "唐代咸阳是京畿县城，与秦都咸阳的身份不同。武德二年重新设县，起初治鲍桥，同年移到杜邮；武周又因顺陵在境内调整县等。它适合与长安对照，观察都城周围的县治、陵寝与行政联系。",
+      "namingNote": "619年复置咸阳县；唐代县城、秦都遗址和现代咸阳市区不能视作同一城址。",
+      "sourceIds": [
+        "tang-nw-jiutangshu-38"
+      ],
+      "evidence": [
+        {
+          "sourceId": "tang-nw-jiutangshu-38",
+          "quote": "咸陽 隋廢縣。武德二年，復分涇陽置。初治鮑橋，其年，移治杜郵。",
+          "supports": "唐代咸阳县复置及迁治。"
+        },
+        {
+          "sourceId": "tang-nw-jiutangshu-38",
+          "quote": "天授二年，則天以其母順陵在其界，升為赤，神龍初復",
+          "supports": "武周因顺陵而调整咸阳县等。"
+        }
+      ]
+    },
+    {
+      "id": "tang-cangzhou",
+      "placeId": "cangzhou",
+      "periodId": "tang",
+      "region": "河北与河东",
+      "summary": "沧州在唐初多次迁治，经历清池、饶安、胡苏，贞观初又归清池。天宝时期的景城郡也是河北军事网络的一环，《旧唐书》记横海军驻沧州城。今沧州市点位仅供区域定位，不能代替东南方向的古州治。",
+      "namingNote": "742年改景城郡，758年复称沧州；州治清池与现代沧州市中心不重合。",
+      "sourceIds": [
+        "tang-nw-jiutangshu-39",
+        "tang-nw-jiutangshu-38"
+      ],
+      "evidence": [
+        {
+          "sourceId": "tang-nw-jiutangshu-39",
+          "quote": "又以滴河、厭次二縣屬德州，以胡蘇屬觀州，仍移治于清池。",
+          "supports": "贞观初的治所迁移。"
+        },
+        {
+          "sourceId": "tang-nw-jiutangshu-38",
+          "quote": "橫海軍，在滄州城內，管兵六千人。",
+          "supports": "沧州的横海军驻防。"
+        },
+        {
+          "sourceId": "tang-nw-jiutangshu-39",
+          "quote": "天寶元年，改為景城郡。乾元元年，復為滄州。",
+          "supports": "天宝代表年使用郡名的直接依据。"
+        }
+      ]
+    },
+    {
+      "id": "tang-yingzhou-hejian",
+      "placeId": "yingzhou-hejian",
+      "periodId": "tang",
+      "region": "河北与河东",
+      "summary": "瀛州承接隋河间郡，唐初平定河北后恢复州名，周围县份的归属多次调整。天宝改称河间郡，乾元又复瀛州；河间县与所领高阳、平舒等县构成其行政网络，应区分治所城镇与整个州郡范围。",
+      "namingNote": "此为河北瀛州，不是辽宁营州。742年至758年间称河间郡。",
+      "sourceIds": [
+        "tang-nw-jiutangshu-39"
+      ],
+      "evidence": [
+        {
+          "sourceId": "tang-nw-jiutangshu-39",
+          "quote": "瀛州 上，隋河間郡。武德四年，討平竇建德，改為瀛州，領河間、樂壽、景城、文安、束城、豐利六縣",
+          "supports": "唐初瀛州及领县。"
+        },
+        {
+          "sourceId": "tang-nw-jiutangshu-39",
+          "quote": "天寶元年，改為河間郡。乾元元年，復為瀛州。",
+          "supports": "天宝、乾元间的州郡更名。"
+        }
+      ]
+    },
+    {
+      "id": "tang-dingzhou",
+      "placeId": "dingzhou",
+      "periodId": "tang",
+      "region": "河北与河东",
+      "summary": "定州以安喜县为治所，唐初一度设大总管府，统辖河北众多州。天宝时期称博陵郡，州城西还设北平军。它既是地方行政中心，也能帮助理解河北中部与幽州方向之间的军事联系。",
+      "namingNote": "唐初州治安喜，天宝时为博陵郡，758年复定州；今定州市为地区参考。",
+      "sourceIds": [
+        "tang-nw-jiutangshu-39",
+        "tang-nw-jiutangshu-38"
+      ],
+      "evidence": [
+        {
+          "sourceId": "tang-nw-jiutangshu-39",
+          "quote": "武德四年，復為安喜，州所治也",
+          "supports": "安喜为定州治所。"
+        },
+        {
+          "sourceId": "tang-nw-jiutangshu-38",
+          "quote": "北平軍，在定州城西，管兵六千人。",
+          "supports": "定州城西的北平军。"
+        },
+        {
+          "sourceId": "tang-nw-jiutangshu-39",
+          "quote": "六年，昇為大總管府，管定、洺、相、磁、黎、冀、深、蠡、滄、瀛、魏、貝、景、博、趙、宗、觀、廉、井、邢、欒、德、衛、滿、幽、易、燕、檀、平、營等三十二州。",
+          "supports": "唐初大总管府的统辖范围。"
+        },
+        {
+          "sourceId": "tang-nw-jiutangshu-39",
+          "quote": "天寶元年，改為博陵郡。乾元元年，復為定州。",
+          "supports": "天宝代表年使用郡名的直接依据。"
+        }
+      ]
+    },
+    {
+      "id": "tang-yizhou-hebei",
+      "placeId": "yizhou-hebei",
+      "periodId": "tang",
+      "region": "河北与河东",
+      "summary": "易州连接河北北部诸县，州内置高阳军。开元二十三年又分置五回、楼亭、板城三县，展示出治下行政组织的变化。易州、上谷郡是前后使用的州郡名，不能因此把同名上谷地区在各时代的范围视为一致。",
+      "namingNote": "742年改上谷郡，758年复易州；今河北易县为位置参考。",
+      "sourceIds": [
+        "tang-nw-jiutangshu-38",
+        "tang-nw-jiutangshu-39"
+      ],
+      "evidence": [
+        {
+          "sourceId": "tang-nw-jiutangshu-38",
+          "quote": "高陽軍，在易州城內，管兵六千人。",
+          "supports": "易州城内的高阳军。"
+        },
+        {
+          "sourceId": "tang-nw-jiutangshu-39",
+          "quote": "開元二十三年，分置五回、樓亭、板城三縣。天寶元年，改為上谷郡，復隋舊名。乾元元年，復為易州。",
+          "supports": "领县扩充与州郡更名。"
+        }
+      ]
+    },
+    {
+      "id": "tang-yingzhou-liaoxi",
+      "placeId": "yingzhou-liaoxi",
+      "periodId": "tang",
+      "region": "河北与河东",
+      "summary": "营州是唐朝东北方向的重要军政城镇，平卢节度使治所在此。契丹战争之后，营州府曾在柳城与渔阳之间迁移，开元十一年又归柳城旧治。阅读它的沿革，关键是把军府名称、驻地变化和边境关系分开。",
+      "namingNote": "此为辽西营州，不是河北瀛州。742年改柳城郡；营州军府并非始终驻在同一地点。",
+      "sourceIds": [
+        "tang-nw-jiutangshu-39",
+        "tang-nw-jiutangshu-38"
+      ],
+      "evidence": [
+        {
+          "sourceId": "tang-nw-jiutangshu-39",
+          "quote": "開元四年，復移還柳城。八年，又往就漁陽。十一年，又還柳城舊治。天寶元年，改為柳城郡。",
+          "supports": "营州驻地往返及天宝郡名。"
+        },
+        {
+          "sourceId": "tang-nw-jiutangshu-38",
+          "quote": "平盧軍節度使治，在營州，管兵萬七千五百人，馬五千五百疋。",
+          "supports": "营州的平卢节度使驻地身份。"
+        }
+      ]
+    },
+    {
+      "id": "tang-chenzhou-huaiyang",
+      "placeId": "chenzhou-huaiyang",
+      "periodId": "tang",
+      "region": "中原与山东",
+      "summary": "陈州以宛丘为州治，唐初设置后经历领县裁并，天宝改为淮阳郡。它与汴州、许州、蔡州可组成中原城镇的对照：州名、县名与旧国地望交织，却并不指同一层级的行政单位。",
+      "namingNote": "742年陈州改淮阳郡，758年复州名；治县宛丘，今参考河南周口淮阳地区。",
+      "sourceIds": [
+        "tang-nw-jiutangshu-38"
+      ],
+      "evidence": [
+        {
+          "sourceId": "tang-nw-jiutangshu-38",
+          "quote": "武德元年，討平房憲伯，改為陳州，領宛丘、箕城、扶樂、太康、新平五縣。",
+          "supports": "陈州设置及领县。"
+        },
+        {
+          "sourceId": "tang-nw-jiutangshu-38",
+          "quote": "宛丘 郭下。隋縣",
+          "supports": "宛丘为郭下县。"
+        },
+        {
+          "sourceId": "tang-nw-jiutangshu-38",
+          "quote": "天寶元年，改陳州為淮陽郡。乾元元年，復為陳州。",
+          "supports": "淮阳郡名的使用时期。"
+        }
+      ]
+    },
+    {
+      "id": "tang-bozhou-qiao",
+      "placeId": "bozhou-qiao",
+      "periodId": "tang",
+      "region": "中原与山东",
+      "summary": "亳州在唐初设总管府，后改都督府，再撤府而保留州。州治谯县在贞观十七年由古谯城移入州城；这个迁治细节说明，即使同一州县名称延续，城市内部或附近的治所仍会变化。",
+      "namingNote": "742年改谯郡，758年复亳州。亳州的“亳”与博州的“博”不同。",
+      "sourceIds": [
+        "tang-nw-jiutangshu-38"
+      ],
+      "evidence": [
+        {
+          "sourceId": "tang-nw-jiutangshu-38",
+          "quote": "五年，置總管府，管譙、亳、宋、北荊、潁、沈六州。七年，改為都督府。貞觀元年，罷都督府，亳州不改。",
+          "supports": "唐初总管府、都督府的变化。"
+        },
+        {
+          "sourceId": "tang-nw-jiutangshu-38",
+          "quote": "譙 郭下。貞觀十七年，自古譙城移入州城置",
+          "supports": "谯县迁治州城。"
+        },
+        {
+          "sourceId": "tang-nw-jiutangshu-38",
+          "quote": "天寶元年，改為譙郡。乾元元年，復為亳州也。",
+          "supports": "天宝代表年使用郡名的直接依据。"
+        }
+      ]
+    },
+    {
+      "id": "tang-caizhou-runan",
+      "placeId": "caizhou-runan",
+      "periodId": "tang",
+      "region": "中原与山东",
+      "summary": "唐代这一区域先称豫州，天宝称汝南郡，宝应元年才改称蔡州，治县为汝阳。元和年间讨吴元济的战争还改变了附近县份建置；读到“蔡州”时，要特别分清所指年代与今天的汝南地区。",
+      "namingNote": "755年为汝南郡；758年复豫州，762年改蔡州。地图名称按代表年，条目收录整个唐代沿革。",
+      "sourceIds": [
+        "tang-nw-jiutangshu-38"
+      ],
+      "evidence": [
+        {
+          "sourceId": "tang-nw-jiutangshu-38",
+          "quote": "天寶元年，改為汝南郡。乾元元年，復為豫州。寶應元年，改為蔡州。",
+          "supports": "豫州、汝南郡、蔡州的年代关系。"
+        },
+        {
+          "sourceId": "tang-nw-jiutangshu-38",
+          "quote": "汝陽 隋舊縣。治郭下",
+          "supports": "州治汝阳县。"
+        },
+        {
+          "sourceId": "tang-nw-jiutangshu-38",
+          "quote": "元和十二年，討吳元濟于文城柵，置行吳房縣，權隸溵州。賊平，改為遂平縣，隸唐州。",
+          "supports": "平淮西战争中的邻县建置变化。"
+        }
+      ]
+    },
+    {
+      "id": "tang-yuezhou-baling",
+      "placeId": "yuezhou-baling",
+      "periodId": "tang",
+      "region": "荆湖与江西",
+      "summary": "唐初平定萧铣后先置巴州，随后改为岳州，治巴陵县。它与潭州、鄂州构成长江与湖南方向的城镇阅读路线。巴陵既曾是县名，也是天宝时期郡名，古今对照时需要先判断材料所说的行政层级。",
+      "namingNote": "623年改岳州，742年改巴陵郡，758年复岳州；巴陵县是治县。",
+      "sourceIds": [
+        "tang-nw-jiutangshu-40"
+      ],
+      "evidence": [
+        {
+          "sourceId": "tang-nw-jiutangshu-40",
+          "quote": "武德四年，平蕭銑，置巴州，領巴陵、華容、沅江、羅、湘陰五縣。六年，改為岳州。",
+          "supports": "巴州、岳州的初唐建置。"
+        },
+        {
+          "sourceId": "tang-nw-jiutangshu-40",
+          "quote": "隋改為巴州，煬帝改為巴陵郡。武德置岳州，皆置巴陵縣。",
+          "supports": "巴陵县与州郡的关系。"
+        },
+        {
+          "sourceId": "tang-nw-jiutangshu-40",
+          "quote": "天寶元年，改為巴陵郡。乾元元年，復為岳州。",
+          "supports": "天宝代表年使用郡名的直接依据。"
+        }
+      ]
+    },
+    {
+      "id": "tang-jizhou-luling",
+      "placeId": "jizhou-luling",
+      "periodId": "tang",
+      "region": "荆湖与江西",
+      "summary": "吉州在唐初平定林士弘后设置，以庐陵县为州治。庐陵旧治子阳城，永淳元年迁治；州治迁移是理解吉安地区城市沿革的关键。天宝时用庐陵郡名，乾元又复吉州，郡与县同名而层级不同。",
+      "namingNote": "742年至758年称庐陵郡，庐陵县为治县；682年有迁治记录，坐标不表示迁治前后同址。",
+      "sourceIds": [
+        "tang-nw-jiutangshu-40"
+      ],
+      "evidence": [
+        {
+          "sourceId": "tang-nw-jiutangshu-40",
+          "quote": "武德五年，討平林士弘，置吉州，領廬陵、新淦二縣。",
+          "supports": "吉州的初唐设置。"
+        },
+        {
+          "sourceId": "tang-nw-jiutangshu-40",
+          "quote": "隋復為廬陵，州所治也。舊治子陽城，永淳元年，移於今所",
+          "supports": "庐陵州治及永淳迁治。"
+        },
+        {
+          "sourceId": "tang-nw-jiutangshu-40",
+          "quote": "天寶元年，改為廬陵郡。乾元元年，復為吉州。",
+          "supports": "天宝代表年使用郡名的直接依据。"
+        }
+      ]
+    },
+    {
+      "id": "tang-qianzhou-gan",
+      "placeId": "qianzhou-gan",
+      "periodId": "tang",
+      "region": "荆湖与江西",
+      "summary": "虔州在赣县设治，天宝时改称南康郡。唐代又从南康县分置大庾、信丰等县，展示了赣南地方建置的展开。南康既是郡名也有同名县，不能直接把整个南康郡定位到今天的南康城区。",
+      "namingNote": "742年改南康郡，758年复虔州；“赣州”为后世名称，唐代条目保留虔州、南康郡关系。",
+      "sourceIds": [
+        "tang-nw-jiutangshu-40"
+      ],
+      "evidence": [
+        {
+          "sourceId": "tang-nw-jiutangshu-40",
+          "quote": "虔州 中，隋南康郡。武德五年，平江左，置虔州。天寶元年，改為南康郡。乾元元年，復為虔州。",
+          "supports": "虔州与南康郡更名。"
+        },
+        {
+          "sourceId": "tang-nw-jiutangshu-40",
+          "quote": "信豐 永淳元年，分南康置南安縣。天寶元年，改為信豐\n大庾 神龍元年，分南康置",
+          "supports": "信丰与大庾建置。"
+        },
+        {
+          "sourceId": "tang-nw-jiutangshu-40",
+          "quote": "隋初為虔州，煬帝為南康郡。皆治贛",
+          "supports": "赣县治所关系。"
+        }
+      ]
+    },
+    {
+      "id": "tang-shaozhou",
+      "placeId": "shaozhou",
+      "periodId": "tang",
+      "region": "岭南与东南",
+      "summary": "韶州的治县是曲江，唐初曾称番州，贞观初改称韶州。其所领始兴县与大庾岭相联系，可与北面的虔州对照岭南内外的城镇分布。始兴郡不是始兴县城，两者同名却有不同的空间层级。",
+      "namingNote": "742年改始兴郡，758年复韶州；州治曲江，今韶关市仅为地区参考。",
+      "sourceIds": [
+        "tang-se-jiutangshu-41"
+      ],
+      "evidence": [
+        {
+          "sourceId": "tang-se-jiutangshu-41",
+          "quote": "貞觀元年，改為韶州，仍割洭州之翁源來屬。",
+          "supports": "韶州名称和唐初辖境调整。"
+        },
+        {
+          "sourceId": "tang-se-jiutangshu-41",
+          "quote": "曲江 漢縣，屬桂陽郡。在曲江川，州所治也",
+          "supports": "曲江县为韶州治所。"
+        },
+        {
+          "sourceId": "tang-se-jiutangshu-41",
+          "quote": "縣界東嶠，一名大庾嶺，南越之北塞。",
+          "supports": "始兴县与大庾岭的地理关联。"
+        },
+        {
+          "sourceId": "tang-se-jiutangshu-41",
+          "quote": "天寶元年，改為始興郡。乾元元年，復為韶州。",
+          "supports": "天宝代表年使用郡名的直接依据。"
+        }
+      ]
+    },
+    {
+      "id": "tang-qianzhou-wuling",
+      "placeId": "qianzhou-wuling",
+      "periodId": "tang",
+      "region": "西南与周边",
+      "summary": "黔州以彭水地区为中心，是黔中道的重要军政据点。州府除本领县外，还联系多个羁縻州；《旧唐书》明确把这些州写作“皆羁縻，寄治山谷”。这类关系与常规州县直接管理不同，地图上的单一边界无法完整表达。",
+      "namingNote": "742年改黔中郡，758年复黔州都督府；唐黔州在今重庆彭水地区，不能按“黔”字直接定位到贵阳。",
+      "sourceIds": [
+        "tang-nw-jiutangshu-40",
+        "tang-nw-jiutangshu-38"
+      ],
+      "evidence": [
+        {
+          "sourceId": "tang-nw-jiutangshu-40",
+          "quote": "武德元年，改為黔州，領彭水、都上、石城三縣。",
+          "supports": "黔州本领县。"
+        },
+        {
+          "sourceId": "tang-nw-jiutangshu-40",
+          "quote": "皆羈縻，寄治山谷。乾元元年，復以黔中郡為黔州都督府。",
+          "supports": "羁縻关系及乾元更名。"
+        },
+        {
+          "sourceId": "tang-nw-jiutangshu-38",
+          "quote": "黔中、理黔州",
+          "supports": "黔中道治所。"
+        },
+        {
+          "sourceId": "tang-nw-jiutangshu-40",
+          "quote": "天寶元年，改黔州為黔中郡，依舊都督施、夷、播、思、費、珍、溱、商九州。",
+          "supports": "天宝代表年使用郡名的直接依据。"
+        }
+      ],
+      "politicalContext": "本领县与所联系的羁縻州分属不同管理关系；条目和点位不代表统一、固定的直接统治范围。"
+    }
+  ],
+  "coverage": {
+    "existingPlaceIds": [
+      "xianyang"
+    ],
+    "newPlaceIds": [
+      "cangzhou",
+      "yingzhou-hejian",
+      "dingzhou",
+      "yizhou-hebei",
+      "yingzhou-liaoxi",
+      "chenzhou-huaiyang",
+      "bozhou-qiao",
+      "caizhou-runan",
+      "yuezhou-baling",
+      "jizhou-luling",
+      "qianzhou-gan",
+      "shaozhou",
+      "qianzhou-wuling"
+    ],
+    "notes": [
+      "河北东北、中原、荆湖江西及黔中连接城镇；14档案、13新增地点及咸阳唐代关系。",
+      "现代位置与唐代迁治有别；坐标来源保留修订号和实际API快照。"
+    ]
+  }
+}

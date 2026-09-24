@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-fuzhou",
+  "title": "福州市 — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E7%A6%8F%E5%B7%9E%E5%B8%82&oldid=94466186",
+  "retrievedAt": "2026-09-24T14:36:07.059218+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/fuzhou.txt",
+  "snapshotSha256": "0d7c68a6be4049ebafb2eac2108e0c603091f29e2e268793d186e48847e3e882",
+  "pageId": 8299,
+  "revision": {
+    "revid": 94466186,
+    "parentid": 94465342,
+    "timestamp": "2026-09-20T17:14:28Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E7%A6%8F%E5%B7%9E%E5%B8%82&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

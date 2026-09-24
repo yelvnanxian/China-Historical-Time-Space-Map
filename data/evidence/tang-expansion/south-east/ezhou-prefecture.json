@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-ezhou-prefecture",
+  "title": "鄂州 (古代) — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E9%84%82%E5%B7%9E%20%28%E5%8F%A4%E4%BB%A3%29&oldid=93494734",
+  "retrievedAt": "2026-09-24T14:37:10.753133+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/ezhou-prefecture.txt",
+  "snapshotSha256": "7f1f996079fee9a49b0442c1df141c90bf6413ef91bd44d09e254022f48cdfee",
+  "pageId": 286523,
+  "revision": {
+    "revid": 93494734,
+    "parentid": 93492392,
+    "timestamp": "2026-07-15T21:28:57Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E9%84%82%E5%B7%9E+%28%E5%8F%A4%E4%BB%A3%29&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

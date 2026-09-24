@@ -1,0 +1,9 @@
+{
+  "id": "tang-nw-geonames",
+  "title": "GeoNames中国现代居民点：北方与西域22条地区参考记录",
+  "url": "https://download.geonames.org/export/dump/CN.zip",
+  "retrievedAt": "2026-09-24T14:36:04.424560+00:00",
+  "note": "实际下载CN.zip并保存全包SHA256和22条未经改写的原始行，显示点四舍五入至0.01度。CC BY 4.0，署名GeoNames。现代点只作地区入口，不验证唐城址。",
+  "snapshotPath": "data/evidence/tang-expansion/north-west/geonames-selection.json",
+  "snapshotSha256": "9a0a3457d45aba264e3fb7e19e3be7bdd98f48ce919c0eafaaf71d4e5ac2070d"
+}

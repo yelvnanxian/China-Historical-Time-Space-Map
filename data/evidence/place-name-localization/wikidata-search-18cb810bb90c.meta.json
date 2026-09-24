@@ -1,0 +1,6 @@
+{
+  "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&search=Manas+River+Bhutan&language=en&uselang=zh&limit=2",
+  "retrievedAt": "2026-09-24T14:44:15.365744+00:00",
+  "sha256": "daa0f25d62defe5e01408f7d9908f918ca66057d200bd62e8cbaacb165c0227b",
+  "path": "data/evidence/place-name-localization/wikidata-search-18cb810bb90c.json"
+}

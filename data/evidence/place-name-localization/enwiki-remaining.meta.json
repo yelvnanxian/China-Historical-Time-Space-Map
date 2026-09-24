@@ -1,0 +1,6 @@
+{
+  "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&titles=Chi+River%7CDihang%7CShishged+River%7CKyzyl-Khem%7CNam+Ngum+Dam%7CPing+River%7CIngoda+River%7CSreng+River%7CManas+River%7CBhima+River%7CSekong+River%7CMahi+River%7CSankh+River%7CPenner+River%7CSrepok+River%7CTungabhadra+River%7CBig+Yenisei%7CDa+River+%28Vietnam%29%7CWainganga+River%7CTel+River%7CPalar+River%7CUda+%28Khabarovsk+Krai%29%7CKollidam+River%7CKaladan+River%7CMyittha+River%7CParbati+River+%28Madhya+Pradesh%29%7CIndravati+River%7CHuan+River%7CDuliu+River%7CRong+River%7CTonl%C3%A9+Sap+River&redirects=1&prop=langlinks%7Ccoordinates%7Cextracts%7Crevisions%7Cpageprops&lllang=zh&lllimit=max&exintro=1&explaintext=1&exlimit=max&rvprop=ids&ppprop=disambiguation",
+  "retrievedAt": "2026-09-24T14:50:28.919622+00:00",
+  "sha256": "e70c6e3a554469ceafa60b5fff47bf13754e1aea4878572d3c4cbfc41692f646",
+  "path": "data/evidence/place-name-localization/enwiki-remaining.json"
+}

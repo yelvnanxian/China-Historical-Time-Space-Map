@@ -1,0 +1,230 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 56667,
+        "ns": 0,
+        "title": "Hanoi",
+        "coordinates": [
+          {
+            "lat": 21,
+            "lon": 105.85,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 1376488621,
+            "parentid": 1376092836,
+            "timestamp": "2026-09-24T12:56:41Z"
+          }
+        ]
+      },
+      {
+        "pageid": 144777,
+        "ns": 0,
+        "title": "Hefei",
+        "coordinates": [
+          {
+            "lat": 31.8206,
+            "lon": 117.2273,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 1374938453,
+            "parentid": 1371510429,
+            "timestamp": "2026-09-14T23:22:00Z"
+          }
+        ]
+      },
+      {
+        "pageid": 171752,
+        "ns": 0,
+        "title": "Chongqing",
+        "coordinates": [
+          {
+            "lat": 29.5637,
+            "lon": 106.5504,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 1376424888,
+            "parentid": 1376279623,
+            "timestamp": "2026-09-24T02:17:01Z"
+          }
+        ]
+      },
+      {
+        "pageid": 203299,
+        "ns": 0,
+        "title": "Changsha",
+        "coordinates": [
+          {
+            "lat": 28.228,
+            "lon": 112.939,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 1376027358,
+            "parentid": 1375865833,
+            "timestamp": "2026-09-21T15:46:44Z"
+          }
+        ]
+      },
+      {
+        "pageid": 250022,
+        "ns": 0,
+        "title": "Ningbo",
+        "coordinates": [
+          {
+            "lat": 29.8603,
+            "lon": 121.6245,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 1376477436,
+            "parentid": 1376476994,
+            "timestamp": "2026-09-24T10:57:47Z"
+          }
+        ]
+      },
+      {
+        "pageid": 386882,
+        "ns": 0,
+        "title": "Nanchang",
+        "coordinates": [
+          {
+            "lat": 28.683,
+            "lon": 115.858,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 1375314527,
+            "parentid": 1375207941,
+            "timestamp": "2026-09-17T02:10:55Z"
+          }
+        ]
+      },
+      {
+        "pageid": 2414875,
+        "ns": 0,
+        "title": "Langzhong",
+        "coordinates": [
+          {
+            "lat": 31.558,
+            "lon": 106.005,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 1337075598,
+            "parentid": 1337075523,
+            "timestamp": "2026-02-07T10:04:07Z"
+          }
+        ]
+      },
+      {
+        "pageid": 5108633,
+        "ns": 0,
+        "title": "Shou County",
+        "coordinates": [
+          {
+            "lat": 32.545,
+            "lon": 116.7982,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 1331073507,
+            "parentid": 1324537640,
+            "timestamp": "2026-01-04T09:52:10Z"
+          }
+        ]
+      },
+      {
+        "pageid": 8924681,
+        "ns": 0,
+        "title": "Guanghan",
+        "coordinates": [
+          {
+            "lat": 30.99,
+            "lon": 104.25,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 1366009955,
+            "parentid": 1365454223,
+            "timestamp": "2026-07-25T19:14:42Z"
+          }
+        ]
+      },
+      {
+        "pageid": 17553630,
+        "ns": 0,
+        "title": "Santai County",
+        "coordinates": [
+          {
+            "lat": 31.09583333,
+            "lon": 105.09361111,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 1365295068,
+            "parentid": 1365151793,
+            "timestamp": "2026-07-21T14:03:48Z"
+          }
+        ]
+      },
+      {
+        "pageid": 23967519,
+        "ns": 0,
+        "title": "Jiange County",
+        "coordinates": [
+          {
+            "lat": 32.288,
+            "lon": 105.524,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 1376259459,
+            "parentid": 1364968559,
+            "timestamp": "2026-09-23T02:24:03Z"
+          }
+        ]
+      }
+    ]
+  },
+  "limits": {
+    "coordinates": 500
+  }
+}

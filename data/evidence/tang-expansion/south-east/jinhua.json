@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-jinhua",
+  "title": "金华市 — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E9%87%91%E5%8D%8E%E5%B8%82&oldid=94241308",
+  "retrievedAt": "2026-09-24T14:35:48.972904+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/jinhua.txt",
+  "snapshotSha256": "5f1df57b5b9315c7703b99403f2cc6b839144b5e3210e380b15f3cc37b3b6de9",
+  "pageId": 301104,
+  "revision": {
+    "revid": 94241308,
+    "parentid": 93133886,
+    "timestamp": "2026-09-08T05:46:08Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E9%87%91%E5%8D%8E%E5%B8%82&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

@@ -1,0 +1,230 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 192,
+        "ns": 0,
+        "title": "亳州市",
+        "coordinates": [
+          {
+            "lat": 33.845,
+            "lon": 115.778,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 94241278,
+            "parentid": 94006390,
+            "timestamp": "2026-09-08T05:41:57Z"
+          }
+        ]
+      },
+      {
+        "pageid": 7233,
+        "ns": 0,
+        "title": "岳阳市",
+        "coordinates": [
+          {
+            "lat": 29.3567,
+            "lon": 113.1289,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 94529543,
+            "parentid": 94529501,
+            "timestamp": "2026-09-24T03:15:58Z"
+          }
+        ]
+      },
+      {
+        "pageid": 12724,
+        "ns": 0,
+        "title": "沧州市",
+        "coordinates": [
+          {
+            "lat": 38.3045,
+            "lon": 116.8386,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 94238944,
+            "parentid": 94065781,
+            "timestamp": "2026-09-08T01:51:50Z"
+          }
+        ]
+      },
+      {
+        "pageid": 36809,
+        "ns": 0,
+        "title": "赣州市",
+        "coordinates": [
+          {
+            "lat": 25.8306,
+            "lon": 114.9328,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 94241134,
+            "parentid": 94224010,
+            "timestamp": "2026-09-08T05:28:46Z"
+          }
+        ]
+      },
+      {
+        "pageid": 44931,
+        "ns": 0,
+        "title": "朝阳市",
+        "coordinates": [
+          {
+            "lat": 41.5736,
+            "lon": 120.4494,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 94241593,
+            "parentid": 93955126,
+            "timestamp": "2026-09-08T06:12:40Z"
+          }
+        ]
+      },
+      {
+        "pageid": 46484,
+        "ns": 0,
+        "title": "吉安市",
+        "coordinates": [
+          {
+            "lat": 27.0875,
+            "lon": 114.9645,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 94448634,
+            "parentid": 94241136,
+            "timestamp": "2026-09-19T22:01:24Z"
+          }
+        ]
+      },
+      {
+        "pageid": 46764,
+        "ns": 0,
+        "title": "韶关市",
+        "coordinates": [
+          {
+            "lat": 24.8108,
+            "lon": 113.5966,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 94240103,
+            "parentid": 93950774,
+            "timestamp": "2026-09-08T03:33:30Z"
+          }
+        ]
+      },
+      {
+        "pageid": 64242,
+        "ns": 0,
+        "title": "河间市",
+        "revisions": [
+          {
+            "revid": 89546380,
+            "parentid": 89546367,
+            "timestamp": "2025-10-16T05:23:08Z"
+          }
+        ]
+      },
+      {
+        "pageid": 69277,
+        "ns": 0,
+        "title": "定州市",
+        "revisions": [
+          {
+            "revid": 91730483,
+            "parentid": 91730437,
+            "timestamp": "2026-03-02T04:57:59Z"
+          }
+        ]
+      },
+      {
+        "pageid": 103117,
+        "ns": 0,
+        "title": "彭水苗族土家族自治县",
+        "revisions": [
+          {
+            "revid": 93540913,
+            "parentid": 90895478,
+            "timestamp": "2026-07-19T06:14:40Z"
+          }
+        ]
+      },
+      {
+        "pageid": 237543,
+        "ns": 0,
+        "title": "淮阳区",
+        "coordinates": [
+          {
+            "lat": 33.73305556,
+            "lon": 114.85,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 92576468,
+            "parentid": 91732149,
+            "timestamp": "2026-05-08T04:55:01Z"
+          }
+        ]
+      },
+      {
+        "pageid": 241982,
+        "ns": 0,
+        "title": "易县",
+        "revisions": [
+          {
+            "revid": 90083661,
+            "parentid": 78697115,
+            "timestamp": "2025-11-18T19:17:15Z"
+          }
+        ]
+      },
+      {
+        "pageid": 342377,
+        "ns": 0,
+        "title": "汝南县",
+        "revisions": [
+          {
+            "revid": 88120410,
+            "parentid": 83335370,
+            "timestamp": "2025-07-05T17:31:34Z"
+          }
+        ]
+      }
+    ]
+  },
+  "limits": {
+    "coordinates": 500
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "profiles": 33,
+  "profiles": 134,
   "periodCoverage": {
     "qin": 3,
     "han": 3,
@@ -7,16 +7,17 @@
     "jin": 3,
     "nanbei": 3,
     "sui": 3,
-    "tang": 3,
+    "tang": 104,
     "song": 3,
     "yuan": 3,
     "ming": 3,
     "qing": 3
   },
-  "independentPlacesInProfiles": 17,
-  "sources": 19,
-  "quotesMatched": 54,
-  "outputSha256": "efed6e9a9d99b37c4fb67942c9945760b4ec3841e1492927d7ed57c19faa5723",
-  "newCatalogPlaces": 0,
-  "newCatalogPeriodRelationships": 0
+  "distinctPlaceEntriesInProfiles": 105,
+  "sources": 59,
+  "quotesMatched": 347,
+  "outputSha256": "eda84089df90e29ad4efd68fc277d2c83d9988d104c3221da0f71f9492ad2e56",
+  "newCatalogPlaces": 66,
+  "newCatalogPeriodRelationships": 1,
+  "note": "按档案入口计数；幽州与范阳为既有不同阅读入口，不宣称104处互不重合的古城遗址。"
 }

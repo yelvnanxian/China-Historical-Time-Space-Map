@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-hongzhou-prefecture",
+  "title": "洪州 — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E6%B4%AA%E5%B7%9E&oldid=80262863",
+  "retrievedAt": "2026-09-24T14:37:04.547615+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/hongzhou-prefecture.txt",
+  "snapshotSha256": "1abb99c4dd543a0d3cb14d94b4963f1be2c7a650c10bef6453ed9ae88a080abd",
+  "pageId": 3636852,
+  "revision": {
+    "revid": 80262863,
+    "parentid": 28721151,
+    "timestamp": "2023-12-27T13:19:02Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E6%B4%AA%E5%B7%9E&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-xuanzhou-prefecture",
+  "title": "宣州区 — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E5%AE%A3%E5%B7%9E%E5%8C%BA&oldid=93296578",
+  "retrievedAt": "2026-09-24T14:37:17.782055+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/xuanzhou-prefecture.txt",
+  "snapshotSha256": "552ed197a17682d3b31da2a3806ff3905f0ea0600effeb6cf6ac325cfe91eb6b",
+  "pageId": 102914,
+  "revision": {
+    "revid": 93296578,
+    "parentid": 86235381,
+    "timestamp": "2026-07-03T00:20:27Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E5%AE%A3%E5%B7%9E&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

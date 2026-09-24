@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-annan-protectorate",
+  "title": "安南都护府 — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E5%AE%89%E5%8D%97%E9%83%BD%E6%8A%A4%E5%BA%9C&oldid=92315342",
+  "retrievedAt": "2026-09-24T14:38:10.047633+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/annan-protectorate.txt",
+  "snapshotSha256": "136a71e14fe45b3613cf347652f12367a4733ff7cd7ac1b215f852e6cfd7d6d9",
+  "pageId": 1228251,
+  "revision": {
+    "revid": 92315342,
+    "parentid": 89601846,
+    "timestamp": "2026-04-17T17:01:22Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E5%AE%89%E5%8D%97%E9%83%BD%E6%8A%A4%E5%BA%9C&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

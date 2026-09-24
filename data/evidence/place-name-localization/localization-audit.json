@@ -1,0 +1,199 @@
+{
+  "sourceHashes": {
+    "public/data/boundaries/manifest.json": "557687250944ddab7d9a78234b04b13d224eb5995d85b1f67eace3679131489f",
+    "public/data/modern-correspondence.json": "e92a393d8c9f2e98455e0a2633b3f50d24609f7731e2d325c8402ebfd47e5be4",
+    "public/data/physical-interactions.json": "19150bf954b770e11dc00171a960c22dd8e8efe97ddb50692e77e7a64791b743",
+    "public/data/physical-interactive.geojson": "61f473d0246ec879f64afeec280d4e75a6d06c3e3ca83c601938505418e15d89",
+    "public/data/mountain-directions.geojson": "5478e98b13f8f5cd367cda394c2a043c737a2cc091ffc5c55727f90bde81f077",
+    "public/data/boundaries/hartwell-741-country.geojson": "489a46ccaf6281e5937c0f4acb0345767eb1fb75d17f4b752bddd09bf7dceec1",
+    "public/data/boundaries/hartwell-741-province.geojson": "3e7972b1274cfe1bcea0058ec4dc894a0656a2a3262b596ca5467d83efcb1801",
+    "public/data/boundaries/hartwell-741-prefecture.geojson": "ac9211af939ef3f9f6d94bb16977e313426795908703ad4d7db916f6ea89d635",
+    "public/data/boundaries/hartwell-741-county.geojson": "54081ec310344d24da387eced81bc4aa9aa547fd80629a2d7f844235d276cc54",
+    "public/data/boundaries/hartwell-1080-country.geojson": "b6aa8ec37e6a2b354e9d7c3611d1318e67ef0e43b447b53a7c18a0107b8072cc",
+    "public/data/boundaries/hartwell-1080-province.geojson": "46c2a254c95d371e3b6e84ab9f855acaac4a730656ddf5116c2412df7a7bc282",
+    "public/data/boundaries/hartwell-1080-prefecture.geojson": "ac1588c8713c71fbbdf51c994173ae5044b625e0b35bf20669bcc429260ff7c6",
+    "public/data/boundaries/hartwell-1080-county.geojson": "b27c4794d12a770bf5a90bdc71fc2ac0d4f1cb21403c0ed36ac2a8e08b49bedd",
+    "public/data/boundaries/hartwell-1200-country.geojson": "73ca2050660b071f56fd27bff24de417cdd58567fa949442e88096c42681fa14",
+    "public/data/boundaries/hartwell-1200-province.geojson": "afe53b2c8edfd3c1708e6e0e1deb7d94af457d55accbdda19734076645601608",
+    "public/data/boundaries/hartwell-1200-prefecture.geojson": "efa3333cd7986a8f019f05daae908322e3bc987454d51331c5ec43517cb28747",
+    "public/data/boundaries/hartwell-1200-county.geojson": "2a2d1012f5d2d4893b1cef501319cc61b17a98d2ed5b62c0fd88e08b5abe7c98",
+    "public/data/boundaries/hartwell-1290-country.geojson": "8fa232fa1aac9c2d9deb5b934e148499f9fd6828c72144943bc7e99e3effacd9",
+    "public/data/boundaries/hartwell-1290-province.geojson": "f24d8aec754417d1c99cc7724aec35565daf2a36431ffa0dddd929ff063be24f",
+    "public/data/boundaries/hartwell-1290-prefecture.geojson": "f3b64a6b20ae462d4818d0a09e823f7bea3b75fea8a46d557b93bc610f1a9c70",
+    "public/data/boundaries/hartwell-1290-county.geojson": "d44cfa05d3ed433ebe5ffff314db28ed74c61a426262c0c4a015a1021dfa7443",
+    "public/data/boundaries/hartwell-1391-country.geojson": "03caa3f39190bcf74406e3c7eb0df5a974d86927c3a8b456dc8adae240f645b4",
+    "public/data/boundaries/hartwell-1391-province.geojson": "ef124f4804425d93099dc18aa2ac1c38f3ed3c108e03cfb6d1cb440fa549f2eb",
+    "public/data/boundaries/hartwell-1391-prefecture.geojson": "5b8940f9733254424df68934f1a9a7588dbb7cadb344629436a0e6a04c1cb9f7",
+    "public/data/boundaries/hartwell-1391-county.geojson": "fc7542e6b451b92f08bdc070129962489a78c65836712b5e1db7662de938c33f",
+    "public/data/boundaries/chgis-1820-province.geojson": "b48348d0f5c5cacdd2b1a41e9ab3813566bad5dc4cecd95d4664f060f4314e0d",
+    "public/data/boundaries/chgis-1820-prefecture.geojson": "6fbe350ed47212606e93b6ca1175b4a51957399e71bee134ee04a04fb28ace18",
+    "public/data/boundaries/chgis-1911-province.geojson": "bede8f4b2d8ed99e2de8f1d712485f5de216226b27d88a6fa6ec4b864f3a712a",
+    "public/data/boundaries/chgis-1911-prefecture.geojson": "783a4012ec0a9634eaaf66944a70127cc006d17a5d59e88dd80ca8513f45609f",
+    "public/data/boundaries/chgis-1911-county.geojson": "b94d74b7016372601687d8823e3eeab9c4af5ea6502076703e0e77938f6ade75"
+  },
+  "naturalForeignGroups": 184,
+  "naturalTranslatedGroups": 163,
+  "unresolvedNatural": [
+    {
+      "id": "river-ne_10m_rivers_lake_centerlines-47",
+      "expectedName": "Dihang",
+      "displayName": "未定名河流（源编号47）",
+      "method": "unresolved",
+      "note": "来源把此上游河段单列，尚未核实此河段的确切中文专名。"
+    },
+    {
+      "id": "river-ne_10m_rivers_lake_centerlines-107",
+      "expectedName": "Shishhid Gol",
+      "displayName": "未定名河流（源编号107）",
+      "method": "unresolved",
+      "note": "来源单列上游支流，不能直接以整条小叶尼塞河之名替换。"
+    },
+    {
+      "id": "river-ne_10m_rivers_lake_centerlines-133",
+      "expectedName": "Kyzyl-Khem",
+      "displayName": "未定名河流（源编号133）",
+      "method": "unresolved",
+      "note": "尚未核实该河段的中文专名。"
+    },
+    {
+      "id": "river-ne_10m_rivers_lake_centerlines-148",
+      "expectedName": "Quan",
+      "displayName": "未定名河流（源编号148）",
+      "method": "unresolved",
+      "note": "拼写与广西河段位置不能与泉河对应，暂不据形状猜配。"
+    },
+    {
+      "id": "river-ne_10m_rivers_lake_centerlines-419",
+      "expectedName": "Hudi",
+      "displayName": "未定名河流（源编号419）",
+      "method": "unresolved",
+      "note": "来源拼写的所指尚待核查。"
+    },
+    {
+      "id": "river-ne_10m_rivers_lake_centerlines-420",
+      "expectedName": "Ping",
+      "displayName": "未定名河流（源编号420）",
+      "method": "unresolved",
+      "note": "已核对外文记录，尚未取得足够的中文名称对应证据。"
+    },
+    {
+      "id": "river-ne_10m_rivers_lake_centerlines-455",
+      "expectedName": "Krong",
+      "displayName": "未定名河流（源编号455）",
+      "method": "unresolved",
+      "note": "越南多条河名使用相似前缀，现有资料不足以消歧。"
+    },
+    {
+      "id": "river-ne_10m_rivers_lake_centerlines-483",
+      "expectedName": "Sreng",
+      "displayName": "未定名河流（源编号483）",
+      "method": "unresolved",
+      "note": "已核对外文记录，尚未取得足够的中文名称对应证据。"
+    },
+    {
+      "id": "river-ne_10m_rivers_lake_centerlines-535",
+      "expectedName": "Bhima",
+      "displayName": "未定名河流（源编号535）",
+      "method": "unresolved",
+      "note": "已核对外文记录，尚未取得足够的中文名称对应证据。"
+    },
+    {
+      "id": "river-ne_10m_rivers_lake_centerlines-551",
+      "expectedName": "Sankh",
+      "displayName": "未定名河流（源编号551）",
+      "method": "unresolved",
+      "note": "已核对外文记录，尚未取得足够的中文名称对应证据。"
+    },
+    {
+      "id": "river-ne_10m_rivers_lake_centerlines-824",
+      "expectedName": "Duliu",
+      "displayName": "未定名河流（源编号824）",
+      "method": "unresolved",
+      "note": "候选词条重定向至整条柳江，尚未取得都柳江河段的直接中文证据。"
+    },
+    {
+      "id": "river-ne_10m_rivers_lake_centerlines-887",
+      "expectedName": "Wainganga",
+      "displayName": "未定名河流（源编号887）",
+      "method": "unresolved",
+      "note": "已核对外文记录，尚未取得足够的中文名称对应证据。"
+    },
+    {
+      "id": "river-ne_10m_rivers_lake_centerlines-890",
+      "expectedName": "Tel",
+      "displayName": "未定名河流（源编号890）",
+      "method": "unresolved",
+      "note": "已核对外文记录，尚未取得足够的中文名称对应证据。"
+    },
+    {
+      "id": "river-ne_10m_rivers_lake_centerlines-897",
+      "expectedName": "Palar",
+      "displayName": "未定名河流（源编号897）",
+      "method": "unresolved",
+      "note": "已核对外文记录，尚未取得足够的中文名称对应证据。"
+    },
+    {
+      "id": "river-ne_10m_rivers_lake_centerlines-933",
+      "expectedName": "Rong",
+      "displayName": "未定名河流（源编号933）",
+      "method": "unresolved",
+      "note": "已核对外文记录，尚未取得足够的中文名称对应证据。"
+    },
+    {
+      "id": "river-ne_10m_rivers_lake_centerlines-967",
+      "expectedName": "Di’er Songhua",
+      "displayName": "未定名河流（源编号967）",
+      "method": "unresolved",
+      "note": "名称与源几何所在河段存在疑问，不能套用另一条同拼写记录。"
+    },
+    {
+      "id": "river-ne_10m_rivers_lake_centerlines-969",
+      "expectedName": "Kolidam",
+      "displayName": "未定名河流（源编号969）",
+      "method": "unresolved",
+      "note": "已核对外文记录，尚未取得足够的中文名称对应证据。"
+    },
+    {
+      "id": "river-ne_10m_rivers_lake_centerlines-1081",
+      "expectedName": "Huan",
+      "displayName": "未定名河流（源编号1081）",
+      "method": "unresolved",
+      "note": "现有同名词条指向广西行政区或河南洹河，与源几何不符。"
+    },
+    {
+      "id": "river-ne_10m_rivers_lake_centerlines-1084",
+      "expectedName": "Mytitha",
+      "displayName": "未定名河流（源编号1084）",
+      "method": "unresolved",
+      "note": "已核对外文记录，尚未取得足够的中文名称对应证据。"
+    },
+    {
+      "id": "river-ne_10m_rivers_lake_centerlines-1102",
+      "expectedName": "Parbati",
+      "displayName": "未定名河流（源编号1102）",
+      "method": "unresolved",
+      "note": "已核对外文记录，尚未取得足够的中文名称对应证据。"
+    },
+    {
+      "id": "river-ne_10m_rivers_lake_centerlines-1103",
+      "expectedName": "Indravati",
+      "displayName": "未定名河流（源编号1103）",
+      "method": "unresolved",
+      "note": "已核对外文记录，尚未取得足够的中文名称对应证据。"
+    }
+  ],
+  "historicalForeignRecords": 8,
+  "historicalBopomofoRecords": 13,
+  "unresolvedHistorical": [
+    {
+      "id": "hartwell-1391-county-v5_1391_chin_chn_1391_c-1432",
+      "expectedName": "Ejia",
+      "expectedSourceId": "hartwell-chgis-v5",
+      "expectedSourceCode": "M009100240025",
+      "expectedYear": 1391,
+      "displayName": "未定名行政区（源编号1432）",
+      "method": "unresolved",
+      "note": "现有资料不足以核定历史中文名，原文保留供核查；未用现代地区名替代。"
+    }
+  ]
+}

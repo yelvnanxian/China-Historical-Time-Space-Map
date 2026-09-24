@@ -1,0 +1,9 @@
+{
+  "id": "tang-central-modern-coordinates-en",
+  "title": "现代城镇位置参考 — 维基百科坐标补充资料",
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=coordinates%7Crevisions&titles=Hejian%7CDingzhou%7CYi+County%2C+Hebei%7CPengshui+Miao+and+Tujia+Autonomous+County%7CRunan+County&redirects=1&colimit=max&coprimary=primary&rvprop=ids%7Ctimestamp&format=json&formatversion=2",
+  "retrievedAt": "2026-09-24T14:42:14.133007+00:00",
+  "note": "仅用于现代地区定位；不是唐代城址实测。原始标题、修订号和坐标保存在快照。",
+  "snapshotPath": "data/evidence/tang-expansion/central-links/modern-coordinates-en.json",
+  "snapshotSha256": "3519ce49020cc592c3e7542d7c312934c17ee94536b50f2fe74a8286f9742ae0"
+}

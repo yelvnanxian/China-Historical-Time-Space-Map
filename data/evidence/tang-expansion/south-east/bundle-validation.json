@@ -1,0 +1,17 @@
+{
+  "profiles": 40,
+  "newPlaces": 31,
+  "existingPlaces": 9,
+  "sources": 33,
+  "quotesMatched": 140,
+  "minimumQuotesPerProfile": 3,
+  "modernCoordinateReferences": 31,
+  "outputSha256": "fcbf071c38ba94fb73a90e63432caa3ab2824600f2911321d9cb4bbc08812eed",
+  "regions": {
+    "江淮与江南": 14,
+    "荆湖与江西": 7,
+    "巴蜀与汉中": 10,
+    "岭南与东南": 7,
+    "西南与周边": 2
+  }
+}

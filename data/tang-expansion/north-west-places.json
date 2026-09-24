@@ -1,0 +1,361 @@
+[
+  {
+    "id": "fengxiang",
+    "name": "凤翔",
+    "tangName": "扶风郡",
+    "modernName": "陕西宝鸡凤翔地区",
+    "geonameId": "7353795",
+    "coordinates": [
+      107.39,
+      34.52
+    ],
+    "region": "关中与两京",
+    "aliases": [
+      "岐州",
+      "天兴",
+      "雍县"
+    ]
+  },
+  {
+    "id": "tongzhou-dali",
+    "name": "同州",
+    "tangName": "冯翊郡",
+    "modernName": "陕西渭南大荔地区",
+    "geonameId": "1814092",
+    "coordinates": [
+      109.94,
+      34.8
+    ],
+    "region": "关中与两京",
+    "aliases": [
+      "冯翊",
+      "大荔"
+    ]
+  },
+  {
+    "id": "huazhou-shaanxi",
+    "name": "华州",
+    "tangName": "华阴郡",
+    "modernName": "陕西渭南华州郑县地区",
+    "geonameId": "1807005",
+    "coordinates": [
+      109.76,
+      34.52
+    ],
+    "region": "关中与两京",
+    "aliases": [
+      "郑县",
+      "华县",
+      "太州"
+    ]
+  },
+  {
+    "id": "puzhou",
+    "name": "蒲州",
+    "tangName": "河东郡",
+    "modernName": "山西永济蒲州地区",
+    "geonameId": "1798410",
+    "coordinates": [
+      110.3,
+      34.84
+    ],
+    "region": "河北与河东",
+    "aliases": [
+      "河中府",
+      "河东",
+      "桑泉"
+    ]
+  },
+  {
+    "id": "jiangzhou",
+    "name": "绛州",
+    "tangName": "绛郡",
+    "modernName": "山西新绛龙兴地区",
+    "geonameId": "1788800",
+    "coordinates": [
+      111.22,
+      35.61
+    ],
+    "region": "河北与河东",
+    "aliases": [
+      "正平",
+      "新绛"
+    ]
+  },
+  {
+    "id": "weizhou-daming",
+    "name": "魏州",
+    "tangName": "魏郡",
+    "modernName": "河北大名地区",
+    "geonameId": "1813915",
+    "coordinates": [
+      115.14,
+      36.29
+    ],
+    "region": "河北与河东",
+    "aliases": [
+      "贵乡",
+      "元城",
+      "大名"
+    ]
+  },
+  {
+    "id": "bozhou-liaocheng",
+    "name": "博州",
+    "tangName": "博平郡",
+    "modernName": "山东聊城地区",
+    "geonameId": "1803834",
+    "coordinates": [
+      116.0,
+      36.45
+    ],
+    "region": "中原与山东",
+    "aliases": [
+      "聊城",
+      "博平"
+    ]
+  },
+  {
+    "id": "qizhou-jinan",
+    "name": "齐州",
+    "tangName": "济南郡",
+    "modernName": "山东济南历城地区",
+    "geonameId": "1805753",
+    "coordinates": [
+      117.0,
+      36.67
+    ],
+    "region": "中原与山东",
+    "aliases": [
+      "历城",
+      "济南",
+      "临淄郡"
+    ]
+  },
+  {
+    "id": "yanzhou",
+    "name": "兖州",
+    "tangName": "鲁郡",
+    "modernName": "山东济宁兖州地区",
+    "geonameId": "1787031",
+    "coordinates": [
+      116.83,
+      35.55
+    ],
+    "region": "中原与山东",
+    "aliases": [
+      "瑕丘",
+      "兖州"
+    ]
+  },
+  {
+    "id": "qingzhou",
+    "name": "青州",
+    "tangName": "北海郡",
+    "modernName": "山东青州益都地区",
+    "geonameId": "1786731",
+    "coordinates": [
+      118.48,
+      36.7
+    ],
+    "region": "中原与山东",
+    "aliases": [
+      "益都",
+      "北海"
+    ]
+  },
+  {
+    "id": "dengzhou-penglai",
+    "name": "登州",
+    "tangName": "东牟郡",
+    "modernName": "山东烟台蓬莱地区",
+    "geonameId": "1812988",
+    "coordinates": [
+      120.76,
+      37.81
+    ],
+    "region": "中原与山东",
+    "aliases": [
+      "蓬莱",
+      "东牟"
+    ]
+  },
+  {
+    "id": "liangzhou-wuwei",
+    "name": "凉州",
+    "tangName": "武威郡",
+    "modernName": "甘肃武威姑臧地区",
+    "geonameId": "1803936",
+    "coordinates": [
+      102.63,
+      37.93
+    ],
+    "region": "河西与西域",
+    "aliases": [
+      "姑臧",
+      "武威"
+    ]
+  },
+  {
+    "id": "ganzhou-zhangye",
+    "name": "甘州",
+    "tangName": "张掖郡",
+    "modernName": "甘肃张掖地区",
+    "geonameId": "1785036",
+    "coordinates": [
+      100.45,
+      38.93
+    ],
+    "region": "河西与西域",
+    "aliases": [
+      "张掖"
+    ]
+  },
+  {
+    "id": "suzhou-jiuquan",
+    "name": "肃州",
+    "tangName": "酒泉郡",
+    "modernName": "甘肃酒泉地区",
+    "geonameId": "1279945",
+    "coordinates": [
+      98.52,
+      39.74
+    ],
+    "region": "河西与西域",
+    "aliases": [
+      "酒泉"
+    ]
+  },
+  {
+    "id": "guazhou-jinchang",
+    "name": "瓜州",
+    "tangName": "晋昌郡",
+    "modernName": "甘肃瓜州县渊泉地区参考",
+    "geonameId": "1529004",
+    "coordinates": [
+      95.8,
+      40.5
+    ],
+    "region": "河西与西域",
+    "aliases": [
+      "晋昌",
+      "常乐",
+      "瓜州县"
+    ]
+  },
+  {
+    "id": "xizhou-gaochang",
+    "name": "西州",
+    "tangName": "交河郡",
+    "modernName": "新疆吐鲁番地区参考",
+    "geonameId": "1529114",
+    "coordinates": [
+      89.18,
+      42.95
+    ],
+    "region": "河西与西域",
+    "aliases": [
+      "高昌",
+      "交河郡",
+      "吐鲁番"
+    ]
+  },
+  {
+    "id": "yizhou-hami",
+    "name": "伊州",
+    "tangName": "伊吾郡",
+    "modernName": "新疆哈密地区参考",
+    "geonameId": "1529484",
+    "coordinates": [
+      93.51,
+      42.83
+    ],
+    "region": "河西与西域",
+    "aliases": [
+      "伊吾郡",
+      "西伊州",
+      "哈密"
+    ]
+  },
+  {
+    "id": "tingzhou-beiting",
+    "name": "庭州",
+    "tangName": "北庭都护府",
+    "modernName": "新疆吉木萨尔地区参考",
+    "geonameId": "1529419",
+    "coordinates": [
+      89.19,
+      44.0
+    ],
+    "region": "河西与西域",
+    "aliases": [
+      "北庭",
+      "金满",
+      "吉木萨尔"
+    ]
+  },
+  {
+    "id": "qiuci",
+    "name": "龟兹",
+    "tangName": "龟兹",
+    "modernName": "新疆库车地区参考",
+    "geonameId": "1529363",
+    "coordinates": [
+      82.93,
+      41.71
+    ],
+    "region": "河西与西域",
+    "aliases": [
+      "安西",
+      "库车"
+    ]
+  },
+  {
+    "id": "yutian-hotan",
+    "name": "于阗",
+    "tangName": "于阗",
+    "modernName": "新疆和田地区参考",
+    "geonameId": "1281019",
+    "coordinates": [
+      79.93,
+      37.11
+    ],
+    "region": "河西与西域",
+    "aliases": [
+      "于阗",
+      "毗沙",
+      "和田"
+    ]
+  },
+  {
+    "id": "shule-kashgar",
+    "name": "疏勒",
+    "tangName": "疏勒",
+    "modernName": "新疆喀什地区参考",
+    "geonameId": "1280849",
+    "coordinates": [
+      75.99,
+      39.47
+    ],
+    "region": "河西与西域",
+    "aliases": [
+      "喀什",
+      "疏勒国"
+    ]
+  },
+  {
+    "id": "yanqi",
+    "name": "焉耆",
+    "tangName": "焉耆",
+    "modernName": "新疆焉耆地区参考",
+    "geonameId": "1529031",
+    "coordinates": [
+      86.57,
+      42.06
+    ],
+    "region": "河西与西域",
+    "aliases": [
+      "焉耆国"
+    ]
+  }
+]

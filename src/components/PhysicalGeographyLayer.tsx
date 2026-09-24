@@ -7,6 +7,7 @@ import { physicalKindNames } from "../../shared/physical-geography";
 import { boundarySearchKey } from "../../shared/boundary-search";
 import { naturalSurfaceSelectionEnabled, physicalHitLayers, physicalWaterGeometry } from "../../shared/map-interactions";
 import type { MountainDirectionCollection } from "../../shared/mountain-directions";
+import { localizePhysicalGroup, type LocalizedPhysicalGroup } from "../../shared/place-name-localization";
 
 const sourceId = "physical-interactive";
 const directionSourceId = "mountain-directions";
@@ -22,7 +23,7 @@ export default function PhysicalGeographyLayer({ map, ready, visible, mode, cont
   const [data, setData] = useState<PhysicalFeatureCollection>(empty);
   const [directions, setDirections] = useState<MountainDirectionCollection>(emptyDirections);
   const [directionError, setDirectionError] = useState("");
-  const [groups, setGroups] = useState<PhysicalGroup[]>([]);
+  const [groups, setGroups] = useState<LocalizedPhysicalGroup[]>([]);
   const [error, setError] = useState("");
   const [loaded, setLoaded] = useState(false);
   const [selectedId, setSelectedId] = useState("");
@@ -51,7 +52,7 @@ export default function PhysicalGeographyLayer({ map, ready, visible, mode, cont
       if (!response.ok) throw new Error("山川河流资料暂时无法加载，请刷新重试。");
       return response.json();
     }))).then(([collection, index]) => {
-      setData(collection as PhysicalFeatureCollection); setGroups((index as PhysicalInteractionIndex).groups); setLoaded(true);
+      setData(collection as PhysicalFeatureCollection); setGroups((index as PhysicalInteractionIndex).groups.map(localizePhysicalGroup)); setLoaded(true);
     }).catch(error => { if (error.name !== "AbortError") setError("山川河流资料暂时无法加载，请刷新重试。"); });
     fetch("/data/mountain-directions.geojson", { signal: abort.signal }).then(response => {
       if (!response.ok) throw new Error("山系走向暂时未能加载，名称定位和河湖仍可使用。");
@@ -142,7 +143,7 @@ export default function PhysicalGeographyLayer({ map, ready, visible, mode, cont
       const bounds = map.getBounds(); const zoom = map.getZoom(); const rect = map.getContainer().getBoundingClientRect();
       const occupied = [...map.getContainer().querySelectorAll<HTMLElement>(".marker-label")].filter(el => el.style.display !== "none").map(el => el.getBoundingClientRect());
       const locatedGroups = groups.map(group => ({ ...group, labelCoordinates: directionLabels.get(group.groupId) ?? group.labelCoordinates }));
-      const candidates = locatedGroups.filter(group => bounds.contains(group.labelCoordinates) && (group.groupId === selectedId || zoom >= Math.max(group.minZoom, /\p{Script=Han}/u.test(group.name) ? 0 : 5.5)) && !group.name.startsWith("未命名"))
+      const candidates = locatedGroups.filter(group => bounds.contains(group.labelCoordinates) && (group.groupId === selectedId || zoom >= group.minZoom) && !/^(未命名|未定名)/.test(group.name))
         .sort((a, b) => Number(b.groupId === selectedId) - Number(a.groupId === selectedId) || a.minZoom - b.minZoom).slice(0, 140);
       for (const group of candidates) {
         const point = map.project(group.labelCoordinates); const width = Math.min(200, group.name.length * 12 + 20);
@@ -180,6 +181,11 @@ export default function PhysicalGeographyLayer({ map, ready, visible, mode, cont
     {visible && selected && <section className={`nature-detail ${detailCollapsed ? "is-collapsed" : ""}`} aria-label="山川河流详情">
       <header><button className="nature-detail-title" aria-expanded={!detailCollapsed} onClick={() => setDetailCollapsed(value => !value)}>{selected.kind === "mountain" || selected.kind === "plateau" ? <Mountain size={16} /> : <Waves size={16} />}<strong>{selected.name}</strong><span>{detailCollapsed ? "展开" : "收起"}</span></button><button aria-label="关闭山川河流详情" onClick={() => setSelectedId("")}><X size={16} /></button></header>
       {!detailCollapsed && <div className="nature-detail-body"><span className="nature-kind">{physicalKindNames[selected.kind]} · 现代自然地理</span>
+        {selected.nameStatus === "unresolved" && <p className="nature-detail-note">中文名称待核定，可展开来源原文核查。</p>}
+        <details><summary>查看名称来源</summary><p>原文名称 · {selected.originalName}</p>
+          {selected.nameCorrectionNote && <p>{selected.nameCorrectionNote}</p>}
+          {selected.nameSourceUrl && <a href={selected.nameSourceUrl} target="_blank" rel="noreferrer">名称核查来源 ↗</a>}
+        </details>
         {selected.kind === "mountain" ? <>
           <p>{selectedDirection ? "沿高亮线查看这条山系的大致延伸方向。" : "此山系暂仅提供名称定位，可结合山影与立体地形观察。"}</p>
           <p className="nature-detail-note">{selectedDirection?.properties.geometryNote || directionError || "未收录可用的走向线。"} 走向示意不表示实测山脊、山体边界或登山路线。</p>

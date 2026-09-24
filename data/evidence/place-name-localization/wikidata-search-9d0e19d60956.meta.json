@@ -1,0 +1,6 @@
+{
+  "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&search=Kolidam+River&language=en&uselang=zh&limit=2",
+  "retrievedAt": "2026-09-24T14:44:17.195249+00:00",
+  "sha256": "d628446f6dcd0bd0df51b661e1a7cf56328077953fb7813001449f8c41af8519",
+  "path": "data/evidence/place-name-localization/wikidata-search-9d0e19d60956.json"
+}

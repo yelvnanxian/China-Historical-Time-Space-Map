@@ -1,0 +1,143 @@
+[
+  {
+    "query": "Yom River",
+    "path": "data/evidence/place-name-localization/wikidata-search-d0ed4afd8af5.json",
+    "matches": [
+      {
+        "id": "Q586733",
+        "label": "永河",
+        "description": "river in Thailand",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Yom River"
+        }
+      }
+    ]
+  },
+  {
+    "query": "Son River",
+    "path": "data/evidence/place-name-localization/wikidata-search-df8b28de0b8c.json",
+    "matches": [
+      {
+        "id": "Q1418174",
+        "label": "松河",
+        "description": "river in India",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Son River"
+        }
+      },
+      {
+        "id": "Q7560599",
+        "label": "Son River",
+        "description": "river in Vietnam",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Son River"
+        }
+      }
+    ]
+  },
+  {
+    "query": "Chi River",
+    "path": "data/evidence/place-name-localization/wikidata-search-877f37c2f0e8.json",
+    "matches": []
+  },
+  {
+    "query": "Bogcang Zangbo",
+    "path": "data/evidence/place-name-localization/wikidata-search-e24e4d860bf4.json",
+    "matches": [
+      {
+        "id": "Q29988214",
+        "label": "波仓藏布",
+        "description": "中华人民共和国河流",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Bogcang Zangbo"
+        }
+      }
+    ]
+  },
+  {
+    "query": "Shishged River",
+    "path": "data/evidence/place-name-localization/wikidata-search-2a41022eb7f4.json",
+    "matches": [
+      {
+        "id": "Q1511505",
+        "label": "小葉尼塞伊河",
+        "description": "river in Russia and Mongolia",
+        "match": {
+          "type": "alias",
+          "language": "en",
+          "text": "Shishged River"
+        }
+      }
+    ]
+  },
+  {
+    "query": "Manas River Bhutan",
+    "path": "data/evidence/place-name-localization/wikidata-search-18cb810bb90c.json",
+    "matches": []
+  },
+  {
+    "query": "Indravati River",
+    "path": "data/evidence/place-name-localization/wikidata-search-43bcec2a6de5.json",
+    "matches": [
+      {
+        "id": "Q1661830",
+        "label": "Indravati River",
+        "description": "river in India",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Indravati River"
+        }
+      },
+      {
+        "id": "Q118625",
+        "label": "印得拉瓦地河",
+        "description": "尼泊尔河流",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Indravati River"
+        }
+      }
+    ]
+  },
+  {
+    "query": "Brahmani River",
+    "path": "data/evidence/place-name-localization/wikidata-search-d82a86ddfe09.json",
+    "matches": [
+      {
+        "id": "Q2639171",
+        "label": "婆罗门河",
+        "description": "印度奥迪沙邦河流",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Brahmani River"
+        }
+      },
+      {
+        "id": "Q2766589",
+        "label": "Brahmani River",
+        "description": "river in Halvad Taluka, India",
+        "match": {
+          "type": "label",
+          "language": "en",
+          "text": "Brahmani River"
+        }
+      }
+    ]
+  },
+  {
+    "query": "Kolidam River",
+    "path": "data/evidence/place-name-localization/wikidata-search-9d0e19d60956.json",
+    "matches": []
+  }
+]

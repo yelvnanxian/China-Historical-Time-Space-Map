@@ -1,0 +1,318 @@
+{
+  "sourceUrl": "https://download.geonames.org/export/dump/CN.zip",
+  "downloadedAt": "2026-09-24T14:36:04.424560+00:00",
+  "archiveSha256": "9a3396204a9d2cf3ad418da8614a8e1e300dafeb869a9dc3827f28b9fbc275c2",
+  "archiveBytes": 32195246,
+  "license": "CC BY 4.0；署名GeoNames https://www.geonames.org/",
+  "coordinateNotice": "仅采用现代居民点作地区参考，显示坐标四舍五入到0.01度；不是古城址或遗址定位。",
+  "selectedRecords": [
+    {
+      "placeId": "fengxiang",
+      "geonameId": "7353795",
+      "rawRecord": "7353795\tFengxiang\tFengxiang\tFengxiang,Fengxiang Chengguanzhen,Fengxiang Xian,feng xiang,feng xiang cheng guan zhen,feng xiang xian,凤翔,凤翔县,凤翔城关镇\t34.52301\t107.39127\tP\tPPLA3\tCN\t\t26\t6103\t1811198\t\t0\t\t794\tAsia/Shanghai\t2024-02-28",
+      "sourceCoordinates": [
+        107.39127,
+        34.52301
+      ],
+      "displayCoordinates": [
+        107.39,
+        34.52
+      ],
+      "coordinateRole": "modern-regional-reference"
+    },
+    {
+      "placeId": "tongzhou-dali",
+      "geonameId": "1814092",
+      "rawRecord": "1814092\tDali\tDali\tDali,T'ung-chou,Ta-li,Ta-li-hsien,Tunchzhou,Tungchow,Tungchowfu,T’ung-chou,da li,大荔\t34.79586\t109.93895\tP\tPPLA3\tCN\t\t26\t6105\t\t\t0\t\t351\tAsia/Shanghai\t2021-09-20",
+      "sourceCoordinates": [
+        109.93895,
+        34.79586
+      ],
+      "displayCoordinates": [
+        109.94,
+        34.8
+      ],
+      "coordinateRole": "modern-regional-reference"
+    },
+    {
+      "placeId": "huazhou-shaanxi",
+      "geonameId": "1807005",
+      "rawRecord": "1807005\tHuazhou\tHuazhou\tHua,Hua-hsien,Hua-hsien-ch'eng,Hua-hsien-ch’eng,Huaxian,Huazhou,Huazhou Zhen,Hwahsien,Khuasyan,hua zhou,hua zhou zhen,华州,华州镇\t34.51523\t109.75759\tP\tPPLA3\tCN\t\t26\t6105\t\t\t0\t\t350\tAsia/Shanghai\t2021-09-20",
+      "sourceCoordinates": [
+        109.75759,
+        34.51523
+      ],
+      "displayCoordinates": [
+        109.76,
+        34.52
+      ],
+      "coordinateRole": "modern-regional-reference"
+    },
+    {
+      "placeId": "puzhou",
+      "geonameId": "1798410",
+      "rawRecord": "1798410\tPuzhou\tPuzhou\tHsin-sheng,P'u-chou,Puchow,Puchzhou,Puzhou,P’u-chou,Yung-chi,Yung-chi-hsien,Yungtsi,Yuntszi,Yüngtsi\t34.84194\t110.2975\tP\tPPL\tCN\t\t24\t1408\t\t\t0\t\t335\tAsia/Shanghai\t2021-09-20",
+      "sourceCoordinates": [
+        110.2975,
+        34.84194
+      ],
+      "displayCoordinates": [
+        110.3,
+        34.84
+      ],
+      "coordinateRole": "modern-regional-reference"
+    },
+    {
+      "placeId": "jiangzhou",
+      "geonameId": "1788800",
+      "rawRecord": "1788800\tLongxing\tLongxing\tHsin-chiang,Hsin-chiang-hsien,Kiangchow,Longxing,Longxing Zhen,Sinkiang,Sinkianghsien,Xinjiang Xian,long xing,long xing zhen,xin jiang xian,新绛县,龙兴,龙兴镇\t35.61297\t111.21925\tP\tPPLA3\tCN\t\t24\t1408\t\t\t0\t\t401\tAsia/Shanghai\t2021-09-20",
+      "sourceCoordinates": [
+        111.21925,
+        35.61297
+      ],
+      "displayCoordinates": [
+        111.22,
+        35.61
+      ],
+      "coordinateRole": "modern-regional-reference"
+    },
+    {
+      "placeId": "weizhou-daming",
+      "geonameId": "1813915",
+      "rawRecord": "1813915\tDaming\tDaming\tDamin,Daming,Ta-ming,Ta-ming-ch'eng-kuan,Ta-ming-ch’eng-kuan,Ta-ming-hsien,Tamingfu,da ming,大名\t36.28509\t115.14454\tP\tPPLA3\tCN\t\t10\t1304\t\t\t0\t\t49\tAsia/Shanghai\t2024-11-13",
+      "sourceCoordinates": [
+        115.14454,
+        36.28509
+      ],
+      "displayCoordinates": [
+        115.14,
+        36.29
+      ],
+      "coordinateRole": "modern-regional-reference"
+    },
+    {
+      "placeId": "bozhou-liaocheng",
+      "geonameId": "1803834",
+      "rawRecord": "1803834\tLiaocheng\tLiaocheng\tLiao-ccheng,Liao-ch'eng-hsien,Liao-ch'eng-shih,Liao-ch’eng-hsien,Liao-ch’eng-shih,Liao-čcheng,Liaoceng,Liaocheng,Liaoĉeng,Lieu Thanh,Lieu-siang,Liâu-siâⁿ-chhī,Lièu-siàng,Liêu Thành,Ljaochehn,Ljaocheng,Tung-ch'ang,Tung-ch’ang,Tungchangfu,liao cheng,liao cheng shi,lyaocheong si,lyawchyng,Љаоченг,Ляочэн,لیاوچینگ,聊城,聊城市,랴오청 시\t36.45064\t116.00247\tP\tPPLA2\tCN\t\t25\t3715\t\t\t1229768\t\t32\tAsia/Shanghai\t2021-10-20",
+      "sourceCoordinates": [
+        116.00247,
+        36.45064
+      ],
+      "displayCoordinates": [
+        116.0,
+        36.45
+      ],
+      "coordinateRole": "modern-regional-reference"
+    },
+    {
+      "placeId": "qizhou-jinan",
+      "geonameId": "1805753",
+      "rawRecord": "1805753\tJinan\tJinan\tCa-nang,Che-lam-chhi,Chi-nam-su,Chi-nan,Chi-nan-shih,Chi-nàm-sṳ,Chè-lâm-chhī,Cijnanz,Cinanum,Csinan,Czinan',Cá̤-nàng,Dzinan,Dzinanas,Dzjinana,Dzjinaņa,Džinan,Ginano,Jinan,Jinan Shi,Li-ch'eng,Li-ch’eng,Szinan,TNA,Te Nam,Ti-nan,Tsi-nan-fu,Tsinah,Tsinan,Tzinan,Tế Nam,Zhinan',ci hnan,cinana,gynʼn,ji nan,ji nan shi,jinan si,jinana,jinani,jnan,jynan,Ĝinano,Ťi-nan,Τζινάν,Ђинан,Дзинан,Жинань,Цзинань,Цзінань,Ցզինան,גינאן,جنان,جىنەن شەھىرى,جينان,جینان,जीनान,জিনান,ਚੀਨਾਨ,จี่หนาน,ཅི་ནན།,ကျီနန်မြို့,ጂናን,济南,济南市,済南,済南市,濟南,濟南市,지난 시\t36.66833\t116.99722\tP\tPPLA\tCN\t\t25\t3701\t\t\t8352574\t\t32\tAsia/Shanghai\t2026-09-02",
+      "sourceCoordinates": [
+        116.99722,
+        36.66833
+      ],
+      "displayCoordinates": [
+        117.0,
+        36.67
+      ],
+      "coordinateRole": "modern-regional-reference"
+    },
+    {
+      "placeId": "yanzhou",
+      "geonameId": "1787031",
+      "rawRecord": "1787031\tYanzhou\tYanzhou\tCh'ie-fou,Ch’ie-fou,Jan'chzhou,Tzeyang,Tzu-yang,Tzu-yang-ch'eng,Tzu-yang-ch’eng,Tzu-yang-hsien,Yanzhou,Yen-chou,Yenchow,Yenchow-fu,Yenzhou,Яньчжоу\t35.55278\t116.82861\tP\tPPL\tCN\t\t25\t3708\t\t\t375500\t\t54\tAsia/Shanghai\t2026-09-14",
+      "sourceCoordinates": [
+        116.82861,
+        35.55278
+      ],
+      "displayCoordinates": [
+        116.83,
+        35.55
+      ],
+      "coordinateRole": "modern-regional-reference"
+    },
+    {
+      "placeId": "qingzhou",
+      "geonameId": "1786731",
+      "rawRecord": "1786731\tQingzhou\tQingzhou\tCh'ing-chou,Ch’ing-chou,Cinchzhou,I-tu,I-tu-hsien,Qingzhou,Tsingchow,Tsingchowfu,Yidu,Yitu,Цинчжоу\t36.69667\t118.47972\tP\tPPL\tCN\t\t25\t3707\t\t\t236406\t\t112\tAsia/Shanghai\t2026-09-02",
+      "sourceCoordinates": [
+        118.47972,
+        36.69667
+      ],
+      "displayCoordinates": [
+        118.48,
+        36.7
+      ],
+      "coordinateRole": "modern-regional-reference"
+    },
+    {
+      "placeId": "dengzhou-penglai",
+      "geonameId": "1812988",
+      "rawRecord": "1812988\tDengzhou\tDengzhou\tDengzhou,Dengzhou Jiedao,P'eng-lai-hsien,PNJ,Pehnlaj,Penglai,Penglai Shi,P’eng-lai-hsien,Teng-Chow-Fu,Teng-chou,Tengchow,Tengchowfu,deng zhou,deng zhou jie dao,peng lai,peng lai shi,Пэнлай,登州,登州街道,蓬莱,蓬莱市\t37.80822\t120.75908\tP\tPPLA3\tCN\t\t25\t3706\t\t\t85279\t\t23\tAsia/Shanghai\t2021-09-20",
+      "sourceCoordinates": [
+        120.75908,
+        37.80822
+      ],
+      "displayCoordinates": [
+        120.76,
+        37.81
+      ],
+      "coordinateRole": "modern-regional-reference"
+    },
+    {
+      "placeId": "liangzhou-wuwei",
+      "geonameId": "1803936",
+      "rawRecord": "1803936\tWuwei\tWuwei\tLiang-chou,Liang-chow,Liangzhou,Uvehj,Wu-wei-hsien,Wuwei,Wuwei Shi,wu wei,wu wei shi,Увэй,武威,武威市\t37.92672\t102.63202\tP\tPPLA2\tCN\t\t15\t6206\t\t\t1010295\t\t1542\tAsia/Shanghai\t2026-09-14",
+      "sourceCoordinates": [
+        102.63202,
+        37.92672
+      ],
+      "displayCoordinates": [
+        102.63,
+        37.93
+      ],
+      "coordinateRole": "modern-regional-reference"
+    },
+    {
+      "placeId": "ganzhou-zhangye",
+      "geonameId": "1785036",
+      "rawRecord": "1785036\tZhangye\tZhangye\tCampichu,Cang-jie,Chang-i,Chang-yeh,Chang-yeh-hsien,Chang-yeh-shih,Changyen,Chzhanue,Diong-ik,Diŏng-ĭk,Dzhanie,Ganzhou,Kan-chou,Kanchow,Tiuⁿ-e̍k-chhī,Truong Dich,Trương Dịch,YZY,Zhangye,Zhangye Shi,Zhanue,gan zhou,jang-ye si,zhang ye,zhang ye shi,Čang-jie,Джание,Жанъе,Чжанъе,Չժանիե,ژانگیے,ژانگیۓ,张掖,张掖市,張掖,張掖市,甘州,장예 시\t38.93417\t100.45167\tP\tPPLA2\tCN\t\t15\t6207\t\t\t507433\t\t1481\tAsia/Shanghai\t2021-12-17",
+      "sourceCoordinates": [
+        100.45167,
+        38.93417
+      ],
+      "displayCoordinates": [
+        100.45,
+        38.93
+      ],
+      "coordinateRole": "modern-regional-reference"
+    },
+    {
+      "placeId": "suzhou-jiuquan",
+      "geonameId": "1279945",
+      "rawRecord": "1279945\tJiuquan\tJiuquan\tChiu-ch'uan,Chiu-ch'uan-hsien,Chiu-ch'uan-shih,Chiu-choan-chhi,Chiu-ch’üan,Chiu-ch’üan-hsien,Chiu-ch’üan-shih,Chiú-choân-chhī,Ciu-ciong,Ciū-ciòng,Czjucjuan',Gan'sju,Jiuquan,Jiuquan Shi,Kiuchoan,Kiuchuan,Kiuchuan-hsien,Kiuchüan,Kiuchüan-hsien,Su-chou,Suchow,Suchzhou,Suzhou,Tiou-cchuean,Tsin-tsuan-tsiun,Tuu Tuyen,Tửu Tuyền,Zhjuchuan',jiu quan,jiu quan shi,juchwian si,jywchwan,su zhou,Ťiou-čchüan,Жючуань,Сучжоу,Цзюцюань,Ґаньсю,جیوچوآن,جیوچوان,肃州,酒泉,酒泉市,주취안 시\t39.74318\t98.51736\tP\tPPLA2\tCN\t\t15\t6209\t\t\t428346\t\t1464\tAsia/Shanghai\t2025-05-08",
+      "sourceCoordinates": [
+        98.51736,
+        39.74318
+      ],
+      "displayCoordinates": [
+        98.52,
+        39.74
+      ],
+      "coordinateRole": "modern-regional-reference"
+    },
+    {
+      "placeId": "guazhou-jinchang",
+      "geonameId": "1529004",
+      "rawRecord": "1529004\tYuanquan\tYuanquan\tAn-hsi,An-hsi-hsien,Ansi,Ansi Xian,Anxi,Anxi Xian,Guazhou Xian,Xincheng,Yuanquan,Yuanquan Zhen,an xi xian,gua zhou xian,yuan quan,yuan quan zhen,安西县,渊泉,渊泉镇,瓜州县\t40.5\t95.8\tP\tPPLA3\tCN\t\t15\t6209\t\t\t0\t\t1178\tAsia/Shanghai\t2021-09-20",
+      "sourceCoordinates": [
+        95.8,
+        40.5
+      ],
+      "displayCoordinates": [
+        95.8,
+        40.5
+      ],
+      "coordinateRole": "modern-regional-reference"
+    },
+    {
+      "placeId": "xizhou-gaochang",
+      "geonameId": "1529114",
+      "rawRecord": "1529114\tTurpan\tTurpan\tLukchun,T'u-lu-fan,T'u-lu-fan-chen,T'u-lu-fan-hsien,T'urfang,TLQ,Tourfan,Tufan,Tulupan,Tulupan Xian,Turfan,Turfán,Turpan,T’u-lu-fan,T’u-lu-fan-chen,T’u-lu-fan-hsien,T’urfang,torufan shi,tu lu fan,tu lu fan shi,tu lu fan xian,tulupan si,Турпан,Турфан,تۇرپان,トルファン市,吐鲁番,吐鲁番县,吐鲁番市,투루판 시\t42.94769\t89.17886\tP\tPPLA2\tCN\t\t13\t6504\t\t\t273385\t\t41\tAsia/Urumqi\t2022-02-04",
+      "sourceCoordinates": [
+        89.17886,
+        42.94769
+      ],
+      "displayCoordinates": [
+        89.18,
+        42.95
+      ],
+      "coordinateRole": "modern-regional-reference"
+    },
+    {
+      "placeId": "yizhou-hami",
+      "geonameId": "1529484",
+      "rawRecord": "1529484\tHami\tHami\tChamil,HMI,Ha-mi-ch'eng-chen,Ha-mi-chen,Ha-mi-ch’eng-chen,Ha-mi-hsien,Ha-mi-shih,Hami,Kamil,Kha-mi,Khami,Khamil,Komul,Koumoul,Kumul,K̩umul,Qomul,Qumul,ha mi de qu,ha mi shi,hami,kumuru shi,Хами,Қумул,قۇمۇل,قۇمۇل شەھىرى,クムル市,哈密地区,哈密市,하미\t42.83393\t93.50601\tP\tPPL\tCN\t\t13\t6505\t\t\t246373\t\t783\tAsia/Urumqi\t2026-09-02",
+      "sourceCoordinates": [
+        93.50601,
+        42.83393
+      ],
+      "displayCoordinates": [
+        93.51,
+        42.83
+      ],
+      "coordinateRole": "modern-regional-reference"
+    },
+    {
+      "placeId": "tingzhou-beiting",
+      "geonameId": "1529419",
+      "rawRecord": "1529419\tJimsar\tJimsar\tChi-mu-sa-erh,Chi-mu-sa-erh-chen,Chi-mu-sa-erh-hsien,Fu-yen,Fu-ynen,Fu-yuan,Fu-yuan-hsien,Fu-yüan,Fu-yüan-hsien,Fuan',Fuan’,Jimasa,Jimsar,Jimusa'er,Jimusa'er Xian,Jimusa'er Zhen,Jimusa’er,Jimusa’er Xian,Jimusa’er Zhen,ji mu sa er,ji mu sa er xian,ji mu sa er zhen,jymsar,Җимсар,جىمسار,吉木萨尔,吉木萨尔县,吉木萨尔镇\t43.99747\t89.18976\tP\tPPLA3\tCN\t\t13\t6523\t\t\t0\t\t713\tAsia/Urumqi\t2025-04-15",
+      "sourceCoordinates": [
+        89.18976,
+        43.99747
+      ],
+      "displayCoordinates": [
+        89.19,
+        44.0
+      ],
+      "coordinateRole": "modern-regional-reference"
+    },
+    {
+      "placeId": "qiuci",
+      "geonameId": "1529363",
+      "rawRecord": "1529363\tXincheng\tXincheng\tK'u-ch'e,K'u-ch'e-chen,K'u-ch'e-hsien,KCA,Kocha,Koutcha,Kucha,Kuchar,Kuche,Kuche Xian,Kuchel,Kuchi,Kuchu,Kuga,Kuqa,K’u-ch’e,K’u-ch’e-chen,K’u-ch’e-hsien,Xincheng,Yengisheher,Yëngisheher,ku che,ku che xian,xin cheng,Куча,كۇچا,يېڭىشەھەر,库车,库车县,新城\t41.71497\t82.93249\tP\tPPLA3\tCN\t\t13\t6529\t\t\t102752\t\t1048\tAsia/Urumqi\t2025-02-18",
+      "sourceCoordinates": [
+        82.93249,
+        41.71497
+      ],
+      "displayCoordinates": [
+        82.93,
+        41.71
+      ],
+      "coordinateRole": "modern-regional-reference"
+    },
+    {
+      "placeId": "yutian-hotan",
+      "geonameId": "1281019",
+      "rawRecord": "1281019\tGujangbagh\tGujangbagh\tChotan,Ciudad de Jotan,Ciudad de Jotán,Gujangbagh,Gujiangbage,HTN,Hetian,Hetianshi Gujiang Bage Jiedao,Ho-t'ien,Ho-t'ien-chen,Ho-tien-hsien,Ho-t’ien,Ho-t’ien-chen,Hotan,Hotanas,Hoten,Hotən,Khotan,Xotan,Xoten,gu jiang ba ge,he tian,he tian shi,he tian shi gu jiang ba ge jie dao,heotyen si,hotan shi,khotana,khtn,Хотан,Хотән,ختن,خوتەن,خوتەن شەھىرى,گۇجانباغ,ख़ोतान,ホータン市,古江巴格,和田,和田市,和田市古江巴格街道,허톈 시\t37.10927\t79.93433\tP\tPPLA3\tCN\t\t13\t6532\t\t\t408894\t\t1366\tAsia/Urumqi\t2025-03-11",
+      "sourceCoordinates": [
+        79.93433,
+        37.10927
+      ],
+      "displayCoordinates": [
+        79.93,
+        37.11
+      ],
+      "coordinateRole": "modern-regional-reference"
+    },
+    {
+      "placeId": "shule-kashgar",
+      "geonameId": "1280849",
+      "rawRecord": "1280849\tKashgar\tKashgar\tK'a-shih,K'o-shih,KHG,Kachgar,Kaixgar,Kaschgar,Kasgar,Kasgara,Kasgaras,Kash,Kashgar,Kashgar Kona Shahr,Kashgar Kone Shahr,Kashi,Kashi Shi,Kashkar,Kasjgar,Kaszgar,Kaxgar,Kaŝgar,Kaşgar,Kašgar,Kašgara,Kašgaras,Kona Shahr,K̩əxk̩ər,K’a-shih,K’o-shih,Qashqar,Qasqar,Qaşqar,Qeshqer,Qeshqer Shehiri,Shu-fu,Su-fu,ka shen,ka shen shi,kasagara,kaseu si,kasgara,kashghr,kashqar,kashugaru,kashugaru shi,Кашгар,Кашкар,Қәшқәр,Կաշգար,קאשגאר,قەشقەر,قەشقەر شەھىرى,كاشغر,کاشغر,کاشقار,काश्गर,কাশগর,କାଶଗର,カシュガル,カシュガル市,喀什,喀什市,카스 시\t39.46718\t75.98675\tP\tPPLA2\tCN\t\t13\t6531\t\t\t506640\t\t1284\tAsia/Urumqi\t2025-01-10",
+      "sourceCoordinates": [
+        75.98675,
+        39.46718
+      ],
+      "displayCoordinates": [
+        75.99,
+        39.47
+      ],
+      "coordinateRole": "modern-regional-reference"
+    },
+    {
+      "placeId": "yanqi",
+      "geonameId": "1529031",
+      "rawRecord": "1529031\tYanqi\tYanqi\tHa-la-sha-erh,K'a-la-sha-erh,K'o-la-sha-erh,Kara-schahr,Karachahr,Karashahr,Karashar,Khara Shar,Kurashar',Kurashar’,K̩araxəh̨ər,K’a-la-sha-erh,K’o-la-sha-erh,Qara Shahr,Qarasheher,Yan'tsy,Yanqi,Yanqi Zhen,Yan’tsy,Yen-ch'i,Yen-ch'i-chen,Yen-ch'i-hsien,Yen-ch'i-hui-tsu-tzu-chih-ch'u,Yen-ch'i-hui-tsu-tzu-chih-hsien,Yen-ch’i,Yen-ch’i-chen,Yen-ch’i-hsien,Yen-ch’i-hui-tsu-tzu-chih-ch’ü,Yen-ch’i-hui-tsu-tzu-chih-hsien,Yenki,Yinki,yan qi,yan qi zhen,Қарашәһәр,قاراشەھەر,焉耆,焉耆镇\t42.06321\t86.57185\tP\tPPLA3\tCN\t\t13\t6528\t\t\t31773\t\t1053\tAsia/Urumqi\t2026-08-22",
+      "sourceCoordinates": [
+        86.57185,
+        42.06321
+      ],
+      "displayCoordinates": [
+        86.57,
+        42.06
+      ],
+      "coordinateRole": "modern-regional-reference"
+    }
+  ]
+}

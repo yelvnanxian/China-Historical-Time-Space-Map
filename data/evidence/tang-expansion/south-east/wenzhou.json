@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-wenzhou",
+  "title": "温州市 — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E6%B8%A9%E5%B7%9E%E5%B8%82&oldid=94320146",
+  "retrievedAt": "2026-09-24T14:36:02.323432+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/wenzhou.txt",
+  "snapshotSha256": "b588d20765fc812b8a57512235585de0f8a8bbd0fdf3361f1e4c7aaddd7825cf",
+  "pageId": 10244,
+  "revision": {
+    "revid": 94320146,
+    "parentid": 94241289,
+    "timestamp": "2026-09-12T15:53:18Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E6%B8%A9%E5%B7%9E%E5%B8%82&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

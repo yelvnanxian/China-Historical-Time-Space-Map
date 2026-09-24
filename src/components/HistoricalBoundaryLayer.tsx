@@ -5,6 +5,7 @@ import type { BoundaryDataset, BoundaryLevel, BoundaryManifest, BoundarySelectio
 import BoundaryControls from "./BoundaryControls";
 import type { ModernCorrespondenceData } from "../../shared/modern-correspondence";
 import { getBoundaryDisplayLabel } from "../../shared/boundary-labels";
+import { chinesePlaceName, localizedAdminType, localizedPolity } from "../../shared/place-name-localization";
 
 type RegionProperties = BoundarySelection & { color?: string; labelCoordinates?: [number, number]; sourceHierarchy?: { polity?: string } };
 type Regions = FeatureCollection<Polygon | MultiPolygon, RegionProperties>;
@@ -61,7 +62,10 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
 
   const displayRegions = useMemo<Regions>(() => ({ ...regions, features: regions.features.map(feature => {
     const match = correspondences?.entries[feature.properties.id];
-    return { ...feature, properties: { ...feature.properties, ...getBoundaryDisplayLabel(feature.properties, match?.simplifiedName), modernNames: match?.modernNames ?? [],
+    return { ...feature, properties: { ...feature.properties, ...getBoundaryDisplayLabel(feature.properties, match?.simplifiedName),
+      polity: localizedPolity(feature.properties.sourceHierarchy?.polity), originalPolity: feature.properties.sourceHierarchy?.polity,
+      sourceAdminType: localizedAdminType(feature.properties.sourceAdminType), originalAdminType: feature.properties.sourceAdminType,
+      modernNames: (match?.modernNames ?? []).map(name => chinesePlaceName(name, "现代地区名称待核定")),
       correspondenceNote: match?.note ?? "现代地区对应尚未收录。", correspondenceSourceIds: match?.sourceIds ?? [] } };
   }) }), [regions, correspondences]);
 
@@ -69,7 +73,7 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
     setSelection(current => {
       if (!current) return current;
       const latest = displayRegions.features.find(feature => feature.properties.id === current.id)?.properties;
-      return latest ? { ...latest, polity: latest.sourceHierarchy?.polity } : null;
+      return latest ?? null;
     });
   }, [displayRegions]);
 
@@ -154,7 +158,7 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
       const feature = layers.flatMap(layer => found.filter(item => item.layer.id === layer))[0];
       const props = feature?.properties;
       const original = displayRegions.features.find(item => item.properties.id === props?.id)?.properties;
-      setSelection(original ? { ...original, polity: original.sourceHierarchy?.polity } : null);
+      setSelection(original ?? null);
       if (original) onSelection?.();
     };
     map.on("click", click);
@@ -205,7 +209,7 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
     const feature = displayRegions.features.find(item => item.properties.id === id);
     if (!feature || !map || !enabled) return;
     if (!visibleLevels.includes(feature.properties.level)) setVisibleLevels(current => [...current, feature.properties.level]);
-    setSelection({ ...feature.properties, polity: feature.properties.sourceHierarchy?.polity });
+    setSelection(feature.properties);
     onSelection?.();
     const coordinates = feature.geometry.type === "Polygon" ? feature.geometry.coordinates.flat() : feature.geometry.coordinates.flat(2);
     onRegionFocus(coordinates.map(point => [point[0], point[1]]));

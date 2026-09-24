@@ -163,7 +163,11 @@ export default function BoundaryControls(props: BoundaryControlsProps) {
                 </button>
               </div>
               <h3>{props.selection.name}</h3>
-              {props.selection.originalName && props.selection.originalName !== props.selection.name && <p className="boundary-original-name">原文名称 · {props.selection.originalName}</p>}
+              <details className="boundary-original-name"><summary>查看来源原文</summary>
+                <p>原文名称 · {props.selection.originalName || "来源未提供"}</p>
+                {props.selection.originalPolity && <p>原始分组 · {props.selection.originalPolity}</p>}
+                {props.selection.originalAdminType && <p>原始类型 · {props.selection.originalAdminType}</p>}
+              </details>
               {props.selection.nameCorrectionNote && <p className="boundary-selection-caveat">{props.selection.nameCorrectionNote}{props.selection.nameSourceUrl && <> <a href={props.selection.nameSourceUrl} target="_blank" rel="noreferrer">核查来源 ↗</a></>}</p>}
               <section className="boundary-modern-comparison">
                 <strong>今参考 · {props.selection.modernNames?.length ? props.selection.modernNames.join(" / ") : "对应地区待补"}</strong>
@@ -172,7 +176,7 @@ export default function BoundaryControls(props: BoundaryControlsProps) {
               </section>
               <dl>
                 {props.selection.polity && props.selection.level !== "country" && props.selection.nameStatus !== "source-recovered" && <div><dt>来源分组</dt><dd>{props.selection.polity}</dd></div>}
-                {props.selection.sourceAdminType && props.selection.nameStatus !== "source-recovered" && <div><dt>原始类型</dt><dd>{props.selection.sourceAdminType}</dd></div>}
+                {props.selection.sourceAdminType && props.selection.nameStatus !== "source-recovered" && <div><dt>来源类型</dt><dd>{props.selection.sourceAdminType}</dd></div>}
                 <div>
                   <dt>资料年份</dt>
                   <dd>{yearLabel(props.selection.year)}</dd>

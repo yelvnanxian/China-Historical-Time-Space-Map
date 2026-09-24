@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-suzhou",
+  "title": "苏州市 — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E8%8B%8F%E5%B7%9E%E5%B8%82&oldid=94529993",
+  "retrievedAt": "2026-09-24T14:34:41.434179+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/suzhou.txt",
+  "snapshotSha256": "15c14398345e36fa48f7b075dba27e9c50cfecaee10d04d8e49adb4e5b6ff772",
+  "pageId": 1168,
+  "revision": {
+    "revid": 94529993,
+    "parentid": 94410317,
+    "timestamp": "2026-09-24T04:02:36Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E8%8B%8F%E5%B7%9E%E5%B8%82&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

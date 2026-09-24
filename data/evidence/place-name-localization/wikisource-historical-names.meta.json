@@ -1,0 +1,6 @@
+{
+  "url": "https://zh.wikisource.org/w/api.php?action=query&format=json&formatversion=2&titles=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7038%7C%E6%98%8E%E5%8F%B2%2F%E5%8D%B7046&prop=revisions&rvprop=ids%7Ccontent&rvslots=main",
+  "retrievedAt": "2026-09-24T14:51:17.861877+00:00",
+  "sha256": "c3c217f4afa03756b20d23640287bcc24bca2cd6bcc188aabd33d9b722fe418e",
+  "path": "data/evidence/place-name-localization/wikisource-historical-names.json"
+}

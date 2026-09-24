@@ -1,0 +1,1832 @@
+{
+  "version": "2026-09-24",
+  "natural": {
+    "river-ne_10m_rivers_lake_centerlines-0": {
+      "expectedName": "Irrawaddy Delta",
+      "displayName": "伊洛瓦底江三角洲",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=94248151",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-00.json",
+      "evidenceTitle": "伊洛瓦底江三角洲",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-11": {
+      "expectedName": "Tuotuo",
+      "displayName": "沱沱河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=90908964",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-05.json",
+      "evidenceTitle": "沱沱河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-12": {
+      "expectedName": "Lena",
+      "displayName": "勒拿河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=92427871",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-01.json",
+      "evidenceTitle": "勒拿河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-13": {
+      "expectedName": "Tongtian",
+      "displayName": "通天河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=84119722",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-07.json",
+      "evidenceTitle": "通天河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-15": {
+      "expectedName": "Jinsha",
+      "displayName": "金沙江",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=92112300",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-08.json",
+      "evidenceTitle": "金沙江",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-26": {
+      "expectedName": "Ideriyn",
+      "displayName": "伊德尔河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=93985611",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-00.json",
+      "evidenceTitle": "伊德尔河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-27": {
+      "expectedName": "Selenga",
+      "displayName": "色楞格河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=93812433",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-06.json",
+      "evidenceTitle": "色楞格河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-29": {
+      "expectedName": "Ertis",
+      "displayName": "额尔齐斯河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=93192547",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-08.json",
+      "evidenceTitle": "额尔齐斯河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-30": {
+      "expectedName": "Ertix",
+      "displayName": "额尔齐斯河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=93192547",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-08.json",
+      "evidenceTitle": "额尔齐斯河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-31": {
+      "expectedName": "Maquan",
+      "displayName": "马泉河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=92828094",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-08.json",
+      "evidenceTitle": "马泉河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-35": {
+      "expectedName": "Za",
+      "displayName": "扎曲（澜沧江）",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=91955783",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-supplement-00.json",
+      "evidenceTitle": "扎曲 (澜沧江)",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-44": {
+      "expectedName": "Irtysh",
+      "displayName": "额尔齐斯河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=93192547",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-08.json",
+      "evidenceTitle": "额尔齐斯河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-46": {
+      "expectedName": "Mekong",
+      "displayName": "湄公河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=93356851",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-05.json",
+      "evidenceTitle": "湄公河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-47": {
+      "expectedName": "Dihang",
+      "displayName": "未定名河流（源编号47）",
+      "method": "unresolved",
+      "note": "来源把此上游河段单列，尚未核实此河段的确切中文专名。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-51": {
+      "expectedName": "Brahmaputra",
+      "displayName": "布拉马普特拉河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=88154453",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-03.json",
+      "evidenceTitle": "布拉马普特拉河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-125": {
+      "expectedName": "Nmai",
+      "displayName": "恩梅开江",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=94248205",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-00.json",
+      "evidenceTitle": "伊洛瓦底江",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-138": {
+      "expectedName": "Ayeyarwady",
+      "displayName": "伊洛瓦底江",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=94248205",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-00.json",
+      "evidenceTitle": "伊洛瓦底江",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-55": {
+      "expectedName": "Ganges",
+      "displayName": "恒河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=94179631",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-03.json",
+      "evidenceTitle": "恒河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-56": {
+      "expectedName": "Indus",
+      "displayName": "印度河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=93559662",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-01.json",
+      "evidenceTitle": "印度河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-63": {
+      "expectedName": "Shiquan",
+      "displayName": "狮泉河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=92446070",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-05.json",
+      "evidenceTitle": "狮泉河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-72": {
+      "expectedName": "Amur",
+      "displayName": "黑龙江",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=93272292",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-supplement-00.json",
+      "evidenceTitle": "黑龙江 (河流)",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-74": {
+      "expectedName": "Hailar",
+      "displayName": "海拉尔河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=92232254",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-05.json",
+      "evidenceTitle": "海拉尔河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-84": {
+      "expectedName": "Argun’",
+      "displayName": "额尔古纳河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=92841203",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-08.json",
+      "evidenceTitle": "额尔古纳河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-107": {
+      "expectedName": "Shishhid Gol",
+      "displayName": "未定名河流（源编号107）",
+      "method": "unresolved",
+      "note": "来源单列上游支流，不能直接以整条小叶尼塞河之名替换。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-114": {
+      "expectedName": "Ob",
+      "displayName": "鄂毕河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=87280658",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-08.json",
+      "evidenceTitle": "鄂畢河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-128": {
+      "expectedName": "Nanpan",
+      "displayName": "南盘江",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=90911273",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-01.json",
+      "evidenceTitle": "南盘江",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-133": {
+      "expectedName": "Kyzyl-Khem",
+      "displayName": "未定名河流（源编号133）",
+      "method": "unresolved",
+      "note": "尚未核实该河段的中文专名。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-134": {
+      "expectedName": "Nu",
+      "displayName": "怒江",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=94281866",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-03.json",
+      "evidenceTitle": "怒江",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-144": {
+      "expectedName": "Malyy Yenisey",
+      "displayName": "小叶尼塞河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=90227997",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-02.json",
+      "evidenceTitle": "小葉尼塞河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-145": {
+      "expectedName": "Verkhniy Yenisey",
+      "displayName": "叶尼塞河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=92366188",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-01.json",
+      "evidenceTitle": "葉尼塞河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-147": {
+      "expectedName": "Hongshui",
+      "displayName": "红水河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=85546611",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-06.json",
+      "evidenceTitle": "红水河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-148": {
+      "expectedName": "Quan",
+      "displayName": "未定名河流（源编号148）",
+      "method": "unresolved",
+      "note": "拼写与广西河段位置不能与泉河对应，暂不据形状猜配。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-149": {
+      "expectedName": "Xun",
+      "displayName": "浔江",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=90915723",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-05.json",
+      "evidenceTitle": "浔江",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-153": {
+      "expectedName": "Salween",
+      "displayName": "萨尔温江",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=91955879",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-06.json",
+      "evidenceTitle": "薩爾溫江",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "lake-ne_10m_lakes-1159125069": {
+      "expectedName": "Nam Ngum Reservoir",
+      "displayName": "南俄水库",
+      "method": "compound-translation",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=87087108",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-01.json",
+      "evidenceTitle": "南俄河",
+      "note": "以已核对的南俄河中文专名，加来源中的水库类型译出；未采用原数据中错配的中文值。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-170": {
+      "expectedName": "Syr  Darya",
+      "displayName": "锡尔河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=92276603",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-08.json",
+      "evidenceTitle": "锡尔河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-171": {
+      "expectedName": "Naryn",
+      "displayName": "纳伦河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=94428477",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-06.json",
+      "evidenceTitle": "納倫河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-179": {
+      "expectedName": "Godävari",
+      "displayName": "戈达瓦里河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=88107782",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-03.json",
+      "evidenceTitle": "戈达瓦里河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-186": {
+      "expectedName": "Pamir",
+      "displayName": "帕米尔河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=90302492",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-03.json",
+      "evidenceTitle": "帕米尔河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-195": {
+      "expectedName": "Panj",
+      "displayName": "喷赤河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=91541329",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-01.json",
+      "evidenceTitle": "噴赤河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-214": {
+      "expectedName": "Ishikari",
+      "displayName": "石狩川",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=93561575",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-06.json",
+      "evidenceTitle": "石狩川",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-242": {
+      "expectedName": "Yarkant",
+      "displayName": "叶尔羌河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=87541153",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-01.json",
+      "evidenceTitle": "叶尔羌河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-258": {
+      "expectedName": "Sutlej",
+      "displayName": "萨特莱杰河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=85560839",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-07.json",
+      "evidenceTitle": "萨特莱杰河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-261": {
+      "expectedName": "Biya",
+      "displayName": "比亚河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=87422863",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-04.json",
+      "evidenceTitle": "比亞河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-271": {
+      "expectedName": "Mahäna Nadï",
+      "displayName": "默哈讷迪河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=90620600",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-supplement-00.json",
+      "evidenceTitle": "默哈讷迪河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-279": {
+      "expectedName": "Krishna",
+      "displayName": "克里希纳河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=90351832",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-00.json",
+      "evidenceTitle": "克里希纳河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-28": {
+      "expectedName": "Angara",
+      "displayName": "安加拉河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=92428049",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-02.json",
+      "evidenceTitle": "安加拉河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-306": {
+      "expectedName": "Hong",
+      "displayName": "红河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=93330543",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-06.json",
+      "evidenceTitle": "红河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-307": {
+      "expectedName": "Yamuna",
+      "displayName": "亚穆纳河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=93111834",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-00.json",
+      "evidenceTitle": "亞穆納河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-308": {
+      "expectedName": "Narmada",
+      "displayName": "讷尔默达河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=90351723",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-07.json",
+      "evidenceTitle": "讷尔默达河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-310": {
+      "expectedName": "Xar Moron",
+      "displayName": "西拉木伦河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=91917544",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-07.json",
+      "evidenceTitle": "西拉木伦河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-315": {
+      "expectedName": "Chenab",
+      "displayName": "杰纳布河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=92428031",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-04.json",
+      "evidenceTitle": "奇納布河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-318": {
+      "expectedName": "Tom’",
+      "displayName": "托木河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=90219179",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-03.json",
+      "evidenceTitle": "托木河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-344": {
+      "expectedName": "Chulyshman",
+      "displayName": "丘雷什曼河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=78652497",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-00.json",
+      "evidenceTitle": "丘雷什曼河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-348": {
+      "expectedName": "Konqi",
+      "displayName": "孔雀河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=90936736",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-02.json",
+      "evidenceTitle": "孔雀河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-360": {
+      "expectedName": "Xiliao",
+      "displayName": "西辽河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=89088219",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-07.json",
+      "evidenceTitle": "西辽河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-371": {
+      "expectedName": "Jhelum",
+      "displayName": "杰赫勒姆河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=87272049",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-04.json",
+      "evidenceTitle": "杰赫勒姆河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-382": {
+      "expectedName": "Chulym",
+      "displayName": "丘雷姆河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=90198467",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-00.json",
+      "evidenceTitle": "丘雷姆河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-384": {
+      "expectedName": "Vitim",
+      "displayName": "维季姆河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=90238293",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-06.json",
+      "evidenceTitle": "維季姆河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-386": {
+      "expectedName": "Mae Klong",
+      "displayName": "夜功河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=90256763",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-02.json",
+      "evidenceTitle": "夜功河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-387": {
+      "expectedName": "Yom",
+      "displayName": "永河（泰国）",
+      "method": "wikidata-label",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q586733",
+      "evidencePath": "data/evidence/place-name-localization/wikidata-search-d0ed4afd8af5.json",
+      "evidenceTitle": "永河",
+      "note": "中文名按知识库名称及国家、河流身份核对，括号补充同名消歧。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-403": {
+      "expectedName": "Cauvery",
+      "displayName": "高韦里河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=91856577",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-08.json",
+      "evidenceTitle": "高韦里河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-404": {
+      "expectedName": "Chambal",
+      "displayName": "昌巴尔河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=78884907",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-04.json",
+      "evidenceTitle": "昌巴爾河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-405": {
+      "expectedName": "Zeya",
+      "displayName": "结雅河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=92204129",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-06.json",
+      "evidenceTitle": "结雅河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-419": {
+      "expectedName": "Hudi",
+      "displayName": "未定名河流（源编号419）",
+      "method": "unresolved",
+      "note": "来源拼写的所指尚待核查。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-420": {
+      "expectedName": "Ping",
+      "displayName": "未定名河流（源编号420）",
+      "method": "unresolved",
+      "note": "已核对外文记录，尚未取得足够的中文名称对应证据。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-421": {
+      "expectedName": "Ile",
+      "displayName": "伊犁河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=93989284",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-00.json",
+      "evidenceTitle": "伊犁河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-422": {
+      "expectedName": "Sanggan",
+      "displayName": "桑干河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=85547688",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-04.json",
+      "evidenceTitle": "桑干河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-426": {
+      "expectedName": "Wujia",
+      "displayName": "乌加河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=88720986",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-00.json",
+      "evidenceTitle": "烏加河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-453": {
+      "expectedName": "Ghäghara",
+      "displayName": "加格拉河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=87459930",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-01.json",
+      "evidenceTitle": "加格拉河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-454": {
+      "expectedName": "Chindwin",
+      "displayName": "钦敦江",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=89963663",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-08.json",
+      "evidenceTitle": "欽敦江",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-455": {
+      "expectedName": "Krong",
+      "displayName": "未定名河流（源编号455）",
+      "method": "unresolved",
+      "note": "越南多条河名使用相似前缀，现有资料不足以消歧。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-459": {
+      "expectedName": "Ingoda",
+      "displayName": "音果達河",
+      "method": "wikipedia-language-link",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?oldid=1374512021",
+      "evidencePath": "data/evidence/place-name-localization/enwiki-remaining.json",
+      "evidenceTitle": "Ingoda (river)",
+      "note": "按外文词条的中文语言链接及地理位置核对名称。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-460": {
+      "expectedName": "Olëkma",
+      "displayName": "奥廖克马河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=90227249",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-02.json",
+      "evidenceTitle": "奧廖克馬河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-461": {
+      "expectedName": "Künes",
+      "displayName": "巩乃斯河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=88761220",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-02.json",
+      "evidenceTitle": "巩乃斯河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-467": {
+      "expectedName": "Sapt",
+      "displayName": "戈西河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=93625249",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-03.json",
+      "evidenceTitle": "戈西河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-483": {
+      "expectedName": "Sreng",
+      "displayName": "未定名河流（源编号483）",
+      "method": "unresolved",
+      "note": "已核对外文记录，尚未取得足够的中文名称对应证据。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-485": {
+      "expectedName": "Mamas",
+      "displayName": "玛那莎河",
+      "method": "wikipedia-language-link",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?oldid=1369010075",
+      "evidencePath": "data/evidence/place-name-localization/enwiki-remaining.json",
+      "evidenceTitle": "Manas River",
+      "note": "按外文词条的中文语言链接及地理位置核对名称。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-486": {
+      "expectedName": "Ou",
+      "displayName": "南乌河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=87087122",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-supplement-00.json",
+      "evidenceTitle": "南烏河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-491": {
+      "expectedName": "Buh",
+      "displayName": "布哈河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=85548884",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-03.json",
+      "evidenceTitle": "布哈河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-495": {
+      "expectedName": "Esil",
+      "displayName": "伊希姆河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=90222537",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-00.json",
+      "evidenceTitle": "伊希姆河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-497": {
+      "expectedName": "Katun",
+      "displayName": "卡通河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=87422882",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-01.json",
+      "evidenceTitle": "卡通河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-535": {
+      "expectedName": "Bhima",
+      "displayName": "未定名河流（源编号535）",
+      "method": "unresolved",
+      "note": "已核对外文记录，尚未取得足够的中文名称对应证据。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-536": {
+      "expectedName": "Tista",
+      "displayName": "提斯塔河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=92682561",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-03.json",
+      "evidenceTitle": "提斯塔河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-537": {
+      "expectedName": "Kong",
+      "displayName": "公河（湄公河）",
+      "method": "wikipedia-language-link",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?oldid=1374430134",
+      "evidencePath": "data/evidence/place-name-localization/enwiki-remaining.json",
+      "evidenceTitle": "Sekong River",
+      "note": "按外文词条的中文语言链接及地理位置核对名称。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-546": {
+      "expectedName": "Sittong",
+      "displayName": "锡当河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=94255090",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-08.json",
+      "evidenceTitle": "锡当河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-548": {
+      "expectedName": "You",
+      "displayName": "右江",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=92995719",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-01.json",
+      "evidenceTitle": "右江",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-549": {
+      "expectedName": "Mahi",
+      "displayName": "默希河",
+      "method": "wikipedia-language-link",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?oldid=1373261603",
+      "evidencePath": "data/evidence/place-name-localization/enwiki-remaining.json",
+      "evidenceTitle": "Mahi River",
+      "note": "按外文词条的中文语言链接及地理位置核对名称。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-550": {
+      "expectedName": "Tapi",
+      "displayName": "达布蒂河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=93184854",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-07.json",
+      "evidenceTitle": "达布蒂河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-551": {
+      "expectedName": "Sankh",
+      "displayName": "未定名河流（源编号551）",
+      "method": "unresolved",
+      "note": "已核对外文记录，尚未取得足够的中文名称对应证据。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-553": {
+      "expectedName": "Ussuri",
+      "displayName": "乌苏里江",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=93905371",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-00.json",
+      "evidenceTitle": "乌苏里江",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-555": {
+      "expectedName": "Namhan",
+      "displayName": "南汉江",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=94298116",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-01.json",
+      "evidenceTitle": "南汉江",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-561": {
+      "expectedName": "Penner",
+      "displayName": "本内尔河",
+      "method": "wikipedia-language-link",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?oldid=1376240231",
+      "evidencePath": "data/evidence/place-name-localization/enwiki-remaining.json",
+      "evidenceTitle": "Penna River",
+      "note": "按外文词条的中文语言链接及地理位置核对名称。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-575": {
+      "expectedName": "Shilka",
+      "displayName": "石勒喀河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=89054377",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-06.json",
+      "evidenceTitle": "石勒喀河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-599": {
+      "expectedName": "Yong",
+      "displayName": "邕江",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=93437533",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-07.json",
+      "evidenceTitle": "邕江",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-600": {
+      "expectedName": "Brahmani",
+      "displayName": "婆罗门河",
+      "method": "wikidata-label",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2639171",
+      "evidencePath": "data/evidence/place-name-localization/wikidata-search-d82a86ddfe09.json",
+      "evidenceTitle": "婆罗门河",
+      "note": "中文名按知识库名称及国家、河流身份核对，括号补充同名消歧。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-608": {
+      "expectedName": "Srepok",
+      "displayName": "斯雷博克河",
+      "method": "wikipedia-language-link",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?oldid=1358366559",
+      "evidencePath": "data/evidence/place-name-localization/enwiki-remaining.json",
+      "evidenceTitle": "Srepok River",
+      "note": "按外文词条的中文语言链接及地理位置核对名称。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-610": {
+      "expectedName": "Song’acha",
+      "displayName": "松阿察河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=92215045",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-04.json",
+      "evidenceTitle": "松阿察河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-611": {
+      "expectedName": "Ussuri",
+      "displayName": "乌苏里江",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=93905371",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-00.json",
+      "evidenceTitle": "乌苏里江",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-623": {
+      "expectedName": "Yu",
+      "displayName": "郁江",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=92520713",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-supplement-00.json",
+      "evidenceTitle": "郁江 (西江支流)",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-626": {
+      "expectedName": "Han",
+      "displayName": "汉江（朝鲜半岛）",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=92662820",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-04.json",
+      "evidenceTitle": "漢江 (朝鮮半島)",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-636": {
+      "expectedName": "Chao Phraya",
+      "displayName": "湄南河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=94304692",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-05.json",
+      "evidenceTitle": "昭披耶河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-646": {
+      "expectedName": "Di’er Songhua",
+      "displayName": "第二松花江",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=93126489",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-06.json",
+      "evidenceTitle": "松花江上游区",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-671": {
+      "expectedName": "Beas",
+      "displayName": "比亚斯河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=88272125",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-04.json",
+      "evidenceTitle": "比亞斯河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-672": {
+      "expectedName": "Tungabhadra",
+      "displayName": "栋格珀德拉河",
+      "method": "wikipedia-language-link",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?oldid=1374925092",
+      "evidencePath": "data/evidence/place-name-localization/enwiki-remaining.json",
+      "evidenceTitle": "Tungabhadra River",
+      "note": "按外文词条的中文语言链接及地理位置核对名称。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-674": {
+      "expectedName": "Ngun",
+      "displayName": "南俄河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=87087108",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-01.json",
+      "evidenceTitle": "南俄河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-676": {
+      "expectedName": "Qumar",
+      "displayName": "楚玛尔河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=88357150",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-04.json",
+      "evidenceTitle": "楚玛尔河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-680": {
+      "expectedName": "Yalu",
+      "displayName": "鸭绿江",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=92434616",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-08.json",
+      "evidenceTitle": "鸭绿江",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-692": {
+      "expectedName": "Tao’er",
+      "displayName": "洮儿河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=88437458",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-05.json",
+      "evidenceTitle": "洮儿河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-693": {
+      "expectedName": "Oka",
+      "displayName": "奥卡河（安加拉河支流）",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=70577140",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-supplement-00.json",
+      "evidenceTitle": "奧卡河 (西伯利亞)",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-707": {
+      "expectedName": "Bol’shoy Yenisey",
+      "displayName": "大叶尼塞河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=92366188",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-01.json",
+      "evidenceTitle": "葉尼塞河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-734": {
+      "expectedName": "Mun",
+      "displayName": "蒙河（湄公河）",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=90015344",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-supplement-00.json",
+      "evidenceTitle": "蒙河 (湄公河)",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-735": {
+      "expectedName": "Chi",
+      "displayName": "錫河",
+      "method": "wikipedia-language-link",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?oldid=1367390683",
+      "evidencePath": "data/evidence/place-name-localization/enwiki-remaining.json",
+      "evidenceTitle": "Chi River",
+      "note": "按外文词条的中文语言链接及地理位置核对名称。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-737": {
+      "expectedName": "Shandian",
+      "displayName": "闪电河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=85547782",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-08.json",
+      "evidenceTitle": "滦河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-738": {
+      "expectedName": "Da",
+      "displayName": "沱江（越南）",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=93983337",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-supplement-02.json",
+      "evidenceTitle": "沱江 (紅河)",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-739": {
+      "expectedName": "Onon",
+      "displayName": "鄂嫩河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=87202756",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-07.json",
+      "evidenceTitle": "鄂嫩河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-740": {
+      "expectedName": "Tone",
+      "displayName": "利根川",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=94194442",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-01.json",
+      "evidenceTitle": "利根川",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-748": {
+      "expectedName": "Mana",
+      "displayName": "马纳河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=90250155",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-08.json",
+      "evidenceTitle": "馬納河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-768": {
+      "expectedName": "Ca",
+      "displayName": "蓝江",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=94252670",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-07.json",
+      "evidenceTitle": "藍江",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-769": {
+      "expectedName": "Nakdong",
+      "displayName": "洛东江",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=82312257",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-05.json",
+      "evidenceTitle": "洛東江",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-780": {
+      "expectedName": "Kondoma",
+      "displayName": "孔多马河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=73903482",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-02.json",
+      "evidenceTitle": "孔多馬河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-781": {
+      "expectedName": "Daling",
+      "displayName": "大凌河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=94483515",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-02.json",
+      "evidenceTitle": "大凌河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-823": {
+      "expectedName": "Zuo",
+      "displayName": "左江",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=90916037",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-02.json",
+      "evidenceTitle": "左江",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-824": {
+      "expectedName": "Duliu",
+      "displayName": "未定名河流（源编号824）",
+      "method": "unresolved",
+      "note": "候选词条重定向至整条柳江，尚未取得都柳江河段的直接中文证据。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-825": {
+      "expectedName": "Mogami",
+      "displayName": "最上川",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=93563287",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-04.json",
+      "evidenceTitle": "最上川",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-839": {
+      "expectedName": "Erdao",
+      "displayName": "二道松花江",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=85545520",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-00.json",
+      "evidenceTitle": "二道松花江",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-840": {
+      "expectedName": "Nanweng",
+      "displayName": "南瓮河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=92428041",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-01.json",
+      "evidenceTitle": "嫩江",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-841": {
+      "expectedName": "Chuna",
+      "displayName": "丘纳河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=90221651",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-00.json",
+      "evidenceTitle": "丘納河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-843": {
+      "expectedName": "Amgun’",
+      "displayName": "阿姆贡河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=94418234",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-08.json",
+      "evidenceTitle": "阿姆贡河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-846": {
+      "expectedName": "Chaor",
+      "displayName": "绰尔河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=92209654",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-06.json",
+      "evidenceTitle": "绰尔河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-847": {
+      "expectedName": "Bikin",
+      "displayName": "比金河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=92380261",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-04.json",
+      "evidenceTitle": "比金河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-875": {
+      "expectedName": "Za’gya",
+      "displayName": "扎加藏布",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=91959124",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-03.json",
+      "evidenceTitle": "扎加藏布",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-879": {
+      "expectedName": "Yurungkax",
+      "displayName": "玉龙喀什河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=91872449",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-06.json",
+      "evidenceTitle": "玉龙喀什河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-880": {
+      "expectedName": "Zarafshon",
+      "displayName": "泽拉夫尚河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=90013830",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-05.json",
+      "evidenceTitle": "泽拉夫尚河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-881": {
+      "expectedName": "Dali",
+      "displayName": "大理河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=85548854",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-02.json",
+      "evidenceTitle": "大理河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-883": {
+      "expectedName": "Dam",
+      "displayName": "当曲",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=89805902",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-03.json",
+      "evidenceTitle": "当曲",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-884": {
+      "expectedName": "Mytinge",
+      "displayName": "密埃河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=89955310",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-06.json",
+      "evidenceTitle": "密埃河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-886": {
+      "expectedName": "Ou",
+      "displayName": "瓯江",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=90324815",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-06.json",
+      "evidenceTitle": "瓯江",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-887": {
+      "expectedName": "Wainganga",
+      "displayName": "未定名河流（源编号887）",
+      "method": "unresolved",
+      "note": "已核对外文记录，尚未取得足够的中文名称对应证据。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-888": {
+      "expectedName": "Toxkan",
+      "displayName": "托什干河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=85550154",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-03.json",
+      "evidenceTitle": "托什干河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-889": {
+      "expectedName": "Banas",
+      "displayName": "巴纳斯河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=72298441",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-02.json",
+      "evidenceTitle": "巴納斯河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-890": {
+      "expectedName": "Tel",
+      "displayName": "未定名河流（源编号890）",
+      "method": "unresolved",
+      "note": "已核对外文记录，尚未取得足够的中文名称对应证据。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-891": {
+      "expectedName": "Zayü",
+      "displayName": "察隅河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=85548447",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-05.json",
+      "evidenceTitle": "察隅河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-893": {
+      "expectedName": "Zhang",
+      "displayName": "漳河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=94367960",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-supplement-00.json",
+      "evidenceTitle": "漳河 (卫河)",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-894": {
+      "expectedName": "Orhon",
+      "displayName": "鄂尔浑河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=94393150",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-08.json",
+      "evidenceTitle": "鄂爾渾河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-895": {
+      "expectedName": "Cagayan",
+      "displayName": "卡加延河（吕宋）",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=88286416",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-supplement-00.json",
+      "evidenceTitle": "卡加延河 (呂宋)",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-897": {
+      "expectedName": "Palar",
+      "displayName": "未定名河流（源编号897）",
+      "method": "unresolved",
+      "note": "已核对外文记录，尚未取得足够的中文名称对应证据。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-932": {
+      "expectedName": "Liu",
+      "displayName": "柳江",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=90915735",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-07.json",
+      "evidenceTitle": "柳江",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-933": {
+      "expectedName": "Rong",
+      "displayName": "未定名河流（源编号933）",
+      "method": "unresolved",
+      "note": "已核对外文记录，尚未取得足够的中文名称对应证据。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-945": {
+      "expectedName": "Wuding",
+      "displayName": "无定河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=89838167",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-04.json",
+      "evidenceTitle": "無定河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-947": {
+      "expectedName": "Aksu",
+      "displayName": "阿克苏河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=92210433",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-08.json",
+      "evidenceTitle": "阿克苏河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-948": {
+      "expectedName": "Luhit",
+      "displayName": "洛希特河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=85548447",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-05.json",
+      "evidenceTitle": "察隅河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-950": {
+      "expectedName": "Uda",
+      "displayName": "乌第河",
+      "method": "wikipedia-language-link",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?oldid=1371843955",
+      "evidencePath": "data/evidence/place-name-localization/enwiki-remaining.json",
+      "evidenceTitle": "Uda (Khabarovsk Krai)",
+      "note": "按外文词条的中文语言链接及地理位置核对名称。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-951": {
+      "expectedName": "Tumnin",
+      "displayName": "图姆宁河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=90225737",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-01.json",
+      "evidenceTitle": "图姆宁河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-967": {
+      "expectedName": "Di’er Songhua",
+      "displayName": "未定名河流（源编号967）",
+      "method": "unresolved",
+      "note": "名称与源几何所在河段存在疑问，不能套用另一条同拼写记录。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-969": {
+      "expectedName": "Kolidam",
+      "displayName": "未定名河流（源编号969）",
+      "method": "unresolved",
+      "note": "已核对外文记录，尚未取得足够的中文名称对应证据。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-1001": {
+      "expectedName": "Tonle Sap",
+      "displayName": "洞里萨河",
+      "method": "compound-translation",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=94023663",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-05.json",
+      "evidenceTitle": "洞里萨湖",
+      "note": "以已核对的洞里萨中文专名，加原始资料的河流类型译出；不是湖面名称。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-1071": {
+      "expectedName": "Yi",
+      "displayName": "沂河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=85546067",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-04.json",
+      "evidenceTitle": "沂河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-1072": {
+      "expectedName": "Bogcang",
+      "displayName": "波仓藏布",
+      "method": "wikidata-label",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q29988214",
+      "evidencePath": "data/evidence/place-name-localization/wikidata-search-e24e4d860bf4.json",
+      "evidenceTitle": "波仓藏布",
+      "note": "中文名按知识库名称及国家、河流身份核对，括号补充同名消歧。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-1075": {
+      "expectedName": "Herlen",
+      "displayName": "克鲁伦河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=93858875",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-00.json",
+      "evidenceTitle": "克鲁伦河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-1080": {
+      "expectedName": "Qarqan",
+      "displayName": "车尔臣河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=90948605",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-07.json",
+      "evidenceTitle": "车尔臣河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-1081": {
+      "expectedName": "Huan",
+      "displayName": "未定名河流（源编号1081）",
+      "method": "unresolved",
+      "note": "现有同名词条指向广西行政区或河南洹河，与源几何不符。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-1082": {
+      "expectedName": "Zi",
+      "displayName": "子曲",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=91955667",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-02.json",
+      "evidenceTitle": "子曲",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-1083": {
+      "expectedName": "Kaladan",
+      "displayName": "加拉丹河",
+      "method": "wikipedia-language-link",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?oldid=1367575440",
+      "evidencePath": "data/evidence/place-name-localization/enwiki-remaining.json",
+      "evidenceTitle": "Kaladan River",
+      "note": "按外文词条的中文语言链接及地理位置核对名称。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-1084": {
+      "expectedName": "Mytitha",
+      "displayName": "未定名河流（源编号1084）",
+      "method": "unresolved",
+      "note": "已核对外文记录，尚未取得足够的中文名称对应证据。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-1085": {
+      "expectedName": "Jiulong",
+      "displayName": "九龙江",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=90254239",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-00.json",
+      "evidenceTitle": "九龙江",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-1086": {
+      "expectedName": "Mei",
+      "displayName": "梅江（赣江支流）",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=90911046",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-04.json",
+      "evidenceTitle": "梅江 (赣江支流)",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-1087": {
+      "expectedName": "Tuo",
+      "displayName": "沱江",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=94400839",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-05.json",
+      "evidenceTitle": "沱江",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-1092": {
+      "expectedName": "Son",
+      "displayName": "松河（印度）",
+      "method": "wikidata-label",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1418174",
+      "evidencePath": "data/evidence/place-name-localization/wikidata-search-df8b28de0b8c.json",
+      "evidenceTitle": "松河",
+      "note": "中文名按知识库名称及国家、河流身份核对，括号补充同名消歧。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-1095": {
+      "expectedName": "Betwa",
+      "displayName": "贝特瓦河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=84084408",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-07.json",
+      "evidenceTitle": "貝特瓦河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-1096": {
+      "expectedName": "Ba",
+      "displayName": "巴江（越南）",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=90029790",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-supplement-00.json",
+      "evidenceTitle": "巴江 (越南)",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-1102": {
+      "expectedName": "Parbati",
+      "displayName": "未定名河流（源编号1102）",
+      "method": "unresolved",
+      "note": "已核对外文记录，尚未取得足够的中文名称对应证据。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-1103": {
+      "expectedName": "Indravati",
+      "displayName": "未定名河流（源编号1103）",
+      "method": "unresolved",
+      "note": "已核对外文记录，尚未取得足够的中文名称对应证据。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-1107": {
+      "expectedName": "Ravi",
+      "displayName": "拉维河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=94363075",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-03.json",
+      "evidenceTitle": "拉維河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-1108": {
+      "expectedName": "Tumen",
+      "displayName": "图们江",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=93818789",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-01.json",
+      "evidenceTitle": "图们江",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-1110": {
+      "expectedName": "Selemdzha",
+      "displayName": "谢列姆贾河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=94369863",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-07.json",
+      "evidenceTitle": "謝列姆賈河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-1113": {
+      "expectedName": "Uchur",
+      "displayName": "乌丘尔河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=65716425",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-00.json",
+      "evidenceTitle": "烏丘爾河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-1116": {
+      "expectedName": "Nemor",
+      "displayName": "讷谟尔河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=92208749",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-07.json",
+      "evidenceTitle": "讷谟尔河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-1118": {
+      "expectedName": "Quan",
+      "displayName": "泉河（颍河）",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=90910610",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-supplement-00.json",
+      "evidenceTitle": "泉河 (颍河)",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-1119": {
+      "expectedName": "Muling",
+      "displayName": "穆棱河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=92215723",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-06.json",
+      "evidenceTitle": "穆棱河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-1138": {
+      "expectedName": "Balak",
+      "displayName": "巴拉克河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=89836341",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-02.json",
+      "evidenceTitle": "巴拉克河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-1139": {
+      "expectedName": "Gandak",
+      "displayName": "甘达基河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=87927579",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-06.json",
+      "evidenceTitle": "甘達基河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-1143": {
+      "expectedName": "Ying",
+      "displayName": "颍河",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=94413060",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-08.json",
+      "evidenceTitle": "潁河",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "river-ne_10m_rivers_lake_centerlines-999": {
+      "expectedName": "Dan",
+      "displayName": "丹江",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=90906970",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-00.json",
+      "evidenceTitle": "丹江",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    }
+  },
+  "historical": {
+    "hartwell-741-county-v5_0741_chin_chn_0741_c-316": {
+      "expectedName": "Yinshui",
+      "expectedSourceId": "hartwell-chgis-v5",
+      "expectedSourceCode": "T001200003225",
+      "expectedYear": 741,
+      "displayName": "溵水县",
+      "method": "historical-text",
+      "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2484402",
+      "evidencePath": "data/evidence/place-name-localization/wikisource-historical-names.json",
+      "note": "《新唐书》卷三十八陈州条列溵水；按唐代、陈州所属及源记录位置核对为溵水县。"
+    },
+    "hartwell-741-county-v5_0741_chin_chn_0741_c-1315": {
+      "expectedName": "Hankuang",
+      "expectedSourceId": "hartwell-chgis-v5",
+      "expectedSourceCode": "T001900002133",
+      "expectedYear": 741,
+      "displayName": "浛洭县",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=85592725",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-05.json",
+      "evidenceTitle": "浛洭县",
+      "note": "中文名按来源词条、外文对应及所在河段核对；仅转换名称显示。"
+    },
+    "hartwell-1080-country-v5_1080_chin_chn_1080_l-28": {
+      "expectedName": "Aboriginal Tribal Lands",
+      "expectedSourceId": "hartwell-chgis-v5",
+      "expectedSourceCode": "S999999999901",
+      "expectedYear": 1080,
+      "displayName": "原住民部落地区",
+      "method": "literal-translation",
+      "sourceUrl": "https://doi.org/10.7910/DVN/29302",
+      "evidencePath": "data/evidence/hartwell/source-layers.zip",
+      "note": "忠实翻译来源地区名称，不推断族属或政治归属。"
+    },
+    "hartwell-1080-prefecture-v5_1080_chin_chn_1080_p-306": {
+      "expectedName": "Weimo",
+      "expectedSourceId": "hartwell-chgis-v5",
+      "expectedSourceCode": "L001200960000",
+      "expectedYear": 1080,
+      "displayName": "濊貊",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=93213514",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-05.json",
+      "evidenceTitle": "濊貊",
+      "note": "采用名称的中文对应濊貊；保留原资料的年份、分组及行政类型，不据此修订历史归属。"
+    },
+    "hartwell-1080-county-v5_1080_chin_chn_1080_c-1315": {
+      "expectedName": "Weimo",
+      "expectedSourceId": "hartwell-chgis-v5",
+      "expectedSourceCode": "L001200960001",
+      "expectedYear": 1080,
+      "displayName": "濊貊",
+      "method": "wikipedia-name",
+      "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=93213514",
+      "evidencePath": "data/evidence/place-name-localization/zhwiki-names-05.json",
+      "evidenceTitle": "濊貊",
+      "note": "采用名称的中文对应濊貊；保留原资料的年份、分组及行政类型，不据此修订历史归属。"
+    },
+    "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-111": {
+      "expectedName": "Ao Zhou",
+      "expectedSourceId": "hartwell-chgis-v5",
+      "expectedSourceCode": "J004100002900",
+      "expectedYear": 1200,
+      "displayName": "隩州",
+      "method": "source-field",
+      "sourceUrl": "https://doi.org/10.7910/DVN/29302",
+      "evidencePath": "data/evidence/hartwell/source-layers.zip",
+      "note": "按该记录自身的同级中文名称字段恢复，未用上级或现代地名替代。"
+    },
+    "hartwell-1391-province-v5_1391_chin_chn_1391_s-10": {
+      "expectedName": "奴ㄦ干都司",
+      "expectedSourceId": "hartwell-chgis-v5",
+      "expectedSourceCode": "M002800000000",
+      "expectedYear": 1391,
+      "displayName": "奴儿干都司",
+      "method": "source-transcription",
+      "sourceUrl": "https://doi.org/10.7910/DVN/29302",
+      "evidencePath": "data/evidence/hartwell/source-layers.zip",
+      "note": "原始中文字段中的注音符号ㄦ按同记录拼音转写为儿，仅规范字形，不改变来源年份或行政归属。"
+    },
+    "hartwell-1391-prefecture-v5_1391_chin_chn_1391_p-122": {
+      "expectedName": "失ㄦ兀赤衛",
+      "expectedSourceId": "hartwell-chgis-v5",
+      "expectedSourceCode": "M002800000043",
+      "expectedYear": 1391,
+      "displayName": "失儿兀赤衛",
+      "method": "source-transcription",
+      "sourceUrl": "https://doi.org/10.7910/DVN/29302",
+      "evidencePath": "data/evidence/hartwell/source-layers.zip",
+      "note": "原始中文字段中的注音符号ㄦ按同记录拼音转写为儿，仅规范字形，不改变来源年份或行政归属。"
+    },
+    "hartwell-1391-prefecture-v5_1391_chin_chn_1391_p-126": {
+      "expectedName": "塔ㄦ河衛",
+      "expectedSourceId": "hartwell-chgis-v5",
+      "expectedSourceCode": "M002800000030",
+      "expectedYear": 1391,
+      "displayName": "塔儿河衛",
+      "method": "source-transcription",
+      "sourceUrl": "https://doi.org/10.7910/DVN/29302",
+      "evidencePath": "data/evidence/hartwell/source-layers.zip",
+      "note": "原始中文字段中的注音符号ㄦ按同记录拼音转写为儿，仅规范字形，不改变来源年份或行政归属。"
+    },
+    "hartwell-1391-prefecture-v5_1391_chin_chn_1391_p-132": {
+      "expectedName": "忽ㄦ海衛",
+      "expectedSourceId": "hartwell-chgis-v5",
+      "expectedSourceCode": "M002800000047",
+      "expectedYear": 1391,
+      "displayName": "忽儿海衛",
+      "method": "source-transcription",
+      "sourceUrl": "https://doi.org/10.7910/DVN/29302",
+      "evidencePath": "data/evidence/hartwell/source-layers.zip",
+      "note": "原始中文字段中的注音符号ㄦ按同记录拼音转写为儿，仅规范字形，不改变来源年份或行政归属。"
+    },
+    "hartwell-1391-prefecture-v5_1391_chin_chn_1391_p-133": {
+      "expectedName": "甫ㄦ河衛",
+      "expectedSourceId": "hartwell-chgis-v5",
+      "expectedSourceCode": "M002800000049",
+      "expectedYear": 1391,
+      "displayName": "甫儿河衛",
+      "method": "source-transcription",
+      "sourceUrl": "https://doi.org/10.7910/DVN/29302",
+      "evidencePath": "data/evidence/hartwell/source-layers.zip",
+      "note": "原始中文字段中的注音符号ㄦ按同记录拼音转写为儿，仅规范字形，不改变来源年份或行政归属。"
+    },
+    "hartwell-1391-prefecture-v5_1391_chin_chn_1391_p-143": {
+      "expectedName": "虎ㄦ文衛",
+      "expectedSourceId": "hartwell-chgis-v5",
+      "expectedSourceCode": "M002800000023",
+      "expectedYear": 1391,
+      "displayName": "虎儿文衛",
+      "method": "source-transcription",
+      "sourceUrl": "https://doi.org/10.7910/DVN/29302",
+      "evidencePath": "data/evidence/hartwell/source-layers.zip",
+      "note": "原始中文字段中的注音符号ㄦ按同记录拼音转写为儿，仅规范字形，不改变来源年份或行政归属。"
+    },
+    "hartwell-1391-prefecture-v5_1391_chin_chn_1391_p-150": {
+      "expectedName": "海剌ㄦ所",
+      "expectedSourceId": "hartwell-chgis-v5",
+      "expectedSourceCode": "M002800000036",
+      "expectedYear": 1391,
+      "displayName": "海剌儿所",
+      "method": "source-transcription",
+      "sourceUrl": "https://doi.org/10.7910/DVN/29302",
+      "evidencePath": "data/evidence/hartwell/source-layers.zip",
+      "note": "原始中文字段中的注音符号ㄦ按同记录拼音转写为儿，仅规范字形，不改变来源年份或行政归属。"
+    },
+    "hartwell-1391-prefecture-v5_1391_chin_chn_1391_p-278": {
+      "expectedName": "楚雄fu1府",
+      "expectedSourceId": "hartwell-chgis-v5",
+      "expectedSourceCode": "M009100240000",
+      "expectedYear": 1391,
+      "displayName": "楚雄府",
+      "method": "source-field",
+      "sourceUrl": "https://doi.org/10.7910/DVN/29302",
+      "evidencePath": "data/evidence/hartwell/source-layers.zip",
+      "note": "按该记录自身的同级中文名称字段恢复，未用上级或现代地名替代。"
+    },
+    "hartwell-1391-county-v5_1391_chin_chn_1391_c-744": {
+      "expectedName": "失ㄦ兀赤衛",
+      "expectedSourceId": "hartwell-chgis-v5",
+      "expectedSourceCode": "M002800000043",
+      "expectedYear": 1391,
+      "displayName": "失儿兀赤衛",
+      "method": "source-transcription",
+      "sourceUrl": "https://doi.org/10.7910/DVN/29302",
+      "evidencePath": "data/evidence/hartwell/source-layers.zip",
+      "note": "原始中文字段中的注音符号ㄦ按同记录拼音转写为儿，仅规范字形，不改变来源年份或行政归属。"
+    },
+    "hartwell-1391-county-v5_1391_chin_chn_1391_c-748": {
+      "expectedName": "塔ㄦ河衛",
+      "expectedSourceId": "hartwell-chgis-v5",
+      "expectedSourceCode": "M002800000030",
+      "expectedYear": 1391,
+      "displayName": "塔儿河衛",
+      "method": "source-transcription",
+      "sourceUrl": "https://doi.org/10.7910/DVN/29302",
+      "evidencePath": "data/evidence/hartwell/source-layers.zip",
+      "note": "原始中文字段中的注音符号ㄦ按同记录拼音转写为儿，仅规范字形，不改变来源年份或行政归属。"
+    },
+    "hartwell-1391-county-v5_1391_chin_chn_1391_c-754": {
+      "expectedName": "忽ㄦ海衛",
+      "expectedSourceId": "hartwell-chgis-v5",
+      "expectedSourceCode": "M002800000047",
+      "expectedYear": 1391,
+      "displayName": "忽儿海衛",
+      "method": "source-transcription",
+      "sourceUrl": "https://doi.org/10.7910/DVN/29302",
+      "evidencePath": "data/evidence/hartwell/source-layers.zip",
+      "note": "原始中文字段中的注音符号ㄦ按同记录拼音转写为儿，仅规范字形，不改变来源年份或行政归属。"
+    },
+    "hartwell-1391-county-v5_1391_chin_chn_1391_c-755": {
+      "expectedName": "甫ㄦ河衛",
+      "expectedSourceId": "hartwell-chgis-v5",
+      "expectedSourceCode": "M002800000049",
+      "expectedYear": 1391,
+      "displayName": "甫儿河衛",
+      "method": "source-transcription",
+      "sourceUrl": "https://doi.org/10.7910/DVN/29302",
+      "evidencePath": "data/evidence/hartwell/source-layers.zip",
+      "note": "原始中文字段中的注音符号ㄦ按同记录拼音转写为儿，仅规范字形，不改变来源年份或行政归属。"
+    },
+    "hartwell-1391-county-v5_1391_chin_chn_1391_c-765": {
+      "expectedName": "虎ㄦ文衛",
+      "expectedSourceId": "hartwell-chgis-v5",
+      "expectedSourceCode": "M002800000023",
+      "expectedYear": 1391,
+      "displayName": "虎儿文衛",
+      "method": "source-transcription",
+      "sourceUrl": "https://doi.org/10.7910/DVN/29302",
+      "evidencePath": "data/evidence/hartwell/source-layers.zip",
+      "note": "原始中文字段中的注音符号ㄦ按同记录拼音转写为儿，仅规范字形，不改变来源年份或行政归属。"
+    },
+    "hartwell-1391-county-v5_1391_chin_chn_1391_c-772": {
+      "expectedName": "海剌ㄦ所",
+      "expectedSourceId": "hartwell-chgis-v5",
+      "expectedSourceCode": "M002800000036",
+      "expectedYear": 1391,
+      "displayName": "海剌儿所",
+      "method": "source-transcription",
+      "sourceUrl": "https://doi.org/10.7910/DVN/29302",
+      "evidencePath": "data/evidence/hartwell/source-layers.zip",
+      "note": "原始中文字段中的注音符号ㄦ按同记录拼音转写为儿，仅规范字形，不改变来源年份或行政归属。"
+    },
+    "hartwell-1391-county-v5_1391_chin_chn_1391_c-1432": {
+      "expectedName": "Ejia",
+      "expectedSourceId": "hartwell-chgis-v5",
+      "expectedSourceCode": "M009100240025",
+      "expectedYear": 1391,
+      "displayName": "未定名行政区（源编号1432）",
+      "method": "unresolved",
+      "note": "现有资料不足以核定历史中文名，原文保留供核查；未用现代地区名替代。"
+    }
+  }
+}

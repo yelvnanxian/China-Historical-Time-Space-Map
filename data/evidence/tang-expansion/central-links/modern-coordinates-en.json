@@ -1,0 +1,110 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 407665,
+        "ns": 0,
+        "title": "Pengshui Miao and Tujia Autonomous County",
+        "coordinates": [
+          {
+            "lat": 29.29416667,
+            "lon": 108.16361111,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 1370645567,
+            "parentid": 1352234570,
+            "timestamp": "2026-08-22T07:13:08Z"
+          }
+        ]
+      },
+      {
+        "pageid": 3179765,
+        "ns": 0,
+        "title": "Runan County",
+        "coordinates": [
+          {
+            "lat": 33.007068,
+            "lon": 114.362412,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 1343107814,
+            "parentid": 1337861648,
+            "timestamp": "2026-03-12T08:47:54Z"
+          }
+        ]
+      },
+      {
+        "pageid": 8497137,
+        "ns": 0,
+        "title": "Dingzhou",
+        "coordinates": [
+          {
+            "lat": 38.516,
+            "lon": 114.99,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 1375778945,
+            "parentid": 1355910692,
+            "timestamp": "2026-09-20T00:55:29Z"
+          }
+        ]
+      },
+      {
+        "pageid": 18054160,
+        "ns": 0,
+        "title": "Yi County, Hebei",
+        "coordinates": [
+          {
+            "lat": 39.349,
+            "lon": 115.498,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 1355413917,
+            "parentid": 1314433973,
+            "timestamp": "2026-05-21T18:19:39Z"
+          }
+        ]
+      },
+      {
+        "pageid": 23972376,
+        "ns": 0,
+        "title": "Hejian",
+        "coordinates": [
+          {
+            "lat": 38.4466,
+            "lon": 116.0995,
+            "primary": true,
+            "globe": "earth"
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 1374426676,
+            "parentid": 1294016242,
+            "timestamp": "2026-09-12T00:35:02Z"
+          }
+        ]
+      }
+    ]
+  },
+  "limits": {
+    "coordinates": 500
+  }
+}

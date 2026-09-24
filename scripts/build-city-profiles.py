@@ -4,6 +4,7 @@ from pathlib import Path
 from urllib.parse import quote
 import hashlib
 import json
+from tang_content import load_bundles
 
 ROOT = Path(__file__).resolve().parents[1]
 EVIDENCE = ROOT / 'data/evidence/historical-context'
@@ -80,15 +81,6 @@ profile('sui','luoyang','605年隋在汉魏故城西南营建新洛阳，通济�
 profile('sui','hangzhou','589年隋代开始使用杭州之名并筑城；610年江南运河联系杭州与钱塘江。城市命名和水运网络共同构成这一时期的看点。',
  ('hangzhou','隋文帝开皇九年（589年），隋灭南陈，首度改称杭州，开建城垣，是为杭州得名之始。','隋代地名和筑城。'),
  ('sui-canal','公元610年继开江南运河，由今镇江引江水经常州、无锡、苏州、嘉兴至杭州通钱塘江。','江南运河的区域联系。'))
-profile('tang','changan','唐在隋大兴城基础上定都并恢复长安之名。朱雀大街分长安、万年两县，东市和西市是理解坊市布局的清晰入口。',
- ('changan','618年，李淵建立唐朝，定都大興，并更名为長安，此后进一步修建和完善。','唐代定都和名称。'),
- ('changan','唐代長安城為京畿道京兆府管轄，以朱雀大街為界，西為長安縣，東為萬年縣。','唐城分县关系。'),
- ('changan','东城西城分别有东市和西市两座市场，集中了长安城的主要商业。','唐长安东市与西市的商业空间。'))
-profile('tang','dunhuang','851年唐廷在敦煌设归义军并任命张议潮为节度使。敦煌提供了唐代河西政治联系的另一条线索，不能把长期沿革压成单年边界。',
- ('dunhuang','大中五年（851年）唐廷在敦煌设置归义军，並任命张议潮为敦煌归义军节度使。','归义军设置及任命。'))
-profile('tang','dali','与唐同时的南诏在779年迁都羊苴咩城，794年与唐会盟恢复和平。这里按时代并列阅读，不能把“唐时期可见”理解为唐朝直属城池。',
- ('dali','唐大历十四年（779年），皮逻阁之曾孙将都城迁至羊苴咩城，即今大理旧城。','南诏都城迁移。'),
- ('dali','唐德宗贞元十年（794年），派遣节度使前往南诏，与南诏王异牟寻会盟于苍山，两国再度恢复和平。','唐与南诏关系。'))
 profile('song','kaifeng','北宋东京的坊市界限逐渐松动，商店、夜市和晓市展现都城商业生活。1127年东京失陷后改称汴京，宋代诸政权时期内城市身份也在变化。',
  ('kaifeng','北宋时，随着商品经济的发展和城市人口的增加，“坊”、“市”的界线被打破，商店可以随处开设，不再采取集中的方式。','北宋商业空间变化。'),
  ('kaifeng','市场除白天营业外，还有夜市和晓市。','市场营业形态。'),
@@ -121,13 +113,20 @@ profile('qing','guangzhou','1842年《南京条约》将广州等五处列为通
 profile('qing','quanzhou','1784年开放泉州蚶江与台湾鹿港对渡，显示清代泉台贸易联系。与宋代市舶司看点对照，同城在不同时期有不同制度与航运关系。',
  ('quanzhou','乾隆四十九年（1784年）又开放泉州的蚶江与台湾鹿港对渡，开展泉台海上贸易。','清代蚶江鹿港对渡。'))
 
+bundles, tang_sources, tang_profiles, new_places = load_bundles()
+profiles = [profile for profile in profiles if profile['periodId'] != 'tang'] + tang_profiles
+for profile in tang_profiles:
+    assert 'tang' in places[profile['placeId']]['periodIds']
+sources.update(tang_sources)
+used_sources = {source for profile in profiles for source in profile['sourceIds']}
+sources = {key: value for key, value in sources.items() if key in used_sources}
 counts = {p['id']: sum(x['periodId'] == p['id'] for x in profiles) for p in catalog['periods']}
 assert all(n >= 3 for n in counts.values())
 assert len({p['id'] for p in profiles}) == len(profiles)
 assert len({p['summary'] for p in profiles}) == len(profiles)
-result = {'version':'1.0', 'sources': list(sources.values()), 'profiles':profiles}
+result = {'version':'2.0', 'sources': list(sources.values()), 'profiles':profiles}
 output = ROOT / 'public/data/city-period-profiles.json'
 output.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
-validation = {'profiles':len(profiles),'periodCoverage':counts,'independentPlacesInProfiles':len({p['placeId'] for p in profiles}),'sources':len(sources),'quotesMatched':sum(len(p['evidence']) for p in profiles),'outputSha256':hashlib.sha256(output.read_bytes()).hexdigest(),'newCatalogPlaces':0,'newCatalogPeriodRelationships':0}
+validation = {'profiles':len(profiles),'periodCoverage':counts,'distinctPlaceEntriesInProfiles':len({p['placeId'] for p in profiles}),'sources':len(sources),'quotesMatched':sum(len(p['evidence']) for p in profiles),'outputSha256':hashlib.sha256(output.read_bytes()).hexdigest(),'newCatalogPlaces':len(new_places),'newCatalogPeriodRelationships':1,'note':'按档案入口计数；幽州与范阳为既有不同阅读入口，不宣称104处互不重合的古城遗址。'}
 (EVIDENCE/'city-profile-validation.json').write_text(json.dumps(validation,ensure_ascii=False,indent=2)+'\n')
 print(json.dumps(validation,ensure_ascii=False,indent=2))

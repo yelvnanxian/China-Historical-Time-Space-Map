@@ -1,0 +1,25 @@
+{
+  "version": "0.8.0",
+  "targetCount": 104,
+  "completedProfiles": 104,
+  "missingTargetIds": [],
+  "newPlaceCount": 66,
+  "newPeriodRelationships": 1,
+  "tangQuoteCount": 299,
+  "minimumQuotesPerTangProfile": 2,
+  "preservedNonTangProfiles": 30,
+  "regions": {
+    "关中与两京": 10,
+    "河北与河东": 19,
+    "中原与山东": 17,
+    "河西与西域": 13,
+    "巴蜀与汉中": 10,
+    "岭南与东南": 8,
+    "江淮与江南": 14,
+    "荆湖与江西": 10,
+    "西南与周边": 3
+  },
+  "catalogSha256": "6092f6f69cd98ebcaf452c704842e13653f0dc0dc5f9948071912ba526e6a067",
+  "profilesSha256": "eda84089df90e29ad4efd68fc277d2c83d9988d104c3221da0f71f9492ad2e56",
+  "countingNote": "按阅读入口计数；幽州/范阳沿用同城不同入口，关隘/驿站和南诏同期入口也包含在内。"
+}

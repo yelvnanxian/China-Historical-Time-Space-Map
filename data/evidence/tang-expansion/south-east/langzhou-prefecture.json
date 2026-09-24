@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-langzhou-prefecture",
+  "title": "阆州 — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E9%98%86%E5%B7%9E&oldid=93489983",
+  "retrievedAt": "2026-09-24T14:38:01.733498+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/langzhou-prefecture.txt",
+  "snapshotSha256": "1a43e2a8bf48fbeb72004a007242d66dfadb8e09b17deeff44f0a6d52b436efe",
+  "pageId": 1252051,
+  "revision": {
+    "revid": 93489983,
+    "parentid": 93489644,
+    "timestamp": "2026-07-15T16:50:30Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E9%98%86%E5%B7%9E&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-dali",
+  "title": "大理市 — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E5%A4%A7%E7%90%86%E5%B8%82&oldid=93661459",
+  "retrievedAt": "2026-09-24T14:34:40.142588+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/dali.txt",
+  "snapshotSha256": "6046a6ced1b7c89704e7cddc55970453724fb816abc57a15278cef6e9b0bcad4",
+  "pageId": 13473,
+  "revision": {
+    "revid": 93661459,
+    "parentid": 92428010,
+    "timestamp": "2026-07-27T01:09:17Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E5%A4%A7%E7%90%86%E5%B8%82&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

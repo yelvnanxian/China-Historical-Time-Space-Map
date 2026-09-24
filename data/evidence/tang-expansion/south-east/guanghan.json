@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-guanghan",
+  "title": "广汉市 — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E5%B9%BF%E6%B1%89%E5%B8%82&oldid=92635617",
+  "retrievedAt": "2026-09-24T14:36:12.483370+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/guanghan.txt",
+  "snapshotSha256": "c93417e3255505e21bdba4684d859eda58090b0d4d55bb372537c9664e8b6b34",
+  "pageId": 110310,
+  "revision": {
+    "revid": 92635617,
+    "parentid": 91358280,
+    "timestamp": "2026-05-12T18:49:21Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E5%B9%BF%E6%B1%89%E5%B8%82&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

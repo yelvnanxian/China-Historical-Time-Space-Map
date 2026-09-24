@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-hangzhou",
+  "title": "杭州市 — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E6%9D%AD%E5%B7%9E%E5%B8%82&oldid=94228857",
+  "retrievedAt": "2026-09-24T14:34:40.503208+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/hangzhou.txt",
+  "snapshotSha256": "c0c9e9f499c47525e614022bb7b4cd14cd5d1e344fd3c316b828421352dd7950",
+  "pageId": 4651,
+  "revision": {
+    "revid": 94228857,
+    "parentid": 94103316,
+    "timestamp": "2026-09-07T07:29:43Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E6%9D%AD%E5%B7%9E%E5%B8%82&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

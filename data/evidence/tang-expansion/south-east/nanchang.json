@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-nanchang",
+  "title": "南昌市 — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E5%8D%97%E6%98%8C%E5%B8%82&oldid=94295103",
+  "retrievedAt": "2026-09-24T14:35:49.571662+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/nanchang.txt",
+  "snapshotSha256": "84d5b5dce1302883cbcfd6d1a04165b3d7583632b628912c234fe35e09700fd3",
+  "pageId": 13048,
+  "revision": {
+    "revid": 94295103,
+    "parentid": 94269532,
+    "timestamp": "2026-09-11T08:40:11Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E5%8D%97%E6%98%8C%E5%B8%82&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

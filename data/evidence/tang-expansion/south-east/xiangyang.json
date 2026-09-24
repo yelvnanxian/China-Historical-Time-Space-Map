@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-xiangyang",
+  "title": "襄阳市 — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E8%A5%84%E9%98%B3%E5%B8%82&oldid=94422629",
+  "retrievedAt": "2026-09-24T14:34:38.940625+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/xiangyang.txt",
+  "snapshotSha256": "e3ff017ff2ab5663451cae258b55c368100f6d5b0bfe703d68da0f4d40702dac",
+  "pageId": 10735,
+  "revision": {
+    "revid": 94422629,
+    "parentid": 94387171,
+    "timestamp": "2026-09-18T09:11:53Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E8%A5%84%E9%98%B3%E5%B8%82&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

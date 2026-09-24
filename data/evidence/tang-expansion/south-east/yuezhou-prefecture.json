@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-yuezhou-prefecture",
+  "title": "越州 — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E8%B6%8A%E5%B7%9E&oldid=93494594",
+  "retrievedAt": "2026-09-24T14:37:01.177673+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/yuezhou-prefecture.txt",
+  "snapshotSha256": "fe607ab2ce1ea36171189dc4059483b25169954c151fd69a4e0515ccdf29fd26",
+  "pageId": 1264822,
+  "revision": {
+    "revid": 93494594,
+    "parentid": 93489717,
+    "timestamp": "2026-07-15T21:21:13Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E8%B6%8A%E5%B7%9E&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

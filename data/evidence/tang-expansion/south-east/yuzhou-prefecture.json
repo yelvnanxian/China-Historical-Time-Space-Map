@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-yuzhou-prefecture",
+  "title": "渝州 — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E6%B8%9D%E5%B7%9E&oldid=93494805",
+  "retrievedAt": "2026-09-24T14:38:06.639447+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/yuzhou-prefecture.txt",
+  "snapshotSha256": "df1d105ab42640dbd37976bc130b5488144e93ccee21e3fc4498e650412cd0a4",
+  "pageId": 575374,
+  "revision": {
+    "revid": 93494805,
+    "parentid": 93493762,
+    "timestamp": "2026-07-15T21:32:36Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E6%B8%9D%E5%B7%9E&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

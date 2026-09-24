@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-nanjing",
+  "title": "南京市 — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E5%8D%97%E4%BA%AC%E5%B8%82&oldid=94430858",
+  "retrievedAt": "2026-09-24T14:34:40.145144+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/nanjing.txt",
+  "snapshotSha256": "69a5c172113af7fbd9d94b6892c3f0d574b2a1a8f5f492bf637f6ec4e82af456",
+  "pageId": 2980,
+  "revision": {
+    "revid": 94430858,
+    "parentid": 94422589,
+    "timestamp": "2026-09-18T20:50:04Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E5%8D%97%E4%BA%AC%E5%B8%82&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

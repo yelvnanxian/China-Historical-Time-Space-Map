@@ -1,0 +1,6 @@
+{
+  "url": "https://zh.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&titles=%E5%B3%A8%E5%98%89%E5%8E%BF%7C%E5%95%86%E6%B0%B4%E5%8E%BF%7C%E9%84%82%E5%98%89%E9%95%87&redirects=1&converttitles=1&prop=langlinks%7Ccoordinates%7Cextracts%7Crevisions%7Cpageprops&lllang=en&lllimit=max&exintro=1&explaintext=1&exlimit=max&rvprop=ids&ppprop=disambiguation",
+  "retrievedAt": "2026-09-24T14:49:32.129659+00:00",
+  "sha256": "f12de257b9ef73489ff51db16682cb7c0428367e096edf40498df5f927d60f1f",
+  "path": "data/evidence/place-name-localization/zhwiki-supplement-01.json"
+}

@@ -1,0 +1,6 @@
+{
+  "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&search=Chi+River&language=en&uselang=zh&limit=2",
+  "retrievedAt": "2026-09-24T14:44:13.585015+00:00",
+  "sha256": "8b47993b037b7429bbe903d505a29380baaa50b0b087d7e4bd9ea882a994ddba",
+  "path": "data/evidence/place-name-localization/wikidata-search-877f37c2f0e8.json"
+}

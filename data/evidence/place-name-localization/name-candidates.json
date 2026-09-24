@@ -1,0 +1,2219 @@
+{
+  "status": "research-candidates-not-published-names",
+  "natural": [
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-0",
+      "expectedName": "Irrawaddy Delta",
+      "bounds": [
+        94.677013,
+        16.024848,
+        96.171153,
+        17.929145
+      ],
+      "candidateTitle": "伊洛瓦底江三角洲",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-11",
+      "expectedName": "Tuotuo",
+      "bounds": [
+        90.794688,
+        34.087226,
+        92.992768,
+        34.341376
+      ],
+      "candidateTitle": "沱沱河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-12",
+      "expectedName": "Lena",
+      "bounds": [
+        105.052419,
+        53.840155,
+        108.131358,
+        56.0
+      ],
+      "candidateTitle": "勒拿河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-13",
+      "expectedName": "Tongtian",
+      "bounds": [
+        92.992768,
+        31.689765,
+        98.541515,
+        34.767524
+      ],
+      "candidateTitle": "通天河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-15",
+      "expectedName": "Jinsha",
+      "bounds": [
+        98.541515,
+        25.972968,
+        103.879975,
+        31.689765
+      ],
+      "candidateTitle": "金沙江",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-26",
+      "expectedName": "Ideriyn",
+      "bounds": [
+        97.392182,
+        47.991645,
+        100.699636,
+        49.263129
+      ],
+      "candidateTitle": "伊德尔河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-27",
+      "expectedName": "Selenga",
+      "bounds": [
+        100.699636,
+        49.263129,
+        107.572765,
+        52.383124
+      ],
+      "candidateTitle": "色楞格河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-29",
+      "expectedName": "Ertis",
+      "bounds": [
+        74.993582,
+        47.724677,
+        85.2671,
+        53.985622
+      ],
+      "candidateTitle": "额尔齐斯河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-30",
+      "expectedName": "Ertix",
+      "bounds": [
+        85.2671,
+        46.982693,
+        90.325287,
+        48.027452
+      ],
+      "candidateTitle": "额尔齐斯河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-31",
+      "expectedName": "Maquan",
+      "bounds": [
+        82.400483,
+        29.117865,
+        87.660167,
+        30.42239
+      ],
+      "candidateTitle": "马泉河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-35",
+      "expectedName": "Za",
+      "bounds": [
+        94.083995,
+        31.965522,
+        96.941335,
+        33.217882
+      ],
+      "candidateTitle": "扎曲",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-44",
+      "expectedName": "Irtysh",
+      "bounds": [
+        72.98463,
+        53.985622,
+        74.993582,
+        56.0
+      ],
+      "candidateTitle": "额尔齐斯河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-46",
+      "expectedName": "Mekong",
+      "bounds": [
+        101.563569,
+        10.004991,
+        106.118663,
+        18.441677
+      ],
+      "candidateTitle": "湄公河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-47",
+      "expectedName": "Dihang",
+      "bounds": [
+        94.355968,
+        28.002956,
+        95.437266,
+        29.89293
+      ],
+      "candidateTitle": "迪杭河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-51",
+      "expectedName": "Brahmaputra",
+      "bounds": [
+        89.614268,
+        23.461982,
+        95.47169,
+        28.002956
+      ],
+      "candidateTitle": "布拉马普特拉河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-125",
+      "expectedName": "Nmai",
+      "bounds": [
+        97.486339,
+        25.590888,
+        98.377859,
+        28.424994
+      ],
+      "candidateTitle": "恩梅开江",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-138",
+      "expectedName": "Ayeyarwady",
+      "bounds": [
+        94.713145,
+        16.2508,
+        97.53419,
+        25.700751
+      ],
+      "candidateTitle": "伊洛瓦底江",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-55",
+      "expectedName": "Ganges",
+      "bounds": [
+        77.990489,
+        21.972276,
+        90.394216,
+        30.888495
+      ],
+      "candidateTitle": "恒河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-56",
+      "expectedName": "Indus",
+      "bounds": [
+        70.0,
+        28.586489,
+        79.73463,
+        35.842841
+      ],
+      "candidateTitle": "印度河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-63",
+      "expectedName": "Shiquan",
+      "bounds": [
+        79.73463,
+        31.394314,
+        81.63974,
+        32.553412
+      ],
+      "candidateTitle": "狮泉河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-72",
+      "expectedName": "Amur",
+      "bounds": [
+        127.486339,
+        47.661729,
+        140.706635,
+        53.221747
+      ],
+      "candidateTitle": "黑龙江",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-74",
+      "expectedName": "Hailar",
+      "bounds": [
+        117.873464,
+        49.190619,
+        122.28712,
+        49.849311
+      ],
+      "candidateTitle": "海拉尔河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-84",
+      "expectedName": "Argun’",
+      "bounds": [
+        117.873464,
+        49.513495,
+        121.405365,
+        53.32392
+      ],
+      "candidateTitle": "额尔古纳河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-107",
+      "expectedName": "Shishhid Gol",
+      "bounds": [
+        98.000255,
+        50.53323,
+        99.515229,
+        51.514106
+      ],
+      "candidateTitle": "希什希德河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-114",
+      "expectedName": "Ob",
+      "bounds": [
+        81.301768,
+        52.316474,
+        85.056163,
+        56.0
+      ],
+      "candidateTitle": "鄂毕河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-128",
+      "expectedName": "Nanpan",
+      "bounds": [
+        103.032237,
+        23.80036,
+        106.97047,
+        25.878933
+      ],
+      "candidateTitle": "南盘江",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-133",
+      "expectedName": "Kyzyl-Khem",
+      "bounds": [
+        95.78004,
+        51.294989,
+        98.000255,
+        51.52029
+      ],
+      "candidateTitle": "克孜勒海姆河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-134",
+      "expectedName": "Nu",
+      "bounds": [
+        91.518321,
+        30.433539,
+        96.595632,
+        31.943061
+      ],
+      "candidateTitle": "怒江",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-144",
+      "expectedName": "Malyy Yenisey",
+      "bounds": [
+        94.464773,
+        51.294989,
+        95.78004,
+        51.73371
+      ],
+      "candidateTitle": "小叶尼塞河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-145",
+      "expectedName": "Verkhniy Yenisey",
+      "bounds": [
+        90.934255,
+        51.560981,
+        94.464773,
+        56.0
+      ],
+      "candidateTitle": "叶尼塞河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-147",
+      "expectedName": "Hongshui",
+      "bounds": [
+        106.97047,
+        23.638373,
+        109.528575,
+        25.241482
+      ],
+      "candidateTitle": "红水河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-148",
+      "expectedName": "Quan",
+      "bounds": [
+        109.528575,
+        23.404853,
+        110.089366,
+        23.796413
+      ],
+      "candidateTitle": "泉河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-149",
+      "expectedName": "Xun",
+      "bounds": [
+        110.089285,
+        23.371527,
+        111.301362,
+        23.590766
+      ],
+      "candidateTitle": "浔江",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-153",
+      "expectedName": "Salween",
+      "bounds": [
+        97.32724,
+        16.554958,
+        98.6963,
+        20.951239
+      ],
+      "candidateTitle": "萨尔温江",
+      "note": ""
+    },
+    {
+      "groupId": "lake-ne_10m_lakes-1159125069",
+      "expectedName": "Nam Ngum Reservoir",
+      "bounds": [
+        102.4842,
+        18.432607,
+        102.960775,
+        18.771714
+      ],
+      "candidateTitle": "南俄水库",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-170",
+      "expectedName": "Syr  Darya",
+      "bounds": [
+        70.0,
+        40.296793,
+        70.359467,
+        40.43537
+      ],
+      "candidateTitle": "锡尔河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-171",
+      "expectedName": "Naryn",
+      "bounds": [
+        70.354991,
+        40.43537,
+        78.060557,
+        41.900743
+      ],
+      "candidateTitle": "纳伦河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-179",
+      "expectedName": "Godävari",
+      "bounds": [
+        73.652436,
+        16.312201,
+        82.342703,
+        20.047553
+      ],
+      "candidateTitle": "戈达瓦里河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-186",
+      "expectedName": "Pamir",
+      "bounds": [
+        72.657319,
+        37.029079,
+        73.604584,
+        37.481228
+      ],
+      "candidateTitle": "帕米尔河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-195",
+      "expectedName": "Panj",
+      "bounds": [
+        70.0,
+        36.686347,
+        72.657319,
+        38.473944
+      ],
+      "candidateTitle": "喷赤河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-214",
+      "expectedName": "Ishikari",
+      "bounds": [
+        141.357595,
+        43.116156,
+        142.0,
+        43.673777
+      ],
+      "candidateTitle": "石狩川",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-242",
+      "expectedName": "Yarkant",
+      "bounds": [
+        75.90683,
+        35.520697,
+        80.88795,
+        40.467108
+      ],
+      "candidateTitle": "叶尔羌河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-258",
+      "expectedName": "Sutlej",
+      "bounds": [
+        71.021983,
+        29.366319,
+        81.375662,
+        31.84748
+      ],
+      "candidateTitle": "萨特莱杰河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-261",
+      "expectedName": "Biya",
+      "bounds": [
+        85.056163,
+        51.364366,
+        87.768565,
+        52.639268
+      ],
+      "candidateTitle": "比亚河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-271",
+      "expectedName": "Mahäna Nadï",
+      "bounds": [
+        80.614757,
+        20.143134,
+        86.158702,
+        21.890408
+      ],
+      "candidateTitle": "默哈纳迪河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-279",
+      "expectedName": "Krishna",
+      "bounds": [
+        73.796397,
+        15.949164,
+        80.882742,
+        17.991807
+      ],
+      "candidateTitle": "克里希纳河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-28",
+      "expectedName": "Angara",
+      "bounds": [
+        102.99171,
+        51.800889,
+        106.497325,
+        56.0
+      ],
+      "candidateTitle": "安加拉河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-306",
+      "expectedName": "Hong",
+      "bounds": [
+        100.182872,
+        20.284491,
+        106.500987,
+        25.443183
+      ],
+      "candidateTitle": "红河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-307",
+      "expectedName": "Yamuna",
+      "bounds": [
+        77.058116,
+        25.26557,
+        81.903087,
+        30.915147
+      ],
+      "candidateTitle": "亚穆纳河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-308",
+      "expectedName": "Narmada",
+      "bounds": [
+        73.131765,
+        21.75377,
+        81.574229,
+        23.137966
+      ],
+      "candidateTitle": "讷尔默达河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-310",
+      "expectedName": "Xar Moron",
+      "bounds": [
+        117.160167,
+        42.592149,
+        120.758474,
+        43.423448
+      ],
+      "candidateTitle": "西拉木伦河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-315",
+      "expectedName": "Chenab",
+      "bounds": [
+        70.639171,
+        29.036811,
+        77.435557,
+        33.379503
+      ],
+      "candidateTitle": "杰纳布河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-318",
+      "expectedName": "Tom’",
+      "bounds": [
+        84.947358,
+        53.412665,
+        89.771088,
+        56.0
+      ],
+      "candidateTitle": "托木河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-344",
+      "expectedName": "Chulyshman",
+      "bounds": [
+        87.728445,
+        50.504503,
+        89.656342,
+        51.364366
+      ],
+      "candidateTitle": "丘雷什曼河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-348",
+      "expectedName": "Konqi",
+      "bounds": [
+        86.371593,
+        40.632148,
+        89.386974,
+        41.338406
+      ],
+      "candidateTitle": "孔雀河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-360",
+      "expectedName": "Xiliao",
+      "bounds": [
+        120.758474,
+        43.423448,
+        123.553966,
+        43.819281
+      ],
+      "candidateTitle": "西辽河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-371",
+      "expectedName": "Jhelum",
+      "bounds": [
+        72.111339,
+        31.183295,
+        75.366222,
+        34.391384
+      ],
+      "candidateTitle": "杰赫勒姆河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-382",
+      "expectedName": "Chulym",
+      "bounds": [
+        89.081065,
+        53.993598,
+        91.607188,
+        56.0
+      ],
+      "candidateTitle": "丘雷姆河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-384",
+      "expectedName": "Vitim",
+      "bounds": [
+        111.322683,
+        53.21662,
+        116.927419,
+        56.0
+      ],
+      "candidateTitle": "维季姆河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-386",
+      "expectedName": "Mae Klong",
+      "bounds": [
+        98.809011,
+        13.372016,
+        100.001394,
+        16.175645
+      ],
+      "candidateTitle": "夜功河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-387",
+      "expectedName": "Yom",
+      "bounds": [
+        100.063406,
+        15.70657,
+        101.180675,
+        19.554063
+      ],
+      "candidateTitle": "永河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-403",
+      "expectedName": "Cauvery",
+      "bounds": [
+        75.660411,
+        10.338324,
+        79.841238,
+        12.619167
+      ],
+      "candidateTitle": "高韦里河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-404",
+      "expectedName": "Chambal",
+      "bounds": [
+        75.271983,
+        22.473212,
+        79.244884,
+        26.85989
+      ],
+      "candidateTitle": "昌巴尔河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-405",
+      "expectedName": "Zeya",
+      "bounds": [
+        126.925548,
+        50.205593,
+        130.695567,
+        55.569159
+      ],
+      "candidateTitle": "结雅河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-419",
+      "expectedName": "Hudi",
+      "bounds": [
+        116.521414,
+        32.353949,
+        119.616222,
+        33.242784
+      ],
+      "candidateTitle": null,
+      "note": "来源写Hudi，虽位于淮河下游但拼写与河段身份尚需核对。"
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-420",
+      "expectedName": "Ping",
+      "bounds": [
+        98.59669,
+        15.716376,
+        100.158946,
+        19.780056
+      ],
+      "candidateTitle": "宾河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-421",
+      "expectedName": "Ile",
+      "bounds": [
+        74.075206,
+        43.620673,
+        81.752452,
+        45.422553
+      ],
+      "candidateTitle": "伊犁河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-422",
+      "expectedName": "Sanggan",
+      "bounds": [
+        112.336925,
+        39.165961,
+        115.589122,
+        40.360867
+      ],
+      "candidateTitle": "桑干河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-426",
+      "expectedName": "Wujia",
+      "bounds": [
+        106.935802,
+        40.310492,
+        108.863292,
+        41.270941
+      ],
+      "candidateTitle": "乌加河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-453",
+      "expectedName": "Ghäghara",
+      "bounds": [
+        80.923269,
+        25.733751,
+        84.713145,
+        30.552069
+      ],
+      "candidateTitle": "加格拉河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-454",
+      "expectedName": "Chindwin",
+      "bounds": [
+        94.30714,
+        21.444688,
+        97.060802,
+        26.639228
+      ],
+      "candidateTitle": "钦敦江",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-455",
+      "expectedName": "Krong",
+      "bounds": [
+        107.377371,
+        11.885443,
+        108.128673,
+        13.237087
+      ],
+      "candidateTitle": null,
+      "note": "来源仅写Krong，不能据此判断越南克容安河或克容诺河等具体对象。"
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-459",
+      "expectedName": "Ingoda",
+      "bounds": [
+        111.027843,
+        49.795844,
+        115.828624,
+        52.011054
+      ],
+      "candidateTitle": "音戈达河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-460",
+      "expectedName": "Olëkma",
+      "bounds": [
+        117.389903,
+        53.885606,
+        121.607432,
+        56.0
+      ],
+      "candidateTitle": "奥廖克马河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-461",
+      "expectedName": "Künes",
+      "bounds": [
+        81.752452,
+        43.244167,
+        84.959565,
+        43.656521
+      ],
+      "candidateTitle": "巩乃斯河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-467",
+      "expectedName": "Sapt",
+      "bounds": [
+        85.726654,
+        25.244208,
+        87.758311,
+        28.807563
+      ],
+      "candidateTitle": "戈西河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-483",
+      "expectedName": "Sreng",
+      "bounds": [
+        103.40325,
+        13.224677,
+        104.264903,
+        14.280341
+      ],
+      "candidateTitle": "森河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-485",
+      "expectedName": "Mamas",
+      "bounds": [
+        90.648692,
+        26.192979,
+        91.828136,
+        28.291856
+      ],
+      "candidateTitle": "马纳斯河 (不丹)",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-486",
+      "expectedName": "Ou",
+      "bounds": [
+        101.75294,
+        20.048651,
+        102.769216,
+        22.434149
+      ],
+      "candidateTitle": "南乌江",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-491",
+      "expectedName": "Buh",
+      "bounds": [
+        98.598725,
+        37.000271,
+        99.838796,
+        38.158718
+      ],
+      "candidateTitle": "布哈河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-495",
+      "expectedName": "Esil",
+      "bounds": [
+        70.0,
+        50.610216,
+        73.074311,
+        51.337815
+      ],
+      "candidateTitle": "伊希姆河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-497",
+      "expectedName": "Katun",
+      "bounds": [
+        85.056163,
+        49.610297,
+        86.723155,
+        52.490668
+      ],
+      "candidateTitle": "卡通河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-535",
+      "expectedName": "Bhima",
+      "bounds": [
+        73.694021,
+        16.41531,
+        77.284679,
+        19.005398
+      ],
+      "candidateTitle": "比马河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-536",
+      "expectedName": "Tista",
+      "bounds": [
+        88.434662,
+        25.432644,
+        89.697032,
+        27.695095
+      ],
+      "candidateTitle": "提斯塔河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-537",
+      "expectedName": "Kong",
+      "bounds": [
+        106.03183,
+        13.571234,
+        107.367686,
+        16.227607
+      ],
+      "candidateTitle": "塞公河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-546",
+      "expectedName": "Sittong",
+      "bounds": [
+        95.786876,
+        17.457384,
+        96.903412,
+        20.218207
+      ],
+      "candidateTitle": "锡当河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-548",
+      "expectedName": "You",
+      "bounds": [
+        105.257335,
+        22.844346,
+        108.092296,
+        24.448065
+      ],
+      "candidateTitle": "右江",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-549",
+      "expectedName": "Mahi",
+      "bounds": [
+        72.907319,
+        22.261501,
+        75.008311,
+        23.914496
+      ],
+      "candidateTitle": "默希河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-550",
+      "expectedName": "Tapi",
+      "bounds": [
+        72.728608,
+        21.060858,
+        78.130789,
+        21.821397
+      ],
+      "candidateTitle": "达布蒂河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-551",
+      "expectedName": "Sankh",
+      "bounds": [
+        83.903412,
+        22.265204,
+        84.668061,
+        23.198065
+      ],
+      "candidateTitle": "桑克河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-553",
+      "expectedName": "Ussuri",
+      "bounds": [
+        133.388194,
+        43.601508,
+        134.31601,
+        45.57331
+      ],
+      "candidateTitle": "乌苏里江",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-555",
+      "expectedName": "Namhan",
+      "bounds": [
+        127.183116,
+        36.952745,
+        128.878917,
+        37.580268
+      ],
+      "candidateTitle": "南汉江",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-561",
+      "expectedName": "Penner",
+      "bounds": [
+        77.266043,
+        13.406806,
+        80.149099,
+        14.963975
+      ],
+      "candidateTitle": "彭内尔河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-575",
+      "expectedName": "Shilka",
+      "bounds": [
+        115.828624,
+        51.721503,
+        121.477794,
+        53.51557
+      ],
+      "candidateTitle": "石勒喀河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-599",
+      "expectedName": "Yong",
+      "bounds": [
+        108.092296,
+        22.733262,
+        108.928233,
+        22.884101
+      ],
+      "candidateTitle": "邕江",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-600",
+      "expectedName": "Brahmani",
+      "bounds": [
+        84.668061,
+        20.611396,
+        86.940115,
+        22.265204
+      ],
+      "candidateTitle": "布拉马尼河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-608",
+      "expectedName": "Srepok",
+      "bounds": [
+        105.970307,
+        13.237087,
+        107.377371,
+        13.582709
+      ],
+      "candidateTitle": "斯雷波克河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-610",
+      "expectedName": "Song’acha",
+      "bounds": [
+        132.839447,
+        45.024685,
+        133.413178,
+        45.573594
+      ],
+      "candidateTitle": "松阿察河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-611",
+      "expectedName": "Ussuri",
+      "bounds": [
+        133.413178,
+        45.573594,
+        135.090017,
+        48.483751
+      ],
+      "candidateTitle": "乌苏里江",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-623",
+      "expectedName": "Yu",
+      "bounds": [
+        108.897634,
+        22.623399,
+        110.089366,
+        23.404853
+      ],
+      "candidateTitle": "郁江",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-626",
+      "expectedName": "Han",
+      "bounds": [
+        126.755463,
+        37.508124,
+        127.183116,
+        37.637885
+      ],
+      "candidateTitle": "汉江 (朝鲜半岛)",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-636",
+      "expectedName": "Chao Phraya",
+      "bounds": [
+        100.010916,
+        13.516669,
+        100.597748,
+        15.70657
+      ],
+      "candidateTitle": "湄南河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-646",
+      "expectedName": "Di’er Songhua",
+      "bounds": [
+        124.651296,
+        42.56745,
+        127.376069,
+        45.447943
+      ],
+      "candidateTitle": "第二松花江",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-671",
+      "expectedName": "Beas",
+      "bounds": [
+        75.002696,
+        31.176296,
+        77.214692,
+        32.258857
+      ],
+      "candidateTitle": "比亚斯河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-672",
+      "expectedName": "Tungabhadra",
+      "bounds": [
+        75.31837,
+        13.228624,
+        78.236908,
+        15.976426
+      ],
+      "candidateTitle": "通加巴德拉河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-674",
+      "expectedName": "Ngun",
+      "bounds": [
+        102.50587,
+        18.125434,
+        103.205007,
+        19.683905
+      ],
+      "candidateTitle": "南俄河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-676",
+      "expectedName": "Qumar",
+      "bounds": [
+        90.949229,
+        34.677191,
+        94.965912,
+        35.360785
+      ],
+      "candidateTitle": "楚玛尔河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-680",
+      "expectedName": "Yalu",
+      "bounds": [
+        124.370209,
+        40.098253,
+        128.302745,
+        41.917507
+      ],
+      "candidateTitle": "鸭绿江",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-692",
+      "expectedName": "Tao’er",
+      "bounds": [
+        120.165294,
+        45.361111,
+        124.087901,
+        46.995673
+      ],
+      "candidateTitle": "洮儿河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-693",
+      "expectedName": "Oka",
+      "bounds": [
+        99.684581,
+        51.973904,
+        102.424327,
+        56.0
+      ],
+      "candidateTitle": "奥卡河 (安加拉河支流)",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-707",
+      "expectedName": "Bol’shoy Yenisey",
+      "bounds": [
+        94.368582,
+        51.73371,
+        98.733165,
+        52.70071
+      ],
+      "candidateTitle": "大叶尼塞河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-734",
+      "expectedName": "Mun",
+      "bounds": [
+        102.002452,
+        14.276964,
+        105.503835,
+        15.470893
+      ],
+      "candidateTitle": "蒙河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-735",
+      "expectedName": "Chi",
+      "bounds": [
+        101.405854,
+        15.188788,
+        104.716075,
+        16.387315
+      ],
+      "candidateTitle": "ชี河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-737",
+      "expectedName": "Shandian",
+      "bounds": [
+        115.751475,
+        41.509711,
+        116.715343,
+        42.359442
+      ],
+      "candidateTitle": "闪电河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-738",
+      "expectedName": "Da",
+      "bounds": [
+        100.612071,
+        20.766913,
+        105.342784,
+        24.748643
+      ],
+      "candidateTitle": "沱江 (越南)",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-739",
+      "expectedName": "Onon",
+      "bounds": [
+        108.906668,
+        48.566352,
+        116.085134,
+        51.725206
+      ],
+      "candidateTitle": "鄂嫩河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-740",
+      "expectedName": "Tone",
+      "bounds": [
+        138.968272,
+        35.732367,
+        140.856944,
+        36.906684
+      ],
+      "candidateTitle": "利根川",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-748",
+      "expectedName": "Mana",
+      "bounds": [
+        95.116466,
+        54.346381,
+        95.893077,
+        56.0
+      ],
+      "candidateTitle": "马纳河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-768",
+      "expectedName": "Ca",
+      "bounds": [
+        103.832286,
+        18.576768,
+        105.750662,
+        19.899848
+      ],
+      "candidateTitle": "蓝江",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-769",
+      "expectedName": "Nakdong",
+      "bounds": [
+        128.241466,
+        35.136501,
+        129.098562,
+        37.042019
+      ],
+      "candidateTitle": "洛东江",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-780",
+      "expectedName": "Kondoma",
+      "bounds": [
+        87.081472,
+        52.427436,
+        88.249278,
+        53.762071
+      ],
+      "candidateTitle": "孔多马河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-781",
+      "expectedName": "Daling",
+      "bounds": [
+        118.978933,
+        40.8487,
+        121.635916,
+        41.749864
+      ],
+      "candidateTitle": "大凌河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-823",
+      "expectedName": "Zuo",
+      "bounds": [
+        105.902192,
+        22.320502,
+        108.092296,
+        22.933132
+      ],
+      "candidateTitle": "左江",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-824",
+      "expectedName": "Duliu",
+      "bounds": [
+        107.597992,
+        25.650743,
+        109.459239,
+        25.995958
+      ],
+      "candidateTitle": "都柳江",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-825",
+      "expectedName": "Mogami",
+      "bounds": [
+        139.815929,
+        37.76614,
+        140.37851,
+        38.913642
+      ],
+      "candidateTitle": "最上川",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-839",
+      "expectedName": "Erdao",
+      "bounds": [
+        127.376069,
+        42.170722,
+        128.179779,
+        42.815497
+      ],
+      "candidateTitle": "二道松花江",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-840",
+      "expectedName": "Nanweng",
+      "bounds": [
+        124.639903,
+        51.018744,
+        126.040538,
+        51.310614
+      ],
+      "candidateTitle": "南瓮河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-841",
+      "expectedName": "Chuna",
+      "bounds": [
+        97.013276,
+        53.585639,
+        99.623953,
+        56.0
+      ],
+      "candidateTitle": "丘纳河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-843",
+      "expectedName": "Amgun’",
+      "bounds": [
+        133.625092,
+        50.570828,
+        139.706391,
+        52.96015
+      ],
+      "candidateTitle": "阿姆贡河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-846",
+      "expectedName": "Chaor",
+      "bounds": [
+        121.826752,
+        46.950019,
+        123.519135,
+        48.784206
+      ],
+      "candidateTitle": "绰尔河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-847",
+      "expectedName": "Bikin",
+      "bounds": [
+        134.039236,
+        46.47488,
+        137.363048,
+        47.199286
+      ],
+      "candidateTitle": "比金河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-875",
+      "expectedName": "Za’gya",
+      "bounds": [
+        88.93214,
+        31.936835,
+        91.213145,
+        33.070828
+      ],
+      "candidateTitle": "扎加藏布",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-879",
+      "expectedName": "Yurungkax",
+      "bounds": [
+        79.733816,
+        35.469997,
+        81.506928,
+        37.833075
+      ],
+      "candidateTitle": "玉龙喀什河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-880",
+      "expectedName": "Zarafshon",
+      "bounds": [
+        70.0,
+        39.447821,
+        70.471202,
+        39.484158
+      ],
+      "candidateTitle": "泽拉夫尚河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-881",
+      "expectedName": "Dali",
+      "bounds": [
+        108.115001,
+        37.22016,
+        109.937266,
+        38.083523
+      ],
+      "candidateTitle": "大理河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-883",
+      "expectedName": "Dam",
+      "bounds": [
+        92.710704,
+        32.639716,
+        94.31601,
+        34.094997
+      ],
+      "candidateTitle": "当曲",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-884",
+      "expectedName": "Mytinge",
+      "bounds": [
+        95.987071,
+        21.684638,
+        98.289236,
+        23.366278
+      ],
+      "candidateTitle": "米坦格河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-886",
+      "expectedName": "Ou",
+      "bounds": [
+        118.967784,
+        27.788194,
+        120.569591,
+        28.441107
+      ],
+      "candidateTitle": "瓯江",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-887",
+      "expectedName": "Wainganga",
+      "bounds": [
+        79.458507,
+        18.826687,
+        80.186615,
+        22.458441
+      ],
+      "candidateTitle": "瓦因根加河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-888",
+      "expectedName": "Toxkan",
+      "bounds": [
+        75.934662,
+        40.423855,
+        80.042979,
+        41.363837
+      ],
+      "candidateTitle": "托什干河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-889",
+      "expectedName": "Banas",
+      "bounds": [
+        73.542084,
+        24.867214,
+        76.739513,
+        26.219021
+      ],
+      "candidateTitle": "巴纳斯河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-890",
+      "expectedName": "Tel",
+      "bounds": [
+        82.063487,
+        19.745632,
+        83.951427,
+        20.840155
+      ],
+      "candidateTitle": "泰尔河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-891",
+      "expectedName": "Zayü",
+      "bounds": [
+        97.083995,
+        28.527615,
+        97.490652,
+        29.438747
+      ],
+      "candidateTitle": "察隅河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-893",
+      "expectedName": "Zhang",
+      "bounds": [
+        112.88795,
+        36.191677,
+        115.680593,
+        37.069037
+      ],
+      "candidateTitle": "漳河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-894",
+      "expectedName": "Orhon",
+      "bounds": [
+        101.509044,
+        46.816474,
+        106.197032,
+        50.253974
+      ],
+      "candidateTitle": "鄂尔浑河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-895",
+      "expectedName": "Cagayan",
+      "bounds": [
+        121.395844,
+        16.099921,
+        121.881847,
+        18.313992
+      ],
+      "candidateTitle": "卡加延河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-897",
+      "expectedName": "Palar",
+      "bounds": [
+        77.903738,
+        12.462226,
+        80.149506,
+        13.255316
+      ],
+      "candidateTitle": "帕拉尔河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-932",
+      "expectedName": "Liu",
+      "bounds": [
+        109.466319,
+        23.796413,
+        109.731863,
+        24.419989
+      ],
+      "candidateTitle": "柳江",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-933",
+      "expectedName": "Rong",
+      "bounds": [
+        109.132253,
+        24.311062,
+        109.492768,
+        25.650743
+      ],
+      "candidateTitle": "融江",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-945",
+      "expectedName": "Wuding",
+      "bounds": [
+        109.937266,
+        37.042019,
+        110.462169,
+        37.955634
+      ],
+      "candidateTitle": "无定河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-947",
+      "expectedName": "Aksu",
+      "bounds": [
+        80.042979,
+        40.468207,
+        80.882253,
+        41.187567
+      ],
+      "candidateTitle": "阿克苏河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-948",
+      "expectedName": "Luhit",
+      "bounds": [
+        95.459483,
+        27.766466,
+        97.083995,
+        28.527615
+      ],
+      "candidateTitle": "洛希特河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-950",
+      "expectedName": "Uda",
+      "bounds": [
+        130.503184,
+        54.00849,
+        135.242686,
+        54.703681
+      ],
+      "candidateTitle": "乌达河 (鄂霍次克海)",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-951",
+      "expectedName": "Tumnin",
+      "bounds": [
+        138.825287,
+        49.277696,
+        140.339122,
+        50.884589
+      ],
+      "candidateTitle": "图姆宁河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-967",
+      "expectedName": "Di’er Songhua",
+      "bounds": [
+        123.465831,
+        45.414374,
+        124.674571,
+        46.875556
+      ],
+      "candidateTitle": null,
+      "note": "源标签与第二松花江常见线位不一致，暂不扩写中文河名。"
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-969",
+      "expectedName": "Kolidam",
+      "bounds": [
+        78.677989,
+        10.84455,
+        79.67628,
+        11.296454
+      ],
+      "candidateTitle": "科利丹河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-1001",
+      "expectedName": "Tonle Sap",
+      "bounds": [
+        103.687429,
+        11.590888,
+        104.951182,
+        13.224677
+      ],
+      "candidateTitle": "洞里萨河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-1071",
+      "expectedName": "Yi",
+      "bounds": [
+        118.503429,
+        34.683173,
+        119.200287,
+        36.126247
+      ],
+      "candidateTitle": "沂河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-1072",
+      "expectedName": "Bogcang",
+      "bounds": [
+        85.557221,
+        31.655626,
+        87.413585,
+        31.90001
+      ],
+      "candidateTitle": "波仓藏布",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-1075",
+      "expectedName": "Herlen",
+      "bounds": [
+        108.396088,
+        46.895453,
+        117.057872,
+        48.759955
+      ],
+      "candidateTitle": "克鲁伦河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-1080",
+      "expectedName": "Qarqan",
+      "bounds": [
+        85.678966,
+        36.504706,
+        87.282156,
+        37.772773
+      ],
+      "candidateTitle": "车尔臣河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-1081",
+      "expectedName": "Huan",
+      "bounds": [
+        107.194347,
+        35.260037,
+        107.956716,
+        37.31977
+      ],
+      "candidateTitle": "环江",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-1082",
+      "expectedName": "Zi",
+      "bounds": [
+        95.598562,
+        31.964179,
+        97.03004,
+        33.277167
+      ],
+      "candidateTitle": "子曲",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-1083",
+      "expectedName": "Kaladan",
+      "bounds": [
+        92.736501,
+        20.554633,
+        93.432058,
+        23.719306
+      ],
+      "candidateTitle": "卡拉丹河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-1084",
+      "expectedName": "Mytitha",
+      "bounds": [
+        93.638194,
+        21.923285,
+        94.307709,
+        23.247504
+      ],
+      "candidateTitle": "密达河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-1085",
+      "expectedName": "Jiulong",
+      "bounds": [
+        116.79835,
+        24.459784,
+        117.790538,
+        25.331366
+      ],
+      "candidateTitle": "九龙江",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-1086",
+      "expectedName": "Mei",
+      "bounds": [
+        115.075694,
+        25.889228,
+        116.102468,
+        27.10696
+      ],
+      "candidateTitle": "梅江 (赣江支流)",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-1087",
+      "expectedName": "Tuo",
+      "bounds": [
+        103.471202,
+        28.894151,
+        105.445242,
+        33.067491
+      ],
+      "candidateTitle": "沱江",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-1092",
+      "expectedName": "Son",
+      "bounds": [
+        80.996023,
+        22.705919,
+        84.877615,
+        25.707587
+      ],
+      "candidateTitle": "索恩河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-1095",
+      "expectedName": "Betwa",
+      "bounds": [
+        77.346202,
+        23.11579,
+        80.209972,
+        25.94713
+      ],
+      "candidateTitle": "贝特瓦河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-1096",
+      "expectedName": "Ba",
+      "bounds": [
+        108.384288,
+        12.989203,
+        109.328298,
+        14.4831
+      ],
+      "candidateTitle": "巴江",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-1102",
+      "expectedName": "Parbati",
+      "bounds": [
+        76.478445,
+        22.914903,
+        77.214366,
+        25.848334
+      ],
+      "candidateTitle": "帕尔巴蒂河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-1103",
+      "expectedName": "Indravati",
+      "bounds": [
+        80.266043,
+        18.713935,
+        82.95989,
+        19.480536
+      ],
+      "candidateTitle": "因陀罗瓦底河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-1107",
+      "expectedName": "Ravi",
+      "bounds": [
+        71.774913,
+        30.578192,
+        76.82545,
+        32.620958
+      ],
+      "candidateTitle": "拉维河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-1108",
+      "expectedName": "Tumen",
+      "bounds": [
+        128.19337,
+        41.95539,
+        130.700206,
+        43.010565
+      ],
+      "candidateTitle": "图们江",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-1110",
+      "expectedName": "Selemdzha",
+      "bounds": [
+        128.878917,
+        51.741156,
+        134.499278,
+        53.227891
+      ],
+      "candidateTitle": "谢列姆贾河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-1113",
+      "expectedName": "Uchur",
+      "bounds": [
+        134.121755,
+        55.804958,
+        134.417172,
+        56.0
+      ],
+      "candidateTitle": "乌丘尔河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-1116",
+      "expectedName": "Nemor",
+      "bounds": [
+        124.54835,
+        47.732123,
+        127.741791,
+        48.61876
+      ],
+      "candidateTitle": "讷谟尔河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-1118",
+      "expectedName": "Quan",
+      "bounds": [
+        112.33489,
+        33.197699,
+        115.556407,
+        33.778835
+      ],
+      "candidateTitle": "泉河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-1119",
+      "expectedName": "Muling",
+      "bounds": [
+        130.079845,
+        43.89643,
+        133.510183,
+        45.873358
+      ],
+      "candidateTitle": "穆棱河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-1138",
+      "expectedName": "Balak",
+      "bounds": [
+        90.63323,
+        23.55504,
+        94.258718,
+        25.482367
+      ],
+      "candidateTitle": "巴拉克河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-1139",
+      "expectedName": "Gandak",
+      "bounds": [
+        83.438731,
+        25.637641,
+        85.192963,
+        29.200222
+      ],
+      "candidateTitle": "甘达基河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-1143",
+      "expectedName": "Ying",
+      "bounds": [
+        115.556407,
+        32.497667,
+        116.521902,
+        33.197699
+      ],
+      "candidateTitle": "颍河",
+      "note": ""
+    },
+    {
+      "groupId": "river-ne_10m_rivers_lake_centerlines-999",
+      "expectedName": "Dan",
+      "bounds": [
+        109.87379,
+        32.569525,
+        111.558442,
+        33.882107
+      ],
+      "candidateTitle": "丹江",
+      "note": ""
+    }
+  ],
+  "historicalTitles": [
+    "溵水县",
+    "浛洭县",
+    "鄂嘉县",
+    "濊貊"
+  ]
+}

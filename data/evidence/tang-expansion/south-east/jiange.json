@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-jiange",
+  "title": "剑阁县 — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E5%89%91%E9%98%81%E5%8E%BF&oldid=92787869",
+  "retrievedAt": "2026-09-24T14:36:13.840196+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/jiange.txt",
+  "snapshotSha256": "c88e527b203838798bcbca8fe0b2426e1d60f7d0c77a4900aeb9069586717eac",
+  "pageId": 308719,
+  "revision": {
+    "revid": 92787869,
+    "parentid": 92784412,
+    "timestamp": "2026-05-25T07:30:35Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E5%89%91%E9%98%81%E5%8E%BF&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

@@ -416,7 +416,7 @@ export default function App() {
         </nav>
         <div className="header-right">
           <span className="edition-label">
-            探索版 <span>V0.7.0</span>
+            探索版 <span>V0.8.0</span>
           </span>
           <OnboardingGuide />
           <button

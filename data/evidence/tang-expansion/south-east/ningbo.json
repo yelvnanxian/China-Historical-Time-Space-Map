@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-ningbo",
+  "title": "宁波市 — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E5%AE%81%E6%B3%A2%E5%B8%82&oldid=94056732",
+  "retrievedAt": "2026-09-24T14:35:47.590447+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/ningbo.txt",
+  "snapshotSha256": "3557962423acfbdebb1829daa82778c4530357352304371c3754e8d06c82f150",
+  "pageId": 10997,
+  "revision": {
+    "revid": 94056732,
+    "parentid": 93543793,
+    "timestamp": "2026-08-26T17:06:47Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E5%AE%81%E6%B3%A2%E5%B8%82&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

@@ -1,0 +1,6 @@
+{
+  "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&search=Yom+River&language=en&uselang=zh&limit=2",
+  "retrievedAt": "2026-09-24T14:44:12.464492+00:00",
+  "sha256": "343bf9ce2a60def12305c1fec534b1a09903822364eca12fc2e1440a940684b7",
+  "path": "data/evidence/place-name-localization/wikidata-search-d0ed4afd8af5.json"
+}

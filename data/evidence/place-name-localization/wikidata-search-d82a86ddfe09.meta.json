@@ -1,0 +1,6 @@
+{
+  "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&search=Brahmani+River&language=en&uselang=zh&limit=2",
+  "retrievedAt": "2026-09-24T14:44:16.664257+00:00",
+  "sha256": "40bdfaef43757be954acb7a38f638348d6c47e4424a72fea54e78fc2d9fb2197",
+  "path": "data/evidence/place-name-localization/wikidata-search-d82a86ddfe09.json"
+}

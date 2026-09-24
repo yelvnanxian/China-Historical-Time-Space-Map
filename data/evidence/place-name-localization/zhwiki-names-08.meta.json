@@ -1,0 +1,6 @@
+{
+  "url": "https://zh.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&titles=%E9%84%82%E5%B0%94%E6%B5%91%E6%B2%B3%7C%E9%84%82%E6%AF%95%E6%B2%B3%7C%E9%87%91%E6%B2%99%E6%B1%9F%7C%E9%92%A6%E6%95%A6%E6%B1%9F%7C%E9%94%A1%E5%B0%94%E6%B2%B3%7C%E9%94%A1%E5%BD%93%E6%B2%B3%7C%E9%97%AA%E7%94%B5%E6%B2%B3%7C%E9%98%BF%E5%85%8B%E8%8B%8F%E6%B2%B3%7C%E9%98%BF%E5%A7%86%E8%B4%A1%E6%B2%B3%7C%E9%9F%B3%E6%88%88%E8%BE%BE%E6%B2%B3%7C%E9%A2%8D%E6%B2%B3%7C%E9%A2%9D%E5%B0%94%E5%8F%A4%E7%BA%B3%E6%B2%B3%7C%E9%A2%9D%E5%B0%94%E9%BD%90%E6%96%AF%E6%B2%B3%7C%E9%A9%AC%E6%B3%89%E6%B2%B3%7C%E9%A9%AC%E7%BA%B3%E6%96%AF%E6%B2%B3+%28%E4%B8%8D%E4%B8%B9%29%7C%E9%A9%AC%E7%BA%B3%E6%B2%B3%7C%E9%AB%98%E9%9F%A6%E9%87%8C%E6%B2%B3%7C%E9%B8%AD%E7%BB%BF%E6%B1%9F%7C%E9%BB%91%E9%BE%99%E6%B1%9F%7C%E9%BB%98%E5%93%88%E7%BA%B3%E8%BF%AA%E6%B2%B3&redirects=1&converttitles=1&prop=langlinks%7Ccoordinates%7Cextracts%7Crevisions%7Cpageprops&lllang=en&lllimit=max&exintro=1&explaintext=1&exlimit=max&rvprop=ids&ppprop=disambiguation",
+  "retrievedAt": "2026-09-24T14:42:33.010462+00:00",
+  "sha256": "4f6b5debe9c84b43546f7716083338d022c4b5396047da36a9bb9b1bd4cf12a2",
+  "path": "data/evidence/place-name-localization/zhwiki-names-08.json"
+}

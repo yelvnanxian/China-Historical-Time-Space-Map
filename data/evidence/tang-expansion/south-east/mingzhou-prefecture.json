@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-mingzhou-prefecture",
+  "title": "明州 — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E6%98%8E%E5%B7%9E&oldid=80280767",
+  "retrievedAt": "2026-09-24T14:37:01.736755+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/mingzhou-prefecture.txt",
+  "snapshotSha256": "9888817fd603cc3d3c8c2227f06d693cbe1919212545adc5ea58c7f2f2305197",
+  "pageId": 99079,
+  "revision": {
+    "revid": 80280767,
+    "parentid": 68952755,
+    "timestamp": "2023-12-29T03:57:58Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E6%98%8E%E5%B7%9E&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-santai",
+  "title": "三台县 — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E4%B8%89%E5%8F%B0%E5%8E%BF&oldid=86102879",
+  "retrievedAt": "2026-09-24T14:36:09.665793+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/santai.txt",
+  "snapshotSha256": "ed75f682bf1257aabb25a162d9e8684828bb27025b2722b863585bdc05ec1962",
+  "pageId": 159641,
+  "revision": {
+    "revid": 86102879,
+    "parentid": 85595508,
+    "timestamp": "2025-02-14T15:33:41Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E4%B8%89%E5%8F%B0%E5%8E%BF&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

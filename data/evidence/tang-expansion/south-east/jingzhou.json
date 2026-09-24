@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-jingzhou",
+  "title": "荆州市 — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E8%8D%86%E5%B7%9E%E5%B8%82&oldid=94477256",
+  "retrievedAt": "2026-09-24T14:34:38.873191+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/jingzhou.txt",
+  "snapshotSha256": "551725178b786700668943f0c31444c66367273d2b7c2159573eb2d0e5a46e11",
+  "pageId": 2797,
+  "revision": {
+    "revid": 94477256,
+    "parentid": 94418285,
+    "timestamp": "2026-09-21T08:58:59Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E8%8D%86%E5%B7%9E%E5%B8%82&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

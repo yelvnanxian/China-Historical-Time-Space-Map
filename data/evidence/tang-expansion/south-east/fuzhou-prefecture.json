@@ -1,0 +1,16 @@
+{
+  "id": "tang-se-fuzhou-prefecture",
+  "title": "福州 (开元) — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E7%A6%8F%E5%B7%9E%20%28%E5%BC%80%E5%85%83%29&oldid=93488526",
+  "retrievedAt": "2026-09-24T14:37:17.200936+00:00",
+  "note": "固定修订百科条目，供唐代建置、名称和历史节点概览；坐标仅是现代地区参考，不由本文核定。引文保留原字形。",
+  "snapshotPath": "data/evidence/tang-expansion/south-east/fuzhou-prefecture.txt",
+  "snapshotSha256": "7a954b7590772855c3f843f981f04350eaf10f50aae261577ddd7e363fb8ff7c",
+  "pageId": 1267987,
+  "revision": {
+    "revid": 93488526,
+    "parentid": 93487273,
+    "timestamp": "2026-07-15T15:22:47Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E7%A6%8F%E5%B7%9E+%28%E5%8F%A4%E4%BB%A3%29&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

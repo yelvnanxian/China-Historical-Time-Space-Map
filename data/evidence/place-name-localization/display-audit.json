@@ -1,0 +1,52 @@
+{
+  "layers": 25,
+  "rows": {
+    "historicalBoundaries": {
+      "count": 12111,
+      "foreignBefore": 21,
+      "foreignAfter": 0,
+      "traditionalBefore": 8049,
+      "traditionalAfter": 0
+    },
+    "modernCorrespondenceHistoricalNames": {
+      "count": 12111,
+      "foreignBefore": 21,
+      "foreignAfter": 0,
+      "traditionalBefore": 11,
+      "traditionalAfter": 0
+    },
+    "modernReferenceNames": {
+      "count": 23572,
+      "foreignBefore": 0,
+      "foreignAfter": 0,
+      "traditionalBefore": 0,
+      "traditionalAfter": 0
+    },
+    "physicalGroups": {
+      "count": 540,
+      "foreignBefore": 184,
+      "foreignAfter": 0,
+      "traditionalBefore": 0,
+      "traditionalAfter": 0
+    },
+    "physicalFeatures": {
+      "count": 581,
+      "foreignBefore": 218,
+      "foreignAfter": 0,
+      "traditionalBefore": 0,
+      "traditionalAfter": 0
+    },
+    "mountainDirections": {
+      "count": 51,
+      "foreignBefore": 0,
+      "foreignAfter": 0,
+      "traditionalBefore": 0,
+      "traditionalAfter": 0
+    }
+  },
+  "naturalTranslatedGroups": 163,
+  "unresolvedNaturalGroups": 21,
+  "sourceUnnamedNaturalGroups": 116,
+  "unresolvedHistorical": 1,
+  "changedSources": []
+}

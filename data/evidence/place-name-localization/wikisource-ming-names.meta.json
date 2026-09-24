@@ -1,0 +1,6 @@
+{
+  "url": "https://zh.wikisource.org/w/api.php?action=query&format=json&formatversion=2&titles=%E6%98%8E%E5%8F%B2%2F%E5%8D%B746%7C%E6%98%8E%E5%8F%B2%2F%E5%8D%B7%E5%9B%9B%E5%8D%81%E5%85%AD&prop=revisions&rvprop=ids%7Ccontent&rvslots=main",
+  "retrievedAt": "2026-09-24T14:51:36.401400+00:00",
+  "sha256": "fdc6c409b2ea6e9265a8ad4f804a5f142dfaa6b221aab75a633ed02cfa5cc380",
+  "path": "data/evidence/place-name-localization/wikisource-ming-names.json"
+}

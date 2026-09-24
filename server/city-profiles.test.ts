@@ -5,6 +5,8 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { test } from "node:test";
 import type { CityPeriodProfilesData } from "../shared/city-profiles";
+import { filterCityProfiles } from "../shared/city-profiles";
+import { simplifiedChinese } from "../shared/boundary-search";
 import type { Catalog } from "../shared/types";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
@@ -33,6 +35,41 @@ test("本朝看点11时期各有至少3座当期可见代表城，不能重复�
     assert.ok(profile.summary.trim().length >= 30);
     assert.ok(!("coordinates" in profile) && !("geometry" in profile), "文字档案不冒充古址坐标核定");
   }
+});
+
+test("唐代主要城镇清单全部完成，既有唐地点和新增66点均有可核查档案", async () => {
+  const targets: { towns: { placeId: string }[] } = JSON.parse(await readFile(path.join(root, "data/tang-expansion/completion-targets.json"), "utf8"));
+  const expected = targets.towns.map(town => town.placeId).sort();
+  const tang = data.profiles.filter(profile => profile.periodId === "tang");
+  assert.equal(expected.length, 104);
+  assert.deepEqual(tang.map(profile => profile.placeId).sort(), expected);
+  assert.deepEqual(catalog.places.filter(place => place.periodIds.includes("tang")).map(place => place.id).sort(), expected);
+  assert.equal(catalog.places.length, 106);
+  for (const profile of tang) {
+    assert.ok(profile.evidence.length >= 2 && profile.region && profile.namingNote, profile.id);
+    assert.equal(new Set(profile.evidence.map(item => item.quote)).size, profile.evidence.length);
+    assert.equal(profile.summary, simplifiedChinese(profile.summary), profile.id);
+  }
+  for (const place of catalog.places) {
+    for (const name of [place.name, place.modernName, ...place.aliases, ...Object.values(place.nameByPeriod ?? {})]) {
+      assert.equal(name, simplifiedChinese(name), `${place.id}: ${name}`);
+      assert.doesNotMatch(name, /[A-Za-z\u0400-\u04ff\u3040-\u30ff\uac00-\ud7af]/, `${place.id}: ${name}`);
+    }
+  }
+});
+
+test("名城搜索兼容繁简、今名及天宝郡名，地域筛选与朝代互不串档", () => {
+  for (const query of ["苏州", "蘇州", "吴郡", "吳郡"]) {
+    const matches = filterCityProfiles(data.profiles, catalog.places, "tang", query);
+    assert.ok(matches.some(profile => places.get(profile.placeId)?.name === "苏州"), query);
+  }
+  const all = filterCityProfiles(data.profiles, catalog.places, "tang");
+  assert.equal(all.length, 104);
+  const regional = filterCityProfiles(data.profiles, catalog.places, "tang", "", "河西与西域");
+  assert.ok(regional.length >= 10 && regional.every(profile => profile.region === "河西与西域"));
+  assert.equal(filterCityProfiles(data.profiles, catalog.places, "tang", "苏州", "河西与西域").length, 0);
+  assert.deepEqual(filterCityProfiles(data.profiles, catalog.places, "tang", "不存在的城邑"), []);
+  assert.equal(filterCityProfiles(data.profiles, catalog.places, "song").length, 3);
 });
 
 test("本朝看点引用可追溯固定修订、真实快照及逐字原文", () => {

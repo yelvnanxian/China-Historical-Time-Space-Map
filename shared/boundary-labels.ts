@@ -1,5 +1,6 @@
 import correctionsDocument from "./boundary-name-corrections.json";
 import { simplifiedChinese } from "./boundary-search";
+import { historicalNameTranslations, isChineseDisplayName } from "./place-name-localization";
 
 export interface BoundaryLabelInput {
   id?: string;
@@ -17,7 +18,7 @@ export interface BoundaryLabelInput {
 export interface BoundaryDisplayLabel {
   name: string;
   originalName: string;
-  nameStatus: "source" | "source-field" | "source-recovered" | "unnamed";
+  nameStatus: "source" | "source-field" | "source-recovered" | "translated" | "unresolved" | "unnamed";
   nameCorrectionNote?: string;
   nameSourceUrl?: string;
 }
@@ -71,10 +72,20 @@ export function getBoundaryDisplayLabel(
     };
   }
 
-  if (!isPlaceholderBoundaryName(originalName)) {
+  const translation = region.id ? historicalNameTranslations[region.id] : undefined;
+  if (translation && originalName === translation.expectedName &&
+    (region.sourceId === undefined || region.sourceId === translation.expectedSourceId) &&
+    (region.sourceCode === undefined || region.sourceCode === translation.expectedSourceCode) &&
+    (region.year === undefined || region.year === translation.expectedYear)) {
+    return { name: simplifiedChinese(translation.displayName), originalName,
+      nameStatus: translation.method === "unresolved" ? "unresolved" : "translated",
+      nameCorrectionNote: translation.note, nameSourceUrl: translation.sourceUrl };
+  }
+
+  if (!isPlaceholderBoundaryName(originalName) && isChineseDisplayName(originalName)) {
     return {
-      name: !isPlaceholderBoundaryName(cachedSimplifiedName)
-        ? cachedSimplifiedName!.trim()
+      name: cachedSimplifiedName && isChineseDisplayName(cachedSimplifiedName)
+        ? simplifiedChinese(cachedSimplifiedName.trim())
         : simplifiedChinese(originalName.trim()),
       originalName,
       nameStatus: "source",
@@ -85,7 +96,7 @@ export function getBoundaryDisplayLabel(
   // field or a modern place name into a missing historical feature name.
   const sourceFields = ["sourceName", "NAME_CH", "NAME_FT", "NAME_PY"] as const;
   for (const field of sourceFields) {
-    if (!isPlaceholderBoundaryName(region[field])) {
+    if (!isPlaceholderBoundaryName(region[field]) && isChineseDisplayName(String(region[field]))) {
       return {
         name: simplifiedChinese(String(region[field]).trim()),
         originalName,
@@ -96,6 +107,11 @@ export function getBoundaryDisplayLabel(
   }
 
   const identifier = region.recordId === undefined ? "" : String(region.recordId).trim();
+  if (!isPlaceholderBoundaryName(originalName)) {
+    const numericId = /^\d+$/.test(identifier) ? identifier : "";
+    return { name: `未定名行政区${numericId ? `（源编号${numericId}）` : ""}`, originalName,
+      nameStatus: "unresolved", nameCorrectionNote: "尚未核定中文名称，原文保留供核查。" };
+  }
   return {
     name: `来源未命名区域${identifier ? ` · ${identifier}` : ""}`,
     originalName,

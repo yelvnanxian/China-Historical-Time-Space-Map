@@ -10,11 +10,26 @@
 .period-city-panel h3 { font: 20px/1.5 var(--serif); margin: 6px 0 0; }
 .period-city-panel > header button { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; flex-shrink: 0; margin: -5px -8px 0 0; }
 .period-city-intro { margin: 10px 0 13px; font-size: 11px; color: #829177; line-height: 1.8; }
-.period-city-list { display: grid; gap: 7px; }
+.period-city-list { display: grid; gap: 7px; overflow-y: auto; min-height: 0; overscroll-behavior: contain; }
+.period-city-panel { display: flex; flex-direction: column; overflow: hidden; }
+.period-city-panel > header, .period-city-intro, .period-city-filters { flex-shrink: 0; }
+.period-city-filters { margin-bottom: 10px; }
+.period-city-search { display: flex; align-items: center; gap: 8px; border: 1px solid #cdd8bd; border-radius: 5px; padding: 0 10px; background: #fffef8; }
+.period-city-search input { width: 100%; min-width: 0; border: 0; padding: 12px 0; background: transparent; color: #47603f; font: inherit; font-size: 12px; outline-offset: 2px; }
+.period-city-search button { display: grid; place-items: center; min-width: 34px; min-height: 40px; }
+.period-city-region { display: flex; align-items: center; gap: 9px; margin-top: 8px; font-size: 11px; }
+.period-city-region select { flex: 1; min-width: 0; min-height: 40px; padding: 5px 9px; border: 1px solid #d6dfca; border-radius: 4px; background: #f5f8ed; color: #536d49; font: inherit; }
+.period-city-count { display: flex; justify-content: space-between; align-items: center; margin: 5px 0 0; min-height: 28px; font-size: 10px; color: #78866b; }
+.period-city-count button { text-decoration: underline; min-height: 32px; }
+.period-city-region-tag { display: inline-block; margin: 0 0 6px; color: #78856b; font-size: 10px; }
+.period-city-notes { margin: 0 0 16px; padding-top: 10px; border-top: 1px solid #d9e2ca; font-size: 11px; line-height: 1.85; }
+.period-city-notes dt { margin: 6px 0 3px; font-weight: 600; color: #526d47; }
+.period-city-notes dd { margin: 0; color: #748469; }
 .period-city-list > button { display: block; width: 100%; padding: 13px; text-align: left; border: 1px solid #e0e6d7; border-radius: 5px; background: #f3f6ec; }
 .period-city-list > button:hover { background: #eaf1df; border-color: #cad8ba; }
 .period-city-name { display: flex; align-items: center; justify-content: space-between; color: #4c6946; }
 .period-city-name strong { font: 17px/1.5 var(--serif); }
+.period-city-name strong small { font: 11px/1.6 var(--sans); color: #7b896e; }
 .period-city-modern { display: flex; align-items: center; gap: 4px; margin: 5px 0 7px; font-size: 10px; color: #7d8b72; }
 .period-city-summary { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; font-size: 11px; line-height: 1.85; color: #7b8872; }
 .period-city-status { color: #869276; font-size: 12px; line-height: 1.8; }

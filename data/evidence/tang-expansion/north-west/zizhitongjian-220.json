@@ -1,0 +1,11 @@
+{
+  "id": "tang-nw-zizhitongjian-220",
+  "title": "《资治通鉴》卷220",
+  "url": "https://zh.wikisource.org/w/index.php?title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91/%E5%8D%B7220&oldid=2564831",
+  "retrievedAt": "2026-09-24T09:53:57.844814+00:00",
+  "note": "复用本项目实际取得的固定修订古籍全文，另存本批证据目录；摘录支持事件叙事，不核定地图坐标。",
+  "snapshotPath": "data/evidence/tang-expansion/north-west/zizhitongjian-220.txt",
+  "snapshotSha256": "339e41f45fbc062c2d6af21ab35ab9177b46d40b65615f871139ed57a0b3fa59",
+  "revisionId": "2564831",
+  "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&page=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91%2F%E5%8D%B7220&prop=text%7Crevid&format=json"
+}
