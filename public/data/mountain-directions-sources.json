@@ -1,0 +1,393 @@
+{
+  "version": "1.0.0",
+  "geometryUrl": "/data/mountain-directions.geojson",
+  "method": "local-aeqd-area-pca-cross-section-midpoints-smoothed-clipped-v1",
+  "geometryNote": "走向示意，非测绘山脊线；由Natural Earth 1:1000万山系命名概括范围的内部截面推导，未经DEM山脊提取或野外测量。",
+  "coordinateSystem": "WGS84 longitude/latitude, EPSG:4326",
+  "source": {
+    "dataset": "ne_10m_geography_regions_polys",
+    "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_geography_regions_polys.geojson",
+    "repositoryCommit": "ca96624a56bd078437bca8184e78163e5039ad19",
+    "downloadedAt": "2026-09-24T10:31:53.773264+00:00",
+    "sha256": "b7b26e50ea917d3696aec87f932def2bf5f890f5770e441d59c162c6f4c92a77",
+    "bytes": 5583870,
+    "datasetVersion": "5.0.0",
+    "versionUrl": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/10m_physical/ne_10m_geography_regions_polys.VERSION.txt",
+    "snapshotPath": "data/evidence/physical-geography/ne_10m_geography_regions_polys.geojson"
+  },
+  "sourceScale": "1:10,000,000 (not 10 metres)",
+  "license": "Natural Earth public domain",
+  "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
+  "input": {
+    "path": "public/data/physical-regions.geojson",
+    "sha256": "e68e681c7ba186562e199f73aa3e255f283ed832c516eb4114483e6fc959b83b"
+  },
+  "output": {
+    "path": "public/data/mountain-directions.geojson",
+    "sha256": "5478e98b13f8f5cd367cda394c2a043c737a2cc091ffc5c55727f90bde81f077",
+    "bytes": 322646
+  },
+  "validation": {
+    "path": "data/evidence/physical-geography/mountain-directions-validation.json",
+    "sha256": "d8e3beb4150075b827b7f9cac67c3b72587e82a4dcf7bb05541187ac4690e7c6"
+  },
+  "counts": {
+    "candidateMountains": 52,
+    "withDirection": 51,
+    "labelOnly": 1,
+    "skippedComponents": 2
+  },
+  "parameters": {
+    "samplingGridCellsPerAxis": 64,
+    "minimumInteriorSamples": 24,
+    "minimumComponentAreaKm2": 25,
+    "minimumComponentRelativeArea": 0.001,
+    "minimumPrincipalAxisRatio": 1.35,
+    "minimumAxisLengthKm": 20,
+    "endTrimFraction": 0.025,
+    "targetCrossSectionSpacingKm": 20,
+    "minimumCrossSections": 16,
+    "maximumCrossSections": 64,
+    "maximumPerpendicularJumpToStepRatio": 3,
+    "minimumDiscontinuityAxisFraction": 0.03,
+    "chaikinIterations": 2,
+    "minimumOutputPartLengthKm": 10,
+    "minimumCoveredAxisFraction": 0.4,
+    "maximumPathToAxisRatio": 2.2
+  },
+  "availability": [
+    {
+      "groupId": "ne_10m_geography_regions_polys-223",
+      "name": "肯特山",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-224",
+      "name": "布雷因斯山脉",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-225",
+      "name": "扬阿林山脉",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-228",
+      "name": "朱格朱尔山脉",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-231",
+      "name": "卡拉套山",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-232",
+      "name": "阿瓦利拉山脉",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-233",
+      "name": "苏莱曼山脉",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-418",
+      "name": "杭爱山",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-419",
+      "name": "咸镜山脉",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-424",
+      "name": "钦山脉",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-425",
+      "name": "阴山",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-426",
+      "name": "西萨彦岭",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-427",
+      "name": "阿巴坎斯基拉山脉",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-428",
+      "name": "唐努乌拉山脉",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-429",
+      "name": "太行山",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-430",
+      "name": "吕梁山",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-431",
+      "name": "秦岭",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-432",
+      "name": "大娄山",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-433",
+      "name": "扁担山脉",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-434",
+      "name": "纳加丘陵",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-435",
+      "name": "若开山脉",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-436",
+      "name": "南高止山脉",
+      "status": "label-only",
+      "reason": "命名范围形状接近团块，没有足够明确的单一主方向。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-437",
+      "name": "萨特布拉山脉",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-438",
+      "name": "盐岭",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-439",
+      "name": "博罗科努山",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-440",
+      "name": "阿拉塔山脉",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-441",
+      "name": "卡西丘陵",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-546",
+      "name": "小兴安岭",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-547",
+      "name": "锡霍特山脉",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-549",
+      "name": "中央高地",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-550",
+      "name": "祁连山",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-551",
+      "name": "东萨彦岭",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-552",
+      "name": "雅布洛诺夫山脉",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-553",
+      "name": "大别山",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-554",
+      "name": "南岭",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-555",
+      "name": "西高止山脉",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-556",
+      "name": "东高止山脉",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-557",
+      "name": "温迪亚山脉",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-558",
+      "name": "武夷山脉",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-559",
+      "name": "塔尔巴哈台山",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-560",
+      "name": "阿尔金山脉",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-665",
+      "name": "阿尔泰山脉",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-666",
+      "name": "大兴安岭",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-667",
+      "name": "外兴安岭",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-668",
+      "name": "安南山脉",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-669",
+      "name": "西瓦利克山脉",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-670",
+      "name": "帕米尔高原",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-671",
+      "name": "兴都库什山脉",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-672",
+      "name": "喀喇昆仑山脉",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-673",
+      "name": "昆仑山脉",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-713",
+      "name": "天山山脉",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-716",
+      "name": "喜马拉雅山脉",
+      "status": "available",
+      "reason": "仅选中后显示由命名范围推导的主走向示意；不代表测绘山脊。"
+    }
+  ],
+  "derivation": [
+    "Only kind=mountain is processed. Each Polygon component is handled independently in a local azimuthal-equidistant metre projection.",
+    "Use a regular area sample grid to estimate a geometric principal direction; reject near-isotropic, tiny or too-short components.",
+    "Take midpoint of the longest interior interval on perpendicular sections; this is one principal display direction, not all mountain branches.",
+    "Split sudden cross-section midpoint jumps into separate paths instead of inventing steep connections between polygon lobes.",
+    "Apply two open Chaikin corner-cutting iterations; clip the smoothed line back to its own source component, removing short fragments.",
+    "Transform back to WGS84 and clip to the exact original polygon again; never connect separate polygon components across empty space.",
+    "Place the label at the WGS84 coordinate-length midpoint of the longest retained path."
+  ],
+  "limitations": [
+    "These lines describe the geometry of cartographic naming regions, not physical ridge crests, relief, mountain edges, routes or surveyed geography.",
+    "No DEM-based ridge extraction, historic mountain reconstruction or external survey was performed.",
+    "Plateaus and seas receive no direction line. Unsuitable mountain shapes remain label-only with recorded reasons.",
+    "Fine-looking curves do not add accuracy beyond the 1:10,000,000 source. Branching ranges are reduced to one principal path per component."
+  ],
+  "runtime": {
+    "shapely": "2.1.2",
+    "pyproj": "3.8.0",
+    "numpy": "2.5.3"
+  },
+  "reproduction": "python scripts/build-mountain-directions.py (no network required)"
+}

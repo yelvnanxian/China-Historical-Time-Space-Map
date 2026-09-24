@@ -1,10 +1,10 @@
 {
-  "createdAt": "2026-09-24T12:22:01.255877+00:00",
-  "sources": 22,
+  "createdAt": "2026-09-24T13:40:56.690737+00:00",
+  "sources": 35,
   "geographyEntries": 8,
-  "cityTimelines": 10,
-  "cityEntries": 35,
-  "quotesMatched": 52,
+  "cityTimelines": 22,
+  "cityEntries": 71,
+  "quotesMatched": 92,
   "cities": [
     {
       "placeId": "changan",
@@ -55,8 +55,68 @@
       "placeId": "yangzhou",
       "name": "扬州",
       "entries": 3
+    },
+    {
+      "placeId": "xianyang",
+      "name": "咸阳",
+      "entries": 3
+    },
+    {
+      "placeId": "jinyang",
+      "name": "晋阳",
+      "entries": 3
+    },
+    {
+      "placeId": "datong",
+      "name": "平城",
+      "entries": 3
+    },
+    {
+      "placeId": "linzi",
+      "name": "临淄",
+      "entries": 3
+    },
+    {
+      "placeId": "handan",
+      "name": "邯郸",
+      "entries": 3
+    },
+    {
+      "placeId": "xiangyang",
+      "name": "襄阳",
+      "entries": 3
+    },
+    {
+      "placeId": "tongguan",
+      "name": "潼关",
+      "entries": 3
+    },
+    {
+      "placeId": "yinchuan",
+      "name": "兴庆府",
+      "entries": 3
+    },
+    {
+      "placeId": "shangdu",
+      "name": "上都",
+      "entries": 3
+    },
+    {
+      "placeId": "quanzhou",
+      "name": "泉州",
+      "entries": 3
+    },
+    {
+      "placeId": "dali",
+      "name": "大理",
+      "entries": 3
+    },
+    {
+      "placeId": "dunhuang",
+      "name": "敦煌",
+      "entries": 3
     }
   ],
   "referenceCoordinates": "All copied exactly from existing catalog places; location roles and caveats explicit.",
-  "outputSha256": "8df498b824fa65d00a4db74c5f3ee584180ba24fb7db5e4ed611570c5c215ebc"
+  "outputSha256": "3f533f7f2aa11b30aa0752404682213d256b1196a897099accfb068ad3986e3f"
 }

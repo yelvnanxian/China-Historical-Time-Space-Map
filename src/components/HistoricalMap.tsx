@@ -16,6 +16,7 @@ import TerrainLayer, { isTerrainError } from "./TerrainLayer";
 import PhysicalGeographyLayer from "./PhysicalGeographyLayer";
 import "../map-workspace.css";
 import type { HistoricalGeographyEntry } from "../../shared/historical-context";
+import { isOptionalPhysicalLayerError } from "../../shared/map-interactions";
 
 type Props = {
   period: Period;
@@ -60,9 +61,22 @@ export default function HistoricalMap(props: Props) {
   const [ready, setReady] = useState(false);
   const [error, setError] = useState("");
   const [layerPanel, setLayerPanel] = useState(false);
+  const toolScroll = useRef<HTMLDivElement>(null);
   const [boundaryStatus, setBoundaryStatus] = useState("历史边界加载中…");
   const [toolsContainer, setToolsContainer] = useState<HTMLDivElement | null>(null);
   const [boundariesEnabled, setBoundariesEnabled] = useState(true);
+  const [naturalReset, setNaturalReset] = useState(0);
+  const [boundaryReset, setBoundaryReset] = useState(0);
+  const [activeTarget, setActiveTarget] = useState<"places" | "nature" | "boundary">("places");
+  useEffect(() => { setActiveTarget("places"); }, [props.focusRequest, props.period.id]);
+  useEffect(() => {
+    if (props.detailsOpen) {
+      setActiveTarget("places");
+      setNaturalReset(value => value + 1);
+      setBoundaryReset(value => value + 1);
+      setLayerPanel(false);
+    }
+  }, [props.detailsOpen]);
   const motionDuration = () =>
     window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 800;
   useEffect(() => {
@@ -114,6 +128,10 @@ export default function HistoricalMap(props: Props) {
   };
 
   function resetView() {
+    if (props.displayMode === "nature") {
+      fitCoordinates([[73, 18], [135, 54]], motionDuration(), 4.2);
+      return;
+    }
     fitCoordinates(props.places.map((place) => place.coordinates));
   }
 
@@ -251,7 +269,7 @@ export default function HistoricalMap(props: Props) {
     });
     instance.on("load", () => setReady(true));
     instance.on("error", (event) => {
-      if (isTerrainError(event) || (event as { sourceId?: string }).sourceId === "physical-interactive") return;
+      if (isTerrainError(event) || isOptionalPhysicalLayerError(event)) return;
       const message = event.error?.message || "";
       if (/worker/i.test(message))
         setError("地图渲染资源暂时无法加载，请刷新页面重试。");
@@ -292,8 +310,8 @@ export default function HistoricalMap(props: Props) {
         const button = document.createElement("button");
         const isCapital =
           (place.typeByPeriod?.[props.period.id] ?? place.type) === "capital";
-        const isSelected = props.selectedPlace?.id === place.id;
-        const isRelated = !!props.selectedEvent?.placeIds.includes(place.id);
+        const isSelected = activeTarget === "places" && props.selectedPlace?.id === place.id;
+        const isRelated = activeTarget === "places" && !!props.selectedEvent?.placeIds.includes(place.id);
         button.className = `place-marker ${isCapital ? "capital" : ""} ${isSelected ? "selected" : ""} ${isRelated ? "event-related" : ""}`;
         button.style.zIndex = isSelected ? "2" : isCapital ? "1" : "0";
         const title = place.nameByPeriod?.[props.period.id] || place.name;
@@ -403,11 +421,12 @@ export default function HistoricalMap(props: Props) {
     props.period.id,
     props.modernNames,
     props.displayMode,
+    activeTarget,
   ]);
 
   useEffect(() => {
     if (!ready || !map.current) return;
-    const route = props.displayMode !== "nature" && props.routeVisible ? props.selectedEvent?.route : undefined;
+    const route = activeTarget === "places" && props.displayMode !== "nature" && props.routeVisible ? props.selectedEvent?.route : undefined;
     (map.current.getSource("route") as GeoJSONSource).setData(
       route?.length
         ? {
@@ -422,7 +441,7 @@ export default function HistoricalMap(props: Props) {
           }
         : emptyCollection,
     );
-  }, [ready, props.selectedEvent, props.routeVisible, props.displayMode]);
+  }, [ready, props.selectedEvent, props.routeVisible, props.displayMode, activeTarget]);
 
   useEffect(() => {
     const changed = displayedPeriod.current !== props.period.id;
@@ -491,6 +510,7 @@ export default function HistoricalMap(props: Props) {
       <div
         ref={container}
         className="map-canvas"
+        data-tour="map-canvas"
         style={{ isolation: "isolate" }}
         aria-label="可缩放和平移的中国历史地图"
       />
@@ -522,6 +542,7 @@ export default function HistoricalMap(props: Props) {
         </button>
         <button
           aria-label="地图工具"
+          data-tour="map-tools"
           title="地图工具"
           aria-expanded={layerPanel}
           className={layerPanel ? "active" : ""}
@@ -530,23 +551,29 @@ export default function HistoricalMap(props: Props) {
           <Layers2 size={18} />
         </button>
       </div>
-      <div className="map-tool-panel" hidden={!layerPanel} aria-label="地图工具" role="region">
+      <div className="map-tool-panel" hidden={!layerPanel} aria-label="地图工具" role="region" data-active-target={activeTarget}>
         <header><strong>地图工具</strong><button aria-label="收起地图工具" onClick={() => setLayerPanel(false)}><X size={17} /></button></header>
-        <div className="map-tool-scroll">
+        <div className="map-tool-scroll" ref={toolScroll}>
           <p className="map-tool-period">{props.period.label} · {shownYear < 0 ? `前${Math.abs(shownYear)}` : shownYear}年 <small>{boundaryStatus}</small></p>
-          <div ref={setToolsContainer} />
+          <div className="map-tool-natural" ref={setToolsContainer} />
           <TerrainLayer map={map.current} ready={ready} compact enabled={props.displayMode !== "cities"} onExplore={() => { fittedPoints.current = null; setLayerPanel(false); }} />
-          <div hidden={props.displayMode === "nature"}>
+          <div className="map-tool-boundaries" hidden={props.displayMode === "nature"}>
           <label className="boundary-master-toggle"><input type="checkbox" checked={boundariesEnabled} onChange={event => setBoundariesEnabled(event.target.checked)} />显示行政边界与地名</label>
           <HistoricalBoundaryLayer map={map.current} ready={ready} periodId={props.period.id} currentYear={shownYear} onStatusChange={setBoundaryStatus}
             onRegionFocus={points => { fitCoordinates(points, motionDuration(), 8); }} modernNames={props.modernNames}
-            enabled={boundariesEnabled && props.displayMode !== "nature"} embedded onSelection={() => setLayerPanel(true)} />
+            enabled={boundariesEnabled && props.displayMode !== "nature"} embedded
+            resetKey={`${props.focusRequest}:${boundaryReset}:${props.displayMode}`}
+            onSelection={() => {
+              setActiveTarget("boundary"); setNaturalReset(value => value + 1); setLayerPanel(true); props.onNaturalSelect();
+              requestAnimationFrame(() => toolScroll.current?.scrollTo({ top: 0 }));
+            }} />
           </div>
-          <p className="map-tool-note">城池以点标识；山系显示概括范围，河流显示线位，湖泊显示水面。自然地理采用现代资料。</p>
+          <p className="map-tool-note">{props.displayMode === "both" ? "点地图区域查看行政区；点山川名称查看走向。" : props.displayMode === "nature" ? "点山系名称查看走向示意；河线、湖面也可点选。" : "点城池查看档案，点区域查看行政区。"} 山影、河湖为现代自然背景。</p>
         </div>
       </div>
       <PhysicalGeographyLayer map={map.current} ready={ready} visible={props.displayMode !== "cities"} mode={props.displayMode}
-        controlsContainer={toolsContainer} onFocus={points => fitCoordinates(points, motionDuration(), 7)} onChoose={() => { setLayerPanel(false); props.onNaturalSelect(); }} />
+        resetKey={`${props.period.id}:${props.focusRequest}:${naturalReset}`}
+        controlsContainer={toolsContainer} onFocus={points => fitCoordinates(points, motionDuration(), 7)} onChoose={() => { setActiveTarget("nature"); setBoundaryReset(value => value + 1); setLayerPanel(false); props.onNaturalSelect(); }} />
       {props.geographySelection && props.displayMode !== "cities" && <div className="geography-reference-note"><button onClick={props.onGeographyOpen}>{props.geographySelection.dateLabel} · {props.geographySelection.title}<small>历史地理参考点 · 独立于当前朝代与边界年份</small></button><button aria-label="清除历史地理参考点" onClick={props.onGeographyClear}><X size={15} /></button></div>}
       <div className="map-credit">
         自然地理背景为现代简化数据 · Natural Earth

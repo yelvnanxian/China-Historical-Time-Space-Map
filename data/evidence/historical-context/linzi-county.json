@@ -1,0 +1,16 @@
+{
+  "id": "context-linzi-county",
+  "title": "临淄县 — 维基百科",
+  "url": "https://zh.wikipedia.org/wiki/%E4%B8%B4%E6%B7%84%E5%8E%BF",
+  "retrievedAt": "2026-09-24T13:32:29.595663+00:00",
+  "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证，亦不是古城坐标或边界核定。引文保留本次页面原字形。",
+  "snapshotPath": "data/evidence/historical-context/linzi-county.txt",
+  "snapshotSha256": "3254af6ddb707990af124e5bf51ff6fff2b1eac02a923fe30a0b4d3512e9f591",
+  "pageId": 1228322,
+  "revision": {
+    "revid": 92037580,
+    "parentid": 85732978,
+    "timestamp": "2026-03-25T11:29:31Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E4%B8%B4%E6%B7%84%E5%8E%BF&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

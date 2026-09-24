@@ -5,7 +5,6 @@ import type { BoundaryDataset, BoundaryLevel, BoundaryManifest, BoundarySelectio
 import BoundaryControls from "./BoundaryControls";
 import type { ModernCorrespondenceData } from "../../shared/modern-correspondence";
 import { getBoundaryDisplayLabel } from "../../shared/boundary-labels";
-import { physicalHitLayers } from "../../shared/map-interactions";
 
 type RegionProperties = BoundarySelection & { color?: string; labelCoordinates?: [number, number]; sourceHierarchy?: { polity?: string } };
 type Regions = FeatureCollection<Polygon | MultiPolygon, RegionProperties>;
@@ -13,7 +12,7 @@ const empty: Regions = { type: "FeatureCollection", features: [] };
 const levels: BoundaryLevel[] = ["country", "province", "prefecture", "county"];
 const colors = { country: "#8a5742", province: "#83658d", prefecture: "#527767", county: "#a58957" };
 
-export default function HistoricalBoundaryLayer({ map, ready, periodId, currentYear, onStatusChange, onRegionFocus, modernNames, enabled = true, embedded = false, onSelection }: {
+export default function HistoricalBoundaryLayer({ map, ready, periodId, currentYear, onStatusChange, onRegionFocus, modernNames, enabled = true, embedded = false, onSelection, resetKey }: {
   map: MapInstance | null;
   ready: boolean;
   periodId: string;
@@ -24,12 +23,14 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
   enabled?: boolean;
   embedded?: boolean;
   onSelection?: () => void;
+  resetKey?: string;
 }) {
   const [manifest, setManifest] = useState<BoundaryManifest | null>(null);
   const [datasetId, setDatasetId] = useState("");
   const [regions, setRegions] = useState<Regions>(empty);
   const [visibleLevels, setVisibleLevels] = useState<BoundaryLevel[]>(levels);
   const [selection, setSelection] = useState<BoundarySelection | null>(null);
+  useEffect(() => { setSelection(null); }, [resetKey]);
   const [loading, setLoading] = useState(false);
   const [dataError, setDataError] = useState("");
   const [manifestError, setManifestError] = useState("");
@@ -143,8 +144,9 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
   useEffect(() => {
     if (!map || !ready || !enabled) return;
     const click = (event: MapMouseEvent) => {
-      const naturalLayers = physicalHitLayers.filter(id => !!map.getLayer(id));
-      if (naturalLayers.length && map.queryRenderedFeatures(event.point, { layers: naturalLayers }).length) { setSelection(null); return; }
+      // DOM labels handle their own selection; the canvas always selects the
+      // most detailed visible administrative area, even over a river or lake.
+      if ((event.originalEvent.target as HTMLElement)?.closest?.(".nature-label,.place-marker,.geography-reference-marker")) return;
       // Prefer the most detailed visible level at this zoom.
       const layers = [...levels].reverse().filter(level => visibleLevels.includes(level) && (level !== "county" || map.getZoom() >= 4.5)).map(level => `boundary-${level}-fill`);
       if (!layers.length) return;
@@ -204,6 +206,7 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
     if (!feature || !map || !enabled) return;
     if (!visibleLevels.includes(feature.properties.level)) setVisibleLevels(current => [...current, feature.properties.level]);
     setSelection({ ...feature.properties, polity: feature.properties.sourceHierarchy?.polity });
+    onSelection?.();
     const coordinates = feature.geometry.type === "Polygon" ? feature.geometry.coordinates.flat() : feature.geometry.coordinates.flat(2);
     onRegionFocus(coordinates.map(point => [point[0], point[1]]));
   }

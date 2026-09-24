@@ -4,6 +4,15 @@
 .map-tool-panel > header strong { font-size: 13px; font-weight: 500; letter-spacing: 2px; }
 .map-tool-panel > header button { display: flex; padding: 3px; }
 .map-tool-scroll { overflow-y: auto; min-height: 0; padding: 0 15px 15px; overscroll-behavior: contain; scrollbar-width: thin; }
+.map-tool-scroll { display: flex; flex-direction: column; }
+.map-tool-scroll > * { flex-shrink: 0; }
+.map-tool-natural { order: 1; }
+.map-tool-scroll > .terrain-controls { order: 2; }
+.map-tool-boundaries { order: 3; }
+.map-tool-note { order: 4; }
+.map-tool-panel[data-active-target="boundary"] .map-tool-boundaries { order: 1; }
+.map-tool-panel[data-active-target="boundary"] .map-tool-natural { order: 3; }
+.nature-label:focus-visible { outline: 2px solid #685630; outline-offset: 3px; }
 .map-tool-period { font: 17px/1.7 var(--serif); margin: 14px 0; }
 .map-tool-period small { display: block; font: 10px/1.8 sans-serif; color: #8c987e; }
 .map-tool-note { font-size: 10px; line-height: 1.9; color: #859379; }
@@ -50,4 +59,9 @@
   .nature-detail-title strong { font-size: 17px; }
   .nature-label { font-size: 11px; }
   .map-first .map-toolbar { z-index: 46; }
+  .map-tool-panel > header button, .nature-detail > header > button { min-width: 40px; min-height: 40px; align-items: center; justify-content: center; }
+  .nature-detail-title { min-height: 40px; }
+  .nature-detail-actions button, .nature-detail-actions a { min-height: 40px; }
+  .nature-search-results button { min-height: 40px; }
+  .nature-search input, .nature-explorer select { min-height: 32px; font-size: 13px; }
 }

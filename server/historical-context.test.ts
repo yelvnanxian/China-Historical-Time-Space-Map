@@ -66,7 +66,8 @@ test("历史地理事件关联现有地区并明确坐标角色，不伪造古�
 });
 
 test("城市大事记跨期排序，每城至少三条且原文、事件关联完整", () => {
-  assert.ok(data.cityTimelines.length >= 8);
+  assert.ok(data.cityTimelines.length >= 22, "V0.7至少覆盖22座城市的沿革");
+  assert.ok(data.cityTimelines.reduce((count, city) => count + city.entries.length, 0) >= 71);
   const cityIds = new Set<string>();
   const entryIds = new Set<string>();
   for (const timeline of data.cityTimelines) {

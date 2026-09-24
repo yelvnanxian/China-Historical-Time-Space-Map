@@ -1,0 +1,167 @@
+{
+  "independentPlacesBefore": 40,
+  "independentPlacesAfter": 40,
+  "newIndependentPlaces": 0,
+  "newPeriodRelationships": 0,
+  "timelineCitiesBefore": 10,
+  "timelineCitiesAfter": 22,
+  "timelineEntriesBefore": 35,
+  "timelineEntriesAfter": 71,
+  "profiles": 33,
+  "periods": [
+    {
+      "periodId": "qin",
+      "placesBefore": 8,
+      "placesAfter": 8,
+      "timelineCitiesBefore": 4,
+      "timelineCitiesAfter": 8,
+      "profilesBefore": 0,
+      "profilesAfter": 3,
+      "profilePlaceIds": [
+        "xianyang",
+        "linzi",
+        "kaifeng"
+      ]
+    },
+    {
+      "periodId": "han",
+      "placesBefore": 16,
+      "placesAfter": 16,
+      "timelineCitiesBefore": 10,
+      "timelineCitiesAfter": 16,
+      "profilesBefore": 0,
+      "profilesAfter": 3,
+      "profilePlaceIds": [
+        "changan",
+        "chengdu",
+        "dunhuang"
+      ]
+    },
+    {
+      "periodId": "sanguo",
+      "placesBefore": 17,
+      "placesAfter": 17,
+      "timelineCitiesBefore": 10,
+      "timelineCitiesAfter": 17,
+      "profilesBefore": 0,
+      "profilesAfter": 3,
+      "profilePlaceIds": [
+        "nanjing",
+        "chengdu",
+        "xiangyang"
+      ]
+    },
+    {
+      "periodId": "jin",
+      "placesBefore": 17,
+      "placesAfter": 17,
+      "timelineCitiesBefore": 10,
+      "timelineCitiesAfter": 17,
+      "profilesBefore": 0,
+      "profilesAfter": 3,
+      "profilePlaceIds": [
+        "nanjing",
+        "chengdu",
+        "jingzhou"
+      ]
+    },
+    {
+      "periodId": "nanbei",
+      "placesBefore": 17,
+      "placesAfter": 17,
+      "timelineCitiesBefore": 10,
+      "timelineCitiesAfter": 17,
+      "profilesBefore": 0,
+      "profilesAfter": 3,
+      "profilePlaceIds": [
+        "datong",
+        "nanjing",
+        "jingzhou"
+      ]
+    },
+    {
+      "periodId": "sui",
+      "placesBefore": 17,
+      "placesAfter": 17,
+      "timelineCitiesBefore": 10,
+      "timelineCitiesAfter": 17,
+      "profilesBefore": 0,
+      "profilesAfter": 3,
+      "profilePlaceIds": [
+        "changan",
+        "luoyang",
+        "hangzhou"
+      ]
+    },
+    {
+      "periodId": "tang",
+      "placesBefore": 37,
+      "placesAfter": 37,
+      "timelineCitiesBefore": 10,
+      "timelineCitiesAfter": 19,
+      "profilesBefore": 0,
+      "profilesAfter": 3,
+      "profilePlaceIds": [
+        "changan",
+        "dunhuang",
+        "dali"
+      ]
+    },
+    {
+      "periodId": "song",
+      "placesBefore": 20,
+      "placesAfter": 20,
+      "timelineCitiesBefore": 10,
+      "timelineCitiesAfter": 20,
+      "profilesBefore": 0,
+      "profilesAfter": 3,
+      "profilePlaceIds": [
+        "kaifeng",
+        "hangzhou",
+        "quanzhou"
+      ]
+    },
+    {
+      "periodId": "yuan",
+      "placesBefore": 21,
+      "placesAfter": 21,
+      "timelineCitiesBefore": 10,
+      "timelineCitiesAfter": 21,
+      "profilesBefore": 0,
+      "profilesAfter": 3,
+      "profilePlaceIds": [
+        "beijing",
+        "shangdu",
+        "hangzhou"
+      ]
+    },
+    {
+      "periodId": "ming",
+      "placesBefore": 19,
+      "placesAfter": 19,
+      "timelineCitiesBefore": 10,
+      "timelineCitiesAfter": 19,
+      "profilesBefore": 0,
+      "profilesAfter": 3,
+      "profilePlaceIds": [
+        "beijing",
+        "nanjing",
+        "datong"
+      ]
+    },
+    {
+      "periodId": "qing",
+      "placesBefore": 20,
+      "placesAfter": 20,
+      "timelineCitiesBefore": 10,
+      "timelineCitiesAfter": 20,
+      "profilesBefore": 0,
+      "profilesAfter": 3,
+      "profilePlaceIds": [
+        "beijing",
+        "guangzhou",
+        "quanzhou"
+      ]
+    }
+  ]
+}

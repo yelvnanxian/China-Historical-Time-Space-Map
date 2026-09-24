@@ -1,0 +1,16 @@
+{
+  "id": "context-dali",
+  "title": "大理市 — 维基百科",
+  "url": "https://zh.wikipedia.org/wiki/%E5%A4%A7%E7%90%86%E5%B8%82",
+  "retrievedAt": "2026-09-24T13:31:45.284506+00:00",
+  "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证，亦不是古城坐标或边界核定。引文保留本次页面原字形。",
+  "snapshotPath": "data/evidence/historical-context/dali.txt",
+  "snapshotSha256": "6046a6ced1b7c89704e7cddc55970453724fb816abc57a15278cef6e9b0bcad4",
+  "pageId": 13473,
+  "revision": {
+    "revid": 93661459,
+    "parentid": 92428010,
+    "timestamp": "2026-07-27T01:09:17Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2&pageids=13473"
+}

@@ -1,6 +1,6 @@
 {
-  "version": "1.0",
-  "generatedAt": "2026-09-24T12:22:01.255877+00:00",
+  "version": "1.1",
+  "generatedAt": "2026-09-24T13:40:56.690737+00:00",
   "notes": [
     "历史地理条目只提供地区参考点；没有可靠古河道几何时不绘制复原线路。",
     "城市大事记跨时期展示，不随当前朝代筛除；同名城市的古今城址可能不同。",
@@ -205,6 +205,123 @@
       "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证。引文保留本次页面原字形。 本次读取页面修订号：93601486。",
       "snapshotPath": "data/evidence/historical-context/yangzhou-massacre.txt",
       "snapshotSha256": "2810189168db30c580f9b0d769ded1ff315a43da33da3d8325954bd26ed509ed"
+    },
+    {
+      "id": "context-xianyang",
+      "title": "咸阳市 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E5%92%B8%E9%98%B3%E5%B8%82&oldid=94532650",
+      "retrievedAt": "2026-09-24T13:30:15.782372+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证，亦不是古城坐标或边界核定。引文保留本次页面原字形。 本次读取页面修订号：94532650。",
+      "snapshotPath": "data/evidence/historical-context/xianyang.txt",
+      "snapshotSha256": "a3589eb542fdc783e5d58809840593b5d2c413f4deae83dfb074d87bf8149429"
+    },
+    {
+      "id": "context-jinyang",
+      "title": "太原市 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E5%A4%AA%E5%8E%9F%E5%B8%82&oldid=94238970",
+      "retrievedAt": "2026-09-24T13:30:16.082228+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证，亦不是古城坐标或边界核定。引文保留本次页面原字形。 本次读取页面修订号：94238970。",
+      "snapshotPath": "data/evidence/historical-context/jinyang.txt",
+      "snapshotSha256": "e98fed55e871e483d95b10807253d1854fdd401dc751caee8cc46e185b8547cd"
+    },
+    {
+      "id": "context-datong",
+      "title": "大同市 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E5%A4%A7%E5%90%8C%E5%B8%82&oldid=94238974",
+      "retrievedAt": "2026-09-24T13:30:16.611137+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证，亦不是古城坐标或边界核定。引文保留本次页面原字形。 本次读取页面修订号：94238974。",
+      "snapshotPath": "data/evidence/historical-context/datong.txt",
+      "snapshotSha256": "e2216a83cf66934d36429f0800a85201164ac7503f5c83821047ffcede7e5a57"
+    },
+    {
+      "id": "context-linzi",
+      "title": "临淄区 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E4%B8%B4%E6%B7%84%E5%8C%BA&oldid=86917934",
+      "retrievedAt": "2026-09-24T13:30:15.355031+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证，亦不是古城坐标或边界核定。引文保留本次页面原字形。 本次读取页面修订号：86917934。",
+      "snapshotPath": "data/evidence/historical-context/linzi.txt",
+      "snapshotSha256": "35fe4be924638f943d5afc495a8454eaf89854df5cba886356ef370aae040ad4"
+    },
+    {
+      "id": "context-qi-state",
+      "title": "齐国 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E9%BD%90%E5%9B%BD&oldid=93213392",
+      "retrievedAt": "2026-09-24T13:33:03.437215+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证，亦不是古城坐标或边界核定。引文保留本次页面原字形。 本次读取页面修订号：93213392。",
+      "snapshotPath": "data/evidence/historical-context/qi-state.txt",
+      "snapshotSha256": "52233b5f1e3fbd9b913882c5d9d443a75a4d5963470c1aa7d6a6be2b8e925601"
+    },
+    {
+      "id": "context-handan",
+      "title": "邯郸市 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E9%82%AF%E9%83%B8%E5%B8%82&oldid=94238894",
+      "retrievedAt": "2026-09-24T13:30:16.452808+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证，亦不是古城坐标或边界核定。引文保留本次页面原字形。 本次读取页面修订号：94238894。",
+      "snapshotPath": "data/evidence/historical-context/handan.txt",
+      "snapshotSha256": "1c4254eaac3b13fd3d96ce374811e037eee9e749afdf376706c628b3c5f573d4"
+    },
+    {
+      "id": "context-xiangyang",
+      "title": "襄阳市 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E8%A5%84%E9%98%B3%E5%B8%82&oldid=94422629",
+      "retrievedAt": "2026-09-24T13:30:16.707527+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证，亦不是古城坐标或边界核定。引文保留本次页面原字形。 本次读取页面修订号：94422629。",
+      "snapshotPath": "data/evidence/historical-context/xiangyang.txt",
+      "snapshotSha256": "e3ff017ff2ab5663451cae258b55c368100f6d5b0bfe703d68da0f4d40702dac"
+    },
+    {
+      "id": "context-tongguan",
+      "title": "潼关 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E6%BD%BC%E5%85%B3&oldid=90816346",
+      "retrievedAt": "2026-09-24T13:30:16.690349+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证，亦不是古城坐标或边界核定。引文保留本次页面原字形。 本次读取页面修订号：90816346。",
+      "snapshotPath": "data/evidence/historical-context/tongguan.txt",
+      "snapshotSha256": "5842ec331fbd998f4eb4edafa762c8c6a104b4daa5b5a40317aa7394654e515d"
+    },
+    {
+      "id": "context-yinchuan",
+      "title": "银川市 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E9%93%B6%E5%B7%9D%E5%B8%82&oldid=94229144",
+      "retrievedAt": "2026-09-24T13:30:17.357929+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证，亦不是古城坐标或边界核定。引文保留本次页面原字形。 本次读取页面修订号：94229144。",
+      "snapshotPath": "data/evidence/historical-context/yinchuan.txt",
+      "snapshotSha256": "cd10ab70c6cf6b135550406c8589ada997b44417ce2a86e146b2fdfca7968c15"
+    },
+    {
+      "id": "context-shangdu",
+      "title": "元上都 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E5%85%83%E4%B8%8A%E9%83%BD&oldid=94393370",
+      "retrievedAt": "2026-09-24T13:30:17.812659+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证，亦不是古城坐标或边界核定。引文保留本次页面原字形。 本次读取页面修订号：94393370。",
+      "snapshotPath": "data/evidence/historical-context/shangdu.txt",
+      "snapshotSha256": "0c0adb109cc6e014dfa5e81b27a2e6317f5cbdce159b696763773bb97ba8c3cf"
+    },
+    {
+      "id": "context-quanzhou",
+      "title": "泉州市 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E6%B3%89%E5%B7%9E%E5%B8%82&oldid=94466328",
+      "retrievedAt": "2026-09-24T13:30:18.504942+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证，亦不是古城坐标或边界核定。引文保留本次页面原字形。 本次读取页面修订号：94466328。",
+      "snapshotPath": "data/evidence/historical-context/quanzhou.txt",
+      "snapshotSha256": "599117a94be426a35a916652fa4f48a7d7ed500245a2dee8dc28c96d1792cca6"
+    },
+    {
+      "id": "context-dali",
+      "title": "大理市 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E5%A4%A7%E7%90%86%E5%B8%82&oldid=93661459",
+      "retrievedAt": "2026-09-24T13:31:45.284506+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证，亦不是古城坐标或边界核定。引文保留本次页面原字形。 本次读取页面修订号：93661459。",
+      "snapshotPath": "data/evidence/historical-context/dali.txt",
+      "snapshotSha256": "6046a6ced1b7c89704e7cddc55970453724fb816abc57a15278cef6e9b0bcad4"
+    },
+    {
+      "id": "context-dunhuang",
+      "title": "敦煌市 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E6%95%A6%E7%85%8C%E5%B8%82&oldid=93563614",
+      "retrievedAt": "2026-09-24T13:31:45.853606+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证，亦不是古城坐标或边界核定。引文保留本次页面原字形。 本次读取页面修订号：93563614。",
+      "snapshotPath": "data/evidence/historical-context/dunhuang.txt",
+      "snapshotSha256": "2c7853d90c3c0856e86c7de5d3bfecadf9990807561620392c5d5517787f96ee"
     }
   ],
   "geographyEntries": [
@@ -1144,6 +1261,700 @@
               "sourceId": "context-yangzhou-massacre",
               "quote": "扬州十日是公元1645年5月20日，即明弘光元年、清順治二年四月二十五日，清军攻破扬州城后对城中平民进行大屠杀的事件。",
               "supports": "扬州陷落与屠城及概述中的直接事实。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "placeId": "xianyang",
+      "entries": [
+        {
+          "id": "xianyang-context-0-350",
+          "year": -350,
+          "dateLabel": "公元前350年",
+          "title": "秦迁都咸阳",
+          "summary": "秦孝公从栎阳迁都咸阳，营建宫殿。秦都城址与今天咸阳市区不能直接重合。",
+          "sourceIds": [
+            "context-xianyang"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-xianyang",
+              "quote": "前350年，秦孝公由栎阳迁都咸阳，在此营筑翼阙及宫殿。",
+              "supports": "秦迁都咸阳及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "xianyang-context-1-705",
+          "year": 705,
+          "dateLabel": "705年",
+          "title": "咸阳县升为次畿",
+          "summary": "唐代咸阳处在京畿范围，神龙元年升为次畿。此为县的等级沿革，不表示秦都仍存原貌。",
+          "sourceIds": [
+            "context-xianyang"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-xianyang",
+              "quote": "唐神龙元年（705年），升为次畿。",
+              "supports": "咸阳县升为次畿及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "xianyang-context-2-1371",
+          "year": 1371,
+          "dateLabel": "1371年",
+          "title": "县城迁至渭水驿",
+          "summary": "明洪武四年县城迁到渭水驿，形成后来咸阳城区发展的重要节点；历代城址需要分别理解。",
+          "sourceIds": [
+            "context-xianyang"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-xianyang",
+              "quote": "明洪武四年（1371年），将县城迁到渭水驿，即现在“秦都区”所在地。",
+              "supports": "县城迁至渭水驿及概述中的直接事实。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "placeId": "jinyang",
+      "entries": [
+        {
+          "id": "jinyang-context-0-497",
+          "year": -497,
+          "dateLabel": "公元前497年",
+          "title": "董安于营建晋阳",
+          "summary": "赵简子家臣董安于营建晋阳城；古晋阳在今太原市西南，不能等同今天太原中心城区。",
+          "sourceIds": [
+            "context-jinyang"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-jinyang",
+              "quote": "公元前497年，赵简子家臣董安于始建城池，为晋阳城",
+              "supports": "董安于营建晋阳及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "jinyang-context-1-979",
+          "year": 979,
+          "dateLabel": "979年",
+          "title": "晋阳城被毁",
+          "summary": "宋灭北汉后，宋太宗焚毁晋阳并引水破坏城址。原城市的连续空间格局由此中断。",
+          "sourceIds": [
+            "context-jinyang"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-jinyang",
+              "quote": "北宋太平兴国四年（979年），宋太宗赵光义火烧北漢都城晋阳城，又引汾、晋之水夷晋阳城为废墟。",
+              "supports": "晋阳城被毁及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "jinyang-context-2-982",
+          "year": 982,
+          "dateLabel": "982年",
+          "title": "另筑太原新城",
+          "summary": "在旧晋阳以北的唐明监一带另建太原城。地图上的晋阳与后世太原是沿革联系，不是同址证明。",
+          "sourceIds": [
+            "context-jinyang"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-jinyang",
+              "quote": "三年后（982年），又于原晋阳城北四十里处的唐明监新建了太原城。",
+              "supports": "另筑太原新城及概述中的直接事实。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "placeId": "datong",
+      "entries": [
+        {
+          "id": "datong-context-0-398",
+          "year": 398,
+          "dateLabel": "398年",
+          "title": "北魏迁都平城",
+          "summary": "北魏在平城营建宫室、宗庙和宫城，平城进入北魏都城时期。",
+          "sourceIds": [
+            "context-datong"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-datong",
+              "quote": "北魏天兴元年（398）七月迁都于平城（今大同市内），又称“代京”。",
+              "supports": "北魏迁都平城及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "datong-context-1-1044",
+          "year": 1044,
+          "dateLabel": "1044年",
+          "title": "辽建西京大同府",
+          "summary": "辽将此地升为大同府并建为西京，城市成为辽的陪都。",
+          "sourceIds": [
+            "context-datong"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-datong",
+              "quote": "重熙十五年（1044年）升为大同府，建为西京，为辽国陪都",
+              "supports": "辽建西京大同府及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "datong-context-2-1372",
+          "year": 1372,
+          "dateLabel": "1372年",
+          "title": "明扩建大同砖城",
+          "summary": "徐达主持在既有土城基础上扩建砖城，体现明代边防重镇的城市建设。",
+          "sourceIds": [
+            "context-datong"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-datong",
+              "quote": "洪武五年（1372）朱元璋派大将徐达督率军民，在辽、金、元土城的基础上，把大同扩建成新的砖城。",
+              "supports": "明扩建大同砖城及概述中的直接事实。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "placeId": "linzi",
+      "entries": [
+        {
+          "id": "linzi-context-0-1046",
+          "year": -1046,
+          "dateLabel": "约公元前1046年（传统纪年）",
+          "title": "周初封齐于营丘",
+          "summary": "传统纪年将周初封齐、都营丘放在约前1046年。这里只标示沿革起点，不能据此断定现存城垣建于该年。",
+          "sourceIds": [
+            "context-linzi"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-linzi",
+              "quote": "公元前约1046年，周朝建立后，周武王把首席功臣太公望分封于此，建立了侯国齐国，定都营丘。",
+              "supports": "周初封齐于营丘及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "linzi-context-1-284",
+          "year": -284,
+          "dateLabel": "公元前284年",
+          "title": "五国联军攻入临淄",
+          "summary": "乐毅率联军伐齐并攻入临淄，齐国遭受重大挫折，城市都城地位也受到冲击。",
+          "sourceIds": [
+            "context-qi-state"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-qi-state",
+              "quote": "前284年，燕昭王以樂毅為上將軍，合燕、秦、韓、趙、魏伐齊攻入臨淄，連下七十餘城，齊城不下者只有莒和即墨。",
+              "supports": "五国联军攻入临淄及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "linzi-context-2-221",
+          "year": -221,
+          "dateLabel": "公元前221年",
+          "title": "秦军取临淄，齐国结束",
+          "summary": "秦军从北面直趋齐都，齐王投降。临淄随后作为秦郡县体系中的城市延续，结束齐国都城阶段。",
+          "sourceIds": [
+            "context-qi-state",
+            "context-linzi"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-qi-state",
+              "quote": "前221年，秦王在滅亡韓、趙、魏、楚、燕之後，以齊拒絕秦使者訪齊為由，命王賁率領秦軍伐齊，秦軍避開了齊軍西部主力，由原來的燕國南部南下直奔齊都臨淄。",
+              "supports": "秦军取临淄，齐国结束及概述中的直接事实。"
+            },
+            {
+              "sourceId": "context-qi-state",
+              "quote": "齊王建出城投降，齊國滅亡。秦國統一天下，在齊地設置齊郡和琅邪郡。",
+              "supports": "秦军取临淄，齐国结束中的补充事实。"
+            },
+            {
+              "sourceId": "context-linzi",
+              "quote": "秦国置临淄县，属齐郡。",
+              "supports": "秦军取临淄，齐国结束中的补充事实。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "placeId": "handan",
+      "entries": [
+        {
+          "id": "handan-context-0-386",
+          "year": -386,
+          "dateLabel": "公元前386年",
+          "title": "赵迁都邯郸",
+          "summary": "赵敬侯迁都邯郸并营建赵王城，邯郸成为赵国政治中心；赵王城与一般城市参考点不是同一定位精度。",
+          "sourceIds": [
+            "context-handan"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-handan",
+              "quote": "前386年赵敬侯正式迁都邯郸，并且大兴土木修建赵王城",
+              "supports": "赵迁都邯郸及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "handan-context-1-228",
+          "year": -228,
+          "dateLabel": "公元前228年",
+          "title": "秦军攻破邯郸",
+          "summary": "王翦攻破邯郸，赵王迁投降；赵国残余力量后来退到代地继续抵抗。",
+          "sourceIds": [
+            "context-handan"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-handan",
+              "quote": "前228年，秦赵爆发决战，秦将王翦攻破邯郸，赵王迁投降。",
+              "supports": "秦军攻破邯郸及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "handan-context-2-209",
+          "year": -209,
+          "dateLabel": "公元前209年",
+          "title": "反秦起事中的邯郸",
+          "summary": "陈胜、吴广起事后，武臣在邯郸自称赵王，旧赵都再次成为政权争夺中心。",
+          "sourceIds": [
+            "context-handan"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-handan",
+              "quote": "公元前209年，陈胜，吴广起兵反秦，武臣来邯郸自称赵王。",
+              "supports": "反秦起事中的邯郸及概述中的直接事实。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "placeId": "xiangyang",
+      "entries": [
+        {
+          "id": "xiangyang-context-0-269",
+          "year": 269,
+          "dateLabel": "269—278年",
+          "title": "羊祜镇襄阳",
+          "summary": "269年至278年羊祜镇守襄阳，经营荆州、屯田备粮，并与吴国开展边境交往。起始年用于排序。",
+          "sourceIds": [
+            "context-xiangyang"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-xiangyang",
+              "quote": "269—278年，西晋征南将军羊祜守襄阳，着力经略荆州，与吴国实行“边境交和”，互通绢谷。",
+              "supports": "羊祜镇襄阳及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "xiangyang-context-1-1134",
+          "year": 1134,
+          "dateLabel": "1134年",
+          "title": "岳飞收复襄阳",
+          "summary": "南宋命岳飞进军，收复襄阳等地；襄阳成为宋金对峙中重要的前沿据点。",
+          "sourceIds": [
+            "context-xiangyang"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-xiangyang",
+              "quote": "绍兴四年（1134年）三月十三日，南宋政权把进军收复襄阳等地的决定送达岳飞军营。克復襄阳后，南宋把襄阳府和郢、随、唐、邓、信阳划为襄阳府路",
+              "supports": "岳飞收复襄阳及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "xiangyang-context-2-1273",
+          "year": 1273,
+          "dateLabel": "1273年",
+          "title": "襄樊之战结束",
+          "summary": "长期围攻在1273年结束，襄阳失守改变宋元战局。条目采用结束年，不把不同口径的整个战役起点视作定论。",
+          "sourceIds": [
+            "context-xiangyang"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-xiangyang",
+              "quote": "宋元襄樊之战从其序幕开始，大约宝祐五年（1257年），到咸淳九年（1273年）结束",
+              "supports": "襄樊之战结束及概述中的直接事实。"
+            },
+            {
+              "sourceId": "context-xiangyang",
+              "quote": "襄阳失守后，南宋军队的战斗力急剧下降，促使忽必烈下最后灭宋的决心。",
+              "supports": "襄樊之战结束中的补充事实。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "placeId": "tongguan",
+      "entries": [
+        {
+          "id": "tongguan-context-0-196",
+          "year": 196,
+          "dateLabel": "196年",
+          "title": "潼关关隘始建",
+          "summary": "据所读概述，潼关始建于东汉建安元年。历代关城迁建，当前参考点不保证是196年的原关位置。",
+          "sourceIds": [
+            "context-tongguan"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-tongguan",
+              "quote": "始建于东汉建安元年（196年）。",
+              "supports": "潼关关隘始建及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "chronicle-anshi-756-tongguan",
+          "year": 756,
+          "dateLabel": "天宝十五载六月辛卯（《通鉴》系于至德元年）",
+          "title": "潼关失守",
+          "summary": "哥舒翰军在灵宝西原战败后，潼关被攻取。关中门户失守，朝廷随后决定离开长安。",
+          "sourceIds": [
+            "zizhitongjian-218"
+          ],
+          "relatedEventId": "anshi-756-tongguan",
+          "evidence": [
+            {
+              "sourceId": "zizhitongjian-218",
+              "quote": "辛卯，乾祐進攻潼關，克之。",
+              "supports": "原文记辛卯崔乾祐攻取潼关；该段前记哥舒翰军在灵宝西原战败。"
+            }
+          ]
+        },
+        {
+          "id": "tongguan-context-2-1556",
+          "year": 1556,
+          "dateLabel": "1556年（明嘉靖年间）",
+          "title": "大地震阻塞潼关道路",
+          "summary": "嘉靖大地震使潼关一带山体崩塌、道路受阻，并影响黄渭河水流。这里不采用单一来源的伤亡估计。",
+          "sourceIds": [
+            "context-tongguan"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-tongguan",
+              "quote": "1556年1月23日，陕西省发生约規模8的大地震，潼关是重灾区之一，潼关附近地震导致“山多崩断，潼关道壅，（黄）河逆流”，倒灌渭河。",
+              "supports": "大地震阻塞潼关道路及概述中的直接事实。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "placeId": "yinchuan",
+      "entries": [
+        {
+          "id": "yinchuan-context-0-678",
+          "year": 678,
+          "dateLabel": "678年",
+          "title": "怀远新城西移重筑",
+          "summary": "原怀远城遭黄河水患后，次年在故城以西重建，新城联系今银川兴庆区。这里反映迁址，不能将各期城址视为同一点。",
+          "sourceIds": [
+            "context-yinchuan"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-yinchuan",
+              "quote": "唐仪凤二年（677年），怀远县城遭黄河水患冲毁。第二年在故城西（今银川兴庆区）筑怀远新城。",
+              "supports": "怀远新城西移重筑及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "yinchuan-context-1-1038",
+          "year": 1038,
+          "dateLabel": "1038年",
+          "title": "西夏在兴庆府建国",
+          "summary": "李元昊在兴庆府建大夏国，史称西夏，兴庆府承担西夏国都职能。",
+          "sourceIds": [
+            "context-yinchuan"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-yinchuan",
+              "quote": "并于1038年在兴庆府筑坛受册，建大夏国，史称西夏。",
+              "supports": "西夏在兴庆府建国及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "yinchuan-context-2-1724",
+          "year": 1724,
+          "dateLabel": "1724年",
+          "title": "宁夏城内两县同治",
+          "summary": "清雍正二年起宁夏、宁朔两县同治宁夏城，是清代城市行政格局的一个节点。",
+          "sourceIds": [
+            "context-yinchuan"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-yinchuan",
+              "quote": "清雍正二年（1724年）起，设宁朔县，宁夏县、宁朔县均治宁夏城内。",
+              "supports": "宁夏城内两县同治及概述中的直接事实。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "placeId": "shangdu",
+      "entries": [
+        {
+          "id": "shangdu-context-0-1256",
+          "year": 1256,
+          "dateLabel": "1256年",
+          "title": "开平王府开建",
+          "summary": "忽必烈命刘秉忠在此建王府，成为后来开平、上都营建的起点。",
+          "sourceIds": [
+            "context-shangdu"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-shangdu",
+              "quote": "元世祖忽必烈即位以前，于1256年三月，命劉秉忠建王府於此。",
+              "supports": "开平王府开建及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "shangdu-context-1-1263",
+          "year": 1263,
+          "dateLabel": "1263年",
+          "title": "开平升为上都",
+          "summary": "忽必烈将开平升为上都，设置上都路；此后上都长期承担夏季驻跸与理政职能。",
+          "sourceIds": [
+            "context-shangdu"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-shangdu",
+              "quote": "1263年6月16日，忽必烈下诏升开平为上都，設有上都路。",
+              "supports": "开平升为上都及概述中的直接事实。"
+            },
+            {
+              "sourceId": "context-shangdu",
+              "quote": "元上都的主要职能是供元朝皇帝前来避暑，每年春分元帝即从都城大都前往此地，秋分时返回都城大都。",
+              "supports": "开平升为上都中的补充事实。"
+            }
+          ]
+        },
+        {
+          "id": "shangdu-context-2-1359",
+          "year": 1359,
+          "dateLabel": "元至正十八年十二月（公历1359年）",
+          "title": "红巾军攻入上都",
+          "summary": "红巾军攻入上都并焚毁宫阙，城市在元末战争中受到严重破坏。公历排序取1359，来源对应元至正十八年十二月。",
+          "sourceIds": [
+            "context-shangdu"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-shangdu",
+              "quote": "元朝至正十八年十二月九日（1359年1月8日），红巾军在关先生、破头潘、沙刘二率领下攻入上都，焚毁宫阙，留七日后，前往辽阳行省。",
+              "supports": "红巾军攻入上都及概述中的直接事实。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "placeId": "quanzhou",
+      "entries": [
+        {
+          "id": "quanzhou-context-0-711",
+          "year": 711,
+          "dateLabel": "711年",
+          "title": "武荣州改称泉州",
+          "summary": "武荣州改称泉州后，泉州这一地名指向今泉州地区；更早同名州曾位于今福州，不能混同。",
+          "sourceIds": [
+            "context-quanzhou"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-quanzhou",
+              "quote": "景云二年（711年），改武荣州为泉州，因城北泉山（清源山）因而得名，自此，“泉州”一词不再指今福州周边地区。",
+              "supports": "武荣州改称泉州及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "quanzhou-context-1-1087",
+          "year": 1087,
+          "dateLabel": "1087年",
+          "title": "设福建市舶司",
+          "summary": "北宋在泉州设市舶司管理海舶、蕃货和贸易税收，是城市对外贸易制度建设的重要节点。",
+          "sourceIds": [
+            "context-quanzhou"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-quanzhou",
+              "quote": "北宋元祐二年（1087年），宋朝政府在泉州设置福建提举市舶司“掌蕃货、海舶、征榷贸易之事”",
+              "supports": "设福建市舶司及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "quanzhou-context-2-1784",
+          "year": 1784,
+          "dateLabel": "1784年",
+          "title": "蚶江与鹿港开通对渡",
+          "summary": "清乾隆四十九年开放蚶江与台湾鹿港对渡，泉台海上贸易得到新的制度性联系；航路入口不等于古城中心点。",
+          "sourceIds": [
+            "context-quanzhou"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-quanzhou",
+              "quote": "乾隆四十九年（1784年）又开放泉州的蚶江与台湾鹿港对渡，开展泉台海上贸易。",
+              "supports": "蚶江与鹿港开通对渡及概述中的直接事实。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "placeId": "dali",
+      "entries": [
+        {
+          "id": "dali-context-0-779",
+          "year": 779,
+          "dateLabel": "779年",
+          "title": "南诏迁都羊苴咩城",
+          "summary": "南诏将都城迁到羊苴咩城，联系今大理旧城地区。太和城、羊苴咩城与明代府城是不同阶段的城址和范围。",
+          "sourceIds": [
+            "context-dali"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-dali",
+              "quote": "唐大历十四年（779年），皮逻阁之曾孙将都城迁至羊苴咩城，即今大理旧城。",
+              "supports": "南诏迁都羊苴咩城及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "dali-context-1-937",
+          "year": 937,
+          "dateLabel": "937年",
+          "title": "段思平建立大理国",
+          "summary": "段思平在羊苴咩城定都建国，国号大理。大理国与同期中原王朝应作为不同政权理解。",
+          "sourceIds": [
+            "context-dali"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-dali",
+              "quote": "后晋天福二年（937年），段思平也于羊苴咩城定都建国，国号大理。",
+              "supports": "段思平建立大理国及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "dali-context-2-1382",
+          "year": 1382,
+          "dateLabel": "1382年",
+          "title": "明设大理府并筑府城",
+          "summary": "明军进入大理，改路为府并筑新府城，成为今天大理古城的重要历史基础。",
+          "sourceIds": [
+            "context-dali"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-dali",
+              "quote": "明洪武十五年（1382年），明军攻占大理，大理路改为大理府，仍治太和县，并筑新的府城，即今大理古城。",
+              "supports": "明设大理府并筑府城及概述中的直接事实。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "placeId": "dunhuang",
+      "entries": [
+        {
+          "id": "dunhuang-context-0-111",
+          "year": -111,
+          "dateLabel": "公元前111年（常用置郡纪年）",
+          "title": "汉设置敦煌郡",
+          "summary": "按所读概述的常用纪年，汉武帝元鼎六年设置敦煌郡，纳入河西郡县经营。精确置郡年代仍需结合专门研究，地区点并非郡治遗址测量。",
+          "sourceIds": [
+            "context-dunhuang"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-dunhuang",
+              "quote": "元鼎六年（前111年）设置敦煌郡，意“敦，大也，煌，盛也”，为河西四郡之一。",
+              "supports": "汉设置敦煌郡及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "dunhuang-context-1-400",
+          "year": 400,
+          "dateLabel": "400年",
+          "title": "李暠建西凉，初都敦煌",
+          "summary": "李暠建立西凉政权，初以敦煌为都，敦煌一度承担区域政权中心职能。",
+          "sourceIds": [
+            "context-dunhuang"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-dunhuang",
+              "quote": "隆安四年（400年）李暠建西凉国，初都敦煌。",
+              "supports": "李暠建西凉，初都敦煌及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "dunhuang-context-2-851",
+          "year": 851,
+          "dateLabel": "851年",
+          "title": "唐置归义军",
+          "summary": "张议潮收复河西部分地区后，唐廷在敦煌设置归义军并任命其为节度使。归义军与唐廷的关系不等于精确疆界复原。",
+          "sourceIds": [
+            "context-dunhuang"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-dunhuang",
+              "quote": "大中五年（851年）唐廷在敦煌设置归义军，並任命张议潮为敦煌归义军节度使。",
+              "supports": "唐置归义军及概述中的直接事实。"
             }
           ]
         }

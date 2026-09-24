@@ -1,0 +1,16 @@
+{
+  "id": "context-dunhuang",
+  "title": "敦煌市 — 维基百科",
+  "url": "https://zh.wikipedia.org/wiki/%E6%95%A6%E7%85%8C%E5%B8%82",
+  "retrievedAt": "2026-09-24T13:31:45.853606+00:00",
+  "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证，亦不是古城坐标或边界核定。引文保留本次页面原字形。",
+  "snapshotPath": "data/evidence/historical-context/dunhuang.txt",
+  "snapshotSha256": "2c7853d90c3c0856e86c7de5d3bfecadf9990807561620392c5d5517787f96ee",
+  "pageId": 49861,
+  "revision": {
+    "revid": 93563614,
+    "parentid": 93199800,
+    "timestamp": "2026-07-20T17:02:41Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2&pageids=49861"
+}

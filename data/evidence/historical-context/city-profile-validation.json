@@ -1,0 +1,22 @@
+{
+  "profiles": 33,
+  "periodCoverage": {
+    "qin": 3,
+    "han": 3,
+    "sanguo": 3,
+    "jin": 3,
+    "nanbei": 3,
+    "sui": 3,
+    "tang": 3,
+    "song": 3,
+    "yuan": 3,
+    "ming": 3,
+    "qing": 3
+  },
+  "independentPlacesInProfiles": 17,
+  "sources": 19,
+  "quotesMatched": 54,
+  "outputSha256": "efed6e9a9d99b37c4fb67942c9945760b4ec3841e1492927d7ed57c19faa5723",
+  "newCatalogPlaces": 0,
+  "newCatalogPeriodRelationships": 0
+}

@@ -1382,10 +1382,11 @@
         "songshi",
         "yuanshi",
         "mingshi",
-        "qingshigao"
+        "qingshigao",
+        "context-kaifeng"
       ],
       "nameByPeriod": {
-        "qin": "大梁",
+        "qin": "浚仪",
         "han": "浚仪",
         "sanguo": "浚仪",
         "jin": "浚仪",
@@ -1393,7 +1394,18 @@
         "sui": "浚仪",
         "tang": "汴州",
         "song": "开封"
-      }
+      },
+      "evidence": [
+        {
+          "id": "kaifeng-qin-junyi",
+          "sourceId": "context-kaifeng",
+          "locator": "历史／秦代至五代",
+          "supports": "秦统一时期将显示名称由魏都大梁更正为浚仪；不改变地点坐标或时期关系。",
+          "quote": "秦统一六国后，实行郡县制，开封作为败亡国的国都被降为浚仪县，属三川郡。",
+          "status": "pending",
+          "note": "百科原文已逐字比对；秦代原始文献与古城址仍待专题核定。"
+        }
+      ]
     },
     {
       "id": "nanjing",
@@ -4225,11 +4237,25 @@
       "edition": "CN.zip于2026-09-24T10:59:45.916153+00:00实际下载；单条修改日期另存",
       "license": "Creative Commons Attribution 4.0 (CC BY 4.0)，署名 GeoNames：https://www.geonames.org/",
       "snapshotPath": "data/evidence/city-geonames-selection.json"
+    },
+    {
+      "id": "context-kaifeng",
+      "title": "开封市 — 维基百科",
+      "author": "维基百科贡献者",
+      "locator": "历史／秦代至五代",
+      "note": "用于本轮秦代浚仪名称修正的二手概述。原文与本地快照逐字核对；不是古城址、坐标或边界核定。",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E5%BC%80%E5%B0%81%E5%B8%82&oldid=94239076",
+      "verification": "reference",
+      "retrievedAt": "2026-09-24T12:07:35.330249+00:00",
+      "edition": "固定修订 94239076",
+      "license": "CC BY-SA 4.0；署名维基百科贡献者，参见来源页面历史与许可。",
+      "revisionId": "94239076",
+      "snapshotPath": "data/evidence/historical-context/kaifeng.txt"
     }
   ],
   "metadata": {
     "title": "山河纪 · 中国历史时空地图",
-    "version": "0.6.0-preview",
+    "version": "0.7.0-preview",
     "dataNotice": "本版含11个代表历史截面、40个地点档案（唐代37个）与本期历史事件。历史行政界已接入CHGIS 1820/1911和Hartwell 741/1080/1200/1290/1391资料，按原始图层显示省道、府州、县级区域及部分独立政权或诸部。资料年份独立标注，不能直接等同当前事件年份。Hartwell是基于现代县界构建的近似历史行政模型，CHGIS部分记录有原始年份字段冲突，界面提供说明。行政区界不等于古城墙或完整国家边界；完整政权范围另提供《中国历史地图集》18张纸图影像参考。地点和事件的已核对标识只支持列出的具体原文事实；位置仍为近似地区入口。事件连线不是实际行军路线，传统纪年未换算公历。 新增8条历史地理概述与10城35条历代大事记，原文摘录保留资料性质与出处。已为现有12111条历史行政记录提供简体显示，12100条有代表点所在现代地区参考；这不证明古今行政实体相同。",
     "geographicNotice": "自然背景来自现代地理底图，不能视为古代河流、海岸线或山川复原。地点坐标为近似地区入口；历代城址、行政范围和同名实体不能简单等同。 山影与立体起伏采用本地真实现代高程，立体夸张1.5倍，适合区域观察；历史河流改道条目只标示参考地区，尚未复原古河道线路。"
   },

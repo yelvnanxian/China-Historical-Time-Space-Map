@@ -163,6 +163,21 @@ city("yangzhou", [
     node("yangzhou-siege-1645", 1645, "扬州陷落与屠城", "清军攻破史可法守卫的扬州后，对城中居民实施屠杀，后世称“扬州十日”。遇害人数在史料与研究中存在争议，本条不列定数。", "yangzhou-massacre", "扬州十日是公元1645年5月20日，即明弘光元年、清順治二年四月二十五日，清军攻破扬州城后对城中平民进行大屠杀的事件。", date_label="1645年（明弘光元年、清顺治二年）"),
 ])
 
+# V0.7 curated additions are separate from the original catalog and map geometry.
+# Reading the input alone never certifies ancient-site coordinates.
+for addition in json.loads((ROOT / "data/city-timeline-additions.json").read_text()):
+    entries = []
+    for index, record in enumerate(addition["entries"]):
+        if "existingEventId" in record:
+            entries.append(existing_event(record["existingEventId"]))
+            continue
+        item = node(f"{addition['placeId']}-context-{index}-{abs(record['year'])}", record["year"], record["title"], record["summary"], record["sourceKey"], record["quote"], record.get("dateLabel"))
+        for extra in record.get("extraEvidence", []):
+            item["evidence"].append(evidence(extra["sourceKey"], extra["quote"], record["title"] + "中的补充事实。"))
+            item["sourceIds"] = list(dict.fromkeys([*item["sourceIds"], source(extra["sourceKey"])]))
+        entries.append(item)
+    city(addition["placeId"], entries)
+
 geography.sort(key=lambda item: item["year"])
 for item in geography:
     assert set(item["affectedPlaceIds"]) <= places.keys()
@@ -173,7 +188,7 @@ for timeline in timelines:
     for item in timeline["entries"]:
         assert set(item["sourceIds"]) == {e["sourceId"] for e in item["evidence"]}
 
-result = {"version": "1.0", "generatedAt": datetime.now(timezone.utc).isoformat(), "notes": ["历史地理条目只提供地区参考点；没有可靠古河道几何时不绘制复原线路。", "城市大事记跨时期展示，不随当前朝代筛除；同名城市的古今城址可能不同。", "引文已与实际取得的文本快照逐字比对；百科概述不等于原始史料或逐段考古核定。", "年份用于排序；约年保留在日期标签中，古籍年号、月份和干支日不作未经核对的逐日公历换算。"], "sources": list(sources.values()), "geographyEntries": geography, "cityTimelines": timelines}
+result = {"version": "1.1", "generatedAt": datetime.now(timezone.utc).isoformat(), "notes": ["历史地理条目只提供地区参考点；没有可靠古河道几何时不绘制复原线路。", "城市大事记跨时期展示，不随当前朝代筛除；同名城市的古今城址可能不同。", "引文已与实际取得的文本快照逐字比对；百科概述不等于原始史料或逐段考古核定。", "年份用于排序；约年保留在日期标签中，古籍年号、月份和干支日不作未经核对的逐日公历换算。"], "sources": list(sources.values()), "geographyEntries": geography, "cityTimelines": timelines}
 output = ROOT / "public/data/historical-context.json"
 output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n")
 validation = {"createdAt": result["generatedAt"], "sources": len(sources), "geographyEntries": len(geography), "cityTimelines": len(timelines), "cityEntries": sum(len(t["entries"]) for t in timelines), "quotesMatched": sum(len(item["evidence"]) for item in geography) + sum(len(item["evidence"]) for timeline in timelines for item in timeline["entries"]), "cities": [{"placeId": item["placeId"], "name": places[item["placeId"]]["name"], "entries": len(item["entries"])} for item in timelines], "referenceCoordinates": "All copied exactly from existing catalog places; location roles and caveats explicit.", "outputSha256": hashlib.sha256(output.read_bytes()).hexdigest()}

@@ -1,0 +1,1475 @@
+{
+  "method": "local-aeqd-area-pca-cross-section-midpoints-smoothed-clipped-v1",
+  "parameters": {
+    "samplingGridCellsPerAxis": 64,
+    "minimumInteriorSamples": 24,
+    "minimumComponentAreaKm2": 25,
+    "minimumComponentRelativeArea": 0.001,
+    "minimumPrincipalAxisRatio": 1.35,
+    "minimumAxisLengthKm": 20,
+    "endTrimFraction": 0.025,
+    "targetCrossSectionSpacingKm": 20,
+    "minimumCrossSections": 16,
+    "maximumCrossSections": 64,
+    "maximumPerpendicularJumpToStepRatio": 3,
+    "minimumDiscontinuityAxisFraction": 0.03,
+    "chaikinIterations": 2,
+    "minimumOutputPartLengthKm": 10,
+    "minimumCoveredAxisFraction": 0.4,
+    "maximumPathToAxisRatio": 2.2
+  },
+  "records": [
+    {
+      "groupId": "ne_10m_geography_regions_polys-223",
+      "name": "肯特山",
+      "components": [
+        {
+          "areaKm2": 131307.31365604023,
+          "relativeArea": 1.0,
+          "interiorSamples": 2596,
+          "principalAxisRatio": 1.4201911677884271,
+          "axisLengthKm": 503.2736032330827,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 26,
+          "coveredAxisFraction": 0.95,
+          "pathToAxisRatio": 1.068639988015375,
+          "outputLengthKm": 537.8182973274561,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=48.8051261290 +lon_0=109.0909929421 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 537.8182973274547,
+      "labelDistanceToLineDegrees": 6.253078221861428e-16,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-224",
+      "name": "布雷因斯山脉",
+      "components": [
+        {
+          "areaKm2": 14262.530044290794,
+          "relativeArea": 1.0,
+          "interiorSamples": 1413,
+          "principalAxisRatio": 4.369934161175898,
+          "axisLengthKm": 271.99855361812456,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 16,
+          "coveredAxisFraction": 0.9499999999999998,
+          "pathToAxisRatio": 0.9642957198574001,
+          "outputLengthKm": 262.2870410613611,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=51.3790701171 +lon_0=134.4089836645 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 262.28704106136104,
+      "labelDistanceToLineDegrees": 5.917103756769369e-15,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-225",
+      "name": "扬阿林山脉",
+      "components": [
+        {
+          "areaKm2": 16178.668947832175,
+          "relativeArea": 1.0,
+          "interiorSamples": 2999,
+          "principalAxisRatio": 3.0526794038356178,
+          "axisLengthKm": 237.6341366717602,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 16,
+          "coveredAxisFraction": 0.95,
+          "pathToAxisRatio": 0.9545147201630027,
+          "outputLengthKm": 226.8252814664219,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=53.2843086158 +lon_0=134.8029580261 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 226.82528146642085,
+      "labelDistanceToLineDegrees": 8.408455870586909e-15,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-228",
+      "name": "朱格朱尔山脉",
+      "components": [
+        {
+          "areaKm2": 53024.84475069183,
+          "relativeArea": 1.0,
+          "interiorSamples": 1319,
+          "principalAxisRatio": 4.516566496798739,
+          "axisLengthKm": 549.021855554387,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 28,
+          "coveredAxisFraction": 0.9500000000000001,
+          "pathToAxisRatio": 0.9684077314795411,
+          "outputLengthKm": 531.6770096701122,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=56.8883541364 +lon_0=137.0835281158 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 531.6770096701101,
+      "labelDistanceToLineDegrees": 3.2319968186246366e-15,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-231",
+      "name": "卡拉套山",
+      "components": [
+        {
+          "areaKm2": 26585.157346339627,
+          "relativeArea": 1.0,
+          "interiorSamples": 893,
+          "principalAxisRatio": 7.3412785669108604,
+          "axisLengthKm": 479.8190842807034,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 24,
+          "coveredAxisFraction": 0.95,
+          "pathToAxisRatio": 0.9818495106246443,
+          "outputLengthKm": 471.11013308937356,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=43.7745062801 +lon_0=68.7386475632 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 471.11013308937487,
+      "labelDistanceToLineDegrees": 1.96285051875311e-15,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-232",
+      "name": "阿瓦利拉山脉",
+      "components": [
+        {
+          "areaKm2": 30500.176284460424,
+          "relativeArea": 1.0,
+          "interiorSamples": 1862,
+          "principalAxisRatio": 3.0769203882677876,
+          "axisLengthKm": 336.48946140041403,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 17,
+          "coveredAxisFraction": 0.95,
+          "pathToAxisRatio": 0.955482081611392,
+          "outputLengthKm": 321.5096510191637,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=25.8660178013 +lon_0=73.2920843624 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 321.5096510191644,
+      "labelDistanceToLineDegrees": 3.387933806750648e-15,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-233",
+      "name": "苏莱曼山脉",
+      "components": [
+        {
+          "areaKm2": 55083.16417754487,
+          "relativeArea": 1.0,
+          "interiorSamples": 2695,
+          "principalAxisRatio": 4.134405602159632,
+          "axisLengthKm": 516.881413049345,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 26,
+          "coveredAxisFraction": 0.95,
+          "pathToAxisRatio": 0.957235296860417,
+          "outputLengthKm": 494.77713286192164,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=31.6194806399 +lon_0=69.8871558272 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 494.77713286192164,
+      "labelDistanceToLineDegrees": 2.2667689617881325e-15,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-418",
+      "name": "杭爱山",
+      "components": [
+        {
+          "areaKm2": 130611.45755454726,
+          "relativeArea": 1.0,
+          "interiorSamples": 2486,
+          "principalAxisRatio": 2.565274509107468,
+          "axisLengthKm": 633.7072149396033,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 32,
+          "coveredAxisFraction": 0.95,
+          "pathToAxisRatio": 0.9601218357206799,
+          "outputLengthKm": 608.4361345172514,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=47.1946418461 +lon_0=99.8046704651 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 608.4361345172507,
+      "labelDistanceToLineDegrees": 1.9826331690476456e-15,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-419",
+      "name": "咸镜山脉",
+      "components": [
+        {
+          "areaKm2": 62794.60898553223,
+          "relativeArea": 1.0,
+          "interiorSamples": 2001,
+          "principalAxisRatio": 2.236771047658425,
+          "axisLengthKm": 439.05278585970075,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 22,
+          "coveredAxisFraction": 0.9499999999999998,
+          "pathToAxisRatio": 1.0460612038173926,
+          "outputLengthKm": 459.27608571577844,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=41.2836470923 +lon_0=128.4156243198 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 459.2760857157788,
+      "labelDistanceToLineDegrees": 1.9193942240175556e-15,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-424",
+      "name": "钦山脉",
+      "components": [
+        {
+          "areaKm2": 26661.82839810138,
+          "relativeArea": 1.0,
+          "interiorSamples": 2590,
+          "principalAxisRatio": 2.149519566603945,
+          "axisLengthKm": 290.3374074471999,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 16,
+          "coveredAxisFraction": 0.9500000000000001,
+          "pathToAxisRatio": 0.9874460206142416,
+          "outputLengthKm": 286.69251761919327,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=22.5104924848 +lon_0=93.0404531328 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 286.69251761919367,
+      "labelDistanceToLineDegrees": 2.4442359719084734e-15,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-425",
+      "name": "阴山",
+      "components": [
+        {
+          "areaKm2": 58034.67579157791,
+          "relativeArea": 1.0,
+          "interiorSamples": 2741,
+          "principalAxisRatio": 3.730737580314378,
+          "axisLengthKm": 503.20568601232793,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 26,
+          "coveredAxisFraction": 0.9500000000000001,
+          "pathToAxisRatio": 0.9647245623828846,
+          "outputLengthKm": 485.4548852268223,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=41.6461617843 +lon_0=108.7077826337 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 485.45488522682143,
+      "labelDistanceToLineDegrees": 1.215816599922952e-15,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-426",
+      "name": "西萨彦岭",
+      "components": [
+        {
+          "areaKm2": 58171.459907033575,
+          "relativeArea": 1.0,
+          "interiorSamples": 3221,
+          "principalAxisRatio": 1.9864436475771572,
+          "axisLengthKm": 361.6217979395664,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 19,
+          "coveredAxisFraction": 0.95,
+          "pathToAxisRatio": 1.0442739775598937,
+          "outputLengthKm": 377.6322333067112,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=52.2914811551 +lon_0=93.4495299218 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 377.63223330671156,
+      "labelDistanceToLineDegrees": 1.6699925745039472e-15,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-427",
+      "name": "阿巴坎斯基拉山脉",
+      "components": [
+        {
+          "areaKm2": 76234.7326420039,
+          "relativeArea": 1.0,
+          "interiorSamples": 2941,
+          "principalAxisRatio": 2.8665177225054244,
+          "axisLengthKm": 556.6475338600306,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 28,
+          "coveredAxisFraction": 0.9500000000000001,
+          "pathToAxisRatio": 1.017993248156912,
+          "outputLengthKm": 566.6634310727073,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=51.7829859275 +lon_0=89.8209537876 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 566.6634310727069,
+      "labelDistanceToLineDegrees": 7.895244797896966e-16,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-428",
+      "name": "唐努乌拉山脉",
+      "components": [
+        {
+          "areaKm2": 46081.06226433459,
+          "relativeArea": 1.0,
+          "interiorSamples": 2158,
+          "principalAxisRatio": 3.1264141581007756,
+          "axisLengthKm": 462.3693696445638,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 24,
+          "coveredAxisFraction": 0.9500000000000002,
+          "pathToAxisRatio": 1.0386843472291767,
+          "outputLengthKm": 480.25582688802956,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=50.8359756145 +lon_0=93.3424118274 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 480.25582688803013,
+      "labelDistanceToLineDegrees": 2.3298146775014707e-15,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-429",
+      "name": "太行山",
+      "components": [
+        {
+          "areaKm2": 78812.92646263521,
+          "relativeArea": 1.0,
+          "interiorSamples": 2661,
+          "principalAxisRatio": 5.689280508179168,
+          "axisLengthKm": 704.269967288455,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 36,
+          "coveredAxisFraction": 0.9500000000000001,
+          "pathToAxisRatio": 0.9659239011254735,
+          "outputLengthKm": 680.2711942487741,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=38.5991561275 +lon_0=113.8418260737 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 680.2711942487724,
+      "labelDistanceToLineDegrees": 1.5239846253829548e-15,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-430",
+      "name": "吕梁山",
+      "components": [
+        {
+          "areaKm2": 85541.89338470981,
+          "relativeArea": 1.0,
+          "interiorSamples": 2973,
+          "principalAxisRatio": 4.401578460022417,
+          "axisLengthKm": 698.16341570848,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 35,
+          "coveredAxisFraction": 0.9500000000000001,
+          "pathToAxisRatio": 0.9575567124405673,
+          "outputLengthKm": 668.5310650920891,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=37.4808068629 +lon_0=112.0766444381 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 668.531065092089,
+      "labelDistanceToLineDegrees": 1.1571527152701038e-16,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-431",
+      "name": "秦岭",
+      "components": [
+        {
+          "areaKm2": 135036.02426381683,
+          "relativeArea": 1.0,
+          "interiorSamples": 2545,
+          "principalAxisRatio": 3.9134700732924164,
+          "axisLengthKm": 856.9405437726743,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 43,
+          "coveredAxisFraction": 0.9500000000000001,
+          "pathToAxisRatio": 1.0713361027709234,
+          "outputLengthKm": 918.0713424718128,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=33.7563735820 +lon_0=109.6033939935 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 918.0713424718157,
+      "labelDistanceToLineDegrees": 2.876585862235403e-15,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-432",
+      "name": "大娄山",
+      "components": [
+        {
+          "areaKm2": 90881.57570429587,
+          "relativeArea": 1.0,
+          "interiorSamples": 2346,
+          "principalAxisRatio": 1.8167690371067708,
+          "axisLengthKm": 444.35467891382586,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 23,
+          "coveredAxisFraction": 0.9500000000000001,
+          "pathToAxisRatio": 0.9952852385146284,
+          "outputLengthKm": 442.2596525878383,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=28.0514494202 +lon_0=106.1473448397 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 442.25965258783947,
+      "labelDistanceToLineDegrees": 4.728944399707868e-16,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-433",
+      "name": "扁担山脉",
+      "components": [
+        {
+          "areaKm2": 55866.96764941024,
+          "relativeArea": 1.0,
+          "interiorSamples": 2154,
+          "principalAxisRatio": 4.512276659609812,
+          "axisLengthKm": 552.4600546749807,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 28,
+          "coveredAxisFraction": 0.9499999999999998,
+          "pathToAxisRatio": 0.9788804830674303,
+          "outputLengthKm": 540.7923651957041,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=14.6112535113 +lon_0=103.0594201977 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 540.7923651957051,
+      "labelDistanceToLineDegrees": 3.2876151236140677e-16,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-434",
+      "name": "纳加丘陵",
+      "components": [
+        {
+          "areaKm2": 52340.49264132582,
+          "relativeArea": 1.0,
+          "interiorSamples": 1859,
+          "principalAxisRatio": 3.342424921569278,
+          "axisLengthKm": 469.0995766752428,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 24,
+          "coveredAxisFraction": 0.9500000000000001,
+          "pathToAxisRatio": 0.9833913755028024,
+          "outputLengthKm": 461.30847795444936,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=25.4097555618 +lon_0=94.4639178639 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 461.3084779544492,
+      "labelDistanceToLineDegrees": 4.541176712929565e-15,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-435",
+      "name": "若开山脉",
+      "components": [
+        {
+          "areaKm2": 39559.80235250277,
+          "relativeArea": 1.0,
+          "interiorSamples": 1815,
+          "principalAxisRatio": 4.5477686997556965,
+          "axisLengthKm": 478.3308921666179,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 24,
+          "coveredAxisFraction": 0.9500000000000001,
+          "pathToAxisRatio": 0.9690901112483978,
+          "outputLengthKm": 463.54573750329314,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=19.5388478608 +lon_0=94.3360064302 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 463.5457375032947,
+      "labelDistanceToLineDegrees": 7.252173676916097e-17,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-436",
+      "name": "南高止山脉",
+      "components": [
+        {
+          "areaKm2": 35963.74185620926,
+          "relativeArea": 1.0,
+          "interiorSamples": 2202,
+          "principalAxisRatio": 1.2666693864298681,
+          "status": "skipped",
+          "reason": "命名范围形状接近团块，没有足够明确的单一主方向。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=9.8108641151 +lon_0=77.3953435742 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "label-only"
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-437",
+      "name": "萨特布拉山脉",
+      "components": [
+        {
+          "areaKm2": 63994.544045190996,
+          "relativeArea": 1.0,
+          "interiorSamples": 2313,
+          "principalAxisRatio": 3.978979074470437,
+          "axisLengthKm": 546.3830007831349,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 28,
+          "coveredAxisFraction": 0.95,
+          "pathToAxisRatio": 0.9631363394589287,
+          "outputLengthKm": 526.2413233168535,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=21.9326339049 +lon_0=77.4997302051 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 526.2413233168529,
+      "labelDistanceToLineDegrees": 1.1013058168583298e-15,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-438",
+      "name": "盐岭",
+      "components": [
+        {
+          "areaKm2": 28271.52557416355,
+          "relativeArea": 1.0,
+          "interiorSamples": 3408,
+          "principalAxisRatio": 1.9677479498284947,
+          "axisLengthKm": 246.50797868823602,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 16,
+          "coveredAxisFraction": 0.95,
+          "pathToAxisRatio": 0.9537584446841613,
+          "outputLengthKm": 235.10906635592838,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=33.5513810166 +lon_0=73.8782488600 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 235.10906635592846,
+      "labelDistanceToLineDegrees": 1.4340043801977519e-15,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-439",
+      "name": "博罗科努山",
+      "components": [
+        {
+          "areaKm2": 48605.885588846395,
+          "relativeArea": 1.0,
+          "interiorSamples": 1912,
+          "principalAxisRatio": 4.384299510630271,
+          "axisLengthKm": 479.4196820793449,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 24,
+          "coveredAxisFraction": 0.95,
+          "pathToAxisRatio": 0.9553695699767502,
+          "outputLengthKm": 458.02297550653407,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=43.9370422254 +lon_0=83.9734103294 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 458.02297550653265,
+      "labelDistanceToLineDegrees": 3.453334680079433e-16,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-440",
+      "name": "阿拉塔山脉",
+      "components": [
+        {
+          "areaKm2": 64550.09029125404,
+          "relativeArea": 1.0,
+          "interiorSamples": 1953,
+          "principalAxisRatio": 2.9191237060032473,
+          "axisLengthKm": 524.3289984126641,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 27,
+          "coveredAxisFraction": 0.95,
+          "pathToAxisRatio": 1.0291196535008589,
+          "outputLengthKm": 539.5972771668933,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=45.0578316128 +lon_0=79.8807858818 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 539.5972771668947,
+      "labelDistanceToLineDegrees": 4.817795098781986e-16,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-441",
+      "name": "卡西丘陵",
+      "components": [
+        {
+          "areaKm2": 37054.05201655002,
+          "relativeArea": 1.0,
+          "interiorSamples": 2391,
+          "principalAxisRatio": 2.588317864053993,
+          "axisLengthKm": 377.0103467734243,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 19,
+          "coveredAxisFraction": 0.9500000000000002,
+          "pathToAxisRatio": 1.0222509198717835,
+          "outputLengthKm": 385.39917379031306,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=25.8163576550 +lon_0=92.2411334553 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 385.3991737903136,
+      "labelDistanceToLineDegrees": 9.065111555978035e-16,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-546",
+      "name": "小兴安岭",
+      "components": [
+        {
+          "areaKm2": 118113.47552419624,
+          "relativeArea": 1.0,
+          "interiorSamples": 1714,
+          "principalAxisRatio": 2.9894682622672706,
+          "axisLengthKm": 641.6473085332774,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 33,
+          "coveredAxisFraction": 0.95,
+          "pathToAxisRatio": 1.0340428377215494,
+          "outputLengthKm": 663.4908037321446,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=49.1070842027 +lon_0=127.6372856656 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 663.4908037321475,
+      "labelDistanceToLineDegrees": 2.8287877748377885e-15,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-547",
+      "name": "锡霍特山脉",
+      "components": [
+        {
+          "areaKm2": 168157.69554778797,
+          "relativeArea": 1.0,
+          "interiorSamples": 1173,
+          "principalAxisRatio": 5.8147124245712805,
+          "axisLengthKm": 1119.4297662037886,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 56,
+          "coveredAxisFraction": 0.95,
+          "pathToAxisRatio": 0.9622733319132982,
+          "outputLengthKm": 1077.197410967844,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=46.9894597443 +lon_0=136.9149165394 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 1077.1974109678438,
+      "labelDistanceToLineDegrees": 2.5911869919883144e-15,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-549",
+      "name": "中央高地",
+      "components": [
+        {
+          "areaKm2": 65345.2854854176,
+          "relativeArea": 1.0,
+          "interiorSamples": 2679,
+          "principalAxisRatio": 3.2514486604923216,
+          "axisLengthKm": 483.61149396370024,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 25,
+          "coveredAxisFraction": 0.95,
+          "pathToAxisRatio": 0.9707095157489546,
+          "outputLengthKm": 469.44627911613196,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=13.7551309791 +lon_0=107.7917291508 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 469.44627911613276,
+      "labelDistanceToLineDegrees": 1.4872222828816104e-15,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-550",
+      "name": "祁连山",
+      "components": [
+        {
+          "areaKm2": 184199.91826288495,
+          "relativeArea": 1.0,
+          "interiorSamples": 2215,
+          "principalAxisRatio": 2.828322306927417,
+          "axisLengthKm": 788.1183524863794,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 40,
+          "coveredAxisFraction": 0.95,
+          "pathToAxisRatio": 0.9960715822284216,
+          "outputLengthKm": 785.0222943443649,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=38.2163871246 +lon_0=98.7203649711 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 785.0222943443663,
+      "labelDistanceToLineDegrees": 2.0454622590290153e-16,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-551",
+      "name": "东萨彦岭",
+      "components": [
+        {
+          "areaKm2": 194675.5358960106,
+          "relativeArea": 1.0,
+          "interiorSamples": 2108,
+          "principalAxisRatio": 2.6406959680216646,
+          "axisLengthKm": 876.7628501635647,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 44,
+          "coveredAxisFraction": 0.95,
+          "pathToAxisRatio": 0.9810492857009352,
+          "outputLengthKm": 860.1475678820813,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=53.5878017600 +lon_0=97.2142142191 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 860.1475678820807,
+      "labelDistanceToLineDegrees": 1.192447879145605e-15,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-552",
+      "name": "雅布洛诺夫山脉",
+      "components": [
+        {
+          "areaKm2": 332510.5538761215,
+          "relativeArea": 1.0,
+          "interiorSamples": 1868,
+          "principalAxisRatio": 3.1173184655731583,
+          "axisLengthKm": 1099.6578388649937,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 55,
+          "coveredAxisFraction": 0.9500000000000001,
+          "pathToAxisRatio": 0.9803510447856254,
+          "outputLengthKm": 1078.0507112379996,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=54.2422360660 +lon_0=116.7348900568 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 1078.0507112379976,
+      "labelDistanceToLineDegrees": 7.999212964953245e-16,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-553",
+      "name": "大别山",
+      "components": [
+        {
+          "areaKm2": 58355.138715116314,
+          "relativeArea": 1.0,
+          "interiorSamples": 2034,
+          "principalAxisRatio": 2.5852254027525037,
+          "axisLengthKm": 431.8283493858456,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 22,
+          "coveredAxisFraction": 0.95,
+          "pathToAxisRatio": 1.0486789884038923,
+          "outputLengthKm": 452.84931659807114,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=31.4499060146 +lon_0=114.9758297930 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 452.84931659807194,
+      "labelDistanceToLineDegrees": 6.231354797672014e-16,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-554",
+      "name": "南岭",
+      "components": [
+        {
+          "areaKm2": 94182.84194707267,
+          "relativeArea": 1.0,
+          "interiorSamples": 2810,
+          "principalAxisRatio": 1.6785485083526623,
+          "axisLengthKm": 469.65251615132075,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 24,
+          "coveredAxisFraction": 0.9499999999999998,
+          "pathToAxisRatio": 1.0390874068112395,
+          "outputLengthKm": 488.0100151100496,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=24.6585289289 +lon_0=111.6686868403 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 488.01001511004984,
+      "labelDistanceToLineDegrees": 1.7060025555374717e-15,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-555",
+      "name": "西高止山脉",
+      "components": [
+        {
+          "areaKm2": 136279.5646451373,
+          "relativeArea": 1.0,
+          "interiorSamples": 1005,
+          "principalAxisRatio": 7.791986685834806,
+          "axisLengthKm": 1187.1882256643662,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 60,
+          "coveredAxisFraction": 0.95,
+          "pathToAxisRatio": 0.9841910673921125,
+          "outputLengthKm": 1168.4200470119608,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=15.5428534215 +lon_0=74.6904150958 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 1168.4200470119615,
+      "labelDistanceToLineDegrees": 5.560286856334895e-15,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-556",
+      "name": "东高止山脉",
+      "components": [
+        {
+          "areaKm2": 192952.17796561556,
+          "relativeArea": 1.0,
+          "interiorSamples": 941,
+          "principalAxisRatio": 4.915709300575502,
+          "axisLengthKm": 1243.0444689483434,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 63,
+          "coveredAxisFraction": 0.9499999999999998,
+          "pathToAxisRatio": 1.0190901991098598,
+          "outputLengthKm": 1266.7744353629769,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=16.8561056821 +lon_0=81.2194471958 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 1266.7744353629782,
+      "labelDistanceToLineDegrees": 5.404516536627221e-15,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-557",
+      "name": "温迪亚山脉",
+      "components": [
+        {
+          "areaKm2": 67298.01327973756,
+          "relativeArea": 1.0,
+          "interiorSamples": 1478,
+          "principalAxisRatio": 5.666318018660333,
+          "axisLengthKm": 663.1318942485198,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 34,
+          "coveredAxisFraction": 0.9500000000000001,
+          "pathToAxisRatio": 0.9623205479416395,
+          "outputLengthKm": 638.1454478308129,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=23.1911435487 +lon_0=76.9177193720 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 638.1454478308132,
+      "labelDistanceToLineDegrees": 2.669611831558448e-15,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-558",
+      "name": "武夷山脉",
+      "components": [
+        {
+          "areaKm2": 62639.42706752935,
+          "relativeArea": 1.0,
+          "interiorSamples": 2935,
+          "principalAxisRatio": 1.6477797214747651,
+          "axisLengthKm": 353.39652810276056,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 18,
+          "coveredAxisFraction": 0.9500000000000001,
+          "pathToAxisRatio": 0.964312192597522,
+          "outputLengthKm": 340.78458087112483,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=26.8892463280 +lon_0=117.0851683072 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 340.7845808711247,
+      "labelDistanceToLineDegrees": 1.9886816259700756e-15,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-559",
+      "name": "塔尔巴哈台山",
+      "components": [
+        {
+          "areaKm2": 66297.38847585137,
+          "relativeArea": 1.0,
+          "interiorSamples": 1923,
+          "principalAxisRatio": 3.687616539163358,
+          "axisLengthKm": 528.3382644721789,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 27,
+          "coveredAxisFraction": 0.95,
+          "pathToAxisRatio": 0.9751617368179629,
+          "outputLengthKm": 515.2152596100782,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=47.6371464267 +lon_0=82.1631494827 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 515.215259610077,
+      "labelDistanceToLineDegrees": 3.0665110996492893e-16,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-560",
+      "name": "阿尔金山脉",
+      "components": [
+        {
+          "areaKm2": 84157.75826860653,
+          "relativeArea": 1.0,
+          "interiorSamples": 2282,
+          "principalAxisRatio": 3.8545168670061263,
+          "axisLengthKm": 669.6875958751166,
+          "crossSectionDiscontinuities": 1,
+          "crossSections": 34,
+          "coveredAxisFraction": 0.9212121212121214,
+          "pathToAxisRatio": 0.981148811817185,
+          "outputLengthKm": 657.0631889815778,
+          "outputParts": 2,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=38.4608096901 +lon_0=90.2311551390 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 2,
+      "outputLengthKm": 657.0631889815779,
+      "labelDistanceToLineDegrees": 1.505420968415894e-15,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-665",
+      "name": "阿尔泰山脉",
+      "components": [
+        {
+          "areaKm2": 464429.03141632903,
+          "relativeArea": 1.0,
+          "interiorSamples": 1327,
+          "principalAxisRatio": 4.121622787643235,
+          "axisLengthKm": 1598.587081002058,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 64,
+          "coveredAxisFraction": 0.9500000000000002,
+          "pathToAxisRatio": 1.0116629827031842,
+          "outputLengthKm": 1617.2313744773187,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=47.7211112506 +lon_0=90.5131940422 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 1617.2313744773198,
+      "labelDistanceToLineDegrees": 1.5120783509249384e-15,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-666",
+      "name": "大兴安岭",
+      "components": [
+        {
+          "areaKm2": 350183.037843,
+          "relativeArea": 1.0,
+          "interiorSamples": 2153,
+          "principalAxisRatio": 3.537333798130991,
+          "axisLengthKm": 1227.768182198142,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 62,
+          "coveredAxisFraction": 0.95,
+          "pathToAxisRatio": 0.9952028888434691,
+          "outputLengthKm": 1221.8784417536858,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=48.5091444347 +lon_0=121.2355337111 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 1221.8784417536863,
+      "labelDistanceToLineDegrees": 2.624202217216008e-15,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-667",
+      "name": "外兴安岭",
+      "components": [
+        {
+          "areaKm2": 214597.3664699773,
+          "relativeArea": 1.0,
+          "interiorSamples": 2672,
+          "principalAxisRatio": 3.060902437262369,
+          "axisLengthKm": 920.5809041585983,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 47,
+          "coveredAxisFraction": 0.9500000000000002,
+          "pathToAxisRatio": 1.0112039004986297,
+          "outputLengthKm": 930.8950010097298,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=55.9343230772 +lon_0=130.2396442400 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 930.8950010097279,
+      "labelDistanceToLineDegrees": 2.67802853353072e-15,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-668",
+      "name": "安南山脉",
+      "components": [
+        {
+          "areaKm2": 307009.2423960678,
+          "relativeArea": 1.0,
+          "interiorSamples": 1422,
+          "principalAxisRatio": 4.390315902684467,
+          "axisLengthKm": 1272.1482400139053,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 64,
+          "coveredAxisFraction": 0.9500000000000001,
+          "pathToAxisRatio": 1.0061876664051033,
+          "outputLengthKm": 1280.0198689409506,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=16.4279617930 +lon_0=106.1960057503 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 1280.0198689409506,
+      "labelDistanceToLineDegrees": 3.4188505359559293e-15,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-669",
+      "name": "西瓦利克山脉",
+      "components": [
+        {
+          "areaKm2": 70006.46321051495,
+          "relativeArea": 1.0,
+          "interiorSamples": 851,
+          "principalAxisRatio": 9.519723423533312,
+          "axisLengthKm": 919.4346554912643,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 46,
+          "coveredAxisFraction": 0.9499999999999998,
+          "pathToAxisRatio": 0.954243617980089,
+          "outputLengthKm": 877.3646521522608,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=28.0972003886 +lon_0=83.1912100506 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 877.3646521522605,
+      "labelDistanceToLineDegrees": 1.5004743737148617e-15,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-670",
+      "name": "帕米尔高原",
+      "components": [
+        {
+          "areaKm2": 98763.02233452439,
+          "relativeArea": 1.0,
+          "interiorSamples": 2890,
+          "principalAxisRatio": 2.009323646687278,
+          "axisLengthKm": 514.5393602863895,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 26,
+          "coveredAxisFraction": 0.95,
+          "pathToAxisRatio": 0.971959002092332,
+          "outputLengthKm": 500.111163161186,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=38.4142465585 +lon_0=73.6672069488 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 500.1111631611863,
+      "labelDistanceToLineDegrees": 7.796574839984824e-16,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-671",
+      "name": "兴都库什山脉",
+      "components": [
+        {
+          "areaKm2": 240402.59240934535,
+          "relativeArea": 1.0,
+          "interiorSamples": 3157,
+          "principalAxisRatio": 2.419571129709051,
+          "axisLengthKm": 819.5105413420824,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 41,
+          "coveredAxisFraction": 0.95,
+          "pathToAxisRatio": 0.9600983012552355,
+          "outputLengthKm": 786.8106786032919,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=35.7720350079 +lon_0=71.4638658819 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 786.8106786032921,
+      "labelDistanceToLineDegrees": 1.5850108425382067e-16,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-672",
+      "name": "喀喇昆仑山脉",
+      "components": [
+        {
+          "areaKm2": 112404.42633664048,
+          "relativeArea": 1.0,
+          "interiorSamples": 2036,
+          "principalAxisRatio": 2.3741634920820522,
+          "axisLengthKm": 578.4940933540385,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 29,
+          "coveredAxisFraction": 0.95,
+          "pathToAxisRatio": 1.0230455747007197,
+          "outputLengthKm": 591.825822196354,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=35.5285453743 +lon_0=77.4896610127 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 591.8258221963555,
+      "labelDistanceToLineDegrees": 5.106214951721005e-16,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-673",
+      "name": "昆仑山脉",
+      "components": [
+        {
+          "areaKm2": 296855.8278974648,
+          "relativeArea": 1.0,
+          "interiorSamples": 2378,
+          "principalAxisRatio": 8.686972830481274,
+          "axisLengthKm": 1937.3820676419934,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 64,
+          "coveredAxisFraction": 0.9500000000000002,
+          "pathToAxisRatio": 0.9712466912007355,
+          "outputLengthKm": 1881.6759227889256,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=36.2785217994 +lon_0=88.0055457588 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 1881.6759227889252,
+      "labelDistanceToLineDegrees": 1.5252347027956518e-16,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-713",
+      "name": "天山山脉",
+      "components": [
+        {
+          "areaKm2": 8.578472553204268,
+          "relativeArea": 2.060512659525975e-05,
+          "status": "skipped",
+          "reason": "分量过小，不生成可读方向，且不与主分量跨空白连接。",
+          "sourceComponentIndex": 0
+        },
+        {
+          "areaKm2": 416327.0977028485,
+          "relativeArea": 1.0,
+          "interiorSamples": 1762,
+          "principalAxisRatio": 6.342192996791296,
+          "axisLengthKm": 1888.1792725498065,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 64,
+          "coveredAxisFraction": 0.9500000000000001,
+          "pathToAxisRatio": 0.9921312601938811,
+          "outputLengthKm": 1873.321681146805,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 1
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=42.2935671785 +lon_0=81.9483420267 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 1873.3216811468048,
+      "labelDistanceToLineDegrees": 1.9603510112472343e-15,
+      "outsideSourceLengthDegrees": 0.0
+    },
+    {
+      "groupId": "ne_10m_geography_regions_polys-716",
+      "name": "喜马拉雅山脉",
+      "components": [
+        {
+          "areaKm2": 474790.44796656887,
+          "relativeArea": 1.0,
+          "interiorSamples": 1265,
+          "principalAxisRatio": 4.733009192054671,
+          "axisLengthKm": 1967.8551951061058,
+          "crossSectionDiscontinuities": 0,
+          "crossSections": 64,
+          "coveredAxisFraction": 0.9500000000000002,
+          "pathToAxisRatio": 1.0056381766261604,
+          "outputLengthKm": 1978.9503102708215,
+          "outputParts": 1,
+          "status": "available",
+          "reason": "内部截面中点产生的主走向示意，不是地形山脊线。",
+          "sourceComponentIndex": 0
+        }
+      ],
+      "localProjection": "+proj=aeqd +lat_0=29.4602835574 +lon_0=85.0457537053 +datum=WGS84 +units=m +no_defs +type=crs",
+      "status": "available",
+      "outputParts": 1,
+      "outputLengthKm": 1978.9503102708218,
+      "labelDistanceToLineDegrees": 3.9752174831681343e-16,
+      "outsideSourceLengthDegrees": 0.0
+    }
+  ]
+}

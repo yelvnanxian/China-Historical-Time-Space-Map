@@ -27,8 +27,11 @@ import HistoricalMap from "./components/HistoricalMap";
 import HistoricalAtlasViewer from "./components/HistoricalAtlasViewer";
 import EvidencePanel from "./components/EvidencePanel";
 import SharePanel from "./components/SharePanel";
+import OnboardingGuide from "./components/OnboardingGuide";
+import CityPeriodHighlights, { CityPeriodHighlight } from "./components/CityPeriodHighlights";
 import { CityChronicle, HistoricalGeography } from "./components/HistoricalContext";
 import type { HistoricalContextData, HistoricalGeographyEntry } from "../shared/historical-context";
+import type { CityPeriodProfilesData } from "../shared/city-profiles";
 import {
   normalizeExploration,
   parseExploration,
@@ -94,6 +97,9 @@ export default function App() {
   const [loadError, setLoadError] = useState("");
   const [historicalContext, setHistoricalContext] = useState<HistoricalContextData | null>(null);
   const [contextError, setContextError] = useState("");
+  const [cityProfiles, setCityProfiles] = useState<CityPeriodProfilesData | null>(null);
+  const [cityProfilesError, setCityProfilesError] = useState("");
+  const [cityProfilesAttempt, setCityProfilesAttempt] = useState(0);
   const [geographySelection, setGeographySelection] = useState<HistoricalGeographyEntry | null>(null);
   const [geographyOpenRequest, setGeographyOpenRequest] = useState(0);
   const [attempt, setAttempt] = useState(0);
@@ -135,6 +141,19 @@ export default function App() {
       .catch(error => { if (error.name !== "AbortError") setContextError(error.message); });
     return () => controller.abort();
   }, []);
+
+  useEffect(() => {
+    const controller = new AbortController();
+    setCityProfilesError("");
+    fetch("/data/city-period-profiles.json", { signal: controller.signal })
+      .then(response => { if (!response.ok) throw new Error("本朝看点暂时无法加载"); return response.json() as Promise<CityPeriodProfilesData>; })
+      .then(data => {
+        if (!data || !Array.isArray(data.profiles) || !Array.isArray(data.sources)) throw new Error("本朝看点资料格式有误");
+        setCityProfiles(data);
+      })
+      .catch(() => { if (!controller.signal.aborted) setCityProfilesError("本朝看点暂时无法加载，请重试。"); });
+    return () => controller.abort();
+  }, [cityProfilesAttempt]);
 
   function commit(next: ExplorationState) {
     if (!catalog) return;
@@ -397,8 +416,9 @@ export default function App() {
         </nav>
         <div className="header-right">
           <span className="edition-label">
-            探索版 <span>V0.6.0</span>
+            探索版 <span>V0.7.0</span>
           </span>
+          <OnboardingGuide />
           <button
             className="share-button"
             onClick={() => setModal("share")}
@@ -425,7 +445,7 @@ export default function App() {
               以时间为经，以山河为纬
             </div>
             <h1>中国历史地图</h1>
-            <label className="period-picker">
+            <label className="period-picker" data-tour="period-picker">
               <span>朝代</span>
               <select
                 aria-label="选择朝代截面"
@@ -509,6 +529,7 @@ export default function App() {
                         "未找到相关内容。试试“长安”“北京”或“安史之乱”。"}
                   </p>
                 )}
+                <p className="search-scope-hint">这里查精选地点、事件与时期。山川或行政区请在“地图工具”中查找。</p>
               </div>
             )}
           </div>
@@ -528,7 +549,7 @@ export default function App() {
                   中国及周边地区
                 </small>
               </div>
-              <div className="map-display-mode" role="group" aria-label="地图显示内容">
+              <div className="map-display-mode" role="group" aria-label="地图显示内容" data-tour="display-mode">
                 {([
                   ["cities", "城池"],
                   ["nature", "山川河流"],
@@ -541,6 +562,8 @@ export default function App() {
                 ))}
               </div>
               <div className="map-place-controls">
+                <CityPeriodHighlights period={period} places={places} data={cityProfiles} error={cityProfilesError}
+                  onRetry={() => setCityProfilesAttempt(value => value + 1)} onSelect={selectPlace} />
                 <button type="button" className="map-details-launch" aria-expanded={detailsOpen && detailTab === "place"} aria-controls="historical-details" onClick={() => {
                   if (displayMode === "nature") setDisplayMode("both");
                   setDetailsOpen(true);
@@ -595,9 +618,9 @@ export default function App() {
                 onLocate={entry => { setDetailsOpen(false); if (displayMode === "cities") setDisplayMode("nature"); setGeographySelection({ ...entry }); }} />
               <span>
                 <Info size={12} />
-                {displayMode === "nature" ? "点击山系范围、河道或湖面查看详情" : `${boundaryStatus} · 河湖为现代自然背景`}
+                {displayMode === "nature" ? "点山川名称查看；河道、湖面也可点选 · 现代自然地理" : displayMode === "both" ? `${boundaryStatus} · 点山川名称看自然，点区域看行政` : `${boundaryStatus} · 已收录城池为精选参考`}
               </span>
-              <span className="map-count">{displayMode === "nature" ? "现代自然地理" : `${places.length} 处历史地点`}</span>
+              <span className="map-count">{displayMode === "nature" ? "现代自然地理" : `精选 ${places.length} 处历史地点`}</span>
             </div>
           </div>
 
@@ -664,6 +687,8 @@ export default function App() {
                       </span>
                     </div>
                     <CityDrawing />
+                    <CityPeriodHighlight period={period} placeId={place.id} data={cityProfiles} error={cityProfilesError}
+                      onRetry={() => setCityProfilesAttempt(value => value + 1)} />
                     <div className="detail-section">
                       <h3>
                         <span />
@@ -1058,7 +1083,7 @@ export default function App() {
                 </div>
                 <div>
                   <strong>{catalog.places.length}</strong>
-                  <span>历史地点</span>
+                  <span>精选地点</span>
                 </div>
                 <div>
                   <strong>{catalog.events.length}</strong>

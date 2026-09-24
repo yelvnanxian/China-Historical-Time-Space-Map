@@ -21,7 +21,8 @@ export default function SharePanel({ url }: { url: string }) {
       <span className="section-kicker">A PLACE, A MOMENT, A LINK</span>
       <h2>分享此刻的山河。</h2>
       <p className="dialog-intro">
-        链接保存当前专题、事件、地点与地名显示方式。重新打开链接，会从你正在看的位置开始探索。
+        链接保存当前朝代、地点或事件、档案页签、古今地名对照和事件连线开关。
+        显示模式、所选山川、地图视野与立体地形暂不随链接保存。
       </p>
       {isLocal && (
         <p className="share-local-note">

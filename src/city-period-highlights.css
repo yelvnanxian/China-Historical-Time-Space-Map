@@ -1,0 +1,28 @@
+.period-city-menu { position: static; }
+.period-city-menu > summary { display: inline-flex; align-items: center; justify-content: center; gap: 5px; min-height: 40px; color: #637c54; font-size: 11px; cursor: pointer; white-space: nowrap; list-style: none; }
+.period-city-menu > summary::-webkit-details-marker { display: none; }
+.period-city-menu > summary:focus-visible { outline: 2px solid #8a9b67; outline-offset: 3px; border-radius: 3px; }
+.period-city-menu[open] > summary { color: #3f613c; font-weight: 600; }
+.period-city-menu[open] > summary > svg:last-child { transform: rotate(180deg); }
+.period-city-panel { position: absolute; top: calc(var(--map-topline-height) + 7px); right: 12px; z-index: 58; width: min(380px, calc(100% - 24px)); max-height: calc(100% - var(--map-topline-height) - 46px); overflow: auto; border: 1px solid #ccd8bd; border-radius: 8px; background: #fbfcf4; box-shadow: 0 8px 32px #29493225; padding: 15px 16px; color: #54704b; }
+.period-city-panel > header { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.period-city-panel > header span { color: #91977c; font-size: 10px; }
+.period-city-panel h3 { font: 20px/1.5 var(--serif); margin: 6px 0 0; }
+.period-city-panel > header button { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; flex-shrink: 0; margin: -5px -8px 0 0; }
+.period-city-intro { margin: 10px 0 13px; font-size: 11px; color: #829177; line-height: 1.8; }
+.period-city-list { display: grid; gap: 7px; }
+.period-city-list > button { display: block; width: 100%; padding: 13px; text-align: left; border: 1px solid #e0e6d7; border-radius: 5px; background: #f3f6ec; }
+.period-city-list > button:hover { background: #eaf1df; border-color: #cad8ba; }
+.period-city-name { display: flex; align-items: center; justify-content: space-between; color: #4c6946; }
+.period-city-name strong { font: 17px/1.5 var(--serif); }
+.period-city-modern { display: flex; align-items: center; gap: 4px; margin: 5px 0 7px; font-size: 10px; color: #7d8b72; }
+.period-city-summary { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; font-size: 11px; line-height: 1.85; color: #7b8872; }
+.period-city-status { color: #869276; font-size: 12px; line-height: 1.8; }
+.period-city-status > button { display: inline-flex; min-height: 40px; align-items: center; margin-left: 8px; color: #647f50; text-decoration: underline; }
+.period-city-highlight { margin: 0 0 23px; padding: 15px; border: 1px solid #d9e2ca; border-radius: 6px; background: #f0f5e6; }
+.period-city-highlight > h3 { display: flex; align-items: center; gap: 7px; margin: 0 0 12px; color: #527149; font-size: 13px; font-weight: 500; }
+.period-city-highlight > h3 > span { margin-left: auto; color: #8a946f; font-size: 10px; }
+.period-city-highlight > p { margin: 0 0 14px; color: #63795b; font-size: 13px; line-height: 1.95; }
+.period-city-highlight > p.period-highlight-date-note { margin: -3px 0 11px; color: #8a977c; font-size: 10px; }
+.period-highlight-missing { margin: 0 0 18px; color: #939b84; font-size: 11px; line-height: 1.8; }
+@media (max-width: 720px) { .period-city-menu > summary { min-height: 44px; font-size: 11px; } .period-city-panel { right: 8px; width: calc(100% - 16px); padding: 14px; } .period-city-highlight { padding: 13px; } }
