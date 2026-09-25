@@ -24,5 +24,5 @@ export function physicalWaterGeometry(collection: PhysicalFeatureCollection): Ph
 
 export function isOptionalPhysicalLayerError(event: unknown): boolean {
   const sourceId = (event as { sourceId?: string } | null)?.sourceId;
-  return ["physical-interactive", "mountain-directions", "tang-detail", "tang-detail-selected", "mountain-detail", "mountain-detail-selected", "historical-river", "historical-river-compare"].includes(sourceId ?? "");
+  return sourceId?.startsWith("mountain-shape-") === true || ["mountain-shapes", "physical-interactive", "mountain-directions", "tang-detail", "tang-detail-selected", "mountain-detail", "mountain-detail-selected", "historical-river", "historical-river-compare"].includes(sourceId ?? "");
 }

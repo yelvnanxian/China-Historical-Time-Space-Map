@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Marker, type GeoJSONSource, type Map as MapInstance, type MapMouseEvent } from "maplibre-gl";
 import type { FeatureCollection, MultiPolygon, Polygon } from "geojson";
 import type { BoundaryDataset, BoundaryLevel, BoundaryManifest, BoundarySelection } from "../../shared/boundaries";
-import { boundaryCountryCoverage, boundaryLevelNames } from "../../shared/boundaries";
+import { boundaryCountryCoverage, boundaryLevelName } from "../../shared/boundaries";
 import { resolveMapDetailLevel } from "../../shared/map-detail-levels";
 import { findNaturalMapHit } from "../../shared/map-hit-test";
 import { resolveBoundarySelectionRequest, type BoundaryRequestState, type BoundarySelectionRequest } from "../../shared/boundary-selection";
@@ -48,7 +48,9 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
   const requestState = useRef<BoundaryRequestState | undefined>(undefined);
   const focusedLabelId = useRef<string | undefined>(undefined);
   useEffect(() => { setSelection(null); }, [resetKey]);
-  useEffect(() => { if (!enabled || !interactive) setSelection(null); }, [enabled, interactive]);
+  // Hiding the overlay must not discard a completed quiet selection: reopening
+  // restores its highlight without replaying the request or moving the camera.
+  useEffect(() => { if (!interactive) setSelection(null); }, [interactive]);
   const [loading, setLoading] = useState(false);
   const [dataError, setDataError] = useState("");
   const [manifestError, setManifestError] = useState("");
@@ -226,7 +228,7 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
         element.type = "button";
         element.className = `boundary-region-label boundary-region-${p.level}${p.id === selection?.id ? " is-selected" : ""}`;
         element.dataset.boundaryId = p.id;
-        element.setAttribute("aria-label", `查看${p.name}的${boundaryLevelNames[p.level]}范围${modern ? `，${modern}` : ""}`);
+        element.setAttribute("aria-label", `查看${p.name}的${boundaryLevelName(p.level, periodId)}范围${modern ? `，${modern}` : ""}`);
         element.setAttribute("aria-pressed", String(p.id === selection?.id));
         element.textContent = p.name;
         if (modernLabel) { const current = document.createElement("small"); current.textContent = modernLabel; element.append(current); }
@@ -251,7 +253,7 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
       if (frame !== undefined) cancelAnimationFrame(frame);
       markers.forEach(marker => marker.remove());
     };
-  }, [map, ready, displayRegions, visibleLevels, modernNames, enabled, interactive, selection?.id]);
+  }, [map, ready, displayRegions, visibleLevels, modernNames, enabled, interactive, selection?.id, periodId]);
 
   const regionOptions = useMemo(() => displayRegions.features.map(feature => feature.properties), [displayRegions]);
   const focusRegion = useCallback((id: string, options: { focus?: boolean; quiet?: boolean } = {}) => {

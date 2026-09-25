@@ -38,7 +38,7 @@ export default function TangDetailLayer({ map, ready, enabled, mode, zoom, moder
   controlsContainer: HTMLElement | null; resetKey: string; replaceYellowLower: boolean; places: Place[];
   onPlaceSelect: (id: string) => void; onFocus: (points: [number, number][], maxZoom?: number) => void; onChoose: () => void;
   onCoverageChange: (replacements: WaterDetailReplacement[]) => void;
-  tangBoundaries: TangBoundaryCrosswalk | null; onBoundaryRequest: (id: string, quiet?: boolean) => void;
+  tangBoundaries: TangBoundaryCrosswalk | null; onBoundaryRequest: (id: string, quiet?: boolean, focus?: boolean) => void;
   mountainFeatureIds: string[]; crosswalkLoading: boolean;
 }) {
   const [manifest, setManifest] = useState<TangDetailManifest>();
@@ -56,10 +56,17 @@ export default function TangDetailLayer({ map, ready, enabled, mode, zoom, moder
   const [collapsed, setCollapsed] = useState(false);
   const choose = useRef(onChoose); choose.current = onChoose;
   const boundaryChoose = useRef(onBoundaryRequest); boundaryChoose.current = onBoundaryRequest;
+  const focusedJurisdiction = useRef<string | undefined>(undefined);
   useEffect(() => {
-    if (!enabled || !canInteract(mode, "cities") || selected?.properties.kind !== "settlement") return;
+    if (selected?.properties.kind !== "settlement") { focusedJurisdiction.current = undefined; return; }
+    if (!enabled || !canInteract(mode, "cities")) return;
     const link = tangBoundaries?.settlements[selected.properties.id];
-    if (link) boundaryChoose.current(link.boundaryId, true);
+    if (link) {
+      const key = `${selected.properties.id}:${link.boundaryId}`;
+      const fit = selected.properties.level === "prefecture" && focusedJurisdiction.current !== key;
+      focusedJurisdiction.current = key;
+      boundaryChoose.current(link.boundaryId, true, fit);
+    }
   }, [selected, tangBoundaries, enabled, mode]);
   useEffect(() => { setSelected(undefined); }, [resetKey, enabled]);
   useEffect(() => { if (selected && !canSelectTangDetail(selected.properties, mode)) setSelected(undefined); }, [mode, selected]);
@@ -207,7 +214,7 @@ export default function TangDetailLayer({ map, ready, enabled, mode, zoom, moder
     [layerIds[6], layerIds[7], layerIds[8]].forEach(id => map.setFilter(id, ["all", ["==", ["get", "id"], selected?.properties.id ?? ""], ["==", ["geometry-type"], id === layerIds[8] ? "Point" : id === layerIds[7] ? "Polygon" : selected?.geometry.type === "Polygon" || selected?.geometry.type === "MultiPolygon" ? "Polygon" : "LineString"]]));
   }, [map, ready, selected, replaceYellowLower, yellowWaterIds]);
   function select(feature: DetailFeature) {
-    setSelected(feature); setCollapsed(false); choose.current();
+    setSelected({ ...feature }); setCollapsed(false); choose.current();
 
   }
   useEffect(() => {
@@ -256,8 +263,15 @@ export default function TangDetailLayer({ map, ready, enabled, mode, zoom, moder
 
   function focus(feature: DetailFeature) {
     const p = feature.properties;
-    onFocus(feature.geometry.type === "Point" ? [p.labelCoordinates] : [[p.bounds[0], p.bounds[1]], [p.bounds[2], p.bounds[3]]], Math.max(10.5, p.minZoom + .5));
-    select(feature);
+    const jurisdiction = p.kind === "settlement" && p.level === "prefecture" ? tangBoundaries?.settlements[p.id] : undefined;
+    if (jurisdiction) {
+      // The selection effect frames the jurisdiction once, after clearing old targets.
+      focusedJurisdiction.current = undefined;
+      select({ ...feature });
+    } else {
+      onFocus(feature.geometry.type === "Point" ? [p.labelCoordinates] : [[p.bounds[0], p.bounds[1]], [p.bounds[2], p.bounds[3]]], Math.max(10.5, p.minZoom + .5));
+      select(feature);
+    }
   }
   const selectedProperties = selected?.properties;
   const relatedPlace = selectedProperties?.kind === "settlement" ? places.find(place => [place.name, place.nameByPeriod?.tang, ...place.aliases].includes(selectedProperties.name) && Math.hypot(place.coordinates[0] - selectedProperties.labelCoordinates[0], place.coordinates[1] - selectedProperties.labelCoordinates[1]) < .4) : undefined;
@@ -269,6 +283,7 @@ export default function TangDetailLayer({ map, ready, enabled, mode, zoom, moder
       <div className="nature-search-results">{searchResults.map(feature => <button key={feature.properties.id} onClick={() => focus(feature)}><strong>{feature.properties.name}</strong><span>{feature.properties.kind === "settlement" ? feature.properties.subtype : tangDetailKindNames[feature.properties.kind]}</span></button>)}</div>
       {query && !searchResults.length && <p>暂无匹配记录。自然地物请先放大到细节区域后搜索。</p>}
       <details className="detail-coverage"><summary>细节区域与来源</summary><p>治所使用755年记录，行政面为741年参照。水系、湖岸和山峰来自现代 OSM，不能据此确认其唐代状态。</p>
+        {tangBoundaries?.coverage && <p>755年治所中，州郡府级已关联{tangBoundaries.coverage.byLevel.prefecture.matched} / {tangBoundaries.coverage.byLevel.prefecture.total}条；{tangBoundaries.coverage.byLevel.prefecture.unmatched}条仍缺可靠辖区。县治按已核对隶属关联州郡。未关联对象在详情说明原因。</p>}
         <div className="detail-region-shortcuts">{manifest?.modernCoverageRegions.map(region => <button key={region.id} onClick={() => onFocus([[(region.bounds[0] + region.bounds[2]) / 2, (region.bounds[1] + region.bounds[3]) / 2]], 9)}>{region.name}</button>)}</div>
         <p>放大至8级加载主要河湖；10级起加载局部支流、山峰，12级可见更小水面。无名称地物保留形状，不杜撰地名。未覆盖地区仍是概览数据。</p>
       </details>
@@ -277,7 +292,7 @@ export default function TangDetailLayer({ map, ready, enabled, mode, zoom, moder
     {enabled && selectedProperties && <section className="nature-detail tang-detail-card" aria-label="唐代城镇与地物详情"><header><button className="nature-detail-title" aria-expanded={!collapsed} onClick={() => setCollapsed(value => !value)}><strong>{selectedProperties.name}</strong><span>{collapsed ? "展开" : "收起"}</span></button><button aria-label="关闭地物详情" onClick={() => setSelected(undefined)}><X size={16} /></button></header>
       {!collapsed && <div className="nature-detail-body"><span className="nature-kind">{tangDetailKindNames[selectedProperties.kind]} · {selectedProperties.modernReferenceOnly ? "现代参照" : "唐代 · 755年记录"}</span>
         {selectedProperties.kind === "settlement" && <><p>{selectedProperties.subtype} · {selectedProperties.presentLocation || "来源未提供现代位置描述"}</p><p>资料存续年：{selectedProperties.beginYear}—{selectedProperties.endYear}年。{String(selectedProperties.sourceRecord?.BEG_RULE) === "4" && String(selectedProperties.sourceRecord?.END_RULE) === "4" ? "起讫年据来源记录。" : "包含较宽的定年范围，详情以原始记录为准。"}</p></>}
-        {selectedProperties.kind === "settlement" && <TangJurisdictionInfo loading={crosswalkLoading} name={selectedProperties.name} link={tangBoundaries?.settlements[selectedProperties.id]} onView={id => onBoundaryRequest(id)} />}
+        {selectedProperties.kind === "settlement" && <TangJurisdictionInfo loading={crosswalkLoading} name={selectedProperties.name} link={tangBoundaries?.settlements[selectedProperties.id]} missingReason={tangBoundaries?.unmatchedSettlements?.[selectedProperties.id]?.reason} onView={id => onBoundaryRequest(id)} />}
         {selectedProperties.tags?.ele && <p>来源标注高程：{selectedProperties.tags.ele}米</p>}
         <p>{selectedProperties.geometryNote}</p>
         {selectedProperties.modernReferenceOnly && <p className="nature-detail-note">本条为现代测绘参照；线是河道中心线，水面多边形才表示来源记录的水域范围。不是唐代河岸复原。</p>}

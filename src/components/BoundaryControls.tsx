@@ -9,7 +9,7 @@ import {
   X,
 } from "lucide-react";
 import {
-  boundaryLevelNames,
+  boundaryLevelName,
   boundaryCountryCoverage,
   type BoundaryDataset,
   type BoundaryLevel,
@@ -57,6 +57,7 @@ export default function BoundaryControls(props: BoundaryControlsProps) {
   const bodyId = useId();
   const searchInput = useRef<HTMLInputElement>(null);
   const dataset = props.selectedDataset;
+  const levelName = (level: BoundaryLevel) => boundaryLevelName(level, dataset?.periodId);
   const countryCoverage = boundaryCountryCoverage(dataset);
   const regionIndex = useMemo(() => (props.regionOptions ?? []).map(region => ({ region, key: boundarySearchKey([region.name, region.originalName, ...(region.modernNames ?? [])].join(" ")) })), [props.regionOptions]);
   const regionResults = useMemo(() => {
@@ -146,11 +147,11 @@ export default function BoundaryControls(props: BoundaryControlsProps) {
       {expanded && (
         <div id={bodyId} className="boundary-controls-body">
           <p className="boundary-effective-level" role="status">
-            {props.enabled === false ? "行政边界已关闭" : props.activeLevel ? `随缩放显示：${boundaryLevelNames[props.activeLevel]}。${props.interactive === false ? "当前模式仅保留行政轮廓作为位置参照。" : "点击名称或区域可高亮辖区。"}` : "当前资料暂无可显示的行政层级。"}
+            {props.enabled === false ? "行政边界已关闭" : props.activeLevel ? `随缩放显示：${levelName(props.activeLevel)}。${props.interactive === false ? "当前模式仅保留行政轮廓作为位置参照。" : "点击名称或区域可高亮辖区。"}` : "当前资料暂无可显示的行政层级。"}
           </p>
-          <p className="boundary-scale-guide">缩小看国家与省道，放大依次看府州郡、县域与城池。选中辖区会持续高亮，背景层级仍随缩放切换。</p>
+          <p className="boundary-scale-guide">{dataset?.periodId === "tang" ? "唐代层级：道（监察区）→ 州 / 郡 / 府 → 县。州、郡、府属于同一级，高于县；道不等同于现代省。" : "缩小看国家与省路，放大依次看府州郡、县域与城池。"}选中辖区会持续高亮，背景层级仍随缩放切换。</p>
           {countryCoverage.incomplete && props.zoom < 4 && <aside className="boundary-country-notice">
-            <p>{countryCoverage.note}{props.visibleLevels.includes("province") ? "当前以省道显示行政范围，周边诸部作为背景。" : ""}</p>
+            <p>{countryCoverage.note}{props.visibleLevels.includes("province") ? `当前显示${levelName("province")}范围，周边诸部作为背景。` : ""}</p>
             {props.onOpenAtlas && <button type="button" onClick={props.onOpenAtlas}>查看历史原图 <ExternalLink size={12} /></button>}
           </aside>}
           {dataset && props.onRegionSelect && props.enabled !== false && props.interactive !== false && (
@@ -159,7 +160,7 @@ export default function BoundaryControls(props: BoundaryControlsProps) {
               <input ref={searchInput} id={`${bodyId}-search`} type="search" value={regionQuery} onChange={event => setRegionQuery(event.target.value)} placeholder="输入古名或现代地区名" />
               <small>搜索所有已收录层级，选择后显示对应辖区。</small>
               {regionQuery.trim() && <div className="boundary-search-results" role="region" aria-label="行政区搜索结果">
-                {regionResults.length ? regionResults.map(region => <button key={region.id} onClick={() => { props.onRegionSelect?.(region.id); setRegionQuery(""); searchInput.current?.focus(); }}><strong>{region.name}</strong><span>{boundaryLevelNames[region.level]}</span></button>) : <p>当前资料中没有匹配的行政区。</p>}
+                {regionResults.length ? regionResults.map(region => <button key={region.id} onClick={() => { props.onRegionSelect?.(region.id); setRegionQuery(""); searchInput.current?.focus(); }}><strong>{region.name}</strong><span>{levelName(region.level)}</span></button>) : <p>当前资料中没有匹配的行政区。</p>}
               </div>}
             </div>
           )}
@@ -168,7 +169,7 @@ export default function BoundaryControls(props: BoundaryControlsProps) {
               <div className="boundary-selection-heading">
                 <span>
                   <MapPin size={13} />
-                  {boundaryLevelNames[props.selection.level]}
+                  {levelName(props.selection.level)}
                 </span>
                 <button
                   onClick={props.onSelectionClose}
@@ -179,7 +180,7 @@ export default function BoundaryControls(props: BoundaryControlsProps) {
                 </button>
               </div>
               <h3>{props.selection.name}</h3>
-              <p className="boundary-selection-highlight-note">地图已用深色边线与底色高亮该区域范围。</p>
+              <p className="boundary-selection-highlight-note">{props.enabled === false ? "行政边界已隐藏；开启后恢复此辖区高亮。" : "地图已用深色边线与底色高亮该区域范围。"}</p>
               <details className="boundary-original-name"><summary>查看来源原文</summary>
                 <p>原文名称 · {props.selection.originalName || "来源未提供"}</p>
                 {props.selection.originalPolity && <p>原始分组 · {props.selection.originalPolity}</p>}
@@ -286,7 +287,7 @@ export default function BoundaryControls(props: BoundaryControlsProps) {
                 <p className="boundary-unavailable-levels">
                   未收录层级：
                   {missingLevels
-                    .map((level) => boundaryLevelNames[level])
+                    .map(levelName)
                     .join("、")}
                 </p>
               )}

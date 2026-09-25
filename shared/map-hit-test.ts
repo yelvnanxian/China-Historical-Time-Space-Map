@@ -10,6 +10,7 @@ const targets: { layer: string; category: MapTargetCategory }[] = [
   { layer: "tang-detail-hit", category: "rivers" },
   { layer: "tang-detail-peaks", category: "mountains" },
   { layer: "tang-detail-towns", category: "cities" },
+  { layer: "mountain-shape-contour-hit", category: "mountains" },
   { layer: "mountain-selected-line", category: "mountains" },
   { layer: "physical-river-hit", category: "rivers" },
   { layer: "physical-lake-fill", category: "rivers" },

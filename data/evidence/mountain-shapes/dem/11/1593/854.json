@@ -1,0 +1,10 @@
+{
+  "z": 11,
+  "x": 1593,
+  "y": 854,
+  "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1593/854.png",
+  "evidencePath": "data/evidence/mountain-shapes/dem/11/1593/854.png",
+  "sha256": "f88f2e86825629f76a0a32a605ba07b7db0f1bb5e4a79fe08dfdb4f932abdc19",
+  "bytes": 71369,
+  "retrievedAt": "2026-09-25T04:27:03.428432+00:00"
+}

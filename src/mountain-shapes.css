@@ -1,0 +1,12 @@
+.mountain-shape-explorer { border-left: 2px solid #9b875f; padding-left: 10px; }
+.mountain-shape-shortcuts { display: flex; flex-wrap: wrap; gap: 5px; }
+.mountain-shape-shortcuts button { padding: 6px 8px; border: 1px solid #d7cfb8; border-radius: 4px; color: #766440; font-size: 11px; }
+.mountain-shape-shortcuts button:hover { background: #f0e9d5; }
+.mountain-contour-label { white-space: nowrap; font: 10px/1.2 var(--serif); color: #8c7752; background: #f6f1e7c9; border-radius: 2px; padding: 1px 3px; cursor: pointer; }
+.mountain-contour-label:hover,.mountain-contour-label:focus-visible { outline: 1px solid #b68d58; }
+.tang-level-chain { color: #655f40 !important; font-weight: 600; }
+@media (max-width:720px) { .mountain-shape-shortcuts button { min-height: 38px; } }
+
+.map-tool-natural > .nature-explorer.mountain-shape-explorer { order: -1; }
+
+.mountain-shape-peak-label { padding: 5px 8px; background: #fff7e5; color: #8a4f30; border: 1px solid #a77344; border-radius: 4px; white-space: nowrap; z-index: 40; font: 12px/1.4 var(--serif); }

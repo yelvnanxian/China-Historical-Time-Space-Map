@@ -1,0 +1,165 @@
+{
+  "areaCount": 17,
+  "sourceTileCount": 153,
+  "featureCount": 11984,
+  "vertexCount": 2573919,
+  "maxPublishedCoordinateElevationErrorMeters": 0.010683041436095664,
+  "allSourceHashesValid": true,
+  "allPeakNamesAndCoordinatesExact": true,
+  "allShadeImagesTransparentAtCropEdge": true,
+  "areas": [
+    {
+      "id": "baxiantai",
+      "featureCount": 960,
+      "vertexCount": 259382,
+      "publishedCoordinateElevationMaxErrorMeters": 0.0012527829730970552,
+      "sourcePeakExact": true,
+      "sourceHashesValid": true,
+      "rgbaTransparencyValid": true
+    },
+    {
+      "id": "huashan-south",
+      "featureCount": 737,
+      "vertexCount": 123859,
+      "publishedCoordinateElevationMaxErrorMeters": 0.0013208692388388954,
+      "sourcePeakExact": true,
+      "sourceHashesValid": true,
+      "rgbaTransparencyValid": true
+    },
+    {
+      "id": "zhongnanshan",
+      "featureCount": 836,
+      "vertexCount": 186290,
+      "publishedCoordinateElevationMaxErrorMeters": 0.0010961549260173342,
+      "sourcePeakExact": true,
+      "sourceHashesValid": true,
+      "rgbaTransparencyValid": true
+    },
+    {
+      "id": "maijishan",
+      "featureCount": 1448,
+      "vertexCount": 216140,
+      "publishedCoordinateElevationMaxErrorMeters": 0.0010581683031887223,
+      "sourcePeakExact": true,
+      "sourceHashesValid": true,
+      "rgbaTransparencyValid": true
+    },
+    {
+      "id": "wangwushan",
+      "featureCount": 1109,
+      "vertexCount": 165948,
+      "publishedCoordinateElevationMaxErrorMeters": 0.001592410819171164,
+      "sourcePeakExact": true,
+      "sourceHashesValid": true,
+      "rgbaTransparencyValid": true
+    },
+    {
+      "id": "wangmangling",
+      "featureCount": 1013,
+      "vertexCount": 148837,
+      "publishedCoordinateElevationMaxErrorMeters": 0.002529412174681056,
+      "sourcePeakExact": true,
+      "sourceHashesValid": true,
+      "rgbaTransparencyValid": true
+    },
+    {
+      "id": "wutai-north",
+      "featureCount": 689,
+      "vertexCount": 188029,
+      "publishedCoordinateElevationMaxErrorMeters": 0.0010525021964440384,
+      "sourcePeakExact": true,
+      "sourceHashesValid": true,
+      "rgbaTransparencyValid": true
+    },
+    {
+      "id": "gangshika",
+      "featureCount": 329,
+      "vertexCount": 75241,
+      "publishedCoordinateElevationMaxErrorMeters": 0.0008149830182446749,
+      "sourcePeakExact": true,
+      "sourceHashesValid": true,
+      "rgbaTransparencyValid": true
+    },
+    {
+      "id": "shule-nanshan",
+      "featureCount": 195,
+      "vertexCount": 47974,
+      "publishedCoordinateElevationMaxErrorMeters": 0.0008368359913220047,
+      "sourcePeakExact": true,
+      "sourceHashesValid": true,
+      "rgbaTransparencyValid": true
+    },
+    {
+      "id": "zhuoershan",
+      "featureCount": 831,
+      "vertexCount": 200683,
+      "publishedCoordinateElevationMaxErrorMeters": 0.001175098289422749,
+      "sourcePeakExact": true,
+      "sourceHashesValid": true,
+      "rgbaTransparencyValid": true
+    },
+    {
+      "id": "khan-tengri",
+      "featureCount": 627,
+      "vertexCount": 134948,
+      "publishedCoordinateElevationMaxErrorMeters": 0.010683041436095664,
+      "sourcePeakExact": true,
+      "sourceHashesValid": true,
+      "rgbaTransparencyValid": true
+    },
+    {
+      "id": "bogda",
+      "featureCount": 364,
+      "vertexCount": 96353,
+      "publishedCoordinateElevationMaxErrorMeters": 0.0016278572311421158,
+      "sourcePeakExact": true,
+      "sourceHashesValid": true,
+      "rgbaTransparencyValid": true
+    },
+    {
+      "id": "xuelian",
+      "featureCount": 550,
+      "vertexCount": 148155,
+      "publishedCoordinateElevationMaxErrorMeters": 0.0022684190853397013,
+      "sourcePeakExact": true,
+      "sourceHashesValid": true,
+      "rgbaTransparencyValid": true
+    },
+    {
+      "id": "gongga",
+      "featureCount": 577,
+      "vertexCount": 151567,
+      "publishedCoordinateElevationMaxErrorMeters": 0.010356860901083564,
+      "sourcePeakExact": true,
+      "sourceHashesValid": true,
+      "rgbaTransparencyValid": true
+    },
+    {
+      "id": "yaomei",
+      "featureCount": 636,
+      "vertexCount": 164198,
+      "publishedCoordinateElevationMaxErrorMeters": 0.0021003625593039033,
+      "sourcePeakExact": true,
+      "sourceHashesValid": true,
+      "rgbaTransparencyValid": true
+    },
+    {
+      "id": "xiannairi",
+      "featureCount": 569,
+      "vertexCount": 147562,
+      "publishedCoordinateElevationMaxErrorMeters": 0.002367905091432476,
+      "sourcePeakExact": true,
+      "sourceHashesValid": true,
+      "rgbaTransparencyValid": true
+    },
+    {
+      "id": "queershan",
+      "featureCount": 514,
+      "vertexCount": 118753,
+      "publishedCoordinateElevationMaxErrorMeters": 0.002231015600500541,
+      "sourcePeakExact": true,
+      "sourceHashesValid": true,
+      "rgbaTransparencyValid": true
+    }
+  ]
+}

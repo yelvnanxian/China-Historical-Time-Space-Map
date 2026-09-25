@@ -1,0 +1,3117 @@
+{
+  "version": "mountain-shapes-1",
+  "title": "山地现代等高线与精细山影",
+  "modernReferenceOnly": true,
+  "source": {
+    "name": "Mapzen / Tilezen Terrain Tiles, AWS Open Data",
+    "url": "https://registry.opendata.aws/terrain-tiles/",
+    "template": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png",
+    "encoding": "terrarium",
+    "elevationFormula": "red * 256 + green + blue / 256 - 32768",
+    "attribution": "Mapzen / Tilezen; SRTM and GMTED2010 courtesy of USGS; additional providers listed in the original terrain attribution.",
+    "attributionUrl": "/data/terrain/attribution.md"
+  },
+  "processing": {
+    "contourMethod": "ContourPy serial marching squares over unmodified decoded DEM; linear edge interpolation; no smoothing or line simplification; coordinates rounded to 8 decimal places.",
+    "hillshadeMethod": "Surface-normal illumination with latitude-adjusted pixel spacing; shade alpha is darkness relative to flat ground. Transparent RGBA, with crop-edge opacity fade only.",
+    "sunAzimuth": 315,
+    "sunAltitude": 45,
+    "verticalExaggeration": 1,
+    "edgeFadePixels": 24,
+    "demExclusionPolicy": "仅在所选内陆山地窗口排除孤立负高程待核异常；不把该规则推广为全球DEM无效值规则。清单逐点保留原坐标与高程。等高线跳过涉及格网，山影异常像素及邻接梯度透明；未插值补洞。"
+  },
+  "areaCount": 17,
+  "sourceTileCount": 153,
+  "featureCount": 11984,
+  "note": "仅覆盖所列真实OSM峰点周边近览区，非连续全国山地数据；采集区名称不证明某峰属于某山系。等高线表示现代高程，不是山脉轮廓或古代边界；OSM峰高和DEM像素高可能不同，均不作独立实测核定。",
+  "areas": [
+    {
+      "id": "baxiantai",
+      "name": "拔仙台",
+      "regionId": "qinling",
+      "center": [
+        107.7652754,
+        33.9551193
+      ],
+      "bounds": [
+        107.578125,
+        33.7243396617476,
+        108.10546875,
+        34.161818161230386
+      ],
+      "contoursUrl": "/data/mountain-shapes/baxiantai-contours.geojson.gz",
+      "shadeUrl": "/data/mountain-shapes/baxiantai-shade.png",
+      "imageCoordinates": [
+        [
+          107.578125,
+          34.161818161230386
+        ],
+        [
+          108.10546875,
+          34.161818161230386
+        ],
+        [
+          108.10546875,
+          33.7243396617476
+        ],
+        [
+          107.578125,
+          33.7243396617476
+        ]
+      ],
+      "sourcePeak": {
+        "id": "osm-node-4631429623",
+        "name": "拔仙台",
+        "coordinates": [
+          107.7652754,
+          33.9551193
+        ],
+        "sourceUrl": "https://www.openstreetmap.org/node/4631429623",
+        "sourcePackUrl": "/data/mountain-detail/qinling-0.geojson.gz",
+        "sourcePackSha256": "32411b1752c38d11059f7e9a777465b8071da738689d09e75a6eda3dffb71807",
+        "tags": {
+          "ele": "3767",
+          "name": "拔仙台",
+          "name:en": "Taibai Shan",
+          "name:zh": "拔仙台",
+          "natural": "peak",
+          "prominence": "2207",
+          "source:prominence": "3767-1560 (Col at the E of Dongheqiao)"
+        }
+      },
+      "demZoom": 11,
+      "pixelSizeMeters": 63.403,
+      "pixelSizeMetersRange": [
+        63.248,
+        63.574
+      ],
+      "pixelDimensions": [
+        768,
+        768
+      ],
+      "contourInterval": 100,
+      "indexInterval": 500,
+      "minZoom": 9,
+      "featureCount": 960,
+      "vertexCount": 259382,
+      "elevationRange": [
+        458.0,
+        3751.0
+      ],
+      "excludedDemSamples": [],
+      "sourceTiles": [
+        {
+          "z": 11,
+          "x": 1636,
+          "y": 817,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1636/817.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1636/817.png",
+          "sha256": "72deb8a3b3e267db91e6e20678c2f3bf35e0c01791815a9c7007aefd2f464b4e",
+          "bytes": 71928,
+          "retrievedAt": "2026-09-25T04:27:58.040010+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1637,
+          "y": 817,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1637/817.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1637/817.png",
+          "sha256": "419544b1bf94ef2769bcbc268ee8f7781e3dffae50ad52e2a20af421562eb1e2",
+          "bytes": 70458,
+          "retrievedAt": "2026-09-25T04:28:05.175917+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1638,
+          "y": 817,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1638/817.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1638/817.png",
+          "sha256": "fbcabef450e081b422dc9d6d84a180ee763e13f876237d93eeb81a45eea4e506",
+          "bytes": 63898,
+          "retrievedAt": "2026-09-25T04:28:08.872804+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1636,
+          "y": 818,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1636/818.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1636/818.png",
+          "sha256": "3d3aab0b038a121c45582c045de4dbce3ec6e6eda1a29d3a8940f49eb7438753",
+          "bytes": 73535,
+          "retrievedAt": "2026-09-25T04:27:59.789479+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1637,
+          "y": 818,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1637/818.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1637/818.png",
+          "sha256": "7317ef25c83d23033da944c55e381518c8f593ddf7c4785a15a200ad776ecc04",
+          "bytes": 73407,
+          "retrievedAt": "2026-09-25T04:28:09.993828+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1638,
+          "y": 818,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1638/818.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1638/818.png",
+          "sha256": "229f24a53da8517803eafac5be4da99ff47132361ea7b3dc9f89c64f452f377f",
+          "bytes": 75191,
+          "retrievedAt": "2026-09-25T04:28:10.507371+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1636,
+          "y": 819,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1636/819.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1636/819.png",
+          "sha256": "85ef85cff05f097dca17f42c597625fe3a3f7fa221c4612e4f69272f9e312d02",
+          "bytes": 71860,
+          "retrievedAt": "2026-09-25T04:28:01.343034+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1637,
+          "y": 819,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1637/819.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1637/819.png",
+          "sha256": "7ae9f4fc9bc6fab97a0db41c797e7b351eff34b9c98d252efc737988354e3dec",
+          "bytes": 72544,
+          "retrievedAt": "2026-09-25T04:28:09.941731+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1638,
+          "y": 819,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1638/819.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1638/819.png",
+          "sha256": "27314e6ef745dd69766b22974f72631c048f505e977a94646ccaf464d173650a",
+          "bytes": 72798,
+          "retrievedAt": "2026-09-25T04:28:12.644645+00:00"
+        }
+      ],
+      "contoursSha256": "87a5fba97b6a08419a55bc76ea62fff4e964cd7da48e1ca4b9d6e8e16a9778c1",
+      "shadeSha256": "c694afeb1f7ab5adce6b998bf0023eac2cc382c69c3ab687ee137dd7272bfc56",
+      "modernReferenceOnly": true,
+      "note": "真实现代DEM推导等高线与山影；覆盖框只是取数裁切范围，不是山体边界。像素间距不是独立测量精度；不能用于唐代地貌或精确峰顶海拔判定。"
+    },
+    {
+      "id": "huashan-south",
+      "name": "华山南峰",
+      "regionId": "qinling",
+      "center": [
+        110.0780729,
+        34.4777617
+      ],
+      "bounds": [
+        109.86328125,
+        34.307143856288036,
+        110.390625,
+        34.74161249883172
+      ],
+      "contoursUrl": "/data/mountain-shapes/huashan-south-contours.geojson.gz",
+      "shadeUrl": "/data/mountain-shapes/huashan-south-shade.png",
+      "imageCoordinates": [
+        [
+          109.86328125,
+          34.74161249883172
+        ],
+        [
+          110.390625,
+          34.74161249883172
+        ],
+        [
+          110.390625,
+          34.307143856288036
+        ],
+        [
+          109.86328125,
+          34.307143856288036
+        ]
+      ],
+      "sourcePeak": {
+        "id": "osm-node-2260053296",
+        "name": "华山南峰",
+        "coordinates": [
+          110.0780729,
+          34.4777617
+        ],
+        "sourceUrl": "https://www.openstreetmap.org/node/2260053296",
+        "sourcePackUrl": "/data/mountain-detail/qinling-0.geojson.gz",
+        "sourcePackSha256": "32411b1752c38d11059f7e9a777465b8071da738689d09e75a6eda3dffb71807",
+        "tags": {
+          "alt_name:cs": "Květinová hora",
+          "description:zh": "华山主峰",
+          "ele": "2150",
+          "name": "华山南峰",
+          "name:cs": "jižní vrchol Chua-šan",
+          "name:en": "Mount Hua South Peak",
+          "name:pl": "Góra Hua Shan",
+          "name:ru": "южный пик",
+          "name:zh": "华山南峰",
+          "name:zh-Latn-pinyin": "huà shān nán fēng",
+          "natural": "peak",
+          "sorting_name:cs": "Chua-šan jižní",
+          "wikidata": "Q112568",
+          "wikimedia_commons": "Category:Mount Hua",
+          "wikipedia": "pl:Hua Shan"
+        }
+      },
+      "demZoom": 11,
+      "pixelSizeMeters": 63.011,
+      "pixelSizeMetersRange": [
+        62.811,
+        63.139
+      ],
+      "pixelDimensions": [
+        768,
+        768
+      ],
+      "contourInterval": 100,
+      "indexInterval": 500,
+      "minZoom": 9,
+      "featureCount": 737,
+      "vertexCount": 123859,
+      "elevationRange": [
+        216.0,
+        2444.0
+      ],
+      "excludedDemSamples": [],
+      "sourceTiles": [
+        {
+          "z": 11,
+          "x": 1649,
+          "y": 813,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1649/813.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1649/813.png",
+          "sha256": "40eca21d5d0d0fa88bfe8e70a6194f5575f686d07d5191dcfa709177cd944c04",
+          "bytes": 26362,
+          "retrievedAt": "2026-09-25T04:28:17.435414+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1650,
+          "y": 813,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1650/813.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1650/813.png",
+          "sha256": "8e4d2a03ddcb6e81723f31bf03aed2c2411d4ce2a4b791b4b76c2b1e6b802fd8",
+          "bytes": 25393,
+          "retrievedAt": "2026-09-25T04:28:19.543953+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1651,
+          "y": 813,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1651/813.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1651/813.png",
+          "sha256": "0d1595d809660d916621e51533291c040905b81fb661bd9c563af2aa88ac5c4e",
+          "bytes": 49498,
+          "retrievedAt": "2026-09-25T04:28:27.758290+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1649,
+          "y": 814,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1649/814.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1649/814.png",
+          "sha256": "880ec5f9c6a30eb3ff00a32614d7e1106dc2fc490e588ddfc4fbeddf84b61bc4",
+          "bytes": 52653,
+          "retrievedAt": "2026-09-25T04:28:20.448798+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1650,
+          "y": 814,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1650/814.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1650/814.png",
+          "sha256": "5ab3508943a42c0e728709062b9852f3153769851009b752ff5ede98cce0ed6e",
+          "bytes": 59814,
+          "retrievedAt": "2026-09-25T04:28:21.224052+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1651,
+          "y": 814,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1651/814.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1651/814.png",
+          "sha256": "dfa1305fb3a2ba92e0050d04474dd4080a98003a89d965c8f3daf92964088925",
+          "bytes": 52177,
+          "retrievedAt": "2026-09-25T04:28:22.427881+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1649,
+          "y": 815,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1649/815.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1649/815.png",
+          "sha256": "fd38f231270f318a0df3b3a593da19cb6a3120e6c257588e5483ea988613acf6",
+          "bytes": 71475,
+          "retrievedAt": "2026-09-25T04:28:30.925865+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1650,
+          "y": 815,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1650/815.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1650/815.png",
+          "sha256": "8a1c42ec585bda478346ce75c29926b9c8da6e09a4493261314f16870d8f46ce",
+          "bytes": 69918,
+          "retrievedAt": "2026-09-25T04:28:22.040596+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1651,
+          "y": 815,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1651/815.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1651/815.png",
+          "sha256": "c81dbeef57555723d6197059105ecbdd028266b976be541e35a1b9ffe2769ef7",
+          "bytes": 70092,
+          "retrievedAt": "2026-09-25T04:28:42.593426+00:00"
+        }
+      ],
+      "contoursSha256": "bbebfd11fecda4f3948f6446563455a955c0d6d99442873c0fa70522a81de693",
+      "shadeSha256": "b067367d408c87ba5083f1fb2f6e0114fafb71949ab9d1e5a11a03030a5ab152",
+      "modernReferenceOnly": true,
+      "note": "真实现代DEM推导等高线与山影；覆盖框只是取数裁切范围，不是山体边界。像素间距不是独立测量精度；不能用于唐代地貌或精确峰顶海拔判定。"
+    },
+    {
+      "id": "zhongnanshan",
+      "name": "终南山",
+      "regionId": "qinling",
+      "center": [
+        109.0455496,
+        33.9243535
+      ],
+      "bounds": [
+        108.80859375,
+        33.7243396617476,
+        109.3359375,
+        34.161818161230386
+      ],
+      "contoursUrl": "/data/mountain-shapes/zhongnanshan-contours.geojson.gz",
+      "shadeUrl": "/data/mountain-shapes/zhongnanshan-shade.png",
+      "imageCoordinates": [
+        [
+          108.80859375,
+          34.161818161230386
+        ],
+        [
+          109.3359375,
+          34.161818161230386
+        ],
+        [
+          109.3359375,
+          33.7243396617476
+        ],
+        [
+          108.80859375,
+          33.7243396617476
+        ]
+      ],
+      "sourcePeak": {
+        "id": "osm-node-10313072026",
+        "name": "终南山",
+        "coordinates": [
+          109.0455496,
+          33.9243535
+        ],
+        "sourceUrl": "https://www.openstreetmap.org/node/10313072026",
+        "sourcePackUrl": "/data/mountain-detail/qinling-0.geojson.gz",
+        "sourcePackSha256": "32411b1752c38d11059f7e9a777465b8071da738689d09e75a6eda3dffb71807",
+        "tags": {
+          "ele": "2604",
+          "name": "终南山",
+          "natural": "peak"
+        }
+      },
+      "demZoom": 11,
+      "pixelSizeMeters": 63.426,
+      "pixelSizeMetersRange": [
+        63.248,
+        63.574
+      ],
+      "pixelDimensions": [
+        768,
+        768
+      ],
+      "contourInterval": 100,
+      "indexInterval": 500,
+      "minZoom": 9,
+      "featureCount": 836,
+      "vertexCount": 186290,
+      "elevationRange": [
+        411.0,
+        2796.0
+      ],
+      "excludedDemSamples": [],
+      "sourceTiles": [
+        {
+          "z": 11,
+          "x": 1643,
+          "y": 817,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1643/817.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1643/817.png",
+          "sha256": "3ee489e62bf385888cdf0cb5e26b742cf30e58544c205a584d133701553ee47c",
+          "bytes": 39213,
+          "retrievedAt": "2026-09-25T04:28:12.669607+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1644,
+          "y": 817,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1644/817.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1644/817.png",
+          "sha256": "9f9a4585971b8de24d3929a45b8849b3d4b6be72b9dbfee677730df32d451cd9",
+          "bytes": 38199,
+          "retrievedAt": "2026-09-25T04:28:13.500461+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1645,
+          "y": 817,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1645/817.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1645/817.png",
+          "sha256": "093c96a554475557d6cfb1def61e03a3c4fb2e670978fb74ddb839326bc3d4f2",
+          "bytes": 48266,
+          "retrievedAt": "2026-09-25T04:28:14.730886+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1643,
+          "y": 818,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1643/818.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1643/818.png",
+          "sha256": "71566953d30c6a09cbc8b0087a267e65e832a9e9075c43cf9504b5b891c74c30",
+          "bytes": 73883,
+          "retrievedAt": "2026-09-25T04:29:51.043764+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1644,
+          "y": 818,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1644/818.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1644/818.png",
+          "sha256": "379d24c941a7399ce85fe9b26bb7f023bbdf8c584b65efb403cc1219d6006e48",
+          "bytes": 73895,
+          "retrievedAt": "2026-09-25T04:28:16.234254+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1645,
+          "y": 818,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1645/818.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1645/818.png",
+          "sha256": "f39eca27f80a912a827c0e89c3710dd03e3e70aeea5f448ea99bad36937de08f",
+          "bytes": 72387,
+          "retrievedAt": "2026-09-25T04:28:16.331289+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1643,
+          "y": 819,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1643/819.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1643/819.png",
+          "sha256": "0dfdba8ac8fad41e176ccc9670a4c56ca0e27bb2654693f05ec317a5cbb49e78",
+          "bytes": 71849,
+          "retrievedAt": "2026-09-25T04:28:12.068214+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1644,
+          "y": 819,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1644/819.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1644/819.png",
+          "sha256": "e8367b05b01f9b7a9b88a20a51e8395b0f85bffb2f091902a9e0baa5ab38555f",
+          "bytes": 72995,
+          "retrievedAt": "2026-09-25T04:28:14.281472+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1645,
+          "y": 819,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1645/819.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1645/819.png",
+          "sha256": "7cff69b78f44d81a7b41223350efc0271039dd9784fa59012f535f00a44d2933",
+          "bytes": 69519,
+          "retrievedAt": "2026-09-25T04:28:21.129893+00:00"
+        }
+      ],
+      "contoursSha256": "161bbf770ad54c54fd47508ba30613fef252f868f07ccc51382ac2aed77b8b06",
+      "shadeSha256": "1fc98d900bc59754dd648173bbfb825f7c4cb29851a3ce0a4e31668e1210dd73",
+      "modernReferenceOnly": true,
+      "note": "真实现代DEM推导等高线与山影；覆盖框只是取数裁切范围，不是山体边界。像素间距不是独立测量精度；不能用于唐代地貌或精确峰顶海拔判定。"
+    },
+    {
+      "id": "maijishan",
+      "name": "麦积山",
+      "regionId": "qinling",
+      "center": [
+        106.0433545,
+        34.3045431
+      ],
+      "bounds": [
+        105.8203125,
+        34.016241889667015,
+        106.34765625,
+        34.452218472826544
+      ],
+      "contoursUrl": "/data/mountain-shapes/maijishan-contours.geojson.gz",
+      "shadeUrl": "/data/mountain-shapes/maijishan-shade.png",
+      "imageCoordinates": [
+        [
+          105.8203125,
+          34.452218472826544
+        ],
+        [
+          106.34765625,
+          34.452218472826544
+        ],
+        [
+          106.34765625,
+          34.016241889667015
+        ],
+        [
+          105.8203125,
+          34.016241889667015
+        ]
+      ],
+      "sourcePeak": {
+        "id": "osm-node-6026512454",
+        "name": "麦积山",
+        "coordinates": [
+          106.0433545,
+          34.3045431
+        ],
+        "sourceUrl": "https://www.openstreetmap.org/node/6026512454",
+        "sourcePackUrl": "/data/mountain-detail/qinling-0.geojson.gz",
+        "sourcePackSha256": "32411b1752c38d11059f7e9a777465b8071da738689d09e75a6eda3dffb71807",
+        "tags": {
+          "int_name": "Maiji Shan",
+          "name": "麦积山",
+          "name:en": "Mount Maiji",
+          "name:zh": "麦积山",
+          "natural": "peak",
+          "wikidata": "Q28794710",
+          "wikipedia": "sv:Maiji Shan"
+        }
+      },
+      "demZoom": 11,
+      "pixelSizeMeters": 63.141,
+      "pixelSizeMetersRange": [
+        63.03,
+        63.357
+      ],
+      "pixelDimensions": [
+        768,
+        768
+      ],
+      "contourInterval": 100,
+      "indexInterval": 500,
+      "minZoom": 9,
+      "featureCount": 1448,
+      "vertexCount": 216140,
+      "elevationRange": [
+        948.0,
+        2555.0
+      ],
+      "excludedDemSamples": [],
+      "sourceTiles": [
+        {
+          "z": 11,
+          "x": 1626,
+          "y": 815,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1626/815.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1626/815.png",
+          "sha256": "cb8262568c9febab42626cf66c5a77eb318ce308225206e9b23e1addf31a96f2",
+          "bytes": 67061,
+          "retrievedAt": "2026-09-25T04:27:51.438648+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1627,
+          "y": 815,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1627/815.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1627/815.png",
+          "sha256": "8c2e0cb5f90cca3d8c1e3f34f156fc95524667bf01035d4baa404f3b5fd9d9b4",
+          "bytes": 66790,
+          "retrievedAt": "2026-09-25T04:28:06.334901+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1628,
+          "y": 815,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1628/815.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1628/815.png",
+          "sha256": "b6c71ceee8a97e64c41548f0e05c7890e0019c2fcb9f635dd5883a47cc65ffa1",
+          "bytes": 68872,
+          "retrievedAt": "2026-09-25T04:27:55.946759+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1626,
+          "y": 816,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1626/816.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1626/816.png",
+          "sha256": "a3b3a6ad3d9c17c15e708c39f75d7ab8b26296977d0c96b342be6e3aba16da76",
+          "bytes": 68164,
+          "retrievedAt": "2026-09-25T04:27:50.966081+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1627,
+          "y": 816,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1627/816.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1627/816.png",
+          "sha256": "51c88cd738899b77e692c7ed7594ab4517cd1b5cadb23f22e0d423eea7250249",
+          "bytes": 70778,
+          "retrievedAt": "2026-09-25T04:27:54.904684+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1628,
+          "y": 816,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1628/816.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1628/816.png",
+          "sha256": "da79a56605024660858b93b7f618f06acd5d52e3d9a519f1536872ba2abf7f2d",
+          "bytes": 69775,
+          "retrievedAt": "2026-09-25T04:28:05.695791+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1626,
+          "y": 817,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1626/817.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1626/817.png",
+          "sha256": "764d6c8e48264105b9020300745553aedc46fdab4de4363c402592489615a4b0",
+          "bytes": 67974,
+          "retrievedAt": "2026-09-25T04:27:53.932524+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1627,
+          "y": 817,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1627/817.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1627/817.png",
+          "sha256": "44000f167d504b00ab000f52f70920542b6cf426f14bbcd80a2d0f05c610d67d",
+          "bytes": 72814,
+          "retrievedAt": "2026-09-25T04:27:55.485061+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1628,
+          "y": 817,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1628/817.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1628/817.png",
+          "sha256": "03583d15ceb082049ec1b9914613f5f3977c80a968856042f072813ca0687ec9",
+          "bytes": 72895,
+          "retrievedAt": "2026-09-25T04:28:27.154618+00:00"
+        }
+      ],
+      "contoursSha256": "73f80285bee394691746e1955ce6ff57d0ed7c8e6123286acbf9f883bb25df9f",
+      "shadeSha256": "cf355230f2b9557309caac259c26291364000cfef2dbc0c57afc8f11543cb030",
+      "modernReferenceOnly": true,
+      "note": "真实现代DEM推导等高线与山影；覆盖框只是取数裁切范围，不是山体边界。像素间距不是独立测量精度；不能用于唐代地貌或精确峰顶海拔判定。"
+    },
+    {
+      "id": "wangwushan",
+      "name": "王屋山",
+      "regionId": "taihang",
+      "center": [
+        112.2713923,
+        35.1992272
+      ],
+      "bounds": [
+        111.97265625,
+        35.02999636902566,
+        112.5,
+        35.4606699514953
+      ],
+      "contoursUrl": "/data/mountain-shapes/wangwushan-contours.geojson.gz",
+      "shadeUrl": "/data/mountain-shapes/wangwushan-shade.png",
+      "imageCoordinates": [
+        [
+          111.97265625,
+          35.4606699514953
+        ],
+        [
+          112.5,
+          35.4606699514953
+        ],
+        [
+          112.5,
+          35.02999636902566
+        ],
+        [
+          111.97265625,
+          35.02999636902566
+        ]
+      ],
+      "sourcePeak": {
+        "id": "osm-node-11691087205",
+        "name": "王屋山",
+        "coordinates": [
+          112.2713923,
+          35.1992272
+        ],
+        "sourceUrl": "https://www.openstreetmap.org/node/11691087205",
+        "sourcePackUrl": "/data/mountain-detail/taihang-0.geojson.gz",
+        "sourcePackSha256": "9840ec5762ce9459039642f607ba122ee7c0d4d0fe49d1d5ec886a610b218273",
+        "tags": {
+          "ele": "1711",
+          "name": "王屋山",
+          "natural": "peak"
+        }
+      },
+      "demZoom": 11,
+      "pixelSizeMeters": 62.461,
+      "pixelSizeMetersRange": [
+        62.259,
+        62.59
+      ],
+      "pixelDimensions": [
+        768,
+        768
+      ],
+      "contourInterval": 100,
+      "indexInterval": 500,
+      "minZoom": 9,
+      "featureCount": 1109,
+      "vertexCount": 165948,
+      "elevationRange": [
+        146.0,
+        2226.0
+      ],
+      "excludedDemSamples": [
+        {
+          "coordinates": [
+            112.0327377319336,
+            35.05332686137621
+          ],
+          "elevation": -43.0,
+          "reason": "所选内陆山地窗口内孤立负高程，作为待核源异常排除；未填补或修改原DEM。"
+        },
+        {
+          "coordinates": [
+            112.0334243774414,
+            35.05332686137621
+          ],
+          "elevation": -47.0,
+          "reason": "所选内陆山地窗口内孤立负高程，作为待核源异常排除；未填补或修改原DEM。"
+        },
+        {
+          "coordinates": [
+            112.0327377319336,
+            35.05276475917575
+          ],
+          "elevation": -610.0,
+          "reason": "所选内陆山地窗口内孤立负高程，作为待核源异常排除；未填补或修改原DEM。"
+        },
+        {
+          "coordinates": [
+            112.0334243774414,
+            35.05276475917575
+          ],
+          "elevation": -683.0,
+          "reason": "所选内陆山地窗口内孤立负高程，作为待核源异常排除；未填补或修改原DEM。"
+        },
+        {
+          "coordinates": [
+            112.03411102294922,
+            35.05276475917575
+          ],
+          "elevation": -56.0,
+          "reason": "所选内陆山地窗口内孤立负高程，作为待核源异常排除；未填补或修改原DEM。"
+        },
+        {
+          "coordinates": [
+            112.0327377319336,
+            35.052202653106384
+          ],
+          "elevation": -476.0,
+          "reason": "所选内陆山地窗口内孤立负高程，作为待核源异常排除；未填补或修改原DEM。"
+        },
+        {
+          "coordinates": [
+            112.0334243774414,
+            35.052202653106384
+          ],
+          "elevation": -560.0,
+          "reason": "所选内陆山地窗口内孤立负高程，作为待核源异常排除；未填补或修改原DEM。"
+        },
+        {
+          "coordinates": [
+            112.03411102294922,
+            35.052202653106384
+          ],
+          "elevation": -55.0,
+          "reason": "所选内陆山地窗口内孤立负高程，作为待核源异常排除；未填补或修改原DEM。"
+        }
+      ],
+      "sourceTiles": [
+        {
+          "z": 11,
+          "x": 1661,
+          "y": 808,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1661/808.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1661/808.png",
+          "sha256": "76ccf1655fd3c27daffb573db7219794b60408d4f8495e29a3654a5a6b9efee6",
+          "bytes": 70325,
+          "retrievedAt": "2026-09-25T04:28:24.029650+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1662,
+          "y": 808,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1662/808.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1662/808.png",
+          "sha256": "3bbef8da2af1211816ef0cced0b3ea7069692472eb10b87003acd69706a349f7",
+          "bytes": 66489,
+          "retrievedAt": "2026-09-25T04:28:31.904106+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1663,
+          "y": 808,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1663/808.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1663/808.png",
+          "sha256": "eae126c26a11a6a2e07e2092592c8da56ed4c15521be98c5e60ad92affa38c43",
+          "bytes": 58264,
+          "retrievedAt": "2026-09-25T04:28:30.788814+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1661,
+          "y": 809,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1661/809.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1661/809.png",
+          "sha256": "1be0badbd0db30a9de59b33c2c2c857413d9960c2cc1193a9c50666bd8eeb6c4",
+          "bytes": 68387,
+          "retrievedAt": "2026-09-25T04:28:26.701741+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1662,
+          "y": 809,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1662/809.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1662/809.png",
+          "sha256": "4218d3cda4b534e9cceff09c30442772d956803b9c45932ff50c32313c210724",
+          "bytes": 72263,
+          "retrievedAt": "2026-09-25T04:28:29.263317+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1663,
+          "y": 809,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1663/809.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1663/809.png",
+          "sha256": "13d8100390c0ed35e0516daad6c948a00ab51287e5117d03d0d8b582951aeddc",
+          "bytes": 69375,
+          "retrievedAt": "2026-09-25T04:28:31.947868+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1661,
+          "y": 810,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1661/810.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1661/810.png",
+          "sha256": "bcc5bf6103d21ec7133efbe5c8d7ef7d597b81e4a14daaa86e962f840828bbd1",
+          "bytes": 61294,
+          "retrievedAt": "2026-09-25T04:28:28.230901+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1662,
+          "y": 810,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1662/810.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1662/810.png",
+          "sha256": "c0d3faf65cd2dc11c1a89b5bd418987aecb8022ee69d4abb7521923b987608b9",
+          "bytes": 58253,
+          "retrievedAt": "2026-09-25T04:28:36.077049+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1663,
+          "y": 810,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1663/810.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1663/810.png",
+          "sha256": "b7f9a9a2bd951ad04a2966ae3c75ad402ccde29e97339e96be34f525ef397aee",
+          "bytes": 56789,
+          "retrievedAt": "2026-09-25T04:28:47.666228+00:00"
+        }
+      ],
+      "contoursSha256": "45de82341f3e85cbbe9ac6ce5e8021e373fb2bd70b0314a1b696fa89498dd888",
+      "shadeSha256": "da536e5b791582f56757568453e1872e52a24d4730b0b9f9614885b5f30b3259",
+      "modernReferenceOnly": true,
+      "note": "真实现代DEM推导等高线与山影；覆盖框只是取数裁切范围，不是山体边界。像素间距不是独立测量精度；不能用于唐代地貌或精确峰顶海拔判定。"
+    },
+    {
+      "id": "wangmangling",
+      "name": "王莽岭",
+      "regionId": "taihang",
+      "center": [
+        113.6052172,
+        35.6755775
+      ],
+      "bounds": [
+        113.37890625,
+        35.4606699514953,
+        113.90625,
+        35.88905007936092
+      ],
+      "contoursUrl": "/data/mountain-shapes/wangmangling-contours.geojson.gz",
+      "shadeUrl": "/data/mountain-shapes/wangmangling-shade.png",
+      "imageCoordinates": [
+        [
+          113.37890625,
+          35.88905007936092
+        ],
+        [
+          113.90625,
+          35.88905007936092
+        ],
+        [
+          113.90625,
+          35.4606699514953
+        ],
+        [
+          113.37890625,
+          35.4606699514953
+        ]
+      ],
+      "sourcePeak": {
+        "id": "osm-node-5977241906",
+        "name": "王莽岭",
+        "coordinates": [
+          113.6052172,
+          35.6755775
+        ],
+        "sourceUrl": "https://www.openstreetmap.org/node/5977241906",
+        "sourcePackUrl": "/data/mountain-detail/taihang-0.geojson.gz",
+        "sourcePackSha256": "9840ec5762ce9459039642f607ba122ee7c0d4d0fe49d1d5ec886a610b218273",
+        "tags": {
+          "ele": "1665",
+          "name": "王莽岭",
+          "name:zh": "王莽岭",
+          "natural": "peak"
+        }
+      },
+      "demZoom": 11,
+      "pixelSizeMeters": 62.092,
+      "pixelSizeMetersRange": [
+        61.926,
+        62.259
+      ],
+      "pixelDimensions": [
+        768,
+        768
+      ],
+      "contourInterval": 100,
+      "indexInterval": 500,
+      "minZoom": 9,
+      "featureCount": 1013,
+      "vertexCount": 148837,
+      "elevationRange": [
+        12.0,
+        1777.0
+      ],
+      "excludedDemSamples": [
+        {
+          "coordinates": [
+            113.44928741455078,
+            35.47101600935373
+          ],
+          "elevation": -8.0,
+          "reason": "所选内陆山地窗口内孤立负高程，作为待核源异常排除；未填补或修改原DEM。"
+        },
+        {
+          "coordinates": [
+            113.4499740600586,
+            35.47101600935373
+          ],
+          "elevation": -41.0,
+          "reason": "所选内陆山地窗口内孤立负高程，作为待核源异常排除；未填补或修改原DEM。"
+        },
+        {
+          "coordinates": [
+            113.44928741455078,
+            35.470456797009724
+          ],
+          "elevation": -19.0,
+          "reason": "所选内陆山地窗口内孤立负高程，作为待核源异常排除；未填补或修改原DEM。"
+        },
+        {
+          "coordinates": [
+            113.4499740600586,
+            35.470456797009724
+          ],
+          "elevation": -28.0,
+          "reason": "所选内陆山地窗口内孤立负高程，作为待核源异常排除；未填补或修改原DEM。"
+        }
+      ],
+      "sourceTiles": [
+        {
+          "z": 11,
+          "x": 1669,
+          "y": 805,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1669/805.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1669/805.png",
+          "sha256": "fdf4b5ca9ea76967fa81b1569f8ad7d71b602518037830873c215cc586c275a2",
+          "bytes": 65976,
+          "retrievedAt": "2026-09-25T04:28:40.048792+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1670,
+          "y": 805,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1670/805.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1670/805.png",
+          "sha256": "4e4d2c39a8caf95377f0e557b71fca88168af9f8e45d273d533dc7ccd7ef55a7",
+          "bytes": 68847,
+          "retrievedAt": "2026-09-25T04:28:48.378338+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1671,
+          "y": 805,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1671/805.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1671/805.png",
+          "sha256": "faf6577c52b5223874a98f2698d1cd5d20c98b1c9e2ef535f4a5a1b4e66cd73a",
+          "bytes": 53108,
+          "retrievedAt": "2026-09-25T04:28:52.471151+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1669,
+          "y": 806,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1669/806.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1669/806.png",
+          "sha256": "683a809e5a8b444971fb7d01ca253e045d50d74be900fff9536356ead39aa22a",
+          "bytes": 67191,
+          "retrievedAt": "2026-09-25T04:28:41.569686+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1670,
+          "y": 806,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1670/806.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1670/806.png",
+          "sha256": "0bea79a7b6e88712b9322d751bf348c87aeaffd08f44bc2088af1dcb9b00e24a",
+          "bytes": 66314,
+          "retrievedAt": "2026-09-25T04:28:47.034118+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1671,
+          "y": 806,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1671/806.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1671/806.png",
+          "sha256": "6b863f248df37ea979c1e4d5a033af89b04b415e27d73fcca076236f4fe32a3e",
+          "bytes": 61192,
+          "retrievedAt": "2026-09-25T04:28:53.806729+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1669,
+          "y": 807,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1669/807.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1669/807.png",
+          "sha256": "150ebb9dba704c8917fd365db45fd6de0753a5dca22f6490a947eab3af7f4372",
+          "bytes": 70582,
+          "retrievedAt": "2026-09-25T04:28:42.997529+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1670,
+          "y": 807,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1670/807.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1670/807.png",
+          "sha256": "01cd08727a28308aa7a276f6ef46cc95d0e5720ce1132e04cf48146cf02e0632",
+          "bytes": 40322,
+          "retrievedAt": "2026-09-25T04:28:53.850187+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1671,
+          "y": 807,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1671/807.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1671/807.png",
+          "sha256": "d18db6834ff487b0b5cdda2f894b6e671092e59375203a124dd42917b24635d9",
+          "bytes": 48136,
+          "retrievedAt": "2026-09-25T04:28:53.279118+00:00"
+        }
+      ],
+      "contoursSha256": "fd98d76e44f3f585912aba228a461efc8f3bb7a6d8f49bafeec7f106fe955aee",
+      "shadeSha256": "0e776d2decc514e4dedf581749c60fb362795f93946a1148a106f2891473df7a",
+      "modernReferenceOnly": true,
+      "note": "真实现代DEM推导等高线与山影；覆盖框只是取数裁切范围，不是山体边界。像素间距不是独立测量精度；不能用于唐代地貌或精确峰顶海拔判定。"
+    },
+    {
+      "id": "wutai-north",
+      "name": "北台顶/叶斗峰",
+      "regionId": "taihang",
+      "center": [
+        113.5671303,
+        39.0798529
+      ],
+      "bounds": [
+        113.37890625,
+        38.8225909761771,
+        113.90625,
+        39.23225314171489
+      ],
+      "contoursUrl": "/data/mountain-shapes/wutai-north-contours.geojson.gz",
+      "shadeUrl": "/data/mountain-shapes/wutai-north-shade.png",
+      "imageCoordinates": [
+        [
+          113.37890625,
+          39.23225314171489
+        ],
+        [
+          113.90625,
+          39.23225314171489
+        ],
+        [
+          113.90625,
+          38.8225909761771
+        ],
+        [
+          113.37890625,
+          38.8225909761771
+        ]
+      ],
+      "sourcePeak": {
+        "id": "osm-node-1697356333",
+        "name": "北台顶/叶斗峰",
+        "coordinates": [
+          113.5671303,
+          39.0798529
+        ],
+        "sourceUrl": "https://www.openstreetmap.org/node/1697356333",
+        "sourcePackUrl": "/data/mountain-detail/taihang-0.geojson.gz",
+        "sourcePackSha256": "9840ec5762ce9459039642f607ba122ee7c0d4d0fe49d1d5ec886a610b218273",
+        "tags": {
+          "alt_name": "Beitai Ding;Yedou Feng",
+          "ele": "3061",
+          "name": "北台顶/叶斗峰",
+          "name:en": "Wutai Shan North Terrace",
+          "natural": "peak",
+          "prominence": "1781",
+          "source:prominence": "3061-1280 (Col at the NE)",
+          "wikidata": "Q120314",
+          "wikipedia": "en:Mount Wutai"
+        }
+      },
+      "demZoom": 11,
+      "pixelSizeMeters": 59.336,
+      "pixelSizeMetersRange": [
+        59.207,
+        59.551
+      ],
+      "pixelDimensions": [
+        768,
+        768
+      ],
+      "contourInterval": 100,
+      "indexInterval": 500,
+      "minZoom": 9,
+      "featureCount": 689,
+      "vertexCount": 188029,
+      "elevationRange": [
+        696.0,
+        3063.0
+      ],
+      "excludedDemSamples": [],
+      "sourceTiles": [
+        {
+          "z": 11,
+          "x": 1669,
+          "y": 781,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1669/781.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1669/781.png",
+          "sha256": "8c0f55a105425f5faadac8beda4f4b5df764bbf76a7676241dcbfe670ec153ad",
+          "bytes": 59023,
+          "retrievedAt": "2026-09-25T04:28:35.430874+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1670,
+          "y": 781,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1670/781.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1670/781.png",
+          "sha256": "ed30e5824caa2a4e7e1065f8399ac4ae56b72193442a445ce1f02974d6e74e93",
+          "bytes": 66725,
+          "retrievedAt": "2026-09-25T04:28:50.126079+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1671,
+          "y": 781,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1671/781.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1671/781.png",
+          "sha256": "316be7c2e1487f5d11b3321e0d5a18a5d0ffda7fcadc161e2ab804a168433fa4",
+          "bytes": 66351,
+          "retrievedAt": "2026-09-25T04:28:48.855299+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1669,
+          "y": 782,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1669/782.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1669/782.png",
+          "sha256": "f74e0112a765149b776e7da5fa717cbb3df9f4306f20728b19dc8992670460b4",
+          "bytes": 66006,
+          "retrievedAt": "2026-09-25T04:28:44.945266+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1670,
+          "y": 782,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1670/782.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1670/782.png",
+          "sha256": "e317800c9a91c434060cbc39f37277729915edf2235da7f9e7a2c4dcc27c1888",
+          "bytes": 66788,
+          "retrievedAt": "2026-09-25T04:28:53.965232+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1671,
+          "y": 782,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1671/782.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1671/782.png",
+          "sha256": "ff75bbdf08d432c9563912b7e62398978cc307c9d68a727ac8e2bc0b3c8c9f72",
+          "bytes": 69889,
+          "retrievedAt": "2026-09-25T04:28:50.105548+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1669,
+          "y": 783,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1669/783.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1669/783.png",
+          "sha256": "7d9b1827c2b142bf2657269dfbce89729004731a14050c60a832100e3eafb2fe",
+          "bytes": 62729,
+          "retrievedAt": "2026-09-25T04:28:42.382381+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1670,
+          "y": 783,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1670/783.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1670/783.png",
+          "sha256": "4b076e1dfb7db1a9d77c254907eef34692203bcf304835d9627c25195f05e512",
+          "bytes": 66948,
+          "retrievedAt": "2026-09-25T04:28:44.278929+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1671,
+          "y": 783,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1671/783.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1671/783.png",
+          "sha256": "7876255e19a803024772bc9f6dbb7c23122fc7b7877f5d6bf12692f6826cb2a5",
+          "bytes": 67251,
+          "retrievedAt": "2026-09-25T04:28:50.019385+00:00"
+        }
+      ],
+      "contoursSha256": "b9d2381228e7d3cdf7a716c2b1529c1ba5fdf3a60f4feda1d97fe1d662fa2388",
+      "shadeSha256": "f94b9db037b0f4596f7bdef9cd8da86e43e3c448a6d4a14c3c61f0774f9e1614",
+      "modernReferenceOnly": true,
+      "note": "真实现代DEM推导等高线与山影；覆盖框只是取数裁切范围，不是山体边界。像素间距不是独立测量精度；不能用于唐代地貌或精确峰顶海拔判定。"
+    },
+    {
+      "id": "gangshika",
+      "name": "岗什卡",
+      "regionId": "qilian",
+      "center": [
+        101.5057297,
+        37.6929727
+      ],
+      "bounds": [
+        101.25,
+        37.43997405227058,
+        101.77734375,
+        37.857507156252034
+      ],
+      "contoursUrl": "/data/mountain-shapes/gangshika-contours.geojson.gz",
+      "shadeUrl": "/data/mountain-shapes/gangshika-shade.png",
+      "imageCoordinates": [
+        [
+          101.25,
+          37.857507156252034
+        ],
+        [
+          101.77734375,
+          37.857507156252034
+        ],
+        [
+          101.77734375,
+          37.43997405227058
+        ],
+        [
+          101.25,
+          37.43997405227058
+        ]
+      ],
+      "sourcePeak": {
+        "id": "osm-node-6733228790",
+        "name": "岗什卡",
+        "coordinates": [
+          101.5057297,
+          37.6929727
+        ],
+        "sourceUrl": "https://www.openstreetmap.org/node/6733228790",
+        "sourcePackUrl": "/data/mountain-detail/qilian-0.geojson.gz",
+        "sourcePackSha256": "aef2ca7317b213cf09e63cc4846f34a514cc76119bf176cdc380e262ffcb3d6f",
+        "tags": {
+          "ele": "5254",
+          "name": "岗什卡",
+          "name:en": "Gangshika",
+          "name:zh": "岗什卡",
+          "natural": "peak",
+          "prominence": "1494",
+          "source:prominence": "5254-3760 (Col close to G227 road)",
+          "wikipedia": "en:Gangshiqia Peak"
+        }
+      },
+      "demZoom": 11,
+      "pixelSizeMeters": 60.485,
+      "pixelSizeMetersRange": [
+        60.35,
+        60.69
+      ],
+      "pixelDimensions": [
+        768,
+        768
+      ],
+      "contourInterval": 200,
+      "indexInterval": 1000,
+      "minZoom": 9,
+      "featureCount": 329,
+      "vertexCount": 75241,
+      "elevationRange": [
+        2662.0,
+        5210.0
+      ],
+      "excludedDemSamples": [],
+      "sourceTiles": [
+        {
+          "z": 11,
+          "x": 1600,
+          "y": 791,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1600/791.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1600/791.png",
+          "sha256": "5d409181f7cb1a6c11c91c2c3ee21fe64c7023fe307a2ad9ac6e752412c5b4b0",
+          "bytes": 65627,
+          "retrievedAt": "2026-09-25T04:27:23.211756+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1601,
+          "y": 791,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1601/791.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1601/791.png",
+          "sha256": "f94ee3c10e701f3de090cc0e324b939a2bfa33f88385acf32ccf181f678a207a",
+          "bytes": 65988,
+          "retrievedAt": "2026-09-25T04:27:27.268709+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1602,
+          "y": 791,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1602/791.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1602/791.png",
+          "sha256": "fc2cf72b3afb5d03f7988ad06c46900db499158e2aedbadab71910adfa67d7bd",
+          "bytes": 56418,
+          "retrievedAt": "2026-09-25T04:27:32.910536+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1600,
+          "y": 792,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1600/792.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1600/792.png",
+          "sha256": "54052f5ab27e7c42c06b701c3e77b1772db92e170986b13368f32ec46d5c0f79",
+          "bytes": 47323,
+          "retrievedAt": "2026-09-25T04:27:24.593757+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1601,
+          "y": 792,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1601/792.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1601/792.png",
+          "sha256": "ddcc4164e7ef4ce8f9eb251019ffe65b2c940bf9245779a9f298fad2e6d0850a",
+          "bytes": 65633,
+          "retrievedAt": "2026-09-25T04:27:27.175350+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1602,
+          "y": 792,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1602/792.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1602/792.png",
+          "sha256": "8caa133a8b0cc7bc9e925b7f2c62d5f596536dafd68088867a8a8d628ddee3b1",
+          "bytes": 67216,
+          "retrievedAt": "2026-09-25T04:27:48.316647+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1600,
+          "y": 793,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1600/793.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1600/793.png",
+          "sha256": "bf108b18a90422d2207a1857a710505fd2d26df5feb2a08056e545e94b852819",
+          "bytes": 54606,
+          "retrievedAt": "2026-09-25T04:27:25.937180+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1601,
+          "y": 793,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1601/793.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1601/793.png",
+          "sha256": "94ce43343d41e2af79dd7c23960edb9b25e1fa599b10dc55d66d36e7bee1311b",
+          "bytes": 46762,
+          "retrievedAt": "2026-09-25T04:27:28.589400+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1602,
+          "y": 793,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1602/793.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1602/793.png",
+          "sha256": "b1b21601342648a362aa1f6df3fc5d38b483a2be1fe352fa227a4bef5d6036dc",
+          "bytes": 65373,
+          "retrievedAt": "2026-09-25T04:27:30.100652+00:00"
+        }
+      ],
+      "contoursSha256": "1ada34d7338c956a126191849ba17cf631e7bd7998bbe913a05fc05f538e506b",
+      "shadeSha256": "162a2b916138b33850b75d229bf12d5e5b3ee84ff2bc3248944279563d025370",
+      "modernReferenceOnly": true,
+      "note": "真实现代DEM推导等高线与山影；覆盖框只是取数裁切范围，不是山体边界。像素间距不是独立测量精度；不能用于唐代地貌或精确峰顶海拔判定。"
+    },
+    {
+      "id": "shule-nanshan",
+      "name": "疏勒南山",
+      "regionId": "qilian",
+      "center": [
+        97.7246419,
+        38.5005237
+      ],
+      "bounds": [
+        97.3828125,
+        38.27268853598096,
+        97.91015625,
+        38.685509760012
+      ],
+      "contoursUrl": "/data/mountain-shapes/shule-nanshan-contours.geojson.gz",
+      "shadeUrl": "/data/mountain-shapes/shule-nanshan-shade.png",
+      "imageCoordinates": [
+        [
+          97.3828125,
+          38.685509760012
+        ],
+        [
+          97.91015625,
+          38.685509760012
+        ],
+        [
+          97.91015625,
+          38.27268853598096
+        ],
+        [
+          97.3828125,
+          38.27268853598096
+        ]
+      ],
+      "sourcePeak": {
+        "id": "osm-node-4119221867",
+        "name": "疏勒南山",
+        "coordinates": [
+          97.7246419,
+          38.5005237
+        ],
+        "sourceUrl": "https://www.openstreetmap.org/node/4119221867",
+        "sourcePackUrl": "/data/mountain-detail/qilian-0.geojson.gz",
+        "sourcePackSha256": "aef2ca7317b213cf09e63cc4846f34a514cc76119bf176cdc380e262ffcb3d6f",
+        "tags": {
+          "alt_name": "团结峰",
+          "alt_name:en": "Su-lo Shan;Shulenan Shan;Shule Nanshan",
+          "alt_name:zh": "团结峰",
+          "ele": "5808",
+          "name": "疏勒南山",
+          "name:en": "Mount Shulenan",
+          "name:ru": "Сулэнаньшань",
+          "name:zh": "疏勒南山",
+          "natural": "peak",
+          "prominence": "2228",
+          "source:name": "GNS",
+          "source:prominence": "5808-3580 (Col close to G215 road)",
+          "wikidata": "Q4445913",
+          "wikipedia": "zh:疏勒南山"
+        }
+      },
+      "demZoom": 11,
+      "pixelSizeMeters": 59.82,
+      "pixelSizeMetersRange": [
+        59.666,
+        60.008
+      ],
+      "pixelDimensions": [
+        768,
+        768
+      ],
+      "contourInterval": 200,
+      "indexInterval": 1000,
+      "minZoom": 9,
+      "featureCount": 195,
+      "vertexCount": 47974,
+      "elevationRange": [
+        3830.0,
+        5792.0
+      ],
+      "excludedDemSamples": [],
+      "sourceTiles": [
+        {
+          "z": 11,
+          "x": 1578,
+          "y": 785,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1578/785.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1578/785.png",
+          "sha256": "e083b6a8d96d44425a392785b0c77bce2fc108e3642d35a1848198e8e89a2870",
+          "bytes": 54281,
+          "retrievedAt": "2026-09-25T04:26:48.773211+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1579,
+          "y": 785,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1579/785.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1579/785.png",
+          "sha256": "7225224d8388616ed25884e698cdccaaa918fda5a290c01959768f4ff80e75d5",
+          "bytes": 65999,
+          "retrievedAt": "2026-09-25T04:26:51.259526+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1580,
+          "y": 785,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1580/785.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1580/785.png",
+          "sha256": "cb2ac05bb2ccd0458b76faaae87facbc64e320215b91194d0962e72f5208c6a5",
+          "bytes": 64271,
+          "retrievedAt": "2026-09-25T04:26:53.956952+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1578,
+          "y": 786,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1578/786.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1578/786.png",
+          "sha256": "b69a40dc3dbe4c339f8feaaca69e281c9ae1dba20ed81d397e66d72d2a21f074",
+          "bytes": 42481,
+          "retrievedAt": "2026-09-25T04:26:52.659405+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1579,
+          "y": 786,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1579/786.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1579/786.png",
+          "sha256": "bd46b0fb20f0c118a522fc16502e1aee8665119dd0991696d33218ec201d2dd4",
+          "bytes": 48662,
+          "retrievedAt": "2026-09-25T04:27:08.101101+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1580,
+          "y": 786,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1580/786.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1580/786.png",
+          "sha256": "0db89551f8b6c41b4cb79741824b270c6f4b6a5a93e68fa2f1c2da17869fd906",
+          "bytes": 63766,
+          "retrievedAt": "2026-09-25T04:26:53.907103+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1578,
+          "y": 787,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1578/787.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1578/787.png",
+          "sha256": "db7dc5990ef1932ce8c9b552ea8a038f5dc0773b6fb6628e05b4d1c3a1c06880",
+          "bytes": 16481,
+          "retrievedAt": "2026-09-25T04:26:49.789821+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1579,
+          "y": 787,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1579/787.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1579/787.png",
+          "sha256": "9d8d697a24a4ea5da1c38cb326b436cc4e8d30da11dbb698e4754de44ccbe3d9",
+          "bytes": 14928,
+          "retrievedAt": "2026-09-25T04:26:52.470757+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1580,
+          "y": 787,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1580/787.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1580/787.png",
+          "sha256": "9cbc3f87b5571ce4d53a951bcde38b8b88e8b8855a8fbccf673b36b03ab27779",
+          "bytes": 41544,
+          "retrievedAt": "2026-09-25T04:26:55.108713+00:00"
+        }
+      ],
+      "contoursSha256": "837f36ed6e4bb23d603b1f2d08e479be51302f2b92398cfcda8a775f4f10209e",
+      "shadeSha256": "febe32d1c477fe9342bc1e05eef1f6acf390d2ceeef850401a73363b85fc3212",
+      "modernReferenceOnly": true,
+      "note": "真实现代DEM推导等高线与山影；覆盖框只是取数裁切范围，不是山体边界。像素间距不是独立测量精度；不能用于唐代地貌或精确峰顶海拔判定。"
+    },
+    {
+      "id": "zhuoershan",
+      "name": "卓尔山",
+      "regionId": "qilian",
+      "center": [
+        100.2660073,
+        38.1815294
+      ],
+      "bounds": [
+        100.01953125,
+        37.99616267972812,
+        100.546875,
+        38.410558250946075
+      ],
+      "contoursUrl": "/data/mountain-shapes/zhuoershan-contours.geojson.gz",
+      "shadeUrl": "/data/mountain-shapes/zhuoershan-shade.png",
+      "imageCoordinates": [
+        [
+          100.01953125,
+          38.410558250946075
+        ],
+        [
+          100.546875,
+          38.410558250946075
+        ],
+        [
+          100.546875,
+          37.99616267972812
+        ],
+        [
+          100.01953125,
+          37.99616267972812
+        ]
+      ],
+      "sourcePeak": {
+        "id": "osm-node-13731487059",
+        "name": "卓尔山",
+        "coordinates": [
+          100.2660073,
+          38.1815294
+        ],
+        "sourceUrl": "https://www.openstreetmap.org/node/13731487059",
+        "sourcePackUrl": "/data/mountain-detail/qilian-0.geojson.gz",
+        "sourcePackSha256": "aef2ca7317b213cf09e63cc4846f34a514cc76119bf176cdc380e262ffcb3d6f",
+        "tags": {
+          "ele": "3096",
+          "name": "卓尔山",
+          "natural": "peak"
+        }
+      },
+      "demZoom": 11,
+      "pixelSizeMeters": 60.084,
+      "pixelSizeMetersRange": [
+        59.895,
+        60.236
+      ],
+      "pixelDimensions": [
+        768,
+        768
+      ],
+      "contourInterval": 100,
+      "indexInterval": 500,
+      "minZoom": 9,
+      "featureCount": 831,
+      "vertexCount": 200683,
+      "elevationRange": [
+        2385.0,
+        5073.0
+      ],
+      "excludedDemSamples": [],
+      "sourceTiles": [
+        {
+          "z": 11,
+          "x": 1593,
+          "y": 787,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1593/787.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1593/787.png",
+          "sha256": "262f4c5fcbb11bb04e6bf6bab8036f8b3b85326df89c1703cc2b3cd8f3942625",
+          "bytes": 72557,
+          "retrievedAt": "2026-09-25T04:28:18.159188+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1594,
+          "y": 787,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1594/787.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1594/787.png",
+          "sha256": "b5a22fc78b8b1b5b26a552c28d84cfb287a4f7759a9af5d5da06b24daca96577",
+          "bytes": 72420,
+          "retrievedAt": "2026-09-25T04:27:04.770790+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1595,
+          "y": 787,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1595/787.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1595/787.png",
+          "sha256": "07c62e7a18b4355afd44389f046e4025748188e383b4d5fcb97490f9eea9a9b2",
+          "bytes": 72495,
+          "retrievedAt": "2026-09-25T04:27:10.860924+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1593,
+          "y": 788,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1593/788.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1593/788.png",
+          "sha256": "0b8393be6b22593b95357103d2eab2e55e9b1ea2dd20e9d7ea2ad9e0c3d9db65",
+          "bytes": 64120,
+          "retrievedAt": "2026-09-25T04:27:01.416027+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1594,
+          "y": 788,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1594/788.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1594/788.png",
+          "sha256": "ac8097df3ca4630921e7d5204b7341441ed03a8f43cf2bfa812154d617bb62d8",
+          "bytes": 63191,
+          "retrievedAt": "2026-09-25T04:27:04.851531+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1595,
+          "y": 788,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1595/788.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1595/788.png",
+          "sha256": "6140293e726f3bb0e77b7665a747db1d17fce2237655262350f243f5a348c134",
+          "bytes": 65678,
+          "retrievedAt": "2026-09-25T04:27:34.760412+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1593,
+          "y": 789,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1593/789.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1593/789.png",
+          "sha256": "d15c819bd0680ade87887525e0071252f45740b504c94b6f9db8473a05b42087",
+          "bytes": 60322,
+          "retrievedAt": "2026-09-25T04:27:01.502001+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1594,
+          "y": 789,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1594/789.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1594/789.png",
+          "sha256": "1e71af03f43e23017b4b154a67a60d9220f3706e003fb4a6dddec5907550eb76",
+          "bytes": 65097,
+          "retrievedAt": "2026-09-25T04:27:11.458922+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1595,
+          "y": 789,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1595/789.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1595/789.png",
+          "sha256": "f7b0bae091732b319494cf0d5e377540e362733667a879f2359850a2f3134cf8",
+          "bytes": 58225,
+          "retrievedAt": "2026-09-25T04:27:21.741425+00:00"
+        }
+      ],
+      "contoursSha256": "4b7b646ff3ea1d42fbab014cb50e222783e7ec26f860e3c1826d5e8b23f8368f",
+      "shadeSha256": "87116d9a00760030bd4de09540451ef5c3412e3b639366dd987ef2149da0e2ca",
+      "modernReferenceOnly": true,
+      "note": "真实现代DEM推导等高线与山影；覆盖框只是取数裁切范围，不是山体边界。像素间距不是独立测量精度；不能用于唐代地貌或精确峰顶海拔判定。"
+    },
+    {
+      "id": "khan-tengri",
+      "name": "汗腾格里峰",
+      "regionId": "tianshan",
+      "center": [
+        80.175012,
+        42.2108108
+      ],
+      "bounds": [
+        79.98046875,
+        42.03297433244139,
+        80.5078125,
+        42.42345651793831
+      ],
+      "contoursUrl": "/data/mountain-shapes/khan-tengri-contours.geojson.gz",
+      "shadeUrl": "/data/mountain-shapes/khan-tengri-shade.png",
+      "imageCoordinates": [
+        [
+          79.98046875,
+          42.42345651793831
+        ],
+        [
+          80.5078125,
+          42.42345651793831
+        ],
+        [
+          80.5078125,
+          42.03297433244139
+        ],
+        [
+          79.98046875,
+          42.03297433244139
+        ]
+      ],
+      "sourcePeak": {
+        "id": "osm-node-2117690354",
+        "name": "汗腾格里峰",
+        "coordinates": [
+          80.175012,
+          42.2108108
+        ],
+        "sourceUrl": "https://www.openstreetmap.org/node/2117690354",
+        "sourcePackUrl": "/data/mountain-detail/tianshan-0.geojson.gz",
+        "sourcePackSha256": "1e1b64e441ad19ff245ae201a472ca67ab2baf3088b52ec56a05f95b85acba05",
+        "tags": {
+          "alt_name": "Hantengri Peak",
+          "ele": "7010",
+          "int_name": "Xan Täñiri - Han-Teŋiri - Hàn téng gé lǐ fēng",
+          "name": "Хан Тәңірі - Хан-Теңири - 汗腾格里峰",
+          "name:ar": "خان تنغري",
+          "name:arz": "جبل خان تنجرى",
+          "name:az": "Xan-Tenqri",
+          "name:ca": "Khan Tengri",
+          "name:cs": "Chan Tengri",
+          "name:cv": "Хун Танкăр",
+          "name:da": "Khan Tengri",
+          "name:de": "Khan Tengri",
+          "name:en": "Khan Tengri",
+          "name:es": "Khan Tengri",
+          "name:et": "Han-Tengri",
+          "name:eu": "Khan Tengri",
+          "name:fa": "خان تنگری",
+          "name:fi": "Khan Tengri",
+          "name:fr": "Khan Tengri",
+          "name:he": "חאן טנגרי",
+          "name:hi": "ख़ान तेन्ग्री",
+          "name:hy": "Խան-Թենգրի",
+          "name:id": "Khan Tengri",
+          "name:ja": "ハン・テングリ",
+          "name:ka": "ხან-თენგრი",
+          "name:kk": "Хан Тәңірі",
+          "name:ko": "한텡그리봉",
+          "name:ky": "Хан-Теңири",
+          "name:lt": "Chan Tengri",
+          "name:mn": "Хантэнгэр",
+          "name:ms": "Khan Tengri",
+          "name:nb": "Khan Tengri",
+          "name:nl": "Khan Tengri",
+          "name:nn": "Khan Tengri",
+          "name:pl": "Chan Tengri",
+          "name:pnb": "خان تنگری",
+          "name:pt": "Khan Tengri",
+          "name:ru": "Хан-Тенгри",
+          "name:sh": "Khan tengri",
+          "name:sk": "Chan-Tengri",
+          "name:tr": "Han Tengri Dağı",
+          "name:tt": "Хан Тәңре",
+          "name:uk": "Хан-Тенгрі",
+          "name:uz": "Xontangri",
+          "name:vi": "Khan Tengri",
+          "name:zh": "汗腾格里峰",
+          "name:zh-Latn-pinyin": "Hànténggélǐ Fēng",
+          "natural": "peak",
+          "note": "Elevation is 6995 (rock) and 7010 (glacial cap)",
+          "prominence": "1810",
+          "source:prominence": "7010-5200 (В. Хрищатого)",
+          "westra_ref": "7208",
+          "wikidata": "Q211529",
+          "wikipedia": "ky:Хан-Теңири"
+        }
+      },
+      "demZoom": 11,
+      "pixelSizeMeters": 56.615,
+      "pixelSizeMetersRange": [
+        56.424,
+        56.774
+      ],
+      "pixelDimensions": [
+        768,
+        768
+      ],
+      "contourInterval": 200,
+      "indexInterval": 1000,
+      "minZoom": 9,
+      "featureCount": 627,
+      "vertexCount": 134948,
+      "elevationRange": [
+        2624.0,
+        7410.0
+      ],
+      "excludedDemSamples": [],
+      "sourceTiles": [
+        {
+          "z": 11,
+          "x": 1479,
+          "y": 757,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1479/757.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1479/757.png",
+          "sha256": "b54e84c1fdc6db34ec107686649d52caf9c4b51223990480ca3388c9e6f5214c",
+          "bytes": 62884,
+          "retrievedAt": "2026-09-25T04:26:41.787035+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1480,
+          "y": 757,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1480/757.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1480/757.png",
+          "sha256": "65f3385325dd1018b869c964e33fe80374f7cacfe84472965bf624fed09c189a",
+          "bytes": 68274,
+          "retrievedAt": "2026-09-25T04:26:27.749249+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1481,
+          "y": 757,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1481/757.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1481/757.png",
+          "sha256": "09e47c443df0ba682b4abadc920cf7840e2b5f327ecb06efd4d80c0db10d3a25",
+          "bytes": 69391,
+          "retrievedAt": "2026-09-25T04:26:32.302449+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1479,
+          "y": 758,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1479/758.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1479/758.png",
+          "sha256": "6f2fca2b65521bd28cd1596e0c71d0a30588cf6e811639cc93a6fde749aef0b0",
+          "bytes": 71743,
+          "retrievedAt": "2026-09-25T04:26:32.797809+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1480,
+          "y": 758,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1480/758.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1480/758.png",
+          "sha256": "e9ab896a66e88d9679ac40e3be6f90cb13917ba564606289354fcf0e7090f7da",
+          "bytes": 73489,
+          "retrievedAt": "2026-09-25T04:26:32.335753+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1481,
+          "y": 758,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1481/758.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1481/758.png",
+          "sha256": "6c1ad5c228ad489839d269fe935efc256ec0d07ad896395017ba4ed1d8f9993c",
+          "bytes": 72783,
+          "retrievedAt": "2026-09-25T04:26:34.951338+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1479,
+          "y": 759,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1479/759.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1479/759.png",
+          "sha256": "e9c0a8f2eb1137d0d2d3f02a58e5c83ce81044b7609c3149eaecfb860562303d",
+          "bytes": 67226,
+          "retrievedAt": "2026-09-25T04:27:36.122573+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1480,
+          "y": 759,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1480/759.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1480/759.png",
+          "sha256": "a59aae564e32f7c326099760c7f6faa1dc9ad9ad6d418acda497ce195c1fbe5c",
+          "bytes": 71716,
+          "retrievedAt": "2026-09-25T04:26:30.370854+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1481,
+          "y": 759,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1481/759.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1481/759.png",
+          "sha256": "c9d3c88cfd5fc31edae8783d0bfd68dac39c05fa97a09bddd208d68d5c402fed",
+          "bytes": 73572,
+          "retrievedAt": "2026-09-25T04:26:33.876062+00:00"
+        }
+      ],
+      "contoursSha256": "4f5c653b82ba2c9317bf5910ccafddbe24ecb2e170c402ace8557069f0cfbf49",
+      "shadeSha256": "20806a0898c6dd7945ac85ad26cfcb8a30d6f3ae6d4f584f7fe86b624c9d65b5",
+      "modernReferenceOnly": true,
+      "note": "真实现代DEM推导等高线与山影；覆盖框只是取数裁切范围，不是山体边界。像素间距不是独立测量精度；不能用于唐代地貌或精确峰顶海拔判定。"
+    },
+    {
+      "id": "bogda",
+      "name": "博格达峰",
+      "regionId": "tianshan",
+      "center": [
+        88.3349826,
+        43.8015385
+      ],
+      "bounds": [
+        88.06640625,
+        43.580390855607845,
+        88.59375,
+        43.96119063892025
+      ],
+      "contoursUrl": "/data/mountain-shapes/bogda-contours.geojson.gz",
+      "shadeUrl": "/data/mountain-shapes/bogda-shade.png",
+      "imageCoordinates": [
+        [
+          88.06640625,
+          43.96119063892025
+        ],
+        [
+          88.59375,
+          43.96119063892025
+        ],
+        [
+          88.59375,
+          43.580390855607845
+        ],
+        [
+          88.06640625,
+          43.580390855607845
+        ]
+      ],
+      "sourcePeak": {
+        "id": "osm-node-2554874049",
+        "name": "博格达峰",
+        "coordinates": [
+          88.3349826,
+          43.8015385
+        ],
+        "sourceUrl": "https://www.openstreetmap.org/node/2554874049",
+        "sourcePackUrl": "/data/mountain-detail/tianshan-0.geojson.gz",
+        "sourcePackSha256": "1e1b64e441ad19ff245ae201a472ca67ab2baf3088b52ec56a05f95b85acba05",
+        "tags": {
+          "alt_name": "Bogda Ula",
+          "alt_name:en": "Bogda Feng",
+          "ele": "5445",
+          "name": "博格达峰",
+          "name:en": "Bogda Peak",
+          "name:ru": "Богдо-Ула",
+          "name:zh": "博格达峰",
+          "name:zh-Latn-pinyin": "bógédá fẽng",
+          "natural": "peak",
+          "prominence": "4125",
+          "source:prominence": "5445-1320 (col between Shuangjingzi and Xiamaya)",
+          "wikidata": "Q1037396",
+          "wikipedia": "zh:博格达峰"
+        }
+      },
+      "demZoom": 11,
+      "pixelSizeMeters": 55.168,
+      "pixelSizeMetersRange": [
+        55.02,
+        55.371
+      ],
+      "pixelDimensions": [
+        768,
+        768
+      ],
+      "contourInterval": 200,
+      "indexInterval": 1000,
+      "minZoom": 9,
+      "featureCount": 364,
+      "vertexCount": 96353,
+      "elevationRange": [
+        1224.0,
+        5146.0
+      ],
+      "excludedDemSamples": [],
+      "sourceTiles": [
+        {
+          "z": 11,
+          "x": 1525,
+          "y": 745,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1525/745.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1525/745.png",
+          "sha256": "959f4d09ca18311981d1ad3d6f619326edda75a47c64e9d522b4abb67a17dd55",
+          "bytes": 68654,
+          "retrievedAt": "2026-09-25T04:26:47.577294+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1526,
+          "y": 745,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1526/745.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1526/745.png",
+          "sha256": "925080f04f1a9fc509b80789bd1220668a9744683f4a19c75dd2ebb99646c63f",
+          "bytes": 64759,
+          "retrievedAt": "2026-09-25T04:26:44.693029+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1527,
+          "y": 745,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1527/745.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1527/745.png",
+          "sha256": "66cb25505013a745d33b35c56895d918033adf42c8ca8ab3b8af766e4bd1ee6f",
+          "bytes": 64265,
+          "retrievedAt": "2026-09-25T04:26:46.072048+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1525,
+          "y": 746,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1525/746.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1525/746.png",
+          "sha256": "6482e7336d937f34cf333540a0309ddb15eef57e558a98e3be33b16e9a0e9c83",
+          "bytes": 68199,
+          "retrievedAt": "2026-09-25T04:26:43.438368+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1526,
+          "y": 746,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1526/746.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1526/746.png",
+          "sha256": "d2c1c7e9d10baa6e2938e4d9c65d888f26cdb13f92e41952406c86583653eb9d",
+          "bytes": 66517,
+          "retrievedAt": "2026-09-25T04:26:45.394899+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1527,
+          "y": 746,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1527/746.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1527/746.png",
+          "sha256": "c2864674578d6806659b45dd252d5f35e10525f3159aa2143b9f332bfe6999e5",
+          "bytes": 66639,
+          "retrievedAt": "2026-09-25T04:26:54.675266+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1525,
+          "y": 747,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1525/747.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1525/747.png",
+          "sha256": "cd252bb790a8ffa94c94ba641b83d903716bf6c41a48d750faf59bf5ba2cf2b1",
+          "bytes": 61093,
+          "retrievedAt": "2026-09-25T04:26:44.390478+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1526,
+          "y": 747,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1526/747.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1526/747.png",
+          "sha256": "522e8b1e40021c9782e31dee49471dbf0584f7ee00d5cd16e694c9c30cc1905c",
+          "bytes": 58973,
+          "retrievedAt": "2026-09-25T04:26:51.571990+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1527,
+          "y": 747,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1527/747.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1527/747.png",
+          "sha256": "437f3a4226323af5813398654c2b24f68acf7cdbbc6a10dad63331369045e346",
+          "bytes": 65417,
+          "retrievedAt": "2026-09-25T04:26:48.075113+00:00"
+        }
+      ],
+      "contoursSha256": "f3ea5ad99153e910b6ca87fcffc5eac9ca8f5f126a7fa3e0ddf12984795b61b1",
+      "shadeSha256": "50342a2751f8fcca74f483c9a1d0fce8653f07ae470d7b9a7f077b9578baf0a7",
+      "modernReferenceOnly": true,
+      "note": "真实现代DEM推导等高线与山影；覆盖框只是取数裁切范围，不是山体边界。像素间距不是独立测量精度；不能用于唐代地貌或精确峰顶海拔判定。"
+    },
+    {
+      "id": "xuelian",
+      "name": "雪莲峰",
+      "regionId": "tianshan",
+      "center": [
+        80.8886861,
+        42.262542
+      ],
+      "bounds": [
+        80.68359375,
+        42.03297433244139,
+        81.2109375,
+        42.42345651793831
+      ],
+      "contoursUrl": "/data/mountain-shapes/xuelian-contours.geojson.gz",
+      "shadeUrl": "/data/mountain-shapes/xuelian-shade.png",
+      "imageCoordinates": [
+        [
+          80.68359375,
+          42.42345651793831
+        ],
+        [
+          81.2109375,
+          42.42345651793831
+        ],
+        [
+          81.2109375,
+          42.03297433244139
+        ],
+        [
+          80.68359375,
+          42.03297433244139
+        ]
+      ],
+      "sourcePeak": {
+        "id": "osm-node-4547084707",
+        "name": "雪莲峰",
+        "coordinates": [
+          80.8886861,
+          42.262542
+        ],
+        "sourceUrl": "https://www.openstreetmap.org/node/4547084707",
+        "sourcePackUrl": "/data/mountain-detail/tianshan-0.geojson.gz",
+        "sourcePackSha256": "1e1b64e441ad19ff245ae201a472ca67ab2baf3088b52ec56a05f95b85acba05",
+        "tags": {
+          "description:ru": "Пик Снежного лотоса",
+          "ele": "6627",
+          "name": "雪莲峰",
+          "name:en": "Xuelian Feng",
+          "name:ru": "Сюэляньфэн",
+          "natural": "peak",
+          "prominence": "3067",
+          "source:prominence": "6627-3560 (Col at the NW)",
+          "wikidata": "Q8045232"
+        }
+      },
+      "demZoom": 11,
+      "pixelSizeMeters": 56.569,
+      "pixelSizeMetersRange": [
+        56.424,
+        56.774
+      ],
+      "pixelDimensions": [
+        768,
+        768
+      ],
+      "contourInterval": 200,
+      "indexInterval": 1000,
+      "minZoom": 9,
+      "featureCount": 550,
+      "vertexCount": 148155,
+      "elevationRange": [
+        2301.0,
+        6568.0
+      ],
+      "excludedDemSamples": [],
+      "sourceTiles": [
+        {
+          "z": 11,
+          "x": 1483,
+          "y": 757,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1483/757.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1483/757.png",
+          "sha256": "2347fe0f2f866b9bae98b0c55c6392f4dfd5e1dd1413602f46302a3ed5a03f27",
+          "bytes": 71651,
+          "retrievedAt": "2026-09-25T04:26:38.932260+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1484,
+          "y": 757,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1484/757.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1484/757.png",
+          "sha256": "742dce6b2d102415596dd6c1e60a49dc45d4b9a893614de9782f0cbb1c40fbd5",
+          "bytes": 69335,
+          "retrievedAt": "2026-09-25T04:26:36.439386+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1485,
+          "y": 757,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1485/757.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1485/757.png",
+          "sha256": "019a9f1fb18d7e133ad1fe18bd856f71e046e1d842c17742fe240e347ccd71a8",
+          "bytes": 73913,
+          "retrievedAt": "2026-09-25T04:26:43.229510+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1483,
+          "y": 758,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1483/758.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1483/758.png",
+          "sha256": "7e75f5358dd724e3f5492259cfee3ffdca4d0d0a6394e32f7882529016647515",
+          "bytes": 77376,
+          "retrievedAt": "2026-09-25T04:27:03.035913+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1484,
+          "y": 758,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1484/758.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1484/758.png",
+          "sha256": "9e4119d19ed04e46fb70df4fd9520ee0fc6e516a32764dfbdb822036e3c1c05d",
+          "bytes": 74799,
+          "retrievedAt": "2026-09-25T04:26:43.973502+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1485,
+          "y": 758,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1485/758.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1485/758.png",
+          "sha256": "6736c44cc6689f5efb846271fc73dedd26490d6cae4aebafa16bf15c98ae169d",
+          "bytes": 74157,
+          "retrievedAt": "2026-09-25T04:26:40.633082+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1483,
+          "y": 759,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1483/759.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1483/759.png",
+          "sha256": "418c2fcd021b881f03038dd9999754f0c1cc14adcd146c8c4e826384b6e58161",
+          "bytes": 75915,
+          "retrievedAt": "2026-09-25T04:26:36.010377+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1484,
+          "y": 759,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1484/759.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1484/759.png",
+          "sha256": "36606c910dea985e6d63c1f08c1ecd2367c84340b7824e8aeb05bdc12b75636c",
+          "bytes": 75820,
+          "retrievedAt": "2026-09-25T04:26:39.102513+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1485,
+          "y": 759,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1485/759.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1485/759.png",
+          "sha256": "23e5e281e8a4fb75bbd1ef0f3298724f5ac157d53c922e450c15d3ebd17d6423",
+          "bytes": 71165,
+          "retrievedAt": "2026-09-25T04:26:42.090250+00:00"
+        }
+      ],
+      "contoursSha256": "e85f12bc378d26880aada35fdc4c2204af69b6551e6264cf5aabded44f6b8857",
+      "shadeSha256": "fddae85b9f66300c9074fe61ab8c79f98ef1b3c7da749a3f35a5353174bd477e",
+      "modernReferenceOnly": true,
+      "note": "真实现代DEM推导等高线与山影；覆盖框只是取数裁切范围，不是山体边界。像素间距不是独立测量精度；不能用于唐代地貌或精确峰顶海拔判定。"
+    },
+    {
+      "id": "gongga",
+      "name": "贡嘎山",
+      "regionId": "west-sichuan",
+      "center": [
+        101.8790571,
+        29.5958507
+      ],
+      "bounds": [
+        101.6015625,
+        29.382175075145277,
+        102.12890625,
+        29.84064389983442
+      ],
+      "contoursUrl": "/data/mountain-shapes/gongga-contours.geojson.gz",
+      "shadeUrl": "/data/mountain-shapes/gongga-shade.png",
+      "imageCoordinates": [
+        [
+          101.6015625,
+          29.84064389983442
+        ],
+        [
+          102.12890625,
+          29.84064389983442
+        ],
+        [
+          102.12890625,
+          29.382175075145277
+        ],
+        [
+          101.6015625,
+          29.382175075145277
+        ]
+      ],
+      "sourcePeak": {
+        "id": "osm-node-710005654",
+        "name": "贡嘎山",
+        "coordinates": [
+          101.8790571,
+          29.5958507
+        ],
+        "sourceUrl": "https://www.openstreetmap.org/node/710005654",
+        "sourcePackUrl": "/data/mountain-detail/west-sichuan-3.geojson.gz",
+        "sourcePackSha256": "d3147595a95649d9d3214c2e65a80b969e9d9017ace2602535bbea88b90eb52d",
+        "tags": {
+          "alt_name:bo": "མི་ཉག་གངས་དཀར་རི་བོ།",
+          "alt_name:en": "Mogangling;Minya Konka;Minyak Gangkar Riwo;Minyak Gangkar",
+          "alt_name:zh": "木雅贡嘎",
+          "ele": "7508.9",
+          "name": "贡嘎山",
+          "name:bo": "གངས་དཀར་རི་བོ།",
+          "name:cs": "Miňa Gangkar",
+          "name:de": "Minya Konka",
+          "name:en": "Mount Gongga",
+          "name:zh": "贡嘎山",
+          "name:zh-Latn-pinyin": "gònggá shān",
+          "natural": "peak",
+          "prominence": "3636",
+          "source:prominence": "7556-3920 (Col close to Zhonggu)",
+          "westra_ref": "10032",
+          "wikidata": "Q1537157",
+          "wikipedia": "en:Mount Gongga"
+        }
+      },
+      "demZoom": 11,
+      "pixelSizeMeters": 66.464,
+      "pixelSizeMetersRange": [
+        66.303,
+        66.604
+      ],
+      "pixelDimensions": [
+        768,
+        768
+      ],
+      "contourInterval": 200,
+      "indexInterval": 1000,
+      "minZoom": 9,
+      "featureCount": 577,
+      "vertexCount": 151567,
+      "elevationRange": [
+        1290.0,
+        7442.0
+      ],
+      "excludedDemSamples": [],
+      "sourceTiles": [
+        {
+          "z": 11,
+          "x": 1602,
+          "y": 846,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1602/846.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1602/846.png",
+          "sha256": "a06c645d62872ad2c59f05e4fbc0781556ccf75214de1eece0e71ca9a231c756",
+          "bytes": 68081,
+          "retrievedAt": "2026-09-25T04:27:35.691912+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1603,
+          "y": 846,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1603/846.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1603/846.png",
+          "sha256": "244663093d9b23a0a2af46b3e22962af41d07983461b7932fe4f6a520efa98be",
+          "bytes": 75313,
+          "retrievedAt": "2026-09-25T04:27:37.222516+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1604,
+          "y": 846,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1604/846.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1604/846.png",
+          "sha256": "0aee747dfab88bec16f8aa41c7492e2ac0e3bba2df983093ed33cf3cfcc2ec9f",
+          "bytes": 75206,
+          "retrievedAt": "2026-09-25T04:27:38.695583+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1602,
+          "y": 847,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1602/847.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1602/847.png",
+          "sha256": "638e07b5458b1f4dac5baded49b2bb1690874129e74281ff392f2c26cad18272",
+          "bytes": 67980,
+          "retrievedAt": "2026-09-25T04:27:40.371142+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1603,
+          "y": 847,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1603/847.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1603/847.png",
+          "sha256": "a5043699c89391ec84ebc67583c66dbe063a77697301cda89b014ac5eb250a76",
+          "bytes": 77634,
+          "retrievedAt": "2026-09-25T04:28:00.392506+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1604,
+          "y": 847,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1604/847.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1604/847.png",
+          "sha256": "98fc5a21f85b4ef523ff169507972779606a3cda54938fcc871c01afb52aead8",
+          "bytes": 78123,
+          "retrievedAt": "2026-09-25T04:27:44.404600+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1602,
+          "y": 848,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1602/848.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1602/848.png",
+          "sha256": "b7553feca0a2c01e5dd6facef5e8ac9316d0a2f59a393aebdd40f32210e9df26",
+          "bytes": 69928,
+          "retrievedAt": "2026-09-25T04:27:36.350838+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1603,
+          "y": 848,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1603/848.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1603/848.png",
+          "sha256": "0efbdcae2b785c3f354fddef4ee4b9d444b1973ba412246e619a350cba9dce79",
+          "bytes": 77101,
+          "retrievedAt": "2026-09-25T04:27:37.877049+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1604,
+          "y": 848,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1604/848.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1604/848.png",
+          "sha256": "9908ef61c5fbff9d1c09f0670402e46790306c7c1108c131e146cc9132363c1c",
+          "bytes": 78115,
+          "retrievedAt": "2026-09-25T04:27:42.887926+00:00"
+        }
+      ],
+      "contoursSha256": "348b8156b4a537bc3d11823b549ad5afece18f67943fe161435a9fb0f1c4155e",
+      "shadeSha256": "f4bc9f39845366c51713e5e82bc834287a18922b2540a12f55468fe4bec7bf72",
+      "modernReferenceOnly": true,
+      "note": "真实现代DEM推导等高线与山影；覆盖框只是取数裁切范围，不是山体边界。像素间距不是独立测量精度；不能用于唐代地貌或精确峰顶海拔判定。"
+    },
+    {
+      "id": "yaomei",
+      "name": "幺妹峰",
+      "regionId": "west-sichuan",
+      "center": [
+        102.9019889,
+        31.1063572
+      ],
+      "bounds": [
+        102.65625,
+        30.902224705171434,
+        103.18359375,
+        31.353636941500994
+      ],
+      "contoursUrl": "/data/mountain-shapes/yaomei-contours.geojson.gz",
+      "shadeUrl": "/data/mountain-shapes/yaomei-shade.png",
+      "imageCoordinates": [
+        [
+          102.65625,
+          31.353636941500994
+        ],
+        [
+          103.18359375,
+          31.353636941500994
+        ],
+        [
+          103.18359375,
+          30.902224705171434
+        ],
+        [
+          102.65625,
+          30.902224705171434
+        ]
+      ],
+      "sourcePeak": {
+        "id": "osm-node-3227322901",
+        "name": "幺妹峰",
+        "coordinates": [
+          102.9019889,
+          31.1063572
+        ],
+        "sourceUrl": "https://www.openstreetmap.org/node/3227322901",
+        "sourcePackUrl": "/data/mountain-detail/west-sichuan-2.geojson.gz",
+        "sourcePackSha256": "03c94933810c120bfc19b3ec00e43c5d1452186222f93b1e27c29187250ab70d",
+        "tags": {
+          "alt_name:en": "Siguniang IV",
+          "alt_name_1:en": "Siguniangshan",
+          "ele": "6250",
+          "name": "幺妹峰",
+          "name:bo": "རི་བོ་སྐུ་བླ་འི།",
+          "name:en": "Yaomei Feng",
+          "name:zh": "幺妹峰",
+          "natural": "peak",
+          "prominence": "2570",
+          "source:prominence": "6250-3680 (Col at the E of Cha'erma)"
+        }
+      },
+      "demZoom": 11,
+      "pixelSizeMeters": 65.446,
+      "pixelSizeMetersRange": [
+        65.275,
+        65.586
+      ],
+      "pixelDimensions": [
+        768,
+        768
+      ],
+      "contourInterval": 200,
+      "indexInterval": 1000,
+      "minZoom": 9,
+      "featureCount": 636,
+      "vertexCount": 164198,
+      "elevationRange": [
+        1933.0,
+        6025.0
+      ],
+      "excludedDemSamples": [],
+      "sourceTiles": [
+        {
+          "z": 11,
+          "x": 1608,
+          "y": 836,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1608/836.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1608/836.png",
+          "sha256": "97548e381e5ae2d2b1662d3f2d26c0c8fbb1cef6451b42a972ec1d6723b9266c",
+          "bytes": 75382,
+          "retrievedAt": "2026-09-25T04:27:41.820119+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1609,
+          "y": 836,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1609/836.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1609/836.png",
+          "sha256": "20e17f8e10efe8add96abd3a1cd0de83235d935e8ed6f3d7017e08a109b6ee69",
+          "bytes": 76747,
+          "retrievedAt": "2026-09-25T04:27:45.936415+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1610,
+          "y": 836,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1610/836.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1610/836.png",
+          "sha256": "f2a57e2b7c6c802963aba6f7a3ca68250d406a969b346fbf308fac4b707e24d0",
+          "bytes": 78372,
+          "retrievedAt": "2026-09-25T04:27:48.835536+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1608,
+          "y": 837,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1608/837.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1608/837.png",
+          "sha256": "89969450232eeead7a68421659234583a584ed66ea4daed54a3a1ac787439e70",
+          "bytes": 75061,
+          "retrievedAt": "2026-09-25T04:27:46.532194+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1609,
+          "y": 837,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1609/837.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1609/837.png",
+          "sha256": "1c85f7aaaf9fbabfa6d7690e929fd949ff1dc22327dd6cd97bfdf894570b5d99",
+          "bytes": 76028,
+          "retrievedAt": "2026-09-25T04:27:47.384144+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1610,
+          "y": 837,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1610/837.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1610/837.png",
+          "sha256": "9a95bd0f4886bb416740256fa7351c6350e1f6b38c4ec7aed4500e6e3c7d1b20",
+          "bytes": 78143,
+          "retrievedAt": "2026-09-25T04:27:54.755440+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1608,
+          "y": 838,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1608/838.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1608/838.png",
+          "sha256": "8cdd82a95480a0f8acc4373b6d264ac110699ff37febf5c24ac5b574a235db90",
+          "bytes": 71421,
+          "retrievedAt": "2026-09-25T04:27:52.111067+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1609,
+          "y": 838,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1609/838.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1609/838.png",
+          "sha256": "c7fa2e7114fd9a14e63548681f654a779ca9d969a1750492ca677229ce05a588",
+          "bytes": 72432,
+          "retrievedAt": "2026-09-25T04:27:47.985807+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1610,
+          "y": 838,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1610/838.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1610/838.png",
+          "sha256": "d66d509494f5ab0ac4af598d3fd6ad39c26fdd4da6f1d416ac0441d61bf768d4",
+          "bytes": 75591,
+          "retrievedAt": "2026-09-25T04:27:49.806569+00:00"
+        }
+      ],
+      "contoursSha256": "c9e33223d812d0838290ef7517d59f94e85f4191a068628f8ee911491720d917",
+      "shadeSha256": "681f55c79043ca4f89a3da1aa4ca8b9752db6c3166d29b44784d1cf6c2fe152f",
+      "modernReferenceOnly": true,
+      "note": "真实现代DEM推导等高线与山影；覆盖框只是取数裁切范围，不是山体边界。像素间距不是独立测量精度；不能用于唐代地貌或精确峰顶海拔判定。"
+    },
+    {
+      "id": "xiannairi",
+      "name": "仙乃日",
+      "regionId": "west-sichuan",
+      "center": [
+        100.3508039,
+        28.3949525
+      ],
+      "bounds": [
+        100.01953125,
+        28.149503211544573,
+        100.546875,
+        28.61345942400442
+      ],
+      "contoursUrl": "/data/mountain-shapes/xiannairi-contours.geojson.gz",
+      "shadeUrl": "/data/mountain-shapes/xiannairi-shade.png",
+      "imageCoordinates": [
+        [
+          100.01953125,
+          28.61345942400442
+        ],
+        [
+          100.546875,
+          28.61345942400442
+        ],
+        [
+          100.546875,
+          28.149503211544573
+        ],
+        [
+          100.01953125,
+          28.149503211544573
+        ]
+      ],
+      "sourcePeak": {
+        "id": "osm-node-2959964823",
+        "name": "仙乃日",
+        "coordinates": [
+          100.3508039,
+          28.3949525
+        ],
+        "sourceUrl": "https://www.openstreetmap.org/node/2959964823",
+        "sourcePackUrl": "/data/mountain-detail/west-sichuan-2.geojson.gz",
+        "sourcePackSha256": "03c94933810c120bfc19b3ec00e43c5d1452186222f93b1e27c29187250ab70d",
+        "tags": {
+          "ele": "5998.5",
+          "int_name": "Xiannairi",
+          "name": "仙乃日",
+          "name:en": "Xiannairi Peak",
+          "name:zh": "仙乃日",
+          "natural": "peak",
+          "prominence": "1878",
+          "source:prominence": "6032-4154 (Col at NW)"
+        }
+      },
+      "demZoom": 11,
+      "pixelSizeMeters": 67.241,
+      "pixelSizeMetersRange": [
+        67.102,
+        67.396
+      ],
+      "pixelDimensions": [
+        768,
+        768
+      ],
+      "contourInterval": 200,
+      "indexInterval": 1000,
+      "minZoom": 9,
+      "featureCount": 569,
+      "vertexCount": 147562,
+      "elevationRange": [
+        2040.0,
+        5932.0
+      ],
+      "excludedDemSamples": [],
+      "sourceTiles": [
+        {
+          "z": 11,
+          "x": 1593,
+          "y": 854,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1593/854.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1593/854.png",
+          "sha256": "f88f2e86825629f76a0a32a605ba07b7db0f1bb5e4a79fe08dfdb4f932abdc19",
+          "bytes": 71369,
+          "retrievedAt": "2026-09-25T04:27:03.428432+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1594,
+          "y": 854,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1594/854.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1594/854.png",
+          "sha256": "f377ee83b24e68f98e6c34673c2fb62af0a52c429a3d8220d3a7fcc2d250c5bf",
+          "bytes": 71517,
+          "retrievedAt": "2026-09-25T04:27:06.281661+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1595,
+          "y": 854,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1595/854.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1595/854.png",
+          "sha256": "65629216c4c5f2d51dedbbba78b381d3813ff5d9aba10758872242f2473c335b",
+          "bytes": 72518,
+          "retrievedAt": "2026-09-25T04:27:18.866149+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1593,
+          "y": 855,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1593/855.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1593/855.png",
+          "sha256": "6fa1833c98e57215f7c137cd674008d0d383823ccd72822984665d686f4481aa",
+          "bytes": 75187,
+          "retrievedAt": "2026-09-25T04:27:03.070437+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1594,
+          "y": 855,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1594/855.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1594/855.png",
+          "sha256": "3c904eccbbb53cfb44d8bbb9201b92c76aba50d68cf58888ebff2b04cd0abe92",
+          "bytes": 76472,
+          "retrievedAt": "2026-09-25T04:27:07.882540+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1595,
+          "y": 855,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1595/855.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1595/855.png",
+          "sha256": "4335da6de39d47b52bcea87ebc73ecc761c2dfe779e8e284d7443fa941a6136c",
+          "bytes": 74222,
+          "retrievedAt": "2026-09-25T04:27:28.899547+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1593,
+          "y": 856,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1593/856.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1593/856.png",
+          "sha256": "6cb2fcbee2d616a568f43849fcb8c0a395b92eafb8236de9595ceaac6ca21522",
+          "bytes": 73563,
+          "retrievedAt": "2026-09-25T04:27:17.747876+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1594,
+          "y": 856,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1594/856.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1594/856.png",
+          "sha256": "5929a9c07303c270af47eb61f286c8aea06ae1fe6560c9f0bd24d8b4a6ce894d",
+          "bytes": 74914,
+          "retrievedAt": "2026-09-25T04:27:17.372261+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1595,
+          "y": 856,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1595/856.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1595/856.png",
+          "sha256": "e7dedf6b74349bea8d486d5069445d989fa7b23ca908169f1cacec97a586ac3b",
+          "bytes": 75336,
+          "retrievedAt": "2026-09-25T04:27:25.775286+00:00"
+        }
+      ],
+      "contoursSha256": "00a38acdef380ddf640a3124c15bf8ec7b81407643f99189a8056000baf741c1",
+      "shadeSha256": "99ff4594be7f7d9a3aa3b21e0d6bf8a10975dd6c86efaf620927bb30097f81f4",
+      "modernReferenceOnly": true,
+      "note": "真实现代DEM推导等高线与山影；覆盖框只是取数裁切范围，不是山体边界。像素间距不是独立测量精度；不能用于唐代地貌或精确峰顶海拔判定。"
+    },
+    {
+      "id": "queershan",
+      "name": "雀儿山",
+      "regionId": "west-sichuan",
+      "center": [
+        99.0721122,
+        31.7859781
+      ],
+      "bounds": [
+        98.7890625,
+        31.503629305773018,
+        99.31640625,
+        31.952162238024968
+      ],
+      "contoursUrl": "/data/mountain-shapes/queershan-contours.geojson.gz",
+      "shadeUrl": "/data/mountain-shapes/queershan-shade.png",
+      "imageCoordinates": [
+        [
+          98.7890625,
+          31.952162238024968
+        ],
+        [
+          99.31640625,
+          31.952162238024968
+        ],
+        [
+          99.31640625,
+          31.503629305773018
+        ],
+        [
+          98.7890625,
+          31.503629305773018
+        ]
+      ],
+      "sourcePeak": {
+        "id": "osm-node-3034352548",
+        "name": "雀儿山",
+        "coordinates": [
+          99.0721122,
+          31.7859781
+        ],
+        "sourceUrl": "https://www.openstreetmap.org/node/3034352548",
+        "sourcePackUrl": "/data/mountain-detail/west-sichuan-2.geojson.gz",
+        "sourcePackSha256": "03c94933810c120bfc19b3ec00e43c5d1452186222f93b1e27c29187250ab70d",
+        "tags": {
+          "alt_name": "绒峨扎;绒峨扎峰;雀儿山主峰",
+          "alt_name:en": "Ch'ueh-erh Shan;Chola Shan;Que'er Shan;Chola Mountain;Chola Peak;Trola Peak",
+          "alt_name:zh": "绒麦俄扎",
+          "ele": "6168",
+          "gns:dsg": "MT: mountain",
+          "name": "雀儿山",
+          "name:bo": "ཁྲོ་ལ།",
+          "name:de": "Chola Shan",
+          "name:en": "Rongme Ngatra",
+          "name:ja": "雀児山",
+          "name:zh": "雀儿山",
+          "natural": "peak",
+          "prominence": "1698",
+          "source": "cyclOSM",
+          "source:name": "GNS",
+          "source:prominence": "6168-4470 (Col at the SE)",
+          "wikidata": "Q387514",
+          "wikipedia": "en:Rongme Ngatra"
+        }
+      },
+      "demZoom": 11,
+      "pixelSizeMeters": 64.973,
+      "pixelSizeMetersRange": [
+        64.856,
+        65.171
+      ],
+      "pixelDimensions": [
+        768,
+        768
+      ],
+      "contourInterval": 200,
+      "indexInterval": 1000,
+      "minZoom": 9,
+      "featureCount": 514,
+      "vertexCount": 118753,
+      "elevationRange": [
+        3236.0,
+        6085.0
+      ],
+      "excludedDemSamples": [],
+      "sourceTiles": [
+        {
+          "z": 11,
+          "x": 1586,
+          "y": 832,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1586/832.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1586/832.png",
+          "sha256": "4986a414432fe8def3d666a59aae71d435bb26efce2b1d104b68c784e14a7896",
+          "bytes": 72229,
+          "retrievedAt": "2026-09-25T04:26:57.255558+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1587,
+          "y": 832,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1587/832.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1587/832.png",
+          "sha256": "1f5c5f24f97e6ea0470900c939e08fc4ca3acbaf0510c634c4852740c93e4d57",
+          "bytes": 71557,
+          "retrievedAt": "2026-09-25T04:26:57.372321+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1588,
+          "y": 832,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1588/832.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1588/832.png",
+          "sha256": "308ebc9ccb903f3da9252f63f6ec27a9889006da768196de915c05bd42ba0df6",
+          "bytes": 66574,
+          "retrievedAt": "2026-09-25T04:26:59.921672+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1586,
+          "y": 833,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1586/833.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1586/833.png",
+          "sha256": "bf741b1475604a3691bd27723bf30381ba0e3349cca75ae252b63a5cae686f7c",
+          "bytes": 68692,
+          "retrievedAt": "2026-09-25T04:26:55.891339+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1587,
+          "y": 833,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1587/833.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1587/833.png",
+          "sha256": "b1bf475c9027805886232977c94c59c7bc860c7112ad2e74d4be6bc153677f58",
+          "bytes": 71139,
+          "retrievedAt": "2026-09-25T04:26:58.280526+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1588,
+          "y": 833,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1588/833.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1588/833.png",
+          "sha256": "441f843f241798e0823ab6d0d4bf83d1ea8ace868ce01974bd01c78185ed6923",
+          "bytes": 69290,
+          "retrievedAt": "2026-09-25T04:26:59.563764+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1586,
+          "y": 834,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1586/834.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1586/834.png",
+          "sha256": "55146e2e16eb92e67037e042b2e3acb41c7c8a6bf755d80ff1648428b2f46e72",
+          "bytes": 69725,
+          "retrievedAt": "2026-09-25T04:26:56.606231+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1587,
+          "y": 834,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1587/834.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1587/834.png",
+          "sha256": "be8066b8eb0aeff7e0f9c195c8b7dc0b161c129013fc1e3bd41abb6cd00ba475",
+          "bytes": 70418,
+          "retrievedAt": "2026-09-25T04:26:58.797462+00:00"
+        },
+        {
+          "z": 11,
+          "x": 1588,
+          "y": 834,
+          "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1588/834.png",
+          "evidencePath": "data/evidence/mountain-shapes/dem/11/1588/834.png",
+          "sha256": "c79c4f26b86361a799c44ed769dfcb3dbb9223aeaeb457618986db4d2daea974",
+          "bytes": 66329,
+          "retrievedAt": "2026-09-25T04:27:00.313718+00:00"
+        }
+      ],
+      "contoursSha256": "6928de48880cead55bd66f9325b95923d0edfef5d7432f8ab9e335be5e3f67e2",
+      "shadeSha256": "a3a4833fe850ec16eaf47fae98464ea0b501ff8eb03e899bfe4670f0f7f97416",
+      "modernReferenceOnly": true,
+      "note": "真实现代DEM推导等高线与山影；覆盖框只是取数裁切范围，不是山体边界。像素间距不是独立测量精度；不能用于唐代地貌或精确峰顶海拔判定。"
+    }
+  ]
+}

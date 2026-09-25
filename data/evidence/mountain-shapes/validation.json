@@ -1,0 +1,270 @@
+{
+  "version": 1,
+  "peakManifestPath": "public/data/mountain-detail/manifest.json",
+  "peakManifestSha256": "2199bc5af4712b1c8fbf90e10940a6499bc8fac35dcdb4f7d83242beb833df27",
+  "sourceTileCount": 153,
+  "sourceBytes": 10082045,
+  "areaCount": 17,
+  "featureCount": 11984,
+  "vertexCount": 2573919,
+  "derivedBytes": 25394751,
+  "peakCoordinatesPreserved": true,
+  "allContourVerticesCheckedAgainstDEM": true,
+  "areas": [
+    {
+      "id": "baxiantai",
+      "featureCount": 960,
+      "vertexCount": 259382,
+      "contourInterpolationMaxErrorMeters": 1.0913936421275139e-11,
+      "shadeAlphaRange": [
+        0,
+        175
+      ],
+      "shadeTransparentPixels": 277125,
+      "shadeBytes": 456133,
+      "contoursBytes": 1830277,
+      "sourcePeakUnchanged": true,
+      "excludedDemSampleCount": 0
+    },
+    {
+      "id": "huashan-south",
+      "featureCount": 737,
+      "vertexCount": 123859,
+      "contourInterpolationMaxErrorMeters": 9.890754881780595e-12,
+      "shadeAlphaRange": [
+        0,
+        175
+      ],
+      "shadeTransparentPixels": 319292,
+      "shadeBytes": 355119,
+      "contoursBytes": 860296,
+      "sourcePeakUnchanged": true,
+      "excludedDemSampleCount": 0
+    },
+    {
+      "id": "zhongnanshan",
+      "featureCount": 836,
+      "vertexCount": 186290,
+      "contourInterpolationMaxErrorMeters": 1.0231815394945443e-11,
+      "shadeAlphaRange": [
+        0,
+        175
+      ],
+      "shadeTransparentPixels": 310147,
+      "shadeBytes": 399094,
+      "contoursBytes": 1298129,
+      "sourcePeakUnchanged": true,
+      "excludedDemSampleCount": 0
+    },
+    {
+      "id": "maijishan",
+      "featureCount": 1448,
+      "vertexCount": 216140,
+      "contourInterpolationMaxErrorMeters": 1.4097167877480388e-11,
+      "shadeAlphaRange": [
+        0,
+        175
+      ],
+      "shadeTransparentPixels": 266436,
+      "shadeBytes": 473031,
+      "contoursBytes": 1487663,
+      "sourcePeakUnchanged": true,
+      "excludedDemSampleCount": 0
+    },
+    {
+      "id": "wangwushan",
+      "featureCount": 1109,
+      "vertexCount": 165948,
+      "contourInterpolationMaxErrorMeters": 1.7053025658242404e-11,
+      "shadeAlphaRange": [
+        0,
+        175
+      ],
+      "shadeTransparentPixels": 249580,
+      "shadeBytes": 452280,
+      "contoursBytes": 1142921,
+      "sourcePeakUnchanged": true,
+      "excludedDemSampleCount": 8
+    },
+    {
+      "id": "wangmangling",
+      "featureCount": 1013,
+      "vertexCount": 148837,
+      "contourInterpolationMaxErrorMeters": 2.5352164811920375e-11,
+      "shadeAlphaRange": [
+        0,
+        175
+      ],
+      "shadeTransparentPixels": 246167,
+      "shadeBytes": 436498,
+      "contoursBytes": 1028124,
+      "sourcePeakUnchanged": true,
+      "excludedDemSampleCount": 4
+    },
+    {
+      "id": "wutai-north",
+      "featureCount": 689,
+      "vertexCount": 188029,
+      "contourInterpolationMaxErrorMeters": 1.1823431123048067e-11,
+      "shadeAlphaRange": [
+        0,
+        175
+      ],
+      "shadeTransparentPixels": 278617,
+      "shadeBytes": 430458,
+      "contoursBytes": 1316825,
+      "sourcePeakUnchanged": true,
+      "excludedDemSampleCount": 0
+    },
+    {
+      "id": "gangshika",
+      "featureCount": 329,
+      "vertexCount": 75241,
+      "contourInterpolationMaxErrorMeters": 1.0913936421275139e-11,
+      "shadeAlphaRange": [
+        0,
+        175
+      ],
+      "shadeTransparentPixels": 269398,
+      "shadeBytes": 384416,
+      "contoursBytes": 541803,
+      "sourcePeakUnchanged": true,
+      "excludedDemSampleCount": 0
+    },
+    {
+      "id": "shule-nanshan",
+      "featureCount": 195,
+      "vertexCount": 47974,
+      "contourInterpolationMaxErrorMeters": 7.275957614183426e-12,
+      "shadeAlphaRange": [
+        0,
+        175
+      ],
+      "shadeTransparentPixels": 312035,
+      "shadeBytes": 299047,
+      "contoursBytes": 343395,
+      "sourcePeakUnchanged": true,
+      "excludedDemSampleCount": 0
+    },
+    {
+      "id": "zhuoershan",
+      "featureCount": 831,
+      "vertexCount": 200683,
+      "contourInterpolationMaxErrorMeters": 9.094947017729282e-12,
+      "shadeAlphaRange": [
+        0,
+        175
+      ],
+      "shadeTransparentPixels": 264550,
+      "shadeBytes": 416308,
+      "contoursBytes": 1446347,
+      "sourcePeakUnchanged": true,
+      "excludedDemSampleCount": 0
+    },
+    {
+      "id": "khan-tengri",
+      "featureCount": 627,
+      "vertexCount": 134948,
+      "contourInterpolationMaxErrorMeters": 8.185452315956354e-11,
+      "shadeAlphaRange": [
+        0,
+        175
+      ],
+      "shadeTransparentPixels": 265519,
+      "shadeBytes": 391031,
+      "contoursBytes": 997667,
+      "sourcePeakUnchanged": true,
+      "excludedDemSampleCount": 0
+    },
+    {
+      "id": "bogda",
+      "featureCount": 364,
+      "vertexCount": 96353,
+      "contourInterpolationMaxErrorMeters": 1.0913936421275139e-11,
+      "shadeAlphaRange": [
+        0,
+        175
+      ],
+      "shadeTransparentPixels": 262516,
+      "shadeBytes": 404600,
+      "contoursBytes": 692652,
+      "sourcePeakUnchanged": true,
+      "excludedDemSampleCount": 0
+    },
+    {
+      "id": "xuelian",
+      "featureCount": 550,
+      "vertexCount": 148155,
+      "contourInterpolationMaxErrorMeters": 1.8189894035458565e-11,
+      "shadeAlphaRange": [
+        0,
+        175
+      ],
+      "shadeTransparentPixels": 233670,
+      "shadeBytes": 434994,
+      "contoursBytes": 1083271,
+      "sourcePeakUnchanged": true,
+      "excludedDemSampleCount": 0
+    },
+    {
+      "id": "gongga",
+      "featureCount": 577,
+      "vertexCount": 151567,
+      "contourInterpolationMaxErrorMeters": 6.59383658785373e-11,
+      "shadeAlphaRange": [
+        0,
+        175
+      ],
+      "shadeTransparentPixels": 229260,
+      "shadeBytes": 445214,
+      "contoursBytes": 1114143,
+      "sourcePeakUnchanged": true,
+      "excludedDemSampleCount": 0
+    },
+    {
+      "id": "yaomei",
+      "featureCount": 636,
+      "vertexCount": 164198,
+      "contourInterpolationMaxErrorMeters": 2.1827872842550278e-11,
+      "shadeAlphaRange": [
+        0,
+        175
+      ],
+      "shadeTransparentPixels": 233289,
+      "shadeBytes": 441388,
+      "contoursBytes": 1202837,
+      "sourcePeakUnchanged": true,
+      "excludedDemSampleCount": 0
+    },
+    {
+      "id": "xiannairi",
+      "featureCount": 569,
+      "vertexCount": 147562,
+      "contourInterpolationMaxErrorMeters": 2.0463630789890885e-11,
+      "shadeAlphaRange": [
+        0,
+        175
+      ],
+      "shadeTransparentPixels": 245951,
+      "shadeBytes": 438235,
+      "contoursBytes": 1081575,
+      "sourcePeakUnchanged": true,
+      "excludedDemSampleCount": 0
+    },
+    {
+      "id": "queershan",
+      "featureCount": 514,
+      "vertexCount": 118753,
+      "contourInterpolationMaxErrorMeters": 2.1373125491663814e-11,
+      "shadeAlphaRange": [
+        0,
+        175
+      ],
+      "shadeTransparentPixels": 256101,
+      "shadeBytes": 419021,
+      "contoursBytes": 849959,
+      "sourcePeakUnchanged": true,
+      "excludedDemSampleCount": 0
+    }
+  ]
+}

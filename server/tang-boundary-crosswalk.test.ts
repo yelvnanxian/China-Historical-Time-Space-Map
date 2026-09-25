@@ -7,6 +7,7 @@ import { boundaryContainsPoint, type TangBoundaryCrosswalk } from "../shared/tan
 import { getBoundaryDisplayLabel } from "../shared/boundary-labels";
 import type { TangDetailCollection } from "../shared/tang-detail";
 import type { Place } from "../shared/types";
+import { boundarySearchKey, simplifiedChinese } from "../shared/boundary-search";
 
 const root = new URL("../", import.meta.url);
 const read = (path: string) => readFileSync(new URL(path, root));
@@ -124,4 +125,110 @@ test("点在面内核查尊重孔洞和分离面，面外点不会因距离近�
   const multipart: MultiPolygon = { type: "MultiPolygon", coordinates: [polygon.coordinates, [[[20, 0], [22, 0], [22, 2], [20, 2], [20, 0]]]] };
   assert.equal(boundaryContainsPoint(multipart, [21, 1]), true);
   assert.equal(boundaryContainsPoint(multipart, [15, 1]), false);
+});
+
+test("755覆盖统计只计当前1682个治所，跨年辅助ID和未关联原因明确分开", () => {
+  const coverage = crosswalk.coverage!;
+  assert.deepEqual(coverage, { year: 755, total: 1682, matched: 1024, unmatched: 658,
+    byLevel: { prefecture: { total: 317, matched: 232, unmatched: 85 }, county: { total: 1365, matched: 792, unmatched: 573 } }, auxiliarySettlementLinks: 245 });
+  assert.equal(Object.keys(crosswalk.settlements).length, coverage.matched + coverage.auxiliarySettlementLinks);
+  assert.equal(Object.keys(crosswalk.unmatchedSettlements!).length, coverage.unmatched);
+  for (const level of ["prefecture", "county"] as const) {
+    const features = current.features.filter(feature => feature.properties.level === level);
+    assert.equal(coverage.byLevel[level].total, features.length);
+    assert.equal(coverage.byLevel[level].matched, features.filter(feature => crosswalk.settlements[feature.properties.id]).length);
+  }
+  for (const { properties: p } of current.features) {
+    const missing = crosswalk.unmatchedSettlements![p.id];
+    assert.equal(Number(!!crosswalk.settlements[p.id]) + Number(!!missing), 1, p.id);
+    if (missing) {
+      assert.equal(missing.entityName, p.name);
+      assert.equal(missing.level, p.level);
+      assert.equal(missing.entityYear, 755);
+      assert.ok(missing.reason.length > 10);
+    }
+  }
+});
+
+test("江陵郡荆州与江陵县关联同一原始模型，江陵府760年起的名称不会伪装成755称谓", () => {
+  const ids = ["chgis-prefecture-34442", "chgis-prefecture-34443", "chgis-county-43676"];
+  for (const id of ids) assert.equal(crosswalk.settlements[id].boundaryId, "hartwell-741-prefecture-v5_0741_chin_chn_0741_p-94", id);
+  const link = crosswalk.settlements[ids[0]];
+  assert.equal(link.entityName, "江陵郡");
+  assert.equal(link.entityYear, 755);
+  assert.equal(link.boundaryName, "江陵府");
+  assert.deepEqual(link.nameChain!.filter(step => step.beginYear >= 621).map(step => [step.sourceRecordId, step.name, step.beginYear, step.endYear]), [
+    ["34443", "荆州", 621, 741], ["34442", "江陵郡", 742, 757], ["34441", "荆州", 758, 759], ["34437", "江陵府", 760, 1129],
+  ]);
+  assert.equal(link.modelNameAnchor!.name, "江陵府");
+  assert.equal(link.modelNameAnchor!.beginYear, 760);
+  assert.equal(link.modelNameAnchor!.match, "full-name");
+  assert.match(link.note, /不代表755年的正式名称/);
+  assert.equal(crosswalk.places.jingzhou.boundaryId, link.boundaryId);
+});
+
+test("新增跨期源名称链逐条对应原始记录，双方明确更名、原始坐标完全相同且双向唯一", () => {
+  type Row = { recordId: string; coordinates: [number, number]; originalCoordinates: [number, number]; sourceRecord: Record<string, string | number> };
+  const document = json<{ records: Row[]; withheld: Row[] }>("data/evidence/tang-detail/chgis/tang-prefecture-name-records.json");
+  const rows = [...document.records, ...document.withheld];
+  const byId = new Map(document.records.map(row => [row.recordId, row]));
+  const supplemental = Object.entries(crosswalk.settlements).filter(([, link]) => link.nameChain);
+  assert.equal(supplemental.length, 26);
+  for (const [id, link] of supplemental) {
+    const source = currentById.get(id) ?? oldById.get(id)!;
+    const chain = link.nameChain!;
+    assert.ok(chain.some(step => step.sourceRecordId === source.properties.sourceRecordId), id);
+    assert.ok(link.evidence.some(evidence => evidence.sourceId === "chgis-tang-prefecture-name-records"));
+    for (let index = 0; index < chain.length; index += 1) {
+      const step = chain[index], row = byId.get(step.sourceRecordId)!;
+      assert.ok(row, `${id}: withheld or absent records cannot enter identity chains`);
+      assert.equal(step.name, simplifiedChinese(String(row.sourceRecord.NAME_CH)));
+      assert.equal(step.beginYear, row.sourceRecord.BEG_YR);
+      assert.equal(step.endYear, row.sourceRecord.END_YR);
+      assert.deepEqual(step.coordinates, row.coordinates);
+      assert.deepEqual(source.geometry.type === "Point" && source.geometry.coordinates, row.coordinates);
+      if (!index) continue;
+      const previous = byId.get(chain[index - 1].sourceRecordId)!;
+      assert.deepEqual(previous.originalCoordinates, row.originalCoordinates);
+      assert.equal(previous.sourceRecord.LEV_RANK, row.sourceRecord.LEV_RANK);
+      assert.equal(Number(previous.sourceRecord.END_YR) + 1, row.sourceRecord.BEG_YR);
+      assert.equal(previous.sourceRecord.END_CHG_TY, "更名");
+      assert.equal(row.sourceRecord.BEG_CHG_TY, "更名");
+      assert.ok(["4", "5", "6"].includes(String(previous.sourceRecord.END_RULE)));
+      assert.ok(["4", "5", "6"].includes(String(row.sourceRecord.BEG_RULE)));
+      const sameSiteAndLevel = rows.filter(candidate => JSON.stringify(candidate.originalCoordinates) === JSON.stringify(row.originalCoordinates)
+        && candidate.sourceRecord.LEV_RANK === row.sourceRecord.LEV_RANK);
+      assert.equal(sameSiteAndLevel.filter(candidate => candidate.sourceRecord.BEG_YR === row.sourceRecord.BEG_YR
+        && candidate.sourceRecord.BEG_CHG_TY === "更名" && ["4", "5", "6"].includes(String(candidate.sourceRecord.BEG_RULE))).length, 1);
+      assert.equal(sameSiteAndLevel.filter(candidate => candidate.sourceRecord.END_YR === previous.sourceRecord.END_YR
+        && candidate.sourceRecord.END_CHG_TY === "更名" && ["4", "5", "6"].includes(String(candidate.sourceRecord.END_RULE))).length, 1);
+    }
+    const anchor = link.modelNameAnchor!;
+    assert.ok(chain.some(step => step.sourceRecordId === anchor.sourceRecordId));
+    const nameKey = (name: string) => boundarySearchKey(name).replace(/(?:大都督府|大都护府|都督府|都护府|府|州|郡|县)$/u, "");
+    assert.equal(nameKey(anchor.name), nameKey(link.boundaryName));
+    if (anchor.match === "full-name") assert.equal(boundarySearchKey(anchor.name), boundarySearchKey(link.boundaryName));
+    assert.ok(source.geometry.type === "Point" && boundaryContainsPoint(areas.get(link.boundaryId)!.geometry, source.geometry.coordinates));
+  }
+  for (const [name, model] of [["蜀郡", "成都府"], ["洪源郡", "黎州"], ["缙云郡", "处州"], ["潭阳郡", "叙州"], ["襄阳郡", "襄阳府"], ["龙水郡", "宜州"]]) {
+    const feature = current.features.find(feature => feature.properties.name === name)!;
+    assert.equal(crosswalk.settlements[feature.properties.id]?.boundaryName, model, name);
+  }
+});
+
+test("同名面在异地与缺少名称证据的府州仍不关联，不能以最近或面内关系猜配", () => {
+  for (const id of ["chgis-prefecture-210473", "chgis-prefecture-211248", "chgis-prefecture-99426"]) {
+    const missing = crosswalk.unmatchedSettlements![id];
+    assert.equal(missing.reasonCode, "outside-named-model", id);
+    const feature = currentById.get(id)!;
+    for (const areaId of missing.candidateBoundaryIds) {
+      assert.ok(feature.geometry.type === "Point");
+      assert.equal(boundaryContainsPoint(areas.get(areaId)!.geometry, feature.geometry.coordinates), false, id);
+    }
+    assert.equal(crosswalk.settlements[id], undefined);
+  }
+  const noModel = crosswalk.unmatchedSettlements!["chgis-prefecture-99405"];
+  assert.equal(noModel.entityName, "牂州");
+  assert.equal(noModel.reasonCode, "no-named-model");
+  assert.equal(crosswalk.settlements["chgis-prefecture-99405"], undefined);
 });

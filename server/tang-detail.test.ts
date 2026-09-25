@@ -68,6 +68,33 @@ function sourcePoints(members: Map<string, Buffer>) {
   return points;
 }
 
+test("唐代府州名称证据逐条等于原始ZIP内DBF与未舍入SHP坐标，隔离记录参与审计", async () => {
+  const archive = await readFile(path.join(root, "data/evidence/tang-detail/chgis/prefecture-wgs84.zip"));
+  const source = sourcePoints(zipMembers(archive));
+  const evidence = JSON.parse(await readFile(path.join(root, "data/evidence/tang-detail/chgis/tang-prefecture-name-records.json"), "utf8"));
+  assert.equal(evidence.sourceSha256, digest(archive));
+  assert.equal(evidence.records.length, 1488);
+  assert.equal(evidence.withheld.length, 70);
+  const eligible = [...source.entries()].filter(([, value]) => Number(value.record.BEG_YR) <= 907 && Number(value.record.END_YR) >= 618);
+  assert.equal(eligible.length, evidence.records.length + evidence.withheld.length);
+  const ids = new Set<string>();
+  for (const [withheld, records] of [[false, evidence.records], [true, evidence.withheld]] as const) {
+    for (const item of records) {
+      assert.ok(!ids.has(item.recordId)); ids.add(item.recordId);
+      const original = source.get(item.recordId)!;
+      assert.ok(original, item.recordId);
+      assert.deepEqual(item.originalCoordinates, original.coordinates);
+      assert.deepEqual(item.coordinates, original.coordinates.map(value => Math.round(value * 1e6) / 1e6));
+      for (const [key, value] of Object.entries(item.sourceRecord)) {
+        if (typeof value === "number") assert.equal(value, Number(original.record[key]), `${item.recordId}: ${key}`);
+        else assert.equal(String(value ?? ""), original.record[key], `${item.recordId}: ${key}`);
+      }
+      const delta = Math.max(...item.coordinates.map((value: number, index: number) => Math.abs(value - Number(original.record[index ? "Y_COOR" : "X_COOR"]))));
+      assert.equal(delta > .02, withheld, item.recordId);
+    }
+  }
+});
+
 test("唐细节历史点逐条来自原始SHP POINT，并隔离内部坐标冲突", async () => {
   const data: TangDetailCollection = JSON.parse(await readFile(publicPath(manifest.historical.url), "utf8"));
   assert.equal(data.features.length, 1682);

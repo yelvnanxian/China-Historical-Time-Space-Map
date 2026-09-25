@@ -61,6 +61,10 @@ if mountain_manifest.exists():
         f"另有{sum(mountain['countsByKind'].values())}条现代山脊、刃脊、陡崖和命名山峰记录，保留来源几何，不补画未收录山线。"
         "唐代郡与州属于同一层级，已核对改名或隶属关系的治所可显示741年参考辖区，不代表755年精确界线。"
     )
+shape_manifest = ROOT/'public/data/mountain-shapes/manifest.json'
+if shape_manifest.exists():
+    shapes = json.loads(shape_manifest.read_text())
+    catalog['metadata']['dataNotice'] += f"{shapes['areaCount']}处山地近览使用真实现代高程生成{shapes['featureCount']}条等高线与精细山影；不是山脉边界或唐代地貌考证。"
 catalog['metadata']['geographicNotice'] = (
     "黄河中下游接入五期WorldMap图集河道，随朝代切换，唐代采用11—1048年资料；仅表示历史流向，不是逐年古河岸测绘。"
     "其他河湖、山峰及海岸仍为现代参照，不能据此复原唐代地貌。历史治所点与精选地点的坐标有各自来源；行政面不是城墙范围。"

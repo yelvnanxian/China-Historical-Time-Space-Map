@@ -7,6 +7,7 @@ import { boundarySearchKey } from "../../shared/boundary-search";
 import { canInteract, type MapInteractionMode } from "../../shared/map-interactions";
 import { findNaturalMapHit } from "../../shared/map-hit-test";
 import { mountainDetailHitLayerIds, mountainDetailKindNames, type MountainDetailBounds, type MountainDetailCollection, type MountainDetailManifest, type MountainDetailProperties } from "../../shared/mountain-detail";
+import { mountainSelectionFocus, nearbyMountainRidges } from "../../shared/mountain-detail-interaction";
 import "../mountain-detail.css";
 
 type MountainFeature = Feature<LineString | Point, MountainDetailProperties>;
@@ -43,6 +44,7 @@ export default function MountainDetailLayer({ map, ready, enabled, mode, control
   const [selected, setSelected] = useState<MountainFeature>();
   const [collapsed, setCollapsed] = useState(false);
   const choose = useRef(onChoose); choose.current = onChoose;
+  const focusMap = useRef(onFocus); focusMap.current = onFocus;
   const reportLoaded = useRef(onLoadedFeatureIds); reportLoaded.current = onLoadedFeatureIds;
   const interactive = canInteract(mode, "mountains");
 
@@ -95,6 +97,7 @@ export default function MountainDetailLayer({ map, ready, enabled, mode, control
   useEffect(() => { reportLoaded.current?.(JSON.parse(loadedIdsKey)); }, [loadedIdsKey]);
   useEffect(() => () => { reportLoaded.current?.([]); }, []);
   const activeFeatures = useMemo(() => enabled ? loadedFeatures.filter(feature => zoom >= feature.properties.minZoom) : [], [enabled, loadedFeatures, zoom]);
+  const nearbyRidges = useMemo(() => nearbyMountainRidges(selected, Object.values(packs).flatMap(pack => pack.features)), [selected, packs]);
   const selectable = useMemo(() => new Map(activeFeatures.map(feature => [feature.properties.id, feature])), [activeFeatures]);
   const results = useMemo(() => {
     const key = boundarySearchKey(query);
@@ -128,7 +131,11 @@ export default function MountainDetailLayer({ map, ready, enabled, mode, control
     (map.getSource("mountain-detail-selected") as GeoJSONSource).setData({ type: "FeatureCollection", features: enabled && interactive && selected ? [selected] : [] });
   }, [map, ready, enabled, interactive, activeFeatures, selected]);
 
-  function select(feature: MountainFeature) { choose.current(); setSelected(feature); setCollapsed(false); }
+  function select(feature: MountainFeature, explicitFocus = false) {
+    choose.current(); setSelected(feature); setCollapsed(false);
+    const focus = mountainSelectionFocus(feature, map?.getZoom() ?? zoom, explicitFocus);
+    if (focus) focusMap.current(focus.points, focus.maxZoom);
+  }
   useEffect(() => {
     if (!map || !ready || !enabled || !interactive) return;
     const click = (event: MapMouseEvent) => {
@@ -174,9 +181,7 @@ export default function MountainDetailLayer({ map, ready, enabled, mode, control
   }, [map, ready, enabled, interactive, activeFeatures, selected?.properties.id]);
 
   function focus(feature: MountainFeature) {
-    const p = feature.properties;
-    onFocus(feature.geometry.type === "Point" ? [p.labelCoordinates] : [[p.bounds[0], p.bounds[1]], [p.bounds[2], p.bounds[3]]], Math.max(10, p.minZoom + 1));
-    select(feature);
+    select(feature, true);
   }
   const p = selected?.properties;
   return <>
@@ -198,13 +203,21 @@ export default function MountainDetailLayer({ map, ready, enabled, mode, control
     {enabled && interactive && p && <section className="nature-detail mountain-detail-card" aria-label="山脊与山峰详情">
       <header><button className="nature-detail-title" aria-expanded={!collapsed} onClick={() => setCollapsed(value => !value)}><Mountain size={15} /><strong>{p.name}</strong><span>{collapsed ? "展开" : "收起"}</span></button><button aria-label="关闭山地详情" onClick={() => setSelected(undefined)}><X size={16} /></button></header>
       {!collapsed && <div className="nature-detail-body"><span className="nature-kind">{mountainDetailKindNames[p.kind]} · 现代参照</span>
+        {p.kind === "peak" && <p className="mountain-peak-guide">符号定位峰顶；有覆盖时，等高线表示周边现代地势，棕色线表示已收录的山脊。等高线和山脊资料仍有缺口。</p>}
         <p>{p.geometryNote}</p>
         {!p.hasChineseName && <p>来源{p.originalName ? "尚无已核对的中文名称，原名保留在记录中" : "没有名称"}；不据位置为其补造山名。</p>}
         {p.elevationMetres !== undefined ? <p>来源标注高程：{p.elevationMetres}米。未经本项目独立测量核验。</p> : p.tags.ele && <p>来源高程原值：{p.tags.ele}。未换算未明确的单位。</p>}
         {p.mappedLengthKm !== undefined && <p>本条图上线长约{p.mappedLengthKm.toFixed(p.mappedLengthKm < 10 ? 2 : 1)}千米，按来源顶点计算水平距离；不是地表步行距离或整条山脉长度。</p>}
+        {p.kind === "peak" && <section className="mountain-nearby-ridges" aria-label="附近已收录山脊">
+          <h4>附近已收录山脊</h4>
+          {nearbyRidges.length ? <>
+            <p>10千米内，按峰顶到来源线的最近水平距离排序；邻近关系不代表属于同一山系。</p>
+            <ul>{nearbyRidges.map(({ feature, distanceKm }) => <li key={feature.properties.id}><button type="button" onClick={() => focus(feature)}><strong>{feature.properties.name}</strong><span>距峰顶约{distanceKm.toFixed(1)}千米</span></button></li>)}</ul>
+          </> : <p>当前已加载资料中，10千米内尚无山脊线；未收录不表示当地没有山脊。</p>}
+        </section>}
         <p className="nature-detail-note">OSM {p.osmType}/{p.osmId} · 版本{p.osmVersion}。© OpenStreetMap contributors，ODbL 1.0。</p>
         <details><summary>查看原始记录</summary><pre>{JSON.stringify(p.tags, null, 2)}</pre></details>
-        <div className="nature-detail-actions"><button onClick={() => focus(selected!)}>定位与放大</button><a href={p.sourceUrl} target="_blank" rel="noreferrer">原始来源 ↗</a></div>
+        <div className="nature-detail-actions"><button onClick={() => focus(selected!)}>{p.kind === "peak" ? "近览周边地势" : "查看完整来源线"}</button><a href={p.sourceUrl} target="_blank" rel="noreferrer">原始来源 ↗</a></div>
       </div>}
     </section>}
   </>;

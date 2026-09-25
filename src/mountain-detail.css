@@ -6,4 +6,14 @@
 .mountain-region-shortcuts { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
 .mountain-region-shortcuts button { padding: 5px 7px; border: 1px solid #dbd5bd; border-radius: 4px; font-size: 10px; }
 .mountain-detail-card pre { max-height: 180px; overflow: auto; white-space: pre-wrap; font: 10px/1.7 monospace; }
+.mountain-peak-guide { padding: 9px 10px; border-left: 2px solid #a08a70; background: #f1ecdc; }
+.mountain-nearby-ridges { margin: 12px 0; padding: 10px 0; border-top: 1px solid #ddd7c6; border-bottom: 1px solid #ddd7c6; }
+.mountain-nearby-ridges h4 { margin: 0 0 5px; color: #776144; font-size: 12px; }
+.mountain-nearby-ridges p { margin: 5px 0 8px; color: #7c8067; font-size: 11px; }
+.mountain-nearby-ridges ul { list-style: none; margin: 0; padding: 0; }
+.mountain-nearby-ridges li + li { margin-top: 5px; }
+.mountain-nearby-ridges button { display: flex; align-items: center; justify-content: space-between; gap: 10px; width: 100%; padding: 8px 9px; border: 1px solid #ddd5bf; border-radius: 4px; background: #faf6e9; text-align: left; }
+.mountain-nearby-ridges button:hover,.mountain-nearby-ridges button:focus-visible { border-color: #a16f4c; background: #fff7da; }
+.mountain-nearby-ridges strong { font-size: 12px; font-weight: 500; }
+.mountain-nearby-ridges span { flex-shrink: 0; color: #8b7961; font-size: 10px; }
 @media (max-width: 720px) { .mountain-region-shortcuts button { min-height: 38px; } }

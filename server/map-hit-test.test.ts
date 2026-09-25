@@ -27,3 +27,13 @@ test("无标签治所圆点仍可在城池和全部中点选，自然筛选不�
   assert.equal(chooseNaturalMapHit([town], "rivers"), undefined);
   assert.equal(chooseNaturalMapHit([town, river], "all"), river);
 });
+
+test("等高线只在山川/全部可点，真实河线和峰点在交叉处优先", () => {
+  const contour = feature("mountain-shape-contour-hit"), ridge = feature("mountain-detail-line-hit"), water = feature("tang-detail-hit"), peak = feature("mountain-detail-point-hit");
+  assert.equal(chooseNaturalMapHit([contour], "cities"), undefined);
+  assert.equal(chooseNaturalMapHit([contour], "rivers"), undefined);
+  assert.equal(chooseNaturalMapHit([contour], "mountains"), contour);
+  assert.equal(chooseNaturalMapHit([contour, ridge], "all"), ridge);
+  assert.equal(chooseNaturalMapHit([contour, water], "all"), water);
+  assert.equal(chooseNaturalMapHit([contour, peak], "all"), peak);
+});

@@ -63,3 +63,19 @@ test("已消费的静默选中不会因缩放、名称元数据刷新重新定�
     state = result.state;
   }
 });
+
+test("行政边界暂时隐藏时请求仍等待，重新开启后静默高亮最新辖区且不定位", () => {
+  const hidden = resolveBoundarySelectionRequest(undefined, { ...input, interactive: false });
+  assert.equal(hidden.apply, undefined);
+  assert.equal(hidden.state?.completed, false);
+  const b = { ...a, id: "tang-prefecture-b", requestId: 2 };
+  const switched = resolveBoundarySelectionRequest(hidden.state, { ...input, request: b, resetKey: "city-b", interactive: false });
+  assert.equal(switched.apply, undefined);
+  const visible = resolveBoundarySelectionRequest(switched.state, { ...input, request: b, resetKey: "city-b" });
+  assert.deepEqual(visible.apply, b);
+  assert.equal(visible.apply?.quiet, true);
+  assert.equal(visible.apply?.focus, false);
+  const hiddenAgain = resolveBoundarySelectionRequest(visible.state, { ...input, request: b, resetKey: "city-b", interactive: false });
+  const shownAgain = resolveBoundarySelectionRequest(hiddenAgain.state, { ...input, request: b, resetKey: "city-b" });
+  assert.equal(shownAgain.apply, undefined, "开关可见性不重复消费已完成请求");
+});
