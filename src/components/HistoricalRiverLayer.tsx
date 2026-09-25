@@ -29,7 +29,7 @@ export default function HistoricalRiverLayer({ map, ready, visible, mode, year, 
   const compareEpoch = manifest?.epochs.find(item => item.id === comparison && item.id !== epoch?.id);
   const comparisonData = compareEpoch ? data[compareEpoch.id] : undefined;
   const replacing = !!selectedData && visible;
-  const status = epoch && selectedData ? `黄河 · ${epoch.label}` : selection === "modern" ? "黄河 · 现代参照" : "本年黄河复原未收录 · 现代参照";
+  const status = epoch && selectedData ? `黄河 · ${epoch.label}` : epoch ? `${epoch.label}尚未加载 · 现代参照` : selection === "modern" ? "黄河 · 现代参照" : "本年黄河复原未收录 · 现代参照";
   useEffect(() => { setDetail(false); }, [resetKey]);
   useEffect(() => { if (!canInteract(mode, "rivers")) setDetail(false); }, [mode]);
   useEffect(() => { setSelection("period"); setComparison(""); }, [year]);
@@ -110,7 +110,7 @@ export default function HistoricalRiverLayer({ map, ready, visible, mode, year, 
       <p><i className="river-key" />蓝色实线：{status}{compareEpoch && <><br /><i className="river-key compare" />棕色虚线：{compareEpoch.label}（对比）</>}</p>
       {epoch && <button className="detail-focus-button" disabled={!canInteract(mode, "rivers")} onClick={() => { onFocus([[epoch.bounds[0], epoch.bounds[1]], [epoch.bounds[2], epoch.bounds[3]]]); openDetail(); }}>查看这段河道</button>}
       {!canInteract(mode, "rivers") && <p>当前筛选不点选河流；河道仍显示。切换“河流”或“全部”后可查资料。</p>}
-      <p>唐代使用11—1048年图集河道；替换现代黄河下游。其他河湖仍为现代参照。</p>{error && <p role="status">{error}</p>}
+      <p>{replacing && epoch ? `当前使用${epoch.label}历史图集河道，已替换现代黄河下游。` : epoch ? `所选${epoch.label}历史河道${selectedData ? "暂未显示" : "尚未加载"}；尚未替换现代黄河下游。` : "当前使用现代黄河参照，未作历史河道替换。"}其他河湖仍为现代参照。</p>{error && <p role="status">{error}</p>}
     </section>, controlsContainer)}
     {visible && detail && <section className="nature-detail river-history-detail" aria-label="历史河道详情">
       <header><button className="nature-detail-title" aria-expanded={!collapsed} onClick={() => setCollapsed(value => !value)}><Waves size={15} /><strong>黄河历史流向</strong><span>{collapsed ? "展开" : "收起"}</span></button><button aria-label="关闭历史河道详情" onClick={() => setDetail(false)}><X size={16} /></button></header>

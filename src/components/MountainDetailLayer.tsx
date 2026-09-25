@@ -195,7 +195,7 @@ export default function MountainDetailLayer({ map, ready, enabled, mode, control
       <details className="mountain-detail-coverage"><summary>采集地区与资料区别</summary>
         <div className="mountain-region-shortcuts">{manifest?.regions.map(region => <button key={region.id} onClick={() => onFocus([[(region.bounds[0] + region.bounds[2]) / 2, (region.bounds[1] + region.bounds[3]) / 2]], 8)}>{region.name}</button>)}</div>
         <p>{manifest ? `已收录${manifest.countsByKind.ridge}条山脊、${manifest.countsByKind.arete}条刃脊、${manifest.countsByKind.cliff}条陡崖与${manifest.countsByKind.peak}个命名山峰。` : "正在读取资料清单。"}这是有缺口的现代记录，不能认为已连续描出整条山脉。</p>
-        <p>原“秦岭”等山系名称对应的走向示意是从命名范围推导的制图参考；本层仅画来源中实际存在的线。二者都不提供唐代山体边界或历史地貌复原。</p>
+        <p>原“秦岭”等山系名称对应的走向示意是从命名范围推导的制图参考；本层仅画来源中实际存在的线。二者都不提供所选朝代的山体边界或历史地貌复原。</p>
       </details>
       {loading && <p role="status">正在加载视野内的山地记录…</p>}
       {error && <p role="status">{error}<button type="button" onClick={() => setAttempt(value => value + 1)}>重试</button></p>}
@@ -204,7 +204,7 @@ export default function MountainDetailLayer({ map, ready, enabled, mode, control
       <header><button className="nature-detail-title" aria-expanded={!collapsed} onClick={() => setCollapsed(value => !value)}><Mountain size={15} /><strong>{p.name}</strong><span>{collapsed ? "展开" : "收起"}</span></button><button aria-label="关闭山地详情" onClick={() => setSelected(undefined)}><X size={16} /></button></header>
       {!collapsed && <div className="nature-detail-body"><span className="nature-kind">{mountainDetailKindNames[p.kind]} · 现代参照</span>
         {p.kind === "peak" && <p className="mountain-peak-guide">符号定位峰顶；有覆盖时，等高线表示周边现代地势，棕色线表示已收录的山脊。等高线和山脊资料仍有缺口。</p>}
-        <p>{p.geometryNote}</p>
+        <p>{p.geometryNote.replaceAll("唐代", "所选朝代")}</p>
         {!p.hasChineseName && <p>来源{p.originalName ? "尚无已核对的中文名称，原名保留在记录中" : "没有名称"}；不据位置为其补造山名。</p>}
         {p.elevationMetres !== undefined ? <p>来源标注高程：{p.elevationMetres}米。未经本项目独立测量核验。</p> : p.tags.ele && <p>来源高程原值：{p.tags.ele}。未换算未明确的单位。</p>}
         {p.mappedLengthKm !== undefined && <p>本条图上线长约{p.mappedLengthKm.toFixed(p.mappedLengthKm < 10 ? 2 : 1)}千米，按来源顶点计算水平距离；不是地表步行距离或整条山脉长度。</p>}

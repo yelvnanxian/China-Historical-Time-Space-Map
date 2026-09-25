@@ -6,6 +6,27 @@ import type { PhysicalGroup } from "./physical-geography";
 import type { WaterDetailReplacement } from "./historical-rivers";
 
 export function boundsOverlap(a: MapBounds, b: MapBounds) { return a[0] <= b[2] && a[2] >= b[0] && a[1] <= b[3] && a[3] >= b[1]; }
+export function hasDetailedGeography(periodId: string) { return periodId === "tang" || periodId === "ming"; }
+
+/** Modern terrain can be shared; dated Tang settlements cannot cross dynasties. */
+export function detailBelongsToPeriod(properties: TangDetailProperties, periodId: string) {
+  if (!hasDetailedGeography(periodId)) return false;
+  if (properties.kind === "settlement") return periodId === "tang" && !properties.modernReferenceOnly && properties.year === 755;
+  return properties.modernReferenceOnly;
+}
+
+/** Region labels describe present-day sampling areas, not dynasty affiliations. */
+export function modernDetailRegionName(region: { id: string; name: string }) {
+  const labels: Record<string, string> = {
+    "city-beijing": "北京附近水系", "city-changsha": "长沙附近水系",
+    "city-jinan": "济南附近水系", "city-jiangxia": "武汉附近水系",
+    "city-jinyang": "太原与汾河附近水系", "west-hami": "哈密绿洲",
+    "west-hotan": "和田双河绿洲", "west-kashgar": "喀什绿洲",
+    "west-qiuci": "库车河绿洲", "west-turpan": "吐鲁番绿洲",
+  };
+  return labels[region.id] ?? region.name;
+}
+
 export function showTangDetail(properties: TangDetailProperties, zoom: number, _mode: MapInteractionMode, level: MapViewLevel = "auto") {
   if (zoom < properties.minZoom) return false;
   if (properties.kind !== "settlement") return true;

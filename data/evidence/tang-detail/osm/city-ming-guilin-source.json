@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-city-ming-guilin",
+  "title": "OpenStreetMap 现代地理：桂林与漓江附近水系",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.private.coffee/api/interpreter",
+  "retrievedAt": "2026-09-25T08:18:59.331580+00:00",
+  "bounds": [
+    109.9799,
+    25.0344,
+    110.45,
+    25.4344
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/city-ming-guilin.json.gz",
+  "snapshotSha256": "b7cdf1d099feca818cb888cfea8f831da70aa1c278bcabe968d4f0a63e3bcfcf",
+  "uncompressedSnapshotSha256": "2b14f89615c5df882503028a229bf618de74596116aad437364aeaff38705bf4",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/city-ming-guilin.ql",
+  "querySha256": "8293d6fe62ef8d30b8f82b94f33a86a82d1bc73418c548cb65ab46ba5b9087b0",
+  "osmBaseTimestamp": "2026-05-31T22:37:44Z",
+  "elementCount": 1352,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+}

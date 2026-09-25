@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-city-ming-dali",
+  "title": "OpenStreetMap 现代地理：大理与洱海",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "retrievedAt": "2026-09-25T08:11:28.829928+00:00",
+  "bounds": [
+    99.97,
+    25.49,
+    100.37,
+    26.0
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/city-ming-dali.json.gz",
+  "snapshotSha256": "3cf0127028ce4872f3072683c5cde00b8c4e43a644366c7e6ed06726d0a1c013",
+  "uncompressedSnapshotSha256": "c176df201d702b0f59b63c2cfed6c0d6a208770829f792da050d61f3c664bdf3",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/city-ming-dali.ql",
+  "querySha256": "07794e659396b6cfde07a799f621458d750faa42895e3db2c505fdc53cba8c60",
+  "osmBaseTimestamp": "2026-05-06T03:25:00Z",
+  "elementCount": 863,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+}

@@ -1,0 +1,24 @@
+{
+  "featureCount": 826,
+  "countsByKind": {
+    "water": 559,
+    "river": 36,
+    "canal": 211,
+    "stream": 20
+  },
+  "rejected": [
+    {
+      "osmType": "relation",
+      "osmId": 17079109,
+      "reason": "Invalid water polygon; no synthetic repair applied"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 20081654,
+      "reason": "Invalid water polygon; no synthetic repair applied"
+    }
+  ],
+  "sourceMemberWayDuplicatesSuppressed": 227,
+  "crossRegionDuplicateIdsSuppressed": 0,
+  "geometryPolicy": "Unsmoothed original coordinate sequences; exact endpoint line merging for complete water rings. No guessed closing edges, buffers or polygon repair."
+}

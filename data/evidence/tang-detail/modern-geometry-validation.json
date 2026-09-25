@@ -1,12 +1,12 @@
 {
-  "checkedFeatures": 213897,
+  "checkedFeatures": 224103,
   "countsByKind": {
-    "water": 125146,
-    "river": 20635,
-    "canal": 35155,
-    "stream": 25101,
-    "peak": 7733,
-    "saddle": 127
+    "water": 131288,
+    "river": 21987,
+    "canal": 35878,
+    "stream": 26396,
+    "peak": 8407,
+    "saddle": 147
   },
   "perSource": [
     {
@@ -362,6 +362,94 @@
         "saddle": 1,
         "stream": 75,
         "canal": 68
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-city-ming-chongqing-east",
+      "checkedFeatures": 501,
+      "countsByKind": {
+        "water": 205,
+        "river": 49,
+        "peak": 30,
+        "stream": 216,
+        "saddle": 1
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-city-ming-dali",
+      "checkedFeatures": 863,
+      "countsByKind": {
+        "water": 327,
+        "river": 19,
+        "peak": 140,
+        "saddle": 14,
+        "stream": 341,
+        "canal": 22
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-city-ming-datong",
+      "checkedFeatures": 169,
+      "countsByKind": {
+        "water": 120,
+        "river": 14,
+        "peak": 1,
+        "stream": 20,
+        "canal": 14
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-city-ming-guilin",
+      "checkedFeatures": 1350,
+      "countsByKind": {
+        "water": 720,
+        "river": 105,
+        "peak": 357,
+        "saddle": 5,
+        "stream": 153,
+        "canal": 10
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-city-ming-handan",
+      "checkedFeatures": 111,
+      "countsByKind": {
+        "water": 63,
+        "river": 33,
+        "canal": 14,
+        "peak": 1
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-city-ming-nanchang",
+      "checkedFeatures": 6007,
+      "countsByKind": {
+        "water": 3950,
+        "river": 1037,
+        "peak": 141,
+        "canal": 353,
+        "stream": 526
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-city-ming-yanzhou",
+      "checkedFeatures": 379,
+      "countsByKind": {
+        "water": 198,
+        "river": 59,
+        "stream": 19,
+        "canal": 99,
+        "peak": 4
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-city-ming-yinchuan",
+      "checkedFeatures": 826,
+      "countsByKind": {
+        "water": 559,
+        "river": 36,
+        "canal": 211,
+        "stream": 20
       }
     }
   ],

@@ -200,7 +200,7 @@ export default function MountainShapeLayer({ map, ready, enabled, mode, controls
       <div className="nature-search"><Search size={13} /><input aria-label="搜索山地近览" placeholder="拔仙台、华山、天山…" value={query} onChange={event => setQuery(event.target.value)} /></div>
       <div className="mountain-shape-shortcuts">{areas.map(area => <button key={area.id} onClick={() => inspect(area)}>{area.name}</button>)}</div>
       {query && !areas.length && <p>此山尚未收录精细高程近览，可使用已有山脊与峰点资料。</p>}
-      <p className="nature-detail-note">近览只覆盖上列采集地点周边，等高线不是山脉边界，现代高程不代表唐代地貌复原。</p>
+      <p className="nature-detail-note">近览只覆盖上列采集地点周边，等高线不是山脉边界，现代高程不代表所选朝代的地貌复原。</p>
       {loading && <p role="status">正在加载等高线…</p>}{error && <p role="status">{error}<button onClick={retry}>重试</button></p>}
     </section>, controlsContainer)}
     {enabled && interactive && selectedArea && <section className="nature-detail mountain-shape-card" aria-label="山地形态详情">
@@ -210,7 +210,7 @@ export default function MountainShapeLayer({ map, ready, enabled, mode, controls
         <p>每条细线连接相同高程的位置，相邻等高线相差{selectedArea.contourInterval}米；粗线间隔{selectedArea.indexInterval}米。阴影随坡向和坡度变化，帮助观察山体起伏。</p>
         <p className="nature-detail-note">资料为峰顶附近的高程取样范围，不表示这座山的边界。棕色山脊线来自OSM独立记录，不把等高线当作山脊。</p>
         <div className="nature-detail-actions"><button onClick={() => inspect(selectedArea)}>近览山形</button><a href={selectedArea.sourcePeak.sourceUrl} target="_blank" rel="noreferrer">峰点来源 ↗</a></div>
-        <details><summary>高程与绘制来源</summary><p>Mapzen / Tilezen 真实现代高程，取样瓦片级别{selectedArea.demZoom}；由原始DEM计算等高线和山影。地面像素约{selectedArea.pixelSizeMeters.toFixed(0)}米，放大不会提高原始分辨率。</p><p>{selectedArea.note}</p><a href="https://registry.opendata.aws/terrain-tiles/" target="_blank" rel="noreferrer">高程来源 ↗</a></details>
+        <details><summary>高程与绘制来源</summary><p>Mapzen / Tilezen 真实现代高程，取样瓦片级别{selectedArea.demZoom}；由原始DEM计算等高线和山影。地面像素约{selectedArea.pixelSizeMeters.toFixed(0)}米，放大不会提高原始分辨率。</p><p>{selectedArea.note.replaceAll("唐代", "所选朝代")}</p><a href="https://registry.opendata.aws/terrain-tiles/" target="_blank" rel="noreferrer">高程来源 ↗</a></details>
       </div>}
     </section>}
   </>;

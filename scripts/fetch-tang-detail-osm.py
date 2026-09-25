@@ -48,6 +48,18 @@ REGIONS = {
     'city-fuzhou': ('福州与闽江附近水系', [119.0833, 25.95, 119.4833, 26.35]),
     'city-jinan': ('齐州济南附近水系', [116.8, 36.47, 117.2, 36.87]),
     'city-qingzhou-linzi': ('青州与临淄附近水系', [118.11, 36.5, 118.68, 37.02]),
+    # These are modern acquisition windows, not Ming jurisdiction boundaries.
+    'city-ming-datong': ('大同与御河附近水系', [113.1, 39.88, 113.5, 40.28]),
+    'city-ming-handan': ('邯郸与滏阳河附近水系', [114.29, 36.41, 114.69, 36.81]),
+    'city-ming-yinchuan': ('银川与黄河走廊', [106.03, 38.29, 106.65, 38.69]),
+    'city-ming-dali': ('大理与洱海', [99.97, 25.49, 100.37, 26.0]),
+    'city-ming-yanzhou': ('兖州与泗河附近水系', [116.63, 35.35, 117.03, 35.75]),
+    'city-ming-nanchang': ('南昌与赣江附近水系', [115.658, 28.483, 116.058, 28.883]),
+    # The original Chongqing window timed out at both endpoints. These adjacent
+    # subwindows preserve its entire area and retain separate original replies.
+    'city-ming-chongqing-west': ('重庆西部附近水系', [106.3504, 29.3637, 106.5504, 29.7637]),
+    'city-ming-chongqing-east': ('重庆东部附近水系', [106.5504, 29.3637, 106.7504, 29.7637]),
+    'city-ming-guilin': ('桂林与漓江附近水系', [109.9799, 25.0344, 110.45, 25.4344]),
 }
 ENDPOINT = 'https://overpass.kumi.systems/api/interpreter'
 ALTERNATE_ENDPOINT = 'https://overpass.private.coffee/api/interpreter'
@@ -114,7 +126,7 @@ out meta geom;
         'license': 'Open Data Commons Open Database License (ODbL) 1.0',
         'attribution': '© OpenStreetMap contributors',
         'modernReferenceOnly': True,
-        'note': '真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。',
+        'note': '真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。',
     }
     metadata_path.write_text(json.dumps(metadata, ensure_ascii=False, indent=2) + '\n')
     return {'region': region, 'cached': False, 'elements': len(raw['elements']), 'bytes': response_path.stat().st_size}

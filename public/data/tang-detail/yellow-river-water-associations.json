@@ -59,6 +59,66 @@
       ]
     },
     {
+      "waterId": "osm-relation-11745778",
+      "waterSourceUrl": "https://www.openstreetmap.org/relation/11745778",
+      "waterSourceId": "osm-tang-detail-city-ming-yinchuan",
+      "riverIds": [
+        "osm-way-44060124"
+      ],
+      "bounds": [
+        106.3522026,
+        38.3223667,
+        106.5321413,
+        38.4639643
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-44060124",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/44060124",
+          "riverSourceId": "osm-tang-detail-city-ming-yinchuan",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:en",
+              "value": "Yellow River",
+              "normalized": "yellowriver"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 380,
+          "sourcePoint": [
+            106.4456963,
+            38.3837269
+          ],
+          "interiorVertexCount": 79,
+          "intersectionLengthDegrees": 0.24195044723728515
+        }
+      ]
+    },
+    {
       "waterId": "osm-relation-11774028",
       "waterSourceUrl": "https://www.openstreetmap.org/relation/11774028",
       "waterSourceId": "osm-tang-detail-luoyang",
@@ -770,6 +830,126 @@
           ],
           "interiorVertexCount": 5,
           "intersectionLengthDegrees": 0.03188707680359482
+        }
+      ]
+    },
+    {
+      "waterId": "osm-relation-11914756",
+      "waterSourceUrl": "https://www.openstreetmap.org/relation/11914756",
+      "waterSourceId": "osm-tang-detail-city-ming-yinchuan",
+      "riverIds": [
+        "osm-way-44060124"
+      ],
+      "bounds": [
+        106.5210798,
+        38.4637837,
+        106.5940863,
+        38.66551
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-44060124",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/44060124",
+          "riverSourceId": "osm-tang-detail-city-ming-yinchuan",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:en",
+              "value": "Yellow River",
+              "normalized": "yellowriver"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 297,
+          "sourcePoint": [
+            106.5273535,
+            38.5658092
+          ],
+          "interiorVertexCount": 86,
+          "intersectionLengthDegrees": 0.24443071623113521
+        }
+      ]
+    },
+    {
+      "waterId": "osm-relation-11928294",
+      "waterSourceUrl": "https://www.openstreetmap.org/relation/11928294",
+      "waterSourceId": "osm-tang-detail-city-ming-yinchuan",
+      "riverIds": [
+        "osm-way-44060124"
+      ],
+      "bounds": [
+        106.5836504,
+        38.6654158,
+        106.6743413,
+        38.8192767
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-44060124",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/44060124",
+          "riverSourceId": "osm-tang-detail-city-ming-yinchuan",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:en",
+              "value": "Yellow River",
+              "normalized": "yellowriver"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 189,
+          "sourcePoint": [
+            106.5928101,
+            38.7543176
+          ],
+          "interiorVertexCount": 128,
+          "intersectionLengthDegrees": 0.23176525162215467
         }
       ]
     },
@@ -2230,6 +2410,66 @@
           ],
           "interiorVertexCount": 17,
           "intersectionLengthDegrees": 0.026042417544971705
+        }
+      ]
+    },
+    {
+      "waterId": "osm-relation-6957008",
+      "waterSourceUrl": "https://www.openstreetmap.org/relation/6957008",
+      "waterSourceId": "osm-tang-detail-city-ming-yinchuan",
+      "riverIds": [
+        "osm-way-44060124"
+      ],
+      "bounds": [
+        106.2382114,
+        38.1751891,
+        106.3579345,
+        38.3258618
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-44060124",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/44060124",
+          "riverSourceId": "osm-tang-detail-city-ming-yinchuan",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:en",
+              "value": "Yellow River",
+              "normalized": "yellowriver"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 463,
+          "sourcePoint": [
+            106.2901711,
+            38.2543243
+          ],
+          "interiorVertexCount": 85,
+          "intersectionLengthDegrees": 0.21120624157890996
         }
       ]
     },
@@ -4550,12 +4790,12 @@
     }
   ],
   "statistics": {
-    "mainRiverLines": 50,
-    "riverWaterCandidates": 7571,
-    "associatedWaterSurfaces": 55,
-    "lineSurfaceAssociations": 86,
-    "unassociatedWaterSurfaces": 7516,
-    "nonMainRiverNameCandidatesRejected": 125,
+    "mainRiverLines": 51,
+    "riverWaterCandidates": 7751,
+    "associatedWaterSurfaces": 59,
+    "lineSurfaceAssociations": 90,
+    "unassociatedWaterSurfaces": 7692,
+    "nonMainRiverNameCandidatesRejected": 128,
     "boundaryOnlyPairsNotAssociated": 9
   }
 }

@@ -25,6 +25,7 @@ import type { TangBoundaryCrosswalk } from "../../shared/tang-boundary-crosswalk
 import MountainDetailLayer from "./MountainDetailLayer";
 import MountainShapeLayer from "./MountainShapeLayer";
 import type { TangCountyDiagnostics } from "../../shared/tang-county-diagnostics";
+import { hasDetailedGeography } from "../../shared/tang-detail-display";
 
 type Props = {
   period: Period;
@@ -58,6 +59,7 @@ const initialView = {
 maplibregl.setWorkerUrl(workerUrl);
 
 export default function HistoricalMap(props: Props) {
+  const detailedGeographyEnabled = hasDetailedGeography(props.period.id);
   const container = useRef<HTMLDivElement>(null);
   const map = useRef<MapInstance | null>(null);
   const displayedPeriod = useRef(props.period.id);
@@ -530,14 +532,15 @@ export default function HistoricalMap(props: Props) {
       });
       fitCoordinates(points);
     } else if (props.focusRequest && props.selectedPlace) {
-      // A chosen city should remain discoverable under automatic level selection.
-      fitCoordinates([props.selectedPlace.coordinates], motionDuration(), 7.6);
+      // Include local river detail when focusing cities in the supported periods.
+      fitCoordinates([props.selectedPlace.coordinates], motionDuration(), detailedGeographyEnabled ? 8.5 : 7.6);
     }
   }, [
     ready,
     props.focusRequest,
     props.selectedEvent?.id,
     props.places,
+    detailedGeographyEnabled,
   ]);
 
   const shownYear = props.period.year;
@@ -571,7 +574,7 @@ export default function HistoricalMap(props: Props) {
       <div className="map-paper-overlay" />
       <button className="map-detail-status" onClick={() => setLayerPanel(true)} aria-label="查看当前地图层级与数据范围">
         随缩放自动分级 · {zoom.toFixed(1)}级 · 点选{mapInteractionOptions.find(option => option.value === props.interactionMode)?.label}
-        <small>{replaceYellowLower ? "黄河下游：历史河道" : "河湖：现代参照"} · 地形始终显示</small>
+        <small>{replaceYellowLower ? "黄河下游：历史河道 · 其余河湖：现代参照" : "河湖：现代参照"}</small>
       </button>
       <div className="map-toolbar">
         <button
@@ -644,7 +647,7 @@ export default function HistoricalMap(props: Props) {
         referenceRequest={props.geographySelection ?? undefined}
         onCoverageChange={setReplaceYellowLower} onFocus={points => fitCoordinates(points, motionDuration(), 7)}
         onChoose={() => { setActiveTarget("nature"); setNaturalReset(value => value + 1); setBoundaryReset(value => value + 1); setDetailReset(value => value + 1); setMountainReset(value => value + 1); setShapeReset(value => value + 1); setLayerPanel(false); props.onNaturalSelect(); }} />
-      <TangDetailLayer map={map.current} ready={ready} enabled={props.period.id === "tang"} mode={props.interactionMode} zoom={zoom} modernNames={props.modernNames}
+      <TangDetailLayer map={map.current} ready={ready} enabled={detailedGeographyEnabled} periodId={props.period.id} mode={props.interactionMode} zoom={zoom} modernNames={props.modernNames}
         countyDiagnostics={countyDiagnostics} countyDiagnosticsError={countyDiagnosticsError}
         mountainFeatureIds={mountainFeatureIds}
         replaceYellowLower={replaceYellowLower} controlsContainer={toolsContainer} places={props.places} onPlaceSelect={props.onPlaceSelect}
@@ -652,18 +655,18 @@ export default function HistoricalMap(props: Props) {
         resetKey={`${props.period.id}:${props.focusRequest}:${detailReset}`} onCoverageChange={setWaterReplacements}
         onFocus={(points, maxZoom = 10.5) => fitCoordinates(points, motionDuration(), maxZoom)}
         onChoose={() => { setActiveTarget("nature"); setBoundaryRequest(undefined); setNaturalReset(value => value + 1); setBoundaryReset(value => value + 1); setRiverReset(value => value + 1); setMountainReset(value => value + 1); setShapeReset(value => value + 1); setLayerPanel(false); props.onNaturalSelect(); }} />
-      <MountainDetailLayer map={map.current} ready={ready} enabled={props.period.id === "tang"} mode={props.interactionMode} controlsContainer={toolsContainer}
+      <MountainDetailLayer map={map.current} ready={ready} enabled={detailedGeographyEnabled} mode={props.interactionMode} controlsContainer={toolsContainer}
         onLoadedFeatureIds={setMountainFeatureIds}
         resetKey={`${props.period.id}:${props.focusRequest}:${mountainReset}`}
         onFocus={(points, maxZoom = 11) => fitCoordinates(points, motionDuration(), maxZoom)}
         onChoose={() => { setActiveTarget("nature"); setNaturalReset(value => value + 1); setBoundaryReset(value => value + 1); setRiverReset(value => value + 1); setDetailReset(value => value + 1); setShapeReset(value => value + 1); setLayerPanel(false); props.onNaturalSelect(); }} />
-      <MountainShapeLayer map={map.current} ready={ready} enabled={props.period.id === "tang"} mode={props.interactionMode} controlsContainer={toolsContainer}
+      <MountainShapeLayer map={map.current} ready={ready} enabled={detailedGeographyEnabled} mode={props.interactionMode} controlsContainer={toolsContainer}
         resetKey={`${props.period.id}:${props.focusRequest}:${shapeReset}`}
         onFocus={(points, maxZoom = 11) => fitCoordinates(points, motionDuration(), maxZoom)}
         onChoose={() => { setActiveTarget("nature"); setNaturalReset(value => value + 1); setBoundaryReset(value => value + 1); setRiverReset(value => value + 1); setDetailReset(value => value + 1); setMountainReset(value => value + 1); setLayerPanel(false); props.onNaturalSelect(); }} />
       {props.geographySelection && canInteract(props.interactionMode, "rivers") && <div className="geography-reference-note"><button onClick={props.onGeographyOpen}>{props.geographySelection.dateLabel} · {props.geographySelection.title}<small>历史地理参考点 · 独立于当前朝代与边界年份</small></button><button aria-label="清除历史地理参考点" onClick={props.onGeographyClear}><X size={15} /></button></div>}
       <div className="map-credit">
-        Natural Earth · CHGIS / WorldMap{props.period.id === "tang" ? " · © OpenStreetMap contributors" : ""}
+        Natural Earth · CHGIS / WorldMap{detailedGeographyEnabled ? " · © OpenStreetMap contributors" : ""}
       </div>
       {error && (
         <div className="map-error" role="alert">

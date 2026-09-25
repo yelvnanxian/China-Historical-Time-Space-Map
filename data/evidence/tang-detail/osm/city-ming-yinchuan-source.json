@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-city-ming-yinchuan",
+  "title": "OpenStreetMap 现代地理：银川与黄河走廊",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.private.coffee/api/interpreter",
+  "retrievedAt": "2026-09-25T08:10:01.623988+00:00",
+  "bounds": [
+    106.03,
+    38.29,
+    106.65,
+    38.69
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/city-ming-yinchuan.json.gz",
+  "snapshotSha256": "f949619745bb72aa231422c2a4e50da56d8518586a283f8cc85f1d6340bce8e2",
+  "uncompressedSnapshotSha256": "78ffa8035436cdfbdd13345dbe57d1a9e7e7f8e65e5bf835da4ea1f4e6c3e916",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/city-ming-yinchuan.ql",
+  "querySha256": "71208afc9389cc924afff765dc0058ea5bdbe6f5f3c05d2d226af86e70969e3c",
+  "osmBaseTimestamp": "2026-07-15T15:22:01Z",
+  "elementCount": 828,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+}

@@ -168,7 +168,7 @@ test("现代细节按视野分包、ID唯一、实际几何完整且明确现代
       const p = feature.properties;
       assert.ok(!ids.has(p.id), `Cross-region duplicate: ${p.id}`); ids.add(p.id); kinds.add(p.kind);
       assert.equal(p.modernReferenceOnly, true);
-      assert.ok(p.geometryNote.includes("现代") && p.geometryNote.includes("不是唐代"));
+      assert.ok(p.geometryNote.includes("现代") && /不是(?:唐代|所选朝代的)/.test(p.geometryNote));
       assert.ok(sourceIds.has(p.sourceId));
       assert.equal(p.sourceUrl, `https://www.openstreetmap.org/${p.osmType}/${p.osmId}`);
       assert.equal(p.name, simplifiedChinese(p.name));

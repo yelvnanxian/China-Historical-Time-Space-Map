@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-city-ming-yanzhou",
+  "title": "OpenStreetMap 现代地理：兖州与泗河附近水系",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.private.coffee/api/interpreter",
+  "retrievedAt": "2026-09-25T08:14:40.726275+00:00",
+  "bounds": [
+    116.63,
+    35.35,
+    117.03,
+    35.75
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/city-ming-yanzhou.json.gz",
+  "snapshotSha256": "f0648dd3a2ea6637b68a09ec6ff5015465e5ad25caa7f77663288de455f6a079",
+  "uncompressedSnapshotSha256": "3f793bbf1deab77814cc71ac35f36f866ccf82697d673330f5a77634551ccb97",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/city-ming-yanzhou.ql",
+  "querySha256": "7a0c168c6b38ae82344d72660170969983f5140ee12320832bbccd4add62aa38",
+  "osmBaseTimestamp": "2026-07-15T15:22:01Z",
+  "elementCount": 380,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+}

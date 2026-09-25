@@ -9141,6 +9141,660 @@
       "minZoom": 10,
       "sourceId": "osm-tang-detail-city-xiangyang",
       "regionId": "city-xiangyang"
+    },
+    {
+      "id": "city-ming-chongqing-east-overview-part0",
+      "name": "重庆东部附近水系 · 主河与水面",
+      "bounds": [
+        106.1142826,
+        29.0750751,
+        106.8911819,
+        29.7993256
+      ],
+      "url": "/data/tang-detail/modern-city-ming-chongqing-east-overview-part0.geojson.gz",
+      "featureCount": 81,
+      "countsByKind": {
+        "water": 32,
+        "river": 49
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-city-ming-chongqing-east",
+      "regionId": "city-ming-chongqing-east"
+    },
+    {
+      "id": "city-ming-chongqing-east-213-59-part0",
+      "name": "重庆东部附近水系 · 局部细节",
+      "bounds": [
+        106.5454394,
+        29.5002425,
+        106.7578144,
+        29.773148
+      ],
+      "url": "/data/tang-detail/modern-city-ming-chongqing-east-213-59-part0.geojson.gz",
+      "featureCount": 346,
+      "countsByKind": {
+        "water": 138,
+        "peak": 28,
+        "stream": 180
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-ming-chongqing-east",
+      "regionId": "city-ming-chongqing-east"
+    },
+    {
+      "id": "city-ming-chongqing-east-213-58-part0",
+      "name": "重庆东部附近水系 · 局部细节",
+      "bounds": [
+        106.5496322,
+        29.35356,
+        106.7494082,
+        29.5003646
+      ],
+      "url": "/data/tang-detail/modern-city-ming-chongqing-east-213-58-part0.geojson.gz",
+      "featureCount": 74,
+      "countsByKind": {
+        "peak": 2,
+        "saddle": 1,
+        "water": 35,
+        "stream": 36
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-ming-chongqing-east",
+      "regionId": "city-ming-chongqing-east"
+    },
+    {
+      "id": "city-ming-dali-overview-part0",
+      "name": "大理与洱海 · 主河与水面",
+      "bounds": [
+        99.612222,
+        25.0183059,
+        100.6752348,
+        26.0284144
+      ],
+      "url": "/data/tang-detail/modern-city-ming-dali-overview-part0.geojson.gz",
+      "featureCount": 44,
+      "countsByKind": {
+        "water": 25,
+        "river": 19
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-city-ming-dali",
+      "regionId": "city-ming-dali"
+    },
+    {
+      "id": "city-ming-dali-200-51-part0",
+      "name": "大理与洱海 · 局部细节",
+      "bounds": [
+        99.9938091,
+        25.4809891,
+        100.5604361,
+        26.0101523
+      ],
+      "url": "/data/tang-detail/modern-city-ming-dali-200-51-part0.geojson.gz",
+      "featureCount": 793,
+      "countsByKind": {
+        "water": 299,
+        "peak": 139,
+        "saddle": 14,
+        "stream": 320,
+        "canal": 21
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-ming-dali",
+      "regionId": "city-ming-dali"
+    },
+    {
+      "id": "city-ming-dali-200-50-part0",
+      "name": "大理与洱海 · 局部细节",
+      "bounds": [
+        100.1670425,
+        25.4605829,
+        100.3712654,
+        25.5251667
+      ],
+      "url": "/data/tang-detail/modern-city-ming-dali-200-50-part0.geojson.gz",
+      "featureCount": 5,
+      "countsByKind": {
+        "peak": 1,
+        "stream": 2,
+        "water": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-ming-dali",
+      "regionId": "city-ming-dali"
+    },
+    {
+      "id": "city-ming-dali-200-52-part0",
+      "name": "大理与洱海 · 局部细节",
+      "bounds": [
+        100.0600326,
+        25.9534785,
+        100.1964565,
+        26.3357014
+      ],
+      "url": "/data/tang-detail/modern-city-ming-dali-200-52-part0.geojson.gz",
+      "featureCount": 3,
+      "countsByKind": {
+        "stream": 2,
+        "canal": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-ming-dali",
+      "regionId": "city-ming-dali"
+    },
+    {
+      "id": "city-ming-dali-199-51-part0",
+      "name": "大理与洱海 · 局部细节",
+      "bounds": [
+        99.9134995,
+        25.6846498,
+        100.0400616,
+        25.9751569
+      ],
+      "url": "/data/tang-detail/modern-city-ming-dali-199-51-part0.geojson.gz",
+      "featureCount": 18,
+      "countsByKind": {
+        "stream": 17,
+        "water": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-ming-dali",
+      "regionId": "city-ming-dali"
+    },
+    {
+      "id": "city-ming-datong-overview-part0",
+      "name": "大同与御河附近水系 · 主河与水面",
+      "bounds": [
+        113.0833134,
+        39.85116,
+        113.8048361,
+        40.4351124
+      ],
+      "url": "/data/tang-detail/modern-city-ming-datong-overview-part0.geojson.gz",
+      "featureCount": 62,
+      "countsByKind": {
+        "water": 48,
+        "river": 14
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-city-ming-datong",
+      "regionId": "city-ming-datong"
+    },
+    {
+      "id": "city-ming-datong-226-80-part0",
+      "name": "大同与御河附近水系 · 局部细节",
+      "bounds": [
+        113.1054019,
+        39.9996131,
+        113.4034362,
+        40.3097828
+      ],
+      "url": "/data/tang-detail/modern-city-ming-datong-226-80-part0.geojson.gz",
+      "featureCount": 65,
+      "countsByKind": {
+        "water": 39,
+        "peak": 1,
+        "stream": 13,
+        "canal": 12
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-ming-datong",
+      "regionId": "city-ming-datong"
+    },
+    {
+      "id": "city-ming-datong-226-79-part0",
+      "name": "大同与御河附近水系 · 局部细节",
+      "bounds": [
+        113.094976,
+        39.9233974,
+        113.4959257,
+        40.0125179
+      ],
+      "url": "/data/tang-detail/modern-city-ming-datong-226-79-part0.geojson.gz",
+      "featureCount": 42,
+      "countsByKind": {
+        "water": 33,
+        "stream": 7,
+        "canal": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-ming-datong",
+      "regionId": "city-ming-datong"
+    },
+    {
+      "id": "city-ming-guilin-overview-part0",
+      "name": "桂林与漓江附近水系 · 主河与水面",
+      "bounds": [
+        109.8723578,
+        24.7850321,
+        110.5202726,
+        25.5480313
+      ],
+      "url": "/data/tang-detail/modern-city-ming-guilin-overview-part0.geojson.gz",
+      "featureCount": 182,
+      "countsByKind": {
+        "water": 77,
+        "river": 105
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-city-ming-guilin",
+      "regionId": "city-ming-guilin"
+    },
+    {
+      "id": "city-ming-guilin-220-50-part0",
+      "name": "桂林与漓江附近水系 · 局部细节",
+      "bounds": [
+        110.0040164,
+        24.9906547,
+        110.450936,
+        25.4497362
+      ],
+      "url": "/data/tang-detail/modern-city-ming-guilin-220-50-part0.geojson.gz",
+      "featureCount": 1157,
+      "countsByKind": {
+        "water": 641,
+        "peak": 351,
+        "saddle": 5,
+        "stream": 150,
+        "canal": 10
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-ming-guilin",
+      "regionId": "city-ming-guilin"
+    },
+    {
+      "id": "city-ming-guilin-219-50-part0",
+      "name": "桂林与漓江附近水系 · 局部细节",
+      "bounds": [
+        109.9824444,
+        25.0320429,
+        110.0100893,
+        25.4485643
+      ],
+      "url": "/data/tang-detail/modern-city-ming-guilin-219-50-part0.geojson.gz",
+      "featureCount": 11,
+      "countsByKind": {
+        "water": 2,
+        "peak": 6,
+        "stream": 3
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-ming-guilin",
+      "regionId": "city-ming-guilin"
+    },
+    {
+      "id": "city-ming-handan-overview-part0",
+      "name": "邯郸与滏阳河附近水系 · 主河与水面",
+      "bounds": [
+        114.2132818,
+        36.3687295,
+        114.7447299,
+        36.8268425
+      ],
+      "url": "/data/tang-detail/modern-city-ming-handan-overview-part0.geojson.gz",
+      "featureCount": 67,
+      "countsByKind": {
+        "water": 34,
+        "river": 33
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-city-ming-handan",
+      "regionId": "city-ming-handan"
+    },
+    {
+      "id": "city-ming-handan-229-73-part0",
+      "name": "邯郸与滏阳河附近水系 · 局部细节",
+      "bounds": [
+        114.4732908,
+        36.4981533,
+        114.7396243,
+        36.6504025
+      ],
+      "url": "/data/tang-detail/modern-city-ming-handan-229-73-part0.geojson.gz",
+      "featureCount": 6,
+      "countsByKind": {
+        "water": 4,
+        "canal": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-ming-handan",
+      "regionId": "city-ming-handan"
+    },
+    {
+      "id": "city-ming-handan-228-73-part0",
+      "name": "邯郸与滏阳河附近水系 · 局部细节",
+      "bounds": [
+        114.2980664,
+        36.4803356,
+        114.4854815,
+        36.8164834
+      ],
+      "url": "/data/tang-detail/modern-city-ming-handan-228-73-part0.geojson.gz",
+      "featureCount": 26,
+      "countsByKind": {
+        "water": 17,
+        "peak": 1,
+        "canal": 8
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-ming-handan",
+      "regionId": "city-ming-handan"
+    },
+    {
+      "id": "city-ming-handan-228-72-part0",
+      "name": "邯郸与滏阳河附近水系 · 局部细节",
+      "bounds": [
+        114.28523,
+        36.3867826,
+        114.4323481,
+        36.5047573
+      ],
+      "url": "/data/tang-detail/modern-city-ming-handan-228-72-part0.geojson.gz",
+      "featureCount": 12,
+      "countsByKind": {
+        "canal": 4,
+        "water": 8
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-ming-handan",
+      "regionId": "city-ming-handan"
+    },
+    {
+      "id": "city-ming-nanchang-overview-part0",
+      "name": "南昌与赣江附近水系 · 主河与水面",
+      "bounds": [
+        115.5980949,
+        28.2790621,
+        116.365918,
+        29.1323532
+      ],
+      "url": "/data/tang-detail/modern-city-ming-nanchang-overview-part0.geojson.gz",
+      "featureCount": 1454,
+      "countsByKind": {
+        "water": 417,
+        "river": 1037
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-city-ming-nanchang",
+      "regionId": "city-ming-nanchang"
+    },
+    {
+      "id": "city-ming-nanchang-231-57-part0",
+      "name": "南昌与赣江附近水系 · 局部细节",
+      "bounds": [
+        115.6395692,
+        28.4855181,
+        116.0091579,
+        28.9044503
+      ],
+      "url": "/data/tang-detail/modern-city-ming-nanchang-231-57-part0.geojson.gz",
+      "featureCount": 3568,
+      "countsByKind": {
+        "water": 2740,
+        "peak": 141,
+        "canal": 198,
+        "stream": 489
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-ming-nanchang",
+      "regionId": "city-ming-nanchang"
+    },
+    {
+      "id": "city-ming-nanchang-232-57-part0",
+      "name": "南昌与赣江附近水系 · 局部细节",
+      "bounds": [
+        115.9783851,
+        28.4989931,
+        116.0880543,
+        28.8888894
+      ],
+      "url": "/data/tang-detail/modern-city-ming-nanchang-232-57-part0.geojson.gz",
+      "featureCount": 711,
+      "countsByKind": {
+        "water": 539,
+        "stream": 35,
+        "canal": 137
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-ming-nanchang",
+      "regionId": "city-ming-nanchang"
+    },
+    {
+      "id": "city-ming-nanchang-231-56-part0",
+      "name": "南昌与赣江附近水系 · 局部细节",
+      "bounds": [
+        115.7124711,
+        28.373212,
+        116.0031843,
+        28.5456238
+      ],
+      "url": "/data/tang-detail/modern-city-ming-nanchang-231-56-part0.geojson.gz",
+      "featureCount": 144,
+      "countsByKind": {
+        "canal": 14,
+        "water": 129,
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-ming-nanchang",
+      "regionId": "city-ming-nanchang"
+    },
+    {
+      "id": "city-ming-nanchang-232-56-part0",
+      "name": "南昌与赣江附近水系 · 局部细节",
+      "bounds": [
+        115.9998553,
+        28.4651025,
+        116.0890802,
+        28.5007075
+      ],
+      "url": "/data/tang-detail/modern-city-ming-nanchang-232-56-part0.geojson.gz",
+      "featureCount": 130,
+      "countsByKind": {
+        "canal": 4,
+        "water": 125,
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-ming-nanchang",
+      "regionId": "city-ming-nanchang"
+    },
+    {
+      "id": "city-ming-yanzhou-overview-part0",
+      "name": "兖州与泗河附近水系 · 主河与水面",
+      "bounds": [
+        116.5831567,
+        35.2307427,
+        117.2086691,
+        35.7691949
+      ],
+      "url": "/data/tang-detail/modern-city-ming-yanzhou-overview-part0.geojson.gz",
+      "featureCount": 175,
+      "countsByKind": {
+        "water": 116,
+        "river": 59
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-city-ming-yanzhou",
+      "regionId": "city-ming-yanzhou"
+    },
+    {
+      "id": "city-ming-yanzhou-233-71-part0",
+      "name": "兖州与泗河附近水系 · 局部细节",
+      "bounds": [
+        116.6274178,
+        35.4976613,
+        117.0053901,
+        35.8544547
+      ],
+      "url": "/data/tang-detail/modern-city-ming-yanzhou-233-71-part0.geojson.gz",
+      "featureCount": 81,
+      "countsByKind": {
+        "water": 34,
+        "stream": 6,
+        "canal": 41
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-ming-yanzhou",
+      "regionId": "city-ming-yanzhou"
+    },
+    {
+      "id": "city-ming-yanzhou-234-70-part0",
+      "name": "兖州与泗河附近水系 · 局部细节",
+      "bounds": [
+        117.0039135,
+        35.3862292,
+        117.028749,
+        35.4374509
+      ],
+      "url": "/data/tang-detail/modern-city-ming-yanzhou-234-70-part0.geojson.gz",
+      "featureCount": 16,
+      "countsByKind": {
+        "peak": 1,
+        "stream": 6,
+        "water": 1,
+        "canal": 8
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-ming-yanzhou",
+      "regionId": "city-ming-yanzhou"
+    },
+    {
+      "id": "city-ming-yanzhou-233-70-part0",
+      "name": "兖州与泗河附近水系 · 局部细节",
+      "bounds": [
+        116.6188985,
+        35.2380928,
+        117.0039135,
+        35.5124875
+      ],
+      "url": "/data/tang-detail/modern-city-ming-yanzhou-233-70-part0.geojson.gz",
+      "featureCount": 98,
+      "countsByKind": {
+        "peak": 3,
+        "canal": 43,
+        "water": 45,
+        "stream": 7
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-ming-yanzhou",
+      "regionId": "city-ming-yanzhou"
+    },
+    {
+      "id": "city-ming-yanzhou-234-71-part0",
+      "name": "兖州与泗河附近水系 · 局部细节",
+      "bounds": [
+        117.0021502,
+        35.5585901,
+        117.0454124,
+        35.5946728
+      ],
+      "url": "/data/tang-detail/modern-city-ming-yanzhou-234-71-part0.geojson.gz",
+      "featureCount": 9,
+      "countsByKind": {
+        "canal": 7,
+        "water": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-ming-yanzhou",
+      "regionId": "city-ming-yanzhou"
+    },
+    {
+      "id": "city-ming-yinchuan-overview-part0",
+      "name": "银川与黄河走廊 · 主河与水面",
+      "bounds": [
+        105.982505,
+        38.071609,
+        106.8646306,
+        39.0913425
+      ],
+      "url": "/data/tang-detail/modern-city-ming-yinchuan-overview-part0.geojson.gz",
+      "featureCount": 211,
+      "countsByKind": {
+        "water": 175,
+        "river": 36
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-city-ming-yinchuan",
+      "regionId": "city-ming-yinchuan"
+    },
+    {
+      "id": "city-ming-yinchuan-212-76-part0",
+      "name": "银川与黄河走廊 · 局部细节",
+      "bounds": [
+        105.9686869,
+        38.0917991,
+        106.5294033,
+        38.6816713
+      ],
+      "url": "/data/tang-detail/modern-city-ming-yinchuan-212-76-part0.geojson.gz",
+      "featureCount": 368,
+      "countsByKind": {
+        "water": 244,
+        "canal": 108,
+        "stream": 16
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-ming-yinchuan",
+      "regionId": "city-ming-yinchuan"
+    },
+    {
+      "id": "city-ming-yinchuan-212-77-part0",
+      "name": "银川与黄河走廊 · 局部细节",
+      "bounds": [
+        105.9839002,
+        38.4849126,
+        106.5018513,
+        38.8315077
+      ],
+      "url": "/data/tang-detail/modern-city-ming-yinchuan-212-77-part0.geojson.gz",
+      "featureCount": 168,
+      "countsByKind": {
+        "water": 72,
+        "canal": 94,
+        "stream": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-ming-yinchuan",
+      "regionId": "city-ming-yinchuan"
+    },
+    {
+      "id": "city-ming-yinchuan-213-76-part0",
+      "name": "银川与黄河走廊 · 局部细节",
+      "bounds": [
+        106.5005821,
+        38.2154721,
+        106.6681036,
+        38.5008381
+      ],
+      "url": "/data/tang-detail/modern-city-ming-yinchuan-213-76-part0.geojson.gz",
+      "featureCount": 23,
+      "countsByKind": {
+        "water": 21,
+        "stream": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-ming-yinchuan",
+      "regionId": "city-ming-yinchuan"
+    },
+    {
+      "id": "city-ming-yinchuan-213-77-part0",
+      "name": "银川与黄河走廊 · 局部细节",
+      "bounds": [
+        106.49065,
+        38.5015479,
+        106.6397423,
+        38.6834988
+      ],
+      "url": "/data/tang-detail/modern-city-ming-yinchuan-213-77-part0.geojson.gz",
+      "featureCount": 56,
+      "countsByKind": {
+        "water": 47,
+        "canal": 9
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-ming-yinchuan",
+      "regionId": "city-ming-yinchuan"
     }
   ],
   "modernCoverageRegions": [
@@ -9270,6 +9924,120 @@
       "packageIds": [
         "luoyang-overview-part0",
         "city-jinyang-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "city-ming-chongqing-east",
+      "name": "重庆东部附近水系",
+      "bounds": [
+        106.5504,
+        29.3637,
+        106.7504,
+        29.7637
+      ],
+      "packageIds": [
+        "city-ming-chongqing-east-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "city-ming-dali",
+      "name": "大理与洱海",
+      "bounds": [
+        99.97,
+        25.49,
+        100.37,
+        26.0
+      ],
+      "packageIds": [
+        "city-ming-dali-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "city-ming-datong",
+      "name": "大同与御河附近水系",
+      "bounds": [
+        113.1,
+        39.88,
+        113.5,
+        40.28
+      ],
+      "packageIds": [
+        "city-ming-datong-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "city-ming-guilin",
+      "name": "桂林与漓江附近水系",
+      "bounds": [
+        109.9799,
+        25.0344,
+        110.45,
+        25.4344
+      ],
+      "packageIds": [
+        "city-ming-guilin-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "city-ming-handan",
+      "name": "邯郸与滏阳河附近水系",
+      "bounds": [
+        114.29,
+        36.41,
+        114.69,
+        36.81
+      ],
+      "packageIds": [
+        "luoyang-overview-part0",
+        "city-ming-handan-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "city-ming-nanchang",
+      "name": "南昌与赣江附近水系",
+      "bounds": [
+        115.658,
+        28.483,
+        116.058,
+        28.883
+      ],
+      "packageIds": [
+        "city-ming-nanchang-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "city-ming-yanzhou",
+      "name": "兖州与泗河附近水系",
+      "bounds": [
+        116.63,
+        35.35,
+        117.03,
+        35.75
+      ],
+      "packageIds": [
+        "central-plains-overview-part0",
+        "city-ming-yanzhou-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "city-ming-yinchuan",
+      "name": "银川与黄河走廊",
+      "bounds": [
+        106.03,
+        38.29,
+        106.65,
+        38.69
+      ],
+      "packageIds": [
+        "city-ming-yinchuan-overview-part0"
       ],
       "minZoom": 8
     },
@@ -10006,6 +10774,94 @@
       "license": "Open Data Commons Open Database License (ODbL) 1.0",
       "attribution": "© OpenStreetMap contributors",
       "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+    },
+    {
+      "id": "osm-tang-detail-city-ming-chongqing-east",
+      "title": "OpenStreetMap 现代地理：重庆东部附近水系",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T08:27:18.016711+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-ming-chongqing-east.json.gz",
+      "snapshotSha256": "32240482291778711b8c341b32ef04a562d580f36abca100a6efaa8199e85e03",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+    },
+    {
+      "id": "osm-tang-detail-city-ming-dali",
+      "title": "OpenStreetMap 现代地理：大理与洱海",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T08:11:28.829928+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-ming-dali.json.gz",
+      "snapshotSha256": "3cf0127028ce4872f3072683c5cde00b8c4e43a644366c7e6ed06726d0a1c013",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+    },
+    {
+      "id": "osm-tang-detail-city-ming-datong",
+      "title": "OpenStreetMap 现代地理：大同与御河附近水系",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T08:06:13.082405+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-ming-datong.json.gz",
+      "snapshotSha256": "77254dd20b840e8f3e8991dc9e3607f51cc4a6f47f193e3592d756cd203ea24d",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+    },
+    {
+      "id": "osm-tang-detail-city-ming-guilin",
+      "title": "OpenStreetMap 现代地理：桂林与漓江附近水系",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T08:18:59.331580+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-ming-guilin.json.gz",
+      "snapshotSha256": "b7cdf1d099feca818cb888cfea8f831da70aa1c278bcabe968d4f0a63e3bcfcf",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+    },
+    {
+      "id": "osm-tang-detail-city-ming-handan",
+      "title": "OpenStreetMap 现代地理：邯郸与滏阳河附近水系",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T08:11:06.001571+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-ming-handan.json.gz",
+      "snapshotSha256": "af98eb0cb79255065d307a7e58fa8202e53dbc7840e29c9c47dddeeb314e79d2",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+    },
+    {
+      "id": "osm-tang-detail-city-ming-nanchang",
+      "title": "OpenStreetMap 现代地理：南昌与赣江附近水系",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T08:15:05.494570+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-ming-nanchang.json.gz",
+      "snapshotSha256": "e2933fa5520926ba3039c1a6724ae0b9716a5372697d401539ea581acd97ec77",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+    },
+    {
+      "id": "osm-tang-detail-city-ming-yanzhou",
+      "title": "OpenStreetMap 现代地理：兖州与泗河附近水系",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T08:14:40.726275+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-ming-yanzhou.json.gz",
+      "snapshotSha256": "f0648dd3a2ea6637b68a09ec6ff5015465e5ad25caa7f77663288de455f6a079",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+    },
+    {
+      "id": "osm-tang-detail-city-ming-yinchuan",
+      "title": "OpenStreetMap 现代地理：银川与黄河走廊",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T08:10:01.623988+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-ming-yinchuan.json.gz",
+      "snapshotSha256": "f949619745bb72aa231422c2a4e50da56d8518586a283f8cc85f1d6340bce8e2",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
     }
   ]
 }

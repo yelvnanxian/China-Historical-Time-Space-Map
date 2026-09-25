@@ -1,14 +1,14 @@
 {
   "outputPath": "public/data/tang-detail/yellow-river-water-associations.json",
-  "outputSha256": "2620be8873414e28c1780c3f98ce351a97b7d75dff085f6b4176e31b3a9c4a21",
-  "sourceManifestSha256": "eed6d494aee843397249c9f43dd4fd8ffec87f159ae0b67e563115ffaff10837",
+  "outputSha256": "04f7a40661043f8fb35c5d5431f8a3793698640931b99c36667820e12ca32d55",
+  "sourceManifestSha256": "db58a31b0bf99ac82bf451a014cb4b241e17b1dfcf2e88884032ba90cc1270ce",
   "statistics": {
-    "mainRiverLines": 50,
-    "riverWaterCandidates": 7571,
-    "associatedWaterSurfaces": 55,
-    "lineSurfaceAssociations": 86,
-    "unassociatedWaterSurfaces": 7516,
-    "nonMainRiverNameCandidatesRejected": 125,
+    "mainRiverLines": 51,
+    "riverWaterCandidates": 7751,
+    "associatedWaterSurfaces": 59,
+    "lineSurfaceAssociations": 90,
+    "unassociatedWaterSurfaces": 7692,
+    "nonMainRiverNameCandidatesRejected": 128,
     "boundaryOnlyPairsNotAssociated": 9
   },
   "lineRecords": [
@@ -1806,6 +1806,43 @@
       ],
       "sourceId": "osm-tang-detail-city-jinan",
       "sourceUrl": "https://www.openstreetmap.org/way/653750850"
+    },
+    {
+      "riverId": "osm-way-44060124",
+      "nameMatches": [
+        {
+          "key": "name",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hans",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hant",
+          "value": "黃河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:en",
+          "value": "Yellow River",
+          "normalized": "yellowriver"
+        },
+        {
+          "key": "name:zh-Latn-pinyin",
+          "value": "Huáng Hé",
+          "normalized": "huanghe"
+        }
+      ],
+      "sourceId": "osm-tang-detail-city-ming-yinchuan",
+      "sourceUrl": "https://www.openstreetmap.org/way/44060124"
     }
   ],
   "nameRejections": [
@@ -2803,6 +2840,29 @@
         "name": "黄孝河"
       },
       "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-237803061",
+      "names": {
+        "name": "黄沙河",
+        "name:en": "Huangsha River"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-258633887",
+      "names": {
+        "name": "黄沙河"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-258633889",
+      "names": {
+        "name": "黄沙河",
+        "name:en": "Huangsha River"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
     }
   ],
   "boundaryOnlyPairs": [
@@ -2864,7 +2924,7 @@
   "limitations": [
     "现代线面空间关联，非历史黄河水面考证。",
     "未关联水面不表示它一定不属于黄河；本算法宁可留下不确定记录。",
-    "关联覆盖实际取得的32个采集区域OSM快照，不代表全部现代黄河。",
+    "关联覆盖实际取得的40个采集区域OSM快照，不代表全部现代黄河。",
     "前端只在已经加载历史河道的适当下游范围替代这些水面。"
   ]
 }

@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { test } from "node:test";
 import { gunzipSync } from "node:zlib";
-import { boundsOverlap, canSelectTangDetail, isModernYellowRiver, replaceModernYellowGeometry, showTangDetail, waterDetailReplacements, waterDisplayClass } from "../shared/tang-detail-display";
+import { boundsOverlap, canSelectTangDetail, detailBelongsToPeriod, hasDetailedGeography, isModernYellowRiver, replaceModernYellowGeometry, showTangDetail, waterDetailReplacements, waterDisplayClass } from "../shared/tang-detail-display";
 import type { TangDetailCollection, TangDetailManifest, TangDetailProperties } from "../shared/tang-detail";
 import { lineOutsideBounds, lowerYellowRiverMask } from "../shared/historical-rivers";
 import type { PhysicalGroup } from "../shared/physical-geography";
@@ -16,6 +16,19 @@ const manifest: TangDetailManifest = JSON.parse(readFileSync(new URL("data/tang-
 const historical = readCollection(manifest.historical.url);
 const modern = ["central-plains-overview-part0", "jianghuai-overview-part0", "jianghuai-overview-part1", "jianghuai-overview-part2", "jianghuai-240-64-part0"]
   .flatMap(id => readCollection(manifest.modernRegions.find(region => region.id === id)!.url).features);
+
+test("明代复用真实现代地物，唐代755治所不进入明代地图或搜索", () => {
+  const all = [...historical.features, ...modern];
+  const forPeriod = (period: string) => all.filter(feature => detailBelongsToPeriod(feature.properties, period));
+  assert.ok(hasDetailedGeography("ming") && hasDetailedGeography("tang"));
+  assert.equal(hasDetailedGeography("song"), false);
+  assert.deepEqual(forPeriod("ming"), modern);
+  assert.deepEqual(forPeriod("tang"), all);
+  assert.deepEqual(forPeriod("song"), []);
+  assert.equal(detailBelongsToPeriod({ ...historical.features[0].properties, year: 741 }, "tang"), false);
+  assert.equal(detailBelongsToPeriod({ ...modern[0].properties, modernReferenceOnly: false }, "ming"), false);
+  assert.equal(detailBelongsToPeriod({ ...modern[0].properties, kind: "settlement" }, "ming"), false);
+});
 
 test("唐代府州与县治依真实资料的不同阈值出现，放大不会提前显示低层治所", () => {
   const prefecture = historical.features.find(feature => feature.properties.level === "prefecture")!.properties;

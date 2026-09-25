@@ -182,9 +182,10 @@ def modern():
     regions = []
     globally_included_ids = set()
     # Keep original six-region order and all existing IDs/pack bytes stable as
-    # additional areas are added. New western regions follow original sources.
+    # additional areas are added. New western regions follow original sources;
+    # Ming city extensions follow every previously published acquisition region.
     metadata_paths = sorted((EVIDENCE / 'osm').glob('*-source.json'),
-                            key=lambda p: (2 if p.name.startswith('city-') else 1 if p.name.startswith('west-') else 0, p.name))
+                            key=lambda p: (3 if p.name.startswith('city-ming-') else 2 if p.name.startswith('city-') else 1 if p.name.startswith('west-') else 0, p.name))
     for metadata_path in metadata_paths:
         meta = json.loads(metadata_path.read_text())
         source_path = ROOT / meta['snapshotPath']
@@ -239,6 +240,8 @@ def modern():
                               'modernReferenceOnly': True, 'geometryNote': '现代OSM原始几何；水面仅拼合完整成员环，未平滑、补画或缓冲。仅供现代地理参照，不是唐代河道、湖岸或工程。',
                               'minZoom': min_zoom, 'bounds': list(geometry.bounds), 'labelCoordinates': [anchor.x, anchor.y],
                               'osmType': etype, 'osmId': eid, 'tags': tags}
+                if region_id.startswith('city-ming-'):
+                    properties['geometryNote'] = properties['geometryNote'].replace('不是唐代', '不是所选朝代的')
                 if region_id.startswith(('west-', 'city-')):
                     source_conditions = []
                     if tags.get('location') == 'underground' or tags.get('canal') == 'qanat':

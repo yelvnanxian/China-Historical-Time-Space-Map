@@ -4,7 +4,7 @@ import { Marker, type FilterSpecification, type GeoJSONSource, type Map as MapIn
 import { MapPin, Search, X } from "lucide-react";
 import type { Feature, Geometry } from "geojson";
 import { tangDetailKindNames, type TangDetailCollection, type TangDetailManifest, type TangDetailProperties } from "../../shared/tang-detail";
-import { boundsOverlap, canSelectTangDetail, replaceModernYellowGeometry, showTangDetail, waterDetailReplacements, waterDisplayClass } from "../../shared/tang-detail-display";
+import { boundsOverlap, canSelectTangDetail, detailBelongsToPeriod, modernDetailRegionName, replaceModernYellowGeometry, showTangDetail, waterDetailReplacements, waterDisplayClass } from "../../shared/tang-detail-display";
 import type { MapBounds, WaterDetailReplacement } from "../../shared/historical-rivers";
 import { canInteract, type MapInteractionMode } from "../../shared/map-interactions";
 import { findNaturalMapHit } from "../../shared/map-hit-test";
@@ -36,8 +36,8 @@ async function fetchCollection(url: string, signal: AbortSignal): Promise<TangDe
   return new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream("gzip"))).json().then(localize);
 }
 
-export default function TangDetailLayer({ map, ready, enabled, mode, zoom, modernNames, controlsContainer, resetKey, replaceYellowLower, places, onPlaceSelect, onFocus, onChoose, onCoverageChange, tangBoundaries, onBoundaryRequest, mountainFeatureIds, crosswalkLoading, countyDiagnostics, countyDiagnosticsError }: {
-  map: MapInstance | null; ready: boolean; enabled: boolean; mode: MapInteractionMode; zoom: number; modernNames: boolean;
+export default function TangDetailLayer({ map, ready, enabled, periodId, mode, zoom, modernNames, controlsContainer, resetKey, replaceYellowLower, places, onPlaceSelect, onFocus, onChoose, onCoverageChange, tangBoundaries, onBoundaryRequest, mountainFeatureIds, crosswalkLoading, countyDiagnostics, countyDiagnosticsError }: {
+  map: MapInstance | null; ready: boolean; enabled: boolean; periodId: string; mode: MapInteractionMode; zoom: number; modernNames: boolean;
   controlsContainer: HTMLElement | null; resetKey: string; replaceYellowLower: boolean; places: Place[];
   onPlaceSelect: (id: string) => void; onFocus: (points: [number, number][], maxZoom?: number) => void; onChoose: () => void;
   onCoverageChange: (replacements: WaterDetailReplacement[]) => void;
@@ -46,6 +46,8 @@ export default function TangDetailLayer({ map, ready, enabled, mode, zoom, moder
   countyDiagnostics?: TangCountyDiagnostics;
   countyDiagnosticsError?: string;
 }) {
+  const historicalEnabled = periodId === "tang";
+  const explorerTitle = historicalEnabled ? "唐代城镇与精细地理" : "河湖与山峰细节";
   const [manifest, setManifest] = useState<TangDetailManifest>();
   const [historical, setHistorical] = useState<TangDetailCollection>(empty);
   const [regions, setRegions] = useState<Record<string, TangDetailCollection>>({});
@@ -64,7 +66,7 @@ export default function TangDetailLayer({ map, ready, enabled, mode, zoom, moder
   const focusedJurisdiction = useRef<string | undefined>(undefined);
   useEffect(() => {
     if (selected?.properties.kind !== "settlement") { focusedJurisdiction.current = undefined; return; }
-    if (!enabled || !canInteract(mode, "cities")) return;
+    if (!enabled || !historicalEnabled || !canInteract(mode, "cities")) return;
     const link = tangBoundaries?.settlements[selected.properties.id];
     if (link) {
       const key = `${selected.properties.id}:${link.boundaryId}`;
@@ -72,10 +74,10 @@ export default function TangDetailLayer({ map, ready, enabled, mode, zoom, moder
       focusedJurisdiction.current = key;
       boundaryChoose.current(link.boundaryId, true, fit);
     }
-  }, [selected, tangBoundaries, enabled, mode]);
+  }, [selected, tangBoundaries, enabled, historicalEnabled, mode]);
   useEffect(() => { setSelected(undefined); }, [resetKey, enabled]);
   useEffect(() => { if (selected && !canSelectTangDetail(selected.properties, mode)) setSelected(undefined); }, [mode, selected]);
-  useEffect(() => { setSearchKind("all"); }, [mode]);
+  useEffect(() => { setSearchKind("all"); setQuery(""); }, [mode, periodId]);
   useEffect(() => {
     const abort = new AbortController();
     fetch("/data/physical-interactions.json", { signal: abort.signal }).then(r => { if (!r.ok) throw Error(); return r.json(); })
@@ -90,14 +92,15 @@ export default function TangDetailLayer({ map, ready, enabled, mode, zoom, moder
     fetch("/data/tang-detail/manifest.json", { signal: abort.signal }).then(r => { if (!r.ok) throw Error(); return r.json(); })
       .then(async (index: TangDetailManifest) => {
         setManifest(index);
+        if (!historicalEnabled) { setHistorical(empty); return; }
         const response = await fetch(index.historical.url, { signal: abort.signal });
         if (!response.ok) throw Error();
         const collection = await response.json();
         if (collection.type !== "FeatureCollection" || collection.features.length !== index.historical.featureCount) throw Error();
         setHistorical(collection);
-      }).catch(e => { if (e.name !== "AbortError") setError("唐代细节资料未能加载，请重试。"); });
+      }).catch(e => { if (e.name !== "AbortError") setError("精细地理资料未能加载，请重试。"); });
     return () => abort.abort();
-  }, [enabled, attempt]);
+  }, [enabled, historicalEnabled, attempt]);
   useEffect(() => {
     if (!enabled) return;
     const abort = new AbortController();
@@ -149,10 +152,12 @@ export default function TangDetailLayer({ map, ready, enabled, mode, zoom, moder
   }, [neededKey, attempt]);
   const loadedRegions = useMemo(() => needed.filter(region => regions[region.id]), [needed, regions]);
   const mountainIds = useMemo(() => new Set(mountainFeatureIds), [mountainFeatureIds]);
+  const periodFeatures = useMemo(() => [...historical.features, ...loadedRegions.flatMap(region => regions[region.id].features)]
+    .filter(feature => detailBelongsToPeriod(feature.properties, periodId)), [historical, loadedRegions, regions, periodId]);
   const activeFeatures = useMemo(() => {
     if (!enabled) return [];
     const unique = new Map<string, DetailFeature>();
-    for (const feature of [...historical.features, ...loadedRegions.flatMap(region => regions[region.id].features)]) {
+    for (const feature of periodFeatures) {
       if (feature.properties.kind === "peak" && mountainIds.has(feature.properties.id)) continue;
       if (!showTangDetail(feature.properties, zoom, "all")) continue;
       const displayed = replaceModernYellowGeometry(feature, replaceYellowLower, yellowWaterIds);
@@ -162,20 +167,20 @@ export default function TangDetailLayer({ map, ready, enabled, mode, zoom, moder
       }
     }
     return [...unique.values()];
-  }, [enabled, historical, loadedRegions, regions, zoom, replaceYellowLower, yellowWaterIds, mountainIds]);
+  }, [enabled, periodFeatures, zoom, replaceYellowLower, yellowWaterIds, mountainIds]);
   const replacementKey = useMemo(() => JSON.stringify(waterDetailReplacements(activeFeatures, contextGroups)), [activeFeatures, contextGroups]);
   useEffect(() => { onCoverageChange(JSON.parse(replacementKey)); }, [replacementKey, onCoverageChange]);
   const selectable = useMemo(() => new Map(activeFeatures.map(feature => [feature.properties.id, feature])), [activeFeatures]);
   const searchResults = useMemo(() => {
     const key = boundarySearchKey(query);
-    const merged = new Map([...historical.features, ...loadedRegions.flatMap(region => regions[region.id].features)].flatMap(feature => {
+    const merged = new Map(periodFeatures.flatMap(feature => {
       const displayed = replaceModernYellowGeometry(feature, replaceYellowLower, yellowWaterIds);
       return displayed ? [[displayed.properties.id, displayed] as const] : [];
     }));
     return [...merged.values()].filter(({ properties: p }) => canSelectTangDetail(p, mode) && !(p.kind === "peak" && mountainIds.has(p.id)) && (searchKind === "all" || (searchKind === "settlement" ? p.kind === "settlement" : p.kind !== "settlement")) && !/^未命名|^未定名/.test(p.name) && (!key || boundarySearchKey(`${p.name} ${p.nameEn} ${p.presentLocation ?? ""}`).includes(key)))
       .sort((a, b) => Number(b.properties.kind === "settlement") - Number(a.properties.kind === "settlement") || a.properties.minZoom - b.properties.minZoom)
       .slice(0, key ? 40 : 8);
-  }, [historical, loadedRegions, regions, query, searchKind, mode, replaceYellowLower, yellowWaterIds, mountainIds]);
+  }, [periodFeatures, query, searchKind, mode, replaceYellowLower, yellowWaterIds, mountainIds]);
   useEffect(() => {
     if (selected && !replaceModernYellowGeometry(selected, replaceYellowLower, yellowWaterIds)) setSelected(undefined);
   }, [replaceYellowLower, yellowWaterIds, selected]);
@@ -210,14 +215,14 @@ export default function TangDetailLayer({ map, ready, enabled, mode, zoom, moder
   }, [map, ready, activeFeatures]);
   useEffect(() => {
     if (!ready || !map?.getSource("tang-detail")) return;
-    const displayedSelection = selected && replaceModernYellowGeometry(selected, replaceYellowLower, yellowWaterIds);
+    const displayedSelection = enabled && selected && detailBelongsToPeriod(selected.properties, periodId) && replaceModernYellowGeometry(selected, replaceYellowLower, yellowWaterIds);
     const selectedWaterClass = selected ? waterDisplayClass(selected.properties) : "surface";
     map.setPaintProperty(layerIds[6], "line-dasharray", selectedWaterClass === "surface" ? undefined : [2, 2]);
     map.setPaintProperty(layerIds[6], "line-color", selectedWaterClass === "underground" ? "#716957" : "#216378");
     map.setPaintProperty(layerIds[7], "fill-opacity", selectedWaterClass === "surface" ? .4 : .18);
     (map.getSource("tang-detail-selected") as GeoJSONSource).setData({ type: "FeatureCollection", features: displayedSelection ? [displayedSelection] : [] });
     [layerIds[6], layerIds[7], layerIds[8]].forEach(id => map.setFilter(id, ["all", ["==", ["get", "id"], selected?.properties.id ?? ""], ["==", ["geometry-type"], id === layerIds[8] ? "Point" : id === layerIds[7] ? "Polygon" : selected?.geometry.type === "Polygon" || selected?.geometry.type === "MultiPolygon" ? "Polygon" : "LineString"]]));
-  }, [map, ready, selected, replaceYellowLower, yellowWaterIds]);
+  }, [map, ready, enabled, periodId, selected, replaceYellowLower, yellowWaterIds]);
   function select(feature: DetailFeature) {
     setSelected({ ...feature }); setCollapsed(false); choose.current();
 
@@ -279,34 +284,34 @@ export default function TangDetailLayer({ map, ready, enabled, mode, zoom, moder
       select(feature);
     }
   }
-  const selectedProperties = selected?.properties;
+  const selectedProperties = selected && detailBelongsToPeriod(selected.properties, periodId) ? selected.properties : undefined;
   const selectedCounty = selectedProperties ? countyDiagnostics?.bySettlement[selectedProperties.id] : undefined;
   const countyModels = selectedCounty?.candidates.filter(candidate => canOpenCountyModel(selectedCounty, candidate, countyDiagnostics?.byBoundary[candidate.boundaryId])) ?? [];
   const relatedPlace = selectedProperties?.kind === "settlement" ? places.find(place => [place.name, place.nameByPeriod?.tang, ...place.aliases].includes(selectedProperties.name) && Math.hypot(place.coordinates[0] - selectedProperties.labelCoordinates[0], place.coordinates[1] - selectedProperties.labelCoordinates[1]) < .4) : undefined;
   return <>
-    {enabled && controlsContainer && createPortal(<section className="nature-explorer tang-detail-explorer" aria-label="唐代城镇与精细地理"><h3><MapPin size={14} />唐代城镇与精细地理</h3>
-      <p>{manifest ? `${manifest.historical.featureCount} 条历史治所记录 · 地图放大后逐级显示` : "加载历史治所…"}</p>
-      <div className="nature-search"><Search size={13} /><input aria-label="搜索唐代城镇及细节地物" placeholder="县名、州名、现代地区…" value={query} onChange={e => setQuery(e.target.value)} /></div>
-      <select aria-label="细节资料类型" value={searchKind} onChange={e => setSearchKind(e.target.value)}><option value="all">当前可点城镇与地物</option>{canInteract(mode, "cities") && <option value="settlement">唐代历史治所</option>}{mode !== "cities" && <option value="nature">视野中的现代地物</option>}</select>
+    {enabled && (historicalEnabled || mode !== "cities") && controlsContainer && createPortal(<section className="nature-explorer tang-detail-explorer" aria-label={explorerTitle}><h3><MapPin size={14} />{explorerTitle}</h3>
+      <p>{historicalEnabled ? (manifest ? `${manifest.historical.featureCount} 条历史治所记录 · 地图放大后逐级显示` : "加载历史治所…") : (manifest ? `${manifest.modernCoverageRegions.length} 个地区的现代河湖与山峰参考 · 放大后可点选` : "加载河湖与山峰资料…")}</p>
+      <div className="nature-search"><Search size={13} /><input aria-label={historicalEnabled ? "搜索唐代城镇及细节地物" : "搜索视野内河湖与山峰"} placeholder={historicalEnabled ? "县名、州名、现代地区…" : "河流、湖泊、山峰名称…"} value={query} onChange={e => setQuery(e.target.value)} /></div>
+      <select aria-label="细节资料类型" value={searchKind} onChange={e => setSearchKind(e.target.value)}><option value="all">{historicalEnabled ? "当前可点城镇与地物" : "当前可点自然地物"}</option>{historicalEnabled && canInteract(mode, "cities") && <option value="settlement">唐代历史治所</option>}{mode !== "cities" && <option value="nature">视野中的现代地物</option>}</select>
       <div className="nature-search-results">{searchResults.map(feature => <button key={feature.properties.id} onClick={() => focus(feature)}><strong>{feature.properties.name}</strong><span>{feature.properties.kind === "settlement" ? `${feature.properties.subtype} · ${feature.properties.presentLocation || "位置待核"}` : tangDetailKindNames[feature.properties.kind]}</span></button>)}</div>
       {query && !searchResults.length && <p>暂无匹配记录。自然地物请先放大到细节区域后搜索。</p>}
-      <details className="detail-coverage"><summary>细节区域与来源</summary><p>治所使用755年记录，行政面为741年参照。水系、湖岸和山峰来自现代 OSM，不能据此确认其唐代状态。</p>
-        {tangBoundaries?.coverage && <p>755年治所中，州郡府级已关联{tangBoundaries.coverage.byLevel.prefecture.matched} / {tangBoundaries.coverage.byLevel.prefecture.total}条；{tangBoundaries.coverage.byLevel.prefecture.unmatched}条仍缺可靠辖区。县治按已核对隶属关联州郡。未关联对象在详情说明原因。</p>}
-        <div className="detail-region-shortcuts">{manifest?.modernCoverageRegions.map(region => <button key={region.id} onClick={() => onFocus([[(region.bounds[0] + region.bounds[2]) / 2, (region.bounds[1] + region.bounds[3]) / 2]], 9)}>{region.name}</button>)}</div>
+      <details className="detail-coverage"><summary>细节区域与来源</summary><p>{historicalEnabled ? "治所使用755年记录，行政面为741年参照。" : "当前显示明代地图，以下自然地物沿用现代地理资料。"}水系、湖岸和山峰来自现代 OSM，不能据此确认其历史状态。{replaceYellowLower ? "黄河下游单独使用所选年代的历史河道。" : "黄河下游当前保留现代参照，可在黄河改道中切换。"}</p>
+        {historicalEnabled && tangBoundaries?.coverage && <p>755年治所中，州郡府级已关联{tangBoundaries.coverage.byLevel.prefecture.matched} / {tangBoundaries.coverage.byLevel.prefecture.total}条；{tangBoundaries.coverage.byLevel.prefecture.unmatched}条仍缺可靠辖区。县治按已核对隶属关联州郡。未关联对象在详情说明原因。</p>}
+        <div className="detail-region-shortcuts">{manifest?.modernCoverageRegions.map(region => <button key={region.id} onClick={() => onFocus([[(region.bounds[0] + region.bounds[2]) / 2, (region.bounds[1] + region.bounds[3]) / 2]], 9)}>{modernDetailRegionName(region)}</button>)}</div>
         <p>放大至8级加载主要河湖；10级起加载局部支流、山峰，12级可见更小水面。无名称地物保留形状，不杜撰地名。未覆盖地区仍是概览数据。</p>
       </details>
       {loading && <p role="status">正在加载视野内的河湖细节…</p>}{error && <p role="status">{error}<button onClick={() => setAttempt(value => value + 1)}>重试</button></p>}
     </section>, controlsContainer)}
-    {enabled && selectedProperties && <section className="nature-detail tang-detail-card" aria-label="唐代城镇与地物详情"><header><button className="nature-detail-title" aria-expanded={!collapsed} onClick={() => setCollapsed(value => !value)}><strong>{selectedProperties.name}</strong><span>{collapsed ? "展开" : "收起"}</span></button><button aria-label="关闭地物详情" onClick={() => setSelected(undefined)}><X size={16} /></button></header>
+    {enabled && selectedProperties && <section className="nature-detail tang-detail-card" aria-label={historicalEnabled ? "唐代城镇与地物详情" : "河湖与山峰详情"}><header><button className="nature-detail-title" aria-expanded={!collapsed} onClick={() => setCollapsed(value => !value)}><strong>{selectedProperties.name}</strong><span>{collapsed ? "展开" : "收起"}</span></button><button aria-label="关闭地物详情" onClick={() => setSelected(undefined)}><X size={16} /></button></header>
       {!collapsed && <div className="nature-detail-body"><span className="nature-kind">{tangDetailKindNames[selectedProperties.kind]} · {selectedProperties.modernReferenceOnly ? "现代参照" : "唐代 · 755年记录"}</span>
         {selectedProperties.kind === "settlement" && <><p>{selectedProperties.subtype} · {selectedProperties.presentLocation || "来源未提供现代位置描述"}</p><p>资料存续年：{selectedProperties.beginYear}—{selectedProperties.endYear}年。{String(selectedProperties.sourceRecord?.BEG_RULE) === "4" && String(selectedProperties.sourceRecord?.END_RULE) === "4" ? "起讫年据来源记录。" : "包含较宽的定年范围，详情以原始记录为准。"}</p></>}
         {selectedCounty && <><CountyGeometryNotice diagnostic={selectedCounty} />{countyModels.map(candidate => <button key={candidate.boundaryId} className="detail-focus-button" onClick={() => onBoundaryRequest(candidate.boundaryId)}>查看{candidate.name}{selectedCounty.status === "outside" ? "存疑模型与治所" : "县级参考范围"}</button>)}</>}
         {selectedProperties.level === "county" && countyDiagnosticsError && <p role="status" className="nature-detail-note">{countyDiagnosticsError}</p>}
         {selectedProperties.kind === "settlement" && <TangJurisdictionInfo loading={crosswalkLoading} name={selectedProperties.name} link={tangBoundaries?.settlements[selectedProperties.id]} missingReason={tangBoundaries?.unmatchedSettlements?.[selectedProperties.id]?.reason} onView={id => onBoundaryRequest(id)} />}
         {selectedProperties.tags?.ele && <p>来源标注高程：{selectedProperties.tags.ele}米</p>}
-        <p>{selectedProperties.geometryNote}</p>
-        {selectedProperties.modernReferenceOnly && <p className="nature-detail-note">本条为现代测绘参照；线是河道中心线，水面多边形才表示来源记录的水域范围。不是唐代河岸复原。</p>}
-        {waterDisplayClass(selectedProperties) === "underground" && <p className="nature-detail-note">来源标记为地下、隧洞、涵洞或有覆盖的水道，地图用灰色虚线显示；有覆盖不一定在地下，也不表示露天明流；未据此推定唐代年代。</p>}
+        <p>{selectedProperties.modernReferenceOnly ? selectedProperties.geometryNote.replaceAll("唐代", "所选朝代的") : selectedProperties.geometryNote}</p>
+        {selectedProperties.modernReferenceOnly && <p className="nature-detail-note">本条为现代地理参照；线是河道中心线，水面多边形才表示来源记录的水域范围。不是所选朝代的河岸复原。</p>}
+        {waterDisplayClass(selectedProperties) === "underground" && <p className="nature-detail-note">来源标记为地下、隧洞、涵洞或有覆盖的水道，地图用灰色虚线显示；有覆盖不一定在地下，也不表示露天明流；未据此推定历史年代。</p>}
         {waterDisplayClass(selectedProperties) === "seasonal" && <p className="nature-detail-note">来源标记为季节性、间歇性或停用水道，虚线不表示常年流水，详见原始标签。</p>}
         <details><summary>查看原始记录</summary><pre>{JSON.stringify(selectedProperties.sourceRecord ?? selectedProperties.tags, null, 2)}</pre></details>
         <div className="nature-detail-actions"><button onClick={() => focus(selected!)}>定位与放大</button><a href={selectedProperties.sourceUrl} target="_blank" rel="noreferrer">原始来源 ↗</a></div>

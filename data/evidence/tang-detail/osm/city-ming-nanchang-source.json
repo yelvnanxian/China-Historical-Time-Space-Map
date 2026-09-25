@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-city-ming-nanchang",
+  "title": "OpenStreetMap 现代地理：南昌与赣江附近水系",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.private.coffee/api/interpreter",
+  "retrievedAt": "2026-09-25T08:15:05.494570+00:00",
+  "bounds": [
+    115.658,
+    28.483,
+    116.058,
+    28.883
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/city-ming-nanchang.json.gz",
+  "snapshotSha256": "e2933fa5520926ba3039c1a6724ae0b9716a5372697d401539ea581acd97ec77",
+  "uncompressedSnapshotSha256": "aef662f4ede57e7289a80d1bc6738bc0f6fe29f58477e83d350691b78501e800",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/city-ming-nanchang.ql",
+  "querySha256": "f3e950976bdca7eac33d3aa82fc61a28176d9297b60db06e58c364b1142fe9fd",
+  "osmBaseTimestamp": "2026-07-24T11:04:51Z",
+  "elementCount": 6014,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+}

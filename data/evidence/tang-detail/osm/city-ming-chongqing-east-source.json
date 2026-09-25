@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-city-ming-chongqing-east",
+  "title": "OpenStreetMap 现代地理：重庆东部附近水系",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "retrievedAt": "2026-09-25T08:27:18.016711+00:00",
+  "bounds": [
+    106.5504,
+    29.3637,
+    106.7504,
+    29.7637
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/city-ming-chongqing-east.json.gz",
+  "snapshotSha256": "32240482291778711b8c341b32ef04a562d580f36abca100a6efaa8199e85e03",
+  "uncompressedSnapshotSha256": "7468edb8c6e44e182a489d6013454c998562177d511a2537ecd9364befca62c3",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/city-ming-chongqing-east.ql",
+  "querySha256": "f8ecb212d2f040bd144c026104ca15f7e918ac4340565a82304e41fd810f69e7",
+  "osmBaseTimestamp": "2026-06-01T08:52:28Z",
+  "elementCount": 502,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+}

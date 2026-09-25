@@ -1,0 +1,211 @@
+{
+  "version": "ming-water-expansion-1",
+  "modernReferenceOnly": true,
+  "completeCityWindows": 7,
+  "partiallyCoveredCities": [
+    "重庆"
+  ],
+  "successfulQueryWindows": 8,
+  "publishedFeatureCount": 10206,
+  "sources": [
+    {
+      "regionId": "city-ming-chongqing-east",
+      "metadataPath": "data/evidence/tang-detail/osm/city-ming-chongqing-east-source.json",
+      "bounds": [
+        106.5504,
+        29.3637,
+        106.7504,
+        29.7637
+      ],
+      "rawElementCount": 502,
+      "publishedFeatureCount": 501,
+      "countsByKind": {
+        "water": 205,
+        "peak": 30,
+        "saddle": 1,
+        "river": 49,
+        "stream": 216
+      },
+      "rejectedCount": 1,
+      "crossRegionDuplicatesSuppressed": 0
+    },
+    {
+      "regionId": "city-ming-dali",
+      "metadataPath": "data/evidence/tang-detail/osm/city-ming-dali-source.json",
+      "bounds": [
+        99.97,
+        25.49,
+        100.37,
+        26.0
+      ],
+      "rawElementCount": 863,
+      "publishedFeatureCount": 863,
+      "countsByKind": {
+        "water": 327,
+        "peak": 140,
+        "saddle": 14,
+        "river": 19,
+        "stream": 341,
+        "canal": 22
+      },
+      "rejectedCount": 0,
+      "crossRegionDuplicatesSuppressed": 0
+    },
+    {
+      "regionId": "city-ming-datong",
+      "metadataPath": "data/evidence/tang-detail/osm/city-ming-datong-source.json",
+      "bounds": [
+        113.1,
+        39.88,
+        113.5,
+        40.28
+      ],
+      "rawElementCount": 169,
+      "publishedFeatureCount": 169,
+      "countsByKind": {
+        "water": 120,
+        "peak": 1,
+        "river": 14,
+        "stream": 20,
+        "canal": 14
+      },
+      "rejectedCount": 0,
+      "crossRegionDuplicatesSuppressed": 0
+    },
+    {
+      "regionId": "city-ming-guilin",
+      "metadataPath": "data/evidence/tang-detail/osm/city-ming-guilin-source.json",
+      "bounds": [
+        109.9799,
+        25.0344,
+        110.45,
+        25.4344
+      ],
+      "rawElementCount": 1352,
+      "publishedFeatureCount": 1350,
+      "countsByKind": {
+        "water": 720,
+        "peak": 357,
+        "saddle": 5,
+        "river": 105,
+        "stream": 153,
+        "canal": 10
+      },
+      "rejectedCount": 2,
+      "crossRegionDuplicatesSuppressed": 0
+    },
+    {
+      "regionId": "city-ming-handan",
+      "metadataPath": "data/evidence/tang-detail/osm/city-ming-handan-source.json",
+      "bounds": [
+        114.29,
+        36.41,
+        114.69,
+        36.81
+      ],
+      "rawElementCount": 111,
+      "publishedFeatureCount": 111,
+      "countsByKind": {
+        "water": 63,
+        "peak": 1,
+        "river": 33,
+        "canal": 14
+      },
+      "rejectedCount": 0,
+      "crossRegionDuplicatesSuppressed": 0
+    },
+    {
+      "regionId": "city-ming-nanchang",
+      "metadataPath": "data/evidence/tang-detail/osm/city-ming-nanchang-source.json",
+      "bounds": [
+        115.658,
+        28.483,
+        116.058,
+        28.883
+      ],
+      "rawElementCount": 6014,
+      "publishedFeatureCount": 6007,
+      "countsByKind": {
+        "water": 3950,
+        "peak": 141,
+        "river": 1037,
+        "canal": 353,
+        "stream": 526
+      },
+      "rejectedCount": 4,
+      "crossRegionDuplicatesSuppressed": 0
+    },
+    {
+      "regionId": "city-ming-yanzhou",
+      "metadataPath": "data/evidence/tang-detail/osm/city-ming-yanzhou-source.json",
+      "bounds": [
+        116.63,
+        35.35,
+        117.03,
+        35.75
+      ],
+      "rawElementCount": 380,
+      "publishedFeatureCount": 379,
+      "countsByKind": {
+        "water": 198,
+        "peak": 4,
+        "river": 59,
+        "stream": 19,
+        "canal": 99
+      },
+      "rejectedCount": 0,
+      "crossRegionDuplicatesSuppressed": 1
+    },
+    {
+      "regionId": "city-ming-yinchuan",
+      "metadataPath": "data/evidence/tang-detail/osm/city-ming-yinchuan-source.json",
+      "bounds": [
+        106.03,
+        38.29,
+        106.65,
+        38.69
+      ],
+      "rawElementCount": 828,
+      "publishedFeatureCount": 826,
+      "countsByKind": {
+        "water": 559,
+        "river": 36,
+        "canal": 211,
+        "stream": 20
+      },
+      "rejectedCount": 2,
+      "crossRegionDuplicatesSuppressed": 0
+    }
+  ],
+  "missingRegions": [
+    {
+      "regionId": "city-ming-chongqing-west",
+      "name": "重庆西部附近水系",
+      "bounds": [
+        106.3504,
+        29.3637,
+        106.5504,
+        29.7637
+      ],
+      "queryPath": "data/evidence/tang-detail/osm/city-ming-chongqing-west.ql",
+      "querySha256": "bbfaea20f8df627aa41ea241fc077a9fdb08fcd124c1bfe5234c9e98a2c861cc",
+      "reason": "完整重庆框在两端点三次超时；改为东西分窗后，西窗在private.coffee和Kumi均145秒超时且0字节返回。之后自动发起的第三次重复请求已主动中止，未生成或发布该窗源数据。",
+      "completedAttempts": [
+        {
+          "endpoint": "https://overpass.private.coffee/api/interpreter",
+          "result": "curl exit 28, 145 seconds, 0 bytes received"
+        },
+        {
+          "endpoint": "https://overpass.kumi.systems/api/interpreter",
+          "result": "curl exit 28, 145 seconds, 0 bytes received"
+        }
+      ],
+      "finalRepeatedAttempt": "stopped after the two endpoint timeouts"
+    }
+  ],
+  "limitations": [
+    "这些窗口是现代OSM采集范围，不是明代辖区或完整河湖边界。",
+    "明代城池点落入采集框不等于周边自然地理已完整覆盖；重庆仅取得东窗，西侧缺口保留。",
+    "保留来源完整线和可完整拼环水面；未杜撰古河道，现代工程不能作为明代存在证据。"
+  ]
+}
