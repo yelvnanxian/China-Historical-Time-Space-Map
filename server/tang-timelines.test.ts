@@ -36,7 +36,7 @@ test("唐104入口均有真实纪年节点，96入口至少3个年份，史料�
   assert.equal(coverage.entryCount, 346);
 });
 
-test("原22城71条跨朝大事记逐项保留，已有关联事件不重复加入", () => {
+test("原22城71条跨朝记录保留，四条明代补证不改变旧ID、年代或事件关联", () => {
   assert.equal(baseline.cityCount, 22);
   assert.equal(baseline.cityTimelines.reduce((n, city) => n + city.entries.length, 0), 71);
   for (const oldCity of baseline.cityTimelines) {
@@ -44,11 +44,25 @@ test("原22城71条跨朝大事记逐项保留，已有关联事件不重复加�
     assert.ok(city);
     assert.ok(new Set(oldCity.entries.map(entry => entry.year)).size >= 3);
     assert.ok(oldCity.entries.at(-1)!.year - oldCity.entries[0].year >= 100);
-    for (const oldEntry of oldCity.entries) assert.deepEqual(city.entries.find(entry => entry.id === oldEntry.id), oldEntry);
+    for (const oldEntry of oldCity.entries) {
+      const current = city.entries.find(entry => entry.id === oldEntry.id)!;
+      const mingAmendments = ["nanjing-ming-1368", "nanjing-secondary-1421", "beijing-ming-1421", "dali-context-2-1382"];
+      if (!mingAmendments.includes(oldEntry.id)) {
+        assert.deepEqual(current, oldEntry);
+        continue;
+      }
+      assert.ok(current);
+      assert.equal(current.year, oldEntry.year);
+      assert.equal(current.relatedEventId, oldEntry.relatedEventId);
+      assert.ok(oldEntry.sourceIds.every(id => current.sourceIds.includes(id)));
+      assert.ok(current.sourceIds.some(id => id.startsWith("mingshi-geography-")), "明代改写需要新增正史证据");
+      for (const citation of oldEntry.evidence) assert.ok(current.evidence.some(item => item.sourceId === citation.sourceId && item.quote === citation.quote));
+      assert.ok(current.evidence.length > oldEntry.evidence.length);
+    }
     assert.equal(new Set(city.entries.map(entry => entry.id)).size, city.entries.length);
   }
   assert.equal(integrated.cityTimelines.length, 106);
-  assert.equal(integrated.cityTimelines.reduce((n, city) => n + city.entries.length, 0), 414);
+  assert.equal(integrated.cityTimelines.reduce((n, city) => n + city.entries.length, 0), 477);
   for (const id of ["chronicle-anshi-757-luoyang", "chronicle-anshi-756-chengdu", "chronicle-anshi-756-tongguan"])
     assert.equal(integrated.cityTimelines.flatMap(city => city.entries).filter(entry => entry.id === id).length, 1, id);
 });

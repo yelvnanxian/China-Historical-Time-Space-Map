@@ -139,7 +139,7 @@
       "startYear": 1368,
       "endYear": 1644,
       "subtitle": "两京与天下",
-      "description": "从北京、南京和改革事件认识明代的政治空间。",
+      "description": "以1582年为代表截面，阅读两京、府州县与卫所沿革；建置史料涵盖明代不同阶段，行政面采用1391年近似参考。",
       "color": "#a56c64",
       "regimeIds": [
         "ming-empire"
@@ -1159,7 +1159,8 @@
         "mingshi",
         "qingshigao",
         "zizhitongjian-220",
-        "tang-nw-jiutangshu-38"
+        "tang-nw-jiutangshu-38",
+        "mingshi-geography-42"
       ],
       "nameByPeriod": {
         "sui": "大兴城",
@@ -1230,7 +1231,8 @@
         "mingshi",
         "qingshigao",
         "zizhitongjian-220",
-        "tang-nw-jiutangshu-38"
+        "tang-nw-jiutangshu-38",
+        "mingshi-geography-42"
       ],
       "nameByPeriod": {
         "han": "雒阳",
@@ -1334,7 +1336,8 @@
         "mingshi",
         "qingshigao",
         "tang-nw-jiutangshu-39",
-        "tang-nw-jiutangshu-38"
+        "tang-nw-jiutangshu-38",
+        "mingshi-geography-40"
       ],
       "nameByPeriod": {
         "han": "蓟",
@@ -1396,7 +1399,8 @@
         "mingshi",
         "qingshigao",
         "context-kaifeng",
-        "tang-nw-jiutangshu-38"
+        "tang-nw-jiutangshu-38",
+        "mingshi-geography-42"
       ],
       "nameByPeriod": {
         "qin": "浚仪",
@@ -1462,7 +1466,8 @@
         "mingshi",
         "qingshigao",
         "tang-se-jiutangshu-40",
-        "tang-se-nanjing"
+        "tang-se-nanjing",
+        "mingshi-geography-40"
       ],
       "nameByPeriod": {
         "han": "秣陵",
@@ -1519,7 +1524,8 @@
         "mingshi",
         "qingshigao",
         "tang-se-jiutangshu-40",
-        "tang-se-hangzhou"
+        "tang-se-hangzhou",
+        "mingshi-geography-44"
       ],
       "nameByPeriod": {
         "han": "钱唐",
@@ -1572,7 +1578,8 @@
         "qingshigao",
         "zizhitongjian-218",
         "tang-se-jiutangshu-41",
-        "tang-se-chengdu"
+        "tang-se-chengdu",
+        "mingshi-geography-43"
       ],
       "nameByPeriod": {},
       "typeByPeriod": {
@@ -1633,7 +1640,8 @@
         "mingshi",
         "qingshigao",
         "tang-se-jiutangshu-41",
-        "tang-se-guangzhou"
+        "tang-se-guangzhou",
+        "mingshi-geography-45"
       ],
       "nameByPeriod": {
         "han": "番禺",
@@ -1678,7 +1686,8 @@
         "mingshi",
         "qingshigao",
         "tang-se-jiutangshu-40",
-        "tang-se-yangzhou"
+        "tang-se-yangzhou",
+        "mingshi-geography-40"
       ],
       "nameByPeriod": {
         "han": "江都",
@@ -1722,7 +1731,8 @@
         "yuanshi",
         "mingshi",
         "qingshigao",
-        "tang-se-jiutangshu-39"
+        "tang-se-jiutangshu-39",
+        "mingshi-geography-44"
       ],
       "nameByPeriod": {}
     },
@@ -1764,7 +1774,8 @@
         "yuanshi",
         "mingshi",
         "qingshigao",
-        "tang-se-jiutangshu-39"
+        "tang-se-jiutangshu-39",
+        "mingshi-geography-44"
       ],
       "nameByPeriod": {}
     },
@@ -1807,12 +1818,13 @@
         "mingshi",
         "qingshigao",
         "tang-nw-jiutangshu-39",
-        "tang-nw-jiutangshu-38"
+        "tang-nw-jiutangshu-38",
+        "mingshi-geography-41"
       ],
       "nameByPeriod": {
         "song": "太原",
         "yuan": "太原",
-        "ming": "太原",
+        "ming": "太原县",
         "qing": "太原"
       }
     },
@@ -1854,7 +1866,8 @@
         "yuanshi",
         "mingshi",
         "qingshigao",
-        "tang-nw-jiutangshu-39"
+        "tang-nw-jiutangshu-39",
+        "mingshi-geography-41"
       ],
       "nameByPeriod": {
         "sui": "云内地区",
@@ -1901,7 +1914,8 @@
         "yuanshi",
         "mingshi",
         "qingshigao",
-        "tang-nw-jiutangshu-38"
+        "tang-nw-jiutangshu-38",
+        "mingshi-geography-41"
       ],
       "nameByPeriod": {}
     },
@@ -1941,7 +1955,8 @@
         "yuanshi",
         "mingshi",
         "qingshigao",
-        "tang-nw-jiutangshu-39"
+        "tang-nw-jiutangshu-39",
+        "mingshi-geography-40"
       ],
       "nameByPeriod": {}
     },
@@ -1978,7 +1993,8 @@
         "mingshi",
         "qingshigao",
         "zizhitongjian-218",
-        "tang-nw-zizhitongjian-218"
+        "tang-nw-zizhitongjian-218",
+        "mingshi-geography-42"
       ],
       "nameByPeriod": {},
       "evidence": [
@@ -2066,7 +2082,8 @@
         "songshi",
         "yuanshi",
         "mingshi",
-        "qingshigao"
+        "qingshigao",
+        "mingshi-geography-42"
       ],
       "nameByPeriod": {
         "yuan": "中兴路",
@@ -2128,7 +2145,8 @@
         "mingshi",
         "qingshigao",
         "tang-se-jiutangshu-40",
-        "tang-se-quanzhou"
+        "tang-se-quanzhou",
+        "mingshi-geography-45"
       ],
       "nameByPeriod": {}
     },
@@ -2159,7 +2177,8 @@
         "yuanshi",
         "mingshi",
         "qingshigao",
-        "tang-se-dali"
+        "tang-se-dali",
+        "mingshi-geography-46"
       ],
       "nameByPeriod": {
         "tang": "太和城"
@@ -3359,14 +3378,17 @@
         "济南郡"
       ],
       "periodIds": [
-        "tang"
+        "tang",
+        "ming"
       ],
       "nameByPeriod": {
-        "tang": "济南郡"
+        "tang": "济南郡",
+        "ming": "济南"
       },
       "sourceIds": [
         "tang-nw-jiutangshu-38",
-        "tang-nw-geonames"
+        "tang-nw-geonames",
+        "mingshi-geography-41"
       ],
       "location": {
         "accuracy": "approximate",
@@ -3412,14 +3434,17 @@
         "鲁郡"
       ],
       "periodIds": [
-        "tang"
+        "tang",
+        "ming"
       ],
       "nameByPeriod": {
-        "tang": "鲁郡"
+        "tang": "鲁郡",
+        "ming": "兖州"
       },
       "sourceIds": [
         "tang-nw-jiutangshu-38",
-        "tang-nw-geonames"
+        "tang-nw-geonames",
+        "mingshi-geography-41"
       ],
       "location": {
         "accuracy": "approximate",
@@ -4226,14 +4251,17 @@
         "吴郡"
       ],
       "periodIds": [
-        "tang"
+        "tang",
+        "ming"
       ],
       "sourceIds": [
         "tang-se-jiutangshu-40",
-        "tang-se-suzhou"
+        "tang-se-suzhou",
+        "mingshi-geography-40"
       ],
       "nameByPeriod": {
-        "tang": "吴郡"
+        "tang": "吴郡",
+        "ming": "苏州"
       },
       "location": {
         "accuracy": "approximate",
@@ -4330,14 +4358,17 @@
         "余姚郡"
       ],
       "periodIds": [
-        "tang"
+        "tang",
+        "ming"
       ],
       "sourceIds": [
         "tang-se-jiutangshu-40",
-        "tang-se-ningbo"
+        "tang-se-ningbo",
+        "mingshi-geography-44"
       ],
       "nameByPeriod": {
-        "tang": "余姚郡"
+        "tang": "余姚郡",
+        "ming": "宁波"
       },
       "location": {
         "accuracy": "approximate",
@@ -4433,14 +4464,17 @@
         "豫章郡"
       ],
       "periodIds": [
-        "tang"
+        "tang",
+        "ming"
       ],
       "sourceIds": [
         "tang-se-jiutangshu-40",
-        "tang-se-nanchang"
+        "tang-se-nanchang",
+        "mingshi-geography-43"
       ],
       "nameByPeriod": {
-        "tang": "豫章郡"
+        "tang": "豫章郡",
+        "ming": "南昌"
       },
       "location": {
         "accuracy": "approximate",
@@ -4569,13 +4603,16 @@
         "江夏郡"
       ],
       "periodIds": [
-        "tang"
+        "tang",
+        "ming"
       ],
       "sourceIds": [
-        "tang-se-jiutangshu-40"
+        "tang-se-jiutangshu-40",
+        "mingshi-geography-44"
       ],
       "nameByPeriod": {
-        "tang": "江夏郡"
+        "tang": "江夏郡",
+        "ming": "武昌"
       },
       "location": {
         "accuracy": "approximate",
@@ -4603,14 +4640,17 @@
         "长乐郡"
       ],
       "periodIds": [
-        "tang"
+        "tang",
+        "ming"
       ],
       "sourceIds": [
         "tang-se-jiutangshu-40",
-        "tang-se-fuzhou"
+        "tang-se-fuzhou",
+        "mingshi-geography-45"
       ],
       "nameByPeriod": {
-        "tang": "长乐郡"
+        "tang": "长乐郡",
+        "ming": "福州"
       },
       "location": {
         "accuracy": "approximate",
@@ -5012,14 +5052,17 @@
         "南平郡"
       ],
       "periodIds": [
-        "tang"
+        "tang",
+        "ming"
       ],
       "sourceIds": [
         "tang-se-jiutangshu-39",
-        "tang-se-yuzhou-prefecture"
+        "tang-se-yuzhou-prefecture",
+        "mingshi-geography-43"
       ],
       "nameByPeriod": {
-        "tang": "南平郡"
+        "tang": "南平郡",
+        "ming": "重庆"
       },
       "location": {
         "accuracy": "approximate",
@@ -5116,14 +5159,17 @@
         "始安郡"
       ],
       "periodIds": [
-        "tang"
+        "tang",
+        "ming"
       ],
       "sourceIds": [
         "tang-se-jiutangshu-41",
-        "tang-se-guilin"
+        "tang-se-guilin",
+        "mingshi-geography-45"
       ],
       "nameByPeriod": {
-        "tang": "始安郡"
+        "tang": "始安郡",
+        "ming": "桂林"
       },
       "location": {
         "accuracy": "approximate",
@@ -7783,12 +7829,110 @@
       "retrievedAt": "2026-09-24T14:42:14.133007+00:00",
       "snapshotPath": "data/evidence/tang-expansion/central-links/modern-coordinates-en.json",
       "revisionId": "1370645567"
+    },
+    {
+      "id": "mingshi-geography-42",
+      "title": "《明史》卷42·地理志",
+      "author": "张廷玉等",
+      "locator": "《明史》卷42·地理志",
+      "note": "《明史》是清代编纂的正史，并非明代同期原始档案；本轮以其地理志作为一条文献链。固定修订API原样归档；文本只展开YL年号模板和维基链接。所引文字已逐字核对，未据此核定古城坐标或精确政区边界。",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2594654",
+      "verification": "verified",
+      "retrievedAt": "2026-09-25",
+      "revisionId": "2594654",
+      "edition": "维基文库固定修订；原文快照与原始API分别归档",
+      "license": "原著公版；电子整理文本条款见维基文库来源页",
+      "snapshotPath": "data/evidence/ming-research/sources/mingshi-42.txt"
+    },
+    {
+      "id": "mingshi-geography-40",
+      "title": "《明史》卷40·地理志",
+      "author": "张廷玉等",
+      "locator": "《明史》卷40·地理志",
+      "note": "《明史》是清代编纂的正史，并非明代同期原始档案；本轮以其地理志作为一条文献链。固定修订API原样归档；文本只展开YL年号模板和维基链接。所引文字已逐字核对，未据此核定古城坐标或精确政区边界。",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2626762",
+      "verification": "verified",
+      "retrievedAt": "2026-09-25",
+      "revisionId": "2626762",
+      "edition": "维基文库固定修订；原文快照与原始API分别归档",
+      "license": "原著公版；电子整理文本条款见维基文库来源页",
+      "snapshotPath": "data/evidence/ming-research/sources/mingshi-40.txt"
+    },
+    {
+      "id": "mingshi-geography-44",
+      "title": "《明史》卷44·地理志",
+      "author": "张廷玉等",
+      "locator": "《明史》卷44·地理志",
+      "note": "《明史》是清代编纂的正史，并非明代同期原始档案；本轮以其地理志作为一条文献链。固定修订API原样归档；文本只展开YL年号模板和维基链接。所引文字已逐字核对，未据此核定古城坐标或精确政区边界。",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2619810",
+      "verification": "verified",
+      "retrievedAt": "2026-09-25",
+      "revisionId": "2619810",
+      "edition": "维基文库固定修订；原文快照与原始API分别归档",
+      "license": "原著公版；电子整理文本条款见维基文库来源页",
+      "snapshotPath": "data/evidence/ming-research/sources/mingshi-44.txt"
+    },
+    {
+      "id": "mingshi-geography-43",
+      "title": "《明史》卷43·地理志",
+      "author": "张廷玉等",
+      "locator": "《明史》卷43·地理志",
+      "note": "《明史》是清代编纂的正史，并非明代同期原始档案；本轮以其地理志作为一条文献链。固定修订API原样归档；文本只展开YL年号模板和维基链接。所引文字已逐字核对，未据此核定古城坐标或精确政区边界。",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2619812",
+      "verification": "verified",
+      "retrievedAt": "2026-09-25",
+      "revisionId": "2619812",
+      "edition": "维基文库固定修订；原文快照与原始API分别归档",
+      "license": "原著公版；电子整理文本条款见维基文库来源页",
+      "snapshotPath": "data/evidence/ming-research/sources/mingshi-43.txt"
+    },
+    {
+      "id": "mingshi-geography-45",
+      "title": "《明史》卷45·地理志",
+      "author": "张廷玉等",
+      "locator": "《明史》卷45·地理志",
+      "note": "《明史》是清代编纂的正史，并非明代同期原始档案；本轮以其地理志作为一条文献链。固定修订API原样归档；文本只展开YL年号模板和维基链接。所引文字已逐字核对，未据此核定古城坐标或精确政区边界。",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2617014",
+      "verification": "verified",
+      "retrievedAt": "2026-09-25",
+      "revisionId": "2617014",
+      "edition": "维基文库固定修订；原文快照与原始API分别归档",
+      "license": "原著公版；电子整理文本条款见维基文库来源页",
+      "snapshotPath": "data/evidence/ming-research/sources/mingshi-45.txt"
+    },
+    {
+      "id": "mingshi-geography-41",
+      "title": "《明史》卷41·地理志",
+      "author": "张廷玉等",
+      "locator": "《明史》卷41·地理志",
+      "note": "《明史》是清代编纂的正史，并非明代同期原始档案；本轮以其地理志作为一条文献链。固定修订API原样归档；文本只展开YL年号模板和维基链接。所引文字已逐字核对，未据此核定古城坐标或精确政区边界。",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2613089",
+      "verification": "verified",
+      "retrievedAt": "2026-09-25",
+      "revisionId": "2613089",
+      "edition": "维基文库固定修订；原文快照与原始API分别归档",
+      "license": "原著公版；电子整理文本条款见维基文库来源页",
+      "snapshotPath": "data/evidence/ming-research/sources/mingshi-41.txt"
+    },
+    {
+      "id": "mingshi-geography-46",
+      "title": "《明史》卷46·地理志",
+      "author": "张廷玉等",
+      "locator": "《明史》卷46·地理志",
+      "note": "《明史》是清代编纂的正史，并非明代同期原始档案；本轮以其地理志作为一条文献链。固定修订API原样归档；文本只展开YL年号模板和维基链接。所引文字已逐字核对，未据此核定古城坐标或精确政区边界。",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2626946",
+      "verification": "verified",
+      "retrievedAt": "2026-09-25",
+      "revisionId": "2626946",
+      "edition": "维基文库固定修订；原文快照与原始API分别归档",
+      "license": "原著公版；电子整理文本条款见维基文库来源页",
+      "snapshotPath": "data/evidence/ming-research/sources/mingshi-46.txt"
     }
   ],
   "metadata": {
     "title": "山河纪 · 中国历史时空地图",
-    "version": "0.13.0",
-    "dataNotice": "本版含11个代表历史截面、106个地点档案，其中唐时期有104个城镇阅读入口及专门看点。唐代条目含都城、州府、商贸城镇、关隘、驿站及同时期周边政权；幽州与范阳沿用同城不同阅读入口，数量不表示互不重合的古城遗址。历史行政界接入CHGIS 1820/1911和Hartwell 741/1080/1200/1290/1391资料；资料年份独立标注，不能直接等同地图代表年。Hartwell是近似历史行政模型，行政区界不等于古城墙或完整国家边界；另提供18张历史地图纸图参考。历史地理含8条概述，历代大事记覆盖106个城市阅读入口、414个节点。城池资料保留原文出处、名称年代和近似位置说明；引文可回查不等于古址已考证。现有12,111条历史行政记录通过显示层处理为简体中文，12,100条有代表点所在现代地区参考；这不证明古今行政实体相同。事件连线不是实际行军路线，传统纪年未换算公历。唐755年另接入1682条CHGIS治所点，源定位冲突记录未入图；不表示全部已考定古城。32个采集区域另有213897条现代OSM地物，随缩放加载。另有14330条现代山脊、刃脊、陡崖和命名山峰记录，保留来源几何，不补画未收录山线。唐代郡与州属于同一层级，已核对改名或隶属关系的治所可显示741年参考辖区，不代表755年精确界线。17处山地近览使用真实现代高程生成11984条等高线与精细山影；不是山脉边界或唐代地貌考证。52条现代山地命名概括面用于显示山系大致分布，取自Natural Earth 1:1000万资料，不是精确山脚边界。唐代县治与741年县模型另提供逐条一致性核查；明确冲突的模型以存疑虚线标示，相容也不等于历史边界已经核定。县级存疑研究另补78条史料专题，逐条列出原文、来源版本和未决问题；史料补充不等于县界核定。",
+    "version": "0.14.0",
+    "dataNotice": "本版含11个代表历史截面、106个地点档案，其中唐时期有104个城镇阅读入口及专门看点，明时期有28个入口及《明史》地理志档案。唐代条目含都城、州府、商贸城镇、关隘、驿站及同时期周边政权；幽州与范阳沿用同城不同阅读入口，数量不表示互不重合的古城遗址。历史行政界接入CHGIS 1820/1911和Hartwell 741/1080/1200/1290/1391资料；资料年份独立标注，不能直接等同地图代表年。Hartwell是近似历史行政模型，行政区界不等于古城墙或完整国家边界；另提供18张历史地图纸图参考。历史地理含8条概述，历代大事记覆盖106个城市阅读入口、477个节点。城池资料保留原文出处、名称年代和近似位置说明；引文可回查不等于古址已考证。现有12,111条历史行政记录通过显示层处理为简体中文，12,100条有代表点所在现代地区参考；这不证明古今行政实体相同。事件连线不是实际行军路线，传统纪年未换算公历。唐755年另接入1682条CHGIS治所点，源定位冲突记录未入图；不表示全部已考定古城。32个采集区域另有213897条现代OSM地物，随缩放加载。另有14330条现代山脊、刃脊、陡崖和命名山峰记录，保留来源几何，不补画未收录山线。唐代郡与州属于同一层级，已核对改名或隶属关系的治所可显示741年参考辖区，不代表755年精确界线。17处山地近览使用真实现代高程生成11984条等高线与精细山影；不是山脉边界或唐代地貌考证。52条现代山地命名概括面用于显示山系大致分布，取自Natural Earth 1:1000万资料，不是精确山脚边界。唐代县治与741年县模型另提供逐条一致性核查；明确冲突的模型以存疑虚线标示，相容也不等于历史边界已经核定。县级存疑研究另补78条史料专题，逐条列出原文、来源版本和未决问题；史料补充不等于县界核定。明代另有32条建置研究、76段逐字引文，29个府县模型可查看相应史料；1391近似模型与1582截面不等年，顺天府等晚出名称另有冲突说明。",
     "geographicNotice": "黄河中下游接入五期WorldMap图集河道，随朝代切换，唐代采用11—1048年资料；仅表示历史流向，不是逐年古河岸测绘。其他河湖、山峰及海岸仍为现代参照，不能据此复原唐代地貌。历史治所点与精选地点的坐标有各自来源；行政面不是城墙范围。山影与立体起伏采用本地真实现代高程，立体夸张1.5倍，适合区域观察。"
   },
   "topics": []

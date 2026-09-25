@@ -1,6 +1,7 @@
 import type { HistoricalContextEvidence, HistoricalContextSource } from "./historical-context";
 import type { Place } from "./types";
 import { boundarySearchKey } from "./boundary-search";
+import type { HistoricalResearchEntry } from "./historical-research";
 
 export interface CityPeriodProfile {
   id: string;
@@ -12,6 +13,7 @@ export interface CityPeriodProfile {
   politicalContext?: string;
   sourceIds: string[];
   evidence: HistoricalContextEvidence[];
+  historicalResearch?: HistoricalResearchEntry[];
 }
 
 /** Search contemporary names, modern references and aliases within the selected period. */

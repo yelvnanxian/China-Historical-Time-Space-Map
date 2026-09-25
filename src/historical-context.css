@@ -34,6 +34,11 @@
 .context-evidence p { color: #89927e; font-size: 10px; line-height: 1.8; }
 .context-evidence a { display: inline-block; color: #9b7950; font-size: 10px; line-height: 1.8; margin-bottom: 12px; }
 .chronicle-intro { color: #8b967f; font-size: 11px; line-height: 1.8; }
+.chronicle-scope { display: flex; flex-wrap: wrap; gap: 6px; margin: 13px 0 8px; }
+.chronicle-scope button { display: inline-flex; align-items: center; gap: 7px; min-height: 36px; padding: 6px 11px; border: 1px solid #d4ddc7; border-radius: 4px; color: #728468; background: #f6f8ef; font-size: 11px; }
+.chronicle-scope button[aria-pressed=true] { color: #f9fbee; background: #587351; border-color: #587351; }
+.chronicle-scope button > span { min-width: 16px; text-align: center; font-variant-numeric: tabular-nums; opacity: .8; }
+.chronicle-scope button:focus-visible { outline: 2px solid #9aae7c; outline-offset: 2px; }
 .chronicle-list { list-style: none; padding: 0 0 0 15px; border-left: 1px solid #d0d9c3; margin: 18px 0; }
 .chronicle-list li { position: relative; padding: 0 0 23px 1px; }
 .chronicle-list li:last-child { padding-bottom: 0; }

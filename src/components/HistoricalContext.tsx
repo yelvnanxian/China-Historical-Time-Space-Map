@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { BookOpen, MapPin, Waves, X } from "lucide-react";
 import type { HistoricalContextData, HistoricalContextEvidence, HistoricalContextSource, HistoricalGeographyEntry, HistoricalGeographyKind } from "../../shared/historical-context";
+import type { Period } from "../../shared/types";
 import "../historical-context.css";
 
 const kindNames: Record<HistoricalGeographyKind, string> = {
@@ -18,13 +19,24 @@ export function ContextEvidence({ evidence, sources }: { evidence: HistoricalCon
   </details>;
 }
 
-export function CityChronicle({ placeId, data, error }: { placeId: string; data: HistoricalContextData | null; error: string }) {
+export function CityChronicle({ placeId, period, data, error }: { placeId: string; period?: Period; data: HistoricalContextData | null; error: string }) {
+  const [scope, setScope] = useState<"all" | "period">("all");
+  useEffect(() => { setScope("all"); }, [period?.id]);
   const timeline = data?.cityTimelines.find(item => item.placeId === placeId);
-  return <section className="city-chronicle detail-section" aria-label="历代大事记">
-    <h3><span />历代大事记<small>{timeline ? `${timeline.entries.length} 条记录` : "持续补充"}</small></h3>
-    <p className="chronicle-intro">跨越当前时期，查看这座城的关键转折。精选节点持续补充，古今城址未必相同。</p>
-    {!data ? <p className="quiet-text" role="status">{error || "大事记加载中…"}</p> : !timeline ? <p className="quiet-text">此地的历代大事记尚待补充，可先查看下方已收录的相关事件。</p> :
-      <ol className="chronicle-list">{timeline.entries.map(entry => <li key={entry.id}>
+  const allEntries = timeline?.entries ?? [];
+  const periodEntries = period ? allEntries.filter(entry => entry.year >= period.startYear && entry.year <= period.endYear) : [];
+  const periodOnly = !!period && scope === "period";
+  const entries = periodOnly ? periodEntries : allEntries;
+  const title = periodOnly ? `${period.label} · 本朝大事记` : "历代大事记";
+  return <section className="city-chronicle detail-section" aria-label={title}>
+    <h3><span />{title}<small>{data ? `${entries.length} 条记录` : "持续补充"}</small></h3>
+    {period && <div className="chronicle-scope" role="group" aria-label="大事记时期">
+      <button type="button" aria-pressed={periodOnly} onClick={() => setScope("period")}>本朝 · {period.label}{data && <span>{periodEntries.length}</span>}</button>
+      <button type="button" aria-pressed={!periodOnly} onClick={() => setScope("all")}>历代{data && <span>{allEntries.length}</span>}</button>
+    </div>}
+    <p className="chronicle-intro">{periodOnly ? `按${period.name}起止年份筛选已收录节点，覆盖整个时期，不限于地图代表年。` : "跨越当前时期，查看这座城的关键转折。"}精选节点持续补充，古今城址未必相同。</p>
+    {!data ? <p className="quiet-text" role="status">{error || "大事记加载中…"}</p> : !entries.length ? <p className="quiet-text" role="status">{periodOnly ? `此地已收录的${period.name}大事记为 0 条。${allEntries.length ? `历代大事记有 ${allEntries.length} 条，可切换查看。` : "此地的其他时期大事记也尚待补充，可先查看下方相关事件。"}` : "此地的历代大事记尚待补充，可先查看下方已收录的相关事件。"}</p> :
+      <ol className="chronicle-list">{entries.map(entry => <li key={entry.id}>
         <time>{entry.dateLabel}</time><h4>{entry.title}</h4><p>{entry.summary}</p>
         <ContextEvidence evidence={entry.evidence} sources={data.sources} />
       </li>)}</ol>}

@@ -42,6 +42,7 @@ import "./map-topline.css";
 import { canInteract, mapInteractionOptions, type MapInteractionMode } from "../shared/map-interactions";
 import type { TangBoundaryCrosswalk } from "../shared/tang-boundary-crosswalk";
 import TangJurisdictionInfo from "./components/TangJurisdictionInfo";
+import MingJurisdictionInfo from "./components/MingJurisdictionInfo";
 
 function formatYear(year: number) {
   return year < 0 ? `公元前 ${Math.abs(year)} 年` : `公元 ${year} 年`;
@@ -704,6 +705,8 @@ export default function App() {
                       onRetry={() => setCityProfilesAttempt(value => value + 1)} />
                     {periodId === "tang" && <TangJurisdictionInfo name={placeName(place, period)} link={tangBoundaries?.places[place.id]} loading={!crosswalkLoaded}
                       onView={id => { setDetailsOpen(false); setJurisdictionRequest({ id, requestId: Date.now() }); }} />}
+                    {periodId === "ming" && <MingJurisdictionInfo placeId={place.id}
+                      onView={id => { setDetailsOpen(false); setJurisdictionRequest({ id, requestId: Date.now() }); }} />}
                     <div className="detail-section">
                       <h3>
                         <span />
@@ -796,7 +799,7 @@ export default function App() {
                         </div>
                       </div>
                     )}
-                    <CityChronicle placeId={place.id} data={historicalContext} error={contextError} />
+                    <CityChronicle placeId={place.id} period={period} data={historicalContext} error={contextError} />
                     <div className="detail-section related-section">
                       <h3>
                         <span />

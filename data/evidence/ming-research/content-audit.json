@@ -1,0 +1,43 @@
+{
+  "profileCount": 28,
+  "datedEntryCount": 65,
+  "newDatedEntryCount": 63,
+  "mergedExistingEntryCount": 2,
+  "clarifiedExistingEntryCount": 2,
+  "datedPlaceCount": 27,
+  "noExactDatedEntry": [
+    "yuzhou-chongqing"
+  ],
+  "cityIds": [
+    "beijing",
+    "changan",
+    "chengdu",
+    "dali",
+    "datong",
+    "ezhou-jiangxia",
+    "fuzhou-fujian",
+    "guangzhou",
+    "guizhou-guilin",
+    "handan",
+    "hangzhou",
+    "hongzhou",
+    "jingzhou",
+    "jinyang",
+    "kaifeng",
+    "linzi",
+    "luoyang",
+    "mingzhou",
+    "nanjing",
+    "qizhou-jinan",
+    "quanzhou",
+    "suzhou",
+    "tongguan",
+    "xiangyang",
+    "yangzhou",
+    "yanzhou",
+    "yinchuan",
+    "yuzhou-chongqing"
+  ],
+  "sources": 7,
+  "note": "未改写其他朝代档案、大事记，也未改动坐标或几何；同事件旧节点ID保留并合并证据，北京迁都与南京陪都两个1421年旧节点均区分1403年恢复南京名称；其他新增节点使用独立ming-timeline前缀。"
+}

@@ -40,4 +40,13 @@
 .period-city-highlight > p { margin: 0 0 14px; color: #63795b; font-size: 13px; line-height: 1.95; }
 .period-city-highlight > p.period-highlight-date-note { margin: -3px 0 11px; color: #8a977c; font-size: 10px; }
 .period-highlight-missing { margin: 0 0 18px; color: #939b84; font-size: 11px; line-height: 1.8; }
+.period-city-highlight .county-historical-research { border-color: #d2ddc3; }
+.period-city-highlight .county-research-entry > p { margin: 8px 0 12px; color: #63795b; font-size: 12px; line-height: 1.95; }
+.period-city-highlight .county-research-entry h4 { color: #4f6c47; }
+.period-city-highlight .county-research-limit, .period-city-highlight .county-research-original-note { color: #8a977c; font-size: 10px; line-height: 1.8; }
+.period-city-highlight .county-research-evidence summary { min-height: 36px; display: flex; align-items: center; cursor: pointer; }
+.period-city-highlight .county-historical-research + .context-evidence { margin-top: 14px; }
 @media (max-width: 720px) { .period-city-menu > summary { min-height: 44px; font-size: 11px; } .period-city-panel { right: 8px; width: calc(100% - 16px); padding: 14px; } .period-city-highlight { padding: 13px; } }
+.ming-jurisdiction-info { margin: 18px 0; padding: 14px; background: #f4f0e6; border: 1px solid #dfd7c7; border-radius: 8px; }
+.ming-jurisdiction-info h3 { margin: 0 0 8px; font-size: 14px; }
+.ming-jurisdiction-info p { margin: 8px 0 0; font-size: 12px; line-height: 1.8; color: #756958; }

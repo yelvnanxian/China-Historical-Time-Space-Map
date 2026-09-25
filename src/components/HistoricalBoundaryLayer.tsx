@@ -11,6 +11,7 @@ import type { ModernCorrespondenceData } from "../../shared/modern-correspondenc
 import { getBoundaryDisplayLabel } from "../../shared/boundary-labels";
 import { chinesePlaceName, localizedAdminType, localizedPolity } from "../../shared/place-name-localization";
 import type { TangCountyDiagnostics } from "../../shared/tang-county-diagnostics";
+import type { MingBoundaryResearchDocument } from "../../shared/ming-boundary-research";
 
 type RegionProperties = BoundarySelection & { color?: string; labelCoordinates?: [number, number]; sourceHierarchy?: { polity?: string } };
 type Regions = FeatureCollection<Polygon | MultiPolygon, RegionProperties>;
@@ -60,6 +61,21 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
   const error = manifestError || dataError;
   const [correspondences, setCorrespondences] = useState<ModernCorrespondenceData | null>(null);
   const [correspondenceError, setCorrespondenceError] = useState("");
+  const [mingResearch, setMingResearch] = useState<MingBoundaryResearchDocument>();
+  const [mingResearchError, setMingResearchError] = useState("");
+  useEffect(() => {
+    if (periodId !== "ming" || mingResearch) return;
+    const controller = new AbortController();
+    setMingResearchError("");
+    fetch("/data/ming-boundary-research.json", { signal: controller.signal })
+      .then(response => { if (!response.ok) throw Error(); return response.json(); })
+      .then(data => {
+        if (data.periodId !== "ming" || !data.byBoundary || !Array.isArray(data.unlinkedEntries)) throw Error();
+        setMingResearch(data);
+      })
+      .catch(error => { if (error.name !== "AbortError") setMingResearchError("明代建置史料暂时未能加载，请刷新重试。"); });
+    return () => controller.abort();
+  }, [periodId, mingResearch]);
   const datasets = useMemo(() => manifest?.datasets.filter(item => item.periodId === periodId) ?? [], [manifest, periodId]);
   const dataset: BoundaryDataset | undefined = datasets.find(item => item.id === datasetId)
     ?? [...datasets].sort((a, b) => Math.abs(a.year - currentYear) - Math.abs(b.year - currentYear))[0];
@@ -304,5 +320,6 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
     visibleLevels={visibleLevels} interactive={interactive} activeLevel={detail.activeLevel} zoom={zoom} onOpenAtlas={onOpenAtlas}
     selection={selection} onSelectionClose={() => setSelection(null)} currentYear={currentYear} loading={loading || !manifest && !error} error={error}
     countyDiagnostic={selectedDiagnostic} countyDiagnosticsError={periodId === "tang" ? countyDiagnosticsError : undefined}
+    mingResearch={periodId === "ming" ? mingResearch : undefined} mingResearchError={periodId === "ming" ? mingResearchError : undefined}
     regionOptions={regionOptions} onRegionSelect={focusRegion} correspondenceSources={correspondences?.sources ?? []} correspondenceError={correspondenceError} />;
 }

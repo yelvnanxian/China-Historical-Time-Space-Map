@@ -3,6 +3,8 @@ import { ArrowRight, ChevronDown, Landmark, MapPin, Search, X } from "lucide-rea
 import { filterCityProfiles, type CityPeriodProfilesData } from "../../shared/city-profiles";
 import type { Period, Place } from "../../shared/types";
 import { ContextEvidence } from "./HistoricalContext";
+import HistoricalResearchNotice from "./HistoricalResearchNotice";
+import { boundarySearchKey } from "../../shared/boundary-search";
 import "../city-period-highlights.css";
 
 type DataProps = { data: CityPeriodProfilesData | null; error: string; onRetry: () => void };
@@ -55,17 +57,23 @@ export default function CityPeriodHighlights({ period, places, data, error, onRe
 
 export function CityPeriodHighlight({ period, placeId, data, error, onRetry }: DataProps & { period: Period; placeId: string }) {
   const profile = data?.profiles.find(item => item.periodId === period.id && item.placeId === placeId);
+  const research = period.id === "ming" ? profile?.historicalResearch ?? [] : [];
+  const textKey = (text: string) => boundarySearchKey(text).replace(/\s+/g, "");
+  const summaryInResearch = !!profile && research.some(entry => textKey(entry.summary) === textKey(profile.summary));
+  const researchQuotes = new Set(research.flatMap(entry => entry.findings.flatMap(finding => finding.evidence.map(item => `${item.sourceId}:${textKey(item.quote)}`))));
+  const additionalEvidence = profile?.evidence.filter(item => !researchQuotes.has(`${item.sourceId}:${textKey(item.quote)}`)) ?? [];
   if (!profile && data && !error) return <p className="period-highlight-missing">此城的{period.label}专门看点尚待补充，以下为已收录的概览与沿革。</p>;
   return <section className="period-city-highlight" aria-label="本朝看点">
     <h3><Landmark size={15} />本朝看点<span>{period.label}</span></h3>
     {error ? <p className="period-city-status" role="status">{error}<button type="button" onClick={onRetry}>重新加载</button></p> : !profile || !data ? <p className="period-city-status" role="status">本朝看点加载中…</p> : <>
-      <p>{profile.summary}</p>
+      {!summaryInResearch && <p>{profile.summary}</p>}
       {(profile.namingNote || profile.politicalContext) && <dl className="period-city-notes">
         {profile.namingNote && <><dt>名称与年代</dt><dd>{profile.namingNote}</dd></>}
         {profile.politicalContext && <><dt>政区关系</dt><dd>{profile.politicalContext}</dd></>}
       </dl>}
       <p className="period-highlight-date-note">概览当前时期，不限于地图代表年；具体年代见文字与出处。</p>
-      <ContextEvidence evidence={profile.evidence} sources={data.sources} />
+      {research.length > 0 && <HistoricalResearchNotice entries={research} label="明代城市史料研究" limitNote="史料核查用于说明建置、沿革与事件；尚未据此核定古城址或重绘行政边界。" />}
+      {(!research.length || additionalEvidence.length > 0) && <ContextEvidence evidence={research.length ? additionalEvidence : profile.evidence} sources={data.sources} />}
     </>}
   </section>;
 }

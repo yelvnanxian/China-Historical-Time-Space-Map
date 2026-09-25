@@ -1,0 +1,1545 @@
+{
+  "id": "ming-geography-research-2026-09-25",
+  "schemaVersion": 2,
+  "periodId": "ming",
+  "title": "明代建置与治所史料核查包",
+  "generatedAt": "2026-09-25",
+  "method": "固定《明史》地理志快照逐字核引。只补文字史料；没有生成、修改边界或坐标。",
+  "sources": [
+    {
+      "id": "mingshi-geography-40",
+      "title": "《明史》卷40·地理志",
+      "kind": "historical-text",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2626762",
+      "snapshotPath": "data/evidence/ming-research/sources/mingshi-40.txt",
+      "snapshotSha256": "ce5f598d3c20024e51f2159862eaa7367fdd6d7895e48e3605d64945b8cad393",
+      "rawSnapshotPath": "data/evidence/ming-research/sources/mingshi-40.api.json",
+      "rawSnapshotSha256": "2fc1edf39b37ef8504d6758db71d78bcad9f55ac2d99afe3b839f8fb4368001c",
+      "retrievedAt": "2026-09-25",
+      "note": "《明史》是清代编纂的正史，并非明代同期原始档案；本轮以其地理志作为一条文献链。固定修订API原样归档；文本只展开YL年号模板和维基链接。所引文字已逐字核对，未据此核定古城坐标或精确政区边界。"
+    },
+    {
+      "id": "mingshi-geography-41",
+      "title": "《明史》卷41·地理志",
+      "kind": "historical-text",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2613089",
+      "snapshotPath": "data/evidence/ming-research/sources/mingshi-41.txt",
+      "snapshotSha256": "96bc8248ec8d53b054d4090c2ed4136f56569330590b89f5c1f7ae09de1b45d7",
+      "rawSnapshotPath": "data/evidence/ming-research/sources/mingshi-41.api.json",
+      "rawSnapshotSha256": "b5a260f50734d5e6d9122cb60dccb366e8a74cfdf926b73cd775d83d8ccd0e4b",
+      "retrievedAt": "2026-09-25",
+      "note": "《明史》是清代编纂的正史，并非明代同期原始档案；本轮以其地理志作为一条文献链。固定修订API原样归档；文本只展开YL年号模板和维基链接。所引文字已逐字核对，未据此核定古城坐标或精确政区边界。"
+    },
+    {
+      "id": "mingshi-geography-42",
+      "title": "《明史》卷42·地理志",
+      "kind": "historical-text",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2594654",
+      "snapshotPath": "data/evidence/ming-research/sources/mingshi-42.txt",
+      "snapshotSha256": "cd88cde2e233d77a9cbe74d02cd6d3b975ecf1e49d170edca744548e0d0cdc02",
+      "rawSnapshotPath": "data/evidence/ming-research/sources/mingshi-42.api.json",
+      "rawSnapshotSha256": "0b69b04dd4bed42d4eb680af59f178634f5f224b1912e0d6303a9d14e93c983a",
+      "retrievedAt": "2026-09-25",
+      "note": "《明史》是清代编纂的正史，并非明代同期原始档案；本轮以其地理志作为一条文献链。固定修订API原样归档；文本只展开YL年号模板和维基链接。所引文字已逐字核对，未据此核定古城坐标或精确政区边界。"
+    },
+    {
+      "id": "mingshi-geography-43",
+      "title": "《明史》卷43·地理志",
+      "kind": "historical-text",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2619812",
+      "snapshotPath": "data/evidence/ming-research/sources/mingshi-43.txt",
+      "snapshotSha256": "3cead06e33553483c0b084a964b921296d76f835f11c54ff3f3cc9e353a4bec5",
+      "rawSnapshotPath": "data/evidence/ming-research/sources/mingshi-43.api.json",
+      "rawSnapshotSha256": "084e5313c5b0859c3e575d6941f3656388c6afaee8d0e5094bdcbe6a7e7c7279",
+      "retrievedAt": "2026-09-25",
+      "note": "《明史》是清代编纂的正史，并非明代同期原始档案；本轮以其地理志作为一条文献链。固定修订API原样归档；文本只展开YL年号模板和维基链接。所引文字已逐字核对，未据此核定古城坐标或精确政区边界。"
+    },
+    {
+      "id": "mingshi-geography-44",
+      "title": "《明史》卷44·地理志",
+      "kind": "historical-text",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2619810",
+      "snapshotPath": "data/evidence/ming-research/sources/mingshi-44.txt",
+      "snapshotSha256": "2ff94465fdba8f12cef01a17004f433e7971cec36ca3c6d63a6aee14cddba812",
+      "rawSnapshotPath": "data/evidence/ming-research/sources/mingshi-44.api.json",
+      "rawSnapshotSha256": "98c43b1a5825438170732f73d1a8f55a1ba3e7056e6615d93ecbff47556922b7",
+      "retrievedAt": "2026-09-25",
+      "note": "《明史》是清代编纂的正史，并非明代同期原始档案；本轮以其地理志作为一条文献链。固定修订API原样归档；文本只展开YL年号模板和维基链接。所引文字已逐字核对，未据此核定古城坐标或精确政区边界。"
+    },
+    {
+      "id": "mingshi-geography-45",
+      "title": "《明史》卷45·地理志",
+      "kind": "historical-text",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2617014",
+      "snapshotPath": "data/evidence/ming-research/sources/mingshi-45.txt",
+      "snapshotSha256": "4a36747d003082d330498dadd66aa544de5f1b864d76e84651ddbe97bdf5bb27",
+      "rawSnapshotPath": "data/evidence/ming-research/sources/mingshi-45.api.json",
+      "rawSnapshotSha256": "da8b78c9f39b5d487a097b1096822d31f090dae2fd9c8df19ebe7a7446f5dbce",
+      "retrievedAt": "2026-09-25",
+      "note": "《明史》是清代编纂的正史，并非明代同期原始档案；本轮以其地理志作为一条文献链。固定修订API原样归档；文本只展开YL年号模板和维基链接。所引文字已逐字核对，未据此核定古城坐标或精确政区边界。"
+    },
+    {
+      "id": "mingshi-geography-46",
+      "title": "《明史》卷46·地理志",
+      "kind": "historical-text",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2626946",
+      "snapshotPath": "data/evidence/ming-research/sources/mingshi-46.txt",
+      "snapshotSha256": "58408c13a54475df3747dc592add4e67b84be4347e167748b2eae15d04f5c433",
+      "rawSnapshotPath": "data/evidence/ming-research/sources/mingshi-46.api.json",
+      "rawSnapshotSha256": "f07bb3bb61e9485f82c7fb3c0acf37d73f7497989ec5c568e2dc00c82ee4ab2d",
+      "retrievedAt": "2026-09-25",
+      "note": "《明史》是清代编纂的正史，并非明代同期原始档案；本轮以其地理志作为一条文献链。固定修订API原样归档；文本只展开YL年号模板和维基链接。所引文字已逐字核对，未据此核定古城坐标或精确政区边界。"
+    }
+  ],
+  "entries": [
+    {
+      "id": "ming-geography-changan",
+      "periodId": "ming",
+      "name": "西安府",
+      "region": "陕西布政司",
+      "summary": "西安府在洪武二年三月由奉元路改名，记载领六州三十一县。长安、咸宁二县同为附郭县，分别治城西、城东；洪武三年又在城中建立秦王府。城名、两县与府辖区需要分别理解。",
+      "namingNote": "明代入口使用“西安”；长安、咸宁是府城内并置的县，不能把“长安”古名或现代西安市界当作明代府界。",
+      "searchNames": [
+        "西安府",
+        "陕西布政司"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "西安府在洪武二年三月由奉元路改名，记载领六州三十一县。长安、咸宁二县同为附郭县，分别治城西、城东；洪武三年又在城中建立秦王府。城名、两县与府辖区需要分别理解。",
+          "evidence": [
+            {
+              "sourceId": "mingshi-geography-42",
+              "sourceTitle": "《明史》卷42·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2594654",
+              "quote": "西安府元奉元路，屬陝西行省。洪武二年三月改爲西安府。領州六，縣三十一：",
+              "locator": "卷42·西安府元"
+            },
+            {
+              "sourceId": "mingshi-geography-42",
+              "sourceTitle": "《明史》卷42·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2594654",
+              "quote": "長安倚。治西偏。洪武三年四月建秦王府。北有龍首山。南有終南山。西南有太一山，又有子午谷，谷中有關。北有渭水，源出鳥鼠山，流經縣界，至華陰入黃河。又西有灃水。又西北有鎬水，合滮水，又南有潏水，亦曰泬水，合澇水，俱北流入渭。",
+              "locator": "卷42·長安倚"
+            },
+            {
+              "sourceId": "mingshi-geography-42",
+              "sourceTitle": "《明史》卷42·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2594654",
+              "quote": "咸寧倚。治東偏。渭水在南。東有滻水，合霸水流入渭。",
+              "locator": "卷42·咸寧倚"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "文献能够证明本条建置与沿革，尚不能单独核定各阶段治所坐标、城墙范围或府县精确边界。",
+        "当前1391年Hartwell模型早于1582年地图截面；《明史》领州县总数也属于综合记载，不能当作两年任一年的精确区划快照。"
+      ],
+      "catalogPlaceId": "changan"
+    },
+    {
+      "id": "ming-geography-luoyang",
+      "periodId": "ming",
+      "name": "河南府",
+      "region": "河南布政司",
+      "summary": "河南府由元河南府路在洪武元年改置，记载领一州十三县，洛阳为附郭县。洪武二十四年建伊王府，嘉靖四十三年废；万历二十九年又建福王府，显示同城内政治建置随年代变化。",
+      "namingNote": "洛阳是城与附郭县入口，上级府称河南府；伊王府和福王府属于城内不同年代的王府。",
+      "searchNames": [
+        "河南府",
+        "河南布政司"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "河南府由元河南府路在洪武元年改置，记载领一州十三县，洛阳为附郭县。洪武二十四年建伊王府，嘉靖四十三年废；万历二十九年又建福王府，显示同城内政治建置随年代变化。",
+          "evidence": [
+            {
+              "sourceId": "mingshi-geography-42",
+              "sourceTitle": "《明史》卷42·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2594654",
+              "quote": "河南府元河南府路，屬河南江北行中書省。洪武元年爲府。領州一，縣十三。東距布政司三百八十里。",
+              "locator": "卷42·河南府元"
+            },
+            {
+              "sourceId": "mingshi-geography-42",
+              "sourceTitle": "《明史》卷42·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2594654",
+              "quote": "洛陽倚。洪武二十四年建伊王府。嘉靖四十三年廢。萬曆二十九年十月建福王府。北有北邙山，西南有闕塞山，亦曰闕口山，亦曰伊闕山，俗曰龍門山。又西北有谷城山，亦曰簪亭山，湹水所出。又東南有大谷，谷口有關。又大河在北。又有洛水，源自洛南冢嶺山，東經盧氏、永寧諸縣，至洛陽、偃師、鞏縣入於河。又東有伊水，自盧氏縣東北流至偃師縣而入洛。又北有朅水，西有澗水，俱流會於洛。又西南有孝水。",
+              "locator": "卷42·洛陽倚"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "文献能够证明本条建置与沿革，尚不能单独核定各阶段治所坐标、城墙范围或府县精确边界。",
+        "当前1391年Hartwell模型早于1582年地图截面；《明史》领州县总数也属于综合记载，不能当作两年任一年的精确区划快照。"
+      ],
+      "catalogPlaceId": "luoyang"
+    },
+    {
+      "id": "ming-geography-beijing",
+      "periodId": "ming",
+      "name": "顺天府",
+      "region": "京师直隶",
+      "summary": "此地明初改为北平府，永乐元年升为北京并改称顺天府。永乐四年下诏营建北京宫殿，十九年告成；嘉靖三十二年又筑南部外城。大兴、宛平是附郭县，宫城、京城与府辖州县分属不同空间层次。",
+      "namingNote": "北京、北平府、顺天府名称对应不同政治与行政层级；本档案跨明代叙述，不将全期名称同时作为1582年的正式建置。",
+      "searchNames": [
+        "顺天府",
+        "京师直隶"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "此地明初改为北平府，永乐元年升为北京并改称顺天府。永乐四年下诏营建北京宫殿，十九年告成；嘉靖三十二年又筑南部外城。大兴、宛平是附郭县，宫城、京城与府辖州县分属不同空间层次。",
+          "evidence": [
+            {
+              "sourceId": "mingshi-geography-40",
+              "sourceTitle": "《明史》卷40·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2626762",
+              "quote": "順天府元大都路，直隸中書省。洪武元年八月改爲北平府。十月屬山東行省。二年三月改屬北平。三年四月建燕王府。永樂元年正月陞爲北京，改府爲順天府。永樂四年閏七月詔建北京宮殿，修城垣。十九年正月告成。宮城周六里一十六步，亦曰紫禁城。門八：正南第一重曰承天，第二重曰端門，第三重曰午門，東曰東華，西曰西華，北曰玄武。宮城之外爲皇城，周一十八里有奇。門六：正南曰大明，東曰東安，西曰西安，北曰北安，大明門東轉曰長安左，西轉曰長安右。皇城之外曰京城，周四十五里。門九：正南曰麗正，正統初改曰正陽；南之左曰文明，後曰崇文；南之右曰順城，後曰宣武；東之南曰齊化，後曰朝陽；東之北曰東直；西之南曰平則，後曰阜成；西之北曰彰儀，後曰西直；北之東曰安定；北之西曰德勝。嘉靖三十二年築重城，包京城之南，轉抱東西角樓，長二十八里。門七：正南曰永定，南之左爲左安，南之右爲右安，東曰廣渠，東之北曰東便，西曰廣寧，西之北曰西便。領州五，縣二十二。弘治四年編戶一十萬五百一十八，口六十六萬九千三十三。萬曆六年，戶一十萬一千一百三十四，口七十萬六千八百六十一。",
+              "locator": "卷40·順天府元"
+            },
+            {
+              "sourceId": "mingshi-geography-40",
+              "sourceTitle": "《明史》卷40·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2626762",
+              "quote": "大興倚。東南有大通河，亦日通惠河，水自玉河出，繞都城東南，下流至高麗莊，入白河，即元運河也。又有玉河，源自玉泉山，流經大內，出都城東南，注大通河。",
+              "locator": "卷40·大興倚"
+            },
+            {
+              "sourceId": "mingshi-geography-40",
+              "sourceTitle": "《明史》卷40·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2626762",
+              "quote": "宛平倚。西山在西。有桑乾河出山西馬邑縣，流千里入京師宛平縣境。出盧溝橋下，又東南分爲二：一至通州，入白河；一至武清小直沽，合衛河，入於海。又有沙河、高梁河、清河，皆在西北。西又有沿河口守禦千戶所，有盧溝、王平口、石港口、齊家莊四巡檢司。",
+              "locator": "卷40·宛平倚"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "文献能够证明本条建置与沿革，尚不能单独核定各阶段治所坐标、城墙范围或府县精确边界。",
+        "当前1391年Hartwell模型早于1582年地图截面；《明史》领州县总数也属于综合记载，不能当作两年任一年的精确区划快照。"
+      ],
+      "catalogPlaceId": "beijing"
+    },
+    {
+      "id": "ming-geography-kaifeng",
+      "periodId": "ming",
+      "name": "开封府",
+      "region": "河南布政司",
+      "summary": "洪武元年五月由汴梁路改开封府，八月曾建北京，洪武十一年罢去这一称号。祥符是附郭县，同年建立周王府。《明史》又记正统十三年黄河决荥阳后从城西南流过，城与河的相对位置因此改变。",
+      "namingNote": "洪武时期“北京”是开封的阶段称号；府治祥符与开封府不可混同，也不可同永乐后的北京混读。",
+      "searchNames": [
+        "开封府",
+        "河南布政司"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "洪武元年五月由汴梁路改开封府，八月曾建北京，洪武十一年罢去这一称号。祥符是附郭县，同年建立周王府。《明史》又记正统十三年黄河决荥阳后从城西南流过，城与河的相对位置因此改变。",
+          "evidence": [
+            {
+              "sourceId": "mingshi-geography-42",
+              "sourceTitle": "《明史》卷42·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2594654",
+              "quote": "開封府元汴梁路，屬河南江北行省。洪武元年五月曰開封府。八月建北京。十一年，京罷。領州四，縣三十：",
+              "locator": "卷42·開封府元"
+            },
+            {
+              "sourceId": "mingshi-geography-42",
+              "sourceTitle": "《明史》卷42·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2594654",
+              "quote": "祥符倚。洪武十一年正月建周王府。大河舊在城北。正統十三年，河決滎陽，東過城西南，而城遂在河北。東爲開封縣，元時同治郭內，洪武中省。南有硃仙鎮。東北有陳橋鎮。",
+              "locator": "卷42·祥符倚"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "文献能够证明本条建置与沿革，尚不能单独核定各阶段治所坐标、城墙范围或府县精确边界。",
+        "当前1391年Hartwell模型早于1582年地图截面；《明史》领州县总数也属于综合记载，不能当作两年任一年的精确区划快照。"
+      ],
+      "catalogPlaceId": "kaifeng"
+    },
+    {
+      "id": "ming-geography-nanjing",
+      "periodId": "ming",
+      "name": "应天府",
+      "region": "南京直隶",
+      "summary": "应天府由集庆路改置，洪武元年建都称南京，洪武十一年改称京师，永乐元年仍称南京。洪武二年开始的新城营建和二十三年的外郭营建分属不同工程；上元、江宁是附郭县，府域不等于城墙围合范围。",
+      "namingNote": "南京是政治与城市称号，应天府为府级建置；上元、江宁两附郭县与宫城、京城、外郭须区分。",
+      "searchNames": [
+        "应天府",
+        "南京直隶"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "应天府由集庆路改置，洪武元年建都称南京，洪武十一年改称京师，永乐元年仍称南京。洪武二年开始的新城营建和二十三年的外郭营建分属不同工程；上元、江宁是附郭县，府域不等于城墙围合范围。",
+          "evidence": [
+            {
+              "sourceId": "mingshi-geography-40",
+              "sourceTitle": "《明史》卷40·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2626762",
+              "quote": "應天府元集慶路，屬江浙行省。太祖丙申年三月曰應天府。洪武元年八月建都，曰南京。十一年曰京師。永樂元年仍曰南京。洪武二年九月始建新城，六年八月成。內爲宮城，亦曰紫禁城，門六：正南曰午門，左曰左掖，右曰右掖，東曰東安，西曰西安，北曰北安。宮城之外門六：正南曰洪武，東曰長安左，西曰長安右，東之北曰東華，西之北曰西華，北曰玄武。皇城之外曰京城，周九十六里，門十三：南曰正陽，南之西曰通濟，又西曰聚寶，西南曰三山，曰石城，北曰太平，北之西曰神策，曰金川，曰鍾阜，東曰朝陽，西曰清涼，西之北曰定淮，曰儀鳳。後塞鍾阜、儀鳳二門，存十一門。其外郭，洪武二十三年四月建，周一百八十里，門十有六：東曰姚坊、仙鶴、麒麟、滄波、高橋、雙橋，南曰上方、夾岡、鳳台、大馴象、大安德、小安德，西曰江東，北曰佛寧、上元、觀音。領縣八。洪武二十六年編戶一十六萬三千九百一十五，口一百十九萬三千六百二十。弘治四年，戶一十四萬四千三百六十八，口七十一萬一千三。萬曆六年，戶一十四萬三千五百九十七，口七十九萬五百一十三。",
+              "locator": "卷40·應天府元"
+            },
+            {
+              "sourceId": "mingshi-geography-40",
+              "sourceTitle": "《明史》卷40·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2626762",
+              "quote": "上元倚。太祖丙申年遷縣治淳化鎮，明年復還舊治。東北有鐘山，山南有孝陵衛，洪武三十一年置。北有覆舟山。西北有雞鳴山、幕府山。又東北有攝山。東南有方山。北濱大江。東南有秦淮水，北流入城，又西出，入大江。又北有玄武湖。東有青溪，又有淳化鎮巡檢司。",
+              "locator": "卷40·上元倚"
+            },
+            {
+              "sourceId": "mingshi-geography-40",
+              "sourceTitle": "《明史》卷40·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2626762",
+              "quote": "江寧倚。南有聚寶山、牛首山。西南有三山、烈山、慈姥山。西濱大江。東北有靖安河。西南有大勝關、江寧鎮。東南有秣陵關。西有江東四巡檢司。北有龍江關，置戶分司於此。",
+              "locator": "卷40·江寧倚"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "文献能够证明本条建置与沿革，尚不能单独核定各阶段治所坐标、城墙范围或府县精确边界。",
+        "当前1391年Hartwell模型早于1582年地图截面；《明史》领州县总数也属于综合记载，不能当作两年任一年的精确区划快照。"
+      ],
+      "catalogPlaceId": "nanjing"
+    },
+    {
+      "id": "ming-geography-hangzhou",
+      "periodId": "ming",
+      "name": "杭州府",
+      "region": "浙江布政司",
+      "summary": "杭州府于太祖丙午年十一月由杭州路改置，记载领九县。钱塘、仁和为附郭县；钱塘县条载钱塘江、西湖和运河，仁和县条载临平湖后塞，以及成化年间在北新关设户部分司。",
+      "namingNote": "杭州府、钱塘县、仁和县不同级；档案所记丙午年为明朝建立前的沿革节点，不把府名变化误标为洪武年间。",
+      "searchNames": [
+        "杭州府",
+        "浙江布政司"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "杭州府于太祖丙午年十一月由杭州路改置，记载领九县。钱塘、仁和为附郭县；钱塘县条载钱塘江、西湖和运河，仁和县条载临平湖后塞，以及成化年间在北新关设户部分司。",
+          "evidence": [
+            {
+              "sourceId": "mingshi-geography-44",
+              "sourceTitle": "《明史》卷44·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2619810",
+              "quote": "杭州府元杭州路，屬江浙行省。太祖丙午年十一月爲府。領縣九：",
+              "locator": "卷44·杭州府元"
+            },
+            {
+              "sourceId": "mingshi-geography-44",
+              "sourceTitle": "《明史》卷44·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2619810",
+              "quote": "錢塘倚。洪武三年四月建吳王府。十一年正月改封周王，遷河南開封府。南有鳳凰山，有秦望山。西南有靈隱山。南有錢塘江，亦曰浙江，有三源：曰新安江，出南直歙縣；曰信安江，出開化縣；曰東陽江，出東陽縣。匯而東爲錢塘江，至會稽縣三江海口入海。西有西湖，源出武林泉。又北有運河，至秀水縣北，而接南直運河。又有安溪，即苕溪也，自餘杭縣流入，下流至烏程縣東北，注於太湖。",
+              "locator": "卷44·錢塘倚"
+            },
+            {
+              "sourceId": "mingshi-geography-44",
+              "sourceTitle": "《明史》卷44·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2619810",
+              "quote": "仁和倚。東北有皋亭山，有臨平山，下有臨平湖，後塞。北有北新關，成化中設戶部分司於此。又有塘棲鎮。",
+              "locator": "卷44·仁和倚"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "文献能够证明本条建置与沿革，尚不能单独核定各阶段治所坐标、城墙范围或府县精确边界。",
+        "当前1391年Hartwell模型早于1582年地图截面；《明史》领州县总数也属于综合记载，不能当作两年任一年的精确区划快照。"
+      ],
+      "catalogPlaceId": "hangzhou"
+    },
+    {
+      "id": "ming-geography-chengdu",
+      "periodId": "ming",
+      "name": "成都府",
+      "region": "四川布政司",
+      "summary": "成都府由成都路在洪武四年改置，记载领六州二十五县。成都、华阳是附郭县，成都县条明确记洪武十一年建立蜀王府；华阳县条则记府城周边多条水道，城内建置与府域州县不可视作同一范围。",
+      "namingNote": "成都府与成都县、华阳县以及蜀王府是不同层级的对象；建府和王府营建使用各自史载年代。",
+      "searchNames": [
+        "成都府",
+        "四川布政司"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "成都府由成都路在洪武四年改置，记载领六州二十五县。成都、华阳是附郭县，成都县条明确记洪武十一年建立蜀王府；华阳县条则记府城周边多条水道，城内建置与府域州县不可视作同一范围。",
+          "evidence": [
+            {
+              "sourceId": "mingshi-geography-43",
+              "sourceTitle": "《明史》卷43·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2619812",
+              "quote": "成都府元成都路。洪武四年爲府。領州六，縣二十五：",
+              "locator": "卷43·成都府元"
+            },
+            {
+              "sourceId": "mingshi-geography-43",
+              "sourceTitle": "《明史》卷43·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2619812",
+              "quote": "成都倚。洪武十一年建蜀王府。",
+              "locator": "卷43·成都倚"
+            },
+            {
+              "sourceId": "mingshi-geography-43",
+              "sourceTitle": "《明史》卷43·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2619812",
+              "quote": "華陽倚。北有武擔山。又有外江，自灌縣分流經城北，繞城而南，一名清遠江。又有內江，亦自灌縣分流經城南，繞城而東，亦名石犀渠。合流南注於大江。此府城之內、外江也。東有寧州衛，洪武十一年四月置。東南有馬軍寨巡檢司。",
+              "locator": "卷43·華陽倚"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "文献能够证明本条建置与沿革，尚不能单独核定各阶段治所坐标、城墙范围或府县精确边界。",
+        "当前1391年Hartwell模型早于1582年地图截面；《明史》领州县总数也属于综合记载，不能当作两年任一年的精确区划快照。"
+      ],
+      "catalogPlaceId": "chengdu"
+    },
+    {
+      "id": "ming-geography-guangzhou",
+      "periodId": "ming",
+      "name": "广州府",
+      "region": "广东布政司",
+      "summary": "广州府由广州路在洪武元年改置，记载领一州十五县。南海、番禺二县同为附郭县；南海条解释西江、北江、东江会合的三江水系，番禺条另列巡检司，反映府城、县与基层关津的不同层级。",
+      "namingNote": "广州府不等于现代广州市；南海、番禺是明代附郭县，史书水道记载也不代表已经核定当时河岸线。",
+      "searchNames": [
+        "广州府",
+        "广东布政司"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "广州府由广州路在洪武元年改置，记载领一州十五县。南海、番禺二县同为附郭县；南海条解释西江、北江、东江会合的三江水系，番禺条另列巡检司，反映府城、县与基层关津的不同层级。",
+          "evidence": [
+            {
+              "sourceId": "mingshi-geography-45",
+              "sourceTitle": "《明史》卷45·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2617014",
+              "quote": "廣州府 元廣州路，屬廣東道宣慰司。洪武元年爲府。領州一，縣十五：",
+              "locator": "卷45·廣州府 元"
+            },
+            {
+              "sourceId": "mingshi-geography-45",
+              "sourceTitle": "《明史》卷45·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2617014",
+              "quote": "南海倚。西北有石門山、雙女山。南濱海。又南有三江口。三江者，一曰西江，上流合黔、鬱、桂三水，自廣西梧州府流入；一曰北江，即湞水；一曰東江，即龍川水。俱與西江會，經番禺縣南，入於南海。西北有三江巡檢司，本治側水村，後遷村堡。又有金利、西南有神安、又有黃鼎、又有江浦四巡檢司。又南有五斗口巡檢司，後遷磨刀口，又遷佛山鎮。",
+              "locator": "卷45·南海倚"
+            },
+            {
+              "sourceId": "mingshi-geography-45",
+              "sourceTitle": "《明史》卷45·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2617014",
+              "quote": "番禺倚。在城有番、禺二山，縣是以名。東有鹿步、南有沙灣、北有慕德、東南有茭塘、又有獅嶺五巡檢司。",
+              "locator": "卷45·番禺倚"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "文献能够证明本条建置与沿革，尚不能单独核定各阶段治所坐标、城墙范围或府县精确边界。",
+        "当前1391年Hartwell模型早于1582年地图截面；《明史》领州县总数也属于综合记载，不能当作两年任一年的精确区划快照。"
+      ],
+      "catalogPlaceId": "guangzhou"
+    },
+    {
+      "id": "ming-geography-yangzhou",
+      "periodId": "ming",
+      "name": "扬州府",
+      "region": "南京直隶",
+      "summary": "扬州在太祖丁酉年称淮海府，辛丑年称维扬府，丙午年改称扬州府，均为明朝建立前的建置沿革。府领三州七县，江都是附郭县；江都条记官河即古邗沟、当时运河，并列江边和湖滨巡检司。",
+      "namingNote": "淮海府—维扬府—扬州府分别对应1357、1361、1366年；地图明代常用名取扬州，不能把三名当三座城市。",
+      "searchNames": [
+        "扬州府",
+        "南京直隶"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "扬州在太祖丁酉年称淮海府，辛丑年称维扬府，丙午年改称扬州府，均为明朝建立前的建置沿革。府领三州七县，江都是附郭县；江都条记官河即古邗沟、当时运河，并列江边和湖滨巡检司。",
+          "evidence": [
+            {
+              "sourceId": "mingshi-geography-40",
+              "sourceTitle": "《明史》卷40·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2626762",
+              "quote": "揚州府元揚州路，屬淮東道宣慰司。太祖丁酉年十月曰淮海府。辛丑年十二月曰維揚府。丙午年正月曰揚州府。領州三，縣七。西距南京二百二十里。洪武二十六年編戶一十二萬三千九十七，口七十三萬六千一百六十五。弘治四年，戶一十萬四千一百四，口六十五萬六千五百四十七。萬曆六年，戶一十四萬七千二百一十六，口八十一萬七千八百五十六。",
+              "locator": "卷40·揚州府元"
+            },
+            {
+              "sourceId": "mingshi-geography-40",
+              "sourceTitle": "《明史》卷40·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2626762",
+              "quote": "江都倚。元末廢。太祖辛丑年復置。西有蜀岡。東有官河，即古邗溝，今運河也。南濱大江。東北有艾陵湖。北有邵伯湖，有邵伯鎮巡檢司。又東有萬壽鎮、西北有上官橋、南有瓜洲鎮三巡檢司。又東有歸仁鎮巡檢司，後遷便益河口。",
+              "locator": "卷40·江都倚"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "文献能够证明本条建置与沿革，尚不能单独核定各阶段治所坐标、城墙范围或府县精确边界。",
+        "当前1391年Hartwell模型早于1582年地图截面；《明史》领州县总数也属于综合记载，不能当作两年任一年的精确区划快照。"
+      ],
+      "catalogPlaceId": "yangzhou"
+    },
+    {
+      "id": "ming-geography-xiangyang",
+      "periodId": "ming",
+      "name": "襄阳府",
+      "region": "湖广布政司",
+      "summary": "襄阳府由元襄阳路改置，先属湖广，洪武二十四年六月曾改属河南，旋又归湖广。襄阳县为附郭县，正统元年襄王府由长沙迁来；县条另记汉水、白河、唐河及樊城，供辨别府城周边地点。",
+      "namingNote": "襄阳府、襄阳县与樊城是不同层级或地点；河南隶属只是史载短期变化，不能套用整个明代。",
+      "searchNames": [
+        "襄阳府",
+        "湖广布政司"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "襄阳府由元襄阳路改置，先属湖广，洪武二十四年六月曾改属河南，旋又归湖广。襄阳县为附郭县，正统元年襄王府由长沙迁来；县条另记汉水、白河、唐河及樊城，供辨别府城周边地点。",
+          "evidence": [
+            {
+              "sourceId": "mingshi-geography-44",
+              "sourceTitle": "《明史》卷44·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2619810",
+              "quote": "襄陽府元襄陽路，屬河南江北行省。太祖甲辰年爲府，屬湖廣行省。九年屬湖廣佈政司。二十四年六月改屬河南，未幾，還屬湖廣。領州一，縣六。東南距布政司六百八十里。",
+              "locator": "卷44·襄陽府元"
+            },
+            {
+              "sourceId": "mingshi-geography-44",
+              "sourceTitle": "《明史》卷44·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2619810",
+              "quote": "襄陽倚。正統元年，襄王府自長沙遷此。南有虎頭山，又有峴山。東南有鹿門山。又西有隆中山。漢水在城北，亦曰襄江。白河在城東北，與唐河合，南入漢，謂之白河口，亦曰三州口。又西北有青泥河，南有浮河，西南有檀溪，下流皆入於漢。北有樊城，有樊城關巡檢司，後移於縣東北之柳樹頭。又東北有雙溝口巡檢司。又西有油坊灘巡檢司，嘉靖十九年移於縣西北之北泰山廟鎮。",
+              "locator": "卷44·襄陽倚"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "文献能够证明本条建置与沿革，尚不能单独核定各阶段治所坐标、城墙范围或府县精确边界。",
+        "当前1391年Hartwell模型早于1582年地图截面；《明史》领州县总数也属于综合记载，不能当作两年任一年的精确区划快照。"
+      ],
+      "catalogPlaceId": "xiangyang"
+    },
+    {
+      "id": "ming-geography-jingzhou",
+      "periodId": "ming",
+      "name": "荆州府",
+      "region": "湖广布政司",
+      "summary": "荆州府由元中兴路改置，曾在湖广、河南之间转隶，洪武二十四年还属湖广。江陵为附郭县；洪武十一年建湘王府，永乐元年辽王府从广宁迁来，万历二十九年又建惠王府，名称应随时代分别阅读。",
+      "namingNote": "江陵是城与附郭县入口，府级行政名为荆州府；不同王府并非本地图新增的独立府级辖区。",
+      "searchNames": [
+        "荆州府",
+        "湖广布政司"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "荆州府由元中兴路改置，曾在湖广、河南之间转隶，洪武二十四年还属湖广。江陵为附郭县；洪武十一年建湘王府，永乐元年辽王府从广宁迁来，万历二十九年又建惠王府，名称应随时代分别阅读。",
+          "evidence": [
+            {
+              "sourceId": "mingshi-geography-44",
+              "sourceTitle": "《明史》卷44·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2619810",
+              "quote": "荊州府元中興路，屬荊湖北道。太祖甲辰年九月改爲荊州府，屬湖廣行省。吳元年十月置湖廣分省於此，尋罷。九年屬湖廣佈政司，尋改屬河南。二十四年還屬。領州二，縣十一。東距布政司千二百一十里。",
+              "locator": "卷44·荊州府元"
+            },
+            {
+              "sourceId": "mingshi-geography-44",
+              "sourceTitle": "《明史》卷44·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2619810",
+              "quote": "江陵倚。洪武十一年正月建湘王府，建文元年四月除。永樂元年，遼王府自遼東廣寧遷於此，隆慶二年十月除。萬曆二十九年十月建惠王府。南濱江。東南有夏水，至沔陽州合於沔水，故沔水亦兼夏水之名。又有陽水，東北至景陵縣，入沔水。又東北有三海，沮、漳水匯流處。北有柞溪。又東有靈溪，亦曰零水，南入江，謂之零口。東北有龍彎市、東南有沙頭市、南有郝穴口、西南有虎渡口四巡檢司。",
+              "locator": "卷44·江陵倚"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "文献能够证明本条建置与沿革，尚不能单独核定各阶段治所坐标、城墙范围或府县精确边界。",
+        "当前1391年Hartwell模型早于1582年地图截面；《明史》领州县总数也属于综合记载，不能当作两年任一年的精确区划快照。"
+      ],
+      "catalogPlaceId": "jingzhou"
+    },
+    {
+      "id": "ming-geography-jinyang",
+      "periodId": "ming",
+      "name": "太原县",
+      "region": "山西布政司·太原府",
+      "summary": "本入口关联明代太原县地区，县原称平晋，洪武四年迁治汾水西、故晋阳城南关，八年更名太原。其上级太原府的附郭县是阳曲，并非本县；同名府、县与晋阳旧城的空间关系必须分别阅读。",
+      "namingNote": "明代本入口显示太原县，保留原有晋阳地区参考点；太原府治在阳曲，不借同名府的史料把该点当作府治。",
+      "searchNames": [
+        "太原县",
+        "山西布政司·太原府"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "本入口关联明代太原县地区，县原称平晋，洪武四年迁治汾水西、故晋阳城南关，八年更名太原。其上级太原府的附郭县是阳曲，并非本县；同名府、县与晋阳旧城的空间关系必须分别阅读。",
+          "evidence": [
+            {
+              "sourceId": "mingshi-geography-41",
+              "sourceTitle": "《明史》卷41·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2613089",
+              "quote": "太原府元冀寧路，屬河東山西道宣慰司。洪武元年十二月改爲太原府，領州五，縣二十：",
+              "locator": "卷41·太原府元"
+            },
+            {
+              "sourceId": "mingshi-geography-41",
+              "sourceTitle": "《明史》卷41·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2613089",
+              "quote": "陽曲倚。洪武三年四月建晉王府於城外東北維。西有汾水，自靜樂縣流經此，下流至滎河縣合大河。西北有天門關巡檢司。東北有石嶺關巡檢司。",
+              "locator": "卷41·陽曲倚"
+            },
+            {
+              "sourceId": "mingshi-geography-41",
+              "sourceTitle": "《明史》卷41·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2613089",
+              "quote": "太原府西南。元曰平晉，治在今東北。洪武四年移於汾水西，故晉陽城之南關。八年更名太原。西有懸甕山，一名龍山，又名結絀山，晉水所出，下流入於汾。西北有蒙山。東有汾水。東南有洞渦水，源自樂平，下流入汾。",
+              "locator": "卷41·太原府西南"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "文献能够证明本条建置与沿革，尚不能单独核定各阶段治所坐标、城墙范围或府县精确边界。",
+        "当前1391年Hartwell模型早于1582年地图截面；《明史》领州县总数也属于综合记载，不能当作两年任一年的精确区划快照。"
+      ],
+      "catalogPlaceId": "jinyang"
+    },
+    {
+      "id": "ming-geography-datong",
+      "periodId": "ming",
+      "name": "大同府",
+      "region": "山西布政司",
+      "summary": "大同在洪武二年置府，记载领四州七县，大同县为附郭县。洪武二十五年建立代王府；同年山西行都指挥使司又由旧治迁到大同府，府县民政与军卫系统在同城并存，需要分开理解。",
+      "namingNote": "明代入口使用大同；大同府、大同县、代王府与山西行都司不是同一级单位，不能据同城关系合并界线。",
+      "searchNames": [
+        "大同府",
+        "山西布政司"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "大同在洪武二年置府，记载领四州七县，大同县为附郭县。洪武二十五年建立代王府；同年山西行都指挥使司又由旧治迁到大同府，府县民政与军卫系统在同城并存，需要分开理解。",
+          "evidence": [
+            {
+              "sourceId": "mingshi-geography-41",
+              "sourceTitle": "《明史》卷41·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2613089",
+              "quote": "大同府元在同路，屬河東山西道宣慰司。洪武二年爲府。領州四，縣七。南距布政司六百七十里。",
+              "locator": "卷41·大同府元"
+            },
+            {
+              "sourceId": "mingshi-geography-41",
+              "sourceTitle": "《明史》卷41·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2613089",
+              "quote": "大同倚。洪武二十五年三月建代王府。北有方山。西北有雷公山。東有紇真山。又東北有白登山。又西有大河。又南有桑乾河，自馬邑縣流經此，其下流至蔚州入北直境，爲盧溝河。又西北有金河，又有紫河，皆流入大河。又西有武州山，武州川水出焉。又東有御河，一名如渾水，南有十里河流合焉，即武州川也，俗曰合河，南入於桑乾。北有威寧海子。又有孤店、開山、虎峪、白陽等口，俱在東北。又北有貓兒莊。",
+              "locator": "卷41·大同倚"
+            },
+            {
+              "sourceId": "mingshi-geography-41",
+              "sourceTitle": "《明史》卷41·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2613089",
+              "quote": "山西行都指揮使司本大同都衛，洪武四年正月置。治白羊城。八年十月更名。二十五年八月徙治大同府。二十六年二月領衛二十六，宣府左、右，萬全左、右，懷安五衛，改屬萬全都司。後領衛十四。朔州衛治州城，安東中屯衛寄治應州城。",
+              "locator": "卷41·山西行都指揮使司本"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "文献能够证明本条建置与沿革，尚不能单独核定各阶段治所坐标、城墙范围或府县精确边界。",
+        "当前1391年Hartwell模型早于1582年地图截面；《明史》领州县总数也属于综合记载，不能当作两年任一年的精确区划快照。"
+      ],
+      "catalogPlaceId": "datong"
+    },
+    {
+      "id": "ming-geography-linzi",
+      "periodId": "ming",
+      "name": "临淄县",
+      "region": "山东布政司·青州府",
+      "summary": "《明史》将临淄列为青州府属县，位于府西北；青州府由元益都路在吴元年改置。临淄条记牛山、鼎足山、天齐渊以及淄水、渑水、时水等水系，这是明代地理描述，未直接给出县城坐标或县界。",
+      "namingNote": "临淄在明代是青州府属县，不能继续套用齐国都城或临淄郡的政区层级；本轮不据古河名绘制精确河道。",
+      "searchNames": [
+        "临淄县",
+        "山东布政司·青州府"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "《明史》将临淄列为青州府属县，位于府西北；青州府由元益都路在吴元年改置。临淄条记牛山、鼎足山、天齐渊以及淄水、渑水、时水等水系，这是明代地理描述，未直接给出县城坐标或县界。",
+          "evidence": [
+            {
+              "sourceId": "mingshi-geography-41",
+              "sourceTitle": "《明史》卷41·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2613089",
+              "quote": "青州府元益都路，屬山東東西道宣慰司。太祖吳元年爲青州府。領州一，縣十三。西距布政司三百二十里。",
+              "locator": "卷41·青州府元"
+            },
+            {
+              "sourceId": "mingshi-geography-41",
+              "sourceTitle": "《明史》卷41·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2613089",
+              "quote": "臨淄府西北。南有牛山。又有鼎足山，女水出焉，下流合北陽水。又有蒨山。又有南郊山，其下爲天齊淵。城東有淄水，又西有澠水，又有系水，下流俱入時水。其時水自西南而東北，亦曰耏水，又有澅水流入焉，下流俱至樂安縣入海。南有淄河店巡檢司，後廢。",
+              "locator": "卷41·臨淄府西北"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "文献能够证明本条建置与沿革，尚不能单独核定各阶段治所坐标、城墙范围或府县精确边界。",
+        "当前1391年Hartwell模型早于1582年地图截面；《明史》领州县总数也属于综合记载，不能当作两年任一年的精确区划快照。"
+      ],
+      "catalogPlaceId": "linzi"
+    },
+    {
+      "id": "ming-geography-handan",
+      "periodId": "ming",
+      "name": "邯郸县",
+      "region": "京师直隶·广平府",
+      "summary": "邯郸在元代属磁州，洪武元年转属广平府。《明史》将其记在府西南，并列西北的洺河和东部的滏阳河。广平府自身在明初也有转隶变化；县级邯郸与府级广平不能共用一个辖区。",
+      "namingNote": "明代邯郸为广平府属县；古赵都、邯郸县与现代邯郸市是不同年代和层级的空间对象。",
+      "searchNames": [
+        "邯郸县",
+        "京师直隶·广平府"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "邯郸在元代属磁州，洪武元年转属广平府。《明史》将其记在府西南，并列西北的洺河和东部的滏阳河。广平府自身在明初也有转隶变化；县级邯郸与府级广平不能共用一个辖区。",
+          "evidence": [
+            {
+              "sourceId": "mingshi-geography-40",
+              "sourceTitle": "《明史》卷40·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2626762",
+              "quote": "廣平府元廣平路，直隸中書省。洪武元年爲府。十月屬河南分省。二年三月來屬。領縣九。東北距京師千里。弘治四年編戶二萬七千七百六十四，口二十一萬二千八百四十六。萬曆六年，戶三萬一千四百二十，口二十六萬四千八百九十八。",
+              "locator": "卷40·廣平府元"
+            },
+            {
+              "sourceId": "mingshi-geography-40",
+              "sourceTitle": "《明史》卷40·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2626762",
+              "quote": "邯鄲府西南。元屬磁州。洪武元年來屬。西北有洺河。東有滏陽河。",
+              "locator": "卷40·邯鄲府西南"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "文献能够证明本条建置与沿革，尚不能单独核定各阶段治所坐标、城墙范围或府县精确边界。",
+        "当前1391年Hartwell模型早于1582年地图截面；《明史》领州县总数也属于综合记载，不能当作两年任一年的精确区划快照。"
+      ],
+      "catalogPlaceId": "handan"
+    },
+    {
+      "id": "ming-geography-tongguan",
+      "periodId": "ming",
+      "name": "潼关卫",
+      "region": "陕西华阴关隘／军事建置",
+      "summary": "潼关位于华阴东部，洪武七年置守御千户所，洪武九年十一月升卫、属河南都司，永乐六年直隶中军都督府。阌乡县条又把潼关记为与陕西华阴的分界处，说明关隘位置和军政隶属应分别阅读。",
+      "namingNote": "潼关是关隘入口，卫为军事建置；明代并非与邻近县完全等同的普通县，不能据军卫名称画县域。",
+      "searchNames": [
+        "潼关卫",
+        "陕西华阴关隘／军事建置"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "潼关位于华阴东部，洪武七年置守御千户所，洪武九年十一月升卫、属河南都司，永乐六年直隶中军都督府。阌乡县条又把潼关记为与陕西华阴的分界处，说明关隘位置和军政隶属应分别阅读。",
+          "evidence": [
+            {
+              "sourceId": "mingshi-geography-42",
+              "sourceTitle": "《明史》卷42·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2594654",
+              "quote": "華陰州東。南有華山，亦曰太華，即西嶽也。東有牛心谷。西南有車箱谷。東北有大河，自朝邑縣流入，至渭口，與渭水合，所謂渭汭也。南有敷水，北入渭。東北有潼水，入於大河。東有潼關。洪武七年置潼關守禦千戶所。九年十一月升爲衛，屬河南都司。永樂六年直隸中軍都督府。",
+              "locator": "卷42·華陰州東"
+            },
+            {
+              "sourceId": "mingshi-geography-42",
+              "sourceTitle": "《明史》卷42·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2594654",
+              "quote": "閿鄉州西南。東南有夸父山，一名秦山，中有大谷關。北濱河，自山西芮城縣流入，東南至永城縣，入南直碭山縣界。西有湖水，又有盤澗水北流入焉。又西有潼關，與陝西華陰縣分界。",
+              "locator": "卷42·閿鄉州西南"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "文献能够证明本条建置与沿革，尚不能单独核定各阶段治所坐标、城墙范围或府县精确边界。",
+        "当前1391年Hartwell模型早于1582年地图截面；《明史》领州县总数也属于综合记载，不能当作两年任一年的精确区划快照。"
+      ],
+      "catalogPlaceId": "tongguan"
+    },
+    {
+      "id": "ming-geography-yinchuan",
+      "periodId": "ming",
+      "name": "宁夏卫",
+      "region": "陕西军事卫所",
+      "summary": "宁夏在洪武三年曾设府，五年废府，二十六年七月置卫，二十八年罢卫，永乐元年复置。庆王府在洪武二十六年从庆阳迁来；条文另记贺兰山与黄河峡口。卫、王府和更早的兴庆府应按年代区分。",
+      "namingNote": "本目录旧入口兴庆府在明代显示宁夏，对应宁夏卫地区；本轮没有把卫所当成普通县，也不以模型中心补造治所。",
+      "searchNames": [
+        "宁夏卫",
+        "陕西军事卫所"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "宁夏在洪武三年曾设府，五年废府，二十六年七月置卫，二十八年罢卫，永乐元年复置。庆王府在洪武二十六年从庆阳迁来；条文另记贺兰山与黄河峡口。卫、王府和更早的兴庆府应按年代区分。",
+          "evidence": [
+            {
+              "sourceId": "mingshi-geography-42",
+              "sourceTitle": "《明史》卷42·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2594654",
+              "quote": "寧夏衛元寧夏府路，屬甘肅行省。洪武三年爲府。五年，府廢。二十六年七月置衛。二十八年四月罷。永樂元年正月復置。洪武二十六年，慶王府自慶陽府遷此。西有賀蘭山。又西南有峽口山，黃河流其中，一名青銅硤。黃河出硤東流，亦曰三岔河。又東有黑水河，南有清水河，即葫蘆河下流也，俱注於黃河。有寧夏羣牧千戶所，洪武二十七年十二月置。領千戶所四。東南距布政司千四百里。",
+              "locator": "卷42·寧夏衛元"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "文献能够证明本条建置与沿革，尚不能单独核定各阶段治所坐标、城墙范围或府县精确边界。",
+        "当前1391年Hartwell模型早于1582年地图截面；《明史》领州县总数也属于综合记载，不能当作两年任一年的精确区划快照。"
+      ],
+      "catalogPlaceId": "yinchuan"
+    },
+    {
+      "id": "ming-geography-quanzhou",
+      "periodId": "ming",
+      "name": "泉州府",
+      "region": "福建布政司",
+      "summary": "泉州府在洪武元年由泉州路改置，记载领七县，晋江为附郭县。晋江条列清源山、晋江、洛阳江等地理对象，并记洪武二十一年置永宁卫和福泉千户所；府县与沿海卫所是不同系统。",
+      "namingNote": "泉州府治晋江县；府、附郭县与海防卫所分别呈现，不依据地图点与近似县面的小偏差改动古城坐标。",
+      "searchNames": [
+        "泉州府",
+        "福建布政司"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "泉州府在洪武元年由泉州路改置，记载领七县，晋江为附郭县。晋江条列清源山、晋江、洛阳江等地理对象，并记洪武二十一年置永宁卫和福泉千户所；府县与沿海卫所是不同系统。",
+          "evidence": [
+            {
+              "sourceId": "mingshi-geography-45",
+              "sourceTitle": "《明史》卷45·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2617014",
+              "quote": "泉州府元泉州路，屬福建道宣慰司。洪武元年爲府。領縣七。東距布政司四百十里。",
+              "locator": "卷45·泉州府元"
+            },
+            {
+              "sourceId": "mingshi-geography-45",
+              "sourceTitle": "《明史》卷45·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2617014",
+              "quote": "晉江倚。東北有泉山，一名清源。東南有寶蓋山。南有靈源山。東南濱海，有鹽場。海中有彭湖嶼。南有晉江，自南安縣流入，經城西石塔山下，又東南至岱嶼入海。東北有洛陽江，南流入海。又東南有永寧衛，南有守禦福泉千戶所，俱洪武二十一年二月置。東南有祥芝、又有烏潯、南有深滬、又有圍頭四巡檢司。西南有安平城，嘉靖中築。東南有石湖城，萬曆中築。",
+              "locator": "卷45·晉江倚"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "文献能够证明本条建置与沿革，尚不能单独核定各阶段治所坐标、城墙范围或府县精确边界。",
+        "当前1391年Hartwell模型早于1582年地图截面；《明史》领州县总数也属于综合记载，不能当作两年任一年的精确区划快照。"
+      ],
+      "catalogPlaceId": "quanzhou"
+    },
+    {
+      "id": "ming-geography-dali",
+      "periodId": "ming",
+      "name": "大理府",
+      "region": "云南布政司",
+      "summary": "大理府在洪武十五年三月由大理路改置，记载领四州三县和一个长官司，太和为附郭县。太和条记点苍山、西洱河（洱海）、上关和下关，提供辨别府城地区的山水与关隘线索。",
+      "namingNote": "明代入口取大理府地区，太和为附郭县；不能把南诏都城名称、现代大理市或整片洱海范围当作明代府界。",
+      "searchNames": [
+        "大理府",
+        "云南布政司"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "大理府在洪武十五年三月由大理路改置，记载领四州三县和一个长官司，太和为附郭县。太和条记点苍山、西洱河（洱海）、上关和下关，提供辨别府城地区的山水与关隘线索。",
+          "evidence": [
+            {
+              "sourceId": "mingshi-geography-46",
+              "sourceTitle": "《明史》卷46·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2626946",
+              "quote": "大理府元大理路。洪武十五年三月爲府。領州四，縣三，長官司一。東南距布政司八百九十里。",
+              "locator": "卷46·大理府元"
+            },
+            {
+              "sourceId": "mingshi-geography-46",
+              "sourceTitle": "《明史》卷46·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2626946",
+              "quote": "太和倚。西有點蒼山。東有西洱河，一名洱海，自浪穹縣流入，經天橋下，又東合點蒼山之十八川匯於此，中有三島、四洲、九曲。西有樣備江，一曰漾鼻水，自劍川州流入，經點蒼山後，合於西洱河，又西南流入瀾滄江。南有太和土巡檢司。又北有龍首關，亦曰上關。南有龍尾關，亦曰下關。",
+              "locator": "卷46·太和倚"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "文献能够证明本条建置与沿革，尚不能单独核定各阶段治所坐标、城墙范围或府县精确边界。",
+        "当前1391年Hartwell模型早于1582年地图截面；《明史》领州县总数也属于综合记载，不能当作两年任一年的精确区划快照。"
+      ],
+      "catalogPlaceId": "dali"
+    },
+    {
+      "id": "ming-geography-suzhou",
+      "periodId": "ming",
+      "name": "苏州府",
+      "region": "南京直隶",
+      "summary": "苏州府由平江路在吴元年九月改置，记载领一州七县，吴县与长洲为附郭县。县条分别记太湖、吴淞江、运河和娄江，并明确太湖跨苏、常、嘉、湖四府；湖面不能归作一座城的辖区。",
+      "namingNote": "苏州府、吴县、长洲县和现代苏州市范围不同；明初改府是1367年节点，不改写为洪武年间。",
+      "searchNames": [
+        "苏州府",
+        "南京直隶"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "苏州府由平江路在吴元年九月改置，记载领一州七县，吴县与长洲为附郭县。县条分别记太湖、吴淞江、运河和娄江，并明确太湖跨苏、常、嘉、湖四府；湖面不能归作一座城的辖区。",
+          "evidence": [
+            {
+              "sourceId": "mingshi-geography-40",
+              "sourceTitle": "《明史》卷40·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2626762",
+              "quote": "蘇州府元平江路，屬江浙行省。太祖吳元年九月曰蘇州府。領州一，縣七。西距南京五百八十八里。洪武二十六年編戶四十九萬一千五百一十四，口二百三十五萬五千三十。弘治四年，戶五十三萬五千四百九，口二百四萬八千九十七。萬曆六年，戶六十萬七百五十五，口二百一萬一千九百八十五。",
+              "locator": "卷40·蘇州府元"
+            },
+            {
+              "sourceId": "mingshi-geography-40",
+              "sourceTitle": "《明史》卷40·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2626762",
+              "quote": "吳倚。西有姑蘇山。西南有橫山，又有穹窿、光福等山。又有太湖。湖縱廣三百八十三里，周三萬六千頃，跨蘇、常、嘉、湖四府之境，亦曰具區，亦曰五湖，中有包山、莫釐山。又南有吳淞江，亦曰松江，亦曰鬆陵江，亦曰笠澤，自太湖分流，東入海。又西有運河。西南有木瀆、東山、甪頭三巡檢司。又有橫金巡檢司，後廢。",
+              "locator": "卷40·吳倚"
+            },
+            {
+              "sourceId": "mingshi-geography-40",
+              "sourceTitle": "《明史》卷40·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2626762",
+              "quote": "長洲倚。西北有虎丘山，又有陽山，又有長蕩、陽城等湖。東有婁江，源出太湖。東南有運河。又北有吳塔、東南有陳墓二巡檢司。又東有唐湖巡檢司。後廢。",
+              "locator": "卷40·長洲倚"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "文献能够证明本条建置与沿革，尚不能单独核定各阶段治所坐标、城墙范围或府县精确边界。",
+        "当前1391年Hartwell模型早于1582年地图截面；《明史》领州县总数也属于综合记载，不能当作两年任一年的精确区划快照。"
+      ],
+      "catalogPlaceId": "suzhou"
+    },
+    {
+      "id": "ming-geography-qizhou-jinan",
+      "periodId": "ming",
+      "name": "济南府",
+      "region": "山东布政司",
+      "summary": "济南府在吴元年由济南路改置，山东行中书省、后来的布政司治于此，历城为附郭县。历城条区分大清河与小清河，并将小清河联系到城西趵突泉，另记大明湖在城内。",
+      "namingNote": "明代入口显示济南府；唐代齐州旧名与明代济南府不能同作当前正式名称。历城是附郭县，泉湖不是辖区面。",
+      "searchNames": [
+        "济南府",
+        "山东布政司"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "济南府在吴元年由济南路改置，山东行中书省、后来的布政司治于此，历城为附郭县。历城条区分大清河与小清河，并将小清河联系到城西趵突泉，另记大明湖在城内。",
+          "evidence": [
+            {
+              "sourceId": "mingshi-geography-41",
+              "sourceTitle": "《明史》卷41·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2613089",
+              "quote": "濟南府元濟南路，屬山東東西道宣慰司。太祖吳元年爲府。領州四，縣二十六：",
+              "locator": "卷41·濟南府元"
+            },
+            {
+              "sourceId": "mingshi-geography-41",
+              "sourceTitle": "《明史》卷41·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2613089",
+              "quote": "歷城倚。天順元年建德王府。南有歷山。東有華不注山。有大清河在西北，即濟水故道，自壽張縣流經縣界，東北至利津入海。又小清河，即濟之南源，一名濼水，出城西趵突泉，經城北，下流至樂安縣入海。又大明湖在城內。又東北有堰頭鎮巡檢司。",
+              "locator": "卷41·歷城倚"
+            },
+            {
+              "sourceId": "mingshi-geography-41",
+              "sourceTitle": "《明史》卷41·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2613089",
+              "quote": "山東《禹貢》青、兗二州地。元直隸中書省，又分置山東東西道宣慰司治益都路屬焉。洪武元年四月置山東等處行中書省。治濟南府。三年十二月置青州都衛。治青州府。八年十月改都衛爲山東都指揮使司。九年六月改行中書省爲承宣布政使司。領府六，屬州十五，縣八十九。爲裏六千四百有奇。南至郯城，與南直界。北至無棣，與北直界。西至定陶，與北直、河南界。東至海。距南京一千八百五十里，京師九百里。洪武二十六年編戶七十五萬三千八百九十四，口五百二十五萬五千八百七十六。弘治四年，戶七十七萬五百五十五，口六百七十五萬九千六百七十五。萬曆六年，戶一百三十七萬二千二百六，口五百六十六萬四千九十九。",
+              "locator": "卷41·山東《禹貢》"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "文献能够证明本条建置与沿革，尚不能单独核定各阶段治所坐标、城墙范围或府县精确边界。",
+        "当前1391年Hartwell模型早于1582年地图截面；《明史》领州县总数也属于综合记载，不能当作两年任一年的精确区划快照。"
+      ],
+      "catalogPlaceId": "qizhou-jinan"
+    },
+    {
+      "id": "ming-geography-yanzhou",
+      "periodId": "ming",
+      "name": "兖州府",
+      "region": "山东布政司",
+      "summary": "兖州在洪武十八年升为府，记载领四州二十三县。附郭县原名嵫阳，洪武初省入州，升府时复置，成化年间改称滋阳；洪武三年已有鲁王府，县名与府名变化需按各自年代区分。",
+      "namingNote": "明代为兖州府，附郭县为滋阳；不得继续显示唐代鲁郡层级，嵫阳、滋阳也不是两个并列县治。",
+      "searchNames": [
+        "兖州府",
+        "山东布政司"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "兖州在洪武十八年升为府，记载领四州二十三县。附郭县原名嵫阳，洪武初省入州，升府时复置，成化年间改称滋阳；洪武三年已有鲁王府，县名与府名变化需按各自年代区分。",
+          "evidence": [
+            {
+              "sourceId": "mingshi-geography-41",
+              "sourceTitle": "《明史》卷41·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2613089",
+              "quote": "兗州府元兗州，屬濟寧路。洪武十八年升爲兗州府。領州四，縣二十三。東北距布政司三百五十里。",
+              "locator": "卷41·兗州府元"
+            },
+            {
+              "sourceId": "mingshi-geography-41",
+              "sourceTitle": "《明史》卷41·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2613089",
+              "quote": "滋陽倚。洪武三年四月建魯王府。元曰嵫陽。洪武初，省入州。十八年復置。成化間，改爲滋陽。泗水在東，又有沂水，自曲阜縣西流來合焉。",
+              "locator": "卷41·滋陽倚"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "文献能够证明本条建置与沿革，尚不能单独核定各阶段治所坐标、城墙范围或府县精确边界。",
+        "当前1391年Hartwell模型早于1582年地图截面；《明史》领州县总数也属于综合记载，不能当作两年任一年的精确区划快照。"
+      ],
+      "catalogPlaceId": "yanzhou"
+    },
+    {
+      "id": "ming-geography-ezhou-jiangxia",
+      "periodId": "ming",
+      "name": "武昌府",
+      "region": "湖广布政司",
+      "summary": "武昌府由元武昌路在太祖甲辰年二月改置，记载领一州九县，江夏为附郭县。洪武三年四月在城内黄龙山建楚王府；县条另载黄鹄山、黄鹄矶和金水入江口，供辨别明代府城周边对象。",
+      "namingNote": "明代入口显示武昌府，治江夏；唐代鄂州入口的现地是今武汉武昌，不能因古今同名移到现代鄂州市。",
+      "searchNames": [
+        "武昌府",
+        "湖广布政司"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "武昌府由元武昌路在太祖甲辰年二月改置，记载领一州九县，江夏为附郭县。洪武三年四月在城内黄龙山建楚王府；县条另载黄鹄山、黄鹄矶和金水入江口，供辨别明代府城周边对象。",
+          "evidence": [
+            {
+              "sourceId": "mingshi-geography-44",
+              "sourceTitle": "《明史》卷44·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2619810",
+              "quote": "武昌府元武昌路，屬湖廣行省。太祖甲辰年二月爲府。領州一，縣九：",
+              "locator": "卷44·武昌府元"
+            },
+            {
+              "sourceId": "mingshi-geography-44",
+              "sourceTitle": "《明史》卷44·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2619810",
+              "quote": "江夏倚。洪武三年四月建楚王府於城內黃龍山。東有黃鵠山，下爲黃鵠磯，臨大江。又南有金水，一名塗水，西流至金口入江，有金口鎮巡檢司。又北有滸黃洲、西南有鮎魚口鎮二巡檢司。",
+              "locator": "卷44·江夏倚"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "文献能够证明本条建置与沿革，尚不能单独核定各阶段治所坐标、城墙范围或府县精确边界。",
+        "当前1391年Hartwell模型早于1582年地图截面；《明史》领州县总数也属于综合记载，不能当作两年任一年的精确区划快照。"
+      ],
+      "catalogPlaceId": "ezhou-jiangxia"
+    },
+    {
+      "id": "ming-geography-fuzhou-fujian",
+      "periodId": "ming",
+      "name": "福州府",
+      "region": "福建布政司",
+      "summary": "福州府在吴元年由福州路改置，福建行中书省和后来的布政司治于此。闽县、侯官为附郭县；闽县条记闽江分流与重新汇合后由五虎门入海，这些是府城周边水系线索。",
+      "namingNote": "福州府、闽县、侯官县分属不同层级；入海水道和现代河岸不能据此自动认定为1582年形态。",
+      "searchNames": [
+        "福州府",
+        "福建布政司"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "福州府在吴元年由福州路改置，福建行中书省和后来的布政司治于此。闽县、侯官为附郭县；闽县条记闽江分流与重新汇合后由五虎门入海，这些是府城周边水系线索。",
+          "evidence": [
+            {
+              "sourceId": "mingshi-geography-45",
+              "sourceTitle": "《明史》卷45·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2617014",
+              "quote": "福州府元福州路，屬福建道。太祖吳元年爲府。領縣九：",
+              "locator": "卷45·福州府元"
+            },
+            {
+              "sourceId": "mingshi-geography-45",
+              "sourceTitle": "《明史》卷45·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2617014",
+              "quote": "閩倚。南有釣台山，亦曰南臺山。東南有鼓山。南有方山，一名甘果山，下有官母嶼，有巡檢司。東南濱海。南有閩江，亦曰建江，自南平縣流入府界。東南納羣川之水，至府西曰洪塘江，分二流，南出曰陶江，東出曰南臺江，至鼓山下復合爲一。又東南有馬頭江，自永福縣流入，曰西峽江，又東有東峽江流合焉，又東南至五虎門，入於海。東有閩安鎮巡檢司。",
+              "locator": "卷45·閩倚"
+            },
+            {
+              "sourceId": "mingshi-geography-45",
+              "sourceTitle": "《明史》卷45·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2617014",
+              "quote": "侯官倚。西有旗山，有雪峯山，有建江，又有西禪浦。西南有陽崎、吳山、鳳岡、澤苗、延澤、仙阪等六浦，皆建江支分，仍合正流入海。西北有懷安縣，洪武十二年移入郭內，與閩、侯官同治，萬曆八年九月省。西北有竹崎、又有五縣寨二巡檢司。",
+              "locator": "卷45·侯官倚"
+            },
+            {
+              "sourceId": "mingshi-geography-45",
+              "sourceTitle": "《明史》卷45·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2617014",
+              "quote": "福建《禹貢》揚州之域。元置福建道宣慰使司，治福州路。屬江浙行中書省。至正十六年正月改宣慰司爲行中書省。太祖吳元年十二月平陳友定。洪武二年五月仍置福建等處行中書省。七年二月置福州都衛。與行中書省同治。八年十月改福州都衛爲福建都指揮使司。九年六月改行中書省爲承宣布政使司。領府八，直隸州一，屬縣五十七。爲裏三千七百九十七。北至嶺，與浙江界。西至汀州，與江西界。南至詔安，與廣東界。東至海。距南京二千八百七十二里，京師六千一百三十三里。洪武二十六年編戶八十一萬五千五百二十七，口三百九十一萬六千八百六。弘治四年，戶五十萬六千三十九，口二百一十萬六千六十。萬曆六年，戶五十一萬五千三百七，口一百七十三萬八千七百九十三。",
+              "locator": "卷45·福建《禹貢》"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "文献能够证明本条建置与沿革，尚不能单独核定各阶段治所坐标、城墙范围或府县精确边界。",
+        "当前1391年Hartwell模型早于1582年地图截面；《明史》领州县总数也属于综合记载，不能当作两年任一年的精确区划快照。"
+      ],
+      "catalogPlaceId": "fuzhou-fujian"
+    },
+    {
+      "id": "ming-geography-yuzhou-chongqing",
+      "periodId": "ming",
+      "name": "重庆府",
+      "region": "四川布政司",
+      "summary": "重庆府承接元重庆路，原文仅记“洪武中”为府，未给出确年；府领三州十七县，巴县为附郭县。县条记江流、峡口和佛图关、二郎关、铜锣关等关隘，能够丰富城周历史地理而不能据此复原精确府界。",
+      "namingNote": "明代显示重庆府，不沿用唐代渝州作为当前建置名；“洪武中”保留不确定年代，不强行编造确切年份。",
+      "searchNames": [
+        "重庆府",
+        "四川布政司"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "重庆府承接元重庆路，原文仅记“洪武中”为府，未给出确年；府领三州十七县，巴县为附郭县。县条记江流、峡口和佛图关、二郎关、铜锣关等关隘，能够丰富城周历史地理而不能据此复原精确府界。",
+          "evidence": [
+            {
+              "sourceId": "mingshi-geography-43",
+              "sourceTitle": "《明史》卷43·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2619812",
+              "quote": "重慶府元重慶路，屬四川南道宣慰司。洪武中，爲府。領州三，縣十七。西北距布政司五百五十里。",
+              "locator": "卷43·重慶府元"
+            },
+            {
+              "sourceId": "mingshi-geography-43",
+              "sourceTitle": "《明史》卷43·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2619812",
+              "quote": "巴倚。東有塗山。大江經城南，又東經明月峽，至城東，與涪江合。西北有魚鹿峽，涪江所經。東南有丹溪，東北有交龍溪，俱流入大江。東有大紅江巡檢司。西有佛圖關。西南有二郎關。東有銅鑼關。又南有南坪關。",
+              "locator": "卷43·巴倚"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "文献能够证明本条建置与沿革，尚不能单独核定各阶段治所坐标、城墙范围或府县精确边界。",
+        "当前1391年Hartwell模型早于1582年地图截面；《明史》领州县总数也属于综合记载，不能当作两年任一年的精确区划快照。"
+      ],
+      "catalogPlaceId": "yuzhou-chongqing"
+    },
+    {
+      "id": "ming-geography-guizhou-guilin",
+      "periodId": "ming",
+      "name": "桂林府",
+      "region": "广西布政司",
+      "summary": "桂林地区在洪武元年由静江路改府，洪武五年六月改称桂林府，记载领二州七县。临桂为附郭县，洪武三年在独秀峰前建靖江王府；县条另记桂江亦称漓江，与王府、县治分属不同对象。",
+      "namingNote": "明代入口为桂林府，附郭县为临桂；唐代桂州与明代桂林府、靖江王府须区分层级及年代。",
+      "searchNames": [
+        "桂林府",
+        "广西布政司"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "桂林地区在洪武元年由静江路改府，洪武五年六月改称桂林府，记载领二州七县。临桂为附郭县，洪武三年在独秀峰前建靖江王府；县条另记桂江亦称漓江，与王府、县治分属不同对象。",
+          "evidence": [
+            {
+              "sourceId": "mingshi-geography-45",
+              "sourceTitle": "《明史》卷45·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2617014",
+              "quote": "桂林府，元靜江路。洪武元年爲府。五年六月改爲桂林府。領州二，縣七：",
+              "locator": "卷45·桂林府，"
+            },
+            {
+              "sourceId": "mingshi-geography-45",
+              "sourceTitle": "《明史》卷45·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2617014",
+              "quote": "臨桂，倚。洪武三年七月建靖江王府於獨秀峯前。東有桂山。東北有堯山。又有桂江，亦曰灕江，南有陽江來合焉，至蒼梧縣合於左、右江。東有蘆田市、西有兩江口二巡檢司。南有湘山渡巡檢司，後廢。",
+              "locator": "卷45·臨桂，倚"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "文献能够证明本条建置与沿革，尚不能单独核定各阶段治所坐标、城墙范围或府县精确边界。",
+        "当前1391年Hartwell模型早于1582年地图截面；《明史》领州县总数也属于综合记载，不能当作两年任一年的精确区划快照。"
+      ],
+      "catalogPlaceId": "guizhou-guilin"
+    },
+    {
+      "id": "ming-geography-mingzhou",
+      "periodId": "ming",
+      "name": "宁波府",
+      "region": "浙江布政司",
+      "summary": "宁波府由元庆元路在吴元年十二月先改明州府，洪武十四年二月再改宁波，记载领五县。鄞县为附郭县；县条列四明山、甬江及东钱湖等自然对象，并记洪武十九年置龙山守御千户所。",
+      "namingNote": "明州府是明初阶段名，1381年后称宁波府；鄞县是附郭县，不把“明州”唐代入口名覆盖整个明代。",
+      "searchNames": [
+        "宁波府",
+        "浙江布政司"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "宁波府由元庆元路在吴元年十二月先改明州府，洪武十四年二月再改宁波，记载领五县。鄞县为附郭县；县条列四明山、甬江及东钱湖等自然对象，并记洪武十九年置龙山守御千户所。",
+          "evidence": [
+            {
+              "sourceId": "mingshi-geography-44",
+              "sourceTitle": "《明史》卷44·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2619810",
+              "quote": "寧波府元慶元路，屬浙東道宣慰司。太祖吳元年十二月爲明州府。洪武十四年二月改寧波。領縣五。西北距布政司三百六十里。",
+              "locator": "卷44·寧波府元"
+            },
+            {
+              "sourceId": "mingshi-geography-44",
+              "sourceTitle": "《明史》卷44·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2619810",
+              "quote": "鄞倚。東有鄮山。西南有四明山，周八百餘里。東有灌頂山，舊產鐵。東南有阿育王山，有太白、天童諸山。東北濱海。有鄞江，一名甬江。東南有奉化江，西北有慈溪，皆流合焉。西南有小江湖，又西有廣德湖，東有東錢湖，皆引流入鄞江。北有龍山守禦千戶所，洪武十九年十一月置。東有甬東巡檢司，治甬東隅，後遷定海縣東南竹山海口，仍故名。又有岱山、又有螺峯二巡檢司，後廢。",
+              "locator": "卷44·鄞倚"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "文献能够证明本条建置与沿革，尚不能单独核定各阶段治所坐标、城墙范围或府县精确边界。",
+        "当前1391年Hartwell模型早于1582年地图截面；《明史》领州县总数也属于综合记载，不能当作两年任一年的精确区划快照。"
+      ],
+      "catalogPlaceId": "mingzhou"
+    },
+    {
+      "id": "ming-geography-hongzhou",
+      "periodId": "ming",
+      "name": "南昌府",
+      "region": "江西布政司",
+      "summary": "南昌府由元龙兴路在太祖壬寅年改洪都府，癸卯年改南昌府，领一州七县，南昌、新建为附郭县。南昌条又记洪武十一年建豫王府、永乐初宁王府迁来及正德十四年除，反映城内政治建置变化。",
+      "namingNote": "明代入口显示南昌府；1362年洪都、1363年南昌的名称变化在建国前，不能用唐代洪州层级覆盖明代。",
+      "searchNames": [
+        "南昌府",
+        "江西布政司"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "南昌府由元龙兴路在太祖壬寅年改洪都府，癸卯年改南昌府，领一州七县，南昌、新建为附郭县。南昌条又记洪武十一年建豫王府、永乐初宁王府迁来及正德十四年除，反映城内政治建置变化。",
+          "evidence": [
+            {
+              "sourceId": "mingshi-geography-43",
+              "sourceTitle": "《明史》卷43·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2619812",
+              "quote": "南昌府元龍興路，屬江西行省。太祖壬寅年正月爲洪都府。癸卯年八月改南昌府。領州一、縣七：",
+              "locator": "卷43·南昌府元"
+            },
+            {
+              "sourceId": "mingshi-geography-43",
+              "sourceTitle": "《明史》卷43·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2619812",
+              "quote": "南昌倚。洪武十一年建豫王府。二十五年改爲代王，遷山西大同。永樂初，寧王府自大寧衛遷此，正德十四年除。故城在東。今城，明太祖壬寅年改築。東湖在城東南隅。西有贛江，自豐城縣流入，東北入鄱陽湖，出湖口縣，入大江，亦曰章江。又東南有武陽水，上源自南豐縣汙江，北流經此，又東北入宮亭湖。南有市汊巡檢司。",
+              "locator": "卷43·南昌倚"
+            },
+            {
+              "sourceId": "mingshi-geography-43",
+              "sourceTitle": "《明史》卷43·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2619812",
+              "quote": "新建倚。西有西山，跨南昌、新建、奉新、建昌四縣之境。北有吳城山，臨贛江。東有鄱陽湖，即彭蠡也，俗謂之東鄱湖；其西與宮亭湖相接，謂之西鄱湖西南有筠水，一名蜀江，自高安縣流入，合於章江。東北有趙家圍、西有烏山、北有吳城、西北有昌邑四巡檢司。",
+              "locator": "卷43·新建倚"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "文献能够证明本条建置与沿革，尚不能单独核定各阶段治所坐标、城墙范围或府县精确边界。",
+        "当前1391年Hartwell模型早于1582年地图截面；《明史》领州县总数也属于综合记载，不能当作两年任一年的精确区划快照。"
+      ],
+      "catalogPlaceId": "hongzhou"
+    },
+    {
+      "id": "ming-geography-fengyang-boundary",
+      "periodId": "ming",
+      "name": "凤阳府",
+      "region": "南京直隶",
+      "summary": "凤阳府原为濠州，吴元年升临濠府，洪武二年建中都，六年称中立府、七年改凤阳府。洪武七年又析临淮置凤阳县为府治。",
+      "namingNote": "中都城、凤阳县与凤阳府为不同层级；本包仅补史料，不据中都城文字生成府界。",
+      "searchNames": [
+        "凤阳府",
+        "南京直隶"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "凤阳府原为濠州，吴元年升临濠府，洪武二年建中都，六年称中立府、七年改凤阳府。洪武七年又析临淮置凤阳县为府治。",
+          "evidence": [
+            {
+              "sourceId": "mingshi-geography-40",
+              "sourceTitle": "《明史》卷40·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2626762",
+              "quote": "鳳陽府元濠州，屬安豐路。太祖吳元年升爲臨濠府。洪武二年九月建中都，置留守司於此。六年九月曰中立府。七年八月曰鳳陽府。洪武二年九月建中都城於舊城西，三年十二月始成。周五十里四百四十三步。立門九：正南曰洪武，南之左曰南左甲第，右曰前右甲第，北之東曰北左甲第，西曰後右甲第，正東曰獨山，東之左曰長春，右曰朝陽，正西曰塗山。中爲皇城，周九里三十步，正南門曰午門，北曰玄城，東曰東華，西曰西華。領州五，縣十三。距南京三百三十里。洪武二十六年編戶七萬九千一百七，口四十二萬七千三百三。弘治四年，戶九萬五千一十，口九十三萬一千一百八。萬曆六年，戶一十一萬一千七十，口一百二十萬二千三百四十九。",
+              "locator": "卷40·鳳陽府元"
+            },
+            {
+              "sourceId": "mingshi-geography-40",
+              "sourceTitle": "《明史》卷40·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2626762",
+              "quote": "鳳陽倚。洪武七年八月析臨淮縣地置，爲府治。十一年又割虹縣地益之。北濱淮，南有鏌鋣山，西濠水出焉。又西南有皇陵城，洪武二年置衛。西北有長淮關，洪武六年置長淮衛於此。東北有洪塘湖屯田守禦千戶所，洪武十一年置。",
+              "locator": "卷40·鳳陽倚"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "文献能够证明本条建置与沿革，尚不能单独核定各阶段治所坐标、城墙范围或府县精确边界。",
+        "当前1391年Hartwell模型早于1582年地图截面；《明史》领州县总数也属于综合记载，不能当作两年任一年的精确区划快照。"
+      ]
+    },
+    {
+      "id": "ming-geography-huaian-boundary",
+      "periodId": "ming",
+      "name": "淮安府",
+      "region": "南京直隶",
+      "summary": "淮安府由元淮安路在太祖丙午年四月改置，领二州九县，山阳为附郭县。县条记录淮河、运河与相关水道，府治及水系应分开阅读。",
+      "namingNote": "淮安府及山阳县与现代淮安市范围不同；丙午年为1366年建国前沿革。",
+      "searchNames": [
+        "淮安府",
+        "南京直隶"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "淮安府由元淮安路在太祖丙午年四月改置，领二州九县，山阳为附郭县。县条记录淮河、运河与相关水道，府治及水系应分开阅读。",
+          "evidence": [
+            {
+              "sourceId": "mingshi-geography-40",
+              "sourceTitle": "《明史》卷40·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2626762",
+              "quote": "淮安府元淮安路，屬淮東道宣慰司。太祖丙午年四月爲府。領州二，縣九。西南距南京五百里。洪武二十六年，編戶八萬六百八十九，口六十三萬二千五百四十一。弘治四年，戶二萬七千九百七十八，口二十三萬七千五百二十七。萬曆六年，戶一十萬九千二百五，口九十萬六千三十三。",
+              "locator": "卷40·淮安府元"
+            },
+            {
+              "sourceId": "mingshi-geography-40",
+              "sourceTitle": "《明史》卷40·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2626762",
+              "quote": "山陽倚。北濱淮。高家堰在其西南。南有運河，永樂中浚。西南有永濟河，萬曆九年開，長六十五里，亦謂之新運河。東南有射陽湖。東北有馬邏鄉、廟灣鎮、羊寨鄉三巡檢司。",
+              "locator": "卷40·山陽倚"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "文献能够证明本条建置与沿革，尚不能单独核定各阶段治所坐标、城墙范围或府县精确边界。",
+        "当前1391年Hartwell模型早于1582年地图截面；《明史》领州县总数也属于综合记载，不能当作两年任一年的精确区划快照。"
+      ]
+    },
+    {
+      "id": "ming-geography-yunnan-boundary",
+      "periodId": "ming",
+      "name": "云南府",
+      "region": "云南布政司",
+      "summary": "云南府在洪武十五年正月由中庆路改置，领四州九县，昆明为附郭县。昆明条另记金马山、碧鸡山、滇池和盘龙江，不把自然地理对象当府域。",
+      "namingNote": "云南府是明代具体府级单位，不等于整个云南布政司；本包不新增坐标。",
+      "searchNames": [
+        "云南府",
+        "云南布政司"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "云南府在洪武十五年正月由中庆路改置，领四州九县，昆明为附郭县。昆明条另记金马山、碧鸡山、滇池和盘龙江，不把自然地理对象当府域。",
+          "evidence": [
+            {
+              "sourceId": "mingshi-geography-46",
+              "sourceTitle": "《明史》卷46·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2626946",
+              "quote": "雲南府元中慶路。洪武十五年正月改爲雲南府。領州四，縣九：",
+              "locator": "卷46·雲南府元"
+            },
+            {
+              "sourceId": "mingshi-geography-46",
+              "sourceTitle": "《明史》卷46·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2626946",
+              "quote": "昆明倚。洪武二十六年，岷王府自陝西岷州遷於此。永樂二十二年遷岷王府於湖廣武岡州，建滕王府於此，宣德元年除。東有金馬山，與西南碧雞山相對，俱有關，山下即滇池。池在城南，週五百里，其西南爲海口，至武定府北，注於金沙江。又東有盤龍江，西注滇池。東有赤水鵬、清水江二巡檢司。",
+              "locator": "卷46·昆明倚"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "文献能够证明本条建置与沿革，尚不能单独核定各阶段治所坐标、城墙范围或府县精确边界。",
+        "当前1391年Hartwell模型早于1582年地图截面；《明史》领州县总数也属于综合记载，不能当作两年任一年的精确区划快照。"
+      ]
+    },
+    {
+      "id": "ming-geography-guiyang-boundary",
+      "periodId": "ming",
+      "name": "贵阳府",
+      "region": "贵州布政司",
+      "summary": "贵阳本程番府，成化十二年分贵州宣慰司地置，隆庆二年移入布政司城、三年改名贵阳，万历二十九年升军民府。新贵县在万历十四年才改置，不能提前用于1582年。",
+      "namingNote": "1582年仍为贵阳府；1601年军民府名称和1586年新贵县建置只在沿革中标注，不能提前显示为当年名称。",
+      "searchNames": [
+        "贵阳府",
+        "贵州布政司"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "贵阳本程番府，成化十二年分贵州宣慰司地置，隆庆二年移入布政司城、三年改名贵阳，万历二十九年升军民府。新贵县在万历十四年才改置，不能提前用于1582年。",
+          "evidence": [
+            {
+              "sourceId": "mingshi-geography-46",
+              "sourceTitle": "《明史》卷46·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2626946",
+              "quote": "貴陽軍民府本程番府。成化十二年七月分貴州宣慰司地置，治程番長官司。隆慶二年六月移入布政司城，與宣慰司同治。三年三月改府名貴陽。萬曆二十九年四月升爲軍民府。領州三，縣二，長官司十六：",
+              "locator": "卷46·貴陽軍民府本"
+            },
+            {
+              "sourceId": "mingshi-geography-46",
+              "sourceTitle": "《明史》卷46·地理志",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?oldid=2626946",
+              "quote": "新貴倚。本貴竹長官司，洪武五年正月置，屬宣慰司。萬曆十四年二月改置縣，來屬。西有獅子山。西北有木閣箐山，在水西境內。北有貴人峯。又西有白龍洞。北有烏江，源出水西，與四川遵義府分界，北流至四川彭水縣，入涪陵江。西北有陸廣河，下流入於烏江，有陸廣河巡檢司。又西有宅溪。又西北有蔡家關，一名響水關，又有闊水關。",
+              "locator": "卷46·新貴倚"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "文献能够证明本条建置与沿革，尚不能单独核定各阶段治所坐标、城墙范围或府县精确边界。",
+        "当前1391年Hartwell模型早于1582年地图截面；《明史》领州县总数也属于综合记载，不能当作两年任一年的精确区划快照。"
+      ]
+    }
+  ],
+  "statistics": {
+    "entryCount": 32,
+    "cityProfileCount": 28,
+    "boundaryOnlyCount": 4,
+    "volumeCount": 7,
+    "quoteCount": 76,
+    "boundaryClaims": 0
+  },
+  "notes": [
+    "原始API与固定修订号共同保留；快照仅展开年号模板和维基链接，引用字段不得自行改写。",
+    "正文与名称说明使用简体；逐字史料保留原字形。",
+    "建府、县治和城内王府分别解释；现代地点只是已有目录入口，不能用来证明府界。"
+  ]
+}

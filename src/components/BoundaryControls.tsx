@@ -19,6 +19,8 @@ import "../boundaries.css";
 import { boundarySearchKey } from "../../shared/boundary-search";
 import type { TangCountyBoundaryDiagnostic } from "../../shared/tang-county-diagnostics";
 import CountyGeometryNotice from "./CountyGeometryNotice";
+import HistoricalResearchNotice from "./HistoricalResearchNotice";
+import type { MingBoundaryResearchDocument } from "../../shared/ming-boundary-research";
 
 export interface BoundaryControlsProps {
   embedded?: boolean;
@@ -42,6 +44,8 @@ export interface BoundaryControlsProps {
   correspondenceError?: string;
   countyDiagnostic?: TangCountyBoundaryDiagnostic;
   countyDiagnosticsError?: string;
+  mingResearch?: MingBoundaryResearchDocument;
+  mingResearchError?: string;
 }
 
 const levelOrder: BoundaryLevel[] = [
@@ -61,6 +65,7 @@ export default function BoundaryControls(props: BoundaryControlsProps) {
   const bodyId = useId();
   const searchInput = useRef<HTMLInputElement>(null);
   const dataset = props.selectedDataset;
+  const mingEntry = props.selection ? props.mingResearch?.byBoundary[props.selection.id] : undefined;
   const levelName = (level: BoundaryLevel) => boundaryLevelName(level, dataset?.periodId);
   const countryCoverage = boundaryCountryCoverage(dataset);
   const regionIndex = useMemo(() => (props.regionOptions ?? []).map(region => ({ region, key: boundarySearchKey([region.name, region.originalName, ...(region.modernNames ?? [])].join(" ")) })), [props.regionOptions]);
@@ -169,6 +174,8 @@ export default function BoundaryControls(props: BoundaryControlsProps) {
               <p className="boundary-selection-highlight-note">{props.enabled === false ? "行政边界已隐藏；开启后恢复此参考范围。" : props.countyDiagnostic?.status === "outside" ? "虚线表示存疑模型范围；带圆环的点表示相关县治。" : "地图已高亮资料中的参考范围。"}</p>
               {props.countyDiagnostic && <CountyGeometryNotice diagnostic={props.countyDiagnostic} onCompare={props.enabled !== false && props.countyDiagnostic.status === "outside" ? () => props.onRegionSelect?.(props.selection!.id) : undefined} />}
               {props.countyDiagnosticsError && <p className="boundary-selection-caveat" role="status">{props.countyDiagnosticsError}</p>}
+              {props.mingResearchError && <p className="boundary-selection-caveat" role="status">{props.mingResearchError}</p>}
+              {mingEntry && <HistoricalResearchNotice entries={mingEntry.historicalResearch} label="明代建置史料研究" limitNote={mingEntry.yearNotice} />}
               {props.countyDiagnostic && props.countyDiagnostic.status !== "no-evidence" && <details className="county-point-evidence"><summary>查看治所点来源</summary>{props.countyDiagnostic.sourcePoints.map(point => <p key={point.id}>{point.name} · {point.presentLocation}<br />源记录{point.sourceRecordId} · {point.beginYear}—{point.endYear}年<br /><a href={point.sourceUrl} target="_blank" rel="noreferrer">CHGIS治所来源 ↗</a></p>)}</details>}
               <details className="boundary-original-name"><summary>查看来源原文</summary>
                 <p>原文名称 · {props.selection.originalName || "来源未提供"}</p>
@@ -221,7 +228,11 @@ export default function BoundaryControls(props: BoundaryControlsProps) {
           <p className="boundary-effective-level" role="status">
             {props.enabled === false ? "行政边界已关闭" : props.activeLevel ? `随缩放显示：${levelName(props.activeLevel)}。${props.interactive === false ? "当前模式仅保留行政轮廓作为位置参照。" : "点击名称或区域可高亮辖区。"}` : "当前资料暂无可显示的行政层级。"}
           </p>
-          <p className="boundary-scale-guide">{dataset?.periodId === "tang" ? "唐代层级：道（监察区）→ 州 / 郡 / 府 → 县。州、郡、府属于同一级，高于县；道不等同于现代省。" : "缩小看国家与省路，放大依次看府州郡、县域与城池。"}选中辖区会持续高亮，背景层级仍随缩放切换。</p>
+          <p className="boundary-scale-guide">{dataset?.periodId === "tang" ? "唐代层级：道（监察区）→ 州 / 郡 / 府 → 县。州、郡、府属于同一级，高于县；道不等同于现代省。" : dataset?.periodId === "ming" ? "明代民政以两直隶、布政司及府州县分层；都司、卫所属于另一套军事建置，不能把卫统一当作府或县。图层按来源分组，具体类型见区域详情。" : "缩小看国家与省路，放大依次看府州郡、县域与城池。"}选中辖区会持续高亮，背景层级仍随缩放切换。</p>
+          {props.mingResearch && <details className="boundary-original-name"><summary>明代史料核查与资料缺口</summary>
+            <p>已为 {Object.keys(props.mingResearch.byBoundary).length} 个来源模型补充建置研究。史料覆盖明代多个阶段，地图轮廓仍是1391年近似参考，不能看作1582年完整疆界。</p>
+            {props.mingResearch.unlinkedEntries.map(entry => <div key={entry.researchEntryId}><p>{entry.name}：{entry.reason}</p><HistoricalResearchNotice entries={entry.historicalResearch} label={`${entry.name}史料研究`} limitNote="暂无可靠的同年对应模型，保留史料供阅读。" /></div>)}
+          </details>}
           {countryCoverage.incomplete && props.zoom < 4 && <aside className="boundary-country-notice">
             <p>{countryCoverage.note}{props.visibleLevels.includes("province") ? `当前显示${levelName("province")}范围，周边诸部作为背景。` : ""}</p>
             {props.onOpenAtlas && <button type="button" onClick={props.onOpenAtlas}>查看历史原图 <ExternalLink size={12} /></button>}
