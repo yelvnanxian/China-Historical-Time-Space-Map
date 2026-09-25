@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-city-qingzhou-linzi",
+  "title": "OpenStreetMap 现代地理：青州与临淄附近水系",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.private.coffee/api/interpreter",
+  "retrievedAt": "2026-09-25T03:45:28.891516+00:00",
+  "bounds": [
+    118.11,
+    36.5,
+    118.68,
+    37.02
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/city-qingzhou-linzi.json.gz",
+  "snapshotSha256": "a77d3dfe1faadd07f4d8ad537ca8753d6684f788c914e173ca430188a37203fe",
+  "uncompressedSnapshotSha256": "bce66f1ffc443775ca0965f5cd3e87bf43a7fc0afa22d42638a14c15ed95b8bf",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/city-qingzhou-linzi.ql",
+  "querySha256": "4eda4fdcfc1747972f35d41502780916138f679df1b8b51294253e507eb45287",
+  "osmBaseTimestamp": "2026-07-15T15:22:01Z",
+  "elementCount": 300,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+}

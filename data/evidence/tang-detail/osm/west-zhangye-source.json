@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-west-zhangye",
+  "title": "OpenStreetMap 现代地理：张掖与黑河绿洲",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "retrievedAt": "2026-09-25T03:31:40.810398+00:00",
+  "bounds": [
+    100.05,
+    38.4,
+    100.95,
+    39.15
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/west-zhangye.json.gz",
+  "snapshotSha256": "a8d167a709ac33d48eca64ad80da46d6177f51ede00984ef3e6a678e2e00ac84",
+  "uncompressedSnapshotSha256": "7716d43606dad0bd4bdea8c2c22f35efb0815620098f12afa4d927d4249129c4",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/west-zhangye.ql",
+  "querySha256": "1bd25fd4c79600fcc056dcc047de35ac305a0d75c7809c4221a9ebd1dae0fc3b",
+  "osmBaseTimestamp": "2026-05-31T22:37:44Z",
+  "elementCount": 225,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "osm-mountain-detail-qinling-0",
+  "regionId": "qinling",
+  "title": "OpenStreetMap 山地线与命名山峰：秦岭与关中南缘 / qinling-0",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "bounds": [
+    104,
+    32,
+    108,
+    35
+  ],
+  "retrievedAt": "2026-09-25T03:31:43.815852+00:00",
+  "snapshotPath": "data/evidence/mountain-detail/osm/qinling-0.json.gz",
+  "snapshotSha256": "3987412a2f13164672c50aac9ba58b71e3efdad8ed86255bda1028c8bada9c09",
+  "uncompressedSnapshotSha256": "20536d0f7cd222cf209afe25502176e86a1f34da917e47a57130df844e6a332c",
+  "queryPath": "data/evidence/mountain-detail/osm/qinling-0.ql",
+  "querySha256": "6fbc76fe912b578fae358b76573e930df447bee0311c6a29c3eb4cf8a70df88e",
+  "osmBaseTimestamp": "2026-07-24T11:04:51Z",
+  "elementCount": 520,
+  "modernReferenceOnly": true,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是唐代复原。查询边框不是山脉范围。"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-west-chengdu",
+  "title": "OpenStreetMap 现代地理：成都—都江堰与岷沱水系",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "retrievedAt": "2026-09-25T03:31:02.522164+00:00",
+  "bounds": [
+    103.45,
+    30.15,
+    104.9,
+    31.25
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/west-chengdu.json.gz",
+  "snapshotSha256": "e897d26733462cfe3de0c69cebaf715a85cf7d03028cee82fa5020404a5cfa6a",
+  "uncompressedSnapshotSha256": "397381866d9a810466ae29df987c0c3cd1276950cc2fcfbc715c7e43ffefd10e",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/west-chengdu.ql",
+  "querySha256": "3c1a8c5d5e4fb7137b5fb236e3df0b07ecc5864f89ae37b511f2e70fc25a5f8a",
+  "osmBaseTimestamp": "2026-06-01T08:52:28Z",
+  "elementCount": 7431,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+}

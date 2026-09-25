@@ -1,0 +1,31 @@
+{
+  "featureCount": 5289,
+  "countsByKind": {
+    "water": 3314,
+    "peak": 206,
+    "saddle": 4,
+    "canal": 329,
+    "river": 1133,
+    "stream": 303
+  },
+  "rejected": [
+    {
+      "osmType": "relation",
+      "osmId": 254018,
+      "reason": "Invalid water polygon; no synthetic repair applied"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 21021991,
+      "reason": "Inner ring has no containing outer ring"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 21021992,
+      "reason": "Inner ring has no containing outer ring"
+    }
+  ],
+  "sourceMemberWayDuplicatesSuppressed": 500,
+  "crossRegionDuplicateIdsSuppressed": 0,
+  "geometryPolicy": "Unsmoothed original coordinate sequences; exact endpoint line merging for complete water rings. No guessed closing edges, buffers or polygon repair."
+}

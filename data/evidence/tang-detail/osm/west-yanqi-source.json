@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-west-yanqi",
+  "title": "OpenStreetMap 现代地理：焉耆—博斯腾湖西岸",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "retrievedAt": "2026-09-25T03:34:10.500889+00:00",
+  "bounds": [
+    86,
+    41.55,
+    87.05,
+    42.45
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/west-yanqi.json.gz",
+  "snapshotSha256": "cff95d335b87174a2d4d2d22b89cbce9a67c2b35645674b74300d231ac4fcd5a",
+  "uncompressedSnapshotSha256": "a7015e9fdad3c054ff8ef69ce2ceb113f3b1f0a0fdce4ee768f9fd6d836af832",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/west-yanqi.ql",
+  "querySha256": "10435cba06a725da159f7ff6cc72528eace0f02be47e7f06ac3e81802e1a31a3",
+  "osmBaseTimestamp": "2026-06-01T08:52:28Z",
+  "elementCount": 278,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+}

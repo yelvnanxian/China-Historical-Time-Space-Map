@@ -1,0 +1,25 @@
+{
+  "id": "osm-mountain-detail-west-sichuan-0",
+  "regionId": "west-sichuan",
+  "title": "OpenStreetMap 山地线与命名山峰：川西山地 / west-sichuan-0",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "bounds": [
+    97,
+    28,
+    101,
+    31
+  ],
+  "retrievedAt": "2026-09-25T03:41:38.592890+00:00",
+  "snapshotPath": "data/evidence/mountain-detail/osm/west-sichuan-0.json.gz",
+  "snapshotSha256": "0add25789886b939ab817707f0458c136249a461c70d77c574cded1fea7ca973",
+  "uncompressedSnapshotSha256": "26dfb42e2da670a265506ae4af9816278e50b2f236507e6eb6e408f87bf58618",
+  "queryPath": "data/evidence/mountain-detail/osm/west-sichuan-0.ql",
+  "querySha256": "7abbe3a9c25f6377bf23288145d85024fce1ddf8df528ff5533cb982a2edd37d",
+  "osmBaseTimestamp": "2026-06-01T08:52:28Z",
+  "elementCount": 567,
+  "modernReferenceOnly": true,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是唐代复原。查询边框不是山脉范围。"
+}

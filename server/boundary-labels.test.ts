@@ -86,7 +86,7 @@ test("全量历史区域的显示名无占位泄漏，古今对照原名不被�
     }
   }
   assert.equal(visited, 12111);
-  assert.equal(recovered, 1);
+  assert.equal(recovered, 3);
   assert.equal(modern.entries[affectedId].historicalName, "00");
   assert.equal(modern.entries[affectedId].simplifiedName, "00");
   assert.deepEqual(modern.entries[affectedId].modernNames, ["山东", "济宁市"]);

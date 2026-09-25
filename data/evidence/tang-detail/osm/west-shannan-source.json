@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-west-shannan",
+  "title": "OpenStreetMap 现代地理：山南与雅鲁藏布江走廊",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.private.coffee/api/interpreter",
+  "retrievedAt": "2026-09-25T03:39:17.105749+00:00",
+  "bounds": [
+    91.35,
+    29,
+    92.15,
+    29.65
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/west-shannan.json.gz",
+  "snapshotSha256": "4375014fe559fafa831d25b158408f1d7f8190ce17386218cc1916732369d6b7",
+  "uncompressedSnapshotSha256": "8593bff34a1f9ca84865258c39ef2430a10f637e88e7d98de9a6a2571dd25c54",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/west-shannan.ql",
+  "querySha256": "a1493d75252d720c363b12c04c046a5c5c6611d2dc6cd2e76501118eefc6b32a",
+  "osmBaseTimestamp": "2026-05-06T03:25:00Z",
+  "elementCount": 449,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+}

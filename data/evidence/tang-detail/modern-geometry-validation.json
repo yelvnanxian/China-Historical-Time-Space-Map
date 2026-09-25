@@ -1,12 +1,12 @@
 {
-  "checkedFeatures": 178372,
+  "checkedFeatures": 213897,
   "countsByKind": {
-    "water": 107453,
-    "river": 16844,
-    "canal": 28517,
-    "stream": 18949,
-    "peak": 6509,
-    "saddle": 100
+    "water": 125146,
+    "river": 20635,
+    "canal": 35155,
+    "stream": 25101,
+    "peak": 7733,
+    "saddle": 127
   },
   "perSource": [
     {
@@ -78,6 +78,290 @@
         "saddle": 69,
         "stream": 5438,
         "canal": 1893
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-west-chengdu",
+      "checkedFeatures": 7418,
+      "countsByKind": {
+        "water": 3397,
+        "river": 567,
+        "peak": 53,
+        "saddle": 6,
+        "stream": 2227,
+        "canal": 1168
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-west-dunhuang",
+      "checkedFeatures": 148,
+      "countsByKind": {
+        "water": 41,
+        "river": 13,
+        "canal": 44,
+        "stream": 47,
+        "peak": 3
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-west-hami",
+      "checkedFeatures": 724,
+      "countsByKind": {
+        "water": 15,
+        "river": 10,
+        "canal": 586,
+        "stream": 113
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-west-hotan",
+      "checkedFeatures": 266,
+      "countsByKind": {
+        "water": 115,
+        "river": 19,
+        "canal": 115,
+        "stream": 17
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-west-jiuquan",
+      "checkedFeatures": 214,
+      "countsByKind": {
+        "water": 125,
+        "river": 26,
+        "peak": 7,
+        "stream": 50,
+        "canal": 6
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-west-kashgar",
+      "checkedFeatures": 436,
+      "countsByKind": {
+        "water": 169,
+        "river": 102,
+        "canal": 116,
+        "stream": 49
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-west-lanzhou",
+      "checkedFeatures": 1524,
+      "countsByKind": {
+        "water": 767,
+        "river": 204,
+        "peak": 69,
+        "canal": 52,
+        "stream": 432
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-west-lhasa",
+      "checkedFeatures": 742,
+      "countsByKind": {
+        "water": 207,
+        "river": 73,
+        "peak": 34,
+        "saddle": 7,
+        "canal": 93,
+        "stream": 328
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-west-qiuci",
+      "checkedFeatures": 166,
+      "countsByKind": {
+        "water": 34,
+        "river": 36,
+        "peak": 2,
+        "stream": 45,
+        "canal": 49
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-west-shannan",
+      "checkedFeatures": 360,
+      "countsByKind": {
+        "water": 127,
+        "river": 11,
+        "peak": 2,
+        "stream": 220
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-west-tianshui",
+      "checkedFeatures": 1149,
+      "countsByKind": {
+        "water": 175,
+        "river": 250,
+        "peak": 125,
+        "stream": 599
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-west-turpan",
+      "checkedFeatures": 3155,
+      "countsByKind": {
+        "river": 22,
+        "water": 40,
+        "peak": 107,
+        "stream": 60,
+        "canal": 2926
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-west-wuwei",
+      "checkedFeatures": 165,
+      "countsByKind": {
+        "water": 40,
+        "river": 39,
+        "stream": 75,
+        "canal": 4,
+        "peak": 7
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-west-yanqi",
+      "checkedFeatures": 277,
+      "countsByKind": {
+        "water": 75,
+        "river": 45,
+        "canal": 132,
+        "stream": 24,
+        "peak": 1
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-west-zhangye",
+      "checkedFeatures": 224,
+      "countsByKind": {
+        "water": 135,
+        "river": 21,
+        "stream": 37,
+        "canal": 24,
+        "peak": 7
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-city-beijing",
+      "checkedFeatures": 1635,
+      "countsByKind": {
+        "water": 1080,
+        "river": 229,
+        "peak": 20,
+        "saddle": 1,
+        "canal": 191,
+        "stream": 114
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-city-changsha",
+      "checkedFeatures": 3697,
+      "countsByKind": {
+        "water": 3396,
+        "river": 135,
+        "peak": 19,
+        "canal": 25,
+        "stream": 122
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-city-fuzhou",
+      "checkedFeatures": 1955,
+      "countsByKind": {
+        "water": 979,
+        "river": 313,
+        "peak": 164,
+        "saddle": 8,
+        "stream": 471,
+        "canal": 20
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-city-guangzhou",
+      "checkedFeatures": 5289,
+      "countsByKind": {
+        "water": 3314,
+        "river": 1133,
+        "peak": 206,
+        "saddle": 4,
+        "stream": 303,
+        "canal": 329
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-city-jiangxia",
+      "checkedFeatures": 2355,
+      "countsByKind": {
+        "water": 1776,
+        "river": 133,
+        "peak": 78,
+        "stream": 122,
+        "canal": 246
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-city-jinan",
+      "checkedFeatures": 950,
+      "countsByKind": {
+        "water": 378,
+        "river": 166,
+        "peak": 219,
+        "canal": 44,
+        "stream": 143
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-city-jingzhou",
+      "checkedFeatures": 339,
+      "countsByKind": {
+        "water": 190,
+        "river": 16,
+        "canal": 133
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-city-jinyang",
+      "checkedFeatures": 283,
+      "countsByKind": {
+        "water": 91,
+        "river": 57,
+        "stream": 114,
+        "canal": 21
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-city-qingzhou-linzi",
+      "checkedFeatures": 296,
+      "countsByKind": {
+        "water": 133,
+        "river": 39,
+        "peak": 66,
+        "canal": 4,
+        "stream": 54
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-city-quanzhou",
+      "checkedFeatures": 867,
+      "countsByKind": {
+        "water": 219,
+        "river": 69,
+        "peak": 26,
+        "stream": 311,
+        "canal": 242
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-city-xiangyang",
+      "checkedFeatures": 891,
+      "countsByKind": {
+        "water": 675,
+        "river": 63,
+        "peak": 9,
+        "saddle": 1,
+        "stream": 75,
+        "canal": 68
       }
     }
   ],

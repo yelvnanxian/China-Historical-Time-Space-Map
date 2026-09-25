@@ -3,12 +3,14 @@ import { createPortal } from "react-dom";
 import { Marker, type GeoJSONSource, type Map as MapInstance, type MapMouseEvent } from "maplibre-gl";
 import { Waves, X } from "lucide-react";
 import { riverEpochAtYear, type RiverCollection, type RiverManifest } from "../../shared/historical-rivers";
+import { canInteract, type MapInteractionMode } from "../../shared/map-interactions";
+import { findNaturalMapHit } from "../../shared/map-hit-test";
 
 const empty: RiverCollection = { type: "FeatureCollection", features: [] };
 const layers = ["historical-river-halo", "historical-river-line", "historical-river-hit", "historical-river-comparison"];
 
 export default function HistoricalRiverLayer({ map, ready, visible, mode, year, periodLabel, controlsContainer, resetKey, referenceYear, referenceRequest, onCoverageChange, onChoose, onFocus }: {
-  map: MapInstance | null; ready: boolean; visible: boolean; mode: "cities" | "nature" | "both"; year: number; periodLabel: string;
+  map: MapInstance | null; ready: boolean; visible: boolean; mode: MapInteractionMode; year: number; periodLabel: string;
   controlsContainer: HTMLElement | null; resetKey: string; referenceYear?: number; referenceRequest?: object;
   onCoverageChange: (replace: boolean) => void; onChoose: () => void; onFocus: (points: [number, number][]) => void;
 }) {
@@ -29,6 +31,7 @@ export default function HistoricalRiverLayer({ map, ready, visible, mode, year, 
   const replacing = !!selectedData && visible;
   const status = epoch && selectedData ? `黄河 · ${epoch.label}` : selection === "modern" ? "黄河 · 现代参照" : "本年黄河复原未收录 · 现代参照";
   useEffect(() => { setDetail(false); }, [resetKey]);
+  useEffect(() => { if (!canInteract(mode, "rivers")) setDetail(false); }, [mode]);
   useEffect(() => { setSelection("period"); setComparison(""); }, [year]);
   useEffect(() => {
     if (referenceYear !== undefined) { setSelection("reference"); setDetail(true); setCollapsed(false); choose.current(); }
@@ -80,14 +83,17 @@ export default function HistoricalRiverLayer({ map, ready, visible, mode, year, 
   }, [map, ready, visible, selectedData, comparisonData]);
   function openDetail() { setDetail(true); setCollapsed(false); choose.current(); }
   useEffect(() => {
-    if (!map || !ready || !visible || !epoch || !selectedData) return;
+    if (!map || !ready || !visible || !epoch || !selectedData || !canInteract(mode, "rivers")) return;
     const element = document.createElement("button");
     element.className = "historical-river-label nature-label";
     element.textContent = `黄河 · ${epoch.label}`;
     element.setAttribute("aria-label", `查看黄河历史河道 ${epoch.label}`);
     element.addEventListener("click", e => { e.stopPropagation(); openDetail(); });
     const marker = new Marker({ element }).setLngLat(epoch.labelCoordinates).addTo(map);
-    const click = (event: MapMouseEvent) => { if (mode === "nature" && map.queryRenderedFeatures(event.point, { layers: ["historical-river-hit"] }).length) openDetail(); };
+    const click = (event: MapMouseEvent) => {
+      if ((event.originalEvent.target as HTMLElement)?.closest?.("button")) return;
+      if (findNaturalMapHit(map, event.point, mode)?.layer.id === "historical-river-hit") { event.originalEvent.preventDefault(); openDetail(); }
+    };
     map.on("click", click);
     return () => { marker.remove(); map.off("click", click); };
   }, [map, ready, visible, mode, epoch, selectedData]);
@@ -102,7 +108,8 @@ export default function HistoricalRiverLayer({ map, ready, visible, mode, year, 
       </select></label>
       <label>叠加对比<select aria-label="对比另一时期黄河" value={comparison} onChange={event => setComparison(event.target.value)}><option value="">不叠加</option>{manifest?.epochs.filter(item => item.id !== epoch?.id).map(item => <option key={item.id} value={item.id}>{item.label}</option>)}</select></label>
       <p><i className="river-key" />蓝色实线：{status}{compareEpoch && <><br /><i className="river-key compare" />棕色虚线：{compareEpoch.label}（对比）</>}</p>
-      {epoch && <button className="detail-focus-button" onClick={() => { onFocus([[epoch.bounds[0], epoch.bounds[1]], [epoch.bounds[2], epoch.bounds[3]]]); openDetail(); }}>查看这段河道</button>}
+      {epoch && <button className="detail-focus-button" disabled={!canInteract(mode, "rivers")} onClick={() => { onFocus([[epoch.bounds[0], epoch.bounds[1]], [epoch.bounds[2], epoch.bounds[3]]]); openDetail(); }}>查看这段河道</button>}
+      {!canInteract(mode, "rivers") && <p>当前筛选不点选河流；河道仍显示。切换“河流”或“全部”后可查资料。</p>}
       <p>唐代使用11—1048年图集河道；替换现代黄河下游。其他河湖仍为现代参照。</p>{error && <p role="status">{error}</p>}
     </section>, controlsContainer)}
     {visible && detail && <section className="nature-detail river-history-detail" aria-label="历史河道详情">

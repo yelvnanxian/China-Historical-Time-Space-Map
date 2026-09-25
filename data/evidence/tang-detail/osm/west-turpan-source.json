@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-west-turpan",
+  "title": "OpenStreetMap 现代地理：交河—高昌与吐鲁番绿洲",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.private.coffee/api/interpreter",
+  "retrievedAt": "2026-09-25T03:39:06.508055+00:00",
+  "bounds": [
+    88.5,
+    42.45,
+    89.65,
+    43.35
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/west-turpan.json.gz",
+  "snapshotSha256": "fa16b6d71c8bbbb2ee35c7170c259f7f9276dc142ff6b969c94c7272c2ccccd0",
+  "uncompressedSnapshotSha256": "f0d647f6008151974668e0c313204d3fd565063e1e3d60ca0a0c8a01e93ee850",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/west-turpan.ql",
+  "querySha256": "50d06b6ee611ca9ac8be7f9806399cf4407c81cc0245616bc608e3a730998dd6",
+  "osmBaseTimestamp": "2026-06-01T08:52:28Z",
+  "elementCount": 3155,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+}

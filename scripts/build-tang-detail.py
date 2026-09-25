@@ -181,7 +181,11 @@ def water_polygon(element):
 def modern():
     regions = []
     globally_included_ids = set()
-    for metadata_path in sorted((EVIDENCE / 'osm').glob('*-source.json')):
+    # Keep original six-region order and all existing IDs/pack bytes stable as
+    # additional areas are added. New western regions follow original sources.
+    metadata_paths = sorted((EVIDENCE / 'osm').glob('*-source.json'),
+                            key=lambda p: (2 if p.name.startswith('city-') else 1 if p.name.startswith('west-') else 0, p.name))
+    for metadata_path in metadata_paths:
         meta = json.loads(metadata_path.read_text())
         source_path = ROOT / meta['snapshotPath']
         assert digest(source_path) == meta['snapshotSha256']
@@ -235,6 +239,16 @@ def modern():
                               'modernReferenceOnly': True, 'geometryNote': '现代OSM原始几何；水面仅拼合完整成员环，未平滑、补画或缓冲。仅供现代地理参照，不是唐代河道、湖岸或工程。',
                               'minZoom': min_zoom, 'bounds': list(geometry.bounds), 'labelCoordinates': [anchor.x, anchor.y],
                               'osmType': etype, 'osmId': eid, 'tags': tags}
+                if region_id.startswith(('west-', 'city-')):
+                    source_conditions = []
+                    if tags.get('location') == 'underground' or tags.get('canal') == 'qanat':
+                        source_conditions.append('地下水渠，不能作为地表河流理解')
+                    if tags.get('status') == 'abandoned' or tags.get('abandoned') == 'yes':
+                        source_conditions.append('源标签标为已废弃')
+                    if tags.get('intermittent') == 'yes':
+                        source_conditions.append('间歇性水道或水面，不表示全年有水')
+                    if source_conditions:
+                        properties['geometryNote'] += '来源补充：' + '；'.join(source_conditions) + '。'
                 features.append({'type': 'Feature', 'id': ident, 'properties': properties, 'geometry': mapping(geometry)})
                 globally_included_ids.add((etype, eid))
             except (ValueError, KeyError) as error:

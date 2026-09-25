@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-west-dunhuang",
+  "title": "OpenStreetMap 现代地理：敦煌与党河绿洲",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "retrievedAt": "2026-09-25T03:34:04.069250+00:00",
+  "bounds": [
+    94.25,
+    39.55,
+    95.1,
+    40.5
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/west-dunhuang.json.gz",
+  "snapshotSha256": "33a4bacd36fd177a2be9a15616fd1583e7df95726e9a40d3b8c3dd2c9b29668c",
+  "uncompressedSnapshotSha256": "70c044238d470ba32fe812f28af04774689c6d8500a9c4e6fe680ac84305dfd5",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/west-dunhuang.ql",
+  "querySha256": "5eab50506698b79caf976f113055c7e8b9e705fc7e44918a9f590c8c72f5387c",
+  "osmBaseTimestamp": "2026-05-31T22:37:44Z",
+  "elementCount": 148,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+}

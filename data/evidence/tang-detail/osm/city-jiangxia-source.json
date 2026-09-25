@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-city-jiangxia",
+  "title": "OpenStreetMap 现代地理：江夏武汉附近水系",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.private.coffee/api/interpreter",
+  "retrievedAt": "2026-09-25T03:44:47.036784+00:00",
+  "bounds": [
+    114.1128,
+    30.3547,
+    114.5128,
+    30.7547
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/city-jiangxia.json.gz",
+  "snapshotSha256": "80337cf3c345727dbb255f49af1c7f993d1daaa1ee2d2659447293d4a6341a8e",
+  "uncompressedSnapshotSha256": "5ff7230b7f4169dbffdb3bdeb2292962ffdcbe0953b5b655f7406b3371abe6c8",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/city-jiangxia.ql",
+  "querySha256": "9b6cabbc75b6c3e3205e05a4f49320cfdd33e315accf3122eedf9e46e8452390",
+  "osmBaseTimestamp": "2026-07-15T15:22:01Z",
+  "elementCount": 2362,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+}

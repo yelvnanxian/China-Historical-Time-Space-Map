@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-city-quanzhou",
+  "title": "OpenStreetMap 现代地理：泉州与晋江附近水系",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.private.coffee/api/interpreter",
+  "retrievedAt": "2026-09-25T03:44:54.023053+00:00",
+  "bounds": [
+    118.48,
+    24.68,
+    118.88,
+    25.08
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/city-quanzhou.json.gz",
+  "snapshotSha256": "8fb900386d072bd3fe42c6be508a2b777100ca335ecb639e759a7fc11a5aeaf6",
+  "uncompressedSnapshotSha256": "a415657076def0f875c6284fc7dd1dd915a461a1162c51b769d48d8063047f84",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/city-quanzhou.ql",
+  "querySha256": "227f49bcaff2b21f492ff35fc4419e9094b2b728e7cfc7833e76fb7771adac11",
+  "osmBaseTimestamp": "2026-07-15T15:22:01Z",
+  "elementCount": 868,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+}

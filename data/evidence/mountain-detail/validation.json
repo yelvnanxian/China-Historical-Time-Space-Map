@@ -1,0 +1,21 @@
+{
+  "featureCount": 14330,
+  "countsByKind": {
+    "ridge": 8940,
+    "arete": 54,
+    "cliff": 1746,
+    "peak": 3590
+  },
+  "duplicateSourceCopies": 15,
+  "versionChoices": [],
+  "assertions": [
+    "All source compressed, uncompressed and query SHA256 values match",
+    "All published IDs globally unique",
+    "All way coordinate sequences equal complete original OSM geometry and node counts",
+    "All peak coordinates equal original named OSM nodes",
+    "All tags equal original tags",
+    "No polygons, peak links, buffers, smoothing or invented ridge geometries"
+  ],
+  "lengthMethod": "Sum haversine distances along original vertices, radius 6371.0088 km; horizontal mapped line length, not terrain length or total mountain range length",
+  "limitation": "Checks source fidelity, not independent survey accuracy or Tang geography."
+}

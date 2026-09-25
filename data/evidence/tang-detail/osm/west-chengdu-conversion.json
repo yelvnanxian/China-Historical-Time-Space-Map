@@ -1,0 +1,51 @@
+{
+  "featureCount": 7418,
+  "countsByKind": {
+    "water": 3397,
+    "peak": 53,
+    "saddle": 6,
+    "river": 567,
+    "stream": 2227,
+    "canal": 1168
+  },
+  "rejected": [
+    {
+      "osmType": "relation",
+      "osmId": 6959413,
+      "reason": "Invalid water polygon; no synthetic repair applied"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 18133590,
+      "reason": "Invalid water polygon; no synthetic repair applied"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 19693109,
+      "reason": "Inner ring has no containing outer ring"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 19693117,
+      "reason": "No complete outer ring"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 19693118,
+      "reason": "Inner ring has no containing outer ring"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 19693219,
+      "reason": "Inner ring has no containing outer ring"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 20590040,
+      "reason": "Invalid water polygon; no synthetic repair applied"
+    }
+  ],
+  "sourceMemberWayDuplicatesSuppressed": 1421,
+  "crossRegionDuplicateIdsSuppressed": 0,
+  "geometryPolicy": "Unsmoothed original coordinate sequences; exact endpoint line merging for complete water rings. No guessed closing edges, buffers or polygon repair."
+}

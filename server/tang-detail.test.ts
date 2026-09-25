@@ -99,7 +99,7 @@ test("唐细节历史点逐条来自原始SHP POINT，并隔离内部坐标冲�
 });
 
 test("唐细节全部来源归档哈希可验证，现代原始数据以gzip无损保存", async () => {
-  assert.equal(manifest.sources.length, 8);
+  assert.equal(manifest.sources.length, manifest.modernCoverageRegions.length + 2);
   for (const source of manifest.sources) {
     const bytes = await readFile(path.join(root, source.snapshotPath));
     assert.equal(digest(bytes), source.snapshotSha256, source.id);
@@ -158,10 +158,35 @@ test("现代细节按视野分包、ID唯一、实际几何完整且明确现代
   }
   assert.ok(ids.size > 50_000);
   for (const kind of ["river", "stream", "canal", "water", "peak", "saddle"]) assert.ok(kinds.has(kind));
-  assert.equal(manifest.modernCoverageRegions.length, 6);
+  assert.ok(manifest.modernCoverageRegions.length >= 32);
   const packs = new Map(manifest.modernRegions.map(pack => [pack.id, pack]));
   for (const region of manifest.modernCoverageRegions) {
     assert.ok(region.packageIds.length > 0);
     assert.ok(region.packageIds.every(id => packs.get(id)?.minZoom === 8));
   }
+});
+
+test("西部15个走廊与11城池近景补齐且原6区包与来源逐字保持", async () => {
+  const expected = ["chengdu", "lanzhou", "tianshui", "wuwei", "zhangye", "jiuquan", "dunhuang", "qiuci", "yanqi", "hami", "turpan", "hotan", "kashgar", "lhasa", "shannan"].map(name => `west-${name}`);
+  expected.push(...["beijing", "jinyang", "xiangyang", "jingzhou", "jiangxia", "changsha", "guangzhou", "quanzhou", "fuzhou", "jinan", "qingzhou-linzi"].map(name => `city-${name}`));
+  const coverage = new Map(manifest.modernCoverageRegions.map(region => [region.id, region]));
+  for (const id of expected) {
+    assert.ok(coverage.has(id), `Missing western corridor ${id}`);
+    assert.ok(manifest.sources.some(source => source.id === `osm-tang-detail-${id}`));
+    const packs = manifest.modernRegions.filter(pack => pack.regionId === id);
+    assert.ok(packs.length > 0, id);
+    assert.ok(packs.some(pack => (pack.countsByKind.river ?? 0) + (pack.countsByKind.stream ?? 0) + (pack.countsByKind.canal ?? 0) > 0), id);
+  }
+  const baseline: { packages: (TangDetailManifest["modernRegions"][number] & { sha256: string })[]; sources: TangDetailManifest["sources"] } = JSON.parse(await readFile(path.join(root, "data/evidence/tang-detail/western-expansion-baseline.json"), "utf8"));
+  const now = new Map(manifest.modernRegions.map(pack => [pack.id, pack]));
+  for (const original of baseline.packages) {
+    const { sha256, ...metadata } = original;
+    assert.deepEqual(now.get(original.id), metadata, original.id);
+    assert.equal(digest(await readFile(publicPath(original.url))), sha256, original.id);
+  }
+  for (const source of baseline.sources) assert.deepEqual(manifest.sources.find(item => item.id === source.id), source);
+  const sourceBytes = await Promise.all(manifest.sources.map(async source => (await stat(path.join(root, source.snapshotPath))).size));
+  assert.ok(sourceBytes.reduce((sum, size) => sum + size, 0) < 120_000_000);
+  const publicBytes = await Promise.all(manifest.modernRegions.map(async pack => (await stat(publicPath(pack.url))).size));
+  assert.ok(publicBytes.reduce((sum, size) => sum + size, 0) < 80_000_000);
 });

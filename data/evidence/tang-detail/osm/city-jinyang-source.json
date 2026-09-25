@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-city-jinyang",
+  "title": "OpenStreetMap 现代地理：晋阳与汾河附近水系",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.private.coffee/api/interpreter",
+  "retrievedAt": "2026-09-25T03:41:53.076876+00:00",
+  "bounds": [
+    112.25,
+    37.53,
+    112.65,
+    37.93
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/city-jinyang.json.gz",
+  "snapshotSha256": "b731792f538f11fa3787ba121cfb4e8f49a94958c24c75c64f7d0aa08e07184e",
+  "uncompressedSnapshotSha256": "d56e1312fb01edd2e5ed369c8dcb8831819faf2c55c4d92db551253351c7e4a7",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/city-jinyang.ql",
+  "querySha256": "d94fce8473f8f0ef2be6a819c46095366f02dfb6362ec6b9683030c2f392076b",
+  "osmBaseTimestamp": "2026-05-31T22:37:44Z",
+  "elementCount": 283,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+}

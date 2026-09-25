@@ -1,0 +1,566 @@
+{
+  "version": 1,
+  "scope": "Source-tag facts from published modern Tang-detail packs, independent of current UI classification. Feature condition counts overlap. No claim that all tagged features are perennial surface water.",
+  "sourceManifestSha256": "eed6d494aee843397249c9f43dd4fd8ffec87f159ae0b67e563115ffaff10837",
+  "packCount": 460,
+  "regionCount": 32,
+  "counts": {
+    "waterFeatures": 206037,
+    "Polygon": 124909,
+    "MultiPolygon": 237,
+    "LineString": 80891
+  },
+  "sourceTagValues": {
+    "canal": {
+      "irrigation": 1,
+      "qanat": 3445
+    },
+    "covered": {
+      "yes": 17
+    },
+    "intermittent": {
+      "no": 806,
+      "yes": 2250,
+      "dry": 1
+    },
+    "location": {
+      "underground": 3450,
+      "roof": 1
+    },
+    "seasonal": {
+      "yes": 42
+    },
+    "status": {
+      "abandoned": 3444,
+      "active": 1
+    },
+    "tunnel": {
+      "yes": 1419,
+      "culvert": 12524,
+      "no": 12,
+      "flooded": 3536,
+      "3": 1,
+      "building_passage": 5,
+      "covered": 5,
+      "pipe": 1,
+      "passage": 1,
+      "-1": 3
+    },
+    "tunnel:name": {
+      "陶桥隧洞": 1,
+      "罗冲隧洞": 1,
+      "鼓楼铺隧洞": 1,
+      "石壁山干渠1#隧洞": 1
+    },
+    "tunnel:name:zh-Hant": {
+      "陶橋隧洞": 1,
+      "羅沖隧洞": 1,
+      "鼓樓舖隧洞": 1
+    }
+  },
+  "sourceConditionsByGeometry": {
+    "intermittentYesOrDry": {
+      "LineString": 1238,
+      "Polygon": 1011,
+      "MultiPolygon": 2
+    },
+    "recognizedTunnelTag": {
+      "LineString": 17489,
+      "Polygon": 2
+    },
+    "intermittentOrSeasonalWaterPolygons": {
+      "Polygon": 1026,
+      "MultiPolygon": 2
+    },
+    "ambiguousTunnelValue": {
+      "LineString": 4
+    },
+    "seasonalYes": {
+      "Polygon": 15,
+      "LineString": 27
+    },
+    "coveredYes": {
+      "LineString": 11,
+      "Polygon": 6
+    },
+    "explicitUndergroundLocationOrQanat": {
+      "Polygon": 2,
+      "LineString": 3448
+    },
+    "abandonedStatus": {
+      "LineString": 3444
+    }
+  },
+  "sourceExamples": {
+    "intermittentYesOrDry": [
+      {
+        "id": "osm-way-385635723",
+        "publishedName": "未命名河流",
+        "geometryType": "LineString",
+        "regionId": "central-plains",
+        "packUrl": "/data/tang-detail/modern-central-plains-overview-part0.geojson.gz",
+        "sourceUrl": "https://www.openstreetmap.org/way/385635723",
+        "tags": {
+          "intermittent": "yes",
+          "waterway": "river"
+        }
+      },
+      {
+        "id": "osm-way-656546674",
+        "publishedName": "未命名水面",
+        "geometryType": "Polygon",
+        "regionId": "central-plains",
+        "packUrl": "/data/tang-detail/modern-central-plains-overview-part0.geojson.gz",
+        "sourceUrl": "https://www.openstreetmap.org/way/656546674",
+        "tags": {
+          "intermittent": "yes",
+          "landuse": "farmland",
+          "natural": "water"
+        }
+      },
+      {
+        "id": "osm-way-656546678",
+        "publishedName": "未命名水面",
+        "geometryType": "Polygon",
+        "regionId": "central-plains",
+        "packUrl": "/data/tang-detail/modern-central-plains-overview-part0.geojson.gz",
+        "sourceUrl": "https://www.openstreetmap.org/way/656546678",
+        "tags": {
+          "intermittent": "yes",
+          "landuse": "farmland",
+          "natural": "water"
+        }
+      },
+      {
+        "id": "osm-way-656546679",
+        "publishedName": "未命名水面",
+        "geometryType": "Polygon",
+        "regionId": "central-plains",
+        "packUrl": "/data/tang-detail/modern-central-plains-overview-part0.geojson.gz",
+        "sourceUrl": "https://www.openstreetmap.org/way/656546679",
+        "tags": {
+          "intermittent": "yes",
+          "landuse": "farmland",
+          "natural": "water"
+        }
+      }
+    ],
+    "recognizedTunnelTag": [
+      {
+        "id": "osm-way-395650669",
+        "publishedName": "滚河",
+        "geometryType": "LineString",
+        "regionId": "central-plains",
+        "packUrl": "/data/tang-detail/modern-central-plains-overview-part0.geojson.gz",
+        "sourceUrl": "https://www.openstreetmap.org/way/395650669",
+        "tags": {
+          "boat": "no",
+          "code": "AEA15106",
+          "layer": "-1",
+          "name": "滚河",
+          "name:en": "Gunhe River",
+          "name:zh": "滚河",
+          "name:zh-Hant": "滾河",
+          "name:zh-Latn-pinyin": "gǔn hé",
+          "nsdi_code": "-",
+          "source": "landsat",
+          "tunnel": "yes",
+          "waterway": "river",
+          "zhb_code": "-"
+        }
+      },
+      {
+        "id": "osm-way-395650670",
+        "publishedName": "滚河",
+        "geometryType": "LineString",
+        "regionId": "central-plains",
+        "packUrl": "/data/tang-detail/modern-central-plains-overview-part0.geojson.gz",
+        "sourceUrl": "https://www.openstreetmap.org/way/395650670",
+        "tags": {
+          "boat": "no",
+          "code": "AEA15106",
+          "layer": "-1",
+          "name": "滚河",
+          "name:en": "Gunhe River",
+          "name:zh": "滚河",
+          "name:zh-Hant": "滾河",
+          "name:zh-Latn-pinyin": "gǔn hé",
+          "nsdi_code": "-",
+          "source": "landsat",
+          "tunnel": "yes",
+          "waterway": "river",
+          "zhb_code": "-"
+        }
+      },
+      {
+        "id": "osm-way-405416913",
+        "publishedName": "未命名河流",
+        "geometryType": "LineString",
+        "regionId": "central-plains",
+        "packUrl": "/data/tang-detail/modern-central-plains-overview-part0.geojson.gz",
+        "sourceUrl": "https://www.openstreetmap.org/way/405416913",
+        "tags": {
+          "layer": "-1",
+          "tunnel": "yes",
+          "waterway": "river"
+        }
+      },
+      {
+        "id": "osm-way-431592791",
+        "publishedName": "未命名河流",
+        "geometryType": "LineString",
+        "regionId": "central-plains",
+        "packUrl": "/data/tang-detail/modern-central-plains-overview-part0.geojson.gz",
+        "sourceUrl": "https://www.openstreetmap.org/way/431592791",
+        "tags": {
+          "layer": "-1",
+          "tunnel": "culvert",
+          "waterway": "river"
+        }
+      }
+    ],
+    "ambiguousTunnelValue": [
+      {
+        "id": "osm-way-783794072",
+        "publishedName": "未命名溪流",
+        "geometryType": "LineString",
+        "regionId": "central-plains",
+        "packUrl": "/data/tang-detail/modern-central-plains-230-65-part0.geojson.gz",
+        "sourceUrl": "https://www.openstreetmap.org/way/783794072",
+        "tags": {
+          "tunnel": "3",
+          "waterway": "stream"
+        }
+      },
+      {
+        "id": "osm-way-1500971448",
+        "publishedName": "未命名水渠",
+        "geometryType": "LineString",
+        "regionId": "city-quanzhou",
+        "packUrl": "/data/tang-detail/modern-city-quanzhou-237-49-part0.geojson.gz",
+        "sourceUrl": "https://www.openstreetmap.org/way/1500971448",
+        "tags": {
+          "tunnel": "-1",
+          "waterway": "canal"
+        }
+      },
+      {
+        "id": "osm-way-1500971449",
+        "publishedName": "未命名水渠",
+        "geometryType": "LineString",
+        "regionId": "city-quanzhou",
+        "packUrl": "/data/tang-detail/modern-city-quanzhou-237-49-part0.geojson.gz",
+        "sourceUrl": "https://www.openstreetmap.org/way/1500971449",
+        "tags": {
+          "tunnel": "-1",
+          "waterway": "canal"
+        }
+      },
+      {
+        "id": "osm-way-1500971450",
+        "publishedName": "未命名水渠",
+        "geometryType": "LineString",
+        "regionId": "city-quanzhou",
+        "packUrl": "/data/tang-detail/modern-city-quanzhou-237-49-part0.geojson.gz",
+        "sourceUrl": "https://www.openstreetmap.org/way/1500971450",
+        "tags": {
+          "layer": "-1",
+          "tunnel": "-1",
+          "waterway": "canal"
+        }
+      }
+    ],
+    "seasonalYes": [
+      {
+        "id": "osm-way-422790467",
+        "publishedName": "未命名水面",
+        "geometryType": "Polygon",
+        "regionId": "guanzhong",
+        "packUrl": "/data/tang-detail/modern-guanzhong-overview-part0.geojson.gz",
+        "sourceUrl": "https://www.openstreetmap.org/way/422790467",
+        "tags": {
+          "natural": "water",
+          "seasonal": "yes",
+          "water": "canal"
+        }
+      },
+      {
+        "id": "osm-way-1481302478",
+        "publishedName": "杨市河",
+        "geometryType": "LineString",
+        "regionId": "jianghuai",
+        "packUrl": "/data/tang-detail/modern-jianghuai-overview-part3.geojson.gz",
+        "sourceUrl": "https://www.openstreetmap.org/way/1481302478",
+        "tags": {
+          "name": "杨市河",
+          "seasonal": "yes",
+          "waterway": "river"
+        }
+      },
+      {
+        "id": "osm-way-1315434918",
+        "publishedName": "未命名溪流",
+        "geometryType": "LineString",
+        "regionId": "luoyang",
+        "packUrl": "/data/tang-detail/modern-luoyang-226-67-part0.geojson.gz",
+        "sourceUrl": "https://www.openstreetmap.org/way/1315434918",
+        "tags": {
+          "layer": "-1",
+          "seasonal": "yes",
+          "tunnel": "culvert",
+          "waterway": "stream"
+        }
+      },
+      {
+        "id": "osm-way-1315434919",
+        "publishedName": "未命名溪流",
+        "geometryType": "LineString",
+        "regionId": "luoyang",
+        "packUrl": "/data/tang-detail/modern-luoyang-226-67-part0.geojson.gz",
+        "sourceUrl": "https://www.openstreetmap.org/way/1315434919",
+        "tags": {
+          "bridge": "aqueduct",
+          "layer": "1",
+          "seasonal": "yes",
+          "waterway": "stream"
+        }
+      }
+    ],
+    "coveredYes": [
+      {
+        "id": "osm-way-467817268",
+        "publishedName": "未命名河流",
+        "geometryType": "LineString",
+        "regionId": "guanzhong",
+        "packUrl": "/data/tang-detail/modern-guanzhong-overview-part0.geojson.gz",
+        "sourceUrl": "https://www.openstreetmap.org/way/467817268",
+        "tags": {
+          "covered": "yes",
+          "source": "Bing",
+          "waterway": "river"
+        }
+      },
+      {
+        "id": "osm-way-691864268",
+        "publishedName": "南市河",
+        "geometryType": "LineString",
+        "regionId": "jianghuai",
+        "packUrl": "/data/tang-detail/modern-jianghuai-overview-part2.geojson.gz",
+        "sourceUrl": "https://www.openstreetmap.org/way/691864268",
+        "tags": {
+          "covered": "yes",
+          "name": "南市河",
+          "waterway": "river"
+        }
+      },
+      {
+        "id": "osm-way-1035820035",
+        "publishedName": "蒋口河",
+        "geometryType": "LineString",
+        "regionId": "jianghuai",
+        "packUrl": "/data/tang-detail/modern-jianghuai-overview-part3.geojson.gz",
+        "sourceUrl": "https://www.openstreetmap.org/way/1035820035",
+        "tags": {
+          "bridge": "aqueduct",
+          "covered": "yes",
+          "layer": "1",
+          "name": "蒋口河",
+          "waterway": "river",
+          "width": "22"
+        }
+      },
+      {
+        "id": "osm-way-1156051021",
+        "publishedName": "瓦东干渠",
+        "geometryType": "LineString",
+        "regionId": "jianghuai",
+        "packUrl": "/data/tang-detail/modern-jianghuai-234-64-part0.geojson.gz",
+        "sourceUrl": "https://www.openstreetmap.org/way/1156051021",
+        "tags": {
+          "bridge": "aqueduct",
+          "covered": "yes",
+          "name": "瓦东干渠",
+          "name:zh-Hant": "瓦東幹渠",
+          "usage": "transmission",
+          "waterway": "canal"
+        }
+      }
+    ],
+    "coveredNotNecessarilyUnderground": [
+      {
+        "id": "osm-way-1035820035",
+        "publishedName": "蒋口河",
+        "sourceUrl": "https://www.openstreetmap.org/way/1035820035",
+        "tags": {
+          "bridge": "aqueduct",
+          "covered": "yes",
+          "layer": "1",
+          "name": "蒋口河",
+          "waterway": "river",
+          "width": "22"
+        }
+      },
+      {
+        "id": "osm-way-1156051021",
+        "publishedName": "瓦东干渠",
+        "sourceUrl": "https://www.openstreetmap.org/way/1156051021",
+        "tags": {
+          "bridge": "aqueduct",
+          "covered": "yes",
+          "name": "瓦东干渠",
+          "name:zh-Hant": "瓦東幹渠",
+          "usage": "transmission",
+          "waterway": "canal"
+        }
+      }
+    ],
+    "explicitUndergroundLocationOrQanat": [
+      {
+        "id": "osm-way-1504027751",
+        "publishedName": "未命名水面",
+        "geometryType": "Polygon",
+        "regionId": "taihu",
+        "packUrl": "/data/tang-detail/modern-taihu-243-62-part0.geojson.gz",
+        "sourceUrl": "https://www.openstreetmap.org/way/1504027751",
+        "tags": {
+          "basin": "detention",
+          "intermittent": "yes",
+          "location": "underground",
+          "natural": "water",
+          "note": "初雨调蓄池",
+          "water": "basin"
+        }
+      },
+      {
+        "id": "osm-way-696725761",
+        "publishedName": "未命名水渠",
+        "geometryType": "LineString",
+        "regionId": "taihu",
+        "packUrl": "/data/tang-detail/modern-taihu-242-62-part0.geojson.gz",
+        "sourceUrl": "https://www.openstreetmap.org/way/696725761",
+        "tags": {
+          "layer": "-1",
+          "location": "underground",
+          "tunnel": "culvert",
+          "waterway": "canal"
+        }
+      },
+      {
+        "id": "osm-way-696725763",
+        "publishedName": "未命名水渠",
+        "geometryType": "LineString",
+        "regionId": "taihu",
+        "packUrl": "/data/tang-detail/modern-taihu-242-62-part0.geojson.gz",
+        "sourceUrl": "https://www.openstreetmap.org/way/696725763",
+        "tags": {
+          "layer": "-1",
+          "location": "underground",
+          "tunnel": "culvert",
+          "waterway": "canal"
+        }
+      },
+      {
+        "id": "osm-way-696725765",
+        "publishedName": "未命名水渠",
+        "geometryType": "LineString",
+        "regionId": "taihu",
+        "packUrl": "/data/tang-detail/modern-taihu-242-62-part0.geojson.gz",
+        "sourceUrl": "https://www.openstreetmap.org/way/696725765",
+        "tags": {
+          "layer": "-1",
+          "location": "underground",
+          "tunnel": "culvert",
+          "waterway": "canal"
+        }
+      }
+    ],
+    "abandonedStatus": [
+      {
+        "id": "osm-way-1337376285",
+        "publishedName": "坎儿井",
+        "geometryType": "LineString",
+        "regionId": "west-hami",
+        "packUrl": "/data/tang-detail/modern-west-hami-187-85-part0.geojson.gz",
+        "sourceUrl": "https://www.openstreetmap.org/way/1337376285",
+        "tags": {
+          "canal": "qanat",
+          "elevation": "-3",
+          "layer": "-3",
+          "location": "underground",
+          "name:en": "Qanat",
+          "name:fa": "قنات",
+          "name:zh": "坎儿井",
+          "status": "abandoned",
+          "tunnel": "flooded",
+          "waterway": "canal"
+        }
+      },
+      {
+        "id": "osm-way-1337376286",
+        "publishedName": "坎儿井",
+        "geometryType": "LineString",
+        "regionId": "west-hami",
+        "packUrl": "/data/tang-detail/modern-west-hami-187-85-part0.geojson.gz",
+        "sourceUrl": "https://www.openstreetmap.org/way/1337376286",
+        "tags": {
+          "canal": "qanat",
+          "elevation": "-3",
+          "layer": "-3",
+          "location": "underground",
+          "name:en": "Qanat",
+          "name:fa": "قنات",
+          "name:zh": "坎儿井",
+          "status": "abandoned",
+          "tunnel": "flooded",
+          "waterway": "canal"
+        }
+      },
+      {
+        "id": "osm-way-1337376287",
+        "publishedName": "坎儿井",
+        "geometryType": "LineString",
+        "regionId": "west-hami",
+        "packUrl": "/data/tang-detail/modern-west-hami-187-85-part0.geojson.gz",
+        "sourceUrl": "https://www.openstreetmap.org/way/1337376287",
+        "tags": {
+          "canal": "qanat",
+          "elevation": "-3",
+          "layer": "-3",
+          "location": "underground",
+          "name:en": "Qanat",
+          "name:fa": "قنات",
+          "name:zh": "坎儿井",
+          "status": "abandoned",
+          "tunnel": "flooded",
+          "waterway": "canal"
+        }
+      },
+      {
+        "id": "osm-way-1337376288",
+        "publishedName": "坎儿井",
+        "geometryType": "LineString",
+        "regionId": "west-hami",
+        "packUrl": "/data/tang-detail/modern-west-hami-187-85-part0.geojson.gz",
+        "sourceUrl": "https://www.openstreetmap.org/way/1337376288",
+        "tags": {
+          "canal": "qanat",
+          "elevation": "-3",
+          "layer": "-3",
+          "location": "underground",
+          "name:en": "Qanat",
+          "name:fa": "قنات",
+          "name:zh": "坎儿井",
+          "status": "abandoned",
+          "tunnel": "flooded",
+          "waterway": "canal"
+        }
+      }
+    ]
+  },
+  "interpretationNotes": [
+    "tunnel=yes/culvert/flooded/covered/pipe/passage/building_passage and covered=yes identify enclosed or covered portions. Covered channels and building passages are not necessarily underground; some actual tags include bridge=aqueduct or positive layer.",
+    "tunnel=3 and tunnel=-1 are ambiguous source values and are retained for review, without inventing underground status.",
+    "intermittent=yes/dry or seasonal=yes must not imply perennial water. Geometry and source tags stay unchanged.",
+    "All modern OSM lines and surfaces are contemporary reference, not evidence of Tang-period engineering or water extent."
+  ]
+}

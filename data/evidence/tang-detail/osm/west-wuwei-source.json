@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-west-wuwei",
+  "title": "OpenStreetMap 现代地理：武威与石羊河绿洲",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "retrievedAt": "2026-09-25T03:31:17.069646+00:00",
+  "bounds": [
+    102.3,
+    37.5,
+    103.15,
+    38.35
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/west-wuwei.json.gz",
+  "snapshotSha256": "c03c982cfda8663a92db16a642a5eb15eaef067a992800ee993494517fafc840",
+  "uncompressedSnapshotSha256": "cdb020c5059d39ca9d3211ae18c48139c6e98d313173707e87009ced0385da4d",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/west-wuwei.ql",
+  "querySha256": "0b78a880a47d8991c10a0c8aa1e28ae37571e1138db5a6b27f196abc062d7168",
+  "osmBaseTimestamp": "2026-07-15T15:22:01Z",
+  "elementCount": 165,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+}

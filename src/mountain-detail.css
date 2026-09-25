@@ -1,0 +1,9 @@
+.mountain-detail-label { white-space: nowrap; max-width: 250px; overflow: hidden; text-overflow: ellipsis; border-radius: 3px; padding: 3px 6px; color: #756642; background: #fff8e2dd; font: 12px/1.4 var(--serif); cursor: pointer; text-shadow: 0 1px 1px white; }
+.mountain-detail-label:hover,.mountain-detail-label:focus-visible,.mountain-detail-label.is-selected { outline: 1px solid #a16f4c; background: #fff7da; z-index: 36; }
+.mountain-detail-coverage { padding: 8px 0; font-size: 11px; line-height: 1.8; }
+.mountain-detail-coverage summary { cursor: pointer; }
+.mountain-detail-coverage p { color: #7c8067; }
+.mountain-region-shortcuts { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
+.mountain-region-shortcuts button { padding: 5px 7px; border: 1px solid #dbd5bd; border-radius: 4px; font-size: 10px; }
+.mountain-detail-card pre { max-height: 180px; overflow: auto; white-space: pre-wrap; font: 10px/1.7 monospace; }
+@media (max-width: 720px) { .mountain-region-shortcuts button { min-height: 38px; } }

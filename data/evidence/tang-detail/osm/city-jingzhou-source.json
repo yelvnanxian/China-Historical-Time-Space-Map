@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-city-jingzhou",
+  "title": "OpenStreetMap 现代地理：江陵荆州附近水系",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.private.coffee/api/interpreter",
+  "retrievedAt": "2026-09-25T03:42:23.733719+00:00",
+  "bounds": [
+    112.04,
+    30.14,
+    112.44,
+    30.54
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/city-jingzhou.json.gz",
+  "snapshotSha256": "4d95e40291166ab71874c1b435bef6cc44deb411ced2c7b879d3865ec2149053",
+  "uncompressedSnapshotSha256": "3481b0a3a3ad862f0cdba38f2bea0785601fad73118b2805688bfb6d2ea8f914",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/city-jingzhou.ql",
+  "querySha256": "ee8b322cce2d426de1d8ee842cab5db4406a6200628c3cdfa4eb86c31fdb9216",
+  "osmBaseTimestamp": "2026-07-15T15:22:01Z",
+  "elementCount": 340,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+}

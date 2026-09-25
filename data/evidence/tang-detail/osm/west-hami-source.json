@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-west-hami",
+  "title": "OpenStreetMap 现代地理：伊吾与哈密绿洲",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "retrievedAt": "2026-09-25T03:34:27.049283+00:00",
+  "bounds": [
+    92.9,
+    42.4,
+    93.95,
+    43.35
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/west-hami.json.gz",
+  "snapshotSha256": "c2cc2b4c94fa25043a072ce302866e6e5b242daadfd0c6d6f749ad50194b0df5",
+  "uncompressedSnapshotSha256": "7e99f431f9ea9ff7f514f83b153a616ac6f32269ec1b14ddbbeee0d569b3fb5b",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/west-hami.ql",
+  "querySha256": "0a9fc89863489329a268491f884d2dd85ecc1df55917a0334c557e8ca0182af2",
+  "osmBaseTimestamp": "2026-05-31T22:37:44Z",
+  "elementCount": 724,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+}

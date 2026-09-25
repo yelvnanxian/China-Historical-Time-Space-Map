@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-west-lhasa",
+  "title": "OpenStreetMap 现代地理：拉萨河下游与拉萨地区",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.private.coffee/api/interpreter",
+  "retrievedAt": "2026-09-25T03:39:00.912686+00:00",
+  "bounds": [
+    90.65,
+    29.2,
+    91.65,
+    30
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/west-lhasa.json.gz",
+  "snapshotSha256": "0f52cefdd48641a8de7ae54110e4b99b765c13a3607843a86887f783bb446c3c",
+  "uncompressedSnapshotSha256": "e161bbc854d142bd164ad624a208f365eea7181556969f4fb9afe72ba345b2c1",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/west-lhasa.ql",
+  "querySha256": "533d0c5126e5a30b9751732fb09418c1dd935c38eef735d5acf3fa43b4ec543b",
+  "osmBaseTimestamp": "2026-07-28T02:16:18Z",
+  "elementCount": 742,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+}

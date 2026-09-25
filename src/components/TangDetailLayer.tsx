@@ -4,38 +4,48 @@ import { Marker, type FilterSpecification, type GeoJSONSource, type Map as MapIn
 import { MapPin, Search, X } from "lucide-react";
 import type { Feature, Geometry } from "geojson";
 import { tangDetailKindNames, type TangDetailCollection, type TangDetailManifest, type TangDetailProperties } from "../../shared/tang-detail";
-import type { MapViewLevel } from "../../shared/map-detail-levels";
-import { boundsOverlap, replaceModernYellowGeometry, showTangDetail } from "../../shared/tang-detail-display";
-import type { MapBounds } from "../../shared/historical-rivers";
+import { boundsOverlap, canSelectTangDetail, replaceModernYellowGeometry, showTangDetail, waterDetailReplacements, waterDisplayClass } from "../../shared/tang-detail-display";
+import type { MapBounds, WaterDetailReplacement } from "../../shared/historical-rivers";
+import { canInteract, type MapInteractionMode } from "../../shared/map-interactions";
+import { findNaturalMapHit } from "../../shared/map-hit-test";
+import { localizePhysicalGroup } from "../../shared/place-name-localization";
+import type { PhysicalGroup, PhysicalInteractionIndex } from "../../shared/physical-geography";
 import { boundarySearchKey } from "../../shared/boundary-search";
 import type { Place } from "../../shared/types";
 import "../map-detail.css";
+import type { TangBoundaryCrosswalk } from "../../shared/tang-boundary-crosswalk";
+import TangJurisdictionInfo from "./TangJurisdictionInfo";
+import { localizeTangDetailFeature } from "../../shared/tang-detail-names";
 
 const empty: TangDetailCollection = { type: "FeatureCollection", features: [] };
-const layerIds = ["tang-detail-water", "tang-detail-water-edge", "tang-detail-rivers", "tang-detail-hit", "tang-detail-peaks", "tang-detail-towns", "tang-detail-selected-line", "tang-detail-selected-water", "tang-detail-selected-point"];
+const layerIds = ["tang-detail-water", "tang-detail-water-edge", "tang-detail-rivers", "tang-detail-hit", "tang-detail-peaks", "tang-detail-towns", "tang-detail-selected-line", "tang-detail-selected-water", "tang-detail-selected-point", "tang-detail-underground", "tang-detail-water-edge-seasonal"];
 type DetailFeature = Feature<Geometry, TangDetailProperties>;
 
 async function fetchCollection(url: string, signal: AbortSignal): Promise<TangDetailCollection> {
   const response = await fetch(url, { signal });
   if (!response.ok) throw Error();
-  if (!url.endsWith(".gz")) return response.json();
+  const localize = (data: TangDetailCollection): TangDetailCollection => ({ ...data, features: data.features.map(localizeTangDetailFeature) });
+  if (!url.endsWith(".gz")) return response.json().then(localize);
   // Static hosts differ: Vite advertises gzip and the browser decodes it first;
   // a plain file host may return compressed bytes without Content-Encoding.
   const bytes = new Uint8Array(await response.arrayBuffer());
-  if (bytes[0] !== 0x1f || bytes[1] !== 0x8b) return JSON.parse(new TextDecoder().decode(bytes));
-  return new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream("gzip"))).json();
+  if (bytes[0] !== 0x1f || bytes[1] !== 0x8b) return localize(JSON.parse(new TextDecoder().decode(bytes)));
+  return new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream("gzip"))).json().then(localize);
 }
 
-export default function TangDetailLayer({ map, ready, enabled, mode, viewLevel, zoom, modernNames, controlsContainer, resetKey, replaceYellowLower, places, onPlaceSelect, onFocus, onChoose, onCoverageChange }: {
-  map: MapInstance | null; ready: boolean; enabled: boolean; mode: "cities" | "nature" | "both"; viewLevel: MapViewLevel; zoom: number; modernNames: boolean;
+export default function TangDetailLayer({ map, ready, enabled, mode, zoom, modernNames, controlsContainer, resetKey, replaceYellowLower, places, onPlaceSelect, onFocus, onChoose, onCoverageChange, tangBoundaries, onBoundaryRequest, mountainFeatureIds, crosswalkLoading }: {
+  map: MapInstance | null; ready: boolean; enabled: boolean; mode: MapInteractionMode; zoom: number; modernNames: boolean;
   controlsContainer: HTMLElement | null; resetKey: string; replaceYellowLower: boolean; places: Place[];
   onPlaceSelect: (id: string) => void; onFocus: (points: [number, number][], maxZoom?: number) => void; onChoose: () => void;
-  onCoverageChange: (bounds: MapBounds[]) => void;
+  onCoverageChange: (replacements: WaterDetailReplacement[]) => void;
+  tangBoundaries: TangBoundaryCrosswalk | null; onBoundaryRequest: (id: string, quiet?: boolean) => void;
+  mountainFeatureIds: string[]; crosswalkLoading: boolean;
 }) {
   const [manifest, setManifest] = useState<TangDetailManifest>();
   const [historical, setHistorical] = useState<TangDetailCollection>(empty);
   const [regions, setRegions] = useState<Record<string, TangDetailCollection>>({});
   const [yellowWaterIds, setYellowWaterIds] = useState<Set<string>>(new Set());
+  const [contextGroups, setContextGroups] = useState<PhysicalGroup[]>([]);
   const [viewportTick, setViewportTick] = useState(0);
   const [attempt, setAttempt] = useState(0);
   const [loading, setLoading] = useState(false);
@@ -45,8 +55,22 @@ export default function TangDetailLayer({ map, ready, enabled, mode, viewLevel, 
   const [selected, setSelected] = useState<DetailFeature>();
   const [collapsed, setCollapsed] = useState(false);
   const choose = useRef(onChoose); choose.current = onChoose;
+  const boundaryChoose = useRef(onBoundaryRequest); boundaryChoose.current = onBoundaryRequest;
+  useEffect(() => {
+    if (!enabled || !canInteract(mode, "cities") || selected?.properties.kind !== "settlement") return;
+    const link = tangBoundaries?.settlements[selected.properties.id];
+    if (link) boundaryChoose.current(link.boundaryId, true);
+  }, [selected, tangBoundaries, enabled, mode]);
   useEffect(() => { setSelected(undefined); }, [resetKey, enabled]);
-  useEffect(() => { if (selected && (mode === "cities" && selected.properties.kind !== "settlement" || mode === "nature" && selected.properties.kind === "settlement")) setSelected(undefined); }, [mode, selected]);
+  useEffect(() => { if (selected && !canSelectTangDetail(selected.properties, mode)) setSelected(undefined); }, [mode, selected]);
+  useEffect(() => { setSearchKind("all"); }, [mode]);
+  useEffect(() => {
+    const abort = new AbortController();
+    fetch("/data/physical-interactions.json", { signal: abort.signal }).then(r => { if (!r.ok) throw Error(); return r.json(); })
+      .then((index: PhysicalInteractionIndex) => setContextGroups(index.groups.map(localizePhysicalGroup)))
+      .catch(() => { /* Without a confirmed name match, retain the overview. */ });
+    return () => abort.abort();
+  }, []);
   useEffect(() => {
     if (!enabled) return;
     const abort = new AbortController();
@@ -78,11 +102,11 @@ export default function TangDetailLayer({ map, ready, enabled, mode, viewLevel, 
     return () => { map.off("moveend", update); map.off("resize", update); };
   }, [map, ready]);
   const needed = useMemo(() => {
-    if (!enabled || !map || !ready || mode === "cities") return [];
+    if (!enabled || !map || !ready) return [];
     const b = map.getBounds();
     const bounds: MapBounds = [b.getWest(), b.getSouth(), b.getEast(), b.getNorth()];
     return manifest?.modernRegions.filter(region => zoom >= region.minZoom && boundsOverlap(bounds, region.bounds)) ?? [];
-  }, [map, ready, enabled, mode, zoom, viewportTick, manifest]);
+  }, [map, ready, enabled, zoom, viewportTick, manifest]);
   const neededKey = needed.map(region => region.id).join(",");
   useEffect(() => {
     setRegions(previous => {
@@ -112,30 +136,23 @@ export default function TangDetailLayer({ map, ready, enabled, mode, viewLevel, 
     return () => abort.abort();
   }, [neededKey, attempt]);
   const loadedRegions = useMemo(() => needed.filter(region => regions[region.id]), [needed, regions]);
-  const coverageKey = useMemo(() => {
-    if (!enabled || !map || !ready || mode === "cities" || zoom < 8) return "[]";
-    const b = map.getBounds();
-    const bounds: MapBounds = [b.getWest(), b.getSouth(), b.getEast(), b.getNorth()];
-    const coverage: MapBounds[] = [];
-    for (const region of manifest?.modernCoverageRegions ?? []) {
-      if (!boundsOverlap(bounds, region.bounds)) continue;
-      const part: MapBounds = [Math.max(bounds[0], region.bounds[0]), Math.max(bounds[1], region.bounds[1]), Math.min(bounds[2], region.bounds[2]), Math.min(bounds[3], region.bounds[3])];
-      const packages = manifest!.modernRegions.filter(item => region.packageIds.includes(item.id) && boundsOverlap(part, item.bounds));
-      if (packages.length && packages.every(item => !!regions[item.id])) coverage.push(part);
-    }
-    return JSON.stringify(coverage);
-  }, [enabled, map, ready, mode, zoom, viewportTick, manifest, regions]);
-  useEffect(() => { onCoverageChange(JSON.parse(coverageKey)); }, [coverageKey, onCoverageChange]);
+  const mountainIds = useMemo(() => new Set(mountainFeatureIds), [mountainFeatureIds]);
   const activeFeatures = useMemo(() => {
     if (!enabled) return [];
     const unique = new Map<string, DetailFeature>();
     for (const feature of [...historical.features, ...loadedRegions.flatMap(region => regions[region.id].features)]) {
-      if (!showTangDetail(feature.properties, zoom, mode, viewLevel)) continue;
+      if (feature.properties.kind === "peak" && mountainIds.has(feature.properties.id)) continue;
+      if (!showTangDetail(feature.properties, zoom, "all")) continue;
       const displayed = replaceModernYellowGeometry(feature, replaceYellowLower, yellowWaterIds);
-      if (displayed) unique.set(feature.properties.id, displayed);
+      if (displayed) {
+        const styled = { ...displayed, properties: { ...displayed.properties, waterDisplayClass: waterDisplayClass(displayed.properties) } };
+        unique.set(feature.properties.id, styled);
+      }
     }
     return [...unique.values()];
-  }, [enabled, historical, loadedRegions, regions, zoom, mode, viewLevel, replaceYellowLower, yellowWaterIds]);
+  }, [enabled, historical, loadedRegions, regions, zoom, replaceYellowLower, yellowWaterIds, mountainIds]);
+  const replacementKey = useMemo(() => JSON.stringify(waterDetailReplacements(activeFeatures, contextGroups)), [activeFeatures, contextGroups]);
+  useEffect(() => { onCoverageChange(JSON.parse(replacementKey)); }, [replacementKey, onCoverageChange]);
   const selectable = useMemo(() => new Map(activeFeatures.map(feature => [feature.properties.id, feature])), [activeFeatures]);
   const searchResults = useMemo(() => {
     const key = boundarySearchKey(query);
@@ -143,10 +160,10 @@ export default function TangDetailLayer({ map, ready, enabled, mode, viewLevel, 
       const displayed = replaceModernYellowGeometry(feature, replaceYellowLower, yellowWaterIds);
       return displayed ? [[displayed.properties.id, displayed] as const] : [];
     }));
-    return [...merged.values()].filter(({ properties: p }) => (mode !== "cities" || p.kind === "settlement") && (mode !== "nature" || p.kind !== "settlement") && (searchKind === "all" || (searchKind === "settlement" ? p.kind === "settlement" : p.kind !== "settlement")) && !/^未命名|^未定名/.test(p.name) && (!key || boundarySearchKey(`${p.name} ${p.nameEn} ${p.presentLocation ?? ""}`).includes(key)))
+    return [...merged.values()].filter(({ properties: p }) => canSelectTangDetail(p, mode) && !(p.kind === "peak" && mountainIds.has(p.id)) && (searchKind === "all" || (searchKind === "settlement" ? p.kind === "settlement" : p.kind !== "settlement")) && !/^未命名|^未定名/.test(p.name) && (!key || boundarySearchKey(`${p.name} ${p.nameEn} ${p.presentLocation ?? ""}`).includes(key)))
       .sort((a, b) => Number(b.properties.kind === "settlement") - Number(a.properties.kind === "settlement") || a.properties.minZoom - b.properties.minZoom)
       .slice(0, key ? 40 : 8);
-  }, [historical, loadedRegions, regions, query, searchKind, mode, replaceYellowLower, yellowWaterIds]);
+  }, [historical, loadedRegions, regions, query, searchKind, mode, replaceYellowLower, yellowWaterIds, mountainIds]);
   useEffect(() => {
     if (selected && !replaceModernYellowGeometry(selected, replaceYellowLower, yellowWaterIds)) setSelected(undefined);
   }, [replaceYellowLower, yellowWaterIds, selected]);
@@ -154,21 +171,25 @@ export default function TangDetailLayer({ map, ready, enabled, mode, viewLevel, 
   useEffect(() => {
     if (!ready || !map) return;
     map.addSource("tang-detail", { type: "geojson", data: empty, tolerance: 0, buffer: 64 });
+    map.addSource("tang-detail-selected", { type: "geojson", data: empty, tolerance: 0 });
     const add: MapInstance["addLayer"] = (layer) => map.addLayer(layer, map.getLayer("historical-river-halo") ? "historical-river-halo" : "route-line");
     const water: FilterSpecification = ["==", ["geometry-type"], "Polygon"];
-    add({ id: layerIds[0], type: "fill", source: "tang-detail", filter: water, paint: { "fill-color": "#88bdc9", "fill-opacity": .85 } });
-    add({ id: layerIds[1], type: "line", source: "tang-detail", filter: water, paint: { "line-color": "#639eaf", "line-width": .7 } });
-    add({ id: layerIds[2], type: "line", source: "tang-detail", filter: ["==", ["geometry-type"], "LineString"], layout: { "line-join": "round", "line-cap": "round" }, paint: { "line-color": "#5898af", "line-width": ["match", ["get", "kind"], "river", 2.2, "stream", 1, .8], "line-opacity": .85 } });
+    add({ id: layerIds[0], type: "fill", source: "tang-detail", filter: water, paint: { "fill-color": ["match", ["get", "waterDisplayClass"], "underground", "#999080", "#88bdc9"], "fill-opacity": ["match", ["get", "waterDisplayClass"], "surface", .85, .2] } });
+    add({ id: layerIds[1], type: "line", source: "tang-detail", filter: ["all", water, ["==", ["get", "waterDisplayClass"], "surface"]], paint: { "line-color": "#639eaf", "line-width": .7 } });
+    add({ id: "tang-detail-water-edge-seasonal", type: "line", source: "tang-detail", filter: ["all", water, ["!=", ["get", "waterDisplayClass"], "surface"]], paint: { "line-color": ["match", ["get", "waterDisplayClass"], "underground", "#8b8472", "#639eaf"], "line-width": 1, "line-dasharray": [2, 2] } });
+    add({ id: layerIds[2], type: "line", source: "tang-detail", filter: ["all", ["==", ["geometry-type"], "LineString"], ["==", ["get", "waterDisplayClass"], "surface"]], layout: { "line-join": "round", "line-cap": "round" }, paint: { "line-color": "#5898af", "line-width": ["match", ["get", "kind"], "river", 2.2, "stream", 1.2, .9], "line-opacity": .85 } });
+    add({ id: "tang-detail-underground", type: "line", source: "tang-detail", filter: ["all", ["==", ["geometry-type"], "LineString"], ["!=", ["get", "waterDisplayClass"], "surface"]], paint: { "line-color": ["match", ["get", "waterDisplayClass"], "underground", "#8b8472", "#6293a7"], "line-width": 1.2, "line-dasharray": [2, 2] } });
     add({ id: layerIds[3], type: "line", source: "tang-detail", filter: ["==", ["geometry-type"], "LineString"], paint: { "line-width": 10, "line-opacity": 0 } });
     add({ id: layerIds[4], type: "circle", source: "tang-detail", filter: ["all", ["==", ["geometry-type"], "Point"], ["!=", ["get", "kind"], "settlement"]], paint: { "circle-color": "#788653", "circle-radius": 2.5, "circle-stroke-color": "#fbf4de", "circle-stroke-width": 1 } });
     add({ id: layerIds[5], type: "circle", source: "tang-detail", filter: ["==", ["get", "kind"], "settlement"], paint: { "circle-color": "#866749", "circle-radius": ["match", ["get", "level"], "prefecture", 4, 3], "circle-stroke-color": "#fff8e2", "circle-stroke-width": 1.3 } });
-    add({ id: layerIds[6], type: "line", source: "tang-detail", filter: ["==", ["get", "id"], ""], paint: { "line-color": "#216378", "line-width": 4 } });
-    add({ id: layerIds[7], type: "fill", source: "tang-detail", filter: ["==", ["get", "id"], ""], paint: { "fill-color": "#2c869d", "fill-opacity": .4 } });
-    add({ id: layerIds[8], type: "circle", source: "tang-detail", filter: ["==", ["get", "id"], ""], paint: { "circle-radius": 7, "circle-color": "#b2724b", "circle-stroke-width": 2, "circle-stroke-color": "#fff6d7" } });
+    add({ id: layerIds[6], type: "line", source: "tang-detail-selected", filter: ["==", ["get", "id"], ""], paint: { "line-color": "#216378", "line-width": 4 } });
+    add({ id: layerIds[7], type: "fill", source: "tang-detail-selected", filter: ["==", ["get", "id"], ""], paint: { "fill-color": "#2c869d", "fill-opacity": .4 } });
+    add({ id: layerIds[8], type: "circle", source: "tang-detail-selected", filter: ["==", ["get", "id"], ""], paint: { "circle-radius": 7, "circle-color": "#b2724b", "circle-stroke-width": 2, "circle-stroke-color": "#fff6d7" } });
     return () => {
       if (!map.getStyle()) return;
       layerIds.forEach(id => { if (map.getLayer(id)) map.removeLayer(id); });
       if (map.getSource("tang-detail")) map.removeSource("tang-detail");
+      if (map.getSource("tang-detail-selected")) map.removeSource("tang-detail-selected");
     };
   }, [map, ready]);
   useEffect(() => {
@@ -177,20 +198,26 @@ export default function TangDetailLayer({ map, ready, enabled, mode, viewLevel, 
   }, [map, ready, activeFeatures]);
   useEffect(() => {
     if (!ready || !map?.getSource("tang-detail")) return;
+    const displayedSelection = selected && replaceModernYellowGeometry(selected, replaceYellowLower, yellowWaterIds);
+    const selectedWaterClass = selected ? waterDisplayClass(selected.properties) : "surface";
+    map.setPaintProperty(layerIds[6], "line-dasharray", selectedWaterClass === "surface" ? undefined : [2, 2]);
+    map.setPaintProperty(layerIds[6], "line-color", selectedWaterClass === "underground" ? "#716957" : "#216378");
+    map.setPaintProperty(layerIds[7], "fill-opacity", selectedWaterClass === "surface" ? .4 : .18);
+    (map.getSource("tang-detail-selected") as GeoJSONSource).setData({ type: "FeatureCollection", features: displayedSelection ? [displayedSelection] : [] });
     [layerIds[6], layerIds[7], layerIds[8]].forEach(id => map.setFilter(id, ["all", ["==", ["get", "id"], selected?.properties.id ?? ""], ["==", ["geometry-type"], id === layerIds[8] ? "Point" : id === layerIds[7] ? "Polygon" : selected?.geometry.type === "Polygon" || selected?.geometry.type === "MultiPolygon" ? "Polygon" : "LineString"]]));
-  }, [map, ready, selected]);
-  function select(feature: DetailFeature) { setSelected(feature); setCollapsed(false); choose.current(); }
+  }, [map, ready, selected, replaceYellowLower, yellowWaterIds]);
+  function select(feature: DetailFeature) {
+    setSelected(feature); setCollapsed(false); choose.current();
+
+  }
   useEffect(() => {
     if (!map || !ready || !enabled) return;
     const click = (event: MapMouseEvent) => {
       if ((event.originalEvent.target as HTMLElement)?.closest?.("button")) return;
-      if (map.getLayer("historical-river-hit") && map.queryRenderedFeatures(event.point, { layers: ["historical-river-hit"] }).length) return;
-      // In combined mode polygons always belong to the chosen administrative level.
-      const layers = mode === "nature" ? ["tang-detail-water", "tang-detail-hit", "tang-detail-peaks"] : [];
-      if (!layers.length) return;
-      const hit = map.queryRenderedFeatures(event.point, { layers })[0];
+      const hit = findNaturalMapHit(map, event.point, mode);
+      if (!hit || !["tang-detail-water", "tang-detail-hit", "tang-detail-peaks", "tang-detail-towns"].includes(hit.layer.id)) return;
       const feature = hit && selectable.get(hit.properties.id);
-      if (feature) select(feature);
+      if (feature && canSelectTangDetail(feature.properties, mode)) { event.originalEvent.preventDefault(); select(feature); }
     };
     map.on("click", click);
     return () => { map.off("click", click); };
@@ -202,7 +229,7 @@ export default function TangDetailLayer({ map, ready, enabled, mode, viewLevel, 
       markers.forEach(marker => marker.remove()); markers = [];
       const bounds = map.getBounds(), rect = map.getContainer().getBoundingClientRect();
       const occupied = [...map.getContainer().querySelectorAll<HTMLElement>(".marker-label,.boundary-region-label,.nature-label")].filter(el => el.offsetWidth && el.style.display !== "none").map(el => el.getBoundingClientRect());
-      const candidates = activeFeatures.filter(feature => bounds.contains(feature.properties.labelCoordinates) && !/^未命名|^未定名/.test(feature.properties.name))
+      const candidates = activeFeatures.filter(feature => canSelectTangDetail(feature.properties, mode) && bounds.contains(feature.properties.labelCoordinates) && !/^未命名|^未定名/.test(feature.properties.name))
         .sort((a, b) => Number(b.properties.id === selected?.properties.id) - Number(a.properties.id === selected?.properties.id) || a.properties.minZoom - b.properties.minZoom);
       const labeled = new Set<string>();
       for (const feature of candidates) {
@@ -225,7 +252,7 @@ export default function TangDetailLayer({ map, ready, enabled, mode, viewLevel, 
     const frame = requestAnimationFrame(render);
     map.on("moveend", render); map.on("resize", render);
     return () => { cancelAnimationFrame(frame); map.off("moveend", render); map.off("resize", render); markers.forEach(marker => marker.remove()); };
-  }, [map, ready, enabled, activeFeatures, selected?.properties.id, modernNames]);
+  }, [map, ready, enabled, activeFeatures, selected?.properties.id, modernNames, mode]);
 
   function focus(feature: DetailFeature) {
     const p = feature.properties;
@@ -238,7 +265,7 @@ export default function TangDetailLayer({ map, ready, enabled, mode, viewLevel, 
     {enabled && controlsContainer && createPortal(<section className="nature-explorer tang-detail-explorer" aria-label="唐代城镇与精细地理"><h3><MapPin size={14} />唐代城镇与精细地理</h3>
       <p>{manifest ? `${manifest.historical.featureCount} 条历史治所记录 · 地图放大后逐级显示` : "加载历史治所…"}</p>
       <div className="nature-search"><Search size={13} /><input aria-label="搜索唐代城镇及细节地物" placeholder="县名、州名、现代地区…" value={query} onChange={e => setQuery(e.target.value)} /></div>
-      <select aria-label="细节资料类型" value={searchKind} onChange={e => setSearchKind(e.target.value)}><option value="all">城镇与已加载地物</option><option value="settlement">唐代历史治所</option><option value="nature">视野中的现代河湖山峰</option></select>
+      <select aria-label="细节资料类型" value={searchKind} onChange={e => setSearchKind(e.target.value)}><option value="all">当前可点城镇与地物</option>{canInteract(mode, "cities") && <option value="settlement">唐代历史治所</option>}{mode !== "cities" && <option value="nature">视野中的现代地物</option>}</select>
       <div className="nature-search-results">{searchResults.map(feature => <button key={feature.properties.id} onClick={() => focus(feature)}><strong>{feature.properties.name}</strong><span>{feature.properties.kind === "settlement" ? feature.properties.subtype : tangDetailKindNames[feature.properties.kind]}</span></button>)}</div>
       {query && !searchResults.length && <p>暂无匹配记录。自然地物请先放大到细节区域后搜索。</p>}
       <details className="detail-coverage"><summary>细节区域与来源</summary><p>治所使用755年记录，行政面为741年参照。水系、湖岸和山峰来自现代 OSM，不能据此确认其唐代状态。</p>
@@ -250,9 +277,12 @@ export default function TangDetailLayer({ map, ready, enabled, mode, viewLevel, 
     {enabled && selectedProperties && <section className="nature-detail tang-detail-card" aria-label="唐代城镇与地物详情"><header><button className="nature-detail-title" aria-expanded={!collapsed} onClick={() => setCollapsed(value => !value)}><strong>{selectedProperties.name}</strong><span>{collapsed ? "展开" : "收起"}</span></button><button aria-label="关闭地物详情" onClick={() => setSelected(undefined)}><X size={16} /></button></header>
       {!collapsed && <div className="nature-detail-body"><span className="nature-kind">{tangDetailKindNames[selectedProperties.kind]} · {selectedProperties.modernReferenceOnly ? "现代参照" : "唐代 · 755年记录"}</span>
         {selectedProperties.kind === "settlement" && <><p>{selectedProperties.subtype} · {selectedProperties.presentLocation || "来源未提供现代位置描述"}</p><p>资料存续年：{selectedProperties.beginYear}—{selectedProperties.endYear}年。{String(selectedProperties.sourceRecord?.BEG_RULE) === "4" && String(selectedProperties.sourceRecord?.END_RULE) === "4" ? "起讫年据来源记录。" : "包含较宽的定年范围，详情以原始记录为准。"}</p></>}
+        {selectedProperties.kind === "settlement" && <TangJurisdictionInfo loading={crosswalkLoading} name={selectedProperties.name} link={tangBoundaries?.settlements[selectedProperties.id]} onView={id => onBoundaryRequest(id)} />}
         {selectedProperties.tags?.ele && <p>来源标注高程：{selectedProperties.tags.ele}米</p>}
         <p>{selectedProperties.geometryNote}</p>
         {selectedProperties.modernReferenceOnly && <p className="nature-detail-note">本条为现代测绘参照；线是河道中心线，水面多边形才表示来源记录的水域范围。不是唐代河岸复原。</p>}
+        {waterDisplayClass(selectedProperties) === "underground" && <p className="nature-detail-note">来源标记为地下、隧洞、涵洞或有覆盖的水道，地图用灰色虚线显示；有覆盖不一定在地下，也不表示露天明流；未据此推定唐代年代。</p>}
+        {waterDisplayClass(selectedProperties) === "seasonal" && <p className="nature-detail-note">来源标记为季节性、间歇性或停用水道，虚线不表示常年流水，详见原始标签。</p>}
         <details><summary>查看原始记录</summary><pre>{JSON.stringify(selectedProperties.sourceRecord ?? selectedProperties.tags, null, 2)}</pre></details>
         <div className="nature-detail-actions"><button onClick={() => focus(selected!)}>定位与放大</button><a href={selectedProperties.sourceUrl} target="_blank" rel="noreferrer">原始来源 ↗</a></div>
         {relatedPlace && <button className="detail-focus-button" onClick={() => { setSelected(undefined); onPlaceSelect(relatedPlace.id); }}>查看城池档案与大事记</button>}

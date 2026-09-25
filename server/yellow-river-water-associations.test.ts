@@ -63,7 +63,7 @@ function strictlyInWater(point: number[], geometry: Polygon | MultiPolygon) {
 }
 
 test("现代黄河水面关联的每条证据都是主河真实源顶点且严格落在水面内", () => {
-  assert.equal(data.associations.length, 33);
+  assert.ok(data.associations.length >= 33, "Original evidence remains as western data adds upstream surfaces");
   assert.equal(new Set(data.associations.map(item => item.waterId)).size, data.associations.length);
   let links = 0;
   for (const association of data.associations) {
@@ -99,7 +99,8 @@ test("现代黄河水面关联的每条证据都是主河真实源顶点且严�
       links += 1;
     }
   }
-  assert.equal(links, 47);
+  assert.equal(links, data.statistics.lineSurfaceAssociations);
+  assert.ok(links >= 47);
 });
 
 test("无名主河水面回归与双洎河等名称排除，证据哈希可回查", () => {

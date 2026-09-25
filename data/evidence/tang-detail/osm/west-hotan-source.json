@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-west-hotan",
+  "title": "OpenStreetMap 现代地理：于阗与和田双河绿洲",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "retrievedAt": "2026-09-25T03:37:05.183470+00:00",
+  "bounds": [
+    79.55,
+    36.7,
+    80.4,
+    37.55
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/west-hotan.json.gz",
+  "snapshotSha256": "53d117c666e9a34024923713aa7520441ebb4cc1eb883ddddcdaddb5dc9328ce",
+  "uncompressedSnapshotSha256": "e9e30fe20f1cc83142a04e7eb9bb56a781444238505321b3861369c13193720d",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/west-hotan.ql",
+  "querySha256": "df73ce0a2772f42cc935e941e128bd96ec774a0ca75a42ff6f455f5a602c8eb3",
+  "osmBaseTimestamp": "2026-06-01T08:52:28Z",
+  "elementCount": 266,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+}

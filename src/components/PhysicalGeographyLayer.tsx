@@ -5,10 +5,11 @@ import { ExternalLink, LocateFixed, Mountain, Search, Waves, X } from "lucide-re
 import type { PhysicalFeatureCollection, PhysicalGroup, PhysicalInteractionIndex, PhysicalKind } from "../../shared/physical-geography";
 import { physicalKindNames } from "../../shared/physical-geography";
 import { boundarySearchKey } from "../../shared/boundary-search";
-import { naturalSurfaceSelectionEnabled, physicalHitLayers } from "../../shared/map-interactions";
+import { canInteract, categoryForKind, type MapInteractionMode } from "../../shared/map-interactions";
+import { findNaturalMapHit } from "../../shared/map-hit-test";
 import type { MountainDirectionCollection } from "../../shared/mountain-directions";
 import { localizePhysicalGroup, type LocalizedPhysicalGroup } from "../../shared/place-name-localization";
-import { contextWaterGeometry, type MapBounds } from "../../shared/historical-rivers";
+import { contextWaterGeometry, type WaterDetailReplacement } from "../../shared/historical-rivers";
 
 const sourceId = "physical-interactive";
 const directionSourceId = "mountain-directions";
@@ -17,10 +18,10 @@ const layerIds = ["physical-lake-fill", "physical-lake-line", "physical-river-li
 const empty: PhysicalFeatureCollection = { type: "FeatureCollection", features: [] };
 const kindRank: Record<PhysicalKind, number> = { river: 0, lake: 1, mountain: 2, plateau: 3, sea: 4 };
 
-export default function PhysicalGeographyLayer({ map, ready, visible, mode, controlsContainer, onFocus, onChoose, resetKey, replaceYellowLower, detailBounds }: {
-  map: MapInstance | null; ready: boolean; visible: boolean; mode: "cities" | "nature" | "both";
+export default function PhysicalGeographyLayer({ map, ready, visible, mode, controlsContainer, onFocus, onChoose, resetKey, replaceYellowLower, waterReplacements }: {
+  map: MapInstance | null; ready: boolean; visible: boolean; mode: MapInteractionMode;
   resetKey: string; controlsContainer: HTMLElement | null; onFocus: (points: [number, number][]) => void; onChoose: () => void;
-  replaceYellowLower: boolean; detailBounds: MapBounds[];
+  replaceYellowLower: boolean; waterReplacements: WaterDetailReplacement[];
 }) {
   const [data, setData] = useState<PhysicalFeatureCollection>(empty);
   const [directions, setDirections] = useState<MountainDirectionCollection>(emptyDirections);
@@ -33,7 +34,7 @@ export default function PhysicalGeographyLayer({ map, ready, visible, mode, cont
   const [query, setQuery] = useState("");
   const [kind, setKind] = useState<PhysicalKind | "all">("all");
   const [detailCollapsed, setDetailCollapsed] = useState(false);
-  const displayedWater = useMemo(() => contextWaterGeometry(data, replaceYellowLower, detailBounds), [data, replaceYellowLower, detailBounds]);
+  const displayedWater = useMemo(() => contextWaterGeometry(data, replaceYellowLower, [], waterReplacements), [data, replaceYellowLower, waterReplacements]);
   const retainedYellowCoordinates = useMemo(() => displayedWater.features.filter(feature => feature.properties.groupId === "river-huanghe").flatMap(feature => feature.geometry.type === "LineString" ? feature.geometry.coordinates : feature.geometry.type === "MultiLineString" ? feature.geometry.coordinates.flat() : []), [displayedWater]);
   const chooseCallback = useRef(onChoose);
   chooseCallback.current = onChoose;
@@ -44,9 +45,13 @@ export default function PhysicalGeographyLayer({ map, ready, visible, mode, cont
   const searchIndex = useMemo(() => groups.map(group => ({ group, key: boundarySearchKey([group.name, group.nameEn, ...group.aliases].join(" ")) })), [groups]);
   const results = useMemo(() => {
     const key = boundarySearchKey(query);
-    return searchIndex.filter(item => (kind === "all" || item.group.kind === kind) && (!key || item.key.includes(key)))
+    return searchIndex.filter(item => canInteract(mode, categoryForKind(item.group.kind)) && (kind === "all" || item.group.kind === kind) && (!key || item.key.includes(key)))
       .sort((a, b) => Number(/\p{Script=Han}/u.test(b.group.name)) - Number(/\p{Script=Han}/u.test(a.group.name)) || a.group.minZoom - b.group.minZoom || kindRank[a.group.kind] - kindRank[b.group.kind]).slice(0, 24).map(item => item.group);
-  }, [searchIndex, query, kind]);
+  }, [searchIndex, query, kind, mode]);
+  useEffect(() => {
+    if (selected && !canInteract(mode, categoryForKind(selected.kind))) setSelectedId("");
+    if (kind !== "all" && !canInteract(mode, categoryForKind(kind))) setKind("all");
+  }, [mode, selected, kind]);
 
   useEffect(() => { setSelectedId(""); setHoverId(""); }, [resetKey]);
 
@@ -75,7 +80,7 @@ export default function PhysicalGeographyLayer({ map, ready, visible, mode, cont
     const add: MapInstance["addLayer"] = (layer, before) => map.addLayer(layer, before ?? "route-line");
     add({ id: "physical-lake-fill", source: sourceId, type: "fill", filter: ["==", ["get", "kind"], "lake"], paint: { "fill-color": "#83b7c4", "fill-opacity": 0.78 } });
     add({ id: "physical-lake-line", source: sourceId, type: "line", filter: ["==", ["get", "kind"], "lake"], paint: { "line-color": "#578f9d", "line-width": 1 } });
-    add({ id: "physical-river-line", source: sourceId, type: "line", filter: ["==", ["get", "kind"], "river"], paint: { "line-color": "#468d9f", "line-opacity": 0.85, "line-width": ["interpolate", ["linear"], ["zoom"], 2, 1, 5, 2, 9, 3.5] } });
+    add({ id: "physical-river-line", source: sourceId, type: "line", filter: ["==", ["get", "kind"], "river"], paint: { "line-color": "#468d9f", "line-opacity": ["interpolate", ["linear"], ["zoom"], 7, .85, 11, .5, 14, .35], "line-width": ["interpolate", ["linear"], ["zoom"], 2, 1, 5, 2, 9, 1.5, 14, 1] } });
     add({ id: "physical-river-hit", source: sourceId, type: "line", filter: ["==", ["get", "kind"], "river"], paint: { "line-color": "#468d9f", "line-opacity": 0.01, "line-width": 14 } });
     add({ id: "physical-selected-fill", source: sourceId, type: "fill", filter: ["==", ["get", "groupId"], ""], paint: { "fill-color": "#3b94a5", "fill-opacity": 0.3 } });
     add({ id: "physical-selected-line", source: sourceId, type: "line", filter: ["==", ["get", "groupId"], ""], paint: { "line-color": "#236d74", "line-width": 3.5, "line-opacity": 0.95 } });
@@ -122,20 +127,20 @@ export default function PhysicalGeographyLayer({ map, ready, visible, mode, cont
   function select(groupId: string) { setSelectedId(groupId); setDetailCollapsed(false); chooseCallback.current(); }
   useEffect(() => {
     if (!map || !ready || !visible) return;
-    function find(event: MapMouseEvent) {
-      if (!naturalSurfaceSelectionEnabled(mode)) return undefined;
-      const finerLayers = ["historical-river-hit", "tang-detail-water", "tang-detail-hit", "tang-detail-peaks"].filter(id => !!map!.getLayer(id));
-      if (finerLayers.length && map!.queryRenderedFeatures(event.point, { layers: finerLayers }).length) return undefined;
-      const features = map!.queryRenderedFeatures(event.point, { layers: physicalHitLayers.filter(id => !!map!.getLayer(id)) });
-      return features.sort((a, b) => kindRank[a.properties.kind as PhysicalKind] - kindRank[b.properties.kind as PhysicalKind])[0];
+    function physicalHit(feature: ReturnType<typeof findNaturalMapHit>) {
+      return feature && ["physical-river-hit", "physical-lake-fill", "mountain-selected-line"].includes(feature.layer.id) ? feature : undefined;
     }
     const click = (event: MapMouseEvent) => {
       if ((event.originalEvent.target as HTMLElement)?.closest?.(".nature-label,.place-marker,.geography-reference-marker")) return;
-      const feature = find(event);
-      if (feature) select(feature.properties.groupId);
-      else { setSelectedId(""); setHoverId(""); }
+      const feature = physicalHit(findNaturalMapHit(map, event.point, mode));
+      if (feature) { event.originalEvent.preventDefault(); select(feature.properties.groupId); }
     };
-    const move = (event: MapMouseEvent) => { const feature = find(event); setHoverId(feature?.properties.groupId ?? ""); map.getCanvas().style.cursor = feature ? "pointer" : ""; };
+    const move = (event: MapMouseEvent) => {
+      const hit = findNaturalMapHit(map, event.point, mode);
+      setHoverId(physicalHit(hit)?.properties.groupId ?? "");
+      // This is the sole canvas cursor listener; detailed layers own their hits too.
+      map.getCanvas().style.cursor = hit ? "pointer" : "";
+    };
     const leave = () => { setHoverId(""); map.getCanvas().style.cursor = ""; };
     map.on("click", click); map.on("mousemove", move); map.getCanvas().addEventListener("mouseleave", leave);
     return () => { map.off("click", click); map.off("mousemove", move); map.getCanvas().removeEventListener("mouseleave", leave); map.getCanvas().style.cursor = ""; };
@@ -151,7 +156,7 @@ export default function PhysicalGeographyLayer({ map, ready, visible, mode, cont
       const locatedGroups = groups.map(group => ({ ...group,
         name: replaceYellowLower && group.groupId === "river-huanghe" ? "黄河上游（现代参照）" : group.name,
         labelCoordinates: replaceYellowLower && group.groupId === "river-huanghe" && retainedYellowCoordinates.length ? retainedYellowCoordinates[Math.floor(retainedYellowCoordinates.length / 2)] as [number, number] : directionLabels.get(group.groupId) ?? group.labelCoordinates }));
-      const candidates = locatedGroups.filter(group => bounds.contains(group.labelCoordinates) && (group.groupId === selectedId || zoom >= group.minZoom) && !/^(未命名|未定名)/.test(group.name))
+      const candidates = locatedGroups.filter(group => canInteract(mode, categoryForKind(group.kind)) && bounds.contains(group.labelCoordinates) && (group.groupId === selectedId || zoom >= group.minZoom) && !/^(未命名|未定名)/.test(group.name))
         .sort((a, b) => Number(b.groupId === selectedId) - Number(a.groupId === selectedId) || a.minZoom - b.minZoom).slice(0, 140);
       for (const group of candidates) {
         const point = map.project(group.labelCoordinates); const width = Math.min(200, group.name.length * 12 + 20);
@@ -180,16 +185,16 @@ export default function PhysicalGeographyLayer({ map, ready, visible, mode, cont
   return <>
     {controlsContainer && createPortal(<section className="nature-explorer" aria-label="查找山川河流">
       <h3><Waves size={14} />查找山川河流</h3>
-      {!visible ? <p>切换到“山川河流”或“同时显示”即可查看山川名称与河湖。</p> : <>
+      {!visible || mode === "cities" ? <p>当前只点选城池。地图河湖与地形仍保留，切换“山川”“河流”或“全部”可查名称与资料。</p> : <>
         <div className="nature-search"><Search size={13} /><input aria-label="搜索山川河流" value={query} onChange={event => setQuery(event.target.value)} placeholder="黄河、秦岭、青海湖…" /></div>
-        <select aria-label="筛选自然地理类型" value={kind} onChange={event => setKind(event.target.value as typeof kind)}><option value="all">全部自然地理</option>{Object.entries(physicalKindNames).map(([id, name]) => <option key={id} value={id}>{name}</option>)}</select>
+        <select aria-label="筛选自然地理类型" value={kind} onChange={event => setKind(event.target.value as typeof kind)}><option value="all">当前可点自然地理</option>{Object.entries(physicalKindNames).filter(([id]) => canInteract(mode, categoryForKind(id))).map(([id, name]) => <option key={id} value={id}>{name}</option>)}</select>
         <div className="nature-search-results">{results.map(group => <button key={group.groupId} onClick={() => focus(group)}><strong>{group.name}</strong><span>{physicalKindNames[group.kind]}</span></button>)}</div>
         {!loaded && !error && <p role="status">山川资料加载中…</p>}{loaded && !results.length && <p>没有匹配结果，试试其他名称。</p>}
       </>}{error && <p role="status">{error}</p>}{directionError && <p role="status">{directionError}</p>}
     </section>, controlsContainer)}
     {visible && selected && <section className={`nature-detail ${detailCollapsed ? "is-collapsed" : ""}`} aria-label="山川河流详情">
       <header><button className="nature-detail-title" aria-expanded={!detailCollapsed} onClick={() => setDetailCollapsed(value => !value)}>{selected.kind === "mountain" || selected.kind === "plateau" ? <Mountain size={16} /> : <Waves size={16} />}<strong>{selected.name}</strong><span>{detailCollapsed ? "展开" : "收起"}</span></button><button aria-label="关闭山川河流详情" onClick={() => setSelectedId("")}><X size={16} /></button></header>
-      {!detailCollapsed && <div className="nature-detail-body"><span className="nature-kind">{physicalKindNames[selected.kind]} · 现代自然地理</span>
+      {!detailCollapsed && <div className="nature-detail-body"><span className="nature-kind">{selected.kind === "mountain" ? "山系走向示意" : physicalKindNames[selected.kind]} · 现代自然地理</span>
         {selected.nameStatus === "unresolved" && <p className="nature-detail-note">中文名称待核定，可展开来源原文核查。</p>}
         <details><summary>查看名称来源</summary><p>原文名称 · {selected.originalName}</p>
           {selected.nameCorrectionNote && <p>{selected.nameCorrectionNote}</p>}
@@ -199,9 +204,9 @@ export default function PhysicalGeographyLayer({ map, ready, visible, mode, cont
           <p>{selectedDirection ? "沿高亮线查看这条山系的大致延伸方向。" : "此山系暂仅提供名称定位，可结合山影与立体地形观察。"}</p>
           <p className="nature-detail-note">{selectedDirection?.properties.geometryNote || directionError || "未收录可用的走向线。"} 走向示意不表示实测山脊、山体边界或登山路线。</p>
         </> : selected.kind === "plateau" || selected.kind === "sea" ? <p>此处提供{physicalKindNames[selected.kind]}名称与位置参考，可结合地形观察。没有绘制概括范围色块。</p> : <>
-          <p>{selected.geometryNote}</p><p className="nature-detail-note">已高亮本资料收录的{selected.kind === "river" ? "河道线位，线宽不代表真实河宽" : "湖泊水面"}。{selected.groupId === "river-huanghe" && replaceYellowLower ? "这里仅高亮现代上游参照，下游请点“黄河历史河道”标签核查。" : "现代参照不表示唐代河湖状态。"}{detailBounds.length > 0 && "细节覆盖内请点详细地物名称查看原始河线或水面。"}</p>
+          <p>{selected.geometryNote}</p><p className="nature-detail-note">已高亮本资料收录的{selected.kind === "river" ? "河道线位，线宽不代表真实河宽" : "湖泊水面"}。{selected.groupId === "river-huanghe" && replaceYellowLower ? "这里仅高亮现代上游参照，下游请点“黄河历史河道”标签核查。" : "现代参照不表示唐代河湖状态。"}{waterReplacements.length > 0 && "仅已匹配到同名详细地物的河段会替换概览线；淡线仍为概览参照。"}</p>
         </>}
-        <div className="nature-detail-actions"><button onClick={() => focus(selected)}><LocateFixed size={13} />{selected.kind === "river" || selected.kind === "mountain" ? "查看完整走向" : "定位此处"}</button><a href={selectedDirection?.properties.sourceUrl || selected.sourceUrl} target="_blank" rel="noreferrer">资料来源<ExternalLink size={12} /></a></div>
+        <div className="nature-detail-actions"><button onClick={() => focus(selected)}><LocateFixed size={13} />{selected.kind === "mountain" ? "查看走向示意" : selected.kind === "river" ? "查看完整走向" : "定位此处"}</button><a href={selectedDirection?.properties.sourceUrl || selected.sourceUrl} target="_blank" rel="noreferrer">资料来源<ExternalLink size={12} /></a></div>
       </div>}
     </section>}
     {visible && hover && !selected && <div className="nature-hover" aria-hidden="true">{hover.name} · 点击查看{hover.kind === "river" ? "河道" : "湖面"}</div>}

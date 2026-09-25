@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-west-jiuquan",
+  "title": "OpenStreetMap 现代地理：酒泉与讨赖河绿洲",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "retrievedAt": "2026-09-25T03:31:41.526122+00:00",
+  "bounds": [
+    98.05,
+    39.25,
+    99,
+    40.05
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/west-jiuquan.json.gz",
+  "snapshotSha256": "bf67d0f910b4e701d62970c3c5584f4982bf0cf0f169220fb7a5e47f9917a86a",
+  "uncompressedSnapshotSha256": "27cc78c5b8e23a1f462d0851f3c61358b3baeaaf67dc5c53358a177699a104b1",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/west-jiuquan.ql",
+  "querySha256": "087a0000c50d5fddb2137775b54827319052105450749b7ed2c67f3e4a15d3de",
+  "osmBaseTimestamp": "2026-07-24T11:04:51Z",
+  "elementCount": 217,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+}

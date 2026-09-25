@@ -1,0 +1,243 @@
+{
+  "auditVersion": 1,
+  "scope": "Published properties.name and original source tags in modern Tang-detail gzip feature packs. Counts describe stored source-derived names before runtime display fallback; original packs remain unchanged.",
+  "method": "Han-character detection includes CJK unified ideographs and extensions; checks source name tags without inventing translations. Hant presence alone does not imply the current name is wrong.",
+  "counts": {
+    "packs": 460,
+    "packs:originalSixRegions": 296,
+    "features": 213897,
+    "features:originalSixRegions": 178372,
+    "hantSkipped": 948,
+    "hantSkipped:originalSixRegions": 937,
+    "nonHanDisplayed": 105,
+    "nonHanDisplayed:originalSixRegions": 41,
+    "nonHanWithoutChineseSource": 104,
+    "nonHanWithoutChineseSource:originalSixRegions": 41,
+    "actionableChineseFallback": 5,
+    "actionableChineseFallback:originalSixRegions": 4,
+    "packs:addedWestAndCityRegions": 164,
+    "features:addedWestAndCityRegions": 35525,
+    "nonHanDisplayed:addedWestAndCityRegions": 64,
+    "nonHanWithoutChineseSource:addedWestAndCityRegions": 63,
+    "hantSkipped:addedWestAndCityRegions": 11,
+    "actionableChineseFallback:addedWestAndCityRegions": 1
+  },
+  "countsByRegion": {
+    "allFeatures": {
+      "central-plains": 9259,
+      "guanzhong": 5135,
+      "jianghuai": 76147,
+      "luoyang": 4384,
+      "taihu": 58401,
+      "zhejiang": 25046,
+      "west-chengdu": 7418,
+      "west-dunhuang": 148,
+      "west-hami": 724,
+      "west-hotan": 266,
+      "west-jiuquan": 214,
+      "west-kashgar": 436,
+      "west-lanzhou": 1524,
+      "west-lhasa": 742,
+      "west-qiuci": 166,
+      "west-shannan": 360,
+      "west-tianshui": 1149,
+      "west-turpan": 3155,
+      "west-wuwei": 165,
+      "west-yanqi": 277,
+      "west-zhangye": 224,
+      "city-beijing": 1635,
+      "city-changsha": 3697,
+      "city-fuzhou": 1955,
+      "city-guangzhou": 5289,
+      "city-jiangxia": 2355,
+      "city-jinan": 950,
+      "city-jingzhou": 339,
+      "city-jinyang": 283,
+      "city-qingzhou-linzi": 296,
+      "city-quanzhou": 867,
+      "city-xiangyang": 891
+    },
+    "hantSkipped": {
+      "central-plains": 58,
+      "guanzhong": 5,
+      "jianghuai": 706,
+      "luoyang": 42,
+      "taihu": 27,
+      "zhejiang": 99,
+      "west-chengdu": 2,
+      "city-beijing": 3,
+      "city-guangzhou": 2,
+      "city-jiangxia": 1,
+      "city-jinan": 1,
+      "city-quanzhou": 2
+    },
+    "nonHanDisplayed": {
+      "central-plains": 5,
+      "guanzhong": 5,
+      "jianghuai": 13,
+      "luoyang": 3,
+      "taihu": 4,
+      "zhejiang": 11,
+      "west-chengdu": 6,
+      "west-lanzhou": 1,
+      "west-lhasa": 1,
+      "west-turpan": 52,
+      "west-yanqi": 1,
+      "city-beijing": 1,
+      "city-jinyang": 1,
+      "city-xiangyang": 1
+    },
+    "nonHanWithoutChineseSource": {
+      "central-plains": 5,
+      "guanzhong": 5,
+      "jianghuai": 13,
+      "luoyang": 3,
+      "taihu": 4,
+      "zhejiang": 11,
+      "west-chengdu": 6,
+      "west-lanzhou": 1,
+      "west-lhasa": 1,
+      "west-turpan": 52,
+      "west-yanqi": 1,
+      "city-beijing": 1,
+      "city-jinyang": 1
+    },
+    "actionableChineseFallback": {
+      "jianghuai": 3,
+      "taihu": 1,
+      "city-xiangyang": 1
+    }
+  },
+  "actionableChineseFallbacks": [
+    {
+      "id": "osm-way-71187088",
+      "regionId": "jianghuai",
+      "packUrl": "/data/tang-detail/modern-jianghuai-overview-part0.geojson.gz",
+      "displayedName": "未命名河流",
+      "nameTags": {
+        "name:zh-Hant": "張家港"
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/71187088",
+      "reason": "Only name:zh-Hant is present, but the builder selects the unnamed fallback."
+    },
+    {
+      "id": "osm-way-651797718",
+      "regionId": "jianghuai",
+      "packUrl": "/data/tang-detail/modern-jianghuai-overview-part2.geojson.gz",
+      "displayedName": "未命名河流",
+      "nameTags": {
+        "name:zh-Hant": "張家港"
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/651797718",
+      "reason": "Only name:zh-Hant is present, but the builder selects the unnamed fallback."
+    },
+    {
+      "id": "osm-way-651797719",
+      "regionId": "jianghuai",
+      "packUrl": "/data/tang-detail/modern-jianghuai-overview-part2.geojson.gz",
+      "displayedName": "未命名河流",
+      "nameTags": {
+        "name:zh-Hant": "張家港"
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/651797719",
+      "reason": "Only name:zh-Hant is present, but the builder selects the unnamed fallback."
+    },
+    {
+      "id": "osm-way-32589910",
+      "regionId": "taihu",
+      "packUrl": "/data/tang-detail/modern-taihu-overview-part0.geojson.gz",
+      "displayedName": "未命名河流",
+      "nameTags": {
+        "name:zh-Hant": "東環河"
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/32589910",
+      "reason": "Only name:zh-Hant is present, but the builder selects the unnamed fallback."
+    },
+    {
+      "id": "osm-node-8984600853",
+      "regionId": "city-xiangyang",
+      "packUrl": "/data/tang-detail/modern-city-xiangyang-224-63-part0.geojson.gz",
+      "displayedName": "Hutou Shan",
+      "nameTags": {
+        "name": "虎头山",
+        "name:zh": "Hutou Shan"
+      },
+      "sourceUrl": "https://www.openstreetmap.org/node/8984600853",
+      "reason": "Preferred source name:zh has no Han characters and overrides available Han characters in name."
+    }
+  ],
+  "nonHanWithoutChineseSourceExamples": [
+    {
+      "id": "osm-way-85191223",
+      "regionId": "guanzhong",
+      "packUrl": "/data/tang-detail/modern-guanzhong-overview-part0.geojson.gz",
+      "displayedName": "Dabeigou Shuiku",
+      "nameTags": {
+        "name": "Dabeigou Shuiku"
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/85191223"
+    },
+    {
+      "id": "osm-way-953303543",
+      "regionId": "west-chengdu",
+      "packUrl": "/data/tang-detail/modern-west-chengdu-208-61-part0.geojson.gz",
+      "displayedName": "Dasha Jiang",
+      "nameTags": {
+        "name": "Dasha Jiang",
+        "name:zh": "Dasha Jiang"
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/953303543"
+    },
+    {
+      "id": "osm-way-440483792",
+      "regionId": "west-lanzhou",
+      "packUrl": "/data/tang-detail/modern-west-lanzhou-overview-part0.geojson.gz",
+      "displayedName": "Huang He",
+      "nameTags": {
+        "int_name": "Huang He",
+        "name": "Huang He",
+        "name:de": "Gelber Fluss",
+        "name:en": "Yellow River"
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/440483792"
+    },
+    {
+      "id": "osm-way-1252908789",
+      "regionId": "west-turpan",
+      "packUrl": "/data/tang-detail/modern-west-turpan-178-86-part0.geojson.gz",
+      "displayedName": "قنات",
+      "nameTags": {
+        "name": "قنات",
+        "name:en": "Qanat"
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/1252908789"
+    },
+    {
+      "id": "osm-way-123896555",
+      "regionId": "city-beijing",
+      "packUrl": "/data/tang-detail/modern-city-beijing-232-79-part0.geojson.gz",
+      "displayedName": "Lotus lake",
+      "nameTags": {
+        "name": "Lotus lake"
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/123896555"
+    }
+  ],
+  "preserveExistingChineseNameExamples": [
+    {
+      "id": "osm-way-50196408",
+      "regionId": "central-plains",
+      "packUrl": "/data/tang-detail/modern-central-plains-overview-part0.geojson.gz",
+      "displayedName": "沙颍河",
+      "nameTags": {
+        "name": "沙颍河",
+        "name:en": "Ying River",
+        "name:zh-Hant": "潁河",
+        "name:zh-Latn-pinyin": "Yĭng Hé"
+      },
+      "sourceUrl": "https://www.openstreetmap.org/way/50196408",
+      "reason": "Existing usable Han name 沙颍河 must remain; name:zh-Hant 潁河 is an alternate label, not a reason to overwrite it."
+    }
+  ],
+  "recommendation": "Only repair unnamed or non-Han display names when source tags provide an existing Han name; simplify that name with OpenCC. Preserve already-usable Han display names, including aliases that differ from name:zh-Hant. Retain non-Han source names when no usable Chinese source exists."
+}

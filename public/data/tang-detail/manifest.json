@@ -5917,6 +5917,3230 @@
       "minZoom": 10,
       "sourceId": "osm-tang-detail-zhejiang",
       "regionId": "zhejiang"
+    },
+    {
+      "id": "west-chengdu-overview-part0",
+      "name": "成都—都江堰与岷沱水系 · 主河与水面",
+      "bounds": [
+        103.3123871,
+        29.9867401,
+        104.9717166,
+        31.5250132
+      ],
+      "url": "/data/tang-detail/modern-west-chengdu-overview-part0.geojson.gz",
+      "featureCount": 1043,
+      "countsByKind": {
+        "water": 476,
+        "river": 567
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-west-chengdu",
+      "regionId": "west-chengdu"
+    },
+    {
+      "id": "west-chengdu-208-61-part0",
+      "name": "成都—都江堰与岷沱水系 · 局部细节",
+      "bounds": [
+        103.9098919,
+        30.4676075,
+        104.5099997,
+        31.0310485
+      ],
+      "url": "/data/tang-detail/modern-west-chengdu-208-61-part0.geojson.gz",
+      "featureCount": 2286,
+      "countsByKind": {
+        "water": 844,
+        "peak": 21,
+        "saddle": 2,
+        "stream": 935,
+        "canal": 484
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-chengdu",
+      "regionId": "west-chengdu"
+    },
+    {
+      "id": "west-chengdu-207-61-part0",
+      "name": "成都—都江堰与岷沱水系 · 局部细节",
+      "bounds": [
+        103.5029875,
+        30.4864399,
+        104.0025361,
+        31.005567
+      ],
+      "url": "/data/tang-detail/modern-west-chengdu-207-61-part0.geojson.gz",
+      "featureCount": 1128,
+      "countsByKind": {
+        "water": 364,
+        "peak": 3,
+        "saddle": 1,
+        "canal": 239,
+        "stream": 521
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-chengdu",
+      "regionId": "west-chengdu"
+    },
+    {
+      "id": "west-chengdu-207-60-part0",
+      "name": "成都—都江堰与岷沱水系 · 局部细节",
+      "bounds": [
+        103.4901595,
+        30.0803758,
+        104.006044,
+        30.5162612
+      ],
+      "url": "/data/tang-detail/modern-west-chengdu-207-60-part0.geojson.gz",
+      "featureCount": 560,
+      "countsByKind": {
+        "water": 390,
+        "stream": 122,
+        "canal": 48
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-chengdu",
+      "regionId": "west-chengdu"
+    },
+    {
+      "id": "west-chengdu-209-61-part0",
+      "name": "成都—都江堰与岷沱水系 · 局部细节",
+      "bounds": [
+        104.495784,
+        30.5013493,
+        104.9092372,
+        31.0014019
+      ],
+      "url": "/data/tang-detail/modern-west-chengdu-209-61-part0.geojson.gz",
+      "featureCount": 385,
+      "countsByKind": {
+        "water": 174,
+        "peak": 3,
+        "stream": 64,
+        "canal": 144
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-chengdu",
+      "regionId": "west-chengdu"
+    },
+    {
+      "id": "west-chengdu-209-60-part0",
+      "name": "成都—都江堰与岷沱水系 · 局部细节",
+      "bounds": [
+        104.5041364,
+        30.1565023,
+        104.9035499,
+        30.5045225
+      ],
+      "url": "/data/tang-detail/modern-west-chengdu-209-60-part0.geojson.gz",
+      "featureCount": 246,
+      "countsByKind": {
+        "water": 205,
+        "stream": 39,
+        "canal": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-chengdu",
+      "regionId": "west-chengdu"
+    },
+    {
+      "id": "west-chengdu-208-62-part0",
+      "name": "成都—都江堰与岷沱水系 · 局部细节",
+      "bounds": [
+        103.9983417,
+        30.9629303,
+        104.5004189,
+        31.2660631
+      ],
+      "url": "/data/tang-detail/modern-west-chengdu-208-62-part0.geojson.gz",
+      "featureCount": 301,
+      "countsByKind": {
+        "water": 105,
+        "peak": 3,
+        "stream": 178,
+        "canal": 15
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-chengdu",
+      "regionId": "west-chengdu"
+    },
+    {
+      "id": "west-chengdu-207-62-part0",
+      "name": "成都—都江堰与岷沱水系 · 局部细节",
+      "bounds": [
+        103.491889,
+        30.9986115,
+        104.0021499,
+        31.3187228
+      ],
+      "url": "/data/tang-detail/modern-west-chengdu-207-62-part0.geojson.gz",
+      "featureCount": 135,
+      "countsByKind": {
+        "water": 45,
+        "peak": 9,
+        "saddle": 3,
+        "stream": 63,
+        "canal": 15
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-chengdu",
+      "regionId": "west-chengdu"
+    },
+    {
+      "id": "west-chengdu-208-60-part0",
+      "name": "成都—都江堰与岷沱水系 · 局部细节",
+      "bounds": [
+        103.9943022,
+        30.1220321,
+        104.5006657,
+        30.5093831
+      ],
+      "url": "/data/tang-detail/modern-west-chengdu-208-60-part0.geojson.gz",
+      "featureCount": 1148,
+      "countsByKind": {
+        "water": 697,
+        "peak": 9,
+        "stream": 225,
+        "canal": 217
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-chengdu",
+      "regionId": "west-chengdu"
+    },
+    {
+      "id": "west-chengdu-206-61-part0",
+      "name": "成都—都江堰与岷沱水系 · 局部细节",
+      "bounds": [
+        103.4232438,
+        30.5034108,
+        103.5061654,
+        30.9597469
+      ],
+      "url": "/data/tang-detail/modern-west-chengdu-206-61-part0.geojson.gz",
+      "featureCount": 26,
+      "countsByKind": {
+        "peak": 4,
+        "water": 5,
+        "stream": 17
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-chengdu",
+      "regionId": "west-chengdu"
+    },
+    {
+      "id": "west-chengdu-209-62-part0",
+      "name": "成都—都江堰与岷沱水系 · 局部细节",
+      "bounds": [
+        104.4910419,
+        30.994441,
+        104.9010841,
+        31.2642363
+      ],
+      "url": "/data/tang-detail/modern-west-chengdu-209-62-part0.geojson.gz",
+      "featureCount": 124,
+      "countsByKind": {
+        "peak": 1,
+        "water": 85,
+        "stream": 34,
+        "canal": 4
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-chengdu",
+      "regionId": "west-chengdu"
+    },
+    {
+      "id": "west-chengdu-206-60-part0",
+      "name": "成都—都江堰与岷沱水系 · 局部细节",
+      "bounds": [
+        103.4262854,
+        30.1832505,
+        103.5043559,
+        30.4786982
+      ],
+      "url": "/data/tang-detail/modern-west-chengdu-206-60-part0.geojson.gz",
+      "featureCount": 30,
+      "countsByKind": {
+        "water": 7,
+        "stream": 23
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-chengdu",
+      "regionId": "west-chengdu"
+    },
+    {
+      "id": "west-chengdu-206-62-part0",
+      "name": "成都—都江堰与岷沱水系 · 局部细节",
+      "bounds": [
+        103.4491342,
+        30.9941435,
+        103.4970719,
+        31.252343
+      ],
+      "url": "/data/tang-detail/modern-west-chengdu-206-62-part0.geojson.gz",
+      "featureCount": 6,
+      "countsByKind": {
+        "stream": 6
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-chengdu",
+      "regionId": "west-chengdu"
+    },
+    {
+      "id": "west-dunhuang-overview-part0",
+      "name": "敦煌与党河绿洲 · 主河与水面",
+      "bounds": [
+        93.9728741,
+        39.4281056,
+        95.0685388,
+        40.5240105
+      ],
+      "url": "/data/tang-detail/modern-west-dunhuang-overview-part0.geojson.gz",
+      "featureCount": 24,
+      "countsByKind": {
+        "water": 11,
+        "river": 13
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-west-dunhuang",
+      "regionId": "west-dunhuang"
+    },
+    {
+      "id": "west-dunhuang-188-80-part0",
+      "name": "敦煌与党河绿洲 · 局部细节",
+      "bounds": [
+        94.3625822,
+        39.9759637,
+        94.492873,
+        40.484924
+      ],
+      "url": "/data/tang-detail/modern-west-dunhuang-188-80-part0.geojson.gz",
+      "featureCount": 19,
+      "countsByKind": {
+        "water": 3,
+        "canal": 13,
+        "stream": 3
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-dunhuang",
+      "regionId": "west-dunhuang"
+    },
+    {
+      "id": "west-dunhuang-189-80-part0",
+      "name": "敦煌与党河绿洲 · 局部细节",
+      "bounds": [
+        94.4748087,
+        39.977762,
+        94.9917735,
+        40.3780382
+      ],
+      "url": "/data/tang-detail/modern-west-dunhuang-189-80-part0.geojson.gz",
+      "featureCount": 54,
+      "countsByKind": {
+        "peak": 3,
+        "stream": 19,
+        "canal": 19,
+        "water": 13
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-dunhuang",
+      "regionId": "west-dunhuang"
+    },
+    {
+      "id": "west-dunhuang-188-79-part0",
+      "name": "敦煌与党河绿洲 · 局部细节",
+      "bounds": [
+        93.8599463,
+        39.5758502,
+        94.5095229,
+        40.2638967
+      ],
+      "url": "/data/tang-detail/modern-west-dunhuang-188-79-part0.geojson.gz",
+      "featureCount": 21,
+      "countsByKind": {
+        "water": 7,
+        "stream": 9,
+        "canal": 5
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-dunhuang",
+      "regionId": "west-dunhuang"
+    },
+    {
+      "id": "west-dunhuang-189-79-part0",
+      "name": "敦煌与党河绿洲 · 局部细节",
+      "bounds": [
+        94.5170571,
+        39.5441917,
+        94.9564074,
+        39.9988755
+      ],
+      "url": "/data/tang-detail/modern-west-dunhuang-189-79-part0.geojson.gz",
+      "featureCount": 29,
+      "countsByKind": {
+        "water": 7,
+        "canal": 7,
+        "stream": 15
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-dunhuang",
+      "regionId": "west-dunhuang"
+    },
+    {
+      "id": "west-dunhuang-190-80-part0",
+      "name": "敦煌与党河绿洲 · 局部细节",
+      "bounds": [
+        95.0744759,
+        40.0202469,
+        95.1764428,
+        40.1313725
+      ],
+      "url": "/data/tang-detail/modern-west-dunhuang-190-80-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-dunhuang",
+      "regionId": "west-dunhuang"
+    },
+    {
+      "id": "west-hami-overview-part0",
+      "name": "伊吾与哈密绿洲 · 主河与水面",
+      "bounds": [
+        92.9460507,
+        42.3978806,
+        93.943816,
+        43.391799
+      ],
+      "url": "/data/tang-detail/modern-west-hami-overview-part0.geojson.gz",
+      "featureCount": 18,
+      "countsByKind": {
+        "water": 8,
+        "river": 10
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-west-hami",
+      "regionId": "west-hami"
+    },
+    {
+      "id": "west-hami-187-85-part0",
+      "name": "伊吾与哈密绿洲 · 局部细节",
+      "bounds": [
+        93.4963615,
+        42.5278604,
+        93.9528293,
+        42.9358079
+      ],
+      "url": "/data/tang-detail/modern-west-hami-187-85-part0.geojson.gz",
+      "featureCount": 84,
+      "countsByKind": {
+        "water": 4,
+        "canal": 66,
+        "stream": 14
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-hami",
+      "regionId": "west-hami"
+    },
+    {
+      "id": "west-hami-186-85-part0",
+      "name": "伊吾与哈密绿洲 · 局部细节",
+      "bounds": [
+        93.0306412,
+        42.5877982,
+        93.501934,
+        43.0132248
+      ],
+      "url": "/data/tang-detail/modern-west-hami-186-85-part0.geojson.gz",
+      "featureCount": 309,
+      "countsByKind": {
+        "stream": 13,
+        "water": 2,
+        "canal": 294
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-hami",
+      "regionId": "west-hami"
+    },
+    {
+      "id": "west-hami-185-85-part0",
+      "name": "伊吾与哈密绿洲 · 局部细节",
+      "bounds": [
+        92.8247956,
+        42.85121,
+        92.9999205,
+        43.0428204
+      ],
+      "url": "/data/tang-detail/modern-west-hami-185-85-part0.geojson.gz",
+      "featureCount": 40,
+      "countsByKind": {
+        "stream": 1,
+        "canal": 39
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-hami",
+      "regionId": "west-hami"
+    },
+    {
+      "id": "west-hami-186-86-part0",
+      "name": "伊吾与哈密绿洲 · 局部细节",
+      "bounds": [
+        93.0006209,
+        42.9849461,
+        93.4660042,
+        43.3635034
+      ],
+      "url": "/data/tang-detail/modern-west-hami-186-86-part0.geojson.gz",
+      "featureCount": 143,
+      "countsByKind": {
+        "stream": 48,
+        "canal": 95
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-hami",
+      "regionId": "west-hami"
+    },
+    {
+      "id": "west-hami-187-86-part0",
+      "name": "伊吾与哈密绿洲 · 局部细节",
+      "bounds": [
+        93.5044333,
+        43.0087,
+        94.3222372,
+        43.3929246
+      ],
+      "url": "/data/tang-detail/modern-west-hami-187-86-part0.geojson.gz",
+      "featureCount": 36,
+      "countsByKind": {
+        "stream": 35,
+        "water": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-hami",
+      "regionId": "west-hami"
+    },
+    {
+      "id": "west-hami-188-86-part0",
+      "name": "伊吾与哈密绿洲 · 局部细节",
+      "bounds": [
+        93.8704691,
+        43.0537274,
+        94.2635415,
+        43.0967988
+      ],
+      "url": "/data/tang-detail/modern-west-hami-188-86-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-hami",
+      "regionId": "west-hami"
+    },
+    {
+      "id": "west-hami-185-86-part0",
+      "name": "伊吾与哈密绿洲 · 局部细节",
+      "bounds": [
+        92.8984252,
+        42.9999966,
+        93.0007585,
+        43.3642205
+      ],
+      "url": "/data/tang-detail/modern-west-hami-185-86-part0.geojson.gz",
+      "featureCount": 93,
+      "countsByKind": {
+        "stream": 1,
+        "canal": 92
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-hami",
+      "regionId": "west-hami"
+    },
+    {
+      "id": "west-hotan-overview-part0",
+      "name": "于阗与和田双河绿洲 · 主河与水面",
+      "bounds": [
+        79.3840849,
+        36.6508051,
+        80.5791402,
+        38.0840829
+      ],
+      "url": "/data/tang-detail/modern-west-hotan-overview-part0.geojson.gz",
+      "featureCount": 57,
+      "countsByKind": {
+        "water": 38,
+        "river": 19
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-west-hotan",
+      "regionId": "west-hotan"
+    },
+    {
+      "id": "west-hotan-159-73-part0",
+      "name": "于阗与和田双河绿洲 · 局部细节",
+      "bounds": [
+        79.5393913,
+        36.6862214,
+        79.9541347,
+        37.0589699
+      ],
+      "url": "/data/tang-detail/modern-west-hotan-159-73-part0.geojson.gz",
+      "featureCount": 13,
+      "countsByKind": {
+        "canal": 8,
+        "stream": 5
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-hotan",
+      "regionId": "west-hotan"
+    },
+    {
+      "id": "west-hotan-160-74-part0",
+      "name": "于阗与和田双河绿洲 · 局部细节",
+      "bounds": [
+        79.9011612,
+        36.9437868,
+        80.4462068,
+        37.5623874
+      ],
+      "url": "/data/tang-detail/modern-west-hotan-160-74-part0.geojson.gz",
+      "featureCount": 38,
+      "countsByKind": {
+        "canal": 33,
+        "water": 5
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-hotan",
+      "regionId": "west-hotan"
+    },
+    {
+      "id": "west-hotan-159-74-part0",
+      "name": "于阗与和田双河绿洲 · 局部细节",
+      "bounds": [
+        79.5060292,
+        36.9793197,
+        80.0241136,
+        37.4909561
+      ],
+      "url": "/data/tang-detail/modern-west-hotan-159-74-part0.geojson.gz",
+      "featureCount": 147,
+      "countsByKind": {
+        "stream": 9,
+        "canal": 67,
+        "water": 71
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-hotan",
+      "regionId": "west-hotan"
+    },
+    {
+      "id": "west-hotan-160-75-part0",
+      "name": "于阗与和田双河绿洲 · 局部细节",
+      "bounds": [
+        80.0715535,
+        37.5097935,
+        80.3391267,
+        37.5519192
+      ],
+      "url": "/data/tang-detail/modern-west-hotan-160-75-part0.geojson.gz",
+      "featureCount": 6,
+      "countsByKind": {
+        "canal": 5,
+        "water": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-hotan",
+      "regionId": "west-hotan"
+    },
+    {
+      "id": "west-hotan-158-74-part0",
+      "name": "于阗与和田双河绿洲 · 局部细节",
+      "bounds": [
+        79.3534095,
+        37.1029752,
+        79.5766643,
+        37.1975559
+      ],
+      "url": "/data/tang-detail/modern-west-hotan-158-74-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "canal": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-hotan",
+      "regionId": "west-hotan"
+    },
+    {
+      "id": "west-hotan-160-73-part0",
+      "name": "于阗与和田双河绿洲 · 局部细节",
+      "bounds": [
+        80.1695538,
+        36.9898579,
+        80.232464,
+        37.0198439
+      ],
+      "url": "/data/tang-detail/modern-west-hotan-160-73-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "canal": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-hotan",
+      "regionId": "west-hotan"
+    },
+    {
+      "id": "west-hotan-159-75-part0",
+      "name": "于阗与和田双河绿洲 · 局部细节",
+      "bounds": [
+        79.5756588,
+        37.4909561,
+        79.5950236,
+        37.5205509
+      ],
+      "url": "/data/tang-detail/modern-west-hotan-159-75-part0.geojson.gz",
+      "featureCount": 3,
+      "countsByKind": {
+        "stream": 3
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-hotan",
+      "regionId": "west-hotan"
+    },
+    {
+      "id": "west-jiuquan-overview-part0",
+      "name": "酒泉与讨赖河绿洲 · 主河与水面",
+      "bounds": [
+        97.9520583,
+        39.0651812,
+        98.9160976,
+        39.9972872
+      ],
+      "url": "/data/tang-detail/modern-west-jiuquan-overview-part0.geojson.gz",
+      "featureCount": 98,
+      "countsByKind": {
+        "water": 72,
+        "river": 26
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-west-jiuquan",
+      "regionId": "west-jiuquan"
+    },
+    {
+      "id": "west-jiuquan-196-79-part0",
+      "name": "酒泉与讨赖河绿洲 · 局部细节",
+      "bounds": [
+        98.0655972,
+        39.6555079,
+        98.4977666,
+        39.9167591
+      ],
+      "url": "/data/tang-detail/modern-west-jiuquan-196-79-part0.geojson.gz",
+      "featureCount": 62,
+      "countsByKind": {
+        "peak": 6,
+        "water": 28,
+        "stream": 22,
+        "canal": 6
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-jiuquan",
+      "regionId": "west-jiuquan"
+    },
+    {
+      "id": "west-jiuquan-196-78-part0",
+      "name": "酒泉与讨赖河绿洲 · 局部细节",
+      "bounds": [
+        97.9727103,
+        39.2500852,
+        98.2281696,
+        39.4408991
+      ],
+      "url": "/data/tang-detail/modern-west-jiuquan-196-78-part0.geojson.gz",
+      "featureCount": 20,
+      "countsByKind": {
+        "peak": 1,
+        "stream": 19
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-jiuquan",
+      "regionId": "west-jiuquan"
+    },
+    {
+      "id": "west-jiuquan-197-79-part0",
+      "name": "酒泉与讨赖河绿洲 · 局部细节",
+      "bounds": [
+        98.4998517,
+        39.5969215,
+        98.8789667,
+        40.0002272
+      ],
+      "url": "/data/tang-detail/modern-west-jiuquan-197-79-part0.geojson.gz",
+      "featureCount": 25,
+      "countsByKind": {
+        "water": 20,
+        "stream": 5
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-jiuquan",
+      "regionId": "west-jiuquan"
+    },
+    {
+      "id": "west-jiuquan-197-80-part0",
+      "name": "酒泉与讨赖河绿洲 · 局部细节",
+      "bounds": [
+        98.8235718,
+        40.0002272,
+        98.8709176,
+        40.039842
+      ],
+      "url": "/data/tang-detail/modern-west-jiuquan-197-80-part0.geojson.gz",
+      "featureCount": 9,
+      "countsByKind": {
+        "water": 5,
+        "stream": 4
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-jiuquan",
+      "regionId": "west-jiuquan"
+    },
+    {
+      "id": "west-kashgar-overview-part0",
+      "name": "疏勒与喀什绿洲 · 主河与水面",
+      "bounds": [
+        75.0337089,
+        38.7359964,
+        76.7310025,
+        40.2707112
+      ],
+      "url": "/data/tang-detail/modern-west-kashgar-overview-part0.geojson.gz",
+      "featureCount": 160,
+      "countsByKind": {
+        "water": 58,
+        "river": 102
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-west-kashgar",
+      "regionId": "west-kashgar"
+    },
+    {
+      "id": "west-kashgar-152-79-part0",
+      "name": "疏勒与喀什绿洲 · 局部细节",
+      "bounds": [
+        75.9994696,
+        39.5275323,
+        76.5412571,
+        39.9505674
+      ],
+      "url": "/data/tang-detail/modern-west-kashgar-152-79-part0.geojson.gz",
+      "featureCount": 23,
+      "countsByKind": {
+        "water": 3,
+        "canal": 13,
+        "stream": 7
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-kashgar",
+      "regionId": "west-kashgar"
+    },
+    {
+      "id": "west-kashgar-151-78-part0",
+      "name": "疏勒与喀什绿洲 · 局部细节",
+      "bounds": [
+        75.5146025,
+        39.0538339,
+        76.0741309,
+        39.4994432
+      ],
+      "url": "/data/tang-detail/modern-west-kashgar-151-78-part0.geojson.gz",
+      "featureCount": 98,
+      "countsByKind": {
+        "canal": 22,
+        "water": 50,
+        "stream": 26
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-kashgar",
+      "regionId": "west-kashgar"
+    },
+    {
+      "id": "west-kashgar-152-78-part0",
+      "name": "疏勒与喀什绿洲 · 局部细节",
+      "bounds": [
+        75.9246717,
+        39.1385339,
+        76.5763242,
+        39.4906588
+      ],
+      "url": "/data/tang-detail/modern-west-kashgar-152-78-part0.geojson.gz",
+      "featureCount": 110,
+      "countsByKind": {
+        "canal": 53,
+        "water": 56,
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-kashgar",
+      "regionId": "west-kashgar"
+    },
+    {
+      "id": "west-kashgar-151-79-part0",
+      "name": "疏勒与喀什绿洲 · 局部细节",
+      "bounds": [
+        75.4950131,
+        39.457686,
+        76.0071405,
+        39.9314992
+      ],
+      "url": "/data/tang-detail/modern-west-kashgar-151-79-part0.geojson.gz",
+      "featureCount": 24,
+      "countsByKind": {
+        "canal": 7,
+        "stream": 15,
+        "water": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-kashgar",
+      "regionId": "west-kashgar"
+    },
+    {
+      "id": "west-kashgar-153-78-part0",
+      "name": "疏勒与喀什绿洲 · 局部细节",
+      "bounds": [
+        76.4253389,
+        39.1452907,
+        76.7603192,
+        39.482352
+      ],
+      "url": "/data/tang-detail/modern-west-kashgar-153-78-part0.geojson.gz",
+      "featureCount": 14,
+      "countsByKind": {
+        "canal": 14
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-kashgar",
+      "regionId": "west-kashgar"
+    },
+    {
+      "id": "west-kashgar-153-79-part0",
+      "name": "疏勒与喀什绿洲 · 局部细节",
+      "bounds": [
+        76.4229887,
+        39.4835591,
+        76.7425943,
+        39.8183215
+      ],
+      "url": "/data/tang-detail/modern-west-kashgar-153-79-part0.geojson.gz",
+      "featureCount": 7,
+      "countsByKind": {
+        "canal": 7
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-kashgar",
+      "regionId": "west-kashgar"
+    },
+    {
+      "id": "west-lanzhou-overview-part0",
+      "name": "兰州黄河走廊 · 主河与水面",
+      "bounds": [
+        103.0091416,
+        35.7201151,
+        104.6528728,
+        36.5846359
+      ],
+      "url": "/data/tang-detail/modern-west-lanzhou-overview-part0.geojson.gz",
+      "featureCount": 271,
+      "countsByKind": {
+        "water": 67,
+        "river": 204
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-west-lanzhou",
+      "regionId": "west-lanzhou"
+    },
+    {
+      "id": "west-lanzhou-207-72-part0",
+      "name": "兰州黄河走廊 · 局部细节",
+      "bounds": [
+        103.5024762,
+        35.9967435,
+        103.987779,
+        36.4997607
+      ],
+      "url": "/data/tang-detail/modern-west-lanzhou-207-72-part0.geojson.gz",
+      "featureCount": 603,
+      "countsByKind": {
+        "water": 339,
+        "peak": 31,
+        "canal": 23,
+        "stream": 210
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-lanzhou",
+      "regionId": "west-lanzhou"
+    },
+    {
+      "id": "west-lanzhou-208-72-part0",
+      "name": "兰州黄河走廊 · 局部细节",
+      "bounds": [
+        104.0087856,
+        36.0288828,
+        104.4395649,
+        36.5059561
+      ],
+      "url": "/data/tang-detail/modern-west-lanzhou-208-72-part0.geojson.gz",
+      "featureCount": 185,
+      "countsByKind": {
+        "water": 137,
+        "peak": 6,
+        "canal": 8,
+        "stream": 34
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-lanzhou",
+      "regionId": "west-lanzhou"
+    },
+    {
+      "id": "west-lanzhou-208-73-part0",
+      "name": "兰州黄河走廊 · 局部细节",
+      "bounds": [
+        104.0496243,
+        36.4764937,
+        104.3218285,
+        36.580549
+      ],
+      "url": "/data/tang-detail/modern-west-lanzhou-208-73-part0.geojson.gz",
+      "featureCount": 65,
+      "countsByKind": {
+        "water": 33,
+        "peak": 3,
+        "canal": 1,
+        "stream": 28
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-lanzhou",
+      "regionId": "west-lanzhou"
+    },
+    {
+      "id": "west-lanzhou-209-72-part0",
+      "name": "兰州黄河走廊 · 局部细节",
+      "bounds": [
+        104.5352313,
+        36.4960791,
+        104.5364946,
+        36.498252
+      ],
+      "url": "/data/tang-detail/modern-west-lanzhou-209-72-part0.geojson.gz",
+      "featureCount": 2,
+      "countsByKind": {
+        "water": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-lanzhou",
+      "regionId": "west-lanzhou"
+    },
+    {
+      "id": "west-lanzhou-207-71-part0",
+      "name": "兰州黄河走廊 · 局部细节",
+      "bounds": [
+        103.5033613,
+        35.7549709,
+        103.9903378,
+        36.0075849
+      ],
+      "url": "/data/tang-detail/modern-west-lanzhou-207-71-part0.geojson.gz",
+      "featureCount": 91,
+      "countsByKind": {
+        "water": 22,
+        "peak": 8,
+        "stream": 61
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-lanzhou",
+      "regionId": "west-lanzhou"
+    },
+    {
+      "id": "west-lanzhou-206-72-part0",
+      "name": "兰州黄河走廊 · 局部细节",
+      "bounds": [
+        103.2471782,
+        36.036802,
+        103.5052101,
+        36.4917535
+      ],
+      "url": "/data/tang-detail/modern-west-lanzhou-206-72-part0.geojson.gz",
+      "featureCount": 109,
+      "countsByKind": {
+        "water": 78,
+        "peak": 5,
+        "stream": 26
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-lanzhou",
+      "regionId": "west-lanzhou"
+    },
+    {
+      "id": "west-lanzhou-208-71-part0",
+      "name": "兰州黄河走廊 · 局部细节",
+      "bounds": [
+        103.9959948,
+        35.7753163,
+        104.4229337,
+        35.9971699
+      ],
+      "url": "/data/tang-detail/modern-west-lanzhou-208-71-part0.geojson.gz",
+      "featureCount": 96,
+      "countsByKind": {
+        "water": 46,
+        "peak": 9,
+        "stream": 29,
+        "canal": 12
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-lanzhou",
+      "regionId": "west-lanzhou"
+    },
+    {
+      "id": "west-lanzhou-206-71-part0",
+      "name": "兰州黄河走廊 · 局部细节",
+      "bounds": [
+        103.2341569,
+        35.7889871,
+        103.4975596,
+        35.9822467
+      ],
+      "url": "/data/tang-detail/modern-west-lanzhou-206-71-part0.geojson.gz",
+      "featureCount": 61,
+      "countsByKind": {
+        "peak": 7,
+        "water": 14,
+        "canal": 8,
+        "stream": 32
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-lanzhou",
+      "regionId": "west-lanzhou"
+    },
+    {
+      "id": "west-lanzhou-207-73-part0",
+      "name": "兰州黄河走廊 · 局部细节",
+      "bounds": [
+        103.6007936,
+        36.4997607,
+        103.9591277,
+        36.5509435
+      ],
+      "url": "/data/tang-detail/modern-west-lanzhou-207-73-part0.geojson.gz",
+      "featureCount": 33,
+      "countsByKind": {
+        "water": 23,
+        "stream": 10
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-lanzhou",
+      "regionId": "west-lanzhou"
+    },
+    {
+      "id": "west-lanzhou-206-73-part0",
+      "name": "兰州黄河走廊 · 局部细节",
+      "bounds": [
+        103.3557701,
+        36.5116993,
+        103.3802962,
+        36.5480869
+      ],
+      "url": "/data/tang-detail/modern-west-lanzhou-206-73-part0.geojson.gz",
+      "featureCount": 5,
+      "countsByKind": {
+        "stream": 1,
+        "water": 4
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-lanzhou",
+      "regionId": "west-lanzhou"
+    },
+    {
+      "id": "west-lanzhou-209-71-part0",
+      "name": "兰州黄河走廊 · 局部细节",
+      "bounds": [
+        104.5317417,
+        35.8042403,
+        104.5360064,
+        35.8084864
+      ],
+      "url": "/data/tang-detail/modern-west-lanzhou-209-71-part0.geojson.gz",
+      "featureCount": 2,
+      "countsByKind": {
+        "water": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-lanzhou",
+      "regionId": "west-lanzhou"
+    },
+    {
+      "id": "west-lanzhou-209-73-part0",
+      "name": "兰州黄河走廊 · 局部细节",
+      "bounds": [
+        104.5335434,
+        36.4953219,
+        104.5695984,
+        36.5227212
+      ],
+      "url": "/data/tang-detail/modern-west-lanzhou-209-73-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-lanzhou",
+      "regionId": "west-lanzhou"
+    },
+    {
+      "id": "west-lhasa-overview-part0",
+      "name": "拉萨河下游与拉萨地区 · 主河与水面",
+      "bounds": [
+        90.5408568,
+        29.2333194,
+        92.0132166,
+        30.127054
+      ],
+      "url": "/data/tang-detail/modern-west-lhasa-overview-part0.geojson.gz",
+      "featureCount": 112,
+      "countsByKind": {
+        "water": 39,
+        "river": 73
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-west-lhasa",
+      "regionId": "west-lhasa"
+    },
+    {
+      "id": "west-lhasa-182-59-part0",
+      "name": "拉萨河下游与拉萨地区 · 局部细节",
+      "bounds": [
+        91.0013545,
+        29.4834297,
+        91.5043223,
+        29.991585
+      ],
+      "url": "/data/tang-detail/modern-west-lhasa-182-59-part0.geojson.gz",
+      "featureCount": 332,
+      "countsByKind": {
+        "water": 52,
+        "peak": 21,
+        "saddle": 5,
+        "canal": 82,
+        "stream": 172
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-lhasa",
+      "regionId": "west-lhasa"
+    },
+    {
+      "id": "west-lhasa-181-59-part0",
+      "name": "拉萨河下游与拉萨地区 · 局部细节",
+      "bounds": [
+        90.5742325,
+        29.4568097,
+        90.9967053,
+        29.9133422
+      ],
+      "url": "/data/tang-detail/modern-west-lhasa-181-59-part0.geojson.gz",
+      "featureCount": 74,
+      "countsByKind": {
+        "water": 26,
+        "peak": 4,
+        "canal": 8,
+        "stream": 36
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-lhasa",
+      "regionId": "west-lhasa"
+    },
+    {
+      "id": "west-lhasa-183-59-part0",
+      "name": "拉萨河下游与拉萨地区 · 局部细节",
+      "bounds": [
+        91.4765676,
+        29.477114,
+        91.6752769,
+        29.8397417
+      ],
+      "url": "/data/tang-detail/modern-west-lhasa-183-59-part0.geojson.gz",
+      "featureCount": 48,
+      "countsByKind": {
+        "peak": 1,
+        "saddle": 2,
+        "stream": 37,
+        "water": 8
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-lhasa",
+      "regionId": "west-lhasa"
+    },
+    {
+      "id": "west-lhasa-181-58-part0",
+      "name": "拉萨河下游与拉萨地区 · 局部细节",
+      "bounds": [
+        90.6518714,
+        29.1756229,
+        91.0217144,
+        29.5280463
+      ],
+      "url": "/data/tang-detail/modern-west-lhasa-181-58-part0.geojson.gz",
+      "featureCount": 66,
+      "countsByKind": {
+        "peak": 5,
+        "stream": 24,
+        "water": 34,
+        "canal": 3
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-lhasa",
+      "regionId": "west-lhasa"
+    },
+    {
+      "id": "west-lhasa-182-58-part0",
+      "name": "拉萨河下游与拉萨地区 · 局部细节",
+      "bounds": [
+        90.9930793,
+        29.1126787,
+        91.440652,
+        29.5267254
+      ],
+      "url": "/data/tang-detail/modern-west-lhasa-182-58-part0.geojson.gz",
+      "featureCount": 86,
+      "countsByKind": {
+        "peak": 2,
+        "stream": 43,
+        "water": 41
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-lhasa",
+      "regionId": "west-lhasa"
+    },
+    {
+      "id": "west-lhasa-183-58-part0",
+      "name": "拉萨河下游与拉萨地区 · 局部细节",
+      "bounds": [
+        91.5011197,
+        29.1816907,
+        91.6764734,
+        29.4801775
+      ],
+      "url": "/data/tang-detail/modern-west-lhasa-183-58-part0.geojson.gz",
+      "featureCount": 24,
+      "countsByKind": {
+        "peak": 1,
+        "water": 7,
+        "stream": 16
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-lhasa",
+      "regionId": "west-lhasa"
+    },
+    {
+      "id": "west-qiuci-overview-part0",
+      "name": "龟兹与库车河绿洲 · 主河与水面",
+      "bounds": [
+        81.9290792,
+        41.2861269,
+        83.5265194,
+        42.4296457
+      ],
+      "url": "/data/tang-detail/modern-west-qiuci-overview-part0.geojson.gz",
+      "featureCount": 53,
+      "countsByKind": {
+        "water": 17,
+        "river": 36
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-west-qiuci",
+      "regionId": "west-qiuci"
+    },
+    {
+      "id": "west-qiuci-165-83-part0",
+      "name": "龟兹与库车河绿洲 · 局部细节",
+      "bounds": [
+        82.5037196,
+        41.4899301,
+        83.0084456,
+        41.974311
+      ],
+      "url": "/data/tang-detail/modern-west-qiuci-165-83-part0.geojson.gz",
+      "featureCount": 36,
+      "countsByKind": {
+        "water": 11,
+        "peak": 1,
+        "stream": 4,
+        "canal": 20
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-qiuci",
+      "regionId": "west-qiuci"
+    },
+    {
+      "id": "west-qiuci-166-84-part0",
+      "name": "龟兹与库车河绿洲 · 局部细节",
+      "bounds": [
+        82.9652637,
+        42.0166311,
+        83.4009933,
+        42.2583574
+      ],
+      "url": "/data/tang-detail/modern-west-qiuci-166-84-part0.geojson.gz",
+      "featureCount": 28,
+      "countsByKind": {
+        "peak": 1,
+        "stream": 26,
+        "water": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-qiuci",
+      "regionId": "west-qiuci"
+    },
+    {
+      "id": "west-qiuci-165-82-part0",
+      "name": "龟兹与库车河绿洲 · 局部细节",
+      "bounds": [
+        82.5721325,
+        41.2744633,
+        83.0032753,
+        41.542497
+      ],
+      "url": "/data/tang-detail/modern-west-qiuci-165-82-part0.geojson.gz",
+      "featureCount": 12,
+      "countsByKind": {
+        "canal": 12
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-qiuci",
+      "regionId": "west-qiuci"
+    },
+    {
+      "id": "west-qiuci-165-84-part0",
+      "name": "龟兹与库车河绿洲 · 局部细节",
+      "bounds": [
+        82.5542431,
+        42.0705241,
+        83.0206339,
+        42.2709889
+      ],
+      "url": "/data/tang-detail/modern-west-qiuci-165-84-part0.geojson.gz",
+      "featureCount": 16,
+      "countsByKind": {
+        "stream": 13,
+        "water": 3
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-qiuci",
+      "regionId": "west-qiuci"
+    },
+    {
+      "id": "west-qiuci-166-82-part0",
+      "name": "龟兹与库车河绿洲 · 局部细节",
+      "bounds": [
+        83.0032753,
+        41.1805541,
+        83.3959294,
+        41.4161945
+      ],
+      "url": "/data/tang-detail/modern-west-qiuci-166-82-part0.geojson.gz",
+      "featureCount": 6,
+      "countsByKind": {
+        "canal": 5,
+        "water": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-qiuci",
+      "regionId": "west-qiuci"
+    },
+    {
+      "id": "west-qiuci-166-83-part0",
+      "name": "龟兹与库车河绿洲 · 局部细节",
+      "bounds": [
+        82.9998868,
+        41.5757258,
+        83.3187675,
+        41.9422168
+      ],
+      "url": "/data/tang-detail/modern-west-qiuci-166-83-part0.geojson.gz",
+      "featureCount": 15,
+      "countsByKind": {
+        "canal": 12,
+        "stream": 2,
+        "water": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-qiuci",
+      "regionId": "west-qiuci"
+    },
+    {
+      "id": "west-shannan-overview-part0",
+      "name": "山南与雅鲁藏布江走廊 · 主河与水面",
+      "bounds": [
+        91.6069007,
+        28.9638654,
+        92.2851295,
+        29.5831983
+      ],
+      "url": "/data/tang-detail/modern-west-shannan-overview-part0.geojson.gz",
+      "featureCount": 29,
+      "countsByKind": {
+        "water": 18,
+        "river": 11
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-west-shannan",
+      "regionId": "west-shannan"
+    },
+    {
+      "id": "west-shannan-183-58-part0",
+      "name": "山南与雅鲁藏布江走廊 · 局部细节",
+      "bounds": [
+        91.5091181,
+        28.9768263,
+        92.008092,
+        29.505471
+      ],
+      "url": "/data/tang-detail/modern-west-shannan-183-58-part0.geojson.gz",
+      "featureCount": 210,
+      "countsByKind": {
+        "peak": 2,
+        "stream": 122,
+        "water": 86
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-shannan",
+      "regionId": "west-shannan"
+    },
+    {
+      "id": "west-shannan-184-59-part0",
+      "name": "山南与雅鲁藏布江走廊 · 局部细节",
+      "bounds": [
+        91.9863196,
+        29.4849523,
+        92.1650725,
+        29.7183734
+      ],
+      "url": "/data/tang-detail/modern-west-shannan-184-59-part0.geojson.gz",
+      "featureCount": 9,
+      "countsByKind": {
+        "stream": 8,
+        "water": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-shannan",
+      "regionId": "west-shannan"
+    },
+    {
+      "id": "west-shannan-183-59-part0",
+      "name": "山南与雅鲁藏布江走廊 · 局部细节",
+      "bounds": [
+        91.657231,
+        29.4894631,
+        91.9903211,
+        29.7334558
+      ],
+      "url": "/data/tang-detail/modern-west-shannan-183-59-part0.geojson.gz",
+      "featureCount": 19,
+      "countsByKind": {
+        "stream": 10,
+        "water": 9
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-shannan",
+      "regionId": "west-shannan"
+    },
+    {
+      "id": "west-shannan-184-58-part0",
+      "name": "山南与雅鲁藏布江走廊 · 局部细节",
+      "bounds": [
+        91.9834989,
+        29.0014732,
+        92.2285729,
+        29.4849523
+      ],
+      "url": "/data/tang-detail/modern-west-shannan-184-58-part0.geojson.gz",
+      "featureCount": 57,
+      "countsByKind": {
+        "stream": 51,
+        "water": 6
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-shannan",
+      "regionId": "west-shannan"
+    },
+    {
+      "id": "west-shannan-183-57-part0",
+      "name": "山南与雅鲁藏布江走廊 · 局部细节",
+      "bounds": [
+        91.4470378,
+        28.9583748,
+        91.7628175,
+        29.0170256
+      ],
+      "url": "/data/tang-detail/modern-west-shannan-183-57-part0.geojson.gz",
+      "featureCount": 6,
+      "countsByKind": {
+        "stream": 6
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-shannan",
+      "regionId": "west-shannan"
+    },
+    {
+      "id": "west-shannan-182-58-part0",
+      "name": "山南与雅鲁藏布江走廊 · 局部细节",
+      "bounds": [
+        91.3094437,
+        28.9963069,
+        91.482296,
+        29.1826845
+      ],
+      "url": "/data/tang-detail/modern-west-shannan-182-58-part0.geojson.gz",
+      "featureCount": 29,
+      "countsByKind": {
+        "stream": 22,
+        "water": 7
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-shannan",
+      "regionId": "west-shannan"
+    },
+    {
+      "id": "west-shannan-182-57-part0",
+      "name": "山南与雅鲁藏布江走廊 · 局部细节",
+      "bounds": [
+        91.4949346,
+        28.9741373,
+        91.5000499,
+        29.0007511
+      ],
+      "url": "/data/tang-detail/modern-west-shannan-182-57-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-shannan",
+      "regionId": "west-shannan"
+    },
+    {
+      "id": "west-tianshui-overview-part0",
+      "name": "天水与渭河上游 · 主河与水面",
+      "bounds": [
+        104.9550628,
+        33.9689082,
+        106.3712913,
+        34.9339648
+      ],
+      "url": "/data/tang-detail/modern-west-tianshui-overview-part0.geojson.gz",
+      "featureCount": 294,
+      "countsByKind": {
+        "water": 44,
+        "river": 250
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-west-tianshui",
+      "regionId": "west-tianshui"
+    },
+    {
+      "id": "west-tianshui-212-68-part0",
+      "name": "天水与渭河上游 · 局部细节",
+      "bounds": [
+        105.9984611,
+        34.0239962,
+        106.3694197,
+        34.5188405
+      ],
+      "url": "/data/tang-detail/modern-west-tianshui-212-68-part0.geojson.gz",
+      "featureCount": 62,
+      "countsByKind": {
+        "water": 10,
+        "peak": 7,
+        "stream": 45
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-tianshui",
+      "regionId": "west-tianshui"
+    },
+    {
+      "id": "west-tianshui-211-69-part0",
+      "name": "天水与渭河上游 · 局部细节",
+      "bounds": [
+        105.5020899,
+        34.4865465,
+        105.9980207,
+        34.8162158
+      ],
+      "url": "/data/tang-detail/modern-west-tianshui-211-69-part0.geojson.gz",
+      "featureCount": 215,
+      "countsByKind": {
+        "water": 39,
+        "peak": 22,
+        "stream": 154
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-tianshui",
+      "regionId": "west-tianshui"
+    },
+    {
+      "id": "west-tianshui-211-68-part0",
+      "name": "天水与渭河上游 · 局部细节",
+      "bounds": [
+        105.4919766,
+        34.0448122,
+        105.99918,
+        34.5047215
+      ],
+      "url": "/data/tang-detail/modern-west-tianshui-211-68-part0.geojson.gz",
+      "featureCount": 181,
+      "countsByKind": {
+        "water": 23,
+        "peak": 32,
+        "stream": 126
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-tianshui",
+      "regionId": "west-tianshui"
+    },
+    {
+      "id": "west-tianshui-212-69-part0",
+      "name": "天水与渭河上游 · 局部细节",
+      "bounds": [
+        106.0124729,
+        34.5021188,
+        106.3679561,
+        34.8486862
+      ],
+      "url": "/data/tang-detail/modern-west-tianshui-212-69-part0.geojson.gz",
+      "featureCount": 87,
+      "countsByKind": {
+        "water": 11,
+        "peak": 9,
+        "stream": 67
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-tianshui",
+      "regionId": "west-tianshui"
+    },
+    {
+      "id": "west-tianshui-210-68-part0",
+      "name": "天水与渭河上游 · 局部细节",
+      "bounds": [
+        105.0505119,
+        34.0489882,
+        105.4972786,
+        34.4983527
+      ],
+      "url": "/data/tang-detail/modern-west-tianshui-210-68-part0.geojson.gz",
+      "featureCount": 201,
+      "countsByKind": {
+        "peak": 41,
+        "stream": 134,
+        "water": 26
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-tianshui",
+      "regionId": "west-tianshui"
+    },
+    {
+      "id": "west-tianshui-210-69-part0",
+      "name": "天水与渭河上游 · 局部细节",
+      "bounds": [
+        105.0486445,
+        34.4863094,
+        105.5048411,
+        34.837456
+      ],
+      "url": "/data/tang-detail/modern-west-tianshui-210-69-part0.geojson.gz",
+      "featureCount": 109,
+      "countsByKind": {
+        "peak": 14,
+        "stream": 73,
+        "water": 22
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-tianshui",
+      "regionId": "west-tianshui"
+    },
+    {
+      "id": "west-turpan-overview-part0",
+      "name": "交河—高昌与吐鲁番绿洲 · 主河与水面",
+      "bounds": [
+        88.3541624,
+        42.4050561,
+        89.6277685,
+        43.4729033
+      ],
+      "url": "/data/tang-detail/modern-west-turpan-overview-part0.geojson.gz",
+      "featureCount": 36,
+      "countsByKind": {
+        "river": 22,
+        "water": 14
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-west-turpan",
+      "regionId": "west-turpan"
+    },
+    {
+      "id": "west-turpan-177-86-part0",
+      "name": "交河—高昌与吐鲁番绿洲 · 局部细节",
+      "bounds": [
+        88.5051462,
+        42.9888451,
+        88.9952005,
+        43.3493792
+      ],
+      "url": "/data/tang-detail/modern-west-turpan-177-86-part0.geojson.gz",
+      "featureCount": 133,
+      "countsByKind": {
+        "peak": 95,
+        "stream": 3,
+        "water": 4,
+        "canal": 31
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-turpan",
+      "regionId": "west-turpan"
+    },
+    {
+      "id": "west-turpan-178-86-part0",
+      "name": "交河—高昌与吐鲁番绿洲 · 局部细节",
+      "bounds": [
+        89.0156603,
+        42.9920399,
+        89.5036968,
+        43.3481402
+      ],
+      "url": "/data/tang-detail/modern-west-turpan-178-86-part0.geojson.gz",
+      "featureCount": 46,
+      "countsByKind": {
+        "peak": 7,
+        "stream": 4,
+        "canal": 35
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-turpan",
+      "regionId": "west-turpan"
+    },
+    {
+      "id": "west-turpan-179-86-part0",
+      "name": "交河—高昌与吐鲁番绿洲 · 局部细节",
+      "bounds": [
+        89.5040361,
+        42.9896641,
+        89.6982857,
+        43.3549408
+      ],
+      "url": "/data/tang-detail/modern-west-turpan-179-86-part0.geojson.gz",
+      "featureCount": 37,
+      "countsByKind": {
+        "peak": 2,
+        "stream": 8,
+        "canal": 27
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-turpan",
+      "regionId": "west-turpan"
+    },
+    {
+      "id": "west-turpan-177-85-part0",
+      "name": "交河—高昌与吐鲁番绿洲 · 局部细节",
+      "bounds": [
+        88.509629,
+        42.6730452,
+        88.9957713,
+        42.9924958
+      ],
+      "url": "/data/tang-detail/modern-west-turpan-177-85-part0.geojson.gz",
+      "featureCount": 276,
+      "countsByKind": {
+        "peak": 2,
+        "stream": 17,
+        "water": 6,
+        "canal": 251
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-turpan",
+      "regionId": "west-turpan"
+    },
+    {
+      "id": "west-turpan-179-84-part0",
+      "name": "交河—高昌与吐鲁番绿洲 · 局部细节",
+      "bounds": [
+        89.63457,
+        42.452725,
+        89.63457,
+        42.452725
+      ],
+      "url": "/data/tang-detail/modern-west-turpan-179-84-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "peak": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-turpan",
+      "regionId": "west-turpan"
+    },
+    {
+      "id": "west-turpan-179-85-part0",
+      "name": "交河—高昌与吐鲁番绿洲 · 局部细节",
+      "bounds": [
+        89.4977172,
+        42.6836141,
+        89.6701339,
+        43.0081364
+      ],
+      "url": "/data/tang-detail/modern-west-turpan-179-85-part0.geojson.gz",
+      "featureCount": 558,
+      "countsByKind": {
+        "stream": 14,
+        "water": 2,
+        "canal": 542
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-turpan",
+      "regionId": "west-turpan"
+    },
+    {
+      "id": "west-turpan-178-85-part0",
+      "name": "交河—高昌与吐鲁番绿洲 · 局部细节",
+      "bounds": [
+        89.0069261,
+        42.4269226,
+        89.489345,
+        43.0083343
+      ],
+      "url": "/data/tang-detail/modern-west-turpan-178-85-part0.geojson.gz",
+      "featureCount": 2068,
+      "countsByKind": {
+        "stream": 14,
+        "water": 14,
+        "canal": 2040
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-turpan",
+      "regionId": "west-turpan"
+    },
+    {
+      "id": "west-wuwei-overview-part0",
+      "name": "武威与石羊河绿洲 · 主河与水面",
+      "bounds": [
+        102.2783658,
+        37.4179667,
+        103.0579375,
+        38.41521
+      ],
+      "url": "/data/tang-detail/modern-west-wuwei-overview-part0.geojson.gz",
+      "featureCount": 53,
+      "countsByKind": {
+        "water": 14,
+        "river": 39
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-west-wuwei",
+      "regionId": "west-wuwei"
+    },
+    {
+      "id": "west-wuwei-205-75-part0",
+      "name": "武威与石羊河绿洲 · 局部细节",
+      "bounds": [
+        102.4968554,
+        37.6649749,
+        103.0457496,
+        38.0479897
+      ],
+      "url": "/data/tang-detail/modern-west-wuwei-205-75-part0.geojson.gz",
+      "featureCount": 46,
+      "countsByKind": {
+        "water": 21,
+        "stream": 21,
+        "canal": 4
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-wuwei",
+      "regionId": "west-wuwei"
+    },
+    {
+      "id": "west-wuwei-204-75-part0",
+      "name": "武威与石羊河绿洲 · 局部细节",
+      "bounds": [
+        102.2417897,
+        37.4942403,
+        102.4964372,
+        37.9707077
+      ],
+      "url": "/data/tang-detail/modern-west-wuwei-204-75-part0.geojson.gz",
+      "featureCount": 55,
+      "countsByKind": {
+        "peak": 7,
+        "stream": 45,
+        "water": 3
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-wuwei",
+      "regionId": "west-wuwei"
+    },
+    {
+      "id": "west-wuwei-205-76-part0",
+      "name": "武威与石羊河绿洲 · 局部细节",
+      "bounds": [
+        102.5362532,
+        38.0479897,
+        102.7404498,
+        38.3115475
+      ],
+      "url": "/data/tang-detail/modern-west-wuwei-205-76-part0.geojson.gz",
+      "featureCount": 4,
+      "countsByKind": {
+        "stream": 4
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-wuwei",
+      "regionId": "west-wuwei"
+    },
+    {
+      "id": "west-wuwei-204-76-part0",
+      "name": "武威与石羊河绿洲 · 局部细节",
+      "bounds": [
+        102.2100967,
+        38.0348927,
+        102.4361962,
+        38.1055721
+      ],
+      "url": "/data/tang-detail/modern-west-wuwei-204-76-part0.geojson.gz",
+      "featureCount": 3,
+      "countsByKind": {
+        "stream": 1,
+        "water": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-wuwei",
+      "regionId": "west-wuwei"
+    },
+    {
+      "id": "west-wuwei-206-75-part0",
+      "name": "武威与石羊河绿洲 · 局部细节",
+      "bounds": [
+        102.9877954,
+        37.4513625,
+        103.0929123,
+        37.661481
+      ],
+      "url": "/data/tang-detail/modern-west-wuwei-206-75-part0.geojson.gz",
+      "featureCount": 3,
+      "countsByKind": {
+        "stream": 3
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-wuwei",
+      "regionId": "west-wuwei"
+    },
+    {
+      "id": "west-wuwei-204-74-part0",
+      "name": "武威与石羊河绿洲 · 局部细节",
+      "bounds": [
+        102.2172822,
+        37.4572044,
+        102.3411469,
+        37.5027606
+      ],
+      "url": "/data/tang-detail/modern-west-wuwei-204-74-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-wuwei",
+      "regionId": "west-wuwei"
+    },
+    {
+      "id": "west-yanqi-overview-part0",
+      "name": "焉耆—博斯腾湖西岸 · 主河与水面",
+      "bounds": [
+        85.6243887,
+        41.560147,
+        87.4362002,
+        42.5144907
+      ],
+      "url": "/data/tang-detail/modern-west-yanqi-overview-part0.geojson.gz",
+      "featureCount": 79,
+      "countsByKind": {
+        "water": 34,
+        "river": 45
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-west-yanqi",
+      "regionId": "west-yanqi"
+    },
+    {
+      "id": "west-yanqi-173-84-part0",
+      "name": "焉耆—博斯腾湖西岸 · 局部细节",
+      "bounds": [
+        86.4811565,
+        41.9905929,
+        87.1184274,
+        42.2955413
+      ],
+      "url": "/data/tang-detail/modern-west-yanqi-173-84-part0.geojson.gz",
+      "featureCount": 65,
+      "countsByKind": {
+        "water": 6,
+        "canal": 59
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-yanqi",
+      "regionId": "west-yanqi"
+    },
+    {
+      "id": "west-yanqi-172-84-part0",
+      "name": "焉耆—博斯腾湖西岸 · 局部细节",
+      "bounds": [
+        85.9751904,
+        42.0000419,
+        86.6188722,
+        42.3788191
+      ],
+      "url": "/data/tang-detail/modern-west-yanqi-172-84-part0.geojson.gz",
+      "featureCount": 23,
+      "countsByKind": {
+        "water": 3,
+        "canal": 17,
+        "stream": 3
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-yanqi",
+      "regionId": "west-yanqi"
+    },
+    {
+      "id": "west-yanqi-172-83-part0",
+      "name": "焉耆—博斯腾湖西岸 · 局部细节",
+      "bounds": [
+        86.0246024,
+        41.5867842,
+        86.482503,
+        42.0089352
+      ],
+      "url": "/data/tang-detail/modern-west-yanqi-172-83-part0.geojson.gz",
+      "featureCount": 108,
+      "countsByKind": {
+        "water": 31,
+        "peak": 1,
+        "canal": 56,
+        "stream": 20
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-yanqi",
+      "regionId": "west-yanqi"
+    },
+    {
+      "id": "west-yanqi-173-83-part0",
+      "name": "焉耆—博斯腾湖西岸 · 局部细节",
+      "bounds": [
+        86.4948063,
+        41.6453065,
+        86.7660123,
+        41.8215545
+      ],
+      "url": "/data/tang-detail/modern-west-yanqi-173-83-part0.geojson.gz",
+      "featureCount": 2,
+      "countsByKind": {
+        "water": 1,
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-yanqi",
+      "regionId": "west-yanqi"
+    },
+    {
+      "id": "west-zhangye-overview-part0",
+      "name": "张掖与黑河绿洲 · 主河与水面",
+      "bounds": [
+        99.7611004,
+        38.3461733,
+        100.9278101,
+        39.4203935
+      ],
+      "url": "/data/tang-detail/modern-west-zhangye-overview-part0.geojson.gz",
+      "featureCount": 71,
+      "countsByKind": {
+        "water": 50,
+        "river": 21
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-west-zhangye",
+      "regionId": "west-zhangye"
+    },
+    {
+      "id": "west-zhangye-201-76-part0",
+      "name": "张掖与黑河绿洲 · 局部细节",
+      "bounds": [
+        100.542666,
+        38.380905,
+        100.9199795,
+        38.5873546
+      ],
+      "url": "/data/tang-detail/modern-west-zhangye-201-76-part0.geojson.gz",
+      "featureCount": 8,
+      "countsByKind": {
+        "water": 2,
+        "stream": 5,
+        "canal": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-zhangye",
+      "regionId": "west-zhangye"
+    },
+    {
+      "id": "west-zhangye-200-77-part0",
+      "name": "张掖与黑河绿洲 · 局部细节",
+      "bounds": [
+        100.0341012,
+        38.5340225,
+        100.4966734,
+        39.0180084
+      ],
+      "url": "/data/tang-detail/modern-west-zhangye-200-77-part0.geojson.gz",
+      "featureCount": 104,
+      "countsByKind": {
+        "water": 67,
+        "peak": 1,
+        "canal": 18,
+        "stream": 18
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-zhangye",
+      "regionId": "west-zhangye"
+    },
+    {
+      "id": "west-zhangye-201-78-part0",
+      "name": "张掖与黑河绿洲 · 局部细节",
+      "bounds": [
+        100.5322549,
+        38.9997263,
+        100.8884954,
+        39.1960128
+      ],
+      "url": "/data/tang-detail/modern-west-zhangye-201-78-part0.geojson.gz",
+      "featureCount": 9,
+      "countsByKind": {
+        "peak": 1,
+        "water": 4,
+        "stream": 4
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-zhangye",
+      "regionId": "west-zhangye"
+    },
+    {
+      "id": "west-zhangye-200-76-part0",
+      "name": "张掖与黑河绿洲 · 局部细节",
+      "bounds": [
+        100.083055,
+        38.4259983,
+        100.470033,
+        38.5217761
+      ],
+      "url": "/data/tang-detail/modern-west-zhangye-200-76-part0.geojson.gz",
+      "featureCount": 9,
+      "countsByKind": {
+        "peak": 5,
+        "water": 2,
+        "stream": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-zhangye",
+      "regionId": "west-zhangye"
+    },
+    {
+      "id": "west-zhangye-201-77-part0",
+      "name": "张掖与黑河绿洲 · 局部细节",
+      "bounds": [
+        100.5019447,
+        38.4401158,
+        100.791661,
+        38.7678839
+      ],
+      "url": "/data/tang-detail/modern-west-zhangye-201-77-part0.geojson.gz",
+      "featureCount": 9,
+      "countsByKind": {
+        "water": 8,
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-zhangye",
+      "regionId": "west-zhangye"
+    },
+    {
+      "id": "west-zhangye-200-78-part0",
+      "name": "张掖与黑河绿洲 · 局部细节",
+      "bounds": [
+        100.0936365,
+        38.9884525,
+        100.4535058,
+        39.1365661
+      ],
+      "url": "/data/tang-detail/modern-west-zhangye-200-78-part0.geojson.gz",
+      "featureCount": 14,
+      "countsByKind": {
+        "stream": 7,
+        "water": 2,
+        "canal": 5
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-west-zhangye",
+      "regionId": "west-zhangye"
+    },
+    {
+      "id": "city-beijing-overview-part0",
+      "name": "幽州北京附近水系 · 主河与水面",
+      "bounds": [
+        116.0994401,
+        39.5406048,
+        116.785149,
+        40.1525491
+      ],
+      "url": "/data/tang-detail/modern-city-beijing-overview-part0.geojson.gz",
+      "featureCount": 339,
+      "countsByKind": {
+        "water": 110,
+        "river": 229
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-city-beijing",
+      "regionId": "city-beijing"
+    },
+    {
+      "id": "city-beijing-232-79-part0",
+      "name": "幽州北京附近水系 · 局部细节",
+      "bounds": [
+        116.1527768,
+        39.6991963,
+        116.5031707,
+        40.0206691
+      ],
+      "url": "/data/tang-detail/modern-city-beijing-232-79-part0.geojson.gz",
+      "featureCount": 722,
+      "countsByKind": {
+        "water": 556,
+        "peak": 9,
+        "saddle": 1,
+        "canal": 98,
+        "stream": 58
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-beijing",
+      "regionId": "city-beijing"
+    },
+    {
+      "id": "city-beijing-232-80-part0",
+      "name": "幽州北京附近水系 · 局部细节",
+      "bounds": [
+        116.1622601,
+        39.917011,
+        116.5066394,
+        40.0996161
+      ],
+      "url": "/data/tang-detail/modern-city-beijing-232-80-part0.geojson.gz",
+      "featureCount": 373,
+      "countsByKind": {
+        "water": 257,
+        "peak": 11,
+        "canal": 71,
+        "stream": 34
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-beijing",
+      "regionId": "city-beijing"
+    },
+    {
+      "id": "city-beijing-233-79-part0",
+      "name": "幽州北京附近水系 · 局部细节",
+      "bounds": [
+        116.4311714,
+        39.6985266,
+        116.8213004,
+        39.9981035
+      ],
+      "url": "/data/tang-detail/modern-city-beijing-233-79-part0.geojson.gz",
+      "featureCount": 138,
+      "countsByKind": {
+        "water": 107,
+        "canal": 18,
+        "stream": 13
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-beijing",
+      "regionId": "city-beijing"
+    },
+    {
+      "id": "city-beijing-233-80-part0",
+      "name": "幽州北京附近水系 · 局部细节",
+      "bounds": [
+        116.5005605,
+        40.0043831,
+        116.5885797,
+        40.1000102
+      ],
+      "url": "/data/tang-detail/modern-city-beijing-233-80-part0.geojson.gz",
+      "featureCount": 62,
+      "countsByKind": {
+        "water": 50,
+        "canal": 3,
+        "stream": 9
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-beijing",
+      "regionId": "city-beijing"
+    },
+    {
+      "id": "city-beijing-231-79-part0",
+      "name": "幽州北京附近水系 · 局部细节",
+      "bounds": [
+        115.797824,
+        39.5247973,
+        116.2197375,
+        39.8132051
+      ],
+      "url": "/data/tang-detail/modern-city-beijing-231-79-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "canal": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-beijing",
+      "regionId": "city-beijing"
+    },
+    {
+      "id": "city-changsha-overview-part0",
+      "name": "潭州长沙附近水系 · 主河与水面",
+      "bounds": [
+        112.3669302,
+        27.2328066,
+        113.6064904,
+        28.7727248
+      ],
+      "url": "/data/tang-detail/modern-city-changsha-overview-part0.geojson.gz",
+      "featureCount": 222,
+      "countsByKind": {
+        "water": 87,
+        "river": 135
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-city-changsha",
+      "regionId": "city-changsha"
+    },
+    {
+      "id": "city-changsha-226-56-part0",
+      "name": "潭州长沙附近水系 · 局部细节",
+      "bounds": [
+        112.9964355,
+        28.02347,
+        113.1495353,
+        28.4246961
+      ],
+      "url": "/data/tang-detail/modern-city-changsha-226-56-part0.geojson.gz",
+      "featureCount": 1098,
+      "countsByKind": {
+        "water": 1040,
+        "peak": 1,
+        "canal": 14,
+        "stream": 43
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-changsha",
+      "regionId": "city-changsha"
+    },
+    {
+      "id": "city-changsha-225-56-part0",
+      "name": "潭州长沙附近水系 · 局部细节",
+      "bounds": [
+        112.7180155,
+        28.0260992,
+        113.0007888,
+        28.4306303
+      ],
+      "url": "/data/tang-detail/modern-city-changsha-225-56-part0.geojson.gz",
+      "featureCount": 2377,
+      "countsByKind": {
+        "water": 2269,
+        "peak": 18,
+        "stream": 79,
+        "canal": 11
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-changsha",
+      "regionId": "city-changsha"
+    },
+    {
+      "id": "city-fuzhou-overview-part0",
+      "name": "福州与闽江附近水系 · 主河与水面",
+      "bounds": [
+        119.0043034,
+        25.8626344,
+        119.6473749,
+        26.3745535
+      ],
+      "url": "/data/tang-detail/modern-city-fuzhou-overview-part0.geojson.gz",
+      "featureCount": 387,
+      "countsByKind": {
+        "water": 74,
+        "river": 313
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-city-fuzhou",
+      "regionId": "city-fuzhou"
+    },
+    {
+      "id": "city-fuzhou-238-52-part0",
+      "name": "福州与闽江附近水系 · 局部细节",
+      "bounds": [
+        118.9975793,
+        25.9994558,
+        119.5032059,
+        26.4890121
+      ],
+      "url": "/data/tang-detail/modern-city-fuzhou-238-52-part0.geojson.gz",
+      "featureCount": 1318,
+      "countsByKind": {
+        "water": 728,
+        "peak": 157,
+        "saddle": 5,
+        "stream": 415,
+        "canal": 13
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-fuzhou",
+      "regionId": "city-fuzhou"
+    },
+    {
+      "id": "city-fuzhou-238-51-part0",
+      "name": "福州与闽江附近水系 · 局部细节",
+      "bounds": [
+        119.0648993,
+        25.878312,
+        119.4800821,
+        26.0033019
+      ],
+      "url": "/data/tang-detail/modern-city-fuzhou-238-51-part0.geojson.gz",
+      "featureCount": 249,
+      "countsByKind": {
+        "water": 177,
+        "saddle": 3,
+        "peak": 7,
+        "stream": 55,
+        "canal": 7
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-fuzhou",
+      "regionId": "city-fuzhou"
+    },
+    {
+      "id": "city-fuzhou-239-52-part0",
+      "name": "福州与闽江附近水系 · 局部细节",
+      "bounds": [
+        119.4744488,
+        26.3179164,
+        119.5416165,
+        26.3903939
+      ],
+      "url": "/data/tang-detail/modern-city-fuzhou-239-52-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-fuzhou",
+      "regionId": "city-fuzhou"
+    },
+    {
+      "id": "city-guangzhou-overview-part0",
+      "name": "广州与珠江附近水系 · 主河与水面",
+      "bounds": [
+        112.97221,
+        22.8940212,
+        113.5515252,
+        23.5148192
+      ],
+      "url": "/data/tang-detail/modern-city-guangzhou-overview-part0.geojson.gz",
+      "featureCount": 1290,
+      "countsByKind": {
+        "water": 157,
+        "river": 1133
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-city-guangzhou",
+      "regionId": "city-guangzhou"
+    },
+    {
+      "id": "city-guangzhou-226-45-part0",
+      "name": "广州与珠江附近水系 · 局部细节",
+      "bounds": [
+        113.0610116,
+        22.915335,
+        113.473379,
+        23.0029791
+      ],
+      "url": "/data/tang-detail/modern-city-guangzhou-226-45-part0.geojson.gz",
+      "featureCount": 1064,
+      "countsByKind": {
+        "water": 935,
+        "peak": 24,
+        "saddle": 1,
+        "stream": 73,
+        "canal": 31
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-guangzhou",
+      "regionId": "city-guangzhou"
+    },
+    {
+      "id": "city-guangzhou-226-46-part0",
+      "name": "广州与珠江附近水系 · 局部细节",
+      "bounds": [
+        112.9235067,
+        22.9970618,
+        113.4746905,
+        23.3454191
+      ],
+      "url": "/data/tang-detail/modern-city-guangzhou-226-46-part0.geojson.gz",
+      "featureCount": 2935,
+      "countsByKind": {
+        "water": 2222,
+        "peak": 182,
+        "saddle": 3,
+        "canal": 298,
+        "stream": 230
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-guangzhou",
+      "regionId": "city-guangzhou"
+    },
+    {
+      "id": "city-jiangxia-overview-part0",
+      "name": "江夏武汉附近水系 · 主河与水面",
+      "bounds": [
+        113.8903981,
+        30.2137523,
+        114.8351097,
+        30.9806443
+      ],
+      "url": "/data/tang-detail/modern-city-jiangxia-overview-part0.geojson.gz",
+      "featureCount": 376,
+      "countsByKind": {
+        "water": 243,
+        "river": 133
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-city-jiangxia",
+      "regionId": "city-jiangxia"
+    },
+    {
+      "id": "city-jiangxia-228-61-part0",
+      "name": "江夏武汉附近水系 · 局部细节",
+      "bounds": [
+        114.0999923,
+        30.4998312,
+        114.5044771,
+        30.7780782
+      ],
+      "url": "/data/tang-detail/modern-city-jiangxia-228-61-part0.geojson.gz",
+      "featureCount": 1318,
+      "countsByKind": {
+        "water": 969,
+        "peak": 68,
+        "stream": 77,
+        "canal": 204
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-jiangxia",
+      "regionId": "city-jiangxia"
+    },
+    {
+      "id": "city-jiangxia-229-60-part0",
+      "name": "江夏武汉附近水系 · 局部细节",
+      "bounds": [
+        114.4993966,
+        30.394061,
+        114.5131235,
+        30.463695
+      ],
+      "url": "/data/tang-detail/modern-city-jiangxia-229-60-part0.geojson.gz",
+      "featureCount": 11,
+      "countsByKind": {
+        "water": 11
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-jiangxia",
+      "regionId": "city-jiangxia"
+    },
+    {
+      "id": "city-jiangxia-228-60-part0",
+      "name": "江夏武汉附近水系 · 局部细节",
+      "bounds": [
+        114.113131,
+        30.3529887,
+        114.5001571,
+        30.5037769
+      ],
+      "url": "/data/tang-detail/modern-city-jiangxia-228-60-part0.geojson.gz",
+      "featureCount": 521,
+      "countsByKind": {
+        "water": 433,
+        "peak": 10,
+        "canal": 42,
+        "stream": 36
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-jiangxia",
+      "regionId": "city-jiangxia"
+    },
+    {
+      "id": "city-jiangxia-229-61-part0",
+      "name": "江夏武汉附近水系 · 局部细节",
+      "bounds": [
+        114.4947289,
+        30.5070012,
+        114.5147544,
+        30.6374966
+      ],
+      "url": "/data/tang-detail/modern-city-jiangxia-229-61-part0.geojson.gz",
+      "featureCount": 129,
+      "countsByKind": {
+        "water": 120,
+        "stream": 9
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-jiangxia",
+      "regionId": "city-jiangxia"
+    },
+    {
+      "id": "city-jinan-overview-part0",
+      "name": "齐州济南附近水系 · 主河与水面",
+      "bounds": [
+        116.7701492,
+        36.3123736,
+        117.4091182,
+        36.9846753
+      ],
+      "url": "/data/tang-detail/modern-city-jinan-overview-part0.geojson.gz",
+      "featureCount": 212,
+      "countsByKind": {
+        "water": 46,
+        "river": 166
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-city-jinan",
+      "regionId": "city-jinan"
+    },
+    {
+      "id": "city-jinan-234-73-part0",
+      "name": "齐州济南附近水系 · 局部细节",
+      "bounds": [
+        116.9995627,
+        36.5038411,
+        117.3583807,
+        36.9239077
+      ],
+      "url": "/data/tang-detail/modern-city-jinan-234-73-part0.geojson.gz",
+      "featureCount": 474,
+      "countsByKind": {
+        "water": 224,
+        "peak": 125,
+        "canal": 25,
+        "stream": 100
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-jinan",
+      "regionId": "city-jinan"
+    },
+    {
+      "id": "city-jinan-234-72-part0",
+      "name": "齐州济南附近水系 · 局部细节",
+      "bounds": [
+        117.0059394,
+        36.4727246,
+        117.1905054,
+        36.4985285
+      ],
+      "url": "/data/tang-detail/modern-city-jinan-234-72-part0.geojson.gz",
+      "featureCount": 25,
+      "countsByKind": {
+        "water": 7,
+        "peak": 18
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-jinan",
+      "regionId": "city-jinan"
+    },
+    {
+      "id": "city-jinan-233-73-part0",
+      "name": "齐州济南附近水系 · 局部细节",
+      "bounds": [
+        116.736435,
+        36.4962844,
+        117.0965762,
+        37.0129463
+      ],
+      "url": "/data/tang-detail/modern-city-jinan-233-73-part0.geojson.gz",
+      "featureCount": 231,
+      "countsByKind": {
+        "water": 99,
+        "peak": 71,
+        "canal": 19,
+        "stream": 42
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-jinan",
+      "regionId": "city-jinan"
+    },
+    {
+      "id": "city-jinan-233-72-part0",
+      "name": "齐州济南附近水系 · 局部细节",
+      "bounds": [
+        116.8288574,
+        36.4744966,
+        116.9863701,
+        36.4998222
+      ],
+      "url": "/data/tang-detail/modern-city-jinan-233-72-part0.geojson.gz",
+      "featureCount": 8,
+      "countsByKind": {
+        "peak": 5,
+        "water": 2,
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-jinan",
+      "regionId": "city-jinan"
+    },
+    {
+      "id": "city-jingzhou-overview-part0",
+      "name": "江陵荆州附近水系 · 主河与水面",
+      "bounds": [
+        111.4498804,
+        29.9204784,
+        112.9969393,
+        30.6820493
+      ],
+      "url": "/data/tang-detail/modern-city-jingzhou-overview-part0.geojson.gz",
+      "featureCount": 83,
+      "countsByKind": {
+        "water": 67,
+        "river": 16
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-city-jingzhou",
+      "regionId": "city-jingzhou"
+    },
+    {
+      "id": "city-jingzhou-224-60-part0",
+      "name": "江陵荆州附近水系 · 局部细节",
+      "bounds": [
+        112.0169532,
+        30.0916174,
+        112.5127035,
+        30.5016061
+      ],
+      "url": "/data/tang-detail/modern-city-jingzhou-224-60-part0.geojson.gz",
+      "featureCount": 247,
+      "countsByKind": {
+        "water": 118,
+        "canal": 129
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-jingzhou",
+      "regionId": "city-jingzhou"
+    },
+    {
+      "id": "city-jingzhou-225-61-part0",
+      "name": "江陵荆州附近水系 · 局部细节",
+      "bounds": [
+        112.4062273,
+        30.507382,
+        112.6350739,
+        30.5772728
+      ],
+      "url": "/data/tang-detail/modern-city-jingzhou-225-61-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "canal": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-jingzhou",
+      "regionId": "city-jingzhou"
+    },
+    {
+      "id": "city-jingzhou-224-61-part0",
+      "name": "江陵荆州附近水系 · 局部细节",
+      "bounds": [
+        112.1286844,
+        30.5010838,
+        112.4185261,
+        30.5246547
+      ],
+      "url": "/data/tang-detail/modern-city-jingzhou-224-61-part0.geojson.gz",
+      "featureCount": 8,
+      "countsByKind": {
+        "canal": 3,
+        "water": 5
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-jingzhou",
+      "regionId": "city-jingzhou"
+    },
+    {
+      "id": "city-jinyang-overview-part0",
+      "name": "晋阳与汾河附近水系 · 主河与水面",
+      "bounds": [
+        112.0566773,
+        37.3946237,
+        112.6840537,
+        37.9993433
+      ],
+      "url": "/data/tang-detail/modern-city-jinyang-overview-part0.geojson.gz",
+      "featureCount": 74,
+      "countsByKind": {
+        "water": 17,
+        "river": 57
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-city-jinyang",
+      "regionId": "city-jinyang"
+    },
+    {
+      "id": "city-jinyang-225-75-part0",
+      "name": "晋阳与汾河附近水系 · 局部细节",
+      "bounds": [
+        112.470343,
+        37.5902415,
+        112.6517217,
+        37.9170396
+      ],
+      "url": "/data/tang-detail/modern-city-jinyang-225-75-part0.geojson.gz",
+      "featureCount": 124,
+      "countsByKind": {
+        "water": 38,
+        "stream": 67,
+        "canal": 19
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-jinyang",
+      "regionId": "city-jinyang"
+    },
+    {
+      "id": "city-jinyang-224-75-part0",
+      "name": "晋阳与汾河附近水系 · 局部细节",
+      "bounds": [
+        112.2912515,
+        37.5579885,
+        112.5259821,
+        37.9176546
+      ],
+      "url": "/data/tang-detail/modern-city-jinyang-224-75-part0.geojson.gz",
+      "featureCount": 85,
+      "countsByKind": {
+        "water": 36,
+        "stream": 47,
+        "canal": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-jinyang",
+      "regionId": "city-jinyang"
+    },
+    {
+      "id": "city-qingzhou-linzi-overview-part0",
+      "name": "青州与临淄附近水系 · 主河与水面",
+      "bounds": [
+        118.0474242,
+        36.1674462,
+        119.1175535,
+        37.0943073
+      ],
+      "url": "/data/tang-detail/modern-city-qingzhou-linzi-overview-part0.geojson.gz",
+      "featureCount": 77,
+      "countsByKind": {
+        "water": 38,
+        "river": 39
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-city-qingzhou-linzi",
+      "regionId": "city-qingzhou-linzi"
+    },
+    {
+      "id": "city-qingzhou-linzi-236-73-part0",
+      "name": "青州与临淄附近水系 · 局部细节",
+      "bounds": [
+        118.1124432,
+        36.4834737,
+        118.4970349,
+        36.9899478
+      ],
+      "url": "/data/tang-detail/modern-city-qingzhou-linzi-236-73-part0.geojson.gz",
+      "featureCount": 186,
+      "countsByKind": {
+        "water": 80,
+        "peak": 64,
+        "canal": 4,
+        "stream": 38
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-qingzhou-linzi",
+      "regionId": "city-qingzhou-linzi"
+    },
+    {
+      "id": "city-qingzhou-linzi-237-73-part0",
+      "name": "青州与临淄附近水系 · 局部细节",
+      "bounds": [
+        118.4973688,
+        36.5001513,
+        118.6807403,
+        36.8270807
+      ],
+      "url": "/data/tang-detail/modern-city-qingzhou-linzi-237-73-part0.geojson.gz",
+      "featureCount": 31,
+      "countsByKind": {
+        "peak": 2,
+        "water": 15,
+        "stream": 14
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-qingzhou-linzi",
+      "regionId": "city-qingzhou-linzi"
+    },
+    {
+      "id": "city-qingzhou-linzi-237-72-part0",
+      "name": "青州与临淄附近水系 · 局部细节",
+      "bounds": [
+        118.5034154,
+        36.4846347,
+        118.534672,
+        36.5018721
+      ],
+      "url": "/data/tang-detail/modern-city-qingzhou-linzi-237-72-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-qingzhou-linzi",
+      "regionId": "city-qingzhou-linzi"
+    },
+    {
+      "id": "city-qingzhou-linzi-236-72-part0",
+      "name": "青州与临淄附近水系 · 局部细节",
+      "bounds": [
+        118.2892201,
+        36.4426344,
+        118.4037956,
+        36.5506702
+      ],
+      "url": "/data/tang-detail/modern-city-qingzhou-linzi-236-72-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-qingzhou-linzi",
+      "regionId": "city-qingzhou-linzi"
+    },
+    {
+      "id": "city-quanzhou-overview-part0",
+      "name": "泉州与晋江附近水系 · 主河与水面",
+      "bounds": [
+        118.4342385,
+        24.6590659,
+        118.8950662,
+        25.1357441
+      ],
+      "url": "/data/tang-detail/modern-city-quanzhou-overview-part0.geojson.gz",
+      "featureCount": 147,
+      "countsByKind": {
+        "water": 78,
+        "river": 69
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-city-quanzhou",
+      "regionId": "city-quanzhou"
+    },
+    {
+      "id": "city-quanzhou-237-49-part0",
+      "name": "泉州与晋江附近水系 · 局部细节",
+      "bounds": [
+        118.4991874,
+        24.6574646,
+        118.8939674,
+        24.9934922
+      ],
+      "url": "/data/tang-detail/modern-city-quanzhou-237-49-part0.geojson.gz",
+      "featureCount": 656,
+      "countsByKind": {
+        "water": 126,
+        "peak": 22,
+        "stream": 274,
+        "canal": 234
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-quanzhou",
+      "regionId": "city-quanzhou"
+    },
+    {
+      "id": "city-quanzhou-237-50-part0",
+      "name": "泉州与晋江附近水系 · 局部细节",
+      "bounds": [
+        118.5093047,
+        24.9973244,
+        118.8906594,
+        25.170928
+      ],
+      "url": "/data/tang-detail/modern-city-quanzhou-237-50-part0.geojson.gz",
+      "featureCount": 46,
+      "countsByKind": {
+        "water": 11,
+        "peak": 4,
+        "stream": 23,
+        "canal": 8
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-quanzhou",
+      "regionId": "city-quanzhou"
+    },
+    {
+      "id": "city-quanzhou-236-49-part0",
+      "name": "泉州与晋江附近水系 · 局部细节",
+      "bounds": [
+        118.476687,
+        24.7082944,
+        118.5165323,
+        24.9860103
+      ],
+      "url": "/data/tang-detail/modern-city-quanzhou-236-49-part0.geojson.gz",
+      "featureCount": 17,
+      "countsByKind": {
+        "water": 4,
+        "stream": 13
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-quanzhou",
+      "regionId": "city-quanzhou"
+    },
+    {
+      "id": "city-quanzhou-236-50-part0",
+      "name": "泉州与晋江附近水系 · 局部细节",
+      "bounds": [
+        118.4733692,
+        25.0283302,
+        118.4927089,
+        25.0321702
+      ],
+      "url": "/data/tang-detail/modern-city-quanzhou-236-50-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-quanzhou",
+      "regionId": "city-quanzhou"
+    },
+    {
+      "id": "city-xiangyang-overview-part0",
+      "name": "襄阳与汉水附近水系 · 主河与水面",
+      "bounds": [
+        111.6728282,
+        31.6847199,
+        112.5311259,
+        32.5646664
+      ],
+      "url": "/data/tang-detail/modern-city-xiangyang-overview-part0.geojson.gz",
+      "featureCount": 157,
+      "countsByKind": {
+        "water": 94,
+        "river": 63
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-city-xiangyang",
+      "regionId": "city-xiangyang"
+    },
+    {
+      "id": "city-xiangyang-224-63-part0",
+      "name": "襄阳与汉水附近水系 · 局部细节",
+      "bounds": [
+        111.9917517,
+        31.8384222,
+        112.3436359,
+        32.0044003
+      ],
+      "url": "/data/tang-detail/modern-city-xiangyang-224-63-part0.geojson.gz",
+      "featureCount": 261,
+      "countsByKind": {
+        "water": 222,
+        "peak": 8,
+        "saddle": 1,
+        "stream": 21,
+        "canal": 9
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-xiangyang",
+      "regionId": "city-xiangyang"
+    },
+    {
+      "id": "city-xiangyang-224-64-part0",
+      "name": "襄阳与汉水附近水系 · 局部细节",
+      "bounds": [
+        111.975045,
+        31.9937643,
+        112.3453274,
+        32.2533991
+      ],
+      "url": "/data/tang-detail/modern-city-xiangyang-224-64-part0.geojson.gz",
+      "featureCount": 464,
+      "countsByKind": {
+        "water": 353,
+        "peak": 1,
+        "stream": 51,
+        "canal": 59
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-xiangyang",
+      "regionId": "city-xiangyang"
+    },
+    {
+      "id": "city-xiangyang-223-63-part0",
+      "name": "襄阳与汉水附近水系 · 局部细节",
+      "bounds": [
+        111.9193018,
+        31.9824652,
+        111.9987686,
+        31.9966793
+      ],
+      "url": "/data/tang-detail/modern-city-xiangyang-223-63-part0.geojson.gz",
+      "featureCount": 3,
+      "countsByKind": {
+        "water": 2,
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-xiangyang",
+      "regionId": "city-xiangyang"
+    },
+    {
+      "id": "city-xiangyang-223-64-part0",
+      "name": "襄阳与汉水附近水系 · 局部细节",
+      "bounds": [
+        111.8374589,
+        32.0118559,
+        111.9864387,
+        32.3402534
+      ],
+      "url": "/data/tang-detail/modern-city-xiangyang-223-64-part0.geojson.gz",
+      "featureCount": 6,
+      "countsByKind": {
+        "water": 4,
+        "stream": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-xiangyang",
+      "regionId": "city-xiangyang"
     }
   ],
   "modernCoverageRegions": [
@@ -5933,6 +9157,161 @@
         "central-plains-overview-part0",
         "central-plains-overview-part1",
         "luoyang-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "city-beijing",
+      "name": "幽州北京附近水系",
+      "bounds": [
+        116.2,
+        39.7,
+        116.6,
+        40.1
+      ],
+      "packageIds": [
+        "city-beijing-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "city-changsha",
+      "name": "潭州长沙附近水系",
+      "bounds": [
+        112.739,
+        28.028,
+        113.139,
+        28.428
+      ],
+      "packageIds": [
+        "city-changsha-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "city-fuzhou",
+      "name": "福州与闽江附近水系",
+      "bounds": [
+        119.0833,
+        25.95,
+        119.4833,
+        26.35
+      ],
+      "packageIds": [
+        "city-fuzhou-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "city-guangzhou",
+      "name": "广州与珠江附近水系",
+      "bounds": [
+        113.07,
+        22.93,
+        113.47,
+        23.33
+      ],
+      "packageIds": [
+        "city-guangzhou-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "city-jiangxia",
+      "name": "江夏武汉附近水系",
+      "bounds": [
+        114.1128,
+        30.3547,
+        114.5128,
+        30.7547
+      ],
+      "packageIds": [
+        "city-jiangxia-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "city-jinan",
+      "name": "齐州济南附近水系",
+      "bounds": [
+        116.8,
+        36.47,
+        117.2,
+        36.87
+      ],
+      "packageIds": [
+        "city-jinan-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "city-jingzhou",
+      "name": "江陵荆州附近水系",
+      "bounds": [
+        112.04,
+        30.14,
+        112.44,
+        30.54
+      ],
+      "packageIds": [
+        "city-jingzhou-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "city-jinyang",
+      "name": "晋阳与汾河附近水系",
+      "bounds": [
+        112.25,
+        37.53,
+        112.65,
+        37.93
+      ],
+      "packageIds": [
+        "luoyang-overview-part0",
+        "city-jinyang-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "city-qingzhou-linzi",
+      "name": "青州与临淄附近水系",
+      "bounds": [
+        118.11,
+        36.5,
+        118.68,
+        37.02
+      ],
+      "packageIds": [
+        "city-qingzhou-linzi-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "city-quanzhou",
+      "name": "泉州与晋江附近水系",
+      "bounds": [
+        118.48,
+        24.68,
+        118.88,
+        25.08
+      ],
+      "packageIds": [
+        "city-quanzhou-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "city-xiangyang",
+      "name": "襄阳与汉水附近水系",
+      "bounds": [
+        111.94,
+        31.84,
+        112.34,
+        32.24
+      ],
+      "packageIds": [
+        "city-xiangyang-overview-part0"
       ],
       "minZoom": 8
     },
@@ -6012,6 +9391,218 @@
         "zhejiang-overview-part0",
         "zhejiang-overview-part1",
         "zhejiang-overview-part2"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "west-chengdu",
+      "name": "成都—都江堰与岷沱水系",
+      "bounds": [
+        103.45,
+        30.15,
+        104.9,
+        31.25
+      ],
+      "packageIds": [
+        "west-chengdu-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "west-dunhuang",
+      "name": "敦煌与党河绿洲",
+      "bounds": [
+        94.25,
+        39.55,
+        95.1,
+        40.5
+      ],
+      "packageIds": [
+        "west-dunhuang-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "west-hami",
+      "name": "伊吾与哈密绿洲",
+      "bounds": [
+        92.9,
+        42.4,
+        93.95,
+        43.35
+      ],
+      "packageIds": [
+        "west-hami-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "west-hotan",
+      "name": "于阗与和田双河绿洲",
+      "bounds": [
+        79.55,
+        36.7,
+        80.4,
+        37.55
+      ],
+      "packageIds": [
+        "west-hotan-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "west-jiuquan",
+      "name": "酒泉与讨赖河绿洲",
+      "bounds": [
+        98.05,
+        39.25,
+        99,
+        40.05
+      ],
+      "packageIds": [
+        "west-jiuquan-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "west-kashgar",
+      "name": "疏勒与喀什绿洲",
+      "bounds": [
+        75.55,
+        39.15,
+        76.6,
+        39.95
+      ],
+      "packageIds": [
+        "west-kashgar-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "west-lanzhou",
+      "name": "兰州黄河走廊",
+      "bounds": [
+        103.25,
+        35.8,
+        104.55,
+        36.55
+      ],
+      "packageIds": [
+        "west-lanzhou-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "west-lhasa",
+      "name": "拉萨河下游与拉萨地区",
+      "bounds": [
+        90.65,
+        29.2,
+        91.65,
+        30
+      ],
+      "packageIds": [
+        "west-lhasa-overview-part0",
+        "west-shannan-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "west-qiuci",
+      "name": "龟兹与库车河绿洲",
+      "bounds": [
+        82.35,
+        41.3,
+        83.65,
+        42.25
+      ],
+      "packageIds": [
+        "west-qiuci-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "west-shannan",
+      "name": "山南与雅鲁藏布江走廊",
+      "bounds": [
+        91.35,
+        29,
+        92.15,
+        29.65
+      ],
+      "packageIds": [
+        "west-lhasa-overview-part0",
+        "west-shannan-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "west-tianshui",
+      "name": "天水与渭河上游",
+      "bounds": [
+        105.05,
+        34.05,
+        106.35,
+        34.85
+      ],
+      "packageIds": [
+        "west-tianshui-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "west-turpan",
+      "name": "交河—高昌与吐鲁番绿洲",
+      "bounds": [
+        88.5,
+        42.45,
+        89.65,
+        43.35
+      ],
+      "packageIds": [
+        "west-turpan-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "west-wuwei",
+      "name": "武威与石羊河绿洲",
+      "bounds": [
+        102.3,
+        37.5,
+        103.15,
+        38.35
+      ],
+      "packageIds": [
+        "west-wuwei-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "west-yanqi",
+      "name": "焉耆—博斯腾湖西岸",
+      "bounds": [
+        86,
+        41.55,
+        87.05,
+        42.45
+      ],
+      "packageIds": [
+        "west-yanqi-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "west-zhangye",
+      "name": "张掖与黑河绿洲",
+      "bounds": [
+        100.05,
+        38.4,
+        100.95,
+        39.15
+      ],
+      "packageIds": [
+        "west-zhangye-overview-part0"
       ],
       "minZoom": 8
     },
@@ -6126,6 +9717,292 @@
       "retrievedAt": "2026-09-25T02:40:36.314757+00:00",
       "snapshotPath": "data/evidence/tang-detail/osm/zhejiang.json.gz",
       "snapshotSha256": "7719aeceb591b4186081d4ec789a2189b23a1ed4722aa6321acea12baf67d52e",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+    },
+    {
+      "id": "osm-tang-detail-west-chengdu",
+      "title": "OpenStreetMap 现代地理：成都—都江堰与岷沱水系",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T03:31:02.522164+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/west-chengdu.json.gz",
+      "snapshotSha256": "e897d26733462cfe3de0c69cebaf715a85cf7d03028cee82fa5020404a5cfa6a",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+    },
+    {
+      "id": "osm-tang-detail-west-dunhuang",
+      "title": "OpenStreetMap 现代地理：敦煌与党河绿洲",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T03:34:04.069250+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/west-dunhuang.json.gz",
+      "snapshotSha256": "33a4bacd36fd177a2be9a15616fd1583e7df95726e9a40d3b8c3dd2c9b29668c",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+    },
+    {
+      "id": "osm-tang-detail-west-hami",
+      "title": "OpenStreetMap 现代地理：伊吾与哈密绿洲",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T03:34:27.049283+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/west-hami.json.gz",
+      "snapshotSha256": "c2cc2b4c94fa25043a072ce302866e6e5b242daadfd0c6d6f749ad50194b0df5",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+    },
+    {
+      "id": "osm-tang-detail-west-hotan",
+      "title": "OpenStreetMap 现代地理：于阗与和田双河绿洲",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T03:37:05.183470+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/west-hotan.json.gz",
+      "snapshotSha256": "53d117c666e9a34024923713aa7520441ebb4cc1eb883ddddcdaddb5dc9328ce",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+    },
+    {
+      "id": "osm-tang-detail-west-jiuquan",
+      "title": "OpenStreetMap 现代地理：酒泉与讨赖河绿洲",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T03:31:41.526122+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/west-jiuquan.json.gz",
+      "snapshotSha256": "bf67d0f910b4e701d62970c3c5584f4982bf0cf0f169220fb7a5e47f9917a86a",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+    },
+    {
+      "id": "osm-tang-detail-west-kashgar",
+      "title": "OpenStreetMap 现代地理：疏勒与喀什绿洲",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T03:37:16.334470+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/west-kashgar.json.gz",
+      "snapshotSha256": "c8a5f4af696546ca48e941188a94176de4df8e41a27057840797f4b6cd480983",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+    },
+    {
+      "id": "osm-tang-detail-west-lanzhou",
+      "title": "OpenStreetMap 现代地理：兰州黄河走廊",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T03:30:58.991891+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/west-lanzhou.json.gz",
+      "snapshotSha256": "2cae484196a279e26b519da6d16cb3ddd87b88f2062d91dd956701e3f035554b",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+    },
+    {
+      "id": "osm-tang-detail-west-lhasa",
+      "title": "OpenStreetMap 现代地理：拉萨河下游与拉萨地区",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T03:39:00.912686+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/west-lhasa.json.gz",
+      "snapshotSha256": "0f52cefdd48641a8de7ae54110e4b99b765c13a3607843a86887f783bb446c3c",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+    },
+    {
+      "id": "osm-tang-detail-west-qiuci",
+      "title": "OpenStreetMap 现代地理：龟兹与库车河绿洲",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T03:34:23.211246+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/west-qiuci.json.gz",
+      "snapshotSha256": "1b795ae64f2c54365dac9b0fd15e66724dcfc1e043bad9f1d46f7f30784ce7e4",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+    },
+    {
+      "id": "osm-tang-detail-west-shannan",
+      "title": "OpenStreetMap 现代地理：山南与雅鲁藏布江走廊",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T03:39:17.105749+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/west-shannan.json.gz",
+      "snapshotSha256": "4375014fe559fafa831d25b158408f1d7f8190ce17386218cc1916732369d6b7",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+    },
+    {
+      "id": "osm-tang-detail-west-tianshui",
+      "title": "OpenStreetMap 现代地理：天水与渭河上游",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T03:31:21.722489+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/west-tianshui.json.gz",
+      "snapshotSha256": "7e2d3ec56e363a014521572ad7361143807a2265a7e302df9e68929c97e04fb2",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+    },
+    {
+      "id": "osm-tang-detail-west-turpan",
+      "title": "OpenStreetMap 现代地理：交河—高昌与吐鲁番绿洲",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T03:39:06.508055+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/west-turpan.json.gz",
+      "snapshotSha256": "fa16b6d71c8bbbb2ee35c7170c259f7f9276dc142ff6b969c94c7272c2ccccd0",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+    },
+    {
+      "id": "osm-tang-detail-west-wuwei",
+      "title": "OpenStreetMap 现代地理：武威与石羊河绿洲",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T03:31:17.069646+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/west-wuwei.json.gz",
+      "snapshotSha256": "c03c982cfda8663a92db16a642a5eb15eaef067a992800ee993494517fafc840",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+    },
+    {
+      "id": "osm-tang-detail-west-yanqi",
+      "title": "OpenStreetMap 现代地理：焉耆—博斯腾湖西岸",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T03:34:10.500889+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/west-yanqi.json.gz",
+      "snapshotSha256": "cff95d335b87174a2d4d2d22b89cbce9a67c2b35645674b74300d231ac4fcd5a",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+    },
+    {
+      "id": "osm-tang-detail-west-zhangye",
+      "title": "OpenStreetMap 现代地理：张掖与黑河绿洲",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T03:31:40.810398+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/west-zhangye.json.gz",
+      "snapshotSha256": "a8d167a709ac33d48eca64ad80da46d6177f51ede00984ef3e6a678e2e00ac84",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+    },
+    {
+      "id": "osm-tang-detail-city-beijing",
+      "title": "OpenStreetMap 现代地理：幽州北京附近水系",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T03:44:14.544204+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-beijing.json.gz",
+      "snapshotSha256": "1ff0b8a75f25e9fd3ceca58bdbf3525124da580ffc6948b8e0be5dbc4f4877a4",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+    },
+    {
+      "id": "osm-tang-detail-city-changsha",
+      "title": "OpenStreetMap 现代地理：潭州长沙附近水系",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T03:44:23.331679+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-changsha.json.gz",
+      "snapshotSha256": "2ceb93d93d7bf72b9d1d4e67e6226c7381ec1ea6cd59ad459a7f97a6f7c79c94",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+    },
+    {
+      "id": "osm-tang-detail-city-fuzhou",
+      "title": "OpenStreetMap 现代地理：福州与闽江附近水系",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T03:45:02.709974+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-fuzhou.json.gz",
+      "snapshotSha256": "467f001e18982b2690d9e665a631f7c6cb55e7e97e377bd53ff99ace37e0ee1d",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+    },
+    {
+      "id": "osm-tang-detail-city-guangzhou",
+      "title": "OpenStreetMap 现代地理：广州与珠江附近水系",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T03:49:25.182593+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-guangzhou.json.gz",
+      "snapshotSha256": "410cf082dcfc1b26f7be22bff6228d57d72b5b361ae3edaac66f4952f20500f9",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+    },
+    {
+      "id": "osm-tang-detail-city-jiangxia",
+      "title": "OpenStreetMap 现代地理：江夏武汉附近水系",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T03:44:47.036784+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-jiangxia.json.gz",
+      "snapshotSha256": "80337cf3c345727dbb255f49af1c7f993d1daaa1ee2d2659447293d4a6341a8e",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+    },
+    {
+      "id": "osm-tang-detail-city-jinan",
+      "title": "OpenStreetMap 现代地理：齐州济南附近水系",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T03:45:18.592631+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-jinan.json.gz",
+      "snapshotSha256": "3954d49ed16c060971012f4a1f6297d9e22f05e859c5d2b6161ff1e456d98512",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+    },
+    {
+      "id": "osm-tang-detail-city-jingzhou",
+      "title": "OpenStreetMap 现代地理：江陵荆州附近水系",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T03:42:23.733719+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-jingzhou.json.gz",
+      "snapshotSha256": "4d95e40291166ab71874c1b435bef6cc44deb411ced2c7b879d3865ec2149053",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+    },
+    {
+      "id": "osm-tang-detail-city-jinyang",
+      "title": "OpenStreetMap 现代地理：晋阳与汾河附近水系",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T03:41:53.076876+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-jinyang.json.gz",
+      "snapshotSha256": "b731792f538f11fa3787ba121cfb4e8f49a94958c24c75c64f7d0aa08e07184e",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+    },
+    {
+      "id": "osm-tang-detail-city-qingzhou-linzi",
+      "title": "OpenStreetMap 现代地理：青州与临淄附近水系",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T03:45:28.891516+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-qingzhou-linzi.json.gz",
+      "snapshotSha256": "a77d3dfe1faadd07f4d8ad537ca8753d6684f788c914e173ca430188a37203fe",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+    },
+    {
+      "id": "osm-tang-detail-city-quanzhou",
+      "title": "OpenStreetMap 现代地理：泉州与晋江附近水系",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T03:44:54.023053+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-quanzhou.json.gz",
+      "snapshotSha256": "8fb900386d072bd3fe42c6be508a2b777100ca335ecb639e759a7fc11a5aeaf6",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+    },
+    {
+      "id": "osm-tang-detail-city-xiangyang",
+      "title": "OpenStreetMap 现代地理：襄阳与汉水附近水系",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T03:42:06.213276+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-xiangyang.json.gz",
+      "snapshotSha256": "913fc7793d06b714064c66b145c8c96f04e607481c68acf7d3f84802e671b2d4",
       "license": "Open Data Commons Open Database License (ODbL) 1.0",
       "attribution": "© OpenStreetMap contributors",
       "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"

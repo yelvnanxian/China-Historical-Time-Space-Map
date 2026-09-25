@@ -16,11 +16,13 @@ import TerrainLayer, { isTerrainError } from "./TerrainLayer";
 import PhysicalGeographyLayer from "./PhysicalGeographyLayer";
 import "../map-workspace.css";
 import type { HistoricalGeographyEntry } from "../../shared/historical-context";
-import { isOptionalPhysicalLayerError } from "../../shared/map-interactions";
-import { mapViewLevelOptions, resolveMapDetailLevel, type MapViewLevel } from "../../shared/map-detail-levels";
+import { canInteract, isOptionalPhysicalLayerError, mapInteractionOptions, type MapInteractionMode } from "../../shared/map-interactions";
+import { resolveMapDetailLevel } from "../../shared/map-detail-levels";
 import HistoricalRiverLayer from "./HistoricalRiverLayer";
 import TangDetailLayer from "./TangDetailLayer";
-import type { MapBounds } from "../../shared/historical-rivers";
+import type { WaterDetailReplacement } from "../../shared/historical-rivers";
+import type { TangBoundaryCrosswalk } from "../../shared/tang-boundary-crosswalk";
+import MountainDetailLayer from "./MountainDetailLayer";
 
 type Props = {
   period: Period;
@@ -31,7 +33,7 @@ type Props = {
   modernNames: boolean;
   routeVisible: boolean;
   focusRequest: number;
-  displayMode: "cities" | "nature" | "both";
+  interactionMode: MapInteractionMode;
   detailsOpen?: boolean;
   onBoundaryStatusChange: (status: string) => void;
   geographySelection: HistoricalGeographyEntry | null;
@@ -39,6 +41,9 @@ type Props = {
   onGeographyClear: () => void;
   onNaturalSelect: () => void;
   onOpenAtlas: () => void;
+  tangBoundaries: TangBoundaryCrosswalk | null;
+  crosswalkLoading: boolean;
+  jurisdictionRequest?: { id: string; requestId: number };
 };
 
 const emptyCollection = { type: "FeatureCollection" as const, features: [] };
@@ -74,23 +79,35 @@ export default function HistoricalMap(props: Props) {
   const [boundaryReset, setBoundaryReset] = useState(0);
   const [detailReset, setDetailReset] = useState(0);
   const [riverReset, setRiverReset] = useState(0);
+  const [mountainReset, setMountainReset] = useState(0);
+  const [boundaryRequest, setBoundaryRequest] = useState<{ id: string; requestId: number; quiet?: boolean; focus?: boolean }>();
   const [zoom, setZoom] = useState(initialView.zoom);
-  const [viewLevel, setViewLevel] = useState<MapViewLevel>("auto");
   const [replaceYellowLower, setReplaceYellowLower] = useState(false);
-  const [detailBounds, setDetailBounds] = useState<MapBounds[]>([]);
-  const showCities = resolveMapDetailLevel(viewLevel, zoom).showCities;
+  const [waterReplacements, setWaterReplacements] = useState<WaterDetailReplacement[]>([]);
+  const [mountainFeatureIds, setMountainFeatureIds] = useState<string[]>([]);
+  const showCities = resolveMapDetailLevel("auto", zoom).showCities;
   const [activeTarget, setActiveTarget] = useState<"places" | "nature" | "boundary">("places");
   useEffect(() => { setActiveTarget("places"); }, [props.focusRequest, props.period.id]);
   useEffect(() => {
     if (props.detailsOpen) {
       setActiveTarget("places");
       setNaturalReset(value => value + 1);
-      setBoundaryReset(value => value + 1);
       setDetailReset(value => value + 1);
       setRiverReset(value => value + 1);
+      setMountainReset(value => value + 1);
       setLayerPanel(false);
     }
   }, [props.detailsOpen]);
+  useEffect(() => {
+    if (!props.jurisdictionRequest) return;
+    setBoundaryRequest(props.jurisdictionRequest);
+  }, [props.jurisdictionRequest]);
+  useEffect(() => {
+    if (!props.detailsOpen || props.period.id !== "tang" || !props.selectedPlace || !props.tangBoundaries) return;
+    const link = props.tangBoundaries.places[props.selectedPlace.id];
+    if (link) setBoundaryRequest({ id: link.boundaryId, requestId: Date.now(), quiet: true, focus: false });
+    else { setBoundaryRequest(undefined); setBoundaryReset(value => value + 1); }
+  }, [props.focusRequest, props.selectedPlace?.id, props.tangBoundaries, props.period.id, props.detailsOpen]);
   const motionDuration = () =>
     window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 800;
   useEffect(() => {
@@ -142,10 +159,6 @@ export default function HistoricalMap(props: Props) {
   };
 
   function resetView() {
-    if (props.displayMode === "nature") {
-      fitCoordinates([[73, 18], [135, 54]], motionDuration(), 4.2);
-      return;
-    }
     fitCoordinates(props.places.map((place) => place.coordinates));
   }
 
@@ -320,9 +333,14 @@ export default function HistoricalMap(props: Props) {
       minZoom?: number;
       physical?: boolean;
     }[] = [];
-    if (props.displayMode !== "nature" && showCities)
+    if (showCities)
       props.places.forEach((place) => {
         const button = document.createElement("button");
+        const interactive = canInteract(props.interactionMode, "cities");
+        button.disabled = !interactive;
+        button.style.pointerEvents = interactive ? "auto" : "none";
+        button.setAttribute("aria-hidden", String(!interactive));
+        button.tabIndex = interactive ? 0 : -1;
         const isCapital =
           (place.typeByPeriod?.[props.period.id] ?? place.type) === "capital";
         const isSelected = activeTarget === "places" && props.selectedPlace?.id === place.id;
@@ -343,6 +361,7 @@ export default function HistoricalMap(props: Props) {
         dot.className = "marker-dot";
         const label = document.createElement("span");
         label.className = "marker-label";
+        label.hidden = !interactive;
         label.textContent = title;
         if (props.modernNames) {
           label.classList.add("name-comparison");
@@ -435,14 +454,14 @@ export default function HistoricalMap(props: Props) {
     props.selectedEvent,
     props.period.id,
     props.modernNames,
-    props.displayMode,
+    props.interactionMode,
     showCities,
     activeTarget,
   ]);
 
   useEffect(() => {
     if (!ready || !map.current) return;
-    const route = activeTarget === "places" && props.displayMode !== "nature" && props.routeVisible ? props.selectedEvent?.route : undefined;
+    const route = activeTarget === "places" && props.routeVisible ? props.selectedEvent?.route : undefined;
     (map.current.getSource("route") as GeoJSONSource).setData(
       route?.length
         ? {
@@ -457,7 +476,7 @@ export default function HistoricalMap(props: Props) {
           }
         : emptyCollection,
     );
-  }, [ready, props.selectedEvent, props.routeVisible, props.displayMode, activeTarget]);
+  }, [ready, props.selectedEvent, props.routeVisible, activeTarget]);
 
   useEffect(() => {
     const changed = displayedPeriod.current !== props.period.id;
@@ -496,7 +515,6 @@ export default function HistoricalMap(props: Props) {
       fitCoordinates(points);
     } else if (props.focusRequest && props.selectedPlace) {
       // A chosen city should remain discoverable under automatic level selection.
-      setViewLevel(value => value === "auto" || value === "cities" || value === "county" ? value : "cities");
       fitCoordinates([props.selectedPlace.coordinates], motionDuration(), 7.6);
     }
   }, [
@@ -511,7 +529,7 @@ export default function HistoricalMap(props: Props) {
   const openGeography = useRef(props.onGeographyOpen);
   openGeography.current = props.onGeographyOpen;
   useEffect(() => {
-    if (!ready || !map.current || !props.geographySelection || props.displayMode === "cities") return;
+    if (!ready || !map.current || !props.geographySelection || !canInteract(props.interactionMode, "rivers")) return;
     const entry = props.geographySelection;
     const element = document.createElement("button");
     element.className = "geography-reference-marker";
@@ -519,9 +537,11 @@ export default function HistoricalMap(props: Props) {
     element.setAttribute("aria-label", `查看历史地理：${entry.title}`);
     element.addEventListener("click", event => { event.stopPropagation(); openGeography.current(); });
     const marker = new maplibregl.Marker({ element }).setLngLat(entry.referenceCoordinates).addTo(map.current);
-    fitCoordinates([entry.referenceCoordinates], motionDuration(), 6.2);
     return () => { marker.remove(); };
-  }, [ready, props.geographySelection, props.displayMode]);
+  }, [ready, props.geographySelection, props.interactionMode]);
+  useEffect(() => {
+    if (ready && props.geographySelection) fitCoordinates([props.geographySelection.referenceCoordinates], motionDuration(), 6.2);
+  }, [ready, props.geographySelection]);
 
   return (
     <div className={`map-surface ${props.geographySelection ? "has-geography-reference" : ""}`}>
@@ -534,8 +554,8 @@ export default function HistoricalMap(props: Props) {
       />
       <div className="map-paper-overlay" />
       <button className="map-detail-status" onClick={() => setLayerPanel(true)} aria-label="查看当前地图层级与数据范围">
-        {mapViewLevelOptions.find(option => option.value === viewLevel)?.label} · {zoom.toFixed(1)}级
-        <small>{replaceYellowLower ? "黄河下游：历史河道" : "河湖：现代参照"}{props.period.id === "tang" ? " · 唐代治所随缩放显示" : ""} · 点此调整</small>
+        随缩放自动分级 · {zoom.toFixed(1)}级 · 点选{mapInteractionOptions.find(option => option.value === props.interactionMode)?.label}
+        <small>{replaceYellowLower ? "黄河下游：历史河道" : "河湖：现代参照"} · 地形始终显示</small>
       </button>
       <div className="map-toolbar">
         <button
@@ -578,39 +598,48 @@ export default function HistoricalMap(props: Props) {
         <div className="map-tool-scroll" ref={toolScroll}>
           <p className="map-tool-period">{props.period.label} · {shownYear < 0 ? `前${Math.abs(shownYear)}` : shownYear}年 <small>{boundaryStatus}</small></p>
           <div className="map-tool-natural" ref={setToolsContainer} />
-          <TerrainLayer map={map.current} ready={ready} compact enabled={props.displayMode !== "cities"} onExplore={() => { fittedPoints.current = null; setLayerPanel(false); }} />
-          <div className="map-tool-boundaries" hidden={props.displayMode === "nature"}>
+          <TerrainLayer map={map.current} ready={ready} compact enabled onExplore={() => { fittedPoints.current = null; setLayerPanel(false); }} />
+          <div className="map-tool-boundaries">
           <label className="boundary-master-toggle"><input type="checkbox" checked={boundariesEnabled} onChange={event => setBoundariesEnabled(event.target.checked)} />显示行政边界与地名</label>
           <HistoricalBoundaryLayer map={map.current} ready={ready} periodId={props.period.id} currentYear={shownYear} onStatusChange={setBoundaryStatus}
-            viewLevel={viewLevel} onViewLevelChange={setViewLevel} onOpenAtlas={props.onOpenAtlas}
+            interactionMode={props.interactionMode} onOpenAtlas={props.onOpenAtlas}
+            selectionRequest={boundaryRequest}
             onRegionFocus={points => { fitCoordinates(points, motionDuration(), 8); }} modernNames={props.modernNames}
-            enabled={boundariesEnabled && props.displayMode !== "nature"} embedded
-            resetKey={`${props.focusRequest}:${boundaryReset}:${props.displayMode}`}
+            enabled={boundariesEnabled} embedded
+            resetKey={`${props.focusRequest}:${boundaryReset}:${props.interactionMode}`}
             onSelection={() => {
               setActiveTarget("boundary"); setNaturalReset(value => value + 1); setLayerPanel(true); props.onNaturalSelect();
               setDetailReset(value => value + 1); setRiverReset(value => value + 1);
+              setMountainReset(value => value + 1);
               requestAnimationFrame(() => toolScroll.current?.scrollTo({ top: 0 }));
             }} />
           </div>
-          <p className="map-tool-note">{props.displayMode === "both" ? "点地图区域查看行政区；点山川名称查看走向。" : props.displayMode === "nature" ? "点山系名称查看走向示意；河线、湖面也可点选。" : "点城池查看档案，点区域查看行政区。"} 黄河历史河道单独注明年代；山影与其余河湖为现代参照。</p>
+          <p className="map-tool-note">点选筛选只改变名称和可点对象，地形与河湖仍显示。“全部”优先命中河湖、山脊等具体地物，空白处再查看行政区。黄河历史河道单独注明年代，其余自然地理为现代参照。</p>
         </div>
       </div>
-      <PhysicalGeographyLayer map={map.current} ready={ready} visible={props.displayMode !== "cities"} mode={props.displayMode}
-        replaceYellowLower={replaceYellowLower} detailBounds={detailBounds}
+      <PhysicalGeographyLayer map={map.current} ready={ready} visible mode={props.interactionMode}
+        replaceYellowLower={replaceYellowLower} waterReplacements={waterReplacements}
         resetKey={`${props.period.id}:${props.focusRequest}:${naturalReset}`}
-        controlsContainer={toolsContainer} onFocus={points => fitCoordinates(points, motionDuration(), 7)} onChoose={() => { setActiveTarget("nature"); setBoundaryReset(value => value + 1); setDetailReset(value => value + 1); setRiverReset(value => value + 1); setLayerPanel(false); props.onNaturalSelect(); }} />
-      <HistoricalRiverLayer map={map.current} ready={ready} visible={props.displayMode !== "cities"} mode={props.displayMode}
+        controlsContainer={toolsContainer} onFocus={points => fitCoordinates(points, motionDuration(), 7)} onChoose={() => { setActiveTarget("nature"); setBoundaryReset(value => value + 1); setDetailReset(value => value + 1); setRiverReset(value => value + 1); setMountainReset(value => value + 1); setLayerPanel(false); props.onNaturalSelect(); }} />
+      <HistoricalRiverLayer map={map.current} ready={ready} visible mode={props.interactionMode}
         year={shownYear} periodLabel={props.period.label} controlsContainer={toolsContainer} resetKey={`${props.period.id}:${props.focusRequest}:${riverReset}`}
         referenceYear={props.geographySelection?.kind === "river-change" ? props.geographySelection.year : undefined}
         referenceRequest={props.geographySelection ?? undefined}
         onCoverageChange={setReplaceYellowLower} onFocus={points => fitCoordinates(points, motionDuration(), 7)}
-        onChoose={() => { setActiveTarget("nature"); setNaturalReset(value => value + 1); setBoundaryReset(value => value + 1); setDetailReset(value => value + 1); setLayerPanel(false); props.onNaturalSelect(); }} />
-      <TangDetailLayer map={map.current} ready={ready} enabled={props.period.id === "tang"} mode={props.displayMode} zoom={zoom} viewLevel={viewLevel} modernNames={props.modernNames}
+        onChoose={() => { setActiveTarget("nature"); setNaturalReset(value => value + 1); setBoundaryReset(value => value + 1); setDetailReset(value => value + 1); setMountainReset(value => value + 1); setLayerPanel(false); props.onNaturalSelect(); }} />
+      <TangDetailLayer map={map.current} ready={ready} enabled={props.period.id === "tang"} mode={props.interactionMode} zoom={zoom} modernNames={props.modernNames}
+        mountainFeatureIds={mountainFeatureIds}
         replaceYellowLower={replaceYellowLower} controlsContainer={toolsContainer} places={props.places} onPlaceSelect={props.onPlaceSelect}
-        resetKey={`${props.period.id}:${props.focusRequest}:${detailReset}`} onCoverageChange={setDetailBounds}
-        onFocus={(points, maxZoom = 10.5) => { if (props.displayMode !== "nature") setViewLevel("auto"); fitCoordinates(points, motionDuration(), maxZoom); }}
-        onChoose={() => { setActiveTarget("nature"); setNaturalReset(value => value + 1); setBoundaryReset(value => value + 1); setRiverReset(value => value + 1); setLayerPanel(false); props.onNaturalSelect(); }} />
-      {props.geographySelection && props.displayMode !== "cities" && <div className="geography-reference-note"><button onClick={props.onGeographyOpen}>{props.geographySelection.dateLabel} · {props.geographySelection.title}<small>历史地理参考点 · 独立于当前朝代与边界年份</small></button><button aria-label="清除历史地理参考点" onClick={props.onGeographyClear}><X size={15} /></button></div>}
+        tangBoundaries={props.tangBoundaries} crosswalkLoading={props.crosswalkLoading} onBoundaryRequest={(id, quiet = false) => setBoundaryRequest({ id, requestId: Date.now(), quiet, focus: !quiet })}
+        resetKey={`${props.period.id}:${props.focusRequest}:${detailReset}`} onCoverageChange={setWaterReplacements}
+        onFocus={(points, maxZoom = 10.5) => fitCoordinates(points, motionDuration(), maxZoom)}
+        onChoose={() => { setActiveTarget("nature"); setBoundaryRequest(undefined); setNaturalReset(value => value + 1); setBoundaryReset(value => value + 1); setRiverReset(value => value + 1); setMountainReset(value => value + 1); setLayerPanel(false); props.onNaturalSelect(); }} />
+      <MountainDetailLayer map={map.current} ready={ready} enabled={props.period.id === "tang"} mode={props.interactionMode} controlsContainer={toolsContainer}
+        onLoadedFeatureIds={setMountainFeatureIds}
+        resetKey={`${props.period.id}:${props.focusRequest}:${mountainReset}`}
+        onFocus={(points, maxZoom = 11) => fitCoordinates(points, motionDuration(), maxZoom)}
+        onChoose={() => { setActiveTarget("nature"); setNaturalReset(value => value + 1); setBoundaryReset(value => value + 1); setRiverReset(value => value + 1); setDetailReset(value => value + 1); setLayerPanel(false); props.onNaturalSelect(); }} />
+      {props.geographySelection && canInteract(props.interactionMode, "rivers") && <div className="geography-reference-note"><button onClick={props.onGeographyOpen}>{props.geographySelection.dateLabel} · {props.geographySelection.title}<small>历史地理参考点 · 独立于当前朝代与边界年份</small></button><button aria-label="清除历史地理参考点" onClick={props.onGeographyClear}><X size={15} /></button></div>}
       <div className="map-credit">
         Natural Earth · CHGIS / WorldMap{props.period.id === "tang" ? " · © OpenStreetMap contributors" : ""}
       </div>

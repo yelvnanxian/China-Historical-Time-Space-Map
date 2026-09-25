@@ -2,6 +2,7 @@ import type { FeatureCollection, LineString, MultiLineString, Position } from "g
 import type { PhysicalFeatureCollection } from "./physical-geography";
 
 export type MapBounds = [number, number, number, number];
+export interface WaterDetailReplacement { groupId: string; bounds: MapBounds }
 export interface RiverEpoch {
   id: string; startYear: number; endYear: number; label: string; url: string;
   bounds: MapBounds; labelCoordinates: [number, number]; featureCount: number; vertexCount: number;
@@ -56,11 +57,11 @@ export function lineOutsideBounds(line: Position[], boxes: readonly MapBounds[])
   return result;
 }
 
-export function contextWaterGeometry(data: PhysicalFeatureCollection, replaceYellowLower: boolean, detailBounds: readonly MapBounds[]): PhysicalFeatureCollection {
+export function contextWaterGeometry(data: PhysicalFeatureCollection, replaceYellowLower: boolean, detailBounds: readonly MapBounds[], replacements: readonly WaterDetailReplacement[] = []): PhysicalFeatureCollection {
   return { type: "FeatureCollection", features: data.features.flatMap(feature => {
     const { geometry, properties } = feature;
     if (properties.kind !== "river" && properties.kind !== "lake") return [];
-    const boxes = [...detailBounds, ...(replaceYellowLower && properties.groupId === "river-huanghe" ? [lowerYellowRiverMask] : [])];
+    const boxes = [...detailBounds, ...replacements.filter(item => item.groupId === properties.groupId).map(item => item.bounds), ...(replaceYellowLower && properties.groupId === "river-huanghe" ? [lowerYellowRiverMask] : [])];
     if (!boxes.length) return [feature];
     if (geometry.type === "LineString" || geometry.type === "MultiLineString") {
       const lines = (geometry.type === "LineString" ? [geometry.coordinates] : geometry.coordinates).flatMap(line => lineOutsideBounds(line, boxes));

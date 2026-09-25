@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-city-fuzhou",
+  "title": "OpenStreetMap 现代地理：福州与闽江附近水系",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.private.coffee/api/interpreter",
+  "retrievedAt": "2026-09-25T03:45:02.709974+00:00",
+  "bounds": [
+    119.0833,
+    25.95,
+    119.4833,
+    26.35
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/city-fuzhou.json.gz",
+  "snapshotSha256": "467f001e18982b2690d9e665a631f7c6cb55e7e97e377bd53ff99ace37e0ee1d",
+  "uncompressedSnapshotSha256": "c9502e3030b4ae115a29dcba111d08abd6f0e913bd5a723f800bfa49de967984",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/city-fuzhou.ql",
+  "querySha256": "41d227993a7914d95ae9bbb83e4915a1982e7463425ba47cbbe386d028874019",
+  "osmBaseTimestamp": "2026-07-15T15:22:01Z",
+  "elementCount": 1956,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+}

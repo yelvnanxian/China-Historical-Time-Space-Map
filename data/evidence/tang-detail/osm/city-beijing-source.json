@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-city-beijing",
+  "title": "OpenStreetMap 现代地理：幽州北京附近水系",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "retrievedAt": "2026-09-25T03:44:14.544204+00:00",
+  "bounds": [
+    116.2,
+    39.7,
+    116.6,
+    40.1
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/city-beijing.json.gz",
+  "snapshotSha256": "1ff0b8a75f25e9fd3ceca58bdbf3525124da580ffc6948b8e0be5dbc4f4877a4",
+  "uncompressedSnapshotSha256": "490cedc8ead6fe5c3afc0f78a12cc1b99108cc06a17db78bde2aafd1ecf77a47",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/city-beijing.ql",
+  "querySha256": "76b79adba352dbf2bc226735dff8c0679e92d79293f454191c4a209be04329d0",
+  "osmBaseTimestamp": "2026-07-24T11:04:51Z",
+  "elementCount": 1640,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+}

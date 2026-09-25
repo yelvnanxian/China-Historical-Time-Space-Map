@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-city-changsha",
+  "title": "OpenStreetMap 现代地理：潭州长沙附近水系",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.private.coffee/api/interpreter",
+  "retrievedAt": "2026-09-25T03:44:23.331679+00:00",
+  "bounds": [
+    112.739,
+    28.028,
+    113.139,
+    28.428
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/city-changsha.json.gz",
+  "snapshotSha256": "2ceb93d93d7bf72b9d1d4e67e6226c7381ec1ea6cd59ad459a7f97a6f7c79c94",
+  "uncompressedSnapshotSha256": "c88717bfa5e2cd3660e611e8b200e001287619675542fabd0a66da84cea4cb6f",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/city-changsha.ql",
+  "querySha256": "74a7b17b9d2e6e5309cc63612dc6315700c6381b5ee0b5fb94b28f38b6025a32",
+  "osmBaseTimestamp": "2026-06-01T08:52:28Z",
+  "elementCount": 3697,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+}

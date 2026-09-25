@@ -1,0 +1,2051 @@
+{
+  "newQueryRegions": [
+    {
+      "id": "city-beijing",
+      "name": "幽州北京附近水系",
+      "queryBounds": [
+        116.2,
+        39.7,
+        116.6,
+        40.1
+      ],
+      "sourceElements": 1640,
+      "publishedFeatures": 1635,
+      "countsByKind": {
+        "water": 1080,
+        "river": 229,
+        "peak": 20,
+        "saddle": 1,
+        "canal": 191,
+        "stream": 114
+      },
+      "packageCount": 6,
+      "sourceGzipBytes": 701310,
+      "publicGzipBytes": 545547
+    },
+    {
+      "id": "city-changsha",
+      "name": "潭州长沙附近水系",
+      "queryBounds": [
+        112.739,
+        28.028,
+        113.139,
+        28.428
+      ],
+      "sourceElements": 3697,
+      "publishedFeatures": 3697,
+      "countsByKind": {
+        "water": 3396,
+        "river": 135,
+        "peak": 19,
+        "canal": 25,
+        "stream": 122
+      },
+      "packageCount": 3,
+      "sourceGzipBytes": 977399,
+      "publicGzipBytes": 799561
+    },
+    {
+      "id": "city-fuzhou",
+      "name": "福州与闽江附近水系",
+      "queryBounds": [
+        119.0833,
+        25.95,
+        119.4833,
+        26.35
+      ],
+      "sourceElements": 1956,
+      "publishedFeatures": 1955,
+      "countsByKind": {
+        "water": 979,
+        "river": 313,
+        "peak": 164,
+        "saddle": 8,
+        "stream": 471,
+        "canal": 20
+      },
+      "packageCount": 4,
+      "sourceGzipBytes": 778399,
+      "publicGzipBytes": 597731
+    },
+    {
+      "id": "city-guangzhou",
+      "name": "广州与珠江附近水系",
+      "queryBounds": [
+        113.07,
+        22.93,
+        113.47,
+        23.33
+      ],
+      "sourceElements": 5292,
+      "publishedFeatures": 5289,
+      "countsByKind": {
+        "water": 3314,
+        "river": 1133,
+        "peak": 206,
+        "saddle": 4,
+        "stream": 303,
+        "canal": 329
+      },
+      "packageCount": 3,
+      "sourceGzipBytes": 1356275,
+      "publicGzipBytes": 1069554
+    },
+    {
+      "id": "city-jiangxia",
+      "name": "江夏武汉附近水系",
+      "queryBounds": [
+        114.1128,
+        30.3547,
+        114.5128,
+        30.7547
+      ],
+      "sourceElements": 2362,
+      "publishedFeatures": 2355,
+      "countsByKind": {
+        "water": 1776,
+        "river": 133,
+        "peak": 78,
+        "stream": 122,
+        "canal": 246
+      },
+      "packageCount": 5,
+      "sourceGzipBytes": 919851,
+      "publicGzipBytes": 762319
+    },
+    {
+      "id": "city-jinan",
+      "name": "齐州济南附近水系",
+      "queryBounds": [
+        116.8,
+        36.47,
+        117.2,
+        36.87
+      ],
+      "sourceElements": 952,
+      "publishedFeatures": 950,
+      "countsByKind": {
+        "water": 378,
+        "river": 166,
+        "peak": 219,
+        "canal": 44,
+        "stream": 143
+      },
+      "packageCount": 5,
+      "sourceGzipBytes": 309700,
+      "publicGzipBytes": 246371
+    },
+    {
+      "id": "city-jingzhou",
+      "name": "江陵荆州附近水系",
+      "queryBounds": [
+        112.04,
+        30.14,
+        112.44,
+        30.54
+      ],
+      "sourceElements": 340,
+      "publishedFeatures": 339,
+      "countsByKind": {
+        "water": 190,
+        "river": 16,
+        "canal": 133
+      },
+      "packageCount": 4,
+      "sourceGzipBytes": 264550,
+      "publicGzipBytes": 220239
+    },
+    {
+      "id": "city-jinyang",
+      "name": "晋阳与汾河附近水系",
+      "queryBounds": [
+        112.25,
+        37.53,
+        112.65,
+        37.93
+      ],
+      "sourceElements": 283,
+      "publishedFeatures": 283,
+      "countsByKind": {
+        "water": 91,
+        "river": 57,
+        "stream": 114,
+        "canal": 21
+      },
+      "packageCount": 3,
+      "sourceGzipBytes": 110237,
+      "publicGzipBytes": 92457
+    },
+    {
+      "id": "city-qingzhou-linzi",
+      "name": "青州与临淄附近水系",
+      "queryBounds": [
+        118.11,
+        36.5,
+        118.68,
+        37.02
+      ],
+      "sourceElements": 300,
+      "publishedFeatures": 296,
+      "countsByKind": {
+        "water": 133,
+        "river": 39,
+        "peak": 66,
+        "canal": 4,
+        "stream": 54
+      },
+      "packageCount": 5,
+      "sourceGzipBytes": 156425,
+      "publicGzipBytes": 123417
+    },
+    {
+      "id": "city-quanzhou",
+      "name": "泉州与晋江附近水系",
+      "queryBounds": [
+        118.48,
+        24.68,
+        118.88,
+        25.08
+      ],
+      "sourceElements": 868,
+      "publishedFeatures": 867,
+      "countsByKind": {
+        "water": 219,
+        "river": 69,
+        "peak": 26,
+        "stream": 311,
+        "canal": 242
+      },
+      "packageCount": 5,
+      "sourceGzipBytes": 209559,
+      "publicGzipBytes": 168131
+    },
+    {
+      "id": "city-xiangyang",
+      "name": "襄阳与汉水附近水系",
+      "queryBounds": [
+        111.94,
+        31.84,
+        112.34,
+        32.24
+      ],
+      "sourceElements": 892,
+      "publishedFeatures": 891,
+      "countsByKind": {
+        "water": 675,
+        "river": 63,
+        "peak": 9,
+        "saddle": 1,
+        "stream": 75,
+        "canal": 68
+      },
+      "packageCount": 5,
+      "sourceGzipBytes": 394646,
+      "publicGzipBytes": 323088
+    },
+    {
+      "id": "west-chengdu",
+      "name": "成都—都江堰与岷沱水系",
+      "queryBounds": [
+        103.45,
+        30.15,
+        104.9,
+        31.25
+      ],
+      "sourceElements": 7431,
+      "publishedFeatures": 7418,
+      "countsByKind": {
+        "water": 3397,
+        "river": 567,
+        "peak": 53,
+        "saddle": 6,
+        "stream": 2227,
+        "canal": 1168
+      },
+      "packageCount": 13,
+      "sourceGzipBytes": 2865118,
+      "publicGzipBytes": 2257674
+    },
+    {
+      "id": "west-dunhuang",
+      "name": "敦煌与党河绿洲",
+      "queryBounds": [
+        94.25,
+        39.55,
+        95.1,
+        40.5
+      ],
+      "sourceElements": 148,
+      "publishedFeatures": 148,
+      "countsByKind": {
+        "water": 41,
+        "river": 13,
+        "canal": 44,
+        "stream": 47,
+        "peak": 3
+      },
+      "packageCount": 6,
+      "sourceGzipBytes": 64869,
+      "publicGzipBytes": 52741
+    },
+    {
+      "id": "west-hami",
+      "name": "伊吾与哈密绿洲",
+      "queryBounds": [
+        92.9,
+        42.4,
+        93.95,
+        43.35
+      ],
+      "sourceElements": 724,
+      "publishedFeatures": 724,
+      "countsByKind": {
+        "water": 15,
+        "river": 10,
+        "canal": 586,
+        "stream": 113
+      },
+      "packageCount": 8,
+      "sourceGzipBytes": 271882,
+      "publicGzipBytes": 215440
+    },
+    {
+      "id": "west-hotan",
+      "name": "于阗与和田双河绿洲",
+      "queryBounds": [
+        79.55,
+        36.7,
+        80.4,
+        37.55
+      ],
+      "sourceElements": 266,
+      "publishedFeatures": 266,
+      "countsByKind": {
+        "water": 115,
+        "river": 19,
+        "canal": 115,
+        "stream": 17
+      },
+      "packageCount": 8,
+      "sourceGzipBytes": 255720,
+      "publicGzipBytes": 198230
+    },
+    {
+      "id": "west-jiuquan",
+      "name": "酒泉与讨赖河绿洲",
+      "queryBounds": [
+        98.05,
+        39.25,
+        99,
+        40.05
+      ],
+      "sourceElements": 217,
+      "publishedFeatures": 214,
+      "countsByKind": {
+        "water": 125,
+        "river": 26,
+        "peak": 7,
+        "stream": 50,
+        "canal": 6
+      },
+      "packageCount": 5,
+      "sourceGzipBytes": 155276,
+      "publicGzipBytes": 117063
+    },
+    {
+      "id": "west-kashgar",
+      "name": "疏勒与喀什绿洲",
+      "queryBounds": [
+        75.55,
+        39.15,
+        76.6,
+        39.95
+      ],
+      "sourceElements": 436,
+      "publishedFeatures": 436,
+      "countsByKind": {
+        "water": 169,
+        "river": 102,
+        "canal": 116,
+        "stream": 49
+      },
+      "packageCount": 7,
+      "sourceGzipBytes": 202969,
+      "publicGzipBytes": 158253
+    },
+    {
+      "id": "west-lanzhou",
+      "name": "兰州黄河走廊",
+      "queryBounds": [
+        103.25,
+        35.8,
+        104.55,
+        36.55
+      ],
+      "sourceElements": 1527,
+      "publishedFeatures": 1524,
+      "countsByKind": {
+        "water": 767,
+        "river": 204,
+        "peak": 69,
+        "canal": 52,
+        "stream": 432
+      },
+      "packageCount": 13,
+      "sourceGzipBytes": 985755,
+      "publicGzipBytes": 814901
+    },
+    {
+      "id": "west-lhasa",
+      "name": "拉萨河下游与拉萨地区",
+      "queryBounds": [
+        90.65,
+        29.2,
+        91.65,
+        30
+      ],
+      "sourceElements": 742,
+      "publishedFeatures": 742,
+      "countsByKind": {
+        "water": 207,
+        "river": 73,
+        "peak": 34,
+        "saddle": 7,
+        "canal": 93,
+        "stream": 328
+      },
+      "packageCount": 7,
+      "sourceGzipBytes": 573454,
+      "publicGzipBytes": 480394
+    },
+    {
+      "id": "west-qiuci",
+      "name": "龟兹与库车河绿洲",
+      "queryBounds": [
+        82.35,
+        41.3,
+        83.65,
+        42.25
+      ],
+      "sourceElements": 166,
+      "publishedFeatures": 166,
+      "countsByKind": {
+        "water": 34,
+        "river": 36,
+        "peak": 2,
+        "stream": 45,
+        "canal": 49
+      },
+      "packageCount": 7,
+      "sourceGzipBytes": 99940,
+      "publicGzipBytes": 80676
+    },
+    {
+      "id": "west-shannan",
+      "name": "山南与雅鲁藏布江走廊",
+      "queryBounds": [
+        91.35,
+        29,
+        92.15,
+        29.65
+      ],
+      "sourceElements": 449,
+      "publishedFeatures": 360,
+      "countsByKind": {
+        "water": 127,
+        "river": 11,
+        "peak": 2,
+        "stream": 220
+      },
+      "packageCount": 8,
+      "sourceGzipBytes": 344615,
+      "publicGzipBytes": 133256
+    },
+    {
+      "id": "west-tianshui",
+      "name": "天水与渭河上游",
+      "queryBounds": [
+        105.05,
+        34.05,
+        106.35,
+        34.85
+      ],
+      "sourceElements": 1149,
+      "publishedFeatures": 1149,
+      "countsByKind": {
+        "water": 175,
+        "river": 250,
+        "peak": 125,
+        "stream": 599
+      },
+      "packageCount": 7,
+      "sourceGzipBytes": 600580,
+      "publicGzipBytes": 462444
+    },
+    {
+      "id": "west-turpan",
+      "name": "交河—高昌与吐鲁番绿洲",
+      "queryBounds": [
+        88.5,
+        42.45,
+        89.65,
+        43.35
+      ],
+      "sourceElements": 3155,
+      "publishedFeatures": 3155,
+      "countsByKind": {
+        "river": 22,
+        "water": 40,
+        "peak": 107,
+        "stream": 60,
+        "canal": 2926
+      },
+      "packageCount": 8,
+      "sourceGzipBytes": 1143014,
+      "publicGzipBytes": 888127
+    },
+    {
+      "id": "west-wuwei",
+      "name": "武威与石羊河绿洲",
+      "queryBounds": [
+        102.3,
+        37.5,
+        103.15,
+        38.35
+      ],
+      "sourceElements": 165,
+      "publishedFeatures": 165,
+      "countsByKind": {
+        "water": 40,
+        "river": 39,
+        "stream": 75,
+        "canal": 4,
+        "peak": 7
+      },
+      "packageCount": 7,
+      "sourceGzipBytes": 88384,
+      "publicGzipBytes": 72248
+    },
+    {
+      "id": "west-yanqi",
+      "name": "焉耆—博斯腾湖西岸",
+      "queryBounds": [
+        86,
+        41.55,
+        87.05,
+        42.45
+      ],
+      "sourceElements": 278,
+      "publishedFeatures": 277,
+      "countsByKind": {
+        "water": 75,
+        "river": 45,
+        "canal": 132,
+        "stream": 24,
+        "peak": 1
+      },
+      "packageCount": 5,
+      "sourceGzipBytes": 124183,
+      "publicGzipBytes": 97553
+    },
+    {
+      "id": "west-zhangye",
+      "name": "张掖与黑河绿洲",
+      "queryBounds": [
+        100.05,
+        38.4,
+        100.95,
+        39.15
+      ],
+      "sourceElements": 225,
+      "publishedFeatures": 224,
+      "countsByKind": {
+        "water": 135,
+        "river": 21,
+        "stream": 37,
+        "canal": 24,
+        "peak": 7
+      },
+      "packageCount": 7,
+      "sourceGzipBytes": 234209,
+      "publicGzipBytes": 189266
+    }
+  ],
+  "westernPublishedFeatureCount": 16968,
+  "cityCloseupPublishedFeatureCount": 18557,
+  "allNewPublishedFeatureCount": 35525,
+  "smallViewsAtExistingEntrances": [
+    {
+      "id": "beijing",
+      "name": "北京",
+      "coordinates": [
+        116.4,
+        39.9
+      ],
+      "coordinateSource": "既有城镇入口，位置角色以原档案说明为准",
+      "sampleViewBounds": [
+        116.36,
+        39.87,
+        116.44000000000001,
+        39.93
+      ],
+      "visibleAtZoom14": 62,
+      "surfaceWaterVisibleAtZoom14": 62,
+      "countsByKind": {
+        "water": 48,
+        "river": 9,
+        "stream": 1,
+        "canal": 4
+      },
+      "namedWaterExamples": [
+        "Lotus lake",
+        "三里河",
+        "中海",
+        "北海",
+        "南护城河",
+        "南海",
+        "大明濠",
+        "护城河（已盖板）",
+        "玉河",
+        "筒子河",
+        "通惠河",
+        "金水河"
+      ],
+      "sampleFeatureIds": [
+        "osm-way-205894622",
+        "osm-way-1162000436",
+        "osm-way-237620933",
+        "osm-relation-13304190",
+        "osm-relation-913788",
+        "osm-way-915669040",
+        "osm-relation-913787",
+        "osm-way-978677584",
+        "osm-way-30888447",
+        "osm-relation-16019586",
+        "osm-way-43925081",
+        "osm-relation-313285"
+      ]
+    },
+    {
+      "id": "chengdu",
+      "name": "成都",
+      "coordinates": [
+        104.07,
+        30.67
+      ],
+      "coordinateSource": "既有城镇入口，位置角色以原档案说明为准",
+      "sampleViewBounds": [
+        104.02999999999999,
+        30.64,
+        104.11,
+        30.700000000000003
+      ],
+      "visibleAtZoom14": 132,
+      "surfaceWaterVisibleAtZoom14": 132,
+      "countsByKind": {
+        "river": 10,
+        "stream": 52,
+        "water": 62,
+        "canal": 8
+      },
+      "namedWaterExamples": [
+        "三道河",
+        "二道河",
+        "南河",
+        "小沙河",
+        "府河",
+        "摸底河",
+        "支矶湖",
+        "桃花江",
+        "沙河",
+        "浣花溪",
+        "消防水池",
+        "清水河"
+      ],
+      "sampleFeatureIds": [
+        "osm-way-1365526373",
+        "osm-way-895929900",
+        "osm-way-1039095000",
+        "osm-way-1039095001",
+        "osm-way-1039095002",
+        "osm-way-1039095003",
+        "osm-way-114421739",
+        "osm-way-660893170",
+        "osm-way-1158115323",
+        "osm-way-114421730",
+        "osm-way-114421731",
+        "osm-relation-20275311"
+      ]
+    },
+    {
+      "id": "guangzhou",
+      "name": "广州",
+      "coordinates": [
+        113.27,
+        23.13
+      ],
+      "coordinateSource": "既有城镇入口，位置角色以原档案说明为准",
+      "sampleViewBounds": [
+        113.22999999999999,
+        23.099999999999998,
+        113.31,
+        23.16
+      ],
+      "visibleAtZoom14": 130,
+      "surfaceWaterVisibleAtZoom14": 130,
+      "countsByKind": {
+        "water": 68,
+        "river": 58,
+        "stream": 4
+      },
+      "namedWaterExamples": [
+        "东湖",
+        "东濠涌",
+        "东秀湖",
+        "仙鹤湖",
+        "北秀湖",
+        "南秀湖",
+        "后航道",
+        "四方池",
+        "小翠湖",
+        "执信荷塘",
+        "放生池",
+        "新市涌"
+      ],
+      "sampleFeatureIds": [
+        "osm-relation-9164387",
+        "osm-way-435734246",
+        "osm-way-185548592",
+        "osm-way-51813977",
+        "osm-relation-65143",
+        "osm-way-527439416",
+        "osm-way-316193035",
+        "osm-way-928744145",
+        "osm-way-536571152",
+        "osm-way-437098363",
+        "osm-way-316192522",
+        "osm-way-357115677"
+      ]
+    },
+    {
+      "id": "xiangyang",
+      "name": "襄阳",
+      "coordinates": [
+        112.14,
+        32.04
+      ],
+      "coordinateSource": "既有城镇入口，位置角色以原档案说明为准",
+      "sampleViewBounds": [
+        112.1,
+        32.01,
+        112.18,
+        32.07
+      ],
+      "visibleAtZoom14": 66,
+      "surfaceWaterVisibleAtZoom14": 66,
+      "countsByKind": {
+        "river": 7,
+        "water": 59
+      },
+      "namedWaterExamples": [
+        "大李沟",
+        "汉江",
+        "清河",
+        "濠水"
+      ],
+      "sampleFeatureIds": [
+        "osm-way-44670050",
+        "osm-way-623442854",
+        "osm-way-784420629",
+        "osm-way-772287089",
+        "osm-way-805831016",
+        "osm-way-784371827",
+        "osm-way-805831019",
+        "osm-relation-11522264",
+        "osm-way-805831017",
+        "osm-way-805831018",
+        "osm-way-805831020",
+        "osm-way-778433255"
+      ]
+    },
+    {
+      "id": "jingzhou",
+      "name": "江陵",
+      "coordinates": [
+        112.24,
+        30.34
+      ],
+      "coordinateSource": "既有城镇入口，位置角色以原档案说明为准",
+      "sampleViewBounds": [
+        112.19999999999999,
+        30.31,
+        112.28,
+        30.37
+      ],
+      "visibleAtZoom14": 47,
+      "surfaceWaterVisibleAtZoom14": 47,
+      "countsByKind": {
+        "canal": 12,
+        "river": 2,
+        "water": 33
+      },
+      "namedWaterExamples": [
+        "太湖港",
+        "张李家渊",
+        "江津湖",
+        "西干渠",
+        "长江"
+      ],
+      "sampleFeatureIds": [
+        "osm-way-147213602",
+        "osm-way-43054901",
+        "osm-way-146991766",
+        "osm-relation-7830976",
+        "osm-relation-1983671",
+        "osm-way-424720653",
+        "osm-way-146991765",
+        "osm-way-146991983",
+        "osm-way-147218736",
+        "osm-relation-1987607",
+        "osm-way-87315204",
+        "osm-way-112635872"
+      ]
+    },
+    {
+      "id": "jinyang",
+      "name": "晋阳",
+      "coordinates": [
+        112.45,
+        37.73
+      ],
+      "coordinateSource": "既有城镇入口，位置角色以原档案说明为准",
+      "sampleViewBounds": [
+        112.41,
+        37.699999999999996,
+        112.49000000000001,
+        37.76
+      ],
+      "visibleAtZoom14": 54,
+      "surfaceWaterVisibleAtZoom14": 54,
+      "countsByKind": {
+        "stream": 18,
+        "water": 32,
+        "river": 4
+      },
+      "namedWaterExamples": [
+        "九龙湖",
+        "八角莲池",
+        "台骀泽",
+        "好问湖",
+        "少伯湖",
+        "晋阳湖",
+        "桐叶溪",
+        "留山湖",
+        "青竹湖",
+        "风峪沙河",
+        "风峪河",
+        "鱼沼"
+      ],
+      "sampleFeatureIds": [
+        "osm-way-1257084849",
+        "osm-way-1257084846",
+        "osm-way-1047653586",
+        "osm-way-1047653578",
+        "osm-way-1047653585",
+        "osm-way-1047653562",
+        "osm-relation-13089148",
+        "osm-relation-11813218",
+        "osm-way-1127376593",
+        "osm-way-1415360301",
+        "osm-relation-19365194",
+        "osm-way-1415650934"
+      ]
+    },
+    {
+      "id": "linzi",
+      "name": "临淄",
+      "coordinates": [
+        118.31,
+        36.82
+      ],
+      "coordinateSource": "既有城镇入口，位置角色以原档案说明为准",
+      "sampleViewBounds": [
+        118.27,
+        36.79,
+        118.35000000000001,
+        36.85
+      ],
+      "visibleAtZoom14": 2,
+      "surfaceWaterVisibleAtZoom14": 2,
+      "countsByKind": {
+        "water": 1,
+        "river": 1
+      },
+      "namedWaterExamples": [
+        "太公湖",
+        "淄河"
+      ],
+      "sampleFeatureIds": [
+        "osm-relation-5776230",
+        "osm-way-395136516"
+      ]
+    },
+    {
+      "id": "fanyang",
+      "name": "范阳",
+      "coordinates": [
+        116.35,
+        39.88
+      ],
+      "coordinateSource": "既有城镇入口，位置角色以原档案说明为准",
+      "sampleViewBounds": [
+        116.30999999999999,
+        39.85,
+        116.39,
+        39.910000000000004
+      ],
+      "visibleAtZoom14": 50,
+      "surfaceWaterVisibleAtZoom14": 50,
+      "countsByKind": {
+        "river": 8,
+        "water": 24,
+        "stream": 14,
+        "canal": 4
+      },
+      "namedWaterExamples": [
+        "丰草河",
+        "凉水河",
+        "南护城河",
+        "南海",
+        "大明濠",
+        "护城河（已盖板）",
+        "永定河引水渠",
+        "莲花河",
+        "马草河"
+      ],
+      "sampleFeatureIds": [
+        "osm-way-26289104",
+        "osm-way-30047873",
+        "osm-way-29130866",
+        "osm-way-985432587",
+        "osm-way-1421451705",
+        "osm-way-494990231",
+        "osm-way-985432586",
+        "osm-way-1421451706",
+        "osm-way-494990232",
+        "osm-way-723002010",
+        "osm-way-1138703894",
+        "osm-way-664339444"
+      ]
+    },
+    {
+      "id": "quanzhou",
+      "name": "泉州",
+      "coordinates": [
+        118.68,
+        24.88
+      ],
+      "coordinateSource": "既有城镇入口，位置角色以原档案说明为准",
+      "sampleViewBounds": [
+        118.64,
+        24.849999999999998,
+        118.72000000000001,
+        24.91
+      ],
+      "visibleAtZoom14": 43,
+      "surfaceWaterVisibleAtZoom14": 43,
+      "countsByKind": {
+        "water": 31,
+        "river": 1,
+        "canal": 4,
+        "stream": 7
+      },
+      "namedWaterExamples": [],
+      "sampleFeatureIds": [
+        "osm-way-538427271",
+        "osm-way-1111743255",
+        "osm-way-1502898583",
+        "osm-way-538404324",
+        "osm-way-538404344",
+        "osm-way-538427269",
+        "osm-way-1269228983",
+        "osm-way-471785156",
+        "osm-way-1269228984",
+        "osm-way-538427268",
+        "osm-way-473744076",
+        "osm-way-473744075"
+      ]
+    },
+    {
+      "id": "dunhuang",
+      "name": "敦煌",
+      "coordinates": [
+        94.66,
+        40.14
+      ],
+      "coordinateSource": "既有城镇入口，位置角色以原档案说明为准",
+      "sampleViewBounds": [
+        94.61999999999999,
+        40.11,
+        94.7,
+        40.17
+      ],
+      "visibleAtZoom14": 26,
+      "surfaceWaterVisibleAtZoom14": 26,
+      "countsByKind": {
+        "river": 2,
+        "stream": 15,
+        "canal": 5,
+        "water": 4
+      },
+      "namedWaterExamples": [
+        "党河"
+      ],
+      "sampleFeatureIds": [
+        "osm-way-104144564",
+        "osm-way-1097635260",
+        "osm-way-1152780942",
+        "osm-way-1152780939",
+        "osm-way-1308443023",
+        "osm-way-1152780938",
+        "osm-way-1308443022",
+        "osm-way-1152780941",
+        "osm-way-199796522",
+        "osm-way-1152780940",
+        "osm-way-1097635259",
+        "osm-way-301807018"
+      ]
+    },
+    {
+      "id": "qizhou-jinan",
+      "name": "齐州",
+      "coordinates": [
+        117.0,
+        36.67
+      ],
+      "coordinateSource": "既有城镇入口，位置角色以原档案说明为准",
+      "sampleViewBounds": [
+        116.96,
+        36.64,
+        117.04,
+        36.7
+      ],
+      "visibleAtZoom14": 213,
+      "surfaceWaterVisibleAtZoom14": 213,
+      "countsByKind": {
+        "river": 32,
+        "water": 116,
+        "stream": 49,
+        "canal": 16
+      },
+      "namedWaterExamples": [
+        "一虎泉",
+        "东圩子壕",
+        "东护城河",
+        "东泺河",
+        "云锦湖（北湖）",
+        "五龙潭",
+        "余乐池",
+        "兴济河",
+        "南花廊",
+        "大明湖",
+        "天镜泉",
+        "小东湖"
+      ],
+      "sampleFeatureIds": [
+        "osm-way-674353248",
+        "osm-way-354384281",
+        "osm-way-412600490",
+        "osm-way-412600492",
+        "osm-relation-5294363",
+        "osm-way-1465344583",
+        "osm-way-580009291",
+        "osm-way-39517926",
+        "osm-way-580009290",
+        "osm-way-580009289",
+        "osm-relation-11518802",
+        "osm-way-1236533290"
+      ]
+    },
+    {
+      "id": "qingzhou",
+      "name": "青州",
+      "coordinates": [
+        118.48,
+        36.7
+      ],
+      "coordinateSource": "既有城镇入口，位置角色以原档案说明为准",
+      "sampleViewBounds": [
+        118.44,
+        36.67,
+        118.52000000000001,
+        36.730000000000004
+      ],
+      "visibleAtZoom14": 34,
+      "surfaceWaterVisibleAtZoom14": 34,
+      "countsByKind": {
+        "stream": 4,
+        "river": 2,
+        "water": 28
+      },
+      "namedWaterExamples": [
+        "南阳河",
+        "洋溪湖",
+        "西门水库",
+        "阳河",
+        "龙虎水库"
+      ],
+      "sampleFeatureIds": [
+        "osm-way-616746654",
+        "osm-way-616746655",
+        "osm-way-912627321",
+        "osm-way-901508383",
+        "osm-way-1355300475",
+        "osm-way-616746653",
+        "osm-way-823340852",
+        "osm-way-826104569",
+        "osm-way-1142306082",
+        "osm-way-1142306084",
+        "osm-way-826104555",
+        "osm-way-731224567"
+      ]
+    },
+    {
+      "id": "liangzhou-wuwei",
+      "name": "凉州",
+      "coordinates": [
+        102.63,
+        37.93
+      ],
+      "coordinateSource": "既有城镇入口，位置角色以原档案说明为准",
+      "sampleViewBounds": [
+        102.58999999999999,
+        37.9,
+        102.67,
+        37.96
+      ],
+      "visibleAtZoom14": 9,
+      "surfaceWaterVisibleAtZoom14": 9,
+      "countsByKind": {
+        "river": 2,
+        "water": 5,
+        "stream": 2
+      },
+      "namedWaterExamples": [
+        "石羊河",
+        "飞燕湖"
+      ],
+      "sampleFeatureIds": [
+        "osm-way-188678558",
+        "osm-way-620510595",
+        "osm-way-946346930",
+        "osm-way-946346927",
+        "osm-way-1372270773",
+        "osm-way-973524217",
+        "osm-relation-13101124",
+        "osm-way-974085017",
+        "osm-way-974084964"
+      ]
+    },
+    {
+      "id": "ganzhou-zhangye",
+      "name": "甘州",
+      "coordinates": [
+        100.45,
+        38.93
+      ],
+      "coordinateSource": "既有城镇入口，位置角色以原档案说明为准",
+      "sampleViewBounds": [
+        100.41,
+        38.9,
+        100.49000000000001,
+        38.96
+      ],
+      "visibleAtZoom14": 27,
+      "surfaceWaterVisibleAtZoom14": 27,
+      "countsByKind": {
+        "water": 21,
+        "stream": 5,
+        "river": 1
+      },
+      "namedWaterExamples": [
+        "下池塘",
+        "云中湖",
+        "小河",
+        "居延湖",
+        "明理湖",
+        "润泉湖"
+      ],
+      "sampleFeatureIds": [
+        "osm-way-1182805226",
+        "osm-way-1182805227",
+        "osm-way-1182805225",
+        "osm-way-1182805224",
+        "osm-way-1124707086",
+        "osm-way-1124686177",
+        "osm-way-1460175972",
+        "osm-way-244702370",
+        "osm-way-1124735001",
+        "osm-way-946375557",
+        "osm-way-963329262",
+        "osm-way-963329261"
+      ]
+    },
+    {
+      "id": "suzhou-jiuquan",
+      "name": "肃州",
+      "coordinates": [
+        98.52,
+        39.74
+      ],
+      "coordinateSource": "既有城镇入口，位置角色以原档案说明为准",
+      "sampleViewBounds": [
+        98.47999999999999,
+        39.71,
+        98.56,
+        39.77
+      ],
+      "visibleAtZoom14": 12,
+      "surfaceWaterVisibleAtZoom14": 12,
+      "countsByKind": {
+        "water": 10,
+        "stream": 1,
+        "river": 1
+      },
+      "namedWaterExamples": [
+        "北大河",
+        "四坝湖",
+        "泉湖"
+      ],
+      "sampleFeatureIds": [
+        "osm-way-175304903",
+        "osm-way-175009289",
+        "osm-way-146825701",
+        "osm-relation-11761341",
+        "osm-way-146844865",
+        "osm-way-1091804652",
+        "osm-way-979522038",
+        "osm-way-178828291",
+        "osm-way-178828296",
+        "osm-way-146825698",
+        "osm-way-84188587",
+        "osm-way-178828290"
+      ]
+    },
+    {
+      "id": "xizhou-gaochang",
+      "name": "西州",
+      "coordinates": [
+        89.18,
+        42.95
+      ],
+      "coordinateSource": "既有城镇入口，位置角色以原档案说明为准",
+      "sampleViewBounds": [
+        89.14,
+        42.92,
+        89.22000000000001,
+        42.980000000000004
+      ],
+      "visibleAtZoom14": 40,
+      "surfaceWaterVisibleAtZoom14": 5,
+      "countsByKind": {
+        "canal": 35,
+        "water": 5
+      },
+      "namedWaterExamples": [
+        "قنات",
+        "坎儿井"
+      ],
+      "sampleFeatureIds": [
+        "osm-way-1331176920",
+        "osm-way-1339774753",
+        "osm-way-1339774752",
+        "osm-way-1339764873",
+        "osm-way-1339774757",
+        "osm-way-338440566",
+        "osm-way-1331176917",
+        "osm-way-1339764872",
+        "osm-way-338440567",
+        "osm-way-1331176916",
+        "osm-way-1339764874",
+        "osm-way-1339764871"
+      ]
+    },
+    {
+      "id": "yizhou-hami",
+      "name": "伊州",
+      "coordinates": [
+        93.51,
+        42.83
+      ],
+      "coordinateSource": "既有城镇入口，位置角色以原档案说明为准",
+      "sampleViewBounds": [
+        93.47,
+        42.8,
+        93.55000000000001,
+        42.86
+      ],
+      "visibleAtZoom14": 17,
+      "surfaceWaterVisibleAtZoom14": 17,
+      "countsByKind": {
+        "stream": 15,
+        "water": 2
+      },
+      "namedWaterExamples": [
+        "石城子河"
+      ],
+      "sampleFeatureIds": [
+        "osm-way-806732040",
+        "osm-way-1091539850",
+        "osm-way-430910989",
+        "osm-way-1091539848",
+        "osm-way-430910987",
+        "osm-way-1091539849",
+        "osm-way-149504373",
+        "osm-way-430910990",
+        "osm-way-806732035",
+        "osm-way-806732034",
+        "osm-way-806732036",
+        "osm-way-430910988"
+      ]
+    },
+    {
+      "id": "qiuci",
+      "name": "龟兹",
+      "coordinates": [
+        82.93,
+        41.71
+      ],
+      "coordinateSource": "既有城镇入口，位置角色以原档案说明为准",
+      "sampleViewBounds": [
+        82.89,
+        41.68,
+        82.97000000000001,
+        41.74
+      ],
+      "visibleAtZoom14": 5,
+      "surfaceWaterVisibleAtZoom14": 5,
+      "countsByKind": {
+        "river": 2,
+        "water": 3
+      },
+      "namedWaterExamples": [
+        "库车河"
+      ],
+      "sampleFeatureIds": [
+        "osm-way-183728829",
+        "osm-way-1347255587",
+        "osm-way-1347255588",
+        "osm-way-1347255590",
+        "osm-way-403351947"
+      ]
+    },
+    {
+      "id": "yutian-hotan",
+      "name": "于阗",
+      "coordinates": [
+        79.93,
+        37.11
+      ],
+      "coordinateSource": "既有城镇入口，位置角色以原档案说明为准",
+      "sampleViewBounds": [
+        79.89,
+        37.08,
+        79.97000000000001,
+        37.14
+      ],
+      "visibleAtZoom14": 27,
+      "surfaceWaterVisibleAtZoom14": 27,
+      "countsByKind": {
+        "canal": 10,
+        "water": 16,
+        "river": 1
+      },
+      "namedWaterExamples": [
+        "昆仑湖",
+        "玉龙喀什河"
+      ],
+      "sampleFeatureIds": [
+        "osm-way-102544697",
+        "osm-way-867910701",
+        "osm-way-435786462",
+        "osm-way-1226227703",
+        "osm-way-1187526639",
+        "osm-way-1187526640",
+        "osm-way-1347376361",
+        "osm-way-355476336",
+        "osm-way-1347376360",
+        "osm-relation-4287280",
+        "osm-way-1094938686",
+        "osm-way-963712088"
+      ]
+    },
+    {
+      "id": "shule-kashgar",
+      "name": "疏勒",
+      "coordinates": [
+        75.99,
+        39.47
+      ],
+      "coordinateSource": "既有城镇入口，位置角色以原档案说明为准",
+      "sampleViewBounds": [
+        75.94999999999999,
+        39.44,
+        76.03,
+        39.5
+      ],
+      "visibleAtZoom14": 15,
+      "surfaceWaterVisibleAtZoom14": 15,
+      "countsByKind": {
+        "river": 4,
+        "water": 11
+      },
+      "namedWaterExamples": [
+        "东湖",
+        "克孜勒苏河",
+        "吐曼河"
+      ],
+      "sampleFeatureIds": [
+        "osm-way-102528584",
+        "osm-relation-6820298",
+        "osm-way-867090044",
+        "osm-way-102528646",
+        "osm-way-465945640",
+        "osm-way-254679945",
+        "osm-way-206100871",
+        "osm-way-102528591",
+        "osm-way-102528888",
+        "osm-way-254851754",
+        "osm-way-784174914",
+        "osm-way-784174912"
+      ]
+    },
+    {
+      "id": "yanqi",
+      "name": "焉耆",
+      "coordinates": [
+        86.57,
+        42.06
+      ],
+      "coordinateSource": "既有城镇入口，位置角色以原档案说明为准",
+      "sampleViewBounds": [
+        86.52999999999999,
+        42.03,
+        86.61,
+        42.09
+      ],
+      "visibleAtZoom14": 26,
+      "surfaceWaterVisibleAtZoom14": 26,
+      "countsByKind": {
+        "river": 2,
+        "water": 7,
+        "canal": 17
+      },
+      "namedWaterExamples": [
+        "Riverbank Kaidu River",
+        "开都河"
+      ],
+      "sampleFeatureIds": [
+        "osm-way-1347262643",
+        "osm-relation-4637455",
+        "osm-way-330729223",
+        "osm-way-330729222",
+        "osm-way-1347262657",
+        "osm-way-762698812",
+        "osm-way-1347259767",
+        "osm-way-625697139",
+        "osm-way-1347260338",
+        "osm-way-1347260337",
+        "osm-way-1347260339",
+        "osm-way-625697138"
+      ]
+    },
+    {
+      "id": "tanzhou",
+      "name": "潭州",
+      "coordinates": [
+        112.939,
+        28.228
+      ],
+      "coordinateSource": "既有城镇入口，位置角色以原档案说明为准",
+      "sampleViewBounds": [
+        112.89899999999999,
+        28.198,
+        112.979,
+        28.258000000000003
+      ],
+      "visibleAtZoom14": 53,
+      "surfaceWaterVisibleAtZoom14": 53,
+      "countsByKind": {
+        "water": 35,
+        "river": 15,
+        "stream": 3
+      },
+      "namedWaterExamples": [
+        "咸嘉湖",
+        "施家港水上公园",
+        "梅溪湖",
+        "沁园池",
+        "浏阳河",
+        "湘江",
+        "澄池",
+        "龙王港"
+      ],
+      "sampleFeatureIds": [
+        "osm-relation-8727387",
+        "osm-relation-5940862",
+        "osm-way-652394390",
+        "osm-way-1209658499",
+        "osm-relation-9600800",
+        "osm-way-785839143",
+        "osm-way-404043808",
+        "osm-way-785839168",
+        "osm-way-785839169",
+        "osm-way-1071036023",
+        "osm-way-1190383011",
+        "osm-way-926321421"
+      ]
+    },
+    {
+      "id": "ezhou-jiangxia",
+      "name": "鄂州",
+      "coordinates": [
+        114.3128,
+        30.5547
+      ],
+      "coordinateSource": "既有城镇入口，位置角色以原档案说明为准",
+      "sampleViewBounds": [
+        114.27279999999999,
+        30.5247,
+        114.3528,
+        30.5847
+      ],
+      "visibleAtZoom14": 50,
+      "surfaceWaterVisibleAtZoom14": 50,
+      "countsByKind": {
+        "river": 6,
+        "water": 38,
+        "stream": 4,
+        "canal": 2
+      },
+      "namedWaterExamples": [
+        "东湖",
+        "内沙湖",
+        "巡司河",
+        "放生池",
+        "晒湖",
+        "楚河",
+        "水果湖",
+        "汉水",
+        "沙河",
+        "沙湖",
+        "白龙池",
+        "紫阳湖"
+      ],
+      "sampleFeatureIds": [
+        "osm-way-27303143",
+        "osm-way-881445354",
+        "osm-relation-14072935",
+        "osm-way-630565718",
+        "osm-way-412086105",
+        "osm-way-1518975504",
+        "osm-relation-7160933",
+        "osm-way-1518975506",
+        "osm-way-1518975452",
+        "osm-way-1518975507",
+        "osm-way-1518975508",
+        "osm-way-1520071591"
+      ]
+    },
+    {
+      "id": "fuzhou-fujian",
+      "name": "福州",
+      "coordinates": [
+        119.2833,
+        26.15
+      ],
+      "coordinateSource": "既有城镇入口，位置角色以原档案说明为准",
+      "sampleViewBounds": [
+        119.24329999999999,
+        26.119999999999997,
+        119.3233,
+        26.18
+      ],
+      "visibleAtZoom14": 90,
+      "surfaceWaterVisibleAtZoom14": 90,
+      "countsByKind": {
+        "river": 13,
+        "water": 31,
+        "stream": 46
+      },
+      "namedWaterExamples": [
+        "义井溪",
+        "井店湖",
+        "八一水库",
+        "斗顶水库",
+        "晋安河",
+        "洋下河",
+        "湖前河",
+        "琴亭湖",
+        "赤星溪",
+        "过溪水库"
+      ],
+      "sampleFeatureIds": [
+        "osm-way-209804035",
+        "osm-way-776475487",
+        "osm-way-1298878380",
+        "osm-way-605773961",
+        "osm-way-779458258",
+        "osm-way-676830079",
+        "osm-way-676830078",
+        "osm-way-209804043",
+        "osm-way-209804045",
+        "osm-way-503127611",
+        "osm-way-209804041",
+        "osm-way-957264426"
+      ]
+    },
+    {
+      "id": "hanzhou",
+      "name": "汉州",
+      "coordinates": [
+        104.25,
+        30.99
+      ],
+      "coordinateSource": "既有城镇入口，位置角色以原档案说明为准",
+      "sampleViewBounds": [
+        104.21,
+        30.959999999999997,
+        104.29,
+        31.02
+      ],
+      "visibleAtZoom14": 67,
+      "surfaceWaterVisibleAtZoom14": 67,
+      "countsByKind": {
+        "river": 22,
+        "water": 37,
+        "stream": 8
+      },
+      "namedWaterExamples": [
+        "坪桥河",
+        "房湖",
+        "李家堰河",
+        "泮池",
+        "玉蟾湖",
+        "蒙阳河",
+        "金雁湖",
+        "镜月湖",
+        "马牧河",
+        "鸭子河"
+      ],
+      "sampleFeatureIds": [
+        "osm-way-164470015",
+        "osm-way-813952746",
+        "osm-way-813952747",
+        "osm-way-813952748",
+        "osm-way-1497825292",
+        "osm-way-418286658",
+        "osm-way-1502766195",
+        "osm-way-1502766193",
+        "osm-way-1502766194",
+        "osm-way-1013682804",
+        "osm-relation-18491736",
+        "osm-way-1505077614"
+      ]
+    },
+    {
+      "id": "chgis-prefecture-211495",
+      "name": "金城郡",
+      "coordinates": [
+        103.84714,
+        36.04703
+      ],
+      "coordinateSource": "已审核CHGIS官方755年POINT记录",
+      "sampleViewBounds": [
+        103.80713999999999,
+        36.01703,
+        103.88714,
+        36.07703
+      ],
+      "visibleAtZoom14": 65,
+      "surfaceWaterVisibleAtZoom14": 65,
+      "countsByKind": {
+        "water": 39,
+        "river": 2,
+        "canal": 16,
+        "stream": 8
+      },
+      "namedWaterExamples": [
+        "惠泉",
+        "掬月泉",
+        "欣月湖",
+        "雷坛河",
+        "黄河"
+      ],
+      "sampleFeatureIds": [
+        "osm-way-716709424",
+        "osm-way-695662455",
+        "osm-way-405637211",
+        "osm-way-695017152",
+        "osm-way-695017161",
+        "osm-way-695017148",
+        "osm-way-1418350997",
+        "osm-way-424495751",
+        "osm-way-406993012",
+        "osm-way-1411906402",
+        "osm-way-1411906410",
+        "osm-way-1411906436"
+      ]
+    },
+    {
+      "id": "chgis-prefecture-211598",
+      "name": "天水郡",
+      "coordinates": [
+        105.719887,
+        34.581219
+      ],
+      "coordinateSource": "已审核CHGIS官方755年POINT记录",
+      "sampleViewBounds": [
+        105.679887,
+        34.551218999999996,
+        105.759887,
+        34.611219
+      ],
+      "visibleAtZoom14": 29,
+      "surfaceWaterVisibleAtZoom14": 29,
+      "countsByKind": {
+        "river": 8,
+        "water": 9,
+        "stream": 12
+      },
+      "namedWaterExamples": [
+        "藉河"
+      ],
+      "sampleFeatureIds": [
+        "osm-way-49796498",
+        "osm-way-329588067",
+        "osm-way-422502823",
+        "osm-way-1507427620",
+        "osm-relation-18773447",
+        "osm-way-1507427621",
+        "osm-way-49796537",
+        "osm-way-1507427619",
+        "osm-way-416452730",
+        "osm-way-412952079",
+        "osm-way-49796599",
+        "osm-way-1507427623"
+      ]
+    }
+  ],
+  "maximumWesternFeatureMinZoom": 12,
+  "preservedOriginalPackageCount": 296,
+  "preservedOriginalPackageIds": [
+    "central-plains-overview-part0",
+    "central-plains-overview-part1",
+    "central-plains-231-66-part0",
+    "central-plains-231-65-part0",
+    "central-plains-229-67-part0",
+    "central-plains-231-69-part0",
+    "central-plains-227-69-part0",
+    "central-plains-230-70-part0",
+    "central-plains-229-66-part0",
+    "central-plains-232-65-part0",
+    "central-plains-230-65-part0",
+    "central-plains-232-69-part0",
+    "central-plains-231-70-part0",
+    "central-plains-229-70-part0",
+    "central-plains-227-70-part0",
+    "central-plains-228-69-part0",
+    "central-plains-227-68-part0",
+    "central-plains-228-67-part0",
+    "central-plains-232-66-part0",
+    "central-plains-230-68-part0",
+    "central-plains-230-66-part0",
+    "central-plains-227-67-part0",
+    "central-plains-230-69-part0",
+    "central-plains-228-66-part0",
+    "central-plains-227-66-part0",
+    "central-plains-229-65-part0",
+    "central-plains-228-65-part0",
+    "central-plains-231-68-part0",
+    "central-plains-232-70-part0",
+    "central-plains-232-68-part0",
+    "central-plains-227-65-part0",
+    "central-plains-228-70-part0",
+    "central-plains-233-70-part0",
+    "central-plains-232-71-part0",
+    "central-plains-227-64-part0",
+    "central-plains-233-67-part0",
+    "central-plains-230-67-part0",
+    "central-plains-231-64-part0",
+    "central-plains-230-71-part0",
+    "central-plains-229-69-part0",
+    "central-plains-228-68-part0",
+    "central-plains-232-67-part0",
+    "central-plains-231-67-part0",
+    "central-plains-229-68-part0",
+    "central-plains-233-65-part0",
+    "central-plains-228-64-part0",
+    "central-plains-226-69-part0",
+    "central-plains-226-70-part0",
+    "central-plains-233-66-part0",
+    "central-plains-226-67-part0",
+    "central-plains-226-66-part0",
+    "central-plains-233-69-part0",
+    "central-plains-226-68-part0",
+    "central-plains-226-65-part0",
+    "guanzhong-overview-part0",
+    "guanzhong-219-67-part0",
+    "guanzhong-217-68-part0",
+    "guanzhong-214-68-part0",
+    "guanzhong-220-69-part0",
+    "guanzhong-214-69-part0",
+    "guanzhong-215-68-part0",
+    "guanzhong-214-70-part0",
+    "guanzhong-213-68-part0",
+    "guanzhong-213-70-part0",
+    "guanzhong-215-69-part0",
+    "guanzhong-220-68-part0",
+    "guanzhong-218-68-part0",
+    "guanzhong-215-67-part0",
+    "guanzhong-214-67-part0",
+    "guanzhong-218-67-part0",
+    "guanzhong-216-67-part0",
+    "guanzhong-216-69-part0",
+    "guanzhong-213-69-part0",
+    "guanzhong-213-67-part0",
+    "guanzhong-220-67-part0",
+    "guanzhong-219-68-part0",
+    "guanzhong-218-69-part0",
+    "guanzhong-219-70-part0",
+    "guanzhong-217-67-part0",
+    "guanzhong-218-70-part0",
+    "guanzhong-217-70-part0",
+    "guanzhong-216-70-part0",
+    "guanzhong-217-69-part0",
+    "guanzhong-215-70-part0",
+    "guanzhong-221-67-part0",
+    "guanzhong-213-71-part0",
+    "guanzhong-216-68-part0",
+    "guanzhong-219-69-part0",
+    "guanzhong-220-70-part0",
+    "guanzhong-212-70-part0",
+    "guanzhong-221-70-part0",
+    "guanzhong-215-66-part0",
+    "guanzhong-219-71-part0",
+    "guanzhong-220-71-part0",
+    "guanzhong-218-71-part0",
+    "guanzhong-220-66-part0",
+    "guanzhong-215-71-part0",
+    "guanzhong-212-68-part0",
+    "guanzhong-212-67-part0",
+    "guanzhong-214-71-part0",
+    "jianghuai-overview-part0",
+    "jianghuai-overview-part1",
+    "jianghuai-overview-part2",
+    "jianghuai-overview-part3",
+    "jianghuai-overview-part4",
+    "jianghuai-234-63-part0",
+    "jianghuai-239-64-part0",
+    "jianghuai-240-63-part0",
+    "jianghuai-239-66-part0",
+    "jianghuai-238-65-part0",
+    "jianghuai-239-65-part0",
+    "jianghuai-239-65-part1",
+    "jianghuai-240-62-part0",
+    "jianghuai-239-63-part0",
+    "jianghuai-239-63-part1",
+    "jianghuai-236-62-part0",
+    "jianghuai-240-65-part0",
+    "jianghuai-237-64-part0",
+    "jianghuai-238-62-part0",
+    "jianghuai-239-62-part0",
+    "jianghuai-235-64-part0",
+    "jianghuai-234-64-part0",
+    "jianghuai-234-65-part0",
+    "jianghuai-240-61-part0",
+    "jianghuai-240-66-part0",
+    "jianghuai-238-63-part0",
+    "jianghuai-237-62-part0",
+    "jianghuai-237-63-part0",
+    "jianghuai-237-66-part0",
+    "jianghuai-234-62-part0",
+    "jianghuai-238-64-part0",
+    "jianghuai-236-64-part0",
+    "jianghuai-234-61-part0",
+    "jianghuai-239-61-part0",
+    "jianghuai-236-63-part0",
+    "jianghuai-235-63-part0",
+    "jianghuai-236-61-part0",
+    "jianghuai-234-66-part0",
+    "jianghuai-235-61-part0",
+    "jianghuai-237-61-part0",
+    "jianghuai-236-66-part0",
+    "jianghuai-235-65-part0",
+    "jianghuai-235-62-part0",
+    "jianghuai-237-65-part0",
+    "jianghuai-238-61-part0",
+    "jianghuai-236-65-part0",
+    "jianghuai-238-67-part0",
+    "jianghuai-241-63-part0",
+    "jianghuai-241-61-part0",
+    "jianghuai-240-64-part0",
+    "jianghuai-241-64-part0",
+    "jianghuai-237-67-part0",
+    "jianghuai-241-62-part0",
+    "jianghuai-240-67-part0",
+    "jianghuai-241-66-part0",
+    "jianghuai-238-66-part0",
+    "jianghuai-235-66-part0",
+    "jianghuai-239-67-part0",
+    "jianghuai-241-65-part0",
+    "jianghuai-233-63-part0",
+    "jianghuai-233-62-part0",
+    "jianghuai-233-65-part0",
+    "jianghuai-233-64-part0",
+    "jianghuai-234-67-part0",
+    "jianghuai-235-67-part0",
+    "jianghuai-236-67-part0",
+    "luoyang-overview-part0",
+    "luoyang-224-69-part0",
+    "luoyang-225-70-part0",
+    "luoyang-226-69-part0",
+    "luoyang-226-70-part0",
+    "luoyang-221-70-part0",
+    "luoyang-223-69-part0",
+    "luoyang-226-68-part0",
+    "luoyang-225-69-part0",
+    "luoyang-222-69-part0",
+    "luoyang-226-67-part0",
+    "luoyang-223-67-part0",
+    "luoyang-224-70-part0",
+    "luoyang-221-69-part0",
+    "luoyang-222-67-part0",
+    "luoyang-223-68-part0",
+    "luoyang-222-68-part0",
+    "luoyang-222-70-part0",
+    "luoyang-223-70-part0",
+    "luoyang-225-68-part0",
+    "luoyang-224-66-part0",
+    "luoyang-225-67-part0",
+    "luoyang-225-66-part0",
+    "luoyang-224-67-part0",
+    "luoyang-221-67-part0",
+    "luoyang-226-66-part0",
+    "luoyang-224-68-part0",
+    "luoyang-223-66-part0",
+    "luoyang-221-66-part0",
+    "luoyang-221-68-part0",
+    "luoyang-223-71-part0",
+    "luoyang-222-66-part0",
+    "luoyang-224-71-part0",
+    "luoyang-225-71-part0",
+    "taihu-overview-part0",
+    "taihu-overview-part1",
+    "taihu-overview-part2",
+    "taihu-overview-part3",
+    "taihu-240-60-part0",
+    "taihu-240-60-part1",
+    "taihu-243-62-part0",
+    "taihu-242-62-part0",
+    "taihu-243-59-part0",
+    "taihu-242-63-part0",
+    "taihu-241-59-part0",
+    "taihu-243-61-part0",
+    "taihu-241-60-part0",
+    "taihu-241-62-part0",
+    "taihu-239-60-part0",
+    "taihu-241-64-part0",
+    "taihu-242-64-part0",
+    "taihu-241-63-part0",
+    "taihu-241-61-part0",
+    "taihu-239-61-part0",
+    "taihu-243-63-part0",
+    "taihu-239-59-part0",
+    "taihu-242-60-part0",
+    "taihu-240-59-part0",
+    "taihu-242-61-part0",
+    "taihu-240-61-part0",
+    "taihu-242-59-part0",
+    "taihu-238-59-part0",
+    "taihu-243-60-part0",
+    "taihu-240-62-part0",
+    "taihu-242-58-part0",
+    "taihu-244-60-part0",
+    "taihu-242-65-part0",
+    "taihu-243-64-part0",
+    "taihu-241-65-part0",
+    "taihu-241-58-part0",
+    "taihu-243-58-part0",
+    "taihu-244-62-part0",
+    "taihu-239-58-part0",
+    "taihu-240-63-part0",
+    "taihu-239-63-part0",
+    "taihu-238-63-part0",
+    "taihu-239-62-part0",
+    "taihu-239-64-part0",
+    "taihu-240-64-part0",
+    "zhejiang-overview-part0",
+    "zhejiang-overview-part1",
+    "zhejiang-overview-part2",
+    "zhejiang-240-57-part0",
+    "zhejiang-241-58-part0",
+    "zhejiang-238-59-part0",
+    "zhejiang-240-58-part0",
+    "zhejiang-242-57-part0",
+    "zhejiang-242-56-part0",
+    "zhejiang-236-58-part0",
+    "zhejiang-237-57-part0",
+    "zhejiang-236-57-part0",
+    "zhejiang-237-58-part0",
+    "zhejiang-237-59-part0",
+    "zhejiang-238-60-part0",
+    "zhejiang-236-56-part0",
+    "zhejiang-238-57-part0",
+    "zhejiang-238-58-part0",
+    "zhejiang-243-58-part0",
+    "zhejiang-241-56-part0",
+    "zhejiang-239-58-part0",
+    "zhejiang-236-59-part0",
+    "zhejiang-239-57-part0",
+    "zhejiang-239-56-part0",
+    "zhejiang-242-58-part0",
+    "zhejiang-243-59-part0",
+    "zhejiang-243-57-part0",
+    "zhejiang-236-60-part0",
+    "zhejiang-237-60-part0",
+    "zhejiang-236-61-part0",
+    "zhejiang-237-61-part0",
+    "zhejiang-238-56-part0",
+    "zhejiang-237-56-part0",
+    "zhejiang-240-56-part0",
+    "zhejiang-238-61-part0",
+    "zhejiang-241-57-part0",
+    "zhejiang-240-60-part0",
+    "zhejiang-243-56-part0",
+    "zhejiang-237-55-part0",
+    "zhejiang-241-55-part0",
+    "zhejiang-242-60-part0",
+    "zhejiang-238-55-part0",
+    "zhejiang-240-59-part0",
+    "zhejiang-235-58-part0",
+    "zhejiang-235-59-part0",
+    "zhejiang-235-57-part0",
+    "zhejiang-239-60-part0",
+    "zhejiang-240-55-part0",
+    "zhejiang-242-55-part0",
+    "zhejiang-241-60-part0",
+    "zhejiang-235-56-part0"
+  ],
+  "publicDirectoryBytes": 74512764,
+  "evidenceDirectoryBytes": 105492046,
+  "coverageFindings": [
+    "旧六区均未覆盖本次西部城市；空白不能通过继续提高zoom消除。",
+    "细节源minZoom最高为12，zoom14不存在进一步因minZoom被隐藏的水系记录。",
+    "OSM无名称地物仍保留几何；不应因标签缺失当作没有水。",
+    "查询范围只说明采集范围，不证明每处均有OSM细河。不能按query bbox整体删除粗河线。",
+    "建议仅按同河明确名称及已实际加载几何做局部替代；无匹配细线时保留概览参照。",
+    "沙漠、绿洲与高原的OSM调查密度不一，间歇河标签不代表唐代水量；走廊之间大片西部仍未采集。"
+  ],
+  "smallViewMethod": "在既有入口/官方点周围取经度±0.04、纬度±0.03的小视野检查真实线面交集；只是放大视野样本，不是城市界线或唐代水系范围。"
+}

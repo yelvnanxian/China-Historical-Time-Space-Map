@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-city-jinan",
+  "title": "OpenStreetMap 现代地理：齐州济南附近水系",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.private.coffee/api/interpreter",
+  "retrievedAt": "2026-09-25T03:45:18.592631+00:00",
+  "bounds": [
+    116.8,
+    36.47,
+    117.2,
+    36.87
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/city-jinan.json.gz",
+  "snapshotSha256": "3954d49ed16c060971012f4a1f6297d9e22f05e859c5d2b6161ff1e456d98512",
+  "uncompressedSnapshotSha256": "c638b5fc0f28716309e4c6b6d1f93e912a17f5e880a55b2c2e85a6d8d8e93e4c",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/city-jinan.ql",
+  "querySha256": "9ac50c38935c06b696ec195551fb7bceba9cdaaacce520fb0f423536a23221fe",
+  "osmBaseTimestamp": "2026-05-06T03:25:00Z",
+  "elementCount": 952,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+}

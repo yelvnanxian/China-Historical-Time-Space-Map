@@ -1,0 +1,25 @@
+{
+  "id": "osm-mountain-detail-tianshan-0",
+  "regionId": "tianshan",
+  "title": "OpenStreetMap 山地线与命名山峰：天山地区 / tianshan-0",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "bounds": [
+    79,
+    40.5,
+    83,
+    43.5
+  ],
+  "retrievedAt": "2026-09-25T03:44:30.457521+00:00",
+  "snapshotPath": "data/evidence/mountain-detail/osm/tianshan-0.json.gz",
+  "snapshotSha256": "025a6b428a477b11a5fc623279b36b9abbf04c5ca27be53b8c6d09d458e5f026",
+  "uncompressedSnapshotSha256": "c516a97068c9746e43db62e28f20f8a57ea904b76746ca8b366567122c5dbe41",
+  "queryPath": "data/evidence/mountain-detail/osm/tianshan-0.ql",
+  "querySha256": "b447cfe4601ee222d7130c222c53bc0161987b4016a272ff615115e2d6ea21d6",
+  "osmBaseTimestamp": "2026-07-24T11:04:51Z",
+  "elementCount": 5793,
+  "modernReferenceOnly": true,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是唐代复原。查询边框不是山脉范围。"
+}

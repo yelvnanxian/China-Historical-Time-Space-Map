@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-city-guangzhou",
+  "title": "OpenStreetMap 现代地理：广州与珠江附近水系",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.private.coffee/api/interpreter",
+  "retrievedAt": "2026-09-25T03:49:25.182593+00:00",
+  "bounds": [
+    113.07,
+    22.93,
+    113.47,
+    23.33
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/city-guangzhou.json.gz",
+  "snapshotSha256": "410cf082dcfc1b26f7be22bff6228d57d72b5b361ae3edaac66f4952f20500f9",
+  "uncompressedSnapshotSha256": "bb37124daf7e88000a25b2cebceab82eeb53193713e882a00b161e1ee6fb7d2b",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/city-guangzhou.ql",
+  "querySha256": "3ebab49ca2a1a8e5263fcdfa2ba2e87023c4549fda1537d2d4fe87eaca1968e8",
+  "osmBaseTimestamp": "2026-07-24T11:04:51Z",
+  "elementCount": 5292,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+}

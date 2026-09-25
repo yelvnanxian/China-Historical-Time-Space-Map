@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-west-qiuci",
+  "title": "OpenStreetMap 现代地理：龟兹与库车河绿洲",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "retrievedAt": "2026-09-25T03:34:23.211246+00:00",
+  "bounds": [
+    82.35,
+    41.3,
+    83.65,
+    42.25
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/west-qiuci.json.gz",
+  "snapshotSha256": "1b795ae64f2c54365dac9b0fd15e66724dcfc1e043bad9f1d46f7f30784ce7e4",
+  "uncompressedSnapshotSha256": "8bc011fba6fdf393888d9a3d2be852d10678feaa4bc303f707610475123e6fb7",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/west-qiuci.ql",
+  "querySha256": "6fed844be6c48a02482caeb403bb68fdd4db246eecda8b4a363b8b7974dda5bf",
+  "osmBaseTimestamp": "2026-05-06T03:25:00Z",
+  "elementCount": 166,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+}

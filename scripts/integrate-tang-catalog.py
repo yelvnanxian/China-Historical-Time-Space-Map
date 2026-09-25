@@ -52,7 +52,14 @@ if detail_manifest.exists():
     detail = json.loads(detail_manifest.read_text())
     catalog['metadata']['dataNotice'] += (
         f"唐755年另接入{detail['historical']['featureCount']}条CHGIS治所点，源定位冲突记录未入图；不表示全部已考定古城。"
-        f"六区域另有{sum(region['featureCount'] for region in detail['modernRegions'])}条现代OSM地物，随缩放加载。"
+        f"{len(detail['modernCoverageRegions'])}个采集区域另有{sum(region['featureCount'] for region in detail['modernRegions'])}条现代OSM地物，随缩放加载。"
+    )
+mountain_manifest = ROOT/'public/data/mountain-detail/manifest.json'
+if mountain_manifest.exists():
+    mountain = json.loads(mountain_manifest.read_text())
+    catalog['metadata']['dataNotice'] += (
+        f"另有{sum(mountain['countsByKind'].values())}条现代山脊、刃脊、陡崖和命名山峰记录，保留来源几何，不补画未收录山线。"
+        "唐代郡与州属于同一层级，已核对改名或隶属关系的治所可显示741年参考辖区，不代表755年精确界线。"
     )
 catalog['metadata']['geographicNotice'] = (
     "黄河中下游接入五期WorldMap图集河道，随朝代切换，唐代采用11—1048年资料；仅表示历史流向，不是逐年古河岸测绘。"

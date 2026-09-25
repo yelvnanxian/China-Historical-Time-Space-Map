@@ -3,7 +3,9 @@ import { Marker, type GeoJSONSource, type Map as MapInstance, type MapMouseEvent
 import type { FeatureCollection, MultiPolygon, Polygon } from "geojson";
 import type { BoundaryDataset, BoundaryLevel, BoundaryManifest, BoundarySelection } from "../../shared/boundaries";
 import { boundaryCountryCoverage, boundaryLevelNames } from "../../shared/boundaries";
-import { resolveMapDetailLevel, viewLevelForBoundarySelection, type MapViewLevel } from "../../shared/map-detail-levels";
+import { resolveMapDetailLevel } from "../../shared/map-detail-levels";
+import { findNaturalMapHit } from "../../shared/map-hit-test";
+import { resolveBoundarySelectionRequest, type BoundaryRequestState, type BoundarySelectionRequest } from "../../shared/boundary-selection";
 import BoundaryControls from "./BoundaryControls";
 import type { ModernCorrespondenceData } from "../../shared/modern-correspondence";
 import { getBoundaryDisplayLabel } from "../../shared/boundary-labels";
@@ -15,7 +17,7 @@ const empty: Regions = { type: "FeatureCollection", features: [] };
 const levels: BoundaryLevel[] = ["country", "province", "prefecture", "county"];
 const colors = { country: "#8a5742", province: "#83658d", prefecture: "#527767", county: "#a58957" };
 
-export default function HistoricalBoundaryLayer({ map, ready, periodId, currentYear, onStatusChange, onRegionFocus, modernNames, enabled = true, embedded = false, onSelection, resetKey, viewLevel: controlledViewLevel, onViewLevelChange, onOpenAtlas }: {
+export default function HistoricalBoundaryLayer({ map, ready, periodId, currentYear, onStatusChange, onRegionFocus, modernNames, enabled = true, embedded = false, onSelection, resetKey, onOpenAtlas, interactionMode = "all", selectionRequest, onRegionSelect }: {
   map: MapInstance | null;
   ready: boolean;
   periodId: string;
@@ -27,25 +29,26 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
   embedded?: boolean;
   onSelection?: () => void;
   resetKey?: string;
-  viewLevel?: MapViewLevel;
-  onViewLevelChange?: (level: MapViewLevel) => void;
   onOpenAtlas?: () => void;
+  interactionMode?: "cities" | "mountains" | "rivers" | "all";
+  selectionRequest?: BoundarySelectionRequest;
+  onRegionSelect?: (selection: BoundarySelection) => void;
 }) {
   const [manifest, setManifest] = useState<BoundaryManifest | null>(null);
   const [datasetId, setDatasetId] = useState("");
   const [regions, setRegions] = useState<Regions>(empty);
-  const [localViewLevel, setLocalViewLevel] = useState<MapViewLevel>("auto");
-  const viewLevel = controlledViewLevel ?? localViewLevel;
+  const [loadedDatasetId, setLoadedDatasetId] = useState<string>();
   const [zoom, setZoom] = useState(map?.getZoom() ?? 3);
-  const changeViewLevel = useCallback((level: MapViewLevel) => {
-    setLocalViewLevel(level);
-    onViewLevelChange?.(level);
-  }, [onViewLevelChange]);
+  const interactive = interactionMode === "cities" || interactionMode === "all";
   const [selection, setSelection] = useState<BoundarySelection | null>(null);
   const selectionCallback = useRef(onSelection);
   selectionCallback.current = onSelection;
+  const regionCallback = useRef(onRegionSelect); regionCallback.current = onRegionSelect;
+  const focusCallback = useRef(onRegionFocus); focusCallback.current = onRegionFocus;
+  const requestState = useRef<BoundaryRequestState | undefined>(undefined);
   const focusedLabelId = useRef<string | undefined>(undefined);
   useEffect(() => { setSelection(null); }, [resetKey]);
+  useEffect(() => { if (!enabled || !interactive) setSelection(null); }, [enabled, interactive]);
   const [loading, setLoading] = useState(false);
   const [dataError, setDataError] = useState("");
   const [manifestError, setManifestError] = useState("");
@@ -56,7 +59,7 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
   const dataset: BoundaryDataset | undefined = datasets.find(item => item.id === datasetId)
     ?? [...datasets].sort((a, b) => Math.abs(a.year - currentYear) - Math.abs(b.year - currentYear))[0];
   const availableLevels = useMemo(() => levels.filter(level => dataset?.layers.some(layer => layer.level === level && layer.featureCount > 0)), [dataset]);
-  const detail = useMemo(() => resolveMapDetailLevel(viewLevel, zoom, availableLevels, { primaryCountryCoverage: !boundaryCountryCoverage(dataset).incomplete }), [viewLevel, zoom, availableLevels, dataset]);
+  const detail = useMemo(() => resolveMapDetailLevel("auto", zoom, availableLevels, { primaryCountryCoverage: !boundaryCountryCoverage(dataset).incomplete }), [zoom, availableLevels, dataset]);
   const visibleLevelKey = detail.visibleLevels.join("|");
   const visibleLevels = useMemo(() => visibleLevelKey ? visibleLevelKey.split("|") as BoundaryLevel[] : [], [visibleLevelKey]);
 
@@ -105,6 +108,7 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
 
   useEffect(() => {
     setRegions(empty);
+    setLoadedDatasetId(undefined);
     setSelection(null);
     setDataError("");
     if (!dataset) { setLoading(false); return; }
@@ -117,7 +121,10 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
       if (data.type !== "FeatureCollection" || !Array.isArray(data.features)) throw new Error("边界文件格式错误");
       return data.features;
     })).then(batches => {
-      if (!abort.signal.aborted) setRegions({ type: "FeatureCollection", features: batches.flat() });
+      if (!abort.signal.aborted) {
+        setRegions({ type: "FeatureCollection", features: batches.flat() });
+        setLoadedDatasetId(dataset.id);
+      }
     }).catch(error => {
       if (error.name !== "AbortError") setDataError(error.message);
     }).finally(() => { if (!abort.signal.aborted) setLoading(false); });
@@ -161,9 +168,8 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
     for (const level of levels) for (const kind of ["fill", "line"]) {
       map.setLayoutProperty(`boundary-${level}-${kind}`, "visibility", enabled && visibleLevels.includes(level) ? "visible" : "none");
     }
-    setSelection(current => current && (!enabled || !visibleLevels.includes(current.level)) ? null : current);
-    for (const kind of ["fill", "line"]) map.setLayoutProperty(`boundary-selected-${kind}`, "visibility", enabled && selection && visibleLevels.includes(selection.level) ? "visible" : "none");
-  }, [map, ready, visibleLevels, enabled, selection]);
+    for (const kind of ["fill", "line"]) map.setLayoutProperty(`boundary-selected-${kind}`, "visibility", enabled && interactive && selection ? "visible" : "none");
+  }, [map, ready, visibleLevels, enabled, interactive, selection]);
 
   useEffect(() => {
     if (!ready || !map?.getSource("historical-boundaries")) return;
@@ -171,11 +177,13 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
   }, [map, ready, selection]);
 
   useEffect(() => {
-    if (!map || !ready || !enabled) return;
+    if (!map || !ready || !enabled || !interactive) return;
     const click = (event: MapMouseEvent) => {
-      // Named DOM targets own their selection; administrative surfaces remain
-      // selectable above water in the combined display mode.
+      // A named button or the highest-priority specific feature owns this click,
+      // regardless of which map listener was registered first.
+      if (event.originalEvent.defaultPrevented) return;
       if ((event.originalEvent.target as HTMLElement)?.closest?.(".nature-label,.place-marker,.geography-reference-marker,.boundary-region-label,.tang-detail-label,.historical-river-label")) return;
+      if (findNaturalMapHit(map, event.point, interactionMode)) return;
       const orderedLevels = [detail.activeLevel, ...visibleLevels].filter((level, index, array): level is BoundaryLevel => level !== null && array.indexOf(level) === index);
       const layers = orderedLevels.map(level => `boundary-${level}-fill`);
       if (!layers.length) return;
@@ -184,14 +192,14 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
       const props = feature?.properties;
       const original = displayRegions.features.find(item => item.properties.id === props?.id)?.properties;
       setSelection(original ?? null);
-      if (original) selectionCallback.current?.();
+      if (original) { selectionCallback.current?.(); regionCallback.current?.(original); }
     };
     map.on("click", click);
     return () => { map.off("click", click); };
-  }, [map, ready, visibleLevels, detail.activeLevel, displayRegions, enabled]);
+  }, [map, ready, visibleLevels, detail.activeLevel, displayRegions, enabled, interactive, interactionMode]);
 
   useEffect(() => {
-    if (!map || !ready || !enabled) return;
+    if (!map || !ready || !enabled || !interactive) return;
     let markers: Marker[] = [];
     let frame: number | undefined;
     const renderLabels = () => {
@@ -227,6 +235,7 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
           event.stopPropagation();
           setSelection(p);
           selectionCallback.current?.();
+          regionCallback.current?.(p);
         });
         markers.push(new Marker({ element }).setLngLat(p.labelCoordinates!).addTo(map));
         if (p.id === focusedId) element.focus({ preventScroll: true });
@@ -242,20 +251,33 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
       if (frame !== undefined) cancelAnimationFrame(frame);
       markers.forEach(marker => marker.remove());
     };
-  }, [map, ready, displayRegions, visibleLevels, modernNames, enabled, selection?.id]);
+  }, [map, ready, displayRegions, visibleLevels, modernNames, enabled, interactive, selection?.id]);
 
   const regionOptions = useMemo(() => displayRegions.features.map(feature => feature.properties), [displayRegions]);
-  function focusRegion(id: string) {
+  const focusRegion = useCallback((id: string, options: { focus?: boolean; quiet?: boolean } = {}) => {
     const feature = displayRegions.features.find(item => item.properties.id === id);
-    if (!feature || !map || !enabled) return;
-    changeViewLevel(viewLevelForBoundarySelection(feature.properties.level));
+    if (!feature || !map || !ready || !enabled || !interactive || loadedDatasetId !== dataset?.id) return false;
     setSelection(feature.properties);
-    onSelection?.();
-    const coordinates = feature.geometry.type === "Polygon" ? feature.geometry.coordinates.flat() : feature.geometry.coordinates.flat(2);
-    onRegionFocus(coordinates.map(point => [point[0], point[1]]));
-  }
+    if (!options.quiet) { selectionCallback.current?.(); regionCallback.current?.(feature.properties); }
+    if (options.focus !== false) {
+      const coordinates = feature.geometry.type === "Polygon" ? feature.geometry.coordinates.flat() : feature.geometry.coordinates.flat(2);
+      focusCallback.current(coordinates.map(point => [point[0], point[1]]));
+    }
+    return true;
+  }, [displayRegions, map, ready, enabled, interactive, loadedDatasetId, dataset?.id]);
+  useEffect(() => {
+    const result = resolveBoundarySelectionRequest(requestState.current, {
+      request: selectionRequest, resetKey, datasetId: dataset?.id,
+      dataReady: !!map && ready && !!dataset && loadedDatasetId === dataset.id,
+      interactive: enabled && interactive,
+      targetExists: !!selectionRequest && displayRegions.features.some(feature => feature.properties.id === selectionRequest.id),
+    });
+    requestState.current = result.state;
+    if (result.clearSelection) setSelection(null);
+    if (result.apply) focusRegion(result.apply.id, result.apply);
+  }, [selectionRequest, resetKey, dataset?.id, loadedDatasetId, map, ready, enabled, interactive, displayRegions, focusRegion]);
   return <BoundaryControls embedded={embedded} enabled={enabled} datasets={datasets} selectedDataset={dataset} onDatasetChange={setDatasetId}
-    visibleLevels={visibleLevels} viewLevel={viewLevel} onViewLevelChange={changeViewLevel} activeLevel={detail.activeLevel} zoom={zoom} onOpenAtlas={onOpenAtlas}
+    visibleLevels={visibleLevels} interactive={interactive} activeLevel={detail.activeLevel} zoom={zoom} onOpenAtlas={onOpenAtlas}
     selection={selection} onSelectionClose={() => setSelection(null)} currentYear={currentYear} loading={loading || !manifest && !error} error={error}
     regionOptions={regionOptions} onRegionSelect={focusRegion} correspondenceSources={correspondences?.sources ?? []} correspondenceError={correspondenceError} />;
 }

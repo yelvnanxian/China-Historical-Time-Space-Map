@@ -1,0 +1,25 @@
+{
+  "id": "osm-mountain-detail-taihang-1",
+  "regionId": "taihang",
+  "title": "OpenStreetMap 山地线与命名山峰：太行山地区 / taihang-1",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "bounds": [
+    111,
+    37.5,
+    115,
+    40.5
+  ],
+  "retrievedAt": "2026-09-25T03:32:18.095390+00:00",
+  "snapshotPath": "data/evidence/mountain-detail/osm/taihang-1.json.gz",
+  "snapshotSha256": "017568dc9f8468d78e226e49a8524b67c379adef1c6d93f404daeac46b7a8e66",
+  "uncompressedSnapshotSha256": "6805089e8961f433facd71bcb637d2cda28dd3beff41ff97c9ee5f67a8745519",
+  "queryPath": "data/evidence/mountain-detail/osm/taihang-1.ql",
+  "querySha256": "150c1eb477367fe4dd1ba1fd84ead4828028b244bbc870bb81543e854af131d0",
+  "osmBaseTimestamp": "2026-05-06T03:25:00Z",
+  "elementCount": 564,
+  "modernReferenceOnly": true,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是唐代复原。查询边框不是山脉范围。"
+}

@@ -16,4 +16,9 @@
 .nature-detail-body pre { max-height: 180px; overflow: auto; white-space: pre-wrap; font: 10px/1.8 monospace; color: #819075; }
 .map-detail-status { position: absolute; left: 14px; top: 12px; z-index: 5; padding: 7px 10px; border: 1px solid #d5dac8; border-radius: 5px; font-size: 10px; line-height: 1.6; background: #fbfaeef0; color: #607452; text-align: left; box-shadow: 0 2px 8px #33452c0a; }
 .map-detail-status small { display: block; color: #8b927e; font-size: 9px; }
+.map-mode-caption { font-size: 10px; color: #8c977f; padding: 0 7px; white-space: nowrap; }
+.marker-label[hidden] { display: none !important; }
+.tang-jurisdiction-info { padding: 11px 12px; margin: 12px 0; border: 1px solid #d8dfcb; border-radius: 6px; background: #f5f6ec; }
+.tang-jurisdiction-info strong { font-size: 12px; font-weight: 500; color: #62774e; }
+.tang-jurisdiction-info p { font-size: 11px; line-height: 1.8; color: #839075; margin: 8px 0; }
 @media (max-width: 720px) { .map-detail-status { top: 8px; left: 10px; max-width: calc(100% - 70px); font-size: 10px; } .detail-region-shortcuts button { min-height: 38px; } }

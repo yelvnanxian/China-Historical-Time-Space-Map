@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-west-lanzhou",
+  "title": "OpenStreetMap 现代地理：兰州黄河走廊",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "retrievedAt": "2026-09-25T03:30:58.991891+00:00",
+  "bounds": [
+    103.25,
+    35.8,
+    104.55,
+    36.55
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/west-lanzhou.json.gz",
+  "snapshotSha256": "2cae484196a279e26b519da6d16cb3ddd87b88f2062d91dd956701e3f035554b",
+  "uncompressedSnapshotSha256": "befa3440b95c42457c4f24c98067e93226ba7ba5f696b188059cb31d68cc2362",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/west-lanzhou.ql",
+  "querySha256": "9fbb5833b5bea69c99dd315b2af900ae2ca6d9db002a38e2662b648d578b65cb",
+  "osmBaseTimestamp": "2026-05-06T03:25:00Z",
+  "elementCount": 1527,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+}

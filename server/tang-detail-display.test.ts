@@ -2,10 +2,10 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { test } from "node:test";
 import { gunzipSync } from "node:zlib";
-import { boundsOverlap, isModernYellowRiver, replaceModernYellowGeometry, showTangDetail } from "../shared/tang-detail-display";
+import { boundsOverlap, canSelectTangDetail, isModernYellowRiver, replaceModernYellowGeometry, showTangDetail, waterDetailReplacements, waterDisplayClass } from "../shared/tang-detail-display";
 import type { TangDetailCollection, TangDetailManifest, TangDetailProperties } from "../shared/tang-detail";
-import type { MapViewLevel } from "../shared/map-detail-levels";
 import { lineOutsideBounds, lowerYellowRiverMask } from "../shared/historical-rivers";
+import type { PhysicalGroup } from "../shared/physical-geography";
 
 const root = new URL("../public", import.meta.url);
 function readCollection(url: string): TangDetailCollection {
@@ -22,40 +22,40 @@ test("唐代府州与县治依真实资料的不同阈值出现，放大不会�
   const county = historical.features.find(feature => feature.properties.level === "county")!.properties;
   assert.equal(prefecture.minZoom, 6);
   assert.equal(county.minZoom, 7.2);
-  assert.equal(showTangDetail(prefecture, 5.99, "both", "auto"), false);
-  assert.equal(showTangDetail(prefecture, 6, "both", "auto"), true);
-  assert.equal(showTangDetail(county, 6.6, "both", "auto"), false);
-  assert.equal(showTangDetail(county, 7.19, "both", "auto"), false);
-  assert.equal(showTangDetail(county, 7.2, "both", "auto"), true);
+  assert.equal(showTangDetail(prefecture, 5.99, "all"), false);
+  assert.equal(showTangDetail(prefecture, 6, "all"), true);
+  assert.equal(showTangDetail(county, 6.6, "all"), false);
+  assert.equal(showTangDetail(county, 7.19, "all"), false);
+  assert.equal(showTangDetail(county, 7.2, "all"), true);
   for (const feature of historical.features) {
     const p = feature.properties;
-    assert.equal(showTangDetail(p, p.minZoom - .01, "cities", "cities"), false, p.id);
-    assert.equal(showTangDetail(p, p.minZoom, "cities", "cities"), true, p.id);
-    assert.equal(showTangDetail(p, 14, "nature", "auto"), false, p.id);
+    assert.equal(showTangDetail(p, p.minZoom - .01, "cities"), false, p.id);
+    assert.equal(showTangDetail(p, p.minZoom, "cities"), true, p.id);
+    assert.equal(showTangDetail(p, 14, "rivers"), true, p.id);
+    assert.equal(canSelectTangDetail(p, "rivers"), false, p.id);
   }
 });
 
-test("国家、省道、府州手动预设保持纯行政范围；县域与城池预设允许历史治所", () => {
+test("图形始终随缩放显示，交互模式只控制哪类细节可点选", () => {
   const p = historical.features.find(feature => feature.properties.level === "county")!.properties;
-  for (const mode of ["both", "cities"] as const) {
-    for (const level of ["country", "province", "prefecture"] as const) assert.equal(showTangDetail(p, 12, mode, level), false);
-    for (const level of ["auto", "county", "cities"] as const) assert.equal(showTangDetail(p, 12, mode, level), true);
+  for (const mode of ["all", "cities", "mountains", "rivers"] as const) {
+    assert.equal(showTangDetail(p, 5.3, mode), false);
+    assert.equal(showTangDetail(p, 12, mode), true);
+    assert.equal(canSelectTangDetail(p, mode), mode === "all" || mode === "cities");
   }
 });
 
-test("现代河湖在自然模式和同时显示模式遵守各自缩放阈值，在城市模式完全隐藏", () => {
-  const levels: MapViewLevel[] = ["auto", "country", "province", "prefecture", "county", "cities"];
+test("现代河湖在所有模式保留背景，遵守缩放阈值，并限制河流模式的点选对象", () => {
   assert.ok(modern.some(feature => feature.properties.minZoom === 8));
   assert.ok(modern.some(feature => feature.properties.minZoom === 10));
   for (const feature of modern) {
     const p = feature.properties;
     assert.equal(p.modernReferenceOnly, true);
     assert.notEqual(p.kind, "settlement");
-    for (const level of levels) {
-      assert.equal(showTangDetail(p, 14, "cities", level), false, p.id);
-      assert.equal(showTangDetail(p, p.minZoom - .01, "nature", level), false, p.id);
-      assert.equal(showTangDetail(p, p.minZoom, "nature", level), true, p.id);
-      assert.equal(showTangDetail(p, p.minZoom, "both", level), true, p.id);
+    for (const mode of ["all", "cities", "mountains", "rivers"] as const) {
+      assert.equal(showTangDetail(p, p.minZoom - .01, mode), false, p.id);
+      assert.equal(showTangDetail(p, p.minZoom, mode), true, p.id);
+      assert.equal(canSelectTangDetail(p, mode), mode === "all" || (p.kind === "peak" || p.kind === "saddle" ? mode === "mountains" : mode === "rivers"), p.id);
     }
   }
 });
@@ -116,4 +116,31 @@ test("历史河道替换对渲染与搜索共用规则：移除有证据的下�
   assert.equal(replaceModernYellowGeometry(river, false, ids), river);
   const withoutEvidence = replaceModernYellowGeometry(unnamedWater, true, new Set());
   assert.equal(withoutEvidence, unnamedWater, "无关联证据时不可根据范围猜删无名水面");
+});
+
+test("没有同名细河时不得按采集范围清空概览河流，地下水渠也不能替代地表线", () => {
+  const rivers = readCollection(manifest.modernRegions.find(region => region.id === "guanzhong-overview-part0")!.url).features;
+  const bahe = rivers.find(feature => feature.properties.name === "灞河" && feature.properties.kind === "river")!;
+  assert.ok(bahe);
+  const group = { groupId: "test-bahe", name: "灞河", aliases: ["Ba"], kind: "river", bounds: bahe.properties.bounds } as PhysicalGroup;
+  assert.deepEqual(waterDetailReplacements([], [group]), []);
+  assert.deepEqual(waterDetailReplacements([bahe], [{ ...group, name: "另一条河" }]), []);
+  assert.deepEqual(waterDetailReplacements([bahe], [{ ...group, bounds: [80, 20, 81, 21] }]), []);
+  assert.deepEqual(waterDetailReplacements([bahe], [group]), [{ groupId: group.groupId, bounds: bahe.properties.bounds }]);
+  const underground = { ...bahe, properties: { ...bahe.properties, tags: { canal: "qanat", location: "underground" } } };
+  assert.equal(waterDisplayClass(underground.properties), "underground");
+  assert.deepEqual(waterDetailReplacements([underground], [group]), []);
+  assert.equal(waterDisplayClass({ ...bahe.properties, tags: { intermittent: "yes" } }), "seasonal");
+});
+
+
+test("水道源标签区分涵洞覆盖与间歇水面，异常 tunnel 值不被猜作地下", () => {
+  const water = {kind: "water", tags: {}} as TangDetailProperties;
+  for (const tunnel of ["yes", "culvert", "flooded", "building_passage", "covered", "pipe", "passage"]) {
+    assert.equal(waterDisplayClass({...water, tags: {tunnel}}), "underground");
+  }
+  assert.equal(waterDisplayClass({...water, tags: {covered: "yes", bridge: "aqueduct", layer: "1"}}), "underground");
+  assert.equal(waterDisplayClass({...water, tags: {intermittent: "dry"}}), "seasonal");
+  assert.equal(waterDisplayClass({...water, tags: {intermittent: "no", seasonal: "no"}}), "surface");
+  assert.equal(waterDisplayClass({...water, tags: {tunnel: "-1"}}), "surface");
 });

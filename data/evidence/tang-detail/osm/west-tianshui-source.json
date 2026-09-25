@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-west-tianshui",
+  "title": "OpenStreetMap 现代地理：天水与渭河上游",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "retrievedAt": "2026-09-25T03:31:21.722489+00:00",
+  "bounds": [
+    105.05,
+    34.05,
+    106.35,
+    34.85
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/west-tianshui.json.gz",
+  "snapshotSha256": "7e2d3ec56e363a014521572ad7361143807a2265a7e302df9e68929c97e04fb2",
+  "uncompressedSnapshotSha256": "bce70bee777d27ee4919746ade84801abd71104f8dc4d91638aca99c9dc7576b",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/west-tianshui.ql",
+  "querySha256": "94e12d1a5e63c855fde6d96f19917c7d296e67166aa17cf1654f735d3fc68e69",
+  "osmBaseTimestamp": "2026-07-24T11:04:51Z",
+  "elementCount": 1149,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+}

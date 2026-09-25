@@ -1,0 +1,25 @@
+{
+  "id": "osm-mountain-detail-qilian-5",
+  "regionId": "qilian",
+  "title": "OpenStreetMap 山地线与命名山峰：祁连山地区 / qilian-5",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "bounds": [
+    102,
+    39,
+    103,
+    40.5
+  ],
+  "retrievedAt": "2026-09-25T03:35:08.478532+00:00",
+  "snapshotPath": "data/evidence/mountain-detail/osm/qilian-5.json.gz",
+  "snapshotSha256": "dc2a2873469f6d3eec3081a6e01153627c35b62b04f6f1359fc4bfeb5d3b29e7",
+  "uncompressedSnapshotSha256": "74cdd15fdf37769626abd9c514d6c2decdf9fc0dba4bdc42b424a4c98a2d5be3",
+  "queryPath": "data/evidence/mountain-detail/osm/qilian-5.ql",
+  "querySha256": "65c111e6b19949318585f7efae73534bc83618bb2b8ce55a8d897fc1f1fdf802",
+  "osmBaseTimestamp": "2026-07-28T02:16:18Z",
+  "elementCount": 1,
+  "modernReferenceOnly": true,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是唐代复原。查询边框不是山脉范围。"
+}

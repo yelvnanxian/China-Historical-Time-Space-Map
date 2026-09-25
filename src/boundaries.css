@@ -156,14 +156,6 @@
   font-size: 11px;
   color: #788f65;
 }
-.boundary-view-presets { padding: 0; margin: 0 0 10px; min-width: 0; border: 0; }
-.boundary-view-presets legend { margin-bottom: 9px; color: #617b50; font-size: 12px; }
-.boundary-view-presets > div { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
-.boundary-view-presets label { display: flex; gap: 6px; align-items: center; min-height: 42px; padding: 7px 6px; border: 1px solid #dce4d2; border-radius: 5px; background: #f4f7ed; font-size: 10px; cursor: pointer; line-height: 1.5; }
-.boundary-view-presets label.is-selected { border-color: #8eab73; background: #e5efda; color: #425e36; }
-.boundary-view-presets input { flex-shrink: 0; width: 13px; height: 13px; margin: 0; accent-color: #627e4a; }
-.boundary-view-presets label:has(input:focus-visible) { outline: 2px solid #7c472e; outline-offset: 2px; }
-.boundary-view-presets:disabled { opacity: .55; }
 .boundary-effective-level, .boundary-scale-guide { font-size: 10px; color: #6f8160; line-height: 1.8; margin: 8px 0 12px; }
 .boundary-scale-guide { color: #8c997c; }
 .boundary-country-notice { margin: 10px 0 15px; padding: 9px; border: 1px solid #ded7c2; border-radius: 5px; background: #f6f1e5; }

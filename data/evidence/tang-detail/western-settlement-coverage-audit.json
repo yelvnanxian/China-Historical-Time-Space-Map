@@ -1,0 +1,695 @@
+{
+  "year": 755,
+  "officialSourceDatasets": [
+    "https://doi.org/10.7910/DVN/Q9VOF5",
+    "https://doi.org/10.7910/DVN/WW1PD6"
+  ],
+  "officialPointMinimumLongitude": 94.52451635114427,
+  "regions": [
+    {
+      "regionId": "west-chengdu",
+      "name": "成都—都江堰与岷沱水系",
+      "bounds": [
+        103.45,
+        30.15,
+        104.9,
+        31.25
+      ],
+      "official755RawPointCount": 37,
+      "displayedOfficial755PointCount": 35,
+      "displayedHistoricalPoints": [
+        {
+          "id": "chgis-county-44394",
+          "name": "成都县",
+          "coordinates": [
+            104.075401,
+            30.666059
+          ]
+        },
+        {
+          "id": "chgis-county-44397",
+          "name": "蜀县",
+          "coordinates": [
+            104.075401,
+            30.666059
+          ]
+        },
+        {
+          "id": "chgis-county-44398",
+          "name": "郫县",
+          "coordinates": [
+            103.88877,
+            30.80707
+          ]
+        },
+        {
+          "id": "chgis-county-44403",
+          "name": "广都县",
+          "coordinates": [
+            103.97661,
+            30.55265
+          ]
+        },
+        {
+          "id": "chgis-county-44404",
+          "name": "双流县",
+          "coordinates": [
+            103.919159,
+            30.576275
+          ]
+        },
+        {
+          "id": "chgis-county-44413",
+          "name": "晋原县",
+          "coordinates": [
+            103.671577,
+            30.629787
+          ]
+        },
+        {
+          "id": "chgis-county-44415",
+          "name": "新津县",
+          "coordinates": [
+            103.81094,
+            30.42354
+          ]
+        },
+        {
+          "id": "chgis-county-44418",
+          "name": "新都县",
+          "coordinates": [
+            104.158356,
+            30.828897
+          ]
+        },
+        {
+          "id": "chgis-county-44424",
+          "name": "什邡县",
+          "coordinates": [
+            104.17404,
+            31.13427
+          ]
+        },
+        {
+          "id": "chgis-county-44430",
+          "name": "雒县",
+          "coordinates": [
+            104.28035,
+            30.982096
+          ]
+        },
+        {
+          "id": "chgis-county-44433",
+          "name": "蒙阳县",
+          "coordinates": [
+            104.11392,
+            30.95826
+          ]
+        },
+        {
+          "id": "chgis-county-44435",
+          "name": "灵池县",
+          "coordinates": [
+            104.27823,
+            30.56861
+          ]
+        },
+        {
+          "id": "chgis-county-44437",
+          "name": "犀浦县",
+          "coordinates": [
+            103.95895,
+            30.75508
+          ]
+        },
+        {
+          "id": "chgis-county-44440",
+          "name": "九陇县",
+          "coordinates": [
+            103.941544,
+            30.987366
+          ]
+        },
+        {
+          "id": "chgis-county-44447",
+          "name": "临邛县",
+          "coordinates": [
+            103.455681,
+            30.41287
+          ]
+        },
+        {
+          "id": "chgis-county-44450",
+          "name": "新繁县",
+          "coordinates": [
+            104.01598,
+            30.87656
+          ]
+        },
+        {
+          "id": "chgis-county-44452",
+          "name": "金堂县",
+          "coordinates": [
+            104.43456,
+            30.85792
+          ]
+        },
+        {
+          "id": "chgis-county-44457",
+          "name": "温江县",
+          "coordinates": [
+            103.8306,
+            30.70227
+          ]
+        },
+        {
+          "id": "chgis-county-44467",
+          "name": "导江县",
+          "coordinates": [
+            103.71374,
+            31.00265
+          ]
+        },
+        {
+          "id": "chgis-county-44471",
+          "name": "阳安县",
+          "coordinates": [
+            104.563743,
+            30.393839
+          ]
+        },
+        {
+          "id": "chgis-county-44476",
+          "name": "平泉县",
+          "coordinates": [
+            104.645,
+            30.35114
+          ]
+        },
+        {
+          "id": "chgis-county-96291",
+          "name": "玄武县",
+          "coordinates": [
+            104.673843,
+            31.04059
+          ]
+        },
+        {
+          "id": "chgis-county-96415",
+          "name": "籍县",
+          "coordinates": [
+            104.020691,
+            30.309887
+          ]
+        },
+        {
+          "id": "chgis-county-96185",
+          "name": "彭山县",
+          "coordinates": [
+            103.874725,
+            30.197226
+          ]
+        },
+        {
+          "id": "chgis-county-96146",
+          "name": "德阳县",
+          "coordinates": [
+            104.388229,
+            31.139204
+          ]
+        },
+        {
+          "id": "chgis-county-200264",
+          "name": "依政县",
+          "coordinates": [
+            103.68991,
+            30.32437
+          ]
+        },
+        {
+          "id": "chgis-county-200265",
+          "name": "大邑县",
+          "coordinates": [
+            103.519524,
+            30.589191
+          ]
+        },
+        {
+          "id": "chgis-county-96159",
+          "name": "安仁县",
+          "coordinates": [
+            103.616226,
+            30.51186
+          ]
+        },
+        {
+          "id": "chgis-county-96160",
+          "name": "临溪县",
+          "coordinates": [
+            103.506126,
+            30.305233
+          ]
+        },
+        {
+          "id": "chgis-county-96162",
+          "name": "蒲江县",
+          "coordinates": [
+            103.506302,
+            30.201778
+          ]
+        },
+        {
+          "id": "chgis-prefecture-211056",
+          "name": "蜀郡",
+          "coordinates": [
+            104.075401,
+            30.666059
+          ]
+        },
+        {
+          "id": "chgis-prefecture-212254",
+          "name": "唐安郡",
+          "coordinates": [
+            103.671577,
+            30.629787
+          ]
+        },
+        {
+          "id": "chgis-prefecture-211085",
+          "name": "阳安郡",
+          "coordinates": [
+            104.563743,
+            30.393839
+          ]
+        },
+        {
+          "id": "chgis-prefecture-211100",
+          "name": "蒙阳郡",
+          "coordinates": [
+            103.918736,
+            30.995497
+          ]
+        },
+        {
+          "id": "chgis-prefecture-211157",
+          "name": "临邛郡",
+          "coordinates": [
+            103.455681,
+            30.41287
+          ]
+        }
+      ],
+      "existingTangEntrances": [
+        {
+          "id": "chengdu",
+          "name": "成都",
+          "coordinates": [
+            104.07,
+            30.67
+          ]
+        },
+        {
+          "id": "hanzhou",
+          "name": "汉州",
+          "coordinates": [
+            104.25,
+            30.99
+          ]
+        }
+      ]
+    },
+    {
+      "regionId": "west-lanzhou",
+      "name": "兰州黄河走廊",
+      "bounds": [
+        103.25,
+        35.8,
+        104.55,
+        36.55
+      ],
+      "official755RawPointCount": 2,
+      "displayedOfficial755PointCount": 2,
+      "displayedHistoricalPoints": [
+        {
+          "id": "chgis-county-70092",
+          "name": "五泉县",
+          "coordinates": [
+            103.84714,
+            36.04703
+          ]
+        },
+        {
+          "id": "chgis-prefecture-211495",
+          "name": "金城郡",
+          "coordinates": [
+            103.84714,
+            36.04703
+          ]
+        }
+      ],
+      "existingTangEntrances": []
+    },
+    {
+      "regionId": "west-tianshui",
+      "name": "天水与渭河上游",
+      "bounds": [
+        105.05,
+        34.05,
+        106.35,
+        34.85
+      ],
+      "official755RawPointCount": 3,
+      "displayedOfficial755PointCount": 3,
+      "displayedHistoricalPoints": [
+        {
+          "id": "chgis-county-70045",
+          "name": "伏羌县",
+          "coordinates": [
+            105.5006,
+            34.59457
+          ]
+        },
+        {
+          "id": "chgis-county-70055",
+          "name": "长道县",
+          "coordinates": [
+            105.26213,
+            34.0642
+          ]
+        },
+        {
+          "id": "chgis-prefecture-211598",
+          "name": "天水郡",
+          "coordinates": [
+            105.719887,
+            34.581219
+          ]
+        }
+      ],
+      "existingTangEntrances": []
+    },
+    {
+      "regionId": "west-wuwei",
+      "name": "武威与石羊河绿洲",
+      "bounds": [
+        102.3,
+        37.5,
+        103.15,
+        38.35
+      ],
+      "official755RawPointCount": 1,
+      "displayedOfficial755PointCount": 1,
+      "displayedHistoricalPoints": [
+        {
+          "id": "chgis-prefecture-211574",
+          "name": "武威郡",
+          "coordinates": [
+            102.632347,
+            37.926701
+          ]
+        }
+      ],
+      "existingTangEntrances": [
+        {
+          "id": "liangzhou-wuwei",
+          "name": "凉州",
+          "coordinates": [
+            102.63,
+            37.93
+          ]
+        }
+      ]
+    },
+    {
+      "regionId": "west-zhangye",
+      "name": "张掖与黑河绿洲",
+      "bounds": [
+        100.05,
+        38.4,
+        100.95,
+        39.15
+      ],
+      "official755RawPointCount": 2,
+      "displayedOfficial755PointCount": 1,
+      "displayedHistoricalPoints": [
+        {
+          "id": "chgis-county-70492",
+          "name": "张掖县",
+          "coordinates": [
+            100.40263,
+            38.96341
+          ]
+        }
+      ],
+      "existingTangEntrances": [
+        {
+          "id": "ganzhou-zhangye",
+          "name": "甘州",
+          "coordinates": [
+            100.45,
+            38.93
+          ]
+        }
+      ]
+    },
+    {
+      "regionId": "west-jiuquan",
+      "name": "酒泉与讨赖河绿洲",
+      "bounds": [
+        98.05,
+        39.25,
+        99,
+        40.05
+      ],
+      "official755RawPointCount": 1,
+      "displayedOfficial755PointCount": 1,
+      "displayedHistoricalPoints": [
+        {
+          "id": "chgis-prefecture-211889",
+          "name": "酒泉郡",
+          "coordinates": [
+            98.510736,
+            39.74361
+          ]
+        }
+      ],
+      "existingTangEntrances": [
+        {
+          "id": "suzhou-jiuquan",
+          "name": "肃州",
+          "coordinates": [
+            98.52,
+            39.74
+          ]
+        }
+      ]
+    },
+    {
+      "regionId": "west-dunhuang",
+      "name": "敦煌与党河绿洲",
+      "bounds": [
+        94.25,
+        39.55,
+        95.1,
+        40.5
+      ],
+      "official755RawPointCount": 2,
+      "displayedOfficial755PointCount": 2,
+      "displayedHistoricalPoints": [
+        {
+          "id": "chgis-county-70444",
+          "name": "敦煌县",
+          "coordinates": [
+            94.620117,
+            40.139111
+          ]
+        },
+        {
+          "id": "chgis-prefecture-211898",
+          "name": "晋昌郡",
+          "coordinates": [
+            94.524516,
+            40.052291
+          ]
+        }
+      ],
+      "existingTangEntrances": [
+        {
+          "id": "dunhuang",
+          "name": "敦煌",
+          "coordinates": [
+            94.66,
+            40.14
+          ]
+        }
+      ]
+    },
+    {
+      "regionId": "west-qiuci",
+      "name": "龟兹与库车河绿洲",
+      "bounds": [
+        82.35,
+        41.3,
+        83.65,
+        42.25
+      ],
+      "official755RawPointCount": 0,
+      "displayedOfficial755PointCount": 0,
+      "displayedHistoricalPoints": [],
+      "existingTangEntrances": [
+        {
+          "id": "qiuci",
+          "name": "龟兹",
+          "coordinates": [
+            82.93,
+            41.71
+          ]
+        }
+      ]
+    },
+    {
+      "regionId": "west-yanqi",
+      "name": "焉耆—博斯腾湖西岸",
+      "bounds": [
+        86,
+        41.55,
+        87.05,
+        42.45
+      ],
+      "official755RawPointCount": 0,
+      "displayedOfficial755PointCount": 0,
+      "displayedHistoricalPoints": [],
+      "existingTangEntrances": [
+        {
+          "id": "yanqi",
+          "name": "焉耆",
+          "coordinates": [
+            86.57,
+            42.06
+          ]
+        }
+      ]
+    },
+    {
+      "regionId": "west-hami",
+      "name": "伊吾与哈密绿洲",
+      "bounds": [
+        92.9,
+        42.4,
+        93.95,
+        43.35
+      ],
+      "official755RawPointCount": 0,
+      "displayedOfficial755PointCount": 0,
+      "displayedHistoricalPoints": [],
+      "existingTangEntrances": [
+        {
+          "id": "yizhou-hami",
+          "name": "伊州",
+          "coordinates": [
+            93.51,
+            42.83
+          ]
+        }
+      ]
+    },
+    {
+      "regionId": "west-turpan",
+      "name": "交河—高昌与吐鲁番绿洲",
+      "bounds": [
+        88.5,
+        42.45,
+        89.65,
+        43.35
+      ],
+      "official755RawPointCount": 0,
+      "displayedOfficial755PointCount": 0,
+      "displayedHistoricalPoints": [],
+      "existingTangEntrances": [
+        {
+          "id": "xizhou-gaochang",
+          "name": "西州",
+          "coordinates": [
+            89.18,
+            42.95
+          ]
+        }
+      ]
+    },
+    {
+      "regionId": "west-hotan",
+      "name": "于阗与和田双河绿洲",
+      "bounds": [
+        79.55,
+        36.7,
+        80.4,
+        37.55
+      ],
+      "official755RawPointCount": 0,
+      "displayedOfficial755PointCount": 0,
+      "displayedHistoricalPoints": [],
+      "existingTangEntrances": [
+        {
+          "id": "yutian-hotan",
+          "name": "于阗",
+          "coordinates": [
+            79.93,
+            37.11
+          ]
+        }
+      ]
+    },
+    {
+      "regionId": "west-kashgar",
+      "name": "疏勒与喀什绿洲",
+      "bounds": [
+        75.55,
+        39.15,
+        76.6,
+        39.95
+      ],
+      "official755RawPointCount": 0,
+      "displayedOfficial755PointCount": 0,
+      "displayedHistoricalPoints": [],
+      "existingTangEntrances": [
+        {
+          "id": "shule-kashgar",
+          "name": "疏勒",
+          "coordinates": [
+            75.99,
+            39.47
+          ]
+        }
+      ]
+    },
+    {
+      "regionId": "west-lhasa",
+      "name": "拉萨河下游与拉萨地区",
+      "bounds": [
+        90.65,
+        29.2,
+        91.65,
+        30
+      ],
+      "official755RawPointCount": 0,
+      "displayedOfficial755PointCount": 0,
+      "displayedHistoricalPoints": [],
+      "existingTangEntrances": []
+    },
+    {
+      "regionId": "west-shannan",
+      "name": "山南与雅鲁藏布江走廊",
+      "bounds": [
+        91.35,
+        29,
+        92.15,
+        29.65
+      ],
+      "official755RawPointCount": 0,
+      "displayedOfficial755PointCount": 0,
+      "displayedHistoricalPoints": [],
+      "existingTangEntrances": []
+    }
+  ],
+  "finding": "实际取得的CHGIS官方755年县级/府级POINT源不含93度以西记录；新疆与拉萨山南未补造历史治所，保留既有有独立证据的唐代入口。其余地区复用已审核CHGIS点，不从现代OSM居民点推造唐县治。"
+}

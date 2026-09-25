@@ -1,6 +1,30 @@
 {
-  "version": "boundary-name-corrections-1",
+  "version": "boundary-name-corrections-2",
   "entries": {
+    "hartwell-741-prefecture-v5_0741_chin_chn_0741_p-33": {
+      "expectedOriginalName": "徐州",
+      "expectedSourceId": "hartwell-chgis-v5",
+      "expectedSourceCode": "T001200003100",
+      "expectedYear": 741,
+      "traditionalName": "許州",
+      "simplifiedName": "许州",
+      "method": "same-source-code-hierarchy-and-seat",
+      "note": "原始州名与徐州记录对调；本条来源隶属字段为許，同源8个T0012000031县记录（含許昌、長社）均隶属許，CHGIS许州治所也位于本面内，因此显示为许州。原名称及几何保留。",
+      "sourceUrl": "https://doi.org/10.7910/DVN/29302",
+      "evidenceFile": "data/evidence/tang-detail/boundary-crosswalk-audit.json"
+    },
+    "hartwell-741-prefecture-v5_0741_chin_chn_0741_p-35": {
+      "expectedOriginalName": "許州",
+      "expectedSourceId": "hartwell-chgis-v5",
+      "expectedSourceCode": "T001200003300",
+      "expectedYear": 741,
+      "traditionalName": "徐州",
+      "simplifiedName": "徐州",
+      "method": "same-source-code-hierarchy-and-seat",
+      "note": "原始州名与许州记录对调；本条来源隶属字段为徐，同源7个T0012000033县记录（含彭城、蕭）均隶属徐，CHGIS徐州治所也位于本面内，因此显示为徐州。原名称及几何保留。",
+      "sourceUrl": "https://doi.org/10.7910/DVN/29302",
+      "evidenceFile": "data/evidence/tang-detail/boundary-crosswalk-audit.json"
+    },
     "hartwell-1200-province-v5_1200_chin_chn_1200_l-19": {
       "expectedOriginalName": "00",
       "expectedSourceId": "hartwell-chgis-v5",

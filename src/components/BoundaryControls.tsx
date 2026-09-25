@@ -17,7 +17,6 @@ import {
 } from "../../shared/boundaries";
 import "../boundaries.css";
 import { boundarySearchKey } from "../../shared/boundary-search";
-import { mapViewLevelOptions, type MapViewLevel } from "../../shared/map-detail-levels";
 
 export interface BoundaryControlsProps {
   embedded?: boolean;
@@ -26,8 +25,7 @@ export interface BoundaryControlsProps {
   selectedDataset: BoundaryDataset | undefined;
   onDatasetChange: (id: string) => void;
   visibleLevels: BoundaryLevel[];
-  viewLevel: MapViewLevel;
-  onViewLevelChange: (level: MapViewLevel) => void;
+  interactive?: boolean;
   activeLevel: BoundaryLevel | null;
   zoom: number;
   onOpenAtlas?: () => void;
@@ -147,22 +145,15 @@ export default function BoundaryControls(props: BoundaryControlsProps) {
 
       {expanded && (
         <div id={bodyId} className="boundary-controls-body">
-          <fieldset className="boundary-view-presets" disabled={props.enabled === false}>
-            <legend>地图显示层级</legend>
-            <div>{mapViewLevelOptions.map(option => <label key={option.value} className={props.viewLevel === option.value ? "is-selected" : ""}>
-              <input type="radio" name={`${bodyId}-view-level`} value={option.value} checked={props.viewLevel === option.value} onChange={() => props.onViewLevelChange(option.value)} />
-              <span>{option.label}</span>
-            </label>)}</div>
-          </fieldset>
           <p className="boundary-effective-level" role="status">
-            {props.enabled === false ? "行政边界已关闭" : props.viewLevel === "cities" ? "当前只显示已收录城池；未显示行政区轮廓。" : props.activeLevel ? `${props.viewLevel === "auto" ? "自动显示" : "当前显示"}：${boundaryLevelNames[props.activeLevel]}${props.viewLevel === "auto" && props.zoom >= 5.4 ? "与城池" : props.viewLevel === "county" ? "与城池" : ""}。点击名称或区域可高亮辖区。` : "当前资料未提供所选层级。"}
+            {props.enabled === false ? "行政边界已关闭" : props.activeLevel ? `随缩放显示：${boundaryLevelNames[props.activeLevel]}。${props.interactive === false ? "当前模式仅保留行政轮廓作为位置参照。" : "点击名称或区域可高亮辖区。"}` : "当前资料暂无可显示的行政层级。"}
           </p>
-          {props.viewLevel === "auto" && <p className="boundary-scale-guide">缩小看国家与省道，放大依次看府州、县域与城池；点选查找结果会固定到该层级。</p>}
-          {countryCoverage.incomplete && (props.viewLevel === "country" || props.viewLevel === "auto" && props.zoom < 4) && <aside className="boundary-country-notice">
-            <p>{countryCoverage.note}{props.viewLevel === "auto" && props.visibleLevels.includes("province") ? "当前以省道显示行政范围，周边诸部作为背景。" : ""}</p>
+          <p className="boundary-scale-guide">缩小看国家与省道，放大依次看府州郡、县域与城池。选中辖区会持续高亮，背景层级仍随缩放切换。</p>
+          {countryCoverage.incomplete && props.zoom < 4 && <aside className="boundary-country-notice">
+            <p>{countryCoverage.note}{props.visibleLevels.includes("province") ? "当前以省道显示行政范围，周边诸部作为背景。" : ""}</p>
             {props.onOpenAtlas && <button type="button" onClick={props.onOpenAtlas}>查看历史原图 <ExternalLink size={12} /></button>}
           </aside>}
-          {dataset && props.onRegionSelect && props.enabled !== false && (
+          {dataset && props.onRegionSelect && props.enabled !== false && props.interactive !== false && (
             <div className="boundary-region-search">
               <label htmlFor={`${bodyId}-search`}>查找当前资料中的行政区</label>
               <input ref={searchInput} id={`${bodyId}-search`} type="search" value={regionQuery} onChange={event => setRegionQuery(event.target.value)} placeholder="输入古名或现代地区名" />
@@ -172,7 +163,7 @@ export default function BoundaryControls(props: BoundaryControlsProps) {
               </div>}
             </div>
           )}
-          {props.selection && (
+          {props.selection && props.interactive !== false && (
             <article className="boundary-selection">
               <div className="boundary-selection-heading">
                 <span>

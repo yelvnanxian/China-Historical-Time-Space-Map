@@ -1,13 +1,18 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import { test } from "node:test";
-import { isOptionalPhysicalLayerError, naturalSurfaceSelectionEnabled, physicalWaterGeometry } from "../shared/map-interactions";
+import { canInteract, isOptionalPhysicalLayerError, naturalSurfaceSelectionEnabled, physicalWaterGeometry } from "../shared/map-interactions";
 import type { PhysicalFeatureCollection } from "../shared/physical-geography";
 
-test("同时显示和城池模式不允许河线或湖面抢占行政区域点选", () => {
-  assert.equal(naturalSurfaceSelectionEnabled("both"), false);
+test("四种点选筛选隔离名称与点击权限，全部模式允许直接点河湖", () => {
+  assert.equal(naturalSurfaceSelectionEnabled("all"), true);
   assert.equal(naturalSurfaceSelectionEnabled("cities"), false);
-  assert.equal(naturalSurfaceSelectionEnabled("nature"), true);
+  assert.equal(naturalSurfaceSelectionEnabled("mountains"), false);
+  assert.equal(naturalSurfaceSelectionEnabled("rivers"), true);
+  for (const kind of ["cities", "mountains", "rivers"] as const) {
+    assert.equal(canInteract("all", kind), true);
+    for (const mode of ["cities", "mountains", "rivers"] as const) assert.equal(canInteract(mode, kind), mode === kind);
+  }
 });
 
 test("山系走向和河湖错误局部降级，底图错误仍交给全局处理", () => {

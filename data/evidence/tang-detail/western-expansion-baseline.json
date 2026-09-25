@@ -1,0 +1,6308 @@
+{
+  "sourceCount": 8,
+  "modernFeatureCount": 178372,
+  "regionIds": [
+    "central-plains",
+    "guanzhong",
+    "jianghuai",
+    "luoyang",
+    "taihu",
+    "zhejiang"
+  ],
+  "packages": [
+    {
+      "id": "central-plains-overview-part0",
+      "name": "中原与淮北 · 主河与水面",
+      "bounds": [
+        112.887822,
+        32.3200148,
+        116.7670012,
+        35.6153287
+      ],
+      "url": "/data/tang-detail/modern-central-plains-overview-part0.geojson.gz",
+      "featureCount": 2158,
+      "countsByKind": {
+        "water": 921,
+        "river": 1237
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "2dc22791a0d64aad1d1d86c9f31335a48349a47e43d68e12c3617856d84db9de"
+    },
+    {
+      "id": "central-plains-overview-part1",
+      "name": "中原与淮北 · 主河与水面",
+      "bounds": [
+        113.413893,
+        32.4350652,
+        116.5682244,
+        35.6062655
+      ],
+      "url": "/data/tang-detail/modern-central-plains-overview-part1.geojson.gz",
+      "featureCount": 855,
+      "countsByKind": {
+        "river": 546,
+        "water": 309
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "88d605222ab62bc491ea304b9f10285fa89387d1c8286af8c8e96b246340c602"
+    },
+    {
+      "id": "central-plains-231-66-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        115.3470147,
+        32.9928003,
+        116.0060121,
+        33.4721381
+      ],
+      "url": "/data/tang-detail/modern-central-plains-231-66-part0.geojson.gz",
+      "featureCount": 226,
+      "countsByKind": {
+        "water": 138,
+        "canal": 50,
+        "stream": 38
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "7959f4a7fef6fc94464bec72ccf8635c6e5c26212663e94885f839f60bc11b64"
+    },
+    {
+      "id": "central-plains-231-65-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        115.4770243,
+        32.508046,
+        116.0765564,
+        33.0309195
+      ],
+      "url": "/data/tang-detail/modern-central-plains-231-65-part0.geojson.gz",
+      "featureCount": 256,
+      "countsByKind": {
+        "water": 182,
+        "peak": 1,
+        "stream": 12,
+        "canal": 61
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "20461dc061496051c8f99bc005f07391f61d1ef33316363063d1001cbf9035d5"
+    },
+    {
+      "id": "central-plains-229-67-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        114.4933123,
+        33.4983245,
+        114.9798629,
+        33.9942469
+      ],
+      "url": "/data/tang-detail/modern-central-plains-229-67-part0.geojson.gz",
+      "featureCount": 116,
+      "countsByKind": {
+        "water": 76,
+        "canal": 31,
+        "stream": 9
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "bfeec2eb3cb3e13dd39ad3dbebd173374d46116d0545b37cb49d544698b742df"
+    },
+    {
+      "id": "central-plains-231-69-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        115.3971584,
+        34.37943,
+        116.1091757,
+        35.0068039
+      ],
+      "url": "/data/tang-detail/modern-central-plains-231-69-part0.geojson.gz",
+      "featureCount": 189,
+      "countsByKind": {
+        "water": 95,
+        "canal": 32,
+        "stream": 62
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "fca8d850cb8137f85421ad0ba1a3740ae118f768c87708331bf474cba7cb793d"
+    },
+    {
+      "id": "central-plains-227-69-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        113.484745,
+        34.501822,
+        113.9946365,
+        35.000468
+      ],
+      "url": "/data/tang-detail/modern-central-plains-227-69-part0.geojson.gz",
+      "featureCount": 726,
+      "countsByKind": {
+        "water": 572,
+        "peak": 2,
+        "canal": 128,
+        "stream": 24
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "470f43191648877d59b85ba2a398a59174063c2a673519f5702ed251719cf1eb"
+    },
+    {
+      "id": "central-plains-230-70-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        114.9188804,
+        34.9909362,
+        115.6196362,
+        35.6070782
+      ],
+      "url": "/data/tang-detail/modern-central-plains-230-70-part0.geojson.gz",
+      "featureCount": 215,
+      "countsByKind": {
+        "water": 49,
+        "canal": 134,
+        "stream": 32
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "cb227f7405b2ad8cc55ff1441719c0a1108d1de224735e6dd4f1011b691ca67f"
+    },
+    {
+      "id": "central-plains-229-66-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        114.4150436,
+        33.0066931,
+        114.9844853,
+        33.5258526
+      ],
+      "url": "/data/tang-detail/modern-central-plains-229-66-part0.geojson.gz",
+      "featureCount": 49,
+      "countsByKind": {
+        "water": 24,
+        "canal": 17,
+        "stream": 8
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "fe46e4389c3919bb48b5a03b3caeef69f3b7082e3ff1e41b99be0aded05fdd07"
+    },
+    {
+      "id": "central-plains-232-65-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        115.988362,
+        32.5013697,
+        116.5617603,
+        33.0414112
+      ],
+      "url": "/data/tang-detail/modern-central-plains-232-65-part0.geojson.gz",
+      "featureCount": 359,
+      "countsByKind": {
+        "water": 256,
+        "canal": 91,
+        "stream": 12
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "636560fa3daede5221fcc102188309b4a9cbc9303f575b92283c2d6a1d266f08"
+    },
+    {
+      "id": "central-plains-230-65-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        115.0066577,
+        32.5066947,
+        115.5497451,
+        33.0053529
+      ],
+      "url": "/data/tang-detail/modern-central-plains-230-65-part0.geojson.gz",
+      "featureCount": 149,
+      "countsByKind": {
+        "water": 59,
+        "canal": 16,
+        "stream": 74
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "6a766c99787415809d809c7cb7ec8619b0479193d23fd3f38ef711c9b1539a93"
+    },
+    {
+      "id": "central-plains-232-69-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        115.97492,
+        34.4489915,
+        116.5991888,
+        34.9978554
+      ],
+      "url": "/data/tang-detail/modern-central-plains-232-69-part0.geojson.gz",
+      "featureCount": 257,
+      "countsByKind": {
+        "water": 128,
+        "canal": 44,
+        "stream": 85
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "27fada2b6f89f84309d6ea6545324d129421aad1a27c2a174d6f2c3a50666787"
+    },
+    {
+      "id": "central-plains-231-70-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        115.4998163,
+        34.9878391,
+        116.0222339,
+        35.4573964
+      ],
+      "url": "/data/tang-detail/modern-central-plains-231-70-part0.geojson.gz",
+      "featureCount": 149,
+      "countsByKind": {
+        "water": 41,
+        "canal": 91,
+        "stream": 17
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "aee84b1790b5a331d17ce749fc519d48852ad3c22c95f32052b30a3e12118051"
+    },
+    {
+      "id": "central-plains-229-70-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        114.4829088,
+        35.0162198,
+        115.0086921,
+        35.6150102
+      ],
+      "url": "/data/tang-detail/modern-central-plains-229-70-part0.geojson.gz",
+      "featureCount": 51,
+      "countsByKind": {
+        "water": 36,
+        "canal": 13,
+        "stream": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "1f0ea67716e4aac82cb1e978fc95cb013bf06f655df7b7fb31f2c3e1523ac44f"
+    },
+    {
+      "id": "central-plains-227-70-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        113.4917822,
+        34.9865128,
+        114.0017182,
+        35.5046935
+      ],
+      "url": "/data/tang-detail/modern-central-plains-227-70-part0.geojson.gz",
+      "featureCount": 233,
+      "countsByKind": {
+        "water": 178,
+        "canal": 47,
+        "stream": 8
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "a6e8e75594bbeadfcdab10645f89a0b1ca4fd569281499c9d05ef174188683ae"
+    },
+    {
+      "id": "central-plains-228-69-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        113.9666886,
+        34.4154313,
+        114.5180917,
+        35.0001999
+      ],
+      "url": "/data/tang-detail/modern-central-plains-228-69-part0.geojson.gz",
+      "featureCount": 528,
+      "countsByKind": {
+        "water": 449,
+        "canal": 28,
+        "stream": 51
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "95cbe02be34c67bdb359b8a5a5fd421d33767a33cd1290ba8ed450beb9baf589"
+    },
+    {
+      "id": "central-plains-227-68-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        113.5095645,
+        34.0133906,
+        113.9959001,
+        34.5489015
+      ],
+      "url": "/data/tang-detail/modern-central-plains-227-68-part0.geojson.gz",
+      "featureCount": 170,
+      "countsByKind": {
+        "water": 90,
+        "stream": 20,
+        "canal": 60
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "bdcfb8fff0093e03eb90c3481055ee6128f1c899f0c033952358aa24ae39628f"
+    },
+    {
+      "id": "central-plains-228-67-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        113.9095064,
+        33.501736,
+        114.5127047,
+        34.0796254
+      ],
+      "url": "/data/tang-detail/modern-central-plains-228-67-part0.geojson.gz",
+      "featureCount": 269,
+      "countsByKind": {
+        "water": 198,
+        "peak": 1,
+        "canal": 54,
+        "stream": 16
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "a394c646630ff80fab5942f1119bd5a09f84bcd10762e365d359380476f87a0e"
+    },
+    {
+      "id": "central-plains-232-66-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        115.8791864,
+        32.9787972,
+        116.539446,
+        33.5201719
+      ],
+      "url": "/data/tang-detail/modern-central-plains-232-66-part0.geojson.gz",
+      "featureCount": 181,
+      "countsByKind": {
+        "water": 28,
+        "peak": 1,
+        "canal": 151,
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "c35dd226b12d2a6e5915d169d98f3b6e586b4bdfa69ab083c3fdb06ca7f46035"
+    },
+    {
+      "id": "central-plains-230-68-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        114.9572709,
+        34.0503477,
+        115.5770378,
+        34.491052
+      ],
+      "url": "/data/tang-detail/modern-central-plains-230-68-part0.geojson.gz",
+      "featureCount": 109,
+      "countsByKind": {
+        "water": 57,
+        "canal": 40,
+        "stream": 12
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "30ea50a996a13a54a531b6f2d7981e85f2b944f235bf0d1e7dff6eb1a70dade9"
+    },
+    {
+      "id": "central-plains-230-66-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        115.022045,
+        32.9871496,
+        115.5643936,
+        33.5362382
+      ],
+      "url": "/data/tang-detail/modern-central-plains-230-66-part0.geojson.gz",
+      "featureCount": 157,
+      "countsByKind": {
+        "water": 65,
+        "stream": 43,
+        "canal": 49
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "7a7d495c1a50386ab9ee8f22c32e867a5b2c945619dfd8f0e453e7526b525eea"
+    },
+    {
+      "id": "central-plains-227-67-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        113.4412493,
+        33.4537561,
+        114.1247945,
+        34.0367574
+      ],
+      "url": "/data/tang-detail/modern-central-plains-227-67-part0.geojson.gz",
+      "featureCount": 159,
+      "countsByKind": {
+        "water": 124,
+        "canal": 32,
+        "stream": 3
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "6d477dd3624cdbe9f0df7063bf71d22c0a4ac02bc258b58ae4ca17e7f2da05b5"
+    },
+    {
+      "id": "central-plains-230-69-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        115.1141075,
+        34.5670902,
+        115.5434333,
+        35.0059744
+      ],
+      "url": "/data/tang-detail/modern-central-plains-230-69-part0.geojson.gz",
+      "featureCount": 32,
+      "countsByKind": {
+        "water": 11,
+        "canal": 19,
+        "stream": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "21dda029da302ef8aa750925e74be68ef11dccd1a0a15e03425d57ecb2531568"
+    },
+    {
+      "id": "central-plains-228-66-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        113.9861905,
+        33.0012226,
+        114.4344931,
+        33.4538517
+      ],
+      "url": "/data/tang-detail/modern-central-plains-228-66-part0.geojson.gz",
+      "featureCount": 58,
+      "countsByKind": {
+        "water": 26,
+        "canal": 22,
+        "stream": 10
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "fc9608501830c5e1ab78bf8ac134a43df2455a614bb0b115202983239b2232e1"
+    },
+    {
+      "id": "central-plains-227-66-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        113.5000303,
+        32.9643428,
+        114.0259371,
+        33.5061726
+      ],
+      "url": "/data/tang-detail/modern-central-plains-227-66-part0.geojson.gz",
+      "featureCount": 344,
+      "countsByKind": {
+        "water": 195,
+        "peak": 69,
+        "canal": 52,
+        "stream": 28
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "5a25aedb3f0b865938d62acaea56360cb87db725b2b98a5c49e0baa142136d33"
+    },
+    {
+      "id": "central-plains-229-65-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        114.5097473,
+        32.5517561,
+        115.0005213,
+        33.039165
+      ],
+      "url": "/data/tang-detail/modern-central-plains-229-65-part0.geojson.gz",
+      "featureCount": 24,
+      "countsByKind": {
+        "water": 15,
+        "canal": 8,
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "8ea21e2fe955a6edad998b48daac457496ee93f148c68fa418720802956d977d"
+    },
+    {
+      "id": "central-plains-228-65-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        113.9955997,
+        32.5075909,
+        114.4390874,
+        33.0279061
+      ],
+      "url": "/data/tang-detail/modern-central-plains-228-65-part0.geojson.gz",
+      "featureCount": 70,
+      "countsByKind": {
+        "water": 23,
+        "peak": 5,
+        "stream": 13,
+        "canal": 29
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "017fe8554ab088c9da6d867a2b08a9be5fa6b389340fbae1e7086217ef7b27f3"
+    },
+    {
+      "id": "central-plains-231-68-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        115.5685211,
+        34.0423324,
+        115.9921027,
+        34.4939249
+      ],
+      "url": "/data/tang-detail/modern-central-plains-231-68-part0.geojson.gz",
+      "featureCount": 147,
+      "countsByKind": {
+        "water": 79,
+        "canal": 54,
+        "stream": 14
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "b62e2c9c8b3d102c155fff887cf282bf8059804cdd7515051700220aa17f97bf"
+    },
+    {
+      "id": "central-plains-232-70-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        115.950598,
+        35.007533,
+        116.5322318,
+        35.5072855
+      ],
+      "url": "/data/tang-detail/modern-central-plains-232-70-part0.geojson.gz",
+      "featureCount": 178,
+      "countsByKind": {
+        "peak": 25,
+        "canal": 91,
+        "water": 46,
+        "stream": 16
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "dcca21f4b29b91d7b85f5f0ce27cb56afc68d2af7a943a6e0ae48c70a8f411be"
+    },
+    {
+      "id": "central-plains-232-68-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        115.9886926,
+        33.9439645,
+        116.5166187,
+        34.422676
+      ],
+      "url": "/data/tang-detail/modern-central-plains-232-68-part0.geojson.gz",
+      "featureCount": 39,
+      "countsByKind": {
+        "peak": 1,
+        "canal": 18,
+        "water": 18,
+        "stream": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "ecb3b4607446ba280aea37debd060a9ebfa3958701147db2bc0b4601f50a107f"
+    },
+    {
+      "id": "central-plains-227-65-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        113.5019436,
+        32.529659,
+        114.005481,
+        33.0156991
+      ],
+      "url": "/data/tang-detail/modern-central-plains-227-65-part0.geojson.gz",
+      "featureCount": 236,
+      "countsByKind": {
+        "peak": 59,
+        "stream": 36,
+        "water": 126,
+        "canal": 15
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "ef1f45b5da1adbd17b9b0d9c1f32cb10cf1bec89b23a5da7ac6fd7502b7f703e"
+    },
+    {
+      "id": "central-plains-228-70-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        113.9800286,
+        34.9978522,
+        114.6840852,
+        35.5309276
+      ],
+      "url": "/data/tang-detail/modern-central-plains-228-70-part0.geojson.gz",
+      "featureCount": 70,
+      "countsByKind": {
+        "peak": 1,
+        "canal": 17,
+        "water": 45,
+        "stream": 7
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "47742e9caac00f40115883429caf9e60f7ad24f980d894aede63c48efa4f7417"
+    },
+    {
+      "id": "central-plains-233-70-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        116.4164281,
+        35.2852451,
+        116.642203,
+        35.4991675
+      ],
+      "url": "/data/tang-detail/modern-central-plains-233-70-part0.geojson.gz",
+      "featureCount": 4,
+      "countsByKind": {
+        "canal": 4
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "3306309e05f0789055dbdc10a8b6162308c25f30abf26189b6aa20549ec41caf"
+    },
+    {
+      "id": "central-plains-232-71-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        115.977584,
+        35.450264,
+        116.4164281,
+        35.6474784
+      ],
+      "url": "/data/tang-detail/modern-central-plains-232-71-part0.geojson.gz",
+      "featureCount": 4,
+      "countsByKind": {
+        "canal": 3,
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "372c7fc20619e611936ba55031cc87ef3f454daa3260a93f54a75b1af6210707"
+    },
+    {
+      "id": "central-plains-227-64-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        113.9151818,
+        32.4887424,
+        114.0118796,
+        32.5331621
+      ],
+      "url": "/data/tang-detail/modern-central-plains-227-64-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "eab4b818b94361c52f1fab3ebefd388794db0fcc27ba54ea3dfd89aee6320682"
+    },
+    {
+      "id": "central-plains-233-67-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        116.4758086,
+        33.8199655,
+        116.5522735,
+        33.8641351
+      ],
+      "url": "/data/tang-detail/modern-central-plains-233-67-part0.geojson.gz",
+      "featureCount": 2,
+      "countsByKind": {
+        "canal": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "99d398319f8e89e91c4f3cca8b96ebf4af8f014df152af416061c29a2e3892c0"
+    },
+    {
+      "id": "central-plains-230-67-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        114.9959705,
+        33.4544633,
+        115.5365782,
+        33.9550856
+      ],
+      "url": "/data/tang-detail/modern-central-plains-230-67-part0.geojson.gz",
+      "featureCount": 24,
+      "countsByKind": {
+        "canal": 16,
+        "stream": 1,
+        "water": 7
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "db9686285d8fc692a2a8ed41baa8887896e54f9481914652fbe216feffd6e792"
+    },
+    {
+      "id": "central-plains-231-64-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        115.4649572,
+        32.479709,
+        115.6313909,
+        32.5561534
+      ],
+      "url": "/data/tang-detail/modern-central-plains-231-64-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "canal": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "35badfafb9d1b0abbbfce0d736f4361d5e985c14716352c61ecefb114d07fb47"
+    },
+    {
+      "id": "central-plains-230-71-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        115.0001162,
+        35.4329753,
+        115.4558262,
+        35.6930638
+      ],
+      "url": "/data/tang-detail/modern-central-plains-230-71-part0.geojson.gz",
+      "featureCount": 8,
+      "countsByKind": {
+        "canal": 7,
+        "water": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "dcc7e0cbd0ed96a143c4bfe9eb8e180be894fbd4855e14ff06e20e94c9980349"
+    },
+    {
+      "id": "central-plains-229-69-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        114.4964755,
+        34.5298012,
+        115.0224201,
+        34.9874072
+      ],
+      "url": "/data/tang-detail/modern-central-plains-229-69-part0.geojson.gz",
+      "featureCount": 77,
+      "countsByKind": {
+        "canal": 32,
+        "water": 35,
+        "stream": 10
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "9c348340508c4c7e89f0e596ed57e62cb49bf616d86ccc5c8b00c9f8447d1a59"
+    },
+    {
+      "id": "central-plains-228-68-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        113.8830954,
+        33.9327301,
+        114.5144713,
+        34.4964903
+      ],
+      "url": "/data/tang-detail/modern-central-plains-228-68-part0.geojson.gz",
+      "featureCount": 145,
+      "countsByKind": {
+        "canal": 37,
+        "stream": 23,
+        "water": 85
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "5da6afdc90d3f0ad019bfe50704b08e4387c04ad58d8d0c55abf80f6cab24c19"
+    },
+    {
+      "id": "central-plains-232-67-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        115.9875745,
+        33.4618944,
+        116.5234416,
+        33.9605679
+      ],
+      "url": "/data/tang-detail/modern-central-plains-232-67-part0.geojson.gz",
+      "featureCount": 111,
+      "countsByKind": {
+        "canal": 82,
+        "water": 28,
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "60dad3c003e24c8d1a95cb85032101d499b3f055d38b26521081ddf52909c49d"
+    },
+    {
+      "id": "central-plains-231-67-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        115.4254838,
+        33.4721381,
+        116.009057,
+        33.9931172
+      ],
+      "url": "/data/tang-detail/modern-central-plains-231-67-part0.geojson.gz",
+      "featureCount": 69,
+      "countsByKind": {
+        "canal": 52,
+        "water": 14,
+        "stream": 3
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "c43a2fd753da637690209487d4bdd4ea63476227924209e64bf1035dbcc835e5"
+    },
+    {
+      "id": "central-plains-229-68-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        114.5134199,
+        33.9816608,
+        115.0435969,
+        34.49391
+      ],
+      "url": "/data/tang-detail/modern-central-plains-229-68-part0.geojson.gz",
+      "featureCount": 38,
+      "countsByKind": {
+        "stream": 11,
+        "canal": 4,
+        "water": 23
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "b7e2601ffecb1063c1cb1a4ecf2258d98df632c7842d033321e0e8798fc54f3e"
+    },
+    {
+      "id": "central-plains-233-65-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        116.31366,
+        32.7551453,
+        117.1058767,
+        33.0211951
+      ],
+      "url": "/data/tang-detail/modern-central-plains-233-65-part0.geojson.gz",
+      "featureCount": 3,
+      "countsByKind": {
+        "canal": 2,
+        "water": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "56b5f63cd44a8f9dadf06d112b97e80a5b98b8195eda1c90769c7560748e3eb6"
+    },
+    {
+      "id": "central-plains-228-64-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        114.3580104,
+        32.4584707,
+        114.4389604,
+        32.5075909
+      ],
+      "url": "/data/tang-detail/modern-central-plains-228-64-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "5728d0985c23c87b48a905fdf2960f6b8adcc6670b6aba05c65af8e50ac228f8"
+    },
+    {
+      "id": "central-plains-226-69-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        113.4267072,
+        34.6133395,
+        113.5108495,
+        34.8342027
+      ],
+      "url": "/data/tang-detail/modern-central-plains-226-69-part0.geojson.gz",
+      "featureCount": 2,
+      "countsByKind": {
+        "canal": 1,
+        "water": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "f6530348ce4d8dc0f5e04dff2f5577d8850d9bc69c834e508cda144ebe5f2392"
+    },
+    {
+      "id": "central-plains-226-70-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        113.3368428,
+        35.0942491,
+        113.5629034,
+        35.469031
+      ],
+      "url": "/data/tang-detail/modern-central-plains-226-70-part0.geojson.gz",
+      "featureCount": 2,
+      "countsByKind": {
+        "canal": 1,
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "2dc562e74d9d5eb2f2d6174b7594b3bb93f39e5f7bfe100a4bc5d0efdb897c04"
+    },
+    {
+      "id": "central-plains-233-66-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        116.4983153,
+        33.0335099,
+        116.5602488,
+        33.0537231
+      ],
+      "url": "/data/tang-detail/modern-central-plains-233-66-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "canal": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "93eb5e509a65105c7a53ad12dbef7d59609b84c78b8aa966dd9cf93dbfa2ced1"
+    },
+    {
+      "id": "central-plains-226-67-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        113.3162495,
+        33.5130083,
+        113.6555483,
+        33.5489366
+      ],
+      "url": "/data/tang-detail/modern-central-plains-226-67-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "canal": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "23f5da4650125f3877b5c829aa4610ece6caf903f7fa1bca5dd218b32c1471f1"
+    },
+    {
+      "id": "central-plains-226-66-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        113.4586415,
+        33.0600424,
+        113.5122343,
+        33.223837
+      ],
+      "url": "/data/tang-detail/modern-central-plains-226-66-part0.geojson.gz",
+      "featureCount": 2,
+      "countsByKind": {
+        "stream": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "da18107ab016fd201ffb1fcf61d327f69f1f70854c44360bb9ce6e6bb0b40575"
+    },
+    {
+      "id": "central-plains-233-69-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        116.4981053,
+        34.7324628,
+        116.6119767,
+        34.7496725
+      ],
+      "url": "/data/tang-detail/modern-central-plains-233-69-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "426c2daa6c63f476f1e54140a76559d0bdd6d7e36e2221b4233e8cda0f2b496b"
+    },
+    {
+      "id": "central-plains-226-68-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        113.4574735,
+        34.3632103,
+        113.5187459,
+        34.4992468
+      ],
+      "url": "/data/tang-detail/modern-central-plains-226-68-part0.geojson.gz",
+      "featureCount": 2,
+      "countsByKind": {
+        "water": 1,
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "a5ce178f311c787ec23b19eb879a57a15d1b937761306a908b61cabb15e5c2f5"
+    },
+    {
+      "id": "central-plains-226-65-part0",
+      "name": "中原与淮北 · 局部细节",
+      "bounds": [
+        113.4754433,
+        32.9804411,
+        113.5048589,
+        32.9957688
+      ],
+      "url": "/data/tang-detail/modern-central-plains-226-65-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-central-plains",
+      "regionId": "central-plains",
+      "sha256": "e4111d7b8f7ff6296b2fcdefc4ee6358f880e67bb24d626be907354682200848"
+    },
+    {
+      "id": "guanzhong-overview-part0",
+      "name": "关中与秦岭北麓 · 主河与水面",
+      "bounds": [
+        106.428423,
+        33.259701,
+        110.9768807,
+        35.6854048
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-overview-part0.geojson.gz",
+      "featureCount": 1791,
+      "countsByKind": {
+        "water": 395,
+        "river": 1396
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "87112a7d701feca296102bddf89ba96fdbab8cf29a21cbe2436a46e9f79977bd"
+    },
+    {
+      "id": "guanzhong-219-67-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        109.4888754,
+        33.4973105,
+        110.0013392,
+        33.9875157
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-219-67-part0.geojson.gz",
+      "featureCount": 65,
+      "countsByKind": {
+        "water": 7,
+        "peak": 11,
+        "stream": 47
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "90b23ca42461cb0486ebba86cf6500a99cca3a36219bd1d45e98c6995353646e"
+    },
+    {
+      "id": "guanzhong-217-68-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        108.4750874,
+        33.9897017,
+        108.9955814,
+        34.499028
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-217-68-part0.geojson.gz",
+      "featureCount": 559,
+      "countsByKind": {
+        "water": 387,
+        "peak": 2,
+        "canal": 103,
+        "stream": 67
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "a1b074d3ce036e212d9b6dcca99d0617cf4317321a36106161ce0981ec69a42e"
+    },
+    {
+      "id": "guanzhong-214-68-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        107.0015573,
+        33.9968283,
+        107.4864992,
+        34.5165442
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-214-68-part0.geojson.gz",
+      "featureCount": 198,
+      "countsByKind": {
+        "water": 84,
+        "peak": 7,
+        "stream": 98,
+        "canal": 9
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "588902c0ff11f6bdc711b4570e42a7cacb2744ec6193f615c9bc4de606d6a105"
+    },
+    {
+      "id": "guanzhong-220-69-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        109.9700978,
+        34.4481665,
+        110.5172816,
+        35.007333
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-220-69-part0.geojson.gz",
+      "featureCount": 134,
+      "countsByKind": {
+        "water": 84,
+        "saddle": 1,
+        "peak": 4,
+        "stream": 33,
+        "canal": 12
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "f0643305b5a95ea1c78ba170aab58f6d7821a5fe7c6a1a478e8add4547267aa2"
+    },
+    {
+      "id": "guanzhong-214-69-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        107.0055492,
+        34.4951955,
+        107.4640988,
+        35.001335
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-214-69-part0.geojson.gz",
+      "featureCount": 63,
+      "countsByKind": {
+        "water": 36,
+        "stream": 21,
+        "canal": 6
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "45ad6c1391fad974d20c81c97fcedc164cb772a19995e57f9c22c1df8b09eaa0"
+    },
+    {
+      "id": "guanzhong-215-68-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        107.5183868,
+        33.9834563,
+        108.1169042,
+        34.5031917
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-215-68-part0.geojson.gz",
+      "featureCount": 186,
+      "countsByKind": {
+        "water": 128,
+        "peak": 8,
+        "canal": 11,
+        "stream": 39
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "e042be72117008874e1504608e537852f26f3192969f7af5b4683c76a285c759"
+    },
+    {
+      "id": "guanzhong-214-70-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        107.0073777,
+        35.0041262,
+        107.4971883,
+        35.4600495
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-214-70-part0.geojson.gz",
+      "featureCount": 108,
+      "countsByKind": {
+        "water": 33,
+        "peak": 5,
+        "stream": 70
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "3f597c6d9614f85f662c1d9434c4c9415f9a241dd07589b3972ab95cf1fff111"
+    },
+    {
+      "id": "guanzhong-213-68-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        106.5069151,
+        34.0130639,
+        107.000345,
+        34.4937933
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-213-68-part0.geojson.gz",
+      "featureCount": 109,
+      "countsByKind": {
+        "water": 23,
+        "peak": 13,
+        "stream": 73
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "3028e276f0e6953ab6fecb10e211364b9e8903a3adb525b6af543175af9db85d"
+    },
+    {
+      "id": "guanzhong-213-70-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        106.4610815,
+        34.9822528,
+        107.0102896,
+        35.5053868
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-213-70-part0.geojson.gz",
+      "featureCount": 206,
+      "countsByKind": {
+        "water": 59,
+        "peak": 23,
+        "stream": 124
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "123f6e231f5436539189a4689bc5f578e60fef06811c18091950d18ae1f8a1ef"
+    },
+    {
+      "id": "guanzhong-215-69-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        107.5213563,
+        34.4724308,
+        107.9972165,
+        34.999602
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-215-69-part0.geojson.gz",
+      "featureCount": 54,
+      "countsByKind": {
+        "water": 25,
+        "peak": 4,
+        "stream": 25
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "fadd8f89cd4282a3bc7e2c02cb6f2584746b9152fd7e9167811988c685ca6373"
+    },
+    {
+      "id": "guanzhong-220-68-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        110.0407565,
+        33.9859776,
+        110.4897943,
+        34.554221
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-220-68-part0.geojson.gz",
+      "featureCount": 82,
+      "countsByKind": {
+        "peak": 9,
+        "stream": 63,
+        "water": 10
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "d3f21a09dabc8de2d889084ed1deb54a3fc9f1ba3575da7ec9bf87fe23981cc1"
+    },
+    {
+      "id": "guanzhong-218-68-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        109.0006775,
+        34.0019695,
+        109.5001853,
+        34.4845226
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-218-68-part0.geojson.gz",
+      "featureCount": 246,
+      "countsByKind": {
+        "peak": 14,
+        "water": 153,
+        "stream": 73,
+        "canal": 6
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "42652e1ca1be61a39a6390aef6a72f120ebc24889687bbe4989ff898555e891d"
+    },
+    {
+      "id": "guanzhong-215-67-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        107.4951722,
+        33.4833119,
+        107.9945112,
+        34.0112795
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-215-67-part0.geojson.gz",
+      "featureCount": 128,
+      "countsByKind": {
+        "peak": 26,
+        "saddle": 1,
+        "stream": 89,
+        "water": 9,
+        "canal": 3
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "e94a18aa5048e4668c56af62021ab6f4a0e1097738957ef8e4777f6cbcb7917e"
+    },
+    {
+      "id": "guanzhong-214-67-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        106.9952482,
+        33.5336068,
+        107.5119069,
+        33.9952462
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-214-67-part0.geojson.gz",
+      "featureCount": 39,
+      "countsByKind": {
+        "peak": 9,
+        "stream": 27,
+        "water": 3
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "a15ecdc04cc495cc42c5c2783cdc7a2067a1d0a2b8ff43363f62b6a21b99d2fa"
+    },
+    {
+      "id": "guanzhong-218-67-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        108.9831949,
+        33.4882793,
+        109.3734061,
+        33.9964705
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-218-67-part0.geojson.gz",
+      "featureCount": 85,
+      "countsByKind": {
+        "peak": 10,
+        "stream": 74,
+        "water": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "e158ac4143cc867853c1ef6f148c8e0632039b722cbd773bab032159e0821fc0"
+    },
+    {
+      "id": "guanzhong-216-67-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        107.9817311,
+        33.5027325,
+        108.4960402,
+        34.0029882
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-216-67-part0.geojson.gz",
+      "featureCount": 16,
+      "countsByKind": {
+        "peak": 11,
+        "stream": 5
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "f3820b41c5cb06e0835b96c98a939ea93c09b39f3548f2fcc4ba25d31e27c454"
+    },
+    {
+      "id": "guanzhong-216-69-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        107.9394879,
+        34.5069184,
+        108.5926571,
+        35.064135
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-216-69-part0.geojson.gz",
+      "featureCount": 28,
+      "countsByKind": {
+        "peak": 3,
+        "stream": 4,
+        "water": 16,
+        "canal": 5
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "b8498f444fb73d264d65bd1649ade8c4df27efdb2b2181036c6a3a5bbfc14593"
+    },
+    {
+      "id": "guanzhong-213-69-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        106.4807153,
+        34.4928716,
+        107.0146286,
+        35.0118878
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-213-69-part0.geojson.gz",
+      "featureCount": 103,
+      "countsByKind": {
+        "peak": 4,
+        "stream": 70,
+        "water": 29
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "83060b03b31c6dbb00475e75a4a8ef32ef1646548594ec1becdeffb371e86a99"
+    },
+    {
+      "id": "guanzhong-213-67-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        106.5213131,
+        33.5072312,
+        106.9933927,
+        33.9903184
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-213-67-part0.geojson.gz",
+      "featureCount": 56,
+      "countsByKind": {
+        "peak": 20,
+        "stream": 32,
+        "water": 4
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "d2ed269ebd69530f6e01b62a57560161723e591ddb0e42427ef8173e6bc2f84b"
+    },
+    {
+      "id": "guanzhong-220-67-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        110.0114437,
+        33.4564275,
+        110.5077484,
+        33.9995309
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-220-67-part0.geojson.gz",
+      "featureCount": 75,
+      "countsByKind": {
+        "peak": 5,
+        "stream": 63,
+        "water": 7
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "74acebc8b400071fa1aef975b2b134b8556b6046e7c6131988a30d39730a3321"
+    },
+    {
+      "id": "guanzhong-219-68-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        109.4954451,
+        34.0091898,
+        110.0010648,
+        34.5756516
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-219-68-part0.geojson.gz",
+      "featureCount": 63,
+      "countsByKind": {
+        "peak": 8,
+        "stream": 41,
+        "water": 14
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "8219903982a8bc628c1ced2b1b54f2a391f08a0b4dbbffea84dc57dc4a440bbf"
+    },
+    {
+      "id": "guanzhong-218-69-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        108.9725552,
+        34.516896,
+        109.52114,
+        34.9964632
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-218-69-part0.geojson.gz",
+      "featureCount": 32,
+      "countsByKind": {
+        "peak": 1,
+        "canal": 5,
+        "stream": 13,
+        "water": 13
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "1681a557b534b9404a44a7a62a0599ce976f0768739b206b124747be147a38ea"
+    },
+    {
+      "id": "guanzhong-219-70-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        109.4840791,
+        35.0076378,
+        110.0049462,
+        35.4995557
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-219-70-part0.geojson.gz",
+      "featureCount": 12,
+      "countsByKind": {
+        "peak": 2,
+        "stream": 7,
+        "water": 3
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "b73234be05d078851d1b2e3d31a256a2551069b9e7ceac379e1fe831564354fe"
+    },
+    {
+      "id": "guanzhong-217-67-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        108.5902512,
+        33.5190927,
+        109.0267105,
+        34.0165093
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-217-67-part0.geojson.gz",
+      "featureCount": 121,
+      "countsByKind": {
+        "peak": 21,
+        "saddle": 1,
+        "stream": 98,
+        "water": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "f2c00da0d933af0fe4967741f8945006026865ef98a5eccee617ab23abd4b30f"
+    },
+    {
+      "id": "guanzhong-218-70-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        108.90232,
+        34.9911663,
+        109.5325296,
+        35.4970814
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-218-70-part0.geojson.gz",
+      "featureCount": 80,
+      "countsByKind": {
+        "peak": 5,
+        "stream": 56,
+        "water": 19
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "84bad7d4af6291639ba147a4ecc45cbc02573ec7976c4088a166d12846a24317"
+    },
+    {
+      "id": "guanzhong-217-70-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        108.518446,
+        35.0074984,
+        109.0223723,
+        35.4849469
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-217-70-part0.geojson.gz",
+      "featureCount": 39,
+      "countsByKind": {
+        "peak": 4,
+        "stream": 23,
+        "water": 12
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "446740a421ef94277771ea8ee6af73a91b0cbc3a5b3a946bbdc25fcef15499ba"
+    },
+    {
+      "id": "guanzhong-216-70-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        108.0365205,
+        35.006664,
+        108.4995587,
+        35.5136168
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-216-70-part0.geojson.gz",
+      "featureCount": 59,
+      "countsByKind": {
+        "peak": 1,
+        "stream": 28,
+        "water": 30
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "137b5dacb15ebd4240146cc3fcc6dc46058a41c196f98f1b02378997ba6614ec"
+    },
+    {
+      "id": "guanzhong-217-69-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        108.4989989,
+        34.5065922,
+        109.0053794,
+        35.0193243
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-217-69-part0.geojson.gz",
+      "featureCount": 67,
+      "countsByKind": {
+        "peak": 4,
+        "stream": 35,
+        "canal": 1,
+        "water": 27
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "6083ebb7c681096fd9af2cc18fd705d7b2c3e53dc85f6b8a26918f00057dd908"
+    },
+    {
+      "id": "guanzhong-215-70-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        107.5010496,
+        34.9238537,
+        107.9821691,
+        35.4904986
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-215-70-part0.geojson.gz",
+      "featureCount": 90,
+      "countsByKind": {
+        "peak": 9,
+        "stream": 40,
+        "water": 41
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "c0df7fc6cb0993774282fddb796f82c61d350ec2e91274b7ac6007ea79601a7a"
+    },
+    {
+      "id": "guanzhong-221-67-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        110.4720781,
+        33.6136431,
+        110.609779,
+        33.7966575
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-221-67-part0.geojson.gz",
+      "featureCount": 3,
+      "countsByKind": {
+        "stream": 3
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "1d7ebc3be082f61e778e67a8df5834c12edb1ffd4ac90804cbd724ded9e12e26"
+    },
+    {
+      "id": "guanzhong-213-71-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        106.608162,
+        35.4329777,
+        107.0557612,
+        35.7093045
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-213-71-part0.geojson.gz",
+      "featureCount": 5,
+      "countsByKind": {
+        "stream": 5
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "528578ee374a36c3fc77dbbd0904423e3258835d49698b823cc54cdd4c67a657"
+    },
+    {
+      "id": "guanzhong-216-68-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        107.9903974,
+        33.9837593,
+        108.4931696,
+        34.4948404
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-216-68-part0.geojson.gz",
+      "featureCount": 97,
+      "countsByKind": {
+        "stream": 8,
+        "canal": 66,
+        "water": 23
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "f66c64396395d79a46443bdc458a109a95b0a29aab7f42021a2263ef73479c2c"
+    },
+    {
+      "id": "guanzhong-219-69-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        109.5068732,
+        34.5072286,
+        109.9762952,
+        34.9635664
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-219-69-part0.geojson.gz",
+      "featureCount": 80,
+      "countsByKind": {
+        "canal": 41,
+        "water": 28,
+        "stream": 11
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "618d10f255ec88d551fd8088609d50d84940ee63ca8d9176c047c58fe46ed917"
+    },
+    {
+      "id": "guanzhong-220-70-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        109.9574774,
+        34.9963681,
+        110.4974467,
+        35.4589617
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-220-70-part0.geojson.gz",
+      "featureCount": 43,
+      "countsByKind": {
+        "stream": 10,
+        "canal": 16,
+        "water": 17
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "7f6ac0ceb34a84256a2d551af46e47b713bdf0f14187927aafc8392903d18c66"
+    },
+    {
+      "id": "guanzhong-212-70-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        106.4371991,
+        35.2152659,
+        106.5184663,
+        35.2430172
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-212-70-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "43245968eb1fd86b5d8196ae833175190d7eb66ccd14541e96c6923695457384"
+    },
+    {
+      "id": "guanzhong-221-70-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        110.4078453,
+        35.0539664,
+        110.6334471,
+        35.3495933
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-221-70-part0.geojson.gz",
+      "featureCount": 2,
+      "countsByKind": {
+        "canal": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "fef717aea282652ed15a0dd67b745188e178b2b1a837a951931186eb571ab266"
+    },
+    {
+      "id": "guanzhong-215-66-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        107.5210548,
+        33.4782846,
+        107.975451,
+        33.5304255
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-215-66-part0.geojson.gz",
+      "featureCount": 2,
+      "countsByKind": {
+        "stream": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "86bbfa79da123bb5393772319426799dad09f7725961d9dd18eb5ce4ce2f445a"
+    },
+    {
+      "id": "guanzhong-219-71-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        109.6689563,
+        35.464907,
+        109.7424863,
+        35.5491507
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-219-71-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "6cff51cb85b81acb0253b48c93c217fa1d91ca3ae0dcca2fb54ffd196b07f822"
+    },
+    {
+      "id": "guanzhong-220-71-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        110.4601693,
+        35.499863,
+        110.4858197,
+        35.5117351
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-220-71-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "a2685dbd31c0298286953962f1a9db59e6921b8d3e3197b76cdcb97e41da6515"
+    },
+    {
+      "id": "guanzhong-218-71-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        109.3041199,
+        35.4656962,
+        109.4422716,
+        35.5205245
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-218-71-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "48dbc448f28896948fdf1b5ffe63d872efa48bfead746e0f62a1ed684a69c900"
+    },
+    {
+      "id": "guanzhong-220-66-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        110.1329087,
+        33.4695243,
+        110.1464325,
+        33.5061297
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-220-66-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "818188a52131dec8c9a7a19ba9dbae1eb5e83d08e142c74ab0d26d8e5b83c0c6"
+    },
+    {
+      "id": "guanzhong-215-71-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        107.6997595,
+        35.4825543,
+        107.7100429,
+        35.5202997
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-215-71-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "59ad2e6f9e3f4fb217c370a0b866345b67073534f58ed780bb6eabbf9e3c69fd"
+    },
+    {
+      "id": "guanzhong-212-68-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        106.4893627,
+        34.1689599,
+        106.5069151,
+        34.1759546
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-212-68-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "0e9edac41995ad93994502df9bf121aba7f281b75ba3bf47a0cc56bda257b854"
+    },
+    {
+      "id": "guanzhong-212-67-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        106.4630878,
+        33.6362834,
+        106.5295645,
+        33.6516737
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-212-67-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "09bbc14bb8405fc2aafffe4b809bd74300360c5c4455e1c0c8c3c8514bf69d32"
+    },
+    {
+      "id": "guanzhong-214-71-part0",
+      "name": "关中与秦岭北麓 · 局部细节",
+      "bounds": [
+        107.0488144,
+        35.4995152,
+        107.0514335,
+        35.5014111
+      ],
+      "url": "/data/tang-detail/modern-guanzhong-214-71-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "water": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-guanzhong",
+      "regionId": "guanzhong",
+      "sha256": "00fe1217afbeba7a804cc9cfe55e08760b89c8c45df6b34c2388fc862496ff0a"
+    },
+    {
+      "id": "jianghuai-overview-part0",
+      "name": "南京、皖南与江淮 · 主河与水面",
+      "bounds": [
+        116.7279563,
+        30.4661438,
+        121.097747,
+        33.6361844
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-overview-part0.geojson.gz",
+      "featureCount": 893,
+      "countsByKind": {
+        "water": 684,
+        "river": 209
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "587e3ee63a924e3ae72148ad50f14e0fc0b7cc08d6fbaee9a2db4557596680f0"
+    },
+    {
+      "id": "jianghuai-overview-part1",
+      "name": "南京、皖南与江淮 · 主河与水面",
+      "bounds": [
+        116.6658568,
+        30.5208487,
+        120.8423989,
+        33.6687157
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-overview-part1.geojson.gz",
+      "featureCount": 2894,
+      "countsByKind": {
+        "water": 2088,
+        "river": 806
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "a957525e8b42cc612d5afb45753a691af7be21e8a1755ae0b1bc0f5250a284c2"
+    },
+    {
+      "id": "jianghuai-overview-part2",
+      "name": "南京、皖南与江淮 · 主河与水面",
+      "bounds": [
+        116.5720781,
+        30.4601104,
+        120.6692152,
+        33.7635935
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-overview-part2.geojson.gz",
+      "featureCount": 3007,
+      "countsByKind": {
+        "water": 2007,
+        "river": 1000
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "6e24bd070b50b2f5df685a09fb18320549c2272ff54ee34a7139df340ca40bae"
+    },
+    {
+      "id": "jianghuai-overview-part3",
+      "name": "南京、皖南与江淮 · 主河与水面",
+      "bounds": [
+        116.8773132,
+        30.6475791,
+        120.8430255,
+        33.6630539
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-overview-part3.geojson.gz",
+      "featureCount": 4257,
+      "countsByKind": {
+        "water": 1660,
+        "river": 2597
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "8453f7fc3eba6c87c5a918105b6f43069e4f21040713f641155d6790cad099bf"
+    },
+    {
+      "id": "jianghuai-overview-part4",
+      "name": "南京、皖南与江淮 · 主河与水面",
+      "bounds": [
+        117.0830021,
+        30.6994288,
+        120.5169667,
+        33.194003
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-overview-part4.geojson.gz",
+      "featureCount": 129,
+      "countsByKind": {
+        "water": 23,
+        "river": 106
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "d022f01254ded724ffa7158cc2c5586585ebb22c8583ccd338ffb7c3920ead18"
+    },
+    {
+      "id": "jianghuai-234-63-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        116.9736458,
+        31.4889484,
+        117.5020525,
+        32.0307266
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-234-63-part0.geojson.gz",
+      "featureCount": 1477,
+      "countsByKind": {
+        "water": 956,
+        "peak": 16,
+        "canal": 120,
+        "stream": 385
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "5bda55c84dfd4df7be1f1f41fe64366cd472a2c3818975fe1ae2f5e8c5096411"
+    },
+    {
+      "id": "jianghuai-239-64-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        119.4550968,
+        31.9932302,
+        120.0470074,
+        32.539311
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-239-64-part0.geojson.gz",
+      "featureCount": 3971,
+      "countsByKind": {
+        "water": 3536,
+        "peak": 6,
+        "canal": 359,
+        "stream": 70
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "988db9b213fe69e473cd410a0ea25b22337191d9cfe1a9c1f0e336444f164a72"
+    },
+    {
+      "id": "jianghuai-240-63-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        119.9770595,
+        31.4928236,
+        120.5144181,
+        32.0350824
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-240-63-part0.geojson.gz",
+      "featureCount": 3218,
+      "countsByKind": {
+        "water": 1819,
+        "peak": 44,
+        "canal": 276,
+        "stream": 1079
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "3c201e5fe99f62b1855e404e9ee8e1d78aac2f6e6aef86f64599ee4d14eb4aa8"
+    },
+    {
+      "id": "jianghuai-239-66-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        119.3111335,
+        32.932046,
+        120.0325399,
+        33.5689331
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-239-66-part0.geojson.gz",
+      "featureCount": 3181,
+      "countsByKind": {
+        "water": 3085,
+        "canal": 74,
+        "stream": 22
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "c05ad90732681b304f266a84bc267ed724af5de60ee367d419db10ce53f2a212"
+    },
+    {
+      "id": "jianghuai-238-65-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        118.9994549,
+        32.4988114,
+        119.5312876,
+        33.0532123
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-238-65-part0.geojson.gz",
+      "featureCount": 1006,
+      "countsByKind": {
+        "water": 951,
+        "canal": 52,
+        "stream": 3
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "71c0246af8460103022dddcf5424db7819491aad30795a158d06bd9c960b9a45"
+    },
+    {
+      "id": "jianghuai-239-65-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        119.4678391,
+        32.4814625,
+        120.0397435,
+        33.0019977
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-239-65-part0.geojson.gz",
+      "featureCount": 6502,
+      "countsByKind": {
+        "water": 6463,
+        "canal": 32,
+        "stream": 7
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "472f77bc41eedb6b8429abd10d32da9db3612f77b4fbc3fcb02b0ff5a75fb03a"
+    },
+    {
+      "id": "jianghuai-239-65-part1",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        119.4136324,
+        32.322766,
+        120.015693,
+        33.0223197
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-239-65-part1.geojson.gz",
+      "featureCount": 3730,
+      "countsByKind": {
+        "water": 3670,
+        "canal": 51,
+        "stream": 9
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "9e62c5a512c2968ef02c4aa14d946ecef7f950791ed28730d1ff09431774ac54"
+    },
+    {
+      "id": "jianghuai-240-62-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        119.9991559,
+        30.965411,
+        120.5115683,
+        31.5304459
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-240-62-part0.geojson.gz",
+      "featureCount": 3527,
+      "countsByKind": {
+        "water": 2604,
+        "peak": 84,
+        "canal": 479,
+        "stream": 360
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "b5cfd8bb5a5ff3d7f62552044e02a4d156beada559d8790ae2bf20016e34c40b"
+    },
+    {
+      "id": "jianghuai-239-63-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        119.4765847,
+        31.373642,
+        120.0440677,
+        32.1640697
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-239-63-part0.geojson.gz",
+      "featureCount": 6774,
+      "countsByKind": {
+        "water": 5920,
+        "peak": 2,
+        "canal": 58,
+        "stream": 794
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "af4c56b8aa0745124341a7ec89913ce731c38e1aa756bd582b29dc4bc86a1fb9"
+    },
+    {
+      "id": "jianghuai-239-63-part1",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        119.500997,
+        31.5108898,
+        120.0002759,
+        32.0011178
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-239-63-part1.geojson.gz",
+      "featureCount": 3151,
+      "countsByKind": {
+        "water": 3047,
+        "stream": 92,
+        "canal": 12
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "ce59f5b1c6a027709fda278a83fb6a8d6de22f7ddb9ff38bcc5a2007327a1f7f"
+    },
+    {
+      "id": "jianghuai-236-62-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        117.9997553,
+        30.9914668,
+        118.5451208,
+        31.5032639
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-236-62-part0.geojson.gz",
+      "featureCount": 818,
+      "countsByKind": {
+        "water": 631,
+        "peak": 12,
+        "canal": 114,
+        "stream": 61
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "3a745a1cee11760bd92979ec87ef8835687b45563e759d88f3d494ac93abbf9b"
+    },
+    {
+      "id": "jianghuai-240-65-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        119.9397259,
+        32.449643,
+        120.5396104,
+        33.1577987
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-240-65-part0.geojson.gz",
+      "featureCount": 1088,
+      "countsByKind": {
+        "water": 558,
+        "canal": 481,
+        "stream": 49
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "e3e7064443562dfc3fab2982be367aa6010cbebfced6aa76ac4d630535701512"
+    },
+    {
+      "id": "jianghuai-237-64-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        118.4991127,
+        31.9964353,
+        119.0119675,
+        32.509309
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-237-64-part0.geojson.gz",
+      "featureCount": 2222,
+      "countsByKind": {
+        "water": 1532,
+        "peak": 148,
+        "saddle": 7,
+        "stream": 474,
+        "canal": 61
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "4dfa6a41450de3fee531967407114a8dcfb274ffa8b7074cc472496c838204f6"
+    },
+    {
+      "id": "jianghuai-238-62-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        118.960844,
+        30.9974713,
+        119.4992328,
+        31.5017389
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-238-62-part0.geojson.gz",
+      "featureCount": 395,
+      "countsByKind": {
+        "water": 324,
+        "peak": 41,
+        "canal": 25,
+        "stream": 5
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "5b93ede1a0b8e68532081e4b6433ec3d3b61fe48ae82d9ccc7bde0c8fe3006d9"
+    },
+    {
+      "id": "jianghuai-239-62-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        119.4999681,
+        30.9964056,
+        120.0092915,
+        31.5166535
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-239-62-part0.geojson.gz",
+      "featureCount": 750,
+      "countsByKind": {
+        "water": 583,
+        "peak": 50,
+        "canal": 77,
+        "stream": 40
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "2819dd36956942a5b082b9ada2ebe0d293037d7f6149fd61964bb3fc4e845583"
+    },
+    {
+      "id": "jianghuai-235-64-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        117.5013469,
+        31.9873591,
+        117.9997853,
+        32.500992
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-235-64-part0.geojson.gz",
+      "featureCount": 337,
+      "countsByKind": {
+        "water": 251,
+        "peak": 2,
+        "canal": 36,
+        "stream": 48
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "fbea2c4d0cfc19fe6d7ecd04b392a47279095b9db401faad14bfec682dba763c"
+    },
+    {
+      "id": "jianghuai-234-64-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        116.9999635,
+        31.9988811,
+        117.4995782,
+        32.4996283
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-234-64-part0.geojson.gz",
+      "featureCount": 373,
+      "countsByKind": {
+        "water": 259,
+        "peak": 1,
+        "stream": 75,
+        "canal": 38
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "5f8e7fab03b74ccbc9955d46f756ba5d8ee89c0c1dc508fd3115a41ae05dd8f4"
+    },
+    {
+      "id": "jianghuai-234-65-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        116.9978024,
+        32.4992739,
+        117.5128557,
+        32.9998661
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-234-65-part0.geojson.gz",
+      "featureCount": 166,
+      "countsByKind": {
+        "water": 110,
+        "peak": 10,
+        "canal": 17,
+        "stream": 29
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "bdc7d8fe2a218fb3e886839eab418185aef255ab9b88c3c5bc23356972939435"
+    },
+    {
+      "id": "jianghuai-240-61-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        119.9970223,
+        30.5448982,
+        120.5088025,
+        31.0065537
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-240-61-part0.geojson.gz",
+      "featureCount": 1943,
+      "countsByKind": {
+        "water": 615,
+        "peak": 6,
+        "canal": 1075,
+        "stream": 247
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "eba3eb06ab75a73a9ea46fe0e0f23e0642a01aca9a876d362b39b9170d2d191c"
+    },
+    {
+      "id": "jianghuai-240-66-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        119.9738717,
+        32.972641,
+        120.5442447,
+        33.5685376
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-240-66-part0.geojson.gz",
+      "featureCount": 460,
+      "countsByKind": {
+        "water": 85,
+        "canal": 337,
+        "stream": 38
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "2930fa509afeffe4c4969aa1781c76f9eb43119c0b8d8775ab49b0714a5a8f4c"
+    },
+    {
+      "id": "jianghuai-238-63-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        118.998456,
+        31.4941399,
+        119.5852792,
+        32.0095885
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-238-63-part0.geojson.gz",
+      "featureCount": 3864,
+      "countsByKind": {
+        "water": 3699,
+        "peak": 37,
+        "stream": 90,
+        "canal": 38
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "c3cedbc9b25a5c8868b6afa8a70496f2c999049ace15b977879426ee6c4685b3"
+    },
+    {
+      "id": "jianghuai-237-62-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        118.4816027,
+        31.0007506,
+        118.9885743,
+        31.4921714
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-237-62-part0.geojson.gz",
+      "featureCount": 524,
+      "countsByKind": {
+        "water": 318,
+        "peak": 3,
+        "canal": 192,
+        "stream": 11
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "6b2abc7992eb54fde9ecdc7b573ac1cf4e45646c5b9ad3af87804f0c147f085c"
+    },
+    {
+      "id": "jianghuai-237-63-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        118.4680625,
+        31.4822409,
+        119.0005341,
+        32.0041911
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-237-63-part0.geojson.gz",
+      "featureCount": 1322,
+      "countsByKind": {
+        "water": 939,
+        "peak": 94,
+        "canal": 115,
+        "stream": 174
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "18fca6f66a2fe65808cc966d48d3ae274bc03e6b9fb7af04857e2593ac5675b4"
+    },
+    {
+      "id": "jianghuai-237-66-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        118.4871912,
+        33.0037195,
+        119.1373262,
+        33.5609601
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-237-66-part0.geojson.gz",
+      "featureCount": 129,
+      "countsByKind": {
+        "water": 66,
+        "canal": 62,
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "c70bcce5bad0787d4881bcdc6e04b125de4310f0b24f886a16a30b5b23ed8f4e"
+    },
+    {
+      "id": "jianghuai-234-62-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        116.9769879,
+        31.000451,
+        117.5129544,
+        31.5047477
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-234-62-part0.geojson.gz",
+      "featureCount": 749,
+      "countsByKind": {
+        "water": 454,
+        "peak": 129,
+        "canal": 59,
+        "stream": 107
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "7c95511d4ccd34f9b331d419917bfcbb491ff2b7725c7d6e71808fe646aabef2"
+    },
+    {
+      "id": "jianghuai-238-64-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        118.9985233,
+        31.9749308,
+        119.5075393,
+        32.5005006
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-238-64-part0.geojson.gz",
+      "featureCount": 2408,
+      "countsByKind": {
+        "water": 2061,
+        "peak": 145,
+        "saddle": 2,
+        "stream": 88,
+        "canal": 112
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "a7fbca69514b702b575724b40668f3be37afdabff2b5e499f26f7af9f20340e3"
+    },
+    {
+      "id": "jianghuai-236-64-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        117.9956666,
+        31.9970977,
+        118.5005125,
+        32.4948555
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-236-64-part0.geojson.gz",
+      "featureCount": 616,
+      "countsByKind": {
+        "water": 481,
+        "saddle": 1,
+        "peak": 9,
+        "canal": 99,
+        "stream": 26
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "2255ab7a25eb6397faff29ae7761c02a74f730cff11477629a9848b4880d0aa6"
+    },
+    {
+      "id": "jianghuai-234-61-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        117.0119902,
+        30.6915521,
+        117.4992192,
+        31.0328806
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-234-61-part0.geojson.gz",
+      "featureCount": 161,
+      "countsByKind": {
+        "water": 131,
+        "peak": 20,
+        "stream": 7,
+        "canal": 3
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "fbd0a1be57199b0395ca5825f6f3c7a39ffe68785a3b3b9d2b7887824ea09989"
+    },
+    {
+      "id": "jianghuai-239-61-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        119.5025234,
+        30.700646,
+        120.0099429,
+        31.0066142
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-239-61-part0.geojson.gz",
+      "featureCount": 194,
+      "countsByKind": {
+        "water": 120,
+        "peak": 8,
+        "stream": 27,
+        "canal": 39
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "9b5d1a8ca3c72e8b1bd53a2184526ab3e97b63d405098311cd538bb073ffdefd"
+    },
+    {
+      "id": "jianghuai-236-63-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        117.9719411,
+        31.4905155,
+        118.5120339,
+        32.0196123
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-236-63-part0.geojson.gz",
+      "featureCount": 3576,
+      "countsByKind": {
+        "water": 3148,
+        "peak": 113,
+        "canal": 97,
+        "stream": 218
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "90d72fe7265d0f04d2ea2a20864524b79e345d317804c58eb1f38963abf4a3cc"
+    },
+    {
+      "id": "jianghuai-235-63-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        117.4412152,
+        31.4859366,
+        118.0059022,
+        32.0442622
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-235-63-part0.geojson.gz",
+      "featureCount": 2515,
+      "countsByKind": {
+        "water": 2132,
+        "peak": 126,
+        "saddle": 1,
+        "canal": 95,
+        "stream": 161
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "b8d2f108662865aaeff77539b059d93d2a870297cf5f751bafbadf1a4404952f"
+    },
+    {
+      "id": "jianghuai-236-61-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        118.013125,
+        30.601359,
+        118.5043855,
+        30.9930858
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-236-61-part0.geojson.gz",
+      "featureCount": 97,
+      "countsByKind": {
+        "water": 50,
+        "peak": 6,
+        "canal": 23,
+        "stream": 18
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "466f6fb4ec6f284d03a4c46dd44c6a5e4cd86a6544c67c4616dc5bf6fa9047e6"
+    },
+    {
+      "id": "jianghuai-234-66-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        116.9753516,
+        32.9774976,
+        117.5350902,
+        33.4747754
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-234-66-part0.geojson.gz",
+      "featureCount": 96,
+      "countsByKind": {
+        "water": 13,
+        "canal": 82,
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "410f939418638c8df5505e653ca7b35f73c032d06fd6d3ac1891a42451936fef"
+    },
+    {
+      "id": "jianghuai-235-61-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        117.5000264,
+        30.6291421,
+        117.9840623,
+        31.067933
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-235-61-part0.geojson.gz",
+      "featureCount": 111,
+      "countsByKind": {
+        "water": 81,
+        "peak": 23,
+        "canal": 4,
+        "stream": 3
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "b67b1e8fdbb8b23f6a96bd5feebbd21c5b44d4a2ec0d4cde28c2e56e70ebfe0d"
+    },
+    {
+      "id": "jianghuai-237-61-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        118.4969258,
+        30.6982141,
+        118.9991239,
+        31.0013614
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-237-61-part0.geojson.gz",
+      "featureCount": 196,
+      "countsByKind": {
+        "water": 67,
+        "peak": 4,
+        "stream": 16,
+        "canal": 109
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "437c2595dae77a00b27c70ff1559f9ff0dda620e5bc9fe5483a6249db5267dc0"
+    },
+    {
+      "id": "jianghuai-236-66-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        117.9976334,
+        33.0055808,
+        118.4994592,
+        33.5175981
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-236-66-part0.geojson.gz",
+      "featureCount": 507,
+      "countsByKind": {
+        "water": 290,
+        "canal": 206,
+        "stream": 11
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "ab1722a2866d1c8f6315d9a0d854c58d56fd58bb7ccb60b6d959bb19e7bcc4c0"
+    },
+    {
+      "id": "jianghuai-235-65-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        117.4727339,
+        32.4578827,
+        118.0005455,
+        32.9948519
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-235-65-part0.geojson.gz",
+      "featureCount": 159,
+      "countsByKind": {
+        "water": 128,
+        "peak": 1,
+        "stream": 29,
+        "canal": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "f82da26656793ef01f5dddc089d721c87de44f4c8d56a5ca3c9c93fde3a9d3aa"
+    },
+    {
+      "id": "jianghuai-235-62-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        117.4632776,
+        31.0001847,
+        118.0012957,
+        31.5093738
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-235-62-part0.geojson.gz",
+      "featureCount": 292,
+      "countsByKind": {
+        "water": 129,
+        "peak": 93,
+        "stream": 25,
+        "canal": 45
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "1bb4b5f405babd406a76fda5e9cd59937e8c17c065fdcba906b29ddb6571b462"
+    },
+    {
+      "id": "jianghuai-237-65-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        118.5036817,
+        32.4925813,
+        119.1264403,
+        32.9863454
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-237-65-part0.geojson.gz",
+      "featureCount": 156,
+      "countsByKind": {
+        "water": 99,
+        "peak": 26,
+        "stream": 27,
+        "canal": 4
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "3fd4ff9d9d1a9dc4b518ebbb13045d6114339a4820d2cf09f395f82895afff7f"
+    },
+    {
+      "id": "jianghuai-238-61-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        118.9869627,
+        30.6987704,
+        119.5056311,
+        30.9974713
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-238-61-part0.geojson.gz",
+      "featureCount": 178,
+      "countsByKind": {
+        "peak": 80,
+        "saddle": 1,
+        "stream": 31,
+        "canal": 20,
+        "water": 46
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "9242b84770be841d9eb84bdfe6c05da2a1697a81eb7bec490f85d6ed442a9bb9"
+    },
+    {
+      "id": "jianghuai-236-65-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        117.9998964,
+        32.5036725,
+        118.4970331,
+        32.9982803
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-236-65-part0.geojson.gz",
+      "featureCount": 137,
+      "countsByKind": {
+        "peak": 18,
+        "canal": 8,
+        "water": 107,
+        "stream": 4
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "74009efc95bf8327222f69d17c2765e01bbcfbdc92c780da311c626483c96fae"
+    },
+    {
+      "id": "jianghuai-238-67-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        118.9408469,
+        33.4749268,
+        119.5863814,
+        33.7754524
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-238-67-part0.geojson.gz",
+      "featureCount": 7,
+      "countsByKind": {
+        "canal": 5,
+        "water": 1,
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "790ce295aa69305c705daba9695e04e84cee50eb9b3ebd33cab184bd1cf78511"
+    },
+    {
+      "id": "jianghuai-241-63-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        120.4666054,
+        31.536127,
+        120.6519076,
+        31.9933036
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-241-63-part0.geojson.gz",
+      "featureCount": 6,
+      "countsByKind": {
+        "canal": 4,
+        "water": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "72dcaec5ce66b95a9a1b6529930a8aa95944431996fcefca25b37d986397e2cc"
+    },
+    {
+      "id": "jianghuai-241-61-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        120.4789045,
+        30.5951187,
+        120.5867043,
+        30.9939363
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-241-61-part0.geojson.gz",
+      "featureCount": 14,
+      "countsByKind": {
+        "canal": 8,
+        "stream": 3,
+        "water": 3
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "c399c9fdfbf8908eb7ad241bda9497c2e31f5915111e2e7d14df64656252fcf5"
+    },
+    {
+      "id": "jianghuai-240-64-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        119.8587323,
+        31.9342896,
+        120.5394224,
+        32.5315198
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-240-64-part0.geojson.gz",
+      "featureCount": 1059,
+      "countsByKind": {
+        "stream": 75,
+        "canal": 544,
+        "water": 440
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "f224d7df15d9d44e3e8bc1946905cb7d2d2d6ba0646dbf4c26687be175ac2231"
+    },
+    {
+      "id": "jianghuai-241-64-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        120.4154656,
+        32.0610766,
+        120.6942021,
+        32.5720059
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-241-64-part0.geojson.gz",
+      "featureCount": 4,
+      "countsByKind": {
+        "canal": 2,
+        "stream": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "64c7d622fced361d3c9ba70ecd301e406b63e896440a7fa462d9cbd7377b1d4a"
+    },
+    {
+      "id": "jianghuai-237-67-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        118.5297776,
+        33.4536337,
+        118.5820055,
+        33.6248749
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-237-67-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "canal": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "bbb22483b0fbcbd186913eed48475dcc784cc712efe07248e9c45d5c7bcffa5d"
+    },
+    {
+      "id": "jianghuai-241-62-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        120.3491092,
+        31.0015612,
+        120.6499453,
+        31.5233153
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-241-62-part0.geojson.gz",
+      "featureCount": 28,
+      "countsByKind": {
+        "canal": 16,
+        "stream": 3,
+        "water": 9
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "e6e4085a3ca9f18e5e134c35ba2dba481e19a425b47a001c4e9c77da63f90354"
+    },
+    {
+      "id": "jianghuai-240-67-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        119.8329753,
+        33.3369194,
+        120.2651957,
+        33.7725529
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-240-67-part0.geojson.gz",
+      "featureCount": 5,
+      "countsByKind": {
+        "canal": 5
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "3c56ffe289d7f2cb752b844d170386caf72791f002ff1b163ac4dadae3bccc62"
+    },
+    {
+      "id": "jianghuai-241-66-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        120.3784686,
+        32.999423,
+        120.6959947,
+        33.5276045
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-241-66-part0.geojson.gz",
+      "featureCount": 7,
+      "countsByKind": {
+        "canal": 6,
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "0c073ed1acb8128c94ee17962fcdfcdc812a5d42e27b6b52df9418c8b3587498"
+    },
+    {
+      "id": "jianghuai-238-66-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        118.9235641,
+        32.9772761,
+        119.5904317,
+        33.4986961
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-238-66-part0.geojson.gz",
+      "featureCount": 702,
+      "countsByKind": {
+        "canal": 79,
+        "water": 618,
+        "stream": 5
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "c1e1a3ad55ab0a1764f49dba8137cc6a7cffc7ddea29eb4a83b4f0e32e02e0b2"
+    },
+    {
+      "id": "jianghuai-235-66-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        117.4678373,
+        33.0028917,
+        118.0476504,
+        33.5251203
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-235-66-part0.geojson.gz",
+      "featureCount": 27,
+      "countsByKind": {
+        "canal": 23,
+        "water": 4
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "127eb42b9445d0422ebab6581c828e994967b511cdcf4a3c1a292f6c3628ce75"
+    },
+    {
+      "id": "jianghuai-239-67-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        119.1484972,
+        33.4823012,
+        120.3203753,
+        34.115235
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-239-67-part0.geojson.gz",
+      "featureCount": 2,
+      "countsByKind": {
+        "canal": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "07bb477db50179dc933f8be01f17a58ee95bccb69d2ea583696915fae8818798"
+    },
+    {
+      "id": "jianghuai-241-65-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        120.3663455,
+        32.5804131,
+        120.722972,
+        32.994304
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-241-65-part0.geojson.gz",
+      "featureCount": 12,
+      "countsByKind": {
+        "canal": 12
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "7d93a484ce02f77266c50e7603dbe752f8e87408c267e35e1a760ab707d75677"
+    },
+    {
+      "id": "jianghuai-233-63-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        116.9537145,
+        31.4916815,
+        117.0394224,
+        31.8373629
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-233-63-part0.geojson.gz",
+      "featureCount": 3,
+      "countsByKind": {
+        "water": 1,
+        "canal": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "063249caf4dc82ad802c746d07b3ef975fd72350897df58142ea12c27660ccee"
+    },
+    {
+      "id": "jianghuai-233-62-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        116.9096271,
+        31.243754,
+        117.0188668,
+        31.494469
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-233-62-part0.geojson.gz",
+      "featureCount": 3,
+      "countsByKind": {
+        "stream": 1,
+        "canal": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "e2f91c52ac989befc3fc54fbe78ddde3761a7ae470735dd070b197f88aaa9838"
+    },
+    {
+      "id": "jianghuai-233-65-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        116.9836757,
+        32.5045185,
+        117.01126,
+        32.8176498
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-233-65-part0.geojson.gz",
+      "featureCount": 3,
+      "countsByKind": {
+        "canal": 1,
+        "water": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "6988b20853e854aa75669691bf1d3f49b9268ba4636895012eac6dbd3b262a0f"
+    },
+    {
+      "id": "jianghuai-233-64-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        116.9018736,
+        31.9106981,
+        117.1883831,
+        32.1899942
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-233-64-part0.geojson.gz",
+      "featureCount": 2,
+      "countsByKind": {
+        "canal": 1,
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "14631f73c54aebe93568380b9fbc66275435bcad542f7f9ec7620259402cf665"
+    },
+    {
+      "id": "jianghuai-234-67-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        117.3884134,
+        33.4540302,
+        117.4098639,
+        33.5772003
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-234-67-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "canal": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "c606d0cb34678f3b6d17dc83a9306134aeb90aa04ea8bbd8a30db484211d9d24"
+    },
+    {
+      "id": "jianghuai-235-67-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        117.7084108,
+        33.4856406,
+        117.8605888,
+        33.5204357
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-235-67-part0.geojson.gz",
+      "featureCount": 2,
+      "countsByKind": {
+        "canal": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "c36ae0c29e5e4ac0787714d60ca867c734e232f800bacd0b4dd20ea9b89c7970"
+    },
+    {
+      "id": "jianghuai-236-67-part0",
+      "name": "南京、皖南与江淮 · 局部细节",
+      "bounds": [
+        118.314849,
+        33.469623,
+        118.4224456,
+        33.5496634
+      ],
+      "url": "/data/tang-detail/modern-jianghuai-236-67-part0.geojson.gz",
+      "featureCount": 3,
+      "countsByKind": {
+        "canal": 3
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-jianghuai",
+      "regionId": "jianghuai",
+      "sha256": "1e649b06be67bc7f293017dd8cd5e475604b191a57d0a970637e01d164183f4c"
+    },
+    {
+      "id": "luoyang-overview-part0",
+      "name": "洛阳与豫西 · 主河与水面",
+      "bounds": [
+        110.432465,
+        32.93886,
+        115.791975,
+        39.5074967
+      ],
+      "url": "/data/tang-detail/modern-luoyang-overview-part0.geojson.gz",
+      "featureCount": 1216,
+      "countsByKind": {
+        "water": 492,
+        "river": 724
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-luoyang",
+      "regionId": "luoyang",
+      "sha256": "1fd6c49f93d2752e7bede6be62ce37193a264836dc5ca1f537491c9ae3f09fcf"
+    },
+    {
+      "id": "luoyang-224-69-part0",
+      "name": "洛阳与豫西 · 局部细节",
+      "bounds": [
+        111.9835074,
+        34.5027327,
+        112.5045409,
+        35.0407905
+      ],
+      "url": "/data/tang-detail/modern-luoyang-224-69-part0.geojson.gz",
+      "featureCount": 363,
+      "countsByKind": {
+        "water": 163,
+        "peak": 1,
+        "stream": 130,
+        "canal": 69
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-luoyang",
+      "regionId": "luoyang",
+      "sha256": "932b86da056d225dedfd47ad3d7adfe9e63c97e1a8ca1b71bfb2fece1aea21ab"
+    },
+    {
+      "id": "luoyang-225-70-part0",
+      "name": "洛阳与豫西 · 局部细节",
+      "bounds": [
+        112.5019333,
+        34.9998346,
+        112.9365904,
+        35.5038655
+      ],
+      "url": "/data/tang-detail/modern-luoyang-225-70-part0.geojson.gz",
+      "featureCount": 104,
+      "countsByKind": {
+        "water": 50,
+        "stream": 38,
+        "canal": 16
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-luoyang",
+      "regionId": "luoyang",
+      "sha256": "a23d6973303f542e6527046a1aafffd062cda14d4fc76be2415d7f0cc49bd442"
+    },
+    {
+      "id": "luoyang-226-69-part0",
+      "name": "洛阳与豫西 · 局部细节",
+      "bounds": [
+        112.9275377,
+        34.5003145,
+        113.4991289,
+        35.029159
+      ],
+      "url": "/data/tang-detail/modern-luoyang-226-69-part0.geojson.gz",
+      "featureCount": 168,
+      "countsByKind": {
+        "water": 80,
+        "peak": 24,
+        "canal": 32,
+        "stream": 32
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-luoyang",
+      "regionId": "luoyang",
+      "sha256": "19adf642abd90080b240dce7fcf4c83bd38c84d08d579ba11609aa7440db5327"
+    },
+    {
+      "id": "luoyang-226-70-part0",
+      "name": "洛阳与豫西 · 局部细节",
+      "bounds": [
+        113.0021228,
+        34.9707358,
+        113.4982933,
+        35.5062818
+      ],
+      "url": "/data/tang-detail/modern-luoyang-226-70-part0.geojson.gz",
+      "featureCount": 119,
+      "countsByKind": {
+        "water": 24,
+        "peak": 2,
+        "stream": 48,
+        "canal": 45
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-luoyang",
+      "regionId": "luoyang",
+      "sha256": "0187e623f531d6f420b965286b6f447d2e2fda0a7505d10efa3aa6da3b964cca"
+    },
+    {
+      "id": "luoyang-221-70-part0",
+      "name": "洛阳与豫西 · 局部细节",
+      "bounds": [
+        110.5208811,
+        34.9994026,
+        111.0034184,
+        35.4900345
+      ],
+      "url": "/data/tang-detail/modern-luoyang-221-70-part0.geojson.gz",
+      "featureCount": 88,
+      "countsByKind": {
+        "water": 41,
+        "peak": 1,
+        "canal": 42,
+        "stream": 4
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-luoyang",
+      "regionId": "luoyang",
+      "sha256": "dc71e99ff93146ffed987e1ba6f4abe42855bce8806554bb3f731e2192aa794b"
+    },
+    {
+      "id": "luoyang-223-69-part0",
+      "name": "洛阳与豫西 · 局部细节",
+      "bounds": [
+        111.4959902,
+        34.5003223,
+        112.0208625,
+        34.9989667
+      ],
+      "url": "/data/tang-detail/modern-luoyang-223-69-part0.geojson.gz",
+      "featureCount": 83,
+      "countsByKind": {
+        "water": 30,
+        "peak": 6,
+        "stream": 46,
+        "canal": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-luoyang",
+      "regionId": "luoyang",
+      "sha256": "4e2fbb0ab99bbcace5bd77b3b6af30916c6106e91d7c91e3031184bc28702fd2"
+    },
+    {
+      "id": "luoyang-226-68-part0",
+      "name": "洛阳与豫西 · 局部细节",
+      "bounds": [
+        113.0004311,
+        34.0240004,
+        113.4985585,
+        34.5134525
+      ],
+      "url": "/data/tang-detail/modern-luoyang-226-68-part0.geojson.gz",
+      "featureCount": 162,
+      "countsByKind": {
+        "water": 48,
+        "peak": 69,
+        "stream": 13,
+        "canal": 32
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-luoyang",
+      "regionId": "luoyang",
+      "sha256": "4f98166567edbd195e252d0b6ab5106876977355f9273ee57773699b16f09e5b"
+    },
+    {
+      "id": "luoyang-225-69-part0",
+      "name": "洛阳与豫西 · 局部细节",
+      "bounds": [
+        112.5012946,
+        34.500425,
+        113.0448603,
+        35.0566287
+      ],
+      "url": "/data/tang-detail/modern-luoyang-225-69-part0.geojson.gz",
+      "featureCount": 248,
+      "countsByKind": {
+        "water": 121,
+        "peak": 10,
+        "canal": 98,
+        "stream": 19
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-luoyang",
+      "regionId": "luoyang",
+      "sha256": "9ce8b6f2ed687dbe4e1c9aaff7c8f36445c2d33fc079d38cd6c3dff9a8d6c84b"
+    },
+    {
+      "id": "luoyang-222-69-part0",
+      "name": "洛阳与豫西 · 局部细节",
+      "bounds": [
+        110.9839484,
+        34.5038423,
+        111.4591742,
+        34.957434
+      ],
+      "url": "/data/tang-detail/modern-luoyang-222-69-part0.geojson.gz",
+      "featureCount": 37,
+      "countsByKind": {
+        "water": 29,
+        "stream": 8
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-luoyang",
+      "regionId": "luoyang",
+      "sha256": "3a406ebe725c7337570f7d42d97e6c8d997440d94ad63195f9f57a2eb3e65efd"
+    },
+    {
+      "id": "luoyang-226-67-part0",
+      "name": "洛阳与豫西 · 局部细节",
+      "bounds": [
+        112.9892419,
+        33.4976593,
+        113.4776359,
+        33.994576
+      ],
+      "url": "/data/tang-detail/modern-luoyang-226-67-part0.geojson.gz",
+      "featureCount": 320,
+      "countsByKind": {
+        "water": 124,
+        "peak": 21,
+        "canal": 73,
+        "stream": 102
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-luoyang",
+      "regionId": "luoyang",
+      "sha256": "e59eb8436e4e84bd9be3518271e3c1ca65a48045c0a1a00747c144104285057e"
+    },
+    {
+      "id": "luoyang-223-67-part0",
+      "name": "洛阳与豫西 · 局部细节",
+      "bounds": [
+        111.5237906,
+        33.5047454,
+        111.9944039,
+        34.0248526
+      ],
+      "url": "/data/tang-detail/modern-luoyang-223-67-part0.geojson.gz",
+      "featureCount": 70,
+      "countsByKind": {
+        "water": 24,
+        "peak": 5,
+        "stream": 41
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-luoyang",
+      "regionId": "luoyang",
+      "sha256": "c39d2c1582d1ef7b0c0e1c7d7857d89455237bee385402f8f05675ab227e75c8"
+    },
+    {
+      "id": "luoyang-224-70-part0",
+      "name": "洛阳与豫西 · 局部细节",
+      "bounds": [
+        112.0047666,
+        35.0182137,
+        112.5151556,
+        35.4994924
+      ],
+      "url": "/data/tang-detail/modern-luoyang-224-70-part0.geojson.gz",
+      "featureCount": 61,
+      "countsByKind": {
+        "peak": 9,
+        "saddle": 3,
+        "water": 11,
+        "stream": 30,
+        "canal": 8
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-luoyang",
+      "regionId": "luoyang",
+      "sha256": "2b4044532efd5aa37752b8785846a0c889a05d19c4b35147cdfb0db0503a5333"
+    },
+    {
+      "id": "luoyang-221-69-part0",
+      "name": "洛阳与豫西 · 局部细节",
+      "bounds": [
+        110.5172816,
+        34.5309271,
+        110.9992632,
+        35.0026277
+      ],
+      "url": "/data/tang-detail/modern-luoyang-221-69-part0.geojson.gz",
+      "featureCount": 53,
+      "countsByKind": {
+        "peak": 2,
+        "water": 42,
+        "stream": 5,
+        "canal": 4
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-luoyang",
+      "regionId": "luoyang",
+      "sha256": "34c8d550b5d12ce452ef115a8339b363b70a57e72d36d24d2f3eb9010f27e535"
+    },
+    {
+      "id": "luoyang-222-67-part0",
+      "name": "洛阳与豫西 · 局部细节",
+      "bounds": [
+        111.0095854,
+        33.5257092,
+        111.4894933,
+        33.9980044
+      ],
+      "url": "/data/tang-detail/modern-luoyang-222-67-part0.geojson.gz",
+      "featureCount": 91,
+      "countsByKind": {
+        "peak": 5,
+        "stream": 83,
+        "water": 3
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-luoyang",
+      "regionId": "luoyang",
+      "sha256": "8730a5335339f3421a9495b446eccfa67afb7dbeba1efbb22306143368425102"
+    },
+    {
+      "id": "luoyang-223-68-part0",
+      "name": "洛阳与豫西 · 局部细节",
+      "bounds": [
+        111.4862805,
+        33.9909007,
+        111.9854557,
+        34.5023614
+      ],
+      "url": "/data/tang-detail/modern-luoyang-223-68-part0.geojson.gz",
+      "featureCount": 40,
+      "countsByKind": {
+        "peak": 4,
+        "stream": 24,
+        "water": 9,
+        "canal": 3
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-luoyang",
+      "regionId": "luoyang",
+      "sha256": "897b617a6c25b5142da24b53dcef90e82203b26d8a81674d29b8ba179facbdea"
+    },
+    {
+      "id": "luoyang-222-68-part0",
+      "name": "洛阳与豫西 · 局部细节",
+      "bounds": [
+        110.9887574,
+        33.9953916,
+        111.4968474,
+        34.3363706
+      ],
+      "url": "/data/tang-detail/modern-luoyang-222-68-part0.geojson.gz",
+      "featureCount": 39,
+      "countsByKind": {
+        "peak": 2,
+        "stream": 31,
+        "water": 6
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-luoyang",
+      "regionId": "luoyang",
+      "sha256": "b944946afa435f36c06a58a4274cc7f305c2d150ac2346f17dbcc3308609ae0a"
+    },
+    {
+      "id": "luoyang-222-70-part0",
+      "name": "洛阳与豫西 · 局部细节",
+      "bounds": [
+        111.0009476,
+        35.002862,
+        111.5010346,
+        35.4615535
+      ],
+      "url": "/data/tang-detail/modern-luoyang-222-70-part0.geojson.gz",
+      "featureCount": 53,
+      "countsByKind": {
+        "peak": 1,
+        "water": 24,
+        "stream": 28
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-luoyang",
+      "regionId": "luoyang",
+      "sha256": "889d09940be1cd3fae465b7e14bf20ba106500d774fb1cf0e3e31b8518af37d4"
+    },
+    {
+      "id": "luoyang-223-70-part0",
+      "name": "洛阳与豫西 · 局部细节",
+      "bounds": [
+        111.4780309,
+        34.9901683,
+        112.0004404,
+        35.4914241
+      ],
+      "url": "/data/tang-detail/modern-luoyang-223-70-part0.geojson.gz",
+      "featureCount": 45,
+      "countsByKind": {
+        "peak": 11,
+        "stream": 26,
+        "water": 8
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-luoyang",
+      "regionId": "luoyang",
+      "sha256": "9a78cacaecc170bb7f40bc89ba21a1bd2f7784fd6d8d4d4f43e9b4b9c82054fb"
+    },
+    {
+      "id": "luoyang-225-68-part0",
+      "name": "洛阳与豫西 · 局部细节",
+      "bounds": [
+        112.5004962,
+        34.0005534,
+        112.9892993,
+        34.5197982
+      ],
+      "url": "/data/tang-detail/modern-luoyang-225-68-part0.geojson.gz",
+      "featureCount": 70,
+      "countsByKind": {
+        "peak": 30,
+        "saddle": 2,
+        "stream": 9,
+        "canal": 7,
+        "water": 22
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-luoyang",
+      "regionId": "luoyang",
+      "sha256": "8f2e65103d116d19f9f345eeb16d5f0e833e52095ce8219a83cd72f8aa50a1ec"
+    },
+    {
+      "id": "luoyang-224-66-part0",
+      "name": "洛阳与豫西 · 局部细节",
+      "bounds": [
+        112.0624805,
+        33.2855901,
+        112.4727434,
+        33.5056878
+      ],
+      "url": "/data/tang-detail/modern-luoyang-224-66-part0.geojson.gz",
+      "featureCount": 32,
+      "countsByKind": {
+        "peak": 2,
+        "stream": 25,
+        "water": 5
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-luoyang",
+      "regionId": "luoyang",
+      "sha256": "5419c2c074b3a60bdfd41e6326c5172e8dde2fff12e58db0646cc35007632048"
+    },
+    {
+      "id": "luoyang-225-67-part0",
+      "name": "洛阳与豫西 · 局部细节",
+      "bounds": [
+        112.5025057,
+        33.5021015,
+        113.027961,
+        33.9828316
+      ],
+      "url": "/data/tang-detail/modern-luoyang-225-67-part0.geojson.gz",
+      "featureCount": 116,
+      "countsByKind": {
+        "peak": 5,
+        "canal": 28,
+        "stream": 14,
+        "water": 69
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-luoyang",
+      "regionId": "luoyang",
+      "sha256": "2f55fc2162265a8f2f07c2da9c64d3642355872cc6c9bc903659f382f611e17b"
+    },
+    {
+      "id": "luoyang-225-66-part0",
+      "name": "洛阳与豫西 · 局部细节",
+      "bounds": [
+        112.5006256,
+        33.3002865,
+        112.9998542,
+        33.4994656
+      ],
+      "url": "/data/tang-detail/modern-luoyang-225-66-part0.geojson.gz",
+      "featureCount": 270,
+      "countsByKind": {
+        "peak": 2,
+        "stream": 7,
+        "water": 261
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-luoyang",
+      "regionId": "luoyang",
+      "sha256": "b23305509ca5caed4fcdf7535f50fbf947fe1d3d98b4b0c62aae2bfc50163320"
+    },
+    {
+      "id": "luoyang-224-67-part0",
+      "name": "洛阳与豫西 · 局部细节",
+      "bounds": [
+        112.0035601,
+        33.5118467,
+        112.4925556,
+        33.9575567
+      ],
+      "url": "/data/tang-detail/modern-luoyang-224-67-part0.geojson.gz",
+      "featureCount": 94,
+      "countsByKind": {
+        "peak": 6,
+        "stream": 47,
+        "water": 41
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-luoyang",
+      "regionId": "luoyang",
+      "sha256": "a81ed853abd4263d8817a2947462b643ee4fe73a5ac165cb21a5cb7a2ccea19f"
+    },
+    {
+      "id": "luoyang-221-67-part0",
+      "name": "洛阳与豫西 · 局部细节",
+      "bounds": [
+        110.5009943,
+        33.4753691,
+        111.0147781,
+        34.0021768
+      ],
+      "url": "/data/tang-detail/modern-luoyang-221-67-part0.geojson.gz",
+      "featureCount": 88,
+      "countsByKind": {
+        "peak": 3,
+        "stream": 83,
+        "water": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-luoyang",
+      "regionId": "luoyang",
+      "sha256": "38f4c2fc35c9007c93bd518b697be50a50adcc219ef1982ce8a231df321b6af9"
+    },
+    {
+      "id": "luoyang-226-66-part0",
+      "name": "洛阳与豫西 · 局部细节",
+      "bounds": [
+        113.0002148,
+        33.2894693,
+        113.4898113,
+        33.5352573
+      ],
+      "url": "/data/tang-detail/modern-luoyang-226-66-part0.geojson.gz",
+      "featureCount": 245,
+      "countsByKind": {
+        "peak": 21,
+        "canal": 12,
+        "stream": 4,
+        "water": 208
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-luoyang",
+      "regionId": "luoyang",
+      "sha256": "ebe2d4cb62bc3e1beea2f368694b7580300c83156db6dac08523e7f9dfd79f71"
+    },
+    {
+      "id": "luoyang-224-68-part0",
+      "name": "洛阳与豫西 · 局部细节",
+      "bounds": [
+        111.9780588,
+        33.9910535,
+        112.5011533,
+        34.5092273
+      ],
+      "url": "/data/tang-detail/modern-luoyang-224-68-part0.geojson.gz",
+      "featureCount": 31,
+      "countsByKind": {
+        "stream": 9,
+        "water": 17,
+        "canal": 5
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-luoyang",
+      "regionId": "luoyang",
+      "sha256": "9c7477c64638f1b5ec85b26e96301b185ece2642de6d5ead1853149d56d78d32"
+    },
+    {
+      "id": "luoyang-223-66-part0",
+      "name": "洛阳与豫西 · 局部细节",
+      "bounds": [
+        111.5146267,
+        33.2958984,
+        111.9223767,
+        33.5008912
+      ],
+      "url": "/data/tang-detail/modern-luoyang-223-66-part0.geojson.gz",
+      "featureCount": 14,
+      "countsByKind": {
+        "stream": 10,
+        "water": 4
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-luoyang",
+      "regionId": "luoyang",
+      "sha256": "57b394336fcadd39d5b75bec1e395994ef966639c6e81a0bb7c21c648a8468a1"
+    },
+    {
+      "id": "luoyang-221-66-part0",
+      "name": "洛阳与豫西 · 局部细节",
+      "bounds": [
+        110.5055613,
+        33.2860706,
+        111.0094732,
+        33.5041789
+      ],
+      "url": "/data/tang-detail/modern-luoyang-221-66-part0.geojson.gz",
+      "featureCount": 28,
+      "countsByKind": {
+        "stream": 26,
+        "water": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-luoyang",
+      "regionId": "luoyang",
+      "sha256": "5d3a79445e6e784936d499ce8bdebddf9c63de581d405282cc04b7b61bdf77b2"
+    },
+    {
+      "id": "luoyang-221-68-part0",
+      "name": "洛阳与豫西 · 局部细节",
+      "bounds": [
+        110.5803108,
+        34.0013688,
+        110.9942335,
+        34.4511834
+      ],
+      "url": "/data/tang-detail/modern-luoyang-221-68-part0.geojson.gz",
+      "featureCount": 7,
+      "countsByKind": {
+        "stream": 6,
+        "water": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-luoyang",
+      "regionId": "luoyang",
+      "sha256": "b8ee3386d06c87885b971a94aff4a08db612ed3268370da281420d75c9636e7e"
+    },
+    {
+      "id": "luoyang-223-71-part0",
+      "name": "洛阳与豫西 · 局部细节",
+      "bounds": [
+        111.6321452,
+        35.45783,
+        111.7254737,
+        35.5514482
+      ],
+      "url": "/data/tang-detail/modern-luoyang-223-71-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-luoyang",
+      "regionId": "luoyang",
+      "sha256": "6841480b32a1a0646be9ab5f85becaffaf265ea3f59231452581caf01b2eac16"
+    },
+    {
+      "id": "luoyang-222-66-part0",
+      "name": "洛阳与豫西 · 局部细节",
+      "bounds": [
+        110.9962667,
+        33.2750475,
+        111.35653,
+        33.5290726
+      ],
+      "url": "/data/tang-detail/modern-luoyang-222-66-part0.geojson.gz",
+      "featureCount": 25,
+      "countsByKind": {
+        "stream": 23,
+        "water": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-luoyang",
+      "regionId": "luoyang",
+      "sha256": "d3536951385dc208ec38297b367b50541216d466906c4f52da84527376f35f32"
+    },
+    {
+      "id": "luoyang-224-71-part0",
+      "name": "洛阳与豫西 · 局部细节",
+      "bounds": [
+        112.0924738,
+        35.4913508,
+        112.1795676,
+        35.5587385
+      ],
+      "url": "/data/tang-detail/modern-luoyang-224-71-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-luoyang",
+      "regionId": "luoyang",
+      "sha256": "ba416eec9cbe435760035f6291bd483d70f03835e85b442d845cdabd23c5fc75"
+    },
+    {
+      "id": "luoyang-225-71-part0",
+      "name": "洛阳与豫西 · 局部细节",
+      "bounds": [
+        112.5660898,
+        35.4969636,
+        112.8303477,
+        35.5107133
+      ],
+      "url": "/data/tang-detail/modern-luoyang-225-71-part0.geojson.gz",
+      "featureCount": 2,
+      "countsByKind": {
+        "stream": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-luoyang",
+      "regionId": "luoyang",
+      "sha256": "58fdbd2d62dfade84dda71be8d0f977f22c27b2344e3551371d68c2f180d4ff0"
+    },
+    {
+      "id": "taihu-overview-part0",
+      "name": "太湖与长江口 · 主河与水面",
+      "bounds": [
+        119.2126322,
+        29.1452386,
+        122.2423507,
+        32.4491014
+      ],
+      "url": "/data/tang-detail/modern-taihu-overview-part0.geojson.gz",
+      "featureCount": 858,
+      "countsByKind": {
+        "water": 720,
+        "river": 138
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "26baedacb44eabe77bc9430452f77d73c88af67f1591f49e833625473d87422d"
+    },
+    {
+      "id": "taihu-overview-part1",
+      "name": "太湖与长江口 · 主河与水面",
+      "bounds": [
+        119.4087639,
+        29.204114,
+        122.3684686,
+        32.5907848
+      ],
+      "url": "/data/tang-detail/modern-taihu-overview-part1.geojson.gz",
+      "featureCount": 3801,
+      "countsByKind": {
+        "water": 1214,
+        "river": 2587
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "0010a3c3b2237e784fbec7764bd495ef9501aa40ae8e943f6129133bada5e96d"
+    },
+    {
+      "id": "taihu-overview-part2",
+      "name": "太湖与长江口 · 主河与水面",
+      "bounds": [
+        119.4637481,
+        29.436677,
+        121.9727229,
+        32.5108022
+      ],
+      "url": "/data/tang-detail/modern-taihu-overview-part2.geojson.gz",
+      "featureCount": 3975,
+      "countsByKind": {
+        "water": 1639,
+        "river": 2336
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "27d718df649964f65a6c98b07977be007685b1a006432d1a631ff868abbc165a"
+    },
+    {
+      "id": "taihu-overview-part3",
+      "name": "太湖与长江口 · 主河与水面",
+      "bounds": [
+        119.6015426,
+        29.503851,
+        121.9956315,
+        32.4271026
+      ],
+      "url": "/data/tang-detail/modern-taihu-overview-part3.geojson.gz",
+      "featureCount": 1562,
+      "countsByKind": {
+        "water": 529,
+        "river": 1033
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "94dfa5c2fe9e467bcda787f1c505d22af741ff85b38b84fe1843b7414998b352"
+    },
+    {
+      "id": "taihu-240-60-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        119.9833539,
+        29.9713757,
+        120.5632672,
+        30.5152316
+      ],
+      "url": "/data/tang-detail/modern-taihu-240-60-part0.geojson.gz",
+      "featureCount": 6806,
+      "countsByKind": {
+        "water": 4365,
+        "saddle": 1,
+        "peak": 239,
+        "canal": 1315,
+        "stream": 886
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "e47f9747c64018b8a51be292c3c79b752d2b819d51e0315806ac95aad9644746"
+    },
+    {
+      "id": "taihu-240-60-part1",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        119.9979784,
+        29.9802139,
+        120.511853,
+        30.5102444
+      ],
+      "url": "/data/tang-detail/modern-taihu-240-60-part1.geojson.gz",
+      "featureCount": 1855,
+      "countsByKind": {
+        "canal": 615,
+        "water": 871,
+        "stream": 369
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "f3502f7ca3568d8d32522ca1fda69506f12249e85758ba07275a3357a4cd4a93"
+    },
+    {
+      "id": "taihu-243-62-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        121.4838376,
+        30.9943825,
+        122.0029101,
+        31.5553803
+      ],
+      "url": "/data/tang-detail/modern-taihu-243-62-part0.geojson.gz",
+      "featureCount": 3517,
+      "countsByKind": {
+        "water": 1850,
+        "canal": 1190,
+        "stream": 477
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "be53e4e14a95366b8a27d1c37797ee0a18b53cfe190e5797a152f0294fc9ca84"
+    },
+    {
+      "id": "taihu-242-62-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        120.9816693,
+        30.9742043,
+        121.5086284,
+        31.5109191
+      ],
+      "url": "/data/tang-detail/modern-taihu-242-62-part0.geojson.gz",
+      "featureCount": 4780,
+      "countsByKind": {
+        "water": 1266,
+        "peak": 17,
+        "canal": 2940,
+        "stream": 557
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "5a795e6ad6b7a1a035638a67a5abdd5214a48120ea683edf6be4a36415e7bc98"
+    },
+    {
+      "id": "taihu-243-59-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        121.4673513,
+        29.499761,
+        122.0110473,
+        30.0102712
+      ],
+      "url": "/data/tang-detail/modern-taihu-243-59-part0.geojson.gz",
+      "featureCount": 2754,
+      "countsByKind": {
+        "water": 1964,
+        "peak": 53,
+        "canal": 620,
+        "stream": 117
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "a8fe6f4250f36f4013278c6cd75ea4ad477363b47da528c1f073f116b98e4147"
+    },
+    {
+      "id": "taihu-242-63-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        120.9887315,
+        31.4791201,
+        121.5201798,
+        32.0135871
+      ],
+      "url": "/data/tang-detail/modern-taihu-242-63-part0.geojson.gz",
+      "featureCount": 735,
+      "countsByKind": {
+        "water": 171,
+        "canal": 492,
+        "stream": 72
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "858d173dc3acef4cc6dee4666172de47cb8f558fab80ab26e57e590399d1b963"
+    },
+    {
+      "id": "taihu-241-59-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        120.4931438,
+        29.4963265,
+        120.9999582,
+        30.0116705
+      ],
+      "url": "/data/tang-detail/modern-taihu-241-59-part0.geojson.gz",
+      "featureCount": 1211,
+      "countsByKind": {
+        "water": 974,
+        "peak": 52,
+        "stream": 101,
+        "canal": 84
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "b3dc704c5665fc56d67596d6fe285106c0c911d765f6fa67b63e637b3b8d1de4"
+    },
+    {
+      "id": "taihu-243-61-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        121.4963999,
+        30.6106726,
+        121.9709996,
+        31.1046032
+      ],
+      "url": "/data/tang-detail/modern-taihu-243-61-part0.geojson.gz",
+      "featureCount": 887,
+      "countsByKind": {
+        "water": 278,
+        "peak": 2,
+        "canal": 513,
+        "stream": 94
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "bc71fbf337c20b94778b499aa9b4c075a4b986efdd1b95bb4cf631185545d12f"
+    },
+    {
+      "id": "taihu-241-60-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        120.3609194,
+        29.9943009,
+        120.9907567,
+        30.5315009
+      ],
+      "url": "/data/tang-detail/modern-taihu-241-60-part0.geojson.gz",
+      "featureCount": 1168,
+      "countsByKind": {
+        "water": 363,
+        "peak": 8,
+        "canal": 728,
+        "stream": 69
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "c062e6456062774016d88f378d3d722fbd904fcee637840a5df208ab6614625b"
+    },
+    {
+      "id": "taihu-241-62-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        120.5004314,
+        30.9908007,
+        121.0270477,
+        31.52239
+      ],
+      "url": "/data/tang-detail/modern-taihu-241-62-part0.geojson.gz",
+      "featureCount": 4487,
+      "countsByKind": {
+        "water": 1864,
+        "peak": 28,
+        "canal": 2266,
+        "stream": 329
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "5977c84f3597d0d188530296af54dc61ede0e3f092a01b7d3a723afa62b1ddd9"
+    },
+    {
+      "id": "taihu-239-60-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        119.5040505,
+        29.9998174,
+        120.0548074,
+        30.518642
+      ],
+      "url": "/data/tang-detail/modern-taihu-239-60-part0.geojson.gz",
+      "featureCount": 1322,
+      "countsByKind": {
+        "water": 707,
+        "peak": 236,
+        "saddle": 1,
+        "canal": 69,
+        "stream": 309
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "395099bb780055c42568d9849a2c0eb5ba953a80101f55696169f20185891faf"
+    },
+    {
+      "id": "taihu-241-64-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        120.5064642,
+        31.9951566,
+        121.039755,
+        32.5219013
+      ],
+      "url": "/data/tang-detail/modern-taihu-241-64-part0.geojson.gz",
+      "featureCount": 1267,
+      "countsByKind": {
+        "water": 390,
+        "stream": 254,
+        "canal": 623
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "08305d55e19e7f3f9b75adc0f5748b9a295f8cd75235a5861101d28fc7ee71db"
+    },
+    {
+      "id": "taihu-242-64-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        120.9647062,
+        32.0048776,
+        121.5201777,
+        32.5164058
+      ],
+      "url": "/data/tang-detail/modern-taihu-242-64-part0.geojson.gz",
+      "featureCount": 659,
+      "countsByKind": {
+        "water": 211,
+        "canal": 421,
+        "stream": 27
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "e9c2736b9645c709203dda92d945b2282503499b5212b0d773a75b371e660f74"
+    },
+    {
+      "id": "taihu-241-63-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        120.5001081,
+        31.4906242,
+        121.0340555,
+        32.0045096
+      ],
+      "url": "/data/tang-detail/modern-taihu-241-63-part0.geojson.gz",
+      "featureCount": 1105,
+      "countsByKind": {
+        "water": 619,
+        "peak": 8,
+        "canal": 366,
+        "stream": 112
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "d9e9947f1986dae3a1d01295636200c1f0f71cbdbc40a42e8132b50d4193dbab"
+    },
+    {
+      "id": "taihu-241-61-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        120.4098397,
+        30.4933137,
+        121.0329147,
+        31.0087293
+      ],
+      "url": "/data/tang-detail/modern-taihu-241-61-part0.geojson.gz",
+      "featureCount": 3503,
+      "countsByKind": {
+        "water": 1203,
+        "peak": 6,
+        "canal": 1983,
+        "stream": 311
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "f4041aa2961806e135a447950fab4bf546fc39eeb49ed96ed9bede7b029586df"
+    },
+    {
+      "id": "taihu-239-61-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        119.4728313,
+        30.5000655,
+        119.9980068,
+        30.8239362
+      ],
+      "url": "/data/tang-detail/modern-taihu-239-61-part0.geojson.gz",
+      "featureCount": 257,
+      "countsByKind": {
+        "water": 105,
+        "peak": 63,
+        "canal": 19,
+        "stream": 70
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "d8f9e92d0db52e24bdda93f8740f810122c112e0aeafa8d6691d9e69583f46c8"
+    },
+    {
+      "id": "taihu-243-63-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        121.3506492,
+        31.4429298,
+        121.9848483,
+        32.0173461
+      ],
+      "url": "/data/tang-detail/modern-taihu-243-63-part0.geojson.gz",
+      "featureCount": 2392,
+      "countsByKind": {
+        "water": 1015,
+        "canal": 1355,
+        "stream": 22
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "a07b167a42bf1c14f320de8030801cdceb00f18cb4ad4e3561a3f187761a6a21"
+    },
+    {
+      "id": "taihu-239-59-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        119.4964926,
+        29.5001574,
+        119.9995789,
+        30.0024973
+      ],
+      "url": "/data/tang-detail/modern-taihu-239-59-part0.geojson.gz",
+      "featureCount": 584,
+      "countsByKind": {
+        "water": 280,
+        "peak": 182,
+        "stream": 92,
+        "canal": 30
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "f16e4f96e97a80966d92e0d6655ce9e4a51b7063a7b57ed4e7f48dbc785c6402"
+    },
+    {
+      "id": "taihu-242-60-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        120.970107,
+        29.9820172,
+        121.5371028,
+        30.4331339
+      ],
+      "url": "/data/tang-detail/modern-taihu-242-60-part0.geojson.gz",
+      "featureCount": 1090,
+      "countsByKind": {
+        "water": 620,
+        "peak": 7,
+        "canal": 376,
+        "stream": 87
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "df1bbccef5293d7104b91a437373d8a28d584a5c3266f4e897c5ef6d3adc81d8"
+    },
+    {
+      "id": "taihu-240-59-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        120.0034398,
+        29.5012786,
+        120.499867,
+        30.0030744
+      ],
+      "url": "/data/tang-detail/modern-taihu-240-59-part0.geojson.gz",
+      "featureCount": 1597,
+      "countsByKind": {
+        "water": 1294,
+        "peak": 113,
+        "saddle": 2,
+        "canal": 48,
+        "stream": 140
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "36ba2754c33758b5d41b4ff1d012213e8e22f3bab407b1df4d51ff862df54ab9"
+    },
+    {
+      "id": "taihu-242-61-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        120.9737295,
+        30.5978332,
+        121.5216585,
+        31.019014
+      ],
+      "url": "/data/tang-detail/modern-taihu-242-61-part0.geojson.gz",
+      "featureCount": 1586,
+      "countsByKind": {
+        "water": 199,
+        "peak": 5,
+        "canal": 889,
+        "stream": 493
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "8dc40b102f101598c098bbc25a673fc541393a81e27581eddb5241c995dc5a58"
+    },
+    {
+      "id": "taihu-240-61-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        119.9960565,
+        30.4821388,
+        120.524016,
+        30.7431679
+      ],
+      "url": "/data/tang-detail/modern-taihu-240-61-part0.geojson.gz",
+      "featureCount": 1727,
+      "countsByKind": {
+        "water": 773,
+        "peak": 6,
+        "canal": 837,
+        "stream": 111
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "89ec1147a2edcde76c6b5beda35dee24bb83a56af0f5cfdceb83236cc788f4ab"
+    },
+    {
+      "id": "taihu-242-59-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        121.0019815,
+        29.4952537,
+        121.5342438,
+        30.0157701
+      ],
+      "url": "/data/tang-detail/modern-taihu-242-59-part0.geojson.gz",
+      "featureCount": 1854,
+      "countsByKind": {
+        "water": 1169,
+        "peak": 202,
+        "saddle": 7,
+        "canal": 358,
+        "stream": 118
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "4dbcdb786196e2209e9f5d3339298c0ef148e3e68fa220bbc1c13228b57b1d9c"
+    },
+    {
+      "id": "taihu-238-59-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        119.4971819,
+        29.5418241,
+        119.5055446,
+        29.8393793
+      ],
+      "url": "/data/tang-detail/modern-taihu-238-59-part0.geojson.gz",
+      "featureCount": 2,
+      "countsByKind": {
+        "water": 1,
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "25e6f93ee484d16b531585e5db2ed488dfd41fea0585fd96787ac51fd5d90170"
+    },
+    {
+      "id": "taihu-243-60-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        121.4747572,
+        29.9871451,
+        121.9961867,
+        30.3259328
+      ],
+      "url": "/data/tang-detail/modern-taihu-243-60-part0.geojson.gz",
+      "featureCount": 863,
+      "countsByKind": {
+        "peak": 1,
+        "water": 808,
+        "stream": 13,
+        "canal": 41
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "d49e4fc23b393dd5d9f25ccd4ed7740dab044803f17c8bf4e3ce9301d4da7345"
+    },
+    {
+      "id": "taihu-240-62-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        120.2532081,
+        31.1003028,
+        120.3894991,
+        31.4768789
+      ],
+      "url": "/data/tang-detail/modern-taihu-240-62-part0.geojson.gz",
+      "featureCount": 2,
+      "countsByKind": {
+        "peak": 1,
+        "water": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "5d24f711120ca41d02c8906415e220d8ba37d4a0952cf5544d4ec098ef16920d"
+    },
+    {
+      "id": "taihu-242-58-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        121.1701719,
+        29.4894843,
+        121.4272968,
+        29.501691
+      ],
+      "url": "/data/tang-detail/modern-taihu-242-58-part0.geojson.gz",
+      "featureCount": 2,
+      "countsByKind": {
+        "stream": 1,
+        "water": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "c11f3f3eb9266f33250a8d0218e6f79213cd2acbadc68d098a6ae13cd87482b0"
+    },
+    {
+      "id": "taihu-244-60-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        121.9896663,
+        30.0416073,
+        122.0144986,
+        30.1255838
+      ],
+      "url": "/data/tang-detail/modern-taihu-244-60-part0.geojson.gz",
+      "featureCount": 3,
+      "countsByKind": {
+        "stream": 1,
+        "canal": 1,
+        "water": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "96175056f0a9ee56ff832e45785933f787d0ffa20312c14068a78d2f625b926b"
+    },
+    {
+      "id": "taihu-242-65-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        120.9965998,
+        32.4846006,
+        121.104173,
+        32.545746
+      ],
+      "url": "/data/tang-detail/modern-taihu-242-65-part0.geojson.gz",
+      "featureCount": 7,
+      "countsByKind": {
+        "canal": 7
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "3cdbaa4482c4c9caba5377fe9317d26fb0c71ce2743cd5daea16733f900d9cb4"
+    },
+    {
+      "id": "taihu-243-64-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        121.4926327,
+        31.9849009,
+        121.7365267,
+        32.1028468
+      ],
+      "url": "/data/tang-detail/modern-taihu-243-64-part0.geojson.gz",
+      "featureCount": 31,
+      "countsByKind": {
+        "canal": 21,
+        "water": 8,
+        "stream": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "55d3adf36ad1c15801ecfc14e560186f9827bfaeb68bcb0c238e6168faef17dc"
+    },
+    {
+      "id": "taihu-241-65-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        120.6747132,
+        32.4459208,
+        120.9350193,
+        32.567258
+      ],
+      "url": "/data/tang-detail/modern-taihu-241-65-part0.geojson.gz",
+      "featureCount": 3,
+      "countsByKind": {
+        "canal": 2,
+        "water": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "21ec561dbc6d7c1117aed931a25a38da58d1f87e6109f18b0183bc08fe3d74bc"
+    },
+    {
+      "id": "taihu-241-58-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        120.8889311,
+        29.49867,
+        120.8901426,
+        29.5000393
+      ],
+      "url": "/data/tang-detail/modern-taihu-241-58-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "water": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "450c209bbf4a7b3b4252a361607aaeb923e0937ce2b1f35b2a20b177b31c7aa8"
+    },
+    {
+      "id": "taihu-243-58-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        121.9526035,
+        29.4958338,
+        121.9542825,
+        29.5017756
+      ],
+      "url": "/data/tang-detail/modern-taihu-243-58-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "canal": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "07af1691141cdc769ac0fc888ebeff82cb06cacb63287193b227e9263d23ce41"
+    },
+    {
+      "id": "taihu-244-62-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        121.993257,
+        31.2059772,
+        122.0079378,
+        31.2215017
+      ],
+      "url": "/data/tang-detail/modern-taihu-244-62-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "297e07a492e3778bb3150ccd389c65ae2d328e8977cb7b31e7793e75ba4b8102"
+    },
+    {
+      "id": "taihu-239-58-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        119.5352603,
+        29.4842985,
+        119.8986653,
+        29.5013819
+      ],
+      "url": "/data/tang-detail/modern-taihu-239-58-part0.geojson.gz",
+      "featureCount": 2,
+      "countsByKind": {
+        "water": 1,
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "5cf825a9fa06ddf6fad469e588bccbc330b2de7c1897a9442a12abd698bef4b5"
+    },
+    {
+      "id": "taihu-240-63-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        119.9963201,
+        31.6256544,
+        120.0935645,
+        31.7364311
+      ],
+      "url": "/data/tang-detail/modern-taihu-240-63-part0.geojson.gz",
+      "featureCount": 18,
+      "countsByKind": {
+        "stream": 18
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "a83922e5a2fd0a762767ee4886189080ef5383039fe1efbe79c581ac9bc53184"
+    },
+    {
+      "id": "taihu-239-63-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        119.794861,
+        31.5312481,
+        120.0001922,
+        31.9916631
+      ],
+      "url": "/data/tang-detail/modern-taihu-239-63-part0.geojson.gz",
+      "featureCount": 105,
+      "countsByKind": {
+        "water": 86,
+        "stream": 19
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "633bfecdd07fb3c7980cd52ff6c6938d92911fea1f94129f2e39168c1d45e3f4"
+    },
+    {
+      "id": "taihu-238-63-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        119.4820457,
+        31.5655585,
+        119.5039151,
+        31.5683429
+      ],
+      "url": "/data/tang-detail/modern-taihu-238-63-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "80e150d4a920b427f86882e8ff109c27f9d65301064608880a44ddcf52be26ca"
+    },
+    {
+      "id": "taihu-239-62-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        119.874704,
+        31.2422204,
+        119.9131534,
+        31.3151876
+      ],
+      "url": "/data/tang-detail/modern-taihu-239-62-part0.geojson.gz",
+      "featureCount": 2,
+      "countsByKind": {
+        "canal": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "1b909e69f26fed3fbb278473c845c96ab2cd2462685c564d0762efda847691a4"
+    },
+    {
+      "id": "taihu-239-64-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        119.8461325,
+        32.0471986,
+        119.8468187,
+        32.0481486
+      ],
+      "url": "/data/tang-detail/modern-taihu-239-64-part0.geojson.gz",
+      "featureCount": 2,
+      "countsByKind": {
+        "stream": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "6998883ce5168f76c8575f164f337f54729f6f2f7e6496f2b2fb212c7c8c1d0d"
+    },
+    {
+      "id": "taihu-240-64-part0",
+      "name": "太湖与长江口 · 局部细节",
+      "bounds": [
+        120.2551964,
+        32.0074416,
+        120.4050976,
+        32.0755202
+      ],
+      "url": "/data/tang-detail/modern-taihu-240-64-part0.geojson.gz",
+      "featureCount": 16,
+      "countsByKind": {
+        "water": 7,
+        "stream": 4,
+        "canal": 5
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-taihu",
+      "regionId": "taihu",
+      "sha256": "7f91f430e23c84e90babb3056ff091fe2b341e658ba71c04fd7a5d1170d15cf7"
+    },
+    {
+      "id": "zhejiang-overview-part0",
+      "name": "浙江中北部 · 主河与水面",
+      "bounds": [
+        117.8265631,
+        27.9664552,
+        121.9439658,
+        30.6386258
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-overview-part0.geojson.gz",
+      "featureCount": 329,
+      "countsByKind": {
+        "water": 329
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "2097bf08f2c71020c690e2209bd2a7f6bbf8f708fb719587722ac910bf5c0300"
+    },
+    {
+      "id": "zhejiang-overview-part1",
+      "name": "浙江中北部 · 主河与水面",
+      "bounds": [
+        117.8168687,
+        27.83355,
+        121.9619778,
+        30.6977906
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-overview-part1.geojson.gz",
+      "featureCount": 2530,
+      "countsByKind": {
+        "water": 875,
+        "river": 1655
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "26e149407592206caa7bbe001b672b1a8d97be0c23d30ee2e4df5f4a7972aa27"
+    },
+    {
+      "id": "zhejiang-overview-part2",
+      "name": "浙江中北部 · 主河与水面",
+      "bounds": [
+        117.9851013,
+        27.9946655,
+        121.9462192,
+        30.6939542
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-overview-part2.geojson.gz",
+      "featureCount": 852,
+      "countsByKind": {
+        "river": 474,
+        "water": 378
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "9029c9f18d4acd695b2ce498cec75d99a28a5e344c1046660553aee7fb3f1cd8"
+    },
+    {
+      "id": "zhejiang-240-57-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        119.9932904,
+        28.5060967,
+        120.4997603,
+        29.0103312
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-240-57-part0.geojson.gz",
+      "featureCount": 721,
+      "countsByKind": {
+        "water": 477,
+        "peak": 106,
+        "saddle": 1,
+        "stream": 131,
+        "canal": 6
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "d967ad848b6d5d75cdc9f47a43b2c64200a6efe247af7e5bb2d189c37ae8e4df"
+    },
+    {
+      "id": "zhejiang-241-58-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        120.4958325,
+        28.9722274,
+        121.0146774,
+        29.4999226
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-241-58-part0.geojson.gz",
+      "featureCount": 495,
+      "countsByKind": {
+        "water": 204,
+        "peak": 101,
+        "canal": 12,
+        "stream": 178
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "fa511971b4c69e1691719e4154414f26be053c11c4f56f9040c3a0cd0a7c9c0b"
+    },
+    {
+      "id": "zhejiang-238-59-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        118.9738028,
+        29.5047946,
+        119.499431,
+        30.0002199
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-238-59-part0.geojson.gz",
+      "featureCount": 226,
+      "countsByKind": {
+        "water": 83,
+        "peak": 67,
+        "stream": 76
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "6f1edae15bdb2bbfc71b0e335f13d224ede69940ab8507d76c0a3963f6a8dec0"
+    },
+    {
+      "id": "zhejiang-240-58-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        119.9996264,
+        28.9714558,
+        120.4990323,
+        29.4932365
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-240-58-part0.geojson.gz",
+      "featureCount": 1085,
+      "countsByKind": {
+        "water": 836,
+        "peak": 84,
+        "stream": 162,
+        "canal": 3
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "5c35e8023f0252efe778f771634d6640277af91803b701b19951c909b54299a1"
+    },
+    {
+      "id": "zhejiang-242-57-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        120.981825,
+        28.4925934,
+        121.5639109,
+        29.0105133
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-242-57-part0.geojson.gz",
+      "featureCount": 653,
+      "countsByKind": {
+        "water": 142,
+        "peak": 20,
+        "canal": 379,
+        "stream": 112
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "85d97e6a7fb8d2fe4d17ebf9f5d7884fb7fc596bd6f7d4c27ab9d1329f6eefc5"
+    },
+    {
+      "id": "zhejiang-242-56-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        120.9913802,
+        28.0376501,
+        121.5249459,
+        28.5060275
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-242-56-part0.geojson.gz",
+      "featureCount": 1355,
+      "countsByKind": {
+        "water": 630,
+        "peak": 67,
+        "stream": 153,
+        "canal": 505
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "74109ab0024af6c041c0c1ae442b79dadf01e7daadffd5350f03b35cb77c5035"
+    },
+    {
+      "id": "zhejiang-236-58-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        117.9722277,
+        28.9888386,
+        118.5049544,
+        29.5123712
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-236-58-part0.geojson.gz",
+      "featureCount": 1928,
+      "countsByKind": {
+        "water": 942,
+        "peak": 129,
+        "saddle": 9,
+        "stream": 847,
+        "canal": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "a5f4c4f1b8622765a2c2ce81901b25efc5c6a0050d9e4d2b8412da047767bad7"
+    },
+    {
+      "id": "zhejiang-237-57-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        118.4633348,
+        28.4853007,
+        119.0214676,
+        29.0307555
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-237-57-part0.geojson.gz",
+      "featureCount": 788,
+      "countsByKind": {
+        "water": 288,
+        "saddle": 2,
+        "peak": 116,
+        "canal": 11,
+        "stream": 371
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "85e54bc098602a3f598717447dd61aa187f8f3464d7d81cc8e0229f2ff1f4efe"
+    },
+    {
+      "id": "zhejiang-236-57-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        117.9899852,
+        28.4910584,
+        118.5073693,
+        29.0058756
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-236-57-part0.geojson.gz",
+      "featureCount": 763,
+      "countsByKind": {
+        "water": 292,
+        "peak": 122,
+        "saddle": 5,
+        "stream": 344
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "7c5c9745836c7583126f1be2f5db2859bf0a20ebcd3fb0029172d8e66cde7d6c"
+    },
+    {
+      "id": "zhejiang-237-58-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        118.4707617,
+        28.9847401,
+        119.0025613,
+        29.5091209
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-237-58-part0.geojson.gz",
+      "featureCount": 807,
+      "countsByKind": {
+        "water": 338,
+        "peak": 202,
+        "saddle": 6,
+        "stream": 260,
+        "canal": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "1fd7f45fe82495cf84ca6fc76ec0ff1198f86f922e813f48d722056d2475be2f"
+    },
+    {
+      "id": "zhejiang-237-59-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        118.4953538,
+        29.4942257,
+        119.0197074,
+        30.0017086
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-237-59-part0.geojson.gz",
+      "featureCount": 468,
+      "countsByKind": {
+        "water": 151,
+        "peak": 158,
+        "saddle": 1,
+        "stream": 158
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "948edfba095eedacc4ede12b77bc0b2c65cabc60578b196aaf11c8f531dade61"
+    },
+    {
+      "id": "zhejiang-238-60-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        119.0010519,
+        30.0016162,
+        119.4998198,
+        30.5068656
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-238-60-part0.geojson.gz",
+      "featureCount": 183,
+      "countsByKind": {
+        "water": 24,
+        "peak": 130,
+        "saddle": 1,
+        "stream": 28
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "e24a263d031f1e8583087b2bbae27c43a9074b44467ad4449ea59bebba1ad60a"
+    },
+    {
+      "id": "zhejiang-236-56-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        117.9977878,
+        27.9923362,
+        118.5280674,
+        28.4987952
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-236-56-part0.geojson.gz",
+      "featureCount": 133,
+      "countsByKind": {
+        "water": 40,
+        "peak": 33,
+        "saddle": 3,
+        "stream": 57
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "d558bf4bb0bff42342af08c3efbef70877fd8cc2da3d46a9c21f3df53eea1449"
+    },
+    {
+      "id": "zhejiang-238-57-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        118.9948786,
+        28.5075607,
+        119.5145846,
+        29.0039026
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-238-57-part0.geojson.gz",
+      "featureCount": 397,
+      "countsByKind": {
+        "water": 171,
+        "peak": 115,
+        "saddle": 2,
+        "stream": 107,
+        "canal": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "071b092032ade592605c5adbf9e014cfb7824a85a2cbd1b7629ed529f6847673"
+    },
+    {
+      "id": "zhejiang-238-58-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        118.9959413,
+        28.9976042,
+        119.5022474,
+        29.4986646
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-238-58-part0.geojson.gz",
+      "featureCount": 1008,
+      "countsByKind": {
+        "water": 788,
+        "peak": 62,
+        "stream": 134,
+        "canal": 24
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "defe38883cfffc152a2a9cbb2856be6dfcc4e585db2313ec5170728f2fc5e298"
+    },
+    {
+      "id": "zhejiang-243-58-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        121.4989856,
+        29.0076982,
+        121.9914043,
+        29.4992451
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-243-58-part0.geojson.gz",
+      "featureCount": 2025,
+      "countsByKind": {
+        "water": 1698,
+        "peak": 75,
+        "saddle": 2,
+        "canal": 111,
+        "stream": 139
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "fccf21c250637765eb470253f72698aa5682aa3f5b4f174c082eb240719b4a46"
+    },
+    {
+      "id": "zhejiang-241-56-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        120.4955229,
+        27.9822156,
+        121.0137337,
+        28.5073347
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-241-56-part0.geojson.gz",
+      "featureCount": 1022,
+      "countsByKind": {
+        "water": 404,
+        "peak": 126,
+        "saddle": 3,
+        "stream": 196,
+        "canal": 293
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "4f99d26831d6c4a157dadb92f93f2f1cab11b7c2015454b95c3f75e8926c7876"
+    },
+    {
+      "id": "zhejiang-239-58-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        119.4926064,
+        28.9912842,
+        120.0081169,
+        29.495667
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-239-58-part0.geojson.gz",
+      "featureCount": 1573,
+      "countsByKind": {
+        "water": 928,
+        "peak": 71,
+        "stream": 574
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "4a013048e6fae7575cdd9594611c1bda0d8a7d711046c2951fb2538798a1e119"
+    },
+    {
+      "id": "zhejiang-236-59-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        117.9952717,
+        29.4878559,
+        118.5050516,
+        30.0015727
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-236-59-part0.geojson.gz",
+      "featureCount": 1342,
+      "countsByKind": {
+        "water": 950,
+        "saddle": 2,
+        "peak": 96,
+        "stream": 250,
+        "canal": 44
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "a0a1b98444d7c85e418e3dacf9488d338699582453bdefe02b8724c575ea6ac0"
+    },
+    {
+      "id": "zhejiang-239-57-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        119.490407,
+        28.4932622,
+        120.0104581,
+        29.0075011
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-239-57-part0.geojson.gz",
+      "featureCount": 356,
+      "countsByKind": {
+        "water": 201,
+        "peak": 62,
+        "stream": 93
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "bfee70113eb9d92d7192764699c73a8076ab4eb3999a822840f0099b24ad0fb1"
+    },
+    {
+      "id": "zhejiang-239-56-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        119.5018926,
+        27.9643825,
+        120.0064927,
+        28.5338698
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-239-56-part0.geojson.gz",
+      "featureCount": 202,
+      "countsByKind": {
+        "water": 71,
+        "peak": 83,
+        "stream": 42,
+        "canal": 6
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "19fd803a68c59b6c7d4312e2ec3f6f259353da29da7768f2377a7b6c3f24f06b"
+    },
+    {
+      "id": "zhejiang-242-58-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        120.9533679,
+        28.9993872,
+        121.5006396,
+        29.4980556
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-242-58-part0.geojson.gz",
+      "featureCount": 1226,
+      "countsByKind": {
+        "water": 621,
+        "peak": 213,
+        "saddle": 15,
+        "stream": 374,
+        "canal": 3
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "38cc002b9da8c728ef9b3461a73e8ae24b40dffd25918a0411df0af769b75496"
+    },
+    {
+      "id": "zhejiang-243-59-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        121.5456444,
+        29.8059951,
+        121.634987,
+        29.9209124
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-243-59-part0.geojson.gz",
+      "featureCount": 9,
+      "countsByKind": {
+        "water": 8,
+        "canal": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "33e34a430d52ca20c343f4a7639b555bd7ebff5e09bec65c992e1c65b49fa7ef"
+    },
+    {
+      "id": "zhejiang-243-57-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        121.4812775,
+        28.4935455,
+        121.9175149,
+        29.0093881
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-243-57-part0.geojson.gz",
+      "featureCount": 166,
+      "countsByKind": {
+        "water": 32,
+        "peak": 6,
+        "canal": 123,
+        "stream": 5
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "1b5b3dc9850744285628e8b79b09412c1ac090660de93189111de3fd0eb28eec"
+    },
+    {
+      "id": "zhejiang-236-60-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        118.0048374,
+        29.9973346,
+        118.5040855,
+        30.4967542
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-236-60-part0.geojson.gz",
+      "featureCount": 374,
+      "countsByKind": {
+        "water": 64,
+        "peak": 201,
+        "saddle": 4,
+        "stream": 104,
+        "canal": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "4f57873726b55d7aedabc66a31bedbf28f8e2aad65abd95399aa345f9ccb3d6c"
+    },
+    {
+      "id": "zhejiang-237-60-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        118.5025202,
+        30.003471,
+        119.0061846,
+        30.4937883
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-237-60-part0.geojson.gz",
+      "featureCount": 350,
+      "countsByKind": {
+        "saddle": 8,
+        "peak": 196,
+        "stream": 106,
+        "water": 38,
+        "canal": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "89b440a084b69f6c0ad7ace101b30e8f5f1e1684185dece9090fa820456a0bef"
+    },
+    {
+      "id": "zhejiang-236-61-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        118.0090701,
+        30.5016905,
+        118.4939226,
+        30.6944847
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-236-61-part0.geojson.gz",
+      "featureCount": 69,
+      "countsByKind": {
+        "peak": 30,
+        "canal": 20,
+        "water": 11,
+        "stream": 8
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "d32ee5f5c92b9d32df6251e19ce21728167df2544c39103af0441799ec067650"
+    },
+    {
+      "id": "zhejiang-237-61-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        118.5054442,
+        30.5062807,
+        118.992649,
+        30.6999427
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-237-61-part0.geojson.gz",
+      "featureCount": 89,
+      "countsByKind": {
+        "peak": 57,
+        "stream": 6,
+        "water": 8,
+        "canal": 18
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "1827f87719c05b8601d2929ac90a5456c61fa4ec9936465bc02bbb5f2e982c1d"
+    },
+    {
+      "id": "zhejiang-238-56-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        118.9950643,
+        27.9786582,
+        119.5060703,
+        28.5156335
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-238-56-part0.geojson.gz",
+      "featureCount": 194,
+      "countsByKind": {
+        "saddle": 2,
+        "peak": 130,
+        "stream": 55,
+        "water": 7
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "3fc6f6a03095f89babdfd43eafd51dd1a5312a17e01da0e3cbf1d18f7b3e9065"
+    },
+    {
+      "id": "zhejiang-237-56-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        118.4759889,
+        28.0193695,
+        118.9972771,
+        28.5063317
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-237-56-part0.geojson.gz",
+      "featureCount": 229,
+      "countsByKind": {
+        "saddle": 2,
+        "peak": 120,
+        "stream": 99,
+        "water": 8
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "9f305f27e449d2ef3e5ad2b92fb6f384435674ff2cfb7a9ae82ba76c4ca61cb0"
+    },
+    {
+      "id": "zhejiang-240-56-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        119.9823546,
+        27.9763845,
+        120.5023783,
+        28.499965
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-240-56-part0.geojson.gz",
+      "featureCount": 227,
+      "countsByKind": {
+        "peak": 82,
+        "stream": 95,
+        "water": 41,
+        "canal": 9
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "816100b3ee326998a381a906b792ea8faefb5ebab89af75527f19e9bd04a3294"
+    },
+    {
+      "id": "zhejiang-238-61-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        119.0016642,
+        30.5020302,
+        119.4975786,
+        30.6997571
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-238-61-part0.geojson.gz",
+      "featureCount": 110,
+      "countsByKind": {
+        "saddle": 1,
+        "peak": 79,
+        "stream": 15,
+        "water": 15
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "67a53e0b8489968053c95e2c8f94fe1adc5590984f9134d0eee98f519a7cbfcb"
+    },
+    {
+      "id": "zhejiang-241-57-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        120.5021936,
+        28.5012582,
+        121.0115194,
+        29.0128154
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-241-57-part0.geojson.gz",
+      "featureCount": 290,
+      "countsByKind": {
+        "peak": 120,
+        "water": 77,
+        "stream": 84,
+        "canal": 9
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "71fcbd60c55982d59c2f90de9367e7b41cd7128d51e037647ee73028873d010c"
+    },
+    {
+      "id": "zhejiang-240-60-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        120.0602087,
+        30.1697428,
+        120.4372937,
+        30.4550396
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-240-60-part0.geojson.gz",
+      "featureCount": 34,
+      "countsByKind": {
+        "peak": 3,
+        "water": 29,
+        "canal": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "dcb2895e250aaee1629f883b223be375e52d21998b9cf7a1a6f739c4cfa1eee9"
+    },
+    {
+      "id": "zhejiang-243-56-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        121.4875145,
+        28.0826838,
+        121.915361,
+        28.5059391
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-243-56-part0.geojson.gz",
+      "featureCount": 383,
+      "countsByKind": {
+        "peak": 11,
+        "water": 34,
+        "canal": 298,
+        "stream": 40
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "190d4240dc1053ef705e5f2e019b677e519ea7bd0a47162e60d5ba3368f80b74"
+    },
+    {
+      "id": "zhejiang-237-55-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        118.8145882,
+        27.9824175,
+        118.8385491,
+        28.0002606
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-237-55-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "536f78120c229994de1cd3e19a89a84f79e260e2e8d5838654ed46d7a2cc5b92"
+    },
+    {
+      "id": "zhejiang-241-55-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        120.5250799,
+        27.9860217,
+        120.9558088,
+        28.0151195
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-241-55-part0.geojson.gz",
+      "featureCount": 15,
+      "countsByKind": {
+        "canal": 7,
+        "water": 7,
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "f205fab900a6a2b29f9bbc8ed4a306c12cfcd3f10e27d4de5a622b48fa73d9a4"
+    },
+    {
+      "id": "zhejiang-242-60-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        121.4694783,
+        30.1009273,
+        121.4714953,
+        30.1031178
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-242-60-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "canal": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "4ae48d57bad9b0c899f34e4c3b268ba1813168564d49ad69d8a29c1fcd891e29"
+    },
+    {
+      "id": "zhejiang-238-55-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        119.2652069,
+        27.9356362,
+        119.4438269,
+        28.0260157
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-238-55-part0.geojson.gz",
+      "featureCount": 4,
+      "countsByKind": {
+        "stream": 4
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "5a29037e6572fcdf249f78ae2c5fa5ab86fdcc766065ac9d76ce3d341f817045"
+    },
+    {
+      "id": "zhejiang-240-59-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        120.2427999,
+        29.708268,
+        120.2441236,
+        29.7096267
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-240-59-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "water": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "832216cd2f8674982d653fa0d195924dc22b66d2c4f1afee8542ee0c808b8766"
+    },
+    {
+      "id": "zhejiang-235-58-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        117.9563566,
+        29.1101488,
+        118.0158306,
+        29.4716739
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-235-58-part0.geojson.gz",
+      "featureCount": 10,
+      "countsByKind": {
+        "stream": 10
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "3c9a641a47e2d6d3f6f499bb5f1a637d816600f627a2d218bba048d8ffa14fe5"
+    },
+    {
+      "id": "zhejiang-235-59-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        117.9835486,
+        29.5108263,
+        118.0064035,
+        29.5508784
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-235-59-part0.geojson.gz",
+      "featureCount": 3,
+      "countsByKind": {
+        "stream": 3
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "504be3d500b999aeb86d3dd00c5ac4fdc3bd28fbd3f0a5377c6d0f9e3c0bf584"
+    },
+    {
+      "id": "zhejiang-235-57-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        117.9718003,
+        28.8809505,
+        118.0108165,
+        28.9209076
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-235-57-part0.geojson.gz",
+      "featureCount": 2,
+      "countsByKind": {
+        "stream": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "243b9bbbd91553b4252d376bc060dc0a678f956eae0d7dfd2d2f08f764416c41"
+    },
+    {
+      "id": "zhejiang-239-60-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        119.9617111,
+        30.2569135,
+        119.990713,
+        30.3170185
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-239-60-part0.geojson.gz",
+      "featureCount": 12,
+      "countsByKind": {
+        "water": 1,
+        "stream": 11
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "68d0897f999f6e431e1207f219d59d8fbb491abb680bc16c8a22c4a767fe5b07"
+    },
+    {
+      "id": "zhejiang-240-55-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        120.1754844,
+        27.9790722,
+        120.4353089,
+        28.011754
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-240-55-part0.geojson.gz",
+      "featureCount": 3,
+      "countsByKind": {
+        "stream": 3
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "87dfee6ed4d3c98ea4e06ab469d5cf7967abb40c63213de5dc4b5da299c0e3da"
+    },
+    {
+      "id": "zhejiang-242-55-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        121.0425943,
+        27.9921372,
+        121.0608494,
+        28.0017147
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-242-55-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "canal": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "d2a648d3c00b66129d59274e88e6b7af81830254874166c83dffccdd330a4175"
+    },
+    {
+      "id": "zhejiang-241-60-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        120.8025493,
+        30.3418066,
+        120.80327,
+        30.343414
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-241-60-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "water": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "d18407f181d0be9a855109afe8fb08a4b87316fc670df2021145092d6f6db803"
+    },
+    {
+      "id": "zhejiang-235-56-part0",
+      "name": "浙江中北部 · 局部细节",
+      "bounds": [
+        117.9976487,
+        28.3819885,
+        118.0001304,
+        28.3842655
+      ],
+      "url": "/data/tang-detail/modern-zhejiang-235-56-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "water": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-zhejiang",
+      "regionId": "zhejiang",
+      "sha256": "9c3a6e48eaff816c62245f5ce016a9c18af31f35e285b3c18257027ff064cc72"
+    }
+  ],
+  "sources": [
+    {
+      "id": "chgis-v6-tang-detail-county",
+      "title": "CHGIS V6 时序县级治所点",
+      "url": "https://doi.org/10.7910/DVN/Q9VOF5",
+      "retrievedAt": "2026-09-25T02:29:57.398050+00:00",
+      "snapshotPath": "data/evidence/tang-detail/chgis/county-wgs84.zip",
+      "snapshotSha256": "3b431d2e587bcb738e632385703824d252e0b4744ddd726fc5eb10364dd2d8c5",
+      "license": "CHGIS V6：学术研究与非商业使用；原README限制再分发。县点网页CC0元数据与README冲突，须保留说明并在公开分发前复核。",
+      "attribution": "CHGIS, Version 6. Fairbank Center for Chinese Studies, Harvard University; Center for Historical Geographical Studies, Fudan University, 2016.",
+      "note": "来自官方WGS84 POINT图层。按原始起讫年闭区间筛选；公开说明1350年前覆盖仍有缺口。保留年代规则，未将羁縻或周边单位统一归为唐直辖。"
+    },
+    {
+      "id": "chgis-v6-tang-detail-prefecture",
+      "title": "CHGIS V6 时序府级治所点",
+      "url": "https://doi.org/10.7910/DVN/WW1PD6",
+      "retrievedAt": "2026-09-25T02:30:08.061276+00:00",
+      "snapshotPath": "data/evidence/tang-detail/chgis/prefecture-wgs84.zip",
+      "snapshotSha256": "48f6a50bcc3dd9cf4391efab2153f0e333f2040a08cf96c4d4b950cf9977d1fc",
+      "license": "CHGIS V6：学术研究与非商业使用；原README限制再分发。县点网页CC0元数据与README冲突，须保留说明并在公开分发前复核。",
+      "attribution": "CHGIS, Version 6. Fairbank Center for Chinese Studies, Harvard University; Center for Historical Geographical Studies, Fudan University, 2016.",
+      "note": "来自官方WGS84 POINT图层。按原始起讫年闭区间筛选；公开说明1350年前覆盖仍有缺口。保留年代规则，未将羁縻或周边单位统一归为唐直辖。"
+    },
+    {
+      "id": "osm-tang-detail-central-plains",
+      "title": "OpenStreetMap 现代地理：中原与淮北",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T02:35:25.015166+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/central-plains.json.gz",
+      "snapshotSha256": "1fa3bded438ced3f23747d1dcf34fa5fc527125b60f420c57cf87d586df44d6b",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+    },
+    {
+      "id": "osm-tang-detail-guanzhong",
+      "title": "OpenStreetMap 现代地理：关中与秦岭北麓",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T02:37:13.854515+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/guanzhong.json.gz",
+      "snapshotSha256": "6b0a04125d08a993c28ab329a446190466ad892943db4fbabf461e52a461c5d6",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+    },
+    {
+      "id": "osm-tang-detail-jianghuai",
+      "title": "OpenStreetMap 现代地理：南京、皖南与江淮",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T02:36:41.914962+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/jianghuai.json.gz",
+      "snapshotSha256": "97c7865e9bb19254bd6567341a8ae702fb1d1ba9339a464104740e07ee3cc69c",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+    },
+    {
+      "id": "osm-tang-detail-luoyang",
+      "title": "OpenStreetMap 现代地理：洛阳与豫西",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T02:35:02.765842+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/luoyang.json.gz",
+      "snapshotSha256": "11b3ef2fe6b913c924bceb8cb3f606c470ff729ebb80eb0b2a1845efac078c67",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+    },
+    {
+      "id": "osm-tang-detail-taihu",
+      "title": "OpenStreetMap 现代地理：太湖与长江口",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T02:37:57.826374+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/taihu.json.gz",
+      "snapshotSha256": "b71ce3d5c7aefd3a2d634009318903a3c038a2b7f41e1b24b0bd3d001dd127de",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+    },
+    {
+      "id": "osm-tang-detail-zhejiang",
+      "title": "OpenStreetMap 现代地理：浙江中北部",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-25T02:40:36.314757+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/zhejiang.json.gz",
+      "snapshotSha256": "7719aeceb591b4186081d4ec789a2189b23a1ed4722aa6321acea12baf67d52e",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+    }
+  ]
+}

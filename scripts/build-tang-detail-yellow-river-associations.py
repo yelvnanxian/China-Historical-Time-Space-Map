@@ -38,6 +38,7 @@ def read_pack(path):
 def build():
     manifest_path = PUBLIC / 'manifest.json'
     manifest = json.loads(manifest_path.read_text())
+    acquisition_region_count = len({pack['regionId'] for pack in manifest['modernRegions']})
     rivers, waters = [], []
     rejected_names = []
     for pack in manifest['modernRegions']:
@@ -100,7 +101,7 @@ def build():
                              for feature, _, name_matches in rivers],
              'nameRejections': rejected_names, 'boundaryOnlyPairs': boundary_only,
              'limitations': ['现代线面空间关联，非历史黄河水面考证。', '未关联水面不表示它一定不属于黄河；本算法宁可留下不确定记录。',
-                            '关联覆盖实际取得的六区域OSM快照，不代表全部现代黄河。', '前端只在已经加载历史河道的适当下游范围替代这些水面。']}
+                            f'关联覆盖实际取得的{acquisition_region_count}个采集区域OSM快照，不代表全部现代黄河。', '前端只在已经加载历史河道的适当下游范围替代这些水面。']}
     (EVIDENCE / 'yellow-river-water-association-audit.json').write_text(json.dumps(audit, ensure_ascii=False, indent=2) + '\n')
     print(json.dumps(statistics, ensure_ascii=False))
 

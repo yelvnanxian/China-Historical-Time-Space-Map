@@ -1,7 +1,7 @@
 {
   "name": "historical-atlas",
   "private": true,
-  "version": "0.9.0",
+  "version": "0.10.0",
   "type": "module",
   "scripts": {
     "dev": "concurrently -k -n api,web \"tsx watch --include data/catalog.json server/index.ts\" \"vite --host 127.0.0.1\"",

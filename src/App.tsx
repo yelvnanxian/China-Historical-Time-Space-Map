@@ -39,6 +39,9 @@ import {
   type ExplorationState,
 } from "../shared/exploration";
 import "./map-topline.css";
+import { canInteract, mapInteractionOptions, type MapInteractionMode } from "../shared/map-interactions";
+import type { TangBoundaryCrosswalk } from "../shared/tang-boundary-crosswalk";
+import TangJurisdictionInfo from "./components/TangJurisdictionInfo";
 
 function formatYear(year: number) {
   return year < 0 ? `公元前 ${Math.abs(year)} 年` : `公元 ${year} 年`;
@@ -103,6 +106,9 @@ export default function App() {
   const [geographySelection, setGeographySelection] = useState<HistoricalGeographyEntry | null>(null);
   const [geographyOpenRequest, setGeographyOpenRequest] = useState(0);
   const [atlasOpenRequest, setAtlasOpenRequest] = useState(0);
+  const [tangBoundaries, setTangBoundaries] = useState<TangBoundaryCrosswalk | null>(null);
+  const [crosswalkLoaded, setCrosswalkLoaded] = useState(false);
+  const [jurisdictionRequest, setJurisdictionRequest] = useState<{ id: string; requestId: number }>();
   const [attempt, setAttempt] = useState(0);
   const [exploration, setExploration] = useState<ExplorationState>({
     periodId: "tang",
@@ -116,7 +122,7 @@ export default function App() {
   const { periodId, placeId, eventId, modernNames, routeVisible } =
     exploration;
   const detailTab = exploration.detailsView;
-  const [displayMode, setDisplayMode] = useState<"cities" | "nature" | "both">("both");
+  const [interactionMode, setInteractionMode] = useState<MapInteractionMode>("all");
   const [detailsOpen, setDetailsOpen] = useState(false);
   const [focusRequest, setFocusRequest] = useState(0);
   const [boundaryStatus, setBoundaryStatus] = useState("历史边界加载中…");
@@ -133,6 +139,13 @@ export default function App() {
   const searchBox = useRef<HTMLDivElement>(null);
   const dialog = useRef<HTMLDialogElement>(null);
   const detailScroll = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const controller = new AbortController();
+    fetch("/data/tang-boundary-crosswalk.json", { signal: controller.signal }).then(r => { if (!r.ok) throw Error(); return r.json(); })
+      .then(data => { setTangBoundaries(data); setCrosswalkLoaded(true); })
+      .catch(error => { if (error.name !== "AbortError") setCrosswalkLoaded(true); });
+    return () => controller.abort();
+  }, []);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -252,7 +265,7 @@ export default function App() {
     });
   }
   function selectPlace(id: string) {
-    if (displayMode === "nature") setDisplayMode("both");
+    if (!canInteract(interactionMode, "cities")) setInteractionMode("cities");
     setDetailsOpen(true);
     setFocusRequest((value) => value + 1);
     commit({
@@ -266,7 +279,7 @@ export default function App() {
     commit({ ...exploration, eventId: null, detailsView: tab });
   }
   function openEvent(event: HistoricalEvent) {
-    if (displayMode === "nature") setDisplayMode("both");
+    if (!canInteract(interactionMode, "cities")) setInteractionMode("cities");
     setDetailsOpen(true);
     commit({
       ...exploration,
@@ -335,7 +348,7 @@ export default function App() {
   }, [query]);
   function selectResult(result: SearchResult) {
     if (result.type !== "period") setDetailsOpen(true);
-    if (result.type === "place" && displayMode === "nature") setDisplayMode("both");
+    if (result.type === "place" && !canInteract(interactionMode, "cities")) setInteractionMode("cities");
     const matchedPlace =
       result.type === "place"
         ? catalog?.places.find((item) => item.id === result.id)
@@ -417,7 +430,7 @@ export default function App() {
         </nav>
         <div className="header-right">
           <span className="edition-label">
-            探索版 <span>V0.9.0</span>
+            探索版 <span>V0.10.0</span>
           </span>
           <OnboardingGuide />
           <button
@@ -550,15 +563,12 @@ export default function App() {
                   中国及周边地区
                 </small>
               </div>
-              <div className="map-display-mode" role="group" aria-label="地图显示内容" data-tour="display-mode">
-                {([
-                  ["cities", "城池"],
-                  ["nature", "山川河流"],
-                  ["both", "同时显示"],
-                ] as const).map(([value, label]) => (
-                  <button key={value} type="button" aria-pressed={displayMode === value} onClick={() => {
-                    setDisplayMode(value);
-                    if (value === "nature") setDetailsOpen(false);
+              <div className="map-display-mode" role="group" aria-label="地图点选对象" data-tour="display-mode">
+                <span className="map-mode-caption">点选</span>
+                {mapInteractionOptions.map(({value, label}) => (
+                  <button key={value} type="button" aria-pressed={interactionMode === value} onClick={() => {
+                    setInteractionMode(value);
+                    if (!canInteract(value, "cities")) setDetailsOpen(false);
                   }}>{label}</button>
                 ))}
               </div>
@@ -566,7 +576,7 @@ export default function App() {
                 <CityPeriodHighlights period={period} places={places} data={cityProfiles} error={cityProfilesError}
                   onRetry={() => setCityProfilesAttempt(value => value + 1)} onSelect={selectPlace} />
                 <button type="button" className="map-details-launch" aria-expanded={detailsOpen && detailTab === "place"} aria-controls="historical-details" onClick={() => {
-                  if (displayMode === "nature") setDisplayMode("both");
+                  if (!canInteract(interactionMode, "cities")) setInteractionMode("cities");
                   setDetailsOpen(true);
                   closeEventDetail("place");
                 }}><BookOpen size={13} />地点档案</button>
@@ -583,8 +593,8 @@ export default function App() {
               </div>
               <button
                 className={`modern-toggle ${modernNames ? "enabled" : ""}`}
-                disabled={displayMode === "nature"}
-                title={displayMode === "nature" ? "古今地名对照在城池或同时显示模式使用" : "同时显示古名与现代参考地区"}
+                disabled={!canInteract(interactionMode, "cities")}
+                title={!canInteract(interactionMode, "cities") ? "选择城池或全部后查看古今地名" : "同时显示古名与现代参考地区"}
                 onClick={() =>
                   commit({ ...exploration, modernNames: !modernNames })
                 }
@@ -598,7 +608,7 @@ export default function App() {
             </div>
             <HistoricalMap
               period={period}
-              displayMode={displayMode}
+              interactionMode={interactionMode}
               places={places}
               selectedPlace={place}
               selectedEvent={selectedEvent}
@@ -613,16 +623,17 @@ export default function App() {
               onGeographyClear={() => setGeographySelection(null)}
               onNaturalSelect={() => setDetailsOpen(false)}
               onOpenAtlas={() => setAtlasOpenRequest(value => value + 1)}
+              tangBoundaries={tangBoundaries} crosswalkLoading={!crosswalkLoaded} jurisdictionRequest={jurisdictionRequest}
             />
             <div className="map-bottomline">
               <HistoricalAtlasViewer periodId={periodId} openRequest={atlasOpenRequest} />
               <HistoricalGeography data={historicalContext} error={contextError} selected={geographySelection} openRequest={geographyOpenRequest}
-                onLocate={entry => { setDetailsOpen(false); if (displayMode === "cities") setDisplayMode("nature"); setGeographySelection({ ...entry }); }} />
+                onLocate={entry => { setDetailsOpen(false); if (!canInteract(interactionMode, "rivers")) setInteractionMode("rivers"); setGeographySelection({ ...entry }); }} />
               <span>
                 <Info size={12} />
-                {displayMode === "nature" ? "点名称查看；历史黄河按年代显示，其余河湖为现代参照" : displayMode === "both" ? `${boundaryStatus} · 点山川名称看自然，点区域看行政` : `${boundaryStatus} · 缩放显示行政层级与城镇`}
+                {`点选：${mapInteractionOptions.find(option => option.value === interactionMode)?.label} · 地形保持显示，仅切换名称与可点对象`}
               </span>
-              <span className="map-count">{displayMode === "nature" ? "历史河道 / 现代地理" : `精选 ${places.length} 处历史地点`}</span>
+              <span className="map-count">{boundaryStatus}</span>
             </div>
           </div>
 
@@ -691,6 +702,8 @@ export default function App() {
                     <CityDrawing />
                     <CityPeriodHighlight period={period} placeId={place.id} data={cityProfiles} error={cityProfilesError}
                       onRetry={() => setCityProfilesAttempt(value => value + 1)} />
+                    {periodId === "tang" && <TangJurisdictionInfo name={placeName(place, period)} link={tangBoundaries?.places[place.id]} loading={!crosswalkLoaded}
+                      onView={id => { setDetailsOpen(false); setJurisdictionRequest({ id, requestId: Date.now() }); }} />}
                     <div className="detail-section">
                       <h3>
                         <span />

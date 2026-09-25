@@ -1,0 +1,25 @@
+{
+  "featureCount": 950,
+  "countsByKind": {
+    "water": 378,
+    "peak": 219,
+    "canal": 44,
+    "stream": 143,
+    "river": 166
+  },
+  "rejected": [
+    {
+      "osmType": "relation",
+      "osmId": 17078808,
+      "reason": "Inner ring has no containing outer ring"
+    },
+    {
+      "osmType": "way",
+      "osmId": 1290128130,
+      "reason": "Water way is not a closed ring"
+    }
+  ],
+  "sourceMemberWayDuplicatesSuppressed": 79,
+  "crossRegionDuplicateIdsSuppressed": 0,
+  "geometryPolicy": "Unsmoothed original coordinate sequences; exact endpoint line merging for complete water rings. No guessed closing edges, buffers or polygon repair."
+}

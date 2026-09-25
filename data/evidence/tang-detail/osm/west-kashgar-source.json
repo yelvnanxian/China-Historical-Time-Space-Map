@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-west-kashgar",
+  "title": "OpenStreetMap 现代地理：疏勒与喀什绿洲",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "retrievedAt": "2026-09-25T03:37:16.334470+00:00",
+  "bounds": [
+    75.55,
+    39.15,
+    76.6,
+    39.95
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/west-kashgar.json.gz",
+  "snapshotSha256": "c8a5f4af696546ca48e941188a94176de4df8e41a27057840797f4b6cd480983",
+  "uncompressedSnapshotSha256": "c226bee22f9a0819e51c8fd122d3bd0c4c547ce9d610e583efb1aaa6f254824b",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/west-kashgar.ql",
+  "querySha256": "966c2cd37a0b0a7e5b721242ec4def3f5245757e90da6b5f8a84ed3e61881c35",
+  "osmBaseTimestamp": "2026-07-15T15:22:01Z",
+  "elementCount": 436,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。"
+}

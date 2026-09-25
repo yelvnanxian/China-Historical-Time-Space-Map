@@ -50,7 +50,7 @@ export interface BoundarySelection {
 export const boundaryLevelNames: Record<BoundaryLevel, string> = {
   country: "政权 / 诸部",
   province: "省 / 路 / 道",
-  prefecture: "府 / 州",
+  prefecture: "府 / 州 / 郡",
   county: "县级行政区",
 };
 

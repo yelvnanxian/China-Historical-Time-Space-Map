@@ -1,0 +1,940 @@
+{
+  "version": "mountain-detail-1",
+  "acquisition": {
+    "complete": true,
+    "missingTiles": []
+  },
+  "featureCount": 14330,
+  "namedChineseCount": 3355,
+  "countsByKind": {
+    "ridge": 8940,
+    "arete": 54,
+    "cliff": 1746,
+    "peak": 3590
+  },
+  "geometryNote": "现代OSM山脊、刃脊、陡崖ways及命名山峰，不是唐代复原。查询矩形仅说明采集区域；数据覆盖不完整，空白不代表没有山地。",
+  "regions": [
+    {
+      "id": "qinling",
+      "name": "秦岭与关中南缘",
+      "bounds": [
+        104,
+        32,
+        112,
+        35
+      ],
+      "featureCount": 819,
+      "countsByKind": {
+        "peak": 206,
+        "cliff": 407,
+        "ridge": 206
+      }
+    },
+    {
+      "id": "taihang",
+      "name": "太行山地区",
+      "bounds": [
+        111,
+        34.5,
+        115,
+        40.5
+      ],
+      "featureCount": 1010,
+      "countsByKind": {
+        "peak": 330,
+        "cliff": 466,
+        "ridge": 214
+      }
+    },
+    {
+      "id": "qilian",
+      "name": "祁连山地区",
+      "bounds": [
+        94,
+        36,
+        103,
+        40.5
+      ],
+      "featureCount": 563,
+      "countsByKind": {
+        "peak": 132,
+        "cliff": 246,
+        "ridge": 185
+      }
+    },
+    {
+      "id": "tianshan",
+      "name": "天山地区",
+      "bounds": [
+        79,
+        40.5,
+        92,
+        45.5
+      ],
+      "featureCount": 7910,
+      "countsByKind": {
+        "peak": 359,
+        "ridge": 7364,
+        "cliff": 178,
+        "arete": 9
+      }
+    },
+    {
+      "id": "west-sichuan",
+      "name": "川西山地",
+      "bounds": [
+        97,
+        28,
+        104,
+        34
+      ],
+      "featureCount": 4028,
+      "countsByKind": {
+        "peak": 2563,
+        "ridge": 971,
+        "cliff": 449,
+        "arete": 45
+      }
+    }
+  ],
+  "packs": [
+    {
+      "id": "qinling-0",
+      "regionId": "qinling",
+      "url": "/data/mountain-detail/qinling-0.geojson.gz",
+      "bounds": [
+        103.9940122,
+        31.9826214,
+        111.985908,
+        34.9988035
+      ],
+      "featureCount": 750,
+      "minZoom": 6
+    },
+    {
+      "id": "qinling-1",
+      "regionId": "qinling",
+      "url": "/data/mountain-detail/qinling-1.geojson.gz",
+      "bounds": [
+        104.086048,
+        32.1897053,
+        110.6924003,
+        34.9861247
+      ],
+      "featureCount": 69,
+      "minZoom": 8
+    },
+    {
+      "id": "taihang-0",
+      "regionId": "taihang",
+      "url": "/data/mountain-detail/taihang-0.geojson.gz",
+      "bounds": [
+        111.0107555,
+        34.5003145,
+        114.9965513,
+        40.4950632
+      ],
+      "featureCount": 750,
+      "minZoom": 7
+    },
+    {
+      "id": "taihang-1",
+      "regionId": "taihang",
+      "url": "/data/mountain-detail/taihang-1.geojson.gz",
+      "bounds": [
+        111.430432,
+        35.4509694,
+        115.021914,
+        40.2031823
+      ],
+      "featureCount": 260,
+      "minZoom": 7
+    },
+    {
+      "id": "qilian-0",
+      "regionId": "qilian",
+      "url": "/data/mountain-detail/qilian-0.geojson.gz",
+      "bounds": [
+        93.9821805,
+        36.0156215,
+        102.9137872,
+        40.4170586
+      ],
+      "featureCount": 563,
+      "minZoom": 6.5
+    },
+    {
+      "id": "tianshan-0",
+      "regionId": "tianshan",
+      "url": "/data/mountain-detail/tianshan-0.geojson.gz",
+      "bounds": [
+        78.500576,
+        40.5003646,
+        91.878295,
+        45.5
+      ],
+      "featureCount": 750,
+      "minZoom": 6
+    },
+    {
+      "id": "tianshan-1",
+      "regionId": "tianshan",
+      "url": "/data/mountain-detail/tianshan-1.geojson.gz",
+      "bounds": [
+        78.9738679,
+        41.7605566,
+        87.3952365,
+        45.4973145
+      ],
+      "featureCount": 750,
+      "minZoom": 6
+    },
+    {
+      "id": "tianshan-2",
+      "regionId": "tianshan",
+      "url": "/data/mountain-detail/tianshan-2.geojson.gz",
+      "bounds": [
+        78.9350509,
+        41.671277,
+        90.949099,
+        44.9067957
+      ],
+      "featureCount": 750,
+      "minZoom": 7
+    },
+    {
+      "id": "tianshan-3",
+      "regionId": "tianshan",
+      "url": "/data/mountain-detail/tianshan-3.geojson.gz",
+      "bounds": [
+        78.5217907,
+        41.2140493,
+        84.5428575,
+        44.9433863
+      ],
+      "featureCount": 750,
+      "minZoom": 6
+    },
+    {
+      "id": "tianshan-4",
+      "regionId": "tianshan",
+      "url": "/data/mountain-detail/tianshan-4.geojson.gz",
+      "bounds": [
+        78.9983725,
+        41.731403,
+        80.4500484,
+        43.3503809
+      ],
+      "featureCount": 750,
+      "minZoom": 7
+    },
+    {
+      "id": "tianshan-5",
+      "regionId": "tianshan",
+      "url": "/data/mountain-detail/tianshan-5.geojson.gz",
+      "bounds": [
+        78.9904117,
+        41.6926872,
+        82.6349419,
+        43.3757418
+      ],
+      "featureCount": 750,
+      "minZoom": 6
+    },
+    {
+      "id": "tianshan-6",
+      "regionId": "tianshan",
+      "url": "/data/mountain-detail/tianshan-6.geojson.gz",
+      "bounds": [
+        78.8153939,
+        41.4603211,
+        81.3876629,
+        45.1669103
+      ],
+      "featureCount": 750,
+      "minZoom": 6
+    },
+    {
+      "id": "tianshan-7",
+      "regionId": "tianshan",
+      "url": "/data/mountain-detail/tianshan-7.geojson.gz",
+      "bounds": [
+        78.9238831,
+        41.8360882,
+        83.6236919,
+        42.784126
+      ],
+      "featureCount": 750,
+      "minZoom": 6
+    },
+    {
+      "id": "tianshan-8",
+      "regionId": "tianshan",
+      "url": "/data/mountain-detail/tianshan-8.geojson.gz",
+      "bounds": [
+        78.495717,
+        41.6557975,
+        89.5421091,
+        44.1526028
+      ],
+      "featureCount": 750,
+      "minZoom": 6
+    },
+    {
+      "id": "tianshan-9",
+      "regionId": "tianshan",
+      "url": "/data/mountain-detail/tianshan-9.geojson.gz",
+      "bounds": [
+        88.0563395,
+        43.6079156,
+        88.7392359,
+        44.0082376
+      ],
+      "featureCount": 750,
+      "minZoom": 7
+    },
+    {
+      "id": "tianshan-10",
+      "regionId": "tianshan",
+      "url": "/data/mountain-detail/tianshan-10.geojson.gz",
+      "bounds": [
+        78.9804124,
+        41.0046408,
+        90.1808738,
+        44.3362544
+      ],
+      "featureCount": 410,
+      "minZoom": 6
+    },
+    {
+      "id": "west-sichuan-0",
+      "regionId": "west-sichuan",
+      "url": "/data/mountain-detail/west-sichuan-0.geojson.gz",
+      "bounds": [
+        97.0008029,
+        28.0098144,
+        103.9478121,
+        33.9979851
+      ],
+      "featureCount": 750,
+      "minZoom": 6.5
+    },
+    {
+      "id": "west-sichuan-1",
+      "regionId": "west-sichuan",
+      "url": "/data/mountain-detail/west-sichuan-1.geojson.gz",
+      "bounds": [
+        97.2653957,
+        33.7275673,
+        100.6887886,
+        33.9989602
+      ],
+      "featureCount": 750,
+      "minZoom": 6.5
+    },
+    {
+      "id": "west-sichuan-2",
+      "regionId": "west-sichuan",
+      "url": "/data/mountain-detail/west-sichuan-2.geojson.gz",
+      "bounds": [
+        97.0592719,
+        28.0511427,
+        103.8991787,
+        33.9979851
+      ],
+      "featureCount": 750,
+      "minZoom": 6.5
+    },
+    {
+      "id": "west-sichuan-3",
+      "regionId": "west-sichuan",
+      "url": "/data/mountain-detail/west-sichuan-3.geojson.gz",
+      "bounds": [
+        97.0296389,
+        28.0002754,
+        103.9602112,
+        33.7569766
+      ],
+      "featureCount": 750,
+      "minZoom": 6.5
+    },
+    {
+      "id": "west-sichuan-4",
+      "regionId": "west-sichuan",
+      "url": "/data/mountain-detail/west-sichuan-4.geojson.gz",
+      "bounds": [
+        96.9314779,
+        27.9627933,
+        103.9570359,
+        34.0028659
+      ],
+      "featureCount": 750,
+      "minZoom": 7
+    },
+    {
+      "id": "west-sichuan-5",
+      "regionId": "west-sichuan",
+      "url": "/data/mountain-detail/west-sichuan-5.geojson.gz",
+      "bounds": [
+        97.0222807,
+        28.1212232,
+        103.7920871,
+        34.0219073
+      ],
+      "featureCount": 278,
+      "minZoom": 6
+    }
+  ],
+  "sources": [
+    {
+      "id": "osm-mountain-detail-qinling-0",
+      "regionId": "qinling",
+      "title": "OpenStreetMap 山地线与命名山峰：秦岭与关中南缘 / qinling-0",
+      "url": "https://www.openstreetmap.org/copyright",
+      "endpoint": "https://overpass.kumi.systems/api/interpreter",
+      "bounds": [
+        104,
+        32,
+        108,
+        35
+      ],
+      "retrievedAt": "2026-09-25T03:31:43.815852+00:00",
+      "snapshotPath": "data/evidence/mountain-detail/osm/qinling-0.json.gz",
+      "snapshotSha256": "3987412a2f13164672c50aac9ba58b71e3efdad8ed86255bda1028c8bada9c09",
+      "uncompressedSnapshotSha256": "20536d0f7cd222cf209afe25502176e86a1f34da917e47a57130df844e6a332c",
+      "queryPath": "data/evidence/mountain-detail/osm/qinling-0.ql",
+      "querySha256": "6fbc76fe912b578fae358b76573e930df447bee0311c6a29c3eb4cf8a70df88e",
+      "osmBaseTimestamp": "2026-07-24T11:04:51Z",
+      "elementCount": 520,
+      "modernReferenceOnly": true,
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是唐代复原。查询边框不是山脉范围。"
+    },
+    {
+      "id": "osm-mountain-detail-qinling-1",
+      "regionId": "qinling",
+      "title": "OpenStreetMap 山地线与命名山峰：秦岭与关中南缘 / qinling-1",
+      "url": "https://www.openstreetmap.org/copyright",
+      "endpoint": "https://overpass.kumi.systems/api/interpreter",
+      "bounds": [
+        108,
+        32,
+        112,
+        35
+      ],
+      "retrievedAt": "2026-09-25T03:31:53.110557+00:00",
+      "snapshotPath": "data/evidence/mountain-detail/osm/qinling-1.json.gz",
+      "snapshotSha256": "9c6852719ebf6f569a10cd4d43000d3b81a5c16ccf1d5f148f4c4902cc8c6967",
+      "uncompressedSnapshotSha256": "172a2f9c04ad7fe04ebd0d9815982a4441fdcc701b1dfe731fb9ca96262d9bda",
+      "queryPath": "data/evidence/mountain-detail/osm/qinling-1.ql",
+      "querySha256": "37869828e1bcd429522e43556c0efb90f5557ba1ce4ef38491443893be7b3d4c",
+      "osmBaseTimestamp": "2026-07-15T15:22:01Z",
+      "elementCount": 299,
+      "modernReferenceOnly": true,
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是唐代复原。查询边框不是山脉范围。"
+    },
+    {
+      "id": "osm-mountain-detail-taihang-0",
+      "regionId": "taihang",
+      "title": "OpenStreetMap 山地线与命名山峰：太行山地区 / taihang-0",
+      "url": "https://www.openstreetmap.org/copyright",
+      "endpoint": "https://overpass.kumi.systems/api/interpreter",
+      "bounds": [
+        111,
+        34.5,
+        115,
+        37.5
+      ],
+      "retrievedAt": "2026-09-25T03:32:05.184361+00:00",
+      "snapshotPath": "data/evidence/mountain-detail/osm/taihang-0.json.gz",
+      "snapshotSha256": "3be6f55e83711926031a31d9d39f16a9e7ae6f548194ebe1aff234faea7b5c65",
+      "uncompressedSnapshotSha256": "ba46aadcae0f5c85cb91198210481a1eacb4a21079cf36162b17bf193e70f9ae",
+      "queryPath": "data/evidence/mountain-detail/osm/taihang-0.ql",
+      "querySha256": "6f7678c4cb3e71aa3ea0527546102d7bdac1e209c8cd68d64b56cb98b1cde163",
+      "osmBaseTimestamp": "2026-07-24T11:04:51Z",
+      "elementCount": 452,
+      "modernReferenceOnly": true,
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是唐代复原。查询边框不是山脉范围。"
+    },
+    {
+      "id": "osm-mountain-detail-taihang-1",
+      "regionId": "taihang",
+      "title": "OpenStreetMap 山地线与命名山峰：太行山地区 / taihang-1",
+      "url": "https://www.openstreetmap.org/copyright",
+      "endpoint": "https://overpass.kumi.systems/api/interpreter",
+      "bounds": [
+        111,
+        37.5,
+        115,
+        40.5
+      ],
+      "retrievedAt": "2026-09-25T03:32:18.095390+00:00",
+      "snapshotPath": "data/evidence/mountain-detail/osm/taihang-1.json.gz",
+      "snapshotSha256": "017568dc9f8468d78e226e49a8524b67c379adef1c6d93f404daeac46b7a8e66",
+      "uncompressedSnapshotSha256": "6805089e8961f433facd71bcb637d2cda28dd3beff41ff97c9ee5f67a8745519",
+      "queryPath": "data/evidence/mountain-detail/osm/taihang-1.ql",
+      "querySha256": "150c1eb477367fe4dd1ba1fd84ead4828028b244bbc870bb81543e854af131d0",
+      "osmBaseTimestamp": "2026-05-06T03:25:00Z",
+      "elementCount": 564,
+      "modernReferenceOnly": true,
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是唐代复原。查询边框不是山脉范围。"
+    },
+    {
+      "id": "osm-mountain-detail-qilian-0",
+      "regionId": "qilian",
+      "title": "OpenStreetMap 山地线与命名山峰：祁连山地区 / qilian-0",
+      "url": "https://www.openstreetmap.org/copyright",
+      "endpoint": "https://overpass.kumi.systems/api/interpreter",
+      "bounds": [
+        94,
+        36,
+        98,
+        39
+      ],
+      "retrievedAt": "2026-09-25T03:34:35.785437+00:00",
+      "snapshotPath": "data/evidence/mountain-detail/osm/qilian-0.json.gz",
+      "snapshotSha256": "17dd3805d293373fa9a76b6fdcc1c95f2e6a173ec94b5d562753dfbb14706c10",
+      "uncompressedSnapshotSha256": "10c6188210ee6ccf476a7d7867f1a4cbc47cac85b245f503656069bf1e7c8c7d",
+      "queryPath": "data/evidence/mountain-detail/osm/qilian-0.ql",
+      "querySha256": "aa4fd595659f7273ba81809d6f12e807577395c68ae490d8c05be6703cba1f9e",
+      "osmBaseTimestamp": "2026-06-01T08:52:28Z",
+      "elementCount": 70,
+      "modernReferenceOnly": true,
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是唐代复原。查询边框不是山脉范围。"
+    },
+    {
+      "id": "osm-mountain-detail-qilian-1",
+      "regionId": "qilian",
+      "title": "OpenStreetMap 山地线与命名山峰：祁连山地区 / qilian-1",
+      "url": "https://www.openstreetmap.org/copyright",
+      "endpoint": "https://overpass.kumi.systems/api/interpreter",
+      "bounds": [
+        98,
+        36,
+        102,
+        39
+      ],
+      "retrievedAt": "2026-09-25T03:32:39.510892+00:00",
+      "snapshotPath": "data/evidence/mountain-detail/osm/qilian-1.json.gz",
+      "snapshotSha256": "ed600eca501377d731ec24163f017304ee25b0684f5c21732aaf6b82ae83d8b8",
+      "uncompressedSnapshotSha256": "9639a1edef26fbdb46b9f1b359a162589b51a7b6b0543c3e9444bef76751b701",
+      "queryPath": "data/evidence/mountain-detail/osm/qilian-1.ql",
+      "querySha256": "ed14a1f29d9b5d73e07bfa2a31d485adf71b11ed9c433ff0797f895b6fac754d",
+      "osmBaseTimestamp": "2026-05-06T03:25:00Z",
+      "elementCount": 160,
+      "modernReferenceOnly": true,
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是唐代复原。查询边框不是山脉范围。"
+    },
+    {
+      "id": "osm-mountain-detail-qilian-2",
+      "regionId": "qilian",
+      "title": "OpenStreetMap 山地线与命名山峰：祁连山地区 / qilian-2",
+      "url": "https://www.openstreetmap.org/copyright",
+      "endpoint": "https://overpass.kumi.systems/api/interpreter",
+      "bounds": [
+        102,
+        36,
+        103,
+        39
+      ],
+      "retrievedAt": "2026-09-25T03:41:42.417192+00:00",
+      "snapshotPath": "data/evidence/mountain-detail/osm/qilian-2.json.gz",
+      "snapshotSha256": "6fcb713f80658d02cb4a9e987ad0ab9cb754de35062a024bfaf35abcddc0d431",
+      "uncompressedSnapshotSha256": "3d5e887c3a81350bdb4e3a61fbd9a38d61f7309187020abba5fadd0673b4ac3a",
+      "queryPath": "data/evidence/mountain-detail/osm/qilian-2.ql",
+      "querySha256": "364edd283b2c85e064acbde768cc1d0903ad0b00bfd0abe7ce6057c2a2189e5c",
+      "osmBaseTimestamp": "2026-07-15T15:22:01Z",
+      "elementCount": 131,
+      "modernReferenceOnly": true,
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是唐代复原。查询边框不是山脉范围。"
+    },
+    {
+      "id": "osm-mountain-detail-qilian-3",
+      "regionId": "qilian",
+      "title": "OpenStreetMap 山地线与命名山峰：祁连山地区 / qilian-3",
+      "url": "https://www.openstreetmap.org/copyright",
+      "endpoint": "https://overpass.kumi.systems/api/interpreter",
+      "bounds": [
+        94,
+        39,
+        98,
+        40.5
+      ],
+      "retrievedAt": "2026-09-25T03:34:46.010842+00:00",
+      "snapshotPath": "data/evidence/mountain-detail/osm/qilian-3.json.gz",
+      "snapshotSha256": "d2b00b8f6f3373cce7a493f2ef17f1545765894e376a2efe89ad9fbbe063ae26",
+      "uncompressedSnapshotSha256": "6238da943b568810eb8966a19e92a57b8267a99807e94b808134cb0d28cb0ee3",
+      "queryPath": "data/evidence/mountain-detail/osm/qilian-3.ql",
+      "querySha256": "a97fa6788aa3d524efb9f2713414446f516ebace75ff03d4bc415066661928ec",
+      "osmBaseTimestamp": "2026-05-31T22:37:44Z",
+      "elementCount": 76,
+      "modernReferenceOnly": true,
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是唐代复原。查询边框不是山脉范围。"
+    },
+    {
+      "id": "osm-mountain-detail-qilian-4",
+      "regionId": "qilian",
+      "title": "OpenStreetMap 山地线与命名山峰：祁连山地区 / qilian-4",
+      "url": "https://www.openstreetmap.org/copyright",
+      "endpoint": "https://overpass.kumi.systems/api/interpreter",
+      "bounds": [
+        98,
+        39,
+        102,
+        40.5
+      ],
+      "retrievedAt": "2026-09-25T03:34:59.718623+00:00",
+      "snapshotPath": "data/evidence/mountain-detail/osm/qilian-4.json.gz",
+      "snapshotSha256": "81bdfd4dd5129d2caa7044559c1847587e42dabe42db46ccddef3e1b47dd4e13",
+      "uncompressedSnapshotSha256": "251333d28b138574458e3d31e753ed7a1a5e1be607ba72c2dd896947784d9e7d",
+      "queryPath": "data/evidence/mountain-detail/osm/qilian-4.ql",
+      "querySha256": "5de5e060283743e22ef69ad9536690606d4a6c7758c6d0a87e21c73ed738455d",
+      "osmBaseTimestamp": "2026-05-06T03:25:00Z",
+      "elementCount": 129,
+      "modernReferenceOnly": true,
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是唐代复原。查询边框不是山脉范围。"
+    },
+    {
+      "id": "osm-mountain-detail-qilian-5",
+      "regionId": "qilian",
+      "title": "OpenStreetMap 山地线与命名山峰：祁连山地区 / qilian-5",
+      "url": "https://www.openstreetmap.org/copyright",
+      "endpoint": "https://overpass.kumi.systems/api/interpreter",
+      "bounds": [
+        102,
+        39,
+        103,
+        40.5
+      ],
+      "retrievedAt": "2026-09-25T03:35:08.478532+00:00",
+      "snapshotPath": "data/evidence/mountain-detail/osm/qilian-5.json.gz",
+      "snapshotSha256": "dc2a2873469f6d3eec3081a6e01153627c35b62b04f6f1359fc4bfeb5d3b29e7",
+      "uncompressedSnapshotSha256": "74cdd15fdf37769626abd9c514d6c2decdf9fc0dba4bdc42b424a4c98a2d5be3",
+      "queryPath": "data/evidence/mountain-detail/osm/qilian-5.ql",
+      "querySha256": "65c111e6b19949318585f7efae73534bc83618bb2b8ce55a8d897fc1f1fdf802",
+      "osmBaseTimestamp": "2026-07-28T02:16:18Z",
+      "elementCount": 1,
+      "modernReferenceOnly": true,
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是唐代复原。查询边框不是山脉范围。"
+    },
+    {
+      "id": "osm-mountain-detail-tianshan-0",
+      "regionId": "tianshan",
+      "title": "OpenStreetMap 山地线与命名山峰：天山地区 / tianshan-0",
+      "url": "https://www.openstreetmap.org/copyright",
+      "endpoint": "https://overpass.kumi.systems/api/interpreter",
+      "bounds": [
+        79,
+        40.5,
+        83,
+        43.5
+      ],
+      "retrievedAt": "2026-09-25T03:44:30.457521+00:00",
+      "snapshotPath": "data/evidence/mountain-detail/osm/tianshan-0.json.gz",
+      "snapshotSha256": "025a6b428a477b11a5fc623279b36b9abbf04c5ca27be53b8c6d09d458e5f026",
+      "uncompressedSnapshotSha256": "c516a97068c9746e43db62e28f20f8a57ea904b76746ca8b366567122c5dbe41",
+      "queryPath": "data/evidence/mountain-detail/osm/tianshan-0.ql",
+      "querySha256": "b447cfe4601ee222d7130c222c53bc0161987b4016a272ff615115e2d6ea21d6",
+      "osmBaseTimestamp": "2026-07-24T11:04:51Z",
+      "elementCount": 5793,
+      "modernReferenceOnly": true,
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是唐代复原。查询边框不是山脉范围。"
+    },
+    {
+      "id": "osm-mountain-detail-tianshan-1",
+      "regionId": "tianshan",
+      "title": "OpenStreetMap 山地线与命名山峰：天山地区 / tianshan-1",
+      "url": "https://www.openstreetmap.org/copyright",
+      "endpoint": "https://overpass.kumi.systems/api/interpreter",
+      "bounds": [
+        83,
+        40.5,
+        87,
+        43.5
+      ],
+      "retrievedAt": "2026-09-25T03:44:36.830484+00:00",
+      "snapshotPath": "data/evidence/mountain-detail/osm/tianshan-1.json.gz",
+      "snapshotSha256": "ead3841083afdb3ede5586232b683cb29883d0fa3eeb2fe7151db1ec6b81cbe9",
+      "uncompressedSnapshotSha256": "3c6d425b98d5c65758111ea6a20f71a1171e374bd4419ebad496416fbd008ac1",
+      "queryPath": "data/evidence/mountain-detail/osm/tianshan-1.ql",
+      "querySha256": "b53bf8b198ded65be98a809822101b44542ee483bc34a91a17deeaf1a582b4ff",
+      "osmBaseTimestamp": "2026-06-01T08:52:28Z",
+      "elementCount": 33,
+      "modernReferenceOnly": true,
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是唐代复原。查询边框不是山脉范围。"
+    },
+    {
+      "id": "osm-mountain-detail-tianshan-2",
+      "regionId": "tianshan",
+      "title": "OpenStreetMap 山地线与命名山峰：天山地区 / tianshan-2",
+      "url": "https://www.openstreetmap.org/copyright",
+      "endpoint": "https://overpass.kumi.systems/api/interpreter",
+      "bounds": [
+        87,
+        40.5,
+        91,
+        43.5
+      ],
+      "retrievedAt": "2026-09-25T03:44:45.647452+00:00",
+      "snapshotPath": "data/evidence/mountain-detail/osm/tianshan-2.json.gz",
+      "snapshotSha256": "b6bdd9d7d7aa82f7481d6bb962e7d8b557450c61c7fa1e9f3bc36197c7f1584f",
+      "uncompressedSnapshotSha256": "485844ddeaf734f72cb0022226a80227db4811b92f4b2a7a0ba51aa44316c4d9",
+      "queryPath": "data/evidence/mountain-detail/osm/tianshan-2.ql",
+      "querySha256": "7a2333a78a94353b30a019dfdb4eb8d3e43d221d60bd660ff57e040d266e9309",
+      "osmBaseTimestamp": "2026-07-15T15:22:01Z",
+      "elementCount": 66,
+      "modernReferenceOnly": true,
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是唐代复原。查询边框不是山脉范围。"
+    },
+    {
+      "id": "osm-mountain-detail-tianshan-3",
+      "regionId": "tianshan",
+      "title": "OpenStreetMap 山地线与命名山峰：天山地区 / tianshan-3",
+      "url": "https://www.openstreetmap.org/copyright",
+      "endpoint": "https://overpass.kumi.systems/api/interpreter",
+      "bounds": [
+        91,
+        40.5,
+        92,
+        43.5
+      ],
+      "retrievedAt": "2026-09-25T03:44:48.967079+00:00",
+      "snapshotPath": "data/evidence/mountain-detail/osm/tianshan-3.json.gz",
+      "snapshotSha256": "58f59baa847cebaa3ab4433aac07a099b3d224dd951cb7262cd0b495844ee54f",
+      "uncompressedSnapshotSha256": "87e08929c83f80d7ba5998166e5b4983a6ad6482cda6bd195f6fae7e8cab71bf",
+      "queryPath": "data/evidence/mountain-detail/osm/tianshan-3.ql",
+      "querySha256": "de552d35cee4951d8f327194c5d66b2c99426f253a58df9bf8d3f8f66ad7f365",
+      "osmBaseTimestamp": "2026-05-06T03:25:00Z",
+      "elementCount": 3,
+      "modernReferenceOnly": true,
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是唐代复原。查询边框不是山脉范围。"
+    },
+    {
+      "id": "osm-mountain-detail-tianshan-4",
+      "regionId": "tianshan",
+      "title": "OpenStreetMap 山地线与命名山峰：天山地区 / tianshan-4",
+      "url": "https://www.openstreetmap.org/copyright",
+      "endpoint": "https://overpass.kumi.systems/api/interpreter",
+      "bounds": [
+        79,
+        43.5,
+        83,
+        45.5
+      ],
+      "retrievedAt": "2026-09-25T03:47:14.875852+00:00",
+      "snapshotPath": "data/evidence/mountain-detail/osm/tianshan-4.json.gz",
+      "snapshotSha256": "ba627903505fefd0415aa16d711c83b271c0268f8c72717cb3c949a0d9897aad",
+      "uncompressedSnapshotSha256": "908d53c71050646b4d40c2934582bc7c6cfb69948e1400063290e0cb29adebeb",
+      "queryPath": "data/evidence/mountain-detail/osm/tianshan-4.ql",
+      "querySha256": "08482d9bb5ac81eade2582e2228fdd63d69b7e8e44ddfa2f84f9c5fa22e79193",
+      "osmBaseTimestamp": "2026-06-01T08:52:28Z",
+      "elementCount": 486,
+      "modernReferenceOnly": true,
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是唐代复原。查询边框不是山脉范围。"
+    },
+    {
+      "id": "osm-mountain-detail-tianshan-5",
+      "regionId": "tianshan",
+      "title": "OpenStreetMap 山地线与命名山峰：天山地区 / tianshan-5",
+      "url": "https://www.openstreetmap.org/copyright",
+      "endpoint": "https://overpass.kumi.systems/api/interpreter",
+      "bounds": [
+        83,
+        43.5,
+        87,
+        45.5
+      ],
+      "retrievedAt": "2026-09-25T03:44:57.593364+00:00",
+      "snapshotPath": "data/evidence/mountain-detail/osm/tianshan-5.json.gz",
+      "snapshotSha256": "f64e4b45ab902ada6ca38e99ea0d2adcc0b4d0760b40f19bdd3a346af5f3d810",
+      "uncompressedSnapshotSha256": "095ca32ac687429bcb9c6f1a5b029d8d02e19ebb7b0abc075897b9349ba41ff4",
+      "queryPath": "data/evidence/mountain-detail/osm/tianshan-5.ql",
+      "querySha256": "83426934a7cf6bae5bb35e4db2fabfe85bd3aefeda9058e88badda707d42d3a0",
+      "osmBaseTimestamp": "2026-07-15T15:22:01Z",
+      "elementCount": 216,
+      "modernReferenceOnly": true,
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是唐代复原。查询边框不是山脉范围。"
+    },
+    {
+      "id": "osm-mountain-detail-tianshan-6",
+      "regionId": "tianshan",
+      "title": "OpenStreetMap 山地线与命名山峰：天山地区 / tianshan-6",
+      "url": "https://www.openstreetmap.org/copyright",
+      "endpoint": "https://overpass.kumi.systems/api/interpreter",
+      "bounds": [
+        87,
+        43.5,
+        91,
+        45.5
+      ],
+      "retrievedAt": "2026-09-25T03:45:09.211314+00:00",
+      "snapshotPath": "data/evidence/mountain-detail/osm/tianshan-6.json.gz",
+      "snapshotSha256": "a379d66474be712ffa5b5552dfd41e256afd8b704c8a5c1fde86afe07c7900a9",
+      "uncompressedSnapshotSha256": "4b4f6dd139f4d77cda6aeed0a4a41f11b77e4b8cdbfe2fd846eeab0b66c9425b",
+      "queryPath": "data/evidence/mountain-detail/osm/tianshan-6.ql",
+      "querySha256": "902fad81612ba3fc98fec2b880077cce4b88b69387d15dd675c7e6288f21af06",
+      "osmBaseTimestamp": "2026-07-28T02:16:18Z",
+      "elementCount": 1317,
+      "modernReferenceOnly": true,
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是唐代复原。查询边框不是山脉范围。"
+    },
+    {
+      "id": "osm-mountain-detail-tianshan-7",
+      "regionId": "tianshan",
+      "title": "OpenStreetMap 山地线与命名山峰：天山地区 / tianshan-7",
+      "url": "https://www.openstreetmap.org/copyright",
+      "endpoint": "https://overpass.kumi.systems/api/interpreter",
+      "bounds": [
+        91,
+        43.5,
+        92,
+        45.5
+      ],
+      "retrievedAt": "2026-09-25T03:45:14.071803+00:00",
+      "snapshotPath": "data/evidence/mountain-detail/osm/tianshan-7.json.gz",
+      "snapshotSha256": "d60461cd05c9b2ffc03e2c0ada8f3a65539a24c118c352dd361882902ecf7eb9",
+      "uncompressedSnapshotSha256": "743867549d12a81174576cd3b49aa84fb92a7a45e813d84307ee62b5c963e0ab",
+      "queryPath": "data/evidence/mountain-detail/osm/tianshan-7.ql",
+      "querySha256": "2521fa6709c2a7a950ae51eadf808e6ec6648fc717b52e027601324ce24eef29",
+      "osmBaseTimestamp": "2026-06-01T08:52:28Z",
+      "elementCount": 0,
+      "modernReferenceOnly": true,
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是唐代复原。查询边框不是山脉范围。"
+    },
+    {
+      "id": "osm-mountain-detail-west-sichuan-0",
+      "regionId": "west-sichuan",
+      "title": "OpenStreetMap 山地线与命名山峰：川西山地 / west-sichuan-0",
+      "url": "https://www.openstreetmap.org/copyright",
+      "endpoint": "https://overpass.kumi.systems/api/interpreter",
+      "bounds": [
+        97,
+        28,
+        101,
+        31
+      ],
+      "retrievedAt": "2026-09-25T03:41:38.592890+00:00",
+      "snapshotPath": "data/evidence/mountain-detail/osm/west-sichuan-0.json.gz",
+      "snapshotSha256": "0add25789886b939ab817707f0458c136249a461c70d77c574cded1fea7ca973",
+      "uncompressedSnapshotSha256": "26dfb42e2da670a265506ae4af9816278e50b2f236507e6eb6e408f87bf58618",
+      "queryPath": "data/evidence/mountain-detail/osm/west-sichuan-0.ql",
+      "querySha256": "7abbe3a9c25f6377bf23288145d85024fce1ddf8df528ff5533cb982a2edd37d",
+      "osmBaseTimestamp": "2026-06-01T08:52:28Z",
+      "elementCount": 567,
+      "modernReferenceOnly": true,
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是唐代复原。查询边框不是山脉范围。"
+    },
+    {
+      "id": "osm-mountain-detail-west-sichuan-1",
+      "regionId": "west-sichuan",
+      "title": "OpenStreetMap 山地线与命名山峰：川西山地 / west-sichuan-1",
+      "url": "https://www.openstreetmap.org/copyright",
+      "endpoint": "https://overpass.kumi.systems/api/interpreter",
+      "bounds": [
+        101,
+        28,
+        104,
+        31
+      ],
+      "retrievedAt": "2026-09-25T03:44:37.499965+00:00",
+      "snapshotPath": "data/evidence/mountain-detail/osm/west-sichuan-1.json.gz",
+      "snapshotSha256": "95ec5d76416e7c6acef1626bd77f79aeff28cfb577876bc59e2e586a09970d5d",
+      "uncompressedSnapshotSha256": "ca7dd6c4910efb9e1c3d93b6900fb75b199f5a3848cb88b0c72f9d789e949584",
+      "queryPath": "data/evidence/mountain-detail/osm/west-sichuan-1.ql",
+      "querySha256": "1427cee522cac6115780714b2686a74ef2f7d71313caf294894b25da7a9a606e",
+      "osmBaseTimestamp": "2026-07-28T02:16:18Z",
+      "elementCount": 1223,
+      "modernReferenceOnly": true,
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是唐代复原。查询边框不是山脉范围。"
+    },
+    {
+      "id": "osm-mountain-detail-west-sichuan-2",
+      "regionId": "west-sichuan",
+      "title": "OpenStreetMap 山地线与命名山峰：川西山地 / west-sichuan-2",
+      "url": "https://www.openstreetmap.org/copyright",
+      "endpoint": "https://overpass.kumi.systems/api/interpreter",
+      "bounds": [
+        97,
+        31,
+        101,
+        34
+      ],
+      "retrievedAt": "2026-09-25T03:44:12.778119+00:00",
+      "snapshotPath": "data/evidence/mountain-detail/osm/west-sichuan-2.json.gz",
+      "snapshotSha256": "d56de632c14ebfe064053a1a2b15aaa87600bdb0e5643c6d226333a1160fa74f",
+      "uncompressedSnapshotSha256": "160c445e40edaf99b7fe600da1e915ded1c7ad3ad1bc5fbcf6e0ef668865b2d7",
+      "queryPath": "data/evidence/mountain-detail/osm/west-sichuan-2.ql",
+      "querySha256": "7a6f2315d0e3b31676e2f2a443a3bae5fa7d2301ee0a24608d0a1ecee29858d2",
+      "osmBaseTimestamp": "2026-07-24T11:04:51Z",
+      "elementCount": 1891,
+      "modernReferenceOnly": true,
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是唐代复原。查询边框不是山脉范围。"
+    },
+    {
+      "id": "osm-mountain-detail-west-sichuan-3",
+      "regionId": "west-sichuan",
+      "title": "OpenStreetMap 山地线与命名山峰：川西山地 / west-sichuan-3",
+      "url": "https://www.openstreetmap.org/copyright",
+      "endpoint": "https://overpass.kumi.systems/api/interpreter",
+      "bounds": [
+        101,
+        31,
+        104,
+        34
+      ],
+      "retrievedAt": "2026-09-25T03:44:19.901831+00:00",
+      "snapshotPath": "data/evidence/mountain-detail/osm/west-sichuan-3.json.gz",
+      "snapshotSha256": "eea30acbb4eff94148190b677aaad107fa620570298d548ef190d6eb1943e6ae",
+      "uncompressedSnapshotSha256": "a23b2a02f858a0a1a081b0d0189fa88bb892aa9a639daf6f7362bdca7c115e8a",
+      "queryPath": "data/evidence/mountain-detail/osm/west-sichuan-3.ql",
+      "querySha256": "d653eda1d1c30d57b2c195fe9ec0c31cc039f9cc7eceef5e6c0ccaa5761b1bfa",
+      "osmBaseTimestamp": "2026-06-01T08:52:28Z",
+      "elementCount": 348,
+      "modernReferenceOnly": true,
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是唐代复原。查询边框不是山脉范围。"
+    }
+  ]
+}
