@@ -1,0 +1,11 @@
+{
+  "id": "county-bulk-yuanhe-01",
+  "title": "元和郡縣圖志·卷01（维基文库固定版本）",
+  "url": "https://zh.wikisource.org/w/index.php?title=%E5%85%83%E5%92%8C%E9%83%A1%E7%B8%A3%E5%9C%96%E5%BF%97/%E5%8D%B701&oldid=1526066",
+  "kind": "historical-geography",
+  "snapshotPath": "data/evidence/tang-county-research/bulk-sources/yuanhe-01.txt",
+  "snapshotSha256": "dc5bf8336337d7d104b4971d65523e93eda0d2df8914c0759abcde419e7b4f75",
+  "retrievedAt": "2026-09-25T06:05:38.639443+00:00",
+  "revisionId": "1526066",
+  "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E5%85%83%E5%92%8C%E9%83%A1%E7%B8%A3%E5%9C%96%E5%BF%97%2F%E5%8D%B701"
+}

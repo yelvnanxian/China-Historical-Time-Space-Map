@@ -1,0 +1,1381 @@
+{
+  "id": "tang-county-reviewed-identities-2026-09-25",
+  "sources": [
+    {
+      "id": "identity-xintangshu-037",
+      "title": "《新唐书》卷037地理志（维基文库原文）",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2409125",
+      "kind": "historical-text",
+      "snapshotPath": "data/evidence/tang-county-research/identity-sources/xintangshu-037.txt",
+      "snapshotSha256": "297ca037275b2e22c78c0cfef74b72bc24d6fe8d13d1ed21d7b119b0f002cd44",
+      "retrievedAt": "2026-09-25T06:03:05.761912+00:00",
+      "rawSnapshotPath": "data/evidence/tang-county-research/identity-sources/xintangshu-037.api.json",
+      "rawSnapshotSha256": "ab5110b7e508795e9af628c69b2fc9dcfd33dd11e2fd54de2efcce0cccbbde24"
+    },
+    {
+      "id": "identity-xintangshu-038",
+      "title": "《新唐书》卷038地理志（维基文库原文）",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2484402",
+      "kind": "historical-text",
+      "snapshotPath": "data/evidence/tang-county-research/identity-sources/xintangshu-038.txt",
+      "snapshotSha256": "a08322dfa2bdde0b897baac632e9fa8135e96ec6e6bb6cbd79641842784e8b50",
+      "retrievedAt": "2026-09-25T06:03:06.118105+00:00",
+      "rawSnapshotPath": "data/evidence/tang-county-research/identity-sources/xintangshu-038.api.json",
+      "rawSnapshotSha256": "d17d17f90f473aaa768616071e60caf33f362640de8c16dd5f3694d23c90cbbf"
+    },
+    {
+      "id": "identity-xintangshu-039",
+      "title": "《新唐书》卷039地理志（维基文库原文）",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2691805",
+      "kind": "historical-text",
+      "snapshotPath": "data/evidence/tang-county-research/identity-sources/xintangshu-039.txt",
+      "snapshotSha256": "6d3976abd10e91e666602598f7a2f2445fd2415cad9dcdec94ad471afb8e8eaa",
+      "retrievedAt": "2026-09-25T06:03:06.411920+00:00",
+      "rawSnapshotPath": "data/evidence/tang-county-research/identity-sources/xintangshu-039.api.json",
+      "rawSnapshotSha256": "31d51b19df2511520614627126429b15af91faac07d0c84186caef3938a3f802"
+    },
+    {
+      "id": "identity-xintangshu-040",
+      "title": "《新唐书》卷040地理志（维基文库原文）",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2478570",
+      "kind": "historical-text",
+      "snapshotPath": "data/evidence/tang-county-research/identity-sources/xintangshu-040.txt",
+      "snapshotSha256": "a129c00c84de16862b068143c714fa31ab3cbfe060f153e17a0de290c2a4a2ea",
+      "retrievedAt": "2026-09-25T06:03:05.753260+00:00",
+      "rawSnapshotPath": "data/evidence/tang-county-research/identity-sources/xintangshu-040.api.json",
+      "rawSnapshotSha256": "d68c64a8a58aa7f66794dffd4ad82bd59b5070d4d80940e3973eb800547d92e0"
+    },
+    {
+      "id": "identity-xintangshu-041",
+      "title": "《新唐书》卷041地理志（维基文库原文）",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2690537",
+      "kind": "historical-text",
+      "snapshotPath": "data/evidence/tang-county-research/identity-sources/xintangshu-041.txt",
+      "snapshotSha256": "95e45a90e38e1eeb4173aca98bd23cc217c4fb81b9dd493501ec2b0fb56b0458",
+      "retrievedAt": "2026-09-25T06:03:07.675564+00:00",
+      "rawSnapshotPath": "data/evidence/tang-county-research/identity-sources/xintangshu-041.api.json",
+      "rawSnapshotSha256": "65168f0c40f597ce459fb599c9043017ad4c1bd1d22545fbaf5b8c10d491a5f9"
+    },
+    {
+      "id": "identity-xintangshu-043上",
+      "title": "《新唐书》卷043上地理志（维基文库原文）",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2474644",
+      "kind": "historical-text",
+      "snapshotPath": "data/evidence/tang-county-research/identity-sources/xintangshu-043上.txt",
+      "snapshotSha256": "eca71cebe7c9baff499d9823616f0209a10ac93ea0dda472d59f197990e768a3",
+      "retrievedAt": "2026-09-25T06:03:07.087872+00:00",
+      "rawSnapshotPath": "data/evidence/tang-county-research/identity-sources/xintangshu-043上.api.json",
+      "rawSnapshotSha256": "99f8b0b26a3e5f32c46842ca727a44feca5e3279ea1aaa44130ade37fcb99316"
+    },
+    {
+      "id": "identity-xintangshu-043下",
+      "title": "《新唐书》卷043下地理志（维基文库原文）",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2602671",
+      "kind": "historical-text",
+      "snapshotPath": "data/evidence/tang-county-research/identity-sources/xintangshu-043下.txt",
+      "snapshotSha256": "a7643977f8a5a43367aaeae47b56e6026f7ec795729e8ad66ea138435dc1eeee",
+      "retrievedAt": "2026-09-25T06:03:08.026777+00:00",
+      "rawSnapshotPath": "data/evidence/tang-county-research/identity-sources/xintangshu-043下.api.json",
+      "rawSnapshotSha256": "c79be9a2a8842b5eeda8fd92be74c4c56f29f9e597280137a7fb4605e2cd0f8a"
+    },
+    {
+      "id": "identity-yuanhe-03",
+      "title": "《元和郡县图志》卷03关内道（维基文库原文）",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=1394199",
+      "kind": "historical-text",
+      "snapshotPath": "data/evidence/tang-county-research/identity-sources/yuanhe-03.txt",
+      "snapshotSha256": "226dbbb402ac66389a0ff476da7a1de9820c8ff7efcca2d79d59df3175d004c2",
+      "retrievedAt": "2026-09-25T06:04:27.984898+00:00",
+      "rawSnapshotPath": "data/evidence/tang-county-research/identity-sources/yuanhe-03.api.json",
+      "rawSnapshotSha256": "a9fbfd4a40064c6c5d52a8a94a0836188e1d5f5e742d2d3c53f1ec43418af53f"
+    },
+    {
+      "id": "identity-jiutangshu-38",
+      "title": "《旧唐书》卷38地理志（既存归档复核）",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=7904832",
+      "kind": "historical-text",
+      "snapshotPath": "data/evidence/tang-expansion/north-west/jiutangshu-38.txt",
+      "snapshotSha256": "ba14df7bbdbb7c8219d3601ab2032593153a90fa6362620037344d69e632e92b",
+      "retrievedAt": "2026-09-25",
+      "rawSnapshotPath": "data/evidence/tang-expansion/north-west/jiutangshu-38.api.json",
+      "rawSnapshotSha256": "f3538cdc4fe5e21430cfcd9f4e15a4491dfb4929365f8cabcf60854f536d0963"
+    },
+    {
+      "id": "identity-jiutangshu-39",
+      "title": "《旧唐书》卷39地理志（既存归档复核）",
+      "url": "https://zh.wikisource.org/w/index.php?oldid=2691264",
+      "kind": "historical-text",
+      "snapshotPath": "data/evidence/tang-expansion/north-west/jiutangshu-39.txt",
+      "snapshotSha256": "a0d0a6c1b521023043cdc9fc1352f1eaa7c0534e05e9f99fdbc41f47991f88e6",
+      "retrievedAt": "2026-09-25",
+      "rawSnapshotPath": "data/evidence/tang-expansion/north-west/jiutangshu-39.api.json",
+      "rawSnapshotSha256": "f31e18ada4ff0bda477c6da860138bec128f9d32e08403f87c760a57a67f25c3"
+    },
+    {
+      "id": "identity-source-records",
+      "title": "CHGIS与Hartwell原始属性摘录（保留源名称、类型、年代和上级）",
+      "url": "https://doi.org/10.7910/DVN/29302",
+      "kind": "historical-gis",
+      "snapshotPath": "data/evidence/tang-county-research/identity-sources/source-records.jsonl",
+      "snapshotSha256": "af059c05edf4a4f2b0215a6f8c3d484aae834120d23eee408cd035556a423690",
+      "retrievedAt": "2026-09-25",
+      "provenance": [
+        {
+          "path": "public/data/tang-detail/settlements-755.geojson",
+          "sha256": "f47097a933fa20408fb9e2b2695419fce05cc0fb6c6d91485babf1377aab1a9a",
+          "url": "https://doi.org/10.7910/DVN/Q9VOF5"
+        },
+        {
+          "path": "public/data/boundaries/hartwell-741-county.geojson",
+          "sha256": "54081ec310344d24da387eced81bc4aa9aa547fd80629a2d7f844235d276cc54",
+          "url": "https://doi.org/10.7910/DVN/29302"
+        }
+      ],
+      "extraction": "只抽取已有源属性；不改几何、坐标、地名或年代。记录ID为项目保留的源标识。"
+    }
+  ],
+  "entries": [
+    {
+      "id": "identity-yan-jincheng",
+      "settlementIds": [
+        "chgis-county-95088",
+        "chgis-county-70721"
+      ],
+      "boundaryIds": [
+        "hartwell-741-county-v5_0741_chin_chn_0741_c-29",
+        "hartwell-741-county-v5_0741_chin_chn_0741_c-90"
+      ],
+      "title": "延州金城与其他同名县",
+      "summary": "延州金城、山西金城和兴平金城的文献链尚未完成父属核对；虽然各自可见改名线索，本轮不把同名点排除出延州模型，也不确认任何对应。",
+      "findings": [
+        {
+          "topic": "chronology",
+          "statement": "《新唐书》记延州敷政由金城改名；《旧唐书》给出相同沿革。",
+          "evidence": [
+            {
+              "sourceId": "identity-xintangshu-037",
+              "quote": "敷政，〈中下。本因城，武德二年徙治金城鎮，更名金城；又東境置永州，幷置洛盤、新昌、土塠三縣。貞觀四年徙州治洛源。及州廢，省洛盤、新昌、土塠入金城。天寶元年曰敷政。〉",
+              "locator": "延州·敷政"
+            },
+            {
+              "sourceId": "identity-jiutangshu-38",
+              "quote": "敷政 隋因城縣。武德二年，移治于金城鎮，改為金城縣。又於界內置永州，領金城、洛盤、新昌、土塠四縣。貞觀四年，移永州於洛源縣。八年，廢洛盤等三縣，併入金城，屬延州。天寶元年，改金城為敷政",
+              "locator": "延州·敷政"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "兴平的金城县由始平改名，至德二年改兴平，与延州金城—敷政属于不同沿革链。",
+          "evidence": [
+            {
+              "sourceId": "identity-jiutangshu-38",
+              "quote": "興平 隋始平縣。天授二年，隸稷州。大足元年，還雍州。景龍四年，中宗送金城公主入蕃，別於此，因改金城縣。至德二年十月，改興平縣",
+              "locator": "京兆府·兴平"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "CHGIS原始记录为金城县，现地标注“今山西朔州市应县镇子梁乡城下庄村”，记录起讫621—877年；这些是数据源字段，并非本项目独立考证的坐标。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"chgis-county-95088\",\"name\":\"金城县\",\"beginYear\":621,\"endYear\":877,\"presentLocation\":\"今山西朔州市应县镇子梁乡城下庄村\",\"sourceRecord\":{\"NAME_PY\":\"Jincheng Xian\",\"NAME_CH\":\"金城县\",\"NAME_FT\":\"金城縣\",\"X_COOR\":113.243694,\"Y_COOR\":39.561548,\"PRES_LOC\":\"今山西朔州市应县镇子梁乡城下庄村\",\"TYPE_PY\":\"Xian\",\"TYPE_CH\":\"县\",\"LEV_RANK\":\"6\",\"BEG_YR\":621,\"BEG_RULE\":\"4\",\"END_YR\":877,\"END_RULE\":\"4\",\"NOTE_ID\":95088,\"OBJ_TYPE\":\"POINT\",\"SYS_ID\":95088,\"GEO_SRC\":\"FROM_FD\",\"COMPILER\":\"\",\"GECOMPLR\":\"\",\"CHECKER\":\"\",\"ENT_DATE\":\"\",\"BEG_CHG_TY\":\"新建\",\"END_CHG_TY\":\"治所迁移\"}}",
+              "locator": "chgis-county-95088"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "CHGIS原始记录为金城县，现地标注“今兴平县”，记录起讫710—756年；这些是数据源字段，并非本项目独立考证的坐标。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"chgis-county-70721\",\"name\":\"金城县\",\"beginYear\":710,\"endYear\":756,\"presentLocation\":\"今兴平县\",\"sourceRecord\":{\"NAME_PY\":\"Jincheng Xian\",\"NAME_CH\":\"金城县\",\"NAME_FT\":\"金城縣\",\"X_COOR\":108.48261,\"Y_COOR\":34.29872,\"PRES_LOC\":\"今兴平县\",\"TYPE_PY\":\"Xian\",\"TYPE_CH\":\"县\",\"LEV_RANK\":\"6\",\"BEG_YR\":710,\"BEG_RULE\":\"\",\"END_YR\":756,\"END_RULE\":\"\",\"NOTE_ID\":70721,\"OBJ_TYPE\":\"POINT\",\"SYS_ID\":70721,\"GEO_SRC\":\"FROM_FD\",\"COMPILER\":\"70721\",\"GECOMPLR\":\"孙涛\",\"CHECKER\":\"\",\"ENT_DATE\":\"\",\"BEG_CHG_TY\":\"\",\"END_CHG_TY\":\"\"}}",
+              "locator": "chgis-county-70721"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "Hartwell原始模型 29 的名称为“金城”，原始上级字段为“延”，行政类型为“Xian”。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"hartwell-741-county-v5_0741_chin_chn_0741_c-29\",\"sourceCode\":\"T001100003427\",\"sourceName\":\"金城\",\"sourceAdminType\":\"Xian\",\"sourceHierarchy\":{\"polity\":\"唐代\",\"province\":\"關內\",\"prefecture\":\"延\",\"dependentPrefecture\":\"\"}}",
+              "locator": "hartwell-741-county-v5_0741_chin_chn_0741_c-29"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "Hartwell原始模型 90 的名称为“金城”，原始上级字段为“延”，行政类型为“Xian”。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"hartwell-741-county-v5_0741_chin_chn_0741_c-90\",\"sourceCode\":\"T001100003427\",\"sourceName\":\"金城\",\"sourceAdminType\":\"Xian\",\"sourceHierarchy\":{\"polity\":\"唐代\",\"province\":\"關內\",\"prefecture\":\"延\",\"dependentPrefecture\":\"\"}}",
+              "locator": "hartwell-741-county-v5_0741_chin_chn_0741_c-90"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "当前755年县点中未找到可核对的敷政记录；不能因此补造县治点或县界。",
+        "源模型29与90同代码同上级而几何不同，其关系尚待原作者资料核定。",
+        "本轮未取得足以证明原始点所属唐代州县的独立历史父属记录；不做异地同名排除。"
+      ],
+      "correspondence": "unresolved"
+    },
+    {
+      "id": "identity-dan-xianning",
+      "settlementIds": [
+        "chgis-county-70657"
+      ],
+      "boundaryIds": [
+        "hartwell-741-county-v5_0741_chin_chn_0741_c-99"
+      ],
+      "title": "丹州咸宁与京兆咸宁",
+      "summary": "丹州咸宁与京兆万年改称咸宁的文献链已核对；CHGIS点的唐代父属未在原始字段中直接记载，本轮仅作高概率身份提示，不做异地同名排除。",
+      "findings": [
+        {
+          "topic": "administration",
+          "statement": "《新唐书》将咸宁列于丹州所属县，并交代丹州从延安郡析置的来源。",
+          "evidence": [
+            {
+              "sourceId": "identity-xintangshu-037",
+              "quote": "丹州，咸寧郡，上。本丹陽郡，義寧元年析延安郡之義川、汾川、咸寧縣置，天寶元年更名。",
+              "locator": "丹州"
+            }
+          ]
+        },
+        {
+          "topic": "chronology",
+          "statement": "京兆咸宁是万年的阶段性名称，始于748年。",
+          "evidence": [
+            {
+              "sourceId": "identity-xintangshu-037",
+              "quote": "萬年，〈赤。本大興，武德元年更名。二年析置芷陽縣，七年省。總章元年析置明堂縣，長安二年省。天寶七載曰咸寧，至德三載復故名。",
+              "locator": "京兆府·万年"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "CHGIS原始记录为咸宁县，现地标注“今西安市西北十二里未央、草滩二区”，记录起讫748—757年；这些是数据源字段，并非本项目独立考证的坐标。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"chgis-county-70657\",\"name\":\"咸宁县\",\"beginYear\":748,\"endYear\":757,\"presentLocation\":\"今西安市西北十二里未央、草滩二区\",\"sourceRecord\":{\"NAME_PY\":\"Xianning Xian\",\"NAME_CH\":\"咸宁县\",\"NAME_FT\":\"咸寧縣\",\"X_COOR\":108.93719,\"Y_COOR\":34.31799,\"PRES_LOC\":\"今西安市西北十二里未央、草滩二区\",\"TYPE_PY\":\"Xian\",\"TYPE_CH\":\"县\",\"LEV_RANK\":\"6\",\"BEG_YR\":748,\"BEG_RULE\":\"\",\"END_YR\":757,\"END_RULE\":\"\",\"NOTE_ID\":70657,\"OBJ_TYPE\":\"POINT\",\"SYS_ID\":70657,\"GEO_SRC\":\"FROM_FD\",\"COMPILER\":\"70657\",\"GECOMPLR\":\"孙涛\",\"CHECKER\":\"\",\"ENT_DATE\":\"\",\"BEG_CHG_TY\":\"更名\",\"END_CHG_TY\":\"更名\"}}",
+              "locator": "chgis-county-70657"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "Hartwell原始模型 99 的名称为“咸寧”，原始上级字段为“丹”，行政类型为“Xian”。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"hartwell-741-county-v5_0741_chin_chn_0741_c-99\",\"sourceCode\":\"T001100003324\",\"sourceName\":\"咸寧\",\"sourceAdminType\":\"Xian\",\"sourceHierarchy\":{\"polity\":\"唐代\",\"province\":\"關內\",\"prefecture\":\"丹\",\"dependentPrefecture\":\"\"}}",
+              "locator": "hartwell-741-county-v5_0741_chin_chn_0741_c-99"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "丹州咸宁治所和模型边界仍需另找点位依据。",
+        "本轮未取得足以证明原始点所属唐代州县的独立历史父属记录；不做异地同名排除。"
+      ],
+      "correspondence": "unresolved"
+    },
+    {
+      "id": "identity-jing-yinpan",
+      "settlementIds": [
+        "chgis-county-70735",
+        "chgis-county-70736"
+      ],
+      "boundaryIds": [
+        "hartwell-741-county-v5_0741_chin_chn_0741_c-114"
+      ],
+      "title": "泾州阴盘—潘原与临潼坐标疑点",
+      "summary": "泾州阴盘在742年改名潘原。《元和郡县图志》把它放在泾州以西的里程系统中；CHGIS阴盘和潘原两条记录却同标临潼古阴盘城，来源身份和位置仍有冲突。",
+      "findings": [
+        {
+          "topic": "chronology",
+          "statement": "《新唐书》明确泾州潘原本名阴盘，天宝元年改名。",
+          "evidence": [
+            {
+              "sourceId": "identity-xintangshu-037",
+              "quote": "潘原。〈中。本陰盤，天寶元年更名，後省為彰信堡，貞元十一年復置。〉",
+              "locator": "泾州·潘原"
+            }
+          ]
+        },
+        {
+          "topic": "seat",
+          "statement": "《元和郡县图志》记潘原东至泾州一百里，并追溯邠州宜禄西的阴盘故城；不能据此把临潼原始坐标当作已核定的唐代县治。",
+          "evidence": [
+            {
+              "sourceId": "identity-yuanhe-03",
+              "quote": "潘原縣，〈中。　東至州一百里。〉本漢陰盤縣，屬安定郡，在今邠州宜祿縣西二十三里陰盤故城是也。地有陰槃驛。",
+              "locator": "泾州·潘原县"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "CHGIS原始记录为阴盘县，现地标注“今临潼县东北十二里古阴盘城”，记录起讫188—907年；这些是数据源字段，并非本项目独立考证的坐标。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"chgis-county-70735\",\"name\":\"阴盘县\",\"beginYear\":188,\"endYear\":907,\"presentLocation\":\"今临潼县东北十二里古阴盘城\",\"sourceRecord\":{\"NAME_PY\":\"Yinpan Xian\",\"NAME_CH\":\"阴盘县\",\"NAME_FT\":\"陰盤縣\",\"X_COOR\":109.25768,\"Y_COOR\":34.39895,\"PRES_LOC\":\"今临潼县东北十二里古阴盤城\",\"TYPE_PY\":\"Xian\",\"TYPE_CH\":\"县\",\"LEV_RANK\":\"6\",\"BEG_YR\":188,\"BEG_RULE\":\"\",\"END_YR\":907,\"END_RULE\":\"1\",\"NOTE_ID\":70735,\"OBJ_TYPE\":\"POINT\",\"SYS_ID\":70735,\"GEO_SRC\":\"FROM_FD\",\"COMPILER\":\"70735\",\"GECOMPLR\":\"孙涛\",\"CHECKER\":\"\",\"ENT_DATE\":\"\",\"BEG_CHG_TY\":\"\",\"END_CHG_TY\":\"\"}}",
+              "locator": "chgis-county-70735"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "CHGIS原始记录为潘原县，现地标注“今临潼县东北十二里古阴盘城”，记录起讫742—784年；这些是数据源字段，并非本项目独立考证的坐标。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"chgis-county-70736\",\"name\":\"潘原县\",\"beginYear\":742,\"endYear\":784,\"presentLocation\":\"今临潼县东北十二里古阴盘城\",\"sourceRecord\":{\"NAME_PY\":\"Panyuan Xian\",\"NAME_CH\":\"潘原县\",\"NAME_FT\":\"潘原縣\",\"X_COOR\":109.25768,\"Y_COOR\":34.39895,\"PRES_LOC\":\"今临潼县东北十二里古阴盤城\",\"TYPE_PY\":\"Xian\",\"TYPE_CH\":\"县\",\"LEV_RANK\":\"6\",\"BEG_YR\":742,\"BEG_RULE\":\"\",\"END_YR\":784,\"END_RULE\":\"\",\"NOTE_ID\":70736,\"OBJ_TYPE\":\"POINT\",\"SYS_ID\":70736,\"GEO_SRC\":\"FROM_FD\",\"COMPILER\":\"70736\",\"GECOMPLR\":\"孙涛\",\"CHECKER\":\"\",\"ENT_DATE\":\"\",\"BEG_CHG_TY\":\"\",\"END_CHG_TY\":\"\"}}",
+              "locator": "chgis-county-70736"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "Hartwell原始模型 114 的名称为“陰盤”，原始上级字段为“涇”，行政类型为“Xian”。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"hartwell-741-county-v5_0741_chin_chn_0741_c-114\",\"sourceCode\":\"T001100002625\",\"sourceName\":\"陰盤\",\"sourceAdminType\":\"Xian\",\"sourceHierarchy\":{\"polity\":\"唐代\",\"province\":\"關內\",\"prefecture\":\"涇\",\"dependentPrefecture\":\"\"}}",
+              "locator": "hartwell-741-county-v5_0741_chin_chn_0741_c-114"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "阴盘、潘原两点在原始CHGIS中坐标完全相同，但文献地理脉络不相容；未取得可靠新坐标前保留原始点并提示待核。",
+        "本条不排除模型对应，也不新增点面链接；名称沿革可证，当前原始点是否误定位仍待查。"
+      ],
+      "correspondence": "unresolved"
+    },
+    {
+      "id": "identity-yanzhou-pinglu-zhongdu",
+      "settlementIds": [
+        "chgis-county-45247"
+      ],
+      "boundaryIds": [
+        "hartwell-741-county-v5_0741_chin_chn_0741_c-159"
+      ],
+      "title": "兖州平陆—中都改名链",
+      "summary": "兖州平陆于天宝元年（742）改名中都，755年山东汶上中都源点可作为741年平陆模型的跨年诊断候选；史书同时记迁治，不能据改名链认定古县界。",
+      "findings": [
+        {
+          "topic": "chronology",
+          "statement": "兖州平陆于742年改名中都，后来在贞元十四年转隶郓州。",
+          "evidence": [
+            {
+              "sourceId": "identity-xintangshu-038",
+              "quote": "中都。〈上。本平陸，隸兗州。天寶元年更名。貞元十四年來屬。〉",
+              "locator": "郓州·中都"
+            },
+            {
+              "sourceId": "identity-jiutangshu-38",
+              "quote": "中都 漢平陸縣，本治殷密城，在今治西三十九里。天寶元年，改為中都，移於今治。",
+              "locator": "郓州·中都"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "CHGIS原始记录为中都县，现地标注“今山东汶上县”，记录起讫742—1152年；这些是数据源字段，并非本项目独立考证的坐标。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"chgis-county-45247\",\"name\":\"中都县\",\"beginYear\":742,\"endYear\":1152,\"presentLocation\":\"今山东汶上县\",\"sourceRecord\":{\"NAME_PY\":\"Zhongdu Xian\",\"NAME_CH\":\"中都县\",\"NAME_FT\":\"中都縣\",\"X_COOR\":116.48438,\"Y_COOR\":35.72881,\"PRES_LOC\":\"今山东汶上县\",\"TYPE_PY\":\"Xian\",\"TYPE_CH\":\"县\",\"LEV_RANK\":\"6\",\"BEG_YR\":742,\"BEG_RULE\":\"\",\"END_YR\":1152,\"END_RULE\":\"\",\"NOTE_ID\":45247,\"OBJ_TYPE\":\"POINT\",\"SYS_ID\":45247,\"GEO_SRC\":\"FROM_FD\",\"COMPILER\":\"\",\"GECOMPLR\":\"\",\"CHECKER\":\"\",\"ENT_DATE\":\"\",\"BEG_CHG_TY\":\"更名\",\"END_CHG_TY\":\"更名\"}}",
+              "locator": "chgis-county-45247"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "Hartwell原始模型 159 的名称为“平陸”，原始上级字段为“兗”，行政类型为“Xian”。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"hartwell-741-county-v5_0741_chin_chn_0741_c-159\",\"sourceCode\":\"T001200004131\",\"sourceName\":\"平陸\",\"sourceAdminType\":\"Xian\",\"sourceHierarchy\":{\"polity\":\"唐代\",\"province\":\"河南\",\"prefecture\":\"兗\",\"dependentPrefecture\":\"\"}}",
+              "locator": "hartwell-741-county-v5_0741_chin_chn_0741_c-159"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "742年中都改名时同时有迁治记载，因此755年点与741年模型只能用作跨年诊断候选，不能证明县界。",
+        "陕州河北改平陆，《新唐书》记天宝元年、《旧唐书》记天宝三载，保留史料分歧。"
+      ],
+      "correspondence": "same-unit"
+    },
+    {
+      "id": "identity-henan-guizhou-xinan",
+      "settlementIds": [
+        "chgis-county-99101"
+      ],
+      "boundaryIds": [
+        "hartwell-741-county-v5_0741_chin_chn_0741_c-178"
+      ],
+      "title": "河南新安与贵州新安",
+      "summary": "河南府新安的隋—唐州属链已核对；CHGIS贵州新安点的唐代父属和确切单位尚未取得独立原始证据，本轮保持存疑，不做异地同名排除。",
+      "findings": [
+        {
+          "topic": "administration",
+          "statement": "河南新安沿革为隋旧县、唐初谷州治，贞观元年移入废州城并隶洛州。",
+          "evidence": [
+            {
+              "sourceId": "identity-jiutangshu-38",
+              "quote": "新安 隋縣。義寧二年，置新安郡。武德元年，改為穀州，領新安、澠池、東垣三縣。四年，省東垣入新安。貞觀元年，移穀州治澠池，新安移入廢州城，改屬洛州。",
+              "locator": "河南府·新安"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "《新唐书》另列贵州方向庄州所属新安，证明“新安”并非河南唯一县名；尚不单凭此名把CHGIS龙里点确认为该庄州县。",
+          "evidence": [
+            {
+              "sourceId": "identity-xintangshu-043下",
+              "quote": "莊州〈本南壽州，貞觀三年以南謝蠻首領謝彊地置，四年更名，十一年為都督府，景龍二年罷都督。故隋牂柯郡地。南百里有桂嶺關。縣七：石牛，南陽，輕水，多樂，樂安，石城，新安。",
+              "locator": "江南道诸蛮·庄州"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "CHGIS原始记录为新安县，现地标注“今贵州省龙里县东”，记录起讫629—906年；这些是数据源字段，并非本项目独立考证的坐标。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"chgis-county-99101\",\"name\":\"新安县\",\"beginYear\":629,\"endYear\":906,\"presentLocation\":\"今贵州省龙里县东\",\"sourceRecord\":{\"NAME_PY\":\"Xinan Xian\",\"NAME_CH\":\"新安县\",\"NAME_FT\":\"新安縣\",\"X_COOR\":107.05092,\"Y_COOR\":26.45667,\"PRES_LOC\":\"今贵州省龙里县东\",\"TYPE_PY\":\"Xian\",\"TYPE_CH\":\"县\",\"LEV_RANK\":\"6\",\"BEG_YR\":629,\"BEG_RULE\":\"\",\"END_YR\":906,\"END_RULE\":\"\",\"NOTE_ID\":99101,\"OBJ_TYPE\":\"POINT\",\"SYS_ID\":99101,\"GEO_SRC\":\"FROM_FD\",\"COMPILER\":\"\",\"GECOMPLR\":\"\",\"CHECKER\":\"\",\"ENT_DATE\":\"\",\"BEG_CHG_TY\":\"新建\",\"END_CHG_TY\":\"撤销\"}}",
+              "locator": "chgis-county-99101"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "Hartwell原始模型 178 的名称为“新安”，原始上级字段为“河南”，行政类型为“Xian”。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"hartwell-741-county-v5_0741_chin_chn_0741_c-178\",\"sourceCode\":\"T001200002139\",\"sourceName\":\"新安\",\"sourceAdminType\":\"Xian\",\"sourceHierarchy\":{\"polity\":\"唐代\",\"province\":\"河南\",\"prefecture\":\"河南\",\"dependentPrefecture\":\"\"}}",
+              "locator": "hartwell-741-county-v5_0741_chin_chn_0741_c-178"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "贵州龙里原始点的确切州属、治所坐标仍待地方志或考古资料复核；本轮只排除它与河南府模型的误配。",
+        "河南新安县治点在当前755年资料中缺失，未据模型中心补造。",
+        "本轮未取得足以证明原始点所属唐代州县的独立历史父属记录；不做异地同名排除。"
+      ],
+      "correspondence": "unresolved"
+    },
+    {
+      "id": "identity-deng-xincheng-lintuan",
+      "settlementIds": [
+        "chgis-county-82715"
+      ],
+      "boundaryIds": [
+        "hartwell-741-county-v5_0741_chin_chn_0741_c-688"
+      ],
+      "title": "邓州新城—临湍改名链",
+      "summary": "邓州新城县在天宝元年（742）改称临湍，755年河南邓州临湍源点可参与741年新城模型的跨年诊断；改名证据不核定县界。",
+      "findings": [
+        {
+          "topic": "chronology",
+          "statement": "两唐书都记邓州新城于742年改临湍；旧唐书还记贞观三年迁故临湍聚。",
+          "evidence": [
+            {
+              "sourceId": "identity-xintangshu-040",
+              "quote": "臨湍，〈上。本新城。武德二年以縣置酈州，八年州廢，來屬。貞觀元年省冠軍縣入焉。天寶元年更名。",
+              "locator": "邓州·临湍"
+            },
+            {
+              "sourceId": "identity-jiutangshu-39",
+              "quote": "臨湍 後魏割冠軍縣北境置新城縣。武德二年，移治虎遙城，屬酈州。八年，廢酈州，縣屬鄧州。貞觀三年，移治故臨湍聚。天寶元年，改為臨湍縣",
+              "locator": "邓州·临湍"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "CHGIS原始记录为临湍县，现地标注“今河南邓州西北罗庄乡南古县村”，记录起讫742—947年；这些是数据源字段，并非本项目独立考证的坐标。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"chgis-county-82715\",\"name\":\"临湍县\",\"beginYear\":742,\"endYear\":947,\"presentLocation\":\"今河南邓州西北罗庄乡南古县村\",\"sourceRecord\":{\"NAME_PY\":\"Lintuan Xian\",\"NAME_CH\":\"临湍县\",\"NAME_FT\":\"臨湍縣\",\"X_COOR\":111.89103,\"Y_COOR\":32.93041,\"PRES_LOC\":\"今河南邓州西北罗庄乡南古县村\",\"TYPE_PY\":\"Xian\",\"TYPE_CH\":\"县\",\"LEV_RANK\":\"6\",\"BEG_YR\":742,\"BEG_RULE\":\"\",\"END_YR\":947,\"END_RULE\":\"\",\"NOTE_ID\":82715,\"OBJ_TYPE\":\"POINT\",\"SYS_ID\":82715,\"GEO_SRC\":\"FROM_FD\",\"COMPILER\":\"\",\"GECOMPLR\":\"\",\"CHECKER\":\"\",\"ENT_DATE\":\"\",\"BEG_CHG_TY\":\"\",\"END_CHG_TY\":\"\"}}",
+              "locator": "chgis-county-82715"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "Hartwell原始模型 688 的名称为“新城”，原始上级字段为“鄧”，行政类型为“Xian”。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"hartwell-741-county-v5_0741_chin_chn_0741_c-688\",\"sourceCode\":\"T001500003225\",\"sourceName\":\"新城\",\"sourceAdminType\":\"Xian\",\"sourceHierarchy\":{\"polity\":\"唐代\",\"province\":\"山南\",\"prefecture\":\"鄧\",\"dependentPrefecture\":\"\"}}",
+              "locator": "hartwell-741-county-v5_0741_chin_chn_0741_c-688"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "临湍点和新城模型的实际相容性由几何诊断单独报告；古籍改名不等于古县界已获证实。"
+      ],
+      "correspondence": "same-unit"
+    },
+    {
+      "id": "identity-binhua-units",
+      "settlementIds": [
+        "chgis-county-44698",
+        "chgis-county-99096"
+      ],
+      "boundaryIds": [
+        "hartwell-741-county-v5_0741_chin_chn_0741_c-1038"
+      ],
+      "title": "涪州宾化与牂州宾化",
+      "summary": "涪州宾化的隆化—宾化改名链已核对；贵州宾化点的唐代父属尚未取得独立原始证据，本轮保持存疑，不做异地同名排除。",
+      "findings": [
+        {
+          "topic": "chronology",
+          "statement": "涪州宾化的改名链为隆化—712年宾化。",
+          "evidence": [
+            {
+              "sourceId": "identity-xintangshu-040",
+              "quote": "賓化，〈下。本隆化，貞觀十一年置，先天元年更名。〉",
+              "locator": "涪州·宾化"
+            }
+          ]
+        },
+        {
+          "topic": "administration",
+          "statement": "《新唐书》另外将宾化列在牂州三县中，与涪州记录分列。",
+          "evidence": [
+            {
+              "sourceId": "identity-xintangshu-043下",
+              "quote": "牂州〈武德三年以牂柯首領謝龍羽地置，四年更名柯州，後復故名。初，牂、琰、莊、充、應、矩六州皆為下州，開元中降牂、琰、莊為羈縻，天寶三載又降充、應、矩為羈縻。縣三：建安，賓化，新興。",
+              "locator": "江南道诸蛮·牂州"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "CHGIS原始记录为宾化县，现地标注“今四川南川县（隆化镇）治”，记录起讫712—1069年；这些是数据源字段，并非本项目独立考证的坐标。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"chgis-county-44698\",\"name\":\"宾化县\",\"beginYear\":712,\"endYear\":1069,\"presentLocation\":\"今四川南川县（隆化镇）治\",\"sourceRecord\":{\"NAME_PY\":\"Binhua Xian\",\"NAME_CH\":\"宾化县\",\"NAME_FT\":\"賓化縣\",\"X_COOR\":107.10468,\"Y_COOR\":29.16835,\"PRES_LOC\":\"今四川南川县（隆化镇）治\",\"TYPE_PY\":\"Xian\",\"TYPE_CH\":\"县\",\"LEV_RANK\":\"6\",\"BEG_YR\":712,\"BEG_RULE\":\"\",\"END_YR\":1069,\"END_RULE\":\"\",\"NOTE_ID\":44698,\"OBJ_TYPE\":\"POINT\",\"SYS_ID\":44698,\"GEO_SRC\":\"FROM_FD\",\"COMPILER\":\"\",\"GECOMPLR\":\"\",\"CHECKER\":\"\",\"ENT_DATE\":\"\",\"BEG_CHG_TY\":\"更名\",\"END_CHG_TY\":\"更名\"}}",
+              "locator": "chgis-county-44698"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "CHGIS原始记录为宾化县，现地标注“今贵州省福泉”，记录起讫581—906年；这些是数据源字段，并非本项目独立考证的坐标。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"chgis-county-99096\",\"name\":\"宾化县\",\"beginYear\":581,\"endYear\":906,\"presentLocation\":\"今贵州省福泉\",\"sourceRecord\":{\"NAME_PY\":\"Binhua Xian\",\"NAME_CH\":\"宾化县\",\"NAME_FT\":\"賓化縣\",\"X_COOR\":107.51251,\"Y_COOR\":26.70121,\"PRES_LOC\":\"今贵州省福泉\",\"TYPE_PY\":\"Xian\",\"TYPE_CH\":\"县\",\"LEV_RANK\":\"6\",\"BEG_YR\":581,\"BEG_RULE\":\"\",\"END_YR\":906,\"END_RULE\":\"\",\"NOTE_ID\":99096,\"OBJ_TYPE\":\"POINT\",\"SYS_ID\":99096,\"GEO_SRC\":\"FROM_FD\",\"COMPILER\":\"\",\"GECOMPLR\":\"\",\"CHECKER\":\"\",\"ENT_DATE\":\"\",\"BEG_CHG_TY\":\"新建\",\"END_CHG_TY\":\"撤销\"}}",
+              "locator": "chgis-county-99096"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "Hartwell原始模型 1038 的名称为“賓化”，原始上级字段为“涪”，行政类型为“Xian”。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"hartwell-741-county-v5_0741_chin_chn_0741_c-1038\",\"sourceCode\":\"T001700006424\",\"sourceName\":\"賓化\",\"sourceAdminType\":\"Xian\",\"sourceHierarchy\":{\"polity\":\"唐代\",\"province\":\"江南\",\"prefecture\":\"涪\",\"dependentPrefecture\":\"\"}}",
+              "locator": "hartwell-741-county-v5_0741_chin_chn_0741_c-1038"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "贵州福泉点的精确治所和牂州归属仍需更多地方志核对；排除它与涪州637年始置、712年改名县的误配，不据距离选县。",
+        "本轮未取得足以证明原始点所属唐代州县的独立历史父属记录；不做异地同名排除。"
+      ],
+      "correspondence": "unresolved"
+    },
+    {
+      "id": "identity-annan-types",
+      "settlementIds": [
+        "chgis-county-42639"
+      ],
+      "boundaryIds": [
+        "hartwell-741-county-v5_0741_chin_chn_0741_c-1288"
+      ],
+      "title": "安南都护府与泷州安南县",
+      "summary": "模型1288的原行政类型是都护府，CHGIS42639是泷州方向的安南县。两者都简称“安南”并不表示同一单位，不能互作县界验证。",
+      "findings": [
+        {
+          "topic": "identity",
+          "statement": "安南都护府由交州改名，治交趾；它是统辖诸县的都护府。",
+          "evidence": [
+            {
+              "sourceId": "identity-xintangshu-043上",
+              "quote": "安南中都護府，本交趾郡，武德五年曰交州，治交趾。調露元年曰安南都護府，至德二載曰鎮南都護府，大曆三年復為安南。寶曆元年徙治宋平。",
+              "locator": "安南中都护府"
+            }
+          ]
+        },
+        {
+          "topic": "chronology",
+          "statement": "泷州安南县622年析泷水而置，至德二年改镇南；沿革与都护府不同。",
+          "evidence": [
+            {
+              "sourceId": "identity-xintangshu-043上",
+              "quote": "鎮南，下。〈本安南，武德四年置南建州，以永熙郡之安遂、永熙、永業三縣隸之。五年析瀧水置安南縣。貞觀八年更南建州曰藥州。十八年州廢，省安遂、永業，以永寧、安南來屬。至德二載更名。〉",
+              "locator": "泷州·镇南"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "CHGIS原始记录为安南县，现地标注“广东省罗定县西南泗纶镇”，记录起讫622—756年；这些是数据源字段，并非本项目独立考证的坐标。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"chgis-county-42639\",\"name\":\"安南县\",\"beginYear\":622,\"endYear\":756,\"presentLocation\":\"广东省罗定县西南泗纶镇\",\"sourceRecord\":{\"NAME_PY\":\"Annan Xian\",\"NAME_CH\":\"安南县\",\"NAME_FT\":\"安南縣\",\"X_COOR\":111.308128,\"Y_COOR\":22.726545,\"PRES_LOC\":\"广东省罗定县西南泗纶镇\",\"TYPE_PY\":\"Xian\",\"TYPE_CH\":\"县\",\"LEV_RANK\":\"6\",\"BEG_YR\":622,\"BEG_RULE\":\"4\",\"END_YR\":756,\"END_RULE\":\"4\",\"NOTE_ID\":42639,\"OBJ_TYPE\":\"POINT\",\"SYS_ID\":42639,\"GEO_SRC\":\"FROM_AC\",\"COMPILER\":\"张修桂\",\"GECOMPLR\":\"满志敏\",\"CHECKER\":\"\",\"ENT_DATE\":\"2004/07/15\",\"BEG_CHG_TY\":\"新建\",\"END_CHG_TY\":\"更名\"}}",
+              "locator": "chgis-county-42639"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "Hartwell原始模型 1288 的名称为“安南都護府”，原始上级字段为“安南”，行政类型为“Duhufu”。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"hartwell-741-county-v5_0741_chin_chn_0741_c-1288\",\"sourceCode\":\"T001900009101\",\"sourceName\":\"安南都護府\",\"sourceAdminType\":\"Duhufu\",\"sourceHierarchy\":{\"polity\":\"唐代\",\"province\":\"嶺南\",\"prefecture\":\"安南\",\"dependentPrefecture\":\"\"}}",
+              "locator": "hartwell-741-county-v5_0741_chin_chn_0741_c-1288"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "Hartwell将都护府图形放在county容器内并不使其成为县；当前模型几何和都护府真实辖境仍未核实。"
+      ],
+      "correspondence": "different-unit"
+    },
+    {
+      "id": "identity-yanzhou-pinglu-zhongdu-homonym",
+      "settlementIds": [
+        "chgis-county-95282"
+      ],
+      "boundaryIds": [
+        "hartwell-741-county-v5_0741_chin_chn_0741_c-159"
+      ],
+      "title": "排除山西平陆点与兖州平陆模型的混配",
+      "summary": "兖州平陆在天宝元年（742）改名中都，与山东汶上中都源点的名称链一致；山西平陆则本名河北，不能混配。",
+      "findings": [
+        {
+          "topic": "chronology",
+          "statement": "兖州平陆于742年改名中都，后来在贞元十四年转隶郓州。",
+          "evidence": [
+            {
+              "sourceId": "identity-xintangshu-038",
+              "quote": "中都。〈上。本平陸，隸兗州。天寶元年更名。貞元十四年來屬。〉",
+              "locator": "郓州·中都"
+            },
+            {
+              "sourceId": "identity-jiutangshu-38",
+              "quote": "中都 漢平陸縣，本治殷密城，在今治西三十九里。天寶元年，改為中都，移於今治。",
+              "locator": "郓州·中都"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "陕州平陆原名河北，与兖州的平陆—中都属于不同沿革链。两唐书对陕州改名年份记载不同，不能强行统一。",
+          "evidence": [
+            {
+              "sourceId": "identity-xintangshu-038",
+              "quote": "平陸。望。本河北，隸蒲州，貞觀元年來屬。天寶元年，太守李齊物開三門以利漕運，得古刃，有篆文曰「平陸」，因更名。",
+              "locator": "陕州·平陆"
+            },
+            {
+              "sourceId": "identity-jiutangshu-38",
+              "quote": "平陸 隋河北縣。義甯元年，置安邑郡，縣屬焉。天寶三載，太守李齊物開三門，石下得戟，大刃，有「平陸」篆字，因改為平陸縣",
+              "locator": "陕州·平陆"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "CHGIS原始记录为平陆县，现地标注“今山西平陆县平陆老城”，记录起讫742—1911年；这些是数据源字段，并非本项目独立考证的坐标。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"chgis-county-95282\",\"name\":\"平陆县\",\"beginYear\":742,\"endYear\":1911,\"presentLocation\":\"今山西平陆县平陆老城\",\"sourceRecord\":{\"NAME_PY\":\"Pinglu Xian\",\"NAME_CH\":\"平陆县\",\"NAME_FT\":\"平陸縣\",\"X_COOR\":111.113324,\"Y_COOR\":34.802203,\"PRES_LOC\":\"今山西平陆县平陆老城\",\"TYPE_PY\":\"Xian\",\"TYPE_CH\":\"县\",\"LEV_RANK\":\"6\",\"BEG_YR\":742,\"BEG_RULE\":\"4\",\"END_YR\":1911,\"END_RULE\":\"6\",\"NOTE_ID\":95282,\"OBJ_TYPE\":\"POINT\",\"SYS_ID\":95282,\"GEO_SRC\":\"FROM_FD\",\"COMPILER\":\"\",\"GECOMPLR\":\"\",\"CHECKER\":\"\",\"ENT_DATE\":\"\",\"BEG_CHG_TY\":\"更名\",\"END_CHG_TY\":\"数据下限\"}}",
+              "locator": "chgis-county-95282"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "Hartwell原始模型 159 的名称为“平陸”，原始上级字段为“兗”，行政类型为“Xian”。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"hartwell-741-county-v5_0741_chin_chn_0741_c-159\",\"sourceCode\":\"T001200004131\",\"sourceName\":\"平陸\",\"sourceAdminType\":\"Xian\",\"sourceHierarchy\":{\"polity\":\"唐代\",\"province\":\"河南\",\"prefecture\":\"兗\",\"dependentPrefecture\":\"\"}}",
+              "locator": "hartwell-741-county-v5_0741_chin_chn_0741_c-159"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "742年中都改名时同时有迁治记载，因此755年点与741年模型只能用作跨年诊断候选，不能证明县界。",
+        "陕州河北改平陆，《新唐书》记天宝元年、《旧唐书》记天宝三载，保留史料分歧。"
+      ],
+      "correspondence": "different-unit"
+    },
+    {
+      "id": "identity-deng-xincheng-lintuan-homonym",
+      "settlementIds": [
+        "chgis-county-40121"
+      ],
+      "boundaryIds": [
+        "hartwell-741-county-v5_0741_chin_chn_0741_c-688"
+      ],
+      "title": "排除杭州新城点与邓州新城模型的混配",
+      "summary": "邓州新城县在天宝元年（742）改称临湍；浙江新城属杭州，与该模型不是同一县。现以临湍源点作为有文献依据的跨年候选。",
+      "findings": [
+        {
+          "topic": "chronology",
+          "statement": "两唐书都记邓州新城于742年改临湍；旧唐书还记贞观三年迁故临湍聚。",
+          "evidence": [
+            {
+              "sourceId": "identity-xintangshu-040",
+              "quote": "臨湍，〈上。本新城。武德二年以縣置酈州，八年州廢，來屬。貞觀元年省冠軍縣入焉。天寶元年更名。",
+              "locator": "邓州·临湍"
+            },
+            {
+              "sourceId": "identity-jiutangshu-39",
+              "quote": "臨湍 後魏割冠軍縣北境置新城縣。武德二年，移治虎遙城，屬酈州。八年，廢酈州，縣屬鄧州。貞觀三年，移治故臨湍聚。天寶元年，改為臨湍縣",
+              "locator": "邓州·临湍"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "杭州新城有省入富阳及永淳元年复置的独立沿革。",
+          "evidence": [
+            {
+              "sourceId": "identity-xintangshu-041",
+              "quote": "新城，〈上。武德七年省入富陽，永淳元年復置。北五里有官塘，堰水溉田，有九澳，永淳元年開。〉",
+              "locator": "杭州·新城"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "CHGIS原始记录为新城县，现地标注“今浙江富阳市西南新登镇”，记录起讫682—906年；这些是数据源字段，并非本项目独立考证的坐标。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"chgis-county-40121\",\"name\":\"新城县\",\"beginYear\":682,\"endYear\":906,\"presentLocation\":\"今浙江富阳市西南新登镇\",\"sourceRecord\":{\"NAME_PY\":\"Xincheng Xian\",\"NAME_CH\":\"新城县\",\"NAME_FT\":\"新城縣\",\"X_COOR\":119.723953,\"Y_COOR\":29.970999,\"PRES_LOC\":\"今浙江富阳市西南新登镇\",\"TYPE_PY\":\"Xian\",\"TYPE_CH\":\"县\",\"LEV_RANK\":\"6\",\"BEG_YR\":682,\"BEG_RULE\":\"4\",\"END_YR\":906,\"END_RULE\":\"4\",\"NOTE_ID\":40121,\"OBJ_TYPE\":\"POINT\",\"SYS_ID\":40121,\"GEO_SRC\":\"FROM_AC\",\"COMPILER\":\"邹逸麟\",\"GECOMPLR\":\"满志敏\",\"CHECKER\":\"\",\"ENT_DATE\":\"2002/07/25\",\"BEG_CHG_TY\":\"新建\",\"END_CHG_TY\":\"更名\"}}",
+              "locator": "chgis-county-40121"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "Hartwell原始模型 688 的名称为“新城”，原始上级字段为“鄧”，行政类型为“Xian”。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"hartwell-741-county-v5_0741_chin_chn_0741_c-688\",\"sourceCode\":\"T001500003225\",\"sourceName\":\"新城\",\"sourceAdminType\":\"Xian\",\"sourceHierarchy\":{\"polity\":\"唐代\",\"province\":\"山南\",\"prefecture\":\"鄧\",\"dependentPrefecture\":\"\"}}",
+              "locator": "hartwell-741-county-v5_0741_chin_chn_0741_c-688"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "临湍点和新城模型的实际相容性由几何诊断单独报告；古籍改名不等于古县界已获证实。"
+      ],
+      "correspondence": "different-unit"
+    },
+    {
+      "id": "identity-zengkou-units-42457-748",
+      "settlementIds": [
+        "chgis-county-42457"
+      ],
+      "boundaryIds": [
+        "hartwell-741-county-v5_0741_chin_chn_0741_c-748"
+      ],
+      "title": "海南曾口点与巴州曾口模型",
+      "summary": "史料将海南琼州曾口与四川巴州曾口分列；本条只排除海南点→巴州模型。",
+      "findings": [
+        {
+          "topic": "administration",
+          "statement": "巴州领曾口，且旧唐书记其梁置、神龙元年迁治曾溪。",
+          "evidence": [
+            {
+              "sourceId": "identity-xintangshu-040",
+              "quote": "曾口，〈中。〉",
+              "locator": "巴州清化郡·曾口"
+            },
+            {
+              "sourceId": "identity-jiutangshu-39",
+              "quote": "曾口 梁置。隋縣治戴公山。神龍元年，移治曾溪",
+              "locator": "巴州·曾口"
+            }
+          ]
+        },
+        {
+          "topic": "establishment",
+          "statement": "琼州曾口系贞观十三年（639）从琼山县析置。",
+          "evidence": [
+            {
+              "sourceId": "identity-xintangshu-043上",
+              "quote": "瓊山，〈下。貞觀十三年析置曾口、顏羅、容瓊三縣。貞元七年省容瓊。有鹽。〉",
+              "locator": "琼州·琼山"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "CHGIS原始记录为曾口县，现地标注“海南省安定县新竹镇”，记录起讫639—916年；这些是数据源字段，并非本项目独立考证的坐标。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"chgis-county-42457\",\"name\":\"曾口县\",\"beginYear\":639,\"endYear\":916,\"presentLocation\":\"海南省安定县新竹镇\",\"sourceRecord\":{\"NAME_PY\":\"Zengkou Xian\",\"NAME_CH\":\"曾口县\",\"NAME_FT\":\"曾口縣\",\"X_COOR\":110.197192,\"Y_COOR\":19.62213,\"PRES_LOC\":\"海南省安定县新竹镇\",\"TYPE_PY\":\"Xian\",\"TYPE_CH\":\"县\",\"LEV_RANK\":\"6\",\"BEG_YR\":639,\"BEG_RULE\":\"4\",\"END_YR\":916,\"END_RULE\":\"3\",\"NOTE_ID\":42457,\"OBJ_TYPE\":\"POINT\",\"SYS_ID\":42457,\"GEO_SRC\":\"FROM_FD\",\"COMPILER\":\"张修桂\",\"GECOMPLR\":\"满志敏\",\"CHECKER\":\"\",\"ENT_DATE\":\"2004/07/15\",\"BEG_CHG_TY\":\"新建\",\"END_CHG_TY\":\"撤销\"}}",
+              "locator": "chgis-county-42457"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "Hartwell原始模型 748 的名称为“曾口”，原始上级字段为“巴”，行政类型为“Xian”。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"hartwell-741-county-v5_0741_chin_chn_0741_c-748\",\"sourceCode\":\"T001500004924\",\"sourceName\":\"曾口\",\"sourceAdminType\":\"Xian\",\"sourceHierarchy\":{\"polity\":\"唐代\",\"province\":\"山南\",\"prefecture\":\"巴\",\"dependentPrefecture\":\"\"}}",
+              "locator": "hartwell-741-county-v5_0741_chin_chn_0741_c-748"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "该pair仅记录文献支持的身份排除，不判断源点或模型几何本身是否正确。"
+      ],
+      "correspondence": "different-unit"
+    },
+    {
+      "id": "identity-zengkou-units-44629-1414",
+      "settlementIds": [
+        "chgis-county-44629"
+      ],
+      "boundaryIds": [
+        "hartwell-741-county-v5_0741_chin_chn_0741_c-1414"
+      ],
+      "title": "巴州曾口点与琼州曾口模型",
+      "summary": "史料将四川巴州曾口与海南琼州曾口分列；本条只排除巴州点→琼州模型。",
+      "findings": [
+        {
+          "topic": "administration",
+          "statement": "巴州领曾口，且旧唐书记其梁置、神龙元年迁治曾溪。",
+          "evidence": [
+            {
+              "sourceId": "identity-xintangshu-040",
+              "quote": "曾口，〈中。〉",
+              "locator": "巴州清化郡·曾口"
+            },
+            {
+              "sourceId": "identity-jiutangshu-39",
+              "quote": "曾口 梁置。隋縣治戴公山。神龍元年，移治曾溪",
+              "locator": "巴州·曾口"
+            }
+          ]
+        },
+        {
+          "topic": "establishment",
+          "statement": "琼州曾口系贞观十三年（639）从琼山县析置。",
+          "evidence": [
+            {
+              "sourceId": "identity-xintangshu-043上",
+              "quote": "瓊山，〈下。貞觀十三年析置曾口、顏羅、容瓊三縣。貞元七年省容瓊。有鹽。〉",
+              "locator": "琼州·琼山"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "CHGIS原始记录为曾口县，现地标注“今四川巴中县东南曾口”，记录起讫525—1375年；这些是数据源字段，并非本项目独立考证的坐标。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"chgis-county-44629\",\"name\":\"曾口县\",\"beginYear\":525,\"endYear\":1375,\"presentLocation\":\"今四川巴中县东南曾口\",\"sourceRecord\":{\"NAME_PY\":\"Zengkou Xian\",\"NAME_CH\":\"曾口县\",\"NAME_FT\":\"曾口縣\",\"X_COOR\":106.87067,\"Y_COOR\":31.78083,\"PRES_LOC\":\"今四川巴中县东南曾口\",\"TYPE_PY\":\"Xian\",\"TYPE_CH\":\"县\",\"LEV_RANK\":\"6\",\"BEG_YR\":525,\"BEG_RULE\":\"\",\"END_YR\":1375,\"END_RULE\":\"\",\"NOTE_ID\":44629,\"OBJ_TYPE\":\"POINT\",\"SYS_ID\":44629,\"GEO_SRC\":\"FROM_FD\",\"COMPILER\":\"\",\"GECOMPLR\":\"\",\"CHECKER\":\"\",\"ENT_DATE\":\"\",\"BEG_CHG_TY\":\"新建\",\"END_CHG_TY\":\"撤销\"}}",
+              "locator": "chgis-county-44629"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "Hartwell原始模型 1414 的名称为“曾口”，原始上级字段为“瓊”，行政类型为“Xian”。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"hartwell-741-county-v5_0741_chin_chn_0741_c-1414\",\"sourceCode\":\"T001900003923\",\"sourceName\":\"曾口\",\"sourceAdminType\":\"Xian\",\"sourceHierarchy\":{\"polity\":\"唐代\",\"province\":\"嶺南\",\"prefecture\":\"瓊\",\"dependentPrefecture\":\"\"}}",
+              "locator": "hartwell-741-county-v5_0741_chin_chn_0741_c-1414"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "该pair仅记录文献支持的身份排除，不判断源点或模型几何本身是否正确。"
+      ],
+      "correspondence": "different-unit"
+    },
+    {
+      "id": "identity-wenquan-units-43983-424",
+      "settlementIds": [
+        "chgis-county-43983"
+      ],
+      "boundaryIds": [
+        "hartwell-741-county-v5_0741_chin_chn_0741_c-424"
+      ],
+      "title": "温泉州点与隰州温泉县模型",
+      "summary": "史料区分岭南温泉州与隰州温泉县；本条只排除温泉州点→隰州模型。",
+      "findings": [
+        {
+          "topic": "administration",
+          "statement": "隰州温泉县在北温州撤废后仍属隰州。",
+          "evidence": [
+            {
+              "sourceId": "identity-jiutangshu-39",
+              "quote": "溫泉 隋新城縣。武德二年，分置溫泉縣，仍置北溫州，領溫泉、新城、高堂三縣，屬隰州總管府。貞觀元年，省北溫州及新城、高堂二縣，以溫泉來屬。",
+              "locator": "隰州·温泉"
+            }
+          ]
+        },
+        {
+          "topic": "chronology",
+          "statement": "蒲州温泉县由桑泉分置，626年省入桑泉；741年模型不能直接作为当年独立温泉县已获证实的范围。",
+          "evidence": [
+            {
+              "sourceId": "identity-jiutangshu-39",
+              "quote": "臨晉 隋分猗氏置桑泉縣。武德三年，分置溫泉縣。九年，省溫泉併入桑泉。天寶十三年，改為臨晉縣",
+              "locator": "河中府·临晋"
+            },
+            {
+              "sourceId": "identity-xintangshu-039",
+              "quote": "臨晉，〈次畿。本桑泉，武德三年析置溫泉縣，九年省。天寶十三載更名。〉",
+              "locator": "河中府·临晋"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "岭南温泉是辖县的州，与隰州、蒲州的县不是同级同一单位。",
+          "evidence": [
+            {
+              "sourceId": "identity-xintangshu-043下",
+              "quote": "溫泉州溫泉郡〈土貢：金。縣二：溫泉，洛富。〉",
+              "locator": "岭南道诸蛮·温泉州"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "CHGIS原始记录为温泉州，现地标注“今广西宜山县东南清潭街”，记录起讫638—1296年；这些是数据源字段，并非本项目独立考证的坐标。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"chgis-county-43983\",\"name\":\"温泉州\",\"beginYear\":638,\"endYear\":1296,\"presentLocation\":\"今广西宜山县东南清潭街\",\"sourceRecord\":{\"NAME_PY\":\"Wenquan Zhou\",\"NAME_CH\":\"温泉州\",\"NAME_FT\":\"溫泉州\",\"X_COOR\":108.703873,\"Y_COOR\":24.336096,\"PRES_LOC\":\"今广西宜山县东南清潭街\",\"TYPE_PY\":\"Jimizhou\",\"TYPE_CH\":\"羁縻州\",\"LEV_RANK\":\"6\",\"BEG_YR\":638,\"BEG_RULE\":\"4\",\"END_YR\":1296,\"END_RULE\":\"4\",\"NOTE_ID\":43983,\"OBJ_TYPE\":\"POINT\",\"SYS_ID\":43983,\"GEO_SRC\":\"FROM_AC\",\"COMPILER\":\"张修桂\",\"GECOMPLR\":\"满志敏\",\"CHECKER\":\"\",\"ENT_DATE\":\"2006/06/01\",\"BEG_CHG_TY\":\"新建\",\"END_CHG_TY\":\"撤销\"}}",
+              "locator": "chgis-county-43983"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "Hartwell原始模型 424 的名称为“溫泉”，原始上级字段为“隰”，行政类型为“Xian”。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"hartwell-741-county-v5_0741_chin_chn_0741_c-424\",\"sourceCode\":\"T001300002524\",\"sourceName\":\"溫泉\",\"sourceAdminType\":\"Xian\",\"sourceHierarchy\":{\"polity\":\"唐代\",\"province\":\"河東\",\"prefecture\":\"隰\",\"dependentPrefecture\":\"\"}}",
+              "locator": "hartwell-741-county-v5_0741_chin_chn_0741_c-424"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "该pair仅记录文献支持的身份排除，不判断源点或模型几何本身是否正确。"
+      ],
+      "correspondence": "different-unit"
+    },
+    {
+      "id": "identity-wenquan-units-43983-446",
+      "settlementIds": [
+        "chgis-county-43983"
+      ],
+      "boundaryIds": [
+        "hartwell-741-county-v5_0741_chin_chn_0741_c-446"
+      ],
+      "title": "温泉州点与蒲州温泉县模型",
+      "summary": "史料区分岭南温泉州与蒲州早期温泉县；本条只排除温泉州点→蒲州模型。",
+      "findings": [
+        {
+          "topic": "administration",
+          "statement": "隰州温泉县在北温州撤废后仍属隰州。",
+          "evidence": [
+            {
+              "sourceId": "identity-jiutangshu-39",
+              "quote": "溫泉 隋新城縣。武德二年，分置溫泉縣，仍置北溫州，領溫泉、新城、高堂三縣，屬隰州總管府。貞觀元年，省北溫州及新城、高堂二縣，以溫泉來屬。",
+              "locator": "隰州·温泉"
+            }
+          ]
+        },
+        {
+          "topic": "chronology",
+          "statement": "蒲州温泉县由桑泉分置，626年省入桑泉；741年模型不能直接作为当年独立温泉县已获证实的范围。",
+          "evidence": [
+            {
+              "sourceId": "identity-jiutangshu-39",
+              "quote": "臨晉 隋分猗氏置桑泉縣。武德三年，分置溫泉縣。九年，省溫泉併入桑泉。天寶十三年，改為臨晉縣",
+              "locator": "河中府·临晋"
+            },
+            {
+              "sourceId": "identity-xintangshu-039",
+              "quote": "臨晉，〈次畿。本桑泉，武德三年析置溫泉縣，九年省。天寶十三載更名。〉",
+              "locator": "河中府·临晋"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "岭南温泉是辖县的州，与隰州、蒲州的县不是同级同一单位。",
+          "evidence": [
+            {
+              "sourceId": "identity-xintangshu-043下",
+              "quote": "溫泉州溫泉郡〈土貢：金。縣二：溫泉，洛富。〉",
+              "locator": "岭南道诸蛮·温泉州"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "CHGIS原始记录为温泉州，现地标注“今广西宜山县东南清潭街”，记录起讫638—1296年；这些是数据源字段，并非本项目独立考证的坐标。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"chgis-county-43983\",\"name\":\"温泉州\",\"beginYear\":638,\"endYear\":1296,\"presentLocation\":\"今广西宜山县东南清潭街\",\"sourceRecord\":{\"NAME_PY\":\"Wenquan Zhou\",\"NAME_CH\":\"温泉州\",\"NAME_FT\":\"溫泉州\",\"X_COOR\":108.703873,\"Y_COOR\":24.336096,\"PRES_LOC\":\"今广西宜山县东南清潭街\",\"TYPE_PY\":\"Jimizhou\",\"TYPE_CH\":\"羁縻州\",\"LEV_RANK\":\"6\",\"BEG_YR\":638,\"BEG_RULE\":\"4\",\"END_YR\":1296,\"END_RULE\":\"4\",\"NOTE_ID\":43983,\"OBJ_TYPE\":\"POINT\",\"SYS_ID\":43983,\"GEO_SRC\":\"FROM_AC\",\"COMPILER\":\"张修桂\",\"GECOMPLR\":\"满志敏\",\"CHECKER\":\"\",\"ENT_DATE\":\"2006/06/01\",\"BEG_CHG_TY\":\"新建\",\"END_CHG_TY\":\"撤销\"}}",
+              "locator": "chgis-county-43983"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "Hartwell原始模型 446 的名称为“溫泉”，原始上级字段为“蒲”，行政类型为“Xian”。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"hartwell-741-county-v5_0741_chin_chn_0741_c-446\",\"sourceCode\":\"T001300002122\",\"sourceName\":\"溫泉\",\"sourceAdminType\":\"Xian\",\"sourceHierarchy\":{\"polity\":\"唐代\",\"province\":\"河東\",\"prefecture\":\"蒲\",\"dependentPrefecture\":\"\"}}",
+              "locator": "hartwell-741-county-v5_0741_chin_chn_0741_c-446"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "该pair仅记录文献支持的身份排除，不判断源点或模型几何本身是否正确。"
+      ],
+      "correspondence": "different-unit"
+    },
+    {
+      "id": "identity-wenquan-units-95178-446",
+      "settlementIds": [
+        "chgis-county-95178"
+      ],
+      "boundaryIds": [
+        "hartwell-741-county-v5_0741_chin_chn_0741_c-446"
+      ],
+      "title": "隰州温泉县点与蒲州温泉县模型",
+      "summary": "两唐书区分隰州温泉县与626年已省的蒲州温泉县；本条只排除隰州点→蒲州模型。",
+      "findings": [
+        {
+          "topic": "administration",
+          "statement": "隰州温泉县在北温州撤废后仍属隰州。",
+          "evidence": [
+            {
+              "sourceId": "identity-jiutangshu-39",
+              "quote": "溫泉 隋新城縣。武德二年，分置溫泉縣，仍置北溫州，領溫泉、新城、高堂三縣，屬隰州總管府。貞觀元年，省北溫州及新城、高堂二縣，以溫泉來屬。",
+              "locator": "隰州·温泉"
+            }
+          ]
+        },
+        {
+          "topic": "chronology",
+          "statement": "蒲州温泉县由桑泉分置，626年省入桑泉；741年模型不能直接作为当年独立温泉县已获证实的范围。",
+          "evidence": [
+            {
+              "sourceId": "identity-jiutangshu-39",
+              "quote": "臨晉 隋分猗氏置桑泉縣。武德三年，分置溫泉縣。九年，省溫泉併入桑泉。天寶十三年，改為臨晉縣",
+              "locator": "河中府·临晋"
+            },
+            {
+              "sourceId": "identity-xintangshu-039",
+              "quote": "臨晉，〈次畿。本桑泉，武德三年析置溫泉縣，九年省。天寶十三載更名。〉",
+              "locator": "河中府·临晋"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "岭南温泉是辖县的州，与隰州、蒲州的县不是同级同一单位。",
+          "evidence": [
+            {
+              "sourceId": "identity-xintangshu-043下",
+              "quote": "溫泉州溫泉郡〈土貢：金。縣二：溫泉，洛富。〉",
+              "locator": "岭南道诸蛮·温泉州"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "CHGIS原始记录为温泉县，现地标注“今山西交口县东北25公里温泉乡”，记录起讫620—1265年；这些是数据源字段，并非本项目独立考证的坐标。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"chgis-county-95178\",\"name\":\"温泉县\",\"beginYear\":620,\"endYear\":1265,\"presentLocation\":\"今山西交口县东北25公里温泉乡\",\"sourceRecord\":{\"NAME_PY\":\"Wenquan Xian\",\"NAME_CH\":\"温泉县\",\"NAME_FT\":\"溫泉縣\",\"X_COOR\":111.453293,\"Y_COOR\":37.058769,\"PRES_LOC\":\"今山西交口县东北25公里温泉乡\",\"TYPE_PY\":\"Xian\",\"TYPE_CH\":\"县\",\"LEV_RANK\":\"6\",\"BEG_YR\":620,\"BEG_RULE\":\"4\",\"END_YR\":1265,\"END_RULE\":\"4\",\"NOTE_ID\":95178,\"OBJ_TYPE\":\"POINT\",\"SYS_ID\":95178,\"GEO_SRC\":\"FROM_FD\",\"COMPILER\":\"\",\"GECOMPLR\":\"\",\"CHECKER\":\"\",\"ENT_DATE\":\"\",\"BEG_CHG_TY\":\"新建\",\"END_CHG_TY\":\"撤销\"}}",
+              "locator": "chgis-county-95178"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "Hartwell原始模型 446 的名称为“溫泉”，原始上级字段为“蒲”，行政类型为“Xian”。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"hartwell-741-county-v5_0741_chin_chn_0741_c-446\",\"sourceCode\":\"T001300002122\",\"sourceName\":\"溫泉\",\"sourceAdminType\":\"Xian\",\"sourceHierarchy\":{\"polity\":\"唐代\",\"province\":\"河東\",\"prefecture\":\"蒲\",\"dependentPrefecture\":\"\"}}",
+              "locator": "hartwell-741-county-v5_0741_chin_chn_0741_c-446"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "该pair仅记录文献支持的身份排除，不判断源点或模型几何本身是否正确。"
+      ],
+      "correspondence": "different-unit"
+    },
+    {
+      "id": "identity-puning-types-99012-1383",
+      "settlementIds": [
+        "chgis-county-99012"
+      ],
+      "boundaryIds": [
+        "hartwell-741-county-v5_0741_chin_chn_0741_c-1383"
+      ],
+      "title": "羁縻普宁州点与容州普宁县模型",
+      "summary": "史书同时列容州普宁县和羁縻普宁州；本条只排除普宁州点→容州普宁县模型。",
+      "findings": [
+        {
+          "topic": "administration",
+          "statement": "《新唐书》列容州普宁县，并记元和中容州徙治普宁。",
+          "evidence": [
+            {
+              "sourceId": "identity-xintangshu-043上",
+              "quote": "容州普寧郡，下都督府。本銅州，武德四年以合浦郡之北流、普寧置。貞觀八年更名。元和中徙治普寧。",
+              "locator": "容州"
+            },
+            {
+              "sourceId": "identity-xintangshu-043上",
+              "quote": "普寧，下。北流，",
+              "locator": "容州·普宁"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "《新唐书》羁縻州列表中另列普宁州。",
+          "evidence": [
+            {
+              "sourceId": "identity-xintangshu-043下",
+              "quote": "候州　晃州　樊州　稜州　添州　普寧州　功州",
+              "locator": "江南道诸蛮·黔州都督府所领"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "CHGIS原始记录为普宁州，现地标注“今贵州省安顺双堡”，记录起讫641—1278年；这些是数据源字段，并非本项目独立考证的坐标。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"chgis-county-99012\",\"name\":\"普宁州\",\"beginYear\":641,\"endYear\":1278,\"presentLocation\":\"今贵州省安顺双堡\",\"sourceRecord\":{\"NAME_PY\":\"Puning Zhou\",\"NAME_CH\":\"普宁州\",\"NAME_FT\":\"普寧州\",\"X_COOR\":106.18463,\"Y_COOR\":26.17482,\"PRES_LOC\":\"今贵州省安顺双堡\",\"TYPE_PY\":\"Zhou\",\"TYPE_CH\":\"州\",\"LEV_RANK\":\"6\",\"BEG_YR\":641,\"BEG_RULE\":\"\",\"END_YR\":1278,\"END_RULE\":\"\",\"NOTE_ID\":99012,\"OBJ_TYPE\":\"POINT\",\"SYS_ID\":99012,\"GEO_SRC\":\"FROM_FD\",\"COMPILER\":\"\",\"GECOMPLR\":\"\",\"CHECKER\":\"\",\"ENT_DATE\":\"\",\"BEG_CHG_TY\":\"新建\",\"END_CHG_TY\":\"撤销\"}}",
+              "locator": "chgis-county-99012"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "Hartwell原始模型 1383 的名称为“普寧”，原始上级字段为“容”，行政类型为“Xian”。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"hartwell-741-county-v5_0741_chin_chn_0741_c-1383\",\"sourceCode\":\"T001900004921\",\"sourceName\":\"普寧\",\"sourceAdminType\":\"Xian\",\"sourceHierarchy\":{\"polity\":\"唐代\",\"province\":\"嶺南\",\"prefecture\":\"容\",\"dependentPrefecture\":\"\"}}",
+              "locator": "hartwell-741-county-v5_0741_chin_chn_0741_c-1383"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "该pair仅记录文献支持的身份排除，不判断源点或模型几何本身是否正确。"
+      ],
+      "correspondence": "different-unit"
+    },
+    {
+      "id": "identity-sien-types-44047-1397",
+      "settlementIds": [
+        "chgis-county-44047"
+      ],
+      "boundaryIds": [
+        "hartwell-741-county-v5_0741_chin_chn_0741_c-1397"
+      ],
+      "title": "羁縻思恩州点与环州思恩县模型",
+      "summary": "史书同时列环州思恩县和羁縻思恩州；本条只排除思恩州点→环州县模型。",
+      "findings": [
+        {
+          "topic": "administration",
+          "statement": "环州八县名单明确包含思恩县。",
+          "evidence": [
+            {
+              "sourceId": "identity-xintangshu-043上",
+              "quote": "環州整平郡，下。貞觀十二年，李弘節開拓生蠻置。縣八。正平，〈下。〉福零，〈下。〉龍源，〈下。〉饒勉，〈下。〉思恩，〈下。〉",
+              "locator": "环州"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "岭南羁縻州名单另列思恩州。",
+          "evidence": [
+            {
+              "sourceId": "identity-xintangshu-043下",
+              "quote": "倫州　石西州　思恩州　思同州　思明州",
+              "locator": "岭南道诸蛮·邕州都督府所领"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "CHGIS原始记录为思恩州，现地标注“今广西平果县东北旧城镇”，记录起讫711—1403年；这些是数据源字段，并非本项目独立考证的坐标。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"chgis-county-44047\",\"name\":\"思恩州\",\"beginYear\":711,\"endYear\":1403,\"presentLocation\":\"今广西平果县东北旧城镇\",\"sourceRecord\":{\"NAME_PY\":\"Si'en Zhou\",\"NAME_CH\":\"思恩州\",\"NAME_FT\":\"思恩州\",\"X_COOR\":107.678215,\"Y_COOR\":23.563625,\"PRES_LOC\":\"今广西平果县东北旧城镇\",\"TYPE_PY\":\"Jimizhou\",\"TYPE_CH\":\"羁縻州\",\"LEV_RANK\":\"6\",\"BEG_YR\":711,\"BEG_RULE\":\"4\",\"END_YR\":1403,\"END_RULE\":\"5\",\"NOTE_ID\":44047,\"OBJ_TYPE\":\"POINT\",\"SYS_ID\":44047,\"GEO_SRC\":\"FROM_AC\",\"COMPILER\":\"张修桂\",\"GECOMPLR\":\"满志敏\",\"CHECKER\":\"\",\"ENT_DATE\":\"2006/06/01\",\"BEG_CHG_TY\":\"新建\",\"END_CHG_TY\":\"撤销\"}}",
+              "locator": "chgis-county-44047"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "Hartwell原始模型 1397 的名称为“思恩”，原始上级字段为“環”，行政类型为“Xian”。",
+          "evidence": [
+            {
+              "sourceId": "identity-source-records",
+              "quote": "{\"id\":\"hartwell-741-county-v5_0741_chin_chn_0741_c-1397\",\"sourceCode\":\"T001900004825\",\"sourceName\":\"思恩\",\"sourceAdminType\":\"Xian\",\"sourceHierarchy\":{\"polity\":\"唐代\",\"province\":\"嶺南\",\"prefecture\":\"環\",\"dependentPrefecture\":\"\"}}",
+              "locator": "hartwell-741-county-v5_0741_chin_chn_0741_c-1397"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "该pair仅记录文献支持的身份排除，不判断源点或模型几何本身是否正确。"
+      ],
+      "correspondence": "different-unit"
+    }
+  ],
+  "exclusions": [
+    {
+      "settlementId": "chgis-county-95282",
+      "boundaryId": "hartwell-741-county-v5_0741_chin_chn_0741_c-159",
+      "researchEntryId": "identity-yanzhou-pinglu-zhongdu-homonym",
+      "reason": "山西平陆本河北，模型159的原上级为兖州，其平陆于742年改中都。"
+    },
+    {
+      "settlementId": "chgis-county-43983",
+      "boundaryId": "hartwell-741-county-v5_0741_chin_chn_0741_c-424",
+      "researchEntryId": "identity-wenquan-units-43983-424",
+      "reason": "古籍区分隰州温泉县、626年已省的蒲州温泉县与岭南温泉州，不能去掉州县通名后合并。"
+    },
+    {
+      "settlementId": "chgis-county-43983",
+      "boundaryId": "hartwell-741-county-v5_0741_chin_chn_0741_c-446",
+      "researchEntryId": "identity-wenquan-units-43983-446",
+      "reason": "古籍区分隰州温泉县、626年已省的蒲州温泉县与岭南温泉州，不能去掉州县通名后合并。"
+    },
+    {
+      "settlementId": "chgis-county-95178",
+      "boundaryId": "hartwell-741-county-v5_0741_chin_chn_0741_c-446",
+      "researchEntryId": "identity-wenquan-units-95178-446",
+      "reason": "古籍区分隰州温泉县、626年已省的蒲州温泉县与岭南温泉州，不能去掉州县通名后合并。"
+    },
+    {
+      "settlementId": "chgis-county-40121",
+      "boundaryId": "hartwell-741-county-v5_0741_chin_chn_0741_c-688",
+      "researchEntryId": "identity-deng-xincheng-lintuan-homonym",
+      "reason": "浙江杭州新城与邓州新城—临湍州属、沿革不同。"
+    },
+    {
+      "settlementId": "chgis-county-42457",
+      "boundaryId": "hartwell-741-county-v5_0741_chin_chn_0741_c-748",
+      "researchEntryId": "identity-zengkou-units-42457-748",
+      "reason": "639年析琼山的海南曾口不是梁代始置、隶巴州的曾口。"
+    },
+    {
+      "settlementId": "chgis-county-44629",
+      "boundaryId": "hartwell-741-county-v5_0741_chin_chn_0741_c-1414",
+      "researchEntryId": "identity-zengkou-units-44629-1414",
+      "reason": "巴州梁置曾口不是琼州639年析琼山的曾口。"
+    },
+    {
+      "settlementId": "chgis-county-42639",
+      "boundaryId": "hartwell-741-county-v5_0741_chin_chn_0741_c-1288",
+      "researchEntryId": "identity-annan-types",
+      "reason": "原始Duhufu都护府与泷州Xian县层级及所属区域不同；安南简称相同不构成对应。"
+    },
+    {
+      "settlementId": "chgis-county-99012",
+      "boundaryId": "hartwell-741-county-v5_0741_chin_chn_0741_c-1383",
+      "researchEntryId": "identity-puning-types-99012-1383",
+      "reason": "CHGIS原始类型是普宁州，模型原属容州且类型为县；史书同时分列，不能剥去通名混配。"
+    },
+    {
+      "settlementId": "chgis-county-44047",
+      "boundaryId": "hartwell-741-county-v5_0741_chin_chn_0741_c-1397",
+      "researchEntryId": "identity-sien-types-44047-1397",
+      "reason": "环州思恩县与史书另列的羁縻思恩州行政身份不同；保留县、州通名才能避免误配。"
+    }
+  ],
+  "links": [
+    {
+      "settlementId": "chgis-county-45247",
+      "boundaryId": "hartwell-741-county-v5_0741_chin_chn_0741_c-159",
+      "researchEntryId": "identity-yanzhou-pinglu-zhongdu",
+      "reason": "新旧唐书共同支持兖州平陆—742年中都改名链；755年山东汶上中都点可参与741模型的跨年诊断，但迁治和县界未核定。"
+    },
+    {
+      "settlementId": "chgis-county-82715",
+      "boundaryId": "hartwell-741-county-v5_0741_chin_chn_0741_c-688",
+      "researchEntryId": "identity-deng-xincheng-lintuan",
+      "reason": "两唐书记邓州新城742年改临湍，源点现地标注河南邓州，支持跨年名称身份候选，不认定边界精确。"
+    }
+  ],
+  "scope": "只补充可核对史实、排除证据充分的异地同名/不同级单位，并给有改名链的跨年诊断候选；不修改任何原始点面几何。排除不等于确认余下县界。"
+}

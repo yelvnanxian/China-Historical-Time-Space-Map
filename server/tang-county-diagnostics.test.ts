@@ -23,8 +23,8 @@ test("县点面诊断覆盖全部1365县点1495原模型，来源哈希与独立
   assert.equal(Object.keys(diagnostics.byBoundary).length, models.length);
   assert.equal(diagnostics.statistics.sourceCountyPoints, 1365);
   assert.equal(diagnostics.statistics.countyModels, 1495);
-  assert.deepEqual(diagnostics.statistics.settlementsByStatus, { matched: 831, outside: 248, ambiguous: 0, "no-evidence": 286 });
-  assert.deepEqual(diagnostics.statistics.boundariesByStatus, { matched: 831, outside: 205, ambiguous: 32, "no-evidence": 427 });
+  assert.deepEqual(diagnostics.statistics.settlementsByStatus, { matched: 832, outside: 244, ambiguous: 0, "no-evidence": 289 });
+  assert.deepEqual(diagnostics.statistics.boundariesByStatus, { matched: 832, outside: 210, ambiguous: 24, "no-evidence": 429 });
   for (const [entries, totals] of [[diagnostics.bySettlement, diagnostics.statistics.settlementsByStatus], [diagnostics.byBoundary, diagnostics.statistics.boundariesByStatus]] as const) {
     for (const status of ["matched", "outside", "ambiguous", "no-evidence"] as TangCountyDiagnosticStatus[]) {
       assert.equal(Object.values(entries).filter(entry => entry.status === status).length, totals[status]);
@@ -106,7 +106,7 @@ test("两处吉阳依据古籍州属区分，异地同名面不进入当前县�
   assert.equal(crosswalk.settlements[hainan.sourcePoint.id].countyBoundaryId, countyId(1408));
 });
 
-test("标记冲突的205模型都有唯一可比身份和741同点，歧义与无证据模型不冒充错误边界", () => {
+test("标记冲突的模型都有唯一可比身份和741同点，歧义与无证据模型不冒充错误边界", () => {
   for (const diagnostic of Object.values(diagnostics.byBoundary)) {
     if (diagnostic.status !== "outside") continue;
     assert.equal(diagnostic.sourcePoints.length, 1, diagnostic.boundaryId);
@@ -118,8 +118,8 @@ test("标记冲突的205模型都有唯一可比身份和741同点，歧义与�
     assert.equal(boundaryContainsPoint(modelById.get(diagnostic.boundaryId)!.geometry, point.coordinates), false);
   }
   const outsideBoth = Object.values(diagnostics.bySettlement).filter(item => item.status === "outside" && item.sourcePoint.sameRecordIn741);
-  assert.equal(outsideBoth.length, 239);
-  assert.equal(diagnostics.statistics.outsideInBoth741And755, 239);
+  assert.equal(outsideBoth.length, 235);
+  assert.equal(diagnostics.statistics.outsideInBoth741And755, 235);
 });
 
 test("唐城吉阳史料引文逐字可查，引用不能冒充精确坐标或古代县界考证", () => {

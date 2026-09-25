@@ -1,0 +1,11 @@
+{
+  "id": "county-bulk-xintangshu-40",
+  "title": "新唐書·卷040（维基文库固定版本）",
+  "url": "https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7040&oldid=2478570",
+  "kind": "official-history",
+  "snapshotPath": "data/evidence/tang-county-research/bulk-sources/xintangshu-40.txt",
+  "snapshotSha256": "b597d864d20815a7b9ded6036e790e46166f367c53e2679b174d33873bc86402",
+  "retrievedAt": "2026-09-25T06:05:39.191071+00:00",
+  "revisionId": "2478570",
+  "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7040"
+}

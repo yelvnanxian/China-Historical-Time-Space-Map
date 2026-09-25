@@ -1,0 +1,11 @@
+{
+  "id": "county-bulk-xintangshu-39",
+  "title": "新唐書·卷039（维基文库固定版本）",
+  "url": "https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7039&oldid=2691805",
+  "kind": "official-history",
+  "snapshotPath": "data/evidence/tang-county-research/bulk-sources/xintangshu-39.txt",
+  "snapshotSha256": "356b9a2051ececaf799a7a7b374aee102d0c7ae22f45084b241208164a230990",
+  "retrievedAt": "2026-09-25T06:07:43.718717+00:00",
+  "revisionId": "2691805",
+  "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7039"
+}

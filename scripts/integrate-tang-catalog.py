@@ -71,6 +71,10 @@ if mountain_regions_path.exists():
     mountain_count = sum(feature['properties']['kind'] == 'mountain' for feature in mountain_regions['features'])
     catalog['metadata']['dataNotice'] += f"{mountain_count}条现代山地命名概括面用于显示山系大致分布，取自Natural Earth 1:1000万资料，不是精确山脚边界。"
 catalog['metadata']['dataNotice'] += "唐代县治与741年县模型另提供逐条一致性核查；明确冲突的模型以存疑虚线标示，相容也不等于历史边界已经核定。"
+research_bundle = ROOT/'data/evidence/tang-county-research/bulk.json'
+if research_bundle.exists():
+    research = json.loads(research_bundle.read_text())
+    catalog['metadata']['dataNotice'] += f"县级存疑研究另补{len(research['entries'])}条史料专题，逐条列出原文、来源版本和未决问题；史料补充不等于县界核定。"
 catalog['metadata']['geographicNotice'] = (
     "黄河中下游接入五期WorldMap图集河道，随朝代切换，唐代采用11—1048年资料；仅表示历史流向，不是逐年古河岸测绘。"
     "其他河湖、山峰及海岸仍为现代参照，不能据此复原唐代地貌。历史治所点与精选地点的坐标有各自来源；行政面不是城墙范围。"

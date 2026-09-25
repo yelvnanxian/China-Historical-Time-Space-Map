@@ -8,6 +8,32 @@ export interface TangCountyHistoricalContext {
   sourceUrl: string;
 }
 
+export interface TangCountyResearchEvidence {
+  sourceId: string;
+  sourceTitle: string;
+  /** Preserve the cited edition or fixed-version URL supplied by the research. */
+  sourceUrl: string;
+  sourceKind: string;
+  /** Verbatim source text; presentation must not simplify or paraphrase it. */
+  quote: string;
+  locator: string;
+}
+
+export interface TangCountyResearchFinding {
+  topic: "identity" | "administration" | "establishment" | "seat" | "chronology";
+  statement: string;
+  evidence: TangCountyResearchEvidence[];
+}
+
+export interface TangCountyResearch {
+  id: string;
+  title: string;
+  summary: string;
+  correspondence: "same-unit" | "different-unit" | "unresolved";
+  findings: TangCountyResearchFinding[];
+  unresolved: string[];
+}
+
 export interface TangCountySourcePoint {
   id: string;
   sourceRecordId: string;
@@ -32,7 +58,7 @@ export interface TangCountyModelCandidate {
   containsPoint: boolean;
   /** Approximate metric distance to the model, zero inside; never a matching rule. */
   distanceKm: number;
-  basis: "source-name" | "documented-county-link" | "reviewed-source-hierarchy";
+  basis: "source-name" | "documented-county-link" | "reviewed-source-hierarchy" | "documented-research";
 }
 
 export interface TangCountySettlementDiagnostic {
@@ -46,6 +72,7 @@ export interface TangCountySettlementDiagnostic {
   candidates: TangCountyModelCandidate[];
   minDistanceKm: number | null;
   historicalContext?: TangCountyHistoricalContext;
+  historicalResearch?: TangCountyResearch[];
 }
 
 export interface TangCountyBoundaryPoint extends TangCountySourcePoint {
@@ -66,6 +93,7 @@ export interface TangCountyBoundaryDiagnostic {
   excludedHomonyms: TangCountyBoundaryPoint[];
   minDistanceKm: number | null;
   historicalContext?: TangCountyHistoricalContext;
+  historicalResearch?: TangCountyResearch[];
 }
 
 export interface TangCountyDiagnostics {
@@ -80,6 +108,14 @@ export interface TangCountyDiagnostics {
     settlementsByStatus: Record<TangCountyDiagnosticStatus, number>;
     boundariesByStatus: Record<TangCountyDiagnosticStatus, number>;
     outsideInBoth741And755: number;
+  };
+  researchCoverage?: {
+    entries: number;
+    sources: number;
+    settlements: number;
+    boundaries: number;
+    excludedPairs: number;
+    documentedLinks: number;
   };
   sources: { id: string; title: string; url: string; path: string; sha256: string }[];
   notes: string[];

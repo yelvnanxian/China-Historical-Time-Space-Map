@@ -1,0 +1,11 @@
+{
+  "id": "county-focus-songshi-88",
+  "title": "宋史·卷088（维基文库固定版本）",
+  "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+  "kind": "official-history",
+  "snapshotPath": "data/evidence/tang-county-research/focus-sources/songshi-88.txt",
+  "snapshotSha256": "2f005c4051b212355805758af0f5423addc7262a500d5685edaa59689c3da0c0",
+  "retrievedAt": "2026-09-25T06:02:14.260028+00:00",
+  "revisionId": "1873924",
+  "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7088"
+}

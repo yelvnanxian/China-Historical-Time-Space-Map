@@ -189,7 +189,7 @@
       ],
       "doesNotSupport": [
         "未提供现代镇名或经纬度。",
-        "未独立验证CHGIS所记912年更名节点。",
+        "本段未独立验证CHGIS记录末年912及其后的更名；末年不是事件年。",
         "未给县界线。"
       ]
     },
@@ -222,7 +222,7 @@
       ],
       "doesNotSupport": [
         "未给隋改名确年606。",
-        "未给969废县节点。",
+        "本段未给出准确废县事件年；CHGIS 969为记录最后有效年。",
         "未提供土桥店或现代坐标、县界。"
       ]
     },
@@ -253,7 +253,7 @@
         "海南吉阳县贞观二年（628）分延德置，与湖北吉阳的建置来源不同。"
       ],
       "doesNotSupport": [
-        "未提供现代藤桥经纬度或1072废县节点。"
+        "本段未提供现代藤桥经纬度或废县事件年；CHGIS 1072为记录最后有效年。"
       ]
     },
     {
@@ -276,7 +276,7 @@
     {
       "sysId": 43627,
       "name": "唐城县",
-      "dateEvidence": "738年分枣阳置同时获旧唐书及CHGIS支持；738–912为CHGIS记录区间，912更名本轮未获得独立古籍复核。",
+      "dateEvidence": "738年分枣阳置获旧唐书及CHGIS支持；738—912为CHGIS有效记录区间，不能将912直接称更名年。V0.13新查元和郡县图志有736年奏置异文，详见县级史料研究包。",
       "seatEvidence": "CHGIS PRES_LOC=今湖北省随州市西北唐县镇，原记录字段坐标[113.12449,31.98609]；这是来源定位，不宣称独立实测。",
       "administrativeEvidence": "旧唐书隋州条支持随州、天宝汉东郡。"
     },
@@ -332,5 +332,11 @@
       ],
       "result": "Returned interstitial without search results; no official modern-location confirmation obtained."
     }
-  ]
+  ],
+  "dateSemanticsCorrection": {
+    "date": "2026-09-25",
+    "note": "依CHGIS官方数据字典纠正旧说明：end_year为撤销/变更前最后有效年，不等同撤销/变更事件年。原始记录字段和古籍引文未改。",
+    "sourcePath": "data/evidence/tang-detail/chgis/dictionary-extract.json",
+    "url": "https://doi.org/10.7910/DVN/SNCEAU"
+  }
 }

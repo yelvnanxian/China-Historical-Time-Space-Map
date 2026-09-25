@@ -1,0 +1,397 @@
+{
+  "id": "tang-county-focus",
+  "sources": [
+    {
+      "id": "county-focus-xintangshu-40",
+      "title": "新唐书·卷040（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7040&oldid=2478570",
+      "kind": "official-history",
+      "snapshotPath": "data/evidence/tang-county-research/focus-sources/xintangshu-40.txt",
+      "snapshotSha256": "b597d864d20815a7b9ded6036e790e46166f367c53e2679b174d33873bc86402",
+      "retrievedAt": "2026-09-25T06:02:12.178663+00:00",
+      "revisionId": "2478570",
+      "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7040"
+    },
+    {
+      "id": "county-focus-xintangshu-41",
+      "title": "新唐书·卷041（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7041&oldid=2690537",
+      "kind": "official-history",
+      "snapshotPath": "data/evidence/tang-county-research/focus-sources/xintangshu-41.txt",
+      "snapshotSha256": "8afa449e3ebb848cba4b02d539c2f4e18d5840379d99b2e6d62f71f3abed9667",
+      "retrievedAt": "2026-09-25T06:02:12.598778+00:00",
+      "revisionId": "2690537",
+      "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7041"
+    },
+    {
+      "id": "county-focus-xintangshu-43a",
+      "title": "新唐书·卷043上（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7043%E4%B8%8A&oldid=2474644",
+      "kind": "official-history",
+      "snapshotPath": "data/evidence/tang-county-research/focus-sources/xintangshu-43a.txt",
+      "snapshotSha256": "34110ded54054faebf3ff47b16a021b70a254e1a6263a8499e8b5df9a276af06",
+      "retrievedAt": "2026-09-25T06:02:12.018181+00:00",
+      "revisionId": "2474644",
+      "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E6%96%B0%E5%94%90%E6%9B%B8%2F%E5%8D%B7043%E4%B8%8A"
+    },
+    {
+      "id": "county-focus-yuanhe-21",
+      "title": "元和郡县图志·卷21（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E5%85%83%E5%92%8C%E9%83%A1%E7%B8%A3%E5%9C%96%E5%BF%97/%E5%8D%B721&oldid=1387129",
+      "kind": "historical-geography",
+      "snapshotPath": "data/evidence/tang-county-research/focus-sources/yuanhe-21.txt",
+      "snapshotSha256": "98eff9dc2bc283add94aaa9f183580edea8d8a2f95becfffd5a220eb0c522166",
+      "retrievedAt": "2026-09-25T06:02:13.204801+00:00",
+      "revisionId": "1387129",
+      "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E5%85%83%E5%92%8C%E9%83%A1%E7%B8%A3%E5%9C%96%E5%BF%97%2F%E5%8D%B721"
+    },
+    {
+      "id": "county-focus-yuanhe-27",
+      "title": "元和郡县图志·卷27（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E5%85%83%E5%92%8C%E9%83%A1%E7%B8%A3%E5%9C%96%E5%BF%97/%E5%8D%B727&oldid=1431413",
+      "kind": "historical-geography",
+      "snapshotPath": "data/evidence/tang-county-research/focus-sources/yuanhe-27.txt",
+      "snapshotSha256": "72bc5696a1720f369a43b108287a32b77a170093d170979ef18c59752cdbc987",
+      "retrievedAt": "2026-09-25T06:02:13.390263+00:00",
+      "revisionId": "1431413",
+      "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E5%85%83%E5%92%8C%E9%83%A1%E7%B8%A3%E5%9C%96%E5%BF%97%2F%E5%8D%B727"
+    },
+    {
+      "id": "county-focus-songshi-88",
+      "title": "宋史·卷088（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+      "kind": "official-history",
+      "snapshotPath": "data/evidence/tang-county-research/focus-sources/songshi-88.txt",
+      "snapshotSha256": "2f005c4051b212355805758af0f5423addc7262a500d5685edaa59689c3da0c0",
+      "retrievedAt": "2026-09-25T06:02:14.260028+00:00",
+      "revisionId": "1873924",
+      "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7088"
+    },
+    {
+      "id": "county-focus-songshi-90",
+      "title": "宋史·卷090（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7090&oldid=2619985",
+      "kind": "official-history",
+      "snapshotPath": "data/evidence/tang-county-research/focus-sources/songshi-90.txt",
+      "snapshotSha256": "feb3cdaeb37a60a53cb8b60f0ec2eca3ebbd9ea2806ec1a25867a9dc4c859fef",
+      "retrievedAt": "2026-09-25T06:02:14.365711+00:00",
+      "revisionId": "2619985",
+      "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7090"
+    },
+    {
+      "id": "tang-nw-jiutangshu-39",
+      "title": "旧唐书/卷39 — 维基文库",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B739&oldid=2691264",
+      "retrievedAt": "2026-09-24T14:33:58.474669+00:00",
+      "note": "实际取得的固定修订全文；引文逐字核对。古籍可支持建置或事件叙事，不单独验证古城经纬度。",
+      "snapshotPath": "data/evidence/tang-expansion/north-west/jiutangshu-39.txt",
+      "snapshotSha256": "a0d0a6c1b521023043cdc9fc1352f1eaa7c0534e05e9f99fdbc41f47991f88e6",
+      "revisionId": "2691264",
+      "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&page=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B739&prop=text%7Crevid&format=json",
+      "kind": "official-history"
+    },
+    {
+      "id": "tang-nw-jiutangshu-40",
+      "title": "旧唐书/卷40 — 维基文库",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B740&oldid=2690566",
+      "retrievedAt": "2026-09-24T14:33:51.697456+00:00",
+      "note": "实际取得的固定修订全文；引文逐字核对。古籍可支持建置或事件叙事，不单独验证古城经纬度。",
+      "snapshotPath": "data/evidence/tang-expansion/north-west/jiutangshu-40.txt",
+      "snapshotSha256": "5b50ad935e1c2d99766a35bb0f6db644df29afb19f759b7ed5a9fa787318f31f",
+      "revisionId": "2690566",
+      "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&page=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B740&prop=text%7Crevid&format=json",
+      "kind": "official-history"
+    },
+    {
+      "id": "tang-se-jiutangshu-41",
+      "title": "旧唐书/卷41 — 维基文库",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B741&oldid=2690053",
+      "retrievedAt": "2026-09-24T14:38:52.760137+00:00",
+      "note": "实际取得固定修订全文，引文逐字核对；古籍支持建置及名称，不单独验证古城经纬度。",
+      "snapshotPath": "data/evidence/tang-expansion/south-east/jiutangshu-41.txt",
+      "snapshotSha256": "4188ecd5ae351c2ab6507d809cd91085450fffd3574928581f0d9f3ba60e7f9e",
+      "revisionId": "2690053",
+      "kind": "official-history"
+    },
+    {
+      "id": "county-focus-chgis",
+      "title": "CHGIS V6 原始县治记录摘录",
+      "kind": "dataset",
+      "url": "https://doi.org/10.7910/DVN/Q9VOF5",
+      "snapshotPath": "data/evidence/tang-county-research/focus-sources/chgis-focus-records.txt",
+      "snapshotSha256": "3526641c9d1f07cff71b7aa26a19e6572e18806381536ad1fe727a690ab57cfe",
+      "retrievedAt": "2026-09-25",
+      "derivedFrom": "data/evidence/tang-detail/county-location-historical-references.json"
+    },
+    {
+      "id": "county-focus-chgis-dictionary",
+      "title": "CHGIS V6 官方数据字典·end_year",
+      "kind": "dataset",
+      "url": "https://doi.org/10.7910/DVN/SNCEAU",
+      "snapshotPath": "data/evidence/tang-detail/chgis/dictionary-extract.json",
+      "snapshotSha256": "ab634806a960ead9b7c9550d15bb7d07b8587448bd56d641c10f4201be0f14b6",
+      "retrievedAt": "2026-09-25"
+    }
+  ],
+  "entries": [
+    {
+      "id": "county-focus-tangcheng",
+      "settlementIds": [
+        "chgis-county-43627"
+      ],
+      "boundaryIds": [
+        "hartwell-741-county-v5_0741_chin_chn_0741_c-695"
+      ],
+      "title": "唐城县：建置年份有异文，方位记载不能代替县界",
+      "correspondence": "same-unit",
+      "summary": "随州唐城县的身份和分置背景有史料支持，但《两唐书》记开元二十六年（738）置县，《元和郡县图志》本次所见版本记二十四年（736）奏置，现并列保留。",
+      "findings": [
+        {
+          "topic": "administration",
+          "statement": "《旧唐书》随州条记天宝元年改汉东郡；《新唐书》在同一州郡下列唐城，与模型“山南／随”所属相符。",
+          "evidence": [
+            {
+              "sourceId": "tang-nw-jiutangshu-39",
+              "quote": "天寶元年，改為漢東郡。乾元元年，復為隋州。",
+              "locator": "卷39·隋州（随州）；归档文本第668行"
+            },
+            {
+              "sourceId": "county-focus-xintangshu-40",
+              "quote": "隋州漢東郡，上。土貢：合羅、綾、葛、覆盆。戶二萬三千九百一十七，口十萬五千七百二十二。縣四。隋，〈上。武德四年省安貴縣入焉。五年省平林、順義縣入焉。〉光化，〈上。〉棗陽，〈上。本隸唐州。武德五年省唐州之清潭縣入焉。貞觀元年又省唐州之舂陵縣入焉。十年以棗陽來屬。有光武山。〉唐城。〈上。開元二十六年以客戶析棗陽地置。〉",
+              "locator": "卷40·隋州汉东郡；归档文本第50行"
+            }
+          ]
+        },
+        {
+          "topic": "establishment",
+          "statement": "《旧唐书》记738年分枣阳置县，《新唐书》补充“以客户析枣阳地置”；《元和郡县图志》记736年宋鼎奏置。它们可能涉及版本或记事口径差异，本轮不能裁定，不将其中一说覆盖为唯一事实。",
+          "evidence": [
+            {
+              "sourceId": "tang-nw-jiutangshu-39",
+              "quote": "唐城 開元二十六年，分棗陽置。",
+              "locator": "卷39·唐城；归档文本第672行"
+            },
+            {
+              "sourceId": "county-focus-xintangshu-40",
+              "quote": "唐城。〈上。開元二十六年以客戶析棗陽地置。〉",
+              "locator": "卷40·唐城；归档文本第50行"
+            },
+            {
+              "sourceId": "county-focus-yuanhe-21",
+              "quote": "唐城縣，上。東南至州一百五里。本漢隨縣地，梁於此置下溠戍。後沒魏，改為下溠鎮。隋開皇三年，改鎮為唐城縣，大業二年廢。開元二十四年，采訪使宋鼎奏置。",
+              "locator": "卷21·随州·唐城县；归档文本第127行"
+            }
+          ]
+        },
+        {
+          "topic": "seat",
+          "statement": "《元和郡县图志》记县治东南至随州一百零五里，唐城山在县北三十二里。这是方位和相对里程资料，未提供县域边线，也不能直接换算成现代坐标。",
+          "evidence": [
+            {
+              "sourceId": "county-focus-yuanhe-21",
+              "quote": "唐城縣，上。東南至州一百五里。",
+              "locator": "卷21·唐城县；归档文本第127行"
+            },
+            {
+              "sourceId": "county-focus-yuanhe-21",
+              "quote": "唐城山，在縣北三十二里。",
+              "locator": "卷21·唐城县；归档文本第128行"
+            }
+          ]
+        },
+        {
+          "topic": "seat",
+          "statement": "地图点位的“今湖北省随州市西北唐县镇”来自CHGIS原记录；目前是数据集定位，尚未获得独立遗址测绘来核准该点。",
+          "evidence": [
+            {
+              "sourceId": "county-focus-chgis",
+              "quote": "SYS_ID=43627\nNAME_CH=唐城县\nPRES_LOC=今湖北省随州市西北唐县镇",
+              "locator": "CHGIS SYS_ID 43627；归档文本第1行"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "736年与738年置县记载须进一步做版本校勘及事件区分；现有来源不足以消除异文。",
+        "CHGIS记录末年912及其后的更名时点，本轮取得的古籍段落未直接证实；记录末年不应直接当成更名年。",
+        "县治精确位置及741／755年的县界仍待考证；8.9千米是源点至近似模型的距离，不是迁城距离。"
+      ]
+    },
+    {
+      "id": "county-focus-jiyang-hubei",
+      "settlementIds": [
+        "chgis-county-43673"
+      ],
+      "boundaryIds": [
+        "hartwell-741-county-v5_0741_chin_chn_0741_c-1029"
+      ],
+      "title": "湖北吉阳县：606年改名有据，后期曾省复置",
+      "correspondence": "same-unit",
+      "summary": "已补到隋大业二年（606）改名、元和三年（808）省入应山后复置，以及宋开宝年间废县的记载；原数据的一段连续年限不能代表期间从未撤并。",
+      "findings": [
+        {
+          "topic": "establishment",
+          "statement": "《旧唐书》记梁置平阳、后魏改京池、隋改吉阳；《元和郡县图志》进一步记改名在大业二年（606），因县北吉阳山得名。",
+          "evidence": [
+            {
+              "sourceId": "tang-nw-jiutangshu-40",
+              "quote": "吉陽，梁分安陸置平陽縣，後魏改為京池。隋改為吉陽，取山名。",
+              "locator": "卷40·安州·吉阳；归档文本第93行"
+            },
+            {
+              "sourceId": "county-focus-yuanhe-27",
+              "quote": "隋大業二年改為吉陽，因縣北吉陽山為名。",
+              "locator": "卷27·安州·吉阳县；归档文本第57行"
+            }
+          ]
+        },
+        {
+          "topic": "administration",
+          "statement": "《元和郡县图志》安州（安陆）明确领吉阳，与《旧唐书》及模型所列安州身份一致；这不连带核定模型的道级归属，也不能与岭南振州吉阳相混。",
+          "evidence": [
+            {
+              "sourceId": "county-focus-yuanhe-27",
+              "quote": "貢、賦：開元貢：紵布一十八匹。賦：綿，紵。元和貢：紵布一十匹。管縣六：安陸，應山，雲夢，孝昌，吉陽，應城。",
+              "locator": "卷27·安州；归档文本第46行"
+            }
+          ]
+        },
+        {
+          "topic": "chronology",
+          "statement": "《新唐书》记元和三年（808）吉阳省入应山，后来恢复，未在该句注明复置年；这补充了CHGIS 606—969单段记录无法表现的撤并过程。",
+          "evidence": [
+            {
+              "sourceId": "county-focus-xintangshu-41",
+              "quote": "吉陽，〈中。元和三年省入應山，後復置。有白兆山。〉",
+              "locator": "卷41·安州安陆郡；归档文本第42行"
+            },
+            {
+              "sourceId": "county-focus-chgis",
+              "quote": "SYS_ID=43673\nNAME_CH=吉阳县\nPRES_LOC=今湖北安陆市东北土桥店西南\nBEG_YR=606\nEND_YR=969",
+              "locator": "CHGIS SYS_ID 43673；归档文本第11行"
+            }
+          ]
+        },
+        {
+          "topic": "chronology",
+          "statement": "《宋史》德安府条记“开宝中，废吉阳县”，支持宋初废县的大致时段；CHGIS的969是该记录最后有效年，不能直接标成撤县年。",
+          "evidence": [
+            {
+              "sourceId": "county-focus-songshi-88",
+              "quote": "德安府，中，安陸郡，安遠軍節度。本安州。天聖元年，隸京西路，慶暦元年還本路。宣和元年，陞爲府。開寶中，廢吉陽縣。",
+              "locator": "卷88·德安府；归档文本第513行"
+            },
+            {
+              "sourceId": "county-focus-chgis-dictionary",
+              "quote": "last year for which this record is valid [before being abolished or changed to a new record]",
+              "locator": "v6_data_dictionary.xlsx·main_table/gisinfo_table·end_year；归档文本第145行"
+            }
+          ]
+        },
+        {
+          "topic": "seat",
+          "statement": "《元和郡县图志》记吉阳县西至安州一百零三里，可供相对方位复核；原文里程没有被换算成经纬度或县域范围。",
+          "evidence": [
+            {
+              "sourceId": "county-focus-yuanhe-27",
+              "quote": "吉陽縣，中。西至州一百三里。",
+              "locator": "卷27·安州·吉阳县；归档文本第57行"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "808年撤并之后的确切复置年，以及最终废县确年，仍需更细史料。",
+        "“土桥店西南”的现代定位仍主要依据CHGIS，县治遗址与模型边线未获独立核准。",
+        "755年存在该县与其741年近似县域是否准确是两个问题，现有史料不能消除2.3千米点面差异。"
+      ]
+    },
+    {
+      "id": "county-focus-jiyang-hainan",
+      "settlementIds": [
+        "chgis-county-42505"
+      ],
+      "boundaryIds": [
+        "hartwell-741-county-v5_0741_chin_chn_0741_c-1408"
+      ],
+      "title": "海南吉阳县：与湖北异地同名，1073年废为藤桥镇",
+      "correspondence": "same-unit",
+      "summary": "两部唐书记海南吉阳于贞观二年（628）析延德设置。《宋史》记1073年废为藤桥镇，与CHGIS最后有效年1072的记录口径相容，并非废县年份冲突。",
+      "findings": [
+        {
+          "topic": "establishment",
+          "statement": "《旧唐书》《新唐书》均把该吉阳列在振州，并记628年分延德置县，与湖北安州吉阳的源流不同。",
+          "evidence": [
+            {
+              "sourceId": "tang-se-jiutangshu-41",
+              "quote": "吉陽 貞觀二年，分延德置",
+              "locator": "卷41·振州·吉阳；归档文本第1375行"
+            },
+            {
+              "sourceId": "county-focus-xintangshu-43a",
+              "quote": "吉陽，〈下。貞觀二年析延德置。〉",
+              "locator": "卷43上·振州；归档文本第72行"
+            }
+          ]
+        },
+        {
+          "topic": "administration",
+          "statement": "振州郡名存在不同记载：《旧唐书》写天宝元年改临振郡，《新唐书》本段则以延德郡为题并记更名。地图继续注明所用来源，不把两种写法静默合并。",
+          "evidence": [
+            {
+              "sourceId": "tang-se-jiutangshu-41",
+              "quote": "振州 隋臨振郡。武德五年置振州。天寶元年改為臨振郡。乾元元年，復為振州也。",
+              "locator": "卷41·振州；归档文本第1372行"
+            },
+            {
+              "sourceId": "county-focus-xintangshu-43a",
+              "quote": "振州延德郡，下。本臨振郡，又曰寧遠郡，天寶元年更名。",
+              "locator": "卷43上·振州；归档文本第72行"
+            }
+          ]
+        },
+        {
+          "topic": "chronology",
+          "statement": "《宋史》记熙宁六年（1073）吉阳县废为藤桥镇。CHGIS字典将end_year定义为撤销或变更前的最后有效年，因此1072记录末年与1073废县相容，不能直接把1072显示为撤县事件年。",
+          "evidence": [
+            {
+              "sourceId": "county-focus-songshi-90",
+              "quote": "吉陽，下。熙寧六年，廢爲藤橋鎭，隸瓊州。紹興六年復。",
+              "locator": "卷90·吉阳县；归档文本第270行"
+            },
+            {
+              "sourceId": "county-focus-chgis",
+              "quote": "SYS_ID=42505\nNAME_CH=吉阳县\nPRES_LOC=海南省崖县东北藤桥镇\nBEG_YR=628\nEND_YR=1072",
+              "locator": "CHGIS SYS_ID 42505；归档文本第21行"
+            },
+            {
+              "sourceId": "county-focus-chgis-dictionary",
+              "quote": "last year for which this record is valid [before being abolished or changed to a new record]",
+              "locator": "v6_data_dictionary.xlsx·main_table/gisinfo_table·end_year；归档文本第145行"
+            }
+          ]
+        },
+        {
+          "topic": "identity",
+          "statement": "同名的宋代“吉阳军”属于与州同级的行政建置（军），与唐代吉阳县不能视为同一层级；《宋史》军条下另记临川、藤桥两镇。",
+          "evidence": [
+            {
+              "sourceId": "county-focus-songshi-90",
+              "quote": "吉陽軍，同下州。本朱崖軍，即崖州。熙寧六年，廢爲軍。紹興六年，廢軍爲寧遠縣。十三年復。後改名吉陽軍。",
+              "locator": "卷90·吉阳军；归档文本第266行"
+            },
+            {
+              "sourceId": "county-focus-songshi-90",
+              "quote": "臨川，藤橋。熙甯六年，省甯遠、吉陽二縣爲臨川、藤橋二鎭。寧遠即臨川。",
+              "locator": "卷90·吉阳军；归档文本第267行"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "振州天宝郡名异文仍待版本和相关史料校勘；海南吉阳与宋代吉阳军的范围也不能直接继承。",
+        "藤桥镇的名称承接不能独立证明图中经纬度或县界；点落在模型内仍不表示范围已核定。"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "county-focus-songshi-90",
+  "title": "宋史·卷090（维基文库固定版本）",
+  "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7090&oldid=2619985",
+  "kind": "official-history",
+  "snapshotPath": "data/evidence/tang-county-research/focus-sources/songshi-90.txt",
+  "snapshotSha256": "feb3cdaeb37a60a53cb8b60f0ec2eca3ebbd9ea2806ec1a25867a9dc4c859fef",
+  "retrievedAt": "2026-09-25T06:02:14.365711+00:00",
+  "revisionId": "2619985",
+  "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7090"
+}
