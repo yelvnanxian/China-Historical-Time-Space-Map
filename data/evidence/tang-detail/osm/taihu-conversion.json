@@ -1,0 +1,211 @@
+{
+  "featureCount": 58401,
+  "countsByKind": {
+    "water": 27569,
+    "saddle": 11,
+    "peak": 1229,
+    "canal": 18217,
+    "river": 6094,
+    "stream": 5281
+  },
+  "rejected": [
+    {
+      "osmType": "relation",
+      "osmId": 2308774,
+      "reason": "Invalid water polygon; no synthetic repair applied"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 9663098,
+      "reason": "Invalid water polygon; no synthetic repair applied"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 13042265,
+      "reason": "Invalid water polygon; no synthetic repair applied"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 13089877,
+      "reason": "Invalid water polygon; no synthetic repair applied"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 13609008,
+      "reason": "Invalid water polygon; no synthetic repair applied"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 14179798,
+      "reason": "Invalid water polygon; no synthetic repair applied"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 14387670,
+      "reason": "Invalid water polygon; no synthetic repair applied"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 14387719,
+      "reason": "Invalid water polygon; no synthetic repair applied"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 15353647,
+      "reason": "Invalid water polygon; no synthetic repair applied"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 15887093,
+      "reason": "Invalid water polygon; no synthetic repair applied"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 17918299,
+      "reason": "Inner ring has no containing outer ring"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 18237279,
+      "reason": "Invalid water polygon; no synthetic repair applied"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 18371201,
+      "reason": "Inner ring has no containing outer ring"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 18904506,
+      "reason": "Multipolygon member ways do not form a complete ring"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 18906022,
+      "reason": "Inner ring has no containing outer ring"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 18906090,
+      "reason": "Inner ring has no containing outer ring"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 18931294,
+      "reason": "Inner ring has no containing outer ring"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 18952156,
+      "reason": "Invalid water polygon; no synthetic repair applied"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 18963986,
+      "reason": "Invalid water polygon; no synthetic repair applied"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 18971378,
+      "reason": "Invalid water polygon; no synthetic repair applied"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 18971537,
+      "reason": "Invalid water polygon; no synthetic repair applied"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 18971743,
+      "reason": "Invalid water polygon; no synthetic repair applied"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 18976087,
+      "reason": "Invalid water polygon; no synthetic repair applied"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 18976088,
+      "reason": "Invalid water polygon; no synthetic repair applied"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 18981217,
+      "reason": "Invalid water polygon; no synthetic repair applied"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 18982130,
+      "reason": "Invalid water polygon; no synthetic repair applied"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 19012213,
+      "reason": "Invalid water polygon; no synthetic repair applied"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 19039668,
+      "reason": "Invalid water polygon; no synthetic repair applied"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 19224577,
+      "reason": "Invalid water polygon; no synthetic repair applied"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 19604220,
+      "reason": "Invalid water polygon; no synthetic repair applied"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 19680506,
+      "reason": "Invalid water polygon; no synthetic repair applied"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 19768392,
+      "reason": "Invalid water polygon; no synthetic repair applied"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 19914616,
+      "reason": "Invalid water polygon; no synthetic repair applied"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 20146709,
+      "reason": "Invalid water polygon; no synthetic repair applied"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 20147202,
+      "reason": "Invalid water polygon; no synthetic repair applied"
+    },
+    {
+      "osmType": "way",
+      "osmId": 511481225,
+      "reason": "Water way is not a closed ring"
+    },
+    {
+      "osmType": "way",
+      "osmId": 1000055778,
+      "reason": "Water way is not a closed ring"
+    },
+    {
+      "osmType": "way",
+      "osmId": 1017728887,
+      "reason": "Water way is not a closed ring"
+    },
+    {
+      "osmType": "way",
+      "osmId": 1395281776,
+      "reason": "Invalid water polygon; no synthetic repair applied"
+    }
+  ],
+  "sourceMemberWayDuplicatesSuppressed": 4935,
+  "crossRegionDuplicateIdsSuppressed": 27829,
+  "geometryPolicy": "Unsmoothed original coordinate sequences; exact endpoint line merging for complete water rings. No guessed closing edges, buffers or polygon repair."
+}

@@ -1,0 +1,164 @@
+{
+  "version": "1.0.0",
+  "retrievedAt": "2026-09-25T02:35:54.825613+00:00",
+  "epochs": [
+    {
+      "id": "yellow-602bce-11",
+      "startYear": -602,
+      "endYear": 11,
+      "label": "前602—公元11年",
+      "url": "/data/historical-rivers/yellow-602bce-11.geojson",
+      "bounds": [
+        112.448962836729,
+        34.8095989644664,
+        117.256391847355,
+        38.6249507984818
+      ],
+      "labelCoordinates": [
+        115.129990164238,
+        36.1911064788052
+      ],
+      "featureCount": 1,
+      "vertexCount": 86,
+      "sourceId": "08062f2a44964b53b0f7ad1c599beee9",
+      "sourceTitle": "Yellow River 602BCE-11CE",
+      "sourceOwner": "pkbol_worldmap",
+      "sourceUrl": "https://www.arcgis.com/home/item.html?id=08062f2a44964b53b0f7ad1c599beee9",
+      "queryUrl": "https://services7.arcgis.com/iEMmryaM5E3wkdnU/arcgis/rest/services/Yellow_River_602BCE_11CE/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&returnGeometry=true&f=geojson",
+      "sourceDescription": "<strong>Abstract:</strong><br />Main course of the Yellow River 黃河 602BCE-11CE<br /><strong>Depict Date:</strong><br /><ul>Start Date: NoneEnd Date: None0011-01-01 Detected-0602-01-01 Detected</ul>",
+      "metadataPath": "data/evidence/historical-rivers/yellow-602bce-11-item.json",
+      "metadataSha256": "749b49bb9dc53442aae251003864e822bbc7f28c7bfcabbd4f1ffaaca7943f4a",
+      "snapshotPath": "data/evidence/historical-rivers/yellow-602bce-11-raw.geojson",
+      "snapshotSha256": "095025639a53481e634e127c9754718e0a6f498848d03feb2ed5971f6540313b",
+      "geometrySha256": "f369b0490cb823a3608937b90378c22c5b8dd6ea36b50c19455f7f406583644d",
+      "geometryNote": "WorldMap 历史图集数字化河道线，保留来源全部顶点；用于比较下游流向，不是逐年河岸测绘，也不表示真实河宽。"
+    },
+    {
+      "id": "yellow-11-1048",
+      "startYear": 11,
+      "endYear": 1048,
+      "label": "11—1048年（含唐代）",
+      "url": "/data/historical-rivers/yellow-11-1048.geojson",
+      "bounds": [
+        112.448962836729,
+        34.8095989644664,
+        118.331536095226,
+        37.4977693574026
+      ],
+      "labelCoordinates": [
+        114.859035274756,
+        35.7178103512896
+      ],
+      "featureCount": 1,
+      "vertexCount": 71,
+      "sourceId": "38dc2d5df1534a2c8b6033c134e6134c",
+      "sourceTitle": "Yellow River 11CE-1048CE",
+      "sourceOwner": "pkbol_worldmap",
+      "sourceUrl": "https://www.arcgis.com/home/item.html?id=38dc2d5df1534a2c8b6033c134e6134c",
+      "queryUrl": "https://services7.arcgis.com/iEMmryaM5E3wkdnU/arcgis/rest/services/Yellow_River_11CE_1048CE/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&returnGeometry=true&f=geojson",
+      "sourceDescription": "<strong>Abstract:</strong><br />Course of the Yellow River 11Ce to 1048 CE based on the the Atlas of the Yellow River Watershed 黃河流域地圖集<br /><strong>Depict Date:</strong><br /><ul>Start Date: 0011-01-01End Date: 1048-01-010011-01-01 Detected1048-01-01 Detected0011-01-01 From Metadata1048-01-01 From Metadata</ul>",
+      "metadataPath": "data/evidence/historical-rivers/yellow-11-1048-item.json",
+      "metadataSha256": "a3d0e70ba323ff4b6de3de84e01b08bb8d60c679aaa87fb070511db5bdc072d4",
+      "snapshotPath": "data/evidence/historical-rivers/yellow-11-1048-raw.geojson",
+      "snapshotSha256": "5b7e5658cb67eeb6b7fea8def1ce375cf133d0cfd96c43d844115812dffc8395",
+      "geometrySha256": "b2934bf25d487e6f9ad99030f24dfe990f8007b6b4bbf56b5ecf4fd4b031f26a",
+      "geometryNote": "WorldMap 历史图集数字化河道线，保留来源全部顶点；用于比较下游流向，不是逐年河岸测绘，也不表示真实河宽。"
+    },
+    {
+      "id": "yellow-1048-1128",
+      "startYear": 1048,
+      "endYear": 1128,
+      "label": "1048—1128年",
+      "url": "/data/historical-rivers/yellow-1048-1128.geojson",
+      "bounds": [
+        112.448962836729,
+        34.8095989644664,
+        117.889041724689,
+        39.1880072520325
+      ],
+      "labelCoordinates": [
+        116.782339924209,
+        37.6847647682479
+      ],
+      "featureCount": 1,
+      "vertexCount": 146,
+      "sourceId": "74747a4c412740698f764ee4adc917e8",
+      "sourceTitle": "Yellow River 1048 CE-1128 CE",
+      "sourceOwner": "pkbol_worldmap",
+      "sourceUrl": "https://www.arcgis.com/home/item.html?id=74747a4c412740698f764ee4adc917e8",
+      "queryUrl": "https://services7.arcgis.com/iEMmryaM5E3wkdnU/arcgis/rest/services/Yellow_River_1048_CE_1128_CE/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&returnGeometry=true&f=geojson",
+      "sourceDescription": "<strong>Abstract:</strong><br />Course of the Yellow River 1048 CE to 1128 CE based on the the Atlas of the Yellow River Watershed 黃河流域地圖集<br /><strong>Depict Date:</strong><br /><ul>Start Date: 1048-01-01End Date: 1128-01-011048-01-01 Detected1128-01-01 Detected1048-01-01 From Metadata1128-01-01 From Metadata</ul>",
+      "metadataPath": "data/evidence/historical-rivers/yellow-1048-1128-item.json",
+      "metadataSha256": "9b073e5beef9f757e726caa57d2c7a90ff4ace5c1f25d9670ef1bc9722d9c239",
+      "snapshotPath": "data/evidence/historical-rivers/yellow-1048-1128-raw.geojson",
+      "snapshotSha256": "e13d0d8472f4415a7df83c9d89ae2d90b04779fddedac90fc39739dea31ae1b0",
+      "geometrySha256": "d903d42da8116cb2d6c84ab70f31304b9f80a01a1295644389e7585aaa85ec2a",
+      "geometryNote": "WorldMap 历史图集数字化河道线，保留来源全部顶点；用于比较下游流向，不是逐年河岸测绘，也不表示真实河宽。"
+    },
+    {
+      "id": "yellow-1128-1368",
+      "startYear": 1128,
+      "endYear": 1368,
+      "label": "1128—1368年",
+      "url": "/data/historical-rivers/yellow-1128-1368.geojson",
+      "bounds": [
+        112.448962836729,
+        34.2279770437878,
+        117.176412619012,
+        36.1941009600251
+      ],
+      "labelCoordinates": [
+        116.194162743534,
+        35.7494043548533
+      ],
+      "featureCount": 1,
+      "vertexCount": 147,
+      "sourceId": "a21458441fdd4d4cb4c1d3d633e6a4d3",
+      "sourceTitle": "Yellow River 1128 CE-1368 CE",
+      "sourceOwner": "pkbol_worldmap",
+      "sourceUrl": "https://www.arcgis.com/home/item.html?id=a21458441fdd4d4cb4c1d3d633e6a4d3",
+      "queryUrl": "https://services7.arcgis.com/iEMmryaM5E3wkdnU/arcgis/rest/services/Yellow_River_1128_CE_1368_CE/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&returnGeometry=true&f=geojson",
+      "sourceDescription": "<strong>Abstract:</strong><br />Course of the Yellow River 1128 CE to 1368 CE based on the the Atlas of the Yellow River Watershed 黃河流域地圖集<br /><strong>Depict Date:</strong><br /><ul>Start Date: 1128-01-01End Date: 1368-01-011368-01-01 Detected1128-01-01 Detected1128-01-01 From Metadata1368-01-01 From Metadata</ul>",
+      "metadataPath": "data/evidence/historical-rivers/yellow-1128-1368-item.json",
+      "metadataSha256": "51a6e92b2618ed1bd874d61eba962f30c4c38a825936798275f5c27d6f162065",
+      "snapshotPath": "data/evidence/historical-rivers/yellow-1128-1368-raw.geojson",
+      "snapshotSha256": "f6e501e12cf6c3ddd3bfd74db765e253cb3eeeed361405c5845028eda6ebc931",
+      "geometrySha256": "752003e9590ca359f087a0b2e12619fa9a918e3c856cd66a028d1d871a8d12d5",
+      "geometryNote": "WorldMap 历史图集数字化河道线，保留来源全部顶点；用于比较下游流向，不是逐年河岸测绘，也不表示真实河宽。"
+    },
+    {
+      "id": "yellow-1368-1855",
+      "startYear": 1368,
+      "endYear": 1855,
+      "label": "1368—1855年",
+      "url": "/data/historical-rivers/yellow-1368-1855.geojson",
+      "bounds": [
+        112.448962836729,
+        33.5472799489026,
+        120.121264444176,
+        34.9733599584745
+      ],
+      "labelCoordinates": [
+        116.085462669255,
+        34.5927004933971
+      ],
+      "featureCount": 1,
+      "vertexCount": 100,
+      "sourceId": "d153bb2ae389426e99ff452d0552f63c",
+      "sourceTitle": "Yellow River 1368-1855",
+      "sourceOwner": "pkbol_worldmap",
+      "sourceUrl": "https://www.arcgis.com/home/item.html?id=d153bb2ae389426e99ff452d0552f63c",
+      "queryUrl": "https://services7.arcgis.com/iEMmryaM5E3wkdnU/arcgis/rest/services/Yellow_River_1368_1855/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&returnGeometry=true&f=geojson",
+      "sourceDescription": "<strong>Abstract:</strong><br />Course of the Yellow River 1368 CE to 1855 CE based on the the Atlas of the Yellow River Watershed 黃河流域地圖集<br /><strong>Depict Date:</strong><br /><ul>Start Date: 1368-01-01End Date: 1855-01-011368-01-01 Detected1855-01-01 Detected1368-01-01 From Metadata1855-01-01 From Metadata</ul>",
+      "metadataPath": "data/evidence/historical-rivers/yellow-1368-1855-item.json",
+      "metadataSha256": "dfa2b922959dbc3f03f2bd7e415fc9b979350bbb88a3bbe7e5b6682c6f38a59d",
+      "snapshotPath": "data/evidence/historical-rivers/yellow-1368-1855-raw.geojson",
+      "snapshotSha256": "10d959d58b516514af8df4d64ae0497a4b67af6f11a80b65bc2e228173b81387",
+      "geometrySha256": "c68bd08862f0b6489f6950a7bc6d1c33d70a29656d32b1f3d97044be999de6a0",
+      "geometryNote": "WorldMap 历史图集数字化河道线，保留来源全部顶点；用于比较下游流向，不是逐年河岸测绘，也不表示真实河宽。"
+    }
+  ],
+  "dateRule": "起年包含、讫年不包含；交界年采用新时期图，不表示当年瞬间完成改道。",
+  "coverageNote": "黄河中下游历史流向。11—1048年图包含唐朝；其他河流仍为现代参照。",
+  "precisionNote": "来源没有提供可验证的比例尺或定位误差，不能用于认定古代河岸、支流、湖泊轮廓或逐年变化。"
+}

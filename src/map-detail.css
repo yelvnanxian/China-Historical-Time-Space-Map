@@ -1,0 +1,19 @@
+.tang-detail-label { white-space: nowrap; border-radius: 3px; padding: 3px 5px; color: #426c7d; font: 12px/1.35 var(--serif); background: #f7fbf2ca; text-shadow: 0 1px 1px white; cursor: pointer; }
+.tang-detail-label.detail-settlement { color: #73573d; background: #fbf5e4d9; }
+.tang-detail-label.detail-peak,.tang-detail-label.detail-saddle { color: #626d40; }
+.tang-detail-label small { display: block; font: 9px/1.5 sans-serif; color: #8b8874; }
+.tang-detail-label:hover,.tang-detail-label.is-selected,.tang-detail-label:focus-visible { outline: 1px solid #7a8b61; background: #fffbe9; z-index: 35; }
+.historical-river-label { color: #18566f; border-bottom: 2px solid #408399; background: #fdf7dfdc; font-size: 11px; }
+.river-history-controls label { font-size: 11px; display: block; }
+.river-key { display: inline-block; width: 18px; border-top: 3px solid #206a83; vertical-align: middle; margin-right: 5px; }
+.river-key.compare { border-top: 3px dashed #b56b4c; }
+.detail-focus-button { border: 1px solid #c9d3bd; padding: 7px 10px; border-radius: 4px; font-size: 11px; color: #55714c; margin: 5px 0; }
+.detail-coverage { font-size: 11px; line-height: 1.8; padding: 8px 0; }
+.detail-coverage summary { cursor: pointer; }
+.detail-coverage p { color: #819075; }
+.detail-region-shortcuts { display: flex; flex-wrap: wrap; gap: 5px; }
+.detail-region-shortcuts button { padding: 5px 7px; border: 1px solid #d9dfd0; border-radius: 4px; font-size: 10px; }
+.nature-detail-body pre { max-height: 180px; overflow: auto; white-space: pre-wrap; font: 10px/1.8 monospace; color: #819075; }
+.map-detail-status { position: absolute; left: 14px; top: 12px; z-index: 5; padding: 7px 10px; border: 1px solid #d5dac8; border-radius: 5px; font-size: 10px; line-height: 1.6; background: #fbfaeef0; color: #607452; text-align: left; box-shadow: 0 2px 8px #33452c0a; }
+.map-detail-status small { display: block; color: #8b927e; font-size: 9px; }
+@media (max-width: 720px) { .map-detail-status { top: 8px; left: 10px; max-width: calc(100% - 70px); font-size: 10px; } .detail-region-shortcuts button { min-height: 38px; } }

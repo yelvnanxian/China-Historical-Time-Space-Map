@@ -1,0 +1,1083 @@
+{
+  "targetCount": 104,
+  "coveredCount": 104,
+  "threeOrMoreCount": 96,
+  "entryCount": 346,
+  "coverage": [
+    {
+      "placeId": "changan",
+      "name": "长安",
+      "entryCount": 5,
+      "datedYears": [
+        662,
+        713,
+        742,
+        757,
+        763
+      ]
+    },
+    {
+      "placeId": "luoyang",
+      "name": "洛阳",
+      "entryCount": 8,
+      "datedYears": [
+        621,
+        657,
+        684,
+        705,
+        713,
+        742,
+        755,
+        757
+      ]
+    },
+    {
+      "placeId": "beijing",
+      "name": "北京",
+      "entryCount": 4,
+      "datedYears": [
+        618,
+        725,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "fanyang",
+      "name": "范阳",
+      "entryCount": 5,
+      "datedYears": [
+        618,
+        725,
+        742,
+        755,
+        758
+      ]
+    },
+    {
+      "placeId": "jinyang",
+      "name": "晋阳",
+      "entryCount": 4,
+      "datedYears": [
+        662,
+        690,
+        723,
+        742
+      ]
+    },
+    {
+      "placeId": "datong",
+      "name": "平城",
+      "entryCount": 5,
+      "datedYears": [
+        640,
+        682,
+        732,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "linzi",
+      "name": "临淄",
+      "entryCount": 1,
+      "datedYears": [
+        621
+      ]
+    },
+    {
+      "placeId": "handan",
+      "name": "邯郸",
+      "entryCount": 3,
+      "datedYears": [
+        621,
+        627,
+        765
+      ]
+    },
+    {
+      "placeId": "tongguan",
+      "name": "潼关",
+      "entryCount": 1,
+      "datedYears": [
+        756
+      ]
+    },
+    {
+      "placeId": "dunhuang",
+      "name": "敦煌",
+      "entryCount": 4,
+      "datedYears": [
+        619,
+        633,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "mawei",
+      "name": "马嵬驿",
+      "entryCount": 1,
+      "datedYears": [
+        756
+      ]
+    },
+    {
+      "placeId": "lingwu",
+      "name": "灵武",
+      "entryCount": 3,
+      "datedYears": [
+        618,
+        742,
+        756
+      ]
+    },
+    {
+      "placeId": "suiyang",
+      "name": "睢阳",
+      "entryCount": 4,
+      "datedYears": [
+        621,
+        742,
+        757,
+        758
+      ]
+    },
+    {
+      "placeId": "xiangzhou",
+      "name": "相州",
+      "entryCount": 4,
+      "datedYears": [
+        618,
+        742,
+        758,
+        759
+      ]
+    },
+    {
+      "placeId": "heyang",
+      "name": "河阳",
+      "entryCount": 4,
+      "datedYears": [
+        657,
+        759,
+        843,
+        844
+      ]
+    },
+    {
+      "placeId": "shanzhou",
+      "name": "陕州",
+      "entryCount": 4,
+      "datedYears": [
+        618,
+        742,
+        758,
+        763
+      ]
+    },
+    {
+      "placeId": "zhengzhou",
+      "name": "郑州",
+      "entryCount": 3,
+      "datedYears": [
+        621,
+        627,
+        633
+      ]
+    },
+    {
+      "placeId": "huazhou-hua",
+      "name": "滑州",
+      "entryCount": 3,
+      "datedYears": [
+        618,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "huaizhou",
+      "name": "怀州",
+      "entryCount": 4,
+      "datedYears": [
+        619,
+        621,
+        657,
+        758
+      ]
+    },
+    {
+      "placeId": "hengzhou",
+      "name": "恒州",
+      "entryCount": 4,
+      "datedYears": [
+        742,
+        758,
+        784,
+        820
+      ]
+    },
+    {
+      "placeId": "beizhou",
+      "name": "贝州",
+      "entryCount": 3,
+      "datedYears": [
+        621,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "pingyuan",
+      "name": "平原郡",
+      "entryCount": 3,
+      "datedYears": [
+        621,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "fuzhou-fu",
+      "name": "鄜州",
+      "entryCount": 4,
+      "datedYears": [
+        618,
+        628,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "luzhou",
+      "name": "潞州",
+      "entryCount": 4,
+      "datedYears": [
+        618,
+        729,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "dengzhou",
+      "name": "邓州",
+      "entryCount": 3,
+      "datedYears": [
+        619,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "xuzhou-xuchang",
+      "name": "许州",
+      "entryCount": 3,
+      "datedYears": [
+        621,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "xuzhou-pengcheng",
+      "name": "徐州",
+      "entryCount": 3,
+      "datedYears": [
+        621,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "fengxiang",
+      "name": "凤翔",
+      "entryCount": 3,
+      "datedYears": [
+        618,
+        742,
+        757
+      ]
+    },
+    {
+      "placeId": "tongzhou-dali",
+      "name": "同州",
+      "entryCount": 4,
+      "datedYears": [
+        618,
+        742,
+        758,
+        760
+      ]
+    },
+    {
+      "placeId": "huazhou-shaanxi",
+      "name": "华州",
+      "entryCount": 5,
+      "datedYears": [
+        618,
+        705,
+        742,
+        758,
+        762
+      ]
+    },
+    {
+      "placeId": "puzhou",
+      "name": "蒲州",
+      "entryCount": 4,
+      "datedYears": [
+        618,
+        720,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "jiangzhou",
+      "name": "绛州",
+      "entryCount": 3,
+      "datedYears": [
+        618,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "weizhou-daming",
+      "name": "魏州",
+      "entryCount": 3,
+      "datedYears": [
+        621,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "bozhou-liaocheng",
+      "name": "博州",
+      "entryCount": 3,
+      "datedYears": [
+        621,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "qizhou-jinan",
+      "name": "齐州",
+      "entryCount": 3,
+      "datedYears": [
+        742,
+        746,
+        758
+      ]
+    },
+    {
+      "placeId": "yanzhou",
+      "name": "兖州",
+      "entryCount": 3,
+      "datedYears": [
+        622,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "qingzhou",
+      "name": "青州",
+      "entryCount": 3,
+      "datedYears": [
+        621,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "dengzhou-penglai",
+      "name": "登州",
+      "entryCount": 4,
+      "datedYears": [
+        692,
+        707,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "liangzhou-wuwei",
+      "name": "凉州",
+      "entryCount": 3,
+      "datedYears": [
+        619,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "ganzhou-zhangye",
+      "name": "甘州",
+      "entryCount": 3,
+      "datedYears": [
+        619,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "suzhou-jiuquan",
+      "name": "肃州",
+      "entryCount": 4,
+      "datedYears": [
+        619,
+        627,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "guazhou-jinchang",
+      "name": "瓜州",
+      "entryCount": 3,
+      "datedYears": [
+        622,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "xizhou-gaochang",
+      "name": "西州",
+      "entryCount": 3,
+      "datedYears": [
+        640,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "yizhou-hami",
+      "name": "伊州",
+      "entryCount": 3,
+      "datedYears": [
+        630,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "tingzhou-beiting",
+      "name": "庭州",
+      "entryCount": 2,
+      "datedYears": [
+        702,
+        780
+      ]
+    },
+    {
+      "placeId": "qiuci",
+      "name": "龟兹",
+      "entryCount": 3,
+      "datedYears": [
+        648,
+        658,
+        780
+      ]
+    },
+    {
+      "placeId": "yutian-hotan",
+      "name": "于阗",
+      "entryCount": 2,
+      "datedYears": [
+        648,
+        675
+      ]
+    },
+    {
+      "placeId": "shule-kashgar",
+      "name": "疏勒",
+      "entryCount": 1,
+      "datedYears": [
+        635
+      ]
+    },
+    {
+      "placeId": "yanqi",
+      "name": "焉耆",
+      "entryCount": 1,
+      "datedYears": [
+        644
+      ]
+    },
+    {
+      "placeId": "kaifeng",
+      "name": "开封",
+      "entryCount": 4,
+      "datedYears": [
+        621,
+        742,
+        758,
+        781
+      ]
+    },
+    {
+      "placeId": "chengdu",
+      "name": "成都",
+      "entryCount": 5,
+      "datedYears": [
+        662,
+        742,
+        756,
+        757,
+        763
+      ]
+    },
+    {
+      "placeId": "guangzhou",
+      "name": "广州",
+      "entryCount": 3,
+      "datedYears": [
+        621,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "yangzhou",
+      "name": "扬州",
+      "entryCount": 4,
+      "datedYears": [
+        636,
+        662,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "xiangyang",
+      "name": "襄阳",
+      "entryCount": 4,
+      "datedYears": [
+        621,
+        742,
+        758,
+        761
+      ]
+    },
+    {
+      "placeId": "jingzhou",
+      "name": "江陵",
+      "entryCount": 3,
+      "datedYears": [
+        742,
+        758,
+        760
+      ]
+    },
+    {
+      "placeId": "nanjing",
+      "name": "南京",
+      "entryCount": 3,
+      "datedYears": [
+        757,
+        758,
+        761
+      ]
+    },
+    {
+      "placeId": "hangzhou",
+      "name": "杭州",
+      "entryCount": 3,
+      "datedYears": [
+        621,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "quanzhou",
+      "name": "泉州",
+      "entryCount": 4,
+      "datedYears": [
+        711,
+        741,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "dali",
+      "name": "大理",
+      "entryCount": 3,
+      "datedYears": [
+        738,
+        779,
+        794
+      ]
+    },
+    {
+      "placeId": "suzhou",
+      "name": "苏州",
+      "entryCount": 4,
+      "datedYears": [
+        621,
+        742,
+        758,
+        825
+      ]
+    },
+    {
+      "placeId": "runzhou",
+      "name": "润州",
+      "entryCount": 3,
+      "datedYears": [
+        620,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "yuezhou",
+      "name": "越州",
+      "entryCount": 3,
+      "datedYears": [
+        621,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "mingzhou",
+      "name": "明州",
+      "entryCount": 4,
+      "datedYears": [
+        738,
+        742,
+        758,
+        821
+      ]
+    },
+    {
+      "placeId": "huzhou",
+      "name": "湖州",
+      "entryCount": 3,
+      "datedYears": [
+        621,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "wuzhou-jinhua",
+      "name": "婺州",
+      "entryCount": 3,
+      "datedYears": [
+        621,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "hongzhou",
+      "name": "洪州",
+      "entryCount": 3,
+      "datedYears": [
+        622,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "jiangzhou-jiujiang",
+      "name": "江州",
+      "entryCount": 3,
+      "datedYears": [
+        621,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "tanzhou",
+      "name": "潭州",
+      "entryCount": 3,
+      "datedYears": [
+        621,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "hengzhou-hunan",
+      "name": "衡州",
+      "entryCount": 3,
+      "datedYears": [
+        621,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "ezhou-jiangxia",
+      "name": "鄂州",
+      "entryCount": 3,
+      "datedYears": [
+        621,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "fuzhou-fujian",
+      "name": "福州",
+      "entryCount": 3,
+      "datedYears": [
+        711,
+        725,
+        758
+      ]
+    },
+    {
+      "placeId": "wenzhou",
+      "name": "温州",
+      "entryCount": 5,
+      "datedYears": [
+        622,
+        627,
+        675,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "xuanzhou",
+      "name": "宣州",
+      "entryCount": 4,
+      "datedYears": [
+        620,
+        627,
+        742,
+        765
+      ]
+    },
+    {
+      "placeId": "shezhou",
+      "name": "歙州",
+      "entryCount": 3,
+      "datedYears": [
+        621,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "shouzhou",
+      "name": "寿州",
+      "entryCount": 3,
+      "datedYears": [
+        620,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "luzhou-hefei",
+      "name": "庐州",
+      "entryCount": 3,
+      "datedYears": [
+        620,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "zizhou",
+      "name": "梓州",
+      "entryCount": 3,
+      "datedYears": [
+        618,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "mianzhou",
+      "name": "绵州",
+      "entryCount": 3,
+      "datedYears": [
+        618,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "hanzhou",
+      "name": "汉州",
+      "entryCount": 3,
+      "datedYears": [
+        686,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "jianzhou",
+      "name": "剑州",
+      "entryCount": 3,
+      "datedYears": [
+        699,
+        713,
+        758
+      ]
+    },
+    {
+      "placeId": "hanzhong",
+      "name": "梁州",
+      "entryCount": 5,
+      "datedYears": [
+        618,
+        725,
+        742,
+        758,
+        784
+      ]
+    },
+    {
+      "placeId": "kuizhou",
+      "name": "夔州",
+      "entryCount": 4,
+      "datedYears": [
+        618,
+        640,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "yuzhou-chongqing",
+      "name": "渝州",
+      "entryCount": 3,
+      "datedYears": [
+        618,
+        639,
+        742
+      ]
+    },
+    {
+      "placeId": "langzhou",
+      "name": "阆州",
+      "entryCount": 3,
+      "datedYears": [
+        618,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "suizhou-suining",
+      "name": "遂州",
+      "entryCount": 3,
+      "datedYears": [
+        618,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "guizhou-guilin",
+      "name": "桂州",
+      "entryCount": 4,
+      "datedYears": [
+        621,
+        692,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "liuzhou",
+      "name": "柳州",
+      "entryCount": 4,
+      "datedYears": [
+        621,
+        634,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "yongzhou-nanning",
+      "name": "邕州",
+      "entryCount": 4,
+      "datedYears": [
+        622,
+        742,
+        758,
+        822
+      ]
+    },
+    {
+      "placeId": "annan-songping",
+      "name": "安南府",
+      "entryCount": 4,
+      "datedYears": [
+        679,
+        757,
+        766,
+        866
+      ]
+    },
+    {
+      "placeId": "changzhou",
+      "name": "常州",
+      "entryCount": 3,
+      "datedYears": [
+        620,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "xianyang",
+      "name": "咸阳",
+      "entryCount": 2,
+      "datedYears": [
+        619,
+        691
+      ]
+    },
+    {
+      "placeId": "cangzhou",
+      "name": "沧州",
+      "entryCount": 3,
+      "datedYears": [
+        618,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "yingzhou-hejian",
+      "name": "瀛州",
+      "entryCount": 3,
+      "datedYears": [
+        621,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "dingzhou",
+      "name": "定州",
+      "entryCount": 3,
+      "datedYears": [
+        621,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "yizhou-hebei",
+      "name": "易州",
+      "entryCount": 3,
+      "datedYears": [
+        735,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "yingzhou-liaoxi",
+      "name": "营州",
+      "entryCount": 3,
+      "datedYears": [
+        716,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "chenzhou-huaiyang",
+      "name": "陈州",
+      "entryCount": 3,
+      "datedYears": [
+        618,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "bozhou-qiao",
+      "name": "亳州",
+      "entryCount": 3,
+      "datedYears": [
+        627,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "caizhou-runan",
+      "name": "蔡州",
+      "entryCount": 3,
+      "datedYears": [
+        742,
+        758,
+        762
+      ]
+    },
+    {
+      "placeId": "yuezhou-baling",
+      "name": "岳州",
+      "entryCount": 3,
+      "datedYears": [
+        621,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "jizhou-luling",
+      "name": "吉州",
+      "entryCount": 4,
+      "datedYears": [
+        622,
+        682,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "qianzhou-gan",
+      "name": "虔州",
+      "entryCount": 3,
+      "datedYears": [
+        622,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "shaozhou",
+      "name": "韶州",
+      "entryCount": 3,
+      "datedYears": [
+        627,
+        742,
+        758
+      ]
+    },
+    {
+      "placeId": "qianzhou-wuling",
+      "name": "黔州",
+      "entryCount": 3,
+      "datedYears": [
+        618,
+        742,
+        758
+      ]
+    }
+  ],
+  "note": "只收录有直接纪年依据的事件；古籍初、中等概略年号不自动转换成元年。已存在的跨朝大事记在集成时完整保留。"
+}

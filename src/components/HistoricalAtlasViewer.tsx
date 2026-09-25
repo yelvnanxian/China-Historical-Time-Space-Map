@@ -35,7 +35,7 @@ interface AtlasManifest {
   images: AtlasImage[];
 }
 
-export default function HistoricalAtlasViewer({ periodId }: { periodId: string }) {
+export default function HistoricalAtlasViewer({ periodId, openRequest = 0 }: { periodId: string; openRequest?: number }) {
   const [isOpen, setIsOpen] = useState(false);
   const [manifest, setManifest] = useState<AtlasManifest | null>(null);
   const [loading, setLoading] = useState(true);
@@ -48,6 +48,8 @@ export default function HistoricalAtlasViewer({ periodId }: { periodId: string }
   const [failedImage, setFailedImage] = useState("");
   const [dragging, setDragging] = useState(false);
   const launchRef = useRef<HTMLButtonElement>(null);
+  const returnFocusRef = useRef<HTMLElement | null>(null);
+  const lastOpenRequest = useRef(0);
   const dialogRef = useRef<HTMLDialogElement>(null);
   const viewportRef = useRef<HTMLDivElement>(null);
   const dragRef = useRef<{ x: number; y: number; left: number; top: number } | null>(null);
@@ -69,6 +71,15 @@ export default function HistoricalAtlasViewer({ periodId }: { periodId: string }
     : 1;
   const imageWidth = selected ? Math.round(selected.width * fit * zoom) : 0;
   const imageHeight = selected ? Math.round(selected.height * fit * zoom) : 0;
+
+  useEffect(() => {
+    if (!Number.isFinite(openRequest) || openRequest <= lastOpenRequest.current) return;
+    lastOpenRequest.current = openRequest;
+    if (!dialogRef.current?.open) {
+      returnFocusRef.current = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+      setIsOpen(true);
+    }
+  }, [openRequest]);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -163,7 +174,7 @@ export default function HistoricalAtlasViewer({ periodId }: { periodId: string }
 
   return (
     <>
-      <button ref={launchRef} type="button" className="atlas-launch" onClick={() => setIsOpen(true)}>
+      <button ref={launchRef} type="button" className="atlas-launch" onClick={() => { returnFocusRef.current = launchRef.current; setIsOpen(true); }}>
         <BookOpen size={15} aria-hidden="true" />
         历史地图原图
       </button>
@@ -175,7 +186,8 @@ export default function HistoricalAtlasViewer({ periodId }: { periodId: string }
         onClose={() => {
           setIsOpen(false);
           endDrag();
-          launchRef.current?.focus({ preventScroll: true });
+          const target = returnFocusRef.current;
+          (target?.isConnected && target.getClientRects().length ? target : launchRef.current)?.focus({ preventScroll: true });
         }}
       >
         <div className="atlas-shell">

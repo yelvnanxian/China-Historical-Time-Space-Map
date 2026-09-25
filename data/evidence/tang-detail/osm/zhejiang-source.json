@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-zhejiang",
+  "title": "OpenStreetMap 现代地理：浙江中北部",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "retrievedAt": "2026-09-25T02:40:36.314757+00:00",
+  "bounds": [
+    118,
+    28,
+    122,
+    30.7
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/zhejiang.json.gz",
+  "snapshotSha256": "7719aeceb591b4186081d4ec789a2189b23a1ed4722aa6321acea12baf67d52e",
+  "queryPath": "data/evidence/tang-detail/osm/zhejiang.ql",
+  "querySha256": "fa1a74adcf5bbdeb64dcf1d9c774a134e05bf9e6c8f2fd3dd3d1abf8a63452ab",
+  "osmBaseTimestamp": "2026-05-31T22:37:44Z",
+  "elementCount": 52984,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。",
+  "uncompressedSnapshotSha256": "5e7c8c89d7d2002a3a2685b55627d9a4bd18b257fff7ddedd82c34ab8bbf6eb6",
+  "snapshotEncoding": "gzip"
+}

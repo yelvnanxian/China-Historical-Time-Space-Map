@@ -1,0 +1,69 @@
+{
+  "years": [
+    {
+      "year": 741,
+      "url": "/data/tang-detail/settlements-741.geojson",
+      "featureCount": 1725,
+      "countyCount": 1393,
+      "prefectureCount": 332,
+      "withheldCount": 124,
+      "note": "按官方时序点起讫年筛选，不代表唐代全部城镇；保留原分类，部分记录年代较宽。明显坐标字段冲突的记录另存审计、未进入地图。"
+    },
+    {
+      "year": 742,
+      "url": "/data/tang-detail/settlements-742.geojson",
+      "featureCount": 1725,
+      "countyCount": 1393,
+      "prefectureCount": 332,
+      "withheldCount": 126,
+      "note": "按官方时序点起讫年筛选，不代表唐代全部城镇；保留原分类，部分记录年代较宽。明显坐标字段冲突的记录另存审计、未进入地图。"
+    },
+    {
+      "year": 755,
+      "url": "/data/tang-detail/settlements-755.geojson",
+      "featureCount": 1682,
+      "countyCount": 1365,
+      "prefectureCount": 317,
+      "withheldCount": 127,
+      "note": "按官方时序点起讫年筛选，不代表唐代全部城镇；保留原分类，部分记录年代较宽。明显坐标字段冲突的记录另存审计、未进入地图。"
+    }
+  ],
+  "dateRules": [
+    {
+      "rule_number": 1,
+      "rule_short_name": "Pan-Dynastic period",
+      "rule_eng": "Year is set according to a pan-Dynastic period, such as \"Qin Han,\" or \" Song Yuan\""
+    },
+    {
+      "rule_number": 2,
+      "rule_short_name": "Dynastic period",
+      "rule_eng": "Year is set according to a Dynastic period, such as \"Tang,\" or \" Ming\""
+    },
+    {
+      "rule_number": 3,
+      "rule_short_name": "Reign period",
+      "rule_eng": "Year is set according to a Dynastic Title or Reign Period, such as \"Shundi,\" or \"Zhizheng\""
+    },
+    {
+      "rule_number": 4,
+      "rule_short_name": "Specific year",
+      "rule_eng": "Year is specified, such as \"13th Year of the Kangxi Reign Period\""
+    },
+    {
+      "rule_number": 5,
+      "rule_short_name": "Specific month",
+      "rule_eng": "Season or Month is specified, such as \"4th month of the Lunar year,\" or \"autumn\""
+    },
+    {
+      "rule_number": 6,
+      "rule_short_name": "Specific date",
+      "rule_eng": "Date is specified, such as \"jiachen day, 5th month, 14th Year of the Jiaqing Reign Period\""
+    },
+    {
+      "rule_number": 9,
+      "rule_short_name": "Time slice",
+      "rule_eng": "Dated is set to a specific year based on the source materials used, not based on the valid span of time for the historical place [both Begin and End values will be the same]"
+    }
+  ],
+  "coordinateChoice": "Original SHP POINT geometry rounded to six decimals; records conflicting with DBF coordinates by >0.02 degree withheld. Direct SHP/DBF indices matched; no deleted records."
+}

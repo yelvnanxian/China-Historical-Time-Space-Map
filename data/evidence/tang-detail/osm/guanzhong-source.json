@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-guanzhong",
+  "title": "OpenStreetMap 现代地理：关中与秦岭北麓",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "retrievedAt": "2026-09-25T02:37:13.854515+00:00",
+  "bounds": [
+    106.5,
+    33.5,
+    110.5,
+    35.5
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/guanzhong.json.gz",
+  "snapshotSha256": "6b0a04125d08a993c28ab329a446190466ad892943db4fbabf461e52a461c5d6",
+  "queryPath": "data/evidence/tang-detail/osm/guanzhong.ql",
+  "querySha256": "daea63f005be56212e7afef31f6265dfb9fc3124ee96dd970687a2f3342aeef0",
+  "osmBaseTimestamp": "2026-06-01T08:52:28Z",
+  "elementCount": 5137,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。",
+  "uncompressedSnapshotSha256": "2a1c4459e18c9712af6a588283f4b50fcf2d6a843364f4409f11f7a8e75b0b2e",
+  "snapshotEncoding": "gzip"
+}

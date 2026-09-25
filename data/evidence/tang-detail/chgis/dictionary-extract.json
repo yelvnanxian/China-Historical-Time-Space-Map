@@ -1,0 +1,393 @@
+{
+  "xtra_date_rules.xlsx": [
+    {
+      "rule_number": 1,
+      "rule_short_name": "Pan-Dynastic period",
+      "rule_eng": "Year is set according to a pan-Dynastic period, such as \"Qin Han,\" or \" Song Yuan\""
+    },
+    {
+      "rule_number": 2,
+      "rule_short_name": "Dynastic period",
+      "rule_eng": "Year is set according to a Dynastic period, such as \"Tang,\" or \" Ming\""
+    },
+    {
+      "rule_number": 3,
+      "rule_short_name": "Reign period",
+      "rule_eng": "Year is set according to a Dynastic Title or Reign Period, such as \"Shundi,\" or \"Zhizheng\""
+    },
+    {
+      "rule_number": 4,
+      "rule_short_name": "Specific year",
+      "rule_eng": "Year is specified, such as \"13th Year of the Kangxi Reign Period\""
+    },
+    {
+      "rule_number": 5,
+      "rule_short_name": "Specific month",
+      "rule_eng": "Season or Month is specified, such as \"4th month of the Lunar year,\" or \"autumn\""
+    },
+    {
+      "rule_number": 6,
+      "rule_short_name": "Specific date",
+      "rule_eng": "Date is specified, such as \"jiachen day, 5th month, 14th Year of the Jiaqing Reign Period\""
+    },
+    {
+      "rule_number": 9,
+      "rule_short_name": "Time slice",
+      "rule_eng": "Dated is set to a specific year based on the source materials used, not based on the valid span of time for the historical place [both Begin and End values will be the same]"
+    }
+  ],
+  "xtra_geo_source.xlsx": [
+    {
+      "geo_src": "FROM_FD",
+      "description": "geospatial data newly created at CHG-Fudan, Shanghai",
+      "contact": "Man Zhimin, Center for Historical Geography, Fudan University"
+    },
+    {
+      "geo_src": "FROM_TAN",
+      "description": "geospatial data was compared with features in Tan Qixiang \"Historical Atlas of China\"",
+      "contact": "Man Zhimin, Center for Historical Geography, Fudan University"
+    },
+    {
+      "geo_src": "FROM_AC",
+      "description": "geospatial data was compared with contemporary locations in ArcChina",
+      "contact": "Man Zhimin, Center for Historical Geography, Fudan University"
+    },
+    {
+      "geo_src": "CITAS",
+      "description": "geospatial data derived from CITAS (China in Time and Space)",
+      "contact": "Consortium for International Earth Science Information Network"
+    },
+    {
+      "geo_src": "RUS-GEO",
+      "description": "geospatial data extracted from historical map sources by Institute of Geography",
+      "contact": "Alexei Karimov, Inst of Geography, Russian Academy of Science"
+    },
+    {
+      "geo_src": "CHGIS",
+      "description": "geospatial data compiled at Harvard University CHGIS Office",
+      "contact": "Lex Berman, CHGIS, Center for Geographic Analysis, Harvard University"
+    }
+  ],
+  "v6_data_dictionary.xlsx": [
+    {
+      "field": "name_rom",
+      "filename": "main_table",
+      "description": "placename of this instance in romanized form"
+    },
+    {
+      "field": "name_utf",
+      "filename": "main_table",
+      "description": "placename of this instance in vernacular script [Simplified Chinese characters or Cyrillic]"
+    },
+    {
+      "field": "name_utf_alt",
+      "filename": "main_table",
+      "description": "placename of this instance in vernacular script [Traditional Chinese characters]"
+    },
+    {
+      "field": "pres_loc",
+      "filename": "main_table",
+      "description": "description of contemporary location of the historical place [provinces are given for general location of rivers]"
+    },
+    {
+      "field": "beg_chg_type",
+      "filename": "main_table",
+      "description": "change which triggered the creation of this record, in Chinese characters [complete list of options in change_type_table]"
+    },
+    {
+      "field": "beg_chg_eng",
+      "filename": "main_table",
+      "description": "change which triggered the creation of this record, in English  [complete list of options in change_type_table]"
+    },
+    {
+      "field": "end_chg_type",
+      "filename": "main_table",
+      "description": "change which caused this record to cease or no longer be valid, in Chinese characters [complete list of options in change_type_table]"
+    },
+    {
+      "field": "end_chg_eng",
+      "filename": "main_table",
+      "description": "change which caused this record to cease or no longer be valid, in English [complete list of options in change_type_table]"
+    },
+    {
+      "field": "type_py",
+      "filename": "main_table",
+      "description": "feature type in Pinyin [complete list of options in feature_types_table]"
+    },
+    {
+      "field": "type_utf",
+      "filename": "main_table",
+      "description": "feature type in Chinese characters [complete list of options in feature_types_table]"
+    },
+    {
+      "field": "type_id",
+      "filename": "main_table",
+      "description": "feature type ID number assigned by Harvard Yenching Institute [complete list of options in feature_types_table]"
+    },
+    {
+      "field": "type_eng",
+      "filename": "main_table",
+      "description": "feature type in English [complete list of options in feature_types_table]"
+    },
+    {
+      "field": "level_rank",
+      "filename": "main_table",
+      "description": "assigned to indicate relative [not specific] position in admininstrative hierarchy for convenience in sorting"
+    },
+    {
+      "field": "beg_year",
+      "filename": "main_table",
+      "description": "year for which this record becomes valid"
+    },
+    {
+      "field": "end_year",
+      "filename": "main_table",
+      "description": "last year for which this record is valid [before being abolished or changed to a new record]"
+    },
+    {
+      "field": "bou_note",
+      "filename": "main_table",
+      "description": "Boundary ID number linking to Source Notes  [only available for Time Series data]"
+    },
+    {
+      "field": "pt_note",
+      "filename": "main_table",
+      "description": "Point ID number linking to Source Notes  [only available for Time Series data]"
+    },
+    {
+      "field": "bou_id",
+      "filename": "main_table",
+      "description": "unique ID number for the Boundary of the AREA representing an historical place  [this ID can occur multiple times in this table]"
+    },
+    {
+      "field": "pt_id",
+      "filename": "main_table",
+      "description": "unique ID number for the Point representing the ADMINISTRATIVE SEAT of an historical place  [this ID can occur multiple times in this table]"
+    },
+    {
+      "field": "line_id",
+      "filename": "main_table",
+      "description": "unique ID number for the LINE representing an historical river"
+    },
+    {
+      "field": "data_src",
+      "filename": "main_table",
+      "description": "contributing organization  [complete list in contrib_table]"
+    },
+    {
+      "field": "name_rom",
+      "filename": "gisinfo_table",
+      "description": "placename of this instance in romanized form"
+    },
+    {
+      "field": "name_utf",
+      "filename": "gisinfo_table",
+      "description": "placename of this instance in vernacular script [Simplified Chinese characters or Cyrillic]"
+    },
+    {
+      "field": "name_utf_alt",
+      "filename": "gisinfo_table",
+      "description": "placename of this instance in vernacular script [Traditional Chinese characters]"
+    },
+    {
+      "field": "sys_id",
+      "filename": "gisinfo_table",
+      "description": "unique ID for the spatial object [can only occur once in the gisinfo_table]"
+    },
+    {
+      "field": "x_y_type",
+      "filename": "gisinfo_table",
+      "description": "derivation of x,y values for this record.  options:  centroid [derived from polygon], midpoint [derived from line], point location [taken from map, gazetteer or dataset coordinates], gps point [recorded in the field using gps]"
+    },
+    {
+      "field": "x_coord",
+      "filename": "gisinfo_table",
+      "description": "longitude in decimal degrees"
+    },
+    {
+      "field": "y_coord",
+      "filename": "gisinfo_table",
+      "description": "latitude in decimal degrees"
+    },
+    {
+      "field": "pres_loc",
+      "filename": "gisinfo_table",
+      "description": "description of contemporary location of the historical place [provinces are given for general location of rivers]"
+    },
+    {
+      "field": "beg_year",
+      "filename": "gisinfo_table",
+      "description": "year for which this record becomes valid"
+    },
+    {
+      "field": "beg_rule",
+      "filename": "gisinfo_table",
+      "description": "defined set of rules to indicate how the begin year date was determined [complete list in date_rule_table]"
+    },
+    {
+      "field": "end_year",
+      "filename": "gisinfo_table",
+      "description": "last year for which this record is valid [before being abolished or changed to a new record]"
+    },
+    {
+      "field": "end_rule",
+      "filename": "gisinfo_table",
+      "description": "defined set of rules to indicate how the end year date was determined [complete list in date_rule_table]"
+    },
+    {
+      "field": "obj_type",
+      "filename": "gisinfo_table",
+      "description": "spatial object type [point, line, polygon]"
+    },
+    {
+      "field": "geo_src",
+      "filename": "gisinfo_table",
+      "description": "source relied upon for the postioning, location of geospatial objects  [complete list of options in geo_source_table]"
+    },
+    {
+      "field": "compiler",
+      "filename": "gisinfo_table",
+      "description": "name of researcher who compiled the historical source notes record"
+    },
+    {
+      "field": "geocompiler",
+      "filename": "gisinfo_table",
+      "description": "name of researcher who compiled the draft map for digitization into GIS"
+    },
+    {
+      "field": "entry_date",
+      "filename": "gisinfo_table",
+      "description": "date the record was added to the database"
+    },
+    {
+      "field": "filename",
+      "filename": "gisinfo_table",
+      "description": "GIS layer filename where the actual GIS spatial object is recorded"
+    },
+    {
+      "field": "src",
+      "filename": "gisinfo_table",
+      "description": "contributing organization  [complete list in contrib_table]"
+    },
+    {
+      "field": "child_id",
+      "filename": "partof_table",
+      "description": "ID number of child record [subordinate unit]"
+    },
+    {
+      "field": "child_py",
+      "filename": "partof_table",
+      "description": "placename of child record [subordinate unit] in romanized form"
+    },
+    {
+      "field": "child_ch",
+      "filename": "partof_table",
+      "description": "placename of child record [subordinate unit] vernacular script [Simplified Chinese characters]"
+    },
+    {
+      "field": "child_ft",
+      "filename": "partof_table",
+      "description": "placename of child record [subordinate unit] vernacular script [Traditional Chinese characters]"
+    },
+    {
+      "field": "beg_year",
+      "filename": "partof_table",
+      "description": "year for which this RELATIONSHIP between child and parent becomes valid"
+    },
+    {
+      "field": "end_year",
+      "filename": "partof_table",
+      "description": "last year for which this RELATIONSHIP between child and parent is valid [before being abolished or changed to a new record]"
+    },
+    {
+      "field": "parent_py",
+      "filename": "partof_table",
+      "description": "placename of parent record [superior jurisdiction] in romanized form"
+    },
+    {
+      "field": "parent_ch",
+      "filename": "partof_table",
+      "description": "placename of parent record [superior jurisdiction] in vernacular script [Simplified Chinese characters]"
+    },
+    {
+      "field": "parent_id",
+      "filename": "partof_table",
+      "description": "ID number of parent record [superior jurisdiction]"
+    },
+    {
+      "field": "sub_id",
+      "filename": "preceded_by_table",
+      "description": "ID number of subsequent unit [the unit which follows the preceeding unit]"
+    },
+    {
+      "field": "sub_name_py",
+      "filename": "preceded_by_table",
+      "description": "placename of subsequent unit in romanized form"
+    },
+    {
+      "field": "sub_name_utf",
+      "filename": "preceded_by_table",
+      "description": "placename of subsequent unit in vernacular script [Simplified Chinese characters]"
+    },
+    {
+      "field": "sub_name_alt",
+      "filename": "preceded_by_table",
+      "description": "placename of subsequent unit in vernacular script [Traditional Chinese characters]"
+    },
+    {
+      "field": "sub_lev_rank",
+      "filename": "preceded_by_table",
+      "description": "relative [not specific] position in admininstrative hierarchy of subsequent unit"
+    },
+    {
+      "field": "sub_beg_type",
+      "filename": "preceded_by_table",
+      "description": "change which triggered the creation of subsequent unit record, in Chinese characters [complete list of options in change_type_table]"
+    },
+    {
+      "field": "sub_end_type",
+      "filename": "preceded_by_table",
+      "description": "change which caused subsequent unit record to cease or no longer be valid, in Chinese characters [complete list of options in change_type_table]"
+    },
+    {
+      "field": "sub_beg_yr",
+      "filename": "preceded_by_table",
+      "description": "year in which subsequent unit record becomes valid"
+    },
+    {
+      "field": "sub_end_yr",
+      "filename": "preceded_by_table",
+      "description": "last year for which subsequent unit record is valid [before being abolished or changed to a new record]"
+    },
+    {
+      "field": "sub_obj_type",
+      "filename": "preceded_by_table",
+      "description": "spatial object type [point, line, polygon] of subsequent unit record"
+    },
+    {
+      "field": "prec_id",
+      "filename": "preceded_by_table",
+      "description": "ID number of preceding unit [the unit which comes before the subsquent unit]"
+    },
+    {
+      "field": "prec_name_py",
+      "filename": "preceded_by_table",
+      "description": "previous placename [preceding unit] in romanized form"
+    },
+    {
+      "field": "prec_name_utf",
+      "filename": "preceded_by_table",
+      "description": "previous placename [preceding unit] in vernacular script [Simplified Chinese characters]"
+    },
+    {
+      "field": "prec_name_alt",
+      "filename": "preceded_by_table",
+      "description": "previous placename [preceding unit] in vernacular script [Traditional Chinese characters]"
+    },
+    {
+      "field": "order_id",
+      "filename": "preceded_by_table",
+      "description": "sequence ID in the MySQL database"
+    }
+  ]
+}

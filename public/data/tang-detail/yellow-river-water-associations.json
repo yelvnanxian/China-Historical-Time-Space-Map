@@ -1,0 +1,2496 @@
+{
+  "version": "yellow-river-water-associations-1",
+  "sourceManifestUrl": "/data/tang-detail/manifest.json",
+  "method": "仅关联water=river水面与名称全值匹配黄河、黃河、Huang He或Yellow River的现代river线；保留真实源线顶点索引，要求顶点严格在面内并有正长度线面交集。不作历史河道推断，也不自动关联邻近或仅接触的水面。",
+  "associations": [
+    {
+      "waterId": "osm-relation-10279355",
+      "waterSourceUrl": "https://www.openstreetmap.org/relation/10279355",
+      "waterSourceId": "osm-tang-detail-luoyang",
+      "riverIds": [
+        "osm-way-743773698"
+      ],
+      "bounds": [
+        113.2217744,
+        34.9018148,
+        113.428216,
+        34.9950123
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-743773698",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/743773698",
+          "riverSourceId": "osm-tang-detail-luoyang",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 47,
+          "sourcePoint": [
+            113.3313239,
+            34.9490875
+          ],
+          "interiorVertexCount": 89,
+          "intersectionLengthDegrees": 0.24489221490423038
+        }
+      ]
+    },
+    {
+      "waterId": "osm-relation-11774028",
+      "waterSourceUrl": "https://www.openstreetmap.org/relation/11774028",
+      "waterSourceId": "osm-tang-detail-luoyang",
+      "riverIds": [
+        "osm-way-29544436"
+      ],
+      "bounds": [
+        111.4135027,
+        34.8255464,
+        111.5227961,
+        34.8515193
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-29544436",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/29544436",
+          "riverSourceId": "osm-tang-detail-luoyang",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:en",
+              "value": "Yellow River",
+              "normalized": "yellowriver"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 94,
+          "sourcePoint": [
+            111.464957,
+            34.8275787
+          ],
+          "interiorVertexCount": 85,
+          "intersectionLengthDegrees": 0.1261820923331276
+        }
+      ]
+    },
+    {
+      "waterId": "osm-relation-11782019",
+      "waterSourceUrl": "https://www.openstreetmap.org/relation/11782019",
+      "waterSourceId": "osm-tang-detail-luoyang",
+      "riverIds": [
+        "osm-way-718340434"
+      ],
+      "bounds": [
+        112.7177042,
+        34.8087096,
+        112.8511682,
+        34.8379153
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-718340434",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/718340434",
+          "riverSourceId": "osm-tang-detail-luoyang",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:en",
+              "value": "Yellow River",
+              "normalized": "yellowriver"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 109,
+          "sourcePoint": [
+            112.7815676,
+            34.830256
+          ],
+          "interiorVertexCount": 44,
+          "intersectionLengthDegrees": 0.14280390618506056
+        }
+      ]
+    },
+    {
+      "waterId": "osm-relation-11794477",
+      "waterSourceUrl": "https://www.openstreetmap.org/relation/11794477",
+      "waterSourceId": "osm-tang-detail-luoyang",
+      "riverIds": [
+        "osm-way-718340434"
+      ],
+      "bounds": [
+        112.5860721,
+        34.8228095,
+        112.7188924,
+        34.8583112
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-718340434",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/718340434",
+          "riverSourceId": "osm-tang-detail-luoyang",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:en",
+              "value": "Yellow River",
+              "normalized": "yellowriver"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 62,
+          "sourcePoint": [
+            112.6375759,
+            34.8534673
+          ],
+          "interiorVertexCount": 47,
+          "intersectionLengthDegrees": 0.1404541979279488
+        }
+      ]
+    },
+    {
+      "waterId": "osm-relation-11810431",
+      "waterSourceUrl": "https://www.openstreetmap.org/relation/11810431",
+      "waterSourceId": "osm-tang-detail-luoyang",
+      "riverIds": [
+        "osm-way-718340434"
+      ],
+      "bounds": [
+        112.8495052,
+        34.8145586,
+        112.9759821,
+        34.8632394
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-718340434",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/718340434",
+          "riverSourceId": "osm-tang-detail-luoyang",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:en",
+              "value": "Yellow River",
+              "normalized": "yellowriver"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 157,
+          "sourcePoint": [
+            112.8965163,
+            34.8534056
+          ],
+          "interiorVertexCount": 50,
+          "intersectionLengthDegrees": 0.15157132089830194
+        }
+      ]
+    },
+    {
+      "waterId": "osm-relation-11810650",
+      "waterSourceUrl": "https://www.openstreetmap.org/relation/11810650",
+      "waterSourceId": "osm-tang-detail-luoyang",
+      "riverIds": [
+        "osm-way-718340434",
+        "osm-way-743773699"
+      ],
+      "bounds": [
+        112.9742897,
+        34.8350973,
+        113.1184745,
+        34.8669037
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-718340434",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/718340434",
+          "riverSourceId": "osm-tang-detail-luoyang",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:en",
+              "value": "Yellow River",
+              "normalized": "yellowriver"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 199,
+          "sourcePoint": [
+            113.0235994,
+            34.8500687
+          ],
+          "interiorVertexCount": 32,
+          "intersectionLengthDegrees": 0.09584590942046178
+        },
+        {
+          "riverId": "osm-way-743773699",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/743773699",
+          "riverSourceId": "osm-tang-detail-luoyang",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:en",
+              "value": "Yellow River",
+              "normalized": "yellowriver"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 9,
+          "sourcePoint": [
+            113.0918455,
+            34.8405768
+          ],
+          "interiorVertexCount": 18,
+          "intersectionLengthDegrees": 0.058096914914034264
+        }
+      ]
+    },
+    {
+      "waterId": "osm-relation-11815397",
+      "waterSourceUrl": "https://www.openstreetmap.org/relation/11815397",
+      "waterSourceId": "osm-tang-detail-luoyang",
+      "riverIds": [
+        "osm-way-743773698",
+        "osm-way-743773699"
+      ],
+      "bounds": [
+        113.1183886,
+        34.8389918,
+        113.2328466,
+        34.90218
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-743773698",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/743773698",
+          "riverSourceId": "osm-tang-detail-luoyang",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 1,
+          "sourcePoint": [
+            113.2255053,
+            34.900055
+          ],
+          "interiorVertexCount": 2,
+          "intersectionLengthDegrees": 0.004417435351569044
+        },
+        {
+          "riverId": "osm-way-743773699",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/743773699",
+          "riverSourceId": "osm-tang-detail-luoyang",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:en",
+              "value": "Yellow River",
+              "normalized": "yellowriver"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 45,
+          "sourcePoint": [
+            113.1844997,
+            34.852983
+          ],
+          "interiorVertexCount": 52,
+          "intersectionLengthDegrees": 0.13355486725796556
+        }
+      ]
+    },
+    {
+      "waterId": "osm-relation-11838962",
+      "waterSourceUrl": "https://www.openstreetmap.org/relation/11838962",
+      "waterSourceId": "osm-tang-detail-luoyang",
+      "riverIds": [
+        "osm-way-29544436"
+      ],
+      "bounds": [
+        111.5207228,
+        34.8426956,
+        111.6146845,
+        34.9040557
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-29544436",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/29544436",
+          "riverSourceId": "osm-tang-detail-luoyang",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:en",
+              "value": "Yellow River",
+              "normalized": "yellowriver"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 179,
+          "sourcePoint": [
+            111.5777332,
+            34.8562053
+          ],
+          "interiorVertexCount": 83,
+          "intersectionLengthDegrees": 0.13402116023394645
+        }
+      ]
+    },
+    {
+      "waterId": "osm-relation-11839069",
+      "waterSourceUrl": "https://www.openstreetmap.org/relation/11839069",
+      "waterSourceId": "osm-tang-detail-central-plains",
+      "riverIds": [
+        "osm-way-396407371"
+      ],
+      "bounds": [
+        114.8768315,
+        35.1898292,
+        114.9895701,
+        35.2628961
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-396407371",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/396407371",
+          "riverSourceId": "osm-tang-detail-central-plains",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:en",
+              "value": "Yellow River",
+              "normalized": "yellowriver"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 214,
+          "sourcePoint": [
+            114.9300492,
+            35.2472401
+          ],
+          "interiorVertexCount": 46,
+          "intersectionLengthDegrees": 0.1550297900515919
+        }
+      ]
+    },
+    {
+      "waterId": "osm-relation-12023221",
+      "waterSourceUrl": "https://www.openstreetmap.org/relation/12023221",
+      "waterSourceId": "osm-tang-detail-luoyang",
+      "riverIds": [
+        "osm-way-29544436",
+        "osm-way-885065657"
+      ],
+      "bounds": [
+        111.343756,
+        34.8149748,
+        111.4136208,
+        34.8299918
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-29544436",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/29544436",
+          "riverSourceId": "osm-tang-detail-luoyang",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:en",
+              "value": "Yellow River",
+              "normalized": "yellowriver"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 25,
+          "sourcePoint": [
+            111.3881922,
+            34.8158116
+          ],
+          "interiorVertexCount": 51,
+          "intersectionLengthDegrees": 0.054258284220945766
+        },
+        {
+          "riverId": "osm-way-885065657",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/885065657",
+          "riverSourceId": "osm-tang-detail-luoyang",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:en",
+              "value": "Yellow River",
+              "normalized": "yellowriver"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 9,
+          "sourcePoint": [
+            111.3531786,
+            34.8222018
+          ],
+          "interiorVertexCount": 17,
+          "intersectionLengthDegrees": 0.022587911547615552
+        }
+      ]
+    },
+    {
+      "waterId": "osm-relation-12122491",
+      "waterSourceUrl": "https://www.openstreetmap.org/relation/12122491",
+      "waterSourceId": "osm-tang-detail-luoyang",
+      "riverIds": [
+        "osm-way-891138978"
+      ],
+      "bounds": [
+        110.6248569,
+        34.5870793,
+        110.7307506,
+        34.6354237
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-891138978",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/891138978",
+          "riverSourceId": "osm-tang-detail-guanzhong",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 71,
+          "sourcePoint": [
+            110.6823634,
+            34.6009981
+          ],
+          "interiorVertexCount": 23,
+          "intersectionLengthDegrees": 0.11858742663812051
+        }
+      ]
+    },
+    {
+      "waterId": "osm-relation-12122492",
+      "waterSourceUrl": "https://www.openstreetmap.org/relation/12122492",
+      "waterSourceId": "osm-tang-detail-guanzhong",
+      "riverIds": [
+        "osm-way-891138978"
+      ],
+      "bounds": [
+        110.4278648,
+        34.5808428,
+        110.5593628,
+        34.6191662
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-891138978",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/891138978",
+          "riverSourceId": "osm-tang-detail-guanzhong",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 36,
+          "sourcePoint": [
+            110.4846525,
+            34.6101466
+          ],
+          "interiorVertexCount": 28,
+          "intersectionLengthDegrees": 0.13816214245501762
+        }
+      ]
+    },
+    {
+      "waterId": "osm-relation-12135850",
+      "waterSourceUrl": "https://www.openstreetmap.org/relation/12135850",
+      "waterSourceId": "osm-tang-detail-guanzhong",
+      "riverIds": [
+        "osm-way-891138979"
+      ],
+      "bounds": [
+        110.2549964,
+        34.944642,
+        110.3322172,
+        35.0529097
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-891138979",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/891138979",
+          "riverSourceId": "osm-tang-detail-guanzhong",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 7,
+          "sourcePoint": [
+            110.2928638,
+            35.0092956
+          ],
+          "interiorVertexCount": 10,
+          "intersectionLengthDegrees": 0.11887575124236915
+        }
+      ]
+    },
+    {
+      "waterId": "osm-relation-12135851",
+      "waterSourceUrl": "https://www.openstreetmap.org/relation/12135851",
+      "waterSourceId": "osm-tang-detail-guanzhong",
+      "riverIds": [
+        "osm-way-891138979"
+      ],
+      "bounds": [
+        110.2162412,
+        34.8738312,
+        110.2687253,
+        34.9562675
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-891138979",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/891138979",
+          "riverSourceId": "osm-tang-detail-guanzhong",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 17,
+          "sourcePoint": [
+            110.223341,
+            34.8928129
+          ],
+          "interiorVertexCount": 11,
+          "intersectionLengthDegrees": 0.0913095965848335
+        }
+      ]
+    },
+    {
+      "waterId": "osm-relation-4488253",
+      "waterSourceUrl": "https://www.openstreetmap.org/relation/4488253",
+      "waterSourceId": "osm-tang-detail-luoyang",
+      "riverIds": [
+        "osm-way-891138978",
+        "osm-way-891137974"
+      ],
+      "bounds": [
+        110.9740269,
+        34.7099474,
+        111.3473314,
+        34.8395311
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-891138978",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/891138978",
+          "riverSourceId": "osm-tang-detail-guanzhong",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 158,
+          "sourcePoint": [
+            110.9768807,
+            34.7121964
+          ],
+          "interiorVertexCount": 1,
+          "intersectionLengthDegrees": 0.0014597735274001907
+        },
+        {
+          "riverId": "osm-way-891137974",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/891137974",
+          "riverSourceId": "osm-tang-detail-luoyang",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 111,
+          "sourcePoint": [
+            111.1694741,
+            34.8071791
+          ],
+          "interiorVertexCount": 223,
+          "intersectionLengthDegrees": 0.475247778479683
+        }
+      ]
+    },
+    {
+      "waterId": "osm-relation-4488716",
+      "waterSourceUrl": "https://www.openstreetmap.org/relation/4488716",
+      "waterSourceId": "osm-tang-detail-guanzhong",
+      "riverIds": [
+        "osm-way-29544167",
+        "osm-way-891138979",
+        "osm-way-892158293"
+      ],
+      "bounds": [
+        110.3218693,
+        35.0746613,
+        110.6166601,
+        35.6854048
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-29544167",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/29544167",
+          "riverSourceId": "osm-tang-detail-guanzhong",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:en",
+              "value": "Yellow River",
+              "normalized": "yellowriver"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 104,
+          "sourcePoint": [
+            110.4860794,
+            35.4377711
+          ],
+          "interiorVertexCount": 208,
+          "intersectionLengthDegrees": 0.5460138800657635
+        },
+        {
+          "riverId": "osm-way-891138979",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/891138979",
+          "riverSourceId": "osm-tang-detail-guanzhong",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 0,
+          "sourcePoint": [
+            110.3310044,
+            35.0867146
+          ],
+          "interiorVertexCount": 1,
+          "intersectionLengthDegrees": 0.011430349510537795
+        },
+        {
+          "riverId": "osm-way-892158293",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/892158293",
+          "riverSourceId": "osm-tang-detail-guanzhong",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:en",
+              "value": "Yellow River",
+              "normalized": "yellowriver"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 23,
+          "sourcePoint": [
+            110.3729117,
+            35.1416868
+          ],
+          "interiorVertexCount": 46,
+          "intersectionLengthDegrees": 0.16824801395793812
+        }
+      ]
+    },
+    {
+      "waterId": "osm-relation-8928723",
+      "waterSourceUrl": "https://www.openstreetmap.org/relation/8928723",
+      "waterSourceId": "osm-tang-detail-central-plains",
+      "riverIds": [
+        "osm-way-643962903",
+        "osm-way-743773698"
+      ],
+      "bounds": [
+        113.4253246,
+        34.8764013,
+        113.9704889,
+        34.9856954
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-643962903",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/643962903",
+          "riverSourceId": "osm-tang-detail-central-plains",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 107,
+          "sourcePoint": [
+            113.6857831,
+            34.9245925
+          ],
+          "interiorVertexCount": 214,
+          "intersectionLengthDegrees": 0.5906440135677946
+        },
+        {
+          "riverId": "osm-way-743773698",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/743773698",
+          "riverSourceId": "osm-tang-detail-luoyang",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 96,
+          "sourcePoint": [
+            113.436209,
+            34.9751048
+          ],
+          "interiorVertexCount": 6,
+          "intersectionLengthDegrees": 0.017279565165357152
+        }
+      ]
+    },
+    {
+      "waterId": "osm-relation-9718191",
+      "waterSourceUrl": "https://www.openstreetmap.org/relation/9718191",
+      "waterSourceId": "osm-tang-detail-central-plains",
+      "riverIds": [
+        "osm-way-699318433"
+      ],
+      "bounds": [
+        115.0068784,
+        35.339713,
+        115.3572325,
+        35.5171638
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-699318433",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/699318433",
+          "riverSourceId": "osm-tang-detail-central-plains",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:en",
+              "value": "Yellow River",
+              "normalized": "yellowriver"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 60,
+          "sourcePoint": [
+            115.2296197,
+            35.4179085
+          ],
+          "interiorVertexCount": 116,
+          "intersectionLengthDegrees": 0.41875303142712206
+        }
+      ]
+    },
+    {
+      "waterId": "osm-relation-9732460",
+      "waterSourceUrl": "https://www.openstreetmap.org/relation/9732460",
+      "waterSourceId": "osm-tang-detail-central-plains",
+      "riverIds": [
+        "osm-way-396407371",
+        "osm-way-700439261"
+      ],
+      "bounds": [
+        114.2647487,
+        34.8818473,
+        114.8354343,
+        35.0302072
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-396407371",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/396407371",
+          "riverSourceId": "osm-tang-detail-central-plains",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:en",
+              "value": "Yellow River",
+              "normalized": "yellowriver"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 48,
+          "sourcePoint": [
+            114.763366,
+            34.9735048
+          ],
+          "interiorVertexCount": 96,
+          "intersectionLengthDegrees": 0.2032926746007984
+        },
+        {
+          "riverId": "osm-way-700439261",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/700439261",
+          "riverSourceId": "osm-tang-detail-central-plains",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 128,
+          "sourcePoint": [
+            114.4565749,
+            34.9071557
+          ],
+          "interiorVertexCount": 254,
+          "intersectionLengthDegrees": 0.586052842697725
+        }
+      ]
+    },
+    {
+      "waterId": "osm-relation-9877800",
+      "waterSourceUrl": "https://www.openstreetmap.org/relation/9877800",
+      "waterSourceId": "osm-tang-detail-central-plains",
+      "riverIds": [
+        "osm-way-643962903",
+        "osm-way-700439261",
+        "osm-way-1050394155",
+        "osm-way-1050394156"
+      ],
+      "bounds": [
+        113.9665782,
+        34.8923861,
+        114.2706227,
+        34.9733114
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-643962903",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/643962903",
+          "riverSourceId": "osm-tang-detail-central-plains",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 240,
+          "sourcePoint": [
+            114.0093112,
+            34.939994
+          ],
+          "interiorVertexCount": 50,
+          "intersectionLengthDegrees": 0.11793511559376138
+        },
+        {
+          "riverId": "osm-way-700439261",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/700439261",
+          "riverSourceId": "osm-tang-detail-central-plains",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 0,
+          "sourcePoint": [
+            114.2643195,
+            34.8977715
+          ],
+          "interiorVertexCount": 1,
+          "intersectionLengthDegrees": 0.0034954552274894684
+        },
+        {
+          "riverId": "osm-way-1050394155",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/1050394155",
+          "riverSourceId": "osm-tang-detail-central-plains",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 4,
+          "sourcePoint": [
+            114.2590892,
+            34.8956728
+          ],
+          "interiorVertexCount": 8,
+          "intersectionLengthDegrees": 0.011132234127346291
+        },
+        {
+          "riverId": "osm-way-1050394156",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/1050394156",
+          "riverSourceId": "osm-tang-detail-central-plains",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 15,
+          "sourcePoint": [
+            114.164257,
+            34.9276009
+          ],
+          "interiorVertexCount": 30,
+          "intersectionLengthDegrees": 0.23197797454572974
+        }
+      ]
+    },
+    {
+      "waterId": "osm-relation-9952665",
+      "waterSourceUrl": "https://www.openstreetmap.org/relation/9952665",
+      "waterSourceId": "osm-tang-detail-central-plains",
+      "riverIds": [
+        "osm-way-396407371"
+      ],
+      "bounds": [
+        114.8099533,
+        35.0296625,
+        114.8854709,
+        35.193731
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-396407371",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/396407371",
+          "riverSourceId": "osm-tang-detail-central-plains",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:en",
+              "value": "Yellow River",
+              "normalized": "yellowriver"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 143,
+          "sourcePoint": [
+            114.8841619,
+            35.1020745
+          ],
+          "interiorVertexCount": 93,
+          "intersectionLengthDegrees": 0.25109840312748516
+        }
+      ]
+    },
+    {
+      "waterId": "osm-relation-9967095",
+      "waterSourceUrl": "https://www.openstreetmap.org/relation/9967095",
+      "waterSourceId": "osm-tang-detail-luoyang",
+      "riverIds": [
+        "osm-way-718340433",
+        "osm-way-718340434"
+      ],
+      "bounds": [
+        112.5236765,
+        34.8507137,
+        112.5879818,
+        34.8938447
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-718340433",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/718340433",
+          "riverSourceId": "osm-tang-detail-luoyang",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:en",
+              "value": "Yellow River",
+              "normalized": "yellowriver"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 1,
+          "sourcePoint": [
+            112.5263017,
+            34.8895744
+          ],
+          "interiorVertexCount": 1,
+          "intersectionLengthDegrees": 0.00016253015840350386
+        },
+        {
+          "riverId": "osm-way-718340434",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/718340434",
+          "riverSourceId": "osm-tang-detail-luoyang",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:en",
+              "value": "Yellow River",
+              "normalized": "yellowriver"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 19,
+          "sourcePoint": [
+            112.5657463,
+            34.875563
+          ],
+          "interiorVertexCount": 38,
+          "intersectionLengthDegrees": 0.07841709934316811
+        }
+      ]
+    },
+    {
+      "waterId": "osm-way-30991358",
+      "waterSourceUrl": "https://www.openstreetmap.org/way/30991358",
+      "waterSourceId": "osm-tang-detail-luoyang",
+      "riverIds": [
+        "osm-way-29544436"
+      ],
+      "bounds": [
+        111.6113332,
+        34.9019082,
+        111.673956,
+        34.9484641
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-29544436",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/29544436",
+          "riverSourceId": "osm-tang-detail-luoyang",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:en",
+              "value": "Yellow River",
+              "normalized": "yellowriver"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 244,
+          "sourcePoint": [
+            111.6324127,
+            34.9314624
+          ],
+          "interiorVertexCount": 45,
+          "intersectionLengthDegrees": 0.08126206405434436
+        }
+      ]
+    },
+    {
+      "waterId": "osm-way-30991628",
+      "waterSourceUrl": "https://www.openstreetmap.org/way/30991628",
+      "waterSourceId": "osm-tang-detail-central-plains",
+      "riverIds": [
+        "osm-way-396407371",
+        "osm-way-699318433"
+      ],
+      "bounds": [
+        114.9874484,
+        35.2572872,
+        115.0207427,
+        35.3458648
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-396407371",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/396407371",
+          "riverSourceId": "osm-tang-detail-central-plains",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:en",
+              "value": "Yellow River",
+              "normalized": "yellowriver"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 252,
+          "sourcePoint": [
+            115.0004411,
+            35.2871845
+          ],
+          "interiorVertexCount": 28,
+          "intersectionLengthDegrees": 0.0831228023670113
+        },
+        {
+          "riverId": "osm-way-699318433",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/699318433",
+          "riverSourceId": "osm-tang-detail-central-plains",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:en",
+              "value": "Yellow River",
+              "normalized": "yellowriver"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 0,
+          "sourcePoint": [
+            115.0133547,
+            35.3369305
+          ],
+          "interiorVertexCount": 1,
+          "intersectionLengthDegrees": 0.0056324986329354945
+        }
+      ]
+    },
+    {
+      "waterId": "osm-way-891138426",
+      "waterSourceUrl": "https://www.openstreetmap.org/way/891138426",
+      "waterSourceId": "osm-tang-detail-guanzhong",
+      "riverIds": [
+        "osm-way-891138979"
+      ],
+      "bounds": [
+        110.219838,
+        34.7914928,
+        110.2496856,
+        34.8740952
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-891138979",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/891138979",
+          "riverSourceId": "osm-tang-detail-guanzhong",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 34,
+          "sourcePoint": [
+            110.2320956,
+            34.8214136
+          ],
+          "interiorVertexCount": 22,
+          "intersectionLengthDegrees": 0.0857779054027949
+        }
+      ]
+    },
+    {
+      "waterId": "osm-way-891142103",
+      "waterSourceUrl": "https://www.openstreetmap.org/way/891142103",
+      "waterSourceId": "osm-tang-detail-luoyang",
+      "riverIds": [
+        "osm-way-891138978"
+      ],
+      "bounds": [
+        110.8398481,
+        34.6309656,
+        110.9784579,
+        34.7351103
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-891138978",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/891138978",
+          "riverSourceId": "osm-tang-detail-guanzhong",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 134,
+          "sourcePoint": [
+            110.9206724,
+            34.7329722
+          ],
+          "interiorVertexCount": 48,
+          "intersectionLengthDegrees": 0.2119461185883082
+        }
+      ]
+    },
+    {
+      "waterId": "osm-way-891145336",
+      "waterSourceUrl": "https://www.openstreetmap.org/way/891145336",
+      "waterSourceId": "osm-tang-detail-guanzhong",
+      "riverIds": [
+        "osm-way-891138979"
+      ],
+      "bounds": [
+        110.2185707,
+        34.6776306,
+        110.2389783,
+        34.7246594
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-891138979",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/891138979",
+          "riverSourceId": "osm-tang-detail-guanzhong",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 54,
+          "sourcePoint": [
+            110.2252292,
+            34.7040117
+          ],
+          "interiorVertexCount": 9,
+          "intersectionLengthDegrees": 0.048258374677018184
+        }
+      ]
+    },
+    {
+      "waterId": "osm-way-891145339",
+      "waterSourceUrl": "https://www.openstreetmap.org/way/891145339",
+      "waterSourceId": "osm-tang-detail-guanzhong",
+      "riverIds": [
+        "osm-way-891138979"
+      ],
+      "bounds": [
+        110.2296603,
+        34.7225673,
+        110.2552539,
+        34.7921073
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-891138979",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/891138979",
+          "riverSourceId": "osm-tang-detail-guanzhong",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 47,
+          "sourcePoint": [
+            110.2399062,
+            34.746479
+          ],
+          "interiorVertexCount": 5,
+          "intersectionLengthDegrees": 0.06955826358452245
+        }
+      ]
+    },
+    {
+      "waterId": "osm-way-891148850",
+      "waterSourceUrl": "https://www.openstreetmap.org/way/891148850",
+      "waterSourceId": "osm-tang-detail-luoyang",
+      "riverIds": [
+        "osm-way-891138978"
+      ],
+      "bounds": [
+        110.7241201,
+        34.615918,
+        110.8455598,
+        34.6561503
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-891138978",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/891138978",
+          "riverSourceId": "osm-tang-detail-guanzhong",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 96,
+          "sourcePoint": [
+            110.7967757,
+            34.6445774
+          ],
+          "interiorVertexCount": 27,
+          "intersectionLengthDegrees": 0.14315082642347038
+        }
+      ]
+    },
+    {
+      "waterId": "osm-way-891149655",
+      "waterSourceUrl": "https://www.openstreetmap.org/way/891149655",
+      "waterSourceId": "osm-tang-detail-guanzhong",
+      "riverIds": [
+        "osm-way-891138979"
+      ],
+      "bounds": [
+        110.2280027,
+        34.617184,
+        110.2785301,
+        34.6794084
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-891138979",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/891138979",
+          "riverSourceId": "osm-tang-detail-guanzhong",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 61,
+          "sourcePoint": [
+            110.2437686,
+            34.6510028
+          ],
+          "interiorVertexCount": 5,
+          "intersectionLengthDegrees": 0.07216204480178112
+        }
+      ]
+    },
+    {
+      "waterId": "osm-way-891149659",
+      "waterSourceUrl": "https://www.openstreetmap.org/way/891149659",
+      "waterSourceId": "osm-tang-detail-luoyang",
+      "riverIds": [
+        "osm-way-891138978"
+      ],
+      "bounds": [
+        110.5583382,
+        34.5897728,
+        110.6266647,
+        34.6141606
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-891138978",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/891138978",
+          "riverSourceId": "osm-tang-detail-guanzhong",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 55,
+          "sourcePoint": [
+            110.6123256,
+            34.6114535
+          ],
+          "interiorVertexCount": 10,
+          "intersectionLengthDegrees": 0.07035342239917396
+        }
+      ]
+    },
+    {
+      "waterId": "osm-way-891149660",
+      "waterSourceUrl": "https://www.openstreetmap.org/way/891149660",
+      "waterSourceId": "osm-tang-detail-guanzhong",
+      "riverIds": [
+        "osm-way-891138978",
+        "osm-way-891138979"
+      ],
+      "bounds": [
+        110.264824,
+        34.5871672,
+        110.4288304,
+        34.6225256
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-891138978",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/891138978",
+          "riverSourceId": "osm-tang-detail-guanzhong",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 11,
+          "sourcePoint": [
+            110.4131126,
+            34.5923783
+          ],
+          "interiorVertexCount": 22,
+          "intersectionLengthDegrees": 0.1492267162301645
+        },
+        {
+          "riverId": "osm-way-891138979",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/891138979",
+          "riverSourceId": "osm-tang-detail-guanzhong",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 65,
+          "sourcePoint": [
+            110.2820277,
+            34.6146852
+          ],
+          "interiorVertexCount": 2,
+          "intersectionLengthDegrees": 0.011303113512977248
+        }
+      ]
+    },
+    {
+      "waterId": "osm-way-892158284",
+      "waterSourceUrl": "https://www.openstreetmap.org/way/892158284",
+      "waterSourceId": "osm-tang-detail-guanzhong",
+      "riverIds": [
+        "osm-way-891138979"
+      ],
+      "bounds": [
+        110.3128999,
+        35.0504724,
+        110.3528649,
+        35.0774409
+      ],
+      "evidence": [
+        {
+          "riverId": "osm-way-891138979",
+          "riverSourceUrl": "https://www.openstreetmap.org/way/891138979",
+          "riverSourceId": "osm-tang-detail-guanzhong",
+          "nameMatches": [
+            {
+              "key": "name",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hans",
+              "value": "黄河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Hant",
+              "value": "黃河",
+              "normalized": "黄河"
+            },
+            {
+              "key": "name:zh-Latn-pinyin",
+              "value": "Huáng Hé",
+              "normalized": "huanghe"
+            }
+          ],
+          "sourceVertexIndex": 1,
+          "sourcePoint": [
+            110.3317451,
+            35.0716634
+          ],
+          "interiorVertexCount": 1,
+          "intersectionLengthDegrees": 0.026215646158067422
+        }
+      ]
+    }
+  ],
+  "statistics": {
+    "mainRiverLines": 22,
+    "riverWaterCandidates": 6593,
+    "associatedWaterSurfaces": 33,
+    "lineSurfaceAssociations": 47,
+    "unassociatedWaterSurfaces": 6560,
+    "nonMainRiverNameCandidatesRejected": 92,
+    "boundaryOnlyPairsNotAssociated": 2
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-taihu",
+  "title": "OpenStreetMap 现代地理：太湖与长江口",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "retrievedAt": "2026-09-25T02:37:57.826374+00:00",
+  "bounds": [
+    119.5,
+    29.5,
+    122,
+    32.5
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/taihu.json.gz",
+  "snapshotSha256": "b71ce3d5c7aefd3a2d634009318903a3c038a2b7f41e1b24b0bd3d001dd127de",
+  "queryPath": "data/evidence/tang-detail/osm/taihu.ql",
+  "querySha256": "f4fc894c8b98a08debc9522beaf39c80c384eb75f0c00b07b31bc84f2f694d69",
+  "osmBaseTimestamp": "2026-07-15T15:22:01Z",
+  "elementCount": 86287,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。",
+  "uncompressedSnapshotSha256": "bc3841f8e1941a2e1b1337bd318a275a59c9658833f0001c65ac0036224dbf3e",
+  "snapshotEncoding": "gzip"
+}

@@ -24,7 +24,18 @@
   text-shadow: 0 0 3px #fffdf1, 1px 1px 2px #fffdf1, -1px -1px 2px #fffdf1;
   letter-spacing: 1px;
   z-index: 0;
+  min-width: 44px;
+  min-height: 40px;
+  padding: 6px 8px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background: transparent;
+  cursor: pointer;
+  pointer-events: auto;
 }
+.boundary-region-label:hover, .boundary-region-label.is-selected { background: #fff8e9ed; border-color: #a47750; color: #753d29; z-index: 4; }
+.boundary-region-label.is-selected { box-shadow: 0 2px 8px #634b2930; font-weight: 600; }
+.boundary-region-label:focus-visible { outline: 2px solid #7c472e; outline-offset: 2px; z-index: 5; }
 .boundary-region-province { font-size: 15px; color: #735a7b; letter-spacing: 3px; }
 .boundary-region-country { font-size: 17px; color: #824f3f; letter-spacing: 4px; }
 .boundary-region-county { font-size: 10px; color: #8b784e; }
@@ -36,6 +47,7 @@
 .boundary-modern-comparison a { display: block; font-size: 10px; margin-top: 4px; color: #8c7250; }
 .boundary-region-search { margin-bottom: 14px; }
 .boundary-region-search label { display: block; margin-bottom: 7px; font-size: 11px; }
+.boundary-region-search > small { display: block; margin-top: 6px; color: #879477; font-size: 10px; line-height: 1.7; }
 .boundary-region-search input { width: 100%; min-width: 0; padding: 9px; border: 1px solid #cbd4c1; border-radius: 4px; background: #fffef8; font: inherit; color: #42593b; }
 .boundary-search-results { max-height: 180px; overflow-y: auto; border: 1px solid #d8e1ce; border-top: 0; }
 .boundary-search-results button { display: flex; width: 100%; justify-content: space-between; gap: 10px; padding: 10px 8px; border-bottom: 1px solid #e5e9de; text-align: left; }
@@ -140,10 +152,24 @@
   align-items: center;
   gap: 8px;
   min-height: 30px;
-  cursor: pointer;
+  cursor: default;
   font-size: 11px;
   color: #788f65;
 }
+.boundary-view-presets { padding: 0; margin: 0 0 10px; min-width: 0; border: 0; }
+.boundary-view-presets legend { margin-bottom: 9px; color: #617b50; font-size: 12px; }
+.boundary-view-presets > div { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
+.boundary-view-presets label { display: flex; gap: 6px; align-items: center; min-height: 42px; padding: 7px 6px; border: 1px solid #dce4d2; border-radius: 5px; background: #f4f7ed; font-size: 10px; cursor: pointer; line-height: 1.5; }
+.boundary-view-presets label.is-selected { border-color: #8eab73; background: #e5efda; color: #425e36; }
+.boundary-view-presets input { flex-shrink: 0; width: 13px; height: 13px; margin: 0; accent-color: #627e4a; }
+.boundary-view-presets label:has(input:focus-visible) { outline: 2px solid #7c472e; outline-offset: 2px; }
+.boundary-view-presets:disabled { opacity: .55; }
+.boundary-effective-level, .boundary-scale-guide { font-size: 10px; color: #6f8160; line-height: 1.8; margin: 8px 0 12px; }
+.boundary-scale-guide { color: #8c997c; }
+.boundary-country-notice { margin: 10px 0 15px; padding: 9px; border: 1px solid #ded7c2; border-radius: 5px; background: #f6f1e5; }
+.boundary-country-notice p { margin: 0; color: #8c7657; font-size: 10px; line-height: 1.85; }
+.boundary-country-notice button { display: inline-flex; gap: 5px; align-items: center; min-height: 40px; color: #805a39; font-size: 11px; text-decoration: underline; }
+.boundary-selection-highlight-note { margin: -3px 0 12px; color: #855c3d; font-size: 10px; line-height: 1.7; }
 .boundary-level-control input {
   width: 13px;
   height: 13px;

@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-central-plains",
+  "title": "OpenStreetMap 现代地理：中原与淮北",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "retrievedAt": "2026-09-25T02:35:25.015166+00:00",
+  "bounds": [
+    113.5,
+    32.5,
+    116.5,
+    35.5
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/central-plains.json.gz",
+  "snapshotSha256": "1fa3bded438ced3f23747d1dcf34fa5fc527125b60f420c57cf87d586df44d6b",
+  "queryPath": "data/evidence/tang-detail/osm/central-plains.ql",
+  "querySha256": "ade50af60702c023cf4929d4fa8d586bc06214a1b8db468e7ff470002b0f96b9",
+  "osmBaseTimestamp": "2026-06-01T08:52:28Z",
+  "elementCount": 9264,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。",
+  "uncompressedSnapshotSha256": "5d70e1f3103a0b464709257dee7a19519fe8614b018e399bfd9640c1c5f45304",
+  "snapshotEncoding": "gzip"
+}

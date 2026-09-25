@@ -1,0 +1,371 @@
+[
+  {
+    "placeId": "changan",
+    "year": 662,
+    "dateLabel": "龙朔二年（662年）",
+    "title": "营建大明宫",
+    "summary": "高宗龙朔二年设置大明宫。此后唐帝多在大明宫居住、处理政务，长安宫城布局也随之改变。",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "quote": "東內曰大明宮，在西內之東北，高宗龍朔二年置。正門曰丹鳳，正殿曰含元，含元之後曰宣政。宣政左右，有中書門下二省、弘文史二館。高宗已後，天子常居東內"
+  },
+  {
+    "placeId": "linzi",
+    "year": 621,
+    "dateLabel": "武德四年（621年）",
+    "title": "临淄县列入青州辖县",
+    "summary": "唐初设青州总管府，辖县清单中包括临淄。此节点只说明临淄县的隶属，不把青州治所或齐州的临淄郡当成临淄县城。",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "quote": "武德四年，置青州總管府，管青、濰、登、牟、莒、密、萊、乘八州。青州領益都、臨朐、臨淄、般陽、樂安、時水、安平等七縣。"
+  },
+  {
+    "placeId": "handan",
+    "year": 621,
+    "dateLabel": "武德四年（621年）",
+    "title": "邯郸县划归磁州",
+    "summary": "唐初磁州从洺州接收邯郸等县，邯郸的上级行政隶属发生变化。",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "quote": "武德元年，置磁州，領淦陽、臨水、成安三縣。四年，割洺州之臨洺、武安、邯鄲、肥鄉來屬。"
+  },
+  {
+    "placeId": "handan",
+    "year": 627,
+    "dateLabel": "贞观元年（627年）",
+    "title": "磁州撤废，邯郸归洺州",
+    "summary": "磁州撤废后，滏阳、成安划归相州，邯郸则划归洺州。",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "quote": "貞觀元年，廢磁州，滏陽、成安屬相州，以邯鄲屬洺州。"
+  },
+  {
+    "placeId": "handan",
+    "year": 765,
+    "dateLabel": "永泰元年六月（765年）",
+    "title": "磁州复置，邯郸再次划入",
+    "summary": "薛嵩请求在滏阳地区恢复磁州，辖县包括邯郸。邯郸由此重新进入磁州辖境。",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "quote": "永泰元年六月，昭義節度使薛嵩請于淦陽復置磁州，領滏陽、武安、昭義、邯鄲四縣。"
+  },
+  {
+    "placeId": "zhengzhou",
+    "year": 633,
+    "dateLabel": "贞观七年（633年）",
+    "title": "郑州州治迁到管城",
+    "summary": "郑州州治由武牢迁入管城。州名持续使用，但行政中心的位置发生了改变。",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "quote": "貞觀元年，廢管州及須水、清池二縣，以廢管州之陽武、新鄭四縣屬鄭州。七年，自武牢移鄭州理所于管城。"
+  },
+  {
+    "placeId": "huaizhou",
+    "year": 621,
+    "dateLabel": "武德四年（621年）",
+    "title": "怀州迁治野王城",
+    "summary": "怀州由唐初所在区域迁治野王城；沿革中的同一州名不表示治所始终固定。",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "quote": "武德二年，於濟源西南柏崖城置懷州，領大基、河陽、集城、長泉四縣。其年，於濟源立西濟州，于武德縣立北義州，修武縣東北故濁鹿城立陟州，置總管府，管懷、西濟、北義、陟四州。三年，懷州又置太行、忠義、紫陵、谷只、溫五縣。四年，移懷州於今治野王城。"
+  },
+  {
+    "placeId": "jiangzhou",
+    "year": 742,
+    "dateLabel": "天宝元年（742年）",
+    "title": "绛州改称绛郡",
+    "summary": "天宝元年，绛州改称绛郡。",
+    "sourceId": "tang-nw-jiangzhou",
+    "quote": "天宝元年（742年）改为绛郡"
+  },
+  {
+    "placeId": "jiangzhou",
+    "year": 758,
+    "dateLabel": "乾元元年（758年）",
+    "title": "恢复绛州名称",
+    "summary": "乾元元年，绛郡恢复为绛州。",
+    "sourceId": "tang-nw-jiangzhou",
+    "quote": "乾元元年（758年）又改为绛州。"
+  },
+  {
+    "placeId": "qizhou-jinan",
+    "year": 746,
+    "dateLabel": "天宝五载（746年）",
+    "title": "临淄郡改称济南郡",
+    "summary": "齐州在天宝初短暂使用临淄郡名，到天宝五载改称济南郡。该郡与青州临淄县不是同一行政对象。",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "quote": "天寶元年，改為臨淄郡。五載，為濟南郡。"
+  },
+  {
+    "placeId": "tingzhou-beiting",
+    "year": 702,
+    "dateLabel": "长安二年（702年）",
+    "title": "改设北庭都护府",
+    "summary": "庭州改设北庭都护府，成为天山北部军政管理的中心。",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "quote": "長安二年，改為北庭都護府。"
+  },
+  {
+    "placeId": "tingzhou-beiting",
+    "year": 780,
+    "dateLabel": "建中元年（780年）",
+    "title": "李元忠由北庭遣使奏事",
+    "summary": "李元忠与安西守将郭昕遣使经间道入朝报告情况。德宗任命李元忠为北庭都护。",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "quote": "建中元年，元忠、昕遣使間道奏事，德宗嘉之，以元忠為北庭都護，昕為安西都護。"
+  },
+  {
+    "placeId": "qiuci",
+    "year": 648,
+    "dateLabel": "贞观二十二年（648年）",
+    "title": "唐军征龟兹后设置都督府",
+    "summary": "阿史那社尔征服龟兹，俘获其王，唐随后在当地设置都督府。王国与军政机构的关系应按具体时期阅读。",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "quote": "貞觀二十二年，阿史那社{人小}破之，虜龜茲王而還，乃於其地置都督府"
+  },
+  {
+    "placeId": "qiuci",
+    "year": 658,
+    "dateLabel": "显庆三年五月（658年）",
+    "title": "安西都护府迁治龟兹",
+    "summary": "安西都护府的治所迁到龟兹国。此节点记录府治变化，不据此推定城墙或辖境的精确范围。",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "quote": "顯慶二年十一月，蘇定方平賀魯，分其地置濛池、昆陵二都護府。分其種落，列置州縣。於是，西盡波斯國，皆隸安西都護府。仍移安西都護府理所于高昌故地。三年五月，移安西府于龜茲國。"
+  },
+  {
+    "placeId": "qiuci",
+    "year": 780,
+    "dateLabel": "建中元年（780年）",
+    "title": "郭昕遣使入朝并任安西都护",
+    "summary": "安西守将郭昕与北庭的李元忠遣使经间道奏事，德宗授郭昕安西都护。",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "quote": "建中元年，元忠、昕遣使間道奏事，德宗嘉之，以元忠為北庭都護，昕為安西都護。"
+  },
+  {
+    "placeId": "yutian-hotan",
+    "year": 648,
+    "dateLabel": "贞观二十二年（648年）",
+    "title": "于阗国王伏阇信入朝",
+    "summary": "于阗国王伏阇信入唐朝见。文献以王国身份记述于阗，不将这一往来直接等同内地州县建置。",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "quote": "其王伏闍信，貞觀二十二年入朝。"
+  },
+  {
+    "placeId": "yutian-hotan",
+    "year": 675,
+    "dateLabel": "唐高宗上元二年正月（675年）",
+    "title": "于阗地区设置毗沙都督府",
+    "summary": "唐高宗上元二年，在于阗地区设置毗沙都督府。此处上元指高宗年号，不是肃宗的上元年间。",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "quote": "上元二年正月，置毗沙都督府"
+  },
+  {
+    "placeId": "shule-kashgar",
+    "year": 635,
+    "dateLabel": "贞观九年（635年）",
+    "title": "疏勒遣使入唐朝贡",
+    "summary": "疏勒在贞观九年遣使朝贡，文献记载此后的朝贡往来持续进行。",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "quote": "貞觀九年，遣使朝貢，自是不絕。"
+  },
+  {
+    "placeId": "yanqi",
+    "year": 644,
+    "dateLabel": "贞观十八年（644年）",
+    "title": "郭孝恪征焉耆",
+    "summary": "郭孝恪率军征服焉耆，《旧唐书》据此记述焉耆与唐朝的臣属关系。",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "quote": "俗有魚鱉之利。貞觀十八年，郭孝恪平之，由是臣屬。"
+  },
+  {
+    "placeId": "nanjing",
+    "year": 757,
+    "dateLabel": "至德二年二月（757年）",
+    "title": "设置江宁郡",
+    "summary": "在江宁县设置江宁郡，南京地区的地方行政地位发生调整。",
+    "sourceId": "tang-se-jiutangshu-40",
+    "quote": "至德二年二月，置江寧郡。"
+  },
+  {
+    "placeId": "nanjing",
+    "year": 758,
+    "dateLabel": "乾元元年（758年）",
+    "title": "在江宁设置升州",
+    "summary": "乾元元年，在江宁设置升州。此时南京地区的行政名称须与唐初及晚唐分别理解。",
+    "sourceId": "tang-se-jiutangshu-40",
+    "quote": "乾元元年，于江寧置昇州"
+  },
+  {
+    "placeId": "nanjing",
+    "year": 761,
+    "dateLabel": "唐肃宗上元二年（761年）",
+    "title": "改上元县，重新隶属润州",
+    "summary": "江宁恢复为上元县，重新划归润州。此处上元为肃宗年号。",
+    "sourceId": "tang-se-jiutangshu-40",
+    "quote": "上元二年，復為上元縣，還潤州。"
+  },
+  {
+    "placeId": "dali",
+    "year": 738,
+    "dateLabel": "唐代（738年）",
+    "title": "南诏都城迁至太和城",
+    "summary": "皮罗阁兼并五诏后，将都城由蒙舍迁至太和城。太和城与后来羊苴咩城是大理地区不同阶段的政治中心。",
+    "sourceId": "tang-se-dali",
+    "quote": "唐开元二十六年（738年），蒙舍诏首领皮罗阁在唐朝支持下兼并五诏，建立起南诏国，并将都城从蒙舍（今巍山）搬迁到了太和城（位于今太和街道太和村）"
+  },
+  {
+    "placeId": "dali",
+    "year": 779,
+    "dateLabel": "唐代（779年）",
+    "title": "南诏都城迁至羊苴咩城",
+    "summary": "南诏将都城迁至羊苴咩城，对应今大理旧城地区。",
+    "sourceId": "tang-se-dali",
+    "quote": "唐大历十四年（779年），皮逻阁之曾孙将都城迁至羊苴咩城，即今大理旧城。"
+  },
+  {
+    "placeId": "dali",
+    "year": 794,
+    "dateLabel": "唐代（794年）",
+    "title": "唐与南诏会盟于苍山",
+    "summary": "唐朝使者与南诏王异牟寻在苍山会盟，双方恢复和平关系。",
+    "sourceId": "tang-se-dali",
+    "quote": "唐德宗贞元十年（794年），派遣节度使前往南诏，与南诏王异牟寻会盟于苍山，两国再度恢复和平。"
+  },
+  {
+    "placeId": "mianzhou",
+    "year": 618,
+    "dateLabel": "武德元年（618年）",
+    "title": "巴西郡改为绵州",
+    "summary": "唐初恢复绵州建制，领巴西、昌隆、涪城等七县。",
+    "sourceId": "tang-se-jiutangshu-41",
+    "quote": "武德元年，改為綿州，領巴西、昌隆、涪城、魏城、金山、萬安、神泉七縣。"
+  },
+  {
+    "placeId": "mianzhou",
+    "year": 742,
+    "dateLabel": "天宝元年（742年）",
+    "title": "绵州改称巴西郡",
+    "summary": "天宝元年，绵州改称巴西郡。",
+    "sourceId": "tang-se-mianzhou-prefecture",
+    "quote": "天宝元年（742年）改为巴西郡"
+  },
+  {
+    "placeId": "mianzhou",
+    "year": 758,
+    "dateLabel": "乾元元年（758年）",
+    "title": "恢复绵州名称",
+    "summary": "乾元元年，巴西郡恢复为绵州。",
+    "sourceId": "tang-se-mianzhou-prefecture",
+    "quote": "乾元元年（758年）复为绵州。"
+  },
+  {
+    "placeId": "annan-songping",
+    "year": 679,
+    "dateLabel": "调露元年八月（679年）",
+    "title": "交州都督府改安南都护府",
+    "summary": "交州都督府改名安南都护府；府治所在地区联系今河内一带的宋平县。",
+    "sourceId": "tang-se-jiutangshu-41",
+    "quote": "調露元年八月，改交州都督府為安南都護府。"
+  },
+  {
+    "placeId": "annan-songping",
+    "year": 757,
+    "dateLabel": "至德二年（757年）",
+    "title": "改称镇南都护府",
+    "summary": "安南都护府改名镇南都护府。",
+    "sourceId": "tang-se-annan-protectorate",
+    "quote": "唐肃宗至德二年（757年），改名镇南都护府"
+  },
+  {
+    "placeId": "annan-songping",
+    "year": 766,
+    "dateLabel": "永泰二年（766年）",
+    "title": "恢复安南都护府名称",
+    "summary": "镇南都护府恢复安南都护府旧名。",
+    "sourceId": "tang-se-annan-protectorate",
+    "quote": "唐代宗永泰二年（766年），复名安南都护府。"
+  },
+  {
+    "placeId": "annan-songping",
+    "year": 866,
+    "dateLabel": "咸通七年（866年）",
+    "title": "收复安南，营建大罗城",
+    "summary": "高骈收复安南后，唐设置静海军。高骈随后修建大罗城并疏浚江道，城市防御与水道受到整治。",
+    "sourceId": "tang-se-hanoi",
+    "quote": "咸通七年（866年），安南都护经略招讨使高骈收复安南。朝廷以安南都护府置靜海軍节度使，令高骈以节度使身份镇守安南。高骈随即兴建大罗城，并疏浚江道。"
+  },
+  {
+    "placeId": "xianyang",
+    "year": 619,
+    "dateLabel": "武德二年（619年）",
+    "title": "重置咸阳县并迁治杜邮",
+    "summary": "唐恢复设置咸阳县，初治鲍桥，同年迁到杜邮。它与秦都咸阳是不同历史阶段的城市建置。",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "quote": "咸陽 隋廢縣。武德二年，復分涇陽置。初治鮑橋，其年，移治杜郵。"
+  },
+  {
+    "placeId": "xianyang",
+    "year": 691,
+    "dateLabel": "天授二年（691年）",
+    "title": "因顺陵在境内，咸阳县升赤县",
+    "summary": "武周因武则天母亲的顺陵位于境内，将咸阳县升为赤县。来源只说神龙初恢复县等，没有为恢复日期强定一年。",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "quote": "天授二年，則天以其母順陵在其界，升為赤"
+  },
+  {
+    "placeId": "suzhou",
+    "year": 825,
+    "dateLabel": "宝历元年（825年）",
+    "title": "白居易修筑山塘街",
+    "summary": "白居易修筑连接苏州城与虎丘山的山塘街，形成新的城外交通联系。",
+    "sourceId": "tang-se-suzhou",
+    "quote": "825年，大诗人白居易修筑连接苏州城和虎丘山的山塘街。"
+  },
+  {
+    "placeId": "mingzhou",
+    "year": 821,
+    "dateLabel": "长庆元年（821年）",
+    "title": "明州迁治三江口并筑内城",
+    "summary": "明州州治迁到三江口，并修筑内城，是今宁波城区形成的重要节点。",
+    "sourceId": "tang-se-ningbo",
+    "quote": "821年（长庆元年），明州州治迁到三江口，并筑内城，标志着宁波建城之始"
+  },
+  {
+    "placeId": "guizhou-guilin",
+    "year": 692,
+    "dateLabel": "长寿元年（692年）",
+    "title": "修筑相思埭",
+    "summary": "在桂州地区修筑相思埭，联系桂柳水路。此条以桂林地区作为阅读入口，不把当前城点当作工程遗址。",
+    "sourceId": "tang-se-guilin",
+    "quote": "（692年）筑相思埭，即今桂柳运河。"
+  },
+  {
+    "placeId": "yongzhou-nanning",
+    "year": 822,
+    "dateLabel": "长庆二年六月（822年）",
+    "title": "邕州重新设置经略使",
+    "summary": "邕州恢复经略使，由刺史兼任，管理当地驻军。",
+    "sourceId": "tang-se-jiutangshu-41",
+    "quote": "長慶二年六月，復置經略使，以刺史領之。刺史充經略使，管戍兵一千七百人"
+  },
+  {
+    "placeId": "jizhou-luling",
+    "year": 682,
+    "dateLabel": "永淳元年（682年）",
+    "title": "庐陵县从子阳城迁治",
+    "summary": "作为吉州州治的庐陵县由子阳城迁到新的治所，说明州县名称的延续与城址延续并非同一回事。",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "quote": "隋復為廬陵，州所治也。舊治子陽城，永淳元年，移於今所"
+  },
+  {
+    "placeId": "liuzhou",
+    "year": 634,
+    "dateLabel": "贞观八年（634年）",
+    "title": "南昆州改称柳州",
+    "summary": "南昆州改名柳州，后来沿用这一州名。",
+    "sourceId": "tang-se-jiutangshu-41",
+    "quote": "貞觀七年，省樂沙入新平縣，以廢龍州之龍城來屬。八年，改南昆為柳州。"
+  },
+  {
+    "placeId": "xizhou-gaochang",
+    "year": 640,
+    "dateLabel": "贞观十四年（640年）",
+    "title": "唐平高昌后设置西州及都护府",
+    "summary": "侯君集平高昌后，唐设置西州及都护府，府治在西州。采用《旧唐书》安西府条明确记载的贞观十四年，不沿用同卷西州条的十三年异文。",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "quote": "貞觀十四年，侯君集平高昌，置西州都護府，治在西州。"
+  }
+]

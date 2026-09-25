@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-jianghuai",
+  "title": "OpenStreetMap 现代地理：南京、皖南与江淮",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "retrievedAt": "2026-09-25T02:36:41.914962+00:00",
+  "bounds": [
+    117,
+    30.7,
+    120.5,
+    33.5
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/jianghuai.json.gz",
+  "snapshotSha256": "97c7865e9bb19254bd6567341a8ae702fb1d1ba9339a464104740e07ee3cc69c",
+  "queryPath": "data/evidence/tang-detail/osm/jianghuai.ql",
+  "querySha256": "c24e2d612e33c79416814cef71af6211969899f71047fc71b80ebba71d64d621",
+  "osmBaseTimestamp": "2026-05-06T03:25:00Z",
+  "elementCount": 76186,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。",
+  "uncompressedSnapshotSha256": "5955fdb2500ebe63ae536b064cf1525e7bc074a0cc93fcde184fedcf4851b719",
+  "snapshotEncoding": "gzip"
+}

@@ -50,7 +50,7 @@ export function HistoricalGeography({ data, error, selected, openRequest, onLoca
     <dialog ref={dialog} className="geography-dialog" aria-labelledby="geography-title" onClick={event => { if (event.target === dialog.current) dialog.current.close(); }}>
       <div className="geography-dialog-inner">
         <header><div><span className="section-kicker">LANDSCAPES THROUGH TIME</span><h2 id="geography-title">河流会改道，山河有往事。</h2></div><button aria-label="关闭历史地理" onClick={() => dialog.current?.close()}><X size={21} /></button></header>
-        <p className="geography-intro">回看河道、洪水与水利变迁。此处列出跨时期事件，定位显示参考点，底图河湖仍为现代数据。条目采用有出处的概述，展开可核查原文和资料性质。</p>
+        <p className="geography-intro">回看河道、洪水与水利变迁。黄河改道条目会联动已收录的年代河道，并保留事件参考点；暂无历史向量的年代与其他河湖仍为现代参照。展开可核查原文和资料性质。</p>
         {!data ? <p role="status">{error || "历史地理资料加载中…"}</p> : <>
           <div className="geography-filters" aria-label="历史地理类型">{["all", ...Object.keys(kindNames).filter(value => data.geographyEntries.some(entry => entry.kind === value))].map(value => <button key={value} aria-pressed={kind === value} onClick={() => setKind(value as typeof kind)}>{value === "all" ? `全部 ${data.geographyEntries.length}` : kindNames[value as HistoricalGeographyKind]}</button>)}</div>
           <div className="geography-content">
@@ -58,7 +58,7 @@ export function HistoricalGeography({ data, error, selected, openRequest, onLoca
             <nav aria-label="历史地理事件">{entries.map(entry => <button key={entry.id} className={active?.id === entry.id ? "selected" : ""} aria-pressed={active?.id === entry.id} onClick={() => setActiveId(entry.id)}><time>{entry.dateLabel}</time><strong>{entry.title}</strong><span>{kindNames[entry.kind]}</span></button>)}{!entries.length && <p>此类资料尚待补充。</p>}</nav>
             {active && <article key={active.id}><span className="geography-kind">{kindNames[active.kind]} · {active.dateLabel}</span><h3>{active.title}</h3><p>{active.summary}</p><h4>对山河与城邑的影响</h4><p>{active.impact}</p>
               <div className="geography-location"><MapPin size={16} /><p>{active.coordinateNote}</p></div>
-              <button className="geography-locate" onClick={() => { onLocate(active); dialog.current?.close(); }}><MapPin size={14} />在地图上查看参考点</button>
+              <button className="geography-locate" onClick={() => { onLocate(active); dialog.current?.close(); }}><MapPin size={14} />{active.kind === "river-change" ? "查看年代河道与参考点" : "在地图上查看参考点"}</button>
               <ContextEvidence evidence={active.evidence} sources={data.sources} />
             </article>}
           </div>

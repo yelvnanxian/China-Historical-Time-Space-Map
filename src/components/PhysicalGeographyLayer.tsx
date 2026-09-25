@@ -5,9 +5,10 @@ import { ExternalLink, LocateFixed, Mountain, Search, Waves, X } from "lucide-re
 import type { PhysicalFeatureCollection, PhysicalGroup, PhysicalInteractionIndex, PhysicalKind } from "../../shared/physical-geography";
 import { physicalKindNames } from "../../shared/physical-geography";
 import { boundarySearchKey } from "../../shared/boundary-search";
-import { naturalSurfaceSelectionEnabled, physicalHitLayers, physicalWaterGeometry } from "../../shared/map-interactions";
+import { naturalSurfaceSelectionEnabled, physicalHitLayers } from "../../shared/map-interactions";
 import type { MountainDirectionCollection } from "../../shared/mountain-directions";
 import { localizePhysicalGroup, type LocalizedPhysicalGroup } from "../../shared/place-name-localization";
+import { contextWaterGeometry, type MapBounds } from "../../shared/historical-rivers";
 
 const sourceId = "physical-interactive";
 const directionSourceId = "mountain-directions";
@@ -16,9 +17,10 @@ const layerIds = ["physical-lake-fill", "physical-lake-line", "physical-river-li
 const empty: PhysicalFeatureCollection = { type: "FeatureCollection", features: [] };
 const kindRank: Record<PhysicalKind, number> = { river: 0, lake: 1, mountain: 2, plateau: 3, sea: 4 };
 
-export default function PhysicalGeographyLayer({ map, ready, visible, mode, controlsContainer, onFocus, onChoose, resetKey }: {
+export default function PhysicalGeographyLayer({ map, ready, visible, mode, controlsContainer, onFocus, onChoose, resetKey, replaceYellowLower, detailBounds }: {
   map: MapInstance | null; ready: boolean; visible: boolean; mode: "cities" | "nature" | "both";
   resetKey: string; controlsContainer: HTMLElement | null; onFocus: (points: [number, number][]) => void; onChoose: () => void;
+  replaceYellowLower: boolean; detailBounds: MapBounds[];
 }) {
   const [data, setData] = useState<PhysicalFeatureCollection>(empty);
   const [directions, setDirections] = useState<MountainDirectionCollection>(emptyDirections);
@@ -31,6 +33,8 @@ export default function PhysicalGeographyLayer({ map, ready, visible, mode, cont
   const [query, setQuery] = useState("");
   const [kind, setKind] = useState<PhysicalKind | "all">("all");
   const [detailCollapsed, setDetailCollapsed] = useState(false);
+  const displayedWater = useMemo(() => contextWaterGeometry(data, replaceYellowLower, detailBounds), [data, replaceYellowLower, detailBounds]);
+  const retainedYellowCoordinates = useMemo(() => displayedWater.features.filter(feature => feature.properties.groupId === "river-huanghe").flatMap(feature => feature.geometry.type === "LineString" ? feature.geometry.coordinates : feature.geometry.type === "MultiLineString" ? feature.geometry.coordinates.flat() : []), [displayedWater]);
   const chooseCallback = useRef(onChoose);
   chooseCallback.current = onChoose;
   const selectedDirection = directions.features.find(feature => feature.properties.groupId === selectedId);
@@ -95,8 +99,8 @@ export default function PhysicalGeographyLayer({ map, ready, visible, mode, cont
 
   useEffect(() => {
     if (!ready || !map?.getSource(sourceId)) return;
-    (map.getSource(sourceId) as GeoJSONSource).setData(physicalWaterGeometry(data));
-  }, [map, ready, data]);
+    (map.getSource(sourceId) as GeoJSONSource).setData(displayedWater);
+  }, [map, ready, displayedWater]);
   useEffect(() => {
     if (!ready || !map?.getSource(directionSourceId)) return;
     (map.getSource(directionSourceId) as GeoJSONSource).setData(directions);
@@ -120,6 +124,8 @@ export default function PhysicalGeographyLayer({ map, ready, visible, mode, cont
     if (!map || !ready || !visible) return;
     function find(event: MapMouseEvent) {
       if (!naturalSurfaceSelectionEnabled(mode)) return undefined;
+      const finerLayers = ["historical-river-hit", "tang-detail-water", "tang-detail-hit", "tang-detail-peaks"].filter(id => !!map!.getLayer(id));
+      if (finerLayers.length && map!.queryRenderedFeatures(event.point, { layers: finerLayers }).length) return undefined;
       const features = map!.queryRenderedFeatures(event.point, { layers: physicalHitLayers.filter(id => !!map!.getLayer(id)) });
       return features.sort((a, b) => kindRank[a.properties.kind as PhysicalKind] - kindRank[b.properties.kind as PhysicalKind])[0];
     }
@@ -142,7 +148,9 @@ export default function PhysicalGeographyLayer({ map, ready, visible, mode, cont
       markers.forEach(marker => marker.remove()); markers = [];
       const bounds = map.getBounds(); const zoom = map.getZoom(); const rect = map.getContainer().getBoundingClientRect();
       const occupied = [...map.getContainer().querySelectorAll<HTMLElement>(".marker-label")].filter(el => el.style.display !== "none").map(el => el.getBoundingClientRect());
-      const locatedGroups = groups.map(group => ({ ...group, labelCoordinates: directionLabels.get(group.groupId) ?? group.labelCoordinates }));
+      const locatedGroups = groups.map(group => ({ ...group,
+        name: replaceYellowLower && group.groupId === "river-huanghe" ? "黄河上游（现代参照）" : group.name,
+        labelCoordinates: replaceYellowLower && group.groupId === "river-huanghe" && retainedYellowCoordinates.length ? retainedYellowCoordinates[Math.floor(retainedYellowCoordinates.length / 2)] as [number, number] : directionLabels.get(group.groupId) ?? group.labelCoordinates }));
       const candidates = locatedGroups.filter(group => bounds.contains(group.labelCoordinates) && (group.groupId === selectedId || zoom >= group.minZoom) && !/^(未命名|未定名)/.test(group.name))
         .sort((a, b) => Number(b.groupId === selectedId) - Number(a.groupId === selectedId) || a.minZoom - b.minZoom).slice(0, 140);
       for (const group of candidates) {
@@ -161,11 +169,12 @@ export default function PhysicalGeographyLayer({ map, ready, visible, mode, cont
     };
     map.on("moveend", render); map.on("resize", render); render();
     return () => { map.off("moveend", render); map.off("resize", render); markers.forEach(marker => marker.remove()); };
-  }, [map, ready, visible, groups, selectedId, mode, directionLabels]);
+  }, [map, ready, visible, groups, selectedId, mode, directionLabels, replaceYellowLower, retainedYellowCoordinates]);
 
   function focus(group: PhysicalGroup) {
     select(group.groupId);
-    if (group.kind === "sea" || group.kind === "plateau") onFocus([group.labelCoordinates]);
+    if (group.groupId === "river-huanghe" && replaceYellowLower && retainedYellowCoordinates.length) onFocus(retainedYellowCoordinates as [number, number][]);
+    else if (group.kind === "sea" || group.kind === "plateau") onFocus([group.labelCoordinates]);
     else onFocus([[group.bounds[0], group.bounds[1]], [group.bounds[2], group.bounds[3]]]);
   }
   return <>
@@ -190,7 +199,7 @@ export default function PhysicalGeographyLayer({ map, ready, visible, mode, cont
           <p>{selectedDirection ? "沿高亮线查看这条山系的大致延伸方向。" : "此山系暂仅提供名称定位，可结合山影与立体地形观察。"}</p>
           <p className="nature-detail-note">{selectedDirection?.properties.geometryNote || directionError || "未收录可用的走向线。"} 走向示意不表示实测山脊、山体边界或登山路线。</p>
         </> : selected.kind === "plateau" || selected.kind === "sea" ? <p>此处提供{physicalKindNames[selected.kind]}名称与位置参考，可结合地形观察。没有绘制概括范围色块。</p> : <>
-          <p>{selected.geometryNote}</p><p className="nature-detail-note">已高亮本资料收录的{selected.kind === "river" ? "河道线位，线宽不代表真实河宽" : "湖泊水面"}。现代河湖不随朝代复原。</p>
+          <p>{selected.geometryNote}</p><p className="nature-detail-note">已高亮本资料收录的{selected.kind === "river" ? "河道线位，线宽不代表真实河宽" : "湖泊水面"}。{selected.groupId === "river-huanghe" && replaceYellowLower ? "这里仅高亮现代上游参照，下游请点“黄河历史河道”标签核查。" : "现代参照不表示唐代河湖状态。"}{detailBounds.length > 0 && "细节覆盖内请点详细地物名称查看原始河线或水面。"}</p>
         </>}
         <div className="nature-detail-actions"><button onClick={() => focus(selected)}><LocateFixed size={13} />{selected.kind === "river" || selected.kind === "mountain" ? "查看完整走向" : "定位此处"}</button><a href={selectedDirection?.properties.sourceUrl || selected.sourceUrl} target="_blank" rel="noreferrer">资料来源<ExternalLink size={12} /></a></div>
       </div>}

@@ -17,6 +17,10 @@ import PhysicalGeographyLayer from "./PhysicalGeographyLayer";
 import "../map-workspace.css";
 import type { HistoricalGeographyEntry } from "../../shared/historical-context";
 import { isOptionalPhysicalLayerError } from "../../shared/map-interactions";
+import { mapViewLevelOptions, resolveMapDetailLevel, type MapViewLevel } from "../../shared/map-detail-levels";
+import HistoricalRiverLayer from "./HistoricalRiverLayer";
+import TangDetailLayer from "./TangDetailLayer";
+import type { MapBounds } from "../../shared/historical-rivers";
 
 type Props = {
   period: Period;
@@ -34,6 +38,7 @@ type Props = {
   onGeographyOpen: () => void;
   onGeographyClear: () => void;
   onNaturalSelect: () => void;
+  onOpenAtlas: () => void;
 };
 
 const emptyCollection = { type: "FeatureCollection" as const, features: [] };
@@ -67,6 +72,13 @@ export default function HistoricalMap(props: Props) {
   const [boundariesEnabled, setBoundariesEnabled] = useState(true);
   const [naturalReset, setNaturalReset] = useState(0);
   const [boundaryReset, setBoundaryReset] = useState(0);
+  const [detailReset, setDetailReset] = useState(0);
+  const [riverReset, setRiverReset] = useState(0);
+  const [zoom, setZoom] = useState(initialView.zoom);
+  const [viewLevel, setViewLevel] = useState<MapViewLevel>("auto");
+  const [replaceYellowLower, setReplaceYellowLower] = useState(false);
+  const [detailBounds, setDetailBounds] = useState<MapBounds[]>([]);
+  const showCities = resolveMapDetailLevel(viewLevel, zoom).showCities;
   const [activeTarget, setActiveTarget] = useState<"places" | "nature" | "boundary">("places");
   useEffect(() => { setActiveTarget("places"); }, [props.focusRequest, props.period.id]);
   useEffect(() => {
@@ -74,6 +86,8 @@ export default function HistoricalMap(props: Props) {
       setActiveTarget("places");
       setNaturalReset(value => value + 1);
       setBoundaryReset(value => value + 1);
+      setDetailReset(value => value + 1);
+      setRiverReset(value => value + 1);
       setLayerPanel(false);
     }
   }, [props.detailsOpen]);
@@ -101,7 +115,7 @@ export default function HistoricalMap(props: Props) {
     if (points.length === 1) {
       instance.flyTo({
         center: points[0],
-        zoom: Math.min(maxZoom, 7),
+        zoom: Math.min(maxZoom, 14),
         offset: [-drawerWidth / 2, small ? 35 : 0],
         padding: 0,
         duration,
@@ -143,7 +157,7 @@ export default function HistoricalMap(props: Props) {
         container: container.current,
         ...initialView,
         minZoom: 2.4,
-        maxZoom: 10,
+        maxZoom: 14,
         attributionControl: false,
         dragRotate: false,
         pitchWithRotate: false,
@@ -268,6 +282,7 @@ export default function HistoricalMap(props: Props) {
       if (event.originalEvent) fittedPoints.current = null;
     });
     instance.on("load", () => setReady(true));
+    instance.on("zoomend", () => setZoom(instance.getZoom()));
     instance.on("error", (event) => {
       if (isTerrainError(event) || isOptionalPhysicalLayerError(event)) return;
       const message = event.error?.message || "";
@@ -305,7 +320,7 @@ export default function HistoricalMap(props: Props) {
       minZoom?: number;
       physical?: boolean;
     }[] = [];
-    if (props.displayMode !== "nature")
+    if (props.displayMode !== "nature" && showCities)
       props.places.forEach((place) => {
         const button = document.createElement("button");
         const isCapital =
@@ -421,6 +436,7 @@ export default function HistoricalMap(props: Props) {
     props.period.id,
     props.modernNames,
     props.displayMode,
+    showCities,
     activeTarget,
   ]);
 
@@ -479,7 +495,9 @@ export default function HistoricalMap(props: Props) {
       });
       fitCoordinates(points);
     } else if (props.focusRequest && props.selectedPlace) {
-      fitCoordinates([props.selectedPlace.coordinates]);
+      // A chosen city should remain discoverable under automatic level selection.
+      setViewLevel(value => value === "auto" || value === "cities" || value === "county" ? value : "cities");
+      fitCoordinates([props.selectedPlace.coordinates], motionDuration(), 7.6);
     }
   }, [
     ready,
@@ -515,6 +533,10 @@ export default function HistoricalMap(props: Props) {
         aria-label="可缩放和平移的中国历史地图"
       />
       <div className="map-paper-overlay" />
+      <button className="map-detail-status" onClick={() => setLayerPanel(true)} aria-label="查看当前地图层级与数据范围">
+        {mapViewLevelOptions.find(option => option.value === viewLevel)?.label} · {zoom.toFixed(1)}级
+        <small>{replaceYellowLower ? "黄河下游：历史河道" : "河湖：现代参照"}{props.period.id === "tang" ? " · 唐代治所随缩放显示" : ""} · 点此调整</small>
+      </button>
       <div className="map-toolbar">
         <button
           aria-label="放大地图"
@@ -560,23 +582,37 @@ export default function HistoricalMap(props: Props) {
           <div className="map-tool-boundaries" hidden={props.displayMode === "nature"}>
           <label className="boundary-master-toggle"><input type="checkbox" checked={boundariesEnabled} onChange={event => setBoundariesEnabled(event.target.checked)} />显示行政边界与地名</label>
           <HistoricalBoundaryLayer map={map.current} ready={ready} periodId={props.period.id} currentYear={shownYear} onStatusChange={setBoundaryStatus}
+            viewLevel={viewLevel} onViewLevelChange={setViewLevel} onOpenAtlas={props.onOpenAtlas}
             onRegionFocus={points => { fitCoordinates(points, motionDuration(), 8); }} modernNames={props.modernNames}
             enabled={boundariesEnabled && props.displayMode !== "nature"} embedded
             resetKey={`${props.focusRequest}:${boundaryReset}:${props.displayMode}`}
             onSelection={() => {
               setActiveTarget("boundary"); setNaturalReset(value => value + 1); setLayerPanel(true); props.onNaturalSelect();
+              setDetailReset(value => value + 1); setRiverReset(value => value + 1);
               requestAnimationFrame(() => toolScroll.current?.scrollTo({ top: 0 }));
             }} />
           </div>
-          <p className="map-tool-note">{props.displayMode === "both" ? "点地图区域查看行政区；点山川名称查看走向。" : props.displayMode === "nature" ? "点山系名称查看走向示意；河线、湖面也可点选。" : "点城池查看档案，点区域查看行政区。"} 山影、河湖为现代自然背景。</p>
+          <p className="map-tool-note">{props.displayMode === "both" ? "点地图区域查看行政区；点山川名称查看走向。" : props.displayMode === "nature" ? "点山系名称查看走向示意；河线、湖面也可点选。" : "点城池查看档案，点区域查看行政区。"} 黄河历史河道单独注明年代；山影与其余河湖为现代参照。</p>
         </div>
       </div>
       <PhysicalGeographyLayer map={map.current} ready={ready} visible={props.displayMode !== "cities"} mode={props.displayMode}
+        replaceYellowLower={replaceYellowLower} detailBounds={detailBounds}
         resetKey={`${props.period.id}:${props.focusRequest}:${naturalReset}`}
-        controlsContainer={toolsContainer} onFocus={points => fitCoordinates(points, motionDuration(), 7)} onChoose={() => { setActiveTarget("nature"); setBoundaryReset(value => value + 1); setLayerPanel(false); props.onNaturalSelect(); }} />
+        controlsContainer={toolsContainer} onFocus={points => fitCoordinates(points, motionDuration(), 7)} onChoose={() => { setActiveTarget("nature"); setBoundaryReset(value => value + 1); setDetailReset(value => value + 1); setRiverReset(value => value + 1); setLayerPanel(false); props.onNaturalSelect(); }} />
+      <HistoricalRiverLayer map={map.current} ready={ready} visible={props.displayMode !== "cities"} mode={props.displayMode}
+        year={shownYear} periodLabel={props.period.label} controlsContainer={toolsContainer} resetKey={`${props.period.id}:${props.focusRequest}:${riverReset}`}
+        referenceYear={props.geographySelection?.kind === "river-change" ? props.geographySelection.year : undefined}
+        referenceRequest={props.geographySelection ?? undefined}
+        onCoverageChange={setReplaceYellowLower} onFocus={points => fitCoordinates(points, motionDuration(), 7)}
+        onChoose={() => { setActiveTarget("nature"); setNaturalReset(value => value + 1); setBoundaryReset(value => value + 1); setDetailReset(value => value + 1); setLayerPanel(false); props.onNaturalSelect(); }} />
+      <TangDetailLayer map={map.current} ready={ready} enabled={props.period.id === "tang"} mode={props.displayMode} zoom={zoom} viewLevel={viewLevel} modernNames={props.modernNames}
+        replaceYellowLower={replaceYellowLower} controlsContainer={toolsContainer} places={props.places} onPlaceSelect={props.onPlaceSelect}
+        resetKey={`${props.period.id}:${props.focusRequest}:${detailReset}`} onCoverageChange={setDetailBounds}
+        onFocus={(points, maxZoom = 10.5) => { if (props.displayMode !== "nature") setViewLevel("auto"); fitCoordinates(points, motionDuration(), maxZoom); }}
+        onChoose={() => { setActiveTarget("nature"); setNaturalReset(value => value + 1); setBoundaryReset(value => value + 1); setRiverReset(value => value + 1); setLayerPanel(false); props.onNaturalSelect(); }} />
       {props.geographySelection && props.displayMode !== "cities" && <div className="geography-reference-note"><button onClick={props.onGeographyOpen}>{props.geographySelection.dateLabel} · {props.geographySelection.title}<small>历史地理参考点 · 独立于当前朝代与边界年份</small></button><button aria-label="清除历史地理参考点" onClick={props.onGeographyClear}><X size={15} /></button></div>}
       <div className="map-credit">
-        自然地理背景为现代简化数据 · Natural Earth
+        Natural Earth · CHGIS / WorldMap{props.period.id === "tang" ? " · © OpenStreetMap contributors" : ""}
       </div>
       {error && (
         <div className="map-error" role="alert">

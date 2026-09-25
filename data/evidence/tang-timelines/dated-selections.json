@@ -1,0 +1,2346 @@
+[
+  {
+    "placeId": "changan",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "京兆府",
+    "dateText": "開元元年",
+    "year": 713,
+    "quote": "開元元年，改雍州為京兆府，復隋舊名。"
+  },
+  {
+    "placeId": "changan",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "京兆府",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，以京師為西京。"
+  },
+  {
+    "placeId": "luoyang",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "河南府",
+    "dateText": "武德四年",
+    "year": 621,
+    "quote": "武德四年，討平王世充，置洛州總管府，領洛、鄭、熊、穀、嵩、管、伊、汝、魯九州。"
+  },
+  {
+    "placeId": "luoyang",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "河南府",
+    "dateText": "顯慶二年",
+    "year": 657,
+    "quote": "顯慶二年，置東都，官員准雍州。"
+  },
+  {
+    "placeId": "luoyang",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "河南府",
+    "dateText": "光宅元年",
+    "year": 684,
+    "quote": "光宅元年，改東都為神都。"
+  },
+  {
+    "placeId": "luoyang",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "河南府",
+    "dateText": "神龍元年",
+    "year": 705,
+    "quote": "神龍元年，改神都復為東都；廢永昌、來廷三縣；改武泰、滎陽還鄭州。"
+  },
+  {
+    "placeId": "luoyang",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "河南府",
+    "dateText": "開元元年",
+    "year": 713,
+    "quote": "開元元年，改洛州為河南府。"
+  },
+  {
+    "placeId": "luoyang",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "河南府",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改東都為東京也。"
+  },
+  {
+    "placeId": "beijing",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "幽州",
+    "dateText": "武德元年",
+    "year": 618,
+    "quote": "武德元年，改為幽州總管府，管幽、易、平、檀、燕、北燕、營、遼等八州。"
+  },
+  {
+    "placeId": "beijing",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "幽州",
+    "dateText": "開元十三年",
+    "year": 725,
+    "quote": "開元十三年，升為大都督府。"
+  },
+  {
+    "placeId": "beijing",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "幽州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改范陽郡。"
+  },
+  {
+    "placeId": "beijing",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "幽州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為幽州。"
+  },
+  {
+    "placeId": "fanyang",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "幽州",
+    "dateText": "武德元年",
+    "year": 618,
+    "quote": "武德元年，改為幽州總管府，管幽、易、平、檀、燕、北燕、營、遼等八州。"
+  },
+  {
+    "placeId": "fanyang",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "幽州",
+    "dateText": "開元十三年",
+    "year": 725,
+    "quote": "開元十三年，升為大都督府。"
+  },
+  {
+    "placeId": "fanyang",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "幽州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改范陽郡。"
+  },
+  {
+    "placeId": "fanyang",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "幽州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為幽州。"
+  },
+  {
+    "placeId": "jinyang",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "北京",
+    "dateText": "龍朔二年",
+    "year": 662,
+    "quote": "龍朔二年，進為大都督府。"
+  },
+  {
+    "placeId": "jinyang",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "北京",
+    "dateText": "天授元年",
+    "year": 690,
+    "quote": "天授元年，置北都兼都督府。"
+  },
+  {
+    "placeId": "jinyang",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "北京",
+    "dateText": "開元十一年",
+    "year": 723,
+    "quote": "開元十一年，又置北都，改并州為太原府。"
+  },
+  {
+    "placeId": "jinyang",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "北京",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改北都為北京。"
+  },
+  {
+    "placeId": "datong",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "雲州",
+    "dateText": "貞觀十四年",
+    "year": 640,
+    "quote": "貞觀十四年，自朔州北定襄城，移雲州及定襄縣置於此。"
+  },
+  {
+    "placeId": "datong",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "雲州",
+    "dateText": "永淳元年",
+    "year": 682,
+    "quote": "永淳元年，為賊所破，因廢，乃移百姓于朔州。"
+  },
+  {
+    "placeId": "datong",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "雲州",
+    "dateText": "開元二十年",
+    "year": 732,
+    "quote": "開元二十年，復為雲州。"
+  },
+  {
+    "placeId": "datong",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "雲州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為雲中郡。"
+  },
+  {
+    "placeId": "datong",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "雲州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為雲州，領縣一，戶七十三，口五百六十一。"
+  },
+  {
+    "placeId": "dunhuang",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "沙州",
+    "dateText": "武德二年",
+    "year": 619,
+    "quote": "武德二年，置瓜州。"
+  },
+  {
+    "placeId": "dunhuang",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "沙州",
+    "dateText": "貞觀七年",
+    "year": 633,
+    "quote": "貞觀七年，去「西」字。"
+  },
+  {
+    "placeId": "dunhuang",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "沙州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為燉煌郡。"
+  },
+  {
+    "placeId": "dunhuang",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "沙州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為沙州。"
+  },
+  {
+    "placeId": "lingwu",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "靈州",
+    "dateText": "武德元年",
+    "year": 618,
+    "quote": "武德元年，改為靈州總管府，領回樂、弘靜、懷遠、靈武、鳴沙五縣。"
+  },
+  {
+    "placeId": "lingwu",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "靈州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改靈州為靈武郡。"
+  },
+  {
+    "placeId": "suiyang",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "宋州",
+    "dateText": "武德四年",
+    "year": 621,
+    "quote": "武德四年，平王世充，置宋州，領宋城、寧陵、柘城、穀熟、下邑、碭山、虞城七縣。"
+  },
+  {
+    "placeId": "suiyang",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "宋州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改宋州為睢陽郡。"
+  },
+  {
+    "placeId": "suiyang",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "宋州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為宋州。"
+  },
+  {
+    "placeId": "xiangzhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "相州",
+    "dateText": "武德元年",
+    "year": 618,
+    "quote": "武德元年，置相州總官府，領安陽、鄴、林慮、零泉、相、臨漳、洹水、堯城八縣。"
+  },
+  {
+    "placeId": "xiangzhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "相州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為鄴郡。"
+  },
+  {
+    "placeId": "xiangzhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "相州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為相州。"
+  },
+  {
+    "placeId": "heyang",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "孟州",
+    "dateText": "顯慶二年",
+    "year": 657,
+    "quote": "顯慶二年，割屬河南府。"
+  },
+  {
+    "placeId": "heyang",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "孟州",
+    "dateText": "會昌三年九月",
+    "year": 843,
+    "quote": "會昌三年九月，中書門下奏：「河陽五縣，自艱難已來，割屬河陽三城使。其租賦色役，盡歸河陽，河南尹但總管名額而已，使歸一統，便為定制。既是雄鎮，足壯三城，其河陽望昇為孟州，仍為望，河陽等五縣改為望縣。"
+  },
+  {
+    "placeId": "heyang",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "孟州",
+    "dateText": "會昌四年",
+    "year": 844,
+    "quote": "會昌四年，又割澤州隸河陽節度使，仍移治所于孟州，戶口籍帳入河南府。"
+  },
+  {
+    "placeId": "shanzhou",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "陝州",
+    "dateText": "武德元年",
+    "year": 618,
+    "quote": "武德元年，改為陝州總管府，管陝、鼎、熊、函、穀五州，仍割長水屬虢州。"
+  },
+  {
+    "placeId": "shanzhou",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "陝州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為陝郡，置軍。"
+  },
+  {
+    "placeId": "shanzhou",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "陝州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為陝州，因割蒲州之解、安邑，絳州之夏縣來屬；仍改安邑為虞邑。"
+  },
+  {
+    "placeId": "shanzhou",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "陝州",
+    "dateText": "廣德元年十月",
+    "year": 763,
+    "quote": "廣德元年十月，吐蕃犯京師，車駕幸陝州，仍以陝為大都督府。"
+  },
+  {
+    "placeId": "zhengzhou",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "鄭州",
+    "dateText": "武德四年",
+    "year": 621,
+    "quote": "武德四年，平王世充，置鄭州于武牢，領氾水、滎陽、滎澤、成皋、密五縣。"
+  },
+  {
+    "placeId": "zhengzhou",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "鄭州",
+    "dateText": "貞觀元年",
+    "year": 627,
+    "quote": "貞觀元年，廢管州及須水、清池二縣，以廢管州之陽武、新鄭四縣屬鄭州。"
+  },
+  {
+    "placeId": "huazhou-hua",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "滑州",
+    "dateText": "武德元年",
+    "year": 618,
+    "quote": "武德元年，改為滑州，以城有古滑臺也。"
+  },
+  {
+    "placeId": "huazhou-hua",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "滑州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為靈昌郡。"
+  },
+  {
+    "placeId": "huazhou-hua",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "滑州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為滑州。"
+  },
+  {
+    "placeId": "huaizhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "懷州",
+    "dateText": "武德二年",
+    "year": 619,
+    "quote": "武德二年，於濟源西南柏崖城置懷州，領大基、河陽、集城、長泉四縣。"
+  },
+  {
+    "placeId": "huaizhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "懷州",
+    "dateText": "顯慶二年",
+    "year": 657,
+    "quote": "顯慶二年，割河陽、溫、濟源、王屋四縣屬洛州。"
+  },
+  {
+    "placeId": "huaizhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "懷州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為懷州。"
+  },
+  {
+    "placeId": "hengzhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "鎮州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為常山郡。"
+  },
+  {
+    "placeId": "hengzhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "鎮州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為恆州。"
+  },
+  {
+    "placeId": "hengzhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "鎮州",
+    "dateText": "興元元年",
+    "year": 784,
+    "quote": "興元元年，升為都督府。"
+  },
+  {
+    "placeId": "hengzhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "鎮州",
+    "dateText": "元和十五年",
+    "year": 820,
+    "quote": "元和十五年，改為鎮州。"
+  },
+  {
+    "placeId": "beizhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "貝州",
+    "dateText": "武德四年",
+    "year": 621,
+    "quote": "武德四年，平竇建德，置貝州，領清河、武城、漳南、曆亭、清陽、鄃、夏津七縣。"
+  },
+  {
+    "placeId": "beizhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "貝州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為清河郡。"
+  },
+  {
+    "placeId": "beizhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "貝州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為貝州。"
+  },
+  {
+    "placeId": "pingyuan",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "德州",
+    "dateText": "武德四年",
+    "year": 621,
+    "quote": "武德四年，平竇建德後，置德州，領安德、般、平原、長河、將陵、平昌六縣。"
+  },
+  {
+    "placeId": "pingyuan",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "德州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為平原郡。"
+  },
+  {
+    "placeId": "pingyuan",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "德州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為德州。"
+  },
+  {
+    "placeId": "fuzhou-fu",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "鄜州",
+    "dateText": "武德元年",
+    "year": 618,
+    "quote": "武德元年，改為鄜州，領洛交、洛川、三川、伏陸、內部、鄜城六縣。"
+  },
+  {
+    "placeId": "fuzhou-fu",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "鄜州",
+    "dateText": "貞觀二年",
+    "year": 628,
+    "quote": "貞觀二年，置都督府。"
+  },
+  {
+    "placeId": "fuzhou-fu",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "鄜州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為洛交郡。"
+  },
+  {
+    "placeId": "fuzhou-fu",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "鄜州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為鄜州。"
+  },
+  {
+    "placeId": "luzhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "潞州",
+    "dateText": "武德元年",
+    "year": 618,
+    "quote": "武德元年，改為潞州，領上党、長子、屯留、潞城四縣。"
+  },
+  {
+    "placeId": "luzhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "潞州",
+    "dateText": "開元十七年",
+    "year": 729,
+    "quote": "開元十七年，以玄宗曆職此州，置大都督府，管慈、儀、石、沁四州。"
+  },
+  {
+    "placeId": "luzhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "潞州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為上黨郡。"
+  },
+  {
+    "placeId": "luzhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "潞州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，依舊為潞州大都督府。"
+  },
+  {
+    "placeId": "dengzhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "鄧州",
+    "dateText": "武德二年",
+    "year": 619,
+    "quote": "武德二年，改為鄧州，領穰縣、冠軍、深陽三縣。"
+  },
+  {
+    "placeId": "dengzhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "鄧州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為南陽郡。"
+  },
+  {
+    "placeId": "dengzhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "鄧州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為鄧州。"
+  },
+  {
+    "placeId": "xuzhou-xuchang",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "許州",
+    "dateText": "武德四年",
+    "year": 621,
+    "quote": "武德四年，平王世充，改為許州，領長社、長葛、許昌、繁昌、黃臺、㶏強、臨潁七縣。"
+  },
+  {
+    "placeId": "xuzhou-xuchang",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "許州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為潁川郡。"
+  },
+  {
+    "placeId": "xuzhou-xuchang",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "許州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為許州。"
+  },
+  {
+    "placeId": "xuzhou-pengcheng",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "徐州",
+    "dateText": "武德四年",
+    "year": 621,
+    "quote": "武德四年，平王世充，置徐州總管府，管徐、邳、泗、鄫、沂、仁六州。"
+  },
+  {
+    "placeId": "xuzhou-pengcheng",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "徐州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改徐州為彭城郡。"
+  },
+  {
+    "placeId": "xuzhou-pengcheng",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "徐州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為徐州。"
+  },
+  {
+    "placeId": "fengxiang",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "鳳翔府",
+    "dateText": "武德元年",
+    "year": 618,
+    "quote": "武德元年，改為岐州，領雍、陳倉、郿、虢、岐山、鳳泉等六縣。"
+  },
+  {
+    "placeId": "fengxiang",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "鳳翔府",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為扶風郡。"
+  },
+  {
+    "placeId": "fengxiang",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "鳳翔府",
+    "dateText": "至德二年",
+    "year": 757,
+    "quote": "至德二年，肅宗自順化郡幸扶風郡，置天興縣，改雍縣為鳳翔縣，並治郭下。"
+  },
+  {
+    "placeId": "tongzhou-dali",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "同州",
+    "dateText": "武德元年",
+    "year": 618,
+    "quote": "武德元年，改為同州，領馮翊、下邽、蒲城、朝邑、澄城、白水、郃陽、韓城八縣。"
+  },
+  {
+    "placeId": "tongzhou-dali",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "同州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改同州為馮翊郡。"
+  },
+  {
+    "placeId": "tongzhou-dali",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "同州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為同州。"
+  },
+  {
+    "placeId": "tongzhou-dali",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "同州",
+    "dateText": "乾元三年",
+    "year": 760,
+    "quote": "乾元三年，以蒲州為河中府；割朝邑縣入河中府，改河西縣為夏陽縣，又屬河中府。"
+  },
+  {
+    "placeId": "huazhou-shaanxi",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "華州",
+    "dateText": "武德元年",
+    "year": 618,
+    "quote": "武德元年，改為華州，割雍州之渭南來屬。"
+  },
+  {
+    "placeId": "huazhou-shaanxi",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "華州",
+    "dateText": "神龍元年",
+    "year": 705,
+    "quote": "神龍元年，復舊名。"
+  },
+  {
+    "placeId": "huazhou-shaanxi",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "華州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為華陰郡。"
+  },
+  {
+    "placeId": "huazhou-shaanxi",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "華州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為華州。"
+  },
+  {
+    "placeId": "huazhou-shaanxi",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "華州",
+    "dateText": "寶應元年",
+    "year": 762,
+    "quote": "寶應元年，復為華州。"
+  },
+  {
+    "placeId": "puzhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "河中",
+    "dateText": "武德元年",
+    "year": 618,
+    "quote": "武德元年，置蒲州，治桑泉縣，領河東、桑泉、猗氏、虞鄉四縣。"
+  },
+  {
+    "placeId": "puzhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "河中",
+    "dateText": "開元八年",
+    "year": 720,
+    "quote": "開元八年，置中都，改蒲州為河中府。"
+  },
+  {
+    "placeId": "puzhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "河中",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為河東郡。"
+  },
+  {
+    "placeId": "puzhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "河中",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為蒲州，割安邑屬陝州。"
+  },
+  {
+    "placeId": "jiangzhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "絳州",
+    "dateText": "武德元年",
+    "year": 618,
+    "quote": "武德元年，置絳州總管府，管絳、潞、蓋、建、澤、沁、韓、晉、呂、舉、泰、蒲、虞、芮、邵十五州。"
+  },
+  {
+    "placeId": "weizhou-daming",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "魏州",
+    "dateText": "武德四年",
+    "year": 621,
+    "quote": "武德四年，平竇建德，復為魏州。"
+  },
+  {
+    "placeId": "weizhou-daming",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "魏州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為魏郡。"
+  },
+  {
+    "placeId": "weizhou-daming",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "魏州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為魏州。"
+  },
+  {
+    "placeId": "bozhou-liaocheng",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "博州",
+    "dateText": "武德四年",
+    "year": 621,
+    "quote": "武德四年，平竇建德，置博州，領聊城、武水、堂邑、茌平，仍置莘亭、靈泉、清平、博平、高唐凡九縣。"
+  },
+  {
+    "placeId": "bozhou-liaocheng",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "博州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為博平郡。"
+  },
+  {
+    "placeId": "bozhou-liaocheng",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "博州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為博州。"
+  },
+  {
+    "placeId": "qizhou-jinan",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "齊州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為臨淄郡。"
+  },
+  {
+    "placeId": "qizhou-jinan",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "齊州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為齊州。"
+  },
+  {
+    "placeId": "yanzhou",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "兗州",
+    "dateText": "武德五年",
+    "year": 622,
+    "quote": "武德五年，平徐圓朗，置兗州，領任城、瑕丘、平陸、龔丘、曲阜、鄒、泗水七縣。"
+  },
+  {
+    "placeId": "yanzhou",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "兗州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改兗州為魯郡。"
+  },
+  {
+    "placeId": "yanzhou",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "兗州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為兗州。"
+  },
+  {
+    "placeId": "qingzhou",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "青州",
+    "dateText": "武德四年",
+    "year": 621,
+    "quote": "武德四年，置青州總管府，管青、濰、登、牟、莒、密、萊、乘八州。"
+  },
+  {
+    "placeId": "qingzhou",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "青州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改青州為北海郡。"
+  },
+  {
+    "placeId": "qingzhou",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "青州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為青州。"
+  },
+  {
+    "placeId": "dengzhou-penglai",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "登州",
+    "dateText": "如意元年",
+    "year": 692,
+    "quote": "如意元年，分置登州，領文登、牟平、黃三縣，以牟平為治所。"
+  },
+  {
+    "placeId": "dengzhou-penglai",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "登州",
+    "dateText": "神龍三年",
+    "year": 707,
+    "quote": "神龍三年，改黃縣為蓬萊縣，移州治于蓬萊。"
+  },
+  {
+    "placeId": "dengzhou-penglai",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "登州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，以登州為東牟郡。"
+  },
+  {
+    "placeId": "dengzhou-penglai",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "登州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為登州。"
+  },
+  {
+    "placeId": "liangzhou-wuwei",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "涼州",
+    "dateText": "武德二年",
+    "year": 619,
+    "quote": "武德二年，平李軌，置涼州總管府，管涼、甘、瓜、肅四州。"
+  },
+  {
+    "placeId": "liangzhou-wuwei",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "涼州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為武威郡，督涼、甘、肅三州。"
+  },
+  {
+    "placeId": "liangzhou-wuwei",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "涼州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為涼州。"
+  },
+  {
+    "placeId": "ganzhou-zhangye",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "甘州",
+    "dateText": "武德二年",
+    "year": 619,
+    "quote": "武德二年，平李軌，置甘州。"
+  },
+  {
+    "placeId": "ganzhou-zhangye",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "甘州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為張掖郡。"
+  },
+  {
+    "placeId": "ganzhou-zhangye",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "甘州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為甘州。"
+  },
+  {
+    "placeId": "suzhou-jiuquan",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "肅州",
+    "dateText": "武德二年",
+    "year": 619,
+    "quote": "武德二年，分隋張掖郡置肅州。"
+  },
+  {
+    "placeId": "suzhou-jiuquan",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "肅州",
+    "dateText": "貞觀元年",
+    "year": 627,
+    "quote": "貞觀元年，罷都督府。"
+  },
+  {
+    "placeId": "suzhou-jiuquan",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "肅州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為酒泉郡。"
+  },
+  {
+    "placeId": "suzhou-jiuquan",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "肅州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為肅州。"
+  },
+  {
+    "placeId": "guazhou-jinchang",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "瓜州",
+    "dateText": "武德五年",
+    "year": 622,
+    "quote": "武德五年，置瓜州，仍立總管府，管西沙、肅三州。"
+  },
+  {
+    "placeId": "guazhou-jinchang",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "瓜州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，為晉昌郡。"
+  },
+  {
+    "placeId": "guazhou-jinchang",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "瓜州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為瓜州。"
+  },
+  {
+    "placeId": "xizhou-gaochang",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "西州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為交河郡。"
+  },
+  {
+    "placeId": "xizhou-gaochang",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "西州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為西州。"
+  },
+  {
+    "placeId": "yizhou-hami",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "伊州",
+    "dateText": "貞觀四年",
+    "year": 630,
+    "quote": "貞觀四年，歸化，置西伊州。"
+  },
+  {
+    "placeId": "yizhou-hami",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "伊州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，為伊吾郡。"
+  },
+  {
+    "placeId": "yizhou-hami",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "伊州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為伊州。"
+  },
+  {
+    "placeId": "kaifeng",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "汴州",
+    "dateText": "武德四年",
+    "year": 621,
+    "quote": "武德四年，平王世充，置汴州總管府，管汴、洧、杞、陳四州，領浚儀、新裏、小黃、開封、封丘等五縣。"
+  },
+  {
+    "placeId": "kaifeng",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "汴州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改汴州為陳留郡。"
+  },
+  {
+    "placeId": "kaifeng",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "汴州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為汴州。"
+  },
+  {
+    "placeId": "kaifeng",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "汴州",
+    "dateText": "建中二年",
+    "year": 781,
+    "quote": "建中二年，築其羅城。"
+  },
+  {
+    "placeId": "chengdu",
+    "sourceId": "tang-se-jiutangshu-41",
+    "sourceHeading": "成都",
+    "dateText": "龍朔二年",
+    "year": 662,
+    "quote": "龍朔二年，升為大都督府，仍置廣都縣。"
+  },
+  {
+    "placeId": "chengdu",
+    "sourceId": "tang-se-jiutangshu-41",
+    "sourceHeading": "成都",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改益州為蜀郡，依舊大都督府，督劍南三十八郡。"
+  },
+  {
+    "placeId": "chengdu",
+    "sourceId": "tang-se-jiutangshu-41",
+    "sourceHeading": "成都",
+    "dateText": "至德二年十月",
+    "year": 757,
+    "quote": "至德二年十月，駕回西京，改蜀郡為成都府，長史為尹。"
+  },
+  {
+    "placeId": "chengdu",
+    "sourceId": "tang-se-jiutangshu-41",
+    "sourceHeading": "成都",
+    "dateText": "廣德元年",
+    "year": 763,
+    "quote": "廣德元年，黃門侍郎嚴武為成都尹，復並東、西川為一節度。"
+  },
+  {
+    "placeId": "guangzhou",
+    "sourceId": "tang-se-jiutangshu-41",
+    "sourceHeading": "廣州",
+    "dateText": "武德四年",
+    "year": 621,
+    "quote": "武德四年，討平蕭銑，置廣州總管府，管廣、東衡、洭、南綏、岡五州，並南康總管。"
+  },
+  {
+    "placeId": "guangzhou",
+    "sourceId": "tang-se-jiutangshu-41",
+    "sourceHeading": "廣州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為南海郡。"
+  },
+  {
+    "placeId": "guangzhou",
+    "sourceId": "tang-se-jiutangshu-41",
+    "sourceHeading": "廣州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為廣州。"
+  },
+  {
+    "placeId": "yangzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "揚州",
+    "dateText": "貞觀十年",
+    "year": 636,
+    "quote": "貞觀十年，改大都督為都督，督揚、滁、常、潤、和、宣、歙七州。"
+  },
+  {
+    "placeId": "yangzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "揚州",
+    "dateText": "龍朔二年",
+    "year": 662,
+    "quote": "龍朔二年，升為大都督府。"
+  },
+  {
+    "placeId": "yangzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "揚州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為廣陵郡，依舊大都督府。"
+  },
+  {
+    "placeId": "yangzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "揚州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為揚州。"
+  },
+  {
+    "placeId": "xiangyang",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "襄州",
+    "dateText": "武德四年",
+    "year": 621,
+    "quote": "武德四年，平王世充，改為襄州，因隋舊名。"
+  },
+  {
+    "placeId": "xiangyang",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "襄州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為襄陽郡。"
+  },
+  {
+    "placeId": "xiangyang",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "襄州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為襄州。"
+  },
+  {
+    "placeId": "xiangyang",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "襄州",
+    "dateText": "上元二年",
+    "year": 761,
+    "quote": "上元二年，置襄州節度使，領襄、鄧、均、房、金、商等州，自後為山南東道節度使治所。"
+  },
+  {
+    "placeId": "jingzhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "荊州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為江陵郡。"
+  },
+  {
+    "placeId": "jingzhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "荊州",
+    "dateText": "乾元元年三月",
+    "year": 758,
+    "quote": "乾元元年三月，復為荊州大都督府。"
+  },
+  {
+    "placeId": "jingzhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "荊州",
+    "dateText": "上元元年九月",
+    "year": 760,
+    "quote": "上元元年九月，置南都，以荊州為江陵府，長史為尹，觀察、制置，一準兩京。"
+  },
+  {
+    "placeId": "hangzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "杭州",
+    "dateText": "武德四年",
+    "year": 621,
+    "quote": "武德四年，平李子通，置杭州，領錢塘、富陽、餘杭三縣。"
+  },
+  {
+    "placeId": "hangzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "杭州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為餘杭郡。"
+  },
+  {
+    "placeId": "hangzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "杭州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為杭州。"
+  },
+  {
+    "placeId": "suzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "蘇州",
+    "dateText": "武德四年",
+    "year": 621,
+    "quote": "武德四年，平李子通，置蘇州。"
+  },
+  {
+    "placeId": "suzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "蘇州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為吳郡。"
+  },
+  {
+    "placeId": "suzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "蘇州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為蘇州。"
+  },
+  {
+    "placeId": "runzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "潤州",
+    "dateText": "武德三年",
+    "year": 620,
+    "quote": "武德三年，杜伏威歸國，置潤州於丹徒縣，改隋延陵縣為丹徒，移延陵還治故縣，屬茅州。"
+  },
+  {
+    "placeId": "runzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "潤州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為丹陽郡。"
+  },
+  {
+    "placeId": "runzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "潤州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為潤州。"
+  },
+  {
+    "placeId": "yuezhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "越州",
+    "dateText": "武德四年",
+    "year": 621,
+    "quote": "武德四年，平李子通，置越州總管，管越、嵊、姚、鄞、浙、綱、衢、穀、麗、嚴、婺十一州。"
+  },
+  {
+    "placeId": "yuezhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "越州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改越州為會稽郡。"
+  },
+  {
+    "placeId": "yuezhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "越州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為越州。"
+  },
+  {
+    "placeId": "mingzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "明州",
+    "dateText": "開元二十六年",
+    "year": 738,
+    "quote": "開元二十六年，於越州鄮縣置明州。"
+  },
+  {
+    "placeId": "mingzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "明州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為餘姚郡。"
+  },
+  {
+    "placeId": "mingzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "明州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為明州，取四明山為名。"
+  },
+  {
+    "placeId": "huzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "湖州",
+    "dateText": "武德四年",
+    "year": 621,
+    "quote": "武德四年，平李子通，置湖州，領烏程一縣。"
+  },
+  {
+    "placeId": "huzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "湖州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為吳興郡。"
+  },
+  {
+    "placeId": "huzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "湖州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為湖州。"
+  },
+  {
+    "placeId": "wuzhou-jinhua",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "婺州",
+    "dateText": "武德四年",
+    "year": 621,
+    "quote": "武德四年，平李子通，置婺州，領華川、長山二縣。"
+  },
+  {
+    "placeId": "wuzhou-jinhua",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "婺州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改婺州為東陽郡。"
+  },
+  {
+    "placeId": "wuzhou-jinhua",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "婺州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為婺州。"
+  },
+  {
+    "placeId": "hongzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "洪州",
+    "dateText": "武德五年",
+    "year": 622,
+    "quote": "武德五年，平林士弘，置洪州總管府，管洪、饒、撫、吉、虔、南平六州，分豫章置鐘陵縣。"
+  },
+  {
+    "placeId": "hongzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "洪州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為豫章郡。"
+  },
+  {
+    "placeId": "hongzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "洪州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為洪州。"
+  },
+  {
+    "placeId": "jiangzhou-jiujiang",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "江州",
+    "dateText": "武德四年",
+    "year": 621,
+    "quote": "武德四年，平林士弘，置江州，領湓城、潯陽、彭澤三縣。"
+  },
+  {
+    "placeId": "jiangzhou-jiujiang",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "江州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為潯陽郡。"
+  },
+  {
+    "placeId": "jiangzhou-jiujiang",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "江州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為江州。"
+  },
+  {
+    "placeId": "tanzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "潭州",
+    "dateText": "武德四年",
+    "year": 621,
+    "quote": "武德四年，平蕭銑，置潭州總管府，管潭、衡、永、郴、連、南梁、南雲、南營八州。"
+  },
+  {
+    "placeId": "tanzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "潭州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為長沙郡。"
+  },
+  {
+    "placeId": "tanzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "潭州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為潭州。"
+  },
+  {
+    "placeId": "hengzhou-hunan",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "衡州",
+    "dateText": "武德四年",
+    "year": 621,
+    "quote": "武德四年，平蕭銑，置衡州，領臨蒸、湘潭、耒陽、新甯、重安、新城六縣。"
+  },
+  {
+    "placeId": "hengzhou-hunan",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "衡州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為衡陽郡。"
+  },
+  {
+    "placeId": "hengzhou-hunan",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "衡州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為衡州。"
+  },
+  {
+    "placeId": "ezhou-jiangxia",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "鄂州",
+    "dateText": "武德四年",
+    "year": 621,
+    "quote": "武德四年，平蕭銑，改為鄂州。"
+  },
+  {
+    "placeId": "ezhou-jiangxia",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "鄂州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為江夏郡。"
+  },
+  {
+    "placeId": "ezhou-jiangxia",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "鄂州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為鄂州。"
+  },
+  {
+    "placeId": "shezhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "歙州",
+    "dateText": "武德四年",
+    "year": 621,
+    "quote": "武德四年，平汪華，置歙州總管，管歙、睦、衢三州。"
+  },
+  {
+    "placeId": "shezhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "歙州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為新安郡。"
+  },
+  {
+    "placeId": "shezhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "歙州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為歙州。"
+  },
+  {
+    "placeId": "shouzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "壽州",
+    "dateText": "武德三年",
+    "year": 620,
+    "quote": "武德三年，杜伏威歸國，改為壽州。"
+  },
+  {
+    "placeId": "shouzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "壽州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為壽春郡，又置霍山縣。"
+  },
+  {
+    "placeId": "shouzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "壽州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為壽州。"
+  },
+  {
+    "placeId": "luzhou-hefei",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "廬州",
+    "dateText": "武德三年",
+    "year": 620,
+    "quote": "武德三年，改為廬州，領合肥、廬江、慎三縣。"
+  },
+  {
+    "placeId": "luzhou-hefei",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "廬州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為廬江郡。"
+  },
+  {
+    "placeId": "luzhou-hefei",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "廬州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為廬州，自中升為上。"
+  },
+  {
+    "placeId": "changzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "常州",
+    "dateText": "武德三年",
+    "year": 620,
+    "quote": "武德三年，杜伏威歸化，置常州，領晉陵、義興、無錫、武進四縣。"
+  },
+  {
+    "placeId": "changzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "常州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為晉陵郡。"
+  },
+  {
+    "placeId": "changzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "常州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為常州。"
+  },
+  {
+    "placeId": "quanzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "泉州",
+    "dateText": "景雲二年",
+    "year": 711,
+    "quote": "景雲二年，改為泉州。"
+  },
+  {
+    "placeId": "quanzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "泉州",
+    "dateText": "開元二十九年",
+    "year": 741,
+    "quote": "開元二十九年，割龍溪屬漳州。"
+  },
+  {
+    "placeId": "quanzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "泉州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改泉州為清源郡。"
+  },
+  {
+    "placeId": "quanzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "泉州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為泉州。"
+  },
+  {
+    "placeId": "fuzhou-fujian",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "福州",
+    "dateText": "景雲二年",
+    "year": 711,
+    "quote": "景雲二年，改為閩州，置都督府，督閩、泉、建、漳、湖五州。"
+  },
+  {
+    "placeId": "fuzhou-fujian",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "福州",
+    "dateText": "開元十三年",
+    "year": 725,
+    "quote": "開元十三年，改為福州，依舊都督府，仍置經略使。"
+  },
+  {
+    "placeId": "fuzhou-fujian",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "福州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為福州都督府。"
+  },
+  {
+    "placeId": "wenzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "溫州",
+    "dateText": "武德五年",
+    "year": 622,
+    "quote": "武德五年，置東嘉州，領永嘉、永甯、安固、樂成、橫陽五縣。"
+  },
+  {
+    "placeId": "wenzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "溫州",
+    "dateText": "貞觀元年",
+    "year": 627,
+    "quote": "貞觀元年，廢東嘉州，以縣屬括州。"
+  },
+  {
+    "placeId": "wenzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "溫州",
+    "dateText": "上元二年",
+    "year": 675,
+    "quote": "上元二年，分括州之永嘉、安固二縣置溫州。"
+  },
+  {
+    "placeId": "wenzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "溫州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為永嘉郡。"
+  },
+  {
+    "placeId": "wenzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "溫州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為溫州。"
+  },
+  {
+    "placeId": "xuanzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "宣州",
+    "dateText": "武德三年",
+    "year": 620,
+    "quote": "武德三年，杜伏威歸化。置宣州總管府。"
+  },
+  {
+    "placeId": "xuanzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "宣州",
+    "dateText": "貞觀元年",
+    "year": 627,
+    "quote": "貞觀元年，罷都督府。"
+  },
+  {
+    "placeId": "xuanzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "宣州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為宣城郡。"
+  },
+  {
+    "placeId": "xuanzhou",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "宣州",
+    "dateText": "永泰元年",
+    "year": 765,
+    "quote": "永泰元年，割秋浦、青陽、至德三縣置池州。"
+  },
+  {
+    "placeId": "zizhou",
+    "sourceId": "tang-se-jiutangshu-41",
+    "sourceHeading": "梓州",
+    "dateText": "武德元年",
+    "year": 618,
+    "quote": "武德元年，改為梓州，領郪、射洪、鹽亭、飛烏四縣。"
+  },
+  {
+    "placeId": "zizhou",
+    "sourceId": "tang-se-jiutangshu-41",
+    "sourceHeading": "梓州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為梓潼郡。"
+  },
+  {
+    "placeId": "zizhou",
+    "sourceId": "tang-se-jiutangshu-41",
+    "sourceHeading": "梓州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為梓州。"
+  },
+  {
+    "placeId": "hanzhou",
+    "sourceId": "tang-se-jiutangshu-41",
+    "sourceHeading": "漢州",
+    "dateText": "垂拱二年",
+    "year": 686,
+    "quote": "垂拱二年，分益州五縣置漢州。"
+  },
+  {
+    "placeId": "hanzhou",
+    "sourceId": "tang-se-jiutangshu-41",
+    "sourceHeading": "漢州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為德陽郡。"
+  },
+  {
+    "placeId": "hanzhou",
+    "sourceId": "tang-se-jiutangshu-41",
+    "sourceHeading": "漢州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為漢州。"
+  },
+  {
+    "placeId": "jianzhou",
+    "sourceId": "tang-se-jiutangshu-41",
+    "sourceHeading": "劍州",
+    "dateText": "先天二年",
+    "year": 713,
+    "quote": "先天二年，改始州為劍州。"
+  },
+  {
+    "placeId": "jianzhou",
+    "sourceId": "tang-se-jiutangshu-41",
+    "sourceHeading": "劍州",
+    "dateText": "聖曆二年",
+    "year": 699,
+    "quote": "聖曆二年，置劍門縣。"
+  },
+  {
+    "placeId": "jianzhou",
+    "sourceId": "tang-se-jiutangshu-41",
+    "sourceHeading": "劍州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為劍州也。"
+  },
+  {
+    "placeId": "suizhou-suining",
+    "sourceId": "tang-se-jiutangshu-41",
+    "sourceHeading": "遂州",
+    "dateText": "武德元年",
+    "year": 618,
+    "quote": "武德元年，改為遂州，領方義、長江、青石三縣。"
+  },
+  {
+    "placeId": "suizhou-suining",
+    "sourceId": "tang-se-jiutangshu-41",
+    "sourceHeading": "遂州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為遂寧郡。"
+  },
+  {
+    "placeId": "suizhou-suining",
+    "sourceId": "tang-se-jiutangshu-41",
+    "sourceHeading": "遂州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為遂州。"
+  },
+  {
+    "placeId": "guizhou-guilin",
+    "sourceId": "tang-se-jiutangshu-41",
+    "sourceHeading": "桂州",
+    "dateText": "武德四年",
+    "year": 621,
+    "quote": "武德四年，平蕭銑，置桂州總管府，管桂、象、靜、融、賀、樂、荔、南昆、龍九州，並定州一總管。"
+  },
+  {
+    "placeId": "guizhou-guilin",
+    "sourceId": "tang-se-jiutangshu-41",
+    "sourceHeading": "桂州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為始安郡，依舊都督府。"
+  },
+  {
+    "placeId": "guizhou-guilin",
+    "sourceId": "tang-se-jiutangshu-41",
+    "sourceHeading": "桂州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為桂州，刺史充經略軍使，管戍兵千人，衣糧稅本管自給也。"
+  },
+  {
+    "placeId": "liuzhou",
+    "sourceId": "tang-se-jiutangshu-41",
+    "sourceHeading": "柳州",
+    "dateText": "武德四年",
+    "year": 621,
+    "quote": "武德四年，平蕭銑，置昆州，領馬平、新平、文安、賀水、歸德五縣。"
+  },
+  {
+    "placeId": "liuzhou",
+    "sourceId": "tang-se-jiutangshu-41",
+    "sourceHeading": "柳州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為龍城郡。"
+  },
+  {
+    "placeId": "liuzhou",
+    "sourceId": "tang-se-jiutangshu-41",
+    "sourceHeading": "柳州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為柳州，以州界柳嶺為名。"
+  },
+  {
+    "placeId": "yongzhou-nanning",
+    "sourceId": "tang-se-jiutangshu-41",
+    "sourceHeading": "邕州",
+    "dateText": "武德五年",
+    "year": 622,
+    "quote": "武德五年，置南晉州，領宣化一縣。"
+  },
+  {
+    "placeId": "yongzhou-nanning",
+    "sourceId": "tang-se-jiutangshu-41",
+    "sourceHeading": "邕州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年改為朗寧郡。"
+  },
+  {
+    "placeId": "yongzhou-nanning",
+    "sourceId": "tang-se-jiutangshu-41",
+    "sourceHeading": "邕州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年復為邕州。"
+  },
+  {
+    "placeId": "hanzhong",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "梁州",
+    "dateText": "武德元年",
+    "year": 618,
+    "quote": "武德元年，置梁州總管府，管梁、洋、集、興四州。"
+  },
+  {
+    "placeId": "hanzhong",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "梁州",
+    "dateText": "開元十三年",
+    "year": 725,
+    "quote": "開元十三年，改梁州為褒州，依舊都督府。"
+  },
+  {
+    "placeId": "hanzhong",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "梁州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為漢中郡，仍為都督府。"
+  },
+  {
+    "placeId": "hanzhong",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "梁州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為梁州。"
+  },
+  {
+    "placeId": "hanzhong",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "梁州",
+    "dateText": "興元元年六月",
+    "year": 784,
+    "quote": "興元元年六月，昇為興元府。"
+  },
+  {
+    "placeId": "kuizhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "夔州",
+    "dateText": "武德元年",
+    "year": 618,
+    "quote": "武德元年，改為信州。"
+  },
+  {
+    "placeId": "kuizhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "夔州",
+    "dateText": "貞觀十四年",
+    "year": 640,
+    "quote": "貞觀十四年，為都督府，督歸、夔、忠、萬、涪、渝、南七州。"
+  },
+  {
+    "placeId": "kuizhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "夔州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為雲安郡。"
+  },
+  {
+    "placeId": "kuizhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "夔州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為夔州。"
+  },
+  {
+    "placeId": "yuzhou-chongqing",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "渝州",
+    "dateText": "武德元年",
+    "year": 618,
+    "quote": "武德元年，置渝州，因開皇舊名，領江津、涪陵二縣。"
+  },
+  {
+    "placeId": "yuzhou-chongqing",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "渝州",
+    "dateText": "貞觀十三年",
+    "year": 639,
+    "quote": "貞觀十三年，以廢霸州之南平縣來屬。"
+  },
+  {
+    "placeId": "yuzhou-chongqing",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "渝州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為南平郡。"
+  },
+  {
+    "placeId": "langzhou",
+    "sourceId": "tang-se-jiutangshu-41",
+    "sourceHeading": "閬州",
+    "dateText": "武德元年",
+    "year": 618,
+    "quote": "武德元年，改為隆州，領閬中、南部、蒼溪、南充、相如、西水、三城、奉國、儀隴、大寅十縣。"
+  },
+  {
+    "placeId": "langzhou",
+    "sourceId": "tang-se-jiutangshu-41",
+    "sourceHeading": "閬州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為閬中郡。"
+  },
+  {
+    "placeId": "langzhou",
+    "sourceId": "tang-se-jiutangshu-41",
+    "sourceHeading": "閬州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為閬州。"
+  },
+  {
+    "placeId": "cangzhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "滄州",
+    "dateText": "武德元年",
+    "year": 618,
+    "quote": "武德元年，改為滄州，領清池、饒安、無棣三縣，治清池。"
+  },
+  {
+    "placeId": "cangzhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "滄州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為景城郡。"
+  },
+  {
+    "placeId": "cangzhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "滄州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為滄州。"
+  },
+  {
+    "placeId": "yingzhou-hejian",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "瀛州",
+    "dateText": "武德四年",
+    "year": 621,
+    "quote": "武德四年，討平竇建德，改為瀛州，領河間、樂壽、景城、文安、束城、豐利六縣，"
+  },
+  {
+    "placeId": "yingzhou-hejian",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "瀛州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為河間郡。"
+  },
+  {
+    "placeId": "yingzhou-hejian",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "瀛州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為瀛州。"
+  },
+  {
+    "placeId": "dingzhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "定州",
+    "dateText": "武德四年",
+    "year": 621,
+    "quote": "武德四年，平竇建德，復置定州，領安喜、義豐、北平、深澤、毋極、唐昌、新樂、恆陽、唐、望都等十縣。"
+  },
+  {
+    "placeId": "dingzhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "定州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為博陵郡。"
+  },
+  {
+    "placeId": "dingzhou",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "定州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為定州。"
+  },
+  {
+    "placeId": "yizhou-hebei",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "易州",
+    "dateText": "開元二十三年",
+    "year": 735,
+    "quote": "開元二十三年，分置五回、樓亭、板城三縣。"
+  },
+  {
+    "placeId": "yizhou-hebei",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "易州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為上谷郡，復隋舊名。"
+  },
+  {
+    "placeId": "yizhou-hebei",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "易州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為易州。"
+  },
+  {
+    "placeId": "chenzhou-huaiyang",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "陳州",
+    "dateText": "武德元年",
+    "year": 618,
+    "quote": "武德元年，討平房憲伯，改為陳州，領宛丘、箕城、扶樂、太康、新平五縣。"
+  },
+  {
+    "placeId": "chenzhou-huaiyang",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "陳州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改陳州為淮陽郡。"
+  },
+  {
+    "placeId": "chenzhou-huaiyang",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "陳州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為陳州。"
+  },
+  {
+    "placeId": "bozhou-qiao",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "亳州",
+    "dateText": "貞觀元年",
+    "year": 627,
+    "quote": "貞觀元年，罷都督府，亳州不改。"
+  },
+  {
+    "placeId": "bozhou-qiao",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "亳州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為譙郡。"
+  },
+  {
+    "placeId": "bozhou-qiao",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "亳州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為亳州也。"
+  },
+  {
+    "placeId": "yuezhou-baling",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "岳州",
+    "dateText": "武德四年",
+    "year": 621,
+    "quote": "武德四年，平蕭銑，置巴州，領巴陵、華容、沅江、羅、湘陰五縣。"
+  },
+  {
+    "placeId": "yuezhou-baling",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "岳州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為巴陵郡。"
+  },
+  {
+    "placeId": "yuezhou-baling",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "岳州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為岳州。"
+  },
+  {
+    "placeId": "jizhou-luling",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "吉州",
+    "dateText": "武德五年",
+    "year": 622,
+    "quote": "武德五年，討平林士弘，置吉州，領廬陵、新淦二縣。"
+  },
+  {
+    "placeId": "jizhou-luling",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "吉州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為廬陵郡。"
+  },
+  {
+    "placeId": "jizhou-luling",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "吉州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為吉州。"
+  },
+  {
+    "placeId": "qianzhou-gan",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "虔州",
+    "dateText": "武德五年",
+    "year": 622,
+    "quote": "武德五年，平江左，置虔州。"
+  },
+  {
+    "placeId": "qianzhou-gan",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "虔州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為南康郡。"
+  },
+  {
+    "placeId": "qianzhou-gan",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "虔州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為虔州。"
+  },
+  {
+    "placeId": "shaozhou",
+    "sourceId": "tang-se-jiutangshu-41",
+    "sourceHeading": "韶州",
+    "dateText": "貞觀元年",
+    "year": 627,
+    "quote": "貞觀元年，改為韶州，仍割洭州之翁源來屬。"
+  },
+  {
+    "placeId": "shaozhou",
+    "sourceId": "tang-se-jiutangshu-41",
+    "sourceHeading": "韶州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為始興郡。"
+  },
+  {
+    "placeId": "shaozhou",
+    "sourceId": "tang-se-jiutangshu-41",
+    "sourceHeading": "韶州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為韶州。"
+  },
+  {
+    "placeId": "qianzhou-wuling",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "黔州",
+    "dateText": "武德元年",
+    "year": 618,
+    "quote": "武德元年，改為黔州，領彭水、都上、石城三縣。"
+  },
+  {
+    "placeId": "qianzhou-wuling",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "黔州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改黔州為黔中郡，依舊都督施、夷、播、思、費、珍、溱、商九州。"
+  },
+  {
+    "placeId": "qianzhou-wuling",
+    "sourceId": "tang-nw-jiutangshu-40",
+    "sourceHeading": "黔州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復以黔中郡為黔州都督府。"
+  },
+  {
+    "placeId": "caizhou-runan",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "蔡州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為汝南郡。"
+  },
+  {
+    "placeId": "caizhou-runan",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "蔡州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為豫州。"
+  },
+  {
+    "placeId": "caizhou-runan",
+    "sourceId": "tang-nw-jiutangshu-38",
+    "sourceHeading": "蔡州",
+    "dateText": "寶應元年",
+    "year": 762,
+    "quote": "寶應元年，改為蔡州。"
+  },
+  {
+    "placeId": "yingzhou-liaoxi",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "營州",
+    "dateText": "開元四年",
+    "year": 716,
+    "quote": "開元四年，復移還柳城。"
+  },
+  {
+    "placeId": "yingzhou-liaoxi",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "營州",
+    "dateText": "天寶元年",
+    "year": 742,
+    "quote": "天寶元年，改為柳城郡。"
+  },
+  {
+    "placeId": "yingzhou-liaoxi",
+    "sourceId": "tang-nw-jiutangshu-39",
+    "sourceHeading": "營州",
+    "dateText": "乾元元年",
+    "year": 758,
+    "quote": "乾元元年，復為營州。"
+  }
+]

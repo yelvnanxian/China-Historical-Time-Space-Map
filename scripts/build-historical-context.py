@@ -8,6 +8,8 @@ from pathlib import Path
 from datetime import datetime, timezone
 import hashlib
 import json
+import subprocess
+import sys
 from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -178,17 +180,48 @@ for addition in json.loads((ROOT / "data/city-timeline-additions.json").read_tex
         entries.append(item)
     city(addition["placeId"], entries)
 
+# Tang additions are rebuilt from reviewed selections and the same source
+# snapshots used in the city profiles. Existing cross-period entries win when
+# a detailed catalog event is already present in that city's timeline.
+subprocess.run([sys.executable, str(ROOT / "scripts/build-tang-timelines.py")], cwd=ROOT, check=True)
+tang = json.loads((ROOT / "data/tang-city-timelines.json").read_text())
+for record in tang["sources"]:
+    sid = record["id"]
+    snapshot = ROOT / record["snapshotPath"]
+    assert hashlib.sha256(snapshot.read_bytes()).hexdigest() == record["snapshotSha256"]
+    if sid in sources:
+        assert sources[sid]["snapshotSha256"] == record["snapshotSha256"], sid
+    else:
+        sources[sid] = record
+    texts[sid] = snapshot.read_text()
+by_city = {timeline["placeId"]: timeline for timeline in timelines}
+for addition in tang["cityTimelines"]:
+    pid = addition["placeId"]
+    assert pid in places
+    if pid not in by_city:
+        by_city[pid] = {"placeId": pid, "entries": []}
+        timelines.append(by_city[pid])
+    current = by_city[pid]["entries"]
+    ids = {entry["id"] for entry in current}
+    for entry in addition["entries"]:
+        for quote in entry["evidence"]:
+            assert quote["quote"] in texts[quote["sourceId"]]
+        if entry["id"] not in ids:
+            current.append(entry)
+            ids.add(entry["id"])
+    current.sort(key=lambda entry: (entry["year"], entry["id"]))
+
 geography.sort(key=lambda item: item["year"])
 for item in geography:
     assert set(item["affectedPlaceIds"]) <= places.keys()
     assert item["referenceCoordinates"] == places[item["referencePlaceId"]]["coordinates"]
     assert set(item["sourceIds"]) == {e["sourceId"] for e in item["evidence"]}
 for timeline in timelines:
-    assert len(timeline["entries"]) >= 3
+    assert len(timeline["entries"]) >= 1
     for item in timeline["entries"]:
         assert set(item["sourceIds"]) == {e["sourceId"] for e in item["evidence"]}
 
-result = {"version": "1.1", "generatedAt": datetime.now(timezone.utc).isoformat(), "notes": ["历史地理条目只提供地区参考点；没有可靠古河道几何时不绘制复原线路。", "城市大事记跨时期展示，不随当前朝代筛除；同名城市的古今城址可能不同。", "引文已与实际取得的文本快照逐字比对；百科概述不等于原始史料或逐段考古核定。", "年份用于排序；约年保留在日期标签中，古籍年号、月份和干支日不作未经核对的逐日公历换算。"], "sources": list(sources.values()), "geographyEntries": geography, "cityTimelines": timelines}
+result = {"version": "1.2", "generatedAt": datetime.now(timezone.utc).isoformat(), "notes": ["历史地理条目提供地区参考点；黄河改道会联动单独保存的 WorldMap 年代河道。未收录历史向量的年代保留现代参照，不外推复原线。", "城市大事记跨时期展示，不随当前朝代筛除；同名城市的古今城址可能不同。", "引文已与实际取得的文本快照逐字比对；百科概述不等于原始史料或逐段考古核定。", "年份用于排序；约年保留在日期标签中，古籍年号、月份和干支日不作未经核对的逐日公历换算。", "唐代104个入口均有纪年大事记；史料不足三条的入口保留实际数量，未用无年叙述凑数。幽州与范阳是同一城市地区的不同阅读入口。"], "sources": list(sources.values()), "geographyEntries": geography, "cityTimelines": timelines}
 output = ROOT / "public/data/historical-context.json"
 output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n")
 validation = {"createdAt": result["generatedAt"], "sources": len(sources), "geographyEntries": len(geography), "cityTimelines": len(timelines), "cityEntries": sum(len(t["entries"]) for t in timelines), "quotesMatched": sum(len(item["evidence"]) for item in geography) + sum(len(item["evidence"]) for timeline in timelines for item in timeline["entries"]), "cities": [{"placeId": item["placeId"], "name": places[item["placeId"]]["name"], "entries": len(item["entries"])} for item in timelines], "referenceCoordinates": "All copied exactly from existing catalog places; location roles and caveats explicit.", "outputSha256": hashlib.sha256(output.read_bytes()).hexdigest()}

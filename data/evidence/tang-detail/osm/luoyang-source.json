@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-luoyang",
+  "title": "OpenStreetMap 现代地理：洛阳与豫西",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "retrievedAt": "2026-09-25T02:35:02.765842+00:00",
+  "bounds": [
+    110.5,
+    33.3,
+    113.5,
+    35.5
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/luoyang.json.gz",
+  "snapshotSha256": "11b3ef2fe6b913c924bceb8cb3f606c470ff729ebb80eb0b2a1845efac078c67",
+  "queryPath": "data/evidence/tang-detail/osm/luoyang.ql",
+  "querySha256": "32ded33dac00c2743677b09016d6c040ae284d7ce1e92f006f5c06bee38676d5",
+  "osmBaseTimestamp": "2026-05-06T03:25:00Z",
+  "elementCount": 4456,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表唐代河道、湖岸或水利工程。",
+  "uncompressedSnapshotSha256": "8163e851d4eb9933d5606cf61779f75bc900c92db0958e5367e9bc748a9526b2",
+  "snapshotEncoding": "gzip"
+}

@@ -6,9 +6,12 @@
 .map-tool-scroll { overflow-y: auto; min-height: 0; padding: 0 15px 15px; overscroll-behavior: contain; scrollbar-width: thin; }
 .map-tool-scroll { display: flex; flex-direction: column; }
 .map-tool-scroll > * { flex-shrink: 0; }
-.map-tool-natural { order: 1; }
+.map-tool-natural { order: 1; display: flex; flex-direction: column; }
+.map-tool-natural > .river-history-controls { order: 0; }
+.map-tool-natural > .tang-detail-explorer { order: 1; }
+.map-tool-natural > .nature-explorer:not(.river-history-controls):not(.tang-detail-explorer) { order: 2; }
 .map-tool-scroll > .terrain-controls { order: 2; }
-.map-tool-boundaries { order: 3; }
+.map-tool-boundaries { order: 0; }
 .map-tool-note { order: 4; }
 .map-tool-panel[data-active-target="boundary"] .map-tool-boundaries { order: 1; }
 .map-tool-panel[data-active-target="boundary"] .map-tool-natural { order: 3; }

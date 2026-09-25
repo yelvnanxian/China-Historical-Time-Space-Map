@@ -1,4 +1,4 @@
-import { useEffect, useId, useMemo, useState } from "react";
+import { useEffect, useId, useMemo, useRef, useState } from "react";
 import {
   ChevronDown,
   ExternalLink,
@@ -10,12 +10,14 @@ import {
 } from "lucide-react";
 import {
   boundaryLevelNames,
+  boundaryCountryCoverage,
   type BoundaryDataset,
   type BoundaryLevel,
   type BoundarySelection,
 } from "../../shared/boundaries";
 import "../boundaries.css";
 import { boundarySearchKey } from "../../shared/boundary-search";
+import { mapViewLevelOptions, type MapViewLevel } from "../../shared/map-detail-levels";
 
 export interface BoundaryControlsProps {
   embedded?: boolean;
@@ -24,7 +26,11 @@ export interface BoundaryControlsProps {
   selectedDataset: BoundaryDataset | undefined;
   onDatasetChange: (id: string) => void;
   visibleLevels: BoundaryLevel[];
-  onLevelToggle: (level: BoundaryLevel) => void;
+  viewLevel: MapViewLevel;
+  onViewLevelChange: (level: MapViewLevel) => void;
+  activeLevel: BoundaryLevel | null;
+  zoom: number;
+  onOpenAtlas?: () => void;
   selection: BoundarySelection | null;
   onSelectionClose: () => void;
   currentYear: number;
@@ -48,10 +54,12 @@ function yearLabel(year: number) {
 }
 
 export default function BoundaryControls(props: BoundaryControlsProps) {
-  const [expanded, setExpanded] = useState(false);
+  const [expanded, setExpanded] = useState(!!props.embedded);
   const [regionQuery, setRegionQuery] = useState("");
   const bodyId = useId();
+  const searchInput = useRef<HTMLInputElement>(null);
   const dataset = props.selectedDataset;
+  const countryCoverage = boundaryCountryCoverage(dataset);
   const regionIndex = useMemo(() => (props.regionOptions ?? []).map(region => ({ region, key: boundarySearchKey([region.name, region.originalName, ...(region.modernNames ?? [])].join(" ")) })), [props.regionOptions]);
   const regionResults = useMemo(() => {
     const query = boundarySearchKey(regionQuery);
@@ -74,6 +82,7 @@ export default function BoundaryControls(props: BoundaryControlsProps) {
   useEffect(() => {
     if (props.selection) setExpanded(true);
   }, [props.selection]);
+  useEffect(() => { setRegionQuery(""); }, [dataset?.id]);
 
   return (
     <section
@@ -138,12 +147,28 @@ export default function BoundaryControls(props: BoundaryControlsProps) {
 
       {expanded && (
         <div id={bodyId} className="boundary-controls-body">
+          <fieldset className="boundary-view-presets" disabled={props.enabled === false}>
+            <legend>地图显示层级</legend>
+            <div>{mapViewLevelOptions.map(option => <label key={option.value} className={props.viewLevel === option.value ? "is-selected" : ""}>
+              <input type="radio" name={`${bodyId}-view-level`} value={option.value} checked={props.viewLevel === option.value} onChange={() => props.onViewLevelChange(option.value)} />
+              <span>{option.label}</span>
+            </label>)}</div>
+          </fieldset>
+          <p className="boundary-effective-level" role="status">
+            {props.enabled === false ? "行政边界已关闭" : props.viewLevel === "cities" ? "当前只显示已收录城池；未显示行政区轮廓。" : props.activeLevel ? `${props.viewLevel === "auto" ? "自动显示" : "当前显示"}：${boundaryLevelNames[props.activeLevel]}${props.viewLevel === "auto" && props.zoom >= 5.4 ? "与城池" : props.viewLevel === "county" ? "与城池" : ""}。点击名称或区域可高亮辖区。` : "当前资料未提供所选层级。"}
+          </p>
+          {props.viewLevel === "auto" && <p className="boundary-scale-guide">缩小看国家与省道，放大依次看府州、县域与城池；点选查找结果会固定到该层级。</p>}
+          {countryCoverage.incomplete && (props.viewLevel === "country" || props.viewLevel === "auto" && props.zoom < 4) && <aside className="boundary-country-notice">
+            <p>{countryCoverage.note}{props.viewLevel === "auto" && props.visibleLevels.includes("province") ? "当前以省道显示行政范围，周边诸部作为背景。" : ""}</p>
+            {props.onOpenAtlas && <button type="button" onClick={props.onOpenAtlas}>查看历史原图 <ExternalLink size={12} /></button>}
+          </aside>}
           {dataset && props.onRegionSelect && props.enabled !== false && (
             <div className="boundary-region-search">
               <label htmlFor={`${bodyId}-search`}>查找当前资料中的行政区</label>
-              <input id={`${bodyId}-search`} type="search" value={regionQuery} onChange={event => setRegionQuery(event.target.value)} placeholder="输入古名或现代地区名" />
+              <input ref={searchInput} id={`${bodyId}-search`} type="search" value={regionQuery} onChange={event => setRegionQuery(event.target.value)} placeholder="输入古名或现代地区名" />
+              <small>搜索所有已收录层级，选择后显示对应辖区。</small>
               {regionQuery.trim() && <div className="boundary-search-results" role="region" aria-label="行政区搜索结果">
-                {regionResults.length ? regionResults.map(region => <button key={region.id} onClick={() => { props.onRegionSelect?.(region.id); setRegionQuery(""); }}><strong>{region.name}</strong><span>{boundaryLevelNames[region.level]}</span></button>) : <p>当前资料中没有匹配的行政区。</p>}
+                {regionResults.length ? regionResults.map(region => <button key={region.id} onClick={() => { props.onRegionSelect?.(region.id); setRegionQuery(""); searchInput.current?.focus(); }}><strong>{region.name}</strong><span>{boundaryLevelNames[region.level]}</span></button>) : <p>当前资料中没有匹配的行政区。</p>}
               </div>}
             </div>
           )}
@@ -163,6 +188,7 @@ export default function BoundaryControls(props: BoundaryControlsProps) {
                 </button>
               </div>
               <h3>{props.selection.name}</h3>
+              <p className="boundary-selection-highlight-note">地图已用深色边线与底色高亮该区域范围。</p>
               <details className="boundary-original-name"><summary>查看来源原文</summary>
                 <p>原文名称 · {props.selection.originalName || "来源未提供"}</p>
                 {props.selection.originalPolity && <p>原始分组 · {props.selection.originalPolity}</p>}
@@ -249,20 +275,14 @@ export default function BoundaryControls(props: BoundaryControlsProps) {
                     0,
                   );
                   return (
-                    <label key={level} className="boundary-level-control">
-                      <input
-                        type="checkbox"
-                        checked={props.visibleLevels.includes(level)}
-                        onChange={() => props.onLevelToggle(level)}
-                        aria-label={`显示${boundaryLevelNames[level]}`}
-                      />
+                    <div key={level} className="boundary-level-control">
                       <span
                         className={`boundary-level-swatch boundary-level-${level}`}
                         aria-hidden="true"
                       />
                       <span>{layers.map(layer => layer.label).join(" / ")}</span>
-                      <small>{count} 条</small>
-                    </label>
+                      <small>{count} 条 · {props.enabled !== false && props.visibleLevels.includes(level) ? "显示中" : "隐藏"}</small>
+                    </div>
                   );
                 })}
                 {!levels.length && (

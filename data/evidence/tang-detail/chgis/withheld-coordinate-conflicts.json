@@ -1,0 +1,6598 @@
+{
+  "thresholdDegrees": 0.02,
+  "records": [
+    {
+      "level": "county",
+      "sourceRecordId": "44831",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 934,
+      "shapeCoordinates": [
+        114.959215,
+        36.767674
+      ],
+      "fieldCoordinates": [
+        115.07701,
+        36.70308
+      ],
+      "maxDeltaDegrees": 0.11779500000000098,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Mingshui Xian",
+        "NAME_CH": "洺水县",
+        "NAME_FT": "洺水縣",
+        "X_COOR": 115.07701,
+        "Y_COOR": 36.70308,
+        "PRES_LOC": "今河北省曲周县驻地东南",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 586,
+        "BEG_RULE": "",
+        "END_YR": 842,
+        "END_RULE": "",
+        "NOTE_ID": 44831,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 44831,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "更名",
+        "END_CHG_TY": "撤消"
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "82309",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 1087,
+      "shapeCoordinates": [
+        115.013199,
+        35.766251
+      ],
+      "fieldCoordinates": [
+        115.01371,
+        35.70515
+      ],
+      "maxDeltaDegrees": 0.06110099999999363,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Dunqiu Xian",
+        "NAME_CH": "顿丘县",
+        "NAME_FT": "頓丘縣",
+        "X_COOR": 115.01371,
+        "Y_COOR": 35.70515,
+        "PRES_LOC": "今河南濮阳县",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 621,
+        "BEG_RULE": "",
+        "END_YR": 771,
+        "END_RULE": "",
+        "NOTE_ID": 82309,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 82309,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "87782",
+      "years": [
+        755
+      ],
+      "recordIndex": 1378,
+      "shapeCoordinates": [
+        115.052636,
+        36.369308
+      ],
+      "fieldCoordinates": [
+        115.40635,
+        36.19124
+      ],
+      "maxDeltaDegrees": 0.35371399999999653,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Wei Xian",
+        "NAME_CH": "魏县",
+        "NAME_FT": "魏縣",
+        "X_COOR": 115.40635,
+        "Y_COOR": 36.19124,
+        "PRES_LOC": "今河北大名县驻地西北",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 744,
+        "BEG_RULE": "",
+        "END_YR": 1166,
+        "END_RULE": "",
+        "NOTE_ID": 87782,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 87782,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "88097",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 1439,
+      "shapeCoordinates": [
+        115.605598,
+        37.72123
+      ],
+      "fieldCoordinates": [
+        115.62865,
+        37.7177
+      ],
+      "maxDeltaDegrees": 0.023051999999992745,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Hengshui Xian",
+        "NAME_CH": "衡水县",
+        "NAME_FT": "衡水縣",
+        "X_COOR": 115.62865,
+        "Y_COOR": 37.7177,
+        "PRES_LOC": "今河北衡水市西南旧城村",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 596,
+        "BEG_RULE": "",
+        "END_YR": 1414,
+        "END_RULE": "",
+        "NOTE_ID": 88097,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 88097,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "88113",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 1490,
+      "shapeCoordinates": [
+        115.690956,
+        37.94186
+      ],
+      "fieldCoordinates": [
+        115.58226,
+        37.86949
+      ],
+      "maxDeltaDegrees": 0.1086959999999948,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Xiabo Xian",
+        "NAME_CH": "下博县",
+        "NAME_FT": "下博縣",
+        "X_COOR": 115.58226,
+        "Y_COOR": 37.86949,
+        "PRES_LOC": "今河北深县驻地深州镇东南下博",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 577,
+        "BEG_RULE": "",
+        "END_YR": 984,
+        "END_RULE": "",
+        "NOTE_ID": 88113,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 88113,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "45022",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 1585,
+      "shapeCoordinates": [
+        116.976357,
+        36.666039
+      ],
+      "fieldCoordinates": [
+        117.00031,
+        36.64912
+      ],
+      "maxDeltaDegrees": 0.023953000000005886,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Licheng Xian",
+        "NAME_CH": "历城县",
+        "NAME_FT": "曆城縣",
+        "X_COOR": 117.00031,
+        "Y_COOR": 36.64912,
+        "PRES_LOC": "今山东济南市历下区",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": -221,
+        "BEG_RULE": "",
+        "END_YR": 1911,
+        "END_RULE": "",
+        "NOTE_ID": 45022,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 45022,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "新建",
+        "END_CHG_TY": "数据下限"
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "45099",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 1660,
+      "shapeCoordinates": [
+        116.20731,
+        36.378478
+      ],
+      "fieldCoordinates": [
+        116.16437,
+        36.38752
+      ],
+      "maxDeltaDegrees": 0.04294000000000153,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Lu Xian",
+        "NAME_CH": "卢县",
+        "NAME_FT": "盧縣",
+        "X_COOR": 116.16437,
+        "Y_COOR": 36.38752,
+        "PRES_LOC": "今山东茌平县西南高垣墙庄",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 423,
+        "BEG_RULE": "",
+        "END_YR": 984,
+        "END_RULE": "",
+        "NOTE_ID": 45099,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 45099,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "新建",
+        "END_CHG_TY": "撤销"
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "45311",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 1858,
+      "shapeCoordinates": [
+        116.078232,
+        36.523647
+      ],
+      "fieldCoordinates": [
+        116.04054,
+        36.52734
+      ],
+      "maxDeltaDegrees": 0.03769200000000694,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Liaocheng Xian",
+        "NAME_CH": "聊城县",
+        "NAME_FT": "聊城縣",
+        "X_COOR": 116.04054,
+        "Y_COOR": 36.52734,
+        "PRES_LOC": "今山东聊城市东北杨家集",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 499,
+        "BEG_RULE": "",
+        "END_YR": 944,
+        "END_RULE": "",
+        "NOTE_ID": 45311,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 45311,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "迁移治所",
+        "END_CHG_TY": "迁移治所"
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "85079",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 1978,
+      "shapeCoordinates": [
+        115.536239,
+        35.776725
+      ],
+      "fieldCoordinates": [
+        115.49436,
+        35.75771
+      ],
+      "maxDeltaDegrees": 0.04187899999999445,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Linhuang Xian",
+        "NAME_CH": "临黄县",
+        "NAME_FT": "臨黃縣",
+        "X_COOR": 115.49436,
+        "Y_COOR": 35.75771,
+        "PRES_LOC": "今河南范县南杨集一带",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 586,
+        "BEG_RULE": "",
+        "END_YR": 987,
+        "END_RULE": "",
+        "NOTE_ID": 85079,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 85079,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "新建",
+        "END_CHG_TY": "撤销"
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "200037",
+      "years": [
+        755
+      ],
+      "recordIndex": 2423,
+      "shapeCoordinates": [
+        117.961586,
+        37.479775
+      ],
+      "fieldCoordinates": [
+        118.02375,
+        37.36813
+      ],
+      "maxDeltaDegrees": 0.11164499999999578,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Bohai Xian",
+        "NAME_CH": "渤海县",
+        "NAME_FT": "渤海縣",
+        "X_COOR": 118.02375,
+        "Y_COOR": 37.36813,
+        "PRES_LOC": "今山东滨州市",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 746,
+        "BEG_RULE": "",
+        "END_YR": 1367,
+        "END_RULE": "",
+        "NOTE_ID": 0,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 200037,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "治所迁移",
+        "END_CHG_TY": "撤销"
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "85687",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 2564,
+      "shapeCoordinates": [
+        116.389464,
+        35.97259
+      ],
+      "fieldCoordinates": [
+        116.28256,
+        35.95607
+      ],
+      "maxDeltaDegrees": 0.10690400000000011,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Xuchang Xian",
+        "NAME_CH": "须昌县",
+        "NAME_FT": "須昌縣",
+        "X_COOR": 116.28256,
+        "Y_COOR": 35.95607,
+        "PRES_LOC": "今山东东平西埠子坡村",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 596,
+        "BEG_RULE": "",
+        "END_YR": 923,
+        "END_RULE": "",
+        "NOTE_ID": 85687,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 85687,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "新建",
+        "END_CHG_TY": "更名"
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "85708",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 2585,
+      "shapeCoordinates": [
+        116.484791,
+        35.973233
+      ],
+      "fieldCoordinates": [
+        116.42073,
+        35.92291
+      ],
+      "maxDeltaDegrees": 0.06406099999999526,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Sucheng Xian",
+        "NAME_CH": "宿城县",
+        "NAME_FT": "宿城縣",
+        "X_COOR": 116.42073,
+        "Y_COOR": 35.92291,
+        "PRES_LOC": "今山东东平县东须城",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 712,
+        "BEG_RULE": "",
+        "END_YR": 787,
+        "END_RULE": "",
+        "NOTE_ID": 85708,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 85708,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "新建",
+        "END_CHG_TY": "更名且治所迁移"
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "82876",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3427,
+      "shapeCoordinates": [
+        112.64783,
+        34.81961
+      ],
+      "fieldCoordinates": [
+        113.051,
+        34.78511
+      ],
+      "maxDeltaDegrees": 0.4031700000000029,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Gong Xian",
+        "NAME_CH": "巩县",
+        "NAME_FT": "鞏縣",
+        "X_COOR": 113.051,
+        "Y_COOR": 34.78511,
+        "PRES_LOC": "今河南巩县东北老城",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 606,
+        "BEG_RULE": "",
+        "END_YR": 1911,
+        "END_RULE": "",
+        "NOTE_ID": 82876,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 82876,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "82892",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3442,
+      "shapeCoordinates": [
+        113.14677,
+        34.40044
+      ],
+      "fieldCoordinates": [
+        113.02462,
+        34.45582
+      ],
+      "maxDeltaDegrees": 0.12215000000000487,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Dengfeng Xian",
+        "NAME_CH": "登封县",
+        "NAME_FT": "登封縣",
+        "X_COOR": 113.02462,
+        "Y_COOR": 34.45582,
+        "PRES_LOC": "今河南登封",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 706,
+        "BEG_RULE": "",
+        "END_YR": 1911,
+        "END_RULE": "",
+        "NOTE_ID": 82892,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 82892,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "82897",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3447,
+      "shapeCoordinates": [
+        112.74514,
+        34.42054
+      ],
+      "fieldCoordinates": [
+        113.14677,
+        34.40044
+      ],
+      "maxDeltaDegrees": 0.40162999999999727,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Gaocheng Xian",
+        "NAME_CH": "告成县",
+        "NAME_FT": "告成縣",
+        "X_COOR": 113.14677,
+        "Y_COOR": 34.40044,
+        "PRES_LOC": "今河南登封东南告成",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 706,
+        "BEG_RULE": "",
+        "END_YR": 904,
+        "END_RULE": "",
+        "NOTE_ID": 82897,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 82897,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "82907",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3457,
+      "shapeCoordinates": [
+        111.6534,
+        34.38581
+      ],
+      "fieldCoordinates": [
+        112.74514,
+        34.42054
+      ],
+      "maxDeltaDegrees": 1.0917400000000015,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Yingyang Xian",
+        "NAME_CH": "颍阳县",
+        "NAME_FT": "潁陽縣",
+        "X_COOR": 112.74514,
+        "Y_COOR": 34.42054,
+        "PRES_LOC": "今河南登封西偏南颍阳",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 727,
+        "BEG_RULE": "",
+        "END_YR": 1042,
+        "END_RULE": "",
+        "NOTE_ID": 82907,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 82907,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "82913",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3460,
+      "shapeCoordinates": [
+        111.8301,
+        34.74057
+      ],
+      "fieldCoordinates": [
+        111.6534,
+        34.38581
+      ],
+      "maxDeltaDegrees": 0.35475999999999885,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Yongning Xian",
+        "NAME_CH": "永宁县",
+        "NAME_FT": "永寧縣",
+        "X_COOR": 111.6534,
+        "Y_COOR": 34.38581,
+        "PRES_LOC": "今河南洛宁",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 643,
+        "BEG_RULE": "",
+        "END_YR": 1126,
+        "END_RULE": "",
+        "NOTE_ID": 82913,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 82913,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "82918",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3465,
+      "shapeCoordinates": [
+        111.7126,
+        34.76645
+      ],
+      "fieldCoordinates": [
+        112.1443,
+        34.73306
+      ],
+      "maxDeltaDegrees": 0.4317000000000064,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Xinan Xian",
+        "NAME_CH": "新安县",
+        "NAME_FT": "新安縣",
+        "X_COOR": 112.1443,
+        "Y_COOR": 34.73306,
+        "PRES_LOC": "今河南新安",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 606,
+        "BEG_RULE": "",
+        "END_YR": 1911,
+        "END_RULE": "",
+        "NOTE_ID": 82918,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 82918,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "82929",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3476,
+      "shapeCoordinates": [
+        111.72817,
+        34.76523
+      ],
+      "fieldCoordinates": [
+        111.76631,
+        34.7652
+      ],
+      "maxDeltaDegrees": 0.03813999999999851,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Shengchi Xian",
+        "NAME_CH": "渑池县",
+        "NAME_FT": "澠池縣",
+        "X_COOR": 111.76631,
+        "Y_COOR": 34.7652,
+        "PRES_LOC": "今河南渑池",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 629,
+        "BEG_RULE": "",
+        "END_YR": 1225,
+        "END_RULE": "",
+        "NOTE_ID": 82929,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 82929,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "82933",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3480,
+      "shapeCoordinates": [
+        112.22488,
+        34.28033
+      ],
+      "fieldCoordinates": [
+        111.84937,
+        34.02818
+      ],
+      "maxDeltaDegrees": 0.37551000000000556,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Yiyang Xian",
+        "NAME_CH": "伊阳县",
+        "NAME_FT": "伊陽縣",
+        "X_COOR": 111.84937,
+        "Y_COOR": 34.02818,
+        "PRES_LOC": "今河南嵩县西南旧县",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 712,
+        "BEG_RULE": "",
+        "END_YR": 1265,
+        "END_RULE": "",
+        "NOTE_ID": 82933,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 82933,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "82940",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3487,
+      "shapeCoordinates": [
+        112.42468,
+        34.64372
+      ],
+      "fieldCoordinates": [
+        112.1893,
+        34.21948
+      ],
+      "maxDeltaDegrees": 0.4242400000000046,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Luhun Xian",
+        "NAME_CH": "陆浑县",
+        "NAME_FT": "陸渾縣",
+        "X_COOR": 112.1893,
+        "Y_COOR": 34.21948,
+        "PRES_LOC": "今河南嵩县东北陆浑",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 605,
+        "BEG_RULE": "",
+        "END_YR": 922,
+        "END_RULE": "",
+        "NOTE_ID": 82940,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 82940,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "82948",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3495,
+      "shapeCoordinates": [
+        111.32635,
+        34.64569
+      ],
+      "fieldCoordinates": [
+        111.46053,
+        34.34468
+      ],
+      "maxDeltaDegrees": 0.3010100000000051,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Changshui Xian",
+        "NAME_CH": "长水县",
+        "NAME_FT": "長水縣",
+        "X_COOR": 111.46053,
+        "Y_COOR": 34.34468,
+        "PRES_LOC": "今河南洛宁西长水",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 605,
+        "BEG_RULE": "",
+        "END_YR": 1233,
+        "END_RULE": "",
+        "NOTE_ID": 82948,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 82948,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "82954",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3501,
+      "shapeCoordinates": [
+        112.70714,
+        34.81168
+      ],
+      "fieldCoordinates": [
+        111.32635,
+        34.64569
+      ],
+      "maxDeltaDegrees": 1.3807899999999904,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Xiashi Xian",
+        "NAME_CH": "峡石县",
+        "NAME_FT": "峽石縣",
+        "X_COOR": 111.32635,
+        "Y_COOR": 34.64569,
+        "PRES_LOC": "今河南陕县东南石门一带",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 640,
+        "BEG_RULE": "",
+        "END_YR": 966,
+        "END_RULE": "",
+        "NOTE_ID": 82954,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 82954,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "82961",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3508,
+      "shapeCoordinates": [
+        112.88062,
+        34.27426
+      ],
+      "fieldCoordinates": [
+        112.83702,
+        34.16176
+      ],
+      "maxDeltaDegrees": 0.11249999999999716,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Liang Xian",
+        "NAME_CH": "梁县",
+        "NAME_FT": "梁縣",
+        "X_COOR": 112.83702,
+        "Y_COOR": 34.16176,
+        "PRES_LOC": "今河南汝州市",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 627,
+        "BEG_RULE": "",
+        "END_YR": 1367,
+        "END_RULE": "",
+        "NOTE_ID": 82961,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 82961,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "82974",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3521,
+      "shapeCoordinates": [
+        113.20341,
+        33.97205
+      ],
+      "fieldCoordinates": [
+        112.90194,
+        33.73712
+      ],
+      "maxDeltaDegrees": 0.301470000000009,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Lushan Xian",
+        "NAME_CH": "鲁山县",
+        "NAME_FT": "魯山縣",
+        "X_COOR": 112.90194,
+        "Y_COOR": 33.73712,
+        "PRES_LOC": "今河南鲁山",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 621,
+        "BEG_RULE": "",
+        "END_YR": 1911,
+        "END_RULE": "",
+        "NOTE_ID": 82974,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 82974,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "83005",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3552,
+      "shapeCoordinates": [
+        113.81975,
+        34.03139
+      ],
+      "fieldCoordinates": [
+        112.74495,
+        34.11067
+      ],
+      "maxDeltaDegrees": 1.0747999999999962,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Linru Xian",
+        "NAME_CH": "临汝县",
+        "NAME_FT": "臨汝縣",
+        "X_COOR": 112.74495,
+        "Y_COOR": 34.11067,
+        "PRES_LOC": "今河南汝州西南二十里",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 713,
+        "BEG_RULE": "",
+        "END_YR": 791,
+        "END_RULE": "",
+        "NOTE_ID": 83005,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 83005,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "83013",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3560,
+      "shapeCoordinates": [
+        113.58825,
+        33.97408
+      ],
+      "fieldCoordinates": [
+        114.0163,
+        34.16586
+      ],
+      "maxDeltaDegrees": 0.42804999999999893,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Xuchang Xian",
+        "NAME_CH": "许昌县",
+        "NAME_FT": "許昌縣",
+        "X_COOR": 114.0163,
+        "Y_COOR": 34.16586,
+        "PRES_LOC": "今河南许昌东北许田",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 534,
+        "BEG_RULE": "",
+        "END_YR": 922,
+        "END_RULE": "",
+        "NOTE_ID": 83013,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 83013,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "83014",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3561,
+      "shapeCoordinates": [
+        113.58825,
+        33.97408
+      ],
+      "fieldCoordinates": [
+        114.0163,
+        34.16586
+      ],
+      "maxDeltaDegrees": 0.42804999999999893,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Xutian Xian",
+        "NAME_CH": "许田县",
+        "NAME_FT": "許田縣",
+        "X_COOR": 114.0163,
+        "Y_COOR": 34.16586,
+        "PRES_LOC": "今河南许昌东北许田",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 523,
+        "BEG_RULE": "",
+        "END_YR": 1070,
+        "END_RULE": "",
+        "NOTE_ID": 83014,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 83014,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "83025",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3572,
+      "shapeCoordinates": [
+        113.47237,
+        33.85369
+      ],
+      "fieldCoordinates": [
+        113.96064,
+        33.80861
+      ],
+      "maxDeltaDegrees": 0.48827,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Linying Xian",
+        "NAME_CH": "临颍县",
+        "NAME_FT": "臨潁縣",
+        "X_COOR": 113.96064,
+        "Y_COOR": 33.80861,
+        "PRES_LOC": "今河南临颍",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 608,
+        "BEG_RULE": "",
+        "END_YR": 1911,
+        "END_RULE": "",
+        "NOTE_ID": 83025,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 83025,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "83031",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3578,
+      "shapeCoordinates": [
+        114.31552,
+        33.51611
+      ],
+      "fieldCoordinates": [
+        113.47237,
+        33.85369
+      ],
+      "maxDeltaDegrees": 0.8431500000000085,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Xiangcheng Xian",
+        "NAME_CH": "襄城县",
+        "NAME_FT": "襄城縣",
+        "X_COOR": 113.47237,
+        "Y_COOR": 33.85369,
+        "PRES_LOC": "今河南襄城",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 23,
+        "BEG_RULE": "",
+        "END_YR": 1911,
+        "END_RULE": "",
+        "NOTE_ID": 83031,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 83031,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "83042",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3589,
+      "shapeCoordinates": [
+        111.15139,
+        34.7918
+      ],
+      "fieldCoordinates": [
+        113.81975,
+        34.03139
+      ],
+      "maxDeltaDegrees": 2.6683599999999927,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Changshe Xian",
+        "NAME_CH": "长社县",
+        "NAME_FT": "長社縣",
+        "X_COOR": 113.81975,
+        "Y_COOR": 34.03139,
+        "PRES_LOC": "今河南许昌市",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 621,
+        "BEG_RULE": "",
+        "END_YR": 1367,
+        "END_RULE": "",
+        "NOTE_ID": 83042,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 83042,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "83043",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3590,
+      "shapeCoordinates": [
+        111.145027,
+        34.796078
+      ],
+      "fieldCoordinates": [
+        113.85049,
+        34.2299
+      ],
+      "maxDeltaDegrees": 2.7054629999999946,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Changge Xian",
+        "NAME_CH": "长葛县",
+        "NAME_FT": "長葛縣",
+        "X_COOR": 113.85049,
+        "Y_COOR": 34.2299,
+        "PRES_LOC": "今河南长葛东偏北老城镇",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 586,
+        "BEG_RULE": "",
+        "END_YR": 1911,
+        "END_RULE": "",
+        "NOTE_ID": 83043,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 83043,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "83048",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3595,
+      "shapeCoordinates": [
+        110.94149,
+        34.68462
+      ],
+      "fieldCoordinates": [
+        111.15139,
+        34.7918
+      ],
+      "maxDeltaDegrees": 0.20990000000000464,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Shan Xian",
+        "NAME_CH": "陕县",
+        "NAME_FT": "陝縣",
+        "X_COOR": 111.15139,
+        "Y_COOR": 34.7918,
+        "PRES_LOC": "今河南三门峡市崖底乡西北陕县老城",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 558,
+        "BEG_RULE": "",
+        "END_YR": 1367,
+        "END_RULE": "",
+        "NOTE_ID": 83048,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 83048,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "83050",
+      "years": [
+        741
+      ],
+      "recordIndex": 3597,
+      "shapeCoordinates": [
+        110.92898,
+        34.65502
+      ],
+      "fieldCoordinates": [
+        110.94149,
+        34.68462
+      ],
+      "maxDeltaDegrees": 0.02960000000000207,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Taolin Xian",
+        "NAME_CH": "桃林县",
+        "NAME_FT": "桃林縣",
+        "X_COOR": 110.94149,
+        "Y_COOR": 34.68462,
+        "PRES_LOC": "今河南灵宝东北老城",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 598,
+        "BEG_RULE": "",
+        "END_YR": 741,
+        "END_RULE": "",
+        "NOTE_ID": 83050,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 83050,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "83051",
+      "years": [
+        742,
+        755
+      ],
+      "recordIndex": 3598,
+      "shapeCoordinates": [
+        110.92898,
+        34.65502
+      ],
+      "fieldCoordinates": [
+        110.94149,
+        34.68462
+      ],
+      "maxDeltaDegrees": 0.02960000000000207,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Lingbao Xian",
+        "NAME_CH": "灵宝县",
+        "NAME_FT": "靈寶縣",
+        "X_COOR": 110.94149,
+        "Y_COOR": 34.68462,
+        "PRES_LOC": "今河南灵宝东北老城",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 742,
+        "BEG_RULE": "",
+        "END_YR": 1265,
+        "END_RULE": "",
+        "NOTE_ID": 83051,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 83051,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "83058",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3605,
+      "shapeCoordinates": [
+        110.71086,
+        34.32937
+      ],
+      "fieldCoordinates": [
+        110.86538,
+        34.52751
+      ],
+      "maxDeltaDegrees": 0.1981400000000022,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Hongnong Xian",
+        "NAME_CH": "弘农县",
+        "NAME_FT": "弘農縣",
+        "X_COOR": 110.86538,
+        "Y_COOR": 34.52751,
+        "PRES_LOC": "今河南灵宝",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 728,
+        "BEG_RULE": "",
+        "END_YR": 959,
+        "END_RULE": "",
+        "NOTE_ID": 83058,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 83058,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "83066",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3613,
+      "shapeCoordinates": [
+        110.73206,
+        34.59143
+      ],
+      "fieldCoordinates": [
+        110.71086,
+        34.32937
+      ],
+      "maxDeltaDegrees": 0.2620600000000053,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Zhuyang Xian",
+        "NAME_CH": "朱阳县",
+        "NAME_FT": "朱陽縣",
+        "X_COOR": 110.71086,
+        "Y_COOR": 34.32937,
+        "PRES_LOC": "今河南灵宝西南朱阳镇",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 606,
+        "BEG_RULE": "",
+        "END_YR": 967,
+        "END_RULE": "",
+        "NOTE_ID": 83066,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 83066,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "83075",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3622,
+      "shapeCoordinates": [
+        111.11728,
+        34.42901
+      ],
+      "fieldCoordinates": [
+        110.4419,
+        34.58722
+      ],
+      "maxDeltaDegrees": 0.6753799999999899,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Wen Xiang Xian",
+        "NAME_CH": "阌乡县",
+        "NAME_FT": "閿鄉縣",
+        "X_COOR": 110.4419,
+        "Y_COOR": 34.58722,
+        "PRES_LOC": "今河南灵宝西文底",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 596,
+        "BEG_RULE": "",
+        "END_YR": 1367,
+        "END_RULE": "",
+        "NOTE_ID": 83075,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 83075,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "83079",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3626,
+      "shapeCoordinates": [
+        114.0199,
+        32.80767
+      ],
+      "fieldCoordinates": [
+        111.11728,
+        34.42901
+      ],
+      "maxDeltaDegrees": 2.902620000000013,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Yucheng Xian",
+        "NAME_CH": "玉城县",
+        "NAME_FT": "玉城縣",
+        "X_COOR": 111.11728,
+        "Y_COOR": 34.42901,
+        "PRES_LOC": "今河南灵宝老城东南八十里",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 617,
+        "BEG_RULE": "",
+        "END_YR": 1070,
+        "END_RULE": "",
+        "NOTE_ID": 83079,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 83079,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "83102",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3647,
+      "shapeCoordinates": [
+        114.0803,
+        31.95306
+      ],
+      "fieldCoordinates": [
+        114.17841,
+        33.13262
+      ],
+      "maxDeltaDegrees": 1.1795600000000022,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Shangcai Xian",
+        "NAME_CH": "上蔡县",
+        "NAME_FT": "上蔡縣",
+        "X_COOR": 114.17841,
+        "Y_COOR": 33.13262,
+        "PRES_LOC": "今河南汝南县城西北隅",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 317,
+        "BEG_RULE": "",
+        "END_YR": 892,
+        "END_RULE": "",
+        "NOTE_ID": 83102,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 83102,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "83134",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3677,
+      "shapeCoordinates": [
+        114.22667,
+        33.26484
+      ],
+      "fieldCoordinates": [
+        114.14755,
+        32.07893
+      ],
+      "maxDeltaDegrees": 1.1859099999999998,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Zhongshan Xian",
+        "NAME_CH": "钟山县",
+        "NAME_FT": "鐘山縣",
+        "X_COOR": 114.14755,
+        "Y_COOR": 32.07893,
+        "PRES_LOC": "今河南信阳市东南十八里",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 584,
+        "BEG_RULE": "",
+        "END_YR": 976,
+        "END_RULE": "",
+        "NOTE_ID": 83134,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 83134,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "83142",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3681,
+      "shapeCoordinates": [
+        114.56728,
+        33.1555
+      ],
+      "fieldCoordinates": [
+        114.0199,
+        32.80767
+      ],
+      "maxDeltaDegrees": 0.5473799999999898,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Langshan Xian",
+        "NAME_CH": "朗山县",
+        "NAME_FT": "朗山縣",
+        "X_COOR": 114.0199,
+        "Y_COOR": 32.80767,
+        "PRES_LOC": "今河南确山县",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 596,
+        "BEG_RULE": "",
+        "END_YR": 1012,
+        "END_RULE": "",
+        "NOTE_ID": 83142,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 83142,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "83147",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3686,
+      "shapeCoordinates": [
+        114.22667,
+        33.26484
+      ],
+      "fieldCoordinates": [
+        114.97392,
+        32.75126
+      ],
+      "maxDeltaDegrees": 0.7472500000000082,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Xincai Xian",
+        "NAME_CH": "新蔡县",
+        "NAME_FT": "新蔡縣",
+        "X_COOR": 114.97392,
+        "Y_COOR": 32.75126,
+        "PRES_LOC": "今河南新蔡县",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 606,
+        "BEG_RULE": "",
+        "END_YR": 1262,
+        "END_RULE": "",
+        "NOTE_ID": 83147,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 83147,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "83150",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3689,
+      "shapeCoordinates": [
+        113.971889,
+        33.154948
+      ],
+      "fieldCoordinates": [
+        114.22667,
+        33.26484
+      ],
+      "maxDeltaDegrees": 0.25478099999999415,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Shangcai Xian",
+        "NAME_CH": "上蔡县",
+        "NAME_FT": "上蔡縣",
+        "X_COOR": 114.22667,
+        "Y_COOR": 33.26484,
+        "PRES_LOC": "今河南上蔡县西",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 607,
+        "BEG_RULE": "",
+        "END_YR": 1368,
+        "END_RULE": "",
+        "NOTE_ID": 83150,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 83150,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "83153",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3692,
+      "shapeCoordinates": [
+        113.95687,
+        33.3841
+      ],
+      "fieldCoordinates": [
+        113.98911,
+        33.14784
+      ],
+      "maxDeltaDegrees": 0.23625999999999436,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Wufang Xian",
+        "NAME_CH": "吴房县",
+        "NAME_FT": "吳房縣",
+        "X_COOR": 113.98911,
+        "Y_COOR": 33.14784,
+        "PRES_LOC": "今河南遂平县",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 634,
+        "BEG_RULE": "",
+        "END_YR": 817,
+        "END_RULE": "",
+        "NOTE_ID": 83153,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 83153,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "83155",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3694,
+      "shapeCoordinates": [
+        113.88962,
+        32.35077
+      ],
+      "fieldCoordinates": [
+        114.56728,
+        33.1555
+      ],
+      "maxDeltaDegrees": 0.8047300000000064,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Pingyu Xian",
+        "NAME_CH": "平舆县",
+        "NAME_FT": "平輿縣",
+        "X_COOR": 114.56728,
+        "Y_COOR": 33.1555,
+        "PRES_LOC": "今河南平舆县射桥镇古城村",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 691,
+        "BEG_RULE": "",
+        "END_YR": 1293,
+        "END_RULE": "",
+        "NOTE_ID": 83155,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 83155,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "83156",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3695,
+      "shapeCoordinates": [
+        114.21797,
+        32.99333
+      ],
+      "fieldCoordinates": [
+        113.95687,
+        33.3841
+      ],
+      "maxDeltaDegrees": 0.3907699999999963,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Xiping Xian",
+        "NAME_CH": "西平县",
+        "NAME_FT": "西平縣",
+        "X_COOR": 113.95687,
+        "Y_COOR": 33.3841,
+        "PRES_LOC": "今河南西平县西",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 691,
+        "BEG_RULE": "",
+        "END_YR": 1911,
+        "END_RULE": "",
+        "NOTE_ID": 83156,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 83156,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "83157",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3696,
+      "shapeCoordinates": [
+        113.971889,
+        33.154948
+      ],
+      "fieldCoordinates": [
+        114.37146,
+        32.78049
+      ],
+      "maxDeltaDegrees": 0.39957099999999457,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Zhenyang Xian",
+        "NAME_CH": "真阳县",
+        "NAME_FT": "真陽縣",
+        "X_COOR": 114.37146,
+        "Y_COOR": 32.78049,
+        "PRES_LOC": "今河南正阳县北四十里",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 705,
+        "BEG_RULE": "",
+        "END_YR": 1262,
+        "END_RULE": "",
+        "NOTE_ID": 83157,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 83157,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "83180",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3718,
+      "shapeCoordinates": [
+        113.61689,
+        36.61033
+      ],
+      "fieldCoordinates": [
+        111.04092,
+        34.05261
+      ],
+      "maxDeltaDegrees": 2.575969999999998,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Lushi Xian",
+        "NAME_CH": "卢氏县",
+        "NAME_FT": "盧氏縣",
+        "X_COOR": 111.04092,
+        "Y_COOR": 34.05261,
+        "PRES_LOC": "今河南卢氏",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 23,
+        "BEG_RULE": "",
+        "END_YR": 1911,
+        "END_RULE": "",
+        "NOTE_ID": 83180,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 83180,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70232",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3753,
+      "shapeCoordinates": [
+        109.36716,
+        35.99563
+      ],
+      "fieldCoordinates": [
+        109.11311,
+        35.39728
+      ],
+      "maxDeltaDegrees": 0.5983499999999964,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Yi Jun Xian",
+        "NAME_CH": "宜君县",
+        "NAME_FT": "宜君縣",
+        "X_COOR": 109.11311,
+        "Y_COOR": 35.39728,
+        "PRES_LOC": "今陕西宜君县城",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 663,
+        "BEG_RULE": "",
+        "END_YR": 1911,
+        "END_RULE": "",
+        "NOTE_ID": 70232,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70232,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70232",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70233",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3754,
+      "shapeCoordinates": [
+        109.26162,
+        35.80485
+      ],
+      "fieldCoordinates": [
+        109.36716,
+        35.99563
+      ],
+      "maxDeltaDegrees": 0.19077999999999662,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Luojiao Xian",
+        "NAME_CH": "洛交县",
+        "NAME_FT": "洛交縣",
+        "X_COOR": 109.36716,
+        "Y_COOR": 35.99563,
+        "PRES_LOC": "今陕西富县县城",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 583,
+        "BEG_RULE": "",
+        "END_YR": 1337,
+        "END_RULE": "",
+        "NOTE_ID": 70233,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70233,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70233",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70235",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3755,
+      "shapeCoordinates": [
+        109.00661,
+        35.95813
+      ],
+      "fieldCoordinates": [
+        109.26162,
+        35.80485
+      ],
+      "maxDeltaDegrees": 0.2550099999999986,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Sanchuan Xian",
+        "NAME_CH": "三川县",
+        "NAME_FT": "三川縣",
+        "X_COOR": 109.26162,
+        "Y_COOR": 35.80485,
+        "PRES_LOC": "今陕西富县吉子现乡三川驿村",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 554,
+        "BEG_RULE": "",
+        "END_YR": 1073,
+        "END_RULE": "",
+        "NOTE_ID": 70235,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70235,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70235",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70236",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3756,
+      "shapeCoordinates": [
+        109.34457,
+        36.27863
+      ],
+      "fieldCoordinates": [
+        109.00661,
+        35.95813
+      ],
+      "maxDeltaDegrees": 0.3379600000000096,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Zhiluo Xian",
+        "NAME_CH": "直罗县",
+        "NAME_FT": "直羅縣",
+        "X_COOR": 109.00661,
+        "Y_COOR": 35.95813,
+        "PRES_LOC": "今陕西富县直罗镇",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 620,
+        "BEG_RULE": "",
+        "END_YR": 1266,
+        "END_RULE": "",
+        "NOTE_ID": 70236,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70236,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70236",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70243",
+      "years": [
+        755
+      ],
+      "recordIndex": 3761,
+      "shapeCoordinates": [
+        108.10019,
+        34.25887
+      ],
+      "fieldCoordinates": [
+        109.14041,
+        35.50532
+      ],
+      "maxDeltaDegrees": 1.2464499999999958,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Shengping Xian",
+        "NAME_CH": "升平县",
+        "NAME_FT": "升平縣",
+        "X_COOR": 109.14041,
+        "Y_COOR": 35.50532,
+        "PRES_LOC": "今陕西宜君县升平镇",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 753,
+        "BEG_RULE": "",
+        "END_YR": 761,
+        "END_RULE": "",
+        "NOTE_ID": 70243,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70243,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70243",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70257",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3772,
+      "shapeCoordinates": [
+        108.13442,
+        34.69936
+      ],
+      "fieldCoordinates": [
+        108.16404,
+        34.8592
+      ],
+      "maxDeltaDegrees": 0.15984000000000265,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Yongshou Xian",
+        "NAME_CH": "永寿县",
+        "NAME_FT": "永壽縣",
+        "X_COOR": 108.16404,
+        "Y_COOR": 34.8592,
+        "PRES_LOC": "今陕西永寿县永寿坊",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 628,
+        "BEG_RULE": "",
+        "END_YR": 784,
+        "END_RULE": "",
+        "NOTE_ID": 70257,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70257,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70257",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70265",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3780,
+      "shapeCoordinates": [
+        108.06037,
+        34.70774
+      ],
+      "fieldCoordinates": [
+        108.04294,
+        34.55596
+      ],
+      "maxDeltaDegrees": 0.15178000000000225,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Haozhi Xian",
+        "NAME_CH": "好畤县",
+        "NAME_FT": "好畤縣",
+        "X_COOR": 108.04294,
+        "Y_COOR": 34.55596,
+        "PRES_LOC": "今陕西永寿县店头镇东北古城",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 619,
+        "BEG_RULE": "",
+        "END_YR": 1267,
+        "END_RULE": "",
+        "NOTE_ID": 70265,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70265,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70265",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70270",
+      "years": [
+        742,
+        755
+      ],
+      "recordIndex": 3785,
+      "shapeCoordinates": [
+        110.18326,
+        37.76026
+      ],
+      "fieldCoordinates": [
+        110.25407,
+        37.50098
+      ],
+      "maxDeltaDegrees": 0.25928000000000395,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Longquan Xian",
+        "NAME_CH": "龙泉县",
+        "NAME_FT": "龍泉縣",
+        "X_COOR": 110.25407,
+        "Y_COOR": 37.50098,
+        "PRES_LOC": "今陕西绥德县城",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 742,
+        "BEG_RULE": "",
+        "END_YR": 906,
+        "END_RULE": "",
+        "NOTE_ID": 70270,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70270,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70270",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70278",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3792,
+      "shapeCoordinates": [
+        110.46722,
+        37.51046
+      ],
+      "fieldCoordinates": [
+        110.2337,
+        37.48334
+      ],
+      "maxDeltaDegrees": 0.23351999999999862,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Dabin Xian",
+        "NAME_CH": "大斌县",
+        "NAME_FT": "大斌縣",
+        "X_COOR": 110.2337,
+        "Y_COOR": 37.48334,
+        "PRES_LOC": "今陕西绥德县城西南",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 628,
+        "BEG_RULE": "",
+        "END_YR": 906,
+        "END_RULE": "",
+        "NOTE_ID": 70278,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70278,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70278",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70285",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3799,
+      "shapeCoordinates": [
+        110.04979,
+        37.0941
+      ],
+      "fieldCoordinates": [
+        110.14559,
+        37.22966
+      ],
+      "maxDeltaDegrees": 0.13556000000000523,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Chengping Xian",
+        "NAME_CH": "城平县",
+        "NAME_FT": "城平縣",
+        "X_COOR": 110.14559,
+        "Y_COOR": 37.22966,
+        "PRES_LOC": "今清涧县乐堂堡寨子湾东三十里",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 582,
+        "BEG_RULE": "",
+        "END_YR": 906,
+        "END_RULE": "",
+        "NOTE_ID": 70285,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70285,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70285",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70304",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3813,
+      "shapeCoordinates": [
+        110.17913,
+        34.78926
+      ],
+      "fieldCoordinates": [
+        110.12251,
+        34.78904
+      ],
+      "maxDeltaDegrees": 0.05661999999999523,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Chaoyi Xian",
+        "NAME_CH": "朝邑县",
+        "NAME_FT": "朝邑縣",
+        "X_COOR": 110.12251,
+        "Y_COOR": 34.78904,
+        "PRES_LOC": "今陕西大荔县朝邑镇",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 554,
+        "BEG_RULE": "",
+        "END_YR": 757,
+        "END_RULE": "",
+        "NOTE_ID": 70304,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70304,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70304",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70308",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3817,
+      "shapeCoordinates": [
+        109.8795,
+        35.10679
+      ],
+      "fieldCoordinates": [
+        110.15102,
+        35.24258
+      ],
+      "maxDeltaDegrees": 0.27152000000000953,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Xiayang Xian",
+        "NAME_CH": "郃阳县",
+        "NAME_FT": "郃陽縣",
+        "X_COOR": 110.15102,
+        "Y_COOR": 35.24258,
+        "PRES_LOC": "今陕西合阳县城",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 596,
+        "BEG_RULE": "",
+        "END_YR": 1911,
+        "END_RULE": "",
+        "NOTE_ID": 70308,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70308,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70308",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70310",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3819,
+      "shapeCoordinates": [
+        110.42111,
+        35.38499
+      ],
+      "fieldCoordinates": [
+        109.93044,
+        35.19091
+      ],
+      "maxDeltaDegrees": 0.4906699999999944,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Chengcheng Xian",
+        "NAME_CH": "澄城县",
+        "NAME_FT": "澄城縣",
+        "X_COOR": 109.93044,
+        "Y_COOR": 35.19091,
+        "PRES_LOC": "今陕西澄城县城",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 446,
+        "BEG_RULE": "",
+        "END_YR": 1911,
+        "END_RULE": "",
+        "NOTE_ID": 70310,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70310,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70310",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70342",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3846,
+      "shapeCoordinates": [
+        109.65974,
+        35.32088
+      ],
+      "fieldCoordinates": [
+        109.58706,
+        35.18162
+      ],
+      "maxDeltaDegrees": 0.13926000000000016,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Baishui Xian",
+        "NAME_CH": "白水县",
+        "NAME_FT": "白水縣",
+        "X_COOR": 109.58706,
+        "Y_COOR": 35.18162,
+        "PRES_LOC": "今陕西白水县城",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 636,
+        "BEG_RULE": "",
+        "END_YR": 1911,
+        "END_RULE": "",
+        "NOTE_ID": 70342,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70342,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70342",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70361",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3861,
+      "shapeCoordinates": [
+        109.31753,
+        36.9036
+      ],
+      "fieldCoordinates": [
+        109.46991,
+        36.59181
+      ],
+      "maxDeltaDegrees": 0.3117899999999949,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Fushi Xian",
+        "NAME_CH": "肤施县",
+        "NAME_FT": "膚施縣",
+        "X_COOR": 109.46991,
+        "Y_COOR": 36.59181,
+        "PRES_LOC": "今陕西延安市",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 607,
+        "BEG_RULE": "",
+        "END_YR": 1911,
+        "END_RULE": "",
+        "NOTE_ID": 70361,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70361,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70361",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70367",
+      "years": [
+        742,
+        755
+      ],
+      "recordIndex": 3867,
+      "shapeCoordinates": [
+        109.66875,
+        37.13766
+      ],
+      "fieldCoordinates": [
+        109.34457,
+        36.27863
+      ],
+      "maxDeltaDegrees": 0.8590299999999971,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Ganquan Xian",
+        "NAME_CH": "甘泉县",
+        "NAME_FT": "甘泉縣",
+        "X_COOR": 109.34457,
+        "Y_COOR": 36.27863,
+        "PRES_LOC": "今陕西甘泉县城",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 742,
+        "BEG_RULE": "",
+        "END_YR": 1911,
+        "END_RULE": "",
+        "NOTE_ID": 70367,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70367,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70367",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70380",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3879,
+      "shapeCoordinates": [
+        107.86175,
+        36.997433
+      ],
+      "fieldCoordinates": [
+        110.00874,
+        36.5837
+      ],
+      "maxDeltaDegrees": 2.1469900000000024,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Yanan Xian",
+        "NAME_CH": "延安县",
+        "NAME_FT": "延安縣",
+        "X_COOR": 110.00874,
+        "Y_COOR": 36.5837,
+        "PRES_LOC": "今陕西延长县城",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 632,
+        "BEG_RULE": "",
+        "END_YR": 763,
+        "END_RULE": "",
+        "NOTE_ID": 70380,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70380,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70380",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70386",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3884,
+      "shapeCoordinates": [
+        108.91805,
+        37.59872
+      ],
+      "fieldCoordinates": [
+        110.23351,
+        36.82964
+      ],
+      "maxDeltaDegrees": 1.3154600000000016,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Yanshui Xian",
+        "NAME_CH": "延水县",
+        "NAME_FT": "延水縣",
+        "X_COOR": 110.23351,
+        "Y_COOR": 36.82964,
+        "PRES_LOC": "今陕西延川县东南",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 705,
+        "BEG_RULE": "",
+        "END_YR": 1074,
+        "END_RULE": "",
+        "NOTE_ID": 70386,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70386,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70386",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70408",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3902,
+      "shapeCoordinates": [
+        110.29741,
+        38.31244
+      ],
+      "fieldCoordinates": [
+        110.38662,
+        38.10397
+      ],
+      "maxDeltaDegrees": 0.20847000000000548,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Zhenxiang Xian",
+        "NAME_CH": "真乡县",
+        "NAME_FT": "真鄉縣",
+        "X_COOR": 110.38662,
+        "Y_COOR": 38.10397,
+        "PRES_LOC": "今陕西佳县真乡川",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 581,
+        "BEG_RULE": "",
+        "END_YR": 906,
+        "END_RULE": "",
+        "NOTE_ID": 70408,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70408,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70408",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70409",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3903,
+      "shapeCoordinates": [
+        109.86015,
+        38.22434
+      ],
+      "fieldCoordinates": [
+        110.29741,
+        38.31244
+      ],
+      "maxDeltaDegrees": 0.4372599999999949,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Kaiguang Xian",
+        "NAME_CH": "开光县",
+        "NAME_FT": "開光縣",
+        "X_COOR": 110.29741,
+        "Y_COOR": 38.31244,
+        "PRES_LOC": "今陕西佳县北上高寨乡有开光峁村",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 580,
+        "BEG_RULE": "",
+        "END_YR": 906,
+        "END_RULE": "",
+        "NOTE_ID": 70409,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70409,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70409",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70535",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3932,
+      "shapeCoordinates": [
+        108.93719,
+        34.31799
+      ],
+      "fieldCoordinates": [
+        106.69404,
+        38.8106
+      ],
+      "maxDeltaDegrees": 4.492609999999999,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Lingwu Xian",
+        "NAME_CH": "灵武县",
+        "NAME_FT": "靈武縣",
+        "X_COOR": 106.69404,
+        "Y_COOR": 38.8106,
+        "PRES_LOC": "今宁夏陶乐县",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 601,
+        "BEG_RULE": "",
+        "END_YR": 974,
+        "END_RULE": "",
+        "NOTE_ID": 70535,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70535,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70535",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70626",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3938,
+      "shapeCoordinates": [
+        108.93969,
+        34.259823
+      ],
+      "fieldCoordinates": [
+        108.90698,
+        34.24642
+      ],
+      "maxDeltaDegrees": 0.032709999999994466,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Changan Xian",
+        "NAME_CH": "长安县",
+        "NAME_FT": "長安縣",
+        "X_COOR": 108.90698,
+        "Y_COOR": 34.24642,
+        "PRES_LOC": "今西安市西市",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 703,
+        "BEG_RULE": "",
+        "END_YR": 1911,
+        "END_RULE": "",
+        "NOTE_ID": 70626,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70626,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70626",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": "长安县"
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70667",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3972,
+      "shapeCoordinates": [
+        109.18746,
+        35.65536
+      ],
+      "fieldCoordinates": [
+        108.93719,
+        34.31799
+      ],
+      "maxDeltaDegrees": 1.33737,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Liyang Xian",
+        "NAME_CH": "栎阳县",
+        "NAME_FT": "櫟陽縣",
+        "X_COOR": 108.93719,
+        "Y_COOR": 34.31799,
+        "PRES_LOC": "今西安市西北十二里未央、草滩二区",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 634,
+        "BEG_RULE": "",
+        "END_YR": 1263,
+        "END_RULE": "",
+        "NOTE_ID": 70667,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70667,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70667",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70700",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 3990,
+      "shapeCoordinates": [
+        108.546859,
+        34.229143
+      ],
+      "fieldCoordinates": [
+        108.83756,
+        34.53334
+      ],
+      "maxDeltaDegrees": 0.30419700000000205,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Jingyang Xian",
+        "NAME_CH": "泾阳县",
+        "NAME_FT": "涇陽縣",
+        "X_COOR": 108.83756,
+        "Y_COOR": 34.53334,
+        "PRES_LOC": "今泾阳县",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 619,
+        "BEG_RULE": "",
+        "END_YR": 1911,
+        "END_RULE": "",
+        "NOTE_ID": 70700,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70700,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70700",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70730",
+      "years": [
+        741,
+        742
+      ],
+      "recordIndex": 4014,
+      "shapeCoordinates": [
+        109.30512,
+        34.35556
+      ],
+      "fieldCoordinates": [
+        109.25641,
+        34.42549
+      ],
+      "maxDeltaDegrees": 0.06993000000000649,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Xinfeng Xian",
+        "NAME_CH": "新丰县",
+        "NAME_FT": "新豐縣",
+        "X_COOR": 109.25641,
+        "Y_COOR": 34.42549,
+        "PRES_LOC": "今临潼县东北新丰镇",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 705,
+        "BEG_RULE": "",
+        "END_YR": 747,
+        "END_RULE": "",
+        "NOTE_ID": 70730,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70730,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70730",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70732",
+      "years": [
+        755
+      ],
+      "recordIndex": 4016,
+      "shapeCoordinates": [
+        109.21272,
+        34.36835
+      ],
+      "fieldCoordinates": [
+        109.30512,
+        34.35556
+      ],
+      "maxDeltaDegrees": 0.09239999999999782,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Zhaoying Xian",
+        "NAME_CH": "昭应县",
+        "NAME_FT": "昭應縣",
+        "X_COOR": 109.30512,
+        "Y_COOR": 34.35556,
+        "PRES_LOC": "今骊山下",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 748,
+        "BEG_RULE": "",
+        "END_YR": 975,
+        "END_RULE": "",
+        "NOTE_ID": 70732,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70732,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70732",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70745",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 4027,
+      "shapeCoordinates": [
+        109.00243,
+        34.45299
+      ],
+      "fieldCoordinates": [
+        109.08048,
+        34.53332
+      ],
+      "maxDeltaDegrees": 0.08033000000000357,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Gaoling Xian",
+        "NAME_CH": "高陵县",
+        "NAME_FT": "高陵縣",
+        "X_COOR": 109.08048,
+        "Y_COOR": 34.53332,
+        "PRES_LOC": "今高陵县治",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 627,
+        "BEG_RULE": "",
+        "END_YR": 1911,
+        "END_RULE": "",
+        "NOTE_ID": 70745,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70745,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70745",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70747",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 4029,
+      "shapeCoordinates": [
+        109.14697,
+        34.23927
+      ],
+      "fieldCoordinates": [
+        108.6039,
+        34.11182
+      ],
+      "maxDeltaDegrees": 0.5430700000000002,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Hu Xian",
+        "NAME_CH": "鄠县",
+        "NAME_FT": "鄠縣",
+        "X_COOR": 108.6039,
+        "Y_COOR": 34.11182,
+        "PRES_LOC": "今陕西户县",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": -201,
+        "BEG_RULE": "",
+        "END_YR": 1911,
+        "END_RULE": "",
+        "NOTE_ID": 70747,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70747,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70747",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70769",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 4047,
+      "shapeCoordinates": [
+        108.83756,
+        34.53334
+      ],
+      "fieldCoordinates": [
+        108.75477,
+        34.59552
+      ],
+      "maxDeltaDegrees": 0.0827900000000028,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Yunyang Xian",
+        "NAME_CH": "云阳县",
+        "NAME_FT": "雲陽縣",
+        "X_COOR": 108.75477,
+        "Y_COOR": 34.59552,
+        "PRES_LOC": "今泾阳县西北二十里",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 634,
+        "BEG_RULE": "",
+        "END_YR": 1263,
+        "END_RULE": "",
+        "NOTE_ID": 70769,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70769,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70769",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70780",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 4054,
+      "shapeCoordinates": [
+        108.92629,
+        34.61975
+      ],
+      "fieldCoordinates": [
+        108.79881,
+        34.79443
+      ],
+      "maxDeltaDegrees": 0.17467999999999506,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Sanyuan Xian",
+        "NAME_CH": "三原县",
+        "NAME_FT": "三原縣",
+        "X_COOR": 108.79881,
+        "Y_COOR": 34.79443,
+        "PRES_LOC": "今三原县西北五十余里杜寨西北小豆村",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 627,
+        "BEG_RULE": "",
+        "END_YR": 1286,
+        "END_RULE": "",
+        "NOTE_ID": 70780,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70780,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70780",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70794",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 4062,
+      "shapeCoordinates": [
+        109.67984,
+        34.62462
+      ],
+      "fieldCoordinates": [
+        109.50124,
+        34.503
+      ],
+      "maxDeltaDegrees": 0.17860000000000298,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Weinan Xian",
+        "NAME_CH": "渭南县",
+        "NAME_FT": "渭南縣",
+        "X_COOR": 109.50124,
+        "Y_COOR": 34.503,
+        "PRES_LOC": "今渭南市",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 553,
+        "BEG_RULE": "",
+        "END_YR": 1911,
+        "END_RULE": "",
+        "NOTE_ID": 70794,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70794,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70794",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70801",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 4069,
+      "shapeCoordinates": [
+        109.06288,
+        34.21341
+      ],
+      "fieldCoordinates": [
+        109.50959,
+        34.7291
+      ],
+      "maxDeltaDegrees": 0.5156899999999993,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Xiagui Xian",
+        "NAME_CH": "下邽县",
+        "NAME_FT": "下邽縣",
+        "X_COOR": 109.50959,
+        "Y_COOR": 34.7291,
+        "PRES_LOC": "今渭南县北下邽镇",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 615,
+        "BEG_RULE": "",
+        "END_YR": 1233,
+        "END_RULE": "",
+        "NOTE_ID": 70801,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70801,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70801",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70809",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 4073,
+      "shapeCoordinates": [
+        108.41657,
+        34.48997
+      ],
+      "fieldCoordinates": [
+        109.16157,
+        34.75443
+      ],
+      "maxDeltaDegrees": 0.7450000000000045,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Fuping Xian",
+        "NAME_CH": "富平县",
+        "NAME_FT": "富平縣",
+        "X_COOR": 109.16157,
+        "Y_COOR": 34.75443,
+        "PRES_LOC": "今陕西富平县",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 583,
+        "BEG_RULE": "",
+        "END_YR": 1911,
+        "END_RULE": "",
+        "NOTE_ID": 70809,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70809,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70809",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70819",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 4074,
+      "shapeCoordinates": [
+        109.27349,
+        35.05089
+      ],
+      "fieldCoordinates": [
+        108.41657,
+        34.48997
+      ],
+      "maxDeltaDegrees": 0.8569200000000023,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Liquan Xian",
+        "NAME_CH": "醴泉县",
+        "NAME_FT": "醴泉縣",
+        "X_COOR": 108.41657,
+        "Y_COOR": 34.48997,
+        "PRES_LOC": "今陕西礼泉县",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 636,
+        "BEG_RULE": "",
+        "END_YR": 1911,
+        "END_RULE": "",
+        "NOTE_ID": 70819,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70819,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70819",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70907",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 4098,
+      "shapeCoordinates": [
+        107.79633,
+        34.47827
+      ],
+      "fieldCoordinates": [
+        107.62709,
+        34.43964
+      ],
+      "maxDeltaDegrees": 0.16924000000000206,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Qishan Xian",
+        "NAME_CH": "岐山县",
+        "NAME_FT": "岐山縣",
+        "X_COOR": 107.62709,
+        "Y_COOR": 34.43964,
+        "PRES_LOC": "今陕西岐山",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 654,
+        "BEG_RULE": "",
+        "END_YR": 1911,
+        "END_RULE": "",
+        "NOTE_ID": 70907,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70907,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70907",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70912",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 4101,
+      "shapeCoordinates": [
+        108.24409,
+        34.52971
+      ],
+      "fieldCoordinates": [
+        107.79633,
+        34.47827
+      ],
+      "maxDeltaDegrees": 0.4477600000000024,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Qiyang Xian",
+        "NAME_CH": "岐阳县",
+        "NAME_FT": "岐陽縣",
+        "X_COOR": 107.79633,
+        "Y_COOR": 34.47827,
+        "PRES_LOC": "今陕西岐山县东北岐阳村",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 654,
+        "BEG_RULE": "",
+        "END_YR": 807,
+        "END_RULE": "",
+        "NOTE_ID": 70912,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70912,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70912",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70938",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 4113,
+      "shapeCoordinates": [
+        107.75479,
+        34.27356
+      ],
+      "fieldCoordinates": [
+        107.79633,
+        34.47827
+      ],
+      "maxDeltaDegrees": 0.20470999999999862,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Mei Xian",
+        "NAME_CH": "郿县",
+        "NAME_FT": "郿縣",
+        "X_COOR": 107.79633,
+        "Y_COOR": 34.47827,
+        "PRES_LOC": "今陕西岐山县东岐阳",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 606,
+        "BEG_RULE": "",
+        "END_YR": 1261,
+        "END_RULE": "",
+        "NOTE_ID": 70938,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70938,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70938",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70953",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 4121,
+      "shapeCoordinates": [
+        107.03676,
+        34.64518
+      ],
+      "fieldCoordinates": [
+        107.13386,
+        34.64488
+      ],
+      "maxDeltaDegrees": 0.09709999999999752,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Qianyang Xian",
+        "NAME_CH": "汧阳县",
+        "NAME_FT": "汧陽縣",
+        "X_COOR": 107.13386,
+        "Y_COOR": 34.64488,
+        "PRES_LOC": "今陕西千阳县",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 561,
+        "BEG_RULE": "",
+        "END_YR": 1547,
+        "END_RULE": "",
+        "NOTE_ID": 70953,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70953,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70953",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70981",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 4130,
+      "shapeCoordinates": [
+        107.035919,
+        33.072983
+      ],
+      "fieldCoordinates": [
+        107.10401,
+        34.48382
+      ],
+      "maxDeltaDegrees": 1.4108370000000008,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Nanyou Xian",
+        "NAME_CH": "南由县",
+        "NAME_FT": "南由縣",
+        "X_COOR": 107.10401,
+        "Y_COOR": 34.48382,
+        "PRES_LOC": "今陕西宝鸡市县功镇东南十里金陵河东岸",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 582,
+        "BEG_RULE": "",
+        "END_YR": 807,
+        "END_RULE": "",
+        "NOTE_ID": 70981,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70981,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "200059",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 4153,
+      "shapeCoordinates": [
+        107.75886,
+        32.90091
+      ],
+      "fieldCoordinates": [
+        107.61487,
+        33.17168
+      ],
+      "maxDeltaDegrees": 0.27076999999999884,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Yangyuan Xian",
+        "NAME_CH": "洋源县",
+        "NAME_FT": "洋源縣",
+        "X_COOR": 107.61487,
+        "Y_COOR": 33.17168,
+        "PRES_LOC": "今陕西洋县东南洋水之南",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 624,
+        "BEG_RULE": "4",
+        "END_YR": 765,
+        "END_RULE": "4",
+        "NOTE_ID": 0,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 200059,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "王大学",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "新建",
+        "END_CHG_TY": "治所迁移"
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "71054",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 4156,
+      "shapeCoordinates": [
+        107.08187,
+        34.30492
+      ],
+      "fieldCoordinates": [
+        107.82923,
+        33.42819
+      ],
+      "maxDeltaDegrees": 0.876730000000002,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Huangjin Xian",
+        "NAME_CH": "黄金县",
+        "NAME_FT": "黃金縣",
+        "X_COOR": 107.82923,
+        "Y_COOR": 33.42819,
+        "PRES_LOC": "今陕西洋县东真佛寺",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 628,
+        "BEG_RULE": "",
+        "END_YR": 965,
+        "END_RULE": "",
+        "NOTE_ID": 71054,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 71054,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "王大学",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "71076",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 4160,
+      "shapeCoordinates": [
+        106.647175,
+        33.964418
+      ],
+      "fieldCoordinates": [
+        106.62294,
+        33.94525
+      ],
+      "maxDeltaDegrees": 0.024235000000004447,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Liangquan Xian",
+        "NAME_CH": "梁泉县",
+        "NAME_FT": "梁泉縣",
+        "X_COOR": 106.62294,
+        "Y_COOR": 33.94525,
+        "PRES_LOC": "今陕西省凤县东北凤州",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 479,
+        "BEG_RULE": "4",
+        "END_YR": 1267,
+        "END_RULE": "4",
+        "NOTE_ID": 71076,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 71076,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "王大学",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "更名",
+        "END_CHG_TY": "更名"
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "200060",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 4161,
+      "shapeCoordinates": [
+        106.656692,
+        34.187279
+      ],
+      "fieldCoordinates": [
+        106.60774,
+        34.20934
+      ],
+      "maxDeltaDegrees": 0.048951999999999884,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Huanghua Xian",
+        "NAME_CH": "黄花县",
+        "NAME_FT": "黃花縣",
+        "X_COOR": 106.60774,
+        "Y_COOR": 34.20934,
+        "PRES_LOC": "今陕西省凤县东北黄花地",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 613,
+        "BEG_RULE": "4",
+        "END_YR": 761,
+        "END_RULE": "4",
+        "NOTE_ID": 0,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 200060,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "王大学",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "新建",
+        "END_CHG_TY": "撤销"
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "71091",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 4163,
+      "shapeCoordinates": [
+        105.956902,
+        33.011672
+      ],
+      "fieldCoordinates": [
+        106.03271,
+        33.01009
+      ],
+      "maxDeltaDegrees": 0.07580799999999499,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Jinniu Xian",
+        "NAME_CH": "金牛县",
+        "NAME_FT": "金牛縣",
+        "X_COOR": 106.03271,
+        "Y_COOR": 33.01009,
+        "PRES_LOC": "今陕西宁强县白土店",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 730,
+        "BEG_RULE": "4",
+        "END_YR": 824,
+        "END_RULE": "4",
+        "NOTE_ID": 71091,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 71091,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "王大学",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "治所迁移",
+        "END_CHG_TY": "撤销"
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "71093",
+      "years": [
+        742,
+        755
+      ],
+      "recordIndex": 4165,
+      "shapeCoordinates": [
+        106.021065,
+        32.96059
+      ],
+      "fieldCoordinates": [
+        106.05381,
+        32.95177
+      ],
+      "maxDeltaDegrees": 0.032745000000005575,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Sanquan Xian",
+        "NAME_CH": "三泉县",
+        "NAME_FT": "三泉縣",
+        "X_COOR": 106.05381,
+        "Y_COOR": 32.95177,
+        "PRES_LOC": "今陕西宁强县西北阳平关擂鼓台",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 742,
+        "BEG_RULE": "4",
+        "END_YR": 995,
+        "END_RULE": "4",
+        "NOTE_ID": 71093,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 71093,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "王大学",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "治所迁移",
+        "END_CHG_TY": "撤销"
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "71105",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 4171,
+      "shapeCoordinates": [
+        106.615463,
+        33.150223
+      ],
+      "fieldCoordinates": [
+        106.5837,
+        33.14224
+      ],
+      "maxDeltaDegrees": 0.0317630000000122,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Xi Xian",
+        "NAME_CH": "西县",
+        "NAME_FT": "西縣",
+        "X_COOR": 106.5837,
+        "Y_COOR": 33.14224,
+        "PRES_LOC": "今陕西省勉县西老城",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 625,
+        "BEG_RULE": "",
+        "END_YR": 1282,
+        "END_RULE": "",
+        "NOTE_ID": 71105,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 71105,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "王大学",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "治所迁移",
+        "END_CHG_TY": "撤销"
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "71159",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 4189,
+      "shapeCoordinates": [
+        109.352364,
+        32.393845
+      ],
+      "fieldCoordinates": [
+        109.19894,
+        32.57111
+      ],
+      "maxDeltaDegrees": 0.17726499999999845,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Pingli Xian",
+        "NAME_CH": "平利县",
+        "NAME_FT": "平利縣",
+        "X_COOR": 109.19894,
+        "Y_COOR": 32.57111,
+        "PRES_LOC": "今陕西上平利县治",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 625,
+        "BEG_RULE": "4",
+        "END_YR": 770,
+        "END_RULE": "4",
+        "NOTE_ID": 71159,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 71159,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "王大学",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "治所迁移",
+        "END_CHG_TY": "撤销"
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "200087",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 4214,
+      "shapeCoordinates": [
+        108.267608,
+        32.985456
+      ],
+      "fieldCoordinates": [
+        108.3441,
+        32.97322
+      ],
+      "maxDeltaDegrees": 0.07649200000000178,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Ankang Xian",
+        "NAME_CH": "安康县",
+        "NAME_FT": "安康縣",
+        "X_COOR": 108.3441,
+        "Y_COOR": 32.97322,
+        "PRES_LOC": "今陕西石泉县东南石泉嘴",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 607,
+        "BEG_RULE": "4",
+        "END_YR": 756,
+        "END_RULE": "4",
+        "NOTE_ID": 0,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 200087,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "王大学",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "更名",
+        "END_CHG_TY": "更名"
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70609",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 4496,
+      "shapeCoordinates": [
+        106.27314,
+        38.49312
+      ],
+      "fieldCoordinates": [
+        102.10349,
+        38.1776
+      ],
+      "maxDeltaDegrees": 4.169650000000004,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Xianmei Xian",
+        "NAME_CH": "显美县",
+        "NAME_FT": "顯美縣",
+        "X_COOR": 102.10349,
+        "Y_COOR": 38.1776,
+        "PRES_LOC": "今甘肃永昌县东大河下游东寨、六坝一带",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": -104,
+        "BEG_RULE": "",
+        "END_YR": 956,
+        "END_RULE": "",
+        "NOTE_ID": 70609,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70609,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70917",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 4509,
+      "shapeCoordinates": [
+        106.08667,
+        33.77755
+      ],
+      "fieldCoordinates": [
+        104.91336,
+        33.39463
+      ],
+      "maxDeltaDegrees": 1.1733100000000007,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Guo Xian",
+        "NAME_CH": "虢县",
+        "NAME_FT": "虢縣",
+        "X_COOR": 104.91336,
+        "Y_COOR": 33.39463,
+        "PRES_LOC": "今甘肃武都县城西",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 691,
+        "BEG_RULE": "",
+        "END_YR": 1278,
+        "END_RULE": "",
+        "NOTE_ID": 70917,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70917,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "44460",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 4580,
+      "shapeCoordinates": [
+        104.595039,
+        30.741821
+      ],
+      "fieldCoordinates": [
+        104.54498,
+        30.72263
+      ],
+      "maxDeltaDegrees": 0.05005900000000452,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Jinshui Xian",
+        "NAME_CH": "金水县",
+        "NAME_FT": "金水縣",
+        "X_COOR": 104.54498,
+        "Y_COOR": 30.72263,
+        "PRES_LOC": "今四川金堂县东南同兴场",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 618,
+        "BEG_RULE": "",
+        "END_YR": 1275,
+        "END_RULE": "",
+        "NOTE_ID": 44460,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 44460,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "更名",
+        "END_CHG_TY": "撤销"
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "44478",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 4595,
+      "shapeCoordinates": [
+        104.355396,
+        30.15324
+      ],
+      "fieldCoordinates": [
+        104.31071,
+        30.14807
+      ],
+      "maxDeltaDegrees": 0.04468599999999867,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Guiping Xian",
+        "NAME_CH": "贵平县",
+        "NAME_FT": "貴平縣",
+        "X_COOR": 104.31071,
+        "Y_COOR": 30.14807,
+        "PRES_LOC": "今四川仁寿县东北贵平村",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 726,
+        "BEG_RULE": "4",
+        "END_YR": 1071,
+        "END_RULE": "4",
+        "NOTE_ID": 44478,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 44478,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "邹逸麟",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "迁移治所",
+        "END_CHG_TY": "撤销"
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "99050",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 4896,
+      "shapeCoordinates": [
+        108.486433,
+        25.878944
+      ],
+      "fieldCoordinates": [
+        108.51667,
+        25.92254
+      ],
+      "maxDeltaDegrees": 0.043596000000000856,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Yingjiang Xian",
+        "NAME_CH": "应江县",
+        "NAME_FT": "應江縣",
+        "X_COOR": 108.51667,
+        "Y_COOR": 25.92254,
+        "PRES_LOC": "今贵州省榕江境",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 629,
+        "BEG_RULE": "",
+        "END_YR": 906,
+        "END_RULE": "",
+        "NOTE_ID": 99050,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 99050,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "新建",
+        "END_CHG_TY": "撤销"
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "99051",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 4897,
+      "shapeCoordinates": [
+        108.309109,
+        26.706858
+      ],
+      "fieldCoordinates": [
+        108.3093,
+        26.67443
+      ],
+      "maxDeltaDegrees": 0.03242799999999946,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Tuolong Xian",
+        "NAME_CH": "陁隆县",
+        "NAME_FT": "陁隆縣",
+        "X_COOR": 108.3093,
+        "Y_COOR": 26.67443,
+        "PRES_LOC": "今贵州省台江县境",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 629,
+        "BEG_RULE": "",
+        "END_YR": 906,
+        "END_RULE": "",
+        "NOTE_ID": 99051,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 99051,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "新建",
+        "END_CHG_TY": "撤销"
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "200399",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 6895,
+      "shapeCoordinates": [
+        106.957181,
+        33.133217
+      ],
+      "fieldCoordinates": [
+        106.93859,
+        33.18939
+      ],
+      "maxDeltaDegrees": 0.05617300000000114,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Baocheng Xian",
+        "NAME_CH": "褒城县",
+        "NAME_FT": "褒城縣",
+        "X_COOR": 106.93859,
+        "Y_COOR": 33.18939,
+        "PRES_LOC": "今陕西南郑县西北大钟寺",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 629,
+        "BEG_RULE": "4",
+        "END_YR": 1204,
+        "END_RULE": "4",
+        "NOTE_ID": 0,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 200399,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "王大学",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "更名",
+        "END_CHG_TY": "治所迁移"
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "71092",
+      "years": [
+        741
+      ],
+      "recordIndex": 6903,
+      "shapeCoordinates": [
+        105.908158,
+        32.695279
+      ],
+      "fieldCoordinates": [
+        106.05381,
+        32.95177
+      ],
+      "maxDeltaDegrees": 0.256491000000004,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Sanquan Xian",
+        "NAME_CH": "三泉县",
+        "NAME_FT": "三泉縣",
+        "X_COOR": 106.05381,
+        "Y_COOR": 32.95177,
+        "PRES_LOC": "今四川省广元市东北嘉陵江畔",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 621,
+        "BEG_RULE": "",
+        "END_YR": 741,
+        "END_RULE": "",
+        "NOTE_ID": 71092,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 71092,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "王大学",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "新建",
+        "END_CHG_TY": "治所迁移"
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70390",
+      "years": [
+        742,
+        755
+      ],
+      "recordIndex": 10494,
+      "shapeCoordinates": [
+        109.84888,
+        37.19066
+      ],
+      "fieldCoordinates": [
+        109.08953,
+        37.08915
+      ],
+      "maxDeltaDegrees": 0.7593499999999977,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Yanchang Xian",
+        "NAME_CH": "延昌县",
+        "NAME_FT": "延昌縣",
+        "X_COOR": 109.08953,
+        "Y_COOR": 37.08915,
+        "PRES_LOC": "今陕西安塞县化子坪",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 742,
+        "BEG_RULE": "",
+        "END_YR": 907,
+        "END_RULE": "1",
+        "NOTE_ID": 70390,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70390,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70390",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70655",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 10497,
+      "shapeCoordinates": [
+        109.13749,
+        34.33165
+      ],
+      "fieldCoordinates": [
+        108.93719,
+        34.31799
+      ],
+      "maxDeltaDegrees": 0.2002999999999986,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Wannian Xian",
+        "NAME_CH": "万年县",
+        "NAME_FT": "萬年縣",
+        "X_COOR": 108.93719,
+        "Y_COOR": 34.31799,
+        "PRES_LOC": "今西安市西北十二里未央、草滩二区",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 703,
+        "BEG_RULE": "",
+        "END_YR": 757,
+        "END_RULE": "1",
+        "NOTE_ID": 70655,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70655,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70655",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": "万年县"
+      }
+    },
+    {
+      "level": "county",
+      "sourceRecordId": "70949",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 10509,
+      "shapeCoordinates": [
+        107.14493,
+        34.64419
+      ],
+      "fieldCoordinates": [
+        107.38646,
+        34.78276
+      ],
+      "maxDeltaDegrees": 0.24152999999999736,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Linyou Xian",
+        "NAME_CH": "麟游县",
+        "NAME_FT": "麟遊縣",
+        "X_COOR": 107.38646,
+        "Y_COOR": 34.78276,
+        "PRES_LOC": "今陕西麟游县西北万家城",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 632,
+        "BEG_RULE": "",
+        "END_YR": 1911,
+        "END_RULE": "6",
+        "NOTE_ID": 70949,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 70949,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "70949",
+        "GECOMPLR": "孙涛",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "",
+        "END_CHG_TY": ""
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "211388",
+      "years": [
+        741
+      ],
+      "recordIndex": 2026,
+      "shapeCoordinates": [
+        109.493585,
+        36.605511
+      ],
+      "fieldCoordinates": [
+        109.46991,
+        36.59181
+      ],
+      "maxDeltaDegrees": 0.023674999999997226,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Yan Zhou",
+        "NAME_CH": "延州",
+        "NAME_FT": "延州",
+        "X_COOR": 109.46991,
+        "Y_COOR": 36.59181,
+        "PRES_LOC": "今陕西延安市延河东岸",
+        "TYPE_PY": "Zhou",
+        "TYPE_CH": "州",
+        "LEV_RANK": "3",
+        "BEG_YR": 618,
+        "BEG_RULE": "",
+        "END_YR": 741,
+        "END_RULE": "",
+        "NOTE_ID": 0,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 211388,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "更名",
+        "END_CHG_TY": "更名"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "211396",
+      "years": [
+        741
+      ],
+      "recordIndex": 2035,
+      "shapeCoordinates": [
+        108.850075,
+        37.9925
+      ],
+      "fieldCoordinates": [
+        108.91805,
+        37.59872
+      ],
+      "maxDeltaDegrees": 0.3937799999999996,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Xia Zhou",
+        "NAME_CH": "夏州",
+        "NAME_FT": "夏州",
+        "X_COOR": 108.91805,
+        "Y_COOR": 37.59872,
+        "PRES_LOC": "今内蒙古区乌审旗南统万城",
+        "TYPE_PY": "Zhou",
+        "TYPE_CH": "州",
+        "LEV_RANK": "3",
+        "BEG_YR": 628,
+        "BEG_RULE": "",
+        "END_YR": 741,
+        "END_RULE": "",
+        "NOTE_ID": 0,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 211396,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "更名",
+        "END_CHG_TY": "更名"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "211397",
+      "years": [
+        742,
+        755
+      ],
+      "recordIndex": 2036,
+      "shapeCoordinates": [
+        108.850075,
+        37.9925
+      ],
+      "fieldCoordinates": [
+        108.91805,
+        37.59872
+      ],
+      "maxDeltaDegrees": 0.3937799999999996,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Shuofang Jun",
+        "NAME_CH": "朔方郡",
+        "NAME_FT": "朔方郡",
+        "X_COOR": 108.91805,
+        "Y_COOR": 37.59872,
+        "PRES_LOC": "今内蒙古区乌审旗南统万城",
+        "TYPE_PY": "Jun",
+        "TYPE_CH": "郡",
+        "LEV_RANK": "3",
+        "BEG_YR": 742,
+        "BEG_RULE": "",
+        "END_YR": 757,
+        "END_RULE": "",
+        "NOTE_ID": 0,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 211397,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "更名",
+        "END_CHG_TY": "更名"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "211404",
+      "years": [
+        741
+      ],
+      "recordIndex": 2043,
+      "shapeCoordinates": [
+        109.820457,
+        37.964199
+      ],
+      "fieldCoordinates": [
+        109.2916,
+        37.95929
+      ],
+      "maxDeltaDegrees": 0.5288570000000021,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Yin Zhou",
+        "NAME_CH": "银州",
+        "NAME_FT": "銀州",
+        "X_COOR": 109.2916,
+        "Y_COOR": 37.95929,
+        "PRES_LOC": "今陕西横山县东党盆",
+        "TYPE_PY": "Zhou",
+        "TYPE_CH": "州",
+        "LEV_RANK": "3",
+        "BEG_YR": 628,
+        "BEG_RULE": "",
+        "END_YR": 741,
+        "END_RULE": "",
+        "NOTE_ID": 0,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 211404,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "新建",
+        "END_CHG_TY": "更名"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "212274",
+      "years": [
+        742,
+        755
+      ],
+      "recordIndex": 2044,
+      "shapeCoordinates": [
+        109.820457,
+        37.964199
+      ],
+      "fieldCoordinates": [
+        109.2916,
+        37.95929
+      ],
+      "maxDeltaDegrees": 0.5288570000000021,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Yinchuan Jun",
+        "NAME_CH": "银川郡",
+        "NAME_FT": "銀川郡",
+        "X_COOR": 109.2916,
+        "Y_COOR": 37.95929,
+        "PRES_LOC": "今陕西横山县东党盆",
+        "TYPE_PY": "Jun",
+        "TYPE_CH": "郡",
+        "LEV_RANK": "3",
+        "BEG_YR": 742,
+        "BEG_RULE": "",
+        "END_YR": 757,
+        "END_RULE": "",
+        "NOTE_ID": 116093,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 212274,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "更名",
+        "END_CHG_TY": "更名"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "211408",
+      "years": [
+        741
+      ],
+      "recordIndex": 2048,
+      "shapeCoordinates": [
+        109.36716,
+        35.99563
+      ],
+      "fieldCoordinates": [
+        109.24882,
+        35.54635
+      ],
+      "maxDeltaDegrees": 0.4492800000000017,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Fu Zhou",
+        "NAME_CH": "鄜州",
+        "NAME_FT": "鄜州",
+        "X_COOR": 109.24882,
+        "Y_COOR": 35.54635,
+        "PRES_LOC": "今陕西富县",
+        "TYPE_PY": "Zhou",
+        "TYPE_CH": "州",
+        "LEV_RANK": "3",
+        "BEG_YR": 618,
+        "BEG_RULE": "",
+        "END_YR": 741,
+        "END_RULE": "",
+        "NOTE_ID": 0,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 211408,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "更名",
+        "END_CHG_TY": "更名"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "212587",
+      "years": [
+        742,
+        755
+      ],
+      "recordIndex": 2054,
+      "shapeCoordinates": [
+        109.241476,
+        35.46852
+      ],
+      "fieldCoordinates": [
+        109.26382,
+        35.58947
+      ],
+      "maxDeltaDegrees": 0.12095000000000056,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Zhongbu Jun",
+        "NAME_CH": "中部郡",
+        "NAME_FT": "中部郡",
+        "X_COOR": 109.26382,
+        "Y_COOR": 35.58947,
+        "PRES_LOC": "今陕西黄陵县南",
+        "TYPE_PY": "Jun",
+        "TYPE_CH": "郡",
+        "LEV_RANK": "3",
+        "BEG_YR": 742,
+        "BEG_RULE": "",
+        "END_YR": 757,
+        "END_RULE": "",
+        "NOTE_ID": 111320,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 212587,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "更名",
+        "END_CHG_TY": "更名"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "211420",
+      "years": [
+        741
+      ],
+      "recordIndex": 2063,
+      "shapeCoordinates": [
+        107.600738,
+        37.592728
+      ],
+      "fieldCoordinates": [
+        107.43605,
+        38.22477
+      ],
+      "maxDeltaDegrees": 0.6320419999999984,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Yan Zhou",
+        "NAME_CH": "盐州",
+        "NAME_FT": "鹽州",
+        "X_COOR": 107.43605,
+        "Y_COOR": 38.22477,
+        "PRES_LOC": "今甘肃定边县",
+        "TYPE_PY": "Jun",
+        "TYPE_CH": "郡",
+        "LEV_RANK": "3",
+        "BEG_YR": 618,
+        "BEG_RULE": "",
+        "END_YR": 741,
+        "END_RULE": "",
+        "NOTE_ID": 0,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 211420,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "更名",
+        "END_CHG_TY": "更名"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "211421",
+      "years": [
+        742,
+        755
+      ],
+      "recordIndex": 2064,
+      "shapeCoordinates": [
+        107.600738,
+        37.592728
+      ],
+      "fieldCoordinates": [
+        107.43605,
+        38.22477
+      ],
+      "maxDeltaDegrees": 0.6320419999999984,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Wuyuan Jun",
+        "NAME_CH": "五原郡",
+        "NAME_FT": "五原郡",
+        "X_COOR": 107.43605,
+        "Y_COOR": 38.22477,
+        "PRES_LOC": "今甘肃定边县",
+        "TYPE_PY": "Jun",
+        "TYPE_CH": "郡",
+        "LEV_RANK": "3",
+        "BEG_YR": 742,
+        "BEG_RULE": "",
+        "END_YR": 757,
+        "END_RULE": "",
+        "NOTE_ID": 0,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 211421,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "更名",
+        "END_CHG_TY": "更名"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "212576",
+      "years": [
+        742,
+        755
+      ],
+      "recordIndex": 2112,
+      "shapeCoordinates": [
+        107.389427,
+        34.523739
+      ],
+      "fieldCoordinates": [
+        107.83877,
+        34.29156
+      ],
+      "maxDeltaDegrees": 0.44934299999999894,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Fufeng Jun",
+        "NAME_CH": "扶风郡",
+        "NAME_FT": "扶風郡",
+        "X_COOR": 107.83877,
+        "Y_COOR": 34.29156,
+        "PRES_LOC": "今陕西凤翔县",
+        "TYPE_PY": "Jun",
+        "TYPE_CH": "郡",
+        "LEV_RANK": "3",
+        "BEG_YR": 742,
+        "BEG_RULE": "",
+        "END_YR": 755,
+        "END_RULE": "",
+        "NOTE_ID": 111217,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 212576,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "更名",
+        "END_CHG_TY": "更名"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "211456",
+      "years": [
+        742,
+        755
+      ],
+      "recordIndex": 2122,
+      "shapeCoordinates": [
+        107.035919,
+        33.072983
+      ],
+      "fieldCoordinates": [
+        107.08756,
+        33.02875
+      ],
+      "maxDeltaDegrees": 0.05164099999998939,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Hanzhong Jun",
+        "NAME_CH": "汉中郡",
+        "NAME_FT": "漢中郡",
+        "X_COOR": 107.08756,
+        "Y_COOR": 33.02875,
+        "PRES_LOC": "今陕西省汉中市治东",
+        "TYPE_PY": "Jun",
+        "TYPE_CH": "郡",
+        "LEV_RANK": "3",
+        "BEG_YR": 742,
+        "BEG_RULE": "4",
+        "END_YR": 757,
+        "END_RULE": "4",
+        "NOTE_ID": 0,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 211456,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "王大学",
+        "GEOCOMPLR": "孙涛",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "更名",
+        "END_CHG_TY": "更名"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "212553",
+      "years": [
+        741
+      ],
+      "recordIndex": 2131,
+      "shapeCoordinates": [
+        107.776803,
+        33.00298
+      ],
+      "fieldCoordinates": [
+        107.54173,
+        33.22109
+      ],
+      "maxDeltaDegrees": 0.23507299999999987,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Yang Zhou",
+        "NAME_CH": "洋州",
+        "NAME_FT": "洋州",
+        "X_COOR": 107.54173,
+        "Y_COOR": 33.22109,
+        "PRES_LOC": "今陕西西乡县四季河",
+        "TYPE_PY": "Zhou",
+        "TYPE_CH": "州",
+        "LEV_RANK": "3",
+        "BEG_YR": 618,
+        "BEG_RULE": "",
+        "END_YR": 741,
+        "END_RULE": "",
+        "NOTE_ID": 111048,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 212553,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "新建",
+        "END_CHG_TY": "更名"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "212577",
+      "years": [
+        742,
+        755
+      ],
+      "recordIndex": 2132,
+      "shapeCoordinates": [
+        107.776803,
+        33.00298
+      ],
+      "fieldCoordinates": [
+        107.54173,
+        33.22109
+      ],
+      "maxDeltaDegrees": 0.23507299999999987,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Yangchuan Jun",
+        "NAME_CH": "洋川郡",
+        "NAME_FT": "洋川郡",
+        "X_COOR": 107.54173,
+        "Y_COOR": 33.22109,
+        "PRES_LOC": "今陕西西乡县四季河",
+        "TYPE_PY": "Zhou",
+        "TYPE_CH": "州",
+        "LEV_RANK": "3",
+        "BEG_YR": 742,
+        "BEG_RULE": "",
+        "END_YR": 755,
+        "END_RULE": "",
+        "NOTE_ID": 111221,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 212577,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "更名",
+        "END_CHG_TY": "治所迁移"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "71063",
+      "years": [
+        741
+      ],
+      "recordIndex": 2138,
+      "shapeCoordinates": [
+        106.647175,
+        33.964418
+      ],
+      "fieldCoordinates": [
+        106.62294,
+        33.94525
+      ],
+      "maxDeltaDegrees": 0.024235000000004447,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Feng Zhou",
+        "NAME_CH": "凤州",
+        "NAME_FT": "鳳州",
+        "X_COOR": 106.62294,
+        "Y_COOR": 33.94525,
+        "PRES_LOC": "今陕西凤县东北凤州",
+        "TYPE_PY": "Zhou",
+        "TYPE_CH": "州",
+        "LEV_RANK": "3",
+        "BEG_YR": 618,
+        "BEG_RULE": "",
+        "END_YR": 741,
+        "END_RULE": "",
+        "NOTE_ID": 71063,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 71063,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "王大学",
+        "GEOCOMPLR": "孙涛",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "更名",
+        "END_CHG_TY": "更名"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "71064",
+      "years": [
+        742,
+        755
+      ],
+      "recordIndex": 2139,
+      "shapeCoordinates": [
+        106.647175,
+        33.964418
+      ],
+      "fieldCoordinates": [
+        106.62294,
+        33.94525
+      ],
+      "maxDeltaDegrees": 0.024235000000004447,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Hechi Jun",
+        "NAME_CH": "河池郡",
+        "NAME_FT": "河池郡",
+        "X_COOR": 106.62294,
+        "Y_COOR": 33.94525,
+        "PRES_LOC": "今陕西凤县东北凤州",
+        "TYPE_PY": "Jun",
+        "TYPE_CH": "郡",
+        "LEV_RANK": "3",
+        "BEG_YR": 742,
+        "BEG_RULE": "",
+        "END_YR": 757,
+        "END_RULE": "",
+        "NOTE_ID": 71064,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 71064,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "王大学",
+        "GEOCOMPLR": "孙涛",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "更名",
+        "END_CHG_TY": "更名"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "211490",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 2178,
+      "shapeCoordinates": [
+        96.20341,
+        40.244869
+      ],
+      "fieldCoordinates": [
+        96.23748,
+        40.24055
+      ],
+      "maxDeltaDegrees": 0.03406999999999982,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Gua Zhou",
+        "NAME_CH": "瓜州",
+        "NAME_FT": "瓜州",
+        "X_COOR": 96.23748,
+        "Y_COOR": 40.24055,
+        "PRES_LOC": "今甘肃省安西县锁阳城",
+        "TYPE_PY": "Zhou",
+        "TYPE_CH": "州",
+        "LEV_RANK": "3",
+        "BEG_YR": 619,
+        "BEG_RULE": "4",
+        "END_YR": 1227,
+        "END_RULE": "4",
+        "NOTE_ID": 0,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 211490,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "新建",
+        "END_CHG_TY": "撤销"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "211502",
+      "years": [
+        741
+      ],
+      "recordIndex": 2193,
+      "shapeCoordinates": [
+        104.679382,
+        36.561974
+      ],
+      "fieldCoordinates": [
+        104.39716,
+        36.27795
+      ],
+      "maxDeltaDegrees": 0.2840240000000023,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Hui Zhou",
+        "NAME_CH": "会州",
+        "NAME_FT": "會州",
+        "X_COOR": 104.39716,
+        "Y_COOR": 36.27795,
+        "PRES_LOC": "今甘肃靖远县",
+        "TYPE_PY": "Zhou",
+        "TYPE_CH": "州",
+        "LEV_RANK": "3",
+        "BEG_YR": 634,
+        "BEG_RULE": "",
+        "END_YR": 741,
+        "END_RULE": "",
+        "NOTE_ID": 0,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 211502,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "更名",
+        "END_CHG_TY": "更名"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "211509",
+      "years": [
+        741
+      ],
+      "recordIndex": 2202,
+      "shapeCoordinates": [
+        103.097643,
+        35.511986
+      ],
+      "fieldCoordinates": [
+        102.98101,
+        35.49667
+      ],
+      "maxDeltaDegrees": 0.11663300000000731,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "He Zhou",
+        "NAME_CH": "河州",
+        "NAME_FT": "河州",
+        "X_COOR": 102.98101,
+        "Y_COOR": 35.49667,
+        "PRES_LOC": "今甘肃省临夏市新集镇古城村",
+        "TYPE_PY": "Zhou",
+        "TYPE_CH": "州",
+        "LEV_RANK": "3",
+        "BEG_YR": 619,
+        "BEG_RULE": "",
+        "END_YR": 741,
+        "END_RULE": "",
+        "NOTE_ID": 0,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 211509,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "更名",
+        "END_CHG_TY": "更名"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "211510",
+      "years": [
+        742,
+        755
+      ],
+      "recordIndex": 2203,
+      "shapeCoordinates": [
+        103.097639,
+        35.511981
+      ],
+      "fieldCoordinates": [
+        102.98101,
+        35.49667
+      ],
+      "maxDeltaDegrees": 0.1166290000000032,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Anxiang Jun",
+        "NAME_CH": "安乡郡",
+        "NAME_FT": "安鄉郡",
+        "X_COOR": 102.98101,
+        "Y_COOR": 35.49667,
+        "PRES_LOC": "今甘肃省临夏市新集镇古城村",
+        "TYPE_PY": "Jun",
+        "TYPE_CH": "郡",
+        "LEV_RANK": "3",
+        "BEG_YR": 742,
+        "BEG_RULE": "",
+        "END_YR": 757,
+        "END_RULE": "",
+        "NOTE_ID": 0,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 211510,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "更名",
+        "END_CHG_TY": "更名"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "211521",
+      "years": [
+        741
+      ],
+      "recordIndex": 2216,
+      "shapeCoordinates": [
+        104.639508,
+        34.989093
+      ],
+      "fieldCoordinates": [
+        104.65988,
+        34.9836
+      ],
+      "maxDeltaDegrees": 0.020371999999994728,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Wei Zhou",
+        "NAME_CH": "渭州",
+        "NAME_FT": "渭州",
+        "X_COOR": 104.65988,
+        "Y_COOR": 34.9836,
+        "PRES_LOC": "今甘肃陇西县东南",
+        "TYPE_PY": "Zhou",
+        "TYPE_CH": "州",
+        "LEV_RANK": "3",
+        "BEG_YR": 619,
+        "BEG_RULE": "4",
+        "END_YR": 741,
+        "END_RULE": "4",
+        "NOTE_ID": 0,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 211521,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "更名",
+        "END_CHG_TY": "更名和治所迁移"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "212521",
+      "years": [
+        741
+      ],
+      "recordIndex": 2253,
+      "shapeCoordinates": [
+        107.874535,
+        36.009159
+      ],
+      "fieldCoordinates": [
+        107.64626,
+        36.22103
+      ],
+      "maxDeltaDegrees": 0.22827499999999645,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Qing Zhou",
+        "NAME_CH": "庆州",
+        "NAME_FT": "慶州",
+        "X_COOR": 107.64626,
+        "Y_COOR": 36.22103,
+        "PRES_LOC": "今甘肃庆阳市",
+        "TYPE_PY": "Zhou",
+        "TYPE_CH": "州",
+        "LEV_RANK": "3",
+        "BEG_YR": 618,
+        "BEG_RULE": "4",
+        "END_YR": 741,
+        "END_RULE": "4",
+        "NOTE_ID": 110899,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 212521,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "更名",
+        "END_CHG_TY": "更名"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "211553",
+      "years": [
+        742,
+        755
+      ],
+      "recordIndex": 2254,
+      "shapeCoordinates": [
+        107.874535,
+        36.009159
+      ],
+      "fieldCoordinates": [
+        107.64626,
+        36.22103
+      ],
+      "maxDeltaDegrees": 0.22827499999999645,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Honghua Jun",
+        "NAME_CH": "宏化郡",
+        "NAME_FT": "宏化郡",
+        "X_COOR": 107.64626,
+        "Y_COOR": 36.22103,
+        "PRES_LOC": "今甘肃庆阳市",
+        "TYPE_PY": "Jun",
+        "TYPE_CH": "郡",
+        "LEV_RANK": "3",
+        "BEG_YR": 742,
+        "BEG_RULE": "4",
+        "END_YR": 755,
+        "END_RULE": "4",
+        "NOTE_ID": 0,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 211553,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "更名",
+        "END_CHG_TY": "更名"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "211555",
+      "years": [
+        741
+      ],
+      "recordIndex": 2258,
+      "shapeCoordinates": [
+        106.174492,
+        38.005329
+      ],
+      "fieldCoordinates": [
+        106.19549,
+        37.98617
+      ],
+      "maxDeltaDegrees": 0.020998000000005845,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Ling Zhou",
+        "NAME_CH": "灵州",
+        "NAME_FT": "靈州",
+        "X_COOR": 106.19549,
+        "Y_COOR": 37.98617,
+        "PRES_LOC": "今宁夏区吴忠市古城",
+        "TYPE_PY": "Zhou",
+        "TYPE_CH": "州",
+        "LEV_RANK": "3",
+        "BEG_YR": 618,
+        "BEG_RULE": "4",
+        "END_YR": 741,
+        "END_RULE": "4",
+        "NOTE_ID": 0,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 211555,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "更名",
+        "END_CHG_TY": "更名"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "211556",
+      "years": [
+        742,
+        755
+      ],
+      "recordIndex": 2259,
+      "shapeCoordinates": [
+        106.174492,
+        38.005329
+      ],
+      "fieldCoordinates": [
+        106.19549,
+        37.98617
+      ],
+      "maxDeltaDegrees": 0.020998000000005845,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Lingwu Jun",
+        "NAME_CH": "灵武郡",
+        "NAME_FT": "靈武郡",
+        "X_COOR": 106.19549,
+        "Y_COOR": 37.98617,
+        "PRES_LOC": "今宁夏区吴忠市古城",
+        "TYPE_PY": "Jun",
+        "TYPE_CH": "郡",
+        "LEV_RANK": "3",
+        "BEG_YR": 742,
+        "BEG_RULE": "4",
+        "END_YR": 757,
+        "END_RULE": "4",
+        "NOTE_ID": 0,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 211556,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "更名",
+        "END_CHG_TY": "更名"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "211564",
+      "years": [
+        741
+      ],
+      "recordIndex": 2267,
+      "shapeCoordinates": [
+        100.453163,
+        38.93203
+      ],
+      "fieldCoordinates": [
+        100.21065,
+        39.13466
+      ],
+      "maxDeltaDegrees": 0.24251300000000242,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Gan Zhou",
+        "NAME_CH": "甘州",
+        "NAME_FT": "甘州",
+        "X_COOR": 100.21065,
+        "Y_COOR": 39.13466,
+        "PRES_LOC": "今甘肃张掖县",
+        "TYPE_PY": "Zhou",
+        "TYPE_CH": "州",
+        "LEV_RANK": "3",
+        "BEG_YR": 618,
+        "BEG_RULE": "4",
+        "END_YR": 741,
+        "END_RULE": "4",
+        "NOTE_ID": 0,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 211564,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "更名",
+        "END_CHG_TY": "更名"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "211565",
+      "years": [
+        742,
+        755
+      ],
+      "recordIndex": 2268,
+      "shapeCoordinates": [
+        100.453163,
+        38.93203
+      ],
+      "fieldCoordinates": [
+        100.21065,
+        39.13466
+      ],
+      "maxDeltaDegrees": 0.24251300000000242,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Zhangye Jun",
+        "NAME_CH": "张掖郡",
+        "NAME_FT": "張掖郡",
+        "X_COOR": 100.21065,
+        "Y_COOR": 39.13466,
+        "PRES_LOC": "今甘肃张掖县",
+        "TYPE_PY": "Jun",
+        "TYPE_CH": "郡",
+        "LEV_RANK": "3",
+        "BEG_YR": 742,
+        "BEG_RULE": "4",
+        "END_YR": 757,
+        "END_RULE": "4",
+        "NOTE_ID": 0,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 211565,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "更名",
+        "END_CHG_TY": "更名"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "211582",
+      "years": [
+        742,
+        755
+      ],
+      "recordIndex": 2287,
+      "shapeCoordinates": [
+        102.398102,
+        36.481487
+      ],
+      "fieldCoordinates": [
+        101.78394,
+        36.60886
+      ],
+      "maxDeltaDegrees": 0.6141619999999932,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Xiping Jun",
+        "NAME_CH": "西平郡",
+        "NAME_FT": "西平郡",
+        "X_COOR": 101.78394,
+        "Y_COOR": 36.60886,
+        "PRES_LOC": "今青海乐都县",
+        "TYPE_PY": "Jun",
+        "TYPE_CH": "郡",
+        "LEV_RANK": "3",
+        "BEG_YR": 742,
+        "BEG_RULE": "4",
+        "END_YR": 757,
+        "END_RULE": "4",
+        "NOTE_ID": 0,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 211582,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "更名",
+        "END_CHG_TY": "更名和治所迁移"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "212519",
+      "years": [
+        741
+      ],
+      "recordIndex": 2296,
+      "shapeCoordinates": [
+        107.352135,
+        35.350021
+      ],
+      "fieldCoordinates": [
+        107.18606,
+        35.25614
+      ],
+      "maxDeltaDegrees": 0.1660750000000064,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Jing Zhou",
+        "NAME_CH": "泾州",
+        "NAME_FT": "涇州",
+        "X_COOR": 107.18606,
+        "Y_COOR": 35.25614,
+        "PRES_LOC": "今甘肃省泾川县北泾河北岸",
+        "TYPE_PY": "Zhou",
+        "TYPE_CH": "州",
+        "LEV_RANK": "3",
+        "BEG_YR": 618,
+        "BEG_RULE": "4",
+        "END_YR": 741,
+        "END_RULE": "4",
+        "NOTE_ID": 110896,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 212519,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "更名",
+        "END_CHG_TY": "更名"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "211589",
+      "years": [
+        742,
+        755
+      ],
+      "recordIndex": 2297,
+      "shapeCoordinates": [
+        107.352135,
+        35.350021
+      ],
+      "fieldCoordinates": [
+        107.18606,
+        35.25614
+      ],
+      "maxDeltaDegrees": 0.1660750000000064,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Anding Jun",
+        "NAME_CH": "安定郡",
+        "NAME_FT": "安定郡",
+        "X_COOR": 107.18606,
+        "Y_COOR": 35.25614,
+        "PRES_LOC": "今甘肃省泾川县北泾河北岸",
+        "TYPE_PY": "Jun",
+        "TYPE_CH": "郡",
+        "LEV_RANK": "3",
+        "BEG_YR": 742,
+        "BEG_RULE": "4",
+        "END_YR": 755,
+        "END_RULE": "4",
+        "NOTE_ID": 0,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 211589,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "更名",
+        "END_CHG_TY": "更名"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "211597",
+      "years": [
+        741
+      ],
+      "recordIndex": 2305,
+      "shapeCoordinates": [
+        105.549095,
+        34.986434
+      ],
+      "fieldCoordinates": [
+        105.71696,
+        34.58547
+      ],
+      "maxDeltaDegrees": 0.4009640000000019,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Qin Zhou",
+        "NAME_CH": "秦州",
+        "NAME_FT": "秦州",
+        "X_COOR": 105.71696,
+        "Y_COOR": 34.58547,
+        "PRES_LOC": "今甘肃秦安县西北",
+        "TYPE_PY": "Zhou",
+        "TYPE_CH": "州",
+        "LEV_RANK": "3",
+        "BEG_YR": 734,
+        "BEG_RULE": "4",
+        "END_YR": 741,
+        "END_RULE": "4",
+        "NOTE_ID": 0,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 211597,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "治所迁移",
+        "END_CHG_TY": "更名和治所迁移"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "211604",
+      "years": [
+        741
+      ],
+      "recordIndex": 2314,
+      "shapeCoordinates": [
+        104.945508,
+        33.380091
+      ],
+      "fieldCoordinates": [
+        104.3654,
+        33.7908
+      ],
+      "maxDeltaDegrees": 0.5801080000000098,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Wu Zhou",
+        "NAME_CH": "武州",
+        "NAME_FT": "武州",
+        "X_COOR": 104.3654,
+        "Y_COOR": 33.7908,
+        "PRES_LOC": "今甘肃武都县东南",
+        "TYPE_PY": "Zhou",
+        "TYPE_CH": "州",
+        "LEV_RANK": "3",
+        "BEG_YR": 618,
+        "BEG_RULE": "4",
+        "END_YR": 741,
+        "END_RULE": "4",
+        "NOTE_ID": 0,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 211604,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "更名",
+        "END_CHG_TY": "更名"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "211605",
+      "years": [
+        742,
+        755
+      ],
+      "recordIndex": 2315,
+      "shapeCoordinates": [
+        104.945508,
+        33.380091
+      ],
+      "fieldCoordinates": [
+        104.3654,
+        33.7908
+      ],
+      "maxDeltaDegrees": 0.5801080000000098,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Wudu Jun",
+        "NAME_CH": "武都郡",
+        "NAME_FT": "武都郡",
+        "X_COOR": 104.3654,
+        "Y_COOR": 33.7908,
+        "PRES_LOC": "今甘肃武都县东南",
+        "TYPE_PY": "Jun",
+        "TYPE_CH": "郡",
+        "LEV_RANK": "3",
+        "BEG_YR": 742,
+        "BEG_RULE": "4",
+        "END_YR": 757,
+        "END_RULE": "4",
+        "NOTE_ID": 0,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 211605,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "更名",
+        "END_CHG_TY": "更名"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "99406",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 2689,
+      "shapeCoordinates": [
+        107.370307,
+        26.659776
+      ],
+      "fieldCoordinates": [
+        107.2853,
+        26.74032
+      ],
+      "maxDeltaDegrees": 0.08500699999999028,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Hou Zhou",
+        "NAME_CH": "候州",
+        "NAME_FT": "候州",
+        "X_COOR": 107.2853,
+        "Y_COOR": 26.74032,
+        "PRES_LOC": "今贵州省贵定与福泉间",
+        "TYPE_PY": "Zhou",
+        "TYPE_CH": "州",
+        "LEV_RANK": "3",
+        "BEG_YR": 641,
+        "BEG_RULE": "4",
+        "END_YR": 1278,
+        "END_RULE": "4",
+        "NOTE_ID": 99406,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 99406,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "马琦",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "新建",
+        "END_CHG_TY": "撤销"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "99407",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 2690,
+      "shapeCoordinates": [
+        107.579754,
+        26.537035
+      ],
+      "fieldCoordinates": [
+        107.58457,
+        26.50145
+      ],
+      "maxDeltaDegrees": 0.03558500000000109,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Jian Zhou",
+        "NAME_CH": "犍州",
+        "NAME_FT": "犍州",
+        "X_COOR": 107.58457,
+        "Y_COOR": 26.50145,
+        "PRES_LOC": "今贵州省麻江县城附近",
+        "TYPE_PY": "Zhou",
+        "TYPE_CH": "州",
+        "LEV_RANK": "3",
+        "BEG_YR": 672,
+        "BEG_RULE": "",
+        "END_YR": 1278,
+        "END_RULE": "",
+        "NOTE_ID": 99407,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 99407,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "新建",
+        "END_CHG_TY": "撤销"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "99408",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 2691,
+      "shapeCoordinates": [
+        107.437622,
+        26.293106
+      ],
+      "fieldCoordinates": [
+        107.45821,
+        26.31482
+      ],
+      "maxDeltaDegrees": 0.021713999999999345,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Bang Zhou",
+        "NAME_CH": "邦州",
+        "NAME_FT": "邦州",
+        "X_COOR": 107.45821,
+        "Y_COOR": 26.31482,
+        "PRES_LOC": "今贵州省都匀市西的邦水",
+        "TYPE_PY": "Zhou",
+        "TYPE_CH": "州",
+        "LEV_RANK": "3",
+        "BEG_YR": 672,
+        "BEG_RULE": "",
+        "END_YR": 1278,
+        "END_RULE": "",
+        "NOTE_ID": 99408,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 99408,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "新建",
+        "END_CHG_TY": "撤销"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "99425",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 2706,
+      "shapeCoordinates": [
+        106.710548,
+        26.297459
+      ],
+      "fieldCoordinates": [
+        106.66021,
+        26.15031
+      ],
+      "maxDeltaDegrees": 0.14714899999999886,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Zhuang Zhou",
+        "NAME_CH": "庄州",
+        "NAME_FT": "莊州",
+        "X_COOR": 106.66021,
+        "Y_COOR": 26.15031,
+        "PRES_LOC": "今贵州省惠水县北",
+        "TYPE_PY": "Zhou",
+        "TYPE_CH": "州",
+        "LEV_RANK": "3",
+        "BEG_YR": 630,
+        "BEG_RULE": "",
+        "END_YR": 1278,
+        "END_RULE": "",
+        "NOTE_ID": 99425,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 99425,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "马琦",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "更名",
+        "END_CHG_TY": "撤销"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "80022",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 2768,
+      "shapeCoordinates": [
+        101.571388,
+        25.641367
+      ],
+      "fieldCoordinates": [
+        101.5595,
+        25.66344
+      ],
+      "maxDeltaDegrees": 0.022073000000002452,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Bao Zhou",
+        "NAME_CH": "褒州",
+        "NAME_FT": "褒州",
+        "X_COOR": 101.5595,
+        "Y_COOR": 25.66344,
+        "PRES_LOC": "云南省大姚县溪木小村",
+        "TYPE_PY": "Zhou",
+        "TYPE_CH": "州",
+        "LEV_RANK": "3",
+        "BEG_YR": 621,
+        "BEG_RULE": "4",
+        "END_YR": 1252,
+        "END_RULE": "4",
+        "NOTE_ID": 80022,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 80022,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "周琼",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "新建",
+        "END_CHG_TY": "撤销"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "211925",
+      "years": [
+        741,
+        742
+      ],
+      "recordIndex": 2782,
+      "shapeCoordinates": [
+        102.592713,
+        24.671576
+      ],
+      "fieldCoordinates": [
+        102.5519,
+        24.56374
+      ],
+      "maxDeltaDegrees": 0.10783600000000249,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Gou Zhou",
+        "NAME_CH": "鉤州",
+        "NAME_FT": "鉤州",
+        "X_COOR": 102.5519,
+        "Y_COOR": 24.56374,
+        "PRES_LOC": "今云南省晋宁县治",
+        "TYPE_PY": "Zhou",
+        "TYPE_CH": "州",
+        "LEV_RANK": "3",
+        "BEG_YR": 637,
+        "BEG_RULE": "",
+        "END_YR": 749,
+        "END_RULE": "",
+        "NOTE_ID": 0,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 211925,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "更名和治所迁移",
+        "END_CHG_TY": "撤销"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "80230",
+      "years": [
+        741,
+        742,
+        755
+      ],
+      "recordIndex": 2802,
+      "shapeCoordinates": [
+        102.666176,
+        25.049229
+      ],
+      "fieldCoordinates": [
+        102.62154,
+        25.04073
+      ],
+      "maxDeltaDegrees": 0.04463599999999701,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Kun Zhou",
+        "NAME_CH": "昆州",
+        "NAME_FT": "昆州",
+        "X_COOR": 102.62154,
+        "Y_COOR": 25.04073,
+        "PRES_LOC": "今云南省昆明市西山区马街镇",
+        "TYPE_PY": "Zhou",
+        "TYPE_CH": "州",
+        "LEV_RANK": "3",
+        "BEG_YR": 618,
+        "BEG_RULE": "",
+        "END_YR": 764,
+        "END_RULE": "",
+        "NOTE_ID": 80230,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 80230,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "新建",
+        "END_CHG_TY": "撤销"
+      }
+    },
+    {
+      "level": "prefecture",
+      "sourceRecordId": "80768",
+      "years": [
+        741,
+        742
+      ],
+      "recordIndex": 2932,
+      "shapeCoordinates": [
+        100.417755,
+        25.427519
+      ],
+      "fieldCoordinates": [
+        100.43465,
+        25.44806
+      ],
+      "maxDeltaDegrees": 0.020541000000001475,
+      "reason": "SHP与同条经纬度属性差超过0.02度；保留隔离，不猜选哪个为正确古址。",
+      "sourceRecord": {
+        "NAME_PY": "Yu Zhou",
+        "NAME_CH": "于州",
+        "NAME_FT": "於州",
+        "X_COOR": 100.43465,
+        "Y_COOR": 25.44806,
+        "PRES_LOC": "云南省弥渡县西北二十二里的红岩",
+        "TYPE_PY": "Zhou",
+        "TYPE_CH": "州",
+        "LEV_RANK": "3",
+        "BEG_YR": 621,
+        "BEG_RULE": "4",
+        "END_YR": 749,
+        "END_RULE": "4",
+        "NOTE_ID": 80768,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 80768,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "陆韧",
+        "GEOCOMPLR": "",
+        "CHECKER": "",
+        "END_DATE": "",
+        "BEG_CHG_TY": "新建",
+        "END_CHG_TY": "撤销"
+      }
+    }
+  ]
+}

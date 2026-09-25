@@ -1,0 +1,1537 @@
+{
+  "outputPath": "public/data/tang-detail/yellow-river-water-associations.json",
+  "outputSha256": "c2bcc1a83b09a36c06986c99bd69104a0d783e2fd1d08017026af06c515e862c",
+  "sourceManifestSha256": "b707f00dfafe26cec4cc23dc6ae5e8be2aa5a4be65b12d4d46c08750a70a8e91",
+  "statistics": {
+    "mainRiverLines": 22,
+    "riverWaterCandidates": 6593,
+    "associatedWaterSurfaces": 33,
+    "lineSurfaceAssociations": 47,
+    "unassociatedWaterSurfaces": 6560,
+    "nonMainRiverNameCandidatesRejected": 92,
+    "boundaryOnlyPairsNotAssociated": 2
+  },
+  "lineRecords": [
+    {
+      "riverId": "osm-way-396407371",
+      "nameMatches": [
+        {
+          "key": "name",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hans",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hant",
+          "value": "黃河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:en",
+          "value": "Yellow River",
+          "normalized": "yellowriver"
+        },
+        {
+          "key": "name:zh-Latn-pinyin",
+          "value": "Huáng Hé",
+          "normalized": "huanghe"
+        }
+      ],
+      "sourceId": "osm-tang-detail-central-plains",
+      "sourceUrl": "https://www.openstreetmap.org/way/396407371"
+    },
+    {
+      "riverId": "osm-way-643962903",
+      "nameMatches": [
+        {
+          "key": "name",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hans",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hant",
+          "value": "黃河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Latn-pinyin",
+          "value": "Huáng Hé",
+          "normalized": "huanghe"
+        }
+      ],
+      "sourceId": "osm-tang-detail-central-plains",
+      "sourceUrl": "https://www.openstreetmap.org/way/643962903"
+    },
+    {
+      "riverId": "osm-way-699318433",
+      "nameMatches": [
+        {
+          "key": "name",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hans",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hant",
+          "value": "黃河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:en",
+          "value": "Yellow River",
+          "normalized": "yellowriver"
+        },
+        {
+          "key": "name:zh-Latn-pinyin",
+          "value": "Huáng Hé",
+          "normalized": "huanghe"
+        }
+      ],
+      "sourceId": "osm-tang-detail-central-plains",
+      "sourceUrl": "https://www.openstreetmap.org/way/699318433"
+    },
+    {
+      "riverId": "osm-way-700439261",
+      "nameMatches": [
+        {
+          "key": "name",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hans",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hant",
+          "value": "黃河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Latn-pinyin",
+          "value": "Huáng Hé",
+          "normalized": "huanghe"
+        }
+      ],
+      "sourceId": "osm-tang-detail-central-plains",
+      "sourceUrl": "https://www.openstreetmap.org/way/700439261"
+    },
+    {
+      "riverId": "osm-way-1050394155",
+      "nameMatches": [
+        {
+          "key": "name",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hans",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hant",
+          "value": "黃河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Latn-pinyin",
+          "value": "Huáng Hé",
+          "normalized": "huanghe"
+        }
+      ],
+      "sourceId": "osm-tang-detail-central-plains",
+      "sourceUrl": "https://www.openstreetmap.org/way/1050394155"
+    },
+    {
+      "riverId": "osm-way-1050394156",
+      "nameMatches": [
+        {
+          "key": "name",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hans",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hant",
+          "value": "黃河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Latn-pinyin",
+          "value": "Huáng Hé",
+          "normalized": "huanghe"
+        }
+      ],
+      "sourceId": "osm-tang-detail-central-plains",
+      "sourceUrl": "https://www.openstreetmap.org/way/1050394156"
+    },
+    {
+      "riverId": "osm-way-29544167",
+      "nameMatches": [
+        {
+          "key": "name",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hans",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hant",
+          "value": "黃河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:en",
+          "value": "Yellow River",
+          "normalized": "yellowriver"
+        },
+        {
+          "key": "name:zh-Latn-pinyin",
+          "value": "Huáng Hé",
+          "normalized": "huanghe"
+        }
+      ],
+      "sourceId": "osm-tang-detail-guanzhong",
+      "sourceUrl": "https://www.openstreetmap.org/way/29544167"
+    },
+    {
+      "riverId": "osm-way-891138978",
+      "nameMatches": [
+        {
+          "key": "name",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hans",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hant",
+          "value": "黃河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Latn-pinyin",
+          "value": "Huáng Hé",
+          "normalized": "huanghe"
+        }
+      ],
+      "sourceId": "osm-tang-detail-guanzhong",
+      "sourceUrl": "https://www.openstreetmap.org/way/891138978"
+    },
+    {
+      "riverId": "osm-way-891138979",
+      "nameMatches": [
+        {
+          "key": "name",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hans",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hant",
+          "value": "黃河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Latn-pinyin",
+          "value": "Huáng Hé",
+          "normalized": "huanghe"
+        }
+      ],
+      "sourceId": "osm-tang-detail-guanzhong",
+      "sourceUrl": "https://www.openstreetmap.org/way/891138979"
+    },
+    {
+      "riverId": "osm-way-892158293",
+      "nameMatches": [
+        {
+          "key": "name",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hans",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hant",
+          "value": "黃河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:en",
+          "value": "Yellow River",
+          "normalized": "yellowriver"
+        },
+        {
+          "key": "name:zh-Latn-pinyin",
+          "value": "Huáng Hé",
+          "normalized": "huanghe"
+        }
+      ],
+      "sourceId": "osm-tang-detail-guanzhong",
+      "sourceUrl": "https://www.openstreetmap.org/way/892158293"
+    },
+    {
+      "riverId": "osm-way-29544436",
+      "nameMatches": [
+        {
+          "key": "name",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hans",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hant",
+          "value": "黃河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:en",
+          "value": "Yellow River",
+          "normalized": "yellowriver"
+        },
+        {
+          "key": "name:zh-Latn-pinyin",
+          "value": "Huáng Hé",
+          "normalized": "huanghe"
+        }
+      ],
+      "sourceId": "osm-tang-detail-luoyang",
+      "sourceUrl": "https://www.openstreetmap.org/way/29544436"
+    },
+    {
+      "riverId": "osm-way-165880948",
+      "nameMatches": [
+        {
+          "key": "name",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hans",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hant",
+          "value": "黃河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:en",
+          "value": "Yellow River",
+          "normalized": "yellowriver"
+        },
+        {
+          "key": "name:zh-Latn-pinyin",
+          "value": "Huáng Hé",
+          "normalized": "huanghe"
+        }
+      ],
+      "sourceId": "osm-tang-detail-luoyang",
+      "sourceUrl": "https://www.openstreetmap.org/way/165880948"
+    },
+    {
+      "riverId": "osm-way-322188175",
+      "nameMatches": [
+        {
+          "key": "name",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hans",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hant",
+          "value": "黃河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:en",
+          "value": "Yellow River",
+          "normalized": "yellowriver"
+        },
+        {
+          "key": "name:zh-Latn-pinyin",
+          "value": "Huáng Hé",
+          "normalized": "huanghe"
+        }
+      ],
+      "sourceId": "osm-tang-detail-luoyang",
+      "sourceUrl": "https://www.openstreetmap.org/way/322188175"
+    },
+    {
+      "riverId": "osm-way-718340433",
+      "nameMatches": [
+        {
+          "key": "name",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hans",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hant",
+          "value": "黃河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:en",
+          "value": "Yellow River",
+          "normalized": "yellowriver"
+        },
+        {
+          "key": "name:zh-Latn-pinyin",
+          "value": "Huáng Hé",
+          "normalized": "huanghe"
+        }
+      ],
+      "sourceId": "osm-tang-detail-luoyang",
+      "sourceUrl": "https://www.openstreetmap.org/way/718340433"
+    },
+    {
+      "riverId": "osm-way-718340434",
+      "nameMatches": [
+        {
+          "key": "name",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hans",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hant",
+          "value": "黃河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:en",
+          "value": "Yellow River",
+          "normalized": "yellowriver"
+        },
+        {
+          "key": "name:zh-Latn-pinyin",
+          "value": "Huáng Hé",
+          "normalized": "huanghe"
+        }
+      ],
+      "sourceId": "osm-tang-detail-luoyang",
+      "sourceUrl": "https://www.openstreetmap.org/way/718340434"
+    },
+    {
+      "riverId": "osm-way-743773698",
+      "nameMatches": [
+        {
+          "key": "name",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hans",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hant",
+          "value": "黃河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Latn-pinyin",
+          "value": "Huáng Hé",
+          "normalized": "huanghe"
+        }
+      ],
+      "sourceId": "osm-tang-detail-luoyang",
+      "sourceUrl": "https://www.openstreetmap.org/way/743773698"
+    },
+    {
+      "riverId": "osm-way-743773699",
+      "nameMatches": [
+        {
+          "key": "name",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hans",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hant",
+          "value": "黃河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:en",
+          "value": "Yellow River",
+          "normalized": "yellowriver"
+        },
+        {
+          "key": "name:zh-Latn-pinyin",
+          "value": "Huáng Hé",
+          "normalized": "huanghe"
+        }
+      ],
+      "sourceId": "osm-tang-detail-luoyang",
+      "sourceUrl": "https://www.openstreetmap.org/way/743773699"
+    },
+    {
+      "riverId": "osm-way-874596799",
+      "nameMatches": [
+        {
+          "key": "name",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hans",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hant",
+          "value": "黃河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:en",
+          "value": "Yellow River",
+          "normalized": "yellowriver"
+        },
+        {
+          "key": "name:zh-Latn-pinyin",
+          "value": "Huáng Hé",
+          "normalized": "huanghe"
+        }
+      ],
+      "sourceId": "osm-tang-detail-luoyang",
+      "sourceUrl": "https://www.openstreetmap.org/way/874596799"
+    },
+    {
+      "riverId": "osm-way-874596800",
+      "nameMatches": [
+        {
+          "key": "name",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hans",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hant",
+          "value": "黃河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:en",
+          "value": "Yellow River",
+          "normalized": "yellowriver"
+        },
+        {
+          "key": "name:zh-Latn-pinyin",
+          "value": "Huáng Hé",
+          "normalized": "huanghe"
+        }
+      ],
+      "sourceId": "osm-tang-detail-luoyang",
+      "sourceUrl": "https://www.openstreetmap.org/way/874596800"
+    },
+    {
+      "riverId": "osm-way-885065657",
+      "nameMatches": [
+        {
+          "key": "name",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hans",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hant",
+          "value": "黃河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:en",
+          "value": "Yellow River",
+          "normalized": "yellowriver"
+        },
+        {
+          "key": "name:zh-Latn-pinyin",
+          "value": "Huáng Hé",
+          "normalized": "huanghe"
+        }
+      ],
+      "sourceId": "osm-tang-detail-luoyang",
+      "sourceUrl": "https://www.openstreetmap.org/way/885065657"
+    },
+    {
+      "riverId": "osm-way-885065658",
+      "nameMatches": [
+        {
+          "key": "name",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hans",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hant",
+          "value": "黃河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:en",
+          "value": "Yellow River",
+          "normalized": "yellowriver"
+        },
+        {
+          "key": "name:zh-Latn-pinyin",
+          "value": "Huáng Hé",
+          "normalized": "huanghe"
+        }
+      ],
+      "sourceId": "osm-tang-detail-luoyang",
+      "sourceUrl": "https://www.openstreetmap.org/way/885065658"
+    },
+    {
+      "riverId": "osm-way-891137974",
+      "nameMatches": [
+        {
+          "key": "name",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hans",
+          "value": "黄河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Hant",
+          "value": "黃河",
+          "normalized": "黄河"
+        },
+        {
+          "key": "name:zh-Latn-pinyin",
+          "value": "Huáng Hé",
+          "normalized": "huanghe"
+        }
+      ],
+      "sourceId": "osm-tang-detail-luoyang",
+      "sourceUrl": "https://www.openstreetmap.org/way/891137974"
+    }
+  ],
+  "nameRejections": [
+    {
+      "riverId": "osm-way-166034990",
+      "names": {
+        "name": "双洎河",
+        "name:zh": "双洎河",
+        "name:zh-Hant": "雙洎河",
+        "name:en": "Shuangji River",
+        "name:zh-Latn-pinyin": "shuāngjì hé"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-166035000",
+      "names": {
+        "name": "双洎河",
+        "name:zh": "双洎河",
+        "name:zh-Hant": "雙洎河",
+        "name:en": "Shuangji River",
+        "name:zh-Latn-pinyin": "shuāngjì hé"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-166035001",
+      "names": {
+        "name": "双洎河",
+        "name:zh": "双洎河",
+        "name:zh-Hant": "雙洎河",
+        "name:en": "Shuangji River",
+        "name:zh-Latn-pinyin": "shuāngjì hé"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-203448489",
+      "names": {
+        "name": "黄河故道"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-215404979",
+      "names": {
+        "name": "黄白河"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-304516036",
+      "names": {
+        "name": "阎谭引黄南送水干线"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-469030561",
+      "names": {
+        "name": "黄沟"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-533754485",
+      "names": {
+        "name": "阎谭引黄南送水干线"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-533754487",
+      "names": {
+        "name": "阎谭引黄南送水干线"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-542357778",
+      "names": {
+        "name": "黄河故道"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-542357782",
+      "names": {
+        "name": "黄河故道"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-542357785",
+      "names": {
+        "name": "黄河故道"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-542357788",
+      "names": {
+        "name": "黄河故道"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-911498314",
+      "names": {
+        "name": "黄河故道"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-911498319",
+      "names": {
+        "name": "黄河故道"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-911498320",
+      "names": {
+        "name": "黄河故道"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-1414527965",
+      "names": {
+        "name": "黄河故道"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-1414527966",
+      "names": {
+        "name": "黄河故道"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-58728142",
+      "names": {
+        "name": "黄池河"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-226604327",
+      "names": {
+        "name": "黄泥河"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-226604330",
+      "names": {
+        "name": "黄陈河",
+        "name:zh-Hant": "黃陳河"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-229556331",
+      "names": {
+        "name": "黄浒河"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-245086526",
+      "names": {
+        "name": "新篁河",
+        "name:zh": "新篁河",
+        "name:en": "Xinhuang River"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-305588438",
+      "names": {
+        "name": "季黄河"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-334065872",
+      "names": {
+        "name": "梅庄河",
+        "name:zh": "梅庄河",
+        "name:en": "Meizhuang River"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-338076323",
+      "names": {
+        "name": "罗庄河",
+        "name:zh": "罗庄河",
+        "name:en": "Luozhuang River"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-338076324",
+      "names": {
+        "name": "罗庄河",
+        "name:zh": "罗庄河",
+        "name:en": "Luozhuang River"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-401142935",
+      "names": {
+        "name": "黄田港"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-424776373",
+      "names": {
+        "name": "上黄河",
+        "name:zh": "上黄河",
+        "name:en": "Shanghuang River"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-579089136",
+      "names": {
+        "name": "黄梅河"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-579089137",
+      "names": {
+        "name": "黄梅河"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-621502306",
+      "names": {
+        "name": "黄沙港"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-734468956",
+      "names": {
+        "name": "吴黄赵老河",
+        "name:zh": "吴黄赵老河",
+        "name:en": "Old Wuhuangzhao River"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-775762797",
+      "names": {
+        "name": "黄梅河"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-818770560",
+      "names": {
+        "name": "黄溪河",
+        "name:zh-Hant": "黃溪河"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-909202070",
+      "names": {
+        "name": "黄码河"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-916932763",
+      "names": {
+        "name": "黄池河"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-927760387",
+      "names": {
+        "name": "黄梅河"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-927760388",
+      "names": {
+        "name": "黄梅河"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-927760389",
+      "names": {
+        "name": "黄梅河"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-927760390",
+      "names": {
+        "name": "黄梅河"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-986749979",
+      "names": {
+        "name": "吴黄赵老河",
+        "name:zh": "吴黄赵老河",
+        "name:en": "Old Wuhuangzhao River"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-986749980",
+      "names": {
+        "name": "吴黄赵老河",
+        "name:zh": "吴黄赵老河",
+        "name:en": "Old Wuhuangzhao River"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-998726907",
+      "names": {
+        "name": "黄土河"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-1043588508",
+      "names": {
+        "name": "黄码河"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-1058350440",
+      "names": {
+        "name": "黄屯河"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-1231361765",
+      "names": {
+        "name": "黄家浜"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-1231361768",
+      "names": {
+        "name": "黄家浜"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-1231361769",
+      "names": {
+        "name": "黄家浜"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-1232683554",
+      "names": {
+        "name": "黄桥港"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-1253229493",
+      "names": {
+        "name": "黄桥港"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-1469412872",
+      "names": {
+        "name": "黄梅河"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-48765113",
+      "names": {
+        "name": "黄鸭河",
+        "name:zh": "黄鸭河",
+        "name:zh-Hant": "黃鴨河",
+        "name:en": "Huangya River",
+        "name:zh-Latn-pinyin": "huángyā hé"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-722148745",
+      "names": {
+        "name": "黄鸭河",
+        "name:zh": "黄鸭河",
+        "name:zh-Hant": "黃鴨河",
+        "name:en": "Huangya River",
+        "name:zh-Latn-pinyin": "huángyā hé"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-1445471536",
+      "names": {
+        "name": "黄鸭河",
+        "name:zh": "黄鸭河",
+        "name:zh-Hant": "黃鴨河",
+        "name:en": "Huangya River",
+        "name:zh-Latn-pinyin": "huángyā hé"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-47088277",
+      "names": {
+        "name": "黄浦江",
+        "name:zh": "黄浦江",
+        "name:zh-Hans": "黄浦江",
+        "name:zh-Hant": "黃浦江",
+        "name:en": "Huangpu River"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-71951288",
+      "names": {
+        "name": "黄良甫港"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-157693056",
+      "names": {
+        "name": "黄泽江",
+        "name:en": "Huangze River",
+        "name:zh-Latn-pinyin": "huángzé jiāng"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-245319575",
+      "names": {
+        "name": "黄泽江",
+        "name:en": "Huangze River",
+        "name:zh-Latn-pinyin": "huángzé jiāng"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-262965848",
+      "names": {
+        "name": "黄浦江",
+        "name:zh-Hant": "黃浦江",
+        "name:en": "Huangpu River"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-322445927",
+      "names": {
+        "name": "黄姑塘"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-343482156",
+      "names": {
+        "name": "黄沙泾"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-343690557",
+      "names": {
+        "name": "黄沙泾"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-411854678",
+      "names": {
+        "name": "黄沙泾"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-419909939",
+      "names": {
+        "name": "黄埭荡"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-543913618",
+      "names": {
+        "name": "黄婆庙河"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-566860310",
+      "names": {
+        "name": "黄姑塘"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-632584664",
+      "names": {
+        "name": "黄浦江塘河"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-632584666",
+      "names": {
+        "name": "黄浦江塘河"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-632584671",
+      "names": {
+        "name": "黄浦江塘河"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-633011770",
+      "names": {
+        "name": "俞塘黄泥浜"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-659297614",
+      "names": {
+        "name": "黄浦江绿带河"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-794704730",
+      "names": {
+        "name": "黄埭荡"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-794704732",
+      "names": {
+        "name": "黄埭荡"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-822398609",
+      "names": {
+        "name": "黄姑塘"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-831205508",
+      "names": {
+        "name": "小黄浦"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-1136637920",
+      "names": {
+        "name": "庄桥河",
+        "name:en": "Zhuangqiao River"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-1249800109",
+      "names": {
+        "name": "黄汶泾"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-1263780353",
+      "names": {
+        "name": "黄泽江",
+        "name:en": "Huangze River",
+        "name:zh-Latn-pinyin": "huángzé jiāng"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-1263780354",
+      "names": {
+        "name": "黄泽江",
+        "name:en": "Huangze River",
+        "name:zh-Latn-pinyin": "huángzé jiāng"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-1389664596",
+      "names": {
+        "name": "小黄浦"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-49898015",
+      "names": {
+        "name": "黄水溪"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-49898081",
+      "names": {
+        "name": "黄泽江",
+        "name:en": "Huangze River",
+        "name:zh-Latn-pinyin": "huángzé jiāng"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-55210182",
+      "names": {
+        "name": "双峰溪",
+        "name:en": "Shuangfeng Creek"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-85249067",
+      "names": {
+        "name": "黄坛溪",
+        "name:en": "Huangtan River"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-152353818",
+      "names": {
+        "name": "黄坛源"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-242589036",
+      "names": {
+        "name": "苏庄溪",
+        "name:zh": "苏庄溪",
+        "name:zh-Hant": "蘇莊溪",
+        "name:en": "Suzhuang River",
+        "name:zh-Latn-pinyin": "sūzhuāng xī"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-532983691",
+      "names": {
+        "name": "黄岩溪",
+        "name:zh": "永宁江",
+        "name:zh-Hant": "永寧江",
+        "name:en": "Yongning River",
+        "name:zh-Latn-pinyin": "Yǒngníng jiāng"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-659620291",
+      "names": {
+        "name": "黄家溪",
+        "name:zh": "黄家溪",
+        "name:zh-Hant": "黃家溪",
+        "name:en": "Huangjia River",
+        "name:zh-Latn-pinyin": "huángjiā xī"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-973572570",
+      "names": {
+        "name": "黄家溪",
+        "name:zh": "黄家溪",
+        "name:zh-Hant": "黃家溪",
+        "name:en": "Huangjia River",
+        "name:zh-Latn-pinyin": "huángjiā xī"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-973572571",
+      "names": {
+        "name": "黄家溪",
+        "name:zh": "黄家溪",
+        "name:zh-Hant": "黃家溪",
+        "name:en": "Huangjia River",
+        "name:zh-Latn-pinyin": "huángjiā xī"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-1075952079",
+      "names": {
+        "name": "黄山溪"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    }
+  ],
+  "boundaryOnlyPairs": [
+    {
+      "waterId": "osm-relation-4488253",
+      "riverId": "osm-way-885065658",
+      "intersectionLengthDegrees": 0.0,
+      "reason": "没有严格在面内的真实中心线顶点，或仅边界接触；保守不关联。"
+    },
+    {
+      "waterId": "osm-relation-12023221",
+      "riverId": "osm-way-885065658",
+      "intersectionLengthDegrees": 0.0,
+      "reason": "没有严格在面内的真实中心线顶点，或仅边界接触；保守不关联。"
+    }
+  ],
+  "limitations": [
+    "现代线面空间关联，非历史黄河水面考证。",
+    "未关联水面不表示它一定不属于黄河；本算法宁可留下不确定记录。",
+    "关联覆盖实际取得的六区域OSM快照，不代表全部现代黄河。",
+    "前端只在已经加载历史河道的适当下游范围替代这些水面。"
+  ]
+}

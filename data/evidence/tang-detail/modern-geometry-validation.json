@@ -1,0 +1,93 @@
+{
+  "checkedFeatures": 178372,
+  "countsByKind": {
+    "water": 107453,
+    "river": 16844,
+    "canal": 28517,
+    "stream": 18949,
+    "peak": 6509,
+    "saddle": 100
+  },
+  "perSource": [
+    {
+      "sourceId": "osm-tang-detail-central-plains",
+      "checkedFeatures": 9259,
+      "countsByKind": {
+        "water": 4855,
+        "river": 1783,
+        "canal": 1740,
+        "stream": 716,
+        "peak": 165
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-guanzhong",
+      "checkedFeatures": 5135,
+      "countsByKind": {
+        "water": 1722,
+        "river": 1396,
+        "peak": 243,
+        "stream": 1485,
+        "canal": 286,
+        "saddle": 3
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-jianghuai",
+      "checkedFeatures": 76147,
+      "countsByKind": {
+        "water": 59100,
+        "river": 4718,
+        "peak": 1357,
+        "canal": 5906,
+        "stream": 5054,
+        "saddle": 12
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-luoyang",
+      "checkedFeatures": 4384,
+      "countsByKind": {
+        "water": 1963,
+        "river": 724,
+        "peak": 242,
+        "stream": 975,
+        "canal": 475,
+        "saddle": 5
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-taihu",
+      "checkedFeatures": 58401,
+      "countsByKind": {
+        "water": 27569,
+        "river": 6094,
+        "saddle": 11,
+        "peak": 1229,
+        "canal": 18217,
+        "stream": 5281
+      }
+    },
+    {
+      "sourceId": "osm-tang-detail-zhejiang",
+      "checkedFeatures": 25046,
+      "countsByKind": {
+        "water": 12244,
+        "river": 2129,
+        "peak": 3273,
+        "saddle": 69,
+        "stream": 5438,
+        "canal": 1893
+      }
+    }
+  ],
+  "assertions": [
+    "All published OSM IDs globally unique",
+    "All tags match the selected raw OSM element",
+    "All point coordinates and line coordinate sequences equal the raw source",
+    "All water polygon edge sets equal the complete raw way/member edge sets",
+    "All published geometries valid and nonempty",
+    "All source compressed SHA256 values match"
+  ],
+  "limitation": "Checks source fidelity and geometry validity; does not verify OSM survey accuracy or reconstruct Tang geography."
+}

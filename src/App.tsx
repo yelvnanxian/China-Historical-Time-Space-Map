@@ -102,6 +102,7 @@ export default function App() {
   const [cityProfilesAttempt, setCityProfilesAttempt] = useState(0);
   const [geographySelection, setGeographySelection] = useState<HistoricalGeographyEntry | null>(null);
   const [geographyOpenRequest, setGeographyOpenRequest] = useState(0);
+  const [atlasOpenRequest, setAtlasOpenRequest] = useState(0);
   const [attempt, setAttempt] = useState(0);
   const [exploration, setExploration] = useState<ExplorationState>({
     periodId: "tang",
@@ -416,7 +417,7 @@ export default function App() {
         </nav>
         <div className="header-right">
           <span className="edition-label">
-            探索版 <span>V0.8.0</span>
+            探索版 <span>V0.9.0</span>
           </span>
           <OnboardingGuide />
           <button
@@ -611,16 +612,17 @@ export default function App() {
               onGeographyOpen={() => setGeographyOpenRequest(value => value + 1)}
               onGeographyClear={() => setGeographySelection(null)}
               onNaturalSelect={() => setDetailsOpen(false)}
+              onOpenAtlas={() => setAtlasOpenRequest(value => value + 1)}
             />
             <div className="map-bottomline">
-              <HistoricalAtlasViewer periodId={periodId} />
+              <HistoricalAtlasViewer periodId={periodId} openRequest={atlasOpenRequest} />
               <HistoricalGeography data={historicalContext} error={contextError} selected={geographySelection} openRequest={geographyOpenRequest}
                 onLocate={entry => { setDetailsOpen(false); if (displayMode === "cities") setDisplayMode("nature"); setGeographySelection({ ...entry }); }} />
               <span>
                 <Info size={12} />
-                {displayMode === "nature" ? "点山川名称查看；河道、湖面也可点选 · 现代自然地理" : displayMode === "both" ? `${boundaryStatus} · 点山川名称看自然，点区域看行政` : `${boundaryStatus} · 已收录城池为精选参考`}
+                {displayMode === "nature" ? "点名称查看；历史黄河按年代显示，其余河湖为现代参照" : displayMode === "both" ? `${boundaryStatus} · 点山川名称看自然，点区域看行政` : `${boundaryStatus} · 缩放显示行政层级与城镇`}
               </span>
-              <span className="map-count">{displayMode === "nature" ? "现代自然地理" : `精选 ${places.length} 处历史地点`}</span>
+              <span className="map-count">{displayMode === "nature" ? "历史河道 / 现代地理" : `精选 ${places.length} 处历史地点`}</span>
             </div>
           </div>
 
