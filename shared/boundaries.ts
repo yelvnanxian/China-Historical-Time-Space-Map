@@ -1,3 +1,5 @@
+import type { TangCountyDiagnosticStatus } from "./tang-county-diagnostics";
+
 export type BoundaryLevel = "country" | "province" | "prefecture" | "county";
 
 export interface BoundaryLayer {
@@ -45,6 +47,8 @@ export interface BoundarySelection {
   nameCorrectionNote?: string;
   nameSourceUrl?: string;
   nameStatus?: "source" | "source-field" | "source-recovered" | "translated" | "unresolved" | "unnamed";
+  /** Source agreement only; even matched does not establish a verified boundary. */
+  geometryStatus?: TangCountyDiagnosticStatus;
 }
 
 export const boundaryLevelNames: Record<BoundaryLevel, string> = {

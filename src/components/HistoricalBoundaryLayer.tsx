@@ -10,6 +10,7 @@ import BoundaryControls from "./BoundaryControls";
 import type { ModernCorrespondenceData } from "../../shared/modern-correspondence";
 import { getBoundaryDisplayLabel } from "../../shared/boundary-labels";
 import { chinesePlaceName, localizedAdminType, localizedPolity } from "../../shared/place-name-localization";
+import type { TangCountyDiagnostics } from "../../shared/tang-county-diagnostics";
 
 type RegionProperties = BoundarySelection & { color?: string; labelCoordinates?: [number, number]; sourceHierarchy?: { polity?: string } };
 type Regions = FeatureCollection<Polygon | MultiPolygon, RegionProperties>;
@@ -17,7 +18,7 @@ const empty: Regions = { type: "FeatureCollection", features: [] };
 const levels: BoundaryLevel[] = ["country", "province", "prefecture", "county"];
 const colors = { country: "#8a5742", province: "#83658d", prefecture: "#527767", county: "#a58957" };
 
-export default function HistoricalBoundaryLayer({ map, ready, periodId, currentYear, onStatusChange, onRegionFocus, modernNames, enabled = true, embedded = false, onSelection, resetKey, onOpenAtlas, interactionMode = "all", selectionRequest, onRegionSelect }: {
+export default function HistoricalBoundaryLayer({ map, ready, periodId, currentYear, onStatusChange, onRegionFocus, modernNames, enabled = true, embedded = false, onSelection, resetKey, onOpenAtlas, interactionMode = "all", selectionRequest, onRegionSelect, countyDiagnostics, countyDiagnosticsError }: {
   map: MapInstance | null;
   ready: boolean;
   periodId: string;
@@ -33,6 +34,8 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
   interactionMode?: "cities" | "mountains" | "rivers" | "all";
   selectionRequest?: BoundarySelectionRequest;
   onRegionSelect?: (selection: BoundarySelection) => void;
+  countyDiagnostics?: TangCountyDiagnostics;
+  countyDiagnosticsError?: string;
 }) {
   const [manifest, setManifest] = useState<BoundaryManifest | null>(null);
   const [datasetId, setDatasetId] = useState("");
@@ -91,14 +94,18 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
     return () => controller.abort();
   }, []);
 
-  const displayRegions = useMemo<Regions>(() => ({ ...regions, features: regions.features.map(feature => {
+  const renderedRegions = useMemo<Regions>(() => ({ ...regions, features: regions.features.map(feature => ({
+    ...feature, properties: { ...feature.properties, geometryStatus: countyDiagnostics?.byBoundary[feature.properties.id]?.status },
+  })) }), [regions, countyDiagnostics]);
+  const displayRegions = useMemo<Regions>(() => ({ ...renderedRegions, features: renderedRegions.features.map(feature => {
     const match = correspondences?.entries[feature.properties.id];
     return { ...feature, properties: { ...feature.properties, ...getBoundaryDisplayLabel(feature.properties, match?.simplifiedName),
       polity: localizedPolity(feature.properties.sourceHierarchy?.polity), originalPolity: feature.properties.sourceHierarchy?.polity,
       sourceAdminType: localizedAdminType(feature.properties.sourceAdminType), originalAdminType: feature.properties.sourceAdminType,
       modernNames: (match?.modernNames ?? []).map(name => chinesePlaceName(name, "现代地区名称待核定")),
       correspondenceNote: match?.note ?? "现代地区对应尚未收录。", correspondenceSourceIds: match?.sourceIds ?? [] } };
-  }) }), [regions, correspondences]);
+  }) }), [renderedRegions, correspondences]);
+  const selectedDiagnostic = selection ? countyDiagnostics?.byBoundary[selection.id] : undefined;
 
   useEffect(() => {
     setSelection(current => {
@@ -140,30 +147,35 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
   useEffect(() => {
     if (!map || !ready) return;
     map.addSource("historical-boundaries", { type: "geojson", data: empty, tolerance: 0.15 });
+    map.addSource("boundary-diagnostic-points", { type: "geojson", data: { type: "FeatureCollection", features: [] } });
     for (const level of levels) {
       map.addLayer({ id: `boundary-${level}-fill`, type: "fill", source: "historical-boundaries", filter: ["==", ["get", "level"], level],
-        paint: { "fill-color": ["coalesce", ["get", "color"], colors[level]], "fill-opacity": level === "province" ? 0.13 : 0.065 } }, "lakes-fill");
+        paint: { "fill-color": ["coalesce", ["get", "color"], colors[level]], "fill-opacity": ["case", ["==", ["get", "geometryStatus"], "outside"], 0, level === "province" ? 0.13 : 0.065] } }, "lakes-fill");
     }
     for (const level of [...levels].reverse()) {
-      map.addLayer({ id: `boundary-${level}-line`, type: "line", source: "historical-boundaries", filter: ["==", ["get", "level"], level],
+      map.addLayer({ id: `boundary-${level}-line`, type: "line", source: "historical-boundaries", filter: ["all", ["==", ["get", "level"], level], ["!=", ["get", "geometryStatus"], "outside"]],
         paint: { "line-color": colors[level], "line-opacity": level === "county" ? 0.65 : 0.9,
           "line-width": ["interpolate", ["linear"], ["zoom"], 2, level === "country" ? 1.8 : level === "province" ? 1.2 : 0.4, 7, level === "country" ? 3.8 : level === "province" ? 2.6 : level === "prefecture" ? 1.5 : 0.8] } }, "route-line");
     }
+    map.addLayer({ id: "boundary-county-conflict-line", type: "line", source: "historical-boundaries", filter: ["==", ["get", "geometryStatus"], "outside"], paint: { "line-color": "#a08b76", "line-opacity": 0.65, "line-width": 1, "line-dasharray": [3, 3] } }, "route-line");
     map.addLayer({ id: "boundary-selected-fill", type: "fill", source: "historical-boundaries", filter: ["==", ["get", "id"], ""], paint: { "fill-color": "#bc7044", "fill-opacity": 0.3 } }, "route-line");
     map.addLayer({ id: "boundary-selected-line", type: "line", source: "historical-boundaries", filter: ["==", ["get", "id"], ""], paint: { "line-color": "#7a3526", "line-width": 3.5 } }, "route-line");
+    map.addLayer({ id: "boundary-selected-conflict", type: "line", source: "historical-boundaries", filter: ["==", ["get", "id"], ""], paint: { "line-color": "#9a6c3d", "line-width": 2.8, "line-dasharray": [3, 2] } }, "route-line");
+    map.addLayer({ id: "boundary-diagnostic-points", type: "circle", source: "boundary-diagnostic-points", paint: { "circle-radius": 10, "circle-color": "#f9f6e9", "circle-opacity": 0.15, "circle-stroke-width": 2.5, "circle-stroke-color": "#9b5738" } }, "route-line");
     return () => {
       if (!map.getStyle()) return;
-      for (const id of ["boundary-selected-fill", "boundary-selected-line", ...levels.flatMap(level => [`boundary-${level}-fill`, `boundary-${level}-line`])]) {
+      for (const id of ["boundary-diagnostic-points", "boundary-selected-conflict", "boundary-county-conflict-line", "boundary-selected-fill", "boundary-selected-line", ...levels.flatMap(level => [`boundary-${level}-fill`, `boundary-${level}-line`])]) {
         if (map.getLayer(id)) map.removeLayer(id);
       }
       if (map.getSource("historical-boundaries")) map.removeSource("historical-boundaries");
+      if (map.getSource("boundary-diagnostic-points")) map.removeSource("boundary-diagnostic-points");
     };
   }, [map, ready]);
 
   useEffect(() => {
     if (!ready || !map?.getSource("historical-boundaries")) return;
-    (map.getSource("historical-boundaries") as GeoJSONSource).setData(regions);
-  }, [map, ready, regions]);
+    (map.getSource("historical-boundaries") as GeoJSONSource).setData(renderedRegions);
+  }, [map, ready, renderedRegions]);
 
   useEffect(() => {
     if (!ready || !map?.getSource("historical-boundaries")) return;
@@ -171,12 +183,20 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
       map.setLayoutProperty(`boundary-${level}-${kind}`, "visibility", enabled && visibleLevels.includes(level) ? "visible" : "none");
     }
     for (const kind of ["fill", "line"]) map.setLayoutProperty(`boundary-selected-${kind}`, "visibility", enabled && interactive && selection ? "visible" : "none");
+    map.setLayoutProperty("boundary-county-conflict-line", "visibility", enabled && visibleLevels.includes("county") ? "visible" : "none");
+    for (const id of ["boundary-selected-conflict", "boundary-diagnostic-points"]) map.setLayoutProperty(id, "visibility", enabled && interactive && selection ? "visible" : "none");
   }, [map, ready, visibleLevels, enabled, interactive, selection]);
 
   useEffect(() => {
     if (!ready || !map?.getSource("historical-boundaries")) return;
-    for (const kind of ["fill", "line"]) map.setFilter(`boundary-selected-${kind}`, ["==", ["get", "id"], selection?.id ?? ""]);
+    for (const kind of ["fill", "line"]) map.setFilter(`boundary-selected-${kind}`, ["all", ["==", ["get", "id"], selection?.id ?? ""], ["!=", ["get", "geometryStatus"], "outside"]]);
+    map.setFilter("boundary-selected-conflict", ["all", ["==", ["get", "id"], selection?.id ?? ""], ["==", ["get", "geometryStatus"], "outside"]]);
   }, [map, ready, selection]);
+
+  useEffect(() => {
+    if (!ready || !map?.getSource("boundary-diagnostic-points")) return;
+    (map.getSource("boundary-diagnostic-points") as GeoJSONSource).setData({ type: "FeatureCollection", features: selectedDiagnostic?.status === "outside" ? selectedDiagnostic.sourcePoints.map(point => ({ type: "Feature", properties: { id: point.id }, geometry: { type: "Point", coordinates: point.coordinates } })) : [] });
+  }, [map, ready, selectedDiagnostic]);
 
   useEffect(() => {
     if (!map || !ready || !enabled || !interactive) return;
@@ -226,11 +246,12 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
         occupied.push(box as DOMRect);
         const element = document.createElement("button");
         element.type = "button";
-        element.className = `boundary-region-label boundary-region-${p.level}${p.id === selection?.id ? " is-selected" : ""}`;
+        element.className = `boundary-region-label boundary-region-${p.level}${p.id === selection?.id ? " is-selected" : ""}${p.geometryStatus === "outside" ? " is-conflicted" : ""}`;
         element.dataset.boundaryId = p.id;
-        element.setAttribute("aria-label", `查看${p.name}的${boundaryLevelName(p.level, periodId)}范围${modern ? `，${modern}` : ""}`);
+        element.setAttribute("aria-label", `查看${p.name}的${p.geometryStatus === "outside" ? "存疑模型范围" : `${boundaryLevelName(p.level, periodId)}范围`}${modern ? `，${modern}` : ""}`);
         element.setAttribute("aria-pressed", String(p.id === selection?.id));
         element.textContent = p.name;
+        if (p.geometryStatus === "outside") { const note = document.createElement("small"); note.className = "county-model-label-note"; note.textContent = "模型范围存疑"; element.append(note); }
         if (modernLabel) { const current = document.createElement("small"); current.textContent = modernLabel; element.append(current); }
         element.addEventListener("pointerdown", event => event.stopPropagation());
         element.addEventListener("click", event => {
@@ -263,10 +284,11 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
     if (!options.quiet) { selectionCallback.current?.(); regionCallback.current?.(feature.properties); }
     if (options.focus !== false) {
       const coordinates = feature.geometry.type === "Polygon" ? feature.geometry.coordinates.flat() : feature.geometry.coordinates.flat(2);
-      focusCallback.current(coordinates.map(point => [point[0], point[1]]));
+      const sourcePoints = countyDiagnostics?.byBoundary[id]?.status === "outside" ? countyDiagnostics.byBoundary[id].sourcePoints.map(point => point.coordinates) : [];
+      focusCallback.current([...coordinates.map(point => [point[0], point[1]] as [number, number]), ...sourcePoints]);
     }
     return true;
-  }, [displayRegions, map, ready, enabled, interactive, loadedDatasetId, dataset?.id]);
+  }, [displayRegions, map, ready, enabled, interactive, loadedDatasetId, dataset?.id, countyDiagnostics]);
   useEffect(() => {
     const result = resolveBoundarySelectionRequest(requestState.current, {
       request: selectionRequest, resetKey, datasetId: dataset?.id,
@@ -281,5 +303,6 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
   return <BoundaryControls embedded={embedded} enabled={enabled} datasets={datasets} selectedDataset={dataset} onDatasetChange={setDatasetId}
     visibleLevels={visibleLevels} interactive={interactive} activeLevel={detail.activeLevel} zoom={zoom} onOpenAtlas={onOpenAtlas}
     selection={selection} onSelectionClose={() => setSelection(null)} currentYear={currentYear} loading={loading || !manifest && !error} error={error}
+    countyDiagnostic={selectedDiagnostic} countyDiagnosticsError={periodId === "tang" ? countyDiagnosticsError : undefined}
     regionOptions={regionOptions} onRegionSelect={focusRegion} correspondenceSources={correspondences?.sources ?? []} correspondenceError={correspondenceError} />;
 }

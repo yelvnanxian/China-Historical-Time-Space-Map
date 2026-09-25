@@ -18,12 +18,13 @@ test("四种点选筛选隔离名称与点击权限，全部模式允许直接�
 test("山系走向和河湖错误局部降级，底图错误仍交给全局处理", () => {
   assert.equal(isOptionalPhysicalLayerError({ sourceId: "mountain-directions" }), true);
   assert.equal(isOptionalPhysicalLayerError({ sourceId: "physical-interactive" }), true);
+  assert.equal(isOptionalPhysicalLayerError({ sourceId: "mountain-regions" }), true);
   assert.equal(isOptionalPhysicalLayerError({ sourceId: "land" }), false);
   assert.equal(isOptionalPhysicalLayerError({ error: new Error("worker failed") }), false);
   assert.equal(isOptionalPhysicalLayerError(null), false);
 });
 
-test("渲染数据中彻底移除山系、高原、海域命名范围，保留真实河湖几何", async () => {
+test("河湖专用源保持真实河湖几何，山地命名面由独立概略图层处理", async () => {
   const data: PhysicalFeatureCollection = JSON.parse(await readFile(new URL("../public/data/physical-interactive.geojson", import.meta.url), "utf8"));
   const rendered = physicalWaterGeometry(data);
   assert.ok(data.features.some(feature => feature.properties.kind === "mountain"));

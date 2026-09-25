@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "scope": "仅核对名称与古籍所属州和模型原隶属字段的单位身份，用于点面诊断与异地同名排除；不确认模型边界、不建立可高亮的县界关联。",
+  "referenceAuditPath": "data/evidence/tang-detail/county-location-historical-references.json",
+  "entries": [
+    {
+      "settlementId": "chgis-county-43627",
+      "expectedName": "唐城县",
+      "boundaryId": "hartwell-741-county-v5_0741_chin_chn_0741_c-695",
+      "expectedSourceCode": "T001500003624",
+      "expectedSourceName": "唐城",
+      "expectedSourceHierarchy": { "polity": "唐代", "province": "山南", "prefecture": "隨" },
+      "historicalSourceId": "tang-nw-jiutangshu-39",
+      "historicalQuote": "唐城 開元二十六年，分棗陽置。",
+      "note": "旧唐书隋州条列唐城，州条载天宝改汉东郡。该本隋州字面与模型隨字分别保留，结合唐城条、源建置738年及模型隶属，确认比较的是同一县名单位；不核实经纬度或县界。"
+    },
+    {
+      "settlementId": "chgis-county-43673",
+      "expectedName": "吉阳县",
+      "boundaryId": "hartwell-741-county-v5_0741_chin_chn_0741_c-1029",
+      "expectedSourceCode": "T001700003625",
+      "expectedSourceName": "吉陽",
+      "expectedSourceHierarchy": { "polity": "唐代", "province": "江南", "prefecture": "安" },
+      "historicalSourceId": "tang-nw-jiutangshu-40",
+      "historicalQuote": "吉陽，梁分安陸置平陽縣，後魏改為京池。隋改為吉陽，取山名。",
+      "note": "旧唐书安州条明确领吉阳，天宝改安陆郡，与湖北CHGIS记录及模型安州隶属相符；据此排除岭南振州的海南同名县，不按距离分配。"
+    },
+    {
+      "settlementId": "chgis-county-42505",
+      "expectedName": "吉阳县",
+      "boundaryId": "hartwell-741-county-v5_0741_chin_chn_0741_c-1408",
+      "expectedSourceCode": "T001900004023",
+      "expectedSourceName": "吉陽",
+      "expectedSourceHierarchy": { "polity": "唐代", "province": "嶺南", "prefecture": "振" },
+      "historicalSourceId": "tang-se-jiutangshu-41",
+      "historicalQuote": "吉陽 貞觀二年，分延德置",
+      "note": "旧唐书将本吉阳列于海中振州/临振郡，628年建置与海南CHGIS点一致；对应模型岭南/振原隶属，不与湖北安州吉阳合并。"
+    }
+  ]
+}

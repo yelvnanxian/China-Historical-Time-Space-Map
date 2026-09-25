@@ -1,0 +1,19 @@
+.map-surface .nature-label.nature-mountain { display: flex; flex-direction: column; align-items: center; padding: 5px 9px 4px; border: 1px solid #89977169; border-radius: 6px; background: #f6f4e8e8; color: #51643c; font-size: 13px; letter-spacing: 1px; box-shadow: 0 2px 8px #4d5d3210; }
+.nature-label.nature-mountain small { margin-top: 1px; color: #84906e; font: 8px/1.3 sans-serif; letter-spacing: 1px; }
+.nature-label.nature-mountain.is-selected { border-color: #73824d; color: #46572f; background: #fff8db; outline: 1px solid #879664; }
+.mountain-region-entry { position: absolute; z-index: 8; left: 14px; top: 76px; max-width: min(258px, calc(100% - 82px)); color: #657348; border: 1px solid #bcc7a9; border-radius: 7px; background: #fbfbf0ef; box-shadow: 0 3px 15px #34472613; }
+.mountain-region-entry-toggle { display: flex; align-items: center; gap: 7px; width: 100%; padding: 9px 11px; font-size: 11px; }
+.mountain-region-entry-toggle span { flex: 1; text-align: left; }
+.mountain-region-entry.is-open .mountain-region-entry-toggle > svg:last-child { transform: rotate(180deg); }
+.mountain-region-entry-body { padding: 0 11px 10px; }
+.mountain-region-entry-body p { margin: 0 0 8px; color: #7d886b; font-size: 10px; line-height: 1.7; }
+.mountain-region-shortcuts { display: flex; flex-wrap: wrap; gap: 5px; }
+.mountain-region-shortcuts button { padding: 6px 9px; border: 1px solid #ced5bb; border-radius: 4px; background: #f5f5e7; font-size: 11px; color: #53663d; }
+.mountain-region-shortcuts button:hover,.mountain-region-shortcuts button[aria-pressed="true"] { border-color: #889967; background: #e9edd6; }
+.mountain-region-entry-body > small { display: block; margin-top: 8px; color: #969c86; font-size: 9px; }
+@media (max-width: 720px) {
+  .mountain-region-entry { left: 10px; top: 71px; max-width: min(244px, calc(100% - 80px)); }
+  .mountain-region-entry-toggle { min-height: 38px; }
+  .mountain-region-shortcuts button { min-height: 36px; }
+  .map-surface .nature-label.nature-mountain { font-size: 12px; }
+}

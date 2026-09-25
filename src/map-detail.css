@@ -13,6 +13,9 @@
 .detail-coverage p { color: #819075; }
 .detail-region-shortcuts { display: flex; flex-wrap: wrap; gap: 5px; }
 .detail-region-shortcuts button { padding: 5px 7px; border: 1px solid #d9dfd0; border-radius: 4px; font-size: 10px; }
+.tang-detail-explorer .nature-search-results button { gap: 10px; }
+.tang-detail-explorer .nature-search-results strong { flex-shrink: 0; }
+.tang-detail-explorer .nature-search-results span { text-align: right; line-height: 1.6; }
 .nature-detail-body pre { max-height: 180px; overflow: auto; white-space: pre-wrap; font: 10px/1.8 monospace; color: #819075; }
 .map-detail-status { position: absolute; left: 14px; top: 12px; z-index: 5; padding: 7px 10px; border: 1px solid #d5dac8; border-radius: 5px; font-size: 10px; line-height: 1.6; background: #fbfaeef0; color: #607452; text-align: left; box-shadow: 0 2px 8px #33452c0a; }
 .map-detail-status small { display: block; color: #8b927e; font-size: 9px; }

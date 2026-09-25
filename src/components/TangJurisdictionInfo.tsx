@@ -1,10 +1,11 @@
 import type { TangBoundaryLink } from "../../shared/tang-boundary-crosswalk";
 
 export default function TangJurisdictionInfo({ link, name, loading = false, missingReason, onView }: { link?: TangBoundaryLink; name: string; loading?: boolean; missingReason?: string; onView: (id: string) => void }) {
+  const county = /县$/.test(name);
   return <section className="tang-jurisdiction-info" aria-label="唐代行政层级与辖区">
-    <strong>{/郡/.test(name) ? "郡 · 州级行政区" : "州 / 郡辖区参考"}</strong>
+    <strong>{county ? "上一级州郡参考" : /郡/.test(name) ? "郡 · 州级行政区" : "州 / 郡辖区参考"}</strong>
     <p className="tang-level-chain">道（监察区） → 府 / 州 / 郡 → 县</p>
-    <p>郡比县高一级，下辖县。742年改州为郡，758年复称州；府在这里按同层显示。道是监察分区。</p>
+    <p>{county ? "县的上一级是州、郡或府；以下是上级范围，与本县县界分开核查。" : "郡比县高一级，下辖县。742年改州为郡，758年复称州；府在这里按同层显示。道是监察分区。"}</p>
     {loading ? <p>正在核对对应辖区…</p> : link ? <>
       <p>对应{link.boundaryYear}年资料中的“{link.boundaryName}”参考范围，并非755年精确界线。</p>
       <button className="detail-focus-button" onClick={() => onView(link.boundaryId)}>查看{link.boundaryName}完整辖区 · {link.boundaryYear}年参考</button>

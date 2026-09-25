@@ -24,6 +24,7 @@ import type { WaterDetailReplacement } from "../../shared/historical-rivers";
 import type { TangBoundaryCrosswalk } from "../../shared/tang-boundary-crosswalk";
 import MountainDetailLayer from "./MountainDetailLayer";
 import MountainShapeLayer from "./MountainShapeLayer";
+import type { TangCountyDiagnostics } from "../../shared/tang-county-diagnostics";
 
 type Props = {
   period: Period;
@@ -87,6 +88,18 @@ export default function HistoricalMap(props: Props) {
   const [replaceYellowLower, setReplaceYellowLower] = useState(false);
   const [waterReplacements, setWaterReplacements] = useState<WaterDetailReplacement[]>([]);
   const [mountainFeatureIds, setMountainFeatureIds] = useState<string[]>([]);
+  const [countyDiagnostics, setCountyDiagnostics] = useState<TangCountyDiagnostics>();
+  const [countyDiagnosticsError, setCountyDiagnosticsError] = useState("");
+  useEffect(() => {
+    if (props.period.id !== "tang" || countyDiagnostics) return;
+    const controller = new AbortController();
+    setCountyDiagnosticsError("");
+    fetch("/data/tang-county-diagnostics.json", { signal: controller.signal })
+      .then(response => { if (!response.ok) throw Error(); return response.json(); })
+      .then(data => { setCountyDiagnostics(data); setCountyDiagnosticsError(""); })
+      .catch(error => { if (error.name !== "AbortError") setCountyDiagnosticsError("县治与参考面的核查资料暂时未能加载，不能据此判断两者一致。请刷新重试。"); });
+    return () => controller.abort();
+  }, [props.period.id, countyDiagnostics]);
   const showCities = resolveMapDetailLevel("auto", zoom).showCities;
   const [activeTarget, setActiveTarget] = useState<"places" | "nature" | "boundary">("places");
   useEffect(() => { setActiveTarget("places"); }, [props.focusRequest, props.period.id]);
@@ -605,6 +618,7 @@ export default function HistoricalMap(props: Props) {
           <div className="map-tool-boundaries">
           <label className="boundary-master-toggle"><input type="checkbox" checked={boundariesEnabled} onChange={event => setBoundariesEnabled(event.target.checked)} />显示行政边界与地名</label>
           <HistoricalBoundaryLayer map={map.current} ready={ready} periodId={props.period.id} currentYear={shownYear} onStatusChange={setBoundaryStatus}
+            countyDiagnostics={countyDiagnostics} countyDiagnosticsError={countyDiagnosticsError}
             interactionMode={props.interactionMode} onOpenAtlas={props.onOpenAtlas}
             selectionRequest={boundaryRequest}
             onRegionFocus={points => { fitCoordinates(points, motionDuration(), 8); }} modernNames={props.modernNames}
@@ -631,6 +645,7 @@ export default function HistoricalMap(props: Props) {
         onCoverageChange={setReplaceYellowLower} onFocus={points => fitCoordinates(points, motionDuration(), 7)}
         onChoose={() => { setActiveTarget("nature"); setNaturalReset(value => value + 1); setBoundaryReset(value => value + 1); setDetailReset(value => value + 1); setMountainReset(value => value + 1); setShapeReset(value => value + 1); setLayerPanel(false); props.onNaturalSelect(); }} />
       <TangDetailLayer map={map.current} ready={ready} enabled={props.period.id === "tang"} mode={props.interactionMode} zoom={zoom} modernNames={props.modernNames}
+        countyDiagnostics={countyDiagnostics} countyDiagnosticsError={countyDiagnosticsError}
         mountainFeatureIds={mountainFeatureIds}
         replaceYellowLower={replaceYellowLower} controlsContainer={toolsContainer} places={props.places} onPlaceSelect={props.onPlaceSelect}
         tangBoundaries={props.tangBoundaries} crosswalkLoading={props.crosswalkLoading} onBoundaryRequest={(id, quiet = false, focus = !quiet) => { if (!quiet || focus) setBoundariesEnabled(true); setBoundaryRequest({ id, requestId: Date.now(), quiet, focus }); }}

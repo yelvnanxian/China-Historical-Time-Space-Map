@@ -11,8 +11,9 @@ export function categoryForKind(kind: string): MapTargetCategory {
   return kind === "settlement" ? "cities" : ["mountain", "plateau", "peak", "saddle", "ridge", "arete", "cliff"].includes(kind) ? "mountains" : "rivers";
 }
 
-// Only real water geometry is a surface target. Mountain naming extents must
-// never enter the render source, including transparent hit or selection layers.
+// This source contains only water. Mountain naming extents have a separate,
+// explicitly approximate distribution source and can only take area hits in
+// mountains mode; all mode still leaves broad area clicks to administration.
 export const physicalHitLayers = ["physical-river-hit", "physical-lake-fill"];
 export function naturalSurfaceSelectionEnabled(mode: MapInteractionMode): boolean {
   return canInteract(mode, "rivers");
@@ -24,5 +25,5 @@ export function physicalWaterGeometry(collection: PhysicalFeatureCollection): Ph
 
 export function isOptionalPhysicalLayerError(event: unknown): boolean {
   const sourceId = (event as { sourceId?: string } | null)?.sourceId;
-  return sourceId?.startsWith("mountain-shape-") === true || ["mountain-shapes", "physical-interactive", "mountain-directions", "tang-detail", "tang-detail-selected", "mountain-detail", "mountain-detail-selected", "historical-river", "historical-river-compare"].includes(sourceId ?? "");
+  return sourceId?.startsWith("mountain-shape-") === true || ["mountain-shapes", "mountain-regions", "physical-interactive", "mountain-directions", "tang-detail", "tang-detail-selected", "mountain-detail", "mountain-detail-selected", "historical-river", "historical-river-compare"].includes(sourceId ?? "");
 }

@@ -15,6 +15,7 @@
 .map-tool-note { order: 4; }
 .map-tool-panel[data-active-target="boundary"] .map-tool-boundaries { order: 1; }
 .map-tool-panel[data-active-target="boundary"] .map-tool-natural { order: 3; }
+.map-tool-panel[data-active-target="boundary"] .map-tool-period { display: none; }
 .nature-label:focus-visible { outline: 2px solid #685630; outline-offset: 3px; }
 .map-tool-period { font: 17px/1.7 var(--serif); margin: 14px 0; }
 .map-tool-period small { display: block; font: 10px/1.8 sans-serif; color: #8c987e; }

@@ -1,0 +1,336 @@
+{
+  "auditVersion": 1,
+  "auditedAt": "2026-09-25T04:58:00.825697+00:00",
+  "scope": "仅核对CHGIS原始县点记录及已归档旧唐书原文；不判断Hartwell县界与CHGIS治所谁对谁错，不改点、不改面。",
+  "sourceRecords": [
+    {
+      "sourceId": "chgis-v6-county-points",
+      "record": {
+        "NAME_PY": "Tangcheng Xian",
+        "NAME_CH": "唐城县",
+        "NAME_FT": "唐城縣",
+        "X_COOR": 113.12449,
+        "Y_COOR": 31.98609,
+        "PRES_LOC": "今湖北省随州市西北唐县镇",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 738,
+        "BEG_RULE": "",
+        "END_YR": 912,
+        "END_RULE": "",
+        "NOTE_ID": 43627,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 43627,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "新建",
+        "END_CHG_TY": "更名"
+      },
+      "originalGeometry": {
+        "type": "Point",
+        "coordinates": [
+          113.12449000000733,
+          31.9860899999965
+        ]
+      },
+      "publishedCoordinates": [
+        113.12449,
+        31.98609
+      ]
+    },
+    {
+      "sourceId": "chgis-v6-county-points",
+      "record": {
+        "NAME_PY": "Jiyang Xian",
+        "NAME_CH": "吉阳县",
+        "NAME_FT": "吉陽縣",
+        "X_COOR": 113.92281,
+        "Y_COOR": 31.40684,
+        "PRES_LOC": "今湖北安陆市东北土桥店西南",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 606,
+        "BEG_RULE": "",
+        "END_YR": 969,
+        "END_RULE": "",
+        "NOTE_ID": 43673,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 43673,
+        "GEO_SRC": "FROM_FD",
+        "COMPILER": "",
+        "GECOMPLR": "",
+        "CHECKER": "",
+        "ENT_DATE": "",
+        "BEG_CHG_TY": "更名",
+        "END_CHG_TY": "撤销"
+      },
+      "originalGeometry": {
+        "type": "Point",
+        "coordinates": [
+          113.92281000004238,
+          31.406839999977322
+        ]
+      },
+      "publishedCoordinates": [
+        113.92281,
+        31.40684
+      ]
+    },
+    {
+      "sourceId": "chgis-v6-county-points",
+      "record": {
+        "NAME_PY": "Jiyang Xian",
+        "NAME_CH": "吉阳县",
+        "NAME_FT": "吉陽縣",
+        "X_COOR": 109.746315,
+        "Y_COOR": 18.399277,
+        "PRES_LOC": "海南省崖县东北藤桥镇",
+        "TYPE_PY": "Xian",
+        "TYPE_CH": "县",
+        "LEV_RANK": "6",
+        "BEG_YR": 628,
+        "BEG_RULE": "4",
+        "END_YR": 1072,
+        "END_RULE": "4",
+        "NOTE_ID": 42505,
+        "OBJ_TYPE": "POINT",
+        "SYS_ID": 42505,
+        "GEO_SRC": "FROM_AC",
+        "COMPILER": "张修桂",
+        "GECOMPLR": "满志敏",
+        "CHECKER": "",
+        "ENT_DATE": "2004/07/15",
+        "BEG_CHG_TY": "新建",
+        "END_CHG_TY": "撤销"
+      },
+      "originalGeometry": {
+        "type": "Point",
+        "coordinates": [
+          109.74631500000021,
+          18.39927699999996
+        ]
+      },
+      "publishedCoordinates": [
+        109.746315,
+        18.399277
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "chgis-v6-county-points",
+      "title": "CHGIS V6 原始县时序点",
+      "url": "https://doi.org/10.7910/DVN/Q9VOF5",
+      "snapshotPath": "data/evidence/tang-detail/chgis/county-wgs84.zip",
+      "snapshotSha256": "3b431d2e587bcb738e632385703824d252e0b4744ddd726fc5eb10364dd2d8c5",
+      "retrievalMethod": "Read original ZIP .dbf/.shp using pyshp; match SYS_ID exactly."
+    },
+    {
+      "id": "tang-nw-jiutangshu-39",
+      "title": "舊唐書/卷39 — 维基文库",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B739&oldid=2691264",
+      "retrievedAt": "2026-09-24T14:33:58.474669+00:00",
+      "note": "实际取得的固定修订全文；引文逐字核对。古籍可支持建置或事件叙事，不单独验证古城经纬度。",
+      "snapshotPath": "data/evidence/tang-expansion/north-west/jiutangshu-39.txt",
+      "snapshotSha256": "a0d0a6c1b521023043cdc9fc1352f1eaa7c0534e05e9f99fdbc41f47991f88e6",
+      "revisionId": "2691264",
+      "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&page=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B739&prop=text%7Crevid&format=json"
+    },
+    {
+      "id": "tang-nw-jiutangshu-40",
+      "title": "舊唐書/卷40 — 维基文库",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B740&oldid=2690566",
+      "retrievedAt": "2026-09-24T14:33:51.697456+00:00",
+      "note": "实际取得的固定修订全文；引文逐字核对。古籍可支持建置或事件叙事，不单独验证古城经纬度。",
+      "snapshotPath": "data/evidence/tang-expansion/north-west/jiutangshu-40.txt",
+      "snapshotSha256": "5b50ad935e1c2d99766a35bb0f6db644df29afb19f759b7ed5a9fa787318f31f",
+      "revisionId": "2690566",
+      "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&page=%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B740&prop=text%7Crevid&format=json"
+    },
+    {
+      "id": "tang-se-jiutangshu-41",
+      "title": "舊唐書/卷41 — 维基文库",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B741&oldid=2690053",
+      "retrievedAt": "2026-09-24T14:38:52.760137+00:00",
+      "note": "实际取得固定修订全文，引文逐字核对；古籍支持建置及名称，不单独验证古城经纬度。",
+      "snapshotPath": "data/evidence/tang-expansion/south-east/jiutangshu-41.txt",
+      "snapshotSha256": "4188ecd5ae351c2ab6507d809cd91085450fffd3574928581f0d9f3ba60e7f9e",
+      "revisionId": "2690053"
+    },
+    {
+      "id": "hartwell-readme",
+      "title": "CHGIS V5 Hartwell README",
+      "url": "https://sites.fas.harvard.edu/~chgis/data/hartwell/",
+      "snapshotPath": "data/evidence/hartwell/README_CHGIS_V5_HARTWELL.txt",
+      "snapshotSha256": "63301c6bdf1ae77e06db37aa2596f96c1b6fc77987cce5ee710cf24f4f0daa22",
+      "quotes": [
+        "These materials included a functioning set of GIS datasets for the Chinese Dynasties, from Tang to Ming, which were based on the concept of \"co-location,\" or the use of GIS representations of modern county-level administrative units as building blocks to depict the approximate shapes of historical areas. Making use of boundary data for 1990 counties to represent historical units that occupied roughly the same areas, Hartwell drew in approximate line boundaries to divide the contemporary units to fit the historical situations and therefore provide an approximation of the historical unit's area. Although the resulting boundaries are, in many cases, problematic representations, the Hartwell GIS remains an interesting heuristic GIS tool for sorting, querying, and creating digital maps for the years 742, 1080, 1200, 1280, 1391.",
+        "The Hartwell datasets are derived from completely different sources and methods than the CHGIS time series and time slices.  They are provided as is, without additional documentation or known sources for the geographies shown."
+      ]
+    }
+  ],
+  "historicalTextEvidence": [
+    {
+      "sourceId": "tang-nw-jiutangshu-39",
+      "section": "隋州（随州）／唐城",
+      "snapshotLine": 672,
+      "quote": "唐城 開元二十六年，分棗陽置。",
+      "appliesToSysIds": [
+        43627
+      ],
+      "supports": [
+        "开元二十六年（738）分枣阳置唐城县。",
+        "文本列在隋州条下，支持其唐代随州／汉东郡隶属。"
+      ],
+      "doesNotSupport": [
+        "未提供现代镇名或经纬度。",
+        "未独立验证CHGIS所记912年更名节点。",
+        "未给县界线。"
+      ]
+    },
+    {
+      "sourceId": "tang-nw-jiutangshu-39",
+      "section": "隋州（随州）",
+      "snapshotLine": 668,
+      "quote": "隋州 下，隋為漢東郡。武德三年，改為隋州，領隋縣、光化、安貴、平林、順義五縣。五年，省安貴縣。八年，省平林、順義二縣。貞觀十年，割唐州棗陽來屬。天寶元年，改為漢東郡。乾元元年，復為隋州。舊領縣三，戶二千三百五十三，口一萬一千八百九十八。天寶，縣四，戶二萬三千九百一十七，口十萬五千七百二十二。在京師東南一千三百八十八里，至東都一千八里。",
+      "appliesToSysIds": [
+        43627
+      ],
+      "supports": [
+        "随州在天宝元年（742）改为汉东郡，乾元元年（758）复州。",
+        "与同节唐城条共同确认唐城县的州郡语境。"
+      ],
+      "doesNotSupport": [
+        "本段名称变更不证明各年县界稳定。"
+      ]
+    },
+    {
+      "sourceId": "tang-nw-jiutangshu-40",
+      "section": "安州／吉阳",
+      "snapshotLine": 93,
+      "quote": "吉陽，梁分安陸置平陽縣，後魏改為京池。隋改為吉陽，取山名。",
+      "appliesToSysIds": [
+        43673
+      ],
+      "supports": [
+        "湖北吉阳县承接梁平阳、后魏京池，隋改吉阳。"
+      ],
+      "doesNotSupport": [
+        "未给隋改名确年606。",
+        "未给969废县节点。",
+        "未提供土桥店或现代坐标、县界。"
+      ]
+    },
+    {
+      "sourceId": "tang-nw-jiutangshu-40",
+      "section": "安州",
+      "snapshotLine": 88,
+      "quote": "安州，中，都督府，隋安陸郡。武德四年，平王世充，改為安州，領安陸、雲夢、應陽、孝昌、吉陽、應山、京山、富水八縣。其年，于應山縣置應州，領應山一縣。於孝昌縣置澴州，領孝昌一縣。以富水、京山二縣屬溫州。改應陽為應城縣。安州置總管，管澴、應二州。七年州廢，澴、應二州縣屬安州。改為大都督府，督安、申、陽、溫、復、沔、光、黃、蘄九州。六年，罷都督府。七年，又置，督安、隋、溫、沔、復五州。十二年，罷都督府。天寶元年，改為安陸郡，依舊為都督府，督安、隋、郢、沔四州。乾元元年，復為安州。舊領縣六，戶六千三百三十八，口二萬六千五百一十九。天寶，戶二萬二千二百二十一，口十七萬一千二百二。在京師東南二千五十一里，至東都一千一百九十里。",
+      "appliesToSysIds": [
+        43673
+      ],
+      "supports": [
+        "吉阳明确列在安州领县；天宝元年安州改安陆郡，乾元元年复安州。"
+      ],
+      "doesNotSupport": [
+        "不能由州郡隶属确定县界或精确治所坐标。"
+      ]
+    },
+    {
+      "sourceId": "tang-se-jiutangshu-41",
+      "section": "振州／吉阳",
+      "snapshotLine": 1375,
+      "quote": "吉陽 貞觀二年，分延德置",
+      "appliesToSysIds": [
+        42505
+      ],
+      "supports": [
+        "海南吉阳县贞观二年（628）分延德置，与湖北吉阳的建置来源不同。"
+      ],
+      "doesNotSupport": [
+        "未提供现代藤桥经纬度或1072废县节点。"
+      ]
+    },
+    {
+      "sourceId": "tang-se-jiutangshu-41",
+      "section": "振州",
+      "snapshotLine": 1372,
+      "quote": "振州 隋臨振郡。武德五年置振州。天寶元年改為臨振郡。乾元元年，復為振州也。領縣四，戶八百一十九，口二千八百二十一。至京師八千六百六里，至東都七千七百九十七里。東至萬安州陵水縣一百六十里，南至大海，西北至儋州四百二十里，北至瓊州四百五十里，東南至大海二十七里，西南至大海千里，西北至延德縣九十里，與崖州同在大海洲中。",
+      "appliesToSysIds": [
+        42505
+      ],
+      "supports": [
+        "该同名县所在节为海中振州（天宝临振郡），与湖北安州分属不同地理行政实体。"
+      ],
+      "doesNotSupport": [
+        "不用于推定海南县界。"
+      ]
+    }
+  ],
+  "establishedFacts": [
+    {
+      "sysId": 43627,
+      "name": "唐城县",
+      "dateEvidence": "738年分枣阳置同时获旧唐书及CHGIS支持；738–912为CHGIS记录区间，912更名本轮未获得独立古籍复核。",
+      "seatEvidence": "CHGIS PRES_LOC=今湖北省随州市西北唐县镇，原记录字段坐标[113.12449,31.98609]；这是来源定位，不宣称独立实测。",
+      "administrativeEvidence": "旧唐书隋州条支持随州、天宝汉东郡。"
+    },
+    {
+      "sysId": 43673,
+      "name": "湖北吉阳县",
+      "dateEvidence": "隋改吉阳由旧唐书支持；606–969为CHGIS记录区间，准确起止年本轮仅据CHGIS。",
+      "seatEvidence": "CHGIS PRES_LOC=今湖北安陆市东北土桥店西南，字段坐标[113.92281,31.40684]；现代定位未获得额外官方遗址资料验证。",
+      "administrativeEvidence": "旧唐书安州条明确领吉阳，天宝安陆郡。"
+    },
+    {
+      "sysId": 42505,
+      "name": "海南吉阳县（同名排除对象）",
+      "dateEvidence": "贞观二年628分延德置由旧唐书与CHGIS同证；CHGIS区间628–1072。",
+      "seatEvidence": "CHGIS PRES_LOC=海南省崖县东北藤桥镇，坐标[109.746315,18.399277]。",
+      "administrativeEvidence": "旧唐书振州／临振郡条；不得与湖北安州吉阳合并。"
+    }
+  ],
+  "notEstablished": [
+    "未独立复原唐城县或吉阳县的741／755县界。",
+    "未用古籍里程或同名匹配反推现代精确坐标。",
+    "未获得原版扫描校勘；使用已取固定修订维基文库数字文本，保留其隋州、京池等字面，不擅改字。",
+    "Hartwell README明确以1990县面构造近似历史区域，并声明与CHGIS时序点的来源和方法完全不同；点落同名面外只能记为来源冲突。",
+    "README叙述年份742而本地层文件标识741；本轮不据此解决年份或界线争议。"
+  ],
+  "retrievalLog": [
+    {
+      "method": "Local exact-text lookup",
+      "queries": [
+        "唐城",
+        "吉陽",
+        "安州",
+        "隋州",
+        "振州"
+      ],
+      "paths": [
+        "data/evidence/tang-expansion/north-west/jiutangshu-39.txt",
+        "data/evidence/tang-expansion/north-west/jiutangshu-40.txt",
+        "data/evidence/tang-expansion/south-east/jiutangshu-41.txt"
+      ],
+      "result": "Verified exact quotations and SHA256 against existing fixed-revision metadata."
+    },
+    {
+      "method": "HTTP GET Wikisource search API",
+      "url": "https://zh.wikisource.org/w/api.php?action=query&list=search&srsearch=%22%E5%90%89%E9%99%BD%22+%22%E5%85%83%E5%92%8C%E9%83%A1%E7%B8%A3%E5%9C%96%E5%BF%97%22&format=json",
+      "result": "HTTP403; no quotation or fact taken from inaccessible result."
+    },
+    {
+      "method": "Google GET search for official modern location evidence",
+      "queries": [
+        "唐城县 唐县镇 随县 site:gov.cn",
+        "吉阳县 土桥 安陆 site:gov.cn"
+      ],
+      "result": "Returned interstitial without search results; no official modern-location confirmation obtained."
+    }
+  ]
+}

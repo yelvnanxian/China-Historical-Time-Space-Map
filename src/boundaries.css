@@ -35,6 +35,19 @@
 }
 .boundary-region-label:hover, .boundary-region-label.is-selected { background: #fff8e9ed; border-color: #a47750; color: #753d29; z-index: 4; }
 .boundary-region-label.is-selected { box-shadow: 0 2px 8px #634b2930; font-weight: 600; }
+.boundary-region-label.is-conflicted { color: #927754; }
+.boundary-region-label.is-conflicted.is-selected { border-style: dashed; background: #fbf6e9e8; }
+.boundary-region-label .county-model-label-note { display: block; color: #957849; font: 9px/1.5 sans-serif; letter-spacing: 0; }
+.county-geometry-notice { padding: 10px 12px; margin: 10px 0; border: 1px solid #d8dfcb; border-radius: 5px; background: #f7f7ed; }
+.county-geometry-notice.is-conflicted { border-color: #c9ad84; border-style: dashed; background: #faf3e3; }
+.county-geometry-notice strong { color: #7e643d; font: 12px/1.7 var(--serif); }
+.county-geometry-notice p,.nature-detail-body .county-geometry-notice p { font-size: 11px; color: #807254; line-height: 1.8; margin: 6px 0; }
+.county-geometry-notice summary,.county-point-evidence summary { cursor: pointer; font-size: 10px; line-height: 1.8; }
+.county-point-evidence p { font-size: 10px; line-height: 1.8; color: #7a8669; }
+.county-history-context { padding-top: 6px; margin-top: 8px; border-top: 1px solid #ddcfb6; }
+.county-history-context blockquote { margin: 8px 0; padding-left: 9px; border-left: 2px solid #bfaa86; font: 12px/1.9 var(--serif); }
+.county-history-context a { font-size: 10px; text-decoration: underline; }
+.boundary-controls.has-selection > .boundary-year-notice,.boundary-controls.has-selection > .boundary-model-notice { display: none; }
 .boundary-region-label:focus-visible { outline: 2px solid #7c472e; outline-offset: 2px; z-index: 5; }
 .boundary-region-province { font-size: 15px; color: #735a7b; letter-spacing: 3px; }
 .boundary-region-country { font-size: 17px; color: #824f3f; letter-spacing: 4px; }
@@ -52,7 +65,8 @@
 .boundary-search-results { max-height: 180px; overflow-y: auto; border: 1px solid #d8e1ce; border-top: 0; }
 .boundary-search-results button { display: flex; width: 100%; justify-content: space-between; gap: 10px; padding: 10px 8px; border-bottom: 1px solid #e5e9de; text-align: left; }
 .boundary-search-results button:hover { background: #eaf0df; }
-.boundary-search-results span { color: #7a8c6a; }
+.boundary-search-results strong { flex-shrink: 0; }
+.boundary-search-results span { color: #7a8c6a; text-align: right; font-size: 10px; line-height: 1.6; }
 .boundary-search-results p { padding: 10px; margin: 0; }
 .boundary-controls-heading {
   display: flex;

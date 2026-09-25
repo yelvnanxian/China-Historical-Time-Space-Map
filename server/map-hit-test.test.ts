@@ -37,3 +37,13 @@ test("等高线只在山川/全部可点，真实河线和峰点在交叉处优�
   assert.equal(chooseNaturalMapHit([contour, water], "all"), water);
   assert.equal(chooseNaturalMapHit([contour, peak], "all"), peak);
 });
+
+test("概略山地面仅在山川模式接管区域点击，全部模式仍交行政面且具体地物优先", () => {
+  const region = feature("mountain-region-hit"), boundary = feature("boundary-prefecture-fill"), ridge = feature("mountain-detail-line-hit"), peak = feature("mountain-detail-point-hit");
+  assert.equal(chooseNaturalMapHit([region, boundary], "mountains"), region);
+  assert.equal(chooseNaturalMapHit([region, boundary], "all"), undefined);
+  assert.equal(chooseNaturalMapHit([region], "cities"), undefined);
+  assert.equal(chooseNaturalMapHit([region], "rivers"), undefined);
+  assert.equal(chooseNaturalMapHit([region, ridge], "mountains"), ridge);
+  assert.equal(chooseNaturalMapHit([region, peak], "mountains"), peak);
+});

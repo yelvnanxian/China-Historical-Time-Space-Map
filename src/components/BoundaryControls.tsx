@@ -17,6 +17,8 @@ import {
 } from "../../shared/boundaries";
 import "../boundaries.css";
 import { boundarySearchKey } from "../../shared/boundary-search";
+import type { TangCountyBoundaryDiagnostic } from "../../shared/tang-county-diagnostics";
+import CountyGeometryNotice from "./CountyGeometryNotice";
 
 export interface BoundaryControlsProps {
   embedded?: boolean;
@@ -38,6 +40,8 @@ export interface BoundaryControlsProps {
   onRegionSelect?: (id: string) => void;
   correspondenceSources?: { id: string; title: string; url: string; note: string }[];
   correspondenceError?: string;
+  countyDiagnostic?: TangCountyBoundaryDiagnostic;
+  countyDiagnosticsError?: string;
 }
 
 const levelOrder: BoundaryLevel[] = [
@@ -85,7 +89,7 @@ export default function BoundaryControls(props: BoundaryControlsProps) {
 
   return (
     <section
-      className={`boundary-controls ${expanded ? "is-expanded" : ""}`}
+      className={`boundary-controls ${expanded ? "is-expanded" : ""}${props.selection ? " has-selection" : ""}`}
       aria-label="历史行政边界资料"
       aria-busy={props.loading}
     >
@@ -146,30 +150,12 @@ export default function BoundaryControls(props: BoundaryControlsProps) {
 
       {expanded && (
         <div id={bodyId} className="boundary-controls-body">
-          <p className="boundary-effective-level" role="status">
-            {props.enabled === false ? "行政边界已关闭" : props.activeLevel ? `随缩放显示：${levelName(props.activeLevel)}。${props.interactive === false ? "当前模式仅保留行政轮廓作为位置参照。" : "点击名称或区域可高亮辖区。"}` : "当前资料暂无可显示的行政层级。"}
-          </p>
-          <p className="boundary-scale-guide">{dataset?.periodId === "tang" ? "唐代层级：道（监察区）→ 州 / 郡 / 府 → 县。州、郡、府属于同一级，高于县；道不等同于现代省。" : "缩小看国家与省路，放大依次看府州郡、县域与城池。"}选中辖区会持续高亮，背景层级仍随缩放切换。</p>
-          {countryCoverage.incomplete && props.zoom < 4 && <aside className="boundary-country-notice">
-            <p>{countryCoverage.note}{props.visibleLevels.includes("province") ? `当前显示${levelName("province")}范围，周边诸部作为背景。` : ""}</p>
-            {props.onOpenAtlas && <button type="button" onClick={props.onOpenAtlas}>查看历史原图 <ExternalLink size={12} /></button>}
-          </aside>}
-          {dataset && props.onRegionSelect && props.enabled !== false && props.interactive !== false && (
-            <div className="boundary-region-search">
-              <label htmlFor={`${bodyId}-search`}>查找当前资料中的行政区</label>
-              <input ref={searchInput} id={`${bodyId}-search`} type="search" value={regionQuery} onChange={event => setRegionQuery(event.target.value)} placeholder="输入古名或现代地区名" />
-              <small>搜索所有已收录层级，选择后显示对应辖区。</small>
-              {regionQuery.trim() && <div className="boundary-search-results" role="region" aria-label="行政区搜索结果">
-                {regionResults.length ? regionResults.map(region => <button key={region.id} onClick={() => { props.onRegionSelect?.(region.id); setRegionQuery(""); searchInput.current?.focus(); }}><strong>{region.name}</strong><span>{levelName(region.level)}</span></button>) : <p>当前资料中没有匹配的行政区。</p>}
-              </div>}
-            </div>
-          )}
           {props.selection && props.interactive !== false && (
             <article className="boundary-selection">
               <div className="boundary-selection-heading">
                 <span>
                   <MapPin size={13} />
-                  {levelName(props.selection.level)}
+                  {yearLabel(props.selection.year)}参考 · {levelName(props.selection.level)}
                 </span>
                 <button
                   onClick={props.onSelectionClose}
@@ -180,7 +166,10 @@ export default function BoundaryControls(props: BoundaryControlsProps) {
                 </button>
               </div>
               <h3>{props.selection.name}</h3>
-              <p className="boundary-selection-highlight-note">{props.enabled === false ? "行政边界已隐藏；开启后恢复此辖区高亮。" : "地图已用深色边线与底色高亮该区域范围。"}</p>
+              <p className="boundary-selection-highlight-note">{props.enabled === false ? "行政边界已隐藏；开启后恢复此参考范围。" : props.countyDiagnostic?.status === "outside" ? "虚线表示存疑模型范围；带圆环的点表示相关县治。" : "地图已高亮资料中的参考范围。"}</p>
+              {props.countyDiagnostic && <CountyGeometryNotice diagnostic={props.countyDiagnostic} onCompare={props.enabled !== false && props.countyDiagnostic.status === "outside" ? () => props.onRegionSelect?.(props.selection!.id) : undefined} />}
+              {props.countyDiagnosticsError && <p className="boundary-selection-caveat" role="status">{props.countyDiagnosticsError}</p>}
+              {props.countyDiagnostic && props.countyDiagnostic.status !== "no-evidence" && <details className="county-point-evidence"><summary>查看治所点来源</summary>{props.countyDiagnostic.sourcePoints.map(point => <p key={point.id}>{point.name} · {point.presentLocation}<br />源记录{point.sourceRecordId} · {point.beginYear}—{point.endYear}年<br /><a href={point.sourceUrl} target="_blank" rel="noreferrer">CHGIS治所来源 ↗</a></p>)}</details>}
               <details className="boundary-original-name"><summary>查看来源原文</summary>
                 <p>原文名称 · {props.selection.originalName || "来源未提供"}</p>
                 {props.selection.originalPolity && <p>原始分组 · {props.selection.originalPolity}</p>}
@@ -229,6 +218,25 @@ export default function BoundaryControls(props: BoundaryControlsProps) {
               )}
             </article>
           )}
+          <p className="boundary-effective-level" role="status">
+            {props.enabled === false ? "行政边界已关闭" : props.activeLevel ? `随缩放显示：${levelName(props.activeLevel)}。${props.interactive === false ? "当前模式仅保留行政轮廓作为位置参照。" : "点击名称或区域可高亮辖区。"}` : "当前资料暂无可显示的行政层级。"}
+          </p>
+          <p className="boundary-scale-guide">{dataset?.periodId === "tang" ? "唐代层级：道（监察区）→ 州 / 郡 / 府 → 县。州、郡、府属于同一级，高于县；道不等同于现代省。" : "缩小看国家与省路，放大依次看府州郡、县域与城池。"}选中辖区会持续高亮，背景层级仍随缩放切换。</p>
+          {countryCoverage.incomplete && props.zoom < 4 && <aside className="boundary-country-notice">
+            <p>{countryCoverage.note}{props.visibleLevels.includes("province") ? `当前显示${levelName("province")}范围，周边诸部作为背景。` : ""}</p>
+            {props.onOpenAtlas && <button type="button" onClick={props.onOpenAtlas}>查看历史原图 <ExternalLink size={12} /></button>}
+          </aside>}
+          {dataset && props.onRegionSelect && props.enabled !== false && props.interactive !== false && (
+            <div className="boundary-region-search">
+              <label htmlFor={`${bodyId}-search`}>查找当前资料中的行政区</label>
+              <input ref={searchInput} id={`${bodyId}-search`} type="search" value={regionQuery} onChange={event => setRegionQuery(event.target.value)} placeholder="输入古名或现代地区名" />
+              <small>搜索所有已收录层级，选择后显示对应辖区。</small>
+              {regionQuery.trim() && <div className="boundary-search-results" role="region" aria-label="行政区搜索结果">
+                {regionResults.length ? regionResults.map(region => <button key={region.id} onClick={() => { props.onRegionSelect?.(region.id); setRegionQuery(""); }}><strong>{region.name}</strong><span>{levelName(region.level)}{region.modernNames?.length ? ` · ${region.modernNames.join(" / ")}` : ""}{region.geometryStatus === "outside" ? " · 范围存疑" : ""}</span></button>) : <p>当前资料中没有匹配的行政区。</p>}
+              </div>}
+            </div>
+          )}
+
 
           {props.datasets.length > 0 && (
             <label className="boundary-dataset-picker">
