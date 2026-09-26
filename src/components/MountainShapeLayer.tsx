@@ -214,7 +214,7 @@ export default function MountainShapeLayer({ map, ready, enabled, mode, controls
       <div className="nature-search"><Search size={13} /><input aria-label="搜索山地近览" placeholder="拔仙台、华山、天山…" value={query} onChange={event => setQuery(event.target.value)} /></div>
       <div className="mountain-shape-shortcuts">{areas.map(area => <button key={area.id} onClick={() => inspect(area)}>{area.name}</button>)}</div>
       {query && !areas.length && <p>此山尚未收录精细高程近览，可使用已有山脊与峰点资料。</p>}
-      <p className="nature-detail-note">当前清单覆盖{manifest?.areaCount ?? 17}处真实峰点周边约50×50公里窗口；等高线不是山脉边界，现代高程不代表所选朝代的地貌复原。</p>
+      <p className="nature-detail-note">{manifest ? `当前清单覆盖${manifest.areaCount}处真实峰点周边约50×50公里窗口；` : "近览清单加载后显示已收录窗口；"}等高线不是山脉边界，现代高程不代表所选朝代的地貌复原。</p>
       {loading && <p role="status">正在加载等高线…</p>}{error && <p role="status">{error}<button onClick={retry}>重试</button></p>}
     </section>, controlsContainer)}
     {enabled && interactive && selectedArea && <section className="nature-detail mountain-shape-card" aria-label="山地形态详情">
