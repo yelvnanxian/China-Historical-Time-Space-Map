@@ -533,7 +533,11 @@ export default function HistoricalMap(props: Props) {
       fitCoordinates(points);
     } else if (props.focusRequest && props.selectedPlace) {
       // Include local river detail when focusing cities in the supported periods.
-      fitCoordinates([props.selectedPlace.coordinates], motionDuration(), detailedGeographyEnabled ? 8.5 : 7.6);
+      // The local terrain packs begin at zoom 9 and render the complete
+      // contour set from 9.5.  A city focus below that threshold leaves the
+      // map showing only the broad hillshade, which makes the contour layer
+      // look broken even when a nearby DEM pack is available.
+      fitCoordinates([props.selectedPlace.coordinates], motionDuration(), detailedGeographyEnabled ? 9.5 : 7.6);
     }
   }, [
     ready,
@@ -575,6 +579,7 @@ export default function HistoricalMap(props: Props) {
       <button className="map-detail-status" onClick={() => setLayerPanel(true)} aria-label="查看当前地图层级与数据范围">
         随缩放自动分级 · {zoom.toFixed(1)}级 · 点选{mapInteractionOptions.find(option => option.value === props.interactionMode)?.label}
         <small>{replaceYellowLower ? "黄河下游：历史河道 · 其余河湖：现代参照" : "河湖：现代参照"}</small>
+        {detailedGeographyEnabled && <small>等高线近览：9级起 · 需选择山地窗口</small>}
       </button>
       <div className="map-toolbar">
         <button

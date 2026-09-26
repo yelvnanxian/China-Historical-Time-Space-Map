@@ -103,9 +103,9 @@ export default function PhysicalGeographyLayer({ map, ready, visible, mode, cont
       const suffix = major ? "major" : "local";
       const filter = [major ? "in" : "!in", "groupId", ...majorMountainRegionIds] as import("maplibre-gl").FilterSpecification;
       add({ id: `mountain-region-${suffix}-fill`, source: mountainRegionSourceId, type: "fill", minzoom: major ? 2.4 : 4.5, filter,
-        paint: { "fill-color": "#809464", "fill-opacity": ["interpolate", ["linear"], ["zoom"], 2.4, .10, 5, .13, 8, .07, 11, .035] } }, "lakes-fill");
+        paint: { "fill-color": "#809464", "fill-opacity": ["interpolate", ["linear"], ["zoom"], 2.4, .10, 5, .14, 8, .09, 11, .065] } }, "lakes-fill");
       if (map.hasImage(regionPatternId)) add({ id: `mountain-region-${suffix}-pattern`, source: mountainRegionSourceId, type: "fill", minzoom: major ? 2.4 : 4.5, filter,
-        paint: { "fill-pattern": regionPatternId, "fill-opacity": ["interpolate", ["linear"], ["zoom"], 2.4, .22, 5, .34, 8, .23, 11, .10] } }, "lakes-fill");
+        paint: { "fill-pattern": regionPatternId, "fill-opacity": ["interpolate", ["linear"], ["zoom"], 2.4, .22, 5, .34, 8, .23, 11, .15] } }, "lakes-fill");
     }
     add({ id: "mountain-region-selected-fill", source: mountainRegionSourceId, type: "fill", filter: ["==", "groupId", ""], paint: { "fill-color": "#819160", "fill-opacity": .16 } }, "lakes-fill");
     if (map.hasImage(regionPatternId)) add({ id: "mountain-region-selected-pattern", source: mountainRegionSourceId, type: "fill", filter: ["==", "groupId", ""], paint: { "fill-pattern": regionPatternId, "fill-opacity": .68 } }, "lakes-fill");

@@ -13,6 +13,7 @@ type Contours = FeatureCollection<LineString, { id: string; areaId: string; elev
 const empty: Contours = { type: "FeatureCollection", features: [] };
 const regionNames: Record<string, string> = { qinling: "秦岭", taihang: "太行", qilian: "祁连", tianshan: "天山", "west-sichuan": "川西" };
 const lineLayers = ["mountain-shape-contours", "mountain-shape-contour-hit", "mountain-shape-selected"];
+const contourDetailZoom = 9.5;
 const overlap = (a: number[], b: number[]) => a[0] <= b[2] && a[2] >= b[0] && a[1] <= b[3] && a[3] >= b[1];
 async function loadContours(url: string, signal: AbortSignal): Promise<Contours> {
   const response = await fetch(url, { signal });
@@ -59,6 +60,15 @@ export default function MountainShapeLayer({ map, ready, enabled, mode, controls
     return () => { map.off("moveend", update); map.off("resize", update); };
   }, [map, ready]);
   const zoom = map && ready ? map.getZoom() : 0;
+  const viewport = useMemo(() => {
+    if (!map || !ready) return undefined;
+    const bounds = map.getBounds();
+    return [bounds.getWest(), bounds.getSouth(), bounds.getEast(), bounds.getNorth()];
+  }, [map, ready, tick]);
+  const intersectingAreas = useMemo(() => {
+    if (!manifest || !viewport) return [];
+    return manifest.areas.filter(area => overlap(area.bounds, viewport));
+  }, [manifest, viewport]);
   const needed = useMemo(() => {
     if (!map || !ready || !enabled || !manifest) return [];
     const b = map.getBounds();
@@ -84,7 +94,8 @@ export default function MountainShapeLayer({ map, ready, enabled, mode, controls
       .catch(e => { if (e.name !== "AbortError") { setError("部分地形细节未能加载，已保留原山影。可重试。"); setLoading(false); } });
     return () => abort.abort();
   }, [neededKey, attempt]);
-  const features = useMemo(() => needed.flatMap(area => packs[area.id]?.features ?? []).filter(feature => zoom >= 10.5 || feature.properties.index || feature.properties.id === selection?.contourId), [needed, packs, zoom, selection?.contourId]);
+  const features = useMemo(() => needed.flatMap(area => packs[area.id]?.features ?? []).filter(feature => zoom >= contourDetailZoom || feature.properties.index || feature.properties.id === selection?.contourId), [needed, packs, zoom, selection?.contourId]);
+  const loadedAreaCount = needed.filter(area => packs[area.id]).length;
   const selectedArea = manifest?.areas.find(area => area.id === selection?.areaId);
   const areas = useMemo(() => {
     const key = boundarySearchKey(query);
@@ -96,8 +107,8 @@ export default function MountainShapeLayer({ map, ready, enabled, mode, controls
     map.addSource("mountain-shapes", { type: "geojson", data: empty, tolerance: 0 });
     const before = map.getLayer("mountain-detail-lines") ? "mountain-detail-lines" : "route-line";
     map.addLayer({ id: lineLayers[0], type: "line", source: "mountain-shapes", layout: { "line-join": "round" }, paint: {
-      "line-color": "#a18b64", "line-width": ["case", ["get", "index"], 1.05, .5],
-      "line-opacity": ["interpolate", ["linear"], ["zoom"], 8, .25, 10, .65, 13, .75],
+      "line-color": "#806d4b", "line-width": ["interpolate", ["linear"], ["zoom"], 8, ["case", ["get", "index"], 1.35, .75], 10, ["case", ["get", "index"], 1.8, 1.05], 13, ["case", ["get", "index"], 2.1, 1.35]],
+      "line-opacity": ["interpolate", ["linear"], ["zoom"], 8, .45, 9.5, .78, 13, .9],
     } }, before);
     map.addLayer({ id: lineLayers[1], type: "line", source: "mountain-shapes", paint: { "line-width": 6, "line-opacity": 0 } }, before);
     map.addLayer({ id: lineLayers[2], type: "line", source: "mountain-shapes", filter: ["==", ["get", "id"], ""], paint: { "line-color": "#b16c3c", "line-width": 2.5 } }, before);
@@ -131,7 +142,7 @@ export default function MountainShapeLayer({ map, ready, enabled, mode, controls
     }
     for (const area of needed) if (!shadeIds.current.has(area.id)) {
       map.addSource(`mountain-shape-image-${area.id}`, { type: "image", url: area.shadeUrl, coordinates: area.imageCoordinates });
-      map.addLayer({ id: `mountain-shape-shade-${area.id}`, type: "raster", source: `mountain-shape-image-${area.id}`, paint: { "raster-opacity": .9, "raster-fade-duration": 200 } }, map.getLayer("graticule") ? "graticule" : lineLayers[0]);
+      map.addLayer({ id: `mountain-shape-shade-${area.id}`, type: "raster", source: `mountain-shape-image-${area.id}`, paint: { "raster-opacity": .62, "raster-fade-duration": 200 } }, map.getLayer("graticule") ? "graticule" : lineLayers[0]);
       shadeIds.current.add(area.id);
     }
   }, [map, ready, enabled, interactive, needed, features, selection, attempt]);
@@ -197,10 +208,13 @@ export default function MountainShapeLayer({ map, ready, enabled, mode, controls
     {enabled && interactive && controlsContainer && createPortal(<section className="nature-explorer mountain-shape-explorer" aria-label="山地形态近览">
       <h3><Mountain size={14} />山地近览 · 看山形</h3>
       <p>放大后看等高线、山谷和坡面细节。线越密，地势越陡；线上的数字是现代海拔，棕色山脊线另有来源。</p>
+      <p className="mountain-shape-coverage" role="status" aria-live="polite">
+        {!manifest ? "正在读取等高线覆盖清单…" : zoom < 9 ? `当前${zoom.toFixed(1)}级；放大到9级后才会加载近览资料。` : !intersectingAreas.length ? "当前视野暂无DEM等高线近览；地图上的山影和山系范围仍为现代参考。" : loading ? `视野内有${intersectingAreas.length}处近览，正在加载等高线…` : loadedAreaCount ? `已加载${loadedAreaCount}处近览，${features.length.toLocaleString()}条等高线；${zoom < contourDetailZoom ? `继续放大到${contourDetailZoom}级查看全部细线。` : "当前已显示细等高线。"}` : "视野内有近览资料，等待加载…"}
+      </p>
       <div className="nature-search"><Search size={13} /><input aria-label="搜索山地近览" placeholder="拔仙台、华山、天山…" value={query} onChange={event => setQuery(event.target.value)} /></div>
       <div className="mountain-shape-shortcuts">{areas.map(area => <button key={area.id} onClick={() => inspect(area)}>{area.name}</button>)}</div>
       {query && !areas.length && <p>此山尚未收录精细高程近览，可使用已有山脊与峰点资料。</p>}
-      <p className="nature-detail-note">近览只覆盖上列采集地点周边，等高线不是山脉边界，现代高程不代表所选朝代的地貌复原。</p>
+      <p className="nature-detail-note">当前清单覆盖{manifest?.areaCount ?? 17}处真实峰点周边约50×50公里窗口；等高线不是山脉边界，现代高程不代表所选朝代的地貌复原。</p>
       {loading && <p role="status">正在加载等高线…</p>}{error && <p role="status">{error}<button onClick={retry}>重试</button></p>}
     </section>, controlsContainer)}
     {enabled && interactive && selectedArea && <section className="nature-detail mountain-shape-card" aria-label="山地形态详情">

@@ -1,4 +1,5 @@
 .mountain-shape-explorer { border-left: 2px solid #9b875f; padding-left: 10px; }
+.mountain-shape-coverage { margin: 7px 0; padding: 7px 8px; border-left: 2px solid #a17f48; background: #f4eedf; color: #6f5f42; line-height: 1.6; }
 .mountain-shape-shortcuts { display: flex; flex-wrap: wrap; gap: 5px; }
 .mountain-shape-shortcuts button { padding: 6px 8px; border: 1px solid #d7cfb8; border-radius: 4px; color: #766440; font-size: 11px; }
 .mountain-shape-shortcuts button:hover { background: #f0e9d5; }

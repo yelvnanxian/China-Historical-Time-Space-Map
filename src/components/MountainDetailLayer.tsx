@@ -188,6 +188,7 @@ export default function MountainDetailLayer({ map, ready, enabled, mode, control
     {enabled && interactive && controlsContainer && createPortal(<section className="nature-explorer mountain-detail-explorer" aria-label="山脊与山峰资料">
       <h3><Mountain size={14} />山脊与山峰</h3>
       <p>棕色线是现代 OSM 山脊、刃脊或陡崖记录，可直接点线查看。放大后逐级显示，线的宽度不代表山体范围。</p>
+      {manifest && <p className="mountain-detail-coverage-summary">已核验{manifest.featureCount.toLocaleString()}条现代山脊、刃脊、陡崖与命名峰点，覆盖{manifest.regions.length}个采集区：{manifest.regions.map(region => region.name).join("、")}。空白区域表示当前没有已收录记录。</p>}
       {manifest && !manifest.acquisition.complete && <p role="status">部分采集区资料尚未取得，当前仅显示已核验的记录。</p>}
       <div className="nature-search"><Search size={13} /><input aria-label="搜索已加载的山脊与山峰" placeholder="山名、原名或OSM编号…" value={query} onChange={event => setQuery(event.target.value)} /></div>
       <div className="nature-search-results">{results.map(feature => <button key={feature.properties.id} onClick={() => focus(feature)}><strong>{feature.properties.name}</strong><span>{mountainDetailKindNames[feature.properties.kind]}{feature.properties.elevationMetres !== undefined ? ` · ${feature.properties.elevationMetres}米` : ""}</span></button>)}</div>
