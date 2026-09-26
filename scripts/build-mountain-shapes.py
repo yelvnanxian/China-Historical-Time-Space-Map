@@ -15,6 +15,7 @@ import hashlib
 import io
 import json
 import math
+import re
 from pathlib import Path
 import time
 from urllib.request import Request, urlopen
@@ -53,7 +54,17 @@ SELECTION = [
     ("yaomei", "osm-node-3227322901", 200, 1000),
     ("xiannairi", "osm-node-2959964823", 200, 1000),
     ("queershan", "osm-node-3034352548", 200, 1000),
+    ("hangzhou-beigaofeng", "osm-node-2763362675", 50, 250),
+    ("nanjing-beigaofeng", "osm-node-2600810866", 50, 250),
+    ("fuzhou-gushan", "osm-node-2668214506", 50, 250),
+    ("quanzhou-qingyuan", "osm-node-5061900983", 50, 250),
+    ("nanchang-shigunao", "osm-node-2410867228", 50, 250),
 ]
+
+# Retain the existing, audited inland anomaly policy only for its original
+# windows. New coastal/lowland windows can contain valid negative elevations;
+# show only above-sea-level landforms there without diagnosing negative DEM.
+INLAND_ANOMALY_AREAS = {item[0] for item in SELECTION[:17]}
 
 
 def sha(data):
@@ -84,20 +95,26 @@ def load_peaks():
     manifest = json.loads(manifest_path.read_text())
     wanted = {item[1] for item in SELECTION}
     result = {}
-    for pack in manifest["packs"]:
+    detail_path = ROOT / "public/data/tang-detail/manifest.json"
+    detail_manifest = json.loads(detail_path.read_text())
+    packs = [*manifest["packs"], *detail_manifest["modernRegions"]]
+    for pack in packs:
         data = (ROOT / "public" / pack["url"].lstrip("/")).read_bytes()
         for feature in json.loads(gzip.decompress(data))["features"]:
             p = feature["properties"]
             if p["id"] not in wanted:
                 continue
-            if feature["geometry"]["type"] != "Point" or p["kind"] != "peak" or not p["hasChineseName"]:
+            # Preserve the exact archived source pack of each original area.
+            if (pack["url"].startswith("/data/tang-detail/")) != (p["id"] in {item[1] for item in SELECTION[17:]}):
+                continue
+            if feature["geometry"]["type"] != "Point" or p["kind"] != "peak" or not p["modernReferenceOnly"] or not re.search(r"[\u3400-\u9fff]", p["name"]) or p["name"].startswith("未"):
                 raise ValueError("Selected record is not a published named Chinese peak: " + p["id"])
             if p["id"] in result:
                 raise ValueError("Nonunique peak source: " + p["id"])
             result[p["id"]] = {"feature": feature, "packUrl": pack["url"], "packSha256": sha(data), "regionId": pack["regionId"]}
     if set(result) != wanted:
         raise ValueError("Missing selected peaks: " + str(wanted - set(result)))
-    return result, sha(manifest_path.read_bytes())
+    return result, [{"path": str(path.relative_to(ROOT)), "sha256": sha(path.read_bytes())} for path in [manifest_path, detail_path]]
 
 
 def fetch_tile(spec, offline=False):
@@ -193,14 +210,17 @@ def derive_area(selection, source, tiles):
     # samples encountered in two windows are recorded as suspected source
     # anomalies, omitted without filling, and preserved in the raw PNGs.
     excluded = dem < 0
-    if int(excluded.sum()) > dem.size * 0.001:
+    original_inland = ident in INLAND_ANOMALY_AREAS
+    if original_inland and int(excluded.sum()) > dem.size * 0.001:
         raise ValueError(f"Too many source anomalies for an upland crop: {ident}")
     excluded_samples = [{"coordinates": [float(lon_at(global_x+j+0.5)), float(lat_at(global_y+i+0.5))],
                          "elevation": float(dem[i, j]), "reason": "所选内陆山地窗口内孤立负高程，作为待核源异常排除；未填补或修改原DEM。"}
-                        for i, j in np.argwhere(excluded)]
+                        for i, j in np.argwhere(excluded)] if original_inland else []
     generator = contourpy.contour_generator(x=coords, y=coords, z=np.ma.masked_array(dem, mask=excluded), name="serial", line_type="Separate", corner_mask=False)
     contours = []
     first_elevation = math.ceil(float(dem[~excluded].min()) / interval) * interval
+    if not original_inland:
+        first_elevation = max(interval, first_elevation)
     last_elevation = math.floor(float(dem.max()) / interval) * interval
     max_interpolation_error = 0.0
     vertex_count = 0
@@ -246,6 +266,21 @@ def derive_area(selection, source, tiles):
             "elevationRange": [float(dem[~excluded].min()), float(dem.max())], "excludedDemSamples": excluded_samples, "sourceTiles": area_tiles,
             "contoursSha256": sha(contour_data), "shadeSha256": sha(shade_data), "modernReferenceOnly": True,
             "note": "真实现代DEM推导等高线与山影；覆盖框只是取数裁切范围，不是山体边界。像素间距不是独立测量精度；不能用于唐代地貌或精确峰顶海拔判定。"}
+    if not original_inland:
+        runs = []
+        for row, values in enumerate(excluded):
+            edges = np.flatnonzero(np.diff(np.r_[False, values, False].astype(int)))
+            runs.extend([row, int(start), int(end)] for start, end in zip(edges[::2], edges[1::2]))
+        mask_path = EVIDENCE / f"{ident}-landform-mask.json.gz"
+        mask_data = gzip.compress(json.dumps({"pixelDimensions": [size, size], "rows": runs,
+            "encoding": "Each [row, startColumnInclusive, endColumnExclusive] records negative DEM samples omitted only from this landform display."}, separators=(",", ":")).encode(), mtime=0)
+        mask_path.write_bytes(mask_data)
+        area["landformDisplayMask"] = {"minimumContourElevation": interval,
+                                      "negativeSampleCount": int(excluded.sum()),
+                                      "originalElevationRange": [float(dem.min()), float(dem.max())],
+                                      "maskPath": str(mask_path.relative_to(ROOT)), "maskSha256": sha(mask_data),
+                                      "note": "该陆地山形近览只画0米以上等高线；负高程及相邻山影透明，但不把负高程判定为无效或证实其为真实低地。原始DEM全部保留，未填零或插值。"}
+        area["note"] = "真实现代DEM推导的陆地等高线与山影，仅显示海拔0米以上山形；负高程未绘制，不判定其正确性。采集框不是山体边界，现代高程不是所选朝代的地貌复原。"
     audit = {"id": ident, "featureCount": len(contours), "vertexCount": vertex_count,
              "contourInterpolationMaxErrorMeters": max_interpolation_error,
              "shadeAlphaRange": [int(rgba[:, :, 3].min()), int(rgba[:, :, 3].max())],
@@ -261,7 +296,7 @@ def main():
     parser.add_argument("--offline", action="store_true", help="Verify and reuse all cached source DEM; never access network")
     parser.add_argument("--workers", type=int, default=6)
     args = parser.parse_args()
-    peaks, peak_manifest_hash = load_peaks()
+    peaks, peak_manifests = load_peaks()
     needed = set()
     for _, peak_id, _, _ in SELECTION:
         x, y = tile_xy(*peaks[peak_id]["feature"]["geometry"]["coordinates"])
@@ -289,12 +324,12 @@ def main():
                 "processing": {"contourMethod": "ContourPy serial marching squares over unmodified decoded DEM; linear edge interpolation; no smoothing or line simplification; coordinates rounded to 8 decimal places.",
                                "hillshadeMethod": "Surface-normal illumination with latitude-adjusted pixel spacing; shade alpha is darkness relative to flat ground. Transparent RGBA, with crop-edge opacity fade only.",
                                "sunAzimuth": SUN_AZIMUTH, "sunAltitude": SUN_ALTITUDE, "verticalExaggeration": 1, "edgeFadePixels": EDGE_FADE,
-                               "demExclusionPolicy": "仅在所选内陆山地窗口排除孤立负高程待核异常；不把该规则推广为全球DEM无效值规则。清单逐点保留原坐标与高程。等高线跳过涉及格网，山影异常像素及邻接梯度透明；未插值补洞。"},
+                               "demExclusionPolicy": "最初17个内陆山地窗口沿用已审计的孤立负高程待核异常排除。新增杭州、南京、福州、泉州、南昌窗口只展示0米以上陆地等高线：负高程与相邻山影透明，清单记录数量与原始高程范围，不把负值统一判为无效或断言其为真实低地。所有原始DEM保留全部高程；未填零或插值补洞。"},
                 "areaCount": len(areas), "sourceTileCount": len(tiles), "featureCount": sum(area["featureCount"] for area in areas),
                 "note": "仅覆盖所列真实OSM峰点周边近览区，非连续全国山地数据；采集区名称不证明某峰属于某山系。等高线表示现代高程，不是山脉轮廓或古代边界；OSM峰高和DEM像素高可能不同，均不作独立实测核定。", "areas": areas}
     write_json(PUBLIC / "manifest.json", manifest)
-    write_json(EVIDENCE / "validation.json", {"version": 1, "peakManifestPath": "public/data/mountain-detail/manifest.json",
-               "peakManifestSha256": peak_manifest_hash, "sourceTileCount": len(tiles), "sourceBytes": sum(t["bytes"] for t in tiles.values()),
+    write_json(EVIDENCE / "validation.json", {"version": 2, "peakManifests": peak_manifests,
+               "sourceTileCount": len(tiles), "sourceBytes": sum(t["bytes"] for t in tiles.values()),
                "areaCount": len(areas), "featureCount": manifest["featureCount"], "vertexCount": sum(a["vertexCount"] for a in areas),
                "derivedBytes": sum(a["shadeBytes"] + a["contoursBytes"] for a in audits),
                "peakCoordinatesPreserved": all(a["sourcePeakUnchanged"] for a in audits),

@@ -1,0 +1,13 @@
+{
+  "id": "song-research-songshi-86",
+  "title": "宋史·卷086（维基文库固定版本）",
+  "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7086&oldid=2057390",
+  "kind": "official-history",
+  "snapshotPath": "data/evidence/song-research/sources/songshi-86.txt",
+  "snapshotSha256": "0094c8a7346941ed11e75fcca73f0aedbd95aba64cc6c61a70d9bda3b08c860c",
+  "rawSnapshotPath": "data/evidence/song-research/sources/songshi-86.api.json",
+  "rawSnapshotSha256": "791e550815606478b74f38ffdd13960dae42b3751bbb38a94451c142defcfd75",
+  "retrievedAt": "2026-09-26T18:28:26.478102+00:00",
+  "revisionId": "2057390",
+  "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7086"
+}

@@ -12,6 +12,7 @@ import { getBoundaryDisplayLabel } from "../../shared/boundary-labels";
 import { chinesePlaceName, localizedAdminType, localizedPolity } from "../../shared/place-name-localization";
 import type { TangCountyDiagnostics } from "../../shared/tang-county-diagnostics";
 import type { MingBoundaryResearchDocument } from "../../shared/ming-boundary-research";
+import type { SongBoundaryResearchDocument } from "../../shared/song-boundary-research";
 
 type RegionProperties = BoundarySelection & { color?: string; labelCoordinates?: [number, number]; sourceHierarchy?: { polity?: string } };
 type Regions = FeatureCollection<Polygon | MultiPolygon, RegionProperties>;
@@ -76,9 +77,36 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
       .catch(error => { if (error.name !== "AbortError") setMingResearchError("明代建置史料暂时未能加载，请刷新重试。"); });
     return () => controller.abort();
   }, [periodId, mingResearch]);
+  const [songResearch, setSongResearch] = useState<SongBoundaryResearchDocument>();
+  const [songResearchError, setSongResearchError] = useState("");
+  useEffect(() => {
+    if (periodId !== "song" || songResearch) return;
+    const controller = new AbortController();
+    setSongResearchError("");
+    fetch("/data/song-boundary-research.json", { signal: controller.signal })
+      .then(response => { if (!response.ok) throw Error(); return response.json(); })
+      .then(data => {
+        if (data.periodId !== "song" || data.boundaryYear !== 1200 || !data.byBoundary || !Array.isArray(data.unlinkedEntries)) throw Error();
+        setSongResearch(data);
+      })
+      .catch(error => { if (error.name !== "AbortError") setSongResearchError("宋代同期建置史料暂时未能加载，请刷新重试。"); });
+    return () => controller.abort();
+  }, [periodId, songResearch]);
   const datasets = useMemo(() => manifest?.datasets.filter(item => item.periodId === periodId) ?? [], [manifest, periodId]);
   const dataset: BoundaryDataset | undefined = datasets.find(item => item.id === datasetId)
     ?? [...datasets].sort((a, b) => Math.abs(a.year - currentYear) - Math.abs(b.year - currentYear))[0];
+  const requestedSongDataset = periodId === "song" && selectionRequest ? datasets.find(item => selectionRequest.id.startsWith(`${item.id}-`)) : undefined;
+  const songRequestDatasetKey = useRef("");
+  useEffect(() => {
+    if (!selectionRequest || !requestedSongDataset) return;
+    const key = `${selectionRequest.id}:${selectionRequest.requestId}`;
+    if (songRequestDatasetKey.current === key) return;
+    songRequestDatasetKey.current = key;
+    if (dataset?.id !== requestedSongDataset.id) {
+      requestState.current = undefined;
+      setDatasetId(requestedSongDataset.id);
+    }
+  }, [selectionRequest, requestedSongDataset?.id, dataset?.id]);
   const availableLevels = useMemo(() => levels.filter(level => dataset?.layers.some(layer => layer.level === level && layer.featureCount > 0)), [dataset]);
   const detail = useMemo(() => resolveMapDetailLevel("auto", zoom, availableLevels, { primaryCountryCoverage: !boundaryCountryCoverage(dataset).incomplete }), [zoom, availableLevels, dataset]);
   const visibleLevelKey = detail.visibleLevels.join("|");
@@ -115,12 +143,14 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
   })) }), [regions, countyDiagnostics]);
   const displayRegions = useMemo<Regions>(() => ({ ...renderedRegions, features: renderedRegions.features.map(feature => {
     const match = correspondences?.entries[feature.properties.id];
+    const correction = songResearch?.byBoundary[feature.properties.id]?.displayCorrection;
     return { ...feature, properties: { ...feature.properties, ...getBoundaryDisplayLabel(feature.properties, match?.simplifiedName),
+      ...(correction ? { name: correction.name, nameCorrectionNote: correction.note, nameSourceUrl: correction.sourceUrl } : {}),
       polity: localizedPolity(feature.properties.sourceHierarchy?.polity), originalPolity: feature.properties.sourceHierarchy?.polity,
       sourceAdminType: localizedAdminType(feature.properties.sourceAdminType), originalAdminType: feature.properties.sourceAdminType,
       modernNames: (match?.modernNames ?? []).map(name => chinesePlaceName(name, "现代地区名称待核定")),
       correspondenceNote: match?.note ?? "现代地区对应尚未收录。", correspondenceSourceIds: match?.sourceIds ?? [] } };
-  }) }), [renderedRegions, correspondences]);
+  }) }), [renderedRegions, correspondences, songResearch]);
   const selectedDiagnostic = selection ? countyDiagnostics?.byBoundary[selection.id] : undefined;
 
   useEffect(() => {
@@ -306,6 +336,9 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
     return true;
   }, [displayRegions, map, ready, enabled, interactive, loadedDatasetId, dataset?.id, countyDiagnostics]);
   useEffect(() => {
+    // A reviewed Song city link selects its matching snapshot before resolving
+    // the polygon; a pending 1200 request must not be consumed against 1080.
+    if (requestedSongDataset && dataset?.id !== requestedSongDataset.id) return;
     const result = resolveBoundarySelectionRequest(requestState.current, {
       request: selectionRequest, resetKey, datasetId: dataset?.id,
       dataReady: !!map && ready && !!dataset && loadedDatasetId === dataset.id,
@@ -315,11 +348,12 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
     requestState.current = result.state;
     if (result.clearSelection) setSelection(null);
     if (result.apply) focusRegion(result.apply.id, result.apply);
-  }, [selectionRequest, resetKey, dataset?.id, loadedDatasetId, map, ready, enabled, interactive, displayRegions, focusRegion]);
+  }, [selectionRequest, resetKey, dataset?.id, loadedDatasetId, map, ready, enabled, interactive, displayRegions, focusRegion, requestedSongDataset?.id]);
   return <BoundaryControls embedded={embedded} enabled={enabled} datasets={datasets} selectedDataset={dataset} onDatasetChange={setDatasetId}
     visibleLevels={visibleLevels} interactive={interactive} activeLevel={detail.activeLevel} zoom={zoom} onOpenAtlas={onOpenAtlas}
     selection={selection} onSelectionClose={() => setSelection(null)} currentYear={currentYear} loading={loading || !manifest && !error} error={error}
     countyDiagnostic={selectedDiagnostic} countyDiagnosticsError={periodId === "tang" ? countyDiagnosticsError : undefined}
     mingResearch={periodId === "ming" ? mingResearch : undefined} mingResearchError={periodId === "ming" ? mingResearchError : undefined}
+    songResearch={periodId === "song" ? songResearch : undefined} songResearchError={periodId === "song" ? songResearchError : undefined}
     regionOptions={regionOptions} onRegionSelect={focusRegion} correspondenceSources={correspondences?.sources ?? []} correspondenceError={correspondenceError} />;
 }

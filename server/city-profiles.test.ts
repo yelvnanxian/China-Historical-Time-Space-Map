@@ -69,7 +69,7 @@ test("名城搜索兼容繁简、今名及天宝郡名，地域筛选与朝代�
   assert.ok(regional.length >= 10 && regional.every(profile => profile.region === "河西与西域"));
   assert.equal(filterCityProfiles(data.profiles, catalog.places, "tang", "苏州", "河西与西域").length, 0);
   assert.deepEqual(filterCityProfiles(data.profiles, catalog.places, "tang", "不存在的城邑"), []);
-  assert.equal(filterCityProfiles(data.profiles, catalog.places, "song").length, 3);
+  assert.equal(filterCityProfiles(data.profiles, catalog.places, "song").length, 29);
 });
 
 test("本朝看点引用可追溯固定修订、真实快照及逐字原文", () => {

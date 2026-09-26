@@ -47,11 +47,11 @@ test('搜索能从现代地名、历史别名和事件进入详情', () => {
 });
 
 test('搜索分期旧名进入正确时代，普通古今地名允许保留当前时代', () => {
-  for (const [query, id, periodId] of [['大都', 'beijing', 'yuan'], ['奉元', 'changan', 'yuan'], ['临安', 'hangzhou', 'song']]) {
+  for (const [query, id, periodId, historicalName] of [['大都', 'beijing', 'yuan', '大都'], ['奉元', 'changan', 'yuan', '奉元'], ['临安', 'hangzhou', 'song', '临安府']]) {
     const result = searchCatalog(catalog, query).find(item => item.type === 'place' && item.id === id);
     assert.ok(result, `应能查到 ${query}`);
     assert.equal(result.periodId, periodId, `${query} 不应跳到地点首次出现的朝代`);
-    assert.equal(result.matchedHistoricalName, query);
+    assert.equal(result.matchedHistoricalName, historicalName);
   }
   for (const [query, id] of [['北京', 'beijing'], ['西安', 'changan'], ['长安', 'changan']]) {
     const result = searchCatalog(catalog, query).find(item => item.type === 'place' && item.id === id);

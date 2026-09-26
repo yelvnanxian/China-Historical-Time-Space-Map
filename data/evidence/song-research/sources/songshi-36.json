@@ -1,0 +1,13 @@
+{
+  "id": "song-research-songshi-36",
+  "title": "宋史·卷036（维基文库固定版本）",
+  "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7036&oldid=2285197",
+  "kind": "official-history",
+  "snapshotPath": "data/evidence/song-research/sources/songshi-36.txt",
+  "snapshotSha256": "c77fc8699ae821ce549ab6a21458091fdfe1c9cd872d5dcfc31ff681936b8daa",
+  "rawSnapshotPath": "data/evidence/song-research/sources/songshi-36.api.json",
+  "rawSnapshotSha256": "525c509a9642067856b0e0b10daca236636d15fb0c76f952c888ec1ff8eef89e",
+  "retrievedAt": "2026-09-26T18:29:10.106256+00:00",
+  "revisionId": "2285197",
+  "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7036"
+}

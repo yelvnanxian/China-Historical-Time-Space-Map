@@ -579,7 +579,7 @@ export default function HistoricalMap(props: Props) {
       <button className="map-detail-status" onClick={() => setLayerPanel(true)} aria-label="查看当前地图层级与数据范围">
         随缩放自动分级 · {zoom.toFixed(1)}级 · 点选{mapInteractionOptions.find(option => option.value === props.interactionMode)?.label}
         <small>{replaceYellowLower ? "黄河下游：历史河道 · 其余河湖：现代参照" : "河湖：现代参照"}</small>
-        {detailedGeographyEnabled && <small>等高线近览：9级起 · 需选择山地窗口</small>}
+        {detailedGeographyEnabled && <small>等高线：已收录窗口内9级起显示 · 地图工具可定位</small>}
       </button>
       <div className="map-toolbar">
         <button

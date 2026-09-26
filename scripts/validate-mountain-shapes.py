@@ -47,6 +47,18 @@ def main():
         peak = next(f for f in source_peaks if f["properties"]["id"] == area["sourcePeak"]["id"])
         assert peak["geometry"]["coordinates"] == area["center"] == area["sourcePeak"]["coordinates"]
         assert peak["properties"]["name"] == area["name"]
+        # Check the new lowland display mask against raw DEM independently.
+        # It is a rendering omission, never a rewritten or filled DEM.
+        if "landformDisplayMask" in area:
+            mask = area["landformDisplayMask"]
+            mask_bytes = (ROOT / mask["maskPath"]).read_bytes()
+            assert digest(mask_bytes) == mask["maskSha256"]
+            ranges = json.loads(gzip.decompress(mask_bytes))
+            omitted = np.zeros(dem.shape, dtype=bool)
+            for row, start, end in ranges["rows"]:
+                omitted[row, start:end] = True
+            assert np.array_equal(omitted, dem < 0)
+            assert int(omitted.sum()) == mask["negativeSampleCount"]
         contour_path = ROOT / "public" / area["contoursUrl"].lstrip("/")
         assert digest(contour_path.read_bytes()) == area["contoursSha256"]
         contours = json.loads(gzip.decompress(contour_path.read_bytes()))["features"]
@@ -58,6 +70,8 @@ def main():
             assert p["areaId"] == area["id"] and p["modernReferenceOnly"] is True
             assert p["elevation"] % area["contourInterval"] == 0
             assert p["index"] == (p["elevation"] % area["indexInterval"] == 0)
+            if "landformDisplayMask" in area:
+                assert p["elevation"] >= area["landformDisplayMask"]["minimumContourElevation"]
             coords = np.asarray(feature["geometry"]["coordinates"])
             global_x = (coords[:, 0]+180)/360*(256*2**z)
             global_y = (1-np.arcsinh(np.tan(np.radians(coords[:, 1])))/math.pi)/2*(256*2**z)
@@ -83,8 +97,17 @@ def main():
         assert (alpha[0] == 0).all() and (alpha[-1] == 0).all() and (alpha[:, 0] == 0).all() and (alpha[:, -1] == 0).all()
         assert 0 < int(alpha.max()) < 255 and len(np.unique(alpha)) > 50
         assert np.count_nonzero(alpha == 0) > alpha.size / 10
+        lon, lat = area["center"]
+        px = (lon+180)/360*(256*2**z) - min_x*256 - 0.5
+        py = (1-math.asinh(math.tan(math.radians(lat)))/math.pi)/2*(256*2**z) - min_y*256 - 0.5
+        ix, iy = int(math.floor(px)), int(math.floor(py))
+        fx, fy = px-ix, py-iy
+        peak_sample = float((1-fx)*(1-fy)*dem[iy, ix] + fx*(1-fy)*dem[iy, ix+1] + (1-fx)*fy*dem[iy+1, ix] + fx*fy*dem[iy+1, ix+1])
         audits.append({"id": area["id"], "featureCount": len(contours), "vertexCount": count,
                        "publishedCoordinateElevationMaxErrorMeters": max_error, "sourcePeakExact": True,
+                       "peakCoordinateDemSampleMeters": peak_sample,
+                       "sourcePeakElevationTag": area["sourcePeak"]["tags"].get("ele"),
+                       "peakElevationNote": "DEM格网在OSM峰点坐标的双线性取样，不等于精确峰高；与来源ele并列供发现数量级异常，不用ele修补DEM。",
                        "sourceHashesValid": True, "rgbaTransparencyValid": True})
     result = {"areaCount": len(audits), "sourceTileCount": len(source_hashes),
               "featureCount": sum(a["featureCount"] for a in audits), "vertexCount": sum(a["vertexCount"] for a in audits),

@@ -1,0 +1,13 @@
+{
+  "id": "song-research-songshi-488",
+  "title": "宋史·卷488（维基文库固定版本）",
+  "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7488&oldid=2033276",
+  "kind": "official-history",
+  "snapshotPath": "data/evidence/song-research/sources/songshi-488.txt",
+  "snapshotSha256": "36bff3640e472f37892d1cadb4c3259be5681d225a7f66bb66d0a92cecf431e3",
+  "rawSnapshotPath": "data/evidence/song-research/sources/songshi-488.api.json",
+  "rawSnapshotSha256": "d6fca3e1e342d705c31970116fb3051bf118c261e18a9bc723ca77f6c60ce677",
+  "retrievedAt": "2026-09-26T18:28:28.655451+00:00",
+  "revisionId": "2033276",
+  "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7488"
+}

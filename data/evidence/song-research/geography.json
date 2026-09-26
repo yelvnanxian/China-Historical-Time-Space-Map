@@ -1,0 +1,1655 @@
+{
+  "id": "song-geography-research-2026-09-27",
+  "schemaVersion": 2,
+  "periodId": "song",
+  "title": "宋代诸政权建置与城镇史料核查包",
+  "generatedAt": "2026-09-27",
+  "method": "逐字核对固定修订宋史、金史本纪与地理志；同时代西夏、大理另列政权，少量二手对应明确标记。仅生成文字，未移动任何坐标或修改任何边界。",
+  "sources": [
+    {
+      "title": "大理市 — 维基百科",
+      "retrievedAt": "2026-09-24T13:31:45.284506+00:00",
+      "snapshotPath": "data/evidence/historical-context/dali.txt",
+      "snapshotSha256": "6046a6ced1b7c89704e7cddc55970453724fb816abc57a15278cef6e9b0bcad4",
+      "id": "song-research-dali-reference",
+      "url": "https://zh.wikipedia.org/w/index.php?oldid=93661459",
+      "kind": "secondary-reference",
+      "note": "固定版本二手百科概述，仅用于同时代政权与地区沿革参照；详细年代、城址及辖区仍需一手资料互证。",
+      "revisionId": "93661459"
+    },
+    {
+      "title": "敦煌市 — 维基百科",
+      "retrievedAt": "2026-09-24T13:31:45.853606+00:00",
+      "snapshotPath": "data/evidence/historical-context/dunhuang.txt",
+      "snapshotSha256": "2c7853d90c3c0856e86c7de5d3bfecadf9990807561620392c5d5517787f96ee",
+      "id": "song-research-dunhuang-reference",
+      "url": "https://zh.wikipedia.org/w/index.php?oldid=93563614",
+      "kind": "secondary-reference",
+      "note": "固定版本二手百科概述，仅用于同时代政权与地区沿革参照；详细年代、城址及辖区仍需一手资料互证。",
+      "revisionId": "93563614"
+    },
+    {
+      "id": "song-research-jinshi-24",
+      "title": "金史·卷24（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E9%87%91%E5%8F%B2/%E5%8D%B724&oldid=2432662",
+      "kind": "historical-text",
+      "snapshotPath": "data/evidence/song-research/sources/jinshi-24.txt",
+      "snapshotSha256": "bd5747f872c34cd63051052e465ed314a06bf2c7c408077c80af7314ee3e7dff",
+      "rawSnapshotPath": "data/evidence/song-research/sources/jinshi-24.api.json",
+      "rawSnapshotSha256": "3fb3ffcd1dc134881326368676e435f0c46dd3afdfd6b80446681ecb34c8ef2f",
+      "retrievedAt": "2026-09-26T18:29:46.044372+00:00",
+      "revisionId": "2432662",
+      "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E9%87%91%E5%8F%B2%2F%E5%8D%B724",
+      "note": "元代编纂正史的固定修订电子文本，原始API、文本和SHA256均归档；各卷会合并不同年代，原文异文保留并在条目说明，不能据文字证明古址坐标、精确边界或历史河岸。"
+    },
+    {
+      "id": "song-research-jinshi-25",
+      "title": "金史·卷25（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E9%87%91%E5%8F%B2/%E5%8D%B725&oldid=2607110",
+      "kind": "historical-text",
+      "snapshotPath": "data/evidence/song-research/sources/jinshi-25.txt",
+      "snapshotSha256": "12e239a0982b58a19350045ccd122ba71ed5981bd2ee3be451d314dc378c96ac",
+      "rawSnapshotPath": "data/evidence/song-research/sources/jinshi-25.api.json",
+      "rawSnapshotSha256": "b08649d2f7957d14aecfe84bda82bf72aa45dfc3a8841174d63abe4ac0798ecc",
+      "retrievedAt": "2026-09-26T18:29:46.044982+00:00",
+      "revisionId": "2607110",
+      "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E9%87%91%E5%8F%B2%2F%E5%8D%B725",
+      "note": "元代编纂正史的固定修订电子文本，原始API、文本和SHA256均归档；各卷会合并不同年代，原文异文保留并在条目说明，不能据文字证明古址坐标、精确边界或历史河岸。"
+    },
+    {
+      "id": "song-research-jinshi-26",
+      "title": "金史·卷26（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E9%87%91%E5%8F%B2/%E5%8D%B726&oldid=2606540",
+      "kind": "historical-text",
+      "snapshotPath": "data/evidence/song-research/sources/jinshi-26.txt",
+      "snapshotSha256": "6b9144a2d81e45cdd451327077ab9591174a4a8abb4f94e68c958a86964f2d6f",
+      "rawSnapshotPath": "data/evidence/song-research/sources/jinshi-26.api.json",
+      "rawSnapshotSha256": "b9d454983e7dc0a4ea4857b412177090a6c93464af2467635b78f104262816e6",
+      "retrievedAt": "2026-09-26T18:29:46.044933+00:00",
+      "revisionId": "2606540",
+      "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E9%87%91%E5%8F%B2%2F%E5%8D%B726",
+      "note": "元代编纂正史的固定修订电子文本，原始API、文本和SHA256均归档；各卷会合并不同年代，原文异文保留并在条目说明，不能据文字证明古址坐标、精确边界或历史河岸。"
+    },
+    {
+      "id": "song-research-songshi-33",
+      "title": "宋史·卷033（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7033&oldid=7908408",
+      "kind": "historical-text",
+      "snapshotPath": "data/evidence/song-research/sources/songshi-33.txt",
+      "snapshotSha256": "57e3f076b472bf5045a1da3aa58159d4c550ce5a95c929bd7e68e7a1caa0b18d",
+      "rawSnapshotPath": "data/evidence/song-research/sources/songshi-33.api.json",
+      "rawSnapshotSha256": "7009c88004f2b2f956041a4b58e96754dd627dbce407d946cba288ce2ed7690c",
+      "retrievedAt": "2026-09-26T18:29:10.065376+00:00",
+      "revisionId": "7908408",
+      "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7033",
+      "note": "元代编纂正史的固定修订电子文本，原始API、文本和SHA256均归档；各卷会合并不同年代，原文异文保留并在条目说明，不能据文字证明古址坐标、精确边界或历史河岸。"
+    },
+    {
+      "id": "song-research-songshi-36",
+      "title": "宋史·卷036（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7036&oldid=2285197",
+      "kind": "historical-text",
+      "snapshotPath": "data/evidence/song-research/sources/songshi-36.txt",
+      "snapshotSha256": "c77fc8699ae821ce549ab6a21458091fdfe1c9cd872d5dcfc31ff681936b8daa",
+      "rawSnapshotPath": "data/evidence/song-research/sources/songshi-36.api.json",
+      "rawSnapshotSha256": "525c509a9642067856b0e0b10daca236636d15fb0c76f952c888ec1ff8eef89e",
+      "retrievedAt": "2026-09-26T18:29:10.106256+00:00",
+      "revisionId": "2285197",
+      "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7036",
+      "note": "元代编纂正史的固定修订电子文本，原始API、文本和SHA256均归档；各卷会合并不同年代，原文异文保留并在条目说明，不能据文字证明古址坐标、精确边界或历史河岸。"
+    },
+    {
+      "id": "song-research-songshi-485",
+      "title": "宋史·卷485（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7485&oldid=2325722",
+      "kind": "historical-text",
+      "snapshotPath": "data/evidence/song-research/sources/songshi-485.txt",
+      "snapshotSha256": "c2f6b7545f65e0d94667aad620c6080fa0c77d4263e9652305065b37a270057e",
+      "rawSnapshotPath": "data/evidence/song-research/sources/songshi-485.api.json",
+      "rawSnapshotSha256": "293103c9202310088d5fbe6c4354b92cab5531c3358ba9c288294f45244026f0",
+      "retrievedAt": "2026-09-26T18:28:28.655551+00:00",
+      "revisionId": "2325722",
+      "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7485",
+      "note": "元代编纂正史的固定修订电子文本，原始API、文本和SHA256均归档；各卷会合并不同年代，原文异文保留并在条目说明，不能据文字证明古址坐标、精确边界或历史河岸。"
+    },
+    {
+      "id": "song-research-songshi-486",
+      "title": "宋史·卷486（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7486&oldid=2325721",
+      "kind": "historical-text",
+      "snapshotPath": "data/evidence/song-research/sources/songshi-486.txt",
+      "snapshotSha256": "e00359f7af81fae17ee8152d9f55af3a12a38c02aecdf70a91f1431d2645bb16",
+      "rawSnapshotPath": "data/evidence/song-research/sources/songshi-486.api.json",
+      "rawSnapshotSha256": "66428e6a258a1e56a4f918a8ac90a338abf370a1539324b244b5a1a00dbc86c4",
+      "retrievedAt": "2026-09-26T18:28:28.852198+00:00",
+      "revisionId": "2325721",
+      "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7486",
+      "note": "元代编纂正史的固定修订电子文本，原始API、文本和SHA256均归档；各卷会合并不同年代，原文异文保留并在条目说明，不能据文字证明古址坐标、精确边界或历史河岸。"
+    },
+    {
+      "id": "song-research-songshi-488",
+      "title": "宋史·卷488（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7488&oldid=2033276",
+      "kind": "historical-text",
+      "snapshotPath": "data/evidence/song-research/sources/songshi-488.txt",
+      "snapshotSha256": "36bff3640e472f37892d1cadb4c3259be5681d225a7f66bb66d0a92cecf431e3",
+      "rawSnapshotPath": "data/evidence/song-research/sources/songshi-488.api.json",
+      "rawSnapshotSha256": "d6fca3e1e342d705c31970116fb3051bf118c261e18a9bc723ca77f6c60ce677",
+      "retrievedAt": "2026-09-26T18:28:28.655451+00:00",
+      "revisionId": "2033276",
+      "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7488",
+      "note": "元代编纂正史的固定修订电子文本，原始API、文本和SHA256均归档；各卷会合并不同年代，原文异文保留并在条目说明，不能据文字证明古址坐标、精确边界或历史河岸。"
+    },
+    {
+      "id": "song-research-songshi-85",
+      "title": "宋史·卷085（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7085&oldid=2618630",
+      "kind": "historical-text",
+      "snapshotPath": "data/evidence/song-research/sources/songshi-85.txt",
+      "snapshotSha256": "d73915fa3d9410112b93c489686cf060deebecf303dda35585d08cfe6f019364",
+      "rawSnapshotPath": "data/evidence/song-research/sources/songshi-85.api.json",
+      "rawSnapshotSha256": "5d2a52a77b894b6c698d26afdcc8ac779bb6bd64c06ccce365f69ab8919ca252",
+      "retrievedAt": "2026-09-26T18:28:26.527318+00:00",
+      "revisionId": "2618630",
+      "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7085",
+      "note": "元代编纂正史的固定修订电子文本，原始API、文本和SHA256均归档；各卷会合并不同年代，原文异文保留并在条目说明，不能据文字证明古址坐标、精确边界或历史河岸。"
+    },
+    {
+      "id": "song-research-songshi-86",
+      "title": "宋史·卷086（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7086&oldid=2057390",
+      "kind": "historical-text",
+      "snapshotPath": "data/evidence/song-research/sources/songshi-86.txt",
+      "snapshotSha256": "0094c8a7346941ed11e75fcca73f0aedbd95aba64cc6c61a70d9bda3b08c860c",
+      "rawSnapshotPath": "data/evidence/song-research/sources/songshi-86.api.json",
+      "rawSnapshotSha256": "791e550815606478b74f38ffdd13960dae42b3751bbb38a94451c142defcfd75",
+      "retrievedAt": "2026-09-26T18:28:26.478102+00:00",
+      "revisionId": "2057390",
+      "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7086",
+      "note": "元代编纂正史的固定修订电子文本，原始API、文本和SHA256均归档；各卷会合并不同年代，原文异文保留并在条目说明，不能据文字证明古址坐标、精确边界或历史河岸。"
+    },
+    {
+      "id": "song-research-songshi-87",
+      "title": "宋史·卷087（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7087&oldid=2599839",
+      "kind": "historical-text",
+      "snapshotPath": "data/evidence/song-research/sources/songshi-87.txt",
+      "snapshotSha256": "0a32d0e469d8687e2c88552e39c5d43785f086cc7efbecc052a789d225361ba3",
+      "rawSnapshotPath": "data/evidence/song-research/sources/songshi-87.api.json",
+      "rawSnapshotSha256": "5f7d8a2866d15dcfc5f566e36f5eb8d10a58c99133ff228cc3f05b33faf378b0",
+      "retrievedAt": "2026-09-26T18:28:26.471494+00:00",
+      "revisionId": "2599839",
+      "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7087",
+      "note": "元代编纂正史的固定修订电子文本，原始API、文本和SHA256均归档；各卷会合并不同年代，原文异文保留并在条目说明，不能据文字证明古址坐标、精确边界或历史河岸。"
+    },
+    {
+      "id": "song-research-songshi-88",
+      "title": "宋史·卷088（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+      "kind": "historical-text",
+      "snapshotPath": "data/evidence/song-research/sources/songshi-88.txt",
+      "snapshotSha256": "2f005c4051b212355805758af0f5423addc7262a500d5685edaa59689c3da0c0",
+      "rawSnapshotPath": "data/evidence/song-research/sources/songshi-88.api.json",
+      "rawSnapshotSha256": "b5667994736c8d0ec4a93e8bcb3ed0489a47afcbb34861a5e4c138839936cf24",
+      "retrievedAt": "2026-09-26T18:28:27.682311+00:00",
+      "revisionId": "1873924",
+      "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7088",
+      "note": "元代编纂正史的固定修订电子文本，原始API、文本和SHA256均归档；各卷会合并不同年代，原文异文保留并在条目说明，不能据文字证明古址坐标、精确边界或历史河岸。"
+    },
+    {
+      "id": "song-research-songshi-89",
+      "title": "宋史·卷089（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7089&oldid=1875817",
+      "kind": "historical-text",
+      "snapshotPath": "data/evidence/song-research/sources/songshi-89.txt",
+      "snapshotSha256": "65b36a76fd232a4330aac0b4cd9dd507864842b121bbc780c19653ab273a1cd7",
+      "rawSnapshotPath": "data/evidence/song-research/sources/songshi-89.api.json",
+      "rawSnapshotSha256": "37d5ffe8683f5386f7456ba68f071a33a5d441e8a467dba15b99fe9f649bd17e",
+      "retrievedAt": "2026-09-26T18:28:27.711682+00:00",
+      "revisionId": "1875817",
+      "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7089",
+      "note": "元代编纂正史的固定修订电子文本，原始API、文本和SHA256均归档；各卷会合并不同年代，原文异文保留并在条目说明，不能据文字证明古址坐标、精确边界或历史河岸。"
+    },
+    {
+      "id": "song-research-songshi-90",
+      "title": "宋史·卷090（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7090&oldid=2619985",
+      "kind": "historical-text",
+      "snapshotPath": "data/evidence/song-research/sources/songshi-90.txt",
+      "snapshotSha256": "feb3cdaeb37a60a53cb8b60f0ec2eca3ebbd9ea2806ec1a25867a9dc4c859fef",
+      "rawSnapshotPath": "data/evidence/song-research/sources/songshi-90.api.json",
+      "rawSnapshotSha256": "0d9143246cc7022a281fd8b3422d64c0408976ece48969dac81d780302e5c8b6",
+      "retrievedAt": "2026-09-26T18:28:27.671854+00:00",
+      "revisionId": "2619985",
+      "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7090",
+      "note": "元代编纂正史的固定修订电子文本，原始API、文本和SHA256均归档；各卷会合并不同年代，原文异文保留并在条目说明，不能据文字证明古址坐标、精确边界或历史河岸。"
+    }
+  ],
+  "entries": [
+    {
+      "id": "song-geography-changan",
+      "periodId": "song",
+      "catalogPlaceId": "changan",
+      "name": "京兆府",
+      "region": "金·京兆府路",
+      "summary": "北宋京兆府曾使用永兴军军额，宣和二年诏守臣衔称京兆府。1200年阅读截面属金，金代皇统二年置总管府；长安、咸宁为附郭县，长安条并载终南山、沣水和渭水。府、附郭县和唐代长安都城应分开阅读。",
+      "namingNote": "1200年显示金代京兆府，不沿用唐长安的首都地位。现有点仅为西安地区参考；府域、长安县域与各代城址不同。",
+      "searchNames": [
+        "京兆府",
+        "京兆府",
+        "金·京兆府路"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "北宋京兆府曾使用永兴军军额，宣和二年诏守臣衔称京兆府。1200年阅读截面属金，金代皇统二年置总管府；长安、咸宁为附郭县，长安条并载终南山、沣水和渭水。府、附郭县和唐代长安都城应分开阅读。",
+          "evidence": [
+            {
+              "sourceId": "song-research-songshi-87",
+              "sourceTitle": "宋史·卷087（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7087&oldid=2599839",
+              "quote": "京兆府，京兆郡，永興軍節度。本次府，大觀元年升大都督府。舊領永興軍路安撫使。宣和二年，詔永興軍守臣等銜不用軍額，稱京兆府。崇甯戸二十三萬四千六百九十九，口五十三萬七千二百八十八。貢靴氈、蠟、席、酸棗仁、地骨皮。縣十三：長安，次赤。",
+              "locator": "宋史·卷087（维基文库固定版本）·京兆府，京兆郡，永興軍節度。本次府，大觀元年升大…"
+            },
+            {
+              "sourceId": "song-research-jinshi-26",
+              "sourceTitle": "金史·卷26（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%87%91%E5%8F%B2/%E5%8D%B726&oldid=2606540",
+              "quote": "京兆府，上。宋京兆郡永興軍節度使。皇統二年置總管府，天德二置陝西路統軍司、陝西東路轉運司。產白芷、麻黃、白蒺藜、茴香、細辛。戶九萬八千一百七十七。縣十二、鎮十：舊又有中橋、臨涇二鎮，後廢。",
+              "locator": "金史·卷26（维基文库固定版本）·京兆府，上。宋京兆郡永興軍節度使。皇統二年置總管…"
+            },
+            {
+              "sourceId": "song-research-jinshi-26",
+              "sourceTitle": "金史·卷26（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%87%91%E5%8F%B2/%E5%8D%B726&oldid=2606540",
+              "quote": "長安倚。有終南山、龍首山、灃水、渭水、鎬水。鎮一子午。",
+              "locator": "金史·卷26（维基文库固定版本）·長安倚。有終南山、龍首山、灃水、渭水、鎬水。鎮一…"
+            },
+            {
+              "sourceId": "song-research-jinshi-26",
+              "sourceTitle": "金史·卷26（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%87%91%E5%8F%B2/%E5%8D%B726&oldid=2606540",
+              "quote": "咸寧倚。本萬年，後更名。泰和四年廢，尋複。鎮二鳴犢、乾祐。",
+              "locator": "金史·卷26（维基文库固定版本）·咸寧倚。本萬年，後更名。泰和四年廢，尋複。鎮二鳴…"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+        "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。"
+      ]
+    },
+    {
+      "id": "song-geography-luoyang",
+      "periodId": "song",
+      "catalogPlaceId": "luoyang",
+      "name": "河南府",
+      "region": "金·南京路",
+      "summary": "北宋洛阳为西京河南府，文献记宫城沿用隋唐旧名。金代仍为河南府，洛阳为附郭县，条文列北邙山和伊、洛等水。兴定元年才升为中京、府名金昌；1200年不能提前使用这一后来的名称。",
+      "namingNote": "北宋西京是洛阳，金代西京则是大同；1200年的洛阳入口使用河南府，1217年中京金昌府仅在沿革中记录。",
+      "searchNames": [
+        "河南府",
+        "河南府",
+        "金·南京路"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "北宋洛阳为西京河南府，文献记宫城沿用隋唐旧名。金代仍为河南府，洛阳为附郭县，条文列北邙山和伊、洛等水。兴定元年才升为中京、府名金昌；1200年不能提前使用这一后来的名称。",
+          "evidence": [
+            {
+              "sourceId": "song-research-songshi-85",
+              "sourceTitle": "宋史·卷085（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7085&oldid=2618630",
+              "quote": "西京。唐顯慶間爲東都，開元改河南府，宋爲西京，山陵在焉。宮城周回九里三百歩。城南三門：中曰五鳳樓，東曰興教，西曰光政。因隋、唐舊名。",
+              "locator": "宋史·卷085（维基文库固定版本）·西京。唐顯慶間爲東都，開元改河南府，宋爲西京，山…"
+            },
+            {
+              "sourceId": "song-research-jinshi-25",
+              "sourceTitle": "金史·卷25（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%87%91%E5%8F%B2/%E5%8D%B725&oldid=2607110",
+              "quote": "河南府，散、中。宋西京河南雒陽郡。初置德昌軍，興定元年八月升為中京，府曰金昌。戶五萬五千六百三十五。縣九、《正隆郡志》有壽安縣，紀錄皆無。鎮四：",
+              "locator": "金史·卷25（维基文库固定版本）·河南府，散、中。宋西京河南雒陽郡。初置德昌軍，興…"
+            },
+            {
+              "sourceId": "song-research-jinshi-25",
+              "sourceTitle": "金史·卷25（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%87%91%E5%8F%B2/%E5%8D%B725&oldid=2607110",
+              "quote": "洛陽倚。有北邙山，正隆六年更名太平山，稱舊名者以違制論。有伊、洛、璟、澗、金水，銅駝街、金粟山，金穀。鎮一龍門。",
+              "locator": "金史·卷25（维基文库固定版本）·洛陽倚。有北邙山，正隆六年更名太平山，稱舊名者以…"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+        "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。"
+      ]
+    },
+    {
+      "id": "song-geography-beijing",
+      "periodId": "song",
+      "catalogPlaceId": "beijing",
+      "name": "大兴府",
+      "region": "金·中都路",
+      "summary": "此地经历辽南京、燕京和金中都的名称变化。金海陵王贞元元年定都并改称中都，府名大兴；1200年这里是金朝都城。大兴府所辖县与中都城及宫城分属不同范围，不能将北京地区参考点视作金代宫城实测位置。",
+      "namingNote": "宋代诸政权页面的中都是金都，不是宋朝都城；辽南京、金中都、元大都与明清北京并非相同城界。",
+      "searchNames": [
+        "中都",
+        "大兴府",
+        "金·中都路"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "此地经历辽南京、燕京和金中都的名称变化。金海陵王贞元元年定都并改称中都，府名大兴；1200年这里是金朝都城。大兴府所辖县与中都城及宫城分属不同范围，不能将北京地区参考点视作金代宫城实测位置。",
+          "evidence": [
+            {
+              "sourceId": "song-research-jinshi-24",
+              "sourceTitle": "金史·卷24（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%87%91%E5%8F%B2/%E5%8D%B724&oldid=2432662",
+              "quote": "中都路，遼會同元年為南京，開泰元年號燕京。海陵貞元元年定都，以燕乃列國之名，不當為京師號，遂改為中都。",
+              "locator": "金史·卷24（维基文库固定版本）·中都路，遼會同元年為南京，開泰元年號燕京。海陵貞…"
+            },
+            {
+              "sourceId": "song-research-jinshi-24",
+              "sourceTitle": "金史·卷24（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%87%91%E5%8F%B2/%E5%8D%B724&oldid=2432662",
+              "quote": "大興府，上。晉幽州，遼會同元年升為南京，府曰幽都，仍號盧龍軍，開泰元年更為永安析津府。天會七年析河北為東、西路時屬河北東路，貞元元年更今名。戶二十二萬五千五百九十二。大定四年十月，命都門外夾道重行植柳各百里。產金銀銅鐵。藥產滑石、半夏、蒼術、代赭石、白龍骨、薄荷、五味子、白牽牛。縣十、鎮一：",
+              "locator": "金史·卷24（维基文库固定版本）·大興府，上。晉幽州，遼會同元年升為南京，府曰幽都…"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+        "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。"
+      ]
+    },
+    {
+      "id": "song-geography-kaifeng",
+      "periodId": "song",
+      "catalogPlaceId": "kaifeng",
+      "name": "开封府",
+      "region": "金·南京路",
+      "summary": "开封是北宋京师所在地区，入金后初称汴京，贞元元年改号南京。1200年属金的南京开封府，不能标作南宋都城；《金史》另记开封县东附郭及汴河、关津。府、附郭县和都城范围需分别理解。",
+      "namingNote": "这里的南京指金朝南京开封府，今河南开封；与今江苏南京的南宋建康府、北宋南京应天府均不是同一地点。",
+      "searchNames": [
+        "南京开封府",
+        "开封府",
+        "金·南京路"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "开封是北宋京师所在地区，入金后初称汴京，贞元元年改号南京。1200年属金的南京开封府，不能标作南宋都城；《金史》另记开封县东附郭及汴河、关津。府、附郭县和都城范围需分别理解。",
+          "evidence": [
+            {
+              "sourceId": "song-research-songshi-85",
+              "sourceTitle": "宋史·卷085（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7085&oldid=2618630",
+              "quote": "開封府。崇甯戸二十六萬一千一百一十七，口四十四萬二千九百四十。貢方紋綾、方紋紗、藨席、麻黃、酸棗仁。縣十六：開封，赤。",
+              "locator": "宋史·卷085（维基文库固定版本）·開封府。崇甯戸二十六萬一千一百一十七，口四十四萬…"
+            },
+            {
+              "sourceId": "song-research-jinshi-25",
+              "sourceTitle": "金史·卷25（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%87%91%E5%8F%B2/%E5%8D%B725&oldid=2607110",
+              "quote": "南京路，國初曰汴京，貞元元年更號南京。",
+              "locator": "金史·卷25（维基文库固定版本）·南京路，國初曰汴京，貞元元年更號南京。"
+            },
+            {
+              "sourceId": "song-research-jinshi-25",
+              "sourceTitle": "金史·卷25（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%87%91%E5%8F%B2/%E5%8D%B725&oldid=2607110",
+              "quote": "開封府，上。留守司留守帶本府尹，兼本路兵馬都總管。天德二年罷行台尚書省，置轉運司、提刑司。天德二年置統軍司。有藥市四，榷場。產蜜蠟、香茶、心紅、硃紅、地龍、黃柏。天德四年，戶二十三萬五千八百九十。泰和末，戶百七十四萬六千二百一十。縣十五、鎮十五：",
+              "locator": "金史·卷25（维基文库固定版本）·開封府，上。留守司留守帶本府尹，兼本路兵馬都總管…"
+            },
+            {
+              "sourceId": "song-research-jinshi-25",
+              "sourceTitle": "金史·卷25（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%87%91%E5%8F%B2/%E5%8D%B725&oldid=2607110",
+              "quote": "開封東附郭。有古通津、臨蔡關、汴河。鎮一延嘉。",
+              "locator": "金史·卷25（维基文库固定版本）·開封東附郭。有古通津、臨蔡關、汴河。鎮一延嘉。"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+        "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。"
+      ]
+    },
+    {
+      "id": "song-geography-nanjing",
+      "periodId": "song",
+      "catalogPlaceId": "nanjing",
+      "name": "建康府",
+      "region": "南宋·江南东路",
+      "summary": "北宋江宁府在建炎三年恢复建康府名，当年五月高宗在府治建行宫。绍兴八年置主管行宫留守司公事，三十一年改为行宫留守。上元、江宁是府下不同县，建康府与城内行宫不能共用一个范围。",
+      "namingNote": "1200年地图显示建康府，现代对应南京地区；不要与金朝位于开封的南京或北宋位于商丘的南京混同。",
+      "searchNames": [
+        "建康府",
+        "建康府",
+        "南宋·江南东路"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "北宋江宁府在建炎三年恢复建康府名，当年五月高宗在府治建行宫。绍兴八年置主管行宫留守司公事，三十一年改为行宫留守。上元、江宁是府下不同县，建康府与城内行宫不能共用一个范围。",
+          "evidence": [
+            {
+              "sourceId": "song-research-songshi-88",
+              "sourceTitle": "宋史·卷088（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+              "quote": "江寧府，上，開寶八年，平江南，復爲昇州節度。天禧二年，陞爲建康軍節度。舊領江南東路兵馬鈐轄。建炎元年，爲帥府。三年，復爲建康府，統太平、宣、徽、廣德。五月，髙宗即府治建行宮。紹興八年，置主管行宮留守司公事；三十一年，爲行宮留守。乾道三年，兼沿江軍，尋省。崇甯戸一十二萬七百一十三，口二十萬二百七十六。貢筆。縣五：",
+              "locator": "宋史·卷088（维基文库固定版本）·江寧府，上，開寶八年，平江南，復爲昇州節度。天禧…"
+            },
+            {
+              "sourceId": "song-research-songshi-88",
+              "sourceTitle": "宋史·卷088（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+              "quote": "上元，次赤。\n江寧，次赤。",
+              "locator": "宋史·卷088（维基文库固定版本）·上元，次赤。\n江寧，次赤。"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+        "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。"
+      ]
+    },
+    {
+      "id": "song-geography-hangzhou",
+      "periodId": "song",
+      "catalogPlaceId": "hangzhou",
+      "name": "临安府",
+      "region": "南宋·两浙西路",
+      "summary": "临安府本杭州，建炎三年升府，绍兴五年兼浙西安抚使。钱塘、仁和两县在绍兴年间升赤县；光宗本纪还记绍熙元年蠲临安府民身丁钱三年。府、府城和同名临安县是不同对象。",
+      "namingNote": "南宋临安府治在今杭州地区；府下另有临安县，不能据“临安”同名把府治移到今临安区。",
+      "searchNames": [
+        "临安府",
+        "临安府",
+        "南宋·两浙西路"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "临安府本杭州，建炎三年升府，绍兴五年兼浙西安抚使。钱塘、仁和两县在绍兴年间升赤县；光宗本纪还记绍熙元年蠲临安府民身丁钱三年。府、府城和同名临安县是不同对象。",
+          "evidence": [
+            {
+              "sourceId": "song-research-songshi-88",
+              "sourceTitle": "宋史·卷088（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+              "quote": "臨安府，大都督府，本杭州，餘杭郡。淳化五年，改甯海軍節度。大觀元年，陞爲帥府。舊領兩浙西路兵馬鈐轄。建炎元年，帶本路安撫使，領杭、湖、嚴、秀四州。三年，陞爲府，帶兵馬鈐轄。紹興五年，兼浙西安撫使。崇甯戸二十萬三千五百七十四，口二十九萬六千六百一十五。貢綾、藤紙。縣九：",
+              "locator": "宋史·卷088（维基文库固定版本）·臨安府，大都督府，本杭州，餘杭郡。淳化五年，改甯…"
+            },
+            {
+              "sourceId": "song-research-songshi-88",
+              "sourceTitle": "宋史·卷088（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+              "quote": "錢塘，望。有鹽監。\n仁和，望。梁錢江縣。太平興國四年改。紹興中，與錢塘並陞赤。",
+              "locator": "宋史·卷088（维基文库固定版本）·錢塘，望。有鹽監。\n仁和，望。梁錢江縣。太平興國…"
+            },
+            {
+              "sourceId": "song-research-songshi-36",
+              "sourceTitle": "宋史·卷036（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7036&oldid=2285197",
+              "quote": "紹熙元年春正月丙辰朔，帝率群臣詣重華宮，奉上壽聖皇太后、至尊壽皇聖帝、壽成皇后冊寶。壬申，再蠲臨安府民身丁錢三年。壬午，何澹請置《紹熙會計錄》。詔何澹同戶部長貳、檢正、都司稽考財賦出入之數以聞。",
+              "locator": "宋史·卷036（维基文库固定版本）·紹熙元年春正月丙辰朔，帝率群臣詣重華宮，奉上壽聖…"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+        "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。"
+      ]
+    },
+    {
+      "id": "song-geography-chengdu",
+      "periodId": "song",
+      "catalogPlaceId": "chengdu",
+      "name": "成都府",
+      "region": "南宋·成都府路",
+      "summary": "成都在北宋多次于益州、成都府之间更改，嘉祐五年复为府，六年复节度。南宋绍兴元年领成都路安抚使，后又多次调整四川宣抚、制置机构。成都、华阳为同城不同县，府与成都府路也不是同一级行政范围。",
+      "namingNote": "1200年以成都府为当前建置；府、路、成都县与华阳县分别呈现，不把唐代成都政治事件用作本朝概览。",
+      "searchNames": [
+        "成都府",
+        "成都府",
+        "南宋·成都府路"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "成都在北宋多次于益州、成都府之间更改，嘉祐五年复为府，六年复节度。南宋绍兴元年领成都路安抚使，后又多次调整四川宣抚、制置机构。成都、华阳为同城不同县，府与成都府路也不是同一级行政范围。",
+          "evidence": [
+            {
+              "sourceId": "song-research-songshi-89",
+              "sourceTitle": "宋史·卷089（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7089&oldid=1875817",
+              "quote": "成都府，次府，本益州，蜀郡，劍南西川節度。太平興國六年，降爲州。端拱元年，復爲劍南西川成都府。淳化五年，降爲益州，罷節度。嘉祐五年，復爲府。六年，復節度。舊領成都府路兵馬鈐轄。建炎三年，罷兼利州路。紹興元年，領成都路安撫使。五年，兼四路安撫、制置大使。十年置宣撫，罷制置司，知府帶本路安撫使。十八年，罷宣撫，復製置司；乾道六年，又罷，並歸安撫司，知府仍帶本路安撫使。淳熙二年，復製置司，罷宣撫司。開禧元年，置宣撫，罷制置司。未幾，兩司並置；後罷宣撫，仍置制置大使。嘉定七年，去「大」字。崇甯戸一十八萬二千九十，口五十八萬九千九百三十。貢花羅、錦、髙糸寧布、牋紙。縣九：",
+              "locator": "宋史·卷089（维基文库固定版本）·成都府，次府，本益州，蜀郡，劍南西川節度。太平興…"
+            },
+            {
+              "sourceId": "song-research-songshi-89",
+              "sourceTitle": "宋史·卷089（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7089&oldid=1875817",
+              "quote": "成都，次赤。\n華陽，次赤。",
+              "locator": "宋史·卷089（维基文库固定版本）·成都，次赤。\n華陽，次赤。"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+        "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。"
+      ]
+    },
+    {
+      "id": "song-geography-guangzhou",
+      "periodId": "song",
+      "catalogPlaceId": "guangzhou",
+      "name": "广州",
+      "region": "南宋·广南东路",
+      "summary": "广州在宋代为广南东路重要治所，领经略、安抚使，地理志列海舶香料等贡物。番禺曾并入南海，皇祐三年复置；绍兴二十二年又以东莞香山镇置香山县。城、州与附属县及海舶活动应分别阅读。",
+      "namingNote": "宋代广州、南海县和番禺县层级不同；香山县是1152年新增建置，不能倒用于更早的北宋截面。",
+      "searchNames": [
+        "广州",
+        "广州",
+        "南宋·广南东路"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "广州在宋代为广南东路重要治所，领经略、安抚使，地理志列海舶香料等贡物。番禺曾并入南海，皇祐三年复置；绍兴二十二年又以东莞香山镇置香山县。城、州与附属县及海舶活动应分别阅读。",
+          "evidence": [
+            {
+              "sourceId": "song-research-songshi-90",
+              "sourceTitle": "宋史·卷090（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7090&oldid=2619985",
+              "quote": "廣州，中，都督府，南海郡，淸海軍節度。開寶五年，廢咸寧、番禺、蒙化、游水四縣。大觀元年，升爲帥府。舊領廣南東路兵馬鈐轄，兼本路經略、安撫使。元豐戸一十四萬三千二百六十一。貢胡椒、石發、糖霜、檀香、肉豆蔻、丁香母子、零陵香、補骨脂、舶上茴香、沒藥、沒石子。元豐貢沉香、甲香、詹糖香、石斛、龜殼、水馬、鼊皮、藤簟。縣八：",
+              "locator": "宋史·卷090（维基文库固定版本）·廣州，中，都督府，南海郡，淸海軍節度。開寶五年，…"
+            },
+            {
+              "sourceId": "song-research-songshi-90",
+              "sourceTitle": "宋史·卷090（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7090&oldid=2619985",
+              "quote": "番禺，上。開寶中，廢入南海。皇祐三年復置。有銀爐鐵塲。",
+              "locator": "宋史·卷090（维基文库固定版本）·番禺，上。開寶中，廢入南海。皇祐三年復置。有銀爐…"
+            },
+            {
+              "sourceId": "song-research-songshi-90",
+              "sourceTitle": "宋史·卷090（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7090&oldid=2619985",
+              "quote": "香山，紹興二十二年，以東筦香山鎭爲縣。",
+              "locator": "宋史·卷090（维基文库固定版本）·香山，紹興二十二年，以東筦香山鎭爲縣。"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+        "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。"
+      ]
+    },
+    {
+      "id": "song-geography-yangzhou",
+      "periodId": "song",
+      "catalogPlaceId": "yangzhou",
+      "name": "扬州",
+      "region": "南宋·淮南东路",
+      "summary": "扬州建炎元年升帅府，二年高宗驻跸；江都为所属县，熙宁五年曾省广陵县入江都。地理志同时记述南渡后县属变化，体现扬州在江淮政务中的地位，不能把整条沿革当作1200年单一清单。",
+      "namingNote": "扬州为州级单位，江都为县；古扬州刺史部、宋扬州和现代扬州市的范围不能互换。",
+      "searchNames": [
+        "扬州",
+        "扬州",
+        "南宋·淮南东路"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "扬州建炎元年升帅府，二年高宗驻跸；江都为所属县，熙宁五年曾省广陵县入江都。地理志同时记述南渡后县属变化，体现扬州在江淮政务中的地位，不能把整条沿革当作1200年单一清单。",
+          "evidence": [
+            {
+              "sourceId": "song-research-songshi-88",
+              "sourceTitle": "宋史·卷088（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+              "quote": "揚州，大都督府，廣陵郡，淮南節度。熙甯五年，廢髙郵軍，並以縣隸州。元祐元年，復髙郵軍。舊領淮南東路兵馬鈐轄。建炎元年，陞帥府。二年，髙宗駐蹕。四年，爲眞、揚鎭撫使，尋罷。嘉定中，淮東制置開幕府於楚州，仍兼安撫。崇甯戸五萬六千四百八十五，口十萬七千五百七十九。貢白苧布、莞席、銅鏡。縣一：",
+              "locator": "宋史·卷088（维基文库固定版本）·揚州，大都督府，廣陵郡，淮南節度。熙甯五年，廢髙…"
+            },
+            {
+              "sourceId": "song-research-songshi-88",
+              "sourceTitle": "宋史·卷088（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+              "quote": "江都。緊。熙寧五年，省廣陵縣入焉。",
+              "locator": "宋史·卷088（维基文库固定版本）·江都。緊。熙寧五年，省廣陵縣入焉。"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+        "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。"
+      ]
+    },
+    {
+      "id": "song-geography-xiangyang",
+      "periodId": "song",
+      "catalogPlaceId": "xiangyang",
+      "name": "襄阳府",
+      "region": "南宋·京西南路",
+      "summary": "襄阳原为襄州，宣和元年升为府，地理志列襄阳、邓城、谷城等县。中庐县在绍兴五年省入南漳，说明北宋和南宋县属并不完全相同；1200年应按南宋襄阳府理解，不能沿用唐襄州的全部属县。",
+      "namingNote": "襄阳府、襄阳县和对岸樊城不同；南渡后的省县记录用于沿革说明，不由文字自动生成府界。",
+      "searchNames": [
+        "襄阳府",
+        "襄阳府",
+        "南宋·京西南路"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "襄阳原为襄州，宣和元年升为府，地理志列襄阳、邓城、谷城等县。中庐县在绍兴五年省入南漳，说明北宋和南宋县属并不完全相同；1200年应按南宋襄阳府理解，不能沿用唐襄州的全部属县。",
+          "evidence": [
+            {
+              "sourceId": "song-research-songshi-85",
+              "sourceTitle": "宋史·卷085（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7085&oldid=2618630",
+              "quote": "襄陽府，望，襄陽郡，山南東道節度。本襄州。宣和元年，升爲府。崇甯戸八萬七千三百七，口一十九萬二千六百五。貢麝香、白穀、漆器。縣六：襄陽，緊。",
+              "locator": "宋史·卷085（维基文库固定版本）·襄陽府，望，襄陽郡，山南東道節度。本襄州。宣和元…"
+            },
+            {
+              "sourceId": "song-research-songshi-85",
+              "sourceTitle": "宋史·卷085（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7085&oldid=2618630",
+              "quote": "中盧，中下。隋義淸縣。太平興國元年改。紹興五年，省入南漳。",
+              "locator": "宋史·卷085（维基文库固定版本）·中盧，中下。隋義淸縣。太平興國元年改。紹興五年，…"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+        "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。"
+      ]
+    },
+    {
+      "id": "song-geography-jingzhou",
+      "periodId": "song",
+      "catalogPlaceId": "jingzhou",
+      "name": "江陵府",
+      "region": "南宋·荆湖北路",
+      "summary": "江陵府在建炎二年升帅府，随后镇抚、安抚与制置机构多次调整。淳熙元年曾还称荆南府，不久又见江陵府制置使；江陵县另为府下单位。府域、江陵县域和江陵城不能因同名混为一体。",
+      "namingNote": "1200年使用江陵府；荆南为相关阶段称谓。景定元年“移治于鄂”所记机构迁置，不能据此把江陵地点移动到鄂州。",
+      "searchNames": [
+        "江陵府",
+        "江陵府",
+        "南宋·荆湖北路"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "江陵府在建炎二年升帅府，随后镇抚、安抚与制置机构多次调整。淳熙元年曾还称荆南府，不久又见江陵府制置使；江陵县另为府下单位。府域、江陵县域和江陵城不能因同名混为一体。",
+          "evidence": [
+            {
+              "sourceId": "song-research-songshi-88",
+              "sourceTitle": "宋史·卷088（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+              "quote": "江陵府，次府，江陵郡，荊南節度。舊領荊湖北路兵馬鈐轄，兼提舉本路及施、夔州兵馬巡檢事。建炎二年，陞帥府。四年，置荊南府、歸、峽州、荊門、公安軍鎭撫使，紹興五年罷。始制安撫使兼營田使，六年，爲經略安撫使；七年，罷經略，止除安撫使。淳熙元年，還爲荊南府。未幾，復爲江陵府制置使。景定元年，移治於鄂。咸淳十年，荊湖、四川宣撫使兼江陵府事。崇甯戸八萬五千八百一，口二十二萬三千二百八十四。貢綾、𦆭、碧澗茶芽、柑桔。縣八：",
+              "locator": "宋史·卷088（维基文库固定版本）·江陵府，次府，江陵郡，荊南節度。舊領荊湖北路兵馬…"
+            },
+            {
+              "sourceId": "song-research-songshi-88",
+              "sourceTitle": "宋史·卷088（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+              "quote": "江陵，次赤。",
+              "locator": "宋史·卷088（维基文库固定版本）·江陵，次赤。"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+        "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。"
+      ]
+    },
+    {
+      "id": "song-geography-jinyang",
+      "periodId": "song",
+      "catalogPlaceId": "jinyang",
+      "name": "平晋县",
+      "region": "金·河东北路·太原府",
+      "summary": "宋太平兴国四年毁晋阳旧城，州治先迁榆次，七年迁唐明监。旧城地区关联的平晋县在熙宁三年省入阳曲、政和五年复置；金代地理志仍列平晋县，而太原府附郭县为阳曲。因此本点不代表宋金太原府治。",
+      "namingNote": "本入口保留晋阳旧城地区参考坐标，1200年关联平晋县；平晋县治的精确位置尚待专门核定，不能把阳曲的太原府治或府界当作本点县治。",
+      "searchNames": [
+        "平晋县",
+        "平晋县",
+        "金·河东北路·太原府"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "宋太平兴国四年毁晋阳旧城，州治先迁榆次，七年迁唐明监。旧城地区关联的平晋县在熙宁三年省入阳曲、政和五年复置；金代地理志仍列平晋县，而太原府附郭县为阳曲。因此本点不代表宋金太原府治。",
+          "evidence": [
+            {
+              "sourceId": "song-research-songshi-86",
+              "sourceTitle": "宋史·卷086（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7086&oldid=2057390",
+              "quote": "太原府，太原郡，河東節度。太平興國四年，平劉繼元，降爲緊州，軍事，毀其城，移治於楡次縣。又廢太原縣，以平定、樂平二縣屬平定軍，交城屬大通監。七年，移治唐明監。舊領河東路經略安撫使。元豐爲次府，大觀元年升大都督府。崇甯戸一十五萬五千二百六十三，口一百二十四萬一千七百六十八。貢大銅鑒、甘草、人參、礬石。縣十：陽曲，次赤。有百井、陽興二砦。",
+              "locator": "宋史·卷086（维基文库固定版本）·太原府，太原郡，河東節度。太平興國四年，平劉繼元…"
+            },
+            {
+              "sourceId": "song-research-songshi-86",
+              "sourceTitle": "宋史·卷086（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7086&oldid=2057390",
+              "quote": "平晉。中。熙寧三年，廢入陽曲。政和五年復。",
+              "locator": "宋史·卷086（维基文库固定版本）·平晉。中。熙寧三年，廢入陽曲。政和五年復。"
+            },
+            {
+              "sourceId": "song-research-jinshi-26",
+              "sourceTitle": "金史·卷26（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%87%91%E5%8F%B2/%E5%8D%B726&oldid=2606540",
+              "quote": "陽曲倚。有罕山、蒙山、汾水。鎮五陽曲、百井、赤塘關、天門關、陵井驛。",
+              "locator": "金史·卷26（维基文库固定版本）·陽曲倚。有罕山、蒙山、汾水。鎮五陽曲、百井、赤塘…"
+            },
+            {
+              "sourceId": "song-research-jinshi-26",
+              "sourceTitle": "金史·卷26（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%87%91%E5%8F%B2/%E5%8D%B726&oldid=2606540",
+              "quote": "平晉貞祐四年七月廢，興定元年複置。有龍山、晉水。鎮二晉甯、晉祠。",
+              "locator": "金史·卷26（维基文库固定版本）·平晉貞祐四年七月廢，興定元年複置。有龍山、晉水。…"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+        "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。",
+        "保留晋阳旧城地区参考点；本轮文字未证明平晋县治精确坐标，太原府治阳曲必须与此点分开。"
+      ]
+    },
+    {
+      "id": "song-geography-datong",
+      "periodId": "song",
+      "catalogPlaceId": "datong",
+      "name": "大同府",
+      "region": "金·西京路",
+      "summary": "大同在辽重熙十三年升为西京，府名大同，金沿用。金天德二年改置本路都总管府，后来置留守司；大同县为附郭县。1200年应显示金西京大同府，不能误作宋西京洛阳或普通州级单位。",
+      "namingNote": "金西京在大同，北宋西京在洛阳；源边界若记“大同府州”且类型为州，应保留来源冲突，不据近似同名静默匹配。",
+      "searchNames": [
+        "西京大同府",
+        "大同府",
+        "金·西京路"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "大同在辽重熙十三年升为西京，府名大同，金沿用。金天德二年改置本路都总管府，后来置留守司；大同县为附郭县。1200年应显示金西京大同府，不能误作宋西京洛阳或普通州级单位。",
+          "evidence": [
+            {
+              "sourceId": "song-research-jinshi-24",
+              "sourceTitle": "金史·卷24（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%87%91%E5%8F%B2/%E5%8D%B724&oldid=2432662",
+              "quote": "大同府，中，西京留守司。晉雲州大同軍節度，遼重熙十三年，升為西京，府名大同，金因之。皇統元年，以燕京路隸尚書省，西京及山后諸部族隸元帥府。舊置兵馬都部署司，天德二年，改置本路都總管府，後更置留守司。置轉運司及中都西京路提刑司。貢瑪瑙環子、瑪瑙數珠。產白駝、安息香、松明、松脂、黃連、百藥煎、芥子煎、鹽、撈鹽、石綠、綠礬、鐵、甘草、枸杞、碾玉砂、地蕈。戶九萬八千四百四十四。縣七、鎮三：",
+              "locator": "金史·卷24（维基文库固定版本）·大同府，中，西京留守司。晉雲州大同軍節度，遼重熙…"
+            },
+            {
+              "sourceId": "song-research-jinshi-24",
+              "sourceTitle": "金史·卷24（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%87%91%E5%8F%B2/%E5%8D%B724&oldid=2432662",
+              "quote": "大同倚。遼析雲中置，金因之。有牛皮關、武周山、方山、奚望山、盛樂城、禦河、鬥雞台、平城外郭鹽場、如渾水、桑乾河、紇真山。有遼帝后像。在華嚴寺。鎮一奉義。",
+              "locator": "金史·卷24（维基文库固定版本）·大同倚。遼析雲中置，金因之。有牛皮關、武周山、方…"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+        "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。"
+      ]
+    },
+    {
+      "id": "song-geography-linzi",
+      "periodId": "song",
+      "catalogPlaceId": "linzi",
+      "name": "临淄县",
+      "region": "金·山东东路·益都府",
+      "summary": "1200年临淄是金代益都府属县，地理志记南郊山、牛山、天齐渊和康浪水。它不再是先秦齐国都城的行政层级，也不能把上级益都府的完整辖区当成临淄县范围。",
+      "namingNote": "临淄县与益都府分属不同级别；古齐都遗址、宋金县城与现代临淄区的边界需分别核查。",
+      "searchNames": [
+        "临淄县",
+        "临淄县",
+        "金·山东东路·益都府"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "1200年临淄是金代益都府属县，地理志记南郊山、牛山、天齐渊和康浪水。它不再是先秦齐国都城的行政层级，也不能把上级益都府的完整辖区当成临淄县范围。",
+          "evidence": [
+            {
+              "sourceId": "song-research-jinshi-25",
+              "sourceTitle": "金史·卷25（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%87%91%E5%8F%B2/%E5%8D%B725&oldid=2607110",
+              "quote": "益都府，上，總管府，宋鎮海軍，國初仍舊置軍，置南青州節度使，後升為總管府，置轉運司。大定八年置山東東西路統軍司。產石器、玉石、沙魚皮、天南星、半夏、澤瀉、紫草。戶一十一萬八千七百一十八。縣七、鎮七：",
+              "locator": "金史·卷25（维基文库固定版本）·益都府，上，總管府，宋鎮海軍，國初仍舊置軍，置南…"
+            },
+            {
+              "sourceId": "song-research-jinshi-25",
+              "sourceTitle": "金史·卷25（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%87%91%E5%8F%B2/%E5%8D%B725&oldid=2607110",
+              "quote": "臨淄有南郊山、牛山、天齊淵、康浪水。",
+              "locator": "金史·卷25（维基文库固定版本）·臨淄有南郊山、牛山、天齊淵、康浪水。"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+        "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。"
+      ]
+    },
+    {
+      "id": "song-geography-handan",
+      "periodId": "song",
+      "catalogPlaceId": "handan",
+      "name": "邯郸县",
+      "region": "金·河北西路·磁州",
+      "summary": "金代邯郸列在磁州属县，地理志记邯山、灵山、漳水及镇名；条文另指出镇名在不同资料间有出入。1200年应按县级入口阅读，不能直接套用明代转隶广平府后的行政关系。",
+      "namingNote": "本期上级为磁州，明代才转入广平府；若模型把上级写成“磁府”，仅作为源数据异名提示，不能把州升格为府。",
+      "searchNames": [
+        "邯郸县",
+        "邯郸县",
+        "金·河北西路·磁州"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "金代邯郸列在磁州属县，地理志记邯山、灵山、漳水及镇名；条文另指出镇名在不同资料间有出入。1200年应按县级入口阅读，不能直接套用明代转隶广平府后的行政关系。",
+          "evidence": [
+            {
+              "sourceId": "song-research-jinshi-25",
+              "sourceTitle": "金史·卷25（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%87%91%E5%8F%B2/%E5%8D%B725&oldid=2607110",
+              "quote": "磁州，中，刺史。宋滏陽郡，國初置滏陽郡軍。戶六萬三千四百一十七。縣三、鎮八：",
+              "locator": "金史·卷25（维基文库固定版本）·磁州，中，刺史。宋滏陽郡，國初置滏陽郡軍。戶六萬…"
+            },
+            {
+              "sourceId": "song-research-jinshi-25",
+              "sourceTitle": "金史·卷25（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%87%91%E5%8F%B2/%E5%8D%B725&oldid=2607110",
+              "quote": "邯鄲有邯山、靈山、漳水、牛首山。鎮三大趙、北陽、邑城。《士民須知》惟有邯山鎮。",
+              "locator": "金史·卷25（维基文库固定版本）·邯鄲有邯山、靈山、漳水、牛首山。鎮三大趙、北陽、…"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+        "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。"
+      ]
+    },
+    {
+      "id": "song-geography-tongguan",
+      "periodId": "song",
+      "catalogPlaceId": "tongguan",
+      "name": "潼关",
+      "region": "金·京兆府路·华州华阴县",
+      "summary": "《金史》华阴县条在太华山、黄河、渭水之后列潼关，支持1200年关隘入口与华州华阴县的关系。潼关是关隘，不是普通县，也不是明代潼关卫；古今关址变化仍须另行核查。",
+      "namingNote": "关隘与县、军卫分属不同类型；本点只联系潼关地区，不会为“潼关”名称补造一个宋金县界。",
+      "searchNames": [
+        "潼关",
+        "潼关",
+        "金·京兆府路·华州华阴县"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "《金史》华阴县条在太华山、黄河、渭水之后列潼关，支持1200年关隘入口与华州华阴县的关系。潼关是关隘，不是普通县，也不是明代潼关卫；古今关址变化仍须另行核查。",
+          "evidence": [
+            {
+              "sourceId": "song-research-jinshi-26",
+              "sourceTitle": "金史·卷26（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%87%91%E5%8F%B2/%E5%8D%B726&oldid=2606540",
+              "quote": "華州，中。宋華陰郡鎮潼軍節度，治鄭，國初因之，後置節度使，皇統二年降為防禦使。貞祐三年八月升為節鎮，軍曰金安，以商州為支郡。戶五萬三千八百。縣五、鎮六：",
+              "locator": "金史·卷26（维基文库固定版本）·華州，中。宋華陰郡鎮潼軍節度，治鄭，國初因之，後…"
+            },
+            {
+              "sourceId": "song-research-jinshi-26",
+              "sourceTitle": "金史·卷26（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%87%91%E5%8F%B2/%E5%8D%B726&oldid=2606540",
+              "quote": "華陰有太華山、松果山、黃河、渭水、潼關。鎮二關西、敷水。",
+              "locator": "金史·卷26（维基文库固定版本）·華陰有太華山、松果山、黃河、渭水、潼關。鎮二關西…"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+        "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。"
+      ]
+    },
+    {
+      "id": "song-geography-yinchuan",
+      "periodId": "song",
+      "catalogPlaceId": "yinchuan",
+      "name": "兴庆府",
+      "region": "西夏",
+      "summary": "《宋史》西夏传记兴州兴庆府依黄河、贺兰山而设官驻兵。绍熙四年仁孝去世，纯佑继位，次年改天庆，至开禧二年被废；1200年落在西夏纯佑在位期间，不能按宋朝府县体系呈现。",
+      "namingNote": "兴庆府属西夏都城地区；“宋代”页面是同时代诸政权总览，不表示宋朝辖有此地。西夏城墙与具体府域尚未由本轮文字核定。",
+      "searchNames": [
+        "兴庆府",
+        "兴庆府",
+        "西夏"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "《宋史》西夏传记兴州兴庆府依黄河、贺兰山而设官驻兵。绍熙四年仁孝去世，纯佑继位，次年改天庆，至开禧二年被废；1200年落在西夏纯佑在位期间，不能按宋朝府县体系呈现。",
+          "evidence": [
+            {
+              "sourceId": "song-research-songshi-485",
+              "sourceTitle": "宋史·卷485（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7485&oldid=2325722",
+              "quote": "元昊既悉有夏、銀、綏、宥、靜、靈、鹽、會、勝、甘、涼、瓜、沙、肅，而洪、定、威、龍皆即堡鎮號州，仍居興州，阻河依賀蘭山為固。始大建官，以嵬名守全、張陟、張絳、楊廓、徐敏宗、張文顯輩主謀議，以鍾鼎臣典文書，以成逋、克成賞、都臥、𡗀如定、多多馬、竇惟吉主兵馬，野利仁榮主蕃學。置十二監軍司，委豪右分統其眾。自河北至午臘蒻山七萬人，以備契丹；河南洪州、白豹、安鹽州、羅落、天都、惟精山等五萬人，以備環、慶、鎮戎、原州；左廂宥州路五萬人，以備鄜、延、麟、府；右廂甘州路三萬人，以備西蕃、回紇；賀蘭駐兵五萬、靈州五萬人、興州興慶府七萬人為鎮守，總五十餘萬。而苦戰倚山訛，山訛者，橫山羌，平夏兵不及也。選豪族善弓馬五千人迭直，號六班直，月給米二石。鐵騎三千，分十部。發兵以銀牌召部長面受約束。設十六司于興州，以總庶務。元昊自製蕃書，命野利仁榮演繹之，成十二卷，字形體方整類八分，而畫頗重複。教國人紀事用蕃書，而譯孝經、爾雅、四言雜字為蕃語。復改元大慶。",
+              "locator": "宋史·卷485（维基文库固定版本）·元昊既悉有夏、銀、綏、宥、靜、靈、鹽、會、勝、甘…"
+            },
+            {
+              "sourceId": "song-research-songshi-486",
+              "sourceTitle": "宋史·卷486（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7486&oldid=2325721",
+              "quote": "紹熙四年九月二十日，仁孝殂，年七十。在位五十五年，改元大慶四年，人慶五年，天盛二十一年，乾祐二十四年。謚曰聖德皇帝，廟號仁宗，陵號壽陵。子純佑嗣。",
+              "locator": "宋史·卷486（维基文库固定版本）·紹熙四年九月二十日，仁孝殂，年七十。在位五十五年…"
+            },
+            {
+              "sourceId": "song-research-songshi-486",
+              "sourceTitle": "宋史·卷486（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7486&oldid=2325721",
+              "quote": "純佑，仁宗長子也，母曰章獻欽慈皇后羅氏。仁宗殂，即位，時年十七。明年改元天慶。",
+              "locator": "宋史·卷486（维基文库固定版本）·純佑，仁宗長子也，母曰章獻欽慈皇后羅氏。仁宗殂，…"
+            },
+            {
+              "sourceId": "song-research-songshi-486",
+              "sourceTitle": "宋史·卷486（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7486&oldid=2325721",
+              "quote": "開禧二年正月二十日廢，遂殂，年三十。在位十四年，謚曰昭簡皇帝，廟號桓宗，陵號莊陵。鎮夷郡王安全立。",
+              "locator": "宋史·卷486（维基文库固定版本）·開禧二年正月二十日廢，遂殂，年三十。在位十四年，…"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+        "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。"
+      ]
+    },
+    {
+      "id": "song-geography-quanzhou",
+      "periodId": "song",
+      "catalogPlaceId": "quanzhou",
+      "name": "泉州",
+      "region": "南宋·福建路",
+      "summary": "太平兴国三年陈洪进献漳泉二州，泉州纳入宋朝；太平兴国六年又析晋江置惠安。地理志记晋江、惠安盐亭和同安盐场，泉州的州域、县域及港口经济空间需要分开理解。",
+      "namingNote": "泉州属州级，晋江为所属县；港口和海岸线不能由海贸名声推定为整个州域，更不能按现代港区形状复原宋代岸线。",
+      "searchNames": [
+        "泉州",
+        "泉州",
+        "南宋·福建路"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "太平兴国三年陈洪进献漳泉二州，泉州纳入宋朝；太平兴国六年又析晋江置惠安。地理志记晋江、惠安盐亭和同安盐场，泉州的州域、县域及港口经济空间需要分开理解。",
+          "evidence": [
+            {
+              "sourceId": "song-research-songshi-89",
+              "sourceTitle": "宋史·卷089（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7089&oldid=1875817",
+              "quote": "泉州，望，淸源郡。太平興國初，改平海軍節度。本上郡，大觀元年，陞爲望郡。崇甯戸二十萬一千四百六。貢松子。元豐貢綿、蕉、葛。縣七：",
+              "locator": "宋史·卷089（维基文库固定版本）·泉州，望，淸源郡。太平興國初，改平海軍節度。本上…"
+            },
+            {
+              "sourceId": "song-research-songshi-89",
+              "sourceTitle": "宋史·卷089（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7089&oldid=1875817",
+              "quote": "晉江，望。有鹽亭一百六十一。",
+              "locator": "宋史·卷089（维基文库固定版本）·晉江，望。有鹽亭一百六十一。"
+            },
+            {
+              "sourceId": "song-research-songshi-89",
+              "sourceTitle": "宋史·卷089（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7089&oldid=1875817",
+              "quote": "惠安，望。太平興國六年，析晉江置縣。有鹽亭一百二十九。",
+              "locator": "宋史·卷089（维基文库固定版本）·惠安，望。太平興國六年，析晉江置縣。有鹽亭一百二…"
+            },
+            {
+              "sourceId": "song-research-songshi-85",
+              "sourceTitle": "宋史·卷085（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7085&oldid=2618630",
+              "quote": "太宗太平興國三年，陳洪進獻地，得州二（漳、泉），縣十四，戸十五萬一千九百七十八；",
+              "locator": "宋史·卷085（维基文库固定版本）·太宗太平興國三年，陳洪進獻地，得州二（漳、泉），…"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+        "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。"
+      ]
+    },
+    {
+      "id": "song-geography-dali",
+      "periodId": "song",
+      "catalogPlaceId": "dali",
+      "name": "大理国都城地区",
+      "region": "大理国",
+      "summary": "《宋史》记大理与宋使节、贡马及互市往来；这些外交记述不等于宋朝在此设置府县。固定版本地方概述记段氏937年在羊苴咩城建大理国，1253年亡，1200年应作为同时代大理国都城地区阅读。",
+      "namingNote": "大理国与宋为不同政权；太和城、羊苴咩城和明代大理府城不是跨朝代完全重合的城址。本条具体1200年政区与都城范围仍待同期材料互证。",
+      "searchNames": [
+        "大理",
+        "大理国都城地区",
+        "大理国"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "《宋史》记大理与宋使节、贡马及互市往来；这些外交记述不等于宋朝在此设置府县。固定版本地方概述记段氏937年在羊苴咩城建大理国，1253年亡，1200年应作为同时代大理国都城地区阅读。",
+          "evidence": [
+            {
+              "sourceId": "song-research-songshi-488",
+              "sourceTitle": "宋史·卷488（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7488&oldid=2033276",
+              "quote": "大理國，即唐南詔也。熙寧九年，遣使貢金裝碧玕山、氊罽、刀劍、犀皮甲鞍轡。自後不常來，亦不領於鴻臚。",
+              "locator": "宋史·卷488（维基文库固定版本）·大理國，即唐南詔也。熙寧九年，遣使貢金裝碧玕山、…"
+            },
+            {
+              "sourceId": "song-research-songshi-488",
+              "sourceTitle": "宋史·卷488（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7488&oldid=2033276",
+              "quote": "紹興三年十月，廣西奏，大理國求入貢及售馬，詔卻之，不欲以虛名勞民也。朱勝非奏曰：「昔年大理入貢，言者深指其妄，黃璘由是獲罪。」帝曰：「遐方異域，何由得實，但讎當其馬價，則馬方至，用益騎兵，不為無補也。」六年七月，廣西經略安撫司奏，大理復遣使奉表貢象、馬，詔經略司護送行在，優禮答之。九月，翰林學士朱震上言，乞諭廣西帥臣，凡市馬當擇謹厚者任之，毋遣好功喜事之人，以啟邊釁。異時南北路通，則漸減廣西市馬之數，庶幾消患於未然。詔從之。",
+              "locator": "宋史·卷488（维基文库固定版本）·紹興三年十月，廣西奏，大理國求入貢及售馬，詔卻之…"
+            },
+            {
+              "sourceId": "song-research-dali-reference",
+              "sourceTitle": "大理市 — 维基百科",
+              "sourceKind": "secondary-reference",
+              "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=93661459",
+              "quote": "唐天复二年（902年），南诏权臣郑买嗣夺权，建立“大长和国”。927年，杨干贞扶持赵善政建立“大天兴国”，随后又自立为王，建“大义宁国”。后晋天福二年（937年），段思平也于羊苴咩城定都建国，国号大理。段氏自称是汉人后裔，立国后，大力推行汉文化，并与南宋遣使通商。",
+              "locator": "大理市 — 维基百科·唐天复二年（902年），南诏权臣郑买嗣夺权，建立…"
+            },
+            {
+              "sourceId": "song-research-dali-reference",
+              "sourceTitle": "大理市 — 维基百科",
+              "sourceKind": "secondary-reference",
+              "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=93661459",
+              "quote": "大理国历经了316年后，在元宪宗三年（1253年），为忽必烈亲征所灭。元至元十一年（1274年），元朝为便于统治，在押赤城（又名中庆路，今昆明市）设置了云南行省，同时设立大理路及太和县，隶属于云南行省。从此云南的中心城市便由大理转移到了昆明。",
+              "locator": "大理市 — 维基百科·大理国历经了316年后，在元宪宗三年（1253年…"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+        "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。",
+        "1200年具体地区政权及前后连续统治目前部分依赖二手固定版本概述，仍需同期文书、考古与专门研究互证。"
+      ]
+    },
+    {
+      "id": "song-geography-dunhuang",
+      "periodId": "song",
+      "catalogPlaceId": "dunhuang",
+      "name": "沙州",
+      "region": "西夏·河西",
+      "summary": "《宋史》西夏传记元昊所据地区包括瓜、沙诸州；固定版本地方概述记敦煌自1036年为西夏占据并统治191年。1200年本入口按西夏沙州地区阅读，不能因页面名称“宋”而归入南宋。",
+      "namingNote": "敦煌是现代地区对应名，沙州为本期历史入口名；1036年的具体攻取纪年目前据二手概述，仍待敦煌文书及西夏研究互证。",
+      "searchNames": [
+        "沙州",
+        "沙州",
+        "西夏·河西"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "《宋史》西夏传记元昊所据地区包括瓜、沙诸州；固定版本地方概述记敦煌自1036年为西夏占据并统治191年。1200年本入口按西夏沙州地区阅读，不能因页面名称“宋”而归入南宋。",
+          "evidence": [
+            {
+              "sourceId": "song-research-songshi-485",
+              "sourceTitle": "宋史·卷485（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7485&oldid=2325722",
+              "quote": "元昊既悉有夏、銀、綏、宥、靜、靈、鹽、會、勝、甘、涼、瓜、沙、肅，而洪、定、威、龍皆即堡鎮號州，仍居興州，阻河依賀蘭山為固。始大建官，以嵬名守全、張陟、張絳、楊廓、徐敏宗、張文顯輩主謀議，以鍾鼎臣典文書，以成逋、克成賞、都臥、𡗀如定、多多馬、竇惟吉主兵馬，野利仁榮主蕃學。置十二監軍司，委豪右分統其眾。自河北至午臘蒻山七萬人，以備契丹；河南洪州、白豹、安鹽州、羅落、天都、惟精山等五萬人，以備環、慶、鎮戎、原州；左廂宥州路五萬人，以備鄜、延、麟、府；右廂甘州路三萬人，以備西蕃、回紇；賀蘭駐兵五萬、靈州五萬人、興州興慶府七萬人為鎮守，總五十餘萬。而苦戰倚山訛，山訛者，橫山羌，平夏兵不及也。選豪族善弓馬五千人迭直，號六班直，月給米二石。鐵騎三千，分十部。發兵以銀牌召部長面受約束。設十六司于興州，以總庶務。元昊自製蕃書，命野利仁榮演繹之，成十二卷，字形體方整類八分，而畫頗重複。教國人紀事用蕃書，而譯孝經、爾雅、四言雜字為蕃語。復改元大慶。",
+              "locator": "宋史·卷485（维基文库固定版本）·元昊既悉有夏、銀、綏、宥、靜、靈、鹽、會、勝、甘…"
+            },
+            {
+              "sourceId": "song-research-dunhuang-reference",
+              "sourceTitle": "敦煌市 — 维基百科",
+              "sourceKind": "secondary-reference",
+              "sourceUrl": "https://zh.wikipedia.org/w/index.php?oldid=93563614",
+              "quote": "北宋景祐三年（1036年）敦煌为西夏占领，统治敦煌达191年。元灭西夏后，于至元十四年（1277年）复设沙州。1280年升为沙州路总管府，隶属甘肃行中书省。明朝永乐三年（1405年）改为沙州卫，后增设罕东左卫。嘉靖七年（1528年）因葉爾羌汗國攻擊，关闭嘉峪关，从此瓜州、沙州成為葉爾羌汗國領土。",
+              "locator": "敦煌市 — 维基百科·北宋景祐三年（1036年）敦煌为西夏占领，统治敦…"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+        "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。",
+        "1200年具体地区政权及前后连续统治目前部分依赖二手固定版本概述，仍需同期文书、考古与专门研究互证。"
+      ]
+    },
+    {
+      "id": "song-geography-suzhou",
+      "periodId": "song",
+      "catalogPlaceId": "suzhou",
+      "name": "平江府",
+      "region": "南宋·两浙西路",
+      "summary": "苏州在政和三年升平江府，地理志列吴、长洲等县。嘉定县到嘉定十五年才从昆山析置；文献所列六县是跨阶段汇记，不能全部放入1200年截面。府与吴、长洲等附属县也不共用一个范围。",
+      "namingNote": "1200年显示平江府，现代对应苏州地区；1222年嘉定置县属于后来的沿革，不作为本期既有县显示。",
+      "searchNames": [
+        "平江府",
+        "平江府",
+        "南宋·两浙西路"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "苏州在政和三年升平江府，地理志列吴、长洲等县。嘉定县到嘉定十五年才从昆山析置；文献所列六县是跨阶段汇记，不能全部放入1200年截面。府与吴、长洲等附属县也不共用一个范围。",
+          "evidence": [
+            {
+              "sourceId": "song-research-songshi-88",
+              "sourceTitle": "宋史·卷088（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+              "quote": "平江府，望，呉郡。太平興國三年，改平江軍節度。本蘇州，政和三年，陞爲府。紹興初，節制許浦軍。崇甯戸一十五萬二千八百二十一，口四十四萬八千三百一十二。貢葛、蛇床子、白石脂、花席。縣六：",
+              "locator": "宋史·卷088（维基文库固定版本）·平江府，望，呉郡。太平興國三年，改平江軍節度。本…"
+            },
+            {
+              "sourceId": "song-research-songshi-88",
+              "sourceTitle": "宋史·卷088（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+              "quote": "呉，望。\n長洲，望。",
+              "locator": "宋史·卷088（维基文库固定版本）·呉，望。\n長洲，望。"
+            },
+            {
+              "sourceId": "song-research-songshi-88",
+              "sourceTitle": "宋史·卷088（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+              "quote": "嘉定。上。嘉定十五年，析崑山縣置，以年爲名。",
+              "locator": "宋史·卷088（维基文库固定版本）·嘉定。上。嘉定十五年，析崑山縣置，以年爲名。"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+        "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。"
+      ]
+    },
+    {
+      "id": "song-geography-qizhou-jinan",
+      "periodId": "song",
+      "catalogPlaceId": "qizhou-jinan",
+      "name": "济南府",
+      "region": "金·山东东路",
+      "summary": "北宋齐州于政和六年升济南府，金代沿用济南府，设置尹与山东东西路提刑司。地理志列历城及其盘水、中宫、遥墙等镇；1200年应使用金代当期建置，不能沿用唐齐州层级或北宋全部县属。",
+      "namingNote": "齐州是较早名称，1200年为金代济南府；历城县与府、现代济南市不是相同范围。",
+      "searchNames": [
+        "济南府",
+        "济南府",
+        "金·山东东路"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "北宋齐州于政和六年升济南府，金代沿用济南府，设置尹与山东东西路提刑司。地理志列历城及其盘水、中宫、遥墙等镇；1200年应使用金代当期建置，不能沿用唐齐州层级或北宋全部县属。",
+          "evidence": [
+            {
+              "sourceId": "song-research-songshi-85",
+              "sourceTitle": "宋史·卷085（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7085&oldid=2618630",
+              "quote": "濟南府，上，濟南郡，興德軍節度。本齊州。先屬京東路。咸平四年，廢臨濟縣。元豐元年，割屬京東東路。政和六年，升爲府。崇甯戸一十三萬三千三百二十一，口二十一萬四千六十七。貢綿、絹、陽起石、防風。縣五：暦城，緊。",
+              "locator": "宋史·卷085（维基文库固定版本）·濟南府，上，濟南郡，興德軍節度。本齊州。先屬京東…"
+            },
+            {
+              "sourceId": "song-research-jinshi-25",
+              "sourceTitle": "金史·卷25（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%87%91%E5%8F%B2/%E5%8D%B725&oldid=2607110",
+              "quote": "濟南府，散，上。宋齊州濟南郡。初置興德軍節度使，後置尹，置山東東西路提刑司。戶三十萬八千四百六十九。縣七、鎮二十九：",
+              "locator": "金史·卷25（维基文库固定版本）·濟南府，散，上。宋齊州濟南郡。初置興德軍節度使，…"
+            },
+            {
+              "sourceId": "song-research-jinshi-25",
+              "sourceTitle": "金史·卷25（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%87%91%E5%8F%B2/%E5%8D%B725&oldid=2607110",
+              "quote": "曆城鎮六盤水、中宮、老僧口、上洛口、王舍人店、遙牆。",
+              "locator": "金史·卷25（维基文库固定版本）·曆城鎮六盤水、中宮、老僧口、上洛口、王舍人店、遙…"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+        "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。"
+      ]
+    },
+    {
+      "id": "song-geography-yanzhou",
+      "periodId": "song",
+      "catalogPlaceId": "yanzhou",
+      "name": "兖州",
+      "region": "金·山东西路",
+      "summary": "《金史》将兖州记为宋袭庆府鲁郡的后继单位，大定十九年调整军号，属下列嵫阳、曲阜等县。嵫阳本瑕丘，曲阜在宋曾称仙源；州、县以及时代不同的名称不能当作并列城邑。",
+      "namingNote": "1200年为金代兖州；北宋袭庆府、唐鲁郡和明兖州府属于不同阶段，不应统一套作府级。",
+      "searchNames": [
+        "兖州",
+        "兖州",
+        "金·山东西路"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "《金史》将兖州记为宋袭庆府鲁郡的后继单位，大定十九年调整军号，属下列嵫阳、曲阜等县。嵫阳本瑕丘，曲阜在宋曾称仙源；州、县以及时代不同的名称不能当作并列城邑。",
+          "evidence": [
+            {
+              "sourceId": "song-research-jinshi-25",
+              "sourceTitle": "金史·卷25（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%87%91%E5%8F%B2/%E5%8D%B725&oldid=2607110",
+              "quote": "兗州，中，泰軍節度使。宋襲慶府魯郡。舊名泰寧軍，大定十九年更。戶五萬九十九。縣四：",
+              "locator": "金史·卷25（维基文库固定版本）·兗州，中，泰軍節度使。宋襲慶府魯郡。舊名泰寧軍，…"
+            },
+            {
+              "sourceId": "song-research-jinshi-25",
+              "sourceTitle": "金史·卷25（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%87%91%E5%8F%B2/%E5%8D%B725&oldid=2607110",
+              "quote": "嵫陽本瑕丘。",
+              "locator": "金史·卷25（维基文库固定版本）·嵫陽本瑕丘。"
+            },
+            {
+              "sourceId": "song-research-jinshi-25",
+              "sourceTitle": "金史·卷25（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E9%87%91%E5%8F%B2/%E5%8D%B725&oldid=2607110",
+              "quote": "曲阜宋名仙源。有防山、曲阜山，泗、洙、沂水。",
+              "locator": "金史·卷25（维基文库固定版本）·曲阜宋名仙源。有防山、曲阜山，泗、洙、沂水。"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+        "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。"
+      ]
+    },
+    {
+      "id": "song-geography-ezhou-jiangxia",
+      "periodId": "song",
+      "catalogPlaceId": "ezhou-jiangxia",
+      "name": "鄂州",
+      "region": "南宋·荆湖北路",
+      "summary": "鄂州以江夏为所属县，建炎二年兼鄂、岳制置使，绍兴二年改兼荆湖北路安抚。嘉定十一年又置沿江制置副使，但这是1200年之后的机构变化。鄂州军政机构、州县范围与城址需分别理解。",
+      "namingNote": "宋鄂州治江夏，现地在武汉武昌地区，不能因同名跳到现代鄂州市；武昌军是军额，不是此时的明代武昌府。",
+      "searchNames": [
+        "鄂州",
+        "鄂州",
+        "南宋·荆湖北路"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "鄂州以江夏为所属县，建炎二年兼鄂、岳制置使，绍兴二年改兼荆湖北路安抚。嘉定十一年又置沿江制置副使，但这是1200年之后的机构变化。鄂州军政机构、州县范围与城址需分别理解。",
+          "evidence": [
+            {
+              "sourceId": "song-research-songshi-88",
+              "sourceTitle": "宋史·卷088（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+              "quote": "鄂州，緊，江夏郡，武昌軍節度。初爲武淸軍，至道二年，始改。建炎二年，兼鄂、岳制置使。四年，兼江南鄂州路安撫，尋改鄂州路安撫。紹興二年，改兼荊湖北路安撫。六年，管内安撫；十一年，罷。嘉定十一年，置沿江制置副使。淳祐五年，兼荊湖北路安撫使。九年，罷。景定元年，改荊湖制置使。咸淳七年，罷。崇甯戸九萬六千七百六十九，口二十四萬七百六十七。貢銀。縣七：",
+              "locator": "宋史·卷088（维基文库固定版本）·鄂州，緊，江夏郡，武昌軍節度。初爲武淸軍，至道二…"
+            },
+            {
+              "sourceId": "song-research-songshi-88",
+              "sourceTitle": "宋史·卷088（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+              "quote": "江夏，緊。\n崇陽，望。唐縣。開寶八年，又改今名。",
+              "locator": "宋史·卷088（维基文库固定版本）·江夏，緊。\n崇陽，望。唐縣。開寶八年，又改今名。"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+        "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。"
+      ]
+    },
+    {
+      "id": "song-geography-fuzhou-fujian",
+      "periodId": "song",
+      "catalogPlaceId": "fuzhou-fujian",
+      "name": "福州",
+      "region": "南宋·福建路",
+      "summary": "宋代福州为长乐郡、威武军节度所在地，建炎三年升帅府，旧领福建路钤辖。文献在所属县中并列闽、侯官，并列荔枝、紫菜、红花蕉布等贡物；州、附属县与物产区应分别阅读。",
+      "namingNote": "宋代显示福州，不提前称明代福州府；闽县与侯官县为不同县，沿海物产记述不证明海岸位置。",
+      "searchNames": [
+        "福州",
+        "福州",
+        "南宋·福建路"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "宋代福州为长乐郡、威武军节度所在地，建炎三年升帅府，旧领福建路钤辖。文献在所属县中并列闽、侯官，并列荔枝、紫菜、红花蕉布等贡物；州、附属县与物产区应分别阅读。",
+          "evidence": [
+            {
+              "sourceId": "song-research-songshi-89",
+              "sourceTitle": "宋史·卷089（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7089&oldid=1875817",
+              "quote": "福州，大都督府，長樂郡，威武軍節度。舊領福建路鈐轄，建炎三年陞帥府。崇甯戸二十一萬一千五百五十二。貢茘枝、鹿角菜、紫菜。元豐貢紅花蕉布。縣十二：",
+              "locator": "宋史·卷089（维基文库固定版本）·福州，大都督府，長樂郡，威武軍節度。舊領福建路鈐…"
+            },
+            {
+              "sourceId": "song-research-songshi-89",
+              "sourceTitle": "宋史·卷089（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7089&oldid=1875817",
+              "quote": "閩，望。\n侯官，望。",
+              "locator": "宋史·卷089（维基文库固定版本）·閩，望。\n侯官，望。"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+        "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。"
+      ]
+    },
+    {
+      "id": "song-geography-yuzhou-chongqing",
+      "periodId": "song",
+      "catalogPlaceId": "yuzhou-chongqing",
+      "name": "重庆府",
+      "region": "南宋·夔州路",
+      "summary": "渝州在崇宁元年改恭州；《宋史》光宗本纪淳熙十六年八月明确记升恭州为重庆府，因此1200年应显示重庆府。地理志所写“高宗潜藩”与本纪存在差异，本条据本纪核定1189年升府，不沿用错误帝号。",
+      "namingNote": "渝州、恭州、重庆府分别属不同阶段；1200年源模型若仍写渝州，应提示名称与层级冲突，不能把州级面无说明当作已核重庆府界。",
+      "searchNames": [
+        "重庆府",
+        "重庆府",
+        "南宋·夔州路"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "渝州在崇宁元年改恭州；《宋史》光宗本纪淳熙十六年八月明确记升恭州为重庆府，因此1200年应显示重庆府。地理志所写“高宗潜藩”与本纪存在差异，本条据本纪核定1189年升府，不沿用错误帝号。",
+          "evidence": [
+            {
+              "sourceId": "song-research-songshi-89",
+              "sourceTitle": "宋史·卷089（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7089&oldid=1875817",
+              "quote": "重慶府，下，本恭州，巴郡，軍事。舊爲渝州。崇甯元年，改恭州，後以髙宗潛藩，陞爲府。舊領萬壽縣，乾德五年，廢。雍熙中，又廢南平縣。慶暦八年，以黔州羈縻南、溱二州來隸。皇祐五年，以南州置南川縣。熙寧七年，以南川縣隸南平軍。元豐戸四萬二千八十。貢葛布、牡丹皮。縣三：",
+              "locator": "宋史·卷089（维基文库固定版本）·重慶府，下，本恭州，巴郡，軍事。舊爲渝州。崇甯元…"
+            },
+            {
+              "sourceId": "song-research-songshi-36",
+              "sourceTitle": "宋史·卷036（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7036&oldid=2285197",
+              "quote": "八月甲午，升恭州爲重慶府。",
+              "locator": "宋史·卷036（维基文库固定版本）·八月甲午，升恭州爲重慶府。"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+        "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。",
+        "卷89“高宗潜藩”与光宗本纪升府记载不合；采用卷36淳熙十六年(1189)的明确纪年，不据旧渝州模型宣称重庆府界已核定。"
+      ]
+    },
+    {
+      "id": "song-geography-guizhou-guilin",
+      "periodId": "song",
+      "catalogPlaceId": "guizhou-guilin",
+      "name": "静江府",
+      "region": "南宋·广南西路",
+      "summary": "静江府本桂州，绍兴三年以高宗潜邸升府，原领广南西路兵马钤辖并兼经略、安抚。临桂为所属县；宝祐六年改制置大使是后来的机构变动，不应提前带入1200年。",
+      "namingNote": "宋代当前名为静江府，现代对应桂林地区；唐桂州、明桂林府与城内靖江王府不属于同一年代或层级。",
+      "searchNames": [
+        "静江府",
+        "静江府",
+        "南宋·广南西路"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "静江府本桂州，绍兴三年以高宗潜邸升府，原领广南西路兵马钤辖并兼经略、安抚。临桂为所属县；宝祐六年改制置大使是后来的机构变动，不应提前带入1200年。",
+          "evidence": [
+            {
+              "sourceId": "song-research-songshi-90",
+              "sourceTitle": "宋史·卷090（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7090&oldid=2619985",
+              "quote": "靜江府。本桂州，始安郡，靜江軍節度。大觀元年，爲大都督府，又升爲帥府。舊領廣南西路兵馬鈐轄，兼本路經略、安撫使。紹興三年，以髙宗潛邸，升府。寶祐六年，改廣西制置大使，後四年廢，復爲廣西路經略、安撫使。元豐戸四萬六千三百四十三。貢銀、桂心。縣十一：",
+              "locator": "宋史·卷090（维基文库固定版本）·靜江府。本桂州，始安郡，靜江軍節度。大觀元年，爲…"
+            },
+            {
+              "sourceId": "song-research-songshi-90",
+              "sourceTitle": "宋史·卷090（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7090&oldid=2619985",
+              "quote": "臨桂，緊。嘉祐六年，廢慕化縣入焉。",
+              "locator": "宋史·卷090（维基文库固定版本）·臨桂，緊。嘉祐六年，廢慕化縣入焉。"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+        "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。"
+      ]
+    },
+    {
+      "id": "song-geography-mingzhou",
+      "periodId": "song",
+      "catalogPlaceId": "mingzhou",
+      "name": "庆元府",
+      "region": "南宋·两浙东路",
+      "summary": "明州在绍熙五年以宁宗潜邸升庆元府，1200年应采用升府后的名称。绍兴间沿海制置机构多次置罢；昌国县在熙宁六年由鄞县析置，说明府域还包含海岛县，不能只以府城范围理解。",
+      "namingNote": "庆元府位于今宁波地区，不是处州庆元县；唐明州、南宋庆元府和明代宁波府按时代区分。",
+      "searchNames": [
+        "庆元府",
+        "庆元府",
+        "南宋·两浙东路"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "明州在绍熙五年以宁宗潜邸升庆元府，1200年应采用升府后的名称。绍兴间沿海制置机构多次置罢；昌国县在熙宁六年由鄞县析置，说明府域还包含海岛县，不能只以府城范围理解。",
+          "evidence": [
+            {
+              "sourceId": "song-research-songshi-88",
+              "sourceTitle": "宋史·卷088（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+              "quote": "慶元府，本明州，奉化郡，建隆元年，陞奉國軍節度。本上州，大觀元年，陞爲望。紹興初，置沿海制置使。八年，以浙東安撫使兼制司；十一年，罷；隆興元年，復置。淳熙元年，魏惠憲王自宣州移鎭，置長史、司馬。紹熙五年，以甯宗潛邸，陞爲府。",
+              "locator": "宋史·卷088（维基文库固定版本）·慶元府，本明州，奉化郡，建隆元年，陞奉國軍節度。…"
+            },
+            {
+              "sourceId": "song-research-songshi-88",
+              "sourceTitle": "宋史·卷088（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+              "quote": "鄞，望。\n奉化，望。",
+              "locator": "宋史·卷088（维基文库固定版本）·鄞，望。\n奉化，望。"
+            },
+            {
+              "sourceId": "song-research-songshi-88",
+              "sourceTitle": "宋史·卷088（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+              "quote": "昌國。下。熙寧六年，析鄞縣地置，有鹽監。紹興間，陞望。",
+              "locator": "宋史·卷088（维基文库固定版本）·昌國。下。熙寧六年，析鄞縣地置，有鹽監。紹興間，…"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+        "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。"
+      ]
+    },
+    {
+      "id": "song-geography-hongzhou",
+      "periodId": "song",
+      "catalogPlaceId": "hongzhou",
+      "name": "隆兴府",
+      "region": "南宋·江南西路",
+      "summary": "洪州在孝宗隆兴元年十月升隆兴府，本纪有明确纪日。地理志另作“隆兴三年”，与本纪及年号年数不合，本条采用本纪1163年纪年并保留差异。南昌、新建为不同县，新建在太平兴国六年置。",
+      "namingNote": "1200年显示隆兴府，不用唐洪州或明南昌府作为当前名称；“隆兴三年”原文作为存疑记载展示，不能生成1165年升府节点。",
+      "searchNames": [
+        "隆兴府",
+        "隆兴府",
+        "南宋·江南西路"
+      ],
+      "confidence": "documented-administrative-description",
+      "facts": [
+        {
+          "topic": "administration",
+          "statement": "洪州在孝宗隆兴元年十月升隆兴府，本纪有明确纪日。地理志另作“隆兴三年”，与本纪及年号年数不合，本条采用本纪1163年纪年并保留差异。南昌、新建为不同县，新建在太平兴国六年置。",
+          "evidence": [
+            {
+              "sourceId": "song-research-songshi-88",
+              "sourceTitle": "宋史·卷088（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+              "quote": "隆興府，本洪州，都督府，豫章郡，鎭南軍節度。舊領江南西路兵馬鈐轄。紹興三年，以淮西屯兵聽江西節制，兼宣撫舒、蘄、光、黃、安、復州，尋罷。四年，止稱安撫、制置使。八年，復兼安撫、制置大使。隆興三年，以孝宗潛藩，陞爲府。崇甯戸二十六萬一千一百五，口五十三萬二千四百四十六。貢葛。縣八：",
+              "locator": "宋史·卷088（维基文库固定版本）·隆興府，本洪州，都督府，豫章郡，鎭南軍節度。舊領…"
+            },
+            {
+              "sourceId": "song-research-songshi-33",
+              "sourceTitle": "宋史·卷033（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7033&oldid=7908408",
+              "quote": "辛巳，升洪州爲隆興府。",
+              "locator": "宋史·卷033（维基文库固定版本）·辛巳，升洪州爲隆興府。"
+            },
+            {
+              "sourceId": "song-research-songshi-88",
+              "sourceTitle": "宋史·卷088（维基文库固定版本）",
+              "sourceKind": "historical-text",
+              "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+              "quote": "新建，望。太平興國六年置縣。",
+              "locator": "宋史·卷088（维基文库固定版本）·新建，望。太平興國六年置縣。"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+        "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。",
+        "卷88作“隆兴三年”，卷33本纪明确在隆兴元年十月；本轮据本纪采用1163年，保留两处原文供复核。"
+      ]
+    }
+  ],
+  "statistics": {
+    "entryCount": 29,
+    "cityProfileCount": 29,
+    "boundaryOnlyCount": 0,
+    "sourceCount": 16,
+    "quoteCount": 78,
+    "boundaryClaims": 0
+  },
+  "notes": [
+    "1200年为阅读截面，北宋沿革及1200年以后事件各自标注年代，不将全宋范围视作南宋疆域。",
+    "正文与名称为简体，史料引文保留原字形。",
+    "重庆升府与隆兴升府以本纪校正地理志疑文，并保留原文差异。"
+  ]
+}

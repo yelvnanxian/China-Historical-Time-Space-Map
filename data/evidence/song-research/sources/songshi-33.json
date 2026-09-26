@@ -1,0 +1,13 @@
+{
+  "id": "song-research-songshi-33",
+  "title": "宋史·卷033（维基文库固定版本）",
+  "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7033&oldid=7908408",
+  "kind": "official-history",
+  "snapshotPath": "data/evidence/song-research/sources/songshi-33.txt",
+  "snapshotSha256": "57e3f076b472bf5045a1da3aa58159d4c550ce5a95c929bd7e68e7a1caa0b18d",
+  "rawSnapshotPath": "data/evidence/song-research/sources/songshi-33.api.json",
+  "rawSnapshotSha256": "7009c88004f2b2f956041a4b58e96754dd627dbce407d946cba288ce2ed7690c",
+  "retrievedAt": "2026-09-26T18:29:10.065376+00:00",
+  "revisionId": "7908408",
+  "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7033"
+}

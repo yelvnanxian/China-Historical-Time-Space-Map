@@ -43,6 +43,7 @@ import { canInteract, mapInteractionOptions, type MapInteractionMode } from "../
 import type { TangBoundaryCrosswalk } from "../shared/tang-boundary-crosswalk";
 import TangJurisdictionInfo from "./components/TangJurisdictionInfo";
 import MingJurisdictionInfo from "./components/MingJurisdictionInfo";
+import SongJurisdictionInfo from "./components/SongJurisdictionInfo";
 
 function formatYear(year: number) {
   return year < 0 ? `公元前 ${Math.abs(year)} 年` : `公元 ${year} 年`;
@@ -198,6 +199,11 @@ export default function App() {
         const initial = parseExploration(window.location.search, data);
         setExploration(initial);
         setCatalog(data);
+        const requestedPlace = new URLSearchParams(window.location.search).get("place");
+        if (requestedPlace && requestedPlace === initial.placeId && !initial.eventId) {
+          setDetailsOpen(true);
+          setFocusRequest(value => value + 1);
+        }
         const search = serializeExploration(initial);
         if (window.location.search !== search)
           window.history.replaceState(
@@ -275,6 +281,11 @@ export default function App() {
       eventId: null,
       detailsView: "place",
     });
+  }
+  function viewJurisdiction(id: string) {
+    if (!canInteract(interactionMode, "cities")) setInteractionMode("cities");
+    setDetailsOpen(false);
+    setJurisdictionRequest({ id, requestId: Date.now() });
   }
   function closeEventDetail(tab: "place" | "events") {
     commit({ ...exploration, eventId: null, detailsView: tab });
@@ -561,7 +572,7 @@ export default function App() {
                 <span>历史地图</span>
                 <i />
                 <small>
-                  中国及周边地区
+                  {periodId === "song" ? "1200年 · 南宋及同期诸政权" : "中国及周边地区"}
                 </small>
               </div>
               <div className="map-display-mode" role="group" aria-label="地图点选对象" data-tour="display-mode">
@@ -704,16 +715,22 @@ export default function App() {
                     <CityPeriodHighlight period={period} placeId={place.id} data={cityProfiles} error={cityProfilesError}
                       onRetry={() => setCityProfilesAttempt(value => value + 1)} />
                     {periodId === "tang" && <TangJurisdictionInfo name={placeName(place, period)} link={tangBoundaries?.places[place.id]} loading={!crosswalkLoaded}
-                      onView={id => { setDetailsOpen(false); setJurisdictionRequest({ id, requestId: Date.now() }); }} />}
+                      onView={viewJurisdiction} />}
                     {periodId === "ming" && <MingJurisdictionInfo placeId={place.id}
-                      onView={id => { setDetailsOpen(false); setJurisdictionRequest({ id, requestId: Date.now() }); }} />}
-                    <div className="detail-section">
+                      onView={viewJurisdiction} />}
+                    {periodId === "song" && <SongJurisdictionInfo placeId={place.id}
+                      onView={viewJurisdiction} />}
+                    {periodId === "song" ? <details className="detail-section period-background">
+                      <summary>历代地点概览（跨朝代）</summary>
+                      <p className="quiet-text">以下保留此地原有的跨朝代介绍；宋代建置与1200年名称见上方本期档案。</p>
+                      <p className="place-summary">{place.summary}</p>
+                    </details> : <div className="detail-section">
                       <h3>
                         <span />
                         地点概览
                       </h3>
                       <p className="place-summary">{place.summary}</p>
-                    </div>
+                    </div>}
                     <div className="place-facts">
                       <div>
                         <span>当前截面</span>
@@ -795,6 +812,7 @@ export default function App() {
                                 ? "位置存在不确定性"
                                 : "地点定位"}
                           </strong>
+                          {periodId === "song" && <p>沿用此地点的地图参考坐标，尚未逐城核定1200年治所；以下定位说明可能涉及其他朝代。</p>}
                           <p>{place.location.note}</p>
                         </div>
                       </div>

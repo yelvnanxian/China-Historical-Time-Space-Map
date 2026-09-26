@@ -1,0 +1,13 @@
+{
+  "id": "song-research-jinshi-26",
+  "title": "金史·卷26（维基文库固定版本）",
+  "url": "https://zh.wikisource.org/w/index.php?title=%E9%87%91%E5%8F%B2/%E5%8D%B726&oldid=2606540",
+  "kind": "official-history",
+  "snapshotPath": "data/evidence/song-research/sources/jinshi-26.txt",
+  "snapshotSha256": "6b9144a2d81e45cdd451327077ab9591174a4a8abb4f94e68c958a86964f2d6f",
+  "rawSnapshotPath": "data/evidence/song-research/sources/jinshi-26.api.json",
+  "rawSnapshotSha256": "b9d454983e7dc0a4ea4857b412177090a6c93464af2467635b78f104262816e6",
+  "retrievedAt": "2026-09-26T18:29:46.044933+00:00",
+  "revisionId": "2606540",
+  "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E9%87%91%E5%8F%B2%2F%E5%8D%B726"
+}

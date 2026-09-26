@@ -17,17 +17,20 @@ const historical = readCollection(manifest.historical.url);
 const modern = ["central-plains-overview-part0", "jianghuai-overview-part0", "jianghuai-overview-part1", "jianghuai-overview-part2", "jianghuai-240-64-part0"]
   .flatMap(id => readCollection(manifest.modernRegions.find(region => region.id === id)!.url).features);
 
-test("明代复用真实现代地物，唐代755治所不进入明代地图或搜索", () => {
+test("宋明复用真实现代地物，唐代755治所不跨朝代进入地图或搜索", () => {
   const all = [...historical.features, ...modern];
   const forPeriod = (period: string) => all.filter(feature => detailBelongsToPeriod(feature.properties, period));
   assert.ok(hasDetailedGeography("ming") && hasDetailedGeography("tang"));
-  assert.equal(hasDetailedGeography("song"), false);
+  assert.equal(hasDetailedGeography("song"), true);
   assert.deepEqual(forPeriod("ming"), modern);
   assert.deepEqual(forPeriod("tang"), all);
-  assert.deepEqual(forPeriod("song"), []);
+  assert.deepEqual(forPeriod("song"), modern);
+  assert.deepEqual(forPeriod("yuan"), []);
   assert.equal(detailBelongsToPeriod({ ...historical.features[0].properties, year: 741 }, "tang"), false);
   assert.equal(detailBelongsToPeriod({ ...modern[0].properties, modernReferenceOnly: false }, "ming"), false);
   assert.equal(detailBelongsToPeriod({ ...modern[0].properties, kind: "settlement" }, "ming"), false);
+  assert.equal(detailBelongsToPeriod({ ...modern[0].properties, kind: "settlement" }, "song"), false);
+  assert.equal(detailBelongsToPeriod({ ...modern[0].properties, modernReferenceOnly: false }, "song"), false);
 });
 
 test("唐代府州与县治依真实资料的不同阈值出现，放大不会提前显示低层治所", () => {

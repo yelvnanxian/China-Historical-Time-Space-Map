@@ -14,7 +14,9 @@ const hash = (data: Uint8Array) => createHash("sha256").update(data).digest("hex
 
 test("terrain areas retain exact published OSM peak identities and original DEM hashes", async () => {
   assert.equal(manifest.areaCount, manifest.areas.length);
-  assert.equal(new Set(manifest.areas.map(area => area.regionId)).size, 5);
+  for (const region of ["qinling", "taihang", "qilian", "tianshan", "west-sichuan", "taihu", "jianghuai", "city-fuzhou", "city-quanzhou", "city-ming-nanchang"]) {
+    assert.ok(manifest.areas.some(area => area.regionId === region), `retained terrain coverage: ${region}`);
+  }
   const sourceTiles = new Set<string>();
   for (const area of manifest.areas) {
     const peakData = await readFile(path.join(root, "public", area.sourcePeak.sourcePackUrl));
@@ -58,7 +60,7 @@ test("published contours are correctly attributed elevation lines inside DEM win
       assert.equal(feature.geometry.type, "LineString");
       assert.equal(feature.properties.areaId, area.id);
       assert.equal(feature.properties.modernReferenceOnly, true);
-      assert.equal(feature.properties.elevation % area.contourInterval, 0);
+      assert.ok(feature.properties.elevation % area.contourInterval === 0, "negative source elevations also follow the interval");
       assert.equal(feature.properties.index, feature.properties.elevation % area.indexInterval === 0);
       assert.ok(feature.properties.elevation >= area.elevationRange[0] && feature.properties.elevation <= area.elevationRange[1]);
       if (feature.properties.index) majorLines++;

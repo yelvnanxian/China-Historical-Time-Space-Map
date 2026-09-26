@@ -63,6 +63,10 @@ export function boundaryLevelName(level: BoundaryLevel, periodId?: string): stri
     if (level === "province") return "道（监察区）";
     if (level === "prefecture") return "州 / 郡 / 府";
   }
+  if (periodId === "song") {
+    if (level === "province") return "路及同层建置";
+    if (level === "prefecture") return "府 / 州及同层建置";
+  }
   return boundaryLevelNames[level];
 }
 

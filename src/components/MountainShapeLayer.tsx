@@ -11,7 +11,8 @@ import "../mountain-shapes.css";
 
 type Contours = FeatureCollection<LineString, { id: string; areaId: string; elevation: number; index: boolean }>;
 const empty: Contours = { type: "FeatureCollection", features: [] };
-const regionNames: Record<string, string> = { qinling: "秦岭", taihang: "太行", qilian: "祁连", tianshan: "天山", "west-sichuan": "川西" };
+const regionNames: Record<string, string> = { qinling: "秦岭", taihang: "太行", qilian: "祁连", tianshan: "天山", "west-sichuan": "川西", taihu: "杭州西湖周边", jianghuai: "南京紫金山周边", "city-fuzhou": "福州鼓山周边", "city-quanzhou": "泉州清源山周边", "city-ming-nanchang": "南昌梅岭周边" };
+const areaLabels: Record<string, string> = { "hangzhou-beigaofeng": "北高峰 · 杭州西湖", "nanjing-beigaofeng": "北高峰 · 南京紫金山", "fuzhou-gushan": "鼓山绝顶峰 · 福州", "quanzhou-qingyuan": "清源山 · 泉州", "nanchang-shigunao": "石鼓脑 · 南昌" };
 const lineLayers = ["mountain-shape-contours", "mountain-shape-contour-hit", "mountain-shape-selected"];
 const contourDetailZoom = 9.5;
 const overlap = (a: number[], b: number[]) => a[0] <= b[2] && a[2] >= b[0] && a[1] <= b[3] && a[3] >= b[1];
@@ -209,16 +210,16 @@ export default function MountainShapeLayer({ map, ready, enabled, mode, controls
       <h3><Mountain size={14} />山地近览 · 看山形</h3>
       <p>放大后看等高线、山谷和坡面细节。线越密，地势越陡；线上的数字是现代海拔，棕色山脊线另有来源。</p>
       <p className="mountain-shape-coverage" role="status" aria-live="polite">
-        {!manifest ? "正在读取等高线覆盖清单…" : zoom < 9 ? `当前${zoom.toFixed(1)}级；放大到9级后才会加载近览资料。` : !intersectingAreas.length ? "当前视野暂无DEM等高线近览；地图上的山影和山系范围仍为现代参考。" : loading ? `视野内有${intersectingAreas.length}处近览，正在加载等高线…` : loadedAreaCount ? `已加载${loadedAreaCount}处近览，${features.length.toLocaleString()}条等高线；${zoom < contourDetailZoom ? `继续放大到${contourDetailZoom}级查看全部细线。` : "当前已显示细等高线。"}` : "视野内有近览资料，等待加载…"}
+        {!manifest ? "正在读取等高线覆盖清单…" : zoom < 9 ? `当前${zoom.toFixed(1)}级；放大到9级后才会加载近览资料。` : !intersectingAreas.length ? "当前视野暂无DEM等高线近览；这不表示当地没有山。可从下方选择已收录区域。" : loading ? `视野内有${intersectingAreas.length}处近览，正在加载等高线…` : loadedAreaCount ? `已加载${loadedAreaCount}处近览，数据包含${features.length.toLocaleString()}条当前级别等高线（部分位于视野外）；${zoom < contourDetailZoom ? `继续放大到${contourDetailZoom}级查看全部细线。` : "细等高线已启用。"}` : "视野内有近览资料，等待加载…"}
       </p>
-      <div className="nature-search"><Search size={13} /><input aria-label="搜索山地近览" placeholder="拔仙台、华山、天山…" value={query} onChange={event => setQuery(event.target.value)} /></div>
-      <div className="mountain-shape-shortcuts">{areas.map(area => <button key={area.id} onClick={() => inspect(area)}>{area.name}</button>)}</div>
+      <div className="nature-search"><Search size={13} /><input aria-label="搜索山地近览" placeholder="杭州、紫金山、清源山、华山…" value={query} onChange={event => setQuery(event.target.value)} /></div>
+      <div className="mountain-shape-shortcuts">{areas.map(area => <button key={area.id} onClick={() => inspect(area)}>{areaLabels[area.id] ?? area.name}</button>)}</div>
       {query && !areas.length && <p>此山尚未收录精细高程近览，可使用已有山脊与峰点资料。</p>}
       <p className="nature-detail-note">{manifest ? `当前清单覆盖${manifest.areaCount}处真实峰点周边约50×50公里窗口；` : "近览清单加载后显示已收录窗口；"}等高线不是山脉边界，现代高程不代表所选朝代的地貌复原。</p>
       {loading && <p role="status">正在加载等高线…</p>}{error && <p role="status">{error}<button onClick={retry}>重试</button></p>}
     </section>, controlsContainer)}
     {enabled && interactive && selectedArea && <section className="nature-detail mountain-shape-card" aria-label="山地形态详情">
-      <header><button className="nature-detail-title" aria-expanded={!collapsed} onClick={() => setCollapsed(value => !value)}><Mountain size={15} /><strong>{selectedArea.name}周边</strong><span>{collapsed ? "展开" : "收起"}</span></button><button aria-label="关闭山地形态详情" onClick={() => setSelection(undefined)}><X size={16} /></button></header>
+      <header><button className="nature-detail-title" aria-expanded={!collapsed} onClick={() => setCollapsed(value => !value)}><Mountain size={15} /><strong>{areaLabels[selectedArea.id] ?? selectedArea.name}周边</strong><span>{collapsed ? "展开" : "收起"}</span></button><button aria-label="关闭山地形态详情" onClick={() => setSelection(undefined)}><X size={16} /></button></header>
       {!collapsed && <div className="nature-detail-body">
         <span className="nature-kind">{selection?.elevation !== undefined ? `${selection.elevation}米等高线` : "山坡与谷地近览"} · 现代地形</span>
         <p>每条细线连接相同高程的位置，相邻等高线相差{selectedArea.contourInterval}米；粗线间隔{selectedArea.indexInterval}米。阴影随坡向和坡度变化，帮助观察山体起伏。</p>

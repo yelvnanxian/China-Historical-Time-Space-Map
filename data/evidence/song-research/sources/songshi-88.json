@@ -1,0 +1,13 @@
+{
+  "id": "song-research-songshi-88",
+  "title": "宋史·卷088（维基文库固定版本）",
+  "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+  "kind": "official-history",
+  "snapshotPath": "data/evidence/song-research/sources/songshi-88.txt",
+  "snapshotSha256": "2f005c4051b212355805758af0f5423addc7262a500d5685edaa59689c3da0c0",
+  "rawSnapshotPath": "data/evidence/song-research/sources/songshi-88.api.json",
+  "rawSnapshotSha256": "b5667994736c8d0ec4a93e8bcb3ed0489a47afcbb34861a5e4c138839936cf24",
+  "retrievedAt": "2026-09-26T18:28:27.682311+00:00",
+  "revisionId": "1873924",
+  "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7088"
+}

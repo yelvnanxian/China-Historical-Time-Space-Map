@@ -1,0 +1,13 @@
+{
+  "id": "song-research-songshi-486",
+  "title": "宋史·卷486（维基文库固定版本）",
+  "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7486&oldid=2325721",
+  "kind": "official-history",
+  "snapshotPath": "data/evidence/song-research/sources/songshi-486.txt",
+  "snapshotSha256": "e00359f7af81fae17ee8152d9f55af3a12a38c02aecdf70a91f1431d2645bb16",
+  "rawSnapshotPath": "data/evidence/song-research/sources/songshi-486.api.json",
+  "rawSnapshotSha256": "66428e6a258a1e56a4f918a8ac90a338abf370a1539324b244b5a1a00dbc86c4",
+  "retrievedAt": "2026-09-26T18:28:28.852198+00:00",
+  "revisionId": "2325721",
+  "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7486"
+}

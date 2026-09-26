@@ -109,7 +109,7 @@
       "startYear": 960,
       "endYear": 1279,
       "subtitle": "并立的山河",
-      "description": "南宋、金、西夏同时存在；不是单一王朝的全国地图。",
+      "description": "以1200年为代表截面，区分南宋、金、西夏与大理；建置档案另列北宋沿革和后续事件，不能把全宋史事当作当年辖境。",
       "color": "#809786",
       "regimeIds": [
         "southern-song",
@@ -1160,13 +1160,16 @@
         "qingshigao",
         "zizhitongjian-220",
         "tang-nw-jiutangshu-38",
-        "mingshi-geography-42"
+        "mingshi-geography-42",
+        "song-research-jinshi-26",
+        "song-research-songshi-87"
       ],
       "nameByPeriod": {
         "sui": "大兴城",
         "yuan": "奉元",
         "ming": "西安",
-        "qing": "西安"
+        "qing": "西安",
+        "song": "京兆府"
       },
       "typeByPeriod": {
         "han": "capital",
@@ -1232,11 +1235,14 @@
         "qingshigao",
         "zizhitongjian-220",
         "tang-nw-jiutangshu-38",
-        "mingshi-geography-42"
+        "mingshi-geography-42",
+        "song-research-jinshi-25",
+        "song-research-songshi-85"
       ],
       "nameByPeriod": {
         "han": "雒阳",
-        "sanguo": "洛阳"
+        "sanguo": "洛阳",
+        "song": "河南府"
       },
       "typeByPeriod": {
         "sanguo": "capital",
@@ -1337,7 +1343,8 @@
         "qingshigao",
         "tang-nw-jiutangshu-39",
         "tang-nw-jiutangshu-38",
-        "mingshi-geography-40"
+        "mingshi-geography-40",
+        "song-research-jinshi-24"
       ],
       "nameByPeriod": {
         "han": "蓟",
@@ -1400,7 +1407,9 @@
         "qingshigao",
         "context-kaifeng",
         "tang-nw-jiutangshu-38",
-        "mingshi-geography-42"
+        "mingshi-geography-42",
+        "song-research-jinshi-25",
+        "song-research-songshi-85"
       ],
       "nameByPeriod": {
         "qin": "浚仪",
@@ -1410,7 +1419,7 @@
         "nanbei": "浚仪",
         "sui": "浚仪",
         "tang": "汴州",
-        "song": "开封"
+        "song": "南京开封府"
       },
       "evidence": [
         {
@@ -1467,7 +1476,8 @@
         "qingshigao",
         "tang-se-jiutangshu-40",
         "tang-se-nanjing",
-        "mingshi-geography-40"
+        "mingshi-geography-40",
+        "song-research-songshi-88"
       ],
       "nameByPeriod": {
         "han": "秣陵",
@@ -1476,7 +1486,7 @@
         "nanbei": "建康",
         "sui": "江宁",
         "tang": "江宁",
-        "song": "建康",
+        "song": "建康府",
         "yuan": "集庆"
       },
       "typeByPeriod": {
@@ -1525,14 +1535,16 @@
         "qingshigao",
         "tang-se-jiutangshu-40",
         "tang-se-hangzhou",
-        "mingshi-geography-44"
+        "mingshi-geography-44",
+        "song-research-songshi-36",
+        "song-research-songshi-88"
       ],
       "nameByPeriod": {
         "han": "钱唐",
         "sanguo": "钱唐",
         "jin": "钱唐",
         "nanbei": "钱唐",
-        "song": "临安"
+        "song": "临安府"
       },
       "typeByPeriod": {
         "song": "capital"
@@ -1579,9 +1591,12 @@
         "zizhitongjian-218",
         "tang-se-jiutangshu-41",
         "tang-se-chengdu",
-        "mingshi-geography-43"
+        "mingshi-geography-43",
+        "song-research-songshi-89"
       ],
-      "nameByPeriod": {},
+      "nameByPeriod": {
+        "song": "成都府"
+      },
       "typeByPeriod": {
         "sanguo": "capital"
       },
@@ -1641,11 +1656,13 @@
         "qingshigao",
         "tang-se-jiutangshu-41",
         "tang-se-guangzhou",
-        "mingshi-geography-45"
+        "mingshi-geography-45",
+        "song-research-songshi-90"
       ],
       "nameByPeriod": {
         "han": "番禺",
-        "sui": "番禺"
+        "sui": "番禺",
+        "song": "广州"
       }
     },
     {
@@ -1687,14 +1704,16 @@
         "qingshigao",
         "tang-se-jiutangshu-40",
         "tang-se-yangzhou",
-        "mingshi-geography-40"
+        "mingshi-geography-40",
+        "song-research-songshi-88"
       ],
       "nameByPeriod": {
         "han": "江都",
         "sanguo": "广陵",
         "jin": "广陵",
         "nanbei": "广陵",
-        "sui": "江都"
+        "sui": "江都",
+        "song": "扬州"
       }
     },
     {
@@ -1732,9 +1751,12 @@
         "mingshi",
         "qingshigao",
         "tang-se-jiutangshu-39",
-        "mingshi-geography-44"
+        "mingshi-geography-44",
+        "song-research-songshi-85"
       ],
-      "nameByPeriod": {}
+      "nameByPeriod": {
+        "song": "襄阳府"
+      }
     },
     {
       "id": "jingzhou",
@@ -1775,9 +1797,12 @@
         "mingshi",
         "qingshigao",
         "tang-se-jiutangshu-39",
-        "mingshi-geography-44"
+        "mingshi-geography-44",
+        "song-research-songshi-88"
       ],
-      "nameByPeriod": {}
+      "nameByPeriod": {
+        "song": "江陵府"
+      }
     },
     {
       "id": "jinyang",
@@ -1819,10 +1844,12 @@
         "qingshigao",
         "tang-nw-jiutangshu-39",
         "tang-nw-jiutangshu-38",
-        "mingshi-geography-41"
+        "mingshi-geography-41",
+        "song-research-jinshi-26",
+        "song-research-songshi-86"
       ],
       "nameByPeriod": {
-        "song": "太原",
+        "song": "平晋县",
         "yuan": "太原",
         "ming": "太原县",
         "qing": "太原"
@@ -1867,7 +1894,8 @@
         "mingshi",
         "qingshigao",
         "tang-nw-jiutangshu-39",
-        "mingshi-geography-41"
+        "mingshi-geography-41",
+        "song-research-jinshi-24"
       ],
       "nameByPeriod": {
         "sui": "云内地区",
@@ -1915,9 +1943,12 @@
         "mingshi",
         "qingshigao",
         "tang-nw-jiutangshu-38",
-        "mingshi-geography-41"
+        "mingshi-geography-41",
+        "song-research-jinshi-25"
       ],
-      "nameByPeriod": {}
+      "nameByPeriod": {
+        "song": "临淄县"
+      }
     },
     {
       "id": "handan",
@@ -1956,9 +1987,12 @@
         "mingshi",
         "qingshigao",
         "tang-nw-jiutangshu-39",
-        "mingshi-geography-40"
+        "mingshi-geography-40",
+        "song-research-jinshi-25"
       ],
-      "nameByPeriod": {}
+      "nameByPeriod": {
+        "song": "邯郸县"
+      }
     },
     {
       "id": "tongguan",
@@ -1994,9 +2028,12 @@
         "qingshigao",
         "zizhitongjian-218",
         "tang-nw-zizhitongjian-218",
-        "mingshi-geography-42"
+        "mingshi-geography-42",
+        "song-research-jinshi-26"
       ],
-      "nameByPeriod": {},
+      "nameByPeriod": {
+        "song": "潼关"
+      },
       "evidence": [
         {
           "id": "place-tongguan-text",
@@ -2083,12 +2120,15 @@
         "yuanshi",
         "mingshi",
         "qingshigao",
-        "mingshi-geography-42"
+        "mingshi-geography-42",
+        "song-research-songshi-485",
+        "song-research-songshi-486"
       ],
       "nameByPeriod": {
         "yuan": "中兴路",
         "ming": "宁夏",
-        "qing": "宁夏"
+        "qing": "宁夏",
+        "song": "兴庆府"
       },
       "typeByPeriod": {
         "song": "capital"
@@ -2146,9 +2186,13 @@
         "qingshigao",
         "tang-se-jiutangshu-40",
         "tang-se-quanzhou",
-        "mingshi-geography-45"
+        "mingshi-geography-45",
+        "song-research-songshi-85",
+        "song-research-songshi-89"
       ],
-      "nameByPeriod": {}
+      "nameByPeriod": {
+        "song": "泉州"
+      }
     },
     {
       "id": "dali",
@@ -2178,10 +2222,13 @@
         "mingshi",
         "qingshigao",
         "tang-se-dali",
-        "mingshi-geography-46"
+        "mingshi-geography-46",
+        "song-research-dali-reference",
+        "song-research-songshi-488"
       ],
       "nameByPeriod": {
-        "tang": "太和城"
+        "tang": "太和城",
+        "song": "大理"
       },
       "typeByPeriod": {
         "tang": "capital",
@@ -2223,9 +2270,13 @@
         "yuanshi",
         "qingshigao",
         "tang-nw-jiutangshu-40",
-        "tang-nw-jiutangshu-38"
+        "tang-nw-jiutangshu-38",
+        "song-research-dunhuang-reference",
+        "song-research-songshi-485"
       ],
-      "nameByPeriod": {}
+      "nameByPeriod": {
+        "song": "沙州"
+      }
     },
     {
       "id": "mawei",
@@ -3379,16 +3430,20 @@
       ],
       "periodIds": [
         "tang",
-        "ming"
+        "ming",
+        "song"
       ],
       "nameByPeriod": {
         "tang": "济南郡",
-        "ming": "济南"
+        "ming": "济南",
+        "song": "济南府"
       },
       "sourceIds": [
         "tang-nw-jiutangshu-38",
         "tang-nw-geonames",
-        "mingshi-geography-41"
+        "mingshi-geography-41",
+        "song-research-jinshi-25",
+        "song-research-songshi-85"
       ],
       "location": {
         "accuracy": "approximate",
@@ -3435,16 +3490,19 @@
       ],
       "periodIds": [
         "tang",
-        "ming"
+        "ming",
+        "song"
       ],
       "nameByPeriod": {
         "tang": "鲁郡",
-        "ming": "兖州"
+        "ming": "兖州",
+        "song": "兖州"
       },
       "sourceIds": [
         "tang-nw-jiutangshu-38",
         "tang-nw-geonames",
-        "mingshi-geography-41"
+        "mingshi-geography-41",
+        "song-research-jinshi-25"
       ],
       "location": {
         "accuracy": "approximate",
@@ -4252,16 +4310,19 @@
       ],
       "periodIds": [
         "tang",
-        "ming"
+        "ming",
+        "song"
       ],
       "sourceIds": [
         "tang-se-jiutangshu-40",
         "tang-se-suzhou",
-        "mingshi-geography-40"
+        "mingshi-geography-40",
+        "song-research-songshi-88"
       ],
       "nameByPeriod": {
         "tang": "吴郡",
-        "ming": "苏州"
+        "ming": "苏州",
+        "song": "平江府"
       },
       "location": {
         "accuracy": "approximate",
@@ -4359,16 +4420,19 @@
       ],
       "periodIds": [
         "tang",
-        "ming"
+        "ming",
+        "song"
       ],
       "sourceIds": [
         "tang-se-jiutangshu-40",
         "tang-se-ningbo",
-        "mingshi-geography-44"
+        "mingshi-geography-44",
+        "song-research-songshi-88"
       ],
       "nameByPeriod": {
         "tang": "余姚郡",
-        "ming": "宁波"
+        "ming": "宁波",
+        "song": "庆元府"
       },
       "location": {
         "accuracy": "approximate",
@@ -4465,16 +4529,20 @@
       ],
       "periodIds": [
         "tang",
-        "ming"
+        "ming",
+        "song"
       ],
       "sourceIds": [
         "tang-se-jiutangshu-40",
         "tang-se-nanchang",
-        "mingshi-geography-43"
+        "mingshi-geography-43",
+        "song-research-songshi-33",
+        "song-research-songshi-88"
       ],
       "nameByPeriod": {
         "tang": "豫章郡",
-        "ming": "南昌"
+        "ming": "南昌",
+        "song": "隆兴府"
       },
       "location": {
         "accuracy": "approximate",
@@ -4604,15 +4672,18 @@
       ],
       "periodIds": [
         "tang",
-        "ming"
+        "ming",
+        "song"
       ],
       "sourceIds": [
         "tang-se-jiutangshu-40",
-        "mingshi-geography-44"
+        "mingshi-geography-44",
+        "song-research-songshi-88"
       ],
       "nameByPeriod": {
         "tang": "江夏郡",
-        "ming": "武昌"
+        "ming": "武昌",
+        "song": "鄂州"
       },
       "location": {
         "accuracy": "approximate",
@@ -4641,16 +4712,19 @@
       ],
       "periodIds": [
         "tang",
-        "ming"
+        "ming",
+        "song"
       ],
       "sourceIds": [
         "tang-se-jiutangshu-40",
         "tang-se-fuzhou",
-        "mingshi-geography-45"
+        "mingshi-geography-45",
+        "song-research-songshi-89"
       ],
       "nameByPeriod": {
         "tang": "长乐郡",
-        "ming": "福州"
+        "ming": "福州",
+        "song": "福州"
       },
       "location": {
         "accuracy": "approximate",
@@ -5053,16 +5127,20 @@
       ],
       "periodIds": [
         "tang",
-        "ming"
+        "ming",
+        "song"
       ],
       "sourceIds": [
         "tang-se-jiutangshu-39",
         "tang-se-yuzhou-prefecture",
-        "mingshi-geography-43"
+        "mingshi-geography-43",
+        "song-research-songshi-36",
+        "song-research-songshi-89"
       ],
       "nameByPeriod": {
         "tang": "南平郡",
-        "ming": "重庆"
+        "ming": "重庆",
+        "song": "重庆府"
       },
       "location": {
         "accuracy": "approximate",
@@ -5160,16 +5238,19 @@
       ],
       "periodIds": [
         "tang",
-        "ming"
+        "ming",
+        "song"
       ],
       "sourceIds": [
         "tang-se-jiutangshu-41",
         "tang-se-guilin",
-        "mingshi-geography-45"
+        "mingshi-geography-45",
+        "song-research-songshi-90"
       ],
       "nameByPeriod": {
         "tang": "始安郡",
-        "ming": "桂林"
+        "ming": "桂林",
+        "song": "静江府"
       },
       "location": {
         "accuracy": "approximate",
@@ -7927,13 +8008,253 @@
       "edition": "维基文库固定修订；原文快照与原始API分别归档",
       "license": "原著公版；电子整理文本条款见维基文库来源页",
       "snapshotPath": "data/evidence/ming-research/sources/mingshi-46.txt"
+    },
+    {
+      "id": "song-research-jinshi-26",
+      "title": "金史·卷26（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E9%87%91%E5%8F%B2/%E5%8D%B726&oldid=2606540",
+      "retrievedAt": "2026-09-26T18:29:46.044933+00:00",
+      "note": "元代编纂正史的固定修订电子文本，原始API、文本和SHA256均归档；各卷会合并不同年代，原文异文保留并在条目说明，不能据文字证明古址坐标、精确边界或历史河岸。",
+      "snapshotPath": "data/evidence/song-research/sources/jinshi-26.txt",
+      "snapshotSha256": "6b9144a2d81e45cdd451327077ab9591174a4a8abb4f94e68c958a86964f2d6f",
+      "author": "脱脱等",
+      "locator": "金史·卷26（维基文库固定版本）",
+      "verification": "verified",
+      "revisionId": "2606540",
+      "edition": "固定修订电子文本及本地快照",
+      "license": "原著公版；电子整理文本条款见来源页"
+    },
+    {
+      "id": "song-research-songshi-87",
+      "title": "宋史·卷087（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7087&oldid=2599839",
+      "retrievedAt": "2026-09-26T18:28:26.471494+00:00",
+      "note": "元代编纂正史的固定修订电子文本，原始API、文本和SHA256均归档；各卷会合并不同年代，原文异文保留并在条目说明，不能据文字证明古址坐标、精确边界或历史河岸。",
+      "snapshotPath": "data/evidence/song-research/sources/songshi-87.txt",
+      "snapshotSha256": "0a32d0e469d8687e2c88552e39c5d43785f086cc7efbecc052a789d225361ba3",
+      "author": "脱脱等",
+      "locator": "宋史·卷087（维基文库固定版本）",
+      "verification": "verified",
+      "revisionId": "2599839",
+      "edition": "固定修订电子文本及本地快照",
+      "license": "原著公版；电子整理文本条款见来源页"
+    },
+    {
+      "id": "song-research-jinshi-25",
+      "title": "金史·卷25（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E9%87%91%E5%8F%B2/%E5%8D%B725&oldid=2607110",
+      "retrievedAt": "2026-09-26T18:29:46.044982+00:00",
+      "note": "元代编纂正史的固定修订电子文本，原始API、文本和SHA256均归档；各卷会合并不同年代，原文异文保留并在条目说明，不能据文字证明古址坐标、精确边界或历史河岸。",
+      "snapshotPath": "data/evidence/song-research/sources/jinshi-25.txt",
+      "snapshotSha256": "12e239a0982b58a19350045ccd122ba71ed5981bd2ee3be451d314dc378c96ac",
+      "author": "脱脱等",
+      "locator": "金史·卷25（维基文库固定版本）",
+      "verification": "verified",
+      "revisionId": "2607110",
+      "edition": "固定修订电子文本及本地快照",
+      "license": "原著公版；电子整理文本条款见来源页"
+    },
+    {
+      "id": "song-research-songshi-85",
+      "title": "宋史·卷085（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7085&oldid=2618630",
+      "retrievedAt": "2026-09-26T18:28:26.527318+00:00",
+      "note": "元代编纂正史的固定修订电子文本，原始API、文本和SHA256均归档；各卷会合并不同年代，原文异文保留并在条目说明，不能据文字证明古址坐标、精确边界或历史河岸。",
+      "snapshotPath": "data/evidence/song-research/sources/songshi-85.txt",
+      "snapshotSha256": "d73915fa3d9410112b93c489686cf060deebecf303dda35585d08cfe6f019364",
+      "author": "脱脱等",
+      "locator": "宋史·卷085（维基文库固定版本）",
+      "verification": "verified",
+      "revisionId": "2618630",
+      "edition": "固定修订电子文本及本地快照",
+      "license": "原著公版；电子整理文本条款见来源页"
+    },
+    {
+      "id": "song-research-jinshi-24",
+      "title": "金史·卷24（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E9%87%91%E5%8F%B2/%E5%8D%B724&oldid=2432662",
+      "retrievedAt": "2026-09-26T18:29:46.044372+00:00",
+      "note": "元代编纂正史的固定修订电子文本，原始API、文本和SHA256均归档；各卷会合并不同年代，原文异文保留并在条目说明，不能据文字证明古址坐标、精确边界或历史河岸。",
+      "snapshotPath": "data/evidence/song-research/sources/jinshi-24.txt",
+      "snapshotSha256": "bd5747f872c34cd63051052e465ed314a06bf2c7c408077c80af7314ee3e7dff",
+      "author": "脱脱等",
+      "locator": "金史·卷24（维基文库固定版本）",
+      "verification": "verified",
+      "revisionId": "2432662",
+      "edition": "固定修订电子文本及本地快照",
+      "license": "原著公版；电子整理文本条款见来源页"
+    },
+    {
+      "id": "song-research-songshi-88",
+      "title": "宋史·卷088（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+      "retrievedAt": "2026-09-26T18:28:27.682311+00:00",
+      "note": "元代编纂正史的固定修订电子文本，原始API、文本和SHA256均归档；各卷会合并不同年代，原文异文保留并在条目说明，不能据文字证明古址坐标、精确边界或历史河岸。",
+      "snapshotPath": "data/evidence/song-research/sources/songshi-88.txt",
+      "snapshotSha256": "2f005c4051b212355805758af0f5423addc7262a500d5685edaa59689c3da0c0",
+      "author": "脱脱等",
+      "locator": "宋史·卷088（维基文库固定版本）",
+      "verification": "verified",
+      "revisionId": "1873924",
+      "edition": "固定修订电子文本及本地快照",
+      "license": "原著公版；电子整理文本条款见来源页"
+    },
+    {
+      "id": "song-research-songshi-36",
+      "title": "宋史·卷036（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7036&oldid=2285197",
+      "retrievedAt": "2026-09-26T18:29:10.106256+00:00",
+      "note": "元代编纂正史的固定修订电子文本，原始API、文本和SHA256均归档；各卷会合并不同年代，原文异文保留并在条目说明，不能据文字证明古址坐标、精确边界或历史河岸。",
+      "snapshotPath": "data/evidence/song-research/sources/songshi-36.txt",
+      "snapshotSha256": "c77fc8699ae821ce549ab6a21458091fdfe1c9cd872d5dcfc31ff681936b8daa",
+      "author": "脱脱等",
+      "locator": "宋史·卷036（维基文库固定版本）",
+      "verification": "verified",
+      "revisionId": "2285197",
+      "edition": "固定修订电子文本及本地快照",
+      "license": "原著公版；电子整理文本条款见来源页"
+    },
+    {
+      "id": "song-research-songshi-89",
+      "title": "宋史·卷089（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7089&oldid=1875817",
+      "retrievedAt": "2026-09-26T18:28:27.711682+00:00",
+      "note": "元代编纂正史的固定修订电子文本，原始API、文本和SHA256均归档；各卷会合并不同年代，原文异文保留并在条目说明，不能据文字证明古址坐标、精确边界或历史河岸。",
+      "snapshotPath": "data/evidence/song-research/sources/songshi-89.txt",
+      "snapshotSha256": "65b36a76fd232a4330aac0b4cd9dd507864842b121bbc780c19653ab273a1cd7",
+      "author": "脱脱等",
+      "locator": "宋史·卷089（维基文库固定版本）",
+      "verification": "verified",
+      "revisionId": "1875817",
+      "edition": "固定修订电子文本及本地快照",
+      "license": "原著公版；电子整理文本条款见来源页"
+    },
+    {
+      "id": "song-research-songshi-90",
+      "title": "宋史·卷090（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7090&oldid=2619985",
+      "retrievedAt": "2026-09-26T18:28:27.671854+00:00",
+      "note": "元代编纂正史的固定修订电子文本，原始API、文本和SHA256均归档；各卷会合并不同年代，原文异文保留并在条目说明，不能据文字证明古址坐标、精确边界或历史河岸。",
+      "snapshotPath": "data/evidence/song-research/sources/songshi-90.txt",
+      "snapshotSha256": "feb3cdaeb37a60a53cb8b60f0ec2eca3ebbd9ea2806ec1a25867a9dc4c859fef",
+      "author": "脱脱等",
+      "locator": "宋史·卷090（维基文库固定版本）",
+      "verification": "verified",
+      "revisionId": "2619985",
+      "edition": "固定修订电子文本及本地快照",
+      "license": "原著公版；电子整理文本条款见来源页"
+    },
+    {
+      "id": "song-research-songshi-86",
+      "title": "宋史·卷086（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7086&oldid=2057390",
+      "retrievedAt": "2026-09-26T18:28:26.478102+00:00",
+      "note": "元代编纂正史的固定修订电子文本，原始API、文本和SHA256均归档；各卷会合并不同年代，原文异文保留并在条目说明，不能据文字证明古址坐标、精确边界或历史河岸。",
+      "snapshotPath": "data/evidence/song-research/sources/songshi-86.txt",
+      "snapshotSha256": "0094c8a7346941ed11e75fcca73f0aedbd95aba64cc6c61a70d9bda3b08c860c",
+      "author": "脱脱等",
+      "locator": "宋史·卷086（维基文库固定版本）",
+      "verification": "verified",
+      "revisionId": "2057390",
+      "edition": "固定修订电子文本及本地快照",
+      "license": "原著公版；电子整理文本条款见来源页"
+    },
+    {
+      "id": "song-research-songshi-485",
+      "title": "宋史·卷485（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7485&oldid=2325722",
+      "retrievedAt": "2026-09-26T18:28:28.655551+00:00",
+      "note": "元代编纂正史的固定修订电子文本，原始API、文本和SHA256均归档；各卷会合并不同年代，原文异文保留并在条目说明，不能据文字证明古址坐标、精确边界或历史河岸。",
+      "snapshotPath": "data/evidence/song-research/sources/songshi-485.txt",
+      "snapshotSha256": "c2f6b7545f65e0d94667aad620c6080fa0c77d4263e9652305065b37a270057e",
+      "author": "脱脱等",
+      "locator": "宋史·卷485（维基文库固定版本）",
+      "verification": "verified",
+      "revisionId": "2325722",
+      "edition": "固定修订电子文本及本地快照",
+      "license": "原著公版；电子整理文本条款见来源页"
+    },
+    {
+      "id": "song-research-songshi-486",
+      "title": "宋史·卷486（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7486&oldid=2325721",
+      "retrievedAt": "2026-09-26T18:28:28.852198+00:00",
+      "note": "元代编纂正史的固定修订电子文本，原始API、文本和SHA256均归档；各卷会合并不同年代，原文异文保留并在条目说明，不能据文字证明古址坐标、精确边界或历史河岸。",
+      "snapshotPath": "data/evidence/song-research/sources/songshi-486.txt",
+      "snapshotSha256": "e00359f7af81fae17ee8152d9f55af3a12a38c02aecdf70a91f1431d2645bb16",
+      "author": "脱脱等",
+      "locator": "宋史·卷486（维基文库固定版本）",
+      "verification": "verified",
+      "revisionId": "2325721",
+      "edition": "固定修订电子文本及本地快照",
+      "license": "原著公版；电子整理文本条款见来源页"
+    },
+    {
+      "id": "song-research-dali-reference",
+      "title": "大理市 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?oldid=93661459",
+      "retrievedAt": "2026-09-24T13:31:45.284506+00:00",
+      "note": "固定版本二手百科概述，仅用于同时代政权与地区沿革参照；详细年代、城址及辖区仍需一手资料互证。",
+      "snapshotPath": "data/evidence/historical-context/dali.txt",
+      "snapshotSha256": "6046a6ced1b7c89704e7cddc55970453724fb816abc57a15278cef6e9b0bcad4",
+      "author": "维基百科编者",
+      "locator": "大理市 — 维基百科",
+      "verification": "verified",
+      "revisionId": "93661459",
+      "edition": "固定修订电子文本及本地快照",
+      "license": "原著公版；电子整理文本条款见来源页"
+    },
+    {
+      "id": "song-research-songshi-488",
+      "title": "宋史·卷488（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7488&oldid=2033276",
+      "retrievedAt": "2026-09-26T18:28:28.655451+00:00",
+      "note": "元代编纂正史的固定修订电子文本，原始API、文本和SHA256均归档；各卷会合并不同年代，原文异文保留并在条目说明，不能据文字证明古址坐标、精确边界或历史河岸。",
+      "snapshotPath": "data/evidence/song-research/sources/songshi-488.txt",
+      "snapshotSha256": "36bff3640e472f37892d1cadb4c3259be5681d225a7f66bb66d0a92cecf431e3",
+      "author": "脱脱等",
+      "locator": "宋史·卷488（维基文库固定版本）",
+      "verification": "verified",
+      "revisionId": "2033276",
+      "edition": "固定修订电子文本及本地快照",
+      "license": "原著公版；电子整理文本条款见来源页"
+    },
+    {
+      "id": "song-research-dunhuang-reference",
+      "title": "敦煌市 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?oldid=93563614",
+      "retrievedAt": "2026-09-24T13:31:45.853606+00:00",
+      "note": "固定版本二手百科概述，仅用于同时代政权与地区沿革参照；详细年代、城址及辖区仍需一手资料互证。",
+      "snapshotPath": "data/evidence/historical-context/dunhuang.txt",
+      "snapshotSha256": "2c7853d90c3c0856e86c7de5d3bfecadf9990807561620392c5d5517787f96ee",
+      "author": "维基百科编者",
+      "locator": "敦煌市 — 维基百科",
+      "verification": "verified",
+      "revisionId": "93563614",
+      "edition": "固定修订电子文本及本地快照",
+      "license": "原著公版；电子整理文本条款见来源页"
+    },
+    {
+      "id": "song-research-songshi-33",
+      "title": "宋史·卷033（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7033&oldid=7908408",
+      "retrievedAt": "2026-09-26T18:29:10.065376+00:00",
+      "note": "元代编纂正史的固定修订电子文本，原始API、文本和SHA256均归档；各卷会合并不同年代，原文异文保留并在条目说明，不能据文字证明古址坐标、精确边界或历史河岸。",
+      "snapshotPath": "data/evidence/song-research/sources/songshi-33.txt",
+      "snapshotSha256": "57e3f076b472bf5045a1da3aa58159d4c550ce5a95c929bd7e68e7a1caa0b18d",
+      "author": "脱脱等",
+      "locator": "宋史·卷033（维基文库固定版本）",
+      "verification": "verified",
+      "revisionId": "7908408",
+      "edition": "固定修订电子文本及本地快照",
+      "license": "原著公版；电子整理文本条款见来源页"
     }
   ],
   "metadata": {
     "title": "山河纪 · 中国历史时空地图",
-    "version": "0.14.0",
-    "dataNotice": "本版含11个代表历史截面、106个地点档案，其中唐时期有104个城镇阅读入口及专门看点，明时期有28个入口及《明史》地理志档案。唐代条目含都城、州府、商贸城镇、关隘、驿站及同时期周边政权；幽州与范阳沿用同城不同阅读入口，数量不表示互不重合的古城遗址。历史行政界接入CHGIS 1820/1911和Hartwell 741/1080/1200/1290/1391资料；资料年份独立标注，不能直接等同地图代表年。Hartwell是近似历史行政模型，行政区界不等于古城墙或完整国家边界；另提供18张历史地图纸图参考。历史地理含8条概述，历代大事记覆盖106个城市阅读入口、477个节点。城池资料保留原文出处、名称年代和近似位置说明；引文可回查不等于古址已考证。现有12,111条历史行政记录通过显示层处理为简体中文，12,100条有代表点所在现代地区参考；这不证明古今行政实体相同。事件连线不是实际行军路线，传统纪年未换算公历。唐755年另接入1682条CHGIS治所点，源定位冲突记录未入图；不表示全部已考定古城。32个采集区域另有213897条现代OSM地物，随缩放加载。另有14330条现代山脊、刃脊、陡崖和命名山峰记录，保留来源几何，不补画未收录山线。唐代郡与州属于同一层级，已核对改名或隶属关系的治所可显示741年参考辖区，不代表755年精确界线。17处山地近览使用真实现代高程生成11984条等高线与精细山影；不是山脉边界或唐代地貌考证。52条现代山地命名概括面用于显示山系大致分布，取自Natural Earth 1:1000万资料，不是精确山脚边界。唐代县治与741年县模型另提供逐条一致性核查；明确冲突的模型以存疑虚线标示，相容也不等于历史边界已经核定。县级存疑研究另补78条史料专题，逐条列出原文、来源版本和未决问题；史料补充不等于县界核定。明代另有32条建置研究、76段逐字引文，29个府县模型可查看相应史料；1391近似模型与1582截面不等年，顺天府等晚出名称另有冲突说明。",
-    "geographicNotice": "黄河中下游接入五期WorldMap图集河道，随朝代切换，唐代采用11—1048年资料；仅表示历史流向，不是逐年古河岸测绘。其他河湖、山峰及海岸仍为现代参照，不能据此复原唐代地貌。历史治所点与精选地点的坐标有各自来源；行政面不是城墙范围。山影与立体起伏采用本地真实现代高程，立体夸张1.5倍，适合区域观察。"
+    "version": "0.15.0",
+    "dataNotice": "本版含11个代表历史截面、106个地点档案，其中唐时期有104个城镇阅读入口及专门看点，明时期有28个入口及《明史》地理志档案，宋时期有29个入口及宋金同期史料档案。唐代条目含都城、州府、商贸城镇、关隘、驿站及同时期周边政权；幽州与范阳沿用同城不同阅读入口，数量不表示互不重合的古城遗址。历史行政界接入CHGIS 1820/1911和Hartwell 741/1080/1200/1290/1391资料；资料年份独立标注，不能直接等同地图代表年。Hartwell是近似历史行政模型，行政区界不等于古城墙或完整国家边界；另提供18张历史地图纸图参考。历史地理含8条概述，历代大事记覆盖106个城市阅读入口、525个节点。城池资料保留原文出处、名称年代和近似位置说明；引文可回查不等于古址已考证。现有12,111条历史行政记录通过显示层处理为简体中文，12,100条有代表点所在现代地区参考；这不证明古今行政实体相同。事件连线不是实际行军路线，传统纪年未换算公历。唐755年另接入1682条CHGIS治所点，源定位冲突记录未入图；不表示全部已考定古城。40个采集窗口另有现代OSM地物，唐、宋、明均可使用，随缩放加载。另有14330条现代山脊、刃脊、陡崖和命名山峰记录，保留来源几何，不补画未收录山线。唐代郡与州属于同一层级，已核对改名或隶属关系的治所可显示741年参考辖区，不代表755年精确界线。22处山地近览使用真实现代高程生成18451条等高线与精细山影；不是山脉边界或唐代地貌考证。52条现代山地命名概括面用于显示山系大致分布，取自Natural Earth 1:1000万资料，不是精确山脚边界。唐代县治与741年县模型另提供逐条一致性核查；明确冲突的模型以存疑虚线标示，相容也不等于历史边界已经核定。县级存疑研究另补78条史料专题，逐条列出原文、来源版本和未决问题；史料补充不等于县界核定。明代另有32条建置研究、76段逐字引文，29个府县模型可查看相应史料；1391近似模型与1582截面不等年，顺天府等晚出名称另有冲突说明。宋代以1200年为地图截面，区分南宋、金、西夏与大理；29份档案引用14卷正史及2项明确标注的二手对应资料，共78段逐字引文，新增48条纪年。25个具名府州县模型可从城池档案查看，4个地点明确保留范围缺口；大同、重庆、邯郸的源字段冲突及泉州点面差异另行标注。1080年北宋辽模型与1200年城市入口不得混用。",
+    "geographicNotice": "黄河中下游接入五期WorldMap图集河道，随朝代切换，唐代采用11—1048年、宋代1200年采用1128—1368年、明代采用1368—1855年资料；仅表示历史流向，不是逐年古河岸测绘。其他河湖、山峰及海岸仍为现代参照，不能据此复原所选朝代地貌。历史治所点与精选地点的坐标有各自来源；行政面不是城墙范围。山影与立体起伏采用本地真实现代高程，立体夸张1.5倍，适合区域观察。"
   },
   "topics": []
 }

@@ -1,0 +1,13 @@
+{
+  "id": "song-research-jinshi-25",
+  "title": "金史·卷25（维基文库固定版本）",
+  "url": "https://zh.wikisource.org/w/index.php?title=%E9%87%91%E5%8F%B2/%E5%8D%B725&oldid=2607110",
+  "kind": "official-history",
+  "snapshotPath": "data/evidence/song-research/sources/jinshi-25.txt",
+  "snapshotSha256": "12e239a0982b58a19350045ccd122ba71ed5981bd2ee3be451d314dc378c96ac",
+  "rawSnapshotPath": "data/evidence/song-research/sources/jinshi-25.api.json",
+  "rawSnapshotSha256": "b08649d2f7957d14aecfe84bda82bf72aa45dfc3a8841174d63abe4ac0798ecc",
+  "retrievedAt": "2026-09-26T18:29:46.044982+00:00",
+  "revisionId": "2607110",
+  "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E9%87%91%E5%8F%B2%2F%E5%8D%B725"
+}

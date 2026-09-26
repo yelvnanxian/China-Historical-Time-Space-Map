@@ -1,0 +1,13 @@
+{
+  "id": "song-research-jinshi-24",
+  "title": "金史·卷24（维基文库固定版本）",
+  "url": "https://zh.wikisource.org/w/index.php?title=%E9%87%91%E5%8F%B2/%E5%8D%B724&oldid=2432662",
+  "kind": "official-history",
+  "snapshotPath": "data/evidence/song-research/sources/jinshi-24.txt",
+  "snapshotSha256": "bd5747f872c34cd63051052e465ed314a06bf2c7c408077c80af7314ee3e7dff",
+  "rawSnapshotPath": "data/evidence/song-research/sources/jinshi-24.api.json",
+  "rawSnapshotSha256": "3fb3ffcd1dc134881326368676e435f0c46dd3afdfd6b80446681ecb34c8ef2f",
+  "retrievedAt": "2026-09-26T18:29:46.044372+00:00",
+  "revisionId": "2432662",
+  "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E9%87%91%E5%8F%B2%2F%E5%8D%B724"
+}

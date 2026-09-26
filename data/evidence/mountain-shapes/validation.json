@@ -1,13 +1,21 @@
 {
-  "version": 1,
-  "peakManifestPath": "public/data/mountain-detail/manifest.json",
-  "peakManifestSha256": "2199bc5af4712b1c8fbf90e10940a6499bc8fac35dcdb4f7d83242beb833df27",
-  "sourceTileCount": 153,
-  "sourceBytes": 10082045,
-  "areaCount": 17,
-  "featureCount": 11984,
-  "vertexCount": 2573919,
-  "derivedBytes": 25394751,
+  "version": 2,
+  "peakManifests": [
+    {
+      "path": "public/data/mountain-detail/manifest.json",
+      "sha256": "2199bc5af4712b1c8fbf90e10940a6499bc8fac35dcdb4f7d83242beb833df27"
+    },
+    {
+      "path": "public/data/tang-detail/manifest.json",
+      "sha256": "db58a31b0bf99ac82bf451a014cb4b241e17b1dfcf2e88884032ba90cc1270ce"
+    }
+  ],
+  "sourceTileCount": 198,
+  "sourceBytes": 12168320,
+  "areaCount": 22,
+  "featureCount": 18451,
+  "vertexCount": 3062065,
+  "derivedBytes": 30311807,
   "peakCoordinatesPreserved": true,
   "allContourVerticesCheckedAgainstDEM": true,
   "areas": [
@@ -263,6 +271,81 @@
       "shadeTransparentPixels": 256101,
       "shadeBytes": 419021,
       "contoursBytes": 849959,
+      "sourcePeakUnchanged": true,
+      "excludedDemSampleCount": 0
+    },
+    {
+      "id": "hangzhou-beigaofeng",
+      "featureCount": 1367,
+      "vertexCount": 84886,
+      "contourInterpolationMaxErrorMeters": 1.722355591482483e-11,
+      "shadeAlphaRange": [
+        0,
+        175
+      ],
+      "shadeTransparentPixels": 334967,
+      "shadeBytes": 306905,
+      "contoursBytes": 591241,
+      "sourcePeakUnchanged": true,
+      "excludedDemSampleCount": 0
+    },
+    {
+      "id": "nanjing-beigaofeng",
+      "featureCount": 658,
+      "vertexCount": 32753,
+      "contourInterpolationMaxErrorMeters": 2.1643131731252652e-11,
+      "shadeAlphaRange": [
+        0,
+        175
+      ],
+      "shadeTransparentPixels": 335573,
+      "shadeBytes": 266283,
+      "contoursBytes": 218863,
+      "sourcePeakUnchanged": true,
+      "excludedDemSampleCount": 0
+    },
+    {
+      "id": "fuzhou-gushan",
+      "featureCount": 1763,
+      "vertexCount": 178332,
+      "contourInterpolationMaxErrorMeters": 1.9554136088117957e-11,
+      "shadeAlphaRange": [
+        0,
+        175
+      ],
+      "shadeTransparentPixels": 329512,
+      "shadeBytes": 343015,
+      "contoursBytes": 1266621,
+      "sourcePeakUnchanged": true,
+      "excludedDemSampleCount": 0
+    },
+    {
+      "id": "quanzhou-qingyuan",
+      "featureCount": 1625,
+      "vertexCount": 123485,
+      "contourInterpolationMaxErrorMeters": 3.920774815924233e-11,
+      "shadeAlphaRange": [
+        0,
+        175
+      ],
+      "shadeTransparentPixels": 305461,
+      "shadeBytes": 331752,
+      "contoursBytes": 853879,
+      "sourcePeakUnchanged": true,
+      "excludedDemSampleCount": 0
+    },
+    {
+      "id": "nanchang-shigunao",
+      "featureCount": 1054,
+      "vertexCount": 68690,
+      "contourInterpolationMaxErrorMeters": 5.2935433814127464e-11,
+      "shadeAlphaRange": [
+        0,
+        175
+      ],
+      "shadeTransparentPixels": 319841,
+      "shadeBytes": 295919,
+      "contoursBytes": 442578,
       "sourcePeakUnchanged": true,
       "excludedDemSampleCount": 0
     }

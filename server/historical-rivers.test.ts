@@ -136,6 +136,9 @@ test("历史河道使用半开年代区间，唐代落在第二期，缺失时�
     assert.equal(riverEpochAtYear(manifest.epochs, epoch.endYear)?.id, manifest.epochs[index + 1]?.id);
   }
   for (const year of [618, 755, 907]) assert.equal(riverEpochAtYear(manifest.epochs, year)?.id, "yellow-11-1048");
+  const song = json<{ periods: { id: string; year: number }[] }>("data/catalog.json").periods.find(period => period.id === "song")!;
+  assert.equal(riverEpochAtYear(manifest.epochs, song.year)?.id, "yellow-1128-1368", "宋代1200年入口应使用南流历史河道");
+  assert.equal(riverEpochAtYear(manifest.epochs, 1080)?.id, "yellow-1048-1128", "北宋参考年与南宋参考年不能共用河线");
   for (const year of [-603, 1855, 2026, Number.NaN, Infinity, -Infinity]) assert.equal(riverEpochAtYear(manifest.epochs, year), undefined);
   const withGap = manifest.epochs.filter(epoch => epoch.id !== "yellow-1048-1128");
   for (const year of [1048, 1100, 1127]) assert.equal(riverEpochAtYear(withGap, year), undefined);

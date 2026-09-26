@@ -1,0 +1,13 @@
+{
+  "id": "song-research-songshi-89",
+  "title": "宋史·卷089（维基文库固定版本）",
+  "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7089&oldid=1875817",
+  "kind": "official-history",
+  "snapshotPath": "data/evidence/song-research/sources/songshi-89.txt",
+  "snapshotSha256": "65b36a76fd232a4330aac0b4cd9dd507864842b121bbc780c19653ab273a1cd7",
+  "rawSnapshotPath": "data/evidence/song-research/sources/songshi-89.api.json",
+  "rawSnapshotSha256": "37d5ffe8683f5386f7456ba68f071a33a5d441e8a467dba15b99fe9f649bd17e",
+  "retrievedAt": "2026-09-26T18:28:27.711682+00:00",
+  "revisionId": "1875817",
+  "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7089"
+}

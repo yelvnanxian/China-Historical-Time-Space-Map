@@ -1,0 +1,13 @@
+{
+  "id": "song-research-songshi-485",
+  "title": "宋史·卷485（维基文库固定版本）",
+  "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7485&oldid=2325722",
+  "kind": "official-history",
+  "snapshotPath": "data/evidence/song-research/sources/songshi-485.txt",
+  "snapshotSha256": "c2f6b7545f65e0d94667aad620c6080fa0c77d4263e9652305065b37a270057e",
+  "rawSnapshotPath": "data/evidence/song-research/sources/songshi-485.api.json",
+  "rawSnapshotSha256": "293103c9202310088d5fbe6c4354b92cab5531c3358ba9c288294f45244026f0",
+  "retrievedAt": "2026-09-26T18:28:28.655551+00:00",
+  "revisionId": "2325722",
+  "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7485"
+}
