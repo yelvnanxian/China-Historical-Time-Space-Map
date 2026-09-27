@@ -4,15 +4,15 @@
     "complete": true,
     "missingTiles": []
   },
-  "featureCount": 14330,
-  "namedChineseCount": 3355,
+  "featureCount": 25366,
+  "namedChineseCount": 11443,
   "countsByKind": {
-    "ridge": 8940,
+    "ridge": 10929,
     "arete": 54,
-    "cliff": 1746,
-    "peak": 3590
+    "cliff": 2767,
+    "peak": 11616
   },
-  "geometryNote": "现代OSM山脊、刃脊、陡崖ways及命名山峰，不是唐代复原。查询矩形仅说明采集区域；数据覆盖不完整，空白不代表没有山地。",
+  "geometryNote": "现代OSM山脊、刃脊、陡崖ways及命名山峰，不是所选朝代的地貌复原。查询矩形仅说明采集区域；数据覆盖不完整，空白不代表没有山地。",
   "regions": [
     {
       "id": "qinling",
@@ -94,6 +94,70 @@
         "ridge": 971,
         "cliff": 449,
         "arete": 45
+      }
+    },
+    {
+      "id": "zhejiang",
+      "name": "浙江山地",
+      "bounds": [
+        118,
+        27,
+        122,
+        31
+      ],
+      "featureCount": 5776,
+      "countsByKind": {
+        "peak": 5085,
+        "ridge": 499,
+        "cliff": 192
+      }
+    },
+    {
+      "id": "fujian",
+      "name": "福建山地",
+      "bounds": [
+        116,
+        24,
+        120,
+        28
+      ],
+      "featureCount": 3056,
+      "countsByKind": {
+        "peak": 1636,
+        "cliff": 227,
+        "ridge": 1193
+      }
+    },
+    {
+      "id": "jiangxi-hunan",
+      "name": "江西与湖南山地",
+      "bounds": [
+        111,
+        25,
+        117,
+        30
+      ],
+      "featureCount": 1301,
+      "countsByKind": {
+        "peak": 1007,
+        "ridge": 205,
+        "cliff": 89
+      }
+    },
+    {
+      "id": "chongqing-east-sichuan",
+      "name": "重庆与川东山地",
+      "bounds": [
+        105,
+        28,
+        110,
+        32
+      ],
+      "featureCount": 903,
+      "countsByKind": {
+        "peak": 298,
+        "ridge": 92,
+        "cliff": 513
       }
     }
   ],
@@ -383,6 +447,227 @@
       ],
       "featureCount": 278,
       "minZoom": 6
+    },
+    {
+      "id": "zhejiang-0",
+      "regionId": "zhejiang",
+      "url": "/data/mountain-detail/zhejiang-0.geojson.gz",
+      "bounds": [
+        118.0363113,
+        27.3274647,
+        121.7808201,
+        30.9507802
+      ],
+      "featureCount": 750,
+      "minZoom": 8
+    },
+    {
+      "id": "zhejiang-1",
+      "regionId": "zhejiang",
+      "url": "/data/mountain-detail/zhejiang-1.geojson.gz",
+      "bounds": [
+        118.0047083,
+        27.0165358,
+        121.9175149,
+        30.953087
+      ],
+      "featureCount": 750,
+      "minZoom": 8
+    },
+    {
+      "id": "zhejiang-2",
+      "regionId": "zhejiang",
+      "url": "/data/mountain-detail/zhejiang-2.geojson.gz",
+      "bounds": [
+        118.007137,
+        27.0132552,
+        121.9701612,
+        30.869405
+      ],
+      "featureCount": 750,
+      "minZoom": 8
+    },
+    {
+      "id": "zhejiang-3",
+      "regionId": "zhejiang",
+      "url": "/data/mountain-detail/zhejiang-3.geojson.gz",
+      "bounds": [
+        118.0112309,
+        27.0502347,
+        121.9929343,
+        30.9171557
+      ],
+      "featureCount": 750,
+      "minZoom": 8
+    },
+    {
+      "id": "zhejiang-4",
+      "regionId": "zhejiang",
+      "url": "/data/mountain-detail/zhejiang-4.geojson.gz",
+      "bounds": [
+        118.0012515,
+        27.417399,
+        121.8081162,
+        30.7712321
+      ],
+      "featureCount": 750,
+      "minZoom": 8
+    },
+    {
+      "id": "zhejiang-5",
+      "regionId": "zhejiang",
+      "url": "/data/mountain-detail/zhejiang-5.geojson.gz",
+      "bounds": [
+        118.0048374,
+        27.0097979,
+        121.0937313,
+        30.7812542
+      ],
+      "featureCount": 750,
+      "minZoom": 8
+    },
+    {
+      "id": "zhejiang-6",
+      "regionId": "zhejiang",
+      "url": "/data/mountain-detail/zhejiang-6.geojson.gz",
+      "bounds": [
+        118.0016887,
+        27.3136391,
+        121.8978245,
+        30.8270251
+      ],
+      "featureCount": 750,
+      "minZoom": 7
+    },
+    {
+      "id": "zhejiang-7",
+      "regionId": "zhejiang",
+      "url": "/data/mountain-detail/zhejiang-7.geojson.gz",
+      "bounds": [
+        118.0308169,
+        27.0112383,
+        121.8310887,
+        30.50139
+      ],
+      "featureCount": 526,
+      "minZoom": 7
+    },
+    {
+      "id": "fujian-0",
+      "regionId": "fujian",
+      "url": "/data/mountain-detail/fujian-0.geojson.gz",
+      "bounds": [
+        116.0129589,
+        24.018741,
+        119.9905473,
+        27.9995762
+      ],
+      "featureCount": 750,
+      "minZoom": 8
+    },
+    {
+      "id": "fujian-1",
+      "regionId": "fujian",
+      "url": "/data/mountain-detail/fujian-1.geojson.gz",
+      "bounds": [
+        116.2259267,
+        24.0009326,
+        119.9881692,
+        27.9856526
+      ],
+      "featureCount": 750,
+      "minZoom": 8
+    },
+    {
+      "id": "fujian-2",
+      "regionId": "fujian",
+      "url": "/data/mountain-detail/fujian-2.geojson.gz",
+      "bounds": [
+        115.9871731,
+        23.9925931,
+        119.8979236,
+        27.845622
+      ],
+      "featureCount": 750,
+      "minZoom": 8
+    },
+    {
+      "id": "fujian-3",
+      "regionId": "fujian",
+      "url": "/data/mountain-detail/fujian-3.geojson.gz",
+      "bounds": [
+        115.993259,
+        24.0116996,
+        119.9958174,
+        27.7151114
+      ],
+      "featureCount": 750,
+      "minZoom": 6
+    },
+    {
+      "id": "fujian-4",
+      "regionId": "fujian",
+      "url": "/data/mountain-detail/fujian-4.geojson.gz",
+      "bounds": [
+        117.2413827,
+        24.4875743,
+        119.9302499,
+        27.8628094
+      ],
+      "featureCount": 56,
+      "minZoom": 8
+    },
+    {
+      "id": "jiangxi-hunan-0",
+      "regionId": "jiangxi-hunan",
+      "url": "/data/mountain-detail/jiangxi-hunan-0.geojson.gz",
+      "bounds": [
+        111.002706,
+        25.0057496,
+        116.9912267,
+        29.9902793
+      ],
+      "featureCount": 750,
+      "minZoom": 8
+    },
+    {
+      "id": "jiangxi-hunan-1",
+      "regionId": "jiangxi-hunan",
+      "url": "/data/mountain-detail/jiangxi-hunan-1.geojson.gz",
+      "bounds": [
+        110.9713966,
+        24.9881503,
+        116.9723797,
+        29.9691373
+      ],
+      "featureCount": 551,
+      "minZoom": 7
+    },
+    {
+      "id": "chongqing-east-sichuan-0",
+      "regionId": "chongqing-east-sichuan",
+      "url": "/data/mountain-detail/chongqing-east-sichuan-0.geojson.gz",
+      "bounds": [
+        105.0048196,
+        27.9988919,
+        110.0049502,
+        31.9956213
+      ],
+      "featureCount": 750,
+      "minZoom": 7
+    },
+    {
+      "id": "chongqing-east-sichuan-1",
+      "regionId": "chongqing-east-sichuan",
+      "url": "/data/mountain-detail/chongqing-east-sichuan-1.geojson.gz",
+      "bounds": [
+        105.0530398,
+        28.0201346,
+        109.8008214,
+        31.8731981
+      ],
+      "featureCount": 153,
+      "minZoom": 7
     }
   ],
   "sources": [
@@ -935,6 +1220,306 @@
       "license": "Open Data Commons Open Database License (ODbL) 1.0",
       "attribution": "© OpenStreetMap contributors",
       "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是唐代复原。查询边框不是山脉范围。"
+    },
+    {
+      "id": "osm-mountain-detail-zhejiang-0",
+      "regionId": "zhejiang",
+      "title": "OpenStreetMap 山地线与命名山峰：浙江山地 / zhejiang-0",
+      "url": "https://www.openstreetmap.org/copyright",
+      "endpoint": "https://overpass.kumi.systems/api/interpreter",
+      "bounds": [
+        118,
+        27,
+        122,
+        30
+      ],
+      "retrievedAt": "2026-09-27T06:06:57.070495+00:00",
+      "snapshotPath": "data/evidence/mountain-detail/osm/zhejiang-0.json.gz",
+      "snapshotSha256": "b391a6db7f585d88394c29d67e158adbc110a5a13db78b4ef75db6eea541ed3f",
+      "uncompressedSnapshotSha256": "55038fd48c3a307e200b180a1782ed39d680ed347cae9d3b38ca63720690dd23",
+      "queryPath": "data/evidence/mountain-detail/osm/zhejiang-0.ql",
+      "querySha256": "5d6c4ee50de4b3f6d13cb1f3fdb699cac078167228e3c9fd19b7fd4259e9c51b",
+      "osmBaseTimestamp": "2026-06-01T08:52:28Z",
+      "elementCount": 4224,
+      "modernReferenceOnly": true,
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是所选朝代的地貌复原。查询边框不是山脉范围。"
+    },
+    {
+      "id": "osm-mountain-detail-zhejiang-1",
+      "regionId": "zhejiang",
+      "title": "OpenStreetMap 山地线与命名山峰：浙江山地 / zhejiang-1",
+      "url": "https://www.openstreetmap.org/copyright",
+      "endpoint": "https://overpass.kumi.systems/api/interpreter",
+      "bounds": [
+        118,
+        30,
+        122,
+        31
+      ],
+      "retrievedAt": "2026-09-27T06:07:10.534001+00:00",
+      "snapshotPath": "data/evidence/mountain-detail/osm/zhejiang-1.json.gz",
+      "snapshotSha256": "f282fd4461c722dc57d70a16bec23dce72702e5efbd5423903a78de1b3cd06e8",
+      "uncompressedSnapshotSha256": "ea7f77e3665ffe799bea02c3bf535a1488244c96989c9c82e564dbfb10a7461a",
+      "queryPath": "data/evidence/mountain-detail/osm/zhejiang-1.ql",
+      "querySha256": "0afec10501fdafd5863f05252ff303907b8f6040dad787041309d3ae25f48904",
+      "osmBaseTimestamp": "2026-07-24T11:04:51Z",
+      "elementCount": 1553,
+      "modernReferenceOnly": true,
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是所选朝代的地貌复原。查询边框不是山脉范围。"
+    },
+    {
+      "id": "osm-mountain-detail-fujian-0",
+      "regionId": "fujian",
+      "title": "OpenStreetMap 山地线与命名山峰：福建山地 / fujian-0",
+      "url": "https://www.openstreetmap.org/copyright",
+      "endpoint": "https://overpass.kumi.systems/api/interpreter",
+      "bounds": [
+        116,
+        24,
+        120,
+        27
+      ],
+      "retrievedAt": "2026-09-27T06:07:35.401662+00:00",
+      "snapshotPath": "data/evidence/mountain-detail/osm/fujian-0.json.gz",
+      "snapshotSha256": "0ba3910abc56e14f5d1dd193a58d1acf8cfc18480ff83cf39f368e95ec938307",
+      "uncompressedSnapshotSha256": "4826a9428af747987b814b9e7a3c1bce899827447618d119da090a384617ec4c",
+      "queryPath": "data/evidence/mountain-detail/osm/fujian-0.ql",
+      "querySha256": "e4a91bcd88b5dd4ed0de0d38f4d7a1b6c2a31794ecceb049c02b4986aeba2773",
+      "osmBaseTimestamp": "2026-07-15T15:22:01Z",
+      "elementCount": 2919,
+      "modernReferenceOnly": true,
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是所选朝代的地貌复原。查询边框不是山脉范围。"
+    },
+    {
+      "id": "osm-mountain-detail-fujian-1",
+      "regionId": "fujian",
+      "title": "OpenStreetMap 山地线与命名山峰：福建山地 / fujian-1",
+      "url": "https://www.openstreetmap.org/copyright",
+      "endpoint": "https://overpass.kumi.systems/api/interpreter",
+      "bounds": [
+        116,
+        27,
+        120,
+        28
+      ],
+      "retrievedAt": "2026-09-27T06:10:00.785673+00:00",
+      "snapshotPath": "data/evidence/mountain-detail/osm/fujian-1.json.gz",
+      "snapshotSha256": "3f50a86bc172a487223fe30870d8079b49ee232f4d47a2bd346479a2ce1cd290",
+      "uncompressedSnapshotSha256": "32d62f36167932f89b5299b30c61024c6f4dabd52c56edc149fbf103ca2f548b",
+      "queryPath": "data/evidence/mountain-detail/osm/fujian-1.ql",
+      "querySha256": "a91a77d9c15d83a551a037a11ceaa072bf2aa9026bca3f18caeba803dff598e0",
+      "osmBaseTimestamp": "2026-06-01T08:52:28Z",
+      "elementCount": 639,
+      "modernReferenceOnly": true,
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是所选朝代的地貌复原。查询边框不是山脉范围。"
+    },
+    {
+      "id": "osm-mountain-detail-jiangxi-hunan-0",
+      "regionId": "jiangxi-hunan",
+      "title": "OpenStreetMap 山地线与命名山峰：江西与湖南山地 / jiangxi-hunan-0",
+      "url": "https://www.openstreetmap.org/copyright",
+      "endpoint": "https://overpass.kumi.systems/api/interpreter",
+      "bounds": [
+        111,
+        25,
+        115,
+        28
+      ],
+      "retrievedAt": "2026-09-27T06:08:11.785936+00:00",
+      "snapshotPath": "data/evidence/mountain-detail/osm/jiangxi-hunan-0.json.gz",
+      "snapshotSha256": "3750c3503e0530a85788d55a8a7a088b87bc6970071bf08fe3877caacc49a60e",
+      "uncompressedSnapshotSha256": "8473560dfc109c3920db38550b17fe7a53f6c4c9ee874811c1df1c726ade7e59",
+      "queryPath": "data/evidence/mountain-detail/osm/jiangxi-hunan-0.ql",
+      "querySha256": "6f76ef3f868c55487fedf0d64439f343a34747bf76b8ed38e41611b0dac56abd",
+      "osmBaseTimestamp": "2026-07-15T15:22:01Z",
+      "elementCount": 526,
+      "modernReferenceOnly": true,
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是所选朝代的地貌复原。查询边框不是山脉范围。"
+    },
+    {
+      "id": "osm-mountain-detail-jiangxi-hunan-1",
+      "regionId": "jiangxi-hunan",
+      "title": "OpenStreetMap 山地线与命名山峰：江西与湖南山地 / jiangxi-hunan-1",
+      "url": "https://www.openstreetmap.org/copyright",
+      "endpoint": "https://overpass.kumi.systems/api/interpreter",
+      "bounds": [
+        115,
+        25,
+        117,
+        28
+      ],
+      "retrievedAt": "2026-09-27T06:08:43.046660+00:00",
+      "snapshotPath": "data/evidence/mountain-detail/osm/jiangxi-hunan-1.json.gz",
+      "snapshotSha256": "e2d9ccb5079cf81a21535150280949067f078212a7803ad87bed38afae4405ff",
+      "uncompressedSnapshotSha256": "4228740da5540f19f8343ec196ee32b7f1de6158fe6801b7b9138c53119742d6",
+      "queryPath": "data/evidence/mountain-detail/osm/jiangxi-hunan-1.ql",
+      "querySha256": "85a4eaea6a65849a5a6d89cd3e1afb7bda4512e5cb80b1c7591357f39177134e",
+      "osmBaseTimestamp": "2026-07-15T15:22:01Z",
+      "elementCount": 210,
+      "modernReferenceOnly": true,
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是所选朝代的地貌复原。查询边框不是山脉范围。"
+    },
+    {
+      "id": "osm-mountain-detail-jiangxi-hunan-2",
+      "regionId": "jiangxi-hunan",
+      "title": "OpenStreetMap 山地线与命名山峰：江西与湖南山地 / jiangxi-hunan-2",
+      "url": "https://www.openstreetmap.org/copyright",
+      "endpoint": "https://overpass.private.coffee/api/interpreter",
+      "bounds": [
+        111,
+        28,
+        115,
+        30
+      ],
+      "retrievedAt": "2026-09-27T06:14:29.007627+00:00",
+      "snapshotPath": "data/evidence/mountain-detail/osm/jiangxi-hunan-2.json.gz",
+      "snapshotSha256": "1242a1d02cea63eac6bfcac8776aa669549a87a7b3a8a244d7fb449ba82a6d38",
+      "uncompressedSnapshotSha256": "77dbfafeaf26288a5309fd6f862d0892d712181d156ac25c58b8a1db298eef10",
+      "queryPath": "data/evidence/mountain-detail/osm/jiangxi-hunan-2.ql",
+      "querySha256": "2b52753b16c812ffe2532e662e5c9652f826b97c61e6e2da8ec69a19637ceccc",
+      "osmBaseTimestamp": "2026-05-31T22:37:44Z",
+      "elementCount": 246,
+      "modernReferenceOnly": true,
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是所选朝代的地貌复原。查询边框不是山脉范围。"
+    },
+    {
+      "id": "osm-mountain-detail-jiangxi-hunan-3",
+      "regionId": "jiangxi-hunan",
+      "title": "OpenStreetMap 山地线与命名山峰：江西与湖南山地 / jiangxi-hunan-3",
+      "url": "https://www.openstreetmap.org/copyright",
+      "endpoint": "https://overpass.kumi.systems/api/interpreter",
+      "bounds": [
+        115,
+        28,
+        117,
+        30
+      ],
+      "retrievedAt": "2026-09-27T06:11:02.863518+00:00",
+      "snapshotPath": "data/evidence/mountain-detail/osm/jiangxi-hunan-3.json.gz",
+      "snapshotSha256": "3b9840892ba5dd6530794016dd138544269df3862855729353f82d39d844955a",
+      "uncompressedSnapshotSha256": "091aef0cb2ce0e992542b69a6859e8238228805a730642f107b6f668156a678e",
+      "queryPath": "data/evidence/mountain-detail/osm/jiangxi-hunan-3.ql",
+      "querySha256": "97ce32d895cb248b0cfb3afcb43edc19e777e5bfc3ea516db5b18e08afdbea95",
+      "osmBaseTimestamp": "2026-05-31T22:37:44Z",
+      "elementCount": 450,
+      "modernReferenceOnly": true,
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是所选朝代的地貌复原。查询边框不是山脉范围。"
+    },
+    {
+      "id": "osm-mountain-detail-chongqing-east-sichuan-0",
+      "regionId": "chongqing-east-sichuan",
+      "title": "OpenStreetMap 山地线与命名山峰：重庆与川东山地 / chongqing-east-sichuan-0",
+      "url": "https://www.openstreetmap.org/copyright",
+      "endpoint": "https://overpass.kumi.systems/api/interpreter",
+      "bounds": [
+        105,
+        28,
+        109,
+        31
+      ],
+      "retrievedAt": "2026-09-27T06:12:02.500775+00:00",
+      "snapshotPath": "data/evidence/mountain-detail/osm/chongqing-east-sichuan-0.json.gz",
+      "snapshotSha256": "f1bcdf198a5d33f94062c33a54747dcbe5a233676061f4047c2aac5ce1a9af64",
+      "uncompressedSnapshotSha256": "1338a193aa3dd72e1921640485dbe7d725a31c2e046548d3e79e1a7543cedcb5",
+      "queryPath": "data/evidence/mountain-detail/osm/chongqing-east-sichuan-0.ql",
+      "querySha256": "9e8c81466c7f426023eb87a41553f1eb910ed3b2535aa2889d21d3d18f88c2b0",
+      "osmBaseTimestamp": "2026-05-31T22:37:44Z",
+      "elementCount": 507,
+      "modernReferenceOnly": true,
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是所选朝代的地貌复原。查询边框不是山脉范围。"
+    },
+    {
+      "id": "osm-mountain-detail-chongqing-east-sichuan-1",
+      "regionId": "chongqing-east-sichuan",
+      "title": "OpenStreetMap 山地线与命名山峰：重庆与川东山地 / chongqing-east-sichuan-1",
+      "url": "https://www.openstreetmap.org/copyright",
+      "endpoint": "https://overpass.kumi.systems/api/interpreter",
+      "bounds": [
+        109,
+        28,
+        110,
+        31
+      ],
+      "retrievedAt": "2026-09-27T06:14:57.170851+00:00",
+      "snapshotPath": "data/evidence/mountain-detail/osm/chongqing-east-sichuan-1.json.gz",
+      "snapshotSha256": "6b4e888914ff1b522a7ad45867ad069008e46fa8ce77da01385197e9ff32f906",
+      "uncompressedSnapshotSha256": "8251c2e3f3eeedc9a6da8e09d7d067f93daface84aa69896d38f0c9724ca5aad",
+      "queryPath": "data/evidence/mountain-detail/osm/chongqing-east-sichuan-1.ql",
+      "querySha256": "274ef6a6309cfbb190942141bde71dba2dc6b4a34ad6577186853004d0435997",
+      "osmBaseTimestamp": "2026-07-15T15:22:01Z",
+      "elementCount": 234,
+      "modernReferenceOnly": true,
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是所选朝代的地貌复原。查询边框不是山脉范围。"
+    },
+    {
+      "id": "osm-mountain-detail-chongqing-east-sichuan-2",
+      "regionId": "chongqing-east-sichuan",
+      "title": "OpenStreetMap 山地线与命名山峰：重庆与川东山地 / chongqing-east-sichuan-2",
+      "url": "https://www.openstreetmap.org/copyright",
+      "endpoint": "https://overpass.kumi.systems/api/interpreter",
+      "bounds": [
+        105,
+        31,
+        109,
+        32
+      ],
+      "retrievedAt": "2026-09-27T06:16:20.241975+00:00",
+      "snapshotPath": "data/evidence/mountain-detail/osm/chongqing-east-sichuan-2.json.gz",
+      "snapshotSha256": "429849c62d48db5f36dc171840c99525597d63cd3a48cf12e4d1ae4d5ff73d69",
+      "uncompressedSnapshotSha256": "ce53a5045054afd568dddf252ad17c51a91cccce7e2c64f606cad13a044a7db4",
+      "queryPath": "data/evidence/mountain-detail/osm/chongqing-east-sichuan-2.ql",
+      "querySha256": "e6da1848ef2024969d3ec7b3880906fb554824063c08e119836f5b10a5e5cca8",
+      "osmBaseTimestamp": "2026-05-31T22:37:44Z",
+      "elementCount": 76,
+      "modernReferenceOnly": true,
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是所选朝代的地貌复原。查询边框不是山脉范围。"
+    },
+    {
+      "id": "osm-mountain-detail-chongqing-east-sichuan-3",
+      "regionId": "chongqing-east-sichuan",
+      "title": "OpenStreetMap 山地线与命名山峰：重庆与川东山地 / chongqing-east-sichuan-3",
+      "url": "https://www.openstreetmap.org/copyright",
+      "endpoint": "https://overpass.kumi.systems/api/interpreter",
+      "bounds": [
+        109,
+        31,
+        110,
+        32
+      ],
+      "retrievedAt": "2026-09-27T06:15:29.816194+00:00",
+      "snapshotPath": "data/evidence/mountain-detail/osm/chongqing-east-sichuan-3.json.gz",
+      "snapshotSha256": "93a1690a89ba09099158cc06f8eace9984797d39e1d5f03a1d5d605bb432e735",
+      "uncompressedSnapshotSha256": "2d95f27aca629450b1a9d3586390dd28dcc55fd7b2393f1e91317f1f3c2326c1",
+      "queryPath": "data/evidence/mountain-detail/osm/chongqing-east-sichuan-3.ql",
+      "querySha256": "cb452e23d0b535242fb34c01c16b5dc1b6d10e772e6b9f58fc0a491a482c4948",
+      "osmBaseTimestamp": "2026-05-06T03:25:00Z",
+      "elementCount": 87,
+      "modernReferenceOnly": true,
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是所选朝代的地貌复原。查询边框不是山脉范围。"
     }
   ]
 }

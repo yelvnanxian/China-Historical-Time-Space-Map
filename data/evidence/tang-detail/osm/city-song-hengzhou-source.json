@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-city-song-hengzhou",
+  "title": "OpenStreetMap 现代地理：衡阳与湘江水系",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.private.coffee/api/interpreter",
+  "retrievedAt": "2026-09-27T06:10:26.034900+00:00",
+  "bounds": [
+    112.372,
+    26.693,
+    112.772,
+    27.093
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/city-song-hengzhou.json.gz",
+  "snapshotSha256": "7ff136f754a694c3bee1ba6cbf40869924b26305287bbd86412aacac89540cfa",
+  "uncompressedSnapshotSha256": "695b09d62c1c2ca24827f53d157ef5a368d3ce4ef54f04b7ce8a30fac6ced6bc",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/city-song-hengzhou.ql",
+  "querySha256": "d9b536c2ff24cfcad88a7fea8e14ddf113aede3ae101803830acd781133e9820",
+  "osmBaseTimestamp": "2026-07-15T15:22:01Z",
+  "elementCount": 866,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+}

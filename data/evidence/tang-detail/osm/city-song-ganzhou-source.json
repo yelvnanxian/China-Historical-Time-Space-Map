@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-city-song-ganzhou",
+  "title": "OpenStreetMap 现代地理：赣州与章贡双江水系",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "retrievedAt": "2026-09-27T06:24:07.220421+00:00",
+  "bounds": [
+    114.73,
+    25.63,
+    115.13,
+    26.03
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/city-song-ganzhou.json.gz",
+  "snapshotSha256": "bf3b888fd1fed1096f08e89b7d18e836c5141324daf4fc3e0e6ab9fbb9a5aa69",
+  "uncompressedSnapshotSha256": "8b20ebddc3a8582fd9a66b649d163f69667c840023290685948989632b9a08af",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/city-song-ganzhou.ql",
+  "querySha256": "a23fb539ae6c46a3819b423eaeb011e45194333bf0b0b2a2d9ed2c6098caf0ad",
+  "osmBaseTimestamp": "2026-05-31T22:37:44Z",
+  "elementCount": 1120,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+}

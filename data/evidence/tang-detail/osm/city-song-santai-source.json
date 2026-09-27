@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-city-song-santai",
+  "title": "OpenStreetMap 现代地理：三台与涪江水系",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "retrievedAt": "2026-09-27T06:14:03.735114+00:00",
+  "bounds": [
+    104.8936,
+    30.8958,
+    105.2936,
+    31.2958
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/city-song-santai.json.gz",
+  "snapshotSha256": "0709f525af5af96946ab0c48425aa65b9fbde02ff134c6110ce2c55a79e1096a",
+  "uncompressedSnapshotSha256": "987f17ed705b5a607faffa0b1252861f80982346231194cd2aba2ec865be8a8a",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/city-song-santai.ql",
+  "querySha256": "f6a285400348036bfbf60debcb96925b717cab326fde1f37c98598438ba7c459",
+  "osmBaseTimestamp": "2026-06-01T08:52:28Z",
+  "elementCount": 184,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+}

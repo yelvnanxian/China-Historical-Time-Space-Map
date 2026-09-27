@@ -1,0 +1,20 @@
+{
+  "featureCount": 865,
+  "countsByKind": {
+    "water": 652,
+    "peak": 16,
+    "river": 72,
+    "stream": 95,
+    "canal": 30
+  },
+  "rejected": [
+    {
+      "osmType": "relation",
+      "osmId": 19137742,
+      "reason": "Inner ring has no containing outer ring"
+    }
+  ],
+  "sourceMemberWayDuplicatesSuppressed": 191,
+  "crossRegionDuplicateIdsSuppressed": 0,
+  "geometryPolicy": "Unsmoothed original coordinate sequences; exact endpoint line merging for complete water rings. No guessed closing edges, buffers or polygon repair."
+}

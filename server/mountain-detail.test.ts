@@ -16,7 +16,7 @@ type Element = { type: "way" | "node"; id: number; version: number; lat?: number
 test("山地资料每个查询与完整原始快照的哈希可追溯", async () => {
   assert.equal(manifest.acquisition.complete, true, "Release must contain all requested query snapshots");
   assert.deepEqual(manifest.acquisition.missingTiles, []);
-  assert.deepEqual(manifest.regions.map(region => region.id), ["qinling", "taihang", "qilian", "tianshan", "west-sichuan"]);
+  assert.deepEqual(manifest.regions.map(region => region.id), ["qinling", "taihang", "qilian", "tianshan", "west-sichuan", "zhejiang", "fujian", "jiangxi-hunan", "chongqing-east-sichuan"]);
   assert.ok(manifest.sources.length >= 5);
   for (const source of manifest.sources) {
     const bytes = await readFile(path.join(root, source.snapshotPath));

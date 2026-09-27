@@ -48,6 +48,7 @@ def main():
         rows.append({'placeId': place['id'], 'name': place.get('nameByPeriod', {}).get('song', place['name']),
                      'coordinates': point, 'queryRegionIds': regions,
                      'pointCoveredByAcquisitionWindow': bool(regions),
+                     'ridgeQueryRegionIds': [r['id'] for r in ridge['regions'] if contains(r['bounds'], point)],
                      'demAreaIdsAtCityCoordinate': [a['id'] for a in terrain['areas'] if contains(a['bounds'], point)],
                      'demAreaIdsWithin50km': [a['id'] for a in terrain['areas'] if distance_km(a['center'], point) <= 50]})
     sources = []
@@ -61,6 +62,13 @@ def main():
     counts = Counter()
     for pack in detail['modernRegions']:
         counts.update(pack['countsByKind'])
+    ridge_sources = []
+    for source in ridge['sources']:
+        assert digest(source['snapshotPath']) == source['snapshotSha256'], source['id']
+        assert digest(source['queryPath']) == source['querySha256'], source['id']
+        ridge_sources.append({'sourceId': source['id'], 'regionId': source['regionId'],
+                              'snapshotPath': source['snapshotPath'], 'snapshotSha256': source['snapshotSha256'],
+                              'queryPath': source['queryPath'], 'querySha256': source['querySha256']})
     epoch = next(e for e in rivers['epochs'] if e['startYear'] <= 1200 < e['endYear'])
     result = {
         'periodId': 'song', 'boundaryReferenceYear': 1200,
@@ -68,19 +76,21 @@ def main():
         'catalogSha256': digest('data/catalog.json'),
         'detailManifestSha256': digest('public/data/tang-detail/manifest.json'),
         'terrainManifestSha256': digest('public/data/mountain-shapes/manifest.json'),
+        'ridgeManifestSha256': digest('public/data/mountain-detail/manifest.json'),
         'placeCount': len(rows), 'coveredPlaceCount': sum(r['pointCoveredByAcquisitionWindow'] for r in rows),
         'uncoveredPlaceIds': [r['placeId'] for r in rows if not r['pointCoveredByAcquisitionWindow']],
         'sharedModernFeatureCountsByKind': dict(counts),
         'sharedModernSamplingRegionCount': len(detail['modernCoverageRegions']),
         'sharedDemAreaCount': terrain['areaCount'], 'sharedContourCount': terrain['featureCount'],
         'sharedRidgeSamplingRegionCount': len(ridge['regions']), 'sharedRidgeFeatureCount': ridge['featureCount'],
+        'sharedRidgeCountsByKind': ridge['countsByKind'],
         'yellowRiverEpochAt1200': epoch['id'],
         'yellowRiverGeometrySha256': epoch['geometrySha256'],
-        'places': rows, 'sources': sources,
+        'places': rows, 'sources': sources, 'ridgeSources': ridge_sources,
     }
     target = ROOT / 'data/evidence/song-natural-coverage.json'
     target.write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n')
-    print(json.dumps({key: value for key, value in result.items() if key not in ['places', 'sources']}, ensure_ascii=False, indent=2))
+    print(json.dumps({key: value for key, value in result.items() if key not in ['places', 'sources', 'ridgeSources']}, ensure_ascii=False, indent=2))
 
 
 if __name__ == '__main__':

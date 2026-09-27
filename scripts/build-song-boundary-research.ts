@@ -51,7 +51,7 @@ for (const source of research.sources) {
 interface Review {
   placeId: string; recordId: string; level: "prefecture" | "county";
   sourceName: string; type: string; polity: "宋代" | "金代"; province: string; parent: string;
-  researchName: string; conflict?: "datong" | "chongqing" | "handan";
+  researchName: string; conflict?: "datong" | "chongqing" | "handan" | "huzhou" | "wuzhou";
 }
 const prefectures: [string, string, string, string, "宋代" | "金代", string, string?][] = [
   ["changan", "161", "京兆府", "Fu", "金代", "京兆路"],
@@ -74,9 +74,31 @@ const prefectures: [string, string, string, string, "宋代" | "金代", string,
   ["guizhou-guilin", "297", "静江府", "Fu", "宋代", "广南西路"],
   ["mingzhou", "206", "庆元府", "Fu", "宋代", "浙东路"],
   ["hongzhou", "229", "隆兴府", "Fu", "宋代", "江南西路"],
+  ["runzhou", "215", "镇江府", "Fu", "宋代", "浙西路"],
+  ["yuezhou", "205", "绍兴府", "Fu", "宋代", "浙东路"],
+  ["changzhou", "218", "常州", "Zhou", "宋代", "浙西路"],
+  ["wenzhou", "207", "温州", "Zhou", "宋代", "浙东路"],
+  ["xuanzhou", "221", "宁国府", "Fu", "宋代", "江南东路"],
+  ["shezhou", "222", "徽州", "Zhou", "宋代", "江南东路"],
+  ["jiangzhou-jiujiang", "239", "江州", "Zhou", "宋代", "江南西路"],
+  ["jizhou-luling", "231", "吉州", "Zhou", "宋代", "江南西路"],
+  ["qianzhou-gan", "230", "赣州", "Zhou", "宋代", "江南西路"],
+  ["tanzhou", "260", "潭州", "Zhou", "宋代", "荆湖南路"],
+  ["yuezhou-baling", "252", "岳州", "Zhou", "宋代", "荆湖北路"],
+  ["hengzhou-hunan", "261", "衡州", "Zhou", "宋代", "荆湖南路"],
+  ["hanzhong", "322", "兴元府", "Fu", "宋代", "利州路"],
+  ["zizhou", "337", "潼川府", "Fu", "宋代", "潼川府路"],
+  ["mianzhou", "366", "绵州", "Zhou", "宋代", "成都府路"],
+  ["hanzhou", "355", "汉州", "Zhou", "宋代", "成都府路"],
+  ["langzhou", "325", "阆州", "Zhou", "宋代", "利州路"],
+  ["suizhou-suining", "338", "遂宁府", "Fu", "宋代", "潼川府路"],
+  ["kuizhou", "372", "夔州", "Zhou", "宋代", "夔州路"],
+  ["jianzhou", "335", "隆庆府", "Fu", "宋代", "利州路"],
 ];
 const reviewed: Review[] = prefectures.map(([placeId, recordId, sourceName, type, polity, province, researchName]) => ({ placeId, recordId, sourceName, type, polity, province, researchName: researchName ?? sourceName, parent: researchName ?? sourceName, level: "prefecture" }));
 reviewed.push(
+  { placeId: "huzhou", recordId: "217", level: "prefecture", sourceName: "湖州", type: "Zhou", polity: "宋代", province: "浙西路", parent: "胡州", researchName: "湖州", conflict: "huzhou" },
+  { placeId: "wuzhou-jinhua", recordId: "208", level: "prefecture", sourceName: "务州", type: "Zhou", polity: "宋代", province: "浙东路", parent: "务州", researchName: "婺州", conflict: "wuzhou" },
   { placeId: "datong", recordId: "39", level: "prefecture", sourceName: "大同府", type: "Zhou", polity: "金代", province: "西京路", parent: "大同府", researchName: "大同府", conflict: "datong" },
   { placeId: "yuzhou-chongqing", recordId: "380", level: "prefecture", sourceName: "渝州", type: "Zhou", polity: "宋代", province: "夔州路", parent: "渝州", researchName: "重庆府", conflict: "chongqing" },
   { placeId: "jinyang", recordId: "305", level: "county", sourceName: "平晋", type: "Xian", polity: "金代", province: "河东北路", parent: "太原府", researchName: "平晋县" },
@@ -85,6 +107,8 @@ reviewed.push(
 );
 const commonNotice = "这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。";
 const conflictNotices = {
+  huzhou: "源隶属字形冲突：模型名为湖州，层级字段却作胡州；同源的乌程、归安等六县与《宋史》湖州完整县目一致，保留原字段与原几何，不据纠字宣称边线已核定。",
+  wuzhou: "源名称冲突：模型名及层级字段作务州；其七个同源属县与《宋史》婺州县目完全对应，显示名据文献纠正为婺州。原名称、类型和几何保留，不另造务州，也不据纠字推定治所或边线准确。",
   datong: "源字段冲突：模型原名“大同府州”、原始类型为Zhou（州），但原名字段及《金史》为大同府。地图名称按史料显示大同府；原类型和原几何保留供核查，不能据此认定边线准确。",
   chongqing: "源年代冲突：标称1200年模型仍名“渝州”、类型为州；《宋史》记渝州改恭州，本纪记1189年升重庆府。这里只关联有文献升改链的旧称参考面，不把它当作已经核定的1200年重庆府辖域。",
   handan: "源隶属字段冲突：邯郸县模型的上级写作“磁府”，《金史》将邯郸列于磁州。保留原上级字段并提示差异，不将“磁府”另造为一座府，也不据此修画县界。",
@@ -133,7 +157,9 @@ for (const review of reviewed) {
   const pointNote = inside
     ? "目录参考点落在该来源模型内；这只是数据一致性检查，不能证明宋代治所坐标或边线准确。"
     : "点面位置存疑：当前城市参考点落在该1200年来源模型外。目录点与模型面均未经古址精确核定，保留两者供核查，不移动坐标、不改画范围，也不改配到最近区域。";
-  const notice = [review.polity === "金代" ? "1200年此地属金，作为宋代同期地点收录，不属于南宋。" : "1200年此地属南宋。", review.conflict ? conflictNotices[review.conflict] : "", !inside ? pointNote : "", commonNotice].filter(Boolean).join("");
+  const routeNote = ["hanzhong", "langzhou", "jianzhou"].includes(review.placeId)
+    ? "源路级字段概称利州路；《宋史》记庆元二年再分东西路，1200年本处按利州东路阅读。这里保留府州面关联，不用概括路名抹去分路年代。" : "";
+  const notice = [routeNote, review.polity === "金代" ? "1200年此地属金，作为宋代同期地点收录，不属于南宋。" : "1200年此地属南宋。", review.conflict ? conflictNotices[review.conflict] : "", !inside ? pointNote : "", commonNotice].filter(Boolean).join("");
   const historicalResearch = publish(entry, "same-unit", [notice]);
   let displayCorrection: SongBoundaryResearchRecord["displayCorrection"];
   const evidence = historicalResearch.findings.flatMap(finding => finding.evidence);
@@ -148,6 +174,14 @@ for (const review of reviewed) {
     const citation = evidence.find(item => /升恭州爲重慶府/.test(item.quote));
     assert.ok(citation, "Chongqing requires the dated Guangzong annal, not an inferred rename");
     displayCorrection = { name: "重庆府", note: conflictNotices.chongqing, sourceUrl: citation.sourceUrl };
+  }
+  if (review.conflict === "huzhou" || review.conflict === "wuzhou") {
+    const countyNames = models.filter(item => item.level === "county" && simplifiedChinese(item.sourceHierarchy.polity) === review.polity && simplifiedChinese(item.sourceHierarchy.province) === review.province && simplifiedChinese(item.sourceHierarchy.prefecture || item.sourceHierarchy.dependentPrefecture) === review.parent).map(item => simplifiedChinese(item.sourceName)).sort();
+    const expected = review.conflict === "huzhou" ? ["乌程", "归安", "安吉", "长兴", "德清", "武康"] : ["金华", "义乌", "永康", "武义", "浦江", "兰溪", "东阳"];
+    assert.deepEqual(countyNames, expected.sort(), "Source typo needs the full same-source county set, never a nearby name guess");
+    const citation = evidence.find(item => expected.every(name => simplifiedChinese(item.quote).replaceAll("淸", "清").includes(name)));
+    assert.ok(citation, "All counties must occur in the same cited geography paragraph");
+    if (review.conflict === "wuzhou") displayCorrection = { name: "婺州", note: conflictNotices.wuzhou, sourceUrl: citation.sourceUrl };
   }
   if (review.conflict === "handan") {
     const parent = evidence.find(item => /^磁州/.test(item.quote)), child = evidence.find(item => /^邯鄲/.test(item.quote));
@@ -183,7 +217,7 @@ const output: SongBoundaryResearchDocument = {
   version: "2026-09-27", periodId: "song", boundaryYear: 1200, byBoundary, unlinkedEntries,
   sources: research.sources.map(({ id, title, url, snapshotPath, snapshotSha256 }) => ({ id, title, url, snapshotPath, snapshotSha256 })), inputHashes,
   statistics: { researchEntries: research.entries.length, linkedEntries: covered.size, linkedBoundaries: Object.keys(byBoundary).length, unlinkedEntries: unlinkedEntries.length, sourceVolumes: research.sources.length },
-  notes: ["按逐字史料及原模型名称、政权、层级、隶属字段逐条核对，不以最近点、距离或同名后缀猜配。", "只关联1200年宋金同期模型；1080年北宋辽模型不承接本包关联，也未绘制源资料缺失的国界。", "大同府原类型、重庆旧称、邯郸源上级的冲突分别列出，原模型文件和几何没有修改。", "未关联的都城或关隘不借用国家、上级行政区或现代边界冒充本地辖区。"],
+  notes: ["按逐字史料及原模型名称、政权、层级、隶属字段逐条核对，不以最近点、距离或同名后缀猜配。", "只关联1200年宋金同期模型；1080年北宋辽模型不承接本包关联，也未绘制源资料缺失的国界。", "大同府原类型、重庆旧称、邯郸源上级及湖州、婺州字形冲突分别列出，原模型文件和几何没有修改。", "未关联的都城或关隘不借用国家、上级行政区或现代边界冒充本地辖区。"],
 };
 await writeFile(path.join(root, "public/data/song-boundary-research.json"), JSON.stringify(output, null, 2) + "\n");
 console.log(JSON.stringify(output.statistics));

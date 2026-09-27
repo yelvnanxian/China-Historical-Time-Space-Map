@@ -1,0 +1,80 @@
+{
+  "version": "2026-09-27",
+  "periodId": "song",
+  "year": 1200,
+  "url": "/data/song-settlements/settlements-1200.geojson",
+  "featureCount": 1560,
+  "countsByLevel": {
+    "county": 1209,
+    "prefecture": 351
+  },
+  "countsBySubtype": {
+    "县": 1109,
+    "军": 33,
+    "州": 272,
+    "土州": 2,
+    "羁縻州": 39,
+    "赕": 16,
+    "砦": 1,
+    "寨": 1,
+    "城": 5,
+    "堡": 1,
+    "部": 9,
+    "甸": 5,
+    "监": 3,
+    "府": 51,
+    "直隶州": 1,
+    "郡": 9,
+    "施": 1,
+    "安抚司": 1,
+    "邑": 1
+  },
+  "countsByDateStatus": {
+    "specified-endpoints": 881,
+    "broad-endpoints": 112,
+    "incomplete-date-rules": 567
+  },
+  "boundaryLinkedCount": 20,
+  "withheldCount": 106,
+  "eligibleSourceCount": 1666,
+  "sameNameGroupCount": 50,
+  "note": "真实CHGIS时序治所点按1200年起讫年闭区间筛选；不是Hartwell标签点，也不代表普通村镇全覆盖。每条原始类型、名称、日期规则与记录号可查。",
+  "dateNote": "明确端点也不等于逐年核定；宽时段与缺失规则的点为1200年时序候选。规则9与非单年起讫冲突的记录隔离，同名记录不合并。",
+  "coverageNote": "CHGIS官方说明1350年前仍有覆盖缺口。此包包含源资料覆盖的南宋、金及其他同期地区；不推断西夏、大理、西部或乡村城镇已经完整收录。",
+  "polityNote": "源文件没有政权与上级隶属字段；除20条具名文献身份关联外，不按坐标或行政面包含推断政权，不把所有点标为南宋。",
+  "sources": [
+    {
+      "id": "chgis-v6-song-settlements-county",
+      "title": "CHGIS V6 时序县级治所点",
+      "url": "https://doi.org/10.7910/DVN/Q9VOF5",
+      "snapshotPath": "data/evidence/tang-detail/chgis/county-wgs84.zip",
+      "snapshotSha256": "3b431d2e587bcb738e632385703824d252e0b4744ddd726fc5eb10364dd2d8c5",
+      "metadataPath": "data/evidence/tang-detail/chgis/county-metadata.json",
+      "metadataSha256": "5e447fbcf21c94ae8b20bd6742932e66de1c1c9c4e6e088516e299ca0249787c",
+      "license": "保留原CHGIS V6 README及Harvard Dataverse元数据条款；本项目使用已归档来源，未改写原声明。",
+      "attribution": "CHGIS, Version 6. Fairbank Center for Chinese Studies, Harvard University; Center for Historical Geographical Studies, Fudan University, 2016.",
+      "note": "官方WGS84 POINT图层。1350年前公开说明仍有覆盖缺口；县/府为源文件分组，实际行政类型另列。源点没有政权与隶属字段，不能把所有1200年点视为南宋治所。"
+    },
+    {
+      "id": "chgis-v6-song-settlements-prefecture",
+      "title": "CHGIS V6 时序府级治所点",
+      "url": "https://doi.org/10.7910/DVN/WW1PD6",
+      "snapshotPath": "data/evidence/tang-detail/chgis/prefecture-wgs84.zip",
+      "snapshotSha256": "48f6a50bcc3dd9cf4391efab2153f0e333f2040a08cf96c4d4b950cf9977d1fc",
+      "metadataPath": "data/evidence/tang-detail/chgis/prefecture-metadata.json",
+      "metadataSha256": "ca25f596b996c6639fad685b5c226ac0116055bfd5ed5099f789b6978ff9fbda",
+      "license": "保留原CHGIS V6 README及Harvard Dataverse元数据条款；本项目使用已归档来源，未改写原声明。",
+      "attribution": "CHGIS, Version 6. Fairbank Center for Chinese Studies, Harvard University; Center for Historical Geographical Studies, Fudan University, 2016.",
+      "note": "官方WGS84 POINT图层。1350年前公开说明仍有覆盖缺口；县/府为源文件分组，实际行政类型另列。源点没有政权与隶属字段，不能把所有1200年点视为南宋治所。"
+    }
+  ],
+  "inputHashes": {
+    "data/evidence/tang-detail/chgis/county-wgs84.zip": "3b431d2e587bcb738e632385703824d252e0b4744ddd726fc5eb10364dd2d8c5",
+    "data/evidence/tang-detail/chgis/county-metadata.json": "5e447fbcf21c94ae8b20bd6742932e66de1c1c9c4e6e088516e299ca0249787c",
+    "data/evidence/tang-detail/chgis/prefecture-wgs84.zip": "48f6a50bcc3dd9cf4391efab2153f0e333f2040a08cf96c4d4b950cf9977d1fc",
+    "data/evidence/tang-detail/chgis/prefecture-metadata.json": "ca25f596b996c6639fad685b5c226ac0116055bfd5ed5099f789b6978ff9fbda",
+    "public/data/song-boundary-research.json": "4c9d95ef5ccb95453dde2744502fc3da6d8f7007aa9e66f7741a1df32bb0fbb6",
+    "public/data/boundaries/hartwell-1200-county.geojson": "2a2d1012f5d2d4893b1cef501319cc61b17a98d2ed5b62c0fd88e08b5abe7c98",
+    "public/data/boundaries/hartwell-1200-prefecture.geojson": "efa3333cd7986a8f019f05daae908322e3bc987454d51331c5ec43517cb28747"
+  }
+}

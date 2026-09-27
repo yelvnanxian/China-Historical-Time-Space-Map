@@ -4350,14 +4350,17 @@
         "丹阳郡"
       ],
       "periodIds": [
-        "tang"
+        "tang",
+        "song"
       ],
       "sourceIds": [
         "tang-se-jiutangshu-40",
-        "tang-se-zhenjiang"
+        "tang-se-zhenjiang",
+        "song-research-songshi-88"
       ],
       "nameByPeriod": {
-        "tang": "丹阳郡"
+        "tang": "丹阳郡",
+        "song": "镇江府"
       },
       "location": {
         "accuracy": "approximate",
@@ -4385,14 +4388,17 @@
         "会稽郡"
       ],
       "periodIds": [
-        "tang"
+        "tang",
+        "song"
       ],
       "sourceIds": [
         "tang-se-jiutangshu-40",
-        "tang-se-yuezhou-prefecture"
+        "tang-se-yuezhou-prefecture",
+        "song-research-songshi-88"
       ],
       "nameByPeriod": {
-        "tang": "会稽郡"
+        "tang": "会稽郡",
+        "song": "绍兴府"
       },
       "location": {
         "accuracy": "approximate",
@@ -4459,14 +4465,17 @@
         "吴兴郡"
       ],
       "periodIds": [
-        "tang"
+        "tang",
+        "song"
       ],
       "sourceIds": [
         "tang-se-jiutangshu-40",
-        "tang-se-huzhou"
+        "tang-se-huzhou",
+        "song-research-songshi-88"
       ],
       "nameByPeriod": {
-        "tang": "吴兴郡"
+        "tang": "吴兴郡",
+        "song": "湖州"
       },
       "location": {
         "accuracy": "approximate",
@@ -4493,13 +4502,16 @@
         "东阳郡"
       ],
       "periodIds": [
-        "tang"
+        "tang",
+        "song"
       ],
       "sourceIds": [
-        "tang-se-jiutangshu-40"
+        "tang-se-jiutangshu-40",
+        "song-research-songshi-88"
       ],
       "nameByPeriod": {
-        "tang": "东阳郡"
+        "tang": "东阳郡",
+        "song": "婺州"
       },
       "location": {
         "accuracy": "approximate",
@@ -4570,13 +4582,17 @@
         "浔阳郡"
       ],
       "periodIds": [
-        "tang"
+        "tang",
+        "song"
       ],
       "sourceIds": [
-        "tang-se-jiutangshu-40"
+        "tang-se-jiutangshu-40",
+        "song-research-shizhongshan-ji",
+        "song-research-songshi-88"
       ],
       "nameByPeriod": {
-        "tang": "浔阳郡"
+        "tang": "浔阳郡",
+        "song": "江州"
       },
       "location": {
         "accuracy": "approximate",
@@ -4602,14 +4618,17 @@
         "长沙郡"
       ],
       "periodIds": [
-        "tang"
+        "tang",
+        "song"
       ],
       "sourceIds": [
         "tang-se-jiutangshu-40",
-        "tang-se-changsha"
+        "tang-se-changsha",
+        "song-research-songshi-88"
       ],
       "nameByPeriod": {
-        "tang": "长沙郡"
+        "tang": "长沙郡",
+        "song": "潭州"
       },
       "location": {
         "accuracy": "approximate",
@@ -4636,13 +4655,16 @@
         "衡阳郡"
       ],
       "periodIds": [
-        "tang"
+        "tang",
+        "song"
       ],
       "sourceIds": [
-        "tang-se-jiutangshu-40"
+        "tang-se-jiutangshu-40",
+        "song-research-songshi-88"
       ],
       "nameByPeriod": {
-        "tang": "衡阳郡"
+        "tang": "衡阳郡",
+        "song": "衡州"
       },
       "location": {
         "accuracy": "approximate",
@@ -4751,14 +4773,17 @@
         "永嘉郡"
       ],
       "periodIds": [
-        "tang"
+        "tang",
+        "song"
       ],
       "sourceIds": [
         "tang-se-jiutangshu-40",
-        "tang-se-wenzhou"
+        "tang-se-wenzhou",
+        "song-research-songshi-88"
       ],
       "nameByPeriod": {
-        "tang": "永嘉郡"
+        "tang": "永嘉郡",
+        "song": "温州"
       },
       "location": {
         "accuracy": "approximate",
@@ -4785,13 +4810,16 @@
         "宣城郡"
       ],
       "periodIds": [
-        "tang"
+        "tang",
+        "song"
       ],
       "sourceIds": [
-        "tang-se-jiutangshu-40"
+        "tang-se-jiutangshu-40",
+        "song-research-songshi-88"
       ],
       "nameByPeriod": {
-        "tang": "宣城郡"
+        "tang": "宣城郡",
+        "song": "宁国府"
       },
       "location": {
         "accuracy": "approximate",
@@ -4819,14 +4847,17 @@
         "新安郡"
       ],
       "periodIds": [
-        "tang"
+        "tang",
+        "song"
       ],
       "sourceIds": [
         "tang-se-jiutangshu-40",
-        "tang-se-shezhou-prefecture"
+        "tang-se-shezhou-prefecture",
+        "song-research-songshi-88"
       ],
       "nameByPeriod": {
-        "tang": "新安郡"
+        "tang": "新安郡",
+        "song": "徽州"
       },
       "location": {
         "accuracy": "approximate",
@@ -4920,14 +4951,17 @@
         "梓潼郡"
       ],
       "periodIds": [
-        "tang"
+        "tang",
+        "song"
       ],
       "sourceIds": [
         "tang-se-jiutangshu-41",
-        "tang-se-santai"
+        "tang-se-santai",
+        "song-research-songshi-89"
       ],
       "nameByPeriod": {
-        "tang": "梓潼郡"
+        "tang": "梓潼郡",
+        "song": "潼川府"
       },
       "location": {
         "accuracy": "approximate",
@@ -4955,14 +4989,17 @@
         "巴西郡"
       ],
       "periodIds": [
-        "tang"
+        "tang",
+        "song"
       ],
       "sourceIds": [
         "tang-se-jiutangshu-41",
-        "tang-se-mianzhou-prefecture"
+        "tang-se-mianzhou-prefecture",
+        "song-research-songshi-89"
       ],
       "nameByPeriod": {
-        "tang": "巴西郡"
+        "tang": "巴西郡",
+        "song": "绵州"
       },
       "location": {
         "accuracy": "approximate",
@@ -4989,14 +5026,17 @@
         "德阳郡"
       ],
       "periodIds": [
-        "tang"
+        "tang",
+        "song"
       ],
       "sourceIds": [
         "tang-se-jiutangshu-41",
-        "tang-se-guanghan"
+        "tang-se-guanghan",
+        "song-research-songshi-89"
       ],
       "nameByPeriod": {
-        "tang": "德阳郡"
+        "tang": "德阳郡",
+        "song": "汉州"
       },
       "location": {
         "accuracy": "approximate",
@@ -5024,13 +5064,17 @@
         "普安郡"
       ],
       "periodIds": [
-        "tang"
+        "tang",
+        "song"
       ],
       "sourceIds": [
-        "tang-se-jiutangshu-41"
+        "tang-se-jiutangshu-41",
+        "song-research-songshi-36",
+        "song-research-songshi-89"
       ],
       "nameByPeriod": {
-        "tang": "普安郡"
+        "tang": "普安郡",
+        "song": "隆庆府"
       },
       "location": {
         "accuracy": "approximate",
@@ -5059,13 +5103,16 @@
         "汉中郡"
       ],
       "periodIds": [
-        "tang"
+        "tang",
+        "song"
       ],
       "sourceIds": [
-        "tang-se-jiutangshu-39"
+        "tang-se-jiutangshu-39",
+        "song-research-songshi-89"
       ],
       "nameByPeriod": {
-        "tang": "汉中郡"
+        "tang": "汉中郡",
+        "song": "兴元府"
       },
       "location": {
         "accuracy": "approximate",
@@ -5093,13 +5140,16 @@
         "云安郡"
       ],
       "periodIds": [
-        "tang"
+        "tang",
+        "song"
       ],
       "sourceIds": [
-        "tang-se-jiutangshu-39"
+        "tang-se-jiutangshu-39",
+        "song-research-songshi-89"
       ],
       "nameByPeriod": {
-        "tang": "云安郡"
+        "tang": "云安郡",
+        "song": "夔州"
       },
       "location": {
         "accuracy": "approximate",
@@ -5167,15 +5217,18 @@
         "阆中郡"
       ],
       "periodIds": [
-        "tang"
+        "tang",
+        "song"
       ],
       "sourceIds": [
         "tang-se-langzhou-prefecture",
         "tang-se-jiutangshu-41",
-        "tang-se-langzhong"
+        "tang-se-langzhong",
+        "song-research-songshi-89"
       ],
       "nameByPeriod": {
-        "tang": "阆中郡"
+        "tang": "阆中郡",
+        "song": "阆州"
       },
       "location": {
         "accuracy": "approximate",
@@ -5202,14 +5255,17 @@
         "遂宁郡"
       ],
       "periodIds": [
-        "tang"
+        "tang",
+        "song"
       ],
       "sourceIds": [
         "tang-se-jiutangshu-41",
-        "tang-se-suizhou-prefecture"
+        "tang-se-suizhou-prefecture",
+        "song-research-songshi-89"
       ],
       "nameByPeriod": {
-        "tang": "遂宁郡"
+        "tang": "遂宁郡",
+        "song": "遂宁府"
       },
       "location": {
         "accuracy": "approximate",
@@ -5383,13 +5439,16 @@
         "晋陵郡"
       ],
       "periodIds": [
-        "tang"
+        "tang",
+        "song"
       ],
       "sourceIds": [
-        "tang-se-jiutangshu-40"
+        "tang-se-jiutangshu-40",
+        "song-research-songshi-88"
       ],
       "nameByPeriod": {
-        "tang": "晋陵郡"
+        "tang": "晋陵郡",
+        "song": "常州"
       },
       "location": {
         "accuracy": "approximate",
@@ -5683,14 +5742,18 @@
         "岳阳市"
       ],
       "periodIds": [
-        "tang"
+        "tang",
+        "song"
       ],
       "sourceIds": [
         "tang-nw-jiutangshu-40",
-        "tang-central-location-yuezhou-baling"
+        "tang-central-location-yuezhou-baling",
+        "song-research-songshi-88",
+        "song-research-yueyanglou-ji"
       ],
       "nameByPeriod": {
-        "tang": "巴陵郡"
+        "tang": "巴陵郡",
+        "song": "岳州"
       },
       "location": {
         "accuracy": "approximate",
@@ -5716,14 +5779,17 @@
         "吉安市"
       ],
       "periodIds": [
-        "tang"
+        "tang",
+        "song"
       ],
       "sourceIds": [
         "tang-nw-jiutangshu-40",
-        "tang-central-location-jizhou-luling"
+        "tang-central-location-jizhou-luling",
+        "song-research-songshi-88"
       ],
       "nameByPeriod": {
-        "tang": "庐陵郡"
+        "tang": "庐陵郡",
+        "song": "吉州"
       },
       "location": {
         "accuracy": "approximate",
@@ -5749,14 +5815,17 @@
         "赣州市"
       ],
       "periodIds": [
-        "tang"
+        "tang",
+        "song"
       ],
       "sourceIds": [
         "tang-nw-jiutangshu-40",
-        "tang-central-location-qianzhou-gan"
+        "tang-central-location-qianzhou-gan",
+        "song-research-songshi-88"
       ],
       "nameByPeriod": {
-        "tang": "南康郡"
+        "tang": "南康郡",
+        "song": "赣州"
       },
       "location": {
         "accuracy": "approximate",
@@ -8248,12 +8317,42 @@
       "revisionId": "7908408",
       "edition": "固定修订电子文本及本地快照",
       "license": "原著公版；电子整理文本条款见来源页"
+    },
+    {
+      "id": "song-research-shizhongshan-ji",
+      "title": "石鐘山記（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E7%9F%B3%E9%90%98%E5%B1%B1%E8%A8%98&oldid=2190370",
+      "retrievedAt": "2026-09-27T06:06:42.406904+00:00",
+      "note": "宋代作者文章的固定修订文本，原始API与文本分别归档并校验；文学记述支持所见自然景观或文本纪年，不能当作1200年岸线、山形或州界测绘。",
+      "snapshotPath": "data/evidence/song-research/sources/shizhongshan-ji.txt",
+      "snapshotSha256": "72eae0c0028df3733f4a9c05d77cb1580828ff1941664c1efeee39caca036a93",
+      "author": "苏轼",
+      "locator": "石鐘山記（维基文库固定版本）",
+      "verification": "verified",
+      "revisionId": "2190370",
+      "edition": "固定修订电子文本及本地快照",
+      "license": "原著公版；电子整理文本条款见来源页"
+    },
+    {
+      "id": "song-research-yueyanglou-ji",
+      "title": "岳陽樓記（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E5%B2%B3%E9%99%BD%E6%A8%93%E8%A8%98&oldid=9467826",
+      "retrievedAt": "2026-09-27T06:06:42.275621+00:00",
+      "note": "宋代作者文章的固定修订文本，原始API与文本分别归档并校验；文学记述支持所见自然景观或文本纪年，不能当作1200年岸线、山形或州界测绘。",
+      "snapshotPath": "data/evidence/song-research/sources/yueyanglou-ji.txt",
+      "snapshotSha256": "3e79fdc58140aada6572f9683e62991df64cb78c027e0d347d82b2d532d0252b",
+      "author": "范仲淹",
+      "locator": "岳陽樓記（维基文库固定版本）",
+      "verification": "verified",
+      "revisionId": "9467826",
+      "edition": "固定修订电子文本及本地快照",
+      "license": "原著公版；电子整理文本条款见来源页"
     }
   ],
   "metadata": {
     "title": "山河纪 · 中国历史时空地图",
-    "version": "0.15.0",
-    "dataNotice": "本版含11个代表历史截面、106个地点档案，其中唐时期有104个城镇阅读入口及专门看点，明时期有28个入口及《明史》地理志档案，宋时期有29个入口及宋金同期史料档案。唐代条目含都城、州府、商贸城镇、关隘、驿站及同时期周边政权；幽州与范阳沿用同城不同阅读入口，数量不表示互不重合的古城遗址。历史行政界接入CHGIS 1820/1911和Hartwell 741/1080/1200/1290/1391资料；资料年份独立标注，不能直接等同地图代表年。Hartwell是近似历史行政模型，行政区界不等于古城墙或完整国家边界；另提供18张历史地图纸图参考。历史地理含8条概述，历代大事记覆盖106个城市阅读入口、525个节点。城池资料保留原文出处、名称年代和近似位置说明；引文可回查不等于古址已考证。现有12,111条历史行政记录通过显示层处理为简体中文，12,100条有代表点所在现代地区参考；这不证明古今行政实体相同。事件连线不是实际行军路线，传统纪年未换算公历。唐755年另接入1682条CHGIS治所点，源定位冲突记录未入图；不表示全部已考定古城。40个采集窗口另有现代OSM地物，唐、宋、明均可使用，随缩放加载。另有14330条现代山脊、刃脊、陡崖和命名山峰记录，保留来源几何，不补画未收录山线。唐代郡与州属于同一层级，已核对改名或隶属关系的治所可显示741年参考辖区，不代表755年精确界线。22处山地近览使用真实现代高程生成18451条等高线与精细山影；不是山脉边界或唐代地貌考证。52条现代山地命名概括面用于显示山系大致分布，取自Natural Earth 1:1000万资料，不是精确山脚边界。唐代县治与741年县模型另提供逐条一致性核查；明确冲突的模型以存疑虚线标示，相容也不等于历史边界已经核定。县级存疑研究另补78条史料专题，逐条列出原文、来源版本和未决问题；史料补充不等于县界核定。明代另有32条建置研究、76段逐字引文，29个府县模型可查看相应史料；1391近似模型与1582截面不等年，顺天府等晚出名称另有冲突说明。宋代以1200年为地图截面，区分南宋、金、西夏与大理；29份档案引用14卷正史及2项明确标注的二手对应资料，共78段逐字引文，新增48条纪年。25个具名府州县模型可从城池档案查看，4个地点明确保留范围缺口；大同、重庆、邯郸的源字段冲突及泉州点面差异另行标注。1080年北宋辽模型与1200年城市入口不得混用。",
+    "version": "0.16.0",
+    "dataNotice": "本版含11个代表历史截面、106个地点档案，其中唐时期有104个城镇阅读入口及专门看点，明时期有28个入口及《明史》地理志档案，宋时期有51个入口及宋金同期史料档案。唐代条目含都城、州府、商贸城镇、关隘、驿站及同时期周边政权；幽州与范阳沿用同城不同阅读入口，数量不表示互不重合的古城遗址。历史行政界接入CHGIS 1820/1911和Hartwell 741/1080/1200/1290/1391资料；资料年份独立标注，不能直接等同地图代表年。Hartwell是近似历史行政模型，行政区界不等于古城墙或完整国家边界；另提供18张历史地图纸图参考。历史地理含8条概述，历代大事记覆盖106个城市阅读入口、571个节点。城池资料保留原文出处、名称年代和近似位置说明；引文可回查不等于古址已考证。现有12,111条历史行政记录通过显示层处理为简体中文，12,100条有代表点所在现代地区参考；这不证明古今行政实体相同。事件连线不是实际行军路线，传统纪年未换算公历。唐755年另接入1682条CHGIS治所点，源定位冲突记录未入图；不表示全部已考定古城。53个采集窗口另有现代OSM地物，唐、宋、明均可使用，随缩放加载。另有25366条现代山脊、刃脊、陡崖和命名山峰记录，保留来源几何，不补画未收录山线。唐代郡与州属于同一层级，已核对改名或隶属关系的治所可显示741年参考辖区，不代表755年精确界线。25处山地近览使用真实现代高程生成24335条等高线与精细山影；不是山脉边界或唐代地貌考证。52条现代山地命名概括面用于显示山系大致分布，取自Natural Earth 1:1000万资料，不是精确山脚边界。唐代县治与741年县模型另提供逐条一致性核查；明确冲突的模型以存疑虚线标示，相容也不等于历史边界已经核定。县级存疑研究另补78条史料专题，逐条列出原文、来源版本和未决问题；史料补充不等于县界核定。明代另有32条建置研究、76段逐字引文，29个府县模型可查看相应史料；1391近似模型与1582截面不等年，顺天府等晚出名称另有冲突说明。宋代以1200年为地图截面，区分南宋、金、西夏与大理；51份档案引用14卷正史、2篇宋人文章及2项明确标注的二手对应资料，共140段逐字引文，累计新增94条纪年。47个具名府州县模型可从城池档案查看，4个地点明确保留范围缺口；大同、重庆、邯郸的源字段冲突及泉州点面差异另行标注。1080年北宋辽模型与1200年城市入口不得混用。宋1200年另有1560条CHGIS时序治所候选点，其中县级源1209条、府州级源351条；106条坐标或定年矛盾记录隔离，50组同名记录分开保留。原始点无政权与上级字段，仅20条有文献核对的辖区关联，其余不推断隶属。起讫年与定年规则按原记录提示，不表示1560处古址都已考定。",
     "geographicNotice": "黄河中下游接入五期WorldMap图集河道，随朝代切换，唐代采用11—1048年、宋代1200年采用1128—1368年、明代采用1368—1855年资料；仅表示历史流向，不是逐年古河岸测绘。其他河湖、山峰及海岸仍为现代参照，不能据此复原所选朝代地貌。历史治所点与精选地点的坐标有各自来源；行政面不是城墙范围。山影与立体起伏采用本地真实现代高程，立体夸张1.5倍，适合区域观察。"
   },
   "topics": []

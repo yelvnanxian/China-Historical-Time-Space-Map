@@ -7,12 +7,13 @@ import { canInteract, type MapInteractionMode } from "../../shared/map-interacti
 import { findNaturalMapHit } from "../../shared/map-hit-test";
 import { boundarySearchKey } from "../../shared/boundary-search";
 import type { MountainShapeArea, MountainShapesManifest } from "../../shared/mountain-shapes";
+import { placeContourLabels } from "../../shared/contour-labels";
 import "../mountain-shapes.css";
 
 type Contours = FeatureCollection<LineString, { id: string; areaId: string; elevation: number; index: boolean }>;
 const empty: Contours = { type: "FeatureCollection", features: [] };
-const regionNames: Record<string, string> = { qinling: "秦岭", taihang: "太行", qilian: "祁连", tianshan: "天山", "west-sichuan": "川西", taihu: "杭州西湖周边", jianghuai: "南京紫金山周边", "city-fuzhou": "福州鼓山周边", "city-quanzhou": "泉州清源山周边", "city-ming-nanchang": "南昌梅岭周边" };
-const areaLabels: Record<string, string> = { "hangzhou-beigaofeng": "北高峰 · 杭州西湖", "nanjing-beigaofeng": "北高峰 · 南京紫金山", "fuzhou-gushan": "鼓山绝顶峰 · 福州", "quanzhou-qingyuan": "清源山 · 泉州", "nanchang-shigunao": "石鼓脑 · 南昌" };
+const regionNames: Record<string, string> = { qinling: "秦岭", taihang: "太行", qilian: "祁连", tianshan: "天山", "west-sichuan": "川西", taihu: "杭州西湖周边", jianghuai: "南京紫金山周边", "city-fuzhou": "福州鼓山周边", "city-quanzhou": "泉州清源山周边", "city-ming-nanchang": "南昌梅岭周边", "jiangxi-hunan": "庐山 衡山 江西 湖南", fujian: "武夷山 福建" };
+const areaLabels: Record<string, string> = { "hangzhou-beigaofeng": "北高峰 · 杭州西湖", "nanjing-beigaofeng": "北高峰 · 南京紫金山", "fuzhou-gushan": "鼓山绝顶峰 · 福州", "quanzhou-qingyuan": "清源山 · 泉州", "nanchang-shigunao": "石鼓脑 · 南昌", "lushan-hanyang": "汉阳峰 · 庐山", "hengshan-zhurong": "祝融峰 · 衡山", "wuyi-huanggang": "黄岗山 · 武夷山" };
 const lineLayers = ["mountain-shape-contours", "mountain-shape-contour-hit", "mountain-shape-selected"];
 const contourDetailZoom = 9.5;
 const overlap = (a: number[], b: number[]) => a[0] <= b[2] && a[2] >= b[0] && a[1] <= b[3] && a[3] >= b[1];
@@ -165,18 +166,17 @@ export default function MountainShapeLayer({ map, ready, enabled, mode, controls
     const render = () => {
       markers.forEach(marker => marker.remove()); markers = [];
       const b = map.getBounds(), container = map.getContainer(), rect = container.getBoundingClientRect();
-      const occupied = [...container.querySelectorAll<HTMLElement>(".nature-label,.tang-detail-label,.marker-label,.boundary-region-label")].filter(el => el.offsetWidth).map(el => el.getBoundingClientRect());
-      for (const feature of features.filter(feature => feature.properties.index)) {
-        if (markers.length >= 24) break;
-        const point = feature.geometry.coordinates[Math.floor(feature.geometry.coordinates.length / 2)] as [number, number];
-        if (!b.contains(point)) continue;
-        const pixel = map.project(point), box = { left: rect.left + pixel.x - 25, right: rect.left + pixel.x + 25, top: rect.top + pixel.y - 10, bottom: rect.top + pixel.y + 10 };
-        if (occupied.some(other => box.left < other.right + 28 && box.right > other.left - 28 && box.top < other.bottom + 16 && box.bottom > other.top - 16)) continue;
+      const occupied = [...container.querySelectorAll<HTMLElement>(".nature-label,.tang-detail-label,.marker-label,.boundary-region-label")].filter(el => el.offsetWidth).map(el => {
+        const box = el.getBoundingClientRect();
+        return { left: box.left - rect.left, right: box.right - rect.left, top: box.top - rect.top, bottom: box.bottom - rect.top };
+      });
+      const placements = placeContourLabels(features, { contains: point => b.contains(point), project: point => map.project(point), width: container.clientWidth, height: container.clientHeight, occupied });
+      for (const { feature, point } of placements) {
         const el = document.createElement("button"); el.className = "mountain-contour-label";
         el.textContent = `${feature.properties.elevation}米`;
         el.setAttribute("aria-label", `查看${feature.properties.elevation}米现代等高线`);
         el.addEventListener("click", event => { event.stopPropagation(); choose.current(); setCollapsed(false); setSelection({ areaId: feature.properties.areaId, contourId: feature.properties.id, elevation: feature.properties.elevation }); });
-        occupied.push(box as DOMRect); markers.push(new Marker({ element: el }).setLngLat(point).addTo(map));
+        markers.push(new Marker({ element: el }).setLngLat(point).addTo(map));
       }
     };
     const frame = requestAnimationFrame(render);

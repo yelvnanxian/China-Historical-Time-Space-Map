@@ -17,8 +17,12 @@ REGIONS = {
     'qilian': ('祁连山地区', [94, 36, 103, 40.5]),
     'tianshan': ('天山地区', [79, 40.5, 92, 45.5]),
     'west-sichuan': ('川西山地', [97, 28, 104, 34]),
+    'zhejiang': ('浙江山地', [118, 27, 122, 31]),
+    'fujian': ('福建山地', [116, 24, 120, 28]),
+    'jiangxi-hunan': ('江西与湖南山地', [111, 25, 117, 30]),
+    'chongqing-east-sichuan': ('重庆与川东山地', [105, 28, 110, 32]),
 }
-ENDPOINTS = ['https://overpass.kumi.systems/api/interpreter', 'https://overpass-api.de/api/interpreter']
+ENDPOINTS = ['https://overpass.kumi.systems/api/interpreter', 'https://overpass.private.coffee/api/interpreter']
 
 
 def tiles(region):
@@ -89,7 +93,7 @@ out meta geom;
         'elementCount': len(raw['elements']), 'modernReferenceOnly': True,
         'license': 'Open Data Commons Open Database License (ODbL) 1.0',
         'attribution': '© OpenStreetMap contributors',
-        'note': '完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是唐代复原。查询边框不是山脉范围。',
+        'note': '完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是所选朝代的地貌复原。查询边框不是山脉范围。',
     }
     source_path.write_text(json.dumps(meta, ensure_ascii=False, indent=2) + '\n')
     return {'tile': tile_id, 'cached': False, 'elements': len(raw['elements']), 'bytes': archive_path.stat().st_size}

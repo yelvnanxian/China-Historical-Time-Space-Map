@@ -16,6 +16,13 @@
 .tang-detail-explorer .nature-search-results button { gap: 10px; }
 .tang-detail-explorer .nature-search-results strong { flex-shrink: 0; }
 .tang-detail-explorer .nature-search-results span { text-align: right; line-height: 1.6; }
+.map-tool-natural > .nature-explorer.song-settlement-explorer { order: -2; }
+.song-settlement-explorer .nature-search-results button { gap: 10px; }
+.song-settlement-explorer .nature-search-results strong { flex-shrink: 0; }
+.song-settlement-explorer .nature-search-results span { text-align: right; line-height: 1.5; }
+.song-settlement-explorer .nature-search-results small { display: block; color: #929887; font-size: 9px; }
+.song-settlement-explorer p.song-settlement-search-note { font-size: 10px; }
+.song-settlement-label small { max-width: 200px; overflow: hidden; text-overflow: ellipsis; }
 .nature-detail-body pre { max-height: 180px; overflow: auto; white-space: pre-wrap; font: 10px/1.8 monospace; color: #819075; }
 .map-detail-status { position: absolute; left: 14px; top: 12px; z-index: 5; padding: 7px 10px; border: 1px solid #d5dac8; border-radius: 5px; font-size: 10px; line-height: 1.6; background: #fbfaeef0; color: #607452; text-align: left; box-shadow: 0 2px 8px #33452c0a; }
 .map-detail-status small { display: block; color: #8b927e; font-size: 9px; }

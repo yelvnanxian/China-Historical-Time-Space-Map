@@ -1,0 +1,25 @@
+{
+  "id": "osm-mountain-detail-zhejiang-1",
+  "regionId": "zhejiang",
+  "title": "OpenStreetMap 山地线与命名山峰：浙江山地 / zhejiang-1",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "bounds": [
+    118,
+    30,
+    122,
+    31
+  ],
+  "retrievedAt": "2026-09-27T06:07:10.534001+00:00",
+  "snapshotPath": "data/evidence/mountain-detail/osm/zhejiang-1.json.gz",
+  "snapshotSha256": "f282fd4461c722dc57d70a16bec23dce72702e5efbd5423903a78de1b3cd06e8",
+  "uncompressedSnapshotSha256": "ea7f77e3665ffe799bea02c3bf535a1488244c96989c9c82e564dbfb10a7461a",
+  "queryPath": "data/evidence/mountain-detail/osm/zhejiang-1.ql",
+  "querySha256": "0afec10501fdafd5863f05252ff303907b8f6040dad787041309d3ae25f48904",
+  "osmBaseTimestamp": "2026-07-24T11:04:51Z",
+  "elementCount": 1553,
+  "modernReferenceOnly": true,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是所选朝代的地貌复原。查询边框不是山脉范围。"
+}

@@ -18,10 +18,10 @@ const research: {
   sources: { id: string; url: string; revisionId: string; snapshotPath: string; snapshotSha256: string; rawSnapshotPath?: string; rawSnapshotSha256?: string }[];
   entries: { catalogPlaceId: string; name: string; region: string; summary: string; namingNote: string; facts: HistoricalResearchFinding[]; unresolved: string[] }[];
 } = JSON.parse(await read("data/evidence/song-research/geography.json"));
-const expected = ["changan", "luoyang", "beijing", "kaifeng", "nanjing", "hangzhou", "chengdu", "guangzhou", "yangzhou", "xiangyang", "jingzhou", "jinyang", "datong", "linzi", "handan", "tongguan", "yinchuan", "quanzhou", "dali", "dunhuang", "suzhou", "qizhou-jinan", "yanzhou", "ezhou-jiangxia", "fuzhou-fujian", "yuzhou-chongqing", "guizhou-guilin", "mingzhou", "hongzhou"].sort();
+const expected = ["changan", "luoyang", "beijing", "kaifeng", "nanjing", "hangzhou", "chengdu", "guangzhou", "yangzhou", "xiangyang", "jingzhou", "jinyang", "datong", "linzi", "handan", "tongguan", "yinchuan", "quanzhou", "dali", "dunhuang", "suzhou", "qizhou-jinan", "yanzhou", "ezhou-jiangxia", "fuzhou-fujian", "yuzhou-chongqing", "guizhou-guilin", "mingzhou", "hongzhou", "runzhou", "yuezhou", "huzhou", "changzhou", "wuzhou-jinhua", "wenzhou", "xuanzhou", "shezhou", "jiangzhou-jiujiang", "jizhou-luling", "qianzhou-gan", "tanzhou", "yuezhou-baling", "hengzhou-hunan", "hanzhong", "zizhou", "mianzhou", "hanzhou", "langzhou", "suizhou-suining", "kuizhou", "jianzhou"].sort();
 const song = filterCityProfiles(profiles.profiles, catalog.places, "song");
 
-test("宋代29个阅读入口都有当期档案、简体名称和政权说明", () => {
+test("宋代51个阅读入口都有当期档案、简体名称和政权说明", () => {
   assert.deepEqual(song.map(p => p.placeId).sort(), expected);
   assert.deepEqual(research.entries.map(e => e.catalogPlaceId).sort(), expected);
   assert.deepEqual(catalog.places.filter(p => p.periodIds.includes("song")).map(p => p.id).sort(), expected);
@@ -105,4 +105,40 @@ test("重庆与隆兴升府据本纪核年，待考地点不凑纪年", () => {
   assert.ok(!events.some(e => /hongzhou/.test(e.id) && e.year === 1165));
   for (const pid of ["linzi", "handan", "tongguan"]) assert.ok(!events.some(e => e.id.startsWith(`song-timeline-${pid}-`)));
   assert.ok(events.some(e => e.year === 1222 && /嘉定/.test(e.title)), "晚于截面的沿革有独立纪年");
+});
+
+test("第二批江南川陕档案按1200年名称，后期升改迁治不提前", () => {
+  const name = (id: string) => catalog.places.find(p => p.id === id)!.nameByPeriod!.song;
+  for (const [id, expectedName] of [["runzhou", "镇江府"], ["yuezhou", "绍兴府"], ["huzhou", "湖州"], ["wenzhou", "温州"], ["xuanzhou", "宁国府"], ["shezhou", "徽州"], ["qianzhou-gan", "赣州"], ["jianzhou", "隆庆府"], ["zizhou", "潼川府"], ["hanzhong", "兴元府"]]) assert.equal(name(id), expectedName);
+  const events = (id: string) => context.cityTimelines.find(t => t.placeId === id)!.entries.filter(e => e.id.startsWith("song-timeline-"));
+  assert.equal(events("huzhou").find(e => e.title === "湖州改安吉州")!.year, 1225);
+  assert.equal(events("langzhou").find(e => e.title === "阆州移治大获山")!.year, 1243);
+  assert.equal(events("suizhou-suining").find(e => e.title === "遂宁权治蓬溪寨")!.year, 1236);
+  assert.equal(events("jianzhou").find(e => e.title === "剑州升隆庆府")!.year, 1190);
+  assert.equal(events("hanzhou").length, 0, "汉州地理条无明确变更纪年，不用相邻州纪年充数");
+  assert.match(song.find(p => p.placeId === "wenzhou")!.namingNote!, /里安.*版本校勘/);
+});
+
+test("宋人山水记述有作者与明确观察范围，不把记游当1200年测绘", () => {
+  const byId = new Map(song.map(p => [p.placeId, p]));
+  assert.ok(byId.get("jiangzhou-jiujiang")!.evidence.some(e => e.sourceId === "song-research-shizhongshan-ji" && e.quote.includes("元豐七年六月丁丑")));
+  assert.match(byId.get("jiangzhou-jiujiang")!.namingNote!, /湖口县.*不直接证明1200年/);
+  assert.ok(byId.get("yuezhou-baling")!.evidence.some(e => e.sourceId === "song-research-yueyanglou-ji" && e.quote.includes("在洞庭一湖")));
+  const yueyangEvent = context.cityTimelines.find(t => t.placeId === "yuezhou-baling")!.entries.find(e => e.title === "重修岳阳楼")!;
+  assert.equal(yueyangEvent.year, 1045);
+  assert.ok(yueyangEvent.evidence.some(e => e.quote.includes("慶曆四年") && e.quote.includes("越明年")), "重修年按原文前后关系，不能套用文章写作年");
+  assert.ok(byId.get("langzhou")!.evidence.some(e => e.quote.includes("閬水迂曲，繞縣三面")));
+  assert.ok(byId.get("hanzhong")!.evidence.some(e => e.quote.includes("以廉水爲名")));
+  for (const [id, author] of [["song-research-yueyanglou-ji", "范仲淹"], ["song-research-shizhongshan-ji", "苏轼"]]) assert.equal(catalog.sources.find(s => s.id === id)!.author, author);
+});
+
+test("衡州茶陵升军与潼川永泰复县各有直接引文，1072事件仅记当年省县", () => {
+  const quotes = (id: string) => research.entries.find(e => e.catalogPlaceId === id)!.facts.flatMap(f => f.evidence.map(e => e.quote));
+  assert.ok(quotes("hengzhou-hunan").includes("南渡後，陞茶陵爲軍。"));
+  assert.ok(quotes("zizhou").includes("永泰。中下。本尉司，南渡後爲縣。"));
+  const event = context.cityTimelines.find(t => t.placeId === "zizhou")!.entries.find(e => e.id === "song-timeline-zizhou-1072-1")!;
+  assert.equal(event.year, 1072);
+  assert.match(event.summary, /省为镇.*盐亭/);
+  assert.doesNotMatch(event.summary, /南渡|复县|又为县/);
+  assert.equal(research.entries.reduce((n, e) => n + e.facts.reduce((m, f) => m + f.evidence.length, 0), 0), 140);
 });

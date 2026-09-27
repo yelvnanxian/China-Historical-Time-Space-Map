@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-city-song-suining",
+  "title": "OpenStreetMap 现代地理：遂宁与涪江水系",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.private.coffee/api/interpreter",
+  "retrievedAt": "2026-09-27T06:23:23.528156+00:00",
+  "bounds": [
+    105.3923,
+    30.3333,
+    105.7923,
+    30.7333
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/city-song-suining.json.gz",
+  "snapshotSha256": "4172be34880eb4730041816342f65fc8d504b86e886d204b96fc6a6d222a55b9",
+  "uncompressedSnapshotSha256": "167f3da254cebce54010cf6e31518b51b12b28ccf90c9e34414118ef79be9e50",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/city-song-suining.ql",
+  "querySha256": "0881a5f5c3237cf6fcb39a7cae75642a0f5fc5082c39dc2b671c89b01b409c31",
+  "osmBaseTimestamp": "2026-06-01T08:52:28Z",
+  "elementCount": 240,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+}

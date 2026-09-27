@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-city-song-jiange",
+  "title": "OpenStreetMap 现代地理：剑阁附近水系",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "retrievedAt": "2026-09-27T06:14:37.090274+00:00",
+  "bounds": [
+    105.324,
+    32.088,
+    105.724,
+    32.488
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/city-song-jiange.json.gz",
+  "snapshotSha256": "3552aecd4a780f2b32380e20837b0832587298636e7daea479bf6efb92fcfbee",
+  "uncompressedSnapshotSha256": "2b944254bbc19587f4bda73d35ac71ca66d8c4fb2c6a81e987516ae89a9c104e",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/city-song-jiange.ql",
+  "querySha256": "04efb56bb73b7e8dde700cce65ec32135d1b3d6f4b5276d6bfcaa7534a04a9c0",
+  "osmBaseTimestamp": "2026-06-01T08:52:28Z",
+  "elementCount": 814,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-city-song-langzhong",
+  "title": "OpenStreetMap 现代地理：阆中与嘉陵江水系",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.private.coffee/api/interpreter",
+  "retrievedAt": "2026-09-27T06:23:05.903299+00:00",
+  "bounds": [
+    105.805,
+    31.358,
+    106.205,
+    31.758
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/city-song-langzhong.json.gz",
+  "snapshotSha256": "576467d0e69c3608662a2981df5bfc97ecca287843430bd47ceee23a241efcd9",
+  "uncompressedSnapshotSha256": "94166245453b00c1c94830d0c29bef48b04c487b6ad44c9c64f1de035ed35746",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/city-song-langzhong.ql",
+  "querySha256": "8b96bb9f991d9c597842283038ed9ea095f34f95c7d7027e8eaaac8078c88770",
+  "osmBaseTimestamp": "2026-05-31T22:37:44Z",
+  "elementCount": 529,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+}

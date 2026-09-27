@@ -1,0 +1,25 @@
+{
+  "id": "osm-mountain-detail-jiangxi-hunan-3",
+  "regionId": "jiangxi-hunan",
+  "title": "OpenStreetMap 山地线与命名山峰：江西与湖南山地 / jiangxi-hunan-3",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "bounds": [
+    115,
+    28,
+    117,
+    30
+  ],
+  "retrievedAt": "2026-09-27T06:11:02.863518+00:00",
+  "snapshotPath": "data/evidence/mountain-detail/osm/jiangxi-hunan-3.json.gz",
+  "snapshotSha256": "3b9840892ba5dd6530794016dd138544269df3862855729353f82d39d844955a",
+  "uncompressedSnapshotSha256": "091aef0cb2ce0e992542b69a6859e8238228805a730642f107b6f668156a678e",
+  "queryPath": "data/evidence/mountain-detail/osm/jiangxi-hunan-3.ql",
+  "querySha256": "97ce32d895cb248b0cfb3afcb43edc19e777e5bfc3ea516db5b18e08afdbea95",
+  "osmBaseTimestamp": "2026-05-31T22:37:44Z",
+  "elementCount": 450,
+  "modernReferenceOnly": true,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是所选朝代的地貌复原。查询边框不是山脉范围。"
+}

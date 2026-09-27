@@ -16,11 +16,11 @@ const models = (await Promise.all(["prefecture", "county"].map(async level => (a
 const records = Object.values(published.byBoundary);
 const byPlace = (id: string) => records.find(record => record.catalogPlaceId === id)!;
 
-test("宋代29个城市入口逐项关联或说明缺口，府县、北宋南宋及政权不混用", () => {
+test("宋代51个城市入口逐项关联或说明缺口，府县、北宋南宋及政权不混用", () => {
   assert.equal(published.boundaryYear, 1200);
-  assert.deepEqual({ ...published.statistics, sourceVolumes: undefined }, { researchEntries: 29, linkedEntries: 25, linkedBoundaries: 25, unlinkedEntries: 4, sourceVolumes: undefined });
+  assert.deepEqual({ ...published.statistics, sourceVolumes: undefined }, { researchEntries: 51, linkedEntries: 47, linkedBoundaries: 47, unlinkedEntries: 4, sourceVolumes: undefined });
   assert.deepEqual([...records, ...published.unlinkedEntries].map(record => record.researchEntryId).sort(), bundle.entries.map(entry => entry.id).sort());
-  assert.equal(new Set([...records, ...published.unlinkedEntries].map(record => record.catalogPlaceId)).size, 29);
+  assert.equal(new Set([...records, ...published.unlinkedEntries].map(record => record.catalogPlaceId)).size, 51);
   for (const record of records) {
     const model = models.find(item => item.id === record.boundaryId);
     assert.ok(model, record.boundaryId);
@@ -81,14 +81,19 @@ test("未收录同级面时说明缺口，不把西夏大理国境或最近区�
   assert.match(published.unlinkedEntries.find(record => record.catalogPlaceId === "tongguan")!.reason, /不能用附近/);
 });
 
-test("泉州点面不一致公开提示，不移动点或转配近邻；其余参考点包含关系不等于史实认证", () => {
+test("泉州与隆庆府点面不一致公开提示，不移动点或转配近邻；其余参考点包含关系不等于史实认证", () => {
   const quanzhou = byPlace("quanzhou");
   assert.equal(quanzhou.boundaryId, "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-271");
   assert.equal(quanzhou.catalogPointComparison.status, "outside");
   assert.deepEqual(quanzhou.catalogPointComparison.coordinates, [118.68, 24.88]);
   assert.match(quanzhou.yearNotice, /参考点落在.*模型外/);
   assert.match(quanzhou.catalogPointComparison.note, /不移动坐标.*不改配到最近区域/);
-  for (const record of records.filter(record => record.catalogPlaceId !== "quanzhou")) {
+  const jianzhou = byPlace("jianzhou");
+  assert.equal(jianzhou.boundaryId, "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-335");
+  assert.equal(jianzhou.catalogPointComparison.status, "outside");
+  assert.deepEqual(jianzhou.catalogPointComparison.coordinates, [105.524, 32.288]);
+  assert.match(jianzhou.yearNotice, /参考点落在.*模型外/);
+  for (const record of records.filter(record => !["quanzhou", "jianzhou"].includes(record.catalogPlaceId))) {
     assert.equal(record.catalogPointComparison.status, "inside");
     assert.match(record.catalogPointComparison.note, /不能证明宋代治所坐标/);
   }
@@ -113,4 +118,25 @@ test("宋代史料引文可回溯固定快照，原模型字节与输入哈希�
   assert.equal(hash(await bytes("public/data/boundaries/hartwell-1200-prefecture.geojson")), "efa3333cd7986a8f019f05daae908322e3bc987454d51331c5ec43517cb28747");
   assert.equal(hash(await bytes("public/data/boundaries/hartwell-1200-county.geojson")), "2a2d1012f5d2d4893b1cef501319cc61b17a98d2ed5b62c0fd88e08b5abe7c98");
   assert.equal(hash(await bytes("public/data/boundaries/hartwell-1080-prefecture.geojson")), "ac1588c8713c71fbbdf51c994173ae5044b625e0b35bf20669bcc429260ff7c6");
+});
+
+test("新增江南四川关联核对完整隶属，婺州与湖州源字形冲突可复查", () => {
+  const wuzhou = byPlace("wuzhou-jinhua"), huzhou = byPlace("huzhou");
+  assert.equal(wuzhou.boundaryId, "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-208");
+  assert.equal(wuzhou.sourceName, "務州");
+  assert.equal(wuzhou.displayCorrection?.name, "婺州");
+  assert.equal(wuzhou.linkBasis, "documented-source-conflict");
+  assert.match(wuzhou.yearNotice, /七个同源属县/);
+  assert.equal(huzhou.sourceHierarchy.dependentPrefecture, "胡州");
+  assert.match(huzhou.yearNotice, /六县/);
+  for (const [record, countyNames] of [[wuzhou, ["金华", "义乌", "永康", "武义", "浦江", "兰溪", "东阳"]], [huzhou, ["乌程", "归安", "安吉", "长兴", "德清", "武康"]]] as const) {
+    const children = models.filter(m => m.level === "county" && m.sourceHierarchy.polity === record.sourceHierarchy.polity && m.sourceHierarchy.province === record.sourceHierarchy.province && m.sourceHierarchy.dependentPrefecture === record.sourceHierarchy.dependentPrefecture);
+    assert.deepEqual(children.map(m => simplifiedChinese(m.sourceName)).sort(), [...countyNames].sort());
+    assert.ok(record.historicalResearch[0].findings.flatMap(f => f.evidence).some(q => countyNames.every(name => simplifiedChinese(q.quote).replaceAll("淸", "清").includes(name))));
+  }
+  assert.equal(byPlace("jizhou-luling").boundaryId, "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-231");
+  assert.equal(published.byBoundary["hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-124"], undefined, "江西吉州不能误连金代同名吉州");
+  assert.equal(byPlace("hanzhou").sourceHierarchy.province, "成都府路");
+  assert.equal(byPlace("hanzhong").researchName, "兴元府");
+  for (const id of ["hanzhong", "langzhou", "jianzhou"]) assert.match(byPlace(id).yearNotice, /庆元二年.*1200年.*利州东路/);
 });

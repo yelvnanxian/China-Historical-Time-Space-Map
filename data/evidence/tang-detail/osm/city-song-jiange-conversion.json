@@ -1,0 +1,15 @@
+{
+  "featureCount": 814,
+  "countsByKind": {
+    "water": 586,
+    "peak": 19,
+    "saddle": 1,
+    "river": 38,
+    "stream": 167,
+    "canal": 3
+  },
+  "rejected": [],
+  "sourceMemberWayDuplicatesSuppressed": 161,
+  "crossRegionDuplicateIdsSuppressed": 0,
+  "geometryPolicy": "Unsmoothed original coordinate sequences; exact endpoint line merging for complete water rings. No guessed closing edges, buffers or polygon repair."
+}

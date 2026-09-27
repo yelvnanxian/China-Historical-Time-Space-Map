@@ -1,12 +1,12 @@
 {
-  "featureCount": 14330,
+  "featureCount": 25366,
   "countsByKind": {
-    "ridge": 8940,
+    "ridge": 10929,
     "arete": 54,
-    "cliff": 1746,
-    "peak": 3590
+    "cliff": 2767,
+    "peak": 11616
   },
-  "duplicateSourceCopies": 15,
+  "duplicateSourceCopies": 650,
   "versionChoices": [],
   "assertions": [
     "All source compressed, uncompressed and query SHA256 values match",

@@ -7,6 +7,7 @@ import { riverEpochAtYear, type RiverManifest } from "../shared/historical-river
 import { detailBelongsToPeriod, replaceModernYellowGeometry, showTangDetail, canSelectTangDetail } from "../shared/tang-detail-display";
 import type { TangDetailCollection, TangDetailManifest } from "../shared/tang-detail";
 import type { MountainShapesManifest } from "../shared/mountain-shapes";
+import type { MountainDetailManifest } from "../shared/mountain-detail";
 
 const root = new URL("../", import.meta.url);
 const bytes = (path: string) => readFileSync(new URL(path, root));
@@ -72,6 +73,54 @@ test("宋代低山近览使用可追溯的真实峰点和50米等高线，点选
     for (const mode of ["all", "cities", "mountains", "rivers"] as const) {
       assert.equal(showTangDetail(peak.properties, 12, mode), true);
       assert.equal(canSelectTangDetail(peak.properties, mode), mode === "all" || mode === "mountains");
+    }
+  }
+});
+
+test("宋代东南、两湖及川东新增的是原始山脊线，覆盖区不能只增加山峰点", () => {
+  const mountain = json<MountainDetailManifest>("public/data/mountain-detail/manifest.json");
+  for (const regionId of ["zhejiang", "fujian", "jiangxi-hunan", "chongqing-east-sichuan"]) {
+    const region = mountain.regions.find(item => item.id === regionId)!;
+    assert.ok(region, regionId);
+    assert.ok((region.countsByKind.ridge ?? 0) > 0, `${regionId}: actual ridge ways must be present`);
+    assert.ok((region.countsByKind.peak ?? 0) > 0, `${regionId}: named peak nodes must be present`);
+    const sources = mountain.sources.filter(source => source.regionId === regionId);
+    assert.ok(sources.length > 0);
+    for (const source of sources) {
+      assert.equal(hash(bytes(source.snapshotPath)), source.snapshotSha256);
+      assert.equal(hash(bytes(source.queryPath)), source.querySha256);
+      assert.match(bytes(source.queryPath).toString(), /ridge\|arete\|cliff/);
+      assert.match(source.note, /不是所选朝代/);
+    }
+  }
+});
+
+test("宋代新增城市河湖窗口保留查询与原始响应，河线逐顶点等于来源且可在近览显示", () => {
+  const cityRegions = ["jiujiang", "hengzhou", "wenzhou", "santai", "mianyang", "jiange", "hanzhong", "fengjie", "langzhong", "suining", "yueyang", "jian", "ganzhou"];
+  for (const city of cityRegions) {
+    const id = `city-song-${city}`;
+    const region = manifest.modernCoverageRegions.find(item => item.id === id)!;
+    assert.ok(region, id);
+    const source = json<{ bounds: number[]; snapshotPath: string; snapshotSha256: string; uncompressedSnapshotSha256: string; queryPath: string; querySha256: string }>(`data/evidence/tang-detail/osm/${id}-source.json`);
+    assert.deepEqual(region.bounds, source.bounds);
+    const compressed = bytes(source.snapshotPath);
+    assert.equal(hash(compressed), source.snapshotSha256);
+    const expanded = gunzipSync(compressed);
+    assert.equal(hash(expanded), source.uncompressedSnapshotSha256);
+    assert.equal(hash(bytes(source.queryPath)), source.querySha256);
+    const original: { elements: { type: string; id: number; geometry?: { lat: number; lon: number }[]; tags: Record<string, string> }[] } = JSON.parse(expanded.toString());
+    const packs = manifest.modernRegions.filter(pack => pack.regionId === id);
+    assert.ok(packs.some(pack => pack.minZoom === 8), `${id}: main river before fine-detail zoom`);
+    const features = packs.flatMap(pack => collection(pack.url).features);
+    const rivers = features.filter(feature => feature.properties.kind === "river");
+    assert.ok(rivers.length, id);
+    for (const feature of rivers) {
+      const raw = original.elements.find(item => item.type === feature.properties.osmType && item.id === feature.properties.osmId)!;
+      assert.ok(raw?.geometry, feature.properties.id);
+      assert.deepEqual(feature.geometry, { type: "LineString", coordinates: raw.geometry.map(point => [point.lon, point.lat]) });
+      assert.equal(detailBelongsToPeriod(feature.properties, "song"), true);
+      assert.equal(showTangDetail(feature.properties, 12, "rivers"), true);
+      assert.equal(feature.properties.modernReferenceOnly, true);
     }
   }
 });

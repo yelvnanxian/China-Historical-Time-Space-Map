@@ -1,0 +1,13 @@
+{
+  "id": "song-research-yueyanglou-ji",
+  "title": "岳陽樓記（维基文库固定版本）",
+  "url": "https://zh.wikisource.org/w/index.php?title=%E5%B2%B3%E9%99%BD%E6%A8%93%E8%A8%98&oldid=9467826",
+  "kind": "historical-literature",
+  "snapshotPath": "data/evidence/song-research/sources/yueyanglou-ji.txt",
+  "snapshotSha256": "3e79fdc58140aada6572f9683e62991df64cb78c027e0d347d82b2d532d0252b",
+  "rawSnapshotPath": "data/evidence/song-research/sources/yueyanglou-ji.api.json",
+  "rawSnapshotSha256": "1982befee6072045a3f7cf0c6f9e4a519bef964bc038cb64809aae970a99e3fd",
+  "retrievedAt": "2026-09-27T06:06:42.275621+00:00",
+  "revisionId": "9467826",
+  "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E5%B2%B3%E9%99%BD%E6%A8%93%E8%A8%98"
+}

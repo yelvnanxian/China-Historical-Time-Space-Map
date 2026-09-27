@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-city-song-yueyang",
+  "title": "OpenStreetMap 现代地理：岳阳与洞庭湖东岸水系",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "retrievedAt": "2026-09-27T06:23:39.138058+00:00",
+  "bounds": [
+    112.93,
+    29.16,
+    113.33,
+    29.56
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/city-song-yueyang.json.gz",
+  "snapshotSha256": "f528421c424b881e868a229c5b98ab03bcb3a71e75ecddf88d98567b4cc8357c",
+  "uncompressedSnapshotSha256": "aeac7cd6645caa1820a84861058b8870e0a4dd99530bf8a0d50990f89483d99f",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/city-song-yueyang.ql",
+  "querySha256": "d8f4ab6cce87514d5164ab653b8bd22525fb49296a236352fdc8991d0151ee48",
+  "osmBaseTimestamp": "2026-05-31T22:37:44Z",
+  "elementCount": 799,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+}

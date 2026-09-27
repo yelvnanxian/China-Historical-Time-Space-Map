@@ -1,0 +1,9 @@
+{
+  "regionId": "city-song-mianyang",
+  "failedBounds": [104.4779, 31.267, 104.8779, 31.667],
+  "failedAttemptCount": 3,
+  "failedEndpoints": ["https://overpass.kumi.systems/api/interpreter", "https://overpass.private.coffee/api/interpreter"],
+  "failure": "All three full-window requests timed out after 145 seconds without a response body.",
+  "retryBounds": [104.5579, 31.347, 104.7979, 31.587],
+  "note": "缩小真实查询窗口重试，不能将新的采集范围表述为已覆盖原0.4度窗口。已归档成功响应及其元数据才构成覆盖依据。"
+}

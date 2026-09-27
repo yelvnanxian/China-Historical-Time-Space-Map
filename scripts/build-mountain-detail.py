@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 EVIDENCE = ROOT / 'data/evidence/mountain-detail'
 OUTPUT = ROOT / 'public/data/mountain-detail'
 KINDS = {'ridge': '山脊', 'arete': '刃脊', 'cliff': '陡崖', 'peak': '山峰'}
+PRESERVED_REGIONS = {'qinling', 'taihang', 'qilian', 'tianshan', 'west-sichuan'}
 spec = importlib.util.spec_from_file_location('mountain_fetch', ROOT / 'scripts/fetch-mountain-detail.py')
 fetch_config = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(fetch_config)
@@ -76,6 +77,10 @@ def build(allow_missing=False):
                 if key in selected:
                     duplicates += 1
                     previous, previous_source = selected[key]
+                    if previous_source['regionId'] in PRESERVED_REGIONS and source['regionId'] not in PRESERVED_REGIONS:
+                        if previous.get('version') != element.get('version'):
+                            version_choices.append({'id': key, 'versions': [previous.get('version'), element.get('version')], 'sourceIds': [previous_source['id'], source['id']], 'rule': 'Preserve original published region snapshot; new acquisition only extends coverage'})
+                        continue
                     if previous.get('version') == element.get('version'):
                         assert previous.get('tags') == element.get('tags') and raw_geometry(previous)[0] == raw_geometry(element)[0], f'Conflicting same-version object {key}'
                     else:
@@ -110,6 +115,8 @@ def build(allow_missing=False):
             'bounds': bounds(points), 'labelCoordinates': points[len(points) // 2],
             'minZoom': min_zoom, 'tags': tags,
         }
+        if source['regionId'] not in PRESERVED_REGIONS:
+            properties['geometryNote'] = properties['geometryNote'].replace('唐代', '所选朝代的')
         if kind != 'peak':
             properties['mappedLengthKm'] = round(length, 3)
         if elevation_value is not None:
@@ -137,7 +144,7 @@ def build(allow_missing=False):
             packs.append({'id': pack_id, 'regionId': region_id, 'url': '/data/mountain-detail/' + filename, 'bounds': bounds([point for f in part for point in [f['properties']['bounds'][:2], f['properties']['bounds'][2:]]]), 'featureCount': len(part), 'minZoom': min(f['properties']['minZoom'] for f in part)})
     counts = {kind: sum(f['properties']['kind'] == kind for f in features) for kind in KINDS}
     manifest = {'version': 'mountain-detail-1', 'acquisition': {'complete': not missing, 'missingTiles': missing}, 'featureCount': len(features), 'namedChineseCount': sum(f['properties']['hasChineseName'] for f in features), 'countsByKind': counts,
-                'geometryNote': '现代OSM山脊、刃脊、陡崖ways及命名山峰，不是唐代复原。查询矩形仅说明采集区域；数据覆盖不完整，空白不代表没有山地。',
+                'geometryNote': '现代OSM山脊、刃脊、陡崖ways及命名山峰，不是所选朝代的地貌复原。查询矩形仅说明采集区域；数据覆盖不完整，空白不代表没有山地。',
                 'regions': regions, 'packs': packs, 'sources': sources}
     write(OUTPUT / 'manifest.json', manifest)
     write(EVIDENCE / 'validation.json', {'featureCount': len(features), 'countsByKind': counts, 'duplicateSourceCopies': duplicates, 'versionChoices': version_choices,

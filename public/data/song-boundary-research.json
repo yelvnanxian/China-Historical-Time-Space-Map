@@ -1436,6 +1436,1607 @@
         }
       ]
     },
+    "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-215": {
+      "boundaryId": "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-215",
+      "catalogPlaceId": "runzhou",
+      "sourceName": "鎮江府",
+      "sourceDisplayName": "鎮江府",
+      "sourceHierarchy": {
+        "polity": "宋代",
+        "province": "浙西路",
+        "prefecture": "",
+        "dependentPrefecture": "鎮江府"
+      },
+      "modelYear": 1200,
+      "modelLevel": "prefecture",
+      "sourceAdminType": "Fu",
+      "researchName": "镇江府",
+      "researchEntryId": "song-geography-runzhou",
+      "polityLabel": "南宋",
+      "catalogPointComparison": {
+        "coordinates": [
+          119.428,
+          32.188
+        ],
+        "status": "inside",
+        "note": "目录参考点落在该来源模型内；这只是数据一致性检查，不能证明宋代治所坐标或边线准确。"
+      },
+      "linkBasis": "source-name-and-hierarchy",
+      "yearNotice": "1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。",
+      "historicalResearch": [
+        {
+          "id": "song-geography-runzhou",
+          "title": "镇江府 · 建置与年代",
+          "summary": "润州在政和三年升镇江府，建炎三年置帅，次年加大使兼沿江安抚。丹徒县条另记圌山寨，丹阳县条记熙宁五年省延陵为镇；府城、属县与山地寨堡分别属于不同空间对象。",
+          "correspondence": "same-unit",
+          "findings": [
+            {
+              "topic": "administration",
+              "statement": "润州在政和三年升镇江府，建炎三年置帅，次年加大使兼沿江安抚。丹徒县条另记圌山寨，丹阳县条记熙宁五年省延陵为镇；府城、属县与山地寨堡分别属于不同空间对象。",
+              "evidence": [
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "鎭江府，望，丹陽郡，鎭江軍節度，開寶八年改。本潤州，政和三年陞爲府，建炎三年置帥。四年，加大使兼沿江安撫，以浙西安撫復還臨安。崇甯戸六萬三千六百五十七，口一十六萬四千五百六十六。貢羅、綾。縣三：",
+                  "locator": "宋史·卷088（维基文库固定版本）·鎭江府，望，丹陽郡，鎭江軍節度，開寶八年改。本潤…"
+                },
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "丹徒，緊。有圌山砦。",
+                  "locator": "宋史·卷088（维基文库固定版本）·丹徒，緊。有圌山砦。"
+                },
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "丹陽，緊。熙寧五年，省延陵縣爲鎭入焉。",
+                  "locator": "宋史·卷088（维基文库固定版本）·丹陽，緊。熙寧五年，省延陵縣爲鎭入焉。"
+                }
+              ]
+            }
+          ],
+          "unresolved": [
+            "1200年用镇江府，不沿用唐润州作当期行政名；圌山寨仅有史载名称，本轮不按县或山名推定寨墙位置。",
+            "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+            "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。",
+            "1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。"
+          ]
+        }
+      ]
+    },
+    "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-205": {
+      "boundaryId": "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-205",
+      "catalogPlaceId": "yuezhou",
+      "sourceName": "紹興府",
+      "sourceDisplayName": "紹興府",
+      "sourceHierarchy": {
+        "polity": "宋代",
+        "province": "浙東路",
+        "prefecture": "",
+        "dependentPrefecture": "紹興府"
+      },
+      "modelYear": 1200,
+      "modelLevel": "prefecture",
+      "sourceAdminType": "Fu",
+      "researchName": "绍兴府",
+      "researchEntryId": "song-geography-yuezhou",
+      "polityLabel": "南宋",
+      "catalogPointComparison": {
+        "coordinates": [
+          120.586,
+          29.995
+        ],
+        "status": "inside",
+        "note": "目录参考点落在该来源模型内；这只是数据一致性检查，不能证明宋代治所坐标或边线准确。"
+      },
+      "linkBasis": "source-name-and-hierarchy",
+      "yearNotice": "1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。",
+      "historicalResearch": [
+        {
+          "id": "song-geography-yuezhou",
+          "title": "绍兴府 · 建置与年代",
+          "summary": "越州在绍兴元年升绍兴府，旧领两浙东路兵马钤辖。地理志分别列会稽、山阴二县，并记剡县在宣和三年改嵊县；同城县、府与更大的两浙东路不能混为一个辖区。",
+          "correspondence": "same-unit",
+          "findings": [
+            {
+              "topic": "administration",
+              "statement": "越州在绍兴元年升绍兴府，旧领两浙东路兵马钤辖。地理志分别列会稽、山阴二县，并记剡县在宣和三年改嵊县；同城县、府与更大的两浙东路不能混为一个辖区。",
+              "evidence": [
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "紹興府，本越州，大都督府，會稽郡，鎭東軍節度。大觀元年，陞爲帥府。舊領兩浙東路兵馬鈐轄。紹興元年，陞爲府。崇甯戸二十七萬九千三百六，口三十六萬七千三百九十。貢越綾、輕庸紗、紙。縣八：",
+                  "locator": "宋史·卷088（维基文库固定版本）·紹興府，本越州，大都督府，會稽郡，鎭東軍節度。大…"
+                },
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "會稽，望。\n山陰，望。",
+                  "locator": "宋史·卷088（维基文库固定版本）·會稽，望。\n山陰，望。"
+                },
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "嵊，望。舊剡縣，宣和三年改。",
+                  "locator": "宋史·卷088（维基文库固定版本）·嵊，望。舊剡縣，宣和三年改。"
+                }
+              ]
+            }
+          ],
+          "unresolved": [
+            "绍兴府现地在浙江绍兴；不要同湖南岳州混读。会稽、山阴均是县名，并非两座互不相关的府城。",
+            "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+            "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。",
+            "1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。"
+          ]
+        }
+      ]
+    },
+    "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-218": {
+      "boundaryId": "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-218",
+      "catalogPlaceId": "changzhou",
+      "sourceName": "常州",
+      "sourceDisplayName": "常州",
+      "sourceHierarchy": {
+        "polity": "宋代",
+        "province": "浙西路",
+        "prefecture": "",
+        "dependentPrefecture": "常州"
+      },
+      "modelYear": 1200,
+      "modelLevel": "prefecture",
+      "sourceAdminType": "Zhou",
+      "researchName": "常州",
+      "researchEntryId": "song-geography-changzhou",
+      "polityLabel": "南宋",
+      "catalogPointComparison": {
+        "coordinates": [
+          119.976,
+          31.81
+        ],
+        "status": "inside",
+        "note": "目录参考点落在该来源模型内；这只是数据一致性检查，不能证明宋代治所坐标或边线准确。"
+      },
+      "linkBasis": "source-name-and-hierarchy",
+      "yearNotice": "1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。",
+      "historicalResearch": [
+        {
+          "id": "song-geography-changzhou",
+          "title": "常州 · 建置与年代",
+          "summary": "常州地理志列晋陵、武进、宜兴、无锡四县。江阴军在熙宁四年废为县属常州，南渡后又经历复军、废军，绍兴三十一年再次复置；1200年不能把已复置的江阴军仍当作常州普通属县。",
+          "correspondence": "same-unit",
+          "findings": [
+            {
+              "topic": "administration",
+              "statement": "常州地理志列晋陵、武进、宜兴、无锡四县。江阴军在熙宁四年废为县属常州，南渡后又经历复军、废军，绍兴三十一年再次复置；1200年不能把已复置的江阴军仍当作常州普通属县。",
+              "evidence": [
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "常州，望。毗陵郡，軍事。崇甯戸一十六萬五千一百一十六，口二十四萬六千九百九。貢白紵、紗、席。縣四：",
+                  "locator": "宋史·卷088（维基文库固定版本）·常州，望。毗陵郡，軍事。崇甯戸一十六萬五千一百一…"
+                },
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "晉陵，望。\n武進，望。",
+                  "locator": "宋史·卷088（维基文库固定版本）·晉陵，望。\n武進，望。"
+                },
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "江陰軍，同下州。熙甯四年，廢江陰軍爲縣，隸常州。建炎初，以江陰縣復置軍；紹興二十七年廢，三十一年，復置。縣一：",
+                  "locator": "宋史·卷088（维基文库固定版本）·江陰軍，同下州。熙甯四年，廢江陰軍爲縣，隸常州。…"
+                }
+              ]
+            }
+          ],
+          "unresolved": [
+            "常州与江阴军同属更高层路下的不同单位，军在这里是行政建置；不把军事名称一概认成城池内驻军。",
+            "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+            "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。",
+            "1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。"
+          ]
+        }
+      ]
+    },
+    "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-207": {
+      "boundaryId": "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-207",
+      "catalogPlaceId": "wenzhou",
+      "sourceName": "溫州",
+      "sourceDisplayName": "溫州",
+      "sourceHierarchy": {
+        "polity": "宋代",
+        "province": "浙東路",
+        "prefecture": "",
+        "dependentPrefecture": "溫州"
+      },
+      "modelYear": 1200,
+      "modelLevel": "prefecture",
+      "sourceAdminType": "Zhou",
+      "researchName": "温州",
+      "researchEntryId": "song-geography-wenzhou",
+      "polityLabel": "南宋",
+      "catalogPointComparison": {
+        "coordinates": [
+          120.699,
+          27.993
+        ],
+        "status": "inside",
+        "note": "目录参考点落在该来源模型内；这只是数据一致性检查，不能证明宋代治所坐标或边线准确。"
+      },
+      "linkBasis": "source-name-and-hierarchy",
+      "yearNotice": "1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。",
+      "historicalResearch": [
+        {
+          "id": "song-geography-wenzhou",
+          "title": "温州 · 建置与年代",
+          "summary": "温州在政和七年升应道军节度，建炎三年罢军额；咸淳元年的升府晚于1200年，因此当前仍用温州。属县条分别记永嘉、天富、双穗盐场，支持海盐生产线索，但未给出盐场边界或海岸坐标。",
+          "correspondence": "same-unit",
+          "findings": [
+            {
+              "topic": "administration",
+              "statement": "温州在政和七年升应道军节度，建炎三年罢军额；咸淳元年的升府晚于1200年，因此当前仍用温州。属县条分别记永嘉、天富、双穗盐场，支持海盐生产线索，但未给出盐场边界或海岸坐标。",
+              "evidence": [
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "里安府，本温州，永嘉郡，太平興國三年，降爲軍事。政和七年，陞應道軍節度。建炎三年，罷軍額。咸淳元年，以度宗潛邸，陞府。崇甯戸一十一萬九千六百四十，口二十六萬二千七百一十。貢鮫魚皮、蠲糨紙。縣四：",
+                  "locator": "宋史·卷088（维基文库固定版本）·里安府，本温州，永嘉郡，太平興國三年，降爲軍事。…"
+                },
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "永嘉，緊。有永嘉鹽塲。\n平陽，望。有天富鹽塲。\n里安，緊。有雙穗鹽塲。",
+                  "locator": "宋史·卷088（维基文库固定版本）·永嘉，緊。有永嘉鹽塲。\n平陽，望。有天富鹽塲。\n…"
+                }
+              ]
+            }
+          ],
+          "unresolved": [
+            "本卷电子文本把后期府名及同名县写作“里安”，保留原字形供核，不据此把1200年温州改名；后期府名需要版本校勘，不能直接按电子转写字形造地名。",
+            "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+            "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。",
+            "1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。"
+          ]
+        }
+      ]
+    },
+    "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-221": {
+      "boundaryId": "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-221",
+      "catalogPlaceId": "xuanzhou",
+      "sourceName": "寧國府",
+      "sourceDisplayName": "寧國府",
+      "sourceHierarchy": {
+        "polity": "宋代",
+        "province": "江南東路",
+        "prefecture": "",
+        "dependentPrefecture": "寧國府"
+      },
+      "modelYear": 1200,
+      "modelLevel": "prefecture",
+      "sourceAdminType": "Fu",
+      "researchName": "宁国府",
+      "researchEntryId": "song-geography-xuanzhou",
+      "polityLabel": "南宋",
+      "catalogPointComparison": {
+        "coordinates": [
+          118.758,
+          30.94
+        ],
+        "status": "inside",
+        "note": "目录参考点落在该来源模型内；这只是数据一致性检查，不能证明宋代治所坐标或边线准确。"
+      },
+      "linkBasis": "source-name-and-hierarchy",
+      "yearNotice": "1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。",
+      "historicalResearch": [
+        {
+          "id": "song-geography-xuanzhou",
+          "title": "宁国府 · 建置与年代",
+          "summary": "宣州在乾道二年以孝宗潜邸升宁国府，乾道七年魏惠宪王出镇，置长史、司马。宣城、南陵、宁国另列为县；府名宁国与宁国县不同，不能据同名把府治放到宁国县。",
+          "correspondence": "same-unit",
+          "findings": [
+            {
+              "topic": "administration",
+              "statement": "宣州在乾道二年以孝宗潜邸升宁国府，乾道七年魏惠宪王出镇，置长史、司马。宣城、南陵、宁国另列为县；府名宁国与宁国县不同，不能据同名把府治放到宁国县。",
+              "evidence": [
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "甯國府，本宣州，宣城郡，甯國軍節度。乾道二年，以孝宗潛邸，陞爲府。七年，魏惠憲王出鎭，置長史、司馬。崇甯戸十四萬七千四十，口四十七萬七百四十九。貢𦆭布、黃連筆。縣六：",
+                  "locator": "宋史·卷088（维基文库固定版本）·甯國府，本宣州，宣城郡，甯國軍節度。乾道二年，以…"
+                },
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "宣城，望。\n南陵，望。\n甯國。緊。",
+                  "locator": "宋史·卷088（维基文库固定版本）·宣城，望。\n南陵，望。\n甯國。緊。"
+                }
+              ]
+            }
+          ],
+          "unresolved": [
+            "1200年用宁国府，府城地区对应今宣城；府下宁国县是另一个行政对象，旧唐宣州入口只作跨朝对照。",
+            "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+            "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。",
+            "1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。"
+          ]
+        }
+      ]
+    },
+    "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-222": {
+      "boundaryId": "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-222",
+      "catalogPlaceId": "shezhou",
+      "sourceName": "徽州",
+      "sourceDisplayName": "徽州",
+      "sourceHierarchy": {
+        "polity": "宋代",
+        "province": "江南東路",
+        "prefecture": "",
+        "dependentPrefecture": "徽州"
+      },
+      "modelYear": 1200,
+      "modelLevel": "prefecture",
+      "sourceAdminType": "Zhou",
+      "researchName": "徽州",
+      "researchEntryId": "song-geography-shezhou",
+      "polityLabel": "南宋",
+      "catalogPointComparison": {
+        "coordinates": [
+          118.42,
+          29.87
+        ],
+        "status": "inside",
+        "note": "目录参考点落在该来源模型内；这只是数据一致性检查，不能证明宋代治所坐标或边线准确。"
+      },
+      "linkBasis": "source-name-and-hierarchy",
+      "yearNotice": "1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。",
+      "historicalResearch": [
+        {
+          "id": "song-geography-shezhou",
+          "title": "徽州 · 建置与年代",
+          "summary": "歙州在宣和三年改为徽州，地理志列歙、休宁、祁门、婺源、绩溪、黟六县，并记白苎与纸等贡物。徽州所属县与今黄山市行政范围不一致，不能以现代市界代替宋代州域。",
+          "correspondence": "same-unit",
+          "findings": [
+            {
+              "topic": "administration",
+              "statement": "歙州在宣和三年改为徽州，地理志列歙、休宁、祁门、婺源、绩溪、黟六县，并记白苎与纸等贡物。徽州所属县与今黄山市行政范围不一致，不能以现代市界代替宋代州域。",
+              "evidence": [
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "徽州，上，新安郡，軍事。宣和三年，改歙州爲徽州。崇寧戸一十萬八千三百一十六，口一十六萬七千八百九十六。貢白苧、紙。縣六：",
+                  "locator": "宋史·卷088（维基文库固定版本）·徽州，上，新安郡，軍事。宣和三年，改歙州爲徽州。…"
+                },
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "歙，望。\n休寧，望。\n祁門，望。\n婺源，望。\n績溪，望。\n黟。緊。",
+                  "locator": "宋史·卷088（维基文库固定版本）·歙，望。\n休寧，望。\n祁門，望。\n婺源，望。\n績…"
+                }
+              ]
+            }
+          ],
+          "unresolved": [
+            "1200年入口为徽州、地区参考点仍在歙县；不把“徽州”直接移至现代徽州区，也不将婺源按现代省界排除出历史记载。",
+            "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+            "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。",
+            "1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。"
+          ]
+        }
+      ]
+    },
+    "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-239": {
+      "boundaryId": "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-239",
+      "catalogPlaceId": "jiangzhou-jiujiang",
+      "sourceName": "江州",
+      "sourceDisplayName": "江州",
+      "sourceHierarchy": {
+        "polity": "宋代",
+        "province": "江南西路",
+        "prefecture": "",
+        "dependentPrefecture": "江州"
+      },
+      "modelYear": 1200,
+      "modelLevel": "prefecture",
+      "sourceAdminType": "Zhou",
+      "researchName": "江州",
+      "researchEntryId": "song-geography-jiangzhou-jiujiang",
+      "polityLabel": "南宋",
+      "catalogPointComparison": {
+        "coordinates": [
+          116.0026,
+          29.7054
+        ],
+        "status": "inside",
+        "note": "目录参考点落在该来源模型内；这只是数据一致性检查，不能证明宋代治所坐标或边线准确。"
+      },
+      "linkBasis": "source-name-and-hierarchy",
+      "yearNotice": "1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。",
+      "historicalResearch": [
+        {
+          "id": "song-geography-jiangzhou-jiujiang",
+          "title": "江州 · 建置与年代",
+          "summary": "江州在建炎元年升定江军节度，次年置安抚、制置使，辖德化、德安、瑞昌、湖口、彭泽等县。苏轼元丰七年到湖口观察石钟山，记水波进入岩穴发声；这是江州辖县的山水记述，不能当作府城内景物。",
+          "correspondence": "same-unit",
+          "findings": [
+            {
+              "topic": "administration",
+              "statement": "江州在建炎元年升定江军节度，次年置安抚、制置使，辖德化、德安、瑞昌、湖口、彭泽等县。苏轼元丰七年到湖口观察石钟山，记水波进入岩穴发声；这是江州辖县的山水记述，不能当作府城内景物。",
+              "evidence": [
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "江州，上，潯陽郡，開寶八年，降爲軍事。大觀元年，陞爲望郡。舊隸江南東路。建炎元年，陞定江軍節度。二年，置安撫、制置使，以江、池、饒、信爲江州路。紹興元年，復爲二路，本路置安撫大使。嘉熙四年，爲制置副使司治所。咸淳四年，移制置司黃州；十年，還舊治。崇甯戸八萬四千五百六十九，口一十三萬八千五百九十。貢雲母、石斛。縣五：",
+                  "locator": "宋史·卷088（维基文库固定版本）·江州，上，潯陽郡，開寶八年，降爲軍事。大觀元年，…"
+                },
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "德化，望。唐潯陽縣，南唐改。\n德安，緊。\n瑞昌，中。\n湖口，中。\n彭澤。中。",
+                  "locator": "宋史·卷088（维基文库固定版本）·德化，望。唐潯陽縣，南唐改。\n德安，緊。\n瑞昌，…"
+                },
+                {
+                  "sourceId": "song-research-shizhongshan-ji",
+                  "sourceTitle": "石鐘山記（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E7%9F%B3%E9%90%98%E5%B1%B1%E8%A8%98&oldid=2190370",
+                  "quote": "元豐七年六月丁丑，余自齊安舟行，適臨汝，而長子邁將赴饒之德興尉，送之至湖口，因得觀所謂石鐘者。",
+                  "locator": "石鐘山記（维基文库固定版本）·元豐七年六月丁丑，余自齊安舟行，適臨汝，而長子邁…"
+                },
+                {
+                  "sourceId": "song-research-shizhongshan-ji",
+                  "sourceTitle": "石鐘山記（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E7%9F%B3%E9%90%98%E5%B1%B1%E8%A8%98&oldid=2190370",
+                  "quote": "徐而察之，則山下皆石穴罅，不知其淺深，微波入焉，涵澹澎湃而為此也。",
+                  "locator": "石鐘山記（维基文库固定版本）·徐而察之，則山下皆石穴罅，不知其淺深，微波入焉，…"
+                }
+              ]
+            }
+          ],
+          "unresolved": [
+            "江州城地区对应今九江，德化是当时县名；石钟山在湖口县相关段落，1084年的见闻不直接证明1200年或现代岸线。",
+            "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+            "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。",
+            "1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。"
+          ]
+        }
+      ]
+    },
+    "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-231": {
+      "boundaryId": "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-231",
+      "catalogPlaceId": "jizhou-luling",
+      "sourceName": "吉州",
+      "sourceDisplayName": "吉州",
+      "sourceHierarchy": {
+        "polity": "宋代",
+        "province": "江南西路",
+        "prefecture": "",
+        "dependentPrefecture": "吉州"
+      },
+      "modelYear": 1200,
+      "modelLevel": "prefecture",
+      "sourceAdminType": "Zhou",
+      "researchName": "吉州",
+      "researchEntryId": "song-geography-jizhou-luling",
+      "polityLabel": "南宋",
+      "catalogPointComparison": {
+        "coordinates": [
+          114.96,
+          27.09
+        ],
+        "status": "inside",
+        "note": "目录参考点落在该来源模型内；这只是数据一致性检查，不能证明宋代治所坐标或边线准确。"
+      },
+      "linkBasis": "source-name-and-hierarchy",
+      "yearNotice": "1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。",
+      "historicalResearch": [
+        {
+          "id": "song-geography-jizhou-luling",
+          "title": "吉州 · 建置与年代",
+          "summary": "吉州为庐陵郡，地理志列庐陵、吉水、安福、太和等县。吉水在雍熙元年析庐陵置县，万安在熙宁四年以龙泉县万安镇置县，反映州下县镇层级随时变化。",
+          "correspondence": "same-unit",
+          "findings": [
+            {
+              "topic": "administration",
+              "statement": "吉州为庐陵郡，地理志列庐陵、吉水、安福、太和等县。吉水在雍熙元年析庐陵置县，万安在熙宁四年以龙泉县万安镇置县，反映州下县镇层级随时变化。",
+              "evidence": [
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "吉州，上，廬陵郡，軍事。崇甯戸三十三萬五千七百一十，口九十五萬七千二百五十六。貢𦆭布、葛。縣八：",
+                  "locator": "宋史·卷088（维基文库固定版本）·吉州，上，廬陵郡，軍事。崇甯戸三十三萬五千七百一…"
+                },
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "吉水，望。雍熙元年，析廬陵地置縣。",
+                  "locator": "宋史·卷088（维基文库固定版本）·吉水，望。雍熙元年，析廬陵地置縣。"
+                },
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "萬安，望。熙甯四年，以龍泉縣萬安鎭置。",
+                  "locator": "宋史·卷088（维基文库固定版本）·萬安，望。熙甯四年，以龍泉縣萬安鎭置。"
+                }
+              ]
+            }
+          ],
+          "unresolved": [
+            "本入口是江南西路吉州，现地江西吉安；金代河东南路另有同名吉州，关联必须同时核对政权与路名，不能只按“吉州”匹配。",
+            "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+            "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。",
+            "1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。"
+          ]
+        }
+      ]
+    },
+    "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-230": {
+      "boundaryId": "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-230",
+      "catalogPlaceId": "qianzhou-gan",
+      "sourceName": "贛州",
+      "sourceDisplayName": "贛州",
+      "sourceHierarchy": {
+        "polity": "宋代",
+        "province": "江南西路",
+        "prefecture": "",
+        "dependentPrefecture": "贛州"
+      },
+      "modelYear": 1200,
+      "modelLevel": "prefecture",
+      "sourceAdminType": "Zhou",
+      "researchName": "赣州",
+      "researchEntryId": "song-geography-qianzhou-gan",
+      "polityLabel": "南宋",
+      "catalogPointComparison": {
+        "coordinates": [
+          114.93,
+          25.83
+        ],
+        "status": "inside",
+        "note": "目录参考点落在该来源模型内；这只是数据一致性检查，不能证明宋代治所坐标或边线准确。"
+      },
+      "linkBasis": "source-name-and-hierarchy",
+      "yearNotice": "1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。",
+      "historicalResearch": [
+        {
+          "id": "song-geography-qianzhou-gan",
+          "title": "赣州 · 建置与年代",
+          "summary": "赣州本虔州，地理志在绍兴二十三年下记改今名，虔化同年改宁都。龙南县曾改虔南，亦于此年复名龙南，原文解释取百丈龙滩之南为义；地名沿革与河滩方位可以阅读，河滩实际边线仍未核定。",
+          "correspondence": "same-unit",
+          "findings": [
+            {
+              "topic": "administration",
+              "statement": "赣州本虔州，地理志在绍兴二十三年下记改今名，虔化同年改宁都。龙南县曾改虔南，亦于此年复名龙南，原文解释取百丈龙滩之南为义；地名沿革与河滩方位可以阅读，河滩实际边线仍未核定。",
+              "evidence": [
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "贛州，上。本虔州，南康郡，昭信軍節度。大觀元年，陞爲望郡。建炎間，置管内安撫使，紹興十五年罷，復置江西兵馬鈐轄，兼提舉南安軍、南雄州兵甲司公事。二十三年，改今名。崇甯戸二十七萬二千四百三十二，口七十萬二千一百二十七。貢白𦆭。縣十：",
+                  "locator": "宋史·卷088（维基文库固定版本）·贛州，上。本虔州，南康郡，昭信軍節度。大觀元年，…"
+                },
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "虔化，望。紹興二十三年，改寧都。有寶積鉛塲。",
+                  "locator": "宋史·卷088（维基文库固定版本）·虔化，望。紹興二十三年，改寧都。有寶積鉛塲。"
+                },
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "龍南。中。南唐縣，本名龍南。宣和三年，改虔南。紹興二十三年，改龍南，取百丈龍灘之南爲義。",
+                  "locator": "宋史·卷088（维基文库固定版本）·龍南。中。南唐縣，本名龍南。宣和三年，改虔南。紹…"
+                }
+              ]
+            }
+          ],
+          "unresolved": [
+            "1200年用赣州，不沿用唐虔州为当前名；宁都、龙南都是属县变化，不能把改名事件误作赣州城搬迁。",
+            "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+            "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。",
+            "1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。"
+          ]
+        }
+      ]
+    },
+    "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-260": {
+      "boundaryId": "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-260",
+      "catalogPlaceId": "tanzhou",
+      "sourceName": "潭州",
+      "sourceDisplayName": "潭州",
+      "sourceHierarchy": {
+        "polity": "宋代",
+        "province": "荊湖南路",
+        "prefecture": "",
+        "dependentPrefecture": "潭州"
+      },
+      "modelYear": 1200,
+      "modelLevel": "prefecture",
+      "sourceAdminType": "Zhou",
+      "researchName": "潭州",
+      "researchEntryId": "song-geography-tanzhou",
+      "polityLabel": "南宋",
+      "catalogPointComparison": {
+        "coordinates": [
+          112.939,
+          28.228
+        ],
+        "status": "inside",
+        "note": "目录参考点落在该来源模型内；这只是数据一致性检查，不能证明宋代治所坐标或边线准确。"
+      },
+      "linkBasis": "source-name-and-hierarchy",
+      "yearNotice": "1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。",
+      "historicalResearch": [
+        {
+          "id": "song-geography-tanzhou",
+          "title": "潭州 · 建置与年代",
+          "summary": "潭州领荆湖南路安抚使，大观元年升帅府，建炎元年复为总管安抚司。元符元年以长沙、湘潭若干乡置善化县；地理志称潭州为湘、岭要地，但这种区域交通描述不能转换成精确山川边界。",
+          "correspondence": "same-unit",
+          "findings": [
+            {
+              "topic": "administration",
+              "statement": "潭州领荆湖南路安抚使，大观元年升帅府，建炎元年复为总管安抚司。元符元年以长沙、湘潭若干乡置善化县；地理志称潭州为湘、岭要地，但这种区域交通描述不能转换成精确山川边界。",
+              "evidence": [
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "潭州，上，長沙郡，武安軍節度。乾德元年，平湖南，降爲防禦。端拱元年，復爲軍。舊領荊湖南路安撫使。大觀元年，陞爲帥府。建炎元年，復爲總管安撫司。紹興元年，兼東路兵馬鈐轄；二年，復爲安撫司。崇甯戸四十三萬九千九百八十八，口九十六萬二千八百五十三。貢葛、茶。縣十二：",
+                  "locator": "宋史·卷088（维基文库固定版本）·潭州，上，長沙郡，武安軍節度。乾德元年，平湖南，…"
+                },
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "善化。元符元年，以長沙縣五鄕、湘潭縣兩鄕爲善化縣。",
+                  "locator": "宋史·卷088（维基文库固定版本）·善化。元符元年，以長沙縣五鄕、湘潭縣兩鄕爲善化縣…"
+                },
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "潭州爲湘、嶺要劇，鄂、岳處江、湖之都會，",
+                  "locator": "宋史·卷088（维基文库固定版本）·潭州爲湘、嶺要劇，鄂、岳處江、湖之都會，"
+                }
+              ]
+            }
+          ],
+          "unresolved": [
+            "潭州是州，长沙、善化是县；今长沙市只是对应地区，不等于宋潭州范围。潭州与潭水、湘江地物分别查询。",
+            "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+            "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。",
+            "1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。"
+          ]
+        }
+      ]
+    },
+    "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-252": {
+      "boundaryId": "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-252",
+      "catalogPlaceId": "yuezhou-baling",
+      "sourceName": "岳州",
+      "sourceDisplayName": "岳州",
+      "sourceHierarchy": {
+        "polity": "宋代",
+        "province": "荊湖北路",
+        "prefecture": "",
+        "dependentPrefecture": "岳州"
+      },
+      "modelYear": 1200,
+      "modelLevel": "prefecture",
+      "sourceAdminType": "Zhou",
+      "researchName": "岳州",
+      "researchEntryId": "song-geography-yuezhou-baling",
+      "polityLabel": "南宋",
+      "catalogPointComparison": {
+        "coordinates": [
+          113.13,
+          29.36
+        ],
+        "status": "inside",
+        "note": "目录参考点落在该来源模型内；这只是数据一致性检查，不能证明宋代治所坐标或边线准确。"
+      },
+      "linkBasis": "source-name-and-hierarchy",
+      "yearNotice": "1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。",
+      "historicalResearch": [
+        {
+          "id": "song-geography-yuezhou-baling",
+          "title": "岳州 · 建置与年代",
+          "summary": "岳州绍兴二十五年曾改纯州，三十一年复旧，1200年仍为岳州。范仲淹《岳阳楼记》记滕子京守巴陵后重修岳阳楼，并以洞庭湖、长江与远山描写其景观；文学观察不能当成当时湖岸测绘。",
+          "correspondence": "same-unit",
+          "findings": [
+            {
+              "topic": "administration",
+              "statement": "岳州绍兴二十五年曾改纯州，三十一年复旧，1200年仍为岳州。范仲淹《岳阳楼记》记滕子京守巴陵后重修岳阳楼，并以洞庭湖、长江与远山描写其景观；文学观察不能当成当时湖岸测绘。",
+              "evidence": [
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "岳州，下，巴陵郡，岳陽軍節度。本軍事州。宣和元年賜軍額。建炎間，岳、鄂二州各帶沿江管内安撫司公事。紹興二十五年，改州曰純，改軍曰華容；三十一年，復舊。崇甯戸九萬七千七百九十一，口一十二萬八千四百五十。貢𦆭。縣四：",
+                  "locator": "宋史·卷088（维基文库固定版本）·岳州，下，巴陵郡，岳陽軍節度。本軍事州。宣和元年…"
+                },
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "臨湘。淳化元年，陞王朝塲爲縣，尋改。",
+                  "locator": "宋史·卷088（维基文库固定版本）·臨湘。淳化元年，陞王朝塲爲縣，尋改。"
+                },
+                {
+                  "sourceId": "song-research-yueyanglou-ji",
+                  "sourceTitle": "岳陽樓記（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%B2%B3%E9%99%BD%E6%A8%93%E8%A8%98&oldid=9467826",
+                  "quote": "慶曆四年春，滕子京謫守巴陵郡。越明年，政通人和，百廢具興，乃重修岳陽樓，增其舊制，刻唐賢今人詩賦於其上；屬予作文以記之。",
+                  "locator": "岳陽樓記（维基文库固定版本）·慶曆四年春，滕子京謫守巴陵郡。越明年，政通人和，…"
+                },
+                {
+                  "sourceId": "song-research-yueyanglou-ji",
+                  "sourceTitle": "岳陽樓記（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%B2%B3%E9%99%BD%E6%A8%93%E8%A8%98&oldid=9467826",
+                  "quote": "予觀夫巴陵勝狀，在洞庭一湖。銜遠山，吞長江，浩浩湯湯，橫無際涯；朝暉夕陰，氣象萬千；此則岳陽樓之大觀也，前人之述備矣。然則北通巫峽，南極瀟湘，遷客騷人，多會於此，覽物之情，得無異乎？",
+                  "locator": "岳陽樓記（维基文库固定版本）·予觀夫巴陵勝狀，在洞庭一湖。銜遠山，吞長江，浩浩…"
+                }
+              ]
+            }
+          ],
+          "unresolved": [
+            "岳州现地对应湖南岳阳，与浙江越州不同；洞庭湖也不能视作岳州独占辖域，文章中的巴陵郡为相关旧称。",
+            "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+            "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。",
+            "1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。"
+          ]
+        }
+      ]
+    },
+    "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-261": {
+      "boundaryId": "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-261",
+      "catalogPlaceId": "hengzhou-hunan",
+      "sourceName": "衡州",
+      "sourceDisplayName": "衡州",
+      "sourceHierarchy": {
+        "polity": "宋代",
+        "province": "荊湖南路",
+        "prefecture": "",
+        "dependentPrefecture": "衡州"
+      },
+      "modelYear": 1200,
+      "modelLevel": "prefecture",
+      "sourceAdminType": "Zhou",
+      "researchName": "衡州",
+      "researchEntryId": "song-geography-hengzhou-hunan",
+      "polityLabel": "南宋",
+      "catalogPointComparison": {
+        "coordinates": [
+          112.572,
+          26.893
+        ],
+        "status": "inside",
+        "note": "目录参考点落在该来源模型内；这只是数据一致性检查，不能证明宋代治所坐标或边线准确。"
+      },
+      "linkBasis": "source-name-and-hierarchy",
+      "yearNotice": "1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。",
+      "historicalResearch": [
+        {
+          "id": "song-geography-hengzhou-hunan",
+          "title": "衡州 · 建置与年代",
+          "summary": "宋衡州为衡阳郡，所属衡阳县有熙宁钱监，安仁在964年由场升县。南渡后茶陵又升为军，因此地理志所列旧县数不能原封不动作为1200年县属清单，钱监也不是县级辖区。",
+          "correspondence": "same-unit",
+          "findings": [
+            {
+              "topic": "administration",
+              "statement": "宋衡州为衡阳郡，所属衡阳县有熙宁钱监，安仁在964年由场升县。南渡后茶陵又升为军，因此地理志所列旧县数不能原封不动作为1200年县属清单，钱监也不是县级辖区。",
+              "evidence": [
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "衡州，上，衡陽郡，軍事。崇甯戸一十六萬八千九十五，口三十萬八千二百五十三。貢麩金、犀。縣五：",
+                  "locator": "宋史·卷088（维基文库固定版本）·衡州，上，衡陽郡，軍事。崇甯戸一十六萬八千九十五…"
+                },
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "衡陽，緊。有熙甯錢監。",
+                  "locator": "宋史·卷088（维基文库固定版本）·衡陽，緊。有熙甯錢監。"
+                },
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "安仁。中下。乾德二年，陞安仁塲爲縣。",
+                  "locator": "宋史·卷088（维基文库固定版本）·安仁。中下。乾德二年，陞安仁塲爲縣。"
+                },
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "南渡後，陞茶陵爲軍。",
+                  "locator": "宋史·卷088（维基文库固定版本）·南渡後，陞茶陵爲軍。"
+                }
+              ]
+            }
+          ],
+          "unresolved": [
+            "本入口是湖南衡州，不是河北恒州；衡山虽与衡州同有“衡”字，宋代县属须以具体记载为准，不能根据山名猜配行政面。",
+            "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+            "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。",
+            "1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。"
+          ]
+        }
+      ]
+    },
+    "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-322": {
+      "boundaryId": "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-322",
+      "catalogPlaceId": "hanzhong",
+      "sourceName": "興元府",
+      "sourceDisplayName": "興元府",
+      "sourceHierarchy": {
+        "polity": "宋代",
+        "province": "利州路",
+        "prefecture": "",
+        "dependentPrefecture": "興元府"
+      },
+      "modelYear": 1200,
+      "modelLevel": "prefecture",
+      "sourceAdminType": "Fu",
+      "researchName": "兴元府",
+      "researchEntryId": "song-geography-hanzhong",
+      "polityLabel": "南宋",
+      "catalogPointComparison": {
+        "coordinates": [
+          107.0233,
+          33.0675
+        ],
+        "status": "inside",
+        "note": "目录参考点落在该来源模型内；这只是数据一致性检查，不能证明宋代治所坐标或边线准确。"
+      },
+      "linkBasis": "source-name-and-hierarchy",
+      "yearNotice": "源路级字段概称利州路；《宋史》记庆元二年再分东西路，1200年本处按利州东路阅读。这里保留府州面关联，不用概括路名抹去分路年代。1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。",
+      "historicalResearch": [
+        {
+          "id": "song-geography-hanzhong",
+          "title": "兴元府 · 建置与年代",
+          "summary": "兴元府所在为汉中地区，属县列南郑、城固、褒城等，绍兴四年又析南郑置廉水县，以廉水为名。利州东西路多次分合，庆元二年再次分路，1200年应读作利州东路；原模型仍概称利州路，需说明粒度差异。",
+          "correspondence": "same-unit",
+          "findings": [
+            {
+              "topic": "administration",
+              "statement": "兴元府所在为汉中地区，属县列南郑、城固、褒城等，绍兴四年又析南郑置廉水县，以廉水为名。利州东西路多次分合，庆元二年再次分路，1200年应读作利州东路；原模型仍概称利州路，需说明粒度差异。",
+              "evidence": [
+                {
+                  "sourceId": "song-research-songshi-89",
+                  "sourceTitle": "宋史·卷089（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7089&oldid=1875817",
+                  "quote": "興元府，次府，梁州，漢中郡，山南西道節度。舊兼提舉利州路兵馬巡檢事。建炎二年，陞本路鈐轄。四年，兼本路經略、安撫使。後分利州路爲東、西路：興元、劍、利、閬、金、洋、巴、蓬、大安爲東路，治興元；階、成、西和、鳳、文、龍、興爲西路，治興州。又置利州路階、成、西和、鳳州制置使，涇原、秦鳳路經略、安撫使。乾道四年，合爲一路，興元帥兼領之；淳熙二年，復分；三年，又合；五年，復分；紹熙五年，再合；慶元二年，又分；嘉定三年，復合。崇甯戸六萬二百八十四，口一十二萬三千五百四十。貢臙脂、紅花。縣四：",
+                  "locator": "宋史·卷089（维基文库固定版本）·興元府，次府，梁州，漢中郡，山南西道節度。舊兼提…"
+                },
+                {
+                  "sourceId": "song-research-songshi-89",
+                  "sourceTitle": "宋史·卷089（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7089&oldid=1875817",
+                  "quote": "南鄭，次赤。\n城固，次畿。\n褒城，次畿。",
+                  "locator": "宋史·卷089（维基文库固定版本）·南鄭，次赤。\n城固，次畿。\n褒城，次畿。"
+                },
+                {
+                  "sourceId": "song-research-songshi-89",
+                  "sourceTitle": "宋史·卷089（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7089&oldid=1875817",
+                  "quote": "廉水。次畿。紹興四年，析南鄭縣置，以廉水爲名。",
+                  "locator": "宋史·卷089（维基文库固定版本）·廉水。次畿。紹興四年，析南鄭縣置，以廉水爲名。"
+                }
+              ]
+            }
+          ],
+          "unresolved": [
+            "府城、南郑县与利州东路不同级；廉水县名来自水名，不能据同名为历史廉水任意补画河线。",
+            "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+            "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。",
+            "源路级字段概称利州路；《宋史》记庆元二年再分东西路，1200年本处按利州东路阅读。这里保留府州面关联，不用概括路名抹去分路年代。1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。"
+          ]
+        }
+      ]
+    },
+    "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-337": {
+      "boundaryId": "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-337",
+      "catalogPlaceId": "zizhou",
+      "sourceName": "潼川府",
+      "sourceDisplayName": "潼川府",
+      "sourceHierarchy": {
+        "polity": "宋代",
+        "province": "潼川府路",
+        "prefecture": "",
+        "dependentPrefecture": "潼川府"
+      },
+      "modelYear": 1200,
+      "modelLevel": "prefecture",
+      "sourceAdminType": "Fu",
+      "researchName": "潼川府",
+      "researchEntryId": "song-geography-zizhou",
+      "polityLabel": "南宋",
+      "catalogPointComparison": {
+        "coordinates": [
+          105.0936,
+          31.0958
+        ],
+        "status": "inside",
+        "note": "目录参考点落在该来源模型内；这只是数据一致性检查，不能证明宋代治所坐标或边线准确。"
+      },
+      "linkBasis": "source-name-and-hierarchy",
+      "yearNotice": "1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。",
+      "historicalResearch": [
+        {
+          "id": "song-geography-zizhou",
+          "title": "潼川府 · 建置与年代",
+          "summary": "梓州在重和元年升潼川府，地理志列郪县三十四盐井、盐亭六盐井等，反映川中盐业地点线索。熙宁五年永泰曾省为镇入盐亭，南渡后又为县；府、潼川府路和盐井生产点不可混作一层。",
+          "correspondence": "same-unit",
+          "findings": [
+            {
+              "topic": "administration",
+              "statement": "梓州在重和元年升潼川府，地理志列郪县三十四盐井、盐亭六盐井等，反映川中盐业地点线索。熙宁五年永泰曾省为镇入盐亭，南渡后又为县；府、潼川府路和盐井生产点不可混作一层。",
+              "evidence": [
+                {
+                  "sourceId": "song-research-songshi-89",
+                  "sourceTitle": "宋史·卷089（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7089&oldid=1875817",
+                  "quote": "潼川府，緊，梓潼郡，劍南東川節度。本梓州。乾德四年，改靜戎軍，置東關縣。太平興國中，改安靜軍。端拱二年，爲東川；元豐三年，復加「劍南」二字。重和元年，陞爲府。舊兼提舉梓州果、渠、懷安、廣安軍兵馬巡檢盜賊公事。乾道六年，陞瀘南爲潼川府路安撫使。崇寧戸一十萬九千六百九，口四十四萬七千五百六十五。貢綾、曾靑、空靑。縣十：",
+                  "locator": "宋史·卷089（维基文库固定版本）·潼川府，緊，梓潼郡，劍南東川節度。本梓州。乾德四…"
+                },
+                {
+                  "sourceId": "song-research-songshi-89",
+                  "sourceTitle": "宋史·卷089（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7089&oldid=1875817",
+                  "quote": "郪，望。有三十四鹽井。",
+                  "locator": "宋史·卷089（维基文库固定版本）·郪，望。有三十四鹽井。"
+                },
+                {
+                  "sourceId": "song-research-songshi-89",
+                  "sourceTitle": "宋史·卷089（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7089&oldid=1875817",
+                  "quote": "鹽亭，緊。熙寧五年，省永泰縣爲鎭入焉。有六鹽井。",
+                  "locator": "宋史·卷089（维基文库固定版本）·鹽亭，緊。熙寧五年，省永泰縣爲鎭入焉。有六鹽井。"
+                },
+                {
+                  "sourceId": "song-research-songshi-89",
+                  "sourceTitle": "宋史·卷089（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7089&oldid=1875817",
+                  "quote": "永泰。中下。本尉司，南渡後爲縣。",
+                  "locator": "宋史·卷089（维基文库固定版本）·永泰。中下。本尉司，南渡後爲縣。"
+                }
+              ]
+            }
+          ],
+          "unresolved": [
+            "1200年当前名潼川府，参考点仍在今三台地区；原文井数是历史汇记，不据其平均分布生成井址。",
+            "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+            "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。",
+            "1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。"
+          ]
+        }
+      ]
+    },
+    "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-366": {
+      "boundaryId": "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-366",
+      "catalogPlaceId": "mianzhou",
+      "sourceName": "綿州",
+      "sourceDisplayName": "綿州",
+      "sourceHierarchy": {
+        "polity": "宋代",
+        "province": "成都府路",
+        "prefecture": "",
+        "dependentPrefecture": "綿州"
+      },
+      "modelYear": 1200,
+      "modelLevel": "prefecture",
+      "sourceAdminType": "Zhou",
+      "researchName": "绵州",
+      "researchEntryId": "song-geography-mianzhou",
+      "polityLabel": "南宋",
+      "catalogPointComparison": {
+        "coordinates": [
+          104.6779,
+          31.467
+        ],
+        "status": "inside",
+        "note": "目录参考点落在该来源模型内；这只是数据一致性检查，不能证明宋代治所坐标或边线准确。"
+      },
+      "linkBasis": "source-name-and-hierarchy",
+      "yearNotice": "1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。",
+      "historicalResearch": [
+        {
+          "id": "song-geography-mianzhou",
+          "title": "绵州 · 建置与年代",
+          "summary": "绵州绍兴三年由知州兼沿边安抚使，节制绵、威、茂州与石泉军屯戍，五年川峡宣抚副使移司，六年罢。巴西、彰明、魏城、罗江、盐泉是其县级清单；军政节制范围不等于绵州民政辖县。",
+          "correspondence": "same-unit",
+          "findings": [
+            {
+              "topic": "administration",
+              "statement": "绵州绍兴三年由知州兼沿边安抚使，节制绵、威、茂州与石泉军屯戍，五年川峡宣抚副使移司，六年罢。巴西、彰明、魏城、罗江、盐泉是其县级清单；军政节制范围不等于绵州民政辖县。",
+              "evidence": [
+                {
+                  "sourceId": "song-research-songshi-89",
+                  "sourceTitle": "宋史·卷089（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7089&oldid=1875817",
+                  "quote": "綿州，上，巴西郡，軍事。紹興三年，以知州事兼綿、威、茂州、石泉軍沿邊安撫使，節制屯戍軍馬。五年，川、峽宣撫副使移司綿州，六年罷。二十一年，罷沿邊安撫使。嘉熙元年，爲四川制置副使治所。崇甯戸一十二萬二千九百一十五，口二十三萬四百九。貢綾、糸寧布。縣五：",
+                  "locator": "宋史·卷089（维基文库固定版本）·綿州，上，巴西郡，軍事。紹興三年，以知州事兼綿、…"
+                },
+                {
+                  "sourceId": "song-research-songshi-89",
+                  "sourceTitle": "宋史·卷089（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7089&oldid=1875817",
+                  "quote": "巴西，望。\n彰明，望。\n魏城，緊。\n羅江，緊。\n鹽泉，中。",
+                  "locator": "宋史·卷089（维基文库固定版本）·巴西，望。\n彰明，望。\n魏城，緊。\n羅江，緊。\n…"
+                }
+              ]
+            }
+          ],
+          "unresolved": [
+            "1200年仍为绵州；嘉熙元年四川制置副使治所的变化晚于截面，不用后期军政范围扩张州界。",
+            "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+            "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。",
+            "1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。"
+          ]
+        }
+      ]
+    },
+    "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-355": {
+      "boundaryId": "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-355",
+      "catalogPlaceId": "hanzhou",
+      "sourceName": "漢州",
+      "sourceDisplayName": "漢州",
+      "sourceHierarchy": {
+        "polity": "宋代",
+        "province": "成都府路",
+        "prefecture": "",
+        "dependentPrefecture": "漢州"
+      },
+      "modelYear": 1200,
+      "modelLevel": "prefecture",
+      "sourceAdminType": "Zhou",
+      "researchName": "汉州",
+      "researchEntryId": "song-geography-hanzhou",
+      "polityLabel": "南宋",
+      "catalogPointComparison": {
+        "coordinates": [
+          104.25,
+          30.99
+        ],
+        "status": "inside",
+        "note": "目录参考点落在该来源模型内；这只是数据一致性检查，不能证明宋代治所坐标或边线准确。"
+      },
+      "linkBasis": "source-name-and-hierarchy",
+      "yearNotice": "1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。",
+      "historicalResearch": [
+        {
+          "id": "song-geography-hanzhou",
+          "title": "汉州 · 建置与年代",
+          "summary": "汉州为德阳郡，地理志列雒、什邡、绵竹、德阳四县，并记苎布贡物。州名、郡号和属县同文出现，但德阳郡不是现代德阳市，也不能因为有德阳县便将汉州城移到该县。",
+          "correspondence": "same-unit",
+          "findings": [
+            {
+              "topic": "administration",
+              "statement": "汉州为德阳郡，地理志列雒、什邡、绵竹、德阳四县，并记苎布贡物。州名、郡号和属县同文出现，但德阳郡不是现代德阳市，也不能因为有德阳县便将汉州城移到该县。",
+              "evidence": [
+                {
+                  "sourceId": "song-research-songshi-89",
+                  "sourceTitle": "宋史·卷089（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7089&oldid=1875817",
+                  "quote": "漢州，上，德陽郡，軍事。戸一十二萬九百，口五十二萬七千二百五十二。貢紵布。縣四：",
+                  "locator": "宋史·卷089（维基文库固定版本）·漢州，上，德陽郡，軍事。戸一十二萬九百，口五十二…"
+                },
+                {
+                  "sourceId": "song-research-songshi-89",
+                  "sourceTitle": "宋史·卷089（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7089&oldid=1875817",
+                  "quote": "雒，望。\n什邡，望。\n綿竹，望。\n德陽，望。",
+                  "locator": "宋史·卷089（维基文库固定版本）·雒，望。\n什邡，望。\n綿竹，望。\n德陽，望。"
+                }
+              ]
+            }
+          ],
+          "unresolved": [
+            "本入口沿用今广汉地区参考点；汉州、汉中兴元府与后世汉州县治均应按具体记载区分。本段无明确新建或改名年份，不生成凑数纪年。",
+            "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+            "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。",
+            "1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。"
+          ]
+        }
+      ]
+    },
+    "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-325": {
+      "boundaryId": "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-325",
+      "catalogPlaceId": "langzhou",
+      "sourceName": "閬州",
+      "sourceDisplayName": "閬州",
+      "sourceHierarchy": {
+        "polity": "宋代",
+        "province": "利州路",
+        "prefecture": "",
+        "dependentPrefecture": "閬州"
+      },
+      "modelYear": 1200,
+      "modelLevel": "prefecture",
+      "sourceAdminType": "Zhou",
+      "researchName": "阆州",
+      "researchEntryId": "song-geography-langzhou",
+      "polityLabel": "南宋",
+      "catalogPointComparison": {
+        "coordinates": [
+          106.005,
+          31.558
+        ],
+        "status": "inside",
+        "note": "目录参考点落在该来源模型内；这只是数据一致性检查，不能证明宋代治所坐标或边线准确。"
+      },
+      "linkBasis": "source-name-and-hierarchy",
+      "yearNotice": "源路级字段概称利州路；《宋史》记庆元二年再分东西路，1200年本处按利州东路阅读。这里保留府州面关联，不用概括路名抹去分路年代。1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。",
+      "historicalResearch": [
+        {
+          "id": "song-geography-langzhou",
+          "title": "阆州 · 建置与年代",
+          "summary": "阆州在绍兴十四年隶东路；阆中县条记阆水迂曲、绕县三面，提供地名与水势关系。淳祐三年才移治大获山，因此1200年不能采用后来的山城治所位置，更不能移动既有阆中地区参考点。",
+          "correspondence": "same-unit",
+          "findings": [
+            {
+              "topic": "administration",
+              "statement": "阆州在绍兴十四年隶东路；阆中县条记阆水迂曲、绕县三面，提供地名与水势关系。淳祐三年才移治大获山，因此1200年不能采用后来的山城治所位置，更不能移动既有阆中地区参考点。",
+              "evidence": [
+                {
+                  "sourceId": "song-research-songshi-89",
+                  "sourceTitle": "宋史·卷089（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7089&oldid=1875817",
+                  "quote": "閬州，上，閬中郡。乾德四年，改安德軍節度。紹興十四年，隸東路。端平三年，兵亂。淳祐三年，移治大獲山。崇甯戸四萬三千九百三十六，口一十萬九百七。貢蓮綾。縣七：",
+                  "locator": "宋史·卷089（维基文库固定版本）·閬州，上，閬中郡。乾德四年，改安德軍節度。紹興十…"
+                },
+                {
+                  "sourceId": "song-research-songshi-89",
+                  "sourceTitle": "宋史·卷089（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7089&oldid=1875817",
+                  "quote": "閬中，望。閬水迂曲，繞縣三面，故名。紹興十八年，省玉井鎭入焉。",
+                  "locator": "宋史·卷089（维基文库固定版本）·閬中，望。閬水迂曲，繞縣三面，故名。紹興十八年，…"
+                }
+              ]
+            }
+          ],
+          "unresolved": [
+            "阆水历史文字描述不是现代嘉陵江河岸复原；1243年大获山迁治仅列后期沿革，1200年府州模型仍是近似参考。",
+            "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+            "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。",
+            "源路级字段概称利州路；《宋史》记庆元二年再分东西路，1200年本处按利州东路阅读。这里保留府州面关联，不用概括路名抹去分路年代。1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。"
+          ]
+        }
+      ]
+    },
+    "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-338": {
+      "boundaryId": "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-338",
+      "catalogPlaceId": "suizhou-suining",
+      "sourceName": "遂寧府",
+      "sourceDisplayName": "遂寧府",
+      "sourceHierarchy": {
+        "polity": "宋代",
+        "province": "潼川府路",
+        "prefecture": "",
+        "dependentPrefecture": "遂寧府"
+      },
+      "modelYear": 1200,
+      "modelLevel": "prefecture",
+      "sourceAdminType": "Fu",
+      "researchName": "遂宁府",
+      "researchEntryId": "song-geography-suizhou-suining",
+      "polityLabel": "南宋",
+      "catalogPointComparison": {
+        "coordinates": [
+          105.5923,
+          30.5333
+        ],
+        "status": "inside",
+        "note": "目录参考点落在该来源模型内；这只是数据一致性检查，不能证明宋代治所坐标或边线准确。"
+      },
+      "linkBasis": "source-name-and-hierarchy",
+      "yearNotice": "1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。",
+      "historicalResearch": [
+        {
+          "id": "song-geography-suizhou-suining",
+          "title": "遂宁府 · 建置与年代",
+          "summary": "遂州在政和五年升遂宁府，宣和五年升大藩。端平三年兵乱后才权治蓬溪寨，同时长江等县废；这些1236年的变动不得提前用于1200年。原文长江在此是县名，不能误认作河流条目。",
+          "correspondence": "same-unit",
+          "findings": [
+            {
+              "topic": "administration",
+              "statement": "遂州在政和五年升遂宁府，宣和五年升大藩。端平三年兵乱后才权治蓬溪寨，同时长江等县废；这些1236年的变动不得提前用于1200年。原文长江在此是县名，不能误认作河流条目。",
+              "evidence": [
+                {
+                  "sourceId": "song-research-songshi-89",
+                  "sourceTitle": "宋史·卷089（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7089&oldid=1875817",
+                  "quote": "遂甯府，都督府，遂甯郡，武信軍節度。本遂州。政和五年，陞爲府。宣和五年，陞大藩。端平三年，兵亂，權治蓬溪砦。崇甯戸四萬九千一百三十二，口一十萬二千五百五十五。貢樗蒲綾。縣五：",
+                  "locator": "宋史·卷089（维基文库固定版本）·遂甯府，都督府，遂甯郡，武信軍節度。本遂州。政和…"
+                },
+                {
+                  "sourceId": "song-research-songshi-89",
+                  "sourceTitle": "宋史·卷089（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7089&oldid=1875817",
+                  "quote": "遂寧。中。唐縣。熙甯六年，省靑石縣入焉。七年，復置。",
+                  "locator": "宋史·卷089（维基文库固定版本）·遂寧。中。唐縣。熙甯六年，省靑石縣入焉。七年，復…"
+                },
+                {
+                  "sourceId": "song-research-songshi-89",
+                  "sourceTitle": "宋史·卷089（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7089&oldid=1875817",
+                  "quote": "長江，緊。端平三年，以下三縣倶廢。",
+                  "locator": "宋史·卷089（维基文库固定版本）·長江，緊。端平三年，以下三縣倶廢。"
+                }
+              ]
+            }
+          ],
+          "unresolved": [
+            "遂宁府与遂宁县不是同级；同名府县及长江县分别理解，蓬溪寨迁治不据文字补造山寨坐标。",
+            "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+            "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。",
+            "1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。"
+          ]
+        }
+      ]
+    },
+    "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-372": {
+      "boundaryId": "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-372",
+      "catalogPlaceId": "kuizhou",
+      "sourceName": "夔州",
+      "sourceDisplayName": "夔州",
+      "sourceHierarchy": {
+        "polity": "宋代",
+        "province": "夔州路",
+        "prefecture": "",
+        "dependentPrefecture": "夔州"
+      },
+      "modelYear": 1200,
+      "modelLevel": "prefecture",
+      "sourceAdminType": "Zhou",
+      "researchName": "夔州",
+      "researchEntryId": "song-geography-kuizhou",
+      "polityLabel": "南宋",
+      "catalogPointComparison": {
+        "coordinates": [
+          109.465,
+          31.0175
+        ],
+        "status": "inside",
+        "note": "目录参考点落在该来源模型内；这只是数据一致性检查，不能证明宋代治所坐标或边线准确。"
+      },
+      "linkBasis": "source-name-and-hierarchy",
+      "yearNotice": "1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。",
+      "historicalResearch": [
+        {
+          "id": "song-geography-kuizhou",
+          "title": "夔州 · 建置与年代",
+          "summary": "夔州原置白帝城，景德三年迁城东，建炎三年升夔、利兵马钤辖，淳熙十五年帅臣带归、峡州兵马司。奉节、巫山为属县，兵马司所及州与本州县域不是同一范围。",
+          "correspondence": "same-unit",
+          "findings": [
+            {
+              "topic": "administration",
+              "statement": "夔州原置白帝城，景德三年迁城东，建炎三年升夔、利兵马钤辖，淳熙十五年帅臣带归、峡州兵马司。奉节、巫山为属县，兵马司所及州与本州县域不是同一范围。",
+              "evidence": [
+                {
+                  "sourceId": "song-research-songshi-89",
+                  "sourceTitle": "宋史·卷089（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7089&oldid=1875817",
+                  "quote": "夔州，都督府，雲安郡，甯江軍節度。州初置在白帝城，景德三年，徙城東。建炎三年，陞夔、利兵馬鈐轄。淳熙十五年，帥臣帶歸、峽州兵馬司。元豐戸一萬一千二百一十三。貢蜜、蠟。縣二：",
+                  "locator": "宋史·卷089（维基文库固定版本）·夔州，都督府，雲安郡，甯江軍節度。州初置在白帝城…"
+                },
+                {
+                  "sourceId": "song-research-songshi-89",
+                  "sourceTitle": "宋史·卷089（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7089&oldid=1875817",
+                  "quote": "奉節，中。\n巫山。中下",
+                  "locator": "宋史·卷089（维基文库固定版本）·奉節，中。\n巫山。中下"
+                }
+              ]
+            }
+          ],
+          "unresolved": [
+            "夔州与夔州路不同级；白帝城和迁后的州治不同，保留今奉节地区参考点，不把旧城和府域中心当作精确州治。",
+            "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+            "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。",
+            "1200年此地属南宋。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。"
+          ]
+        }
+      ]
+    },
+    "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-335": {
+      "boundaryId": "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-335",
+      "catalogPlaceId": "jianzhou",
+      "sourceName": "隆慶府",
+      "sourceDisplayName": "隆慶府",
+      "sourceHierarchy": {
+        "polity": "宋代",
+        "province": "利州路",
+        "prefecture": "",
+        "dependentPrefecture": "隆慶府"
+      },
+      "modelYear": 1200,
+      "modelLevel": "prefecture",
+      "sourceAdminType": "Fu",
+      "researchName": "隆庆府",
+      "researchEntryId": "song-geography-jianzhou",
+      "polityLabel": "南宋",
+      "catalogPointComparison": {
+        "coordinates": [
+          105.524,
+          32.288
+        ],
+        "status": "outside",
+        "note": "点面位置存疑：当前城市参考点落在该1200年来源模型外。目录点与模型面均未经古址精确核定，保留两者供核查，不移动坐标、不改画范围，也不改配到最近区域。"
+      },
+      "linkBasis": "source-name-and-hierarchy",
+      "yearNotice": "源路级字段概称利州路；《宋史》记庆元二年再分东西路，1200年本处按利州东路阅读。这里保留府州面关联，不用概括路名抹去分路年代。1200年此地属南宋。点面位置存疑：当前城市参考点落在该1200年来源模型外。目录点与模型面均未经古址精确核定，保留两者供核查，不移动坐标、不改画范围，也不改配到最近区域。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。",
+      "historicalResearch": [
+        {
+          "id": "song-geography-jianzhou",
+          "title": "隆庆府 · 建置与年代",
+          "summary": "剑州在隆兴二年升普安军节度，绍熙元年升隆庆府，光宗本纪亦有明确记载。剑门县在熙宁五年与剑门关复隶州，另有寨堡清单；关隘、县与府不能因名称关联合成一个面。",
+          "correspondence": "same-unit",
+          "findings": [
+            {
+              "topic": "administration",
+              "statement": "剑州在隆兴二年升普安军节度，绍熙元年升隆庆府，光宗本纪亦有明确记载。剑门县在熙宁五年与剑门关复隶州，另有寨堡清单；关隘、县与府不能因名称关联合成一个面。",
+              "evidence": [
+                {
+                  "sourceId": "song-research-songshi-89",
+                  "sourceTitle": "宋史·卷089（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7089&oldid=1875817",
+                  "quote": "隆慶府，本劍州，上，普安郡，軍事。乾德五年，廢永歸縣。隆興二年，以孝宗潛邸，陞普安軍節度。紹熙元年，陞府。端平三年，兵亂。崇甯戸三萬五千二十三，口一十萬七千五百七十三。貢巴戟。縣六：",
+                  "locator": "宋史·卷089（维基文库固定版本）·隆慶府，本劍州，上，普安郡，軍事。乾德五年，廢永…"
+                },
+                {
+                  "sourceId": "song-research-songshi-89",
+                  "sourceTitle": "宋史·卷089（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7089&oldid=1875817",
+                  "quote": "劍門。中下。熙寧五年，以劍門關劍門縣復隸州。有小劍、白綿、鹈巴砍、糧谷、龍聚、托溪六砦。",
+                  "locator": "宋史·卷089（维基文库固定版本）·劍門。中下。熙寧五年，以劍門關劍門縣復隸州。有小…"
+                },
+                {
+                  "sourceId": "song-research-songshi-36",
+                  "sourceTitle": "宋史·卷036（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7036&oldid=2285197",
+                  "quote": "己未，升劍州爲隆慶府。",
+                  "locator": "宋史·卷036（维基文库固定版本）·己未，升劍州爲隆慶府。"
+                }
+              ]
+            }
+          ],
+          "unresolved": [
+            "1200年当前名隆庆府，不是明朝隆庆年号时期新建的府；四川剑州与福建南剑州也不能同名匹配。",
+            "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+            "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。",
+            "源路级字段概称利州路；《宋史》记庆元二年再分东西路，1200年本处按利州东路阅读。这里保留府州面关联，不用概括路名抹去分路年代。1200年此地属南宋。点面位置存疑：当前城市参考点落在该1200年来源模型外。目录点与模型面均未经古址精确核定，保留两者供核查，不移动坐标、不改画范围，也不改配到最近区域。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。"
+          ]
+        }
+      ]
+    },
+    "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-217": {
+      "boundaryId": "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-217",
+      "catalogPlaceId": "huzhou",
+      "sourceName": "湖州",
+      "sourceDisplayName": "湖州",
+      "sourceHierarchy": {
+        "polity": "宋代",
+        "province": "浙西路",
+        "prefecture": "",
+        "dependentPrefecture": "胡州"
+      },
+      "modelYear": 1200,
+      "modelLevel": "prefecture",
+      "sourceAdminType": "Zhou",
+      "researchName": "湖州",
+      "researchEntryId": "song-geography-huzhou",
+      "polityLabel": "南宋",
+      "catalogPointComparison": {
+        "coordinates": [
+          120.087,
+          30.894
+        ],
+        "status": "inside",
+        "note": "目录参考点落在该来源模型内；这只是数据一致性检查，不能证明宋代治所坐标或边线准确。"
+      },
+      "linkBasis": "documented-source-conflict",
+      "yearNotice": "1200年此地属南宋。源隶属字形冲突：模型名为湖州，层级字段却作胡州；同源的乌程、归安等六县与《宋史》湖州完整县目一致，保留原字段与原几何，不据纠字宣称边线已核定。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。",
+      "historicalResearch": [
+        {
+          "id": "song-geography-huzhou",
+          "title": "湖州 · 建置与年代",
+          "summary": "湖州在景祐元年升昭庆军节度，乌程、归安为不同县，归安在太平兴国七年由乌程析置。宝庆元年才改安吉州，因此1200年仍显示湖州；安吉县与后来的安吉州也不是同级建置。",
+          "correspondence": "same-unit",
+          "findings": [
+            {
+              "topic": "administration",
+              "statement": "湖州在景祐元年升昭庆军节度，乌程、归安为不同县，归安在太平兴国七年由乌程析置。宝庆元年才改安吉州，因此1200年仍显示湖州；安吉县与后来的安吉州也不是同级建置。",
+              "evidence": [
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "湖州，上，呉興郡，景祐元年，陞昭慶軍節度。寶慶元年，改安吉州。崇甯戸一十六萬二千三百三十五，口三十六萬一千六百九十八。貢白𦆭、漆器。縣六：",
+                  "locator": "宋史·卷088（维基文库固定版本）·湖州，上，呉興郡，景祐元年，陞昭慶軍節度。寶慶元…"
+                },
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "歸安，望。太平興國七年，析烏程地置縣。",
+                  "locator": "宋史·卷088（维基文库固定版本）·歸安，望。太平興國七年，析烏程地置縣。"
+                },
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "烏程，望。\n歸安，望。太平興國七年，析烏程地置縣。\n安吉，望。\n長興，望。\n德淸，緊。\n武康。上。太平興國三年，自杭州來隸。",
+                  "locator": "宋史·卷088（维基文库固定版本）·烏程，望。\n歸安，望。太平興國七年，析烏程地置縣…"
+                }
+              ]
+            }
+          ],
+          "unresolved": [
+            "1200年源模型本名为湖州，但上级字段把本州写成“胡州”；六个同源属县与地理志一致，保留这一字形冲突而不改动边线。",
+            "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+            "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。",
+            "1200年此地属南宋。源隶属字形冲突：模型名为湖州，层级字段却作胡州；同源的乌程、归安等六县与《宋史》湖州完整县目一致，保留原字段与原几何，不据纠字宣称边线已核定。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。"
+          ]
+        }
+      ]
+    },
+    "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-208": {
+      "boundaryId": "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-208",
+      "catalogPlaceId": "wuzhou-jinhua",
+      "sourceName": "務州",
+      "sourceDisplayName": "務州",
+      "sourceHierarchy": {
+        "polity": "宋代",
+        "province": "浙東路",
+        "prefecture": "",
+        "dependentPrefecture": "務州"
+      },
+      "modelYear": 1200,
+      "modelLevel": "prefecture",
+      "sourceAdminType": "Zhou",
+      "researchName": "婺州",
+      "researchEntryId": "song-geography-wuzhou-jinhua",
+      "polityLabel": "南宋",
+      "catalogPointComparison": {
+        "coordinates": [
+          119.6475,
+          29.0788
+        ],
+        "status": "inside",
+        "note": "目录参考点落在该来源模型内；这只是数据一致性检查，不能证明宋代治所坐标或边线准确。"
+      },
+      "linkBasis": "documented-source-conflict",
+      "yearNotice": "1200年此地属南宋。源名称冲突：模型名及层级字段作务州；其七个同源属县与《宋史》婺州县目完全对应，显示名据文献纠正为婺州。原名称、类型和几何保留，不另造务州，也不据纠字推定治所或边线准确。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。",
+      "displayCorrection": {
+        "name": "婺州",
+        "note": "源名称冲突：模型名及层级字段作务州；其七个同源属县与《宋史》婺州县目完全对应，显示名据文献纠正为婺州。原名称、类型和几何保留，不另造务州，也不据纠字推定治所或边线准确。",
+        "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924"
+      },
+      "historicalResearch": [
+        {
+          "id": "song-geography-wuzhou-jinhua",
+          "title": "婺州 · 建置与年代",
+          "summary": "婺州为东阳郡，淳化元年改保宁军节度，属县列金华、义乌、永康、武义、浦江、兰溪和东阳。1200年源模型作“务州”，但同源七县全与这段记载对应，显示名据文献纠正为婺州，原模型字形保留。",
+          "correspondence": "same-unit",
+          "findings": [
+            {
+              "topic": "administration",
+              "statement": "婺州为东阳郡，淳化元年改保宁军节度，属县列金华、义乌、永康、武义、浦江、兰溪和东阳。1200年源模型作“务州”，但同源七县全与这段记载对应，显示名据文献纠正为婺州，原模型字形保留。",
+              "evidence": [
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "婺州，上，東陽郡，淳化元年，改保寧軍節度。崇甯戸一十三萬四千八十，口二十六萬一千六百七十八。貢綿、藤紙。縣七：",
+                  "locator": "宋史·卷088（维基文库固定版本）·婺州，上，東陽郡，淳化元年，改保寧軍節度。崇甯戸…"
+                },
+                {
+                  "sourceId": "song-research-songshi-88",
+                  "sourceTitle": "宋史·卷088（维基文库固定版本）",
+                  "sourceKind": "historical-text",
+                  "sourceUrl": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924",
+                  "quote": "金華，望。\n義烏，望。\n永康，緊。\n武義，上。\n浦江，上。唐浦陽縣，梁錢寘奏改。\n蘭溪，望。\n東陽。望。",
+                  "locator": "宋史·卷088（维基文库固定版本）·金華，望。\n義烏，望。\n永康，緊。\n武義，上。\n…"
+                }
+              ]
+            }
+          ],
+          "unresolved": [
+            "婺州是州，金华是县和今名对应；“务州”是本轮明确标记的源名冲突，不是另一个经史料证明的新州。",
+            "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
+            "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。",
+            "1200年此地属南宋。源名称冲突：模型名及层级字段作务州；其七个同源属县与《宋史》婺州县目完全对应，显示名据文献纠正为婺州。原名称、类型和几何保留，不另造务州，也不据纠字推定治所或边线准确。这是1200年近似行政模型；城池参考点不代表府州县疆界。史料覆盖多个年份，领县、升降与改名须按记载年代阅读，不能由文字记载证明模型边线。"
+          ]
+        }
+      ]
+    },
     "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-39": {
       "boundaryId": "hartwell-1200-prefecture-v5_1200_chin_chn_1200_p-39",
       "catalogPlaceId": "datong",
@@ -2052,6 +3653,13 @@
       "snapshotSha256": "6b9144a2d81e45cdd451327077ab9591174a4a8abb4f94e68c958a86964f2d6f"
     },
     {
+      "id": "song-research-shizhongshan-ji",
+      "title": "石鐘山記（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E7%9F%B3%E9%90%98%E5%B1%B1%E8%A8%98&oldid=2190370",
+      "snapshotPath": "data/evidence/song-research/sources/shizhongshan-ji.txt",
+      "snapshotSha256": "72eae0c0028df3733f4a9c05d77cb1580828ff1941664c1efeee39caca036a93"
+    },
+    {
       "id": "song-research-songshi-33",
       "title": "宋史·卷033（维基文库固定版本）",
       "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7033&oldid=7908408",
@@ -2127,25 +3735,32 @@
       "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7090&oldid=2619985",
       "snapshotPath": "data/evidence/song-research/sources/songshi-90.txt",
       "snapshotSha256": "feb3cdaeb37a60a53cb8b60f0ec2eca3ebbd9ea2806ec1a25867a9dc4c859fef"
+    },
+    {
+      "id": "song-research-yueyanglou-ji",
+      "title": "岳陽樓記（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E5%B2%B3%E9%99%BD%E6%A8%93%E8%A8%98&oldid=9467826",
+      "snapshotPath": "data/evidence/song-research/sources/yueyanglou-ji.txt",
+      "snapshotSha256": "3e79fdc58140aada6572f9683e62991df64cb78c027e0d347d82b2d532d0252b"
     }
   ],
   "inputHashes": {
-    "data/evidence/song-research/geography.json": "f24d59c524e7d172b3d2445cdd5cb0c06dce4b4eb52e7c7ba575507ca1967f3e",
-    "data/catalog.json": "8c509fcfdc4e7f22760f3d25459978ffee89552bafc988ed648d28f4790027c5",
+    "data/evidence/song-research/geography.json": "34b9b2683850f262f828a71278f5bac327d8c93f7e1a0b72e586bcd584b3a106",
+    "data/catalog.json": "d70339e869ccf7a2a1c037a86b0c83205f7ba7c48512fe881157f9fdc821d50a",
     "public/data/boundaries/hartwell-1200-prefecture.geojson": "efa3333cd7986a8f019f05daae908322e3bc987454d51331c5ec43517cb28747",
     "public/data/boundaries/hartwell-1200-county.geojson": "2a2d1012f5d2d4893b1cef501319cc61b17a98d2ed5b62c0fd88e08b5abe7c98"
   },
   "statistics": {
-    "researchEntries": 29,
-    "linkedEntries": 25,
-    "linkedBoundaries": 25,
+    "researchEntries": 51,
+    "linkedEntries": 47,
+    "linkedBoundaries": 47,
     "unlinkedEntries": 4,
-    "sourceVolumes": 16
+    "sourceVolumes": 18
   },
   "notes": [
     "按逐字史料及原模型名称、政权、层级、隶属字段逐条核对，不以最近点、距离或同名后缀猜配。",
     "只关联1200年宋金同期模型；1080年北宋辽模型不承接本包关联，也未绘制源资料缺失的国界。",
-    "大同府原类型、重庆旧称、邯郸源上级的冲突分别列出，原模型文件和几何没有修改。",
+    "大同府原类型、重庆旧称、邯郸源上级及湖州、婺州字形冲突分别列出，原模型文件和几何没有修改。",
     "未关联的都城或关隘不借用国家、上级行政区或现代边界冒充本地辖区。"
   ]
 }

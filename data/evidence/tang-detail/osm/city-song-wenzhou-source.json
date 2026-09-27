@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-city-song-wenzhou",
+  "title": "OpenStreetMap 现代地理：温州与瓯江水系",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "retrievedAt": "2026-09-27T06:08:37.797269+00:00",
+  "bounds": [
+    120.499,
+    27.793,
+    120.899,
+    28.193
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/city-song-wenzhou.json.gz",
+  "snapshotSha256": "c9d1b4d17daeb84c86ad497ffeb333dc023f5f13391c6ebc9bfb60c05abb7f3e",
+  "uncompressedSnapshotSha256": "f5031085143d0506daff4741a511efc77846e2091827fffd191d8eaeaf01b1fe",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/city-song-wenzhou.ql",
+  "querySha256": "588b6c1a7415198fcf204f91e0b8e91611e4851599a7c49ae0ef738ec7d44c3c",
+  "osmBaseTimestamp": "2026-06-01T08:52:28Z",
+  "elementCount": 2887,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+}

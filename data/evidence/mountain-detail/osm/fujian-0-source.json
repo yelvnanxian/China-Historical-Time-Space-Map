@@ -1,0 +1,25 @@
+{
+  "id": "osm-mountain-detail-fujian-0",
+  "regionId": "fujian",
+  "title": "OpenStreetMap 山地线与命名山峰：福建山地 / fujian-0",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "bounds": [
+    116,
+    24,
+    120,
+    27
+  ],
+  "retrievedAt": "2026-09-27T06:07:35.401662+00:00",
+  "snapshotPath": "data/evidence/mountain-detail/osm/fujian-0.json.gz",
+  "snapshotSha256": "0ba3910abc56e14f5d1dd193a58d1acf8cfc18480ff83cf39f368e95ec938307",
+  "uncompressedSnapshotSha256": "4826a9428af747987b814b9e7a3c1bce899827447618d119da090a384617ec4c",
+  "queryPath": "data/evidence/mountain-detail/osm/fujian-0.ql",
+  "querySha256": "e4a91bcd88b5dd4ed0de0d38f4d7a1b6c2a31794ecceb049c02b4986aeba2773",
+  "osmBaseTimestamp": "2026-07-15T15:22:01Z",
+  "elementCount": 2919,
+  "modernReferenceOnly": true,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是所选朝代的地貌复原。查询边框不是山脉范围。"
+}

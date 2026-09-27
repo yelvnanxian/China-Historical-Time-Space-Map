@@ -1,14 +1,14 @@
 {
   "outputPath": "public/data/tang-detail/yellow-river-water-associations.json",
-  "outputSha256": "04f7a40661043f8fb35c5d5431f8a3793698640931b99c36667820e12ca32d55",
-  "sourceManifestSha256": "db58a31b0bf99ac82bf451a014cb4b241e17b1dfcf2e88884032ba90cc1270ce",
+  "outputSha256": "fe774d3a45e67de20a975f16cb33df0ca2bacd4919905b131799ecca9b65cdde",
+  "sourceManifestSha256": "d11b28517e7b2657dc08bf236136f6a2639c61008345472f4dbb15bda680e3e8",
   "statistics": {
     "mainRiverLines": 51,
-    "riverWaterCandidates": 7751,
+    "riverWaterCandidates": 7886,
     "associatedWaterSurfaces": 59,
     "lineSurfaceAssociations": 90,
-    "unassociatedWaterSurfaces": 7692,
-    "nonMainRiverNameCandidatesRejected": 128,
+    "unassociatedWaterSurfaces": 7827,
+    "nonMainRiverNameCandidatesRejected": 129,
     "boundaryOnlyPairsNotAssociated": 9
   },
   "lineRecords": [
@@ -2863,6 +2863,13 @@
         "name:en": "Huangsha River"
       },
       "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
+    },
+    {
+      "riverId": "osm-way-1284412144",
+      "names": {
+        "name": "黄宅河"
+      },
+      "reason": "名称不等值于现代黄河主河名，不能凭huang/黄/yellow子串关联。"
     }
   ],
   "boundaryOnlyPairs": [
@@ -2924,7 +2931,7 @@
   "limitations": [
     "现代线面空间关联，非历史黄河水面考证。",
     "未关联水面不表示它一定不属于黄河；本算法宁可留下不确定记录。",
-    "关联覆盖实际取得的40个采集区域OSM快照，不代表全部现代黄河。",
+    "关联覆盖实际取得的53个采集区域OSM快照，不代表全部现代黄河。",
     "前端只在已经加载历史河道的适当下游范围替代这些水面。"
   ]
 }

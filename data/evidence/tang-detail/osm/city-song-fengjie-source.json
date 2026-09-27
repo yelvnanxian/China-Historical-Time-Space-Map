@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-city-song-fengjie",
+  "title": "OpenStreetMap 现代地理：奉节与长江峡江水系",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "retrievedAt": "2026-09-27T06:18:06.328404+00:00",
+  "bounds": [
+    109.265,
+    30.8175,
+    109.665,
+    31.2175
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/city-song-fengjie.json.gz",
+  "snapshotSha256": "545c73cd401863da099572a26096c50b5217823c0700d355e3041e04a6cb9c6d",
+  "uncompressedSnapshotSha256": "b6000a0a03427890667fba9da1f8dc3f45afec204c689611ba8452b8c214bd92",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/city-song-fengjie.ql",
+  "querySha256": "aa307e2103befb4f1dc9776c321aee674d644b1aaae7a31c65a8443a46035114",
+  "osmBaseTimestamp": "2026-06-01T08:52:28Z",
+  "elementCount": 99,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "osm-mountain-detail-chongqing-east-sichuan-0",
+  "regionId": "chongqing-east-sichuan",
+  "title": "OpenStreetMap 山地线与命名山峰：重庆与川东山地 / chongqing-east-sichuan-0",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "bounds": [
+    105,
+    28,
+    109,
+    31
+  ],
+  "retrievedAt": "2026-09-27T06:12:02.500775+00:00",
+  "snapshotPath": "data/evidence/mountain-detail/osm/chongqing-east-sichuan-0.json.gz",
+  "snapshotSha256": "f1bcdf198a5d33f94062c33a54747dcbe5a233676061f4047c2aac5ce1a9af64",
+  "uncompressedSnapshotSha256": "1338a193aa3dd72e1921640485dbe7d725a31c2e046548d3e79e1a7543cedcb5",
+  "queryPath": "data/evidence/mountain-detail/osm/chongqing-east-sichuan-0.ql",
+  "querySha256": "9e8c81466c7f426023eb87a41553f1eb910ed3b2535aa2889d21d3d18f88c2b0",
+  "osmBaseTimestamp": "2026-05-31T22:37:44Z",
+  "elementCount": 507,
+  "modernReferenceOnly": true,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "note": "完整OSM way几何与命名peak节点；现代参照，未经独立实测核验，不是所选朝代的地貌复原。查询边框不是山脉范围。"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-city-song-hanzhong",
+  "title": "OpenStreetMap 现代地理：汉中与汉江水系",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.private.coffee/api/interpreter",
+  "retrievedAt": "2026-09-27T06:17:41.250310+00:00",
+  "bounds": [
+    106.8233,
+    32.8675,
+    107.2233,
+    33.2675
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/city-song-hanzhong.json.gz",
+  "snapshotSha256": "1557a0ccbeb0ee50ba41967594a0a9aaae5305289f9c61602aeb2fab000f45d0",
+  "uncompressedSnapshotSha256": "1d9008e60c0f924ba06224928a0ccbb597dcb33ca738bbf9f24351168d99c343",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/city-song-hanzhong.ql",
+  "querySha256": "39b3bff89f2bc2b6c8390aff79d2799689a0e741376126b0fc428004cde25557",
+  "osmBaseTimestamp": "2026-07-24T11:04:51Z",
+  "elementCount": 290,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+}

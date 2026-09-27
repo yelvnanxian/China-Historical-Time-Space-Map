@@ -1,0 +1,25 @@
+{
+  "featureCount": 488,
+  "countsByKind": {
+    "water": 386,
+    "peak": 6,
+    "river": 32,
+    "stream": 58,
+    "canal": 6
+  },
+  "rejected": [
+    {
+      "osmType": "relation",
+      "osmId": 21077375,
+      "reason": "No complete outer ring"
+    },
+    {
+      "osmType": "relation",
+      "osmId": 21077376,
+      "reason": "No complete outer ring"
+    }
+  ],
+  "sourceMemberWayDuplicatesSuppressed": 81,
+  "crossRegionDuplicateIdsSuppressed": 0,
+  "geometryPolicy": "Unsmoothed original coordinate sequences; exact endpoint line merging for complete water rings. No guessed closing edges, buffers or polygon repair."
+}

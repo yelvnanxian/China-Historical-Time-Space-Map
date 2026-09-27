@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-city-song-jian",
+  "title": "OpenStreetMap 现代地理：吉安与赣江水系",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "retrievedAt": "2026-09-27T06:23:55.252898+00:00",
+  "bounds": [
+    114.76,
+    26.89,
+    115.16,
+    27.29
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/city-song-jian.json.gz",
+  "snapshotSha256": "fa8e0d9be16a3ab1deb5efcf267b5487c81e7eec78191eff41846894555a9e98",
+  "uncompressedSnapshotSha256": "51c799f058d4a6acefc79ac86742a0e0a4d1c9f90c295d1db53e130b74a12937",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/city-song-jian.ql",
+  "querySha256": "5625da49962f73dea17e7587f89f72ac794c047a249e5c986f4dfbc09fe30d97",
+  "osmBaseTimestamp": "2026-07-15T15:22:01Z",
+  "elementCount": 490,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+}

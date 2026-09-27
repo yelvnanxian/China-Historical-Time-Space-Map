@@ -2,25 +2,32 @@
   "periodId": "song",
   "boundaryReferenceYear": 1200,
   "note": "城市坐标落入现代OSM查询框仅表示已采集该窗口，不表示所有河湖山峰已收录，不证明宋代河道、湖岸、山名或行政归属。等高线为局部现代DEM，山脊另用OSM来源；没有资料不等于没有山。",
-  "catalogSha256": "8c509fcfdc4e7f22760f3d25459978ffee89552bafc988ed648d28f4790027c5",
-  "detailManifestSha256": "db58a31b0bf99ac82bf451a014cb4b241e17b1dfcf2e88884032ba90cc1270ce",
-  "terrainManifestSha256": "210c4744c3562b5650d00fd27c91639ecf99a903789e8019bda600b15f11d013",
-  "placeCount": 29,
-  "coveredPlaceCount": 29,
+  "catalogSha256": "d70339e869ccf7a2a1c037a86b0c83205f7ba7c48512fe881157f9fdc821d50a",
+  "detailManifestSha256": "d11b28517e7b2657dc08bf236136f6a2639c61008345472f4dbb15bda680e3e8",
+  "terrainManifestSha256": "9f4a3c0b1787239cb2348dc9dab3437ae7d5d65d089ab89022f46d192daffc36",
+  "ridgeManifestSha256": "0bee72bb5fe0699e9f4794875c06b7739c5f8528239b6a8351217e7e3cb6a9d8",
+  "placeCount": 51,
+  "coveredPlaceCount": 51,
   "uncoveredPlaceIds": [],
   "sharedModernFeatureCountsByKind": {
-    "water": 131288,
-    "river": 21987,
-    "canal": 35878,
-    "stream": 26396,
-    "peak": 8407,
-    "saddle": 147
+    "water": 136498,
+    "river": 22635,
+    "canal": 36882,
+    "stream": 27489,
+    "peak": 8576,
+    "saddle": 151
   },
-  "sharedModernSamplingRegionCount": 40,
-  "sharedDemAreaCount": 22,
-  "sharedContourCount": 18451,
-  "sharedRidgeSamplingRegionCount": 5,
-  "sharedRidgeFeatureCount": 14330,
+  "sharedModernSamplingRegionCount": 53,
+  "sharedDemAreaCount": 25,
+  "sharedContourCount": 24335,
+  "sharedRidgeSamplingRegionCount": 9,
+  "sharedRidgeFeatureCount": 25366,
+  "sharedRidgeCountsByKind": {
+    "ridge": 10929,
+    "arete": 54,
+    "cliff": 2767,
+    "peak": 11616
+  },
   "yellowRiverEpochAt1200": "yellow-1128-1368",
   "yellowRiverGeometrySha256": "752003e9590ca359f087a0b2e12619fa9a918e3c856cd66a028d1d871a8d12d5",
   "places": [
@@ -35,6 +42,9 @@
         "guanzhong"
       ],
       "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [
+        "qinling"
+      ],
       "demAreaIdsAtCityCoordinate": [],
       "demAreaIdsWithin50km": [
         "zhongnanshan"
@@ -51,6 +61,9 @@
         "luoyang"
       ],
       "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [
+        "taihang"
+      ],
       "demAreaIdsAtCityCoordinate": [],
       "demAreaIdsWithin50km": []
     },
@@ -65,6 +78,7 @@
         "city-beijing"
       ],
       "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [],
       "demAreaIdsAtCityCoordinate": [],
       "demAreaIdsWithin50km": []
     },
@@ -79,6 +93,9 @@
         "central-plains"
       ],
       "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [
+        "taihang"
+      ],
       "demAreaIdsAtCityCoordinate": [],
       "demAreaIdsWithin50km": []
     },
@@ -93,6 +110,7 @@
         "jianghuai"
       ],
       "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [],
       "demAreaIdsAtCityCoordinate": [
         "nanjing-beigaofeng"
       ],
@@ -112,6 +130,9 @@
         "zhejiang"
       ],
       "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [
+        "zhejiang"
+      ],
       "demAreaIdsAtCityCoordinate": [
         "hangzhou-beigaofeng"
       ],
@@ -130,6 +151,7 @@
         "west-chengdu"
       ],
       "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [],
       "demAreaIdsAtCityCoordinate": [],
       "demAreaIdsWithin50km": []
     },
@@ -144,6 +166,7 @@
         "city-guangzhou"
       ],
       "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [],
       "demAreaIdsAtCityCoordinate": [],
       "demAreaIdsWithin50km": []
     },
@@ -158,6 +181,7 @@
         "jianghuai"
       ],
       "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [],
       "demAreaIdsAtCityCoordinate": [],
       "demAreaIdsWithin50km": []
     },
@@ -172,6 +196,7 @@
         "city-xiangyang"
       ],
       "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [],
       "demAreaIdsAtCityCoordinate": [],
       "demAreaIdsWithin50km": []
     },
@@ -186,6 +211,7 @@
         "city-jingzhou"
       ],
       "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [],
       "demAreaIdsAtCityCoordinate": [],
       "demAreaIdsWithin50km": []
     },
@@ -200,6 +226,9 @@
         "city-jinyang"
       ],
       "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [
+        "taihang"
+      ],
       "demAreaIdsAtCityCoordinate": [],
       "demAreaIdsWithin50km": []
     },
@@ -214,6 +243,9 @@
         "city-ming-datong"
       ],
       "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [
+        "taihang"
+      ],
       "demAreaIdsAtCityCoordinate": [],
       "demAreaIdsWithin50km": []
     },
@@ -228,6 +260,7 @@
         "city-qingzhou-linzi"
       ],
       "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [],
       "demAreaIdsAtCityCoordinate": [],
       "demAreaIdsWithin50km": []
     },
@@ -242,6 +275,9 @@
         "city-ming-handan"
       ],
       "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [
+        "taihang"
+      ],
       "demAreaIdsAtCityCoordinate": [],
       "demAreaIdsWithin50km": []
     },
@@ -256,6 +292,9 @@
         "guanzhong"
       ],
       "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [
+        "qinling"
+      ],
       "demAreaIdsAtCityCoordinate": [
         "huashan-south"
       ],
@@ -274,6 +313,7 @@
         "city-ming-yinchuan"
       ],
       "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [],
       "demAreaIdsAtCityCoordinate": [],
       "demAreaIdsWithin50km": []
     },
@@ -288,6 +328,9 @@
         "city-quanzhou"
       ],
       "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [
+        "fujian"
+      ],
       "demAreaIdsAtCityCoordinate": [
         "quanzhou-qingyuan"
       ],
@@ -306,6 +349,7 @@
         "city-ming-dali"
       ],
       "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [],
       "demAreaIdsAtCityCoordinate": [],
       "demAreaIdsWithin50km": []
     },
@@ -320,6 +364,9 @@
         "west-dunhuang"
       ],
       "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [
+        "qilian"
+      ],
       "demAreaIdsAtCityCoordinate": [],
       "demAreaIdsWithin50km": []
     },
@@ -334,6 +381,7 @@
         "city-jinan"
       ],
       "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [],
       "demAreaIdsAtCityCoordinate": [],
       "demAreaIdsWithin50km": []
     },
@@ -348,6 +396,7 @@
         "city-ming-yanzhou"
       ],
       "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [],
       "demAreaIdsAtCityCoordinate": [],
       "demAreaIdsWithin50km": []
     },
@@ -362,6 +411,40 @@
         "taihu"
       ],
       "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [],
+      "demAreaIdsAtCityCoordinate": [],
+      "demAreaIdsWithin50km": []
+    },
+    {
+      "placeId": "runzhou",
+      "name": "镇江府",
+      "coordinates": [
+        119.428,
+        32.188
+      ],
+      "queryRegionIds": [
+        "jianghuai"
+      ],
+      "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [],
+      "demAreaIdsAtCityCoordinate": [],
+      "demAreaIdsWithin50km": []
+    },
+    {
+      "placeId": "yuezhou",
+      "name": "绍兴府",
+      "coordinates": [
+        120.586,
+        29.995
+      ],
+      "queryRegionIds": [
+        "taihu",
+        "zhejiang"
+      ],
+      "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [
+        "zhejiang"
+      ],
       "demAreaIdsAtCityCoordinate": [],
       "demAreaIdsWithin50km": []
     },
@@ -377,6 +460,44 @@
         "zhejiang"
       ],
       "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [
+        "zhejiang"
+      ],
+      "demAreaIdsAtCityCoordinate": [],
+      "demAreaIdsWithin50km": []
+    },
+    {
+      "placeId": "huzhou",
+      "name": "湖州",
+      "coordinates": [
+        120.087,
+        30.894
+      ],
+      "queryRegionIds": [
+        "jianghuai",
+        "taihu"
+      ],
+      "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [
+        "zhejiang"
+      ],
+      "demAreaIdsAtCityCoordinate": [],
+      "demAreaIdsWithin50km": []
+    },
+    {
+      "placeId": "wuzhou-jinhua",
+      "name": "婺州",
+      "coordinates": [
+        119.6475,
+        29.0788
+      ],
+      "queryRegionIds": [
+        "zhejiang"
+      ],
+      "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [
+        "zhejiang"
+      ],
       "demAreaIdsAtCityCoordinate": [],
       "demAreaIdsWithin50km": []
     },
@@ -391,11 +512,69 @@
         "city-ming-nanchang"
       ],
       "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [
+        "jiangxi-hunan"
+      ],
       "demAreaIdsAtCityCoordinate": [
         "nanchang-shigunao"
       ],
       "demAreaIdsWithin50km": [
         "nanchang-shigunao"
+      ]
+    },
+    {
+      "placeId": "jiangzhou-jiujiang",
+      "name": "江州",
+      "coordinates": [
+        116.0026,
+        29.7054
+      ],
+      "queryRegionIds": [
+        "city-song-jiujiang"
+      ],
+      "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [
+        "jiangxi-hunan"
+      ],
+      "demAreaIdsAtCityCoordinate": [],
+      "demAreaIdsWithin50km": [
+        "lushan-hanyang"
+      ]
+    },
+    {
+      "placeId": "tanzhou",
+      "name": "潭州",
+      "coordinates": [
+        112.939,
+        28.228
+      ],
+      "queryRegionIds": [
+        "city-changsha"
+      ],
+      "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [
+        "jiangxi-hunan"
+      ],
+      "demAreaIdsAtCityCoordinate": [],
+      "demAreaIdsWithin50km": []
+    },
+    {
+      "placeId": "hengzhou-hunan",
+      "name": "衡州",
+      "coordinates": [
+        112.572,
+        26.893
+      ],
+      "queryRegionIds": [
+        "city-song-hengzhou"
+      ],
+      "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [
+        "jiangxi-hunan"
+      ],
+      "demAreaIdsAtCityCoordinate": [],
+      "demAreaIdsWithin50km": [
+        "hengshan-zhurong"
       ]
     },
     {
@@ -409,6 +588,7 @@
         "city-jiangxia"
       ],
       "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [],
       "demAreaIdsAtCityCoordinate": [],
       "demAreaIdsWithin50km": []
     },
@@ -423,12 +603,164 @@
         "city-fuzhou"
       ],
       "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [
+        "fujian"
+      ],
       "demAreaIdsAtCityCoordinate": [
         "fuzhou-gushan"
       ],
       "demAreaIdsWithin50km": [
         "fuzhou-gushan"
       ]
+    },
+    {
+      "placeId": "wenzhou",
+      "name": "温州",
+      "coordinates": [
+        120.699,
+        27.993
+      ],
+      "queryRegionIds": [
+        "city-song-wenzhou"
+      ],
+      "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [
+        "zhejiang"
+      ],
+      "demAreaIdsAtCityCoordinate": [],
+      "demAreaIdsWithin50km": []
+    },
+    {
+      "placeId": "xuanzhou",
+      "name": "宁国府",
+      "coordinates": [
+        118.758,
+        30.94
+      ],
+      "queryRegionIds": [
+        "jianghuai"
+      ],
+      "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [
+        "zhejiang"
+      ],
+      "demAreaIdsAtCityCoordinate": [],
+      "demAreaIdsWithin50km": []
+    },
+    {
+      "placeId": "shezhou",
+      "name": "徽州",
+      "coordinates": [
+        118.42,
+        29.87
+      ],
+      "queryRegionIds": [
+        "zhejiang"
+      ],
+      "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [
+        "zhejiang"
+      ],
+      "demAreaIdsAtCityCoordinate": [],
+      "demAreaIdsWithin50km": []
+    },
+    {
+      "placeId": "zizhou",
+      "name": "潼川府",
+      "coordinates": [
+        105.0936,
+        31.0958
+      ],
+      "queryRegionIds": [
+        "city-song-santai"
+      ],
+      "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [
+        "chongqing-east-sichuan"
+      ],
+      "demAreaIdsAtCityCoordinate": [],
+      "demAreaIdsWithin50km": []
+    },
+    {
+      "placeId": "mianzhou",
+      "name": "绵州",
+      "coordinates": [
+        104.6779,
+        31.467
+      ],
+      "queryRegionIds": [
+        "city-song-mianyang"
+      ],
+      "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [],
+      "demAreaIdsAtCityCoordinate": [],
+      "demAreaIdsWithin50km": []
+    },
+    {
+      "placeId": "hanzhou",
+      "name": "汉州",
+      "coordinates": [
+        104.25,
+        30.99
+      ],
+      "queryRegionIds": [
+        "west-chengdu"
+      ],
+      "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [],
+      "demAreaIdsAtCityCoordinate": [],
+      "demAreaIdsWithin50km": []
+    },
+    {
+      "placeId": "jianzhou",
+      "name": "隆庆府",
+      "coordinates": [
+        105.524,
+        32.288
+      ],
+      "queryRegionIds": [
+        "city-song-jiange"
+      ],
+      "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [
+        "qinling"
+      ],
+      "demAreaIdsAtCityCoordinate": [],
+      "demAreaIdsWithin50km": []
+    },
+    {
+      "placeId": "hanzhong",
+      "name": "兴元府",
+      "coordinates": [
+        107.0233,
+        33.0675
+      ],
+      "queryRegionIds": [
+        "city-song-hanzhong"
+      ],
+      "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [
+        "qinling"
+      ],
+      "demAreaIdsAtCityCoordinate": [],
+      "demAreaIdsWithin50km": []
+    },
+    {
+      "placeId": "kuizhou",
+      "name": "夔州",
+      "coordinates": [
+        109.465,
+        31.0175
+      ],
+      "queryRegionIds": [
+        "city-song-fengjie"
+      ],
+      "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [
+        "chongqing-east-sichuan"
+      ],
+      "demAreaIdsAtCityCoordinate": [],
+      "demAreaIdsWithin50km": []
     },
     {
       "placeId": "yuzhou-chongqing",
@@ -441,6 +773,43 @@
         "city-ming-chongqing-east"
       ],
       "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [
+        "chongqing-east-sichuan"
+      ],
+      "demAreaIdsAtCityCoordinate": [],
+      "demAreaIdsWithin50km": []
+    },
+    {
+      "placeId": "langzhou",
+      "name": "阆州",
+      "coordinates": [
+        106.005,
+        31.558
+      ],
+      "queryRegionIds": [
+        "city-song-langzhong"
+      ],
+      "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [
+        "chongqing-east-sichuan"
+      ],
+      "demAreaIdsAtCityCoordinate": [],
+      "demAreaIdsWithin50km": []
+    },
+    {
+      "placeId": "suizhou-suining",
+      "name": "遂宁府",
+      "coordinates": [
+        105.5923,
+        30.5333
+      ],
+      "queryRegionIds": [
+        "city-song-suining"
+      ],
+      "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [
+        "chongqing-east-sichuan"
+      ],
       "demAreaIdsAtCityCoordinate": [],
       "demAreaIdsWithin50km": []
     },
@@ -455,6 +824,74 @@
         "city-ming-guilin"
       ],
       "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [],
+      "demAreaIdsAtCityCoordinate": [],
+      "demAreaIdsWithin50km": []
+    },
+    {
+      "placeId": "changzhou",
+      "name": "常州",
+      "coordinates": [
+        119.976,
+        31.81
+      ],
+      "queryRegionIds": [
+        "jianghuai",
+        "taihu"
+      ],
+      "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [],
+      "demAreaIdsAtCityCoordinate": [],
+      "demAreaIdsWithin50km": []
+    },
+    {
+      "placeId": "yuezhou-baling",
+      "name": "岳州",
+      "coordinates": [
+        113.13,
+        29.36
+      ],
+      "queryRegionIds": [
+        "city-song-yueyang"
+      ],
+      "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [
+        "jiangxi-hunan"
+      ],
+      "demAreaIdsAtCityCoordinate": [],
+      "demAreaIdsWithin50km": []
+    },
+    {
+      "placeId": "jizhou-luling",
+      "name": "吉州",
+      "coordinates": [
+        114.96,
+        27.09
+      ],
+      "queryRegionIds": [
+        "city-song-jian"
+      ],
+      "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [
+        "jiangxi-hunan"
+      ],
+      "demAreaIdsAtCityCoordinate": [],
+      "demAreaIdsWithin50km": []
+    },
+    {
+      "placeId": "qianzhou-gan",
+      "name": "赣州",
+      "coordinates": [
+        114.93,
+        25.83
+      ],
+      "queryRegionIds": [
+        "city-song-ganzhou"
+      ],
+      "pointCoveredByAcquisitionWindow": true,
+      "ridgeQueryRegionIds": [
+        "jiangxi-hunan"
+      ],
       "demAreaIdsAtCityCoordinate": [],
       "demAreaIdsWithin50km": []
     }
@@ -473,6 +910,13 @@
       "metadataSha256": "a906c65abee451c547200df0ef11a1d36ca09afe67650853b544346a635cc9b6",
       "snapshotPath": "data/evidence/tang-detail/osm/city-beijing.json.gz",
       "snapshotSha256": "1ff0b8a75f25e9fd3ceca58bdbf3525124da580ffc6948b8e0be5dbc4f4877a4"
+    },
+    {
+      "regionId": "city-changsha",
+      "metadataPath": "data/evidence/tang-detail/osm/city-changsha-source.json",
+      "metadataSha256": "93455ccd6565a31a5d8061617c2c1d5819f0876a3b8332f12f6cabc8daea4d8f",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-changsha.json.gz",
+      "snapshotSha256": "2ceb93d93d7bf72b9d1d4e67e6226c7381ec1ea6cd59ad459a7f97a6f7c79c94"
     },
     {
       "regionId": "city-fuzhou",
@@ -587,6 +1031,97 @@
       "snapshotSha256": "8fb900386d072bd3fe42c6be508a2b777100ca335ecb639e759a7fc11a5aeaf6"
     },
     {
+      "regionId": "city-song-fengjie",
+      "metadataPath": "data/evidence/tang-detail/osm/city-song-fengjie-source.json",
+      "metadataSha256": "e53a7867c0ce06a9dead5f50b3a861126a35fd4c1f8e25ff8091183495f1c02c",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-song-fengjie.json.gz",
+      "snapshotSha256": "545c73cd401863da099572a26096c50b5217823c0700d355e3041e04a6cb9c6d"
+    },
+    {
+      "regionId": "city-song-ganzhou",
+      "metadataPath": "data/evidence/tang-detail/osm/city-song-ganzhou-source.json",
+      "metadataSha256": "bddb010d4faa8b7c9b81e7a942aa7ff8b3f960a97171de479937ce31e692f374",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-song-ganzhou.json.gz",
+      "snapshotSha256": "bf3b888fd1fed1096f08e89b7d18e836c5141324daf4fc3e0e6ab9fbb9a5aa69"
+    },
+    {
+      "regionId": "city-song-hanzhong",
+      "metadataPath": "data/evidence/tang-detail/osm/city-song-hanzhong-source.json",
+      "metadataSha256": "e77320ae78c9289ce46763b6fb3678626c250301bedd2866fc8bd8a57919cc59",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-song-hanzhong.json.gz",
+      "snapshotSha256": "1557a0ccbeb0ee50ba41967594a0a9aaae5305289f9c61602aeb2fab000f45d0"
+    },
+    {
+      "regionId": "city-song-hengzhou",
+      "metadataPath": "data/evidence/tang-detail/osm/city-song-hengzhou-source.json",
+      "metadataSha256": "eb9cf511f3480a5fad741ed8b9f97be44b40b5f3dd94b4c221b5434cdd28633a",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-song-hengzhou.json.gz",
+      "snapshotSha256": "7ff136f754a694c3bee1ba6cbf40869924b26305287bbd86412aacac89540cfa"
+    },
+    {
+      "regionId": "city-song-jian",
+      "metadataPath": "data/evidence/tang-detail/osm/city-song-jian-source.json",
+      "metadataSha256": "99bf0007d3f9d8ce52053ddddf0b6a8dd531f923625fd3f5218bbfc984964d44",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-song-jian.json.gz",
+      "snapshotSha256": "fa8e0d9be16a3ab1deb5efcf267b5487c81e7eec78191eff41846894555a9e98"
+    },
+    {
+      "regionId": "city-song-jiange",
+      "metadataPath": "data/evidence/tang-detail/osm/city-song-jiange-source.json",
+      "metadataSha256": "da3bf58d983c504163c44415193475dd45dab503ee2504f6e8edf7d550d0a3b3",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-song-jiange.json.gz",
+      "snapshotSha256": "3552aecd4a780f2b32380e20837b0832587298636e7daea479bf6efb92fcfbee"
+    },
+    {
+      "regionId": "city-song-jiujiang",
+      "metadataPath": "data/evidence/tang-detail/osm/city-song-jiujiang-source.json",
+      "metadataSha256": "950d0b3ac65011ea139fe4f03942243136849713cc1f6cc9ded2c455fcb739b0",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-song-jiujiang.json.gz",
+      "snapshotSha256": "375121c5f4bdeedf8a02ac10f452b734583d410b1ecb787a7852f25ea57a853e"
+    },
+    {
+      "regionId": "city-song-langzhong",
+      "metadataPath": "data/evidence/tang-detail/osm/city-song-langzhong-source.json",
+      "metadataSha256": "eb3d5bfa9b59374f8d7ec271fa8ae0984e5ef586ef30957862623a18d52a52b1",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-song-langzhong.json.gz",
+      "snapshotSha256": "576467d0e69c3608662a2981df5bfc97ecca287843430bd47ceee23a241efcd9"
+    },
+    {
+      "regionId": "city-song-mianyang",
+      "metadataPath": "data/evidence/tang-detail/osm/city-song-mianyang-source.json",
+      "metadataSha256": "35cdb2af7e73eeb679ca2634229cc4e1fd5a2391d7e1b6f8c262dfb9f0032ea9",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-song-mianyang.json.gz",
+      "snapshotSha256": "b6cff646875365f083e6cc260c50d9a448cc25b7812188dc294ca75c326c44ec"
+    },
+    {
+      "regionId": "city-song-santai",
+      "metadataPath": "data/evidence/tang-detail/osm/city-song-santai-source.json",
+      "metadataSha256": "c26ada5355ff47867cf7368951c3571406a3cb2e2d7634d2e3d63b6e5550bdf4",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-song-santai.json.gz",
+      "snapshotSha256": "0709f525af5af96946ab0c48425aa65b9fbde02ff134c6110ce2c55a79e1096a"
+    },
+    {
+      "regionId": "city-song-suining",
+      "metadataPath": "data/evidence/tang-detail/osm/city-song-suining-source.json",
+      "metadataSha256": "c7908de5bdcc4152ef36a67fc3f58ea5b0529dec775682892429afb16d6bb92e",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-song-suining.json.gz",
+      "snapshotSha256": "4172be34880eb4730041816342f65fc8d504b86e886d204b96fc6a6d222a55b9"
+    },
+    {
+      "regionId": "city-song-wenzhou",
+      "metadataPath": "data/evidence/tang-detail/osm/city-song-wenzhou-source.json",
+      "metadataSha256": "1ce3fc8fbf6ae83f2182b736d4ea0d770c6095854a6725e00bca5b3d92a308d2",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-song-wenzhou.json.gz",
+      "snapshotSha256": "c9d1b4d17daeb84c86ad497ffeb333dc023f5f13391c6ebc9bfb60c05abb7f3e"
+    },
+    {
+      "regionId": "city-song-yueyang",
+      "metadataPath": "data/evidence/tang-detail/osm/city-song-yueyang-source.json",
+      "metadataSha256": "97bddccfeb51647031ae25fbbae3eac7aa1bf3c9d1512ba66018e8b8e0308c7c",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-song-yueyang.json.gz",
+      "snapshotSha256": "f528421c424b881e868a229c5b98ab03bcb3a71e75ecddf88d98567b4cc8357c"
+    },
+    {
       "regionId": "city-xiangyang",
       "metadataPath": "data/evidence/tang-detail/osm/city-xiangyang-source.json",
       "metadataSha256": "426d85eff398f15518760655b68c67793d6662a318bde0a459ac80079850e148",
@@ -641,6 +1176,280 @@
       "metadataSha256": "23b783e9918780fb94aa8d4a1130498e6d3854064934513eebccdb9e1d06c115",
       "snapshotPath": "data/evidence/tang-detail/osm/zhejiang.json.gz",
       "snapshotSha256": "7719aeceb591b4186081d4ec789a2189b23a1ed4722aa6321acea12baf67d52e"
+    }
+  ],
+  "ridgeSources": [
+    {
+      "sourceId": "osm-mountain-detail-qinling-0",
+      "regionId": "qinling",
+      "snapshotPath": "data/evidence/mountain-detail/osm/qinling-0.json.gz",
+      "snapshotSha256": "3987412a2f13164672c50aac9ba58b71e3efdad8ed86255bda1028c8bada9c09",
+      "queryPath": "data/evidence/mountain-detail/osm/qinling-0.ql",
+      "querySha256": "6fbc76fe912b578fae358b76573e930df447bee0311c6a29c3eb4cf8a70df88e"
+    },
+    {
+      "sourceId": "osm-mountain-detail-qinling-1",
+      "regionId": "qinling",
+      "snapshotPath": "data/evidence/mountain-detail/osm/qinling-1.json.gz",
+      "snapshotSha256": "9c6852719ebf6f569a10cd4d43000d3b81a5c16ccf1d5f148f4c4902cc8c6967",
+      "queryPath": "data/evidence/mountain-detail/osm/qinling-1.ql",
+      "querySha256": "37869828e1bcd429522e43556c0efb90f5557ba1ce4ef38491443893be7b3d4c"
+    },
+    {
+      "sourceId": "osm-mountain-detail-taihang-0",
+      "regionId": "taihang",
+      "snapshotPath": "data/evidence/mountain-detail/osm/taihang-0.json.gz",
+      "snapshotSha256": "3be6f55e83711926031a31d9d39f16a9e7ae6f548194ebe1aff234faea7b5c65",
+      "queryPath": "data/evidence/mountain-detail/osm/taihang-0.ql",
+      "querySha256": "6f7678c4cb3e71aa3ea0527546102d7bdac1e209c8cd68d64b56cb98b1cde163"
+    },
+    {
+      "sourceId": "osm-mountain-detail-taihang-1",
+      "regionId": "taihang",
+      "snapshotPath": "data/evidence/mountain-detail/osm/taihang-1.json.gz",
+      "snapshotSha256": "017568dc9f8468d78e226e49a8524b67c379adef1c6d93f404daeac46b7a8e66",
+      "queryPath": "data/evidence/mountain-detail/osm/taihang-1.ql",
+      "querySha256": "150c1eb477367fe4dd1ba1fd84ead4828028b244bbc870bb81543e854af131d0"
+    },
+    {
+      "sourceId": "osm-mountain-detail-qilian-0",
+      "regionId": "qilian",
+      "snapshotPath": "data/evidence/mountain-detail/osm/qilian-0.json.gz",
+      "snapshotSha256": "17dd3805d293373fa9a76b6fdcc1c95f2e6a173ec94b5d562753dfbb14706c10",
+      "queryPath": "data/evidence/mountain-detail/osm/qilian-0.ql",
+      "querySha256": "aa4fd595659f7273ba81809d6f12e807577395c68ae490d8c05be6703cba1f9e"
+    },
+    {
+      "sourceId": "osm-mountain-detail-qilian-1",
+      "regionId": "qilian",
+      "snapshotPath": "data/evidence/mountain-detail/osm/qilian-1.json.gz",
+      "snapshotSha256": "ed600eca501377d731ec24163f017304ee25b0684f5c21732aaf6b82ae83d8b8",
+      "queryPath": "data/evidence/mountain-detail/osm/qilian-1.ql",
+      "querySha256": "ed14a1f29d9b5d73e07bfa2a31d485adf71b11ed9c433ff0797f895b6fac754d"
+    },
+    {
+      "sourceId": "osm-mountain-detail-qilian-2",
+      "regionId": "qilian",
+      "snapshotPath": "data/evidence/mountain-detail/osm/qilian-2.json.gz",
+      "snapshotSha256": "6fcb713f80658d02cb4a9e987ad0ab9cb754de35062a024bfaf35abcddc0d431",
+      "queryPath": "data/evidence/mountain-detail/osm/qilian-2.ql",
+      "querySha256": "364edd283b2c85e064acbde768cc1d0903ad0b00bfd0abe7ce6057c2a2189e5c"
+    },
+    {
+      "sourceId": "osm-mountain-detail-qilian-3",
+      "regionId": "qilian",
+      "snapshotPath": "data/evidence/mountain-detail/osm/qilian-3.json.gz",
+      "snapshotSha256": "d2b00b8f6f3373cce7a493f2ef17f1545765894e376a2efe89ad9fbbe063ae26",
+      "queryPath": "data/evidence/mountain-detail/osm/qilian-3.ql",
+      "querySha256": "a97fa6788aa3d524efb9f2713414446f516ebace75ff03d4bc415066661928ec"
+    },
+    {
+      "sourceId": "osm-mountain-detail-qilian-4",
+      "regionId": "qilian",
+      "snapshotPath": "data/evidence/mountain-detail/osm/qilian-4.json.gz",
+      "snapshotSha256": "81bdfd4dd5129d2caa7044559c1847587e42dabe42db46ccddef3e1b47dd4e13",
+      "queryPath": "data/evidence/mountain-detail/osm/qilian-4.ql",
+      "querySha256": "5de5e060283743e22ef69ad9536690606d4a6c7758c6d0a87e21c73ed738455d"
+    },
+    {
+      "sourceId": "osm-mountain-detail-qilian-5",
+      "regionId": "qilian",
+      "snapshotPath": "data/evidence/mountain-detail/osm/qilian-5.json.gz",
+      "snapshotSha256": "dc2a2873469f6d3eec3081a6e01153627c35b62b04f6f1359fc4bfeb5d3b29e7",
+      "queryPath": "data/evidence/mountain-detail/osm/qilian-5.ql",
+      "querySha256": "65c111e6b19949318585f7efae73534bc83618bb2b8ce55a8d897fc1f1fdf802"
+    },
+    {
+      "sourceId": "osm-mountain-detail-tianshan-0",
+      "regionId": "tianshan",
+      "snapshotPath": "data/evidence/mountain-detail/osm/tianshan-0.json.gz",
+      "snapshotSha256": "025a6b428a477b11a5fc623279b36b9abbf04c5ca27be53b8c6d09d458e5f026",
+      "queryPath": "data/evidence/mountain-detail/osm/tianshan-0.ql",
+      "querySha256": "b447cfe4601ee222d7130c222c53bc0161987b4016a272ff615115e2d6ea21d6"
+    },
+    {
+      "sourceId": "osm-mountain-detail-tianshan-1",
+      "regionId": "tianshan",
+      "snapshotPath": "data/evidence/mountain-detail/osm/tianshan-1.json.gz",
+      "snapshotSha256": "ead3841083afdb3ede5586232b683cb29883d0fa3eeb2fe7151db1ec6b81cbe9",
+      "queryPath": "data/evidence/mountain-detail/osm/tianshan-1.ql",
+      "querySha256": "b53bf8b198ded65be98a809822101b44542ee483bc34a91a17deeaf1a582b4ff"
+    },
+    {
+      "sourceId": "osm-mountain-detail-tianshan-2",
+      "regionId": "tianshan",
+      "snapshotPath": "data/evidence/mountain-detail/osm/tianshan-2.json.gz",
+      "snapshotSha256": "b6bdd9d7d7aa82f7481d6bb962e7d8b557450c61c7fa1e9f3bc36197c7f1584f",
+      "queryPath": "data/evidence/mountain-detail/osm/tianshan-2.ql",
+      "querySha256": "7a2333a78a94353b30a019dfdb4eb8d3e43d221d60bd660ff57e040d266e9309"
+    },
+    {
+      "sourceId": "osm-mountain-detail-tianshan-3",
+      "regionId": "tianshan",
+      "snapshotPath": "data/evidence/mountain-detail/osm/tianshan-3.json.gz",
+      "snapshotSha256": "58f59baa847cebaa3ab4433aac07a099b3d224dd951cb7262cd0b495844ee54f",
+      "queryPath": "data/evidence/mountain-detail/osm/tianshan-3.ql",
+      "querySha256": "de552d35cee4951d8f327194c5d66b2c99426f253a58df9bf8d3f8f66ad7f365"
+    },
+    {
+      "sourceId": "osm-mountain-detail-tianshan-4",
+      "regionId": "tianshan",
+      "snapshotPath": "data/evidence/mountain-detail/osm/tianshan-4.json.gz",
+      "snapshotSha256": "ba627903505fefd0415aa16d711c83b271c0268f8c72717cb3c949a0d9897aad",
+      "queryPath": "data/evidence/mountain-detail/osm/tianshan-4.ql",
+      "querySha256": "08482d9bb5ac81eade2582e2228fdd63d69b7e8e44ddfa2f84f9c5fa22e79193"
+    },
+    {
+      "sourceId": "osm-mountain-detail-tianshan-5",
+      "regionId": "tianshan",
+      "snapshotPath": "data/evidence/mountain-detail/osm/tianshan-5.json.gz",
+      "snapshotSha256": "f64e4b45ab902ada6ca38e99ea0d2adcc0b4d0760b40f19bdd3a346af5f3d810",
+      "queryPath": "data/evidence/mountain-detail/osm/tianshan-5.ql",
+      "querySha256": "83426934a7cf6bae5bb35e4db2fabfe85bd3aefeda9058e88badda707d42d3a0"
+    },
+    {
+      "sourceId": "osm-mountain-detail-tianshan-6",
+      "regionId": "tianshan",
+      "snapshotPath": "data/evidence/mountain-detail/osm/tianshan-6.json.gz",
+      "snapshotSha256": "a379d66474be712ffa5b5552dfd41e256afd8b704c8a5c1fde86afe07c7900a9",
+      "queryPath": "data/evidence/mountain-detail/osm/tianshan-6.ql",
+      "querySha256": "902fad81612ba3fc98fec2b880077cce4b88b69387d15dd675c7e6288f21af06"
+    },
+    {
+      "sourceId": "osm-mountain-detail-tianshan-7",
+      "regionId": "tianshan",
+      "snapshotPath": "data/evidence/mountain-detail/osm/tianshan-7.json.gz",
+      "snapshotSha256": "d60461cd05c9b2ffc03e2c0ada8f3a65539a24c118c352dd361882902ecf7eb9",
+      "queryPath": "data/evidence/mountain-detail/osm/tianshan-7.ql",
+      "querySha256": "2521fa6709c2a7a950ae51eadf808e6ec6648fc717b52e027601324ce24eef29"
+    },
+    {
+      "sourceId": "osm-mountain-detail-west-sichuan-0",
+      "regionId": "west-sichuan",
+      "snapshotPath": "data/evidence/mountain-detail/osm/west-sichuan-0.json.gz",
+      "snapshotSha256": "0add25789886b939ab817707f0458c136249a461c70d77c574cded1fea7ca973",
+      "queryPath": "data/evidence/mountain-detail/osm/west-sichuan-0.ql",
+      "querySha256": "7abbe3a9c25f6377bf23288145d85024fce1ddf8df528ff5533cb982a2edd37d"
+    },
+    {
+      "sourceId": "osm-mountain-detail-west-sichuan-1",
+      "regionId": "west-sichuan",
+      "snapshotPath": "data/evidence/mountain-detail/osm/west-sichuan-1.json.gz",
+      "snapshotSha256": "95ec5d76416e7c6acef1626bd77f79aeff28cfb577876bc59e2e586a09970d5d",
+      "queryPath": "data/evidence/mountain-detail/osm/west-sichuan-1.ql",
+      "querySha256": "1427cee522cac6115780714b2686a74ef2f7d71313caf294894b25da7a9a606e"
+    },
+    {
+      "sourceId": "osm-mountain-detail-west-sichuan-2",
+      "regionId": "west-sichuan",
+      "snapshotPath": "data/evidence/mountain-detail/osm/west-sichuan-2.json.gz",
+      "snapshotSha256": "d56de632c14ebfe064053a1a2b15aaa87600bdb0e5643c6d226333a1160fa74f",
+      "queryPath": "data/evidence/mountain-detail/osm/west-sichuan-2.ql",
+      "querySha256": "7a6f2315d0e3b31676e2f2a443a3bae5fa7d2301ee0a24608d0a1ecee29858d2"
+    },
+    {
+      "sourceId": "osm-mountain-detail-west-sichuan-3",
+      "regionId": "west-sichuan",
+      "snapshotPath": "data/evidence/mountain-detail/osm/west-sichuan-3.json.gz",
+      "snapshotSha256": "eea30acbb4eff94148190b677aaad107fa620570298d548ef190d6eb1943e6ae",
+      "queryPath": "data/evidence/mountain-detail/osm/west-sichuan-3.ql",
+      "querySha256": "d653eda1d1c30d57b2c195fe9ec0c31cc039f9cc7eceef5e6c0ccaa5761b1bfa"
+    },
+    {
+      "sourceId": "osm-mountain-detail-zhejiang-0",
+      "regionId": "zhejiang",
+      "snapshotPath": "data/evidence/mountain-detail/osm/zhejiang-0.json.gz",
+      "snapshotSha256": "b391a6db7f585d88394c29d67e158adbc110a5a13db78b4ef75db6eea541ed3f",
+      "queryPath": "data/evidence/mountain-detail/osm/zhejiang-0.ql",
+      "querySha256": "5d6c4ee50de4b3f6d13cb1f3fdb699cac078167228e3c9fd19b7fd4259e9c51b"
+    },
+    {
+      "sourceId": "osm-mountain-detail-zhejiang-1",
+      "regionId": "zhejiang",
+      "snapshotPath": "data/evidence/mountain-detail/osm/zhejiang-1.json.gz",
+      "snapshotSha256": "f282fd4461c722dc57d70a16bec23dce72702e5efbd5423903a78de1b3cd06e8",
+      "queryPath": "data/evidence/mountain-detail/osm/zhejiang-1.ql",
+      "querySha256": "0afec10501fdafd5863f05252ff303907b8f6040dad787041309d3ae25f48904"
+    },
+    {
+      "sourceId": "osm-mountain-detail-fujian-0",
+      "regionId": "fujian",
+      "snapshotPath": "data/evidence/mountain-detail/osm/fujian-0.json.gz",
+      "snapshotSha256": "0ba3910abc56e14f5d1dd193a58d1acf8cfc18480ff83cf39f368e95ec938307",
+      "queryPath": "data/evidence/mountain-detail/osm/fujian-0.ql",
+      "querySha256": "e4a91bcd88b5dd4ed0de0d38f4d7a1b6c2a31794ecceb049c02b4986aeba2773"
+    },
+    {
+      "sourceId": "osm-mountain-detail-fujian-1",
+      "regionId": "fujian",
+      "snapshotPath": "data/evidence/mountain-detail/osm/fujian-1.json.gz",
+      "snapshotSha256": "3f50a86bc172a487223fe30870d8079b49ee232f4d47a2bd346479a2ce1cd290",
+      "queryPath": "data/evidence/mountain-detail/osm/fujian-1.ql",
+      "querySha256": "a91a77d9c15d83a551a037a11ceaa072bf2aa9026bca3f18caeba803dff598e0"
+    },
+    {
+      "sourceId": "osm-mountain-detail-jiangxi-hunan-0",
+      "regionId": "jiangxi-hunan",
+      "snapshotPath": "data/evidence/mountain-detail/osm/jiangxi-hunan-0.json.gz",
+      "snapshotSha256": "3750c3503e0530a85788d55a8a7a088b87bc6970071bf08fe3877caacc49a60e",
+      "queryPath": "data/evidence/mountain-detail/osm/jiangxi-hunan-0.ql",
+      "querySha256": "6f76ef3f868c55487fedf0d64439f343a34747bf76b8ed38e41611b0dac56abd"
+    },
+    {
+      "sourceId": "osm-mountain-detail-jiangxi-hunan-1",
+      "regionId": "jiangxi-hunan",
+      "snapshotPath": "data/evidence/mountain-detail/osm/jiangxi-hunan-1.json.gz",
+      "snapshotSha256": "e2d9ccb5079cf81a21535150280949067f078212a7803ad87bed38afae4405ff",
+      "queryPath": "data/evidence/mountain-detail/osm/jiangxi-hunan-1.ql",
+      "querySha256": "85a4eaea6a65849a5a6d89cd3e1afb7bda4512e5cb80b1c7591357f39177134e"
+    },
+    {
+      "sourceId": "osm-mountain-detail-jiangxi-hunan-2",
+      "regionId": "jiangxi-hunan",
+      "snapshotPath": "data/evidence/mountain-detail/osm/jiangxi-hunan-2.json.gz",
+      "snapshotSha256": "1242a1d02cea63eac6bfcac8776aa669549a87a7b3a8a244d7fb449ba82a6d38",
+      "queryPath": "data/evidence/mountain-detail/osm/jiangxi-hunan-2.ql",
+      "querySha256": "2b52753b16c812ffe2532e662e5c9652f826b97c61e6e2da8ec69a19637ceccc"
+    },
+    {
+      "sourceId": "osm-mountain-detail-jiangxi-hunan-3",
+      "regionId": "jiangxi-hunan",
+      "snapshotPath": "data/evidence/mountain-detail/osm/jiangxi-hunan-3.json.gz",
+      "snapshotSha256": "3b9840892ba5dd6530794016dd138544269df3862855729353f82d39d844955a",
+      "queryPath": "data/evidence/mountain-detail/osm/jiangxi-hunan-3.ql",
+      "querySha256": "97ce32d895cb248b0cfb3afcb43edc19e777e5bfc3ea516db5b18e08afdbea95"
+    },
+    {
+      "sourceId": "osm-mountain-detail-chongqing-east-sichuan-0",
+      "regionId": "chongqing-east-sichuan",
+      "snapshotPath": "data/evidence/mountain-detail/osm/chongqing-east-sichuan-0.json.gz",
+      "snapshotSha256": "f1bcdf198a5d33f94062c33a54747dcbe5a233676061f4047c2aac5ce1a9af64",
+      "queryPath": "data/evidence/mountain-detail/osm/chongqing-east-sichuan-0.ql",
+      "querySha256": "9e8c81466c7f426023eb87a41553f1eb910ed3b2535aa2889d21d3d18f88c2b0"
+    },
+    {
+      "sourceId": "osm-mountain-detail-chongqing-east-sichuan-1",
+      "regionId": "chongqing-east-sichuan",
+      "snapshotPath": "data/evidence/mountain-detail/osm/chongqing-east-sichuan-1.json.gz",
+      "snapshotSha256": "6b4e888914ff1b522a7ad45867ad069008e46fa8ce77da01385197e9ff32f906",
+      "queryPath": "data/evidence/mountain-detail/osm/chongqing-east-sichuan-1.ql",
+      "querySha256": "274ef6a6309cfbb190942141bde71dba2dc6b4a34ad6577186853004d0435997"
+    },
+    {
+      "sourceId": "osm-mountain-detail-chongqing-east-sichuan-2",
+      "regionId": "chongqing-east-sichuan",
+      "snapshotPath": "data/evidence/mountain-detail/osm/chongqing-east-sichuan-2.json.gz",
+      "snapshotSha256": "429849c62d48db5f36dc171840c99525597d63cd3a48cf12e4d1ae4d5ff73d69",
+      "queryPath": "data/evidence/mountain-detail/osm/chongqing-east-sichuan-2.ql",
+      "querySha256": "e6da1848ef2024969d3ec7b3880906fb554824063c08e119836f5b10a5e5cca8"
+    },
+    {
+      "sourceId": "osm-mountain-detail-chongqing-east-sichuan-3",
+      "regionId": "chongqing-east-sichuan",
+      "snapshotPath": "data/evidence/mountain-detail/osm/chongqing-east-sichuan-3.json.gz",
+      "snapshotSha256": "93a1690a89ba09099158cc06f8eace9984797d39e1d5f03a1d5d605bb432e735",
+      "queryPath": "data/evidence/mountain-detail/osm/chongqing-east-sichuan-3.ql",
+      "querySha256": "cb452e23d0b535242fb34c01c16b5dc1b6d10e772e6b9f58fc0a491a482c4948"
     }
   ]
 }

@@ -4791,11 +4791,11 @@
   ],
   "statistics": {
     "mainRiverLines": 51,
-    "riverWaterCandidates": 7751,
+    "riverWaterCandidates": 7886,
     "associatedWaterSurfaces": 59,
     "lineSurfaceAssociations": 90,
-    "unassociatedWaterSurfaces": 7692,
-    "nonMainRiverNameCandidatesRejected": 128,
+    "unassociatedWaterSurfaces": 7827,
+    "nonMainRiverNameCandidatesRejected": 129,
     "boundaryOnlyPairsNotAssociated": 9
   }
 }

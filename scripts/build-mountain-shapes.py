@@ -59,6 +59,9 @@ SELECTION = [
     ("fuzhou-gushan", "osm-node-2668214506", 50, 250),
     ("quanzhou-qingyuan", "osm-node-5061900983", 50, 250),
     ("nanchang-shigunao", "osm-node-2410867228", 50, 250),
+    ("lushan-hanyang", "osm-node-2968388740", 50, 250),
+    ("hengshan-zhurong", "osm-node-2774533915", 50, 250),
+    ("wuyi-huanggang", "osm-node-3518702817", 100, 500),
 ]
 
 # Retain the existing, audited inland anomaly policy only for its original
@@ -105,7 +108,7 @@ def load_peaks():
             if p["id"] not in wanted:
                 continue
             # Preserve the exact archived source pack of each original area.
-            if (pack["url"].startswith("/data/tang-detail/")) != (p["id"] in {item[1] for item in SELECTION[17:]}):
+            if (pack["url"].startswith("/data/tang-detail/")) != (p["id"] in {item[1] for item in SELECTION[17:22]}):
                 continue
             if feature["geometry"]["type"] != "Point" or p["kind"] != "peak" or not p["modernReferenceOnly"] or not re.search(r"[\u3400-\u9fff]", p["name"]) or p["name"].startswith("未"):
                 raise ValueError("Selected record is not a published named Chinese peak: " + p["id"])
@@ -324,7 +327,7 @@ def main():
                 "processing": {"contourMethod": "ContourPy serial marching squares over unmodified decoded DEM; linear edge interpolation; no smoothing or line simplification; coordinates rounded to 8 decimal places.",
                                "hillshadeMethod": "Surface-normal illumination with latitude-adjusted pixel spacing; shade alpha is darkness relative to flat ground. Transparent RGBA, with crop-edge opacity fade only.",
                                "sunAzimuth": SUN_AZIMUTH, "sunAltitude": SUN_ALTITUDE, "verticalExaggeration": 1, "edgeFadePixels": EDGE_FADE,
-                               "demExclusionPolicy": "最初17个内陆山地窗口沿用已审计的孤立负高程待核异常排除。新增杭州、南京、福州、泉州、南昌窗口只展示0米以上陆地等高线：负高程与相邻山影透明，清单记录数量与原始高程范围，不把负值统一判为无效或断言其为真实低地。所有原始DEM保留全部高程；未填零或插值补洞。"},
+                               "demExclusionPolicy": "最初17个内陆山地窗口沿用已审计的孤立负高程待核异常排除。随后新增的近览窗口只展示0米以上陆地等高线：负高程与相邻山影透明，清单记录数量与原始高程范围，不把负值统一判为无效或断言其为真实低地。所有原始DEM保留全部高程；未填零或插值补洞。"},
                 "areaCount": len(areas), "sourceTileCount": len(tiles), "featureCount": sum(area["featureCount"] for area in areas),
                 "note": "仅覆盖所列真实OSM峰点周边近览区，非连续全国山地数据；采集区名称不证明某峰属于某山系。等高线表示现代高程，不是山脉轮廓或古代边界；OSM峰高和DEM像素高可能不同，均不作独立实测核定。", "areas": areas}
     write_json(PUBLIC / "manifest.json", manifest)

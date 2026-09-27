@@ -1,0 +1,13 @@
+{
+  "id": "song-research-shizhongshan-ji",
+  "title": "石鐘山記（维基文库固定版本）",
+  "url": "https://zh.wikisource.org/w/index.php?title=%E7%9F%B3%E9%90%98%E5%B1%B1%E8%A8%98&oldid=2190370",
+  "kind": "historical-literature",
+  "snapshotPath": "data/evidence/song-research/sources/shizhongshan-ji.txt",
+  "snapshotSha256": "72eae0c0028df3733f4a9c05d77cb1580828ff1941664c1efeee39caca036a93",
+  "rawSnapshotPath": "data/evidence/song-research/sources/shizhongshan-ji.api.json",
+  "rawSnapshotSha256": "34bfcd90d37e1a6dde5e55f4991f4eb29f120989446d86dad40d2d203e6eb170",
+  "retrievedAt": "2026-09-27T06:06:42.406904+00:00",
+  "revisionId": "2190370",
+  "apiUrl": "https://zh.wikisource.org/w/api.php?action=parse&prop=text%7Crevid&format=json&page=%E7%9F%B3%E9%90%98%E5%B1%B1%E8%A8%98"
+}

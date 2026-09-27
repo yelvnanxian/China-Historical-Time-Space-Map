@@ -4,7 +4,7 @@
 No synthetic rivers, buffers or historical reconstructions. Reuses successful
 snapshots unless --refresh is passed. Two requests maximum run concurrently.
 """
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
 import argparse
@@ -60,6 +60,21 @@ REGIONS = {
     'city-ming-chongqing-west': ('重庆西部附近水系', [106.3504, 29.3637, 106.5504, 29.7637]),
     'city-ming-chongqing-east': ('重庆东部附近水系', [106.5504, 29.3637, 106.7504, 29.7637]),
     'city-ming-guilin': ('桂林与漓江附近水系', [109.9799, 25.0344, 110.45, 25.4344]),
+    # Song entry expansion: present-day local detail only, never Song river reconstruction.
+    'city-song-jiujiang': ('九江与长江南岸水系', [115.8026, 29.5054, 116.2026, 29.9054]),
+    'city-song-hengzhou': ('衡阳与湘江水系', [112.372, 26.693, 112.772, 27.093]),
+    'city-song-wenzhou': ('温州与瓯江水系', [120.499, 27.793, 120.899, 28.193]),
+    'city-song-santai': ('三台与涪江水系', [104.8936, 30.8958, 105.2936, 31.2958]),
+    # A 0.4-degree window timed out at both mirrors; keep a narrower real query.
+    'city-song-mianyang': ('绵阳与涪江水系', [104.5579, 31.347, 104.7979, 31.587]),
+    'city-song-jiange': ('剑阁附近水系', [105.324, 32.088, 105.724, 32.488]),
+    'city-song-hanzhong': ('汉中与汉江水系', [106.8233, 32.8675, 107.2233, 33.2675]),
+    'city-song-fengjie': ('奉节与长江峡江水系', [109.265, 30.8175, 109.665, 31.2175]),
+    'city-song-langzhong': ('阆中与嘉陵江水系', [105.805, 31.358, 106.205, 31.758]),
+    'city-song-suining': ('遂宁与涪江水系', [105.3923, 30.3333, 105.7923, 30.7333]),
+    'city-song-yueyang': ('岳阳与洞庭湖东岸水系', [112.93, 29.16, 113.33, 29.56]),
+    'city-song-jian': ('吉安与赣江水系', [114.76, 26.89, 115.16, 27.29]),
+    'city-song-ganzhou': ('赣州与章贡双江水系', [114.73, 25.63, 115.13, 26.03]),
 }
 ENDPOINT = 'https://overpass.kumi.systems/api/interpreter'
 ALTERNATE_ENDPOINT = 'https://overpass.private.coffee/api/interpreter'
@@ -138,6 +153,14 @@ if __name__ == '__main__':
     cli.add_argument('--refresh', action='store_true')
     cli.add_argument('--endpoint', choices=[ENDPOINT, ALTERNATE_ENDPOINT], default=ENDPOINT)
     args = cli.parse_args()
+    failures = []
     with ThreadPoolExecutor(max_workers=2) as pool:
-        for result in pool.map(lambda region: fetch(region, args.refresh, args.endpoint), args.regions):
-            print(json.dumps(result, ensure_ascii=False), flush=True)
+        futures = [pool.submit(fetch, region, args.refresh, args.endpoint) for region in args.regions]
+        for future in as_completed(futures):
+            try:
+                print(json.dumps(future.result(), ensure_ascii=False), flush=True)
+            except Exception as error:
+                failures.append(str(error))
+                print(json.dumps({'failure': str(error)}, ensure_ascii=False), flush=True)
+    if failures:
+        raise SystemExit(f'{len(failures)} queries failed; rerun to retry missing snapshots.')

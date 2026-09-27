@@ -9795,6 +9795,1150 @@
       "minZoom": 10,
       "sourceId": "osm-tang-detail-city-ming-yinchuan",
       "regionId": "city-ming-yinchuan"
+    },
+    {
+      "id": "city-song-fengjie-overview-part0",
+      "name": "奉节与长江峡江水系 · 主河与水面",
+      "bounds": [
+        106.8775025,
+        29.4839746,
+        111.0132184,
+        31.274576
+      ],
+      "url": "/data/tang-detail/modern-city-song-fengjie-overview-part0.geojson.gz",
+      "featureCount": 21,
+      "countsByKind": {
+        "water": 7,
+        "river": 14
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-city-song-fengjie",
+      "regionId": "city-song-fengjie"
+    },
+    {
+      "id": "city-song-fengjie-218-62-part0",
+      "name": "奉节与长江峡江水系 · 局部细节",
+      "bounds": [
+        109.2251891,
+        31.0155486,
+        109.4907597,
+        31.2483281
+      ],
+      "url": "/data/tang-detail/modern-city-song-fengjie-218-62-part0.geojson.gz",
+      "featureCount": 47,
+      "countsByKind": {
+        "peak": 1,
+        "stream": 29,
+        "water": 17
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-fengjie",
+      "regionId": "city-song-fengjie"
+    },
+    {
+      "id": "city-song-fengjie-219-62-part0",
+      "name": "奉节与长江峡江水系 · 局部细节",
+      "bounds": [
+        109.5217387,
+        31.015001,
+        109.7014061,
+        31.1929594
+      ],
+      "url": "/data/tang-detail/modern-city-song-fengjie-219-62-part0.geojson.gz",
+      "featureCount": 11,
+      "countsByKind": {
+        "peak": 5,
+        "stream": 4,
+        "water": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-fengjie",
+      "regionId": "city-song-fengjie"
+    },
+    {
+      "id": "city-song-fengjie-219-61-part0",
+      "name": "奉节与长江峡江水系 · 局部细节",
+      "bounds": [
+        109.5200598,
+        30.8664549,
+        109.6618147,
+        30.9769767
+      ],
+      "url": "/data/tang-detail/modern-city-song-fengjie-219-61-part0.geojson.gz",
+      "featureCount": 12,
+      "countsByKind": {
+        "peak": 2,
+        "water": 7,
+        "stream": 3
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-fengjie",
+      "regionId": "city-song-fengjie"
+    },
+    {
+      "id": "city-song-fengjie-218-61-part0",
+      "name": "奉节与长江峡江水系 · 局部细节",
+      "bounds": [
+        109.2806281,
+        30.8539096,
+        109.4720918,
+        30.9882237
+      ],
+      "url": "/data/tang-detail/modern-city-song-fengjie-218-61-part0.geojson.gz",
+      "featureCount": 8,
+      "countsByKind": {
+        "stream": 2,
+        "water": 6
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-fengjie",
+      "regionId": "city-song-fengjie"
+    },
+    {
+      "id": "city-song-ganzhou-overview-part0",
+      "name": "赣州与章贡双江水系 · 主河与水面",
+      "bounds": [
+        114.2985606,
+        25.1494049,
+        115.3640789,
+        26.4473961
+      ],
+      "url": "/data/tang-detail/modern-city-song-ganzhou-overview-part0.geojson.gz",
+      "featureCount": 60,
+      "countsByKind": {
+        "water": 30,
+        "river": 30
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-city-song-ganzhou",
+      "regionId": "city-song-ganzhou"
+    },
+    {
+      "id": "city-song-ganzhou-229-51-part0",
+      "name": "赣州与章贡双江水系 · 局部细节",
+      "bounds": [
+        114.5206489,
+        25.6048597,
+        115.0027831,
+        26.0074344
+      ],
+      "url": "/data/tang-detail/modern-city-song-ganzhou-229-51-part0.geojson.gz",
+      "featureCount": 970,
+      "countsByKind": {
+        "water": 811,
+        "peak": 19,
+        "stream": 128,
+        "canal": 12
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-ganzhou",
+      "regionId": "city-song-ganzhou"
+    },
+    {
+      "id": "city-song-ganzhou-230-51-part0",
+      "name": "赣州与章贡双江水系 · 局部细节",
+      "bounds": [
+        114.9913975,
+        25.6328618,
+        115.0980091,
+        25.9501645
+      ],
+      "url": "/data/tang-detail/modern-city-song-ganzhou-230-51-part0.geojson.gz",
+      "featureCount": 76,
+      "countsByKind": {
+        "peak": 10,
+        "stream": 8,
+        "water": 58
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-ganzhou",
+      "regionId": "city-song-ganzhou"
+    },
+    {
+      "id": "city-song-ganzhou-229-52-part0",
+      "name": "赣州与章贡双江水系 · 局部细节",
+      "bounds": [
+        114.7422141,
+        25.9900241,
+        114.9216606,
+        26.0382276
+      ],
+      "url": "/data/tang-detail/modern-city-song-ganzhou-229-52-part0.geojson.gz",
+      "featureCount": 11,
+      "countsByKind": {
+        "water": 9,
+        "stream": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-ganzhou",
+      "regionId": "city-song-ganzhou"
+    },
+    {
+      "id": "city-song-hanzhong-overview-part0",
+      "name": "汉中与汉江水系 · 主河与水面",
+      "bounds": [
+        106.7626684,
+        32.8023363,
+        107.2603369,
+        33.3392148
+      ],
+      "url": "/data/tang-detail/modern-city-song-hanzhong-overview-part0.geojson.gz",
+      "featureCount": 86,
+      "countsByKind": {
+        "water": 52,
+        "river": 34
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-city-song-hanzhong",
+      "regionId": "city-song-hanzhong"
+    },
+    {
+      "id": "city-song-hanzhong-214-65-part0",
+      "name": "汉中与汉江水系 · 局部细节",
+      "bounds": [
+        107.0039495,
+        32.8734523,
+        107.2397332,
+        33.0069405
+      ],
+      "url": "/data/tang-detail/modern-city-song-hanzhong-214-65-part0.geojson.gz",
+      "featureCount": 16,
+      "countsByKind": {
+        "water": 5,
+        "stream": 11
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-hanzhong",
+      "regionId": "city-song-hanzhong"
+    },
+    {
+      "id": "city-song-hanzhong-214-66-part0",
+      "name": "汉中与汉江水系 · 局部细节",
+      "bounds": [
+        106.9975391,
+        32.9994637,
+        107.2342891,
+        33.2622833
+      ],
+      "url": "/data/tang-detail/modern-city-song-hanzhong-214-66-part0.geojson.gz",
+      "featureCount": 96,
+      "countsByKind": {
+        "water": 51,
+        "canal": 26,
+        "stream": 19
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-hanzhong",
+      "regionId": "city-song-hanzhong"
+    },
+    {
+      "id": "city-song-hanzhong-213-65-part0",
+      "name": "汉中与汉江水系 · 局部细节",
+      "bounds": [
+        106.8235937,
+        32.8565417,
+        106.9526972,
+        32.9877857
+      ],
+      "url": "/data/tang-detail/modern-city-song-hanzhong-213-65-part0.geojson.gz",
+      "featureCount": 32,
+      "countsByKind": {
+        "peak": 3,
+        "stream": 8,
+        "water": 21
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-hanzhong",
+      "regionId": "city-song-hanzhong"
+    },
+    {
+      "id": "city-song-hanzhong-213-66-part0",
+      "name": "汉中与汉江水系 · 局部细节",
+      "bounds": [
+        106.8158001,
+        32.998907,
+        107.0027942,
+        33.2799637
+      ],
+      "url": "/data/tang-detail/modern-city-song-hanzhong-213-66-part0.geojson.gz",
+      "featureCount": 60,
+      "countsByKind": {
+        "canal": 13,
+        "water": 38,
+        "stream": 9
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-hanzhong",
+      "regionId": "city-song-hanzhong"
+    },
+    {
+      "id": "city-song-hengzhou-overview-part0",
+      "name": "衡阳与湘江水系 · 主河与水面",
+      "bounds": [
+        112.33228,
+        25.8728072,
+        113.3093826,
+        27.2370072
+      ],
+      "url": "/data/tang-detail/modern-city-song-hengzhou-overview-part0.geojson.gz",
+      "featureCount": 141,
+      "countsByKind": {
+        "water": 69,
+        "river": 72
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-city-song-hengzhou",
+      "regionId": "city-song-hengzhou"
+    },
+    {
+      "id": "city-song-hengzhou-225-53-part0",
+      "name": "衡阳与湘江水系 · 局部细节",
+      "bounds": [
+        112.5050227,
+        26.6905351,
+        112.7679148,
+        26.9973589
+      ],
+      "url": "/data/tang-detail/modern-city-song-hengzhou-225-53-part0.geojson.gz",
+      "featureCount": 467,
+      "countsByKind": {
+        "water": 339,
+        "peak": 15,
+        "canal": 30,
+        "stream": 83
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-hengzhou",
+      "regionId": "city-song-hengzhou"
+    },
+    {
+      "id": "city-song-hengzhou-224-53-part0",
+      "name": "衡阳与湘江水系 · 局部细节",
+      "bounds": [
+        112.373998,
+        26.7020708,
+        112.4994082,
+        27.0002766
+      ],
+      "url": "/data/tang-detail/modern-city-song-hengzhou-224-53-part0.geojson.gz",
+      "featureCount": 182,
+      "countsByKind": {
+        "peak": 1,
+        "water": 177,
+        "stream": 4
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-hengzhou",
+      "regionId": "city-song-hengzhou"
+    },
+    {
+      "id": "city-song-hengzhou-225-54-part0",
+      "name": "衡阳与湘江水系 · 局部细节",
+      "bounds": [
+        112.50088,
+        27.0079704,
+        112.7074071,
+        27.0824243
+      ],
+      "url": "/data/tang-detail/modern-city-song-hengzhou-225-54-part0.geojson.gz",
+      "featureCount": 11,
+      "countsByKind": {
+        "water": 3,
+        "stream": 8
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-hengzhou",
+      "regionId": "city-song-hengzhou"
+    },
+    {
+      "id": "city-song-hengzhou-224-54-part0",
+      "name": "衡阳与湘江水系 · 局部细节",
+      "bounds": [
+        112.373971,
+        27.0007808,
+        112.4858031,
+        27.0932848
+      ],
+      "url": "/data/tang-detail/modern-city-song-hengzhou-224-54-part0.geojson.gz",
+      "featureCount": 64,
+      "countsByKind": {
+        "water": 64
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-hengzhou",
+      "regionId": "city-song-hengzhou"
+    },
+    {
+      "id": "city-song-jian-overview-part0",
+      "name": "吉安与赣江水系 · 主河与水面",
+      "bounds": [
+        114.547353,
+        26.4440272,
+        115.3494884,
+        27.4553348
+      ],
+      "url": "/data/tang-detail/modern-city-song-jian-overview-part0.geojson.gz",
+      "featureCount": 103,
+      "countsByKind": {
+        "water": 71,
+        "river": 32
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-city-song-jian",
+      "regionId": "city-song-jian"
+    },
+    {
+      "id": "city-song-jian-229-54-part0",
+      "name": "吉安与赣江水系 · 局部细节",
+      "bounds": [
+        114.7372734,
+        27.0228035,
+        114.998895,
+        27.3081662
+      ],
+      "url": "/data/tang-detail/modern-city-song-jian-229-54-part0.geojson.gz",
+      "featureCount": 219,
+      "countsByKind": {
+        "water": 177,
+        "peak": 1,
+        "stream": 38,
+        "canal": 3
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-jian",
+      "regionId": "city-song-jian"
+    },
+    {
+      "id": "city-song-jian-230-54-part0",
+      "name": "吉安与赣江水系 · 局部细节",
+      "bounds": [
+        115.0002771,
+        27.0342959,
+        115.1507893,
+        27.2620243
+      ],
+      "url": "/data/tang-detail/modern-city-song-jian-230-54-part0.geojson.gz",
+      "featureCount": 62,
+      "countsByKind": {
+        "water": 53,
+        "peak": 5,
+        "stream": 4
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-jian",
+      "regionId": "city-song-jian"
+    },
+    {
+      "id": "city-song-jian-230-53-part0",
+      "name": "吉安与赣江水系 · 局部细节",
+      "bounds": [
+        114.9993199,
+        26.8874856,
+        115.1671833,
+        26.9964695
+      ],
+      "url": "/data/tang-detail/modern-city-song-jian-230-53-part0.geojson.gz",
+      "featureCount": 87,
+      "countsByKind": {
+        "canal": 2,
+        "water": 83,
+        "stream": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-jian",
+      "regionId": "city-song-jian"
+    },
+    {
+      "id": "city-song-jian-229-53-part0",
+      "name": "吉安与赣江水系 · 局部细节",
+      "bounds": [
+        114.7625077,
+        26.8642593,
+        114.9993199,
+        26.9999958
+      ],
+      "url": "/data/tang-detail/modern-city-song-jian-229-53-part0.geojson.gz",
+      "featureCount": 17,
+      "countsByKind": {
+        "stream": 14,
+        "canal": 1,
+        "water": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-jian",
+      "regionId": "city-song-jian"
+    },
+    {
+      "id": "city-song-jiange-overview-part0",
+      "name": "剑阁附近水系 · 主河与水面",
+      "bounds": [
+        105.2992478,
+        31.8176139,
+        105.8853668,
+        32.5195211
+      ],
+      "url": "/data/tang-detail/modern-city-song-jiange-overview-part0.geojson.gz",
+      "featureCount": 64,
+      "countsByKind": {
+        "water": 26,
+        "river": 38
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-city-song-jiange",
+      "regionId": "city-song-jiange"
+    },
+    {
+      "id": "city-song-jiange-211-64-part0",
+      "name": "剑阁附近水系 · 局部细节",
+      "bounds": [
+        105.499413,
+        32.043206,
+        105.7805246,
+        32.4907416
+      ],
+      "url": "/data/tang-detail/modern-city-song-jiange-211-64-part0.geojson.gz",
+      "featureCount": 567,
+      "countsByKind": {
+        "water": 476,
+        "peak": 11,
+        "saddle": 1,
+        "stream": 76,
+        "canal": 3
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-jiange",
+      "regionId": "city-song-jiange"
+    },
+    {
+      "id": "city-song-jiange-210-64-part0",
+      "name": "剑阁附近水系 · 局部细节",
+      "bounds": [
+        105.3034562,
+        32.0602121,
+        105.5127382,
+        32.4838818
+      ],
+      "url": "/data/tang-detail/modern-city-song-jiange-210-64-part0.geojson.gz",
+      "featureCount": 183,
+      "countsByKind": {
+        "water": 84,
+        "peak": 8,
+        "stream": 91
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-jiange",
+      "regionId": "city-song-jiange"
+    },
+    {
+      "id": "city-song-jiujiang-overview-part0",
+      "name": "九江与长江南岸水系 · 主河与水面",
+      "bounds": [
+        115.4852152,
+        28.3940383,
+        116.7639076,
+        30.0550436
+      ],
+      "url": "/data/tang-detail/modern-city-song-jiujiang-overview-part0.geojson.gz",
+      "featureCount": 87,
+      "countsByKind": {
+        "water": 68,
+        "river": 19
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-city-song-jiujiang",
+      "regionId": "city-song-jiujiang"
+    },
+    {
+      "id": "city-song-jiujiang-232-59-part0",
+      "name": "九江与长江南岸水系 · 局部细节",
+      "bounds": [
+        115.9904605,
+        29.5039894,
+        116.194995,
+        29.8837741
+      ],
+      "url": "/data/tang-detail/modern-city-song-jiujiang-232-59-part0.geojson.gz",
+      "featureCount": 103,
+      "countsByKind": {
+        "water": 42,
+        "peak": 19,
+        "stream": 37,
+        "canal": 5
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-jiujiang",
+      "regionId": "city-song-jiujiang"
+    },
+    {
+      "id": "city-song-jiujiang-231-59-part0",
+      "name": "九江与长江南岸水系 · 局部细节",
+      "bounds": [
+        115.7647338,
+        29.4879712,
+        116.0169482,
+        29.9254862
+      ],
+      "url": "/data/tang-detail/modern-city-song-jiujiang-231-59-part0.geojson.gz",
+      "featureCount": 270,
+      "countsByKind": {
+        "saddle": 1,
+        "peak": 33,
+        "water": 92,
+        "canal": 32,
+        "stream": 112
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-jiujiang",
+      "regionId": "city-song-jiujiang"
+    },
+    {
+      "id": "city-song-jiujiang-232-58-part0",
+      "name": "九江与长江南岸水系 · 局部细节",
+      "bounds": [
+        115.9998787,
+        29.4342156,
+        116.0393384,
+        29.5154287
+      ],
+      "url": "/data/tang-detail/modern-city-song-jiujiang-232-58-part0.geojson.gz",
+      "featureCount": 2,
+      "countsByKind": {
+        "stream": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-jiujiang",
+      "regionId": "city-song-jiujiang"
+    },
+    {
+      "id": "city-song-langzhong-overview-part0",
+      "name": "阆中与嘉陵江水系 · 主河与水面",
+      "bounds": [
+        105.725256,
+        31.2885464,
+        106.2581324,
+        31.853584
+      ],
+      "url": "/data/tang-detail/modern-city-song-langzhong-overview-part0.geojson.gz",
+      "featureCount": 115,
+      "countsByKind": {
+        "water": 28,
+        "river": 87
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-city-song-langzhong",
+      "regionId": "city-song-langzhong"
+    },
+    {
+      "id": "city-song-langzhong-211-63-part0",
+      "name": "阆中与嘉陵江水系 · 局部细节",
+      "bounds": [
+        105.8003595,
+        31.5019781,
+        106.0046346,
+        31.7642839
+      ],
+      "url": "/data/tang-detail/modern-city-song-langzhong-211-63-part0.geojson.gz",
+      "featureCount": 274,
+      "countsByKind": {
+        "water": 203,
+        "peak": 8,
+        "stream": 60,
+        "canal": 3
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-langzhong",
+      "regionId": "city-song-langzhong"
+    },
+    {
+      "id": "city-song-langzhong-212-62-part0",
+      "name": "阆中与嘉陵江水系 · 局部细节",
+      "bounds": [
+        106.0052161,
+        31.355506,
+        106.1950453,
+        31.4945652
+      ],
+      "url": "/data/tang-detail/modern-city-song-langzhong-212-62-part0.geojson.gz",
+      "featureCount": 37,
+      "countsByKind": {
+        "water": 18,
+        "peak": 1,
+        "stream": 15,
+        "canal": 3
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-langzhong",
+      "regionId": "city-song-langzhong"
+    },
+    {
+      "id": "city-song-langzhong-211-62-part0",
+      "name": "阆中与嘉陵江水系 · 局部细节",
+      "bounds": [
+        105.7695815,
+        31.3606634,
+        105.9976934,
+        31.5077226
+      ],
+      "url": "/data/tang-detail/modern-city-song-langzhong-211-62-part0.geojson.gz",
+      "featureCount": 22,
+      "countsByKind": {
+        "peak": 3,
+        "stream": 7,
+        "water": 12
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-langzhong",
+      "regionId": "city-song-langzhong"
+    },
+    {
+      "id": "city-song-langzhong-212-63-part0",
+      "name": "阆中与嘉陵江水系 · 局部细节",
+      "bounds": [
+        105.999672,
+        31.4994601,
+        106.2141422,
+        31.7603884
+      ],
+      "url": "/data/tang-detail/modern-city-song-langzhong-212-63-part0.geojson.gz",
+      "featureCount": 81,
+      "countsByKind": {
+        "water": 57,
+        "stream": 20,
+        "canal": 4
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-langzhong",
+      "regionId": "city-song-langzhong"
+    },
+    {
+      "id": "city-song-mianyang-overview-part0",
+      "name": "绵阳与涪江水系 · 主河与水面",
+      "bounds": [
+        104.4154052,
+        31.2581315,
+        104.9759196,
+        31.7113406
+      ],
+      "url": "/data/tang-detail/modern-city-song-mianyang-overview-part0.geojson.gz",
+      "featureCount": 50,
+      "countsByKind": {
+        "water": 25,
+        "river": 25
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-city-song-mianyang",
+      "regionId": "city-song-mianyang"
+    },
+    {
+      "id": "city-song-mianyang-209-62-part0",
+      "name": "绵阳与涪江水系 · 局部细节",
+      "bounds": [
+        104.5313172,
+        31.3376778,
+        104.8046029,
+        31.5020058
+      ],
+      "url": "/data/tang-detail/modern-city-song-mianyang-209-62-part0.geojson.gz",
+      "featureCount": 139,
+      "countsByKind": {
+        "water": 90,
+        "canal": 16,
+        "stream": 33
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-mianyang",
+      "regionId": "city-song-mianyang"
+    },
+    {
+      "id": "city-song-mianyang-209-63-part0",
+      "name": "绵阳与涪江水系 · 局部细节",
+      "bounds": [
+        104.5828785,
+        31.4997921,
+        104.8082336,
+        31.6051848
+      ],
+      "url": "/data/tang-detail/modern-city-song-mianyang-209-63-part0.geojson.gz",
+      "featureCount": 65,
+      "countsByKind": {
+        "water": 45,
+        "peak": 1,
+        "stream": 19
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-mianyang",
+      "regionId": "city-song-mianyang"
+    },
+    {
+      "id": "city-song-santai-overview-part0",
+      "name": "三台与涪江水系 · 主河与水面",
+      "bounds": [
+        104.8519654,
+        30.8792748,
+        105.38625,
+        31.3640014
+      ],
+      "url": "/data/tang-detail/modern-city-song-santai-overview-part0.geojson.gz",
+      "featureCount": 63,
+      "countsByKind": {
+        "water": 20,
+        "river": 43
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-city-song-santai",
+      "regionId": "city-song-santai"
+    },
+    {
+      "id": "city-song-santai-210-61-part0",
+      "name": "三台与涪江水系 · 局部细节",
+      "bounds": [
+        105.0346356,
+        30.8745867,
+        105.2996081,
+        30.997483
+      ],
+      "url": "/data/tang-detail/modern-city-song-santai-210-61-part0.geojson.gz",
+      "featureCount": 21,
+      "countsByKind": {
+        "water": 3,
+        "peak": 1,
+        "stream": 9,
+        "canal": 8
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-santai",
+      "regionId": "city-song-santai"
+    },
+    {
+      "id": "city-song-santai-209-62-part0",
+      "name": "三台与涪江水系 · 局部细节",
+      "bounds": [
+        104.8912754,
+        31.0115686,
+        104.9917307,
+        31.3448293
+      ],
+      "url": "/data/tang-detail/modern-city-song-santai-209-62-part0.geojson.gz",
+      "featureCount": 20,
+      "countsByKind": {
+        "stream": 12,
+        "water": 8
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-santai",
+      "regionId": "city-song-santai"
+    },
+    {
+      "id": "city-song-santai-210-62-part0",
+      "name": "三台与涪江水系 · 局部细节",
+      "bounds": [
+        104.9917307,
+        31.0019343,
+        105.2916115,
+        31.2971493
+      ],
+      "url": "/data/tang-detail/modern-city-song-santai-210-62-part0.geojson.gz",
+      "featureCount": 43,
+      "countsByKind": {
+        "stream": 21,
+        "water": 22
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-santai",
+      "regionId": "city-song-santai"
+    },
+    {
+      "id": "city-song-santai-209-61-part0",
+      "name": "三台与涪江水系 · 局部细节",
+      "bounds": [
+        104.9053252,
+        30.8908251,
+        104.9770189,
+        30.9824948
+      ],
+      "url": "/data/tang-detail/modern-city-song-santai-209-61-part0.geojson.gz",
+      "featureCount": 24,
+      "countsByKind": {
+        "canal": 14,
+        "water": 7,
+        "stream": 3
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-santai",
+      "regionId": "city-song-santai"
+    },
+    {
+      "id": "city-song-suining-overview-part0",
+      "name": "遂宁与涪江水系 · 主河与水面",
+      "bounds": [
+        105.3276297,
+        30.2267103,
+        105.7888149,
+        30.8446472
+      ],
+      "url": "/data/tang-detail/modern-city-song-suining-overview-part0.geojson.gz",
+      "featureCount": 91,
+      "countsByKind": {
+        "water": 35,
+        "river": 56
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-city-song-suining",
+      "regionId": "city-song-suining"
+    },
+    {
+      "id": "city-song-suining-210-61-part0",
+      "name": "遂宁与涪江水系 · 局部细节",
+      "bounds": [
+        105.3642833,
+        30.5278422,
+        105.4821128,
+        30.7192966
+      ],
+      "url": "/data/tang-detail/modern-city-song-suining-210-61-part0.geojson.gz",
+      "featureCount": 26,
+      "countsByKind": {
+        "water": 8,
+        "peak": 1,
+        "canal": 7,
+        "stream": 10
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-suining",
+      "regionId": "city-song-suining"
+    },
+    {
+      "id": "city-song-suining-211-61-part0",
+      "name": "遂宁与涪江水系 · 局部细节",
+      "bounds": [
+        105.4729815,
+        30.4906184,
+        105.7883741,
+        30.7564158
+      ],
+      "url": "/data/tang-detail/modern-city-song-suining-211-61-part0.geojson.gz",
+      "featureCount": 79,
+      "countsByKind": {
+        "saddle": 2,
+        "peak": 2,
+        "stream": 28,
+        "canal": 12,
+        "water": 35
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-suining",
+      "regionId": "city-song-suining"
+    },
+    {
+      "id": "city-song-suining-211-60-part0",
+      "name": "遂宁与涪江水系 · 局部细节",
+      "bounds": [
+        105.4935971,
+        30.348803,
+        105.7928049,
+        30.5015874
+      ],
+      "url": "/data/tang-detail/modern-city-song-suining-211-60-part0.geojson.gz",
+      "featureCount": 38,
+      "countsByKind": {
+        "canal": 2,
+        "stream": 19,
+        "water": 17
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-suining",
+      "regionId": "city-song-suining"
+    },
+    {
+      "id": "city-song-suining-210-60-part0",
+      "name": "遂宁与涪江水系 · 局部细节",
+      "bounds": [
+        105.4382432,
+        30.3475189,
+        105.491171,
+        30.4873148
+      ],
+      "url": "/data/tang-detail/modern-city-song-suining-210-60-part0.geojson.gz",
+      "featureCount": 6,
+      "countsByKind": {
+        "stream": 5,
+        "water": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-suining",
+      "regionId": "city-song-suining"
+    },
+    {
+      "id": "city-song-wenzhou-overview-part0",
+      "name": "温州与瓯江水系 · 主河与水面",
+      "bounds": [
+        120.2286311,
+        27.6976022,
+        120.9683989,
+        27.9997438
+      ],
+      "url": "/data/tang-detail/modern-city-song-wenzhou-overview-part0.geojson.gz",
+      "featureCount": 311,
+      "countsByKind": {
+        "water": 130,
+        "river": 181
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-city-song-wenzhou",
+      "regionId": "city-song-wenzhou"
+    },
+    {
+      "id": "city-song-wenzhou-241-55-part0",
+      "name": "温州与瓯江水系 · 局部细节",
+      "bounds": [
+        120.5011153,
+        27.7655844,
+        120.9233557,
+        27.9997348
+      ],
+      "url": "/data/tang-detail/modern-city-song-wenzhou-241-55-part0.geojson.gz",
+      "featureCount": 1681,
+      "countsByKind": {
+        "water": 761,
+        "peak": 15,
+        "canal": 797,
+        "stream": 108
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-wenzhou",
+      "regionId": "city-song-wenzhou"
+    },
+    {
+      "id": "city-song-wenzhou-240-55-part0",
+      "name": "温州与瓯江水系 · 局部细节",
+      "bounds": [
+        120.4833484,
+        27.8034349,
+        120.5111092,
+        27.8946753
+      ],
+      "url": "/data/tang-detail/modern-city-song-wenzhou-240-55-part0.geojson.gz",
+      "featureCount": 7,
+      "countsByKind": {
+        "water": 3,
+        "canal": 3,
+        "stream": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-wenzhou",
+      "regionId": "city-song-wenzhou"
+    },
+    {
+      "id": "city-song-wenzhou-241-56-part0",
+      "name": "温州与瓯江水系 · 局部细节",
+      "bounds": [
+        120.6423777,
+        28.0130199,
+        120.6451279,
+        28.0165762
+      ],
+      "url": "/data/tang-detail/modern-city-song-wenzhou-241-56-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "water": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-wenzhou",
+      "regionId": "city-song-wenzhou"
+    },
+    {
+      "id": "city-song-yueyang-overview-part0",
+      "name": "岳阳与洞庭湖东岸水系 · 主河与水面",
+      "bounds": [
+        111.8029081,
+        28.6264881,
+        113.7997663,
+        30.0478445
+      ],
+      "url": "/data/tang-detail/modern-city-song-yueyang-overview-part0.geojson.gz",
+      "featureCount": 87,
+      "countsByKind": {
+        "water": 70,
+        "river": 17
+      },
+      "minZoom": 8,
+      "sourceId": "osm-tang-detail-city-song-yueyang",
+      "regionId": "city-song-yueyang"
+    },
+    {
+      "id": "city-song-yueyang-226-58-part0",
+      "name": "岳阳与洞庭湖东岸水系 · 局部细节",
+      "bounds": [
+        113.0016653,
+        29.166571,
+        113.3562873,
+        29.485557
+      ],
+      "url": "/data/tang-detail/modern-city-song-yueyang-226-58-part0.geojson.gz",
+      "featureCount": 692,
+      "countsByKind": {
+        "water": 659,
+        "peak": 4,
+        "stream": 29
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-yueyang",
+      "regionId": "city-song-yueyang"
+    },
+    {
+      "id": "city-song-yueyang-226-59-part0",
+      "name": "岳阳与洞庭湖东岸水系 · 局部细节",
+      "bounds": [
+        113.0917215,
+        29.5094541,
+        113.3284461,
+        29.6015903
+      ],
+      "url": "/data/tang-detail/modern-city-song-yueyang-226-59-part0.geojson.gz",
+      "featureCount": 17,
+      "countsByKind": {
+        "water": 11,
+        "canal": 6
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-yueyang",
+      "regionId": "city-song-yueyang"
+    },
+    {
+      "id": "city-song-yueyang-225-59-part0",
+      "name": "岳阳与洞庭湖东岸水系 · 局部细节",
+      "bounds": [
+        112.9388943,
+        29.5437657,
+        112.9414381,
+        29.5444317
+      ],
+      "url": "/data/tang-detail/modern-city-song-yueyang-225-59-part0.geojson.gz",
+      "featureCount": 1,
+      "countsByKind": {
+        "water": 1
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-yueyang",
+      "regionId": "city-song-yueyang"
+    },
+    {
+      "id": "city-song-yueyang-225-58-part0",
+      "name": "岳阳与洞庭湖东岸水系 · 局部细节",
+      "bounds": [
+        112.916708,
+        29.1497064,
+        112.9749672,
+        29.2206046
+      ],
+      "url": "/data/tang-detail/modern-city-song-yueyang-225-58-part0.geojson.gz",
+      "featureCount": 2,
+      "countsByKind": {
+        "canal": 2
+      },
+      "minZoom": 10,
+      "sourceId": "osm-tang-detail-city-song-yueyang",
+      "regionId": "city-song-yueyang"
     }
   ],
   "modernCoverageRegions": [
@@ -10008,7 +11152,8 @@
         28.883
       ],
       "packageIds": [
-        "city-ming-nanchang-overview-part0"
+        "city-ming-nanchang-overview-part0",
+        "city-song-jiujiang-overview-part0"
       ],
       "minZoom": 8
     },
@@ -10066,6 +11211,195 @@
       ],
       "packageIds": [
         "city-quanzhou-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "city-song-fengjie",
+      "name": "奉节与长江峡江水系",
+      "bounds": [
+        109.265,
+        30.8175,
+        109.665,
+        31.2175
+      ],
+      "packageIds": [
+        "city-song-fengjie-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "city-song-ganzhou",
+      "name": "赣州与章贡双江水系",
+      "bounds": [
+        114.73,
+        25.63,
+        115.13,
+        26.03
+      ],
+      "packageIds": [
+        "city-song-ganzhou-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "city-song-hanzhong",
+      "name": "汉中与汉江水系",
+      "bounds": [
+        106.8233,
+        32.8675,
+        107.2233,
+        33.2675
+      ],
+      "packageIds": [
+        "guanzhong-overview-part0",
+        "city-song-hanzhong-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "city-song-hengzhou",
+      "name": "衡阳与湘江水系",
+      "bounds": [
+        112.372,
+        26.693,
+        112.772,
+        27.093
+      ],
+      "packageIds": [
+        "city-song-hengzhou-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "city-song-jian",
+      "name": "吉安与赣江水系",
+      "bounds": [
+        114.76,
+        26.89,
+        115.16,
+        27.29
+      ],
+      "packageIds": [
+        "city-song-jian-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "city-song-jiange",
+      "name": "剑阁附近水系",
+      "bounds": [
+        105.324,
+        32.088,
+        105.724,
+        32.488
+      ],
+      "packageIds": [
+        "city-song-jiange-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "city-song-jiujiang",
+      "name": "九江与长江南岸水系",
+      "bounds": [
+        115.8026,
+        29.5054,
+        116.2026,
+        29.9054
+      ],
+      "packageIds": [
+        "city-song-jiujiang-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "city-song-langzhong",
+      "name": "阆中与嘉陵江水系",
+      "bounds": [
+        105.805,
+        31.358,
+        106.205,
+        31.758
+      ],
+      "packageIds": [
+        "city-song-langzhong-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "city-song-mianyang",
+      "name": "绵阳与涪江水系",
+      "bounds": [
+        104.5579,
+        31.347,
+        104.7979,
+        31.587
+      ],
+      "packageIds": [
+        "west-chengdu-overview-part0",
+        "city-song-mianyang-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "city-song-santai",
+      "name": "三台与涪江水系",
+      "bounds": [
+        104.8936,
+        30.8958,
+        105.2936,
+        31.2958
+      ],
+      "packageIds": [
+        "west-chengdu-overview-part0",
+        "city-song-mianyang-overview-part0",
+        "city-song-santai-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "city-song-suining",
+      "name": "遂宁与涪江水系",
+      "bounds": [
+        105.3923,
+        30.3333,
+        105.7923,
+        30.7333
+      ],
+      "packageIds": [
+        "city-song-suining-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "city-song-wenzhou",
+      "name": "温州与瓯江水系",
+      "bounds": [
+        120.499,
+        27.793,
+        120.899,
+        28.193
+      ],
+      "packageIds": [
+        "zhejiang-overview-part0",
+        "zhejiang-overview-part1",
+        "zhejiang-overview-part2",
+        "city-song-wenzhou-overview-part0"
+      ],
+      "minZoom": 8
+    },
+    {
+      "id": "city-song-yueyang",
+      "name": "岳阳与洞庭湖东岸水系",
+      "bounds": [
+        112.93,
+        29.16,
+        113.33,
+        29.56
+      ],
+      "packageIds": [
+        "city-song-yueyang-overview-part0"
       ],
       "minZoom": 8
     },
@@ -10172,7 +11506,8 @@
         31.25
       ],
       "packageIds": [
-        "west-chengdu-overview-part0"
+        "west-chengdu-overview-part0",
+        "city-song-santai-overview-part0"
       ],
       "minZoom": 8
     },
@@ -10859,6 +12194,149 @@
       "retrievedAt": "2026-09-25T08:10:01.623988+00:00",
       "snapshotPath": "data/evidence/tang-detail/osm/city-ming-yinchuan.json.gz",
       "snapshotSha256": "f949619745bb72aa231422c2a4e50da56d8518586a283f8cc85f1d6340bce8e2",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+    },
+    {
+      "id": "osm-tang-detail-city-song-fengjie",
+      "title": "OpenStreetMap 现代地理：奉节与长江峡江水系",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-27T06:18:06.328404+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-song-fengjie.json.gz",
+      "snapshotSha256": "545c73cd401863da099572a26096c50b5217823c0700d355e3041e04a6cb9c6d",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+    },
+    {
+      "id": "osm-tang-detail-city-song-ganzhou",
+      "title": "OpenStreetMap 现代地理：赣州与章贡双江水系",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-27T06:24:07.220421+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-song-ganzhou.json.gz",
+      "snapshotSha256": "bf3b888fd1fed1096f08e89b7d18e836c5141324daf4fc3e0e6ab9fbb9a5aa69",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+    },
+    {
+      "id": "osm-tang-detail-city-song-hanzhong",
+      "title": "OpenStreetMap 现代地理：汉中与汉江水系",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-27T06:17:41.250310+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-song-hanzhong.json.gz",
+      "snapshotSha256": "1557a0ccbeb0ee50ba41967594a0a9aaae5305289f9c61602aeb2fab000f45d0",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+    },
+    {
+      "id": "osm-tang-detail-city-song-hengzhou",
+      "title": "OpenStreetMap 现代地理：衡阳与湘江水系",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-27T06:10:26.034900+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-song-hengzhou.json.gz",
+      "snapshotSha256": "7ff136f754a694c3bee1ba6cbf40869924b26305287bbd86412aacac89540cfa",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+    },
+    {
+      "id": "osm-tang-detail-city-song-jian",
+      "title": "OpenStreetMap 现代地理：吉安与赣江水系",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-27T06:23:55.252898+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-song-jian.json.gz",
+      "snapshotSha256": "fa8e0d9be16a3ab1deb5efcf267b5487c81e7eec78191eff41846894555a9e98",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+    },
+    {
+      "id": "osm-tang-detail-city-song-jiange",
+      "title": "OpenStreetMap 现代地理：剑阁附近水系",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-27T06:14:37.090274+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-song-jiange.json.gz",
+      "snapshotSha256": "3552aecd4a780f2b32380e20837b0832587298636e7daea479bf6efb92fcfbee",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+    },
+    {
+      "id": "osm-tang-detail-city-song-jiujiang",
+      "title": "OpenStreetMap 现代地理：九江与长江南岸水系",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-27T06:08:03.269722+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-song-jiujiang.json.gz",
+      "snapshotSha256": "375121c5f4bdeedf8a02ac10f452b734583d410b1ecb787a7852f25ea57a853e",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+    },
+    {
+      "id": "osm-tang-detail-city-song-langzhong",
+      "title": "OpenStreetMap 现代地理：阆中与嘉陵江水系",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-27T06:23:05.903299+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-song-langzhong.json.gz",
+      "snapshotSha256": "576467d0e69c3608662a2981df5bfc97ecca287843430bd47ceee23a241efcd9",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+    },
+    {
+      "id": "osm-tang-detail-city-song-mianyang",
+      "title": "OpenStreetMap 现代地理：绵阳与涪江水系",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-27T06:20:42.870218+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-song-mianyang.json.gz",
+      "snapshotSha256": "b6cff646875365f083e6cc260c50d9a448cc25b7812188dc294ca75c326c44ec",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+    },
+    {
+      "id": "osm-tang-detail-city-song-santai",
+      "title": "OpenStreetMap 现代地理：三台与涪江水系",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-27T06:14:03.735114+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-song-santai.json.gz",
+      "snapshotSha256": "0709f525af5af96946ab0c48425aa65b9fbde02ff134c6110ce2c55a79e1096a",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+    },
+    {
+      "id": "osm-tang-detail-city-song-suining",
+      "title": "OpenStreetMap 现代地理：遂宁与涪江水系",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-27T06:23:23.528156+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-song-suining.json.gz",
+      "snapshotSha256": "4172be34880eb4730041816342f65fc8d504b86e886d204b96fc6a6d222a55b9",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+    },
+    {
+      "id": "osm-tang-detail-city-song-wenzhou",
+      "title": "OpenStreetMap 现代地理：温州与瓯江水系",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-27T06:08:37.797269+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-song-wenzhou.json.gz",
+      "snapshotSha256": "c9d1b4d17daeb84c86ad497ffeb333dc023f5f13391c6ebc9bfb60c05abb7f3e",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+    },
+    {
+      "id": "osm-tang-detail-city-song-yueyang",
+      "title": "OpenStreetMap 现代地理：岳阳与洞庭湖东岸水系",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedAt": "2026-09-27T06:23:39.138058+00:00",
+      "snapshotPath": "data/evidence/tang-detail/osm/city-song-yueyang.json.gz",
+      "snapshotSha256": "f528421c424b881e868a229c5b98ab03bcb3a71e75ecddf88d98567b4cc8357c",
       "license": "Open Data Commons Open Database License (ODbL) 1.0",
       "attribution": "© OpenStreetMap contributors",
       "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"

@@ -1,0 +1,25 @@
+{
+  "id": "osm-tang-detail-city-song-jiujiang",
+  "title": "OpenStreetMap 现代地理：九江与长江南岸水系",
+  "url": "https://www.openstreetmap.org/copyright",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "retrievedAt": "2026-09-27T06:08:03.269722+00:00",
+  "bounds": [
+    115.8026,
+    29.5054,
+    116.2026,
+    29.9054
+  ],
+  "snapshotPath": "data/evidence/tang-detail/osm/city-song-jiujiang.json.gz",
+  "snapshotSha256": "375121c5f4bdeedf8a02ac10f452b734583d410b1ecb787a7852f25ea57a853e",
+  "uncompressedSnapshotSha256": "866ecd9dc559206d8d33ed57bd619658d52e73a959ac73efea7cd58439cc68c1",
+  "snapshotEncoding": "gzip",
+  "queryPath": "data/evidence/tang-detail/osm/city-song-jiujiang.ql",
+  "querySha256": "de82a66b9ac19eb2f1270504b2b12355d36bd45477ac2f66cd3b0f114b33fa89",
+  "osmBaseTimestamp": "2026-05-06T03:25:00Z",
+  "elementCount": 462,
+  "license": "Open Data Commons Open Database License (ODbL) 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "modernReferenceOnly": true,
+  "note": "真实OSM河流、溪流、运河、水面、山峰与山口记录。现代参照，不代表所选朝代的河道、湖岸或水利工程。查询框仅表示采集窗口，不是历史辖区或自然地物边界。"
+}

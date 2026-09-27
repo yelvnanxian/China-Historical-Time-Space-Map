@@ -13,6 +13,8 @@ import subprocess
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'data/evidence/song-research/sources'
 PAGES = {
+    'yueyanglou-ji': ('岳陽樓記', 'historical-literature'),
+    'shizhongshan-ji': ('石鐘山記', 'historical-literature'),
     **{f'songshi-{v}': (f'宋史/卷{v:03}', 'official-history') for v in (33,36,85,86,87,88,89,90,485,486,488)},
     **{f'jinshi-{v}': (f'金史/卷{v}', 'official-history') for v in (24,25,26)},
 }
@@ -46,7 +48,7 @@ def fetch(item):
     parser = Text()
     parser.feed(re.sub(r'<(style|script)\b[^>]*>.*?</\1>', '', parsed['text']['*'], flags=re.I | re.S))
     content = '\n'.join(re.sub(r'\s+', ' ', line).strip() for line in ''.join(parser.parts).splitlines() if line.strip()) + '\n'
-    assert len(content) > 1000
+    assert len(content) > 300
     OUT.mkdir(parents=True, exist_ok=True)
     snapshot = OUT / f'{key}.txt'
     snapshot.write_text(content)

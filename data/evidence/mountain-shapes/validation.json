@@ -3,19 +3,19 @@
   "peakManifests": [
     {
       "path": "public/data/mountain-detail/manifest.json",
-      "sha256": "2199bc5af4712b1c8fbf90e10940a6499bc8fac35dcdb4f7d83242beb833df27"
+      "sha256": "0bee72bb5fe0699e9f4794875c06b7739c5f8528239b6a8351217e7e3cb6a9d8"
     },
     {
       "path": "public/data/tang-detail/manifest.json",
       "sha256": "db58a31b0bf99ac82bf451a014cb4b241e17b1dfcf2e88884032ba90cc1270ce"
     }
   ],
-  "sourceTileCount": 198,
-  "sourceBytes": 12168320,
-  "areaCount": 22,
-  "featureCount": 18451,
-  "vertexCount": 3062065,
-  "derivedBytes": 30311807,
+  "sourceTileCount": 225,
+  "sourceBytes": 13721641,
+  "areaCount": 25,
+  "featureCount": 24335,
+  "vertexCount": 3553061,
+  "derivedBytes": 34840652,
   "peakCoordinatesPreserved": true,
   "allContourVerticesCheckedAgainstDEM": true,
   "areas": [
@@ -346,6 +346,51 @@
       "shadeTransparentPixels": 319841,
       "shadeBytes": 295919,
       "contoursBytes": 442578,
+      "sourcePeakUnchanged": true,
+      "excludedDemSampleCount": 0
+    },
+    {
+      "id": "lushan-hanyang",
+      "featureCount": 1580,
+      "vertexCount": 121517,
+      "contourInterpolationMaxErrorMeters": 7.66249286243692e-11,
+      "shadeAlphaRange": [
+        0,
+        175
+      ],
+      "shadeTransparentPixels": 335454,
+      "shadeBytes": 316257,
+      "contoursBytes": 831726,
+      "sourcePeakUnchanged": true,
+      "excludedDemSampleCount": 0
+    },
+    {
+      "id": "hengshan-zhurong",
+      "featureCount": 3036,
+      "vertexCount": 157542,
+      "contourInterpolationMaxErrorMeters": 5.758238330599852e-11,
+      "shadeAlphaRange": [
+        0,
+        175
+      ],
+      "shadeTransparentPixels": 291640,
+      "shadeBytes": 384497,
+      "contoursBytes": 1048430,
+      "sourcePeakUnchanged": true,
+      "excludedDemSampleCount": 0
+    },
+    {
+      "id": "wuyi-huanggang",
+      "featureCount": 1268,
+      "vertexCount": 211937,
+      "contourInterpolationMaxErrorMeters": 1.5916157281026244e-11,
+      "shadeAlphaRange": [
+        0,
+        175
+      ],
+      "shadeTransparentPixels": 269088,
+      "shadeBytes": 445931,
+      "contoursBytes": 1502004,
       "sourcePeakUnchanged": true,
       "excludedDemSampleCount": 0
     }
