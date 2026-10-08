@@ -1,6 +1,6 @@
 {
   "version": "1.3",
-  "generatedAt": "2026-10-08T06:48:46.388289+00:00",
+  "generatedAt": "2026-10-08T07:17:09.749698+00:00",
   "notes": [
     "历史地理条目提供地区参考点；黄河改道会联动单独保存的 WorldMap 年代河道。未收录历史向量的年代保留现代参照，不外推复原线。",
     "城市大事记跨时期展示，不随当前朝代筛除；同名城市的古今城址可能不同。",
@@ -696,6 +696,78 @@
       "note": "宋代作者文章的固定修订文本，原始API与文本分别归档并校验；文学记述支持所见自然景观或文本纪年，不能当作1200年岸线、山形或州界测绘。",
       "snapshotPath": "data/evidence/song-research/sources/yueyanglou-ji.txt",
       "snapshotSha256": "3e79fdc58140aada6572f9683e62991df64cb78c027e0d347d82b2d532d0252b"
+    },
+    {
+      "id": "context-qin-sanchuan",
+      "title": "河南郡 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E6%B2%B3%E5%8D%97%E9%83%A1&oldid=93495909",
+      "retrievedAt": "2026-10-08T07:06:19.798733+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证，亦不是古城坐标或边界核定。引文保留本次页面原字形。 本次读取页面修订号：93495909。",
+      "snapshotPath": "data/evidence/historical-context/qin-sanchuan.txt",
+      "snapshotSha256": "2fecf32058996f1b2332c3c75fd714ffee609c2fdc59b597c9f7f974ca5f78f2"
+    },
+    {
+      "id": "context-qin-nan",
+      "title": "南郡 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E5%8D%97%E9%83%A1&oldid=94796265",
+      "retrievedAt": "2026-10-08T07:06:19.508190+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证，亦不是古城坐标或边界核定。引文保留本次页面原字形。 本次读取页面修订号：94796265。",
+      "snapshotPath": "data/evidence/historical-context/qin-nan.txt",
+      "snapshotSha256": "027cd0c95e986d52bff86bab6ea44f84bf185f3e4b2b042e08c9b92df5dc5822"
+    },
+    {
+      "id": "context-qin-taiyuan",
+      "title": "太原郡 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E5%A4%AA%E5%8E%9F%E9%83%A1&oldid=93495593",
+      "retrievedAt": "2026-10-08T07:06:19.029295+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证，亦不是古城坐标或边界核定。引文保留本次页面原字形。 本次读取页面修订号：93495593。",
+      "snapshotPath": "data/evidence/historical-context/qin-taiyuan.txt",
+      "snapshotSha256": "caadf6250ac0e8b8aa0546e1298002018fc8a42d01ddf25d76664f1b978f537f"
+    },
+    {
+      "id": "context-qin-shihuang",
+      "title": "秦始皇 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E7%A7%A6%E5%A7%8B%E7%9A%87&oldid=94788854",
+      "retrievedAt": "2026-10-08T07:06:20.140768+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证，亦不是古城坐标或边界核定。引文保留本次页面原字形。 本次读取页面修订号：94788854。",
+      "snapshotPath": "data/evidence/historical-context/qin-shihuang.txt",
+      "snapshotSha256": "bf991dddbe3a177a1d37fc022c108c933b8a666a49578381dec5c6308d42c521"
+    },
+    {
+      "id": "context-han-geography",
+      "title": "漢書/卷028 — 维基文库",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7028&oldid=2605705",
+      "retrievedAt": "2026-10-08T07:08:39.184983+00:00",
+      "note": "《汉书·地理志》维基文库电子转录，未与刻本或点校本逐字校勘；快照由固定修订原始wikitext仅去除三单引号加粗标记而成，原API另存。本文含历史沿革，不将整篇所有记载等同于公元2年；不按县名列序推定治所、不把郡国户口当作城市人口。",
+      "snapshotPath": "data/evidence/historical-context/han-geography.txt",
+      "snapshotSha256": "bb167f368825a4fd90b6ac09c9e70dfe3603b27f02dd4cb82dc7a1beac34dadf"
+    },
+    {
+      "id": "context-han-luoyang-site",
+      "title": "汉魏洛阳故城 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E6%B1%89%E9%AD%8F%E6%B4%9B%E9%98%B3%E6%95%85%E5%9F%8E&oldid=94070069",
+      "retrievedAt": "2026-10-08T07:08:39.186792+00:00",
+      "note": "百科固定修订文本，用于有限的概述性事实核对，不等于原始史料交叉考证。引文保留原字形。",
+      "snapshotPath": "data/evidence/historical-context/han-luoyang-site.txt",
+      "snapshotSha256": "67f1854fa5e42d7b09f23eae2c191cb4f42f602f7c1cd3f1ca21b00d1f4785b5"
+    },
+    {
+      "id": "context-han-guangyang-textual-note",
+      "title": "後漢書/卷113 — 维基文库",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B7113&oldid=7902259",
+      "retrievedAt": "2026-10-08T07:16:04.489455+00:00",
+      "note": "《后汉书·郡国五》及校勘记的维基文库电子转录，未与刻本或点校本逐字校勘。只摘广阳郡恢复建置的永平/永元异文校勘；不把郡国户口当作城市人口。快照由原始wikitext仅去除三单引号加粗标记而成，原API另存。",
+      "snapshotPath": "data/evidence/historical-context/han-guangyang-textual-note.txt",
+      "snapshotSha256": "ce3d7a97eccc2ac2b81a2e82b24dfd4da9b36a7c8c3c89ec40e0c3e5c9c1b6b7"
+    },
+    {
+      "id": "context-han-baideng",
+      "title": "白登之围 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E7%99%BD%E7%99%BB%E4%B9%8B%E5%9B%B4&oldid=91432731",
+      "retrievedAt": "2026-10-08T07:08:39.186029+00:00",
+      "note": "百科固定修订文本，用于有限的概述性事实核对，不等于原始史料交叉考证。引文保留原字形。",
+      "snapshotPath": "data/evidence/historical-context/han-baideng.txt",
+      "snapshotSha256": "f2cac4607bf5674a61c8082517ce033166f527e22cc35a3ee48ea5d6ffde604c"
     }
   ],
   "geographyEntries": [
@@ -1245,6 +1317,40 @@
           ]
         },
         {
+          "id": "han-expansion-luoyang-north-palace-60",
+          "year": 60,
+          "dateLabel": "东汉60年起（永平三年至八年）",
+          "title": "雒阳北宫开始营建",
+          "summary": "材料记北宫营建自60年至65年，位于南宫以北，形成南北二宫对应的格局。本节点取营建起始年60年，不能据此断言北宫当年已经全部落成。",
+          "sourceIds": [
+            "context-han-luoyang-site"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-han-luoyang-site",
+              "quote": "宫城建筑最初只有南宫，汉明帝永平三年至八年（60年—65年）于南宫以北新筑北宫，从而形成了南北二宫城相互对应居于城中的格局。",
+              "supports": "雒阳北宫开始营建及概述中的直接事实；年份来自引文明确纪年。"
+            }
+          ]
+        },
+        {
+          "id": "han-expansion-luoyang-fire-190",
+          "year": 190,
+          "dateLabel": "东汉190年（初平元年）",
+          "title": "董卓焚毁雒阳",
+          "summary": "汉献帝初平元年，雒阳城遭董卓焚毁破坏。本条补充东汉末都城遭破坏的纪年，不把现存汉魏故城各时期遗迹都解释为190年仍在使用的建筑。",
+          "sourceIds": [
+            "context-han-luoyang-site"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-han-luoyang-site",
+              "quote": "汉献帝初平元年（190年），雒阳城为董卓焚毁破坏。",
+              "supports": "董卓焚毁雒阳及概述中的直接事实；年份来自引文明确纪年。"
+            }
+          ]
+        },
+        {
           "id": "luoyang-sui-605",
           "year": 605,
           "dateLabel": "605年",
@@ -1735,6 +1841,40 @@
       "placeId": "nanjing",
       "entries": [
         {
+          "id": "han-expansion-nanjing-moling-211",
+          "year": 211,
+          "dateLabel": "东汉211年",
+          "title": "孙权迁治秣陵",
+          "summary": "东汉末孙权将治所迁到秣陵。此时尚未到229年称帝建立东吴的阶段，本条只记录迁治，不据同一句叙述给石头城营建强行系于211年。",
+          "sourceIds": [
+            "context-nanjing"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-nanjing",
+              "quote": "东汉末年，割据江东的孙权于211年将治所移到秣陵，在金陵邑旧地筑石头城要塞，次年改秣陵为建业。",
+              "supports": "孙权迁治秣陵及概述中的直接事实；年份来自引文明确纪年。"
+            }
+          ]
+        },
+        {
+          "id": "han-expansion-nanjing-jianye-212",
+          "year": 212,
+          "dateLabel": "东汉212年",
+          "title": "秣陵改名建业",
+          "summary": "孙权迁治秣陵后的次年，即212年，秣陵改名建业。这是东汉末江东政权的地名变化，不能将建业一名提前到西汉，也不表示东吴已经在这一年称帝建国。",
+          "sourceIds": [
+            "context-nanjing"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-nanjing",
+              "quote": "东汉末年，割据江东的孙权于211年将治所移到秣陵，在金陵邑旧地筑石头城要塞，次年改秣陵为建业。",
+              "supports": "秣陵改名建业及概述中的直接事实；年份来自引文明确纪年。"
+            }
+          ]
+        },
+        {
           "id": "nanjing-wu-229",
           "year": 229,
           "dateLabel": "229年",
@@ -2042,6 +2182,29 @@
     {
       "placeId": "beijing",
       "entries": [
+        {
+          "id": "han-expansion-beijing-guangyang-96",
+          "year": 96,
+          "dateLabel": "东汉96年（永元八年）",
+          "title": "广阳郡恢复建置",
+          "summary": "《后汉书》电子转录所附校勘记据《和帝纪》，将底本永平八年校为永元八年，即96年。本条采用校勘后的纪年；蓟县通过既有地区入口关联此事，不据复郡记载推定郡治位置，也不回填为公元2年的状态。",
+          "sourceIds": [
+            "context-beijing-history",
+            "context-han-guangyang-textual-note"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-beijing-history",
+              "quote": "汉和帝永元八年（公元96年）",
+              "supports": "仅支持永元八年与公元96年的对应；恢复广阳郡依据见另一条校勘引文。"
+            },
+            {
+              "sourceId": "context-han-guangyang-textual-note",
+              "quote": "永（平）〔元〕八年復　錢大昕考異謂據和帝紀，永元八年九月復，此「永平」當為「永元」之訛。殿本考證齊召南說同。今據改。",
+              "supports": "校勘记以《和帝纪》纠正永平/永元异文，直接支持恢复广阳郡的纪年，不支持郡治定位。"
+            }
+          ]
+        },
         {
           "id": "tang-timeline-beijing-618-1",
           "year": 618,
@@ -2980,6 +3143,23 @@
           ]
         },
         {
+          "id": "han-expansion-guangzhou-nanyue-111",
+          "year": -111,
+          "dateLabel": "西汉前111年（元鼎六年）",
+          "title": "汉征服南越，番禺仍为南海郡治",
+          "summary": "汉武帝元鼎六年征服南越，所设九郡中南海郡治仍在番禺。这一节点区分南越时期与汉直接治理阶段，不把前111年以前的番禺一概归为汉郡治。",
+          "sourceIds": [
+            "context-guangzhou"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-guangzhou",
+              "quote": "汉武帝元鼎六年（前111年），汉朝征服南越国，设立九郡，其中南海郡治仍设在番禺。",
+              "supports": "汉征服南越，番禺仍为南海郡治及概述中的直接事实；年份来自引文明确纪年。"
+            }
+          ]
+        },
+        {
           "id": "tang-timeline-guangzhou-621-1",
           "year": 621,
           "dateLabel": "武德四年（621年）",
@@ -3347,6 +3527,62 @@
           ]
         },
         {
+          "id": "qin-expansion-xianyang-roads-220",
+          "year": -220,
+          "dateLabel": "秦始皇二十七年（前220年）",
+          "title": "以咸阳为中心修筑驰道",
+          "summary": "材料记秦始皇二十七年开始大规模修筑驰道，以京师咸阳为中心连接秦故地和原六国道路。这一条补充首都的交通组织职能；本轮未取得可核定的秦驰道路线，不把现代道路当作古道。",
+          "sourceIds": [
+            "context-qin-shihuang"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-qin-shihuang",
+              "quote": "秦始皇從公元前220年（秦始皇27年）開始，大幅修築以京師咸陽為中心，向四面八方延伸出去的馳道，类似现代的高速公路，將秦故地和原六国境内的旧道连接起来，并加以扩建。",
+              "supports": "前220年以咸阳为中心修筑驰道的记载；仅支持交通史背景，不提供路线几何。"
+            }
+          ]
+        },
+        {
+          "id": "qin-expansion-xianyang-lanchi-216",
+          "year": -216,
+          "dateLabel": "秦始皇三十一年（前216年）",
+          "title": "秦始皇在兰池宫附近遇袭",
+          "summary": "材料记秦始皇三十一年在咸阳一带微服出行，于兰池宫附近遇袭，随后在关中搜查二十天。这里将事件关联到咸阳地区；现有城市参考点不代表兰池宫遗址，也不表示已经核定遇袭位置。",
+          "sourceIds": [
+            "context-qin-shihuang"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-qin-shihuang",
+              "quote": "公元前216年（秦始皇31年）一個晚上，秦始皇與四名武士一起，在咸阳一帶微服出行，但在兰池宮附近遇上一眾强盗襲擊，情势危急，幸而最終擊斃企圖襲擊秦始皇的強盜。由於懷疑事件另有主謀，故在关中地區大索二十天。",
+              "supports": "前216年、咸阳一带兰池宫附近遇袭及关中搜查的概述性记载；不是宫址坐标核定。"
+            }
+          ]
+        },
+        {
+          "id": "qin-expansion-xianyang-succession-210",
+          "year": -210,
+          "dateLabel": "秦始皇三十七年（前210年）",
+          "title": "秦始皇丧车归咸阳，胡亥袭位",
+          "summary": "秦始皇在前210年巡游途中去世，材料记当年秋丧车经直道到咸阳后发丧，胡亥袭位为二世皇帝。这个节点记录咸阳的权力交接，不把秦始皇去世的沙丘或安葬的骊山放在咸阳城中。",
+          "sourceIds": [
+            "context-qin-shihuang"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-qin-shihuang",
+              "quote": "始皇三十七年（前210年），秦始皇開始最后一次巡游，返至平原津得病。行至沙丘平台，秦始皇驾崩。",
+              "supports": "秦始皇去世所处的前210年及地点沙丘，与后文该年秋返回咸阳的记载衔接。"
+            },
+            {
+              "sourceId": "context-qin-shihuang",
+              "quote": "該年秋季，从直道至咸阳，发丧。太子胡亥袭位，为二世皇帝，天下始知秦始皇驾崩。九月，葬始皇帝於酈山。",
+              "supports": "当年秋返回咸阳发丧和胡亥袭位；明确区分咸阳、沙丘与骊山。"
+            }
+          ]
+        },
+        {
           "id": "tang-timeline-xianyang-619-1",
           "year": 619,
           "dateLabel": "武德二年（619年）",
@@ -3433,6 +3669,23 @@
               "sourceId": "context-jinyang",
               "quote": "公元前497年，赵简子家臣董安于始建城池，为晋阳城",
               "supports": "董安于营建晋阳及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "han-expansion-jinyang-hanwangxin-201",
+          "year": -201,
+          "dateLabel": "西汉前201年",
+          "title": "韩王信迁封太原，先都晋阳",
+          "summary": "刘邦将韩王信封地迁至太原郡，以晋阳为都；韩王信认为晋阳距边塞较远，又获准迁都马邑。这里的韩王信不是淮阴侯韩信，本条不表示晋阳在整个西汉一直为其都城。",
+          "sourceIds": [
+            "context-han-baideng"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-han-baideng",
+              "quote": "公元前201年春，刘邦认为韩王信封地乃兵家必争的战略重地，担心韩王信日后会构成威胁，便以防御匈奴为名，将韩王信封地迁至太原郡，以晋阳（今山西省太原市）为都。韩王信以“国被边，匈奴数入，晋阳去塞远”为由，上书请求把都城迁至马邑（今山西省朔州市朔城区），得到刘邦批准。",
+              "supports": "韩王信迁封太原，先都晋阳及概述中的直接事实；年份来自引文明确纪年。"
             }
           ]
         },
@@ -3628,6 +3881,23 @@
     {
       "placeId": "datong",
       "entries": [
+        {
+          "id": "han-expansion-datong-baideng-200",
+          "year": -200,
+          "dateLabel": "西汉前200年（汉高祖七年）",
+          "title": "白登之围",
+          "summary": "汉高祖刘邦在平城附近的白登山遭匈奴围困。地图定位到现有大同地区参考点，用来阅读事件，不将该点认作白登山战场的实测坐标，也不补绘推测的包围路线。",
+          "sourceIds": [
+            "context-han-baideng"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-han-baideng",
+              "quote": "白登之围是公元前200年（汉高祖七年）汉高祖刘邦被匈奴围困于白登山（今中国山西省大同市东北马铺山）的事件。",
+              "supports": "白登之围及概述中的直接事实；年份来自引文明确纪年。"
+            }
+          ]
+        },
         {
           "id": "datong-context-0-398",
           "year": 398,

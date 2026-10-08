@@ -13,7 +13,7 @@
     "public/data/boundaries/manifest.json": "557687250944ddab7d9a78234b04b13d224eb5995d85b1f67eace3679131489f",
     "shared/boundary-hierarchy.ts": "54062820c740c381987ab0e7396b3a4f4f181dfe5de59e37dc6db990bb586db3",
     "shared/boundary-search.ts": "31e53a6e778c5d1883b58ba2d320fea166c7794eba1781f789476cdb7d4dbc51",
-    "package-lock.json": "d077c92757ac096bf06ba98456edc939ca40f06d47a88c5d31cff3b1591ab2b4",
+    "package-lock.json": "4053774d93357fe452240edfc327b3bc723b8c109d791e2054a8d1e8a0dcd851",
     "public/data/boundaries/hartwell-741-country.geojson": "489a46ccaf6281e5937c0f4acb0345767eb1fb75d17f4b752bddd09bf7dceec1",
     "public/data/boundaries/hartwell-741-province.geojson": "3e7972b1274cfe1bcea0058ec4dc894a0656a2a3262b596ca5467d83efcb1801",
     "public/data/boundaries/hartwell-741-prefecture.geojson": "ac9211af939ef3f9f6d94bb16977e313426795908703ad4d7db916f6ea89d635",

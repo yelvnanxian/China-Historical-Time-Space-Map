@@ -1,0 +1,17 @@
+{
+  "id": "context-han-geography",
+  "title": "漢書/卷028 — 维基文库",
+  "url": "https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7028&oldid=2605705",
+  "retrievedAt": "2026-10-08T07:08:39.184983+00:00",
+  "note": "《汉书·地理志》维基文库电子转录，未与刻本或点校本逐字校勘；快照由固定修订原始wikitext仅去除三单引号加粗标记而成，原API另存。本文含历史沿革，不将整篇所有记载等同于公元2年；不按县名列序推定治所、不把郡国户口当作城市人口。",
+  "snapshotPath": "data/evidence/historical-context/han-geography.txt",
+  "snapshotSha256": "bb167f368825a4fd90b6ac09c9e70dfe3603b27f02dd4cb82dc7a1beac34dadf",
+  "pageId": 19653,
+  "revision": {
+    "revid": 2605705,
+    "parentid": 2605704,
+    "timestamp": "2025-10-12T14:41:17Z"
+  },
+  "apiSnapshotPath": "data/evidence/historical-context/han-geography.api.json",
+  "apiSnapshotSha256": "b7471c51aa9715d0eac66c1efdcd3b7755657e373c43dd2a1f7d750e14531f7f"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "context-han-baideng",
+  "title": "白登之围 — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E7%99%BD%E7%99%BB%E4%B9%8B%E5%9B%B4&oldid=91432731",
+  "retrievedAt": "2026-10-08T07:08:39.186029+00:00",
+  "note": "百科固定修订文本，用于有限的概述性事实核对，不等于原始史料交叉考证。引文保留原字形。",
+  "snapshotPath": "data/evidence/historical-context/han-baideng.txt",
+  "snapshotSha256": "f2cac4607bf5674a61c8082517ce033166f527e22cc35a3ee48ea5d6ffde604c",
+  "pageId": 327726,
+  "revision": {
+    "revid": 91432731,
+    "parentid": 90654249,
+    "timestamp": "2026-02-07T14:18:22Z"
+  },
+  "apiSnapshotPath": "data/evidence/historical-context/han-baideng.api.json",
+  "apiSnapshotSha256": "14f904d4950ae2d8d4cde7df30f83291050c2af7a5041f059ee5bfed955d4b50"
+}

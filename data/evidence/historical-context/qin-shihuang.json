@@ -1,0 +1,16 @@
+{
+  "id": "context-qin-shihuang",
+  "title": "秦始皇 — 维基百科",
+  "url": "https://zh.wikipedia.org/wiki/%E7%A7%A6%E5%A7%8B%E7%9A%87",
+  "retrievedAt": "2026-10-08T07:06:20.140768+00:00",
+  "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证，亦不是古城坐标或边界核定。引文保留本次页面原字形。",
+  "snapshotPath": "data/evidence/historical-context/qin-shihuang.txt",
+  "snapshotSha256": "bf991dddbe3a177a1d37fc022c108c933b8a666a49578381dec5c6308d42c521",
+  "pageId": 958,
+  "revision": {
+    "revid": 94788854,
+    "parentid": 94584059,
+    "timestamp": "2026-10-06T06:22:24Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E7%A7%A6%E5%A7%8B%E7%9A%87&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

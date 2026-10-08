@@ -16,7 +16,28 @@ test("重叠年代优先已知记录时期和当前时期，空档不假映射�
   assert.equal(periodForYear(1276, catalog.periods, { preferredPeriodId: "song" })?.id, "song");
   assert.equal(periodForYear(1644, catalog.periods, { preferredPeriodId: "qing", entryId: "ming-timeline-kaifeng-1644-0" })?.id, "ming");
   assert.equal(periodForYear(618, catalog.periods, { preferredPeriodId: "sui", periodIds: ["tang"] })?.id, "tang");
-  for (const year of [-1046, -222, 920, 1932, 0, 755.5]) assert.equal(periodForYear(year, catalog.periods), undefined, String(year));
+  for (const year of [-1046, -222, -206, -203, 920, 1932, 0, 755.5]) assert.equal(periodForYear(year, catalog.periods), undefined, String(year));
+  assert.equal(periodForYear(-221, catalog.periods)?.id, "qin");
+  assert.equal(periodForYear(-202, catalog.periods)?.id, "han");
+});
+
+test("秦汉新增纪年进入对应年份导航，公元前后均可从历代档案跳转", async () => {
+  const catalog: Catalog = JSON.parse(await readFile(new URL("data/catalog.json", root), "utf8"));
+  const context: HistoricalContextData = JSON.parse(await readFile(new URL("public/data/historical-context.json", root), "utf8"));
+  for (const periodId of ["qin", "han"]) {
+    const entries = context.cityTimelines.flatMap(city => city.entries)
+      .filter(entry => entry.id.startsWith(`${periodId}-expansion-`));
+    assert.ok(entries.length > 0, periodId);
+    const stops = availableYearStops(catalog, context, null, periodId);
+    for (const entry of entries) {
+      assert.ok(stops.find(stop => stop.year === entry.year)?.kinds.includes("chronicle"), entry.id);
+      assert.equal(periodForYear(entry.year, catalog.periods, { preferredPeriodId: "qing", entryId: entry.id })?.id, periodId, entry.id);
+    }
+    if (periodId === "han") {
+      assert.ok(entries.some(entry => entry.year < 0));
+      assert.ok(entries.some(entry => entry.year > 0));
+    }
+  }
 });
 
 test("资料年汇总全部城市纪年、事件、边界、已有治所与默认年，重复年保留类别与条数", async () => {

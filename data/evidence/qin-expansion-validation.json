@@ -1,0 +1,47 @@
+{
+  "periodId": "qin",
+  "profiles": 5,
+  "profilePlaceIds": [
+    "luoyang",
+    "chengdu",
+    "jingzhou",
+    "jinyang",
+    "handan"
+  ],
+  "datedEntries": 3,
+  "sourceCount": 7,
+  "quotesMatched": 15,
+  "excludedCandidates": [
+    {
+      "placeId": "chengdu",
+      "topic": "前316年入蜀、前311年筑城、前256年李冰任职",
+      "reason": "属于统一前秦国背景；前311年已有节点。任职年份不能直接当作都江堰开工或竣工年。"
+    },
+    {
+      "placeId": "jingzhou",
+      "topic": "前278年拔郢置江陵、统一后郡治位置",
+      "reason": "前278年已有节点且在帝国秦朝范围之前；现有摘录不能核定统一后各年的郡治与城址。"
+    },
+    {
+      "placeId": "luoyang",
+      "topic": "三川郡郡治与前249年建郡",
+      "reason": "来源保留洛阳与荥阳两说；前249年在本朝年份范围之前，不创建确定郡治或帝国时期新事件。"
+    },
+    {
+      "placeId": "jinyang",
+      "topic": "太原郡初置年份",
+      "reason": "同一来源开头前246年与正文前248年次年置郡冲突；暂不采用精确置郡年。"
+    },
+    {
+      "placeId": "handan",
+      "topic": "前209年武臣称赵王",
+      "reason": "已存在 handan-context-2-209，保留原节点，不重复新增。"
+    },
+    {
+      "placeId": "xianyang",
+      "topic": "阿房宫始建年份",
+      "reason": "来源同时列前219年与前212年两种记载，本轮不新增单一年份或宫址定位。"
+    }
+  ],
+  "limitations": "仅补目录中已有城市的秦代阅读；百科固定修订快照未完成原始史料交叉考证。未新增坐标、郡县边界或道路几何，未将秦国时期事件移入统一后的秦朝。"
+}

@@ -1,0 +1,60 @@
+{
+  "periodId": "han",
+  "profiles": 13,
+  "profilePlaceIds": [
+    "luoyang",
+    "beijing",
+    "kaifeng",
+    "nanjing",
+    "hangzhou",
+    "guangzhou",
+    "yangzhou",
+    "xiangyang",
+    "jingzhou",
+    "jinyang",
+    "datong",
+    "linzi",
+    "handan"
+  ],
+  "datedEntries": 8,
+  "sourceCount": 9,
+  "quotesMatched": 37,
+  "excludedCandidates": [
+    {
+      "placeId": "luoyang",
+      "candidate": "汉魏故城百科将东汉迁都系于26年",
+      "reason": "与通常采用的建武元年25年说有冲突，未完成原始纪年复核，本轮不建立迁都节点。"
+    },
+    {
+      "placeId": "linzi",
+      "candidate": "韩信死后刘肥才受封齐国",
+      "reason": "百科叙述次序存在问题，不据此生成封国事件或先后年表。"
+    },
+    {
+      "placeId": "jinyang",
+      "candidate": "汉景帝曾受封代国、自此一直为并州州府",
+      "reason": "概括含明显时序与身份问题，本轮改取县目和韩王信的具体阶段。"
+    },
+    {
+      "placeId": "kaifeng",
+      "candidate": "刘武先都开封、梁园位置及前168年纪年",
+      "reason": "与商丘地区梁国史易混，尚未核查清楚，不生成节点。"
+    },
+    {
+      "placeId": "yangzhou",
+      "candidate": "广陵和江都为同一古县、前105年刘细君和亲",
+      "reason": "县目明确分别列名；和亲年份尚需原始纪年核对，本轮不采为节点。"
+    },
+    {
+      "placeId": "handan",
+      "candidate": "刘秀使邯郸第一次由王都降为县治",
+      "reason": "县与国可分层并存，首次一词及相关年表证据不足。"
+    },
+    {
+      "placeId": "guangzhou",
+      "candidate": "217年迁治被百科称作三国吴事件",
+      "reason": "217年仍属东汉末，且郡治与州治迁移需分开复核，本轮不新增该节点。"
+    }
+  ],
+  "limitations": "《汉书》电子转录未与刻本或点校本校勘，百科为固定修订概述材料；不核定古址、疆界，不以县序推定治所、不以郡国户口推定城内人口。"
+}

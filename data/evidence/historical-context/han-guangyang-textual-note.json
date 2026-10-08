@@ -1,0 +1,17 @@
+{
+  "id": "context-han-guangyang-textual-note",
+  "title": "後漢書/卷113 — 维基文库",
+  "url": "https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B7113&oldid=7902259",
+  "retrievedAt": "2026-10-08T07:16:04.489455+00:00",
+  "note": "《后汉书·郡国五》及校勘记的维基文库电子转录，未与刻本或点校本逐字校勘。只摘广阳郡恢复建置的永平/永元异文校勘；不把郡国户口当作城市人口。快照由原始wikitext仅去除三单引号加粗标记而成，原API另存。",
+  "snapshotPath": "data/evidence/historical-context/han-guangyang-textual-note.txt",
+  "snapshotSha256": "ce3d7a97eccc2ac2b81a2e82b24dfd4da9b36a7c8c3c89ec40e0c3e5c9c1b6b7",
+  "pageId": 25726,
+  "revision": {
+    "revid": 7902259,
+    "parentid": 2613025,
+    "timestamp": "2026-06-17T19:06:05Z"
+  },
+  "apiSnapshotPath": "data/evidence/historical-context/han-guangyang-textual-note.api.json",
+  "apiSnapshotSha256": "4aab734f21ad01e1d730be38ee7728d0451f908c99a280c33300df431ec720ce"
+}

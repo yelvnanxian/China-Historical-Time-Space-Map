@@ -1,0 +1,16 @@
+{
+  "id": "context-qin-nan",
+  "title": "南郡 — 维基百科",
+  "url": "https://zh.wikipedia.org/wiki/%E5%8D%97%E9%83%A1",
+  "retrievedAt": "2026-10-08T07:06:19.508190+00:00",
+  "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证，亦不是古城坐标或边界核定。引文保留本次页面原字形。",
+  "snapshotPath": "data/evidence/historical-context/qin-nan.txt",
+  "snapshotSha256": "027cd0c95e986d52bff86bab6ea44f84bf185f3e4b2b042e08c9b92df5dc5822",
+  "pageId": 696857,
+  "revision": {
+    "revid": 94796265,
+    "parentid": 93495848,
+    "timestamp": "2026-10-06T13:08:20Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E5%8D%97%E9%83%A1&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}

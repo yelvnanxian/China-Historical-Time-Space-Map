@@ -20,6 +20,8 @@ BUILDERS = (
     "build-song-content.py",
     "build-yuan-content.py",
     "build-qing-content.py",
+    "build-qin-content.py",
+    "build-han-content.py",
 )
 
 

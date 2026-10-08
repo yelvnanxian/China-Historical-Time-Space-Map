@@ -1,0 +1,19 @@
+{
+  "baselineVersion": "0.19.0",
+  "baselineCommit": "7506fd07297d41d6f336d82acafcc636caa89ce8",
+  "oldProfileCount": 218,
+  "newProfileCount": 236,
+  "oldTimelineEntryCount": 589,
+  "newTimelineEntryCount": 600,
+  "oldProfilesUnchanged": true,
+  "oldTimelineEntriesUnchanged": true,
+  "oldSourceRecordsUnchanged": true,
+  "geographyEntriesUnchanged": true,
+  "catalogExceptMetadataUnchanged": true,
+  "note": "与V0.19发布数据逐项比较，旧档案、纪年、来源和目录非metadata部分保持一致；未改治所、边界或自然地理几何。",
+  "baselineHashes": {
+    "public/data/city-period-profiles.json": "114636fa98e74ad9ad90099c3998b1f0187f02d6c3cf6dfbc26441b4e999642f",
+    "public/data/historical-context.json": "66818ade1a9b215566645e992efeced435be1a6bbba001b8945cf21f80d878fd",
+    "data/catalog.json": "cc6ddda5552883256527a3b59c822820a7888fd91d88f3cd3a5e193bbc84ee72"
+  }
+}

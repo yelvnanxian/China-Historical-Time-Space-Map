@@ -1,11 +1,11 @@
 {
   "scope": "all-published-periods-after-all-merges",
-  "createdAt": "2026-10-08T06:48:46.388289+00:00",
-  "sources": 76,
+  "createdAt": "2026-10-08T07:17:09.749698+00:00",
+  "sources": 84,
   "geographyEntries": 8,
   "cityTimelines": 106,
-  "cityEntries": 589,
-  "quotesMatched": 623,
+  "cityEntries": 600,
+  "quotesMatched": 636,
   "cities": [
     {
       "placeId": "changan",
@@ -15,7 +15,7 @@
     {
       "placeId": "luoyang",
       "name": "洛阳",
-      "entries": 15
+      "entries": 17
     },
     {
       "placeId": "kaifeng",
@@ -25,12 +25,12 @@
     {
       "placeId": "nanjing",
       "name": "南京",
-      "entries": 17
+      "entries": 19
     },
     {
       "placeId": "beijing",
       "name": "北京",
-      "entries": 12
+      "entries": 13
     },
     {
       "placeId": "hangzhou",
@@ -50,7 +50,7 @@
     {
       "placeId": "guangzhou",
       "name": "广州",
-      "entries": 9
+      "entries": 10
     },
     {
       "placeId": "yangzhou",
@@ -60,17 +60,17 @@
     {
       "placeId": "xianyang",
       "name": "咸阳",
-      "entries": 5
+      "entries": 8
     },
     {
       "placeId": "jinyang",
       "name": "晋阳",
-      "entries": 12
+      "entries": 13
     },
     {
       "placeId": "datong",
       "name": "平城",
-      "entries": 12
+      "entries": 13
     },
     {
       "placeId": "linzi",
@@ -539,5 +539,5 @@
     }
   ],
   "referenceCoordinates": "Existing catalog region reference points, not verified historical site coordinates.",
-  "outputSha256": "66818ade1a9b215566645e992efeced435be1a6bbba001b8945cf21f80d878fd"
+  "outputSha256": "52f88ce722165aa4df1697247aaf22197c4548dc2daca6b16b4daee3228bbb78"
 }

@@ -1,0 +1,16 @@
+{
+  "id": "context-qin-taiyuan",
+  "title": "太原郡 — 维基百科",
+  "url": "https://zh.wikipedia.org/wiki/%E5%A4%AA%E5%8E%9F%E9%83%A1",
+  "retrievedAt": "2026-10-08T07:06:19.029295+00:00",
+  "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证，亦不是古城坐标或边界核定。引文保留本次页面原字形。",
+  "snapshotPath": "data/evidence/historical-context/qin-taiyuan.txt",
+  "snapshotSha256": "caadf6250ac0e8b8aa0546e1298002018fc8a42d01ddf25d76664f1b978f537f",
+  "pageId": 500258,
+  "revision": {
+    "revid": 93495593,
+    "parentid": 93489863,
+    "timestamp": "2026-07-15T22:31:01Z"
+  },
+  "apiUrl": "https://zh.wikipedia.org/w/api.php?action=query&prop=extracts%7Crevisions&titles=%E5%A4%AA%E5%8E%9F%E9%83%A1&redirects=1&explaintext=1&rvprop=ids%7Ctimestamp&format=json&formatversion=2"
+}
