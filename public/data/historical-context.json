@@ -1,6 +1,6 @@
 {
   "version": "1.3",
-  "generatedAt": "2026-09-25T02:49:27.741129+00:00",
+  "generatedAt": "2026-10-08T06:48:46.388289+00:00",
   "notes": [
     "历史地理条目提供地区参考点；黄河改道会联动单独保存的 WorldMap 年代河道。未收录历史向量的年代保留现代参照，不外推复原线。",
     "城市大事记跨时期展示，不随当前朝代筛除；同名城市的古今城址可能不同。",
@@ -9,7 +9,8 @@
     "唐代104个入口均有纪年大事记；史料不足三条的入口保留实际数量，未用无年叙述凑数。幽州与范阳是同一城市地区的不同阅读入口。",
     "明代28个城市入口增加地理志档案与纪年；重庆仅有“洪武中”，未编造确年节点。太原入口为太原县，府治阳曲另作区别。",
     "宋代诸政权29个入口补充固定版本建置档案与明确纪年；1200年以后事件单列，晋阳旧城不冒充太原府治，重庆及隆兴升府据本纪校正地理志疑文。",
-    "宋代第二批扩充至51个地区入口，增加两浙、江南、两湖、汉中与四川22份档案；文学山水记述与行政史料分别标注，不生成无依据的古址或河岸。"
+    "宋代第二批扩充至51个地区入口，增加两浙、江南、两湖、汉中与四川22份档案；文学山水记述与行政史料分别标注，不生成无依据的古址或河岸。",
+    "清代首批增补6座城市的文字档案，依据已保存固定修订的百科概述；未据此核定古城坐标、县府范围或建筑位置，仍待地方志和遗址资料互证。"
   ],
   "sources": [
     {
@@ -580,6 +581,15 @@
       "snapshotSha256": "6b9144a2d81e45cdd451327077ab9591174a4a8abb4f94e68c958a86964f2d6f"
     },
     {
+      "id": "song-research-shizhongshan-ji",
+      "title": "石鐘山記（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E7%9F%B3%E9%90%98%E5%B1%B1%E8%A8%98&oldid=2190370",
+      "retrievedAt": "2026-09-27T06:06:42.406904+00:00",
+      "note": "宋代作者文章的固定修订文本，原始API与文本分别归档并校验；文学记述支持所见自然景观或文本纪年，不能当作1200年岸线、山形或州界测绘。",
+      "snapshotPath": "data/evidence/song-research/sources/shizhongshan-ji.txt",
+      "snapshotSha256": "72eae0c0028df3733f4a9c05d77cb1580828ff1941664c1efeee39caca036a93"
+    },
+    {
       "id": "song-research-songshi-33",
       "title": "宋史·卷033（维基文库固定版本）",
       "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7033&oldid=7908408",
@@ -677,15 +687,6 @@
       "note": "元代编纂正史的固定修订电子文本，原始API、文本和SHA256均归档；各卷会合并不同年代，原文异文保留并在条目说明，不能据文字证明古址坐标、精确边界或历史河岸。",
       "snapshotPath": "data/evidence/song-research/sources/songshi-90.txt",
       "snapshotSha256": "feb3cdaeb37a60a53cb8b60f0ec2eca3ebbd9ea2806ec1a25867a9dc4c859fef"
-    },
-    {
-      "id": "song-research-shizhongshan-ji",
-      "title": "石鐘山記（维基文库固定版本）",
-      "url": "https://zh.wikisource.org/w/index.php?title=%E7%9F%B3%E9%90%98%E5%B1%B1%E8%A8%98&oldid=2190370",
-      "retrievedAt": "2026-09-27T06:06:42.406904+00:00",
-      "note": "宋代作者文章的固定修订文本，原始API与文本分别归档并校验；文学记述支持所见自然景观或文本纪年，不能当作1200年岸线、山形或州界测绘。",
-      "snapshotPath": "data/evidence/song-research/sources/shizhongshan-ji.txt",
-      "snapshotSha256": "72eae0c0028df3733f4a9c05d77cb1580828ff1941664c1efeee39caca036a93"
     },
     {
       "id": "song-research-yueyanglou-ji",
@@ -1203,6 +1204,23 @@
               "supports": "本条所述纪年、建置变化及限定范围。"
             }
           ]
+        },
+        {
+          "id": "qing-timeline-changan-1781",
+          "year": 1781,
+          "dateLabel": "清·乾隆四十六年",
+          "title": "修缮西安城墙",
+          "summary": "对西安城墙加厚包墙、铺设海墁并增修排水道。本节点不表示城墙范围已测绘。",
+          "sourceIds": [
+            "context-changan"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-changan",
+              "quote": "清代基本沿袭明制，对西安城墙进行过十二次补修。其中规模最大的是乾隆四十六年（1781年）的工程，将包墙增厚，铺设海墁，并增修排水道等，大大增强了西安城的防御能力。",
+              "supports": "清代西安城墙沿用与1781年修缮内容；不证明具体墙线。"
+            }
+          ]
         }
       ]
     },
@@ -1693,6 +1711,23 @@
               "supports": "围城期间开封遭遇严重洪水；不采用单一条目的责任与人数结论。"
             }
           ]
+        },
+        {
+          "id": "qing-timeline-kaifeng-1662",
+          "year": 1662,
+          "dateLabel": "清·1662年",
+          "title": "重修开封城池",
+          "summary": "清代于1662年重修开封城池。省治与府治身份另在本朝看点说明，不据同段文字认定同年设治。",
+          "sourceIds": [
+            "context-kaifeng"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-kaifeng",
+              "quote": "清朝统治中原后，于1662年重修了开封城池，并将河南省治、开封府治均设置在开封。",
+              "supports": "1662年重修城池及清代省、府治身份；不把省府治设置强定为同年。"
+            }
+          ]
         }
       ]
     },
@@ -1803,6 +1838,23 @@
           ]
         },
         {
+          "id": "yuan-expansion-nanjing-yingtian-1356",
+          "year": 1356,
+          "dateLabel": "1356年（元末）",
+          "title": "朱元璋攻占集庆，改应天府",
+          "summary": "朱元璋攻占集庆，将其改为应天府并作为抗元基地。此条记录元末的地方政权转移；明朝尚未建立，也不表示元朝继续控制此地。",
+          "sourceIds": [
+            "context-nanjing"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-nanjing",
+              "quote": "1356年，朱元璋攻占集庆，改为应天府，南京成為抗元基地所在地。",
+              "supports": "朱元璋攻占集庆，改应天府及概述中的直接事实；年份来自原文明确纪年。"
+            }
+          ]
+        },
+        {
           "id": "nanjing-ming-1368",
           "year": 1368,
           "dateLabel": "明洪武元年（1368年）",
@@ -1899,6 +1951,74 @@
             }
           ],
           "relatedEventId": "ming-beijing"
+        },
+        {
+          "id": "qing-timeline-nanjing-1842",
+          "year": 1842,
+          "dateLabel": "清·1842年8月",
+          "title": "江宁地区签订《南京条约》",
+          "summary": "清朝在第一次鸦片战争中战败后与英国签订《南京条约》。地图点仅对应江宁地区，不指向具体签约船只或地点。",
+          "sourceIds": [
+            "context-nanjing"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-nanjing",
+              "quote": "1842年8月，清朝在第一次鸦片战争中战败，被迫与陈兵江宁江面的英国签订《南京条约》。",
+              "supports": "1842年8月江宁地区议约、签约背景，不定位具体签约点。"
+            }
+          ]
+        },
+        {
+          "id": "qing-timeline-nanjing-1853",
+          "year": 1853,
+          "dateLabel": "1853年3月·太平天国",
+          "title": "定都天京",
+          "summary": "太平军攻陷江宁，定都于此并改称天京。此阶段的城市政权与清朝不同。",
+          "sourceIds": [
+            "context-nanjing"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-nanjing",
+              "quote": "1853年3月，太平軍攻陷江宁后定都于此，改名“天京”。",
+              "supports": "1853年3月政权、都城身份及名称变化。"
+            }
+          ]
+        },
+        {
+          "id": "qing-timeline-nanjing-1864",
+          "year": 1864,
+          "dateLabel": "清·1864年7月19日",
+          "title": "天京之役结束",
+          "summary": "天京之役结束，曾国荃率湘军入城，原文记载纵火杀掠。本节点不推定伤亡数字。",
+          "sourceIds": [
+            "context-nanjing"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-nanjing",
+              "quote": "1864年7月19日，天京之役结束。曾國藩弟曾國荃率湘军入城后纵火杀掠。",
+              "supports": "1864年天京之役结束与湘军入城。"
+            }
+          ]
+        },
+        {
+          "id": "qing-timeline-nanjing-1899",
+          "year": 1899,
+          "dateLabel": "清·1899年",
+          "title": "下关正式开辟商埠",
+          "summary": "江宁虽已在条约中列为通商口岸，到1899年才在下关正式开辟商埠；区分条约列名与实际开埠。",
+          "sourceIds": [
+            "context-nanjing"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-nanjing",
+              "quote": "战后的江宁一度极为萧条，虽然《天津条约》将江宁列为通商口岸，但直到1899年才在下关正式开辟商埠。",
+              "supports": "1899年下关正式开辟商埠；条约列名与实际开埠并非同一节点。"
+            }
+          ]
         },
         {
           "id": "nanjing-republic-1912",
@@ -2021,6 +2141,23 @@
               "sourceId": "context-beijing-history",
               "quote": "大都营建始于1267年，次年首座宫殿落成，1274年完成宫城整体建设，至1285年全城竣工。",
               "supports": "元大都开始营建及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "yuan-expansion-beijing-completion-1285",
+          "year": 1285,
+          "dateLabel": "1285年",
+          "title": "元大都全城建设完成",
+          "summary": "元大都自1267年开始营建，1274年宫城整体建设完成，至1285年全城竣工。这个节点补足已有营建开端，并区分宫城和全城的完工时间。",
+          "sourceIds": [
+            "context-beijing-history"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-beijing-history",
+              "quote": "大都营建始于1267年，次年首座宫殿落成，1274年完成宫城整体建设，至1285年全城竣工。",
+              "supports": "元大都全城建设完成及概述中的直接事实；年份来自原文明确纪年。"
             }
           ]
         },
@@ -2309,6 +2446,57 @@
               "supports": "本条所述纪年、建置变化及限定范围。"
             }
           ]
+        },
+        {
+          "id": "qing-timeline-hangzhou-1650",
+          "year": 1650,
+          "dateLabel": "清·1650年",
+          "title": "营建杭州驻防城",
+          "summary": "杭州城内修建八旗驻防城，俗称“旗下营”。这是城中驻防空间，不是整个杭州府范围。",
+          "sourceIds": [
+            "context-hangzhou"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-hangzhou",
+              "quote": "1650年修建一座城中之城的八旗驻防城：杭州驻防城，俗称“旗下营”，将旗人与汉人市民隔离开来。",
+              "supports": "1650年杭州驻防城的营建；不由文字补画城界。"
+            }
+          ]
+        },
+        {
+          "id": "qing-timeline-hangzhou-1874",
+          "year": 1874,
+          "dateLabel": "清·同治十三年",
+          "title": "胡庆余堂创办",
+          "summary": "胡雪岩创办胡庆余堂。现有城市参考点不作为商号的建筑定位。",
+          "sourceIds": [
+            "context-hangzhou"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-hangzhou",
+              "quote": "胡庆余堂坐落在杭州秀丽的吴山北麓河坊街，享有“江南药王”的美誉。它是中国保存最完好的国药字号和最完整的清代徽派商业古建筑群。由清末红顶商人胡雪巖于同治十三年（1874年）创办，以“采办务真，修制务精”为制药祖训，以“是乃仁术，真不二价”为经营理念。",
+              "supports": "胡庆余堂的1874年创办时间与经营原则；不采用段落中的完整性比较评价。"
+            }
+          ]
+        },
+        {
+          "id": "qing-timeline-hangzhou-1907",
+          "year": 1907,
+          "dateLabel": "清·1907年",
+          "title": "江墅铁路建成",
+          "summary": "江墅铁路由钱塘江边闸口沿东城墙向北至拱宸桥。此处保留文字走向，尚未核定线路几何。",
+          "sourceIds": [
+            "context-hangzhou"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-hangzhou",
+              "quote": "1907年，杭州建成从城南钱塘江边的闸口，沿东城墙向北至拱宸桥的江墅铁路。",
+              "supports": "1907年江墅铁路的建成及文字描述的走向，不生成线路几何。"
+            }
+          ]
         }
       ]
     },
@@ -2540,6 +2728,40 @@
               "sourceId": "mingshi-geography-43",
               "quote": "成都倚。洪武十一年建蜀王府。",
               "supports": "本条所述纪年、建置变化及限定范围。"
+            }
+          ]
+        },
+        {
+          "id": "qing-timeline-chengdu-1877",
+          "year": 1877,
+          "dateLabel": "清·光绪三年",
+          "title": "四川机械局创办",
+          "summary": "四川总督创办四川机械局。本节点记录城市产业变化，不把目录点认作具体厂址。",
+          "sourceIds": [
+            "context-chengdu"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-chengdu",
+              "quote": "光绪三年（1877年），四川总督丁宝祯创办四川机械局，是成都城市经济近代化因素出现的标志。",
+              "supports": "1877年四川机械局创办；摘要不扩写产量、厂址或产业规模。"
+            }
+          ]
+        },
+        {
+          "id": "qing-timeline-chengdu-1911",
+          "year": 1911,
+          "dateLabel": "清·1911年6月",
+          "title": "保路运动在成都发起",
+          "summary": "1911年6月，保路运动在成都发起。本节点记录地方活动，不将清末政治变化归结为单一原因。",
+          "sourceIds": [
+            "context-chengdu"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-chengdu",
+              "quote": "清宣统三年（1911年）6月，保路运动在成都发起",
+              "supports": "1911年6月保路运动的成都节点，不从概述推演其单一因果。"
             }
           ]
         }
@@ -4297,6 +4519,40 @@
               "supports": "宁夏城内两县同治及概述中的直接事实。"
             }
           ]
+        },
+        {
+          "id": "qing-timeline-yinchuan-1753",
+          "year": 1753,
+          "dateLabel": "清·乾隆十八年",
+          "title": "银川书院创建",
+          "summary": "宁夏知府赵本植创建银川书院。“银川”在这里是书院名称，不表示现代银川市于此年设立。",
+          "sourceIds": [
+            "context-yinchuan"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-yinchuan",
+              "quote": "清乾隆十八年(1753)宁夏知府赵本植创建银川书院",
+              "supports": "1753年银川书院的创建；书院名称不代表此年城市正式改名。"
+            }
+          ]
+        },
+        {
+          "id": "qing-timeline-yinchuan-1755",
+          "year": 1755,
+          "dateLabel": "清·乾隆二十年",
+          "title": "《银川小志》成书",
+          "summary": "《银川小志》成书，作为清代使用“银川”名称的文献节点，不等同正式城市更名。",
+          "sourceIds": [
+            "context-yinchuan"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-yinchuan",
+              "quote": "清朝乾隆二十年（1755）《银川小志》成书",
+              "supports": "1755年地方文献成书，不将“银川”文献用名等同现代市名设立。"
+            }
+          ]
         }
       ]
     },
@@ -4518,6 +4774,40 @@
           ]
         },
         {
+          "id": "yuan-expansion-quanzhou-province-1278",
+          "year": 1278,
+          "dateLabel": "元至元十五年（1278年）",
+          "title": "泉州行宣慰司改行中书省",
+          "summary": "至元十五年，泉州行宣慰司改为泉州行中书省。元初当地省级机构多次调整，这一条只记录1278年的改置，不代表该省随后一直存在，也不核定省界。",
+          "sourceIds": [
+            "context-quanzhou"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-quanzhou",
+              "quote": "十五年（1278年），改泉州行宣慰司为泉州行中书省；",
+              "supports": "泉州行宣慰司改行中书省及概述中的直接事实；年份来自原文明确纪年。"
+            }
+          ]
+        },
+        {
+          "id": "yuan-expansion-quanzhou-maritime-tax-1281",
+          "year": 1281,
+          "dateLabel": "元至元十八年（1281年）",
+          "title": "商舶货物已抽分者不再抽分",
+          "summary": "至元十八年的规定称，货物已经在泉州抽分后，到其他地方贸易只输税而不再抽分。此条反映海贸税制，不将它解释为货物全面免税。",
+          "sourceIds": [
+            "context-quanzhou"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-quanzhou",
+              "quote": "至元十八年（1281年）还特地作出规定：“商贾市舶物货，已经泉州抽分者，诸处贸易，止令输税，不再抽分”。",
+              "supports": "商舶货物已抽分者不再抽分及概述中的直接事实；年份来自原文明确纪年。"
+            }
+          ]
+        },
+        {
           "id": "ming-timeline-quanzhou-1368-0",
           "year": 1368,
           "dateLabel": "洪武元年",
@@ -4689,6 +4979,23 @@
               "sourceId": "song-research-songshi-488",
               "quote": "紹興三年十月，廣西奏，大理國求入貢及售馬，詔卻之，不欲以虛名勞民也。朱勝非奏曰：「昔年大理入貢，言者深指其妄，黃璘由是獲罪。」帝曰：「遐方異域，何由得實，但讎當其馬價，則馬方至，用益騎兵，不為無補也。」六年七月，廣西經略安撫司奏，大理復遣使奉表貢象、馬，詔經略司護送行在，優禮答之。九月，翰林學士朱震上言，乞諭廣西帥臣，凡市馬當擇謹厚者任之，毋遣好功喜事之人，以啟邊釁。異時南北路通，則漸減廣西市馬之數，庶幾消患於未然。詔從之。",
               "supports": "本条所述建置或事件；纪年按所引卷对应年号段落换算，二手纪年明确保留待核说明。"
+            }
+          ]
+        },
+        {
+          "id": "yuan-expansion-dali-route-1274",
+          "year": 1274,
+          "dateLabel": "元至元十一年（1274年）",
+          "title": "设置大理路及太和县",
+          "summary": "材料记至元十一年设置大理路及太和县，隶属云南行省；行省治在押赤城、今昆明地区。本点用于阅读大理地区沿革，不是云南行省治所定位。",
+          "sourceIds": [
+            "context-dali"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-dali",
+              "quote": "元至元十一年（1274年），元朝为便于统治，在押赤城（又名中庆路，今昆明市）设置了云南行省，同时设立大理路及太和县，隶属于云南行省。",
+              "supports": "设置大理路及太和县及概述中的直接事实；年份来自原文明确纪年。"
             }
           ]
         },

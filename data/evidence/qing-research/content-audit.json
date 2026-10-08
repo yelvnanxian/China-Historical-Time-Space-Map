@@ -1,0 +1,27 @@
+{
+  "profileCount": 6,
+  "datedEntryCount": 13,
+  "sourceCount": 6,
+  "qingProfilesAfterMerge": 9,
+  "excludedCandidates": [
+    {
+      "placeId": "dunhuang",
+      "sourceId": "context-dunhuang",
+      "quote": "乾隆三十五年（1760年）改为敦煌县。",
+      "reason": "年号纪年与公元年不一致；未选择其一，也未生成置县节点，待地方志核对。"
+    },
+    {
+      "placeId": "nanjing",
+      "sourceId": "context-nanjing",
+      "quote": "随着1906年沪宁铁路和1911年津浦铁路先后通车",
+      "reason": "铁路始建、分段和全线通车需专门核对，当前城市概述不足以支持精确通车节点。"
+    },
+    {
+      "placeId": "hangzhou",
+      "sourceId": "context-hangzhou",
+      "quote": "清光绪二十二年（1896年），《马关条约》将杭州辟为通商口岸",
+      "reason": "同一快照历史段以1895年记条约、1896年记设通商场，段落表达混同；本批不新增开埠确年节点。"
+    }
+  ],
+  "note": "清代首批增补6座城市的文字档案，依据已保存固定修订的百科概述；未据此核定古城坐标、县府范围或建筑位置，仍待地方志和遗址资料互证。"
+}

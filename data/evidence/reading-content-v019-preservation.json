@@ -1,0 +1,18 @@
+{
+  "baselineVersion": "0.18.0",
+  "oldProfileCount": 207,
+  "newProfileCount": 218,
+  "oldTimelineEntryCount": 571,
+  "newTimelineEntryCount": 589,
+  "oldProfilesUnchanged": true,
+  "oldTimelineEntriesUnchanged": true,
+  "geographyEntriesUnchanged": true,
+  "catalogPlacesEventsSourcesPeriodsUnchanged": true,
+  "note": "与本轮开始前V0.18发布数据逐项比较，保留旧内容；目录仅变更版本和说明，未改坐标或朝代名称。",
+  "baselineCommit": "5c3f33435e76e5f4191454c50475306ef3cb86ce",
+  "baselineHashes": {
+    "public/data/city-period-profiles.json": "ff24fd06efa6a3e70bfdb1dbadefcb419b1568fd768a89d4b83e2355624a2185",
+    "public/data/historical-context.json": "d0a168aa642cf53f208a016b194b2d875918d50782390e702a68f1e5109b5e64",
+    "data/catalog.json": "24eafe41f1e995fc889f251f4364e60ae77aa3e6a9aaa3df3bf80297291d34f3"
+  }
+}

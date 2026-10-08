@@ -1,60 +1,61 @@
 {
-  "createdAt": "2026-09-25T02:49:27.741129+00:00",
-  "sources": 51,
+  "scope": "all-published-periods-after-all-merges",
+  "createdAt": "2026-10-08T06:48:46.388289+00:00",
+  "sources": 76,
   "geographyEntries": 8,
   "cityTimelines": 106,
-  "cityEntries": 414,
-  "quotesMatched": 443,
+  "cityEntries": 589,
+  "quotesMatched": 623,
   "cities": [
     {
       "placeId": "changan",
       "name": "长安",
-      "entries": 9
+      "entries": 14
     },
     {
       "placeId": "luoyang",
       "name": "洛阳",
-      "entries": 11
+      "entries": 15
     },
     {
       "placeId": "kaifeng",
       "name": "开封",
-      "entries": 8
+      "entries": 13
     },
     {
       "placeId": "nanjing",
       "name": "南京",
-      "entries": 7
+      "entries": 17
     },
     {
       "placeId": "beijing",
       "name": "北京",
-      "entries": 7
+      "entries": 12
     },
     {
       "placeId": "hangzhou",
       "name": "杭州",
-      "entries": 6
+      "entries": 14
     },
     {
       "placeId": "chengdu",
       "name": "成都",
-      "entries": 8
+      "entries": 15
     },
     {
       "placeId": "jingzhou",
       "name": "江陵",
-      "entries": 6
+      "entries": 11
     },
     {
       "placeId": "guangzhou",
       "name": "广州",
-      "entries": 6
+      "entries": 9
     },
     {
       "placeId": "yangzhou",
       "name": "扬州",
-      "entries": 7
+      "entries": 12
     },
     {
       "placeId": "xianyang",
@@ -64,37 +65,37 @@
     {
       "placeId": "jinyang",
       "name": "晋阳",
-      "entries": 7
+      "entries": 12
     },
     {
       "placeId": "datong",
       "name": "平城",
-      "entries": 8
+      "entries": 12
     },
     {
       "placeId": "linzi",
       "name": "临淄",
-      "entries": 4
+      "entries": 5
     },
     {
       "placeId": "handan",
       "name": "邯郸",
-      "entries": 6
+      "entries": 7
     },
     {
       "placeId": "xiangyang",
       "name": "襄阳",
-      "entries": 7
+      "entries": 11
     },
     {
       "placeId": "tongguan",
       "name": "潼关",
-      "entries": 3
+      "entries": 6
     },
     {
       "placeId": "yinchuan",
       "name": "兴庆府",
-      "entries": 3
+      "entries": 11
     },
     {
       "placeId": "shangdu",
@@ -104,17 +105,17 @@
     {
       "placeId": "quanzhou",
       "name": "泉州",
-      "entries": 7
+      "entries": 14
     },
     {
       "placeId": "dali",
       "name": "大理",
-      "entries": 6
+      "entries": 9
     },
     {
       "placeId": "dunhuang",
       "name": "敦煌",
-      "entries": 7
+      "entries": 8
     },
     {
       "placeId": "fanyang",
@@ -239,12 +240,12 @@
     {
       "placeId": "qizhou-jinan",
       "name": "齐州",
-      "entries": 3
+      "entries": 7
     },
     {
       "placeId": "yanzhou",
       "name": "兖州",
-      "entries": 3
+      "entries": 6
     },
     {
       "placeId": "qingzhou",
@@ -289,62 +290,62 @@
     {
       "placeId": "suzhou",
       "name": "苏州",
-      "entries": 4
+      "entries": 7
     },
     {
       "placeId": "runzhou",
       "name": "润州",
-      "entries": 3
+      "entries": 6
     },
     {
       "placeId": "yuezhou",
       "name": "越州",
-      "entries": 3
+      "entries": 5
     },
     {
       "placeId": "mingzhou",
       "name": "明州",
-      "entries": 4
+      "entries": 9
     },
     {
       "placeId": "huzhou",
       "name": "湖州",
-      "entries": 3
+      "entries": 6
     },
     {
       "placeId": "wuzhou-jinhua",
       "name": "婺州",
-      "entries": 3
+      "entries": 4
     },
     {
       "placeId": "hongzhou",
       "name": "洪州",
-      "entries": 3
+      "entries": 9
     },
     {
       "placeId": "jiangzhou-jiujiang",
       "name": "江州",
-      "entries": 3
+      "entries": 6
     },
     {
       "placeId": "tanzhou",
       "name": "潭州",
-      "entries": 3
+      "entries": 6
     },
     {
       "placeId": "hengzhou-hunan",
       "name": "衡州",
-      "entries": 3
+      "entries": 4
     },
     {
       "placeId": "ezhou-jiangxia",
       "name": "鄂州",
-      "entries": 3
+      "entries": 8
     },
     {
       "placeId": "shezhou",
       "name": "歙州",
-      "entries": 3
+      "entries": 4
     },
     {
       "placeId": "shouzhou",
@@ -359,27 +360,27 @@
     {
       "placeId": "changzhou",
       "name": "常州",
-      "entries": 3
+      "entries": 5
     },
     {
       "placeId": "fuzhou-fujian",
       "name": "福州",
-      "entries": 3
+      "entries": 7
     },
     {
       "placeId": "wenzhou",
       "name": "温州",
-      "entries": 5
+      "entries": 7
     },
     {
       "placeId": "xuanzhou",
       "name": "宣州",
-      "entries": 4
+      "entries": 6
     },
     {
       "placeId": "zizhou",
       "name": "梓州",
-      "entries": 3
+      "entries": 5
     },
     {
       "placeId": "hanzhou",
@@ -389,17 +390,17 @@
     {
       "placeId": "jianzhou",
       "name": "剑州",
-      "entries": 3
+      "entries": 5
     },
     {
       "placeId": "suizhou-suining",
       "name": "遂州",
-      "entries": 3
+      "entries": 5
     },
     {
       "placeId": "guizhou-guilin",
       "name": "桂州",
-      "entries": 4
+      "entries": 7
     },
     {
       "placeId": "liuzhou",
@@ -414,22 +415,22 @@
     {
       "placeId": "hanzhong",
       "name": "梁州",
-      "entries": 5
+      "entries": 8
     },
     {
       "placeId": "kuizhou",
       "name": "夔州",
-      "entries": 4
+      "entries": 6
     },
     {
       "placeId": "yuzhou-chongqing",
       "name": "渝州",
-      "entries": 3
+      "entries": 5
     },
     {
       "placeId": "langzhou",
       "name": "阆州",
-      "entries": 3
+      "entries": 5
     },
     {
       "placeId": "cangzhou",
@@ -464,17 +465,17 @@
     {
       "placeId": "yuezhou-baling",
       "name": "岳州",
-      "entries": 3
+      "entries": 6
     },
     {
       "placeId": "jizhou-luling",
       "name": "吉州",
-      "entries": 4
+      "entries": 6
     },
     {
       "placeId": "qianzhou-gan",
       "name": "虔州",
-      "entries": 3
+      "entries": 5
     },
     {
       "placeId": "shaozhou",
@@ -524,7 +525,7 @@
     {
       "placeId": "mianzhou",
       "name": "绵州",
-      "entries": 3
+      "entries": 6
     },
     {
       "placeId": "annan-songping",
@@ -537,6 +538,6 @@
       "entries": 1
     }
   ],
-  "referenceCoordinates": "All copied exactly from existing catalog places; location roles and caveats explicit.",
-  "outputSha256": "a54a23c2ee19f3f1a0ef1028443f6fb05e6a28e06b4dde6b69b8b0f4336db1fe"
+  "referenceCoordinates": "Existing catalog region reference points, not verified historical site coordinates.",
+  "outputSha256": "66818ade1a9b215566645e992efeced435be1a6bbba001b8945cf21f80d878fd"
 }

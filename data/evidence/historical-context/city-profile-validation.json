@@ -1,5 +1,6 @@
 {
-  "profiles": 134,
+  "scope": "all-published-periods-after-all-merges",
+  "profiles": 218,
   "periodCoverage": {
     "qin": 3,
     "han": 3,
@@ -8,16 +9,14 @@
     "nanbei": 3,
     "sui": 3,
     "tang": 104,
-    "song": 3,
-    "yuan": 3,
-    "ming": 3,
-    "qing": 3
+    "song": 51,
+    "yuan": 8,
+    "ming": 28,
+    "qing": 9
   },
-  "distinctPlaceEntriesInProfiles": 105,
-  "sources": 59,
-  "quotesMatched": 347,
-  "outputSha256": "eda84089df90e29ad4efd68fc277d2c83d9988d104c3221da0f71f9492ad2e56",
-  "newCatalogPlaces": 66,
-  "newCatalogPeriodRelationships": 1,
-  "note": "按档案入口计数；幽州与范阳为既有不同阅读入口，不宣称104处互不重合的古城遗址。"
+  "distinctPlaceEntriesInProfiles": 106,
+  "sources": 86,
+  "quotesMatched": 571,
+  "outputSha256": "114636fa98e74ad9ad90099c3998b1f0187f02d6c3cf6dfbc26441b4e999642f",
+  "note": "统计全部时期合并后的发布内容；按阅读入口计数，不等于互不重合的古城遗址。逐字核对摘录不等于已核定所有历史事实或古址。"
 }

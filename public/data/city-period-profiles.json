@@ -641,6 +641,15 @@
       "snapshotSha256": "6b9144a2d81e45cdd451327077ab9591174a4a8abb4f94e68c958a86964f2d6f"
     },
     {
+      "id": "song-research-shizhongshan-ji",
+      "title": "石鐘山記（维基文库固定版本）",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E7%9F%B3%E9%90%98%E5%B1%B1%E8%A8%98&oldid=2190370",
+      "retrievedAt": "2026-09-27T06:06:42.406904+00:00",
+      "note": "宋代作者文章的固定修订文本，原始API与文本分别归档并校验；文学记述支持所见自然景观或文本纪年，不能当作1200年岸线、山形或州界测绘。",
+      "snapshotPath": "data/evidence/song-research/sources/shizhongshan-ji.txt",
+      "snapshotSha256": "72eae0c0028df3733f4a9c05d77cb1580828ff1941664c1efeee39caca036a93"
+    },
+    {
       "id": "song-research-songshi-33",
       "title": "宋史·卷033（维基文库固定版本）",
       "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7033&oldid=7908408",
@@ -740,15 +749,6 @@
       "snapshotSha256": "feb3cdaeb37a60a53cb8b60f0ec2eca3ebbd9ea2806ec1a25867a9dc4c859fef"
     },
     {
-      "id": "song-research-shizhongshan-ji",
-      "title": "石鐘山記（维基文库固定版本）",
-      "url": "https://zh.wikisource.org/w/index.php?title=%E7%9F%B3%E9%90%98%E5%B1%B1%E8%A8%98&oldid=2190370",
-      "retrievedAt": "2026-09-27T06:06:42.406904+00:00",
-      "note": "宋代作者文章的固定修订文本，原始API与文本分别归档并校验；文学记述支持所见自然景观或文本纪年，不能当作1200年岸线、山形或州界测绘。",
-      "snapshotPath": "data/evidence/song-research/sources/shizhongshan-ji.txt",
-      "snapshotSha256": "72eae0c0028df3733f4a9c05d77cb1580828ff1941664c1efeee39caca036a93"
-    },
-    {
       "id": "song-research-yueyanglou-ji",
       "title": "岳陽樓記（维基文库固定版本）",
       "url": "https://zh.wikisource.org/w/index.php?title=%E5%B2%B3%E9%99%BD%E6%A8%93%E8%A8%98&oldid=9467826",
@@ -756,6 +756,24 @@
       "note": "宋代作者文章的固定修订文本，原始API与文本分别归档并校验；文学记述支持所见自然景观或文本纪年，不能当作1200年岸线、山形或州界测绘。",
       "snapshotPath": "data/evidence/song-research/sources/yueyanglou-ji.txt",
       "snapshotSha256": "3e79fdc58140aada6572f9683e62991df64cb78c027e0d347d82b2d532d0252b"
+    },
+    {
+      "id": "context-dali",
+      "title": "大理市 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E5%A4%A7%E7%90%86%E5%B8%82&oldid=93661459",
+      "retrievedAt": "2026-09-24T13:31:45.284506+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证，亦不是古城坐标或边界核定。引文保留本次页面原字形。 本次读取页面修订号：93661459。",
+      "snapshotPath": "data/evidence/historical-context/dali.txt",
+      "snapshotSha256": "6046a6ced1b7c89704e7cddc55970453724fb816abc57a15278cef6e9b0bcad4"
+    },
+    {
+      "id": "context-yinchuan",
+      "title": "银川市 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E9%93%B6%E5%B7%9D%E5%B8%82&oldid=94229144",
+      "retrievedAt": "2026-09-24T13:30:17.357929+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证，亦不是古城坐标或边界核定。引文保留本次页面原字形。",
+      "snapshotPath": "data/evidence/historical-context/yinchuan.txt",
+      "snapshotSha256": "cd10ab70c6cf6b135550406c8589ada997b44417ce2a86e146b2fdfca7968c15"
     }
   ],
   "profiles": [
@@ -9530,6 +9548,290 @@
             "史料能支持建置与名称沿革，不能单独核定当时治所坐标、城墙范围、府县精确边界或山河形态。",
             "地理志兼记北宋、南宋或金代多个阶段；县数、机构与后期名称不直接等同1200年政区快照。"
           ]
+        }
+      ]
+    },
+    {
+      "id": "yuan-changan",
+      "placeId": "changan",
+      "periodId": "yuan",
+      "summary": "元代西安地区先后使用京兆府、安西府、安西路和奉元路等行政名称，城市已不再承担汉唐时期的都城职能。阅读这里可以区分地区沿革、路级政区与城址；各称谓的精确启用年份还需进一步核对。",
+      "region": "关中",
+      "namingNote": "京兆、安西、奉元是先后出现的行政名称，不是元代每一年都能互换使用的城名；本点仍是现有西安地区参考入口。",
+      "politicalContext": "本档案概览元代及元末政权转移，不表示所有事实同时发生于地图当前年份。本轮复用已有百科固定修订快照，尚未完成原始史料交叉考证；文字不核定古城址、辖区或港区边界。",
+      "sourceIds": [
+        "context-changan"
+      ],
+      "evidence": [
+        {
+          "sourceId": "context-changan",
+          "quote": "元朝初沿稱京兆府，後設安西府，又改為安西路、奉元路。",
+          "supports": "元代行政名称的先后沿革；此句没有给出各次更名年份。"
+        },
+        {
+          "sourceId": "context-changan",
+          "quote": "唐代以后，长安就不再是中原王朝的都城。",
+          "supports": "唐以后长安不再承担中原王朝都城职能。"
+        }
+      ]
+    },
+    {
+      "id": "yuan-chengdu",
+      "placeId": "chengdu",
+      "periodId": "yuan",
+      "summary": "元朝在成都设置四川等处行中书省，成都继续承担西南区域行政中心职能。这里适合阅读城市与行省机构的联系；材料只支持机构设置，不能据此将现代四川省界当作元代辖境。",
+      "region": "四川",
+      "namingNote": "成都这座城、成都路与四川行省属于不同空间层级；本轮不把行省设置叙述转换成新的行政边界。",
+      "politicalContext": "本档案概览元代及元末政权转移，不表示所有事实同时发生于地图当前年份。本轮复用已有百科固定修订快照，尚未完成原始史料交叉考证；文字不核定古城址、辖区或港区边界。",
+      "sourceIds": [
+        "context-chengdu"
+      ],
+      "evidence": [
+        {
+          "sourceId": "context-chengdu",
+          "quote": "元朝政府在成都设置四川等处行中书省，民间俗称“四川省”。",
+          "supports": "元代四川行省机构设置于成都。"
+        }
+      ]
+    },
+    {
+      "id": "yuan-quanzhou",
+      "placeId": "quanzhou",
+      "periodId": "yuan",
+      "summary": "元代泉州延续市舶管理机构。1281年的规定称，已经在泉州抽分的商舶货物到别处贸易，只输税而不再抽分；这个制度细节可用来理解泉州港的贸易职能。元初泉州行省多次改置，不能用某一次省名概括整个元代。",
+      "region": "东南沿海",
+      "namingNote": "泉州城、泉州港及一度设置的泉州行省不是同一范围；本轮只补制度与沿革阅读，不绘制古港界。",
+      "politicalContext": "本档案概览元代及元末政权转移，不表示所有事实同时发生于地图当前年份。本轮复用已有百科固定修订快照，尚未完成原始史料交叉考证；文字不核定古城址、辖区或港区边界。",
+      "sourceIds": [
+        "context-quanzhou"
+      ],
+      "evidence": [
+        {
+          "sourceId": "context-quanzhou",
+          "quote": "元代，政府仍袭用南宋之法，设泉州市舶提举司。至元十八年（1281年）还特地作出规定：“商贾市舶物货，已经泉州抽分者，诸处贸易，止令输税，不再抽分”。",
+          "supports": "市舶机构延续及1281年商舶货物抽分规定。"
+        },
+        {
+          "sourceId": "context-quanzhou",
+          "quote": "元朝政府出于政治和军事上的需要，为加强泉州的地位，多次在泉州设行省或分省。",
+          "supports": "泉州行省或分省多次设置，不是整个元代不变的建置。"
+        }
+      ]
+    },
+    {
+      "id": "yuan-dali",
+      "placeId": "dali",
+      "periodId": "yuan",
+      "summary": "1274年元朝设置云南行省，同时设大理路及太和县，材料记二者隶属云南行省。大理是元代区域行政中心，而云南行省治所在押赤城、今昆明地区；二者不能在地图上混作同一个省治。",
+      "region": "云南",
+      "namingNote": "大理国都、大理路、太和县及今大理市不是同一层级；云南行省治所不在本点，现有参考坐标不新增为古代机构实测位置。",
+      "politicalContext": "本档案概览元代及元末政权转移，不表示所有事实同时发生于地图当前年份。本轮复用已有百科固定修订快照，尚未完成原始史料交叉考证；文字不核定古城址、辖区或港区边界。",
+      "sourceIds": [
+        "context-dali"
+      ],
+      "evidence": [
+        {
+          "sourceId": "context-dali",
+          "quote": "元至元十一年（1274年），元朝为便于统治，在押赤城（又名中庆路，今昆明市）设置了云南行省，同时设立大理路及太和县，隶属于云南行省。",
+          "supports": "1274年云南行省、大理路及太和县的设置与隶属关系。"
+        },
+        {
+          "sourceId": "context-dali",
+          "quote": "大理国历经了316年后，在元宪宗三年（1253年），为忽必烈亲征所灭。",
+          "supports": "元朝建立前，蒙古灭大理国的背景；不作为1274年事件。"
+        }
+      ]
+    },
+    {
+      "id": "yuan-nanjing",
+      "placeId": "nanjing",
+      "periodId": "yuan",
+      "summary": "元代南京地区称集庆路，材料将其记为东南纺织业中心。1356年朱元璋攻占集庆并改为应天府，城市成为其抗元基地；这是元末当地控制权的转移，不能把之后的应天仍视作元朝继续治理的城市。",
+      "region": "江南",
+      "namingNote": "集庆路与应天府是不同阶段名称；1356年后的朱元璋政权尚未建立明朝，不能提前标成明朝京师。",
+      "politicalContext": "本档案概览元代及元末政权转移，不表示所有事实同时发生于地图当前年份。本轮复用已有百科固定修订快照，尚未完成原始史料交叉考证；文字不核定古城址、辖区或港区边界。",
+      "sourceIds": [
+        "context-nanjing"
+      ],
+      "evidence": [
+        {
+          "sourceId": "context-nanjing",
+          "quote": "元朝時，改為集慶路，是当时东南纺织业的中心。",
+          "supports": "元代集庆路名称及纺织业角色。"
+        },
+        {
+          "sourceId": "context-nanjing",
+          "quote": "1356年，朱元璋攻占集庆，改为应天府，南京成為抗元基地所在地。",
+          "supports": "1356年控制权与府名变化；此后不再视为元继续统治。"
+        }
+      ]
+    },
+    {
+      "id": "qing-changan",
+      "placeId": "changan",
+      "periodId": "qing",
+      "region": "西北·陕西",
+      "summary": "清代西安城墙沿袭明代基础，多次修缮。乾隆四十六年（1781年）的工程加厚包墙、铺设海墁并增修排水道，可从城防维护理解这座区域中心的城市形态；这里不把唐长安城界沿用为清代城界。",
+      "namingNote": "本期阅读西安城；“长安”是跨朝代目录入口。唐代都城、清代城墙与现代西安地区参考点不可混为同一范围。",
+      "politicalContext": "清代首批增补6座城市的文字档案，依据已保存固定修订的百科概述；未据此核定古城坐标、县府范围或建筑位置，仍待地方志和遗址资料互证。",
+      "sourceIds": [
+        "context-changan"
+      ],
+      "evidence": [
+        {
+          "sourceId": "context-changan",
+          "quote": "清代基本沿袭明制，对西安城墙进行过十二次补修。其中规模最大的是乾隆四十六年（1781年）的工程，将包墙增厚，铺设海墁，并增修排水道等，大大增强了西安城的防御能力。",
+          "supports": "清代西安城墙沿用与1781年修缮内容；不证明具体墙线。"
+        }
+      ]
+    },
+    {
+      "id": "qing-kaifeng",
+      "placeId": "kaifeng",
+      "periodId": "qing",
+      "region": "中原·河南",
+      "summary": "经历明末破坏后，开封于1662年重修城池。清代河南省治与开封府治设在这里，同一城市承担省级和府级治所职能；重建记录说明城池的延续，并不证明与北宋东京城界完全重合。",
+      "namingNote": "开封城、开封府与河南省分属不同范围。原文未将省府治设置明确系于1662年，本条仅将城池修缮定在该年。",
+      "politicalContext": "清代首批增补6座城市的文字档案，依据已保存固定修订的百科概述；未据此核定古城坐标、县府范围或建筑位置，仍待地方志和遗址资料互证。",
+      "sourceIds": [
+        "context-kaifeng"
+      ],
+      "evidence": [
+        {
+          "sourceId": "context-kaifeng",
+          "quote": "清朝统治中原后，于1662年重修了开封城池，并将河南省治、开封府治均设置在开封。",
+          "supports": "1662年重修城池及清代省、府治身份；不把省府治设置强定为同年。"
+        }
+      ]
+    },
+    {
+      "id": "qing-nanjing",
+      "placeId": "nanjing",
+      "periodId": "qing",
+      "region": "江南·江宁",
+      "summary": "清代江宁是两江总督驻地，又有为皇家供应丝织品的江宁织造署。1853年太平军定都并改称天京，1864年湘军入城；1899年下关才正式开辟商埠。行政、织造、战争与口岸转换共同构成这一时期的城市沿革。",
+      "namingNote": "本入口对应今南京地区。江宁、天京是不同阶段称谓；清代页面中的太平天国阶段应明确区分政权，不能把本朝概览当作1820年的现状。",
+      "politicalContext": "清代首批增补6座城市的文字档案，依据已保存固定修订的百科概述；未据此核定古城坐标、县府范围或建筑位置，仍待地方志和遗址资料互证。",
+      "sourceIds": [
+        "context-nanjing"
+      ],
+      "evidence": [
+        {
+          "sourceId": "context-nanjing",
+          "quote": "直到清末，江宁是统辖江苏（包含今上海市）、安徽、江西三省的两江总督驻地",
+          "supports": "江宁作为两江总督驻地的区域职能；并非全清代不变的辖境。"
+        },
+        {
+          "sourceId": "context-nanjing",
+          "quote": "清廷在江宁设立规模庞大的江宁织造署，生产供应皇家需求的丝织品，因此在经济方面江宁也具有相当的重要性。",
+          "supports": "江宁织造与皇家丝织品生产的联系。"
+        },
+        {
+          "sourceId": "context-nanjing",
+          "quote": "1853年3月，太平軍攻陷江宁后定都于此，改名“天京”。",
+          "supports": "1853年3月政权、都城身份及名称变化。"
+        },
+        {
+          "sourceId": "context-nanjing",
+          "quote": "1864年7月19日，天京之役结束。曾國藩弟曾國荃率湘军入城后纵火杀掠。",
+          "supports": "1864年天京之役结束与湘军入城。"
+        },
+        {
+          "sourceId": "context-nanjing",
+          "quote": "战后的江宁一度极为萧条，虽然《天津条约》将江宁列为通商口岸，但直到1899年才在下关正式开辟商埠。",
+          "supports": "1899年下关正式开辟商埠；条约列名与实际开埠并非同一节点。"
+        }
+      ]
+    },
+    {
+      "id": "qing-hangzhou",
+      "placeId": "hangzhou",
+      "periodId": "qing",
+      "region": "江南·浙江",
+      "summary": "清代杭州府仍为浙江省会，1650年修建八旗驻防城，形成城内特殊的驻防空间。1874年胡庆余堂创办，1907年江墅铁路建成，可分别阅读清代驻防、商业与交通变化；后两个节点属于晚清，不能提前套入1820年。",
+      "namingNote": "杭州府、府城与八旗驻防城不是同一级或同一范围；江墅铁路目前仅有文字节点，不据概述绘制线路。",
+      "politicalContext": "清代首批增补6座城市的文字档案，依据已保存固定修订的百科概述；未据此核定古城坐标、县府范围或建筑位置，仍待地方志和遗址资料互证。",
+      "sourceIds": [
+        "context-hangzhou"
+      ],
+      "evidence": [
+        {
+          "sourceId": "context-hangzhou",
+          "quote": "清代，仍称杭州府，为浙江行省省会。",
+          "supports": "清代杭州府及浙江省会身份。"
+        },
+        {
+          "sourceId": "context-hangzhou",
+          "quote": "1650年修建一座城中之城的八旗驻防城：杭州驻防城，俗称“旗下营”，将旗人与汉人市民隔离开来。",
+          "supports": "1650年杭州驻防城的营建；不由文字补画城界。"
+        },
+        {
+          "sourceId": "context-hangzhou",
+          "quote": "胡庆余堂坐落在杭州秀丽的吴山北麓河坊街，享有“江南药王”的美誉。它是中国保存最完好的国药字号和最完整的清代徽派商业古建筑群。由清末红顶商人胡雪巖于同治十三年（1874年）创办，以“采办务真，修制务精”为制药祖训，以“是乃仁术，真不二价”为经营理念。",
+          "supports": "胡庆余堂的1874年创办时间与经营原则；不采用段落中的完整性比较评价。"
+        },
+        {
+          "sourceId": "context-hangzhou",
+          "quote": "1907年，杭州建成从城南钱塘江边的闸口，沿东城墙向北至拱宸桥的江墅铁路。",
+          "supports": "1907年江墅铁路的建成及文字描述的走向，不生成线路几何。"
+        }
+      ]
+    },
+    {
+      "id": "qing-chengdu",
+      "placeId": "chengdu",
+      "periodId": "qing",
+      "region": "西南·四川",
+      "summary": "清代成都设四川布政使司，又驻四川总督、成都将军。1877年四川机械局创办，1911年6月保路运动在成都发起。通过这些机构与事件，可以继续阅读成都从省级行政中心到晚清工业、政治活动城市的变化。",
+      "namingNote": "本条为清代各阶段概览。晚清机械局和保路运动通过确年节点呈现，文字中的机构、活动地点均不扩写成未经核查的范围。",
+      "politicalContext": "清代首批增补6座城市的文字档案，依据已保存固定修订的百科概述；未据此核定古城坐标、县府范围或建筑位置，仍待地方志和遗址资料互证。",
+      "sourceIds": [
+        "context-chengdu"
+      ],
+      "evidence": [
+        {
+          "sourceId": "context-chengdu",
+          "quote": "清沿明制，设四川布政使司于成都。皇帝另简派四川总督、成都将军驻成都。",
+          "supports": "成都的地方行政与驻防机构，不替代逐年官制研究。"
+        },
+        {
+          "sourceId": "context-chengdu",
+          "quote": "光绪三年（1877年），四川总督丁宝祯创办四川机械局，是成都城市经济近代化因素出现的标志。",
+          "supports": "1877年四川机械局创办；摘要不扩写产量、厂址或产业规模。"
+        },
+        {
+          "sourceId": "context-chengdu",
+          "quote": "清宣统三年（1911年）6月，保路运动在成都发起",
+          "supports": "1911年6月保路运动的成都节点，不从概述推演其单一因果。"
+        }
+      ]
+    },
+    {
+      "id": "qing-yinchuan",
+      "placeId": "yinchuan",
+      "periodId": "qing",
+      "region": "西北·宁夏",
+      "summary": "清代宁夏府城内有宁夏、宁朔两县同治，1724年起的建置不能简化为一座城只对应一个县。1753年银川书院创建、1755年《银川小志》成书，说明“银川”已用于书院和文献名称，但不表示清代已有现代银川市建制。",
+      "namingNote": "清代当期入口为宁夏；兴庆府属于西夏，银川是现代地区对应名及清代文献别称。府、同城两县和城址须分开阅读。",
+      "politicalContext": "清代首批增补6座城市的文字档案，依据已保存固定修订的百科概述；未据此核定古城坐标、县府范围或建筑位置，仍待地方志和遗址资料互证。",
+      "sourceIds": [
+        "context-yinchuan"
+      ],
+      "evidence": [
+        {
+          "sourceId": "context-yinchuan",
+          "quote": "清设宁夏府。清雍正二年（1724年）起，设宁朔县，宁夏县、宁朔县均治宁夏城内。",
+          "supports": "宁夏府与宁夏、宁朔两县的层级及同城治所关系。"
+        },
+        {
+          "sourceId": "context-yinchuan",
+          "quote": "清乾隆十八年(1753)宁夏知府赵本植创建银川书院",
+          "supports": "1753年银川书院的创建；书院名称不代表此年城市正式改名。"
+        },
+        {
+          "sourceId": "context-yinchuan",
+          "quote": "清朝乾隆二十年（1755）《银川小志》成书",
+          "supports": "1755年地方文献成书，不将“银川”文献用名等同现代市名设立。"
         }
       ]
     }

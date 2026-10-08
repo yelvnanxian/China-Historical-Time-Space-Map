@@ -1,0 +1,515 @@
+{
+  "version": "1.0",
+  "notes": [
+    "清代首批增补6座城市的文字档案，依据已保存固定修订的百科概述；未据此核定古城坐标、县府范围或建筑位置，仍待地方志和遗址资料互证。"
+  ],
+  "sources": [
+    {
+      "id": "context-changan",
+      "title": "长安 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E9%95%BF%E5%AE%89&oldid=94228176",
+      "retrievedAt": "2026-09-24T12:07:35.142639+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证。引文保留本次页面原字形。",
+      "snapshotPath": "data/evidence/historical-context/changan.txt",
+      "snapshotSha256": "4790dd08832b2fc25445879da1aa59ce04e9c89e6bf823c8666a72bd561bc452"
+    },
+    {
+      "id": "context-kaifeng",
+      "title": "开封市 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E5%BC%80%E5%B0%81%E5%B8%82&oldid=94239076",
+      "retrievedAt": "2026-09-24T12:07:35.330249+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证。引文保留本次页面原字形。",
+      "snapshotPath": "data/evidence/historical-context/kaifeng.txt",
+      "snapshotSha256": "8afcea79d9dbe16502b24705a54da33e60d84a5f043dd462811ae4a8291d3fe7"
+    },
+    {
+      "id": "context-nanjing",
+      "title": "南京市 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E5%8D%97%E4%BA%AC%E5%B8%82&oldid=94430858",
+      "retrievedAt": "2026-09-24T12:07:36.700620+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证。引文保留本次页面原字形。",
+      "snapshotPath": "data/evidence/historical-context/nanjing.txt",
+      "snapshotSha256": "69a5c172113af7fbd9d94b6892c3f0d574b2a1a8f5f492bf637f6ec4e82af456"
+    },
+    {
+      "id": "context-hangzhou",
+      "title": "杭州市 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E6%9D%AD%E5%B7%9E%E5%B8%82&oldid=94228857",
+      "retrievedAt": "2026-09-24T12:07:36.839874+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证。引文保留本次页面原字形。",
+      "snapshotPath": "data/evidence/historical-context/hangzhou.txt",
+      "snapshotSha256": "c0c9e9f499c47525e614022bb7b4cd14cd5d1e344fd3c316b828421352dd7950"
+    },
+    {
+      "id": "context-chengdu",
+      "title": "成都市 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E6%88%90%E9%83%BD%E5%B8%82&oldid=94514746",
+      "retrievedAt": "2026-09-24T12:08:21.273132+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证。引文保留本次页面原字形。",
+      "snapshotPath": "data/evidence/historical-context/chengdu.txt",
+      "snapshotSha256": "c798327fb6862f8cbb73e99aba1a47528c27246014826aac36fdcd73cb2defd5"
+    },
+    {
+      "id": "context-yinchuan",
+      "title": "银川市 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E9%93%B6%E5%B7%9D%E5%B8%82&oldid=94229144",
+      "retrievedAt": "2026-09-24T13:30:17.357929+00:00",
+      "note": "百科条目，用于核对概述性时间节点；不是逐条原始史料考证，亦不是古城坐标或边界核定。引文保留本次页面原字形。",
+      "snapshotPath": "data/evidence/historical-context/yinchuan.txt",
+      "snapshotSha256": "cd10ab70c6cf6b135550406c8589ada997b44417ce2a86e146b2fdfca7968c15"
+    }
+  ],
+  "profiles": [
+    {
+      "id": "qing-changan",
+      "placeId": "changan",
+      "periodId": "qing",
+      "region": "西北·陕西",
+      "summary": "清代西安城墙沿袭明代基础，多次修缮。乾隆四十六年（1781年）的工程加厚包墙、铺设海墁并增修排水道，可从城防维护理解这座区域中心的城市形态；这里不把唐长安城界沿用为清代城界。",
+      "namingNote": "本期阅读西安城；“长安”是跨朝代目录入口。唐代都城、清代城墙与现代西安地区参考点不可混为同一范围。",
+      "politicalContext": "清代首批增补6座城市的文字档案，依据已保存固定修订的百科概述；未据此核定古城坐标、县府范围或建筑位置，仍待地方志和遗址资料互证。",
+      "sourceIds": [
+        "context-changan"
+      ],
+      "evidence": [
+        {
+          "sourceId": "context-changan",
+          "quote": "清代基本沿袭明制，对西安城墙进行过十二次补修。其中规模最大的是乾隆四十六年（1781年）的工程，将包墙增厚，铺设海墁，并增修排水道等，大大增强了西安城的防御能力。",
+          "supports": "清代西安城墙沿用与1781年修缮内容；不证明具体墙线。"
+        }
+      ]
+    },
+    {
+      "id": "qing-kaifeng",
+      "placeId": "kaifeng",
+      "periodId": "qing",
+      "region": "中原·河南",
+      "summary": "经历明末破坏后，开封于1662年重修城池。清代河南省治与开封府治设在这里，同一城市承担省级和府级治所职能；重建记录说明城池的延续，并不证明与北宋东京城界完全重合。",
+      "namingNote": "开封城、开封府与河南省分属不同范围。原文未将省府治设置明确系于1662年，本条仅将城池修缮定在该年。",
+      "politicalContext": "清代首批增补6座城市的文字档案，依据已保存固定修订的百科概述；未据此核定古城坐标、县府范围或建筑位置，仍待地方志和遗址资料互证。",
+      "sourceIds": [
+        "context-kaifeng"
+      ],
+      "evidence": [
+        {
+          "sourceId": "context-kaifeng",
+          "quote": "清朝统治中原后，于1662年重修了开封城池，并将河南省治、开封府治均设置在开封。",
+          "supports": "1662年重修城池及清代省、府治身份；不把省府治设置强定为同年。"
+        }
+      ]
+    },
+    {
+      "id": "qing-nanjing",
+      "placeId": "nanjing",
+      "periodId": "qing",
+      "region": "江南·江宁",
+      "summary": "清代江宁是两江总督驻地，又有为皇家供应丝织品的江宁织造署。1853年太平军定都并改称天京，1864年湘军入城；1899年下关才正式开辟商埠。行政、织造、战争与口岸转换共同构成这一时期的城市沿革。",
+      "namingNote": "本入口对应今南京地区。江宁、天京是不同阶段称谓；清代页面中的太平天国阶段应明确区分政权，不能把本朝概览当作1820年的现状。",
+      "politicalContext": "清代首批增补6座城市的文字档案，依据已保存固定修订的百科概述；未据此核定古城坐标、县府范围或建筑位置，仍待地方志和遗址资料互证。",
+      "sourceIds": [
+        "context-nanjing"
+      ],
+      "evidence": [
+        {
+          "sourceId": "context-nanjing",
+          "quote": "直到清末，江宁是统辖江苏（包含今上海市）、安徽、江西三省的两江总督驻地",
+          "supports": "江宁作为两江总督驻地的区域职能；并非全清代不变的辖境。"
+        },
+        {
+          "sourceId": "context-nanjing",
+          "quote": "清廷在江宁设立规模庞大的江宁织造署，生产供应皇家需求的丝织品，因此在经济方面江宁也具有相当的重要性。",
+          "supports": "江宁织造与皇家丝织品生产的联系。"
+        },
+        {
+          "sourceId": "context-nanjing",
+          "quote": "1853年3月，太平軍攻陷江宁后定都于此，改名“天京”。",
+          "supports": "1853年3月政权、都城身份及名称变化。"
+        },
+        {
+          "sourceId": "context-nanjing",
+          "quote": "1864年7月19日，天京之役结束。曾國藩弟曾國荃率湘军入城后纵火杀掠。",
+          "supports": "1864年天京之役结束与湘军入城。"
+        },
+        {
+          "sourceId": "context-nanjing",
+          "quote": "战后的江宁一度极为萧条，虽然《天津条约》将江宁列为通商口岸，但直到1899年才在下关正式开辟商埠。",
+          "supports": "1899年下关正式开辟商埠；条约列名与实际开埠并非同一节点。"
+        }
+      ]
+    },
+    {
+      "id": "qing-hangzhou",
+      "placeId": "hangzhou",
+      "periodId": "qing",
+      "region": "江南·浙江",
+      "summary": "清代杭州府仍为浙江省会，1650年修建八旗驻防城，形成城内特殊的驻防空间。1874年胡庆余堂创办，1907年江墅铁路建成，可分别阅读清代驻防、商业与交通变化；后两个节点属于晚清，不能提前套入1820年。",
+      "namingNote": "杭州府、府城与八旗驻防城不是同一级或同一范围；江墅铁路目前仅有文字节点，不据概述绘制线路。",
+      "politicalContext": "清代首批增补6座城市的文字档案，依据已保存固定修订的百科概述；未据此核定古城坐标、县府范围或建筑位置，仍待地方志和遗址资料互证。",
+      "sourceIds": [
+        "context-hangzhou"
+      ],
+      "evidence": [
+        {
+          "sourceId": "context-hangzhou",
+          "quote": "清代，仍称杭州府，为浙江行省省会。",
+          "supports": "清代杭州府及浙江省会身份。"
+        },
+        {
+          "sourceId": "context-hangzhou",
+          "quote": "1650年修建一座城中之城的八旗驻防城：杭州驻防城，俗称“旗下营”，将旗人与汉人市民隔离开来。",
+          "supports": "1650年杭州驻防城的营建；不由文字补画城界。"
+        },
+        {
+          "sourceId": "context-hangzhou",
+          "quote": "胡庆余堂坐落在杭州秀丽的吴山北麓河坊街，享有“江南药王”的美誉。它是中国保存最完好的国药字号和最完整的清代徽派商业古建筑群。由清末红顶商人胡雪巖于同治十三年（1874年）创办，以“采办务真，修制务精”为制药祖训，以“是乃仁术，真不二价”为经营理念。",
+          "supports": "胡庆余堂的1874年创办时间与经营原则；不采用段落中的完整性比较评价。"
+        },
+        {
+          "sourceId": "context-hangzhou",
+          "quote": "1907年，杭州建成从城南钱塘江边的闸口，沿东城墙向北至拱宸桥的江墅铁路。",
+          "supports": "1907年江墅铁路的建成及文字描述的走向，不生成线路几何。"
+        }
+      ]
+    },
+    {
+      "id": "qing-chengdu",
+      "placeId": "chengdu",
+      "periodId": "qing",
+      "region": "西南·四川",
+      "summary": "清代成都设四川布政使司，又驻四川总督、成都将军。1877年四川机械局创办，1911年6月保路运动在成都发起。通过这些机构与事件，可以继续阅读成都从省级行政中心到晚清工业、政治活动城市的变化。",
+      "namingNote": "本条为清代各阶段概览。晚清机械局和保路运动通过确年节点呈现，文字中的机构、活动地点均不扩写成未经核查的范围。",
+      "politicalContext": "清代首批增补6座城市的文字档案，依据已保存固定修订的百科概述；未据此核定古城坐标、县府范围或建筑位置，仍待地方志和遗址资料互证。",
+      "sourceIds": [
+        "context-chengdu"
+      ],
+      "evidence": [
+        {
+          "sourceId": "context-chengdu",
+          "quote": "清沿明制，设四川布政使司于成都。皇帝另简派四川总督、成都将军驻成都。",
+          "supports": "成都的地方行政与驻防机构，不替代逐年官制研究。"
+        },
+        {
+          "sourceId": "context-chengdu",
+          "quote": "光绪三年（1877年），四川总督丁宝祯创办四川机械局，是成都城市经济近代化因素出现的标志。",
+          "supports": "1877年四川机械局创办；摘要不扩写产量、厂址或产业规模。"
+        },
+        {
+          "sourceId": "context-chengdu",
+          "quote": "清宣统三年（1911年）6月，保路运动在成都发起",
+          "supports": "1911年6月保路运动的成都节点，不从概述推演其单一因果。"
+        }
+      ]
+    },
+    {
+      "id": "qing-yinchuan",
+      "placeId": "yinchuan",
+      "periodId": "qing",
+      "region": "西北·宁夏",
+      "summary": "清代宁夏府城内有宁夏、宁朔两县同治，1724年起的建置不能简化为一座城只对应一个县。1753年银川书院创建、1755年《银川小志》成书，说明“银川”已用于书院和文献名称，但不表示清代已有现代银川市建制。",
+      "namingNote": "清代当期入口为宁夏；兴庆府属于西夏，银川是现代地区对应名及清代文献别称。府、同城两县和城址须分开阅读。",
+      "politicalContext": "清代首批增补6座城市的文字档案，依据已保存固定修订的百科概述；未据此核定古城坐标、县府范围或建筑位置，仍待地方志和遗址资料互证。",
+      "sourceIds": [
+        "context-yinchuan"
+      ],
+      "evidence": [
+        {
+          "sourceId": "context-yinchuan",
+          "quote": "清设宁夏府。清雍正二年（1724年）起，设宁朔县，宁夏县、宁朔县均治宁夏城内。",
+          "supports": "宁夏府与宁夏、宁朔两县的层级及同城治所关系。"
+        },
+        {
+          "sourceId": "context-yinchuan",
+          "quote": "清乾隆十八年(1753)宁夏知府赵本植创建银川书院",
+          "supports": "1753年银川书院的创建；书院名称不代表此年城市正式改名。"
+        },
+        {
+          "sourceId": "context-yinchuan",
+          "quote": "清朝乾隆二十年（1755）《银川小志》成书",
+          "supports": "1755年地方文献成书，不将“银川”文献用名等同现代市名设立。"
+        }
+      ]
+    }
+  ],
+  "timelineAdditions": [
+    {
+      "placeId": "changan",
+      "entry": {
+        "id": "qing-timeline-changan-1781",
+        "year": 1781,
+        "dateLabel": "清·乾隆四十六年",
+        "title": "修缮西安城墙",
+        "summary": "对西安城墙加厚包墙、铺设海墁并增修排水道。本节点不表示城墙范围已测绘。",
+        "sourceIds": [
+          "context-changan"
+        ],
+        "evidence": [
+          {
+            "sourceId": "context-changan",
+            "quote": "清代基本沿袭明制，对西安城墙进行过十二次补修。其中规模最大的是乾隆四十六年（1781年）的工程，将包墙增厚，铺设海墁，并增修排水道等，大大增强了西安城的防御能力。",
+            "supports": "清代西安城墙沿用与1781年修缮内容；不证明具体墙线。"
+          }
+        ]
+      }
+    },
+    {
+      "placeId": "kaifeng",
+      "entry": {
+        "id": "qing-timeline-kaifeng-1662",
+        "year": 1662,
+        "dateLabel": "清·1662年",
+        "title": "重修开封城池",
+        "summary": "清代于1662年重修开封城池。省治与府治身份另在本朝看点说明，不据同段文字认定同年设治。",
+        "sourceIds": [
+          "context-kaifeng"
+        ],
+        "evidence": [
+          {
+            "sourceId": "context-kaifeng",
+            "quote": "清朝统治中原后，于1662年重修了开封城池，并将河南省治、开封府治均设置在开封。",
+            "supports": "1662年重修城池及清代省、府治身份；不把省府治设置强定为同年。"
+          }
+        ]
+      }
+    },
+    {
+      "placeId": "nanjing",
+      "entry": {
+        "id": "qing-timeline-nanjing-1842",
+        "year": 1842,
+        "dateLabel": "清·1842年8月",
+        "title": "江宁地区签订《南京条约》",
+        "summary": "清朝在第一次鸦片战争中战败后与英国签订《南京条约》。地图点仅对应江宁地区，不指向具体签约船只或地点。",
+        "sourceIds": [
+          "context-nanjing"
+        ],
+        "evidence": [
+          {
+            "sourceId": "context-nanjing",
+            "quote": "1842年8月，清朝在第一次鸦片战争中战败，被迫与陈兵江宁江面的英国签订《南京条约》。",
+            "supports": "1842年8月江宁地区议约、签约背景，不定位具体签约点。"
+          }
+        ]
+      }
+    },
+    {
+      "placeId": "nanjing",
+      "entry": {
+        "id": "qing-timeline-nanjing-1853",
+        "year": 1853,
+        "dateLabel": "1853年3月·太平天国",
+        "title": "定都天京",
+        "summary": "太平军攻陷江宁，定都于此并改称天京。此阶段的城市政权与清朝不同。",
+        "sourceIds": [
+          "context-nanjing"
+        ],
+        "evidence": [
+          {
+            "sourceId": "context-nanjing",
+            "quote": "1853年3月，太平軍攻陷江宁后定都于此，改名“天京”。",
+            "supports": "1853年3月政权、都城身份及名称变化。"
+          }
+        ]
+      }
+    },
+    {
+      "placeId": "nanjing",
+      "entry": {
+        "id": "qing-timeline-nanjing-1864",
+        "year": 1864,
+        "dateLabel": "清·1864年7月19日",
+        "title": "天京之役结束",
+        "summary": "天京之役结束，曾国荃率湘军入城，原文记载纵火杀掠。本节点不推定伤亡数字。",
+        "sourceIds": [
+          "context-nanjing"
+        ],
+        "evidence": [
+          {
+            "sourceId": "context-nanjing",
+            "quote": "1864年7月19日，天京之役结束。曾國藩弟曾國荃率湘军入城后纵火杀掠。",
+            "supports": "1864年天京之役结束与湘军入城。"
+          }
+        ]
+      }
+    },
+    {
+      "placeId": "nanjing",
+      "entry": {
+        "id": "qing-timeline-nanjing-1899",
+        "year": 1899,
+        "dateLabel": "清·1899年",
+        "title": "下关正式开辟商埠",
+        "summary": "江宁虽已在条约中列为通商口岸，到1899年才在下关正式开辟商埠；区分条约列名与实际开埠。",
+        "sourceIds": [
+          "context-nanjing"
+        ],
+        "evidence": [
+          {
+            "sourceId": "context-nanjing",
+            "quote": "战后的江宁一度极为萧条，虽然《天津条约》将江宁列为通商口岸，但直到1899年才在下关正式开辟商埠。",
+            "supports": "1899年下关正式开辟商埠；条约列名与实际开埠并非同一节点。"
+          }
+        ]
+      }
+    },
+    {
+      "placeId": "hangzhou",
+      "entry": {
+        "id": "qing-timeline-hangzhou-1650",
+        "year": 1650,
+        "dateLabel": "清·1650年",
+        "title": "营建杭州驻防城",
+        "summary": "杭州城内修建八旗驻防城，俗称“旗下营”。这是城中驻防空间，不是整个杭州府范围。",
+        "sourceIds": [
+          "context-hangzhou"
+        ],
+        "evidence": [
+          {
+            "sourceId": "context-hangzhou",
+            "quote": "1650年修建一座城中之城的八旗驻防城：杭州驻防城，俗称“旗下营”，将旗人与汉人市民隔离开来。",
+            "supports": "1650年杭州驻防城的营建；不由文字补画城界。"
+          }
+        ]
+      }
+    },
+    {
+      "placeId": "hangzhou",
+      "entry": {
+        "id": "qing-timeline-hangzhou-1874",
+        "year": 1874,
+        "dateLabel": "清·同治十三年",
+        "title": "胡庆余堂创办",
+        "summary": "胡雪岩创办胡庆余堂。现有城市参考点不作为商号的建筑定位。",
+        "sourceIds": [
+          "context-hangzhou"
+        ],
+        "evidence": [
+          {
+            "sourceId": "context-hangzhou",
+            "quote": "胡庆余堂坐落在杭州秀丽的吴山北麓河坊街，享有“江南药王”的美誉。它是中国保存最完好的国药字号和最完整的清代徽派商业古建筑群。由清末红顶商人胡雪巖于同治十三年（1874年）创办，以“采办务真，修制务精”为制药祖训，以“是乃仁术，真不二价”为经营理念。",
+            "supports": "胡庆余堂的1874年创办时间与经营原则；不采用段落中的完整性比较评价。"
+          }
+        ]
+      }
+    },
+    {
+      "placeId": "hangzhou",
+      "entry": {
+        "id": "qing-timeline-hangzhou-1907",
+        "year": 1907,
+        "dateLabel": "清·1907年",
+        "title": "江墅铁路建成",
+        "summary": "江墅铁路由钱塘江边闸口沿东城墙向北至拱宸桥。此处保留文字走向，尚未核定线路几何。",
+        "sourceIds": [
+          "context-hangzhou"
+        ],
+        "evidence": [
+          {
+            "sourceId": "context-hangzhou",
+            "quote": "1907年，杭州建成从城南钱塘江边的闸口，沿东城墙向北至拱宸桥的江墅铁路。",
+            "supports": "1907年江墅铁路的建成及文字描述的走向，不生成线路几何。"
+          }
+        ]
+      }
+    },
+    {
+      "placeId": "chengdu",
+      "entry": {
+        "id": "qing-timeline-chengdu-1877",
+        "year": 1877,
+        "dateLabel": "清·光绪三年",
+        "title": "四川机械局创办",
+        "summary": "四川总督创办四川机械局。本节点记录城市产业变化，不把目录点认作具体厂址。",
+        "sourceIds": [
+          "context-chengdu"
+        ],
+        "evidence": [
+          {
+            "sourceId": "context-chengdu",
+            "quote": "光绪三年（1877年），四川总督丁宝祯创办四川机械局，是成都城市经济近代化因素出现的标志。",
+            "supports": "1877年四川机械局创办；摘要不扩写产量、厂址或产业规模。"
+          }
+        ]
+      }
+    },
+    {
+      "placeId": "chengdu",
+      "entry": {
+        "id": "qing-timeline-chengdu-1911",
+        "year": 1911,
+        "dateLabel": "清·1911年6月",
+        "title": "保路运动在成都发起",
+        "summary": "1911年6月，保路运动在成都发起。本节点记录地方活动，不将清末政治变化归结为单一原因。",
+        "sourceIds": [
+          "context-chengdu"
+        ],
+        "evidence": [
+          {
+            "sourceId": "context-chengdu",
+            "quote": "清宣统三年（1911年）6月，保路运动在成都发起",
+            "supports": "1911年6月保路运动的成都节点，不从概述推演其单一因果。"
+          }
+        ]
+      }
+    },
+    {
+      "placeId": "yinchuan",
+      "entry": {
+        "id": "qing-timeline-yinchuan-1753",
+        "year": 1753,
+        "dateLabel": "清·乾隆十八年",
+        "title": "银川书院创建",
+        "summary": "宁夏知府赵本植创建银川书院。“银川”在这里是书院名称，不表示现代银川市于此年设立。",
+        "sourceIds": [
+          "context-yinchuan"
+        ],
+        "evidence": [
+          {
+            "sourceId": "context-yinchuan",
+            "quote": "清乾隆十八年(1753)宁夏知府赵本植创建银川书院",
+            "supports": "1753年银川书院的创建；书院名称不代表此年城市正式改名。"
+          }
+        ]
+      }
+    },
+    {
+      "placeId": "yinchuan",
+      "entry": {
+        "id": "qing-timeline-yinchuan-1755",
+        "year": 1755,
+        "dateLabel": "清·乾隆二十年",
+        "title": "《银川小志》成书",
+        "summary": "《银川小志》成书，作为清代使用“银川”名称的文献节点，不等同正式城市更名。",
+        "sourceIds": [
+          "context-yinchuan"
+        ],
+        "evidence": [
+          {
+            "sourceId": "context-yinchuan",
+            "quote": "清朝乾隆二十年（1755）《银川小志》成书",
+            "supports": "1755年地方文献成书，不将“银川”文献用名等同现代市名设立。"
+          }
+        ]
+      }
+    }
+  ],
+  "excludedCandidates": [
+    {
+      "placeId": "dunhuang",
+      "sourceId": "context-dunhuang",
+      "quote": "乾隆三十五年（1760年）改为敦煌县。",
+      "reason": "年号纪年与公元年不一致；未选择其一，也未生成置县节点，待地方志核对。"
+    },
+    {
+      "placeId": "nanjing",
+      "sourceId": "context-nanjing",
+      "quote": "随着1906年沪宁铁路和1911年津浦铁路先后通车",
+      "reason": "铁路始建、分段和全线通车需专门核对，当前城市概述不足以支持精确通车节点。"
+    },
+    {
+      "placeId": "hangzhou",
+      "sourceId": "context-hangzhou",
+      "quote": "清光绪二十二年（1896年），《马关条约》将杭州辟为通商口岸",
+      "reason": "同一快照历史段以1895年记条约、1896年记设通商场，段落表达混同；本批不新增开埠确年节点。"
+    }
+  ]
+}

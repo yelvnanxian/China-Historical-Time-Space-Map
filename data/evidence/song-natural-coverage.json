@@ -2,7 +2,7 @@
   "periodId": "song",
   "boundaryReferenceYear": 1200,
   "note": "城市坐标落入现代OSM查询框仅表示已采集该窗口，不表示所有河湖山峰已收录，不证明宋代河道、湖岸、山名或行政归属。等高线为局部现代DEM，山脊另用OSM来源；没有资料不等于没有山。",
-  "catalogSha256": "24eafe41f1e995fc889f251f4364e60ae77aa3e6a9aaa3df3bf80297291d34f3",
+  "catalogSha256": "cc6ddda5552883256527a3b59c822820a7888fd91d88f3cd3a5e193bbc84ee72",
   "detailManifestSha256": "d11b28517e7b2657dc08bf236136f6a2639c61008345472f4dbb15bda680e3e8",
   "terrainManifestSha256": "9f4a3c0b1787239cb2348dc9dab3437ae7d5d65d089ab89022f46d192daffc36",
   "ridgeManifestSha256": "0bee72bb5fe0699e9f4794875c06b7739c5f8528239b6a8351217e7e3cb6a9d8",

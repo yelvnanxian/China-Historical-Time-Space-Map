@@ -1,0 +1,15 @@
+{
+  "periodId": "yuan",
+  "profiles": 5,
+  "profilePlaceIds": [
+    "changan",
+    "chengdu",
+    "quanzhou",
+    "dali",
+    "nanjing"
+  ],
+  "datedEntries": 5,
+  "sourceCount": 6,
+  "quotesMatched": 14,
+  "limitations": "仅复用已有百科固定修订快照；不是新增原始史料交叉考证，不核定古址或辖界。所有地点沿用既有目录，不新增坐标。"
+}
