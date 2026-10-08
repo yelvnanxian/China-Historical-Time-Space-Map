@@ -64,7 +64,7 @@ test("原22城71条跨朝记录保留，四条明代补证不改变旧ID、年�
   assert.equal(integrated.cityTimelines.length, 106);
   // This baseline covers the base, Tang and Ming batches. Later independent
   // period supplements must not be counted as changes to that baseline.
-  const laterBatches = ["song-timeline-", "yuan-expansion-", "qing-timeline-", "qin-expansion-", "han-expansion-"];
+  const laterBatches = ["song-timeline-", "yuan-expansion-", "qing-timeline-", "qin-expansion-", "han-expansion-", "sanguo-timeline-", "jin-timeline-"];
   assert.equal(integrated.cityTimelines.reduce((n, city) => n + city.entries.filter(entry => !laterBatches.some(prefix => entry.id.startsWith(prefix))).length, 0), 477);
   for (const id of ["chronicle-anshi-757-luoyang", "chronicle-anshi-756-chengdu", "chronicle-anshi-756-tongguan"])
     assert.equal(integrated.cityTimelines.flatMap(city => city.entries).filter(entry => entry.id === id).length, 1, id);

@@ -1,0 +1,56 @@
+{
+  "periodId": "jin",
+  "profiles": 14,
+  "profilePlaceIds": [
+    "changan",
+    "luoyang",
+    "beijing",
+    "kaifeng",
+    "hangzhou",
+    "guangzhou",
+    "yangzhou",
+    "xiangyang",
+    "jinyang",
+    "datong",
+    "linzi",
+    "handan",
+    "tongguan",
+    "dunhuang"
+  ],
+  "datedEntries": 13,
+  "sourceCount": 13,
+  "quotesMatched": 51,
+  "excludedCandidates": [
+    {
+      "placeId": "beijing",
+      "candidate": "西晋蓟降县治、幽州迁涿及前燕迁都年份",
+      "reason": "城市百科叙述与常见年表有冲突，先采郡县分层，不生成迁治节点。"
+    },
+    {
+      "placeId": "chengdu",
+      "candidate": "304年李雄首次攻陷成都",
+      "reason": "夺城、称成都王的303/304年阶段不能混写，本轮仅补306称帝、347灭成汉。"
+    },
+    {
+      "placeId": "dunhuang",
+      "candidate": "前秦二年（366年）开凿莫高窟",
+      "reason": "年号不完整且建窟传说需另核，不生成确定创凿节点。"
+    },
+    {
+      "placeId": "linzi",
+      "candidate": "齐国、北海、济南的完整郡界与改名年表",
+      "reason": "地理志校勘记提示脱漏错接，未据此重建辖境或新增改名纪年。"
+    },
+    {
+      "placeId": "datong",
+      "candidate": "398年平城为东晋都城",
+      "reason": "398年属北魏迁都，保留已有节点而不重复、不改称东晋建置。"
+    },
+    {
+      "placeId": "nanjing",
+      "candidate": "317年司马睿已经称帝",
+      "reason": "细分317称晋王与318即帝位；愍帝遇害旧历年与公历年不强行合并。"
+    }
+  ],
+  "limitations": "《晋书》《宋书》电子转录未与刻本或点校本校勘；百科为固定修订概述材料，不以文本核定古址辖界，不将两晋同时期政权一概视为晋辖。"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "context-sanguo-weizhi2",
+  "title": "三國志/卷02 — 维基文库",
+  "url": "https://zh.wikisource.org/w/index.php?title=%E4%B8%89%E5%9C%8B%E5%BF%97/%E5%8D%B702&oldid=7913642",
+  "retrievedAt": "2026-10-08T07:27:46.746213+00:00",
+  "note": "《三国志》维基文库电子转录，未与刻本或点校本逐字校勘；快照仅移除三单引号加粗标记，将简单站内链接转为可见文字，将YL纪年模板转为年号及括注，保留字形；原始API另存，可复核转换。用于有据可查的文字阅读，不核定古城坐标、辖区边界或古河道。",
+  "snapshotPath": "data/evidence/historical-context/sanguo-weizhi2.txt",
+  "snapshotSha256": "98a5e158400d5cc21f48f9ae5aa4edec7a453ea56457b5ca7ec254b8a90f1596",
+  "pageId": 12875,
+  "revision": {
+    "revid": 7913642,
+    "parentid": 2589664,
+    "timestamp": "2026-08-06T17:56:31Z"
+  },
+  "apiSnapshotPath": "data/evidence/historical-context/sanguo-weizhi2.api.json",
+  "apiSnapshotSha256": "ee35fc87b975eda9ba61adf08c8729dff73619a6b07e57e602950ef58f64f960"
+}

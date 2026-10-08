@@ -1,0 +1,17 @@
+{
+  "id": "context-sanguo-wuzhu",
+  "title": "三國志/卷47 — 维基文库",
+  "url": "https://zh.wikisource.org/w/index.php?title=%E4%B8%89%E5%9C%8B%E5%BF%97/%E5%8D%B747&oldid=2602668",
+  "retrievedAt": "2026-10-08T07:27:46.742534+00:00",
+  "note": "《三国志》维基文库电子转录，未与刻本或点校本逐字校勘；快照仅移除三单引号加粗标记，将简单站内链接转为可见文字，将YL纪年模板转为年号及括注，保留字形；原始API另存，可复核转换。用于有据可查的文字阅读，不核定古城坐标、辖区边界或古河道。",
+  "snapshotPath": "data/evidence/historical-context/sanguo-wuzhu.txt",
+  "snapshotSha256": "74329247ac6e41072fa839c88873e7ad9a6521dd5b56b4c7aca990f85ad31aea",
+  "pageId": 8535,
+  "revision": {
+    "revid": 2602668,
+    "parentid": 2373975,
+    "timestamp": "2025-10-02T23:08:19Z"
+  },
+  "apiSnapshotPath": "data/evidence/historical-context/sanguo-wuzhu.api.json",
+  "apiSnapshotSha256": "a910987193907023757f7a8c332e2b4ea39fe9608294c738753c115ed7f5f1b8"
+}

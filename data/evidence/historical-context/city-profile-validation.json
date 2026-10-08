@@ -1,11 +1,11 @@
 {
   "scope": "all-published-periods-after-all-merges",
-  "profiles": 236,
+  "profiles": 261,
   "periodCoverage": {
     "qin": 8,
     "han": 16,
-    "sanguo": 3,
-    "jin": 3,
+    "sanguo": 14,
+    "jin": 17,
     "nanbei": 3,
     "sui": 3,
     "tang": 104,
@@ -15,8 +15,8 @@
     "qing": 9
   },
   "distinctPlaceEntriesInProfiles": 106,
-  "sources": 95,
-  "quotesMatched": 610,
-  "outputSha256": "4aef06e6ef6cde4b8cf2506bf5e403637cdd53da987df25d3d18a52bcc5fa3d1",
+  "sources": 110,
+  "quotesMatched": 673,
+  "outputSha256": "f76824c4c1178d2ef42c851eb9a1f95b8c8b4a269ac03322003b2cc14594ad8d",
   "note": "统计全部时期合并后的发布内容；按阅读入口计数，不等于互不重合的古城遗址。逐字核对摘录不等于已核定所有历史事实或古址。"
 }

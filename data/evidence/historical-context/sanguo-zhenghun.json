@@ -1,0 +1,17 @@
+{
+  "id": "context-sanguo-zhenghun",
+  "title": "三國志/卷16 — 维基文库",
+  "url": "https://zh.wikisource.org/w/index.php?title=%E4%B8%89%E5%9C%8B%E5%BF%97/%E5%8D%B716&oldid=2610840",
+  "retrievedAt": "2026-10-08T07:29:27.978840+00:00",
+  "note": "《三国志》维基文库电子转录，未与刻本或点校本逐字校勘；快照仅移除三单引号加粗标记，将简单站内链接转为可见文字，将YL纪年模板转为年号及括注，保留字形；原始API另存，可复核转换。用于有据可查的文字阅读，不核定古城坐标、辖区边界或古河道。",
+  "snapshotPath": "data/evidence/historical-context/sanguo-zhenghun.txt",
+  "snapshotSha256": "03a746f3208be77e1cc7092fdba57678cf2234aa6c07c26a4af205aa559a576d",
+  "pageId": 16212,
+  "revision": {
+    "revid": 2610840,
+    "parentid": 2085077,
+    "timestamp": "2025-10-31T23:24:01Z"
+  },
+  "apiSnapshotPath": "data/evidence/historical-context/sanguo-zhenghun.api.json",
+  "apiSnapshotSha256": "52547f5efb2acd8db990d43caf437222f6f22613cc5491c2ef943ca1a7e28bb1"
+}

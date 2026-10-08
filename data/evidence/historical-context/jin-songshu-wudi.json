@@ -1,0 +1,17 @@
+{
+  "id": "context-jin-songshu-wudi",
+  "title": "宋書/卷2 — 维基文库",
+  "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E6%9B%B8/%E5%8D%B72&oldid=2583201",
+  "retrievedAt": "2026-10-08T07:30:33.249776+00:00",
+  "note": "《宋书·武帝纪》维基文库电子转录，未与刻本或点校本逐字校勘；固定修订原始wikitext经确定性转换：去除加粗标记，展开YL年号、星号夹注与维基链接，ref校勘内容以括注保留；原API另存。记载追述刘裕在东晋时活动，不因书名而将义熙年间事改属刘宋；不据行军叙述核定古关址或路线。",
+  "snapshotPath": "data/evidence/historical-context/jin-songshu-wudi.txt",
+  "snapshotSha256": "c5e30fdc3c6e7f36e3fec3549d4c0dec32b7f5cc163a11d451dd3565decd9194",
+  "pageId": 18379,
+  "revision": {
+    "revid": 2583201,
+    "parentid": 2535228,
+    "timestamp": "2025-07-29T03:32:16Z"
+  },
+  "apiSnapshotPath": "data/evidence/historical-context/jin-songshu-wudi.api.json",
+  "apiSnapshotSha256": "4f37203054bdbe6a79504f5d7674d1a465873b4caa6f311f9031a3da4d2260ba"
+}

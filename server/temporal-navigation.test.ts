@@ -40,6 +40,25 @@ test("秦汉新增纪年进入对应年份导航，公元前后均可从历代�
   }
 });
 
+test("三国两晋纪年可跳转对应资料年，重叠年尊重记录的时期", async () => {
+  const catalog: Catalog = JSON.parse(await readFile(new URL("data/catalog.json", root), "utf8"));
+  const context: HistoricalContextData = JSON.parse(await readFile(new URL("public/data/historical-context.json", root), "utf8"));
+  for (const periodId of ["sanguo", "jin"]) {
+    const entries = context.cityTimelines.flatMap(city => city.entries)
+      .filter(entry => entry.id.startsWith(`${periodId}-timeline-`));
+    assert.ok(entries.length > 0, periodId);
+    const stops = availableYearStops(catalog, context, null, periodId);
+    for (const entry of entries) {
+      assert.ok(stops.find(stop => stop.year === entry.year)?.kinds.includes("chronicle"), entry.id);
+      assert.equal(periodForYear(entry.year, catalog.periods, {
+        preferredPeriodId: periodId === "sanguo" ? "jin" : "sanguo", entryId: entry.id,
+      })?.id, periodId, entry.id);
+    }
+  }
+  assert.equal(periodForYear(269, catalog.periods, { preferredPeriodId: "jin", entryId: "sanguo-timeline-overlap" })?.id, "sanguo");
+  assert.equal(periodForYear(269, catalog.periods, { preferredPeriodId: "sanguo", entryId: "jin-timeline-overlap" })?.id, "jin");
+});
+
 test("资料年汇总全部城市纪年、事件、边界、已有治所与默认年，重复年保留类别与条数", async () => {
   const catalog = exampleCatalog();
   const context: HistoricalContextData = JSON.parse(await readFile(new URL("public/data/historical-context.json", root), "utf8"));

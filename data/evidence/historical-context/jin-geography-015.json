@@ -1,0 +1,17 @@
+{
+  "id": "context-jin-geography-015",
+  "title": "晉書/卷015 — 维基文库",
+  "url": "https://zh.wikisource.org/w/index.php?title=%E6%99%89%E6%9B%B8/%E5%8D%B7015&oldid=2666085",
+  "retrievedAt": "2026-10-08T07:27:37.109995+00:00",
+  "note": "《晋书》维基文库电子转录，未与刻本或点校本逐字校勘；固定修订原始wikitext经确定性转换：去除加粗标记，展开YL年号、星号夹注与维基链接，ref校勘内容以括注保留；原API另存。地理志混含沿革，不将所有记载视为公元280年同一截面；不按县名顺序推定治所，不把郡国户口视作城市人口。",
+  "snapshotPath": "data/evidence/historical-context/jin-geography-015.txt",
+  "snapshotSha256": "79f4bf11fb51ddba9cd52e39df65ad23e834d924881460db8c051494b88ddb8b",
+  "pageId": 20476,
+  "revision": {
+    "revid": 2666085,
+    "parentid": 2665752,
+    "timestamp": "2026-03-04T22:42:45Z"
+  },
+  "apiSnapshotPath": "data/evidence/historical-context/jin-geography-015.api.json",
+  "apiSnapshotSha256": "9deb37c1d60c7abb6bfc8977f5d4ad0dd55437c836572cd9b782241a6dccdd49"
+}

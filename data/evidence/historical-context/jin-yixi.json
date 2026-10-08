@@ -1,0 +1,17 @@
+{
+  "id": "context-jin-yixi",
+  "title": "义熙 — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E4%B9%89%E7%86%99&oldid=93421890",
+  "retrievedAt": "2026-10-08T07:31:03.133999+00:00",
+  "note": "维基百科固定修订概述快照，未完成原始史料交叉考证；不以文中文字核定古址坐标或疆界。",
+  "snapshotPath": "data/evidence/historical-context/jin-yixi.txt",
+  "snapshotSha256": "f3bd97c63b6f15058f42b8014bd249bf0768720a485bab665ac55c9c9a988bc2",
+  "pageId": 178942,
+  "revision": {
+    "revid": 93421890,
+    "parentid": 93412278,
+    "timestamp": "2026-07-11T15:12:28Z"
+  },
+  "apiSnapshotPath": "data/evidence/historical-context/jin-yixi.api.json",
+  "apiSnapshotSha256": "a04e9d9c01b22dfeabd2a6de6faca1d30ac21d21072afce18dba71c96595e5cc"
+}

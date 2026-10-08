@@ -1,0 +1,17 @@
+{
+  "id": "context-jin-geography-014",
+  "title": "晉書/卷014 — 维基文库",
+  "url": "https://zh.wikisource.org/w/index.php?title=%E6%99%89%E6%9B%B8/%E5%8D%B7014&oldid=2646777",
+  "retrievedAt": "2026-10-08T07:27:36.098449+00:00",
+  "note": "《晋书》维基文库电子转录，未与刻本或点校本逐字校勘；固定修订原始wikitext经确定性转换：去除加粗标记，展开YL年号、星号夹注与维基链接，ref校勘内容以括注保留；原API另存。地理志混含沿革，不将所有记载视为公元280年同一截面；不按县名顺序推定治所，不把郡国户口视作城市人口。",
+  "snapshotPath": "data/evidence/historical-context/jin-geography-014.txt",
+  "snapshotSha256": "59d41dc68390738d9fa7e429721a178b17ab93906e3251fa899b4a551889daf7",
+  "pageId": 20475,
+  "revision": {
+    "revid": 2646777,
+    "parentid": 2646599,
+    "timestamp": "2026-02-04T21:03:34Z"
+  },
+  "apiSnapshotPath": "data/evidence/historical-context/jin-geography-014.api.json",
+  "apiSnapshotSha256": "2de5176d25f3fcb19ce233cbc09de22808879f3903a28c45edaa73dbe0e1f534"
+}

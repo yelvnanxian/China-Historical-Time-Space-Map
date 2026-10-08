@@ -1,0 +1,17 @@
+{
+  "id": "context-jin-yongjia",
+  "title": "永嘉之乱 — 维基百科",
+  "url": "https://zh.wikipedia.org/w/index.php?title=%E6%B0%B8%E5%98%89%E4%B9%8B%E4%B9%B1&oldid=93933598",
+  "retrievedAt": "2026-10-08T07:28:45.805033+00:00",
+  "note": "维基百科固定修订概述快照，未完成原始史料交叉考证；不以文中文字核定古址坐标或疆界。",
+  "snapshotPath": "data/evidence/historical-context/jin-yongjia.txt",
+  "snapshotSha256": "fb381b4cdcb1d0ec7c3ff30e49c6f57cdb3767d1a520301a125c141370a8370b",
+  "pageId": 113497,
+  "revision": {
+    "revid": 93933598,
+    "parentid": 87917114,
+    "timestamp": "2026-08-18T01:54:28Z"
+  },
+  "apiSnapshotPath": "data/evidence/historical-context/jin-yongjia.api.json",
+  "apiSnapshotSha256": "6f6a77ccc08e80db8902931316b329f877ff133209578f615b3ba3e461d5bff0"
+}

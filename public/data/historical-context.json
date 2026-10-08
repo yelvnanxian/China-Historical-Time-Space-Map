@@ -1,6 +1,6 @@
 {
   "version": "1.3",
-  "generatedAt": "2026-10-08T07:17:09.749698+00:00",
+  "generatedAt": "2026-10-08T07:42:21.837883+00:00",
   "notes": [
     "历史地理条目提供地区参考点；黄河改道会联动单独保存的 WorldMap 年代河道。未收录历史向量的年代保留现代参照，不外推复原线。",
     "城市大事记跨时期展示，不随当前朝代筛除；同名城市的古今城址可能不同。",
@@ -768,6 +768,141 @@
       "note": "百科固定修订文本，用于有限的概述性事实核对，不等于原始史料交叉考证。引文保留原字形。",
       "snapshotPath": "data/evidence/historical-context/han-baideng.txt",
       "snapshotSha256": "f2cac4607bf5674a61c8082517ce033166f527e22cc35a3ee48ea5d6ffde604c"
+    },
+    {
+      "id": "context-sanguo-weizhi2",
+      "title": "三國志/卷02 — 维基文库",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E4%B8%89%E5%9C%8B%E5%BF%97/%E5%8D%B702&oldid=7913642",
+      "retrievedAt": "2026-10-08T07:27:46.746213+00:00",
+      "note": "《三国志》维基文库电子转录，未与刻本或点校本逐字校勘；快照仅移除三单引号加粗标记，将简单站内链接转为可见文字，将YL纪年模板转为年号及括注，保留字形；原始API另存，可复核转换。用于有据可查的文字阅读，不核定古城坐标、辖区边界或古河道。",
+      "snapshotPath": "data/evidence/historical-context/sanguo-weizhi2.txt",
+      "snapshotSha256": "98a5e158400d5cc21f48f9ae5aa4edec7a453ea56457b5ca7ec254b8a90f1596"
+    },
+    {
+      "id": "context-sanguo-weizhi3",
+      "title": "三國志/卷03 — 维基文库",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E4%B8%89%E5%9C%8B%E5%BF%97/%E5%8D%B703&oldid=2085053",
+      "retrievedAt": "2026-10-08T07:27:46.354944+00:00",
+      "note": "《三国志》维基文库电子转录，未与刻本或点校本逐字校勘；快照仅移除三单引号加粗标记，将简单站内链接转为可见文字，将YL纪年模板转为年号及括注，保留字形；原始API另存，可复核转换。用于有据可查的文字阅读，不核定古城坐标、辖区边界或古河道。",
+      "snapshotPath": "data/evidence/historical-context/sanguo-weizhi3.txt",
+      "snapshotSha256": "a42722f8d19ca7031876b627fd0780e7408b1a65d0791a770a5377b6fa0bab7a"
+    },
+    {
+      "id": "context-sanguo-zhenghun",
+      "title": "三國志/卷16 — 维基文库",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E4%B8%89%E5%9C%8B%E5%BF%97/%E5%8D%B716&oldid=2610840",
+      "retrievedAt": "2026-10-08T07:29:27.978840+00:00",
+      "note": "《三国志》维基文库电子转录，未与刻本或点校本逐字校勘；快照仅移除三单引号加粗标记，将简单站内链接转为可见文字，将YL纪年模板转为年号及括注，保留字形；原始API另存，可复核转换。用于有据可查的文字阅读，不核定古城坐标、辖区边界或古河道。",
+      "snapshotPath": "data/evidence/historical-context/sanguo-zhenghun.txt",
+      "snapshotSha256": "03a746f3208be77e1cc7092fdba57678cf2234aa6c07c26a4af205aa559a576d"
+    },
+    {
+      "id": "context-sanguo-liangxi",
+      "title": "三國志/卷15 — 维基文库",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E4%B8%89%E5%9C%8B%E5%BF%97/%E5%8D%B715&oldid=2085075",
+      "retrievedAt": "2026-10-08T07:29:27.967609+00:00",
+      "note": "《三国志》维基文库电子转录，未与刻本或点校本逐字校勘；快照仅移除三单引号加粗标记，将简单站内链接转为可见文字，将YL纪年模板转为年号及括注，保留字形；原始API另存，可复核转换。用于有据可查的文字阅读，不核定古城坐标、辖区边界或古河道。",
+      "snapshotPath": "data/evidence/historical-context/sanguo-liangxi.txt",
+      "snapshotSha256": "861e809185026cfcb885e4affa37ab4391cf1d5e9220fb48d776cf0fe651110e"
+    },
+    {
+      "id": "context-sanguo-wusansi",
+      "title": "三國志/卷48 — 维基文库",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E4%B8%89%E5%9C%8B%E5%BF%97/%E5%8D%B748&oldid=2085142",
+      "retrievedAt": "2026-10-08T07:27:46.705689+00:00",
+      "note": "《三国志》维基文库电子转录，未与刻本或点校本逐字校勘；快照仅移除三单引号加粗标记，将简单站内链接转为可见文字，将YL纪年模板转为年号及括注，保留字形；原始API另存，可复核转换。用于有据可查的文字阅读，不核定古城坐标、辖区边界或古河道。",
+      "snapshotPath": "data/evidence/historical-context/sanguo-wusansi.txt",
+      "snapshotSha256": "944290341ccc66641755d0df1e6d059d8119d77dcb8c5b3851e05a398eade98f"
+    },
+    {
+      "id": "context-sanguo-wuzhu",
+      "title": "三國志/卷47 — 维基文库",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E4%B8%89%E5%9C%8B%E5%BF%97/%E5%8D%B747&oldid=2602668",
+      "retrievedAt": "2026-10-08T07:27:46.742534+00:00",
+      "note": "《三国志》维基文库电子转录，未与刻本或点校本逐字校勘；快照仅移除三单引号加粗标记，将简单站内链接转为可见文字，将YL纪年模板转为年号及括注，保留字形；原始API另存，可复核转换。用于有据可查的文字阅读，不核定古城坐标、辖区边界或古河道。",
+      "snapshotPath": "data/evidence/historical-context/sanguo-wuzhu.txt",
+      "snapshotSha256": "74329247ac6e41072fa839c88873e7ad9a6521dd5b56b4c7aca990f85ad31aea"
+    },
+    {
+      "id": "context-sanguo-jinyang",
+      "title": "晋阳县 (山西省) — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E6%99%8B%E9%98%B3%E5%8E%BF%20%28%E5%B1%B1%E8%A5%BF%E7%9C%81%29&oldid=89551415",
+      "retrievedAt": "2026-10-08T07:28:25.810281+00:00",
+      "note": "百科固定修订快照，尚未完成原始史料交叉考证。用于有据可查的文字阅读，不核定古城坐标、辖区边界或古河道；引文保留原字形。",
+      "snapshotPath": "data/evidence/historical-context/sanguo-jinyang.txt",
+      "snapshotSha256": "33b27cca8ff80c6c307659fcb9fcc39eeb94f919947f66a5edab966eb0b6a999"
+    },
+    {
+      "id": "context-sanguo-caozhi",
+      "title": "三國志/卷19 — 维基文库",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E4%B8%89%E5%9C%8B%E5%BF%97/%E5%8D%B719&oldid=2347417",
+      "retrievedAt": "2026-10-08T07:29:28.101655+00:00",
+      "note": "《三国志》维基文库电子转录，未与刻本或点校本逐字校勘；快照仅移除三单引号加粗标记，将简单站内链接转为可见文字，将YL纪年模板转为年号及括注，保留字形；原始API另存，可复核转换。用于有据可查的文字阅读，不核定古城坐标、辖区边界或古河道。",
+      "snapshotPath": "data/evidence/historical-context/sanguo-caozhi.txt",
+      "snapshotSha256": "a33f8dceec52a52d82295062f6c5fd2b893e69f1918a631cf0b3fb9b7783247e"
+    },
+    {
+      "id": "context-jin-geography-014",
+      "title": "晉書/卷014 — 维基文库",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E6%99%89%E6%9B%B8/%E5%8D%B7014&oldid=2646777",
+      "retrievedAt": "2026-10-08T07:27:36.098449+00:00",
+      "note": "《晋书》维基文库电子转录，未与刻本或点校本逐字校勘；固定修订原始wikitext经确定性转换：去除加粗标记，展开YL年号、星号夹注与维基链接，ref校勘内容以括注保留；原API另存。地理志混含沿革，不将所有记载视为公元280年同一截面；不按县名顺序推定治所，不把郡国户口视作城市人口。",
+      "snapshotPath": "data/evidence/historical-context/jin-geography-014.txt",
+      "snapshotSha256": "59d41dc68390738d9fa7e429721a178b17ab93906e3251fa899b4a551889daf7"
+    },
+    {
+      "id": "context-jin-min-emperor",
+      "title": "晋愍帝 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E6%99%8B%E6%84%8D%E5%B8%9D&oldid=91094342",
+      "retrievedAt": "2026-10-08T07:28:45.963068+00:00",
+      "note": "维基百科固定修订概述快照，未完成原始史料交叉考证；不以文中文字核定古址坐标或疆界。",
+      "snapshotPath": "data/evidence/historical-context/jin-min-emperor.txt",
+      "snapshotSha256": "2ee13866cec9275959fc3b8210b1f30f7805c7f93228d590539ce51ccef6eaa1"
+    },
+    {
+      "id": "context-jin-songshu-wudi",
+      "title": "宋書/卷2 — 维基文库",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E6%9B%B8/%E5%8D%B72&oldid=2583201",
+      "retrievedAt": "2026-10-08T07:30:33.249776+00:00",
+      "note": "《宋书·武帝纪》维基文库电子转录，未与刻本或点校本逐字校勘；固定修订原始wikitext经确定性转换：去除加粗标记，展开YL年号、星号夹注与维基链接，ref校勘内容以括注保留；原API另存。记载追述刘裕在东晋时活动，不因书名而将义熙年间事改属刘宋；不据行军叙述核定古关址或路线。",
+      "snapshotPath": "data/evidence/historical-context/jin-songshu-wudi.txt",
+      "snapshotSha256": "c5e30fdc3c6e7f36e3fec3549d4c0dec32b7f5cc163a11d451dd3565decd9194"
+    },
+    {
+      "id": "context-jin-yixi",
+      "title": "义熙 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E4%B9%89%E7%86%99&oldid=93421890",
+      "retrievedAt": "2026-10-08T07:31:03.133999+00:00",
+      "note": "维基百科固定修订概述快照，未完成原始史料交叉考证；不以文中文字核定古址坐标或疆界。",
+      "snapshotPath": "data/evidence/historical-context/jin-yixi.txt",
+      "snapshotSha256": "f3bd97c63b6f15058f42b8014bd249bf0768720a485bab665ac55c9c9a988bc2"
+    },
+    {
+      "id": "context-jin-yongjia",
+      "title": "永嘉之乱 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E6%B0%B8%E5%98%89%E4%B9%8B%E4%B9%B1&oldid=93933598",
+      "retrievedAt": "2026-10-08T07:28:45.805033+00:00",
+      "note": "维基百科固定修订概述快照，未完成原始史料交叉考证；不以文中文字核定古址坐标或疆界。",
+      "snapshotPath": "data/evidence/historical-context/jin-yongjia.txt",
+      "snapshotSha256": "fb381b4cdcb1d0ec7c3ff30e49c6f57cdb3767d1a520301a125c141370a8370b"
+    },
+    {
+      "id": "context-jin-geography-015",
+      "title": "晉書/卷015 — 维基文库",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E6%99%89%E6%9B%B8/%E5%8D%B7015&oldid=2666085",
+      "retrievedAt": "2026-10-08T07:27:37.109995+00:00",
+      "note": "《晋书》维基文库电子转录，未与刻本或点校本逐字校勘；固定修订原始wikitext经确定性转换：去除加粗标记，展开YL年号、星号夹注与维基链接，ref校勘内容以括注保留；原API另存。地理志混含沿革，不将所有记载视为公元280年同一截面；不按县名顺序推定治所，不把郡国户口视作城市人口。",
+      "snapshotPath": "data/evidence/historical-context/jin-geography-015.txt",
+      "snapshotSha256": "79f4bf11fb51ddba9cd52e39df65ad23e834d924881460db8c051494b88ddb8b"
+    },
+    {
+      "id": "context-jin-yuan-emperor",
+      "title": "晉元帝 — 维基百科",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E6%99%89%E5%85%83%E5%B8%9D&oldid=91324477",
+      "retrievedAt": "2026-10-08T07:31:03.372046+00:00",
+      "note": "维基百科固定修订概述快照，未完成原始史料交叉考证；不以文中文字核定古址坐标或疆界。",
+      "snapshotPath": "data/evidence/historical-context/jin-yuan-emperor.txt",
+      "snapshotSha256": "e8f0f3144b4b6e63142c0c90e78590d28a755cd652d996f1bb02841da0f81f24"
     }
   ],
   "geographyEntries": [
@@ -1062,6 +1197,122 @@
           ]
         },
         {
+          "id": "sanguo-timeline-changan-five-capitals-221",
+          "year": 221,
+          "dateLabel": "魏黄初二年（221年）",
+          "title": "长安列入曹魏五都",
+          "summary": "《文帝纪》黄初二年条裴注引《魏略》，列长安、谯、许昌、邺、洛阳为五都。本条记录名号与政治地位，不把五都解释成五座职能相同的首都。",
+          "sourceIds": [
+            "context-sanguo-weizhi2"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-sanguo-weizhi2",
+              "quote": "二年春正月，郊祀天地、明堂。",
+              "supports": "黄初纪年连续条目中的二年。"
+            },
+            {
+              "sourceId": "context-sanguo-weizhi2",
+              "quote": "改長安、譙、許昌、鄴、洛陽爲五都；",
+              "supports": "该条裴注引《魏略》五都名单。"
+            }
+          ]
+        },
+        {
+          "id": "sanguo-timeline-changan-imperial-visit-228",
+          "year": 228,
+          "dateLabel": "魏太和二年（228年）",
+          "title": "魏明帝到长安",
+          "summary": "《明帝纪》太和二年记诸葛亮出兵、曹魏调兵及街亭战事，并记魏明帝到长安。本节点仅定位长安阅读入口，不把街亭战场放在长安城中。",
+          "sourceIds": [
+            "context-sanguo-weizhi3"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-sanguo-weizhi3",
+              "quote": "二年春正月，宣王攻破新城，斬達，傳其首。",
+              "supports": "太和纪年连续条目中的二年。"
+            },
+            {
+              "sourceId": "context-sanguo-weizhi3",
+              "quote": "丁未，行幸長安。",
+              "supports": "同年魏明帝行幸长安。"
+            }
+          ]
+        },
+        {
+          "id": "jin-timeline-changan-min-accession-313",
+          "year": 313,
+          "dateLabel": "西晋313年（建兴元年）",
+          "title": "晋愍帝在长安即位",
+          "summary": "洛阳失守后，晋怀帝遇害的消息于313年传到长安，司马邺即帝位、改元建兴。这里呈现的是西晋后期在长安的短暂朝廷，不能倒推成280年已经在长安建都。",
+          "sourceIds": [
+            "context-jin-min-emperor"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-jin-min-emperor",
+              "quote": "永嘉七年（313年）晉懷帝於平陽遇害，四月消息传到长安，司馬鄴为怀帝举哀，於長安即帝位，改元建興，是为晉愍帝",
+              "supports": "313年长安即位。"
+            }
+          ]
+        },
+        {
+          "id": "jin-timeline-changan-surrender-316",
+          "year": 316,
+          "dateLabel": "西晋316年（建兴四年）",
+          "title": "长安失守，晋愍帝出降",
+          "summary": "长安遭围困后，晋愍帝于316年出降，西晋结束。地图仍定位到长安地区参考点，不将出降的东门或史料中的围城营地画成已确认遗址。",
+          "sourceIds": [
+            "context-jin-min-emperor"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-jin-min-emperor",
+              "quote": "建兴四年十一月十一日（316年12月11日），愍帝乘羊车以肉袒衔璧抬棺之礼出东门投降",
+              "supports": "316年愍帝在长安出降。"
+            },
+            {
+              "sourceId": "context-jin-min-emperor",
+              "quote": "316年劉曜陷長安，西晉滅亡，漢趙昭武帝劉聰降封懷安侯，後被殺。",
+              "supports": "长安失守与西晋结束；被杀发生在其后，不混为316年。"
+            }
+          ]
+        },
+        {
+          "id": "jin-timeline-changan-wang-zhen-e-417",
+          "year": 417,
+          "dateLabel": "东晋417年（义熙十三年）",
+          "title": "王镇恶攻克长安，后秦覆亡",
+          "summary": "义熙十三年，王镇恶攻克长安、生擒姚泓，随后刘裕抵达长安。此时仍属东晋时期；纪传收在宋书中，不表示刘宋已经建立。节点采用417年，不据这一胜利推定关中此后一直由东晋稳定控制。",
+          "sourceIds": [
+            "context-jin-songshu-wudi",
+            "context-jin-yixi"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-jin-songshu-wudi",
+              "quote": "==義熙十三年==",
+              "supports": "下引潼关、长安战事所在的纪年标题。"
+            },
+            {
+              "sourceId": "context-jin-songshu-wudi",
+              "quote": "二月，冠軍將軍檀道濟等次潼關。三月庚辰，大軍入河。索虜步騎十萬，營據河津。公命諸軍濟河擊破之。公至洛陽。七月，至陝城。龍驤將軍王鎮惡伐木為舟，自河浮渭。八月，扶風太守沈田子大破姚泓於藍田。王鎮惡剋長安，生擒泓。九月，公至長安。",
+              "supports": "义熙十三年条记檀道济等至潼关、王镇恶攻克长安及刘裕后至长安；不据文字绘制路线。"
+            },
+            {
+              "sourceId": "context-jin-yixi",
+              "quote": "元興四年（405年）正月十六日，改元為義熙元年。",
+              "supports": "义熙元年对应405年；按连续纪年换算十三年为405+12，即417年，不换算具体月日。"
+            },
+            {
+              "sourceId": "context-jin-yixi",
+              "quote": "义熙十三年——刘裕北伐，占领长安，后秦亡。",
+              "supports": "后秦覆亡的阶段。"
+            }
+          ]
+        },
+        {
           "id": "changan-daxing-582",
           "year": 582,
           "dateLabel": "隋开皇二年（582年）",
@@ -1347,6 +1598,45 @@
               "sourceId": "context-han-luoyang-site",
               "quote": "汉献帝初平元年（190年），雒阳城为董卓焚毁破坏。",
               "supports": "董卓焚毁雒阳及概述中的直接事实；年份来自引文明确纪年。"
+            }
+          ]
+        },
+        {
+          "id": "sanguo-timeline-luoyang-palace-220",
+          "year": 220,
+          "dateLabel": "魏黄初元年（220年）",
+          "title": "曹魏开始营建洛阳宫",
+          "summary": "《文帝纪》黄初元年十二月记开始营建洛阳宫，曹丕随后到洛阳。按黄初元年归入220年，不换算旧历月日；这是宫城营建和行幸记录，不把曹魏受禅地点认作洛阳。",
+          "sourceIds": [
+            "context-sanguo-weizhi2"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-sanguo-weizhi2",
+              "quote": "其以延康元年爲黃初元年，議改正朔，易服色，殊徽號，同律度量，承土行，大赦天下；",
+              "supports": "本段黄初元年纪年，换算为220年。"
+            },
+            {
+              "sourceId": "context-sanguo-weizhi2",
+              "quote": "十二月，初營洛陽宮，戊午幸洛陽。",
+              "supports": "该年十二月营宫、行幸洛阳。"
+            }
+          ]
+        },
+        {
+          "id": "jin-timeline-luoyang-fall-311",
+          "year": 311,
+          "dateLabel": "西晋311年（永嘉五年）",
+          "title": "永嘉之乱，洛阳失守",
+          "summary": "洛阳陷落，晋怀帝被俘。此后晋愍帝在长安即位，西晋延续至316年；本节点不把311年直接称为西晋灭亡年，也不据概述材料补绘战线或统计伤亡。",
+          "sourceIds": [
+            "context-jin-yongjia"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-jin-yongjia",
+              "quote": "永嘉之亂，又稱永嘉之禍，是發生在西晉永嘉五年（311年）的戰亂，當時中國北方的遊牧民族匈奴擊敗西晉京師洛陽的守軍，大肆搶掠殺戮，更俘擄晉懷帝等王公大臣，及後西晉於316年滅亡。",
+              "supports": "311年的洛阳陷落与怀帝被俘。"
             }
           ]
         },
@@ -1893,6 +2183,75 @@
           "relatedEventId": "wu-capital"
         },
         {
+          "id": "jin-timeline-nanjing-jianye-282",
+          "year": 282,
+          "dateLabel": "西晋282年（太康三年）",
+          "title": "建业改名建邺",
+          "summary": "所引城市史将改名系于太康三年即282年。因此默认280年仍显示建业，不能把后来建邺或建康的名称提前到灭吴当年；本条不据改名推断城址另迁。",
+          "sourceIds": [
+            "context-nanjing"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-nanjing",
+              "quote": "西晋灭吴后，282年（太康三年）改建业为建邺，313年（建兴元年）又改建康。",
+              "supports": "282年改建邺、313年改建康的先后。"
+            }
+          ]
+        },
+        {
+          "id": "jin-timeline-nanjing-jiankang-313",
+          "year": 313,
+          "dateLabel": "西晋313年（建兴元年）",
+          "title": "建邺改名建康",
+          "summary": "313年建邺改名建康，先于司马睿317年称晋王与318年称帝。城市改名和东晋朝廷建立分开呈现，不把它们合成同一年的事件。",
+          "sourceIds": [
+            "context-nanjing"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-nanjing",
+              "quote": "西晋灭吴后，282年（太康三年）改建业为建邺，313年（建兴元年）又改建康。",
+              "supports": "313年建康改名。"
+            }
+          ]
+        },
+        {
+          "id": "jin-timeline-nanjing-jin-king-317",
+          "year": 317,
+          "dateLabel": "东晋317年（建武元年）",
+          "title": "司马睿在建康称晋王",
+          "summary": "司马睿在建康称晋王、备百官、立社稷，改元建武，是通常所说东晋建立的317年节点。此时尚未称帝；318年晋愍帝死讯传到建康后，司马睿才即皇帝位。",
+          "sourceIds": [
+            "context-jin-yuan-emperor"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-jin-yuan-emperor",
+              "quote": "建武元年（317年），在上一年漢趙俘擄晉愍帝的消息隨平東將軍宋哲傳到建康後，宋哲宣稱有愍帝詔命以司馬睿總攝萬機，西陽王司馬羕為首的眾官員則請司馬睿登帝位，在司馬睿拒絕之下依魏晉兩朝先例改稱晉王，並於建康備百官，立社稷，並改元「建武」。同年晉愍帝被殺，消息在翌年（318年）傳到建康，百官勸進，司馬睿遂即帝位，改元「太興」。",
+              "supports": "317称晋王与318称帝分开；只取死讯传到建康的年份，不把原句同年遇害换成公历317。"
+            }
+          ],
+          "relatedEventId": "eastern-jin"
+        },
+        {
+          "id": "jin-timeline-nanjing-emperor-318",
+          "year": 318,
+          "dateLabel": "东晋318年（太兴元年）",
+          "title": "司马睿在建康称帝",
+          "summary": "晋愍帝死讯传到建康后，司马睿即皇帝位、改元太兴。此条与317年称晋王并列，让东晋建立和皇帝即位的两个纪年可以分别阅读。",
+          "sourceIds": [
+            "context-jin-yuan-emperor"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-jin-yuan-emperor",
+              "quote": "建武元年（317年），在上一年漢趙俘擄晉愍帝的消息隨平東將軍宋哲傳到建康後，宋哲宣稱有愍帝詔命以司馬睿總攝萬機，西陽王司馬羕為首的眾官員則請司馬睿登帝位，在司馬睿拒絕之下依魏晉兩朝先例改稱晉王，並於建康備百官，立社稷，並改元「建武」。同年晉愍帝被殺，消息在翌年（318年）傳到建康，百官勸進，司馬睿遂即帝位，改元「太興」。",
+              "supports": "318年在建康即帝位。"
+            }
+          ]
+        },
+        {
           "id": "tang-timeline-nanjing-757-1",
           "year": 757,
           "dateLabel": "至德二年二月（757年）",
@@ -2422,6 +2781,28 @@
       "placeId": "hangzhou",
       "entries": [
         {
+          "id": "sanguo-timeline-qiantang-marquis-258",
+          "year": 258,
+          "dateLabel": "吴永安元年（258年）",
+          "title": "孙德获封钱唐侯",
+          "summary": "《三嗣主传》永安元年记孙皓之弟孙德封钱唐侯。本条是封爵与地名沿革线索，不表示孙德到任治理钱唐，也不是钱唐县在这一年初置。",
+          "sourceIds": [
+            "context-sanguo-wusansi"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-sanguo-wusansi",
+              "quote": "永安元年（258年）",
+              "supports": "永安元年与258年的对应。"
+            },
+            {
+              "sourceId": "context-sanguo-wusansi",
+              "quote": "己丑，封孫皓爲烏程侯，皓弟德錢唐侯，謙永安侯。",
+              "supports": "孙德封钱唐侯。"
+            }
+          ]
+        },
+        {
           "id": "hangzhou-name-589",
           "year": 589,
           "dateLabel": "589年",
@@ -2701,6 +3082,40 @@
           ]
         },
         {
+          "id": "jin-timeline-chengdu-li-xiong-306",
+          "year": 306,
+          "dateLabel": "两晋同期306年（西晋光熙元年）",
+          "title": "李雄在成都称帝，国号大成",
+          "summary": "李雄在成都称帝，国号大成。这是与西晋同时存在的政权，不能因节点归在两晋时间段就说成都在306年仍由晋直接管辖；本条也不把后来成汉的汉号提前使用。",
+          "sourceIds": [
+            "context-chengdu"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-chengdu",
+              "quote": "光熙元年（306年），李雄在成都自立为帝，国号大成。",
+              "supports": "306年李雄称帝及当时国号。"
+            }
+          ]
+        },
+        {
+          "id": "jin-timeline-chengdu-huan-wen-347",
+          "year": 347,
+          "dateLabel": "东晋347年（永和三年）",
+          "title": "桓温灭成汉，成都归东晋",
+          "summary": "桓温攻灭成汉，成都重新归于东晋所领益州。此节点只对应347年的政权转换，不将其后前秦、谯蜀等阶段都写作东晋稳定直辖。",
+          "sourceIds": [
+            "context-chengdu"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-chengdu",
+              "quote": "永和三年（347年），成汉为东晋桓温所攻灭，成都重新成为东晋所领的益州。",
+              "supports": "347年成汉灭亡与成都控制权变化。"
+            }
+          ]
+        },
+        {
           "id": "tang-timeline-chengdu-662-1",
           "year": 662,
           "dateLabel": "龙朔二年（662年）",
@@ -2951,6 +3366,28 @@
           ]
         },
         {
+          "id": "sanguo-timeline-jiangling-siege-223",
+          "year": 223,
+          "dateLabel": "魏黄初四年（223年）",
+          "title": "魏军解除江陵之围",
+          "summary": "《文帝纪》黄初四年条引魏方诏书，记录围攻江陵后解除围城，并提出休息军民。本轮只采用攻守变化，不将魏方夸张战果当作已经交叉核验的结论。",
+          "sourceIds": [
+            "context-sanguo-weizhi2"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-sanguo-weizhi2",
+              "quote": "四年春正月，詔曰：",
+              "supports": "黄初四年条的纪年。"
+            },
+            {
+              "sourceId": "context-sanguo-weizhi2",
+              "quote": "今開江陵之圍，以緩成死之禽。且休力役，罷省繇戍，畜養士民，咸使安息。",
+              "supports": "该条诏书明言解除江陵之围。"
+            }
+          ]
+        },
+        {
           "id": "jingzhou-liang-552",
           "year": 552,
           "dateLabel": "552年",
@@ -3160,6 +3597,50 @@
           ]
         },
         {
+          "id": "sanguo-timeline-guangzhou-short-establishment-226",
+          "year": 226,
+          "dateLabel": "吴黄武五年（226年）",
+          "title": "孙吴分置广州，旋即复旧",
+          "summary": "《吴主传》黄武五年条记分交州置广州，紧接着记“俄复旧”。本条保留设而复旧的完整过程，不把广州州级建置从226年起画作连续存在。",
+          "sourceIds": [
+            "context-sanguo-wuzhu"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-sanguo-wuzhu",
+              "quote": "五年春，令曰：",
+              "supports": "黄武五年条的纪年，换算为226年。"
+            },
+            {
+              "sourceId": "context-sanguo-wuzhu",
+              "quote": "是歳，分交州置廣州。俄復舊。",
+              "supports": "当年置广州与旋即复旧的完整记载。"
+            }
+          ]
+        },
+        {
+          "id": "sanguo-timeline-guangzhou-restored-264",
+          "year": 264,
+          "dateLabel": "吴永安七年（264年）",
+          "title": "孙吴再次分交州置广州",
+          "summary": "《三嗣主传》孙休永安七年记复分交州置广州。这个晚期建置变化晚于默认230年，不能用来提前认定230年的州名、州治或边界。",
+          "sourceIds": [
+            "context-sanguo-wusansi"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-sanguo-wusansi",
+              "quote": "七年春正月，大赦。",
+              "supports": "孙休永安七年条的纪年。"
+            },
+            {
+              "sourceId": "context-sanguo-wusansi",
+              "quote": "復分交州置廣州。",
+              "supports": "该年再次分置广州。"
+            }
+          ]
+        },
+        {
           "id": "tang-timeline-guangzhou-621-1",
           "year": 621,
           "dateLabel": "武德四年（621年）",
@@ -3314,6 +3795,55 @@
               "sourceId": "context-yangzhou",
               "quote": "前486年，吴国灭邗，筑邗城，开邗沟，连接长江，淮河。邗城是今扬州属地上最早的城市。",
               "supports": "邗城与邗沟兴建及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "sanguo-timeline-guangling-visit-224",
+          "year": 224,
+          "dateLabel": "魏黄初五年（224年）",
+          "title": "曹丕出巡到广陵",
+          "summary": "《文帝纪》记黄初五年曹丕经淮水、寿春，九月到广陵。本条保留原文记载的交通联系，不据现代河道重建船队路线。",
+          "sourceIds": [
+            "context-sanguo-weizhi2"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-sanguo-weizhi2",
+              "quote": "五年春正月，初令謀反大逆乃得相告，其餘皆勿聽治；",
+              "supports": "黄初五年条纪年。"
+            },
+            {
+              "sourceId": "context-sanguo-weizhi2",
+              "quote": "九月，遂至廣陵，赦青、徐二州，改易諸將守。",
+              "supports": "该年九月到广陵。"
+            }
+          ]
+        },
+        {
+          "id": "sanguo-timeline-guangling-ice-225",
+          "year": 225,
+          "dateLabel": "魏黄初六年（225年）",
+          "title": "广陵临江观兵，遇冰撤还",
+          "summary": "《文帝纪》黄初六年记曹丕在广陵故城临江观兵，并因大寒、水道结冰、船不能入江而撤还。本条不把原文兵数作为现代统计，也不核定当时江岸位置。",
+          "sourceIds": [
+            "context-sanguo-weizhi2"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-sanguo-weizhi2",
+              "quote": "六年春二月，遣使者循行許昌以東盡沛郡，問民所疾苦，貧者振貸之。",
+              "supports": "黄初六年条纪年。"
+            },
+            {
+              "sourceId": "context-sanguo-weizhi2",
+              "quote": "冬十月，行幸廣陵故城，臨江觀兵，戎卒十餘萬，旌旗數百里。",
+              "supports": "同年在广陵故城观兵。"
+            },
+            {
+              "sourceId": "context-sanguo-weizhi2",
+              "quote": "是歲大寒，水道冰，舟不得入江，乃引還。",
+              "supports": "同年因水道冰而撤还。"
             }
           ]
         },
@@ -4350,6 +4880,40 @@
           ]
         },
         {
+          "id": "jin-timeline-xiangyang-attack-378",
+          "year": 378,
+          "dateLabel": "东晋378年（太元三年）",
+          "title": "前秦出兵围攻襄阳",
+          "summary": "前秦出兵围攻襄阳，围城延续到次年。将出兵与城破分为两个节点，避免把378年的攻势提前写成襄阳已经陷落。",
+          "sourceIds": [
+            "context-xiangyang"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-xiangyang",
+              "quote": "东晋太元三年（378年）二月，前秦王苻坚派遣征南大将军苻丕、武卫将军苟苌、尚书慕容目韦率步骑7万寇襄阳。第二年春，攻克襄阳，俘朱序，送往长安。",
+              "supports": "378年出兵与次年城破的先后。"
+            }
+          ]
+        },
+        {
+          "id": "jin-timeline-xiangyang-fall-379",
+          "year": 379,
+          "dateLabel": "东晋379年（太元四年）",
+          "title": "襄阳失守，朱序被俘",
+          "summary": "据所引材料，378年出兵后的第二年春，前秦攻克襄阳，朱序被俘并送往长安。379年由原文的次年关系换算，不把这个节点当成整个襄阳郡边界已能复原。",
+          "sourceIds": [
+            "context-xiangyang"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-xiangyang",
+              "quote": "东晋太元三年（378年）二月，前秦王苻坚派遣征南大将军苻丕、武卫将军苟苌、尚书慕容目韦率步骑7万寇襄阳。第二年春，攻克襄阳，俘朱序，送往长安。",
+              "supports": "378年的第二年即379年，支持城破与朱序被俘。"
+            }
+          ]
+        },
+        {
           "id": "tang-timeline-xiangyang-621-1",
           "year": 621,
           "dateLabel": "武德四年（621年）",
@@ -4543,6 +5107,34 @@
               "sourceId": "context-tongguan",
               "quote": "始建于东汉建安元年（196年）。",
               "supports": "潼关关隘始建及概述中的直接事实。"
+            }
+          ]
+        },
+        {
+          "id": "jin-timeline-tongguan-tan-daoji-417",
+          "year": 417,
+          "dateLabel": "东晋417年（义熙十三年二月）",
+          "title": "檀道济等军到潼关",
+          "summary": "《宋书·武帝纪》义熙十三年二月记檀道济等到潼关。这里的次是驻至之意，不等同于当天攻陷关城；按义熙元年405年换算为417年，也不将旧历二月直接换为公历二月。",
+          "sourceIds": [
+            "context-jin-songshu-wudi",
+            "context-jin-yixi"
+          ],
+          "evidence": [
+            {
+              "sourceId": "context-jin-songshu-wudi",
+              "quote": "==義熙十三年==",
+              "supports": "下引潼关、长安战事所在的纪年标题。"
+            },
+            {
+              "sourceId": "context-jin-songshu-wudi",
+              "quote": "二月，冠軍將軍檀道濟等次潼關。三月庚辰，大軍入河。索虜步騎十萬，營據河津。公命諸軍濟河擊破之。公至洛陽。七月，至陝城。龍驤將軍王鎮惡伐木為舟，自河浮渭。八月，扶風太守沈田子大破姚泓於藍田。王鎮惡剋長安，生擒泓。九月，公至長安。",
+              "supports": "义熙十三年条记檀道济等至潼关、王镇恶攻克长安及刘裕后至长安；不据文字绘制路线。"
+            },
+            {
+              "sourceId": "context-jin-yixi",
+              "quote": "元興四年（405年）正月十六日，改元為義熙元年。",
+              "supports": "义熙元年对应405年；按连续纪年换算十三年为405+12，即417年，不换算具体月日。"
             }
           ]
         },

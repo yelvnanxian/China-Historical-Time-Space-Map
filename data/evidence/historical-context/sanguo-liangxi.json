@@ -1,0 +1,17 @@
+{
+  "id": "context-sanguo-liangxi",
+  "title": "三國志/卷15 — 维基文库",
+  "url": "https://zh.wikisource.org/w/index.php?title=%E4%B8%89%E5%9C%8B%E5%BF%97/%E5%8D%B715&oldid=2085075",
+  "retrievedAt": "2026-10-08T07:29:27.967609+00:00",
+  "note": "《三国志》维基文库电子转录，未与刻本或点校本逐字校勘；快照仅移除三单引号加粗标记，将简单站内链接转为可见文字，将YL纪年模板转为年号及括注，保留字形；原始API另存，可复核转换。用于有据可查的文字阅读，不核定古城坐标、辖区边界或古河道。",
+  "snapshotPath": "data/evidence/historical-context/sanguo-liangxi.txt",
+  "snapshotSha256": "861e809185026cfcb885e4affa37ab4391cf1d5e9220fb48d776cf0fe651110e",
+  "pageId": 19831,
+  "revision": {
+    "revid": 2085075,
+    "parentid": 2078317,
+    "timestamp": "2021-11-01T14:05:10Z"
+  },
+  "apiSnapshotPath": "data/evidence/historical-context/sanguo-liangxi.api.json",
+  "apiSnapshotSha256": "60c7f037198f4ef10adef7b44daf5a2922316c80157a47686a5d8a7bc29b938e"
+}

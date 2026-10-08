@@ -22,6 +22,8 @@ BUILDERS = (
     "build-qing-content.py",
     "build-qin-content.py",
     "build-han-content.py",
+    "build-sanguo-content.py",
+    "build-jin-content.py",
 )
 
 

@@ -1,0 +1,73 @@
+{
+  "periodId": "sanguo",
+  "profiles": 11,
+  "profilePlaceIds": [
+    "changan",
+    "luoyang",
+    "beijing",
+    "hangzhou",
+    "guangzhou",
+    "yangzhou",
+    "jingzhou",
+    "jinyang",
+    "datong",
+    "linzi",
+    "dunhuang"
+  ],
+  "datedEntries": 9,
+  "sourceCount": 12,
+  "quotesMatched": 50,
+  "missingProfilePlaceIds": [
+    "kaifeng",
+    "handan",
+    "tongguan"
+  ],
+  "excludedCandidates": [
+    {
+      "placeId": "kaifeng",
+      "topic": "浚仪在曹魏的确切县属与治所",
+      "reason": "现有材料详述202年汉末水运背景，未取得足够本期城市事实；不从西晋太康县目倒推230年。"
+    },
+    {
+      "placeId": "handan",
+      "topic": "邯郸与邺城的三国沿革",
+      "reason": "现有百科混写现代邯郸市域与邺城，并把曹操据邺统称三国；不能把邺城建都、宫台放在邯郸城。"
+    },
+    {
+      "placeId": "tongguan",
+      "topic": "潼关三国档案",
+      "reason": "现有入口只足以支持196年始建这一汉末记录，不新增缺乏本期史实的占位档案。"
+    },
+    {
+      "placeId": "guangzhou",
+      "topic": "217年“吴建安”与230年广州州治",
+      "reason": "217年仍属汉末，226年置广州后俄复旧，264年才复置；不将三国统称和后期州治身份提前。"
+    },
+    {
+      "placeId": "datong",
+      "topic": "230年平城县属国与精确控制权",
+      "reason": "百科只支持今大同地区有乌桓、鲜卑活动，未支持230年平城县持续建置或某部族精确占城。"
+    },
+    {
+      "placeId": "dunhuang",
+      "topic": "仓慈任职年与道路几何",
+      "reason": "原文仅称太和中，不能挑选某一年做节点；商旅护送也不提供可绘制的古道。"
+    },
+    {
+      "placeId": "beijing",
+      "topic": "刘靖修戾陵渠确年",
+      "reason": "原文无精确工程年，人物254年去世不能当作修渠年。"
+    },
+    {
+      "placeId": "nanjing",
+      "topic": "孙吴229年迁都建业",
+      "reason": "已有nanjing-wu-229，保留旧节点，不重复创建。"
+    },
+    {
+      "placeId": "chengdu",
+      "topic": "刘备221年称帝",
+      "reason": "已有chengdu-shuhan-221，保留旧节点，不重复创建。"
+    }
+  ],
+  "limitations": "本轮补充文献阅读，不改变治所或边界；古籍电子转录未与点校本校勘。薄资料的平城、钱唐明确区分区域背景与确定县治，未把太康县目回填到230年。"
+}

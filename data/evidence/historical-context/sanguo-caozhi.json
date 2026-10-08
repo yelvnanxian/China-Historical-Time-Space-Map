@@ -1,0 +1,17 @@
+{
+  "id": "context-sanguo-caozhi",
+  "title": "三國志/卷19 — 维基文库",
+  "url": "https://zh.wikisource.org/w/index.php?title=%E4%B8%89%E5%9C%8B%E5%BF%97/%E5%8D%B719&oldid=2347417",
+  "retrievedAt": "2026-10-08T07:29:28.101655+00:00",
+  "note": "《三国志》维基文库电子转录，未与刻本或点校本逐字校勘；快照仅移除三单引号加粗标记，将简单站内链接转为可见文字，将YL纪年模板转为年号及括注，保留字形；原始API另存，可复核转换。用于有据可查的文字阅读，不核定古城坐标、辖区边界或古河道。",
+  "snapshotPath": "data/evidence/historical-context/sanguo-caozhi.txt",
+  "snapshotSha256": "a33f8dceec52a52d82295062f6c5fd2b893e69f1918a631cf0b3fb9b7783247e",
+  "pageId": 14301,
+  "revision": {
+    "revid": 2347417,
+    "parentid": 2092430,
+    "timestamp": "2023-12-23T09:19:49Z"
+  },
+  "apiSnapshotPath": "data/evidence/historical-context/sanguo-caozhi.api.json",
+  "apiSnapshotSha256": "f2cf7312b946bf1463b112341d221c0ecc043e5c414b54b68dd62b60c1fca68b"
+}

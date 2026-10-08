@@ -1,0 +1,32 @@
+{
+  "baselineVersion": "0.20.0",
+  "baselineCommit": "8981b9a7645dad856ecca7bc9b66c349e870dd1c",
+  "oldProfileCount": 236,
+  "newProfileCount": 261,
+  "oldTimelineEntryCount": 600,
+  "newTimelineEntryCount": 622,
+  "oldProfilesUnchanged": true,
+  "oldTimelineEntriesUnchanged": true,
+  "oldSourceRecordsUnchanged": true,
+  "geographyEntriesUnchanged": true,
+  "catalogEventsSourcesPeriodsUnchanged": true,
+  "catalogPlacesUnchangedExceptReviewedNaming": true,
+  "reviewedCatalogNamingChange": {
+    "placeId": "guangzhou",
+    "field": "nameByPeriod.sanguo",
+    "before": "Fallback to place.name",
+    "after": "番禺",
+    "sourceId": "context-guangzhou",
+    "quote": "三国时，吴国迁郡治回番禺，后又设为交州治所。交广分治后为广州治所。",
+    "supports": "番禺与交州、广州治所的分期概述；不据三国统称确定230的每一项驻所。",
+    "url": "https://zh.wikipedia.org/w/index.php?title=%E5%B9%BF%E5%B7%9E%E5%B8%82&oldid=94228892",
+    "snapshotPath": "data/evidence/historical-context/guangzhou.txt",
+    "snapshotSha256": "152c9df48c233545a63f5bc1704c6a555b6fe09658ee007380e6d504113d45bd"
+  },
+  "note": "Only catalog metadata and the reviewed Sanguo place label changed. Existing coordinates, period relations, events and sources were preserved.",
+  "baselineHashes": {
+    "public/data/city-period-profiles.json": "4aef06e6ef6cde4b8cf2506bf5e403637cdd53da987df25d3d18a52bcc5fa3d1",
+    "public/data/historical-context.json": "52f88ce722165aa4df1697247aaf22197c4548dc2daca6b16b4daee3228bbb78",
+    "data/catalog.json": "ee27c4a031c934764c64c9fba63ed23821848d8b055bdf9a61cdfb4efb2e5f7d"
+  }
+}

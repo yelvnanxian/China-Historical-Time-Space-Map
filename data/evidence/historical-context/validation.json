@@ -1,21 +1,21 @@
 {
   "scope": "all-published-periods-after-all-merges",
-  "createdAt": "2026-10-08T07:17:09.749698+00:00",
-  "sources": 84,
+  "createdAt": "2026-10-08T07:42:21.837883+00:00",
+  "sources": 99,
   "geographyEntries": 8,
   "cityTimelines": 106,
-  "cityEntries": 600,
-  "quotesMatched": 636,
+  "cityEntries": 622,
+  "quotesMatched": 674,
   "cities": [
     {
       "placeId": "changan",
       "name": "长安",
-      "entries": 14
+      "entries": 19
     },
     {
       "placeId": "luoyang",
       "name": "洛阳",
-      "entries": 17
+      "entries": 19
     },
     {
       "placeId": "kaifeng",
@@ -25,7 +25,7 @@
     {
       "placeId": "nanjing",
       "name": "南京",
-      "entries": 19
+      "entries": 23
     },
     {
       "placeId": "beijing",
@@ -35,27 +35,27 @@
     {
       "placeId": "hangzhou",
       "name": "杭州",
-      "entries": 14
+      "entries": 15
     },
     {
       "placeId": "chengdu",
       "name": "成都",
-      "entries": 15
+      "entries": 17
     },
     {
       "placeId": "jingzhou",
       "name": "江陵",
-      "entries": 11
+      "entries": 12
     },
     {
       "placeId": "guangzhou",
       "name": "广州",
-      "entries": 10
+      "entries": 12
     },
     {
       "placeId": "yangzhou",
       "name": "扬州",
-      "entries": 12
+      "entries": 14
     },
     {
       "placeId": "xianyang",
@@ -85,12 +85,12 @@
     {
       "placeId": "xiangyang",
       "name": "襄阳",
-      "entries": 11
+      "entries": 13
     },
     {
       "placeId": "tongguan",
       "name": "潼关",
-      "entries": 6
+      "entries": 7
     },
     {
       "placeId": "yinchuan",
@@ -539,5 +539,5 @@
     }
   ],
   "referenceCoordinates": "Existing catalog region reference points, not verified historical site coordinates.",
-  "outputSha256": "52f88ce722165aa4df1697247aaf22197c4548dc2daca6b16b4daee3228bbb78"
+  "outputSha256": "037961c2d5caa0a5cff978e3d09bc95043cd0eecc6d228f19c5702df91cb785b"
 }
