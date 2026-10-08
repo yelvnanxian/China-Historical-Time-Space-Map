@@ -119,3 +119,13 @@
     font-size: 9px;
   }
 }
+/* Place categories are deliberately visual cues only; a category without a
+   reviewed record remains hidden from the catalogue instead of being guessed. */
+.place-marker.place-type-battlefield .marker-dot { background: #a94e43; border-radius: 2px; transform: rotate(45deg); }
+.place-marker.place-type-tomb .marker-dot { background: #75614b; border-radius: 2px 8px 2px 8px; }
+.place-marker.place-type-temple .marker-dot { background: #9a6945; border-radius: 3px; }
+.place-marker.place-type-port .marker-dot,
+.place-marker.place-type-ferry .marker-dot { background: #3d8396; }
+.place-marker.place-type-post .marker-dot { background: #a27b3f; border-radius: 2px; }
+.place-marker.place-type-site .marker-dot { background: #7c6a96; }
+.place-marker.place-type-unknown .marker-dot { background: #7c806e; }

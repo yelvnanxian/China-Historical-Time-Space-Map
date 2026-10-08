@@ -76,7 +76,7 @@ export function validateCatalog(value: unknown): asserts value is Catalog {
     refs(Object.keys(place.nameByPeriod ?? {}), 'periods', place.id);
     refs(Object.keys(place.typeByPeriod ?? {}), 'periods', place.id);
     for (const type of [place.type, ...Object.values(place.typeByPeriod ?? {})]) {
-      if (!['capital', 'city', 'pass'].includes(type)) throw new Error(`${place.id} 存在无效地点类型：${type}`);
+      if (!['capital', 'city', 'pass', 'battlefield', 'tomb', 'temple', 'port', 'ferry', 'post', 'site', 'unknown'].includes(type)) throw new Error(`${place.id} 存在无效地点类型：${type}`);
     }
     if (!Array.isArray(place.aliases)) throw new Error(`${place.id} 缺少地名别名列表`);
   }

@@ -9,6 +9,8 @@ import { findNaturalMapHit } from "../../shared/map-hit-test";
 import type { TangBoundaryCrosswalk } from "../../shared/tang-boundary-crosswalk";
 import type { TangCountyDiagnostics } from "../../shared/tang-county-diagnostics";
 import { canOpenCountyModel } from "../../shared/county-model-interaction";
+import { temporalSettlementDisplayZoom } from "../../shared/temporal-settlement-display";
+import { settlementReliability, reliabilityColors, reliabilityLabels, reliabilityStatuses } from "../../shared/data-reliability";
 import TangJurisdictionInfo from "./TangJurisdictionInfo";
 import CountyGeometryNotice from "./CountyGeometryNotice";
 import "../map-detail.css";
@@ -17,11 +19,12 @@ const empty: TemporalSettlementsCollection = { type: "FeatureCollection", featur
 type Settlement = TemporalSettlementsCollection["features"][number];
 const layers = ["temporal-settlement-points", "temporal-settlement-hit", "temporal-settlement-selected"];
 
-export default function TemporalSettlementLayer({ map, ready, periodId, year, zoom, mode, modernNames, controlsContainer, resetKey, onChoose, onFocus, onBoundaryRequest, onPlaceSelect }: {
+export default function TemporalSettlementLayer({ map, ready, periodId, year, zoom, mode, modernNames, controlsContainer, resetKey, onChoose, onFocus, onBoundaryRequest, onPlaceSelect, reliabilityMode = false }: {
   map: MapInstance | null; ready: boolean; periodId: string; year: number; zoom: number; mode: MapInteractionMode; modernNames: boolean;
   controlsContainer: HTMLElement | null; resetKey: string;
   onChoose: () => void; onFocus: (points: [number, number][], maxZoom?: number) => void;
   onBoundaryRequest: (id: string) => void; onPlaceSelect: (id: string) => void;
+  reliabilityMode?: boolean;
 }) {
   const validYear = Number.isInteger(year) && year !== 0;
   const yearLabel = temporalSettlementYearLabel(year);
@@ -104,14 +107,15 @@ export default function TemporalSettlementLayer({ map, ready, periodId, year, zo
     map.on("moveend", update); map.on("resize", update); update();
     return () => { map.off("moveend", update); map.off("resize", update); };
   }, [map, ready]);
-  // Source membership changes at these two thresholds, not every animation frame.
-  const visibleZoom = zoom >= 8 ? 8 : zoom >= 6 ? 6 : 0;
+  // Source membership changes only at display thresholds, not every animation frame.
+  const visibleZoom = zoom >= 8 ? 8 : zoom >= 6 ? 6 : zoom >= 4 ? 4 : 0;
   const currentFeatures = useMemo(() => enabled && loadedPeriodId === periodId ? data.features.filter(f => temporalSettlementActive(f.properties, year)) : [], [data, enabled, loadedPeriodId, periodId, year]);
-  const displayed = useMemo(() => currentFeatures.filter(f => visibleZoom >= f.properties.minZoom), [currentFeatures, visibleZoom]);
+  const displayed = useMemo(() => currentFeatures.filter(f => visibleZoom >= temporalSettlementDisplayZoom(f.properties, periodId)), [currentFeatures, periodId, visibleZoom]);
   // Selection and source geometry are gated synchronously on the browsing year;
   // clearing React state in an effect alone would leave one stale render.
   const currentSelected = enabled && loadedPeriodId === periodId && selected && temporalSettlementActive(selected.properties, year) ? selected : undefined;
-  const mapData = useMemo(() => ({ type: "FeatureCollection" as const, features: displayed.map(f => ({ ...f, properties: { id: f.properties.id, level: f.properties.level } })) }), [displayed]);
+  const reliability = useMemo(() => new Map(currentFeatures.map(feature => [feature.properties.id, settlementReliability(feature.properties, year, tangDiagnostics, tangCrosswalk)])), [currentFeatures, year, tangDiagnostics, tangCrosswalk]);
+  const mapData = useMemo(() => ({ type: "FeatureCollection" as const, features: displayed.map(f => ({ ...f, properties: { id: f.properties.id, level: f.properties.level, reliabilityStatus: reliability.get(f.properties.id)?.status ?? "unreviewed" } })) }), [displayed, reliability]);
   const results = useMemo(() => searchTemporalSettlements(currentFeatures, year, query, level, viewport), [currentFeatures, year, query, level, viewport]);
   const inViewCount = displayed.filter(f => temporalSettlementInView(f.geometry.coordinates, viewport)).length;
   const byId = useMemo(() => new Map(displayed.map(f => [f.properties.id, f])), [displayed]);
@@ -137,6 +141,10 @@ export default function TemporalSettlementLayer({ map, ready, periodId, year, zo
       for (const id of ["temporal-settlements", "temporal-settlement-selection"]) if (map.getSource(id)) map.removeSource(id);
     };
   }, [map, ready]);
+  useEffect(() => {
+    if (!map || !ready || !map.getSource("temporal-settlements")) return;
+    map.setPaintProperty(layers[0], "circle-color", reliabilityMode ? ["match", ["get", "reliabilityStatus"], "checked", reliabilityColors.checked, "suspect", reliabilityColors.suspect, "missing", reliabilityColors.missing, reliabilityColors.unreviewed] : "#89674b");
+  }, [map, ready, reliabilityMode]);
   useEffect(() => {
     if (!map || !ready || !map.getSource("temporal-settlements")) return;
     (map.getSource("temporal-settlements") as GeoJSONSource).setData(mapData);
@@ -179,6 +187,7 @@ export default function TemporalSettlementLayer({ map, ready, periodId, year, zo
         element.className = `tang-detail-label detail-settlement song-settlement-label${p.id === currentSelected?.properties.id ? " is-selected" : ""}`;
         element.dataset.temporalSettlementId = p.id;
         element.textContent = `${p.name} · 治所`;
+        if (reliabilityMode) { const state = reliability.get(p.id); element.style.borderBottom = `2px solid ${state?.color ?? reliabilityColors.unreviewed}`; element.title = `${state?.label}：${state?.note}`; }
         element.setAttribute("aria-label", `查看${p.name} · ${yearLabel}治所资料 · ${p.presentLocation || p.sourceRecordId}`);
         if (modernNames && p.presentLocation) { const current = document.createElement("small"); current.textContent = `今录 · ${p.presentLocation}`; element.append(current); }
         element.addEventListener("click", event => { event.stopPropagation(); select(feature); });
@@ -192,7 +201,7 @@ export default function TemporalSettlementLayer({ map, ready, periodId, year, zo
       focusedLabel.current = document.activeElement instanceof HTMLElement ? document.activeElement.dataset.temporalSettlementId : undefined;
       cancelAnimationFrame(frame); map.off("moveend", render); map.off("resize", render); markers.forEach(marker => marker.remove());
     };
-  }, [map, ready, enabled, interactive, displayed, currentSelected?.properties.id, modernNames]);
+  }, [map, ready, enabled, interactive, displayed, currentSelected?.properties.id, modernNames, reliabilityMode, reliability]);
   const p = currentSelected?.properties;
   const documented = p ? temporalSettlementLink(p, year) : undefined;
   const sameNames = p ? currentFeatures.filter(f => f.properties.name === p.name && f.properties.subtype === p.subtype && f.properties.level === p.level && f.properties.id !== p.id).length : 0;
@@ -201,17 +210,20 @@ export default function TemporalSettlementLayer({ map, ready, periodId, year, zo
   const rawTangCounty = legacyTangId ? tangDiagnostics?.bySettlement[legacyTangId] : undefined;
   const tangCounty = rawTangCounty && currentSelected && rawTangCounty.sourcePoint.coordinates.every((value, index) => value === currentSelected.geometry.coordinates[index]) ? rawTangCounty : undefined;
   const tangCountyModels = tangCounty?.candidates.filter(candidate => canOpenCountyModel(tangCounty, candidate, tangDiagnostics?.byBoundary[candidate.boundaryId])) ?? [];
+  const selectedReliability = p ? reliability.get(p.id) : undefined;
+  const reliabilityReady = !!manifest && enabled && loadedPeriodId === periodId && !loading && !error;
   return <>
     {periodId !== "unassigned" && periodId !== "empty" && interactive && controlsContainer && createPortal(<section className="nature-explorer song-settlement-explorer" aria-label="当前年份治所资料">
       <h3><MapPin size={14} />同期治所 · {yearLabel}</h3>
-      <p>{manifest ? `${yearLabel}符合来源区间 ${currentFeatures.length.toLocaleString()} 条 · 当前视野显示 ${inViewCount} 条` : "加载同期治所资料…"}</p>
+      <p>{reliabilityReady ? `${yearLabel}符合来源区间 ${currentFeatures.length.toLocaleString()} 条 · 当前视野显示 ${inViewCount} 条` : error ? "同期治所资料暂不可用，加载失败不计为缺关联。" : manifest && !enabled ? "本年没有可加载的同期治所资料包。" : "加载同期治所资料…"}</p>
+      {reliabilityMode && reliabilityReady && <div className="settlement-reliability-counts" aria-label="同期治所资料核查统计">{reliabilityStatuses.map(status => <span key={status} style={{ borderColor: reliabilityColors[status] }}>{reliabilityLabels[status]} {Array.from(reliability.values()).filter(item => item.status === status).length}</span>)}<small>覆盖当前年份全部治所；未有点面核查且年代较宽的记录亦标为存疑，具体原因见点位详情。</small>{year === 755 && tangError && <small role="status">既有唐代点面核查资料加载失败；当前颜色仅按已加载的年代字段标注，不表示完成点面核查。</small>}</div>}
       <div className="nature-search"><Search size={13} /><input aria-label="搜索当前年份治所" placeholder="古名、今录位置或源编号…" value={query} onChange={event => setQuery(event.target.value)} /></div>
       <select aria-label="筛选历史治所源层级" value={level} onChange={event => setLevel(event.target.value as TemporalSettlementLevel)}><option value="all">全部源层级</option><option value="prefecture">府州级源记录</option><option value="county">县级源记录</option></select>
       <p className="song-settlement-search-note">{query.trim() ? `全资料匹配 ${results.length} 条${results.length > 40 ? "，先显示40条，请补充地点名缩小范围" : ""}。` : "输入名称检索当前年份的全部地区；留空列出当前视野内记录。"}同名记录按位置与源编号区分。</p>
       <div className="nature-search-results">{results.slice(0, query.trim() ? 40 : 10).map(feature => <button key={feature.properties.id} onClick={() => select(feature, true)}><strong>{feature.properties.name}</strong><span>{feature.properties.subtype} · {feature.properties.presentLocation || "今录位置待核"}<small>源编号 {feature.properties.sourceRecordId}</small></span></button>)}</div>
       {!loading && loadedPeriodId === periodId && !results.length && <p>当前年份未找到匹配记录，可换用地名、移动地图或调整年份；未收录不代表当时不存在城镇。</p>}
       <details className="detail-coverage"><summary>治所年代、覆盖与来源</summary>
-        <p>府州级点6级起、县级点8级起逐级显示；标签避让不会删掉原点。图中的位置来自时序治所记录，区别于行政模型的排字锚点。</p>
+        <p>秦、汉、三国、晋、南北朝、隋的府州级点在4级起作为早期治所概览显示；其他时期府州级点6级起，县级点8级起逐级显示。标签避让不会删掉原点。图中的位置来自时序治所记录，区别于行政模型的排字锚点。</p>
         <p>{manifest?.dateNote}</p><p>{manifest?.polityNote}</p><p>{manifest?.coverageNote}</p>
         <p>755年另保留唐代既有核查入口，跳转的是741年参考模型；不把它当作755年精确辖界。</p>
         {manifest && <p>全源收录{manifest.uniqueFeatureCount}条有效区间；隔离{manifest.withheldCount}条来源冲突记录。当前时期分包{pack?.featureCount ?? 0}条。年代与坐标字段一致也不等于古址已经考定。</p>}
@@ -223,9 +235,11 @@ export default function TemporalSettlementLayer({ map, ready, periodId, year, zo
     {enabled && interactive && p && currentSelected && <section className="nature-detail song-settlement-card" aria-label="当前年份治所详情">
       <header><button className="nature-detail-title" aria-expanded={!collapsed} onClick={() => setCollapsed(value => !value)}><strong>{p.name}</strong><span>{collapsed ? "展开" : "收起"}</span></button><button aria-label="关闭治所详情" onClick={() => setSelected(undefined)}><X size={16} /></button></header>
       {!collapsed && <div className="nature-detail-body"><span className="nature-kind">{yearLabel}时序候选 · {p.subtype}</span>
+        {selectedReliability && <p className="data-reliability-detail"><span style={{ color: selectedReliability.color }}>{selectedReliability.label}</span>{selectedReliability.note}</p>}
         <p>今录位置 · {p.presentLocation || "来源未提供"}</p><p>{documented?.polityNote ?? p.polityNote}</p>
         <p>来源存续年：{temporalSettlementYearLabel(p.beginYear)}—{temporalSettlementYearLabel(p.endYear)}。{p.dateCaution}</p>
         {sameNames > 0 && <p>当前年份还有{sameNames}条同名同类型来源记录，可能为异地同名或时序重叠，保留独立记录供核查。</p>}
+        <p className="nature-detail-note">本条时序点的原始记录没有上级行政区字段。{year === 755 ? "已核查的741年模型关联见下方，可继续查看来源中州、道与下辖县。" : "上下级导航在有明确层级字段的行政区模型详情中提供，不用附近府州替代。"}</p>
         {documented?.boundaryId ? <><button className="detail-focus-button" onClick={() => onBoundaryRequest(documented?.boundaryId!)}>查看{documented?.boundaryName}参考范围{documented?.boundaryPointStatus === "outside" ? "（点面存疑）" : ""}</button><p>{documented?.boundaryNote}</p></> : <p className="nature-detail-note">此治所尚未建立可靠的同期同级辖区关联；不使用最近的面或上级范围代替。</p>}
         {year === 755 && <>
           <p className="nature-detail-note">以下沿用755年治所的既有核查，范围来自741年近似模型。查看范围会切换至模型年份，不表示755年边界已经核定。</p>

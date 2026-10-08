@@ -31,6 +31,7 @@ import OnboardingGuide from "./components/OnboardingGuide";
 import CityPeriodHighlights, { CityPeriodHighlight } from "./components/CityPeriodHighlights";
 import { CityChronicle, HistoricalGeography } from "./components/HistoricalContext";
 import type { CityTimelineEntry, HistoricalContextData, HistoricalGeographyEntry } from "../shared/historical-context";
+import { placeTypeLabel } from "../shared/place-types";
 import type { CityPeriodProfilesData } from "../shared/city-profiles";
 import {
   normalizeExploration,
@@ -48,6 +49,7 @@ import YearNavigator from "./components/YearNavigator";
 import BoundaryComparison from "./components/BoundaryComparison";
 import { availableYearStops, periodForYear } from "../shared/temporal-navigation";
 import { boundaryDatasetAtYear, eventIncludesYear } from "../shared/temporal-map";
+import type { TemporalSettlementsManifest } from "../shared/temporal-settlements";
 import type { BoundaryManifest } from "../shared/boundaries";
 import "./temporal-workspace.css";
 
@@ -108,6 +110,8 @@ export default function App() {
   const [loadError, setLoadError] = useState("");
   const [boundaryManifest, setBoundaryManifest] = useState<BoundaryManifest | null>(null);
   const [boundaryManifestError, setBoundaryManifestError] = useState("");
+  const [settlementManifest, setSettlementManifest] = useState<TemporalSettlementsManifest | null>(null);
+  const [settlementExploreRequest, setSettlementExploreRequest] = useState(0);
   const [comparison, setComparison] = useState<{ placeId?: string } | null>(null);
   const [historicalContext, setHistoricalContext] = useState<HistoricalContextData | null>(null);
   const [contextError, setContextError] = useState("");
@@ -117,6 +121,7 @@ export default function App() {
   const [geographySelection, setGeographySelection] = useState<HistoricalGeographyEntry | null>(null);
   const [geographyOpenRequest, setGeographyOpenRequest] = useState(0);
   const [atlasOpenRequest, setAtlasOpenRequest] = useState(0);
+  const [atlasLocationRequest, setAtlasLocationRequest] = useState<{ coordinates: [number, number]; label: string; requestId: number }>();
   const [tangBoundaries, setTangBoundaries] = useState<TangBoundaryCrosswalk | null>(null);
   const [crosswalkLoaded, setCrosswalkLoaded] = useState(false);
   const [jurisdictionRequest, setJurisdictionRequest] = useState<{ id: string; requestId: number }>();
@@ -150,6 +155,14 @@ export default function App() {
   const searchBox = useRef<HTMLDivElement>(null);
   const dialog = useRef<HTMLDialogElement>(null);
   const detailScroll = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const controller = new AbortController();
+    fetch("/data/temporal-settlements/manifest.json", { signal: controller.signal })
+      .then(response => { if (!response.ok) throw Error(); return response.json(); })
+      .then((data: TemporalSettlementsManifest) => { if (!controller.signal.aborted && data.kind === "chgis-temporal-settlements" && Array.isArray(data.packages)) setSettlementManifest(data); })
+      .catch(() => { /* The map's settlement panel provides loading errors and retry. */ });
+    return () => controller.abort();
+  }, []);
   useEffect(() => {
     const controller = new AbortController();
     fetch("/data/boundaries/manifest.json", { signal: controller.signal })
@@ -255,7 +268,8 @@ export default function App() {
   const shownYear = exploration.year ?? referencePeriod?.year ?? 755;
   const datedPeriod = catalog ? periodForYear(shownYear, catalog.periods, { preferredPeriodId: periodId }) : undefined;
   const period = datedPeriod ?? (referencePeriod ? { ...referencePeriod, id: "unassigned", label: "未收录时期", name: "未收录时期", year: shownYear, startYear: shownYear, endYear: shownYear, regimeIds: [] } : undefined);
-  const yearStops = useMemo(() => catalog ? availableYearStops(catalog, historicalContext, boundaryManifest, datedPeriod?.id) : [], [catalog, historicalContext, boundaryManifest, datedPeriod?.id]);
+  const yearStops = useMemo(() => catalog ? availableYearStops(catalog, historicalContext, boundaryManifest, datedPeriod?.id, settlementManifest) : [], [catalog, historicalContext, boundaryManifest, datedPeriod?.id, settlementManifest]);
+  const settlementSnapshot = settlementManifest?.packages.find(pack => pack.periodId === period?.id && pack.representativeYear === shownYear);
   const selectedBoundary = boundaryDatasetAtYear(boundaryManifest?.datasets ?? [], period?.id ?? "", shownYear);
   const places = useMemo(() => {
     const visible = catalog?.places.filter(item => item.periodIds.includes(period?.id ?? "")) ?? [];
@@ -274,6 +288,7 @@ export default function App() {
   useEffect(() => {
     detailScroll.current?.scrollTo({ top: 0 });
   }, [periodId, place?.id, eventId, detailTab]);
+  useEffect(() => { setAtlasLocationRequest(undefined); }, [periodId, shownYear, place?.id, focusRequest]);
   function changePeriod(id: string) {
     setDetailsOpen(false);
     setJurisdictionRequest(undefined);
@@ -606,7 +621,8 @@ export default function App() {
           </div>
         </section>
 
-        {datedPeriod ? <YearNavigator period={datedPeriod} year={shownYear} stops={yearStops} onYearChange={changeYear} boundaryYear={selectedBoundary?.year} /> :
+        {datedPeriod ? <YearNavigator period={datedPeriod} year={shownYear} stops={yearStops} onYearChange={changeYear} boundaryYear={selectedBoundary?.year}
+          settlementCount={settlementSnapshot?.representativeYearCount} onExploreSettlements={() => { setDetailsOpen(false); setAtlasLocationRequest(undefined); setGeographySelection(null); setInteractionMode("cities"); setSettlementExploreRequest(value => value + 1); }} /> :
           <section className="temporal-gap" aria-label="年份资料范围"><strong>{formatYear(shownYear)}</strong><span>此年尚无已收录朝代图层，保留地点档案与纪年。可从朝代选择器返回有资料的时期。</span></section>}
         {boundaryManifestError && <p className="temporal-load-note" role="status">{boundaryManifestError}</p>}
         <section
@@ -679,17 +695,21 @@ export default function App() {
               modernNames={modernNames}
               routeVisible={routeVisible}
               focusRequest={focusRequest}
+              settlementExploreRequest={settlementExploreRequest}
+              atlasLocationRequest={atlasLocationRequest}
+              onAtlasLocationClear={() => setAtlasLocationRequest(undefined)}
               detailsOpen={detailsOpen}
               onBoundaryStatusChange={setBoundaryStatus}
               geographySelection={geographySelection}
               onGeographyOpen={() => setGeographyOpenRequest(value => value + 1)}
               onGeographyClear={() => setGeographySelection(null)}
-              onNaturalSelect={() => setDetailsOpen(false)}
+              onNaturalSelect={() => { setDetailsOpen(false); setAtlasLocationRequest(undefined); }}
               onOpenAtlas={() => setAtlasOpenRequest(value => value + 1)}
               tangBoundaries={tangBoundaries} crosswalkLoading={!crosswalkLoaded} jurisdictionRequest={jurisdictionRequest}
             />
             <div className="map-bottomline">
-              <HistoricalAtlasViewer periodId={periodId} openRequest={atlasOpenRequest} />
+              <HistoricalAtlasViewer periodId={period.id} openRequest={atlasOpenRequest}
+                onApproximateLocate={(coordinates, label) => { setDetailsOpen(false); setGeographySelection(null); setAtlasLocationRequest({ coordinates, label, requestId: Date.now() }); }} />
               <HistoricalGeography data={historicalContext} error={contextError} selected={geographySelection} openRequest={geographyOpenRequest}
                 onLocate={entry => { setDetailsOpen(false); if (!canInteract(interactionMode, "rivers")) setInteractionMode("rivers"); setGeographySelection({ ...entry }); }} />
               <span>
@@ -745,13 +765,7 @@ export default function App() {
                         <h2>
                           {placeName(place, period)}
                           <span className="place-tag">
-                            {(place.typeByPeriod?.[period.id] ?? place.type) ===
-                            "capital"
-                              ? "都城"
-                              : (place.typeByPeriod?.[period.id] ??
-                                    place.type) === "pass"
-                                ? "关隘"
-                                : "城邑"}
+                            {placeTypeLabel(place.typeByPeriod?.[period.id] ?? place.type)}
                           </span>
                         </h2>
                         <p>

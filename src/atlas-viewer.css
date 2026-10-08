@@ -88,3 +88,16 @@
   .atlas-source-links { font-size: 10px; }
 }
 @media (prefers-reduced-motion: reduce) { .atlas-spinner { animation: none; } }
+.atlas-approximate { margin: 0 21px 8px; padding: 8px 10px; border: 1px solid #d5d5c9; border-radius: 6px; background: #eeeee5; }
+.atlas-approximate-heading { display: flex; align-items: center; gap: 9px; color: #55664e; font-size: 11px; }
+.atlas-approximate-heading span { flex: 1; color: #888a7c; font-size: 10px; }
+.atlas-approximate-heading .atlas-fit-button { height: 27px; margin: 0; }
+
+.atlas-approximate > p { margin: 4px 0 0; color: #87694e; font-size: 11px; }
+.atlas-image-stage { position: relative; flex-shrink: 0; }
+.atlas-control-point { position: absolute; z-index: 1; display: grid; grid-template-columns: 21px 1fr; align-items: center; gap: 0 3px; transform: translate(-10px, -10px); min-height: 31px; padding: 3px 6px 3px 3px; border: 1px solid #875a3d; border-radius: 5px; background: #fcf7e9ed; color: #70472e; box-shadow: 0 2px 7px #43392a40; cursor: pointer; white-space: nowrap; }
+.atlas-control-point > span { grid-row: span 2; display: grid; place-items: center; width: 19px; height: 19px; border: 1px solid #9c7856; border-radius: 50%; font: 17px sans-serif; }
+.atlas-control-point > strong { font-size: 11px; }
+.atlas-control-point > small { color: #82745c; font-size: 9px; }
+.atlas-control-point:hover { background: #fff1d0; border-color: #b66932; }
+@media (max-width: 700px) { .atlas-approximate { margin: 0 12px 7px; } .atlas-approximate-heading { flex-wrap: wrap; } .atlas-approximate-heading span { flex-basis: calc(100% - 95px); } }

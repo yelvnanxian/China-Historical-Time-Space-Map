@@ -6,6 +6,7 @@ import { test } from "node:test";
 import { gunzipSync, inflateRawSync } from "node:zlib";
 import { simplifiedChinese } from "../shared/boundary-search";
 import { searchTemporalSettlements, temporalSettlementActive, temporalSettlementLink, temporalTangSettlementKey, temporalSettlementYearLabel, type TemporalSettlementsCollection, type TemporalSettlementsManifest } from "../shared/temporal-settlements";
+import { temporalSettlementDisplayZoom } from "../shared/temporal-settlement-display";
 const root = new URL("../", import.meta.url);
 const bytes = (file: string) => readFile(new URL(file, root));
 const json = async <T>(file: string) => JSON.parse((await bytes(file)).toString()) as T;
@@ -193,6 +194,16 @@ test("源定年不确定性完整保留，候选数量不被称为全朝代城�
   }
   assert.match(manifest.coverageNote, /1350年前.*缺口.*不是任何朝代的全部城镇/);
   assert.equal(searchTemporalSettlements(packages.get("song")!.features, 1200, "山阴县").length, 2);
+});
+
+test("早期六朝在自动概览级别显示府州治所，县治仍保持详细级别", () => {
+  for (const periodId of ["qin", "han", "sanguo", "jin", "nanbei", "sui"]) {
+    assert.equal(temporalSettlementDisplayZoom({ level: "prefecture", minZoom: 6 }, periodId), 4, periodId);
+    assert.equal(temporalSettlementDisplayZoom({ level: "county", minZoom: 8 }, periodId), 8, periodId);
+  }
+  for (const periodId of ["tang", "song", "yuan", "ming", "qing"]) {
+    assert.equal(temporalSettlementDisplayZoom({ level: "prefecture", minZoom: 6 }, periodId), 6, periodId);
+  }
 });
 
 test("时序包及官方来源哈希可重复核验，分包按gzip魔数解压不依赖HTTP行为", async () => {

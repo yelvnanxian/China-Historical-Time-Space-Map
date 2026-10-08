@@ -10,9 +10,11 @@ export interface YearNavigatorProps {
   stops: readonly YearStop[];
   onYearChange: (year: number) => void;
   boundaryYear?: number;
+  settlementCount?: number;
+  onExploreSettlements?: () => void;
 }
 
-export default function YearNavigator({ period, year, stops, onYearChange, boundaryYear }: YearNavigatorProps) {
+export default function YearNavigator({ period, year, stops, onYearChange, boundaryYear, settlementCount, onExploreSettlements }: YearNavigatorProps) {
   const [draftYear, setDraftYear] = useState<number>();
   const dragging = useRef(false);
   const pendingYear = useRef<number | undefined>(undefined);
@@ -51,6 +53,7 @@ export default function YearNavigator({ period, year, stops, onYearChange, bound
     <div className="year-navigator-tools"><select aria-label="选择资料年份" value={available.some(stop => stop.year === year) ? year : ""} onChange={event => commit(Number(event.target.value))}>
       {!available.some(stop => stop.year === year) && <option value="" disabled>{formatNavigationYear(year)} · 指定年份</option>}
       {available.map(stop => <option key={stop.year} value={stop.year}>{formatNavigationYear(stop.year)} · {stop.kinds.map(kind => yearStopKindLabels[kind]).join(" / ")}</option>)}
-    </select><p className="year-navigator-source">{boundaryYear !== undefined ? `边界参考 ${formatNavigationYear(boundaryYear)}${boundaryYear === year ? "" : "（与当前年不同）"}` : "当前无边界截面"}</p></div>
+    </select><p className="year-navigator-source">{boundaryYear !== undefined ? `边界参考 ${formatNavigationYear(boundaryYear)}${boundaryYear === year ? "" : "（与当前年不同）"}` : "当前无边界截面"}</p>
+    {settlementCount !== undefined && settlementCount > 0 && onExploreSettlements && <button type="button" className="year-navigator-settlements" onClick={onExploreSettlements} aria-label={`探索${formatNavigationYear(year)}的${settlementCount}条同期治所记录`}>同期治所 {settlementCount.toLocaleString()} 条 · 探索</button>}</div>
   </section>;
 }

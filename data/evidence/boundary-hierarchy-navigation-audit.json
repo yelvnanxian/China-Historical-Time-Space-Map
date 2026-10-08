@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "command": "npx tsx scripts/audit-boundary-hierarchy.ts",
+  "method": "Call the production boundaryHierarchyRelations resolver on the original published sourceHierarchy fields. Restrict only by identical source, year, simplified polity and province; independently compare sample results against the full snapshot. Count unique navigable targets, and retain ambiguous and missing paths without inference.",
+  "limitations": [
+    "These counts describe navigation availability, not verified historical administrative relationships or complete jurisdiction coverage.",
+    "Source geometry, source names and hierarchy fields are not corrected or inferred by this audit. Display-name corrections do not participate in identity matching.",
+    "Prefecture links may include explicit ancestors above dependent prefectures; child lists can include dependent-prefecture paths, not only directly administered counties.",
+    "1290 province features have no polity field, so the resolver deliberately provides no province navigation instead of guessing a relationship.",
+    "Repeated complete parent paths remain ambiguous even when their display names differ. Unnamed or malformed records are not matched using a corrected display name."
+  ],
+  "inputHashes": {
+    "public/data/boundaries/manifest.json": "557687250944ddab7d9a78234b04b13d224eb5995d85b1f67eace3679131489f",
+    "shared/boundary-hierarchy.ts": "54062820c740c381987ab0e7396b3a4f4f181dfe5de59e37dc6db990bb586db3",
+    "shared/boundary-search.ts": "31e53a6e778c5d1883b58ba2d320fea166c7794eba1781f789476cdb7d4dbc51",
+    "package-lock.json": "eb2354987d3a9c7d7fbbe3836a412772eae81e2cf672e06ce128f15741322e4c",
+    "public/data/boundaries/hartwell-741-country.geojson": "489a46ccaf6281e5937c0f4acb0345767eb1fb75d17f4b752bddd09bf7dceec1",
+    "public/data/boundaries/hartwell-741-province.geojson": "3e7972b1274cfe1bcea0058ec4dc894a0656a2a3262b596ca5467d83efcb1801",
+    "public/data/boundaries/hartwell-741-prefecture.geojson": "ac9211af939ef3f9f6d94bb16977e313426795908703ad4d7db916f6ea89d635",
+    "public/data/boundaries/hartwell-741-county.geojson": "54081ec310344d24da387eced81bc4aa9aa547fd80629a2d7f844235d276cc54",
+    "public/data/boundaries/hartwell-1080-country.geojson": "b6aa8ec37e6a2b354e9d7c3611d1318e67ef0e43b447b53a7c18a0107b8072cc",
+    "public/data/boundaries/hartwell-1080-province.geojson": "46c2a254c95d371e3b6e84ab9f855acaac4a730656ddf5116c2412df7a7bc282",
+    "public/data/boundaries/hartwell-1080-prefecture.geojson": "ac1588c8713c71fbbdf51c994173ae5044b625e0b35bf20669bcc429260ff7c6",
+    "public/data/boundaries/hartwell-1080-county.geojson": "b27c4794d12a770bf5a90bdc71fc2ac0d4f1cb21403c0ed36ac2a8e08b49bedd",
+    "public/data/boundaries/hartwell-1200-country.geojson": "73ca2050660b071f56fd27bff24de417cdd58567fa949442e88096c42681fa14",
+    "public/data/boundaries/hartwell-1200-province.geojson": "afe53b2c8edfd3c1708e6e0e1deb7d94af457d55accbdda19734076645601608",
+    "public/data/boundaries/hartwell-1200-prefecture.geojson": "efa3333cd7986a8f019f05daae908322e3bc987454d51331c5ec43517cb28747",
+    "public/data/boundaries/hartwell-1200-county.geojson": "2a2d1012f5d2d4893b1cef501319cc61b17a98d2ed5b62c0fd88e08b5abe7c98",
+    "public/data/boundaries/hartwell-1290-country.geojson": "8fa232fa1aac9c2d9deb5b934e148499f9fd6828c72144943bc7e99e3effacd9",
+    "public/data/boundaries/hartwell-1290-province.geojson": "f24d8aec754417d1c99cc7724aec35565daf2a36431ffa0dddd929ff063be24f",
+    "public/data/boundaries/hartwell-1290-prefecture.geojson": "f3b64a6b20ae462d4818d0a09e823f7bea3b75fea8a46d557b93bc610f1a9c70",
+    "public/data/boundaries/hartwell-1290-county.geojson": "d44cfa05d3ed433ebe5ffff314db28ed74c61a426262c0c4a015a1021dfa7443",
+    "public/data/boundaries/hartwell-1391-country.geojson": "03caa3f39190bcf74406e3c7eb0df5a974d86927c3a8b456dc8adae240f645b4",
+    "public/data/boundaries/hartwell-1391-province.geojson": "ef124f4804425d93099dc18aa2ac1c38f3ed3c108e03cfb6d1cb440fa549f2eb",
+    "public/data/boundaries/hartwell-1391-prefecture.geojson": "5b8940f9733254424df68934f1a9a7588dbb7cadb344629436a0e6a04c1cb9f7",
+    "public/data/boundaries/hartwell-1391-county.geojson": "fc7542e6b451b92f08bdc070129962489a78c65836712b5e1db7662de938c33f"
+  },
+  "snapshots": [
+    {
+      "year": 741,
+      "total": 1844,
+      "counties": 1495,
+      "countiesWithProvince": 1494,
+      "countiesWithPrefecture": 1475,
+      "countiesWithBoth": 1475,
+      "countiesWithAnyParent": 1494,
+      "countyAmbiguities": 6,
+      "prefectures": 336,
+      "prefecturesWithCountyList": 325,
+      "prefecturesWithProvince": 336,
+      "prefectureAmbiguities": 0,
+      "provinces": 10,
+      "provincesWithPrefectureList": 10,
+      "unresolvedSourceScopes": 3,
+      "duplicateParentIdentities": [
+        {
+          "id": "hartwell-741-prefecture-v5_0741_chin_chn_0741_p-278",
+          "name": "瓊州",
+          "path": {
+            "polity": "唐代",
+            "province": "嶺南",
+            "prefecture": "瓊",
+            "dependentPrefecture": ""
+          }
+        },
+        {
+          "id": "hartwell-741-prefecture-v5_0741_chin_chn_0741_p-280",
+          "name": "儋州",
+          "path": {
+            "polity": "唐代",
+            "province": "嶺南",
+            "prefecture": "瓊",
+            "dependentPrefecture": ""
+          }
+        }
+      ],
+      "dualAmbiguityGroups": [],
+      "prefectureAncestorOmissions": []
+    },
+    {
+      "year": 1080,
+      "total": 1919,
+      "counties": 1479,
+      "countiesWithProvince": 1344,
+      "countiesWithPrefecture": 1281,
+      "countiesWithBoth": 1259,
+      "countiesWithAnyParent": 1366,
+      "countyAmbiguities": 0,
+      "prefectures": 402,
+      "prefecturesWithCountyList": 350,
+      "prefecturesWithProvince": 380,
+      "prefectureAmbiguities": 0,
+      "provinces": 30,
+      "provincesWithPrefectureList": 28,
+      "unresolvedSourceScopes": 88,
+      "duplicateParentIdentities": [
+        {
+          "id": "hartwell-1080-prefecture-v5_1080_chin_chn_1080_p-362",
+          "name": "鳳州",
+          "path": {
+            "polity": "遼代",
+            "province": "上京道",
+            "prefecture": "",
+            "dependentPrefecture": "豐州"
+          }
+        },
+        {
+          "id": "hartwell-1080-prefecture-v5_1080_chin_chn_1080_p-366",
+          "name": "豐州",
+          "path": {
+            "polity": "遼代",
+            "province": "上京道",
+            "prefecture": "",
+            "dependentPrefecture": "豐州"
+          }
+        }
+      ],
+      "dualAmbiguityGroups": [],
+      "prefectureAncestorOmissions": []
+    },
+    {
+      "year": 1200,
+      "total": 1884,
+      "counties": 1450,
+      "countiesWithProvince": 1375,
+      "countiesWithPrefecture": 1440,
+      "countiesWithBoth": 1373,
+      "countiesWithAnyParent": 1442,
+      "countyAmbiguities": 30,
+      "prefectures": 390,
+      "prefecturesWithCountyList": 385,
+      "prefecturesWithProvince": 371,
+      "prefectureAmbiguities": 9,
+      "provinces": 36,
+      "provincesWithPrefectureList": 33,
+      "unresolvedSourceScopes": 15,
+      "duplicateParentIdentities": [
+        {
+          "id": "hartwell-1200-province-v5_1200_chin_chn_1200_l-16",
+          "name": "河北東路",
+          "path": {
+            "polity": "金代",
+            "province": "河北東路",
+            "prefecture": "",
+            "dependentPrefecture": ""
+          }
+        },
+        {
+          "id": "hartwell-1200-province-v5_1200_chin_chn_1200_l-17",
+          "name": "河北東路",
+          "path": {
+            "polity": "金代",
+            "province": "河北東路",
+            "prefecture": "",
+            "dependentPrefecture": ""
+          }
+        }
+      ],
+      "dualAmbiguityGroups": [],
+      "prefectureAncestorOmissions": []
+    },
+    {
+      "year": 1290,
+      "total": 1772,
+      "counties": 1475,
+      "countiesWithProvince": 0,
+      "countiesWithPrefecture": 325,
+      "countiesWithBoth": 0,
+      "countiesWithAnyParent": 325,
+      "countyAmbiguities": 0,
+      "prefectures": 280,
+      "prefecturesWithCountyList": 130,
+      "prefecturesWithProvince": 0,
+      "prefectureAmbiguities": 0,
+      "provinces": 16,
+      "provincesWithPrefectureList": 0,
+      "unresolvedSourceScopes": 28,
+      "duplicateParentIdentities": [],
+      "dualAmbiguityGroups": [],
+      "prefectureAncestorOmissions": []
+    },
+    {
+      "year": 1391,
+      "total": 1946,
+      "counties": 1620,
+      "countiesWithProvince": 1612,
+      "countiesWithPrefecture": 1433,
+      "countiesWithBoth": 1433,
+      "countiesWithAnyParent": 1612,
+      "countyAmbiguities": 0,
+      "prefectures": 300,
+      "prefecturesWithCountyList": 230,
+      "prefecturesWithProvince": 295,
+      "prefectureAmbiguities": 0,
+      "provinces": 21,
+      "provincesWithPrefectureList": 20,
+      "unresolvedSourceScopes": 19,
+      "duplicateParentIdentities": [],
+      "dualAmbiguityGroups": [],
+      "prefectureAncestorOmissions": []
+    }
+  ]
+}

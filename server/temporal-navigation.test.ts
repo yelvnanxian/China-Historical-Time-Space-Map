@@ -5,6 +5,7 @@ import { availableYearStops, nearestYearStop, periodForYear, validExplorationYea
 import type { Catalog } from "../shared/types";
 import type { HistoricalContextData } from "../shared/historical-context";
 import type { BoundaryManifest } from "../shared/boundaries";
+import type { TemporalSettlementsManifest } from "../shared/temporal-settlements";
 import { exampleCatalog } from "./fixtures";
 
 const root = new URL("../", import.meta.url);
@@ -18,12 +19,13 @@ test("重叠年代优先已知记录时期和当前时期，空档不假映射�
   for (const year of [-1046, -222, 920, 1932, 0, 755.5]) assert.equal(periodForYear(year, catalog.periods), undefined, String(year));
 });
 
-test("资料年汇总全部城市纪年、事件、边界、固定治所与默认年，重复年保留类别与条数", async () => {
+test("资料年汇总全部城市纪年、事件、边界、已有治所与默认年，重复年保留类别与条数", async () => {
   const catalog = exampleCatalog();
   const context: HistoricalContextData = JSON.parse(await readFile(new URL("public/data/historical-context.json", root), "utf8"));
   const manifest: BoundaryManifest = JSON.parse(await readFile(new URL("public/data/boundaries/manifest.json", root), "utf8"));
-  const all = availableYearStops(catalog, context, manifest);
-  const tang = availableYearStops(catalog, context, manifest, "tang");
+  const settlements: TemporalSettlementsManifest = JSON.parse(await readFile(new URL("public/data/temporal-settlements/manifest.json", root), "utf8"));
+  const all = availableYearStops(catalog, context, manifest, undefined, settlements);
+  const tang = availableYearStops(catalog, context, manifest, "tang", settlements);
   assert.ok(all.some(stop => stop.year === 1932 && stop.kinds.includes("chronicle")), "跨期城市纪年不得被全局索引遗漏");
   assert.ok(tang.every(stop => stop.year >= 618 && stop.year <= 907));
   assert.ok(tang.find(stop => stop.year === 741)?.kinds.includes("boundary"));
@@ -34,6 +36,19 @@ test("资料年汇总全部城市纪年、事件、边界、固定治所与默�
   assert.equal(new Set(all.map(stop => stop.year)).size, all.length);
   assert.deepEqual(all.map(stop => stop.year), all.map(stop => stop.year).sort((a, b) => a - b));
   assert.deepEqual(availableYearStops(catalog, context, manifest, "missing"), []);
+});
+
+test("早期六朝和其他时期的治所年份来自真实目录，不凭朝代默认年冒充已有资料", async () => {
+  const catalog: Catalog = JSON.parse(await readFile(new URL("data/catalog.json", root), "utf8"));
+  const settlements: TemporalSettlementsManifest = JSON.parse(await readFile(new URL("public/data/temporal-settlements/manifest.json", root), "utf8"));
+  for (const period of catalog.periods) {
+    const stops = availableYearStops(catalog, null, null, period.id, settlements);
+    assert.ok(stops.find(stop => stop.year === period.year)?.kinds.includes("seat"), period.id);
+  }
+  assert.ok(availableYearStops(catalog).every(stop => !stop.kinds.includes("seat")), "目录未加载不能预告不存在或不可用的治所截面");
+  const onlyHan = { ...settlements, packages: settlements.packages.filter(pack => pack.periodId === "han") };
+  assert.ok(availableYearStops(catalog, null, null, "sui", onlyHan).every(stop => !stop.kinds.includes("seat")));
+  assert.deepEqual(availableYearStops(catalog, null, null, "han", onlyHan).filter(stop => stop.kinds.includes("seat")).map(stop => stop.year), [2]);
 });
 
 test("吸附按真实年份距离，前后纪年不含零年，平局稳定落到较早资料年", () => {

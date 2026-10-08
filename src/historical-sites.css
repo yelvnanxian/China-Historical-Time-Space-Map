@@ -1,0 +1,12 @@
+.historical-site-marker { display: flex; align-items: center; gap: 5px; padding: 0; border: 0; background: transparent; color: #6f5345; font: 600 11px "Noto Serif SC", "Songti SC", serif; cursor: pointer; }
+.historical-site-symbol { display: grid; place-items: center; width: 19px; height: 19px; border: 1px solid #a79c7c; border-radius: 4px; background: #fff7e4e8; color: #785f3f; font: 10px sans-serif; box-shadow: 0 1px 4px #373b3726; }
+.historical-site-label { padding: 3px 4px; border-radius: 3px; background: #fff8e5de; text-shadow: 0 1px #fff; white-space: nowrap; }
+.historical-site-label[hidden] { display: none; }
+.historical-site-marker.site-type-tomb .historical-site-symbol { border-radius: 9px 9px 3px 3px; background: #e8e0cee8; }
+.historical-site-marker.site-type-temple .historical-site-symbol { color: #995d3d; }
+.historical-site-marker.site-type-port .historical-site-symbol, .historical-site-marker.site-type-ferry .historical-site-symbol { color: #337887; }
+.historical-site-marker.is-selected .historical-site-label, .historical-site-marker.is-selected .historical-site-symbol { background: #b26440; color: #fff9e8; text-shadow: none; border-color: #9a5032; }
+.historical-site-marker.is-disputed .historical-site-symbol { border: 1px dashed #a05c45; }
+.historical-sites-explorer > input, .historical-sites-explorer > select { width: 100%; margin: 3px 0; min-height: 29px; padding: 4px 7px; color: #435447; border: 1px solid #d5d5c6; border-radius: 4px; background: #fcfbf4; font: inherit; font-size: 11px; }
+.historical-sites-explorer details { color: #7b7867; font-size: 10px; line-height: 1.6; }
+.historical-site-detail blockquote { margin: 10px 0; padding: 8px 10px; border-left: 2px solid #b6b598; color: #68745e; font-size: 11px; overflow-wrap: anywhere; }

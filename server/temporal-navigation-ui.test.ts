@@ -29,6 +29,16 @@ test("朝内滑杆显示实际年份跨度并提供精确资料年选项及当�
   assert.match(html, /城池大事记/);
 });
 
+test("已有同期治所时提供带确切年份和数量的探索入口，缺数量时不显示", () => {
+  const period = catalog.periods.find(p => p.id === "tang")!;
+  const common = { period, year: 755, stops: [], onYearChange: () => {}, onExploreSettlements: () => {} };
+  const html = renderToStaticMarkup(createElement(YearNavigator, { ...common, settlementCount: 1681 }));
+  assert.match(html, /aria-label="探索755年的1681条同期治所记录"/);
+  assert.match(html, /同期治所 1,681 条 · 探索/);
+  const missing = renderToStaticMarkup(createElement(YearNavigator, common));
+  assert.doesNotMatch(missing, /同期治所 .*探索/);
+});
+
 test("时间轴每条大事记提供可点击年份节点，只有精确当前年高亮且保留本期范围", () => {
   const data: HistoricalContextData = { version: "test", generatedAt: "test", notes: [], sources: [], geographyEntries: [], cityTimelines: [{ placeId: "changan", entries: [
     { id: "tang-record", year: 755, title: "唐记录", dateLabel: "755年", summary: "测试", sourceIds: [], evidence: [] },

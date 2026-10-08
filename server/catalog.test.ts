@@ -90,6 +90,16 @@ test('阻止重复标识、悬空引用、错误经纬度和倒置时间进入�
   badTypePeriod.places[0].typeByPeriod = { 'missing-period': 'capital' };
   assert.throws(() => validateCatalog(badTypePeriod), /不存在的 periods/);
   const badType = structuredClone(catalog);
-  Object.assign(badType.places[0], { typeByPeriod: { [catalog.periods[0].id]: 'unknown' } });
+  Object.assign(badType.places[0], { typeByPeriod: { [catalog.periods[0].id]: 'unsupported-place-type' } });
   assert.throws(() => validateCatalog(badType), /无效地点类型/);
+});
+
+
+test('地点类型支持非城市史迹、交通设施与明确未分类', () => {
+  for (const type of ['battlefield', 'tomb', 'temple', 'port', 'ferry', 'post', 'site', 'unknown'] as const) {
+    const typed = structuredClone(catalog);
+    typed.places[0].type = type;
+    typed.places[0].typeByPeriod = { [catalog.periods[0].id]: type };
+    assert.doesNotThrow(() => validateCatalog(typed), type);
+  }
 });

@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { Marker, type GeoJSONSource, type Map as MapInstance, type MapMouseEvent } from "maplibre-gl";
+import { createPortal } from "react-dom";
+import { Marker, type GeoJSONSource, type Map as MapInstance, type MapMouseEvent, type ExpressionSpecification } from "maplibre-gl";
 import type { FeatureCollection, MultiPolygon, Polygon } from "geojson";
 import { boundaryDatasetAtYear } from "../../shared/temporal-map";
 import type { BoundaryDataset, BoundaryLevel, BoundaryManifest, BoundarySelection } from "../../shared/boundaries";
@@ -14,14 +15,15 @@ import { chinesePlaceName, localizedAdminType, localizedPolity } from "../../sha
 import type { TangCountyDiagnostics } from "../../shared/tang-county-diagnostics";
 import type { MingBoundaryResearchDocument } from "../../shared/ming-boundary-research";
 import type { SongBoundaryResearchDocument } from "../../shared/song-boundary-research";
+import { boundaryReliability, boundaryReliabilitySourceNote, reliabilityColors, reliabilityLabels, reliabilityStatuses, type DataReliabilityStatus } from "../../shared/data-reliability";
 
-type RegionProperties = BoundarySelection & { color?: string; labelCoordinates?: [number, number]; sourceHierarchy?: { polity?: string } };
+type RegionProperties = BoundarySelection & { color?: string; labelCoordinates?: [number, number]; reliabilityStatus?: DataReliabilityStatus };
 type Regions = FeatureCollection<Polygon | MultiPolygon, RegionProperties>;
 const empty: Regions = { type: "FeatureCollection", features: [] };
 const levels: BoundaryLevel[] = ["country", "province", "prefecture", "county"];
 const colors = { country: "#8a5742", province: "#83658d", prefecture: "#527767", county: "#a58957" };
 
-export default function HistoricalBoundaryLayer({ map, ready, periodId, currentYear, onYearChange, onStatusChange, onRegionFocus, modernNames, enabled = true, embedded = false, onSelection, resetKey, onOpenAtlas, interactionMode = "all", selectionRequest, onRegionSelect, countyDiagnostics, countyDiagnosticsError }: {
+export default function HistoricalBoundaryLayer({ map, ready, periodId, currentYear, onYearChange, onStatusChange, onRegionFocus, modernNames, enabled = true, embedded = false, onSelection, resetKey, onOpenAtlas, interactionMode = "all", selectionRequest, onRegionSelect, countyDiagnostics, countyDiagnosticsError, reliabilityMode = false, onReliabilityModeChange }: {
   map: MapInstance | null;
   ready: boolean;
   periodId: string;
@@ -40,6 +42,8 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
   onRegionSelect?: (selection: BoundarySelection) => void;
   countyDiagnostics?: TangCountyDiagnostics;
   countyDiagnosticsError?: string;
+  reliabilityMode?: boolean;
+  onReliabilityModeChange?: (enabled: boolean) => void;
 }) {
   const [manifest, setManifest] = useState<BoundaryManifest | null>(null);
   const [regions, setRegions] = useState<Regions>(empty);
@@ -133,12 +137,13 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
   const displayRegions = useMemo<Regions>(() => ({ ...renderedRegions, features: renderedRegions.features.map(feature => {
     const match = correspondences?.entries[feature.properties.id];
     const correction = songResearch?.byBoundary[feature.properties.id]?.displayCorrection;
-    return { ...feature, properties: { ...feature.properties, ...getBoundaryDisplayLabel(feature.properties, match?.simplifiedName),
+    const properties = { ...feature.properties, ...getBoundaryDisplayLabel(feature.properties, match?.simplifiedName),
       ...(correction ? { name: correction.name, nameCorrectionNote: correction.note, nameSourceUrl: correction.sourceUrl } : {}),
       polity: localizedPolity(feature.properties.sourceHierarchy?.polity), originalPolity: feature.properties.sourceHierarchy?.polity,
       sourceAdminType: localizedAdminType(feature.properties.sourceAdminType), originalAdminType: feature.properties.sourceAdminType,
       modernNames: (match?.modernNames ?? []).map(name => chinesePlaceName(name, "现代地区名称待核定")),
-      correspondenceNote: match?.note ?? "现代地区对应尚未收录。", correspondenceSourceIds: match?.sourceIds ?? [] } };
+      correspondenceNote: match?.note ?? "现代地区对应尚未收录。", correspondenceSourceIds: match?.sourceIds ?? [] };
+    return { ...feature, properties: { ...properties, reliabilityStatus: boundaryReliability(properties, songResearch?.byBoundary[properties.id]?.catalogPointComparison.status).status } };
   }) }), [renderedRegions, correspondences, songResearch]);
   const selectedDiagnostic = selection ? countyDiagnostics?.byBoundary[selection.id] : undefined;
 
@@ -209,8 +214,19 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
 
   useEffect(() => {
     if (!ready || !map?.getSource("historical-boundaries")) return;
-    (map.getSource("historical-boundaries") as GeoJSONSource).setData(renderedRegions);
-  }, [map, ready, renderedRegions]);
+    (map.getSource("historical-boundaries") as GeoJSONSource).setData(displayRegions);
+  }, [map, ready, displayRegions]);
+
+  useEffect(() => {
+    if (!ready || !map?.getSource("historical-boundaries")) return;
+    const reliabilityColor: ExpressionSpecification = ["match", ["get", "reliabilityStatus"], "checked", reliabilityColors.checked, "suspect", reliabilityColors.suspect, "missing", reliabilityColors.missing, reliabilityColors.unreviewed];
+    for (const level of levels) {
+      map.setPaintProperty(`boundary-${level}-fill`, "fill-color", reliabilityMode ? reliabilityColor : ["coalesce", ["get", "color"], colors[level]]);
+      map.setPaintProperty(`boundary-${level}-fill`, "fill-opacity", ["case", ["==", ["get", "geometryStatus"], "outside"], 0, reliabilityMode ? .19 : level === "province" ? .13 : .065]);
+      map.setPaintProperty(`boundary-${level}-line`, "line-color", reliabilityMode ? reliabilityColor : colors[level]);
+    }
+    map.setPaintProperty("boundary-county-conflict-line", "line-color", reliabilityMode ? reliabilityColors.suspect : "#a08b76");
+  }, [map, ready, reliabilityMode]);
 
   useEffect(() => {
     if (!ready || !map?.getSource("historical-boundaries")) return;
@@ -338,11 +354,14 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
     if (result.clearSelection) setSelection(null);
     if (result.apply) focusRegion(result.apply.id, result.apply);
   }, [selectionRequest, resetKey, dataset?.id, loadedDatasetId, map, ready, enabled, interactive, displayRegions, focusRegion, requestedSongDataset?.id]);
-  return <BoundaryControls embedded={embedded} enabled={enabled} datasets={datasets} selectedDataset={dataset} onDatasetChange={id => { const next = datasets.find(item => item.id === id); if (next) onYearChange(next.year); }}
+  return <><BoundaryControls embedded={embedded} enabled={enabled} datasets={datasets} selectedDataset={dataset} onDatasetChange={id => { const next = datasets.find(item => item.id === id); if (next) onYearChange(next.year); }}
     visibleLevels={visibleLevels} interactive={interactive} activeLevel={detail.activeLevel} zoom={zoom} onOpenAtlas={onOpenAtlas}
     selection={selection} onSelectionClose={() => setSelection(null)} currentYear={currentYear} loading={loading || !manifest && !error} error={error}
     countyDiagnostic={selectedDiagnostic} countyDiagnosticsError={periodId === "tang" ? countyDiagnosticsError : undefined}
     mingResearch={periodId === "ming" ? mingResearch : undefined} mingResearchError={periodId === "ming" ? mingResearchError : undefined}
     songResearch={periodId === "song" ? songResearch : undefined} songResearchError={periodId === "song" ? songResearchError : undefined}
-    regionOptions={regionOptions} onRegionSelect={focusRegion} correspondenceSources={correspondences?.sources ?? []} correspondenceError={correspondenceError} />;
+    reliabilityMode={reliabilityMode} onReliabilityModeChange={onReliabilityModeChange}
+    regionOptions={regionOptions} onRegionSelect={focusRegion} correspondenceSources={correspondences?.sources ?? []} correspondenceError={correspondenceError} />
+    {reliabilityMode && map && ready && createPortal(<details className="map-reliability-key" open onClickCapture={event => event.stopPropagation()} onPointerDown={event => event.stopPropagation()}><summary>资料标注 <span>颜色说明</span></summary><div>{reliabilityStatuses.map(status => <span key={status}><i style={{ background: reliabilityColors[status] }} />{reliabilityLabels[status]}</span>)}</div><small>{boundaryReliabilitySourceNote({ enabled, sourceYear: dataset?.year, currentYear, loading: loading || !manifest, error: !!error })}</small><small>按现有核查记录标注；已核对仅指点面或来源关联，空白不代表没有历史建置。</small></details>, map.getContainer())}
+  </>;
 }

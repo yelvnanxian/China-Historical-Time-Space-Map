@@ -17,10 +17,13 @@
 .year-navigator-source > span { display: block; color: #8a957e; }
 .year-navigator-tools { display: grid; gap: 3px; max-width: 245px; }
 .year-navigator-tools select { width: 100%; min-width: 0; padding: 4px 6px; border: 1px solid #ccd6be; border-radius: 4px; color: #647d55; background: #fbfcf5; font-size: 10px; }
+.year-navigator-settlements { justify-self: end; padding: 0; border: 0; background: transparent; color: #557a5f; font-size: 10px; line-height: 1.4; text-decoration: underline; text-underline-offset: 2px; cursor: pointer; }
+.year-navigator-settlements:focus-visible { outline: 2px solid #8ea372; outline-offset: 3px; }
 @media (max-width: 760px) {
   .year-navigator { grid-template-columns: 92px minmax(140px, 1fr); gap: 6px 10px; padding: 8px 12px; }
   .year-navigator-tools { grid-column: 1 / -1; display: flex; align-items: center; gap: 10px; max-width: none; }
   .year-navigator-tools select { flex: 1; width: 0; }
   .year-navigator-source { flex: 1; text-align: right; }
+  .year-navigator-settlements { flex: 0 1 auto; max-width: 145px; font-size: 9px; text-align: right; }
   .year-navigator-current > span { font-size: 9px; }
 }

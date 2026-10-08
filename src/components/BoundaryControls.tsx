@@ -22,6 +22,8 @@ import CountyGeometryNotice from "./CountyGeometryNotice";
 import HistoricalResearchNotice from "./HistoricalResearchNotice";
 import type { MingBoundaryResearchDocument } from "../../shared/ming-boundary-research";
 import { songBoundaryPeriodNotice, type SongBoundaryResearchDocument } from "../../shared/song-boundary-research";
+import { boundaryHierarchyLabel, boundaryHierarchyRelations } from "../../shared/boundary-hierarchy";
+import { boundaryReliability, reliabilityColors, reliabilityLabels, reliabilityStatuses } from "../../shared/data-reliability";
 
 export interface BoundaryControlsProps {
   embedded?: boolean;
@@ -49,6 +51,8 @@ export interface BoundaryControlsProps {
   mingResearchError?: string;
   songResearch?: SongBoundaryResearchDocument;
   songResearchError?: string;
+  reliabilityMode?: boolean;
+  onReliabilityModeChange?: (enabled: boolean) => void;
 }
 
 const levelOrder: BoundaryLevel[] = [
@@ -89,7 +93,11 @@ export default function BoundaryControls(props: BoundaryControlsProps) {
   const selectedSource = props.selection
     ? props.datasets.find((item) => item.id === props.selection?.sourceId) ||
       (dataset?.year === props.selection.year ? dataset : undefined)
-    : undefined;
+      : undefined;
+  const hierarchy = useMemo(() => props.selection
+    ? boundaryHierarchyRelations(props.selection, props.regionOptions ?? [])
+    : undefined, [props.selection, props.regionOptions]);
+  const selectionReliability = props.selection ? boundaryReliability(props.selection, songEntry?.catalogPointComparison.status) : undefined;
 
   useEffect(() => {
     if (props.selection) setExpanded(true);
@@ -177,7 +185,17 @@ export default function BoundaryControls(props: BoundaryControlsProps) {
                 </button>
               </div>
               <h3>{props.selection.name}</h3>
+              {selectionReliability && <p className="data-reliability-detail"><span style={{ color: selectionReliability.color }}>{selectionReliability.label}</span>{selectionReliability.note}</p>}
               <p className="boundary-selection-highlight-note">{props.enabled === false ? "行政边界已隐藏；开启后恢复此参考范围。" : props.countyDiagnostic?.status === "outside" ? "虚线表示存疑模型范围；带圆环的点表示相关县治。" : "地图已高亮资料中的参考范围。"}</p>
+              {hierarchy && <section className="boundary-hierarchy" aria-label="上下级行政区">
+                <h4>上级行政区 / 下辖行政区</h4>
+                {hierarchy.sourcePath.length > 0 && <p className="boundary-hierarchy-path">来源层级：{hierarchy.sourcePath.join(" → ")}</p>}
+                {hierarchy.parents.length > 0 && <div className="boundary-hierarchy-group"><span>上级 / 祖级参考（来源路径一致）</span><div>{hierarchy.parents.map(parent => <button type="button" key={parent.id} disabled={props.enabled === false} onClick={() => props.onRegionSelect?.(parent.id)}>{parent.name} · {boundaryHierarchyLabel(parent.level)}</button>)}</div></div>}
+                {hierarchy.ambiguousParents.map((group, index) => <p key={`${group.level}-${index}`}>存在{group.candidates.length}个同路径{boundaryHierarchyLabel(group.level)}候选（{group.candidates.map(candidate => `${candidate.name} · ${candidate.recordId || candidate.id}`).join("、")}），暂不认定唯一上级。</p>)}
+                {hierarchy.children.length > 0 && <div className="boundary-hierarchy-group"><span>来源路径下辖（含属州路径 · {hierarchy.children.length} 条）</span><div>{hierarchy.children.slice(0, 60).map(child => <button type="button" key={child.id} disabled={props.enabled === false} onClick={() => props.onRegionSelect?.(child.id)}>{child.name}</button>)}</div>{hierarchy.children.length > 60 && <small>仅显示前60条，可用行政区搜索查看全部。</small>}</div>}
+                {hierarchy.missingReason && <p>{hierarchy.missingReason}</p>}
+                <small>仅连接同源同年、政权与省路道及府州字段一致的记录；完整关系仍以史料核查为准。</small>
+              </section>}
               {props.countyDiagnostic && <CountyGeometryNotice diagnostic={props.countyDiagnostic} onCompare={props.enabled !== false && props.countyDiagnostic.status === "outside" ? () => props.onRegionSelect?.(props.selection!.id) : undefined} />}
               {props.countyDiagnosticsError && <p className="boundary-selection-caveat" role="status">{props.countyDiagnosticsError}</p>}
               {props.mingResearchError && <p className="boundary-selection-caveat" role="status">{props.mingResearchError}</p>}
@@ -236,6 +254,11 @@ export default function BoundaryControls(props: BoundaryControlsProps) {
           <p className="boundary-effective-level" role="status">
             {props.enabled === false ? "行政边界已关闭" : props.activeLevel ? `随缩放显示：${levelName(props.activeLevel)}。${props.interactive === false ? "当前模式仅保留行政轮廓作为位置参照。" : "点击名称或区域可高亮辖区。"}` : "当前资料暂无可显示的行政层级。"}
           </p>
+          <label className="boundary-reliability-toggle"><input type="checkbox" checked={props.reliabilityMode ?? false} onChange={event => props.onReliabilityModeChange?.(event.target.checked)} /> <span>显示资料可靠性标注</span></label>
+          {(props.reliabilityMode ?? false) && <div className="boundary-reliability-legend" aria-label="资料可靠性图例">
+            {reliabilityStatuses.map(status => <span key={status}><i style={{ background: reliabilityColors[status] }} />{reliabilityLabels[status]}</span>)}
+            <small>已核对仅指具体点面或来源关联；缺关联不等于当时不存在。无诊断记录显示未核查。</small>
+          </div>}
           <p className="boundary-scale-guide">{dataset?.periodId === "tang" ? "唐代层级：道（监察区）→ 州 / 郡 / 府 → 县。州、郡、府属于同一级，高于县；道不等同于现代省。" : dataset?.periodId === "ming" ? "明代民政以两直隶、布政司及府州县分层；都司、卫所属于另一套军事建置，不能把卫统一当作府或县。图层按来源分组，具体类型见区域详情。" : dataset?.periodId === "song" ? "宋代以路、府州军监、县分层；府与县即使同名也是不同单位。军、监也有不同建置，不能仅凭文件分组推定实际等级。金、辽等使用各自制度，具体政权和原始类型见区域详情。" : "缩小看国家与省路，放大依次看府州郡、县域与城池。"}选中辖区会持续高亮，背景层级仍随缩放切换。</p>
           {props.mingResearch && <details className="boundary-original-name"><summary>明代史料核查与资料缺口</summary>
             <p>已为 {Object.keys(props.mingResearch.byBoundary).length} 个来源模型补充建置研究。史料覆盖明代多个阶段，地图轮廓仍是1391年近似参考，不能看作1582年完整疆界。</p>

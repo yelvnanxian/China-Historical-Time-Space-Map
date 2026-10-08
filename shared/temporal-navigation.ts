@@ -1,6 +1,7 @@
 import type { BoundaryManifest } from "./boundaries";
 import type { HistoricalContextData } from "./historical-context";
 import type { Catalog, Period } from "./types";
+import type { TemporalSettlementsManifest } from "./temporal-settlements";
 
 export type YearStopKind = "event" | "chronicle" | "boundary" | "seat" | "reference";
 export interface YearStop {
@@ -33,7 +34,7 @@ export function periodForYear(year: number, periods: readonly Period[], options:
 }
 
 /** Aggregate evidence dates across all cities, not only the selected city's file. */
-export function availableYearStops(catalog: Catalog, context?: HistoricalContextData | null, manifest?: BoundaryManifest | null, periodId?: string): YearStop[] {
+export function availableYearStops(catalog: Catalog, context?: HistoricalContextData | null, manifest?: BoundaryManifest | null, periodId?: string, settlementManifest?: TemporalSettlementsManifest | null): YearStop[] {
   const period = periodId ? catalog.periods.find(item => item.id === periodId) : undefined;
   if (periodId && !period) return [];
   const years = new Map<number, YearStop>();
@@ -49,8 +50,8 @@ export function availableYearStops(catalog: Catalog, context?: HistoricalContext
   for (const timeline of context?.cityTimelines ?? []) for (const entry of timeline.entries) add(entry.year, "chronicle");
   for (const dataset of manifest?.datasets ?? []) if (!periodId || dataset.periodId === periodId) add(dataset.year, "boundary");
   for (const item of catalog.periods) if (!periodId || item.id === periodId) add(item.year, "reference");
-  for (const [id, year] of [["tang", 755], ["song", 1200]] as const) {
-    if ((!periodId || periodId === id) && catalog.periods.some(item => item.id === id)) add(year, "seat");
+  for (const pack of settlementManifest?.packages ?? []) {
+    if ((!periodId || periodId === pack.periodId) && pack.representativeYearCount > 0 && catalog.periods.some(item => item.id === pack.periodId)) add(pack.representativeYear, "seat");
   }
   return [...years.values()].sort((a, b) => a.year - b.year);
 }

@@ -53,18 +53,31 @@ export interface Regime {
   sourceIds: string[];
   certainty: "schematic";
 }
+export type PlaceType =
+  | "capital"
+  | "city"
+  | "pass"
+  | "battlefield"
+  | "tomb"
+  | "temple"
+  | "port"
+  | "ferry"
+  | "post"
+  | "site"
+  | "unknown";
+
 export interface Place {
   id: string;
   name: string;
   modernName: string;
   coordinates: Coordinates;
-  type: "capital" | "city" | "pass";
+  type: PlaceType;
   summary: string;
   aliases: string[];
   periodIds: string[];
   sourceIds: string[];
   nameByPeriod?: Record<string, string>;
-  typeByPeriod?: Record<string, "capital" | "city" | "pass">;
+  typeByPeriod?: Record<string, PlaceType>;
   evidence?: Evidence[];
   location?: {
     accuracy: "approximate" | "uncertain" | "precise";

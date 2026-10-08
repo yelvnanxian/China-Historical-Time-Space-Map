@@ -47,6 +47,15 @@ export interface BoundarySelection {
   nameCorrectionNote?: string;
   nameSourceUrl?: string;
   nameStatus?: "source" | "source-field" | "source-recovered" | "translated" | "unresolved" | "unnamed";
+  /** Original hierarchy fields from the source feature. Empty fields are kept
+   * empty: an absent hierarchy is not permission to infer a parent by name or
+   * by spatial containment. */
+  sourceHierarchy?: {
+    polity?: string;
+    province?: string;
+    prefecture?: string;
+    dependentPrefecture?: string;
+  };
   /** Source agreement only; even matched does not establish a verified boundary. */
   geometryStatus?: TangCountyDiagnosticStatus;
 }

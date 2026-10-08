@@ -1,3 +1,4 @@
+import type { Coordinates } from "../../shared/types";
 import {
   useEffect,
   useId,
@@ -18,6 +19,18 @@ import {
 } from "lucide-react";
 import "../atlas-viewer.css";
 
+interface AtlasControlPoint {
+  id: string;
+  label: string;
+  x: number;
+  y: number;
+  coordinates: Coordinates;
+  note: string;
+}
+interface AtlasControlPointsData {
+  images: { imageId: string; width: number; height: number; imageSha256: string; points: AtlasControlPoint[] }[];
+}
+
 interface AtlasImage {
   id: string;
   periodId: string;
@@ -27,6 +40,7 @@ interface AtlasImage {
   height: number;
   sourceUrl: string;
   imageDate: { label: string; year: number } | null;
+  sha256: string;
 }
 
 interface AtlasManifest {
@@ -35,7 +49,16 @@ interface AtlasManifest {
   images: AtlasImage[];
 }
 
-export default function HistoricalAtlasViewer({ periodId, openRequest = 0 }: { periodId: string; openRequest?: number }) {
+export default function HistoricalAtlasViewer({
+  periodId,
+  openRequest = 0,
+  onApproximateLocate,
+}: {
+  periodId: string;
+  openRequest?: number;
+  /** A labelled modern reference landmark; no interpolation between landmarks. */
+  onApproximateLocate?: (coordinates: Coordinates, label: string) => void;
+}) {
   const [isOpen, setIsOpen] = useState(false);
   const [manifest, setManifest] = useState<AtlasManifest | null>(null);
   const [loading, setLoading] = useState(true);
@@ -47,6 +70,9 @@ export default function HistoricalAtlasViewer({ periodId, openRequest = 0 }: { p
   const [loadedImage, setLoadedImage] = useState("");
   const [failedImage, setFailedImage] = useState("");
   const [dragging, setDragging] = useState(false);
+  const [showControlPoints, setShowControlPoints] = useState(true);
+  const [controlPointData, setControlPointData] = useState<AtlasControlPointsData>();
+  const [controlPointError, setControlPointError] = useState("");
   const launchRef = useRef<HTMLButtonElement>(null);
   const returnFocusRef = useRef<HTMLElement | null>(null);
   const lastOpenRequest = useRef(0);
@@ -62,6 +88,8 @@ export default function HistoricalAtlasViewer({ periodId, openRequest = 0 }: { p
     [manifest, periodId],
   );
   const selected = images.find((item) => item.id === selectedId) ?? images[0];
+  const controlPoints = controlPointData?.images.find(item => item.imageId === selected?.id && item.width === selected.width && item.height === selected.height && item.imageSha256 === selected.sha256)?.points ?? [];
+
   const fit = selected
     ? Math.min(
         Math.max(1, viewport.width - 32) / selected.width,
@@ -105,6 +133,16 @@ export default function HistoricalAtlasViewer({ periodId, openRequest = 0 }: { p
   }, [retry]);
 
   useEffect(() => {
+    const controller = new AbortController();
+    setControlPointError("");
+    fetch("/data/atlas/control-points.json", { signal: controller.signal })
+      .then(response => { if (!response.ok) throw Error(); return response.json() as Promise<AtlasControlPointsData>; })
+      .then(data => { if (!Array.isArray(data.images)) throw Error(); setControlPointData(data); })
+      .catch(reason => { if (reason.name !== "AbortError") setControlPointError("近似对位锚点暂未加载；仍可阅读原图。"); });
+    return () => controller.abort();
+  }, [retry]);
+
+  useEffect(() => {
     const dialog = dialogRef.current;
     if (isOpen && dialog && !dialog.open) dialog.showModal();
     if (!isOpen && dialog?.open) dialog.close();
@@ -123,6 +161,7 @@ export default function HistoricalAtlasViewer({ periodId, openRequest = 0 }: { p
   useEffect(() => {
     setZoom(1);
     setFailedImage("");
+    setShowControlPoints(true);
     centerRef.current = null;
     viewportRef.current?.scrollTo(0, 0);
   }, [selected?.id, isOpen]);
@@ -166,6 +205,11 @@ export default function HistoricalAtlasViewer({ periodId, openRequest = 0 }: { p
   function endDrag() {
     dragRef.current = null;
     setDragging(false);
+  }
+
+  function locateControlPoint(point: AtlasControlPoint) {
+    onApproximateLocate?.(point.coordinates, point.label);
+    close();
   }
 
   function close() {
@@ -225,6 +269,16 @@ export default function HistoricalAtlasViewer({ periodId, openRequest = 0 }: { p
                 </div>
               </div>
 
+              <section className="atlas-approximate" aria-label="原图近似对位">
+                <div className="atlas-approximate-heading">
+                  <strong>近似对位</strong>
+                  <span>{controlPoints.length ? `点原图上的 ${controlPoints.length} 个锚点，可跳到地图附近。锚点采用图中现代地名参照，未作全图配准。` : "本图尚未标定对位锚点；可正常缩放阅读，不推算未标位置。"}</span>
+                  {!!controlPoints.length && <button type="button" className="atlas-fit-button" onClick={() => setShowControlPoints(value => !value)} aria-pressed={showControlPoints}>
+                    {showControlPoints ? "隐藏锚点" : "显示锚点"}
+                  </button>}
+                </div>
+                {controlPointError && <p role="status">{controlPointError}<button className="atlas-fit-button" onClick={() => setRetry(value => value + 1)}>重试</button></p>}
+              </section>
               <div className="atlas-date-row">
                 <strong>{selected.imageDate?.label ?? "原图年代见图例"}</strong>
                 <span>放大后可拖动、滚动查看 · 保留完整图例</span>
@@ -244,7 +298,7 @@ export default function HistoricalAtlasViewer({ periodId, openRequest = 0 }: { p
                   onLostPointerCapture={endDrag}
                 >
                   <div className="atlas-image-canvas" style={{ width: Math.max(viewport.width, imageWidth), height: Math.max(viewport.height, imageHeight) }}>
-                    {isOpen && (
+                    {isOpen && <div className="atlas-image-stage" style={{ width: imageWidth, height: imageHeight }}>
                       <img
                         key={selected.id}
                         src={selected.imageUrl}
@@ -254,7 +308,13 @@ export default function HistoricalAtlasViewer({ periodId, openRequest = 0 }: { p
                         onLoad={() => setLoadedImage(selected.id)}
                         onError={() => setFailedImage(selected.id)}
                       />
-                    )}
+                      {showControlPoints && loadedImage === selected.id && controlPoints.map(point => <button
+                        type="button" key={point.id} className="atlas-control-point" style={{ left: `${point.x * 100}%`, top: `${point.y * 100}%` }}
+                        aria-label={`近似对位：${point.label}，跳到地图附近`} title={point.note}
+                        disabled={!onApproximateLocate} onPointerDown={event => event.stopPropagation()} onClick={() => locateControlPoint(point)}>
+                        <span aria-hidden="true">＋</span><strong>{point.label}</strong><small>近似对位 ↗</small>
+                      </button>)}
+                    </div>}
                   </div>
                 </div>
                 {loadedImage !== selected.id && failedImage !== selected.id && <div className="atlas-image-loading" role="status"><LoaderCircle size={20} className="atlas-spinner" />正在加载完整原图…</div>}

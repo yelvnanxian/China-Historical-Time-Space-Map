@@ -1,0 +1,379 @@
+{
+  "version": "1.0.0",
+  "method": "manual-modern-reference-landmarks",
+  "reviewedAt": "2026-10-08",
+  "notes": [
+    "人工目视纸图中的橙字现代西安、杭州位置，建立地区级阅读参照；不等于古代治所坐标。",
+    "只对标出的点提供跳转，不对未标区域插值、不变形原图、不生成行政边界。",
+    "纸图为各自图例的年代，跳转保持当前浏览年；地区坐标沿用目录已有来源。",
+    "首批覆盖秦、汉、三国、西晋、齐魏、隋六幅默认图，每图两个参照点；其他图幅仍可独立阅读。"
+  ],
+  "images": [
+    {
+      "imageId": "qin-full",
+      "width": 2900,
+      "height": 2033,
+      "imageSha256": "1eefe11f6a2f666e738a42395fd37c8c4108be8a3a547202c2be08fc21d6ec8f",
+      "sourceUrl": "https://github.com/imbian/chinese_historical_map/blob/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E7%A7%A6/%E7%A7%A6%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE.jpg",
+      "points": [
+        {
+          "id": "qin-full-changan",
+          "label": "西安地区",
+          "x": 0.5882758620689655,
+          "y": 0.5897688145597639,
+          "imagePixel": [
+            1706,
+            1199
+          ],
+          "coordinates": [
+            108.94,
+            34.3
+          ],
+          "catalogPlaceId": "changan",
+          "kind": "modern-reference",
+          "sourceIds": [],
+          "note": "图中橙字现代地名附近的人工阅读锚点；仅跳转现代地区，不核定本图古城位置。"
+        },
+        {
+          "id": "qin-full-hangzhou",
+          "label": "杭州地区",
+          "x": 0.7403448275862069,
+          "y": 0.6517461878996557,
+          "imagePixel": [
+            2147,
+            1325
+          ],
+          "coordinates": [
+            120.16,
+            30.25
+          ],
+          "catalogPlaceId": "hangzhou",
+          "kind": "modern-reference",
+          "sourceIds": [
+            "hanshu",
+            "sanguozhi",
+            "jinshu",
+            "tongjian",
+            "suishu",
+            "jiutangshu",
+            "songshi",
+            "yuanshi",
+            "mingshi",
+            "qingshigao",
+            "tang-se-jiutangshu-40",
+            "tang-se-hangzhou",
+            "mingshi-geography-44",
+            "song-research-songshi-36",
+            "song-research-songshi-88"
+          ],
+          "note": "图中橙字现代地名附近的人工阅读锚点；仅跳转现代地区，不核定本图古城位置。"
+        }
+      ]
+    },
+    {
+      "imageId": "han-western-full",
+      "width": 2908,
+      "height": 2029,
+      "imageSha256": "c898302badb7c8ae7658e3df1167d62d8a6f7312dce3f1ad8a8549193ba98494",
+      "sourceUrl": "https://github.com/imbian/chinese_historical_map/blob/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E8%A5%BF%E6%B1%89/%E8%A5%BF%E6%B1%89%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE.jpg",
+      "points": [
+        {
+          "id": "han-western-full-changan",
+          "label": "西安地区",
+          "x": 0.5866574965612105,
+          "y": 0.5909314933464761,
+          "imagePixel": [
+            1706,
+            1199
+          ],
+          "coordinates": [
+            108.94,
+            34.3
+          ],
+          "catalogPlaceId": "changan",
+          "kind": "modern-reference",
+          "sourceIds": [],
+          "note": "图中橙字现代地名附近的人工阅读锚点；仅跳转现代地区，不核定本图古城位置。"
+        },
+        {
+          "id": "han-western-full-hangzhou",
+          "label": "杭州地区",
+          "x": 0.7407152682255846,
+          "y": 0.65352390340069,
+          "imagePixel": [
+            2154,
+            1326
+          ],
+          "coordinates": [
+            120.16,
+            30.25
+          ],
+          "catalogPlaceId": "hangzhou",
+          "kind": "modern-reference",
+          "sourceIds": [
+            "hanshu",
+            "sanguozhi",
+            "jinshu",
+            "tongjian",
+            "suishu",
+            "jiutangshu",
+            "songshi",
+            "yuanshi",
+            "mingshi",
+            "qingshigao",
+            "tang-se-jiutangshu-40",
+            "tang-se-hangzhou",
+            "mingshi-geography-44",
+            "song-research-songshi-36",
+            "song-research-songshi-88"
+          ],
+          "note": "图中橙字现代地名附近的人工阅读锚点；仅跳转现代地区，不核定本图古城位置。"
+        }
+      ]
+    },
+    {
+      "imageId": "sanguo-full",
+      "width": 2900,
+      "height": 2031,
+      "imageSha256": "b54d0acb7f20e7d6133449df02217a3113e0886c398f2b6d0059405935e52d28",
+      "sourceUrl": "https://github.com/imbian/chinese_historical_map/blob/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E4%B8%89%E5%9B%BD/%E4%B8%89%E5%9B%BD%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE.jpg",
+      "points": [
+        {
+          "id": "sanguo-full-changan",
+          "label": "西安地区",
+          "x": 0.5872413793103448,
+          "y": 0.5913343180699163,
+          "imagePixel": [
+            1703,
+            1201
+          ],
+          "coordinates": [
+            108.94,
+            34.3
+          ],
+          "catalogPlaceId": "changan",
+          "kind": "modern-reference",
+          "sourceIds": [],
+          "note": "图中橙字现代地名附近的人工阅读锚点；仅跳转现代地区，不核定本图古城位置。"
+        },
+        {
+          "id": "sanguo-full-hangzhou",
+          "label": "杭州地区",
+          "x": 0.7386206896551725,
+          "y": 0.6518956179222059,
+          "imagePixel": [
+            2142,
+            1324
+          ],
+          "coordinates": [
+            120.16,
+            30.25
+          ],
+          "catalogPlaceId": "hangzhou",
+          "kind": "modern-reference",
+          "sourceIds": [
+            "hanshu",
+            "sanguozhi",
+            "jinshu",
+            "tongjian",
+            "suishu",
+            "jiutangshu",
+            "songshi",
+            "yuanshi",
+            "mingshi",
+            "qingshigao",
+            "tang-se-jiutangshu-40",
+            "tang-se-hangzhou",
+            "mingshi-geography-44",
+            "song-research-songshi-36",
+            "song-research-songshi-88"
+          ],
+          "note": "图中橙字现代地名附近的人工阅读锚点；仅跳转现代地区，不核定本图古城位置。"
+        }
+      ]
+    },
+    {
+      "imageId": "jin-western-full",
+      "width": 2900,
+      "height": 2045,
+      "imageSha256": "666e7a5d8880143b1be1dace60222e7acff76b8bdf2b0a2dcf05ae2ef94e4e9c",
+      "sourceUrl": "https://github.com/imbian/chinese_historical_map/blob/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E8%A5%BF%E6%99%8B/%E8%A5%BF%E6%99%8B%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE.jpg",
+      "points": [
+        {
+          "id": "jin-western-full-changan",
+          "label": "西安地区",
+          "x": 0.5872413793103448,
+          "y": 0.5872860635696822,
+          "imagePixel": [
+            1703,
+            1201
+          ],
+          "coordinates": [
+            108.94,
+            34.3
+          ],
+          "catalogPlaceId": "changan",
+          "kind": "modern-reference",
+          "sourceIds": [],
+          "note": "图中橙字现代地名附近的人工阅读锚点；仅跳转现代地区，不核定本图古城位置。"
+        },
+        {
+          "id": "jin-western-full-hangzhou",
+          "label": "杭州地区",
+          "x": 0.7403448275862069,
+          "y": 0.6479217603911981,
+          "imagePixel": [
+            2147,
+            1325
+          ],
+          "coordinates": [
+            120.16,
+            30.25
+          ],
+          "catalogPlaceId": "hangzhou",
+          "kind": "modern-reference",
+          "sourceIds": [
+            "hanshu",
+            "sanguozhi",
+            "jinshu",
+            "tongjian",
+            "suishu",
+            "jiutangshu",
+            "songshi",
+            "yuanshi",
+            "mingshi",
+            "qingshigao",
+            "tang-se-jiutangshu-40",
+            "tang-se-hangzhou",
+            "mingshi-geography-44",
+            "song-research-songshi-36",
+            "song-research-songshi-88"
+          ],
+          "note": "图中橙字现代地名附近的人工阅读锚点；仅跳转现代地区，不核定本图古城位置。"
+        }
+      ]
+    },
+    {
+      "imageId": "nanbei-qi-wei-full",
+      "width": 2908,
+      "height": 2037,
+      "imageSha256": "773ad090c78c572ddfc314e76bb24c2800fa9ee101ff62171c24a2c6ef10a193",
+      "sourceUrl": "https://github.com/imbian/chinese_historical_map/blob/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E5%8D%97%E5%8C%97%E6%9C%9D/%E9%BD%90%E3%80%81%E9%AD%8F%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE.jpg",
+      "points": [
+        {
+          "id": "nanbei-qi-wei-full-changan",
+          "label": "西安地区",
+          "x": 0.5849381017881705,
+          "y": 0.5905743740795287,
+          "imagePixel": [
+            1701,
+            1203
+          ],
+          "coordinates": [
+            108.94,
+            34.3
+          ],
+          "catalogPlaceId": "changan",
+          "kind": "modern-reference",
+          "sourceIds": [],
+          "note": "图中橙字现代地名附近的人工阅读锚点；仅跳转现代地区，不核定本图古城位置。"
+        },
+        {
+          "id": "nanbei-qi-wei-full-hangzhou",
+          "label": "杭州地区",
+          "x": 0.7379642365887208,
+          "y": 0.6524300441826215,
+          "imagePixel": [
+            2146,
+            1329
+          ],
+          "coordinates": [
+            120.16,
+            30.25
+          ],
+          "catalogPlaceId": "hangzhou",
+          "kind": "modern-reference",
+          "sourceIds": [
+            "hanshu",
+            "sanguozhi",
+            "jinshu",
+            "tongjian",
+            "suishu",
+            "jiutangshu",
+            "songshi",
+            "yuanshi",
+            "mingshi",
+            "qingshigao",
+            "tang-se-jiutangshu-40",
+            "tang-se-hangzhou",
+            "mingshi-geography-44",
+            "song-research-songshi-36",
+            "song-research-songshi-88"
+          ],
+          "note": "图中橙字现代地名附近的人工阅读锚点；仅跳转现代地区，不核定本图古城位置。"
+        }
+      ]
+    },
+    {
+      "imageId": "sui-full",
+      "width": 2892,
+      "height": 2026,
+      "imageSha256": "4d9f35d8061a7545714b1b50f7359b978f6bf2a61a7e4d5c750c91f83f17202b",
+      "sourceUrl": "https://github.com/imbian/chinese_historical_map/blob/7aa0c7b4f627e3becd444b37d03b00d3173cf420/%E9%9A%8B/%E9%9A%8B%E6%97%B6%E6%9C%9F%E5%85%A8%E5%9B%BE.jpg",
+      "points": [
+        {
+          "id": "sui-full-changan",
+          "label": "西安地区",
+          "x": 0.5871369294605809,
+          "y": 0.5947680157946693,
+          "imagePixel": [
+            1698,
+            1205
+          ],
+          "coordinates": [
+            108.94,
+            34.3
+          ],
+          "catalogPlaceId": "changan",
+          "kind": "modern-reference",
+          "sourceIds": [],
+          "note": "图中橙字现代地名附近的人工阅读锚点；仅跳转现代地区，不核定本图古城位置。"
+        },
+        {
+          "id": "sui-full-hangzhou",
+          "label": "杭州地区",
+          "x": 0.7427385892116183,
+          "y": 0.650542941757157,
+          "imagePixel": [
+            2148,
+            1318
+          ],
+          "coordinates": [
+            120.16,
+            30.25
+          ],
+          "catalogPlaceId": "hangzhou",
+          "kind": "modern-reference",
+          "sourceIds": [
+            "hanshu",
+            "sanguozhi",
+            "jinshu",
+            "tongjian",
+            "suishu",
+            "jiutangshu",
+            "songshi",
+            "yuanshi",
+            "mingshi",
+            "qingshigao",
+            "tang-se-jiutangshu-40",
+            "tang-se-hangzhou",
+            "mingshi-geography-44",
+            "song-research-songshi-36",
+            "song-research-songshi-88"
+          ],
+          "note": "图中橙字现代地名附近的人工阅读锚点；仅跳转现代地区，不核定本图古城位置。"
+        }
+      ]
+    }
+  ]
+}

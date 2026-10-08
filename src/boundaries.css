@@ -415,3 +415,28 @@
     transition: none;
   }
 }
+
+.boundary-hierarchy { padding: 11px 0; border-top: 1px solid #dfe4d3; border-bottom: 1px solid #dfe4d3; margin: 12px 0; }
+.boundary-hierarchy h4 { margin: 0 0 8px; font-size: 12px; color: #536b4c; }
+.boundary-hierarchy p,.boundary-hierarchy small { font-size: 10px; line-height: 1.7; color: #75816a; }
+.boundary-hierarchy-group { margin: 10px 0; }
+.boundary-hierarchy-group > span { display: block; margin-bottom: 5px; font-size: 10px; color: #75816a; }
+.boundary-hierarchy-group > div { display: flex; flex-wrap: wrap; gap: 5px; max-height: 160px; overflow: auto; }
+.boundary-hierarchy-group button { padding: 5px 7px; border: 1px solid #cbd7c0; background: #f7f8ee; border-radius: 4px; font-size: 10px; color: #526b47; }
+.boundary-hierarchy-group button:hover { background: #e6edda; }
+.boundary-reliability-toggle { display: flex; align-items: center; gap: 5px; font-size: 11px; margin: 12px 0; cursor: pointer; }
+.boundary-reliability-legend { display: flex; gap: 8px; flex-wrap: wrap; margin: 8px 0 12px; font-size: 10px; }
+.boundary-reliability-legend span,.map-reliability-key div span { display: inline-flex; align-items: center; gap: 4px; }
+.boundary-reliability-legend i,.map-reliability-key i { width: 9px; height: 9px; border-radius: 2px; }
+.boundary-reliability-legend small { flex-basis: 100%; line-height: 1.7; color: #788269; }
+.map-reliability-key { position: absolute; left: 12px; bottom: 24px; z-index: 9; max-width: 258px; border: 1px solid #d9decc; border-radius: 6px; background: #fafbf0ed; padding: 7px 9px; color: #617150; font: 10px/1.6 sans-serif; box-shadow: 0 1px 6px #45543a14; }
+.map-reliability-key summary { cursor: pointer; font-weight: 600; }
+.map-reliability-key summary span { margin-left: 5px; color: #87937b; font-weight: 400; }
+.map-reliability-key div { display: flex; flex-wrap: wrap; gap: 8px; margin: 5px 0; }
+.map-reliability-key small { display: block; color: #89927c; font-size: 9px; }
+.data-reliability-detail { line-height: 1.8; font-size: 11px; }
+.data-reliability-detail > span { display: inline-block; font-weight: 600; margin-right: 6px; border: 1px solid currentColor; padding: 0 4px; border-radius: 3px; }
+.settlement-reliability-counts { display: flex; flex-wrap: wrap; gap: 6px; font-size: 10px; margin: 8px 0; }
+.settlement-reliability-counts span { padding-left: 5px; border-left: 3px solid; }
+.settlement-reliability-counts small { flex-basis: 100%; font-size: 9px; line-height: 1.7; color: #819075; }
+@media (max-width: 720px) { .map-reliability-key { max-width: 220px; bottom: 24px; left: 8px; } .boundary-hierarchy-group button { min-height: 36px; } }

@@ -69,3 +69,8 @@
   .nature-search-results button { min-height: 40px; }
   .nature-search input, .nature-explorer select { min-height: 32px; font-size: 13px; }
 }
+
+.atlas-reference-marker { display: grid; place-items: center; width: 30px; height: 30px; border: 2px dashed #ad633b; border-radius: 50%; background: #fff9e9d9; color: #934c2c; font: 24px/1 sans-serif; pointer-events: none; }
+.atlas-reference-note { position: absolute; left: 18px; bottom: 75px; z-index: 38; display: flex; align-items: center; gap: 12px; max-width: calc(100% - 86px); padding: 9px 12px; border: 1px dashed #b98d68; border-radius: 6px; background: #fffaedee; color: #8a583a; font-size: 12px; }
+.atlas-reference-note small { display: block; margin-top: 4px; font-size: 10px; }
+.atlas-reference-note button { display: grid; place-items: center; min-width: 30px; min-height: 30px; }
