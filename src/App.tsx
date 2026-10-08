@@ -30,7 +30,7 @@ import SharePanel from "./components/SharePanel";
 import OnboardingGuide from "./components/OnboardingGuide";
 import CityPeriodHighlights, { CityPeriodHighlight } from "./components/CityPeriodHighlights";
 import { CityChronicle, HistoricalGeography } from "./components/HistoricalContext";
-import type { HistoricalContextData, HistoricalGeographyEntry } from "../shared/historical-context";
+import type { CityTimelineEntry, HistoricalContextData, HistoricalGeographyEntry } from "../shared/historical-context";
 import type { CityPeriodProfilesData } from "../shared/city-profiles";
 import {
   normalizeExploration,
@@ -44,6 +44,12 @@ import type { TangBoundaryCrosswalk } from "../shared/tang-boundary-crosswalk";
 import TangJurisdictionInfo from "./components/TangJurisdictionInfo";
 import MingJurisdictionInfo from "./components/MingJurisdictionInfo";
 import SongJurisdictionInfo from "./components/SongJurisdictionInfo";
+import YearNavigator from "./components/YearNavigator";
+import BoundaryComparison from "./components/BoundaryComparison";
+import { availableYearStops, periodForYear } from "../shared/temporal-navigation";
+import { boundaryDatasetAtYear, eventIncludesYear } from "../shared/temporal-map";
+import type { BoundaryManifest } from "../shared/boundaries";
+import "./temporal-workspace.css";
 
 function formatYear(year: number) {
   return year < 0 ? `公元前 ${Math.abs(year)} 年` : `公元 ${year} 年`;
@@ -100,6 +106,9 @@ function CityDrawing() {
 export default function App() {
   const [catalog, setCatalog] = useState<Catalog | null>(null);
   const [loadError, setLoadError] = useState("");
+  const [boundaryManifest, setBoundaryManifest] = useState<BoundaryManifest | null>(null);
+  const [boundaryManifestError, setBoundaryManifestError] = useState("");
+  const [comparison, setComparison] = useState<{ placeId?: string } | null>(null);
   const [historicalContext, setHistoricalContext] = useState<HistoricalContextData | null>(null);
   const [contextError, setContextError] = useState("");
   const [cityProfiles, setCityProfiles] = useState<CityPeriodProfilesData | null>(null);
@@ -141,6 +150,13 @@ export default function App() {
   const searchBox = useRef<HTMLDivElement>(null);
   const dialog = useRef<HTMLDialogElement>(null);
   const detailScroll = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const controller = new AbortController();
+    fetch("/data/boundaries/manifest.json", { signal: controller.signal })
+      .then(response => { if (!response.ok) throw Error(); return response.json(); })
+      .then(setBoundaryManifest).catch(cause => { if (cause.name !== "AbortError") setBoundaryManifestError("年份资料目录暂未加载，边界图层可独立加载。"); });
+    return () => controller.abort();
+  }, []);
   useEffect(() => {
     const controller = new AbortController();
     fetch("/data/tang-boundary-crosswalk.json", { signal: controller.signal }).then(r => { if (!r.ok) throw Error(); return r.json(); })
@@ -225,26 +241,30 @@ export default function App() {
       const state = parseExploration(window.location.search, catalog);
       setExploration(state);
       setModal(null);
+      setComparison(null);
+      setJurisdictionRequest(undefined);
+      setGeographySelection(null);
+      setDetailsOpen(Boolean(state.placeId || state.eventId));
       setFocusRequest((value) => value + 1);
     };
     window.addEventListener("popstate", restore);
     return () => window.removeEventListener("popstate", restore);
   }, [catalog]);
 
-  const period =
-    catalog?.periods.find((item) => item.id === periodId) ||
-    catalog?.periods[0];
-  const places = useMemo(
-    () =>
-      catalog?.places.filter((item) => item.periodIds.includes(periodId)) || [],
-    [catalog, periodId],
-  );
-  const events = useMemo(
-    () => catalog?.events.filter((item) => item.periodIds.includes(periodId)) || [],
-    [catalog, periodId],
-  );
-  const place = places.find((item) => item.id === placeId) || places[0];
-  const selectedEvent = catalog?.events.find((item) => item.id === eventId);
+  const referencePeriod = catalog?.periods.find(item => item.id === periodId) ?? catalog?.periods[0];
+  const shownYear = exploration.year ?? referencePeriod?.year ?? 755;
+  const datedPeriod = catalog ? periodForYear(shownYear, catalog.periods, { preferredPeriodId: periodId }) : undefined;
+  const period = datedPeriod ?? (referencePeriod ? { ...referencePeriod, id: "unassigned", label: "未收录时期", name: "未收录时期", year: shownYear, startYear: shownYear, endYear: shownYear, regimeIds: [] } : undefined);
+  const yearStops = useMemo(() => catalog ? availableYearStops(catalog, historicalContext, boundaryManifest, datedPeriod?.id) : [], [catalog, historicalContext, boundaryManifest, datedPeriod?.id]);
+  const selectedBoundary = boundaryDatasetAtYear(boundaryManifest?.datasets ?? [], period?.id ?? "", shownYear);
+  const places = useMemo(() => {
+    const visible = catalog?.places.filter(item => item.periodIds.includes(period?.id ?? "")) ?? [];
+    const current = catalog?.places.find(item => item.id === placeId);
+    return current && !visible.some(item => item.id === current.id) ? [...visible, current] : visible;
+  }, [catalog, period?.id, placeId]);
+  const events = useMemo(() => catalog?.events.filter(item => eventIncludesYear(item, shownYear)) ?? [], [catalog, shownYear]);
+  const place = catalog?.places.find(item => item.id === placeId) || places[0];
+  const selectedEvent = catalog?.events.find(item => item.id === eventId && eventIncludesYear(item, shownYear));
   const relatedEvents = events.filter(
     (item) => place && item.placeIds.includes(place.id),
   );
@@ -256,6 +276,8 @@ export default function App() {
   }, [periodId, place?.id, eventId, detailTab]);
   function changePeriod(id: string) {
     setDetailsOpen(false);
+    setJurisdictionRequest(undefined);
+    setGeographySelection(null);
     const first =
       catalog?.places.find(
         (item) =>
@@ -265,11 +287,29 @@ export default function App() {
     commit({
       ...exploration,
       periodId: id,
+      year: undefined,
       topicId: null,
       eventId: null,
       placeId: first?.id || null,
       detailsView: "place",
     });
+  }
+  function changeYear(year: number) {
+    if (!catalog) return;
+    const next = periodForYear(year, catalog.periods, { preferredPeriodId: periodId });
+    setJurisdictionRequest(undefined);
+    setGeographySelection(null);
+    commit({ ...exploration, year, periodId: next?.id ?? periodId, topicId: null, eventId: null });
+  }
+  function selectChronicle(entry: CityTimelineEntry) {
+    if (!catalog || !place) return;
+    const next = periodForYear(entry.year, catalog.periods, { preferredPeriodId: periodId, entryId: entry.id });
+    setJurisdictionRequest(undefined);
+    setGeographySelection(null);
+    setInteractionMode("cities");
+    setDetailsOpen(true);
+    setFocusRequest(value => value + 1);
+    commit({ ...exploration, year: entry.year, periodId: next?.id ?? periodId, placeId: place.id, topicId: null, eventId: null, detailsView: "place" });
   }
   function selectPlace(id: string) {
     if (!canInteract(interactionMode, "cities")) setInteractionMode("cities");
@@ -283,6 +323,8 @@ export default function App() {
     });
   }
   function viewJurisdiction(id: string) {
+    const source = boundaryManifest?.datasets.find(item => id.startsWith(`${item.id}-`));
+    if (source) changeYear(source.year);
     if (!canInteract(interactionMode, "cities")) setInteractionMode("cities");
     setDetailsOpen(false);
     setJurisdictionRequest({ id, requestId: Date.now() });
@@ -376,6 +418,7 @@ export default function App() {
       commit({
         ...exploration,
         periodId: destinationPeriod,
+        year: destinationPeriod === periodId ? exploration.year : undefined,
         topicId: null,
         placeId: result.id,
         eventId: null,
@@ -463,6 +506,7 @@ export default function App() {
         </div>
       </header>
 
+      <BoundaryComparison open={comparison !== null} onClose={() => setComparison(null)} place={catalog.places.find(item => item.id === comparison?.placeId)} initialYear={shownYear} />
       <main>
         <section className="intro-row">
           <div>
@@ -475,12 +519,13 @@ export default function App() {
               <span>朝代</span>
               <select
                 aria-label="选择朝代截面"
-                value={periodId}
+                value={datedPeriod?.id ?? "unassigned"}
                 onChange={(event) => changePeriod(event.target.value)}
               >
+                {!datedPeriod && <option value="unassigned">{formatYear(shownYear)} · 未收录时期</option>}
                 {catalog.periods.map((item) => (
                   <option key={item.id} value={item.id}>
-                    {item.label} · {formatYear(item.year)}
+                    {item.label} · {item.startYear < 0 ? `前${Math.abs(item.startYear)}` : item.startYear}—{item.endYear < 0 ? `前${Math.abs(item.endYear)}` : item.endYear}年
                   </option>
                 ))}
               </select>
@@ -561,6 +606,9 @@ export default function App() {
           </div>
         </section>
 
+        {datedPeriod ? <YearNavigator period={datedPeriod} year={shownYear} stops={yearStops} onYearChange={changeYear} boundaryYear={selectedBoundary?.year} /> :
+          <section className="temporal-gap" aria-label="年份资料范围"><strong>{formatYear(shownYear)}</strong><span>此年尚无已收录朝代图层，保留地点档案与纪年。可从朝代选择器返回有资料的时期。</span></section>}
+        {boundaryManifestError && <p className="temporal-load-note" role="status">{boundaryManifestError}</p>}
         <section
           className={`atlas-workspace ${detailsOpen ? "details-open" : ""}`}
           aria-label="历史地图探索器"
@@ -572,7 +620,7 @@ export default function App() {
                 <span>历史地图</span>
                 <i />
                 <small>
-                  {periodId === "song" ? "1200年 · 南宋及同期诸政权" : "中国及周边地区"}
+                  {`${shownYear < 0 ? `前${Math.abs(shownYear)}` : shownYear}年 · ${period.label}${period.id === "song" ? "及同期诸政权" : ""}`}
                 </small>
               </div>
               <div className="map-display-mode" role="group" aria-label="地图点选对象" data-tour="display-mode">
@@ -585,7 +633,8 @@ export default function App() {
                 ))}
               </div>
               <div className="map-place-controls">
-                <CityPeriodHighlights period={period} places={places} data={cityProfiles} error={cityProfilesError}
+                <button type="button" className="boundary-compare-launch" onClick={() => setComparison({})}>边界对比</button>
+                <CityPeriodHighlights period={period} currentYear={shownYear} places={places} data={cityProfiles} error={cityProfilesError}
                   onRetry={() => setCityProfilesAttempt(value => value + 1)} onSelect={selectPlace} />
                 <button type="button" className="map-details-launch" aria-expanded={detailsOpen && detailTab === "place"} aria-controls="historical-details" onClick={() => {
                   if (!canInteract(interactionMode, "cities")) setInteractionMode("cities");
@@ -599,7 +648,7 @@ export default function App() {
                   }}
                 >
                   <Clock3 size={13} />
-                  本期事件
+                  当年事件
                   <span>{events.length}</span>
                 </button>
               </div>
@@ -620,6 +669,8 @@ export default function App() {
             </div>
             <HistoricalMap
               period={period}
+              year={shownYear}
+              onYearChange={changeYear}
               interactionMode={interactionMode}
               places={places}
               selectedPlace={place}
@@ -712,13 +763,16 @@ export default function App() {
                       </span>
                     </div>
                     <CityDrawing />
-                    <CityPeriodHighlight period={period} placeId={place.id} data={cityProfiles} error={cityProfilesError}
+                    {shownYear !== period.year && <p className="temporal-profile-note">浏览 {formatYear(shownYear)}；下方城市称谓与建置档案整理自 {formatYear(period.year)}代表截面及历代史料。图上的治所另按当前年份筛选。</p>}
+                    {!place.periodIds.includes(period.id) && <p className="temporal-profile-note">此时期尚无该城的专门档案；仍可从下方历代大事记继续浏览同一地点。</p>}
+                    <button type="button" className="detail-focus-button" onClick={() => setComparison({ placeId: place.id })}>对比此城唐、宋、明辖区</button>
+                    <CityPeriodHighlight period={period} currentYear={shownYear} placeId={place.id} data={cityProfiles} error={cityProfilesError}
                       onRetry={() => setCityProfilesAttempt(value => value + 1)} />
-                    {periodId === "tang" && <TangJurisdictionInfo name={placeName(place, period)} link={tangBoundaries?.places[place.id]} loading={!crosswalkLoaded}
+                    {period.id === "tang" && <TangJurisdictionInfo name={placeName(place, period)} link={tangBoundaries?.places[place.id]} loading={!crosswalkLoaded}
                       onView={viewJurisdiction} />}
-                    {periodId === "ming" && <MingJurisdictionInfo placeId={place.id}
+                    {period.id === "ming" && <MingJurisdictionInfo placeId={place.id}
                       onView={viewJurisdiction} />}
-                    {periodId === "song" && <SongJurisdictionInfo placeId={place.id}
+                    {period.id === "song" && <SongJurisdictionInfo placeId={place.id}
                       onView={viewJurisdiction} />}
                     {periodId === "song" ? <details className="detail-section period-background">
                       <summary>历代地点概览（跨朝代）</summary>
@@ -735,8 +789,8 @@ export default function App() {
                       <div>
                         <span>当前截面</span>
                         <strong>
-                          {period.name} · {period.year < 0 ? "前" : ""}
-                          {Math.abs(period.year)} 年
+                          {period.name} · {shownYear < 0 ? "前" : ""}
+                          {Math.abs(shownYear)} 年
                         </strong>
                       </div>
                       <div>
@@ -817,7 +871,7 @@ export default function App() {
                         </div>
                       </div>
                     )}
-                    <CityChronicle placeId={place.id} period={period} data={historicalContext} error={contextError} />
+                    <CityChronicle placeId={place.id} period={period} data={historicalContext} error={contextError} activeYear={shownYear} onEntrySelect={selectChronicle} />
                     <div className="detail-section related-section">
                       <h3>
                         <span />
@@ -839,7 +893,7 @@ export default function App() {
                         ))
                       ) : (
                         <p className="quiet-text">
-                          此地在当前时期中暂无事件记录。可在“历史事件”查看这一时期的故事。
+                          此地在当前年份暂无事件记录。可切换资料年份，或从大事记查看沿革。
                         </p>
                       )}
                     </div>

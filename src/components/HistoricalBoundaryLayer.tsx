@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Marker, type GeoJSONSource, type Map as MapInstance, type MapMouseEvent } from "maplibre-gl";
 import type { FeatureCollection, MultiPolygon, Polygon } from "geojson";
+import { boundaryDatasetAtYear } from "../../shared/temporal-map";
 import type { BoundaryDataset, BoundaryLevel, BoundaryManifest, BoundarySelection } from "../../shared/boundaries";
 import { boundaryCountryCoverage, boundaryLevelName } from "../../shared/boundaries";
 import { resolveMapDetailLevel } from "../../shared/map-detail-levels";
@@ -20,11 +21,12 @@ const empty: Regions = { type: "FeatureCollection", features: [] };
 const levels: BoundaryLevel[] = ["country", "province", "prefecture", "county"];
 const colors = { country: "#8a5742", province: "#83658d", prefecture: "#527767", county: "#a58957" };
 
-export default function HistoricalBoundaryLayer({ map, ready, periodId, currentYear, onStatusChange, onRegionFocus, modernNames, enabled = true, embedded = false, onSelection, resetKey, onOpenAtlas, interactionMode = "all", selectionRequest, onRegionSelect, countyDiagnostics, countyDiagnosticsError }: {
+export default function HistoricalBoundaryLayer({ map, ready, periodId, currentYear, onYearChange, onStatusChange, onRegionFocus, modernNames, enabled = true, embedded = false, onSelection, resetKey, onOpenAtlas, interactionMode = "all", selectionRequest, onRegionSelect, countyDiagnostics, countyDiagnosticsError }: {
   map: MapInstance | null;
   ready: boolean;
   periodId: string;
   currentYear: number;
+  onYearChange: (year: number) => void;
   onStatusChange: (status: string) => void;
   onRegionFocus: (coordinates: [number, number][]) => void;
   modernNames: boolean;
@@ -40,7 +42,6 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
   countyDiagnosticsError?: string;
 }) {
   const [manifest, setManifest] = useState<BoundaryManifest | null>(null);
-  const [datasetId, setDatasetId] = useState("");
   const [regions, setRegions] = useState<Regions>(empty);
   const [loadedDatasetId, setLoadedDatasetId] = useState<string>();
   const [zoom, setZoom] = useState(map?.getZoom() ?? 3);
@@ -93,20 +94,8 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
     return () => controller.abort();
   }, [periodId, songResearch]);
   const datasets = useMemo(() => manifest?.datasets.filter(item => item.periodId === periodId) ?? [], [manifest, periodId]);
-  const dataset: BoundaryDataset | undefined = datasets.find(item => item.id === datasetId)
-    ?? [...datasets].sort((a, b) => Math.abs(a.year - currentYear) - Math.abs(b.year - currentYear))[0];
-  const requestedSongDataset = periodId === "song" && selectionRequest ? datasets.find(item => selectionRequest.id.startsWith(`${item.id}-`)) : undefined;
-  const songRequestDatasetKey = useRef("");
-  useEffect(() => {
-    if (!selectionRequest || !requestedSongDataset) return;
-    const key = `${selectionRequest.id}:${selectionRequest.requestId}`;
-    if (songRequestDatasetKey.current === key) return;
-    songRequestDatasetKey.current = key;
-    if (dataset?.id !== requestedSongDataset.id) {
-      requestState.current = undefined;
-      setDatasetId(requestedSongDataset.id);
-    }
-  }, [selectionRequest, requestedSongDataset?.id, dataset?.id]);
+  const dataset: BoundaryDataset | undefined = boundaryDatasetAtYear(datasets, periodId, currentYear);
+  const requestedSongDataset = selectionRequest ? datasets.find(item => selectionRequest.id.startsWith(`${item.id}-`)) : undefined;
   const availableLevels = useMemo(() => levels.filter(level => dataset?.layers.some(layer => layer.level === level && layer.featureCount > 0)), [dataset]);
   const detail = useMemo(() => resolveMapDetailLevel("auto", zoom, availableLevels, { primaryCountryCoverage: !boundaryCountryCoverage(dataset).incomplete }), [zoom, availableLevels, dataset]);
   const visibleLevelKey = detail.visibleLevels.join("|");
@@ -349,7 +338,7 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
     if (result.clearSelection) setSelection(null);
     if (result.apply) focusRegion(result.apply.id, result.apply);
   }, [selectionRequest, resetKey, dataset?.id, loadedDatasetId, map, ready, enabled, interactive, displayRegions, focusRegion, requestedSongDataset?.id]);
-  return <BoundaryControls embedded={embedded} enabled={enabled} datasets={datasets} selectedDataset={dataset} onDatasetChange={setDatasetId}
+  return <BoundaryControls embedded={embedded} enabled={enabled} datasets={datasets} selectedDataset={dataset} onDatasetChange={id => { const next = datasets.find(item => item.id === id); if (next) onYearChange(next.year); }}
     visibleLevels={visibleLevels} interactive={interactive} activeLevel={detail.activeLevel} zoom={zoom} onOpenAtlas={onOpenAtlas}
     selection={selection} onSelectionClose={() => setSelection(null)} currentYear={currentYear} loading={loading || !manifest && !error} error={error}
     countyDiagnostic={selectedDiagnostic} countyDiagnosticsError={periodId === "tang" ? countyDiagnosticsError : undefined}

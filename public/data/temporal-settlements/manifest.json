@@ -1,0 +1,242 @@
+{
+  "version": "2026-10-08",
+  "kind": "chgis-temporal-settlements",
+  "packages": [
+    {
+      "periodId": "qin",
+      "periodName": "秦统一时期",
+      "startYear": -221,
+      "endYear": -207,
+      "representativeYear": -221,
+      "url": "/data/temporal-settlements/qin.geojson.gz",
+      "featureCount": 379,
+      "countsByLevel": {
+        "county": 341,
+        "prefecture": 38
+      },
+      "representativeYearCount": 338,
+      "withheldIntersectingCount": 46,
+      "compressedBytes": 51978,
+      "expandedBytes": 613328,
+      "sha256": "70eb34d97bd31b84fcf590c557c8e05a24b42be96ffdd5236ec276dfc045f9a3"
+    },
+    {
+      "periodId": "han",
+      "periodName": "两汉",
+      "startYear": -202,
+      "endYear": 220,
+      "representativeYear": 2,
+      "url": "/data/temporal-settlements/han.geojson.gz",
+      "featureCount": 2987,
+      "countsByLevel": {
+        "county": 2558,
+        "prefecture": 429
+      },
+      "representativeYearCount": 1110,
+      "withheldIntersectingCount": 197,
+      "compressedBytes": 286351,
+      "expandedBytes": 4852057,
+      "sha256": "a00e404ffc7d5ecd7e6a8156f637fe7e8a2540bbb4736047d7918f213f5f4a82"
+    },
+    {
+      "periodId": "sanguo",
+      "periodName": "三国并立",
+      "startYear": 220,
+      "endYear": 280,
+      "representativeYear": 230,
+      "url": "/data/temporal-settlements/sanguo.geojson.gz",
+      "featureCount": 1439,
+      "countsByLevel": {
+        "county": 1181,
+        "prefecture": 258
+      },
+      "representativeYearCount": 1035,
+      "withheldIntersectingCount": 103,
+      "compressedBytes": 181352,
+      "expandedBytes": 2339100,
+      "sha256": "3c53f13607ea16516d007045dfa99168935dfe6b715bbfeb091a423f2529761b"
+    },
+    {
+      "periodId": "jin",
+      "periodName": "两晋",
+      "startYear": 266,
+      "endYear": 420,
+      "representativeYear": 280,
+      "url": "/data/temporal-settlements/jin.geojson.gz",
+      "featureCount": 1739,
+      "countsByLevel": {
+        "county": 1349,
+        "prefecture": 390
+      },
+      "representativeYearCount": 1128,
+      "withheldIntersectingCount": 109,
+      "compressedBytes": 215759,
+      "expandedBytes": 2827248,
+      "sha256": "814d73ccdfdd54f937162a5f8d59c6201bcc2b0a0a5e782889bfff4351e4d890"
+    },
+    {
+      "periodId": "nanbei",
+      "periodName": "南北朝",
+      "startYear": 420,
+      "endYear": 589,
+      "representativeYear": 500,
+      "url": "/data/temporal-settlements/nanbei.geojson.gz",
+      "featureCount": 3412,
+      "countsByLevel": {
+        "county": 2284,
+        "prefecture": 1128
+      },
+      "representativeYearCount": 1363,
+      "withheldIntersectingCount": 238,
+      "compressedBytes": 385622,
+      "expandedBytes": 5533961,
+      "sha256": "d8c7da2e7245c299ee4a2dbb5b0d24493d99e4a9b2e3cc21a7b56395443eaf83"
+    },
+    {
+      "periodId": "sui",
+      "periodName": "隋朝",
+      "startYear": 581,
+      "endYear": 618,
+      "representativeYear": 609,
+      "url": "/data/temporal-settlements/sui.geojson.gz",
+      "featureCount": 3084,
+      "countsByLevel": {
+        "county": 2073,
+        "prefecture": 1011
+      },
+      "representativeYearCount": 1153,
+      "withheldIntersectingCount": 223,
+      "compressedBytes": 347026,
+      "expandedBytes": 4996441,
+      "sha256": "abe09681549f65266b9658fa33ffb71a2966142615430101ce8d885c864f97b4"
+    },
+    {
+      "periodId": "tang",
+      "periodName": "唐朝",
+      "startYear": 618,
+      "endYear": 907,
+      "representativeYear": 755,
+      "url": "/data/temporal-settlements/tang.geojson.gz",
+      "featureCount": 4001,
+      "countsByLevel": {
+        "county": 2520,
+        "prefecture": 1481
+      },
+      "representativeYearCount": 1681,
+      "withheldIntersectingCount": 267,
+      "compressedBytes": 425799,
+      "expandedBytes": 6481925,
+      "sha256": "8826e5059e1382e0d3a451ea20811af04841205ab782e43f967fdb3788f3d8a1"
+    },
+    {
+      "periodId": "song",
+      "periodName": "宋代诸政权",
+      "startYear": 960,
+      "endYear": 1279,
+      "representativeYear": 1200,
+      "url": "/data/temporal-settlements/song.geojson.gz",
+      "featureCount": 3533,
+      "countsByLevel": {
+        "county": 2452,
+        "prefecture": 1081
+      },
+      "representativeYearCount": 1560,
+      "withheldIntersectingCount": 201,
+      "compressedBytes": 403847,
+      "expandedBytes": 5747410,
+      "sha256": "6dbb36fcc567eb04063756ef165ba00864765cdc6b3e854857fd8c9c1da126a7"
+    },
+    {
+      "periodId": "yuan",
+      "periodName": "元朝",
+      "startYear": 1271,
+      "endYear": 1368,
+      "representativeYear": 1330,
+      "url": "/data/temporal-settlements/yuan.geojson.gz",
+      "featureCount": 2458,
+      "countsByLevel": {
+        "county": 1727,
+        "prefecture": 731
+      },
+      "representativeYearCount": 1529,
+      "withheldIntersectingCount": 123,
+      "compressedBytes": 298959,
+      "expandedBytes": 4011175,
+      "sha256": "b7cc65c45b1a273a6ddbf7c458ada9d285668e9dd66745edd99ec2745ac81dde"
+    },
+    {
+      "periodId": "ming",
+      "periodName": "明朝",
+      "startYear": 1368,
+      "endYear": 1644,
+      "representativeYear": 1582,
+      "url": "/data/temporal-settlements/ming.geojson.gz",
+      "featureCount": 2606,
+      "countsByLevel": {
+        "county": 2080,
+        "prefecture": 526
+      },
+      "representativeYearCount": 1595,
+      "withheldIntersectingCount": 136,
+      "compressedBytes": 305482,
+      "expandedBytes": 4244172,
+      "sha256": "b285230751b7f6c141858626f0eb2db2772793f661db9250c480a39d6cb5dbb2"
+    },
+    {
+      "periodId": "qing",
+      "periodName": "清朝",
+      "startYear": 1636,
+      "endYear": 1912,
+      "representativeYear": 1820,
+      "url": "/data/temporal-settlements/qing.geojson.gz",
+      "featureCount": 2439,
+      "countsByLevel": {
+        "county": 1882,
+        "prefecture": 557
+      },
+      "representativeYearCount": 1656,
+      "withheldIntersectingCount": 125,
+      "compressedBytes": 298244,
+      "expandedBytes": 3964214,
+      "sha256": "061ae0513b15a21793d24fb0e39a3a8aecb34195a9c6770a7e7934987d3540e1"
+    }
+  ],
+  "uniqueFeatureCount": 14862,
+  "sourceRecordCount": 15748,
+  "withheldCount": 886,
+  "sources": [
+    {
+      "id": "chgis-v6-temporal-county",
+      "title": "CHGIS V6 时序县级治所点",
+      "url": "https://doi.org/10.7910/DVN/Q9VOF5",
+      "snapshotPath": "data/evidence/tang-detail/chgis/county-wgs84.zip",
+      "snapshotSha256": "3b431d2e587bcb738e632385703824d252e0b4744ddd726fc5eb10364dd2d8c5",
+      "metadataPath": "data/evidence/tang-detail/chgis/county-metadata.json",
+      "metadataSha256": "5e447fbcf21c94ae8b20bd6742932e66de1c1c9c4e6e088516e299ca0249787c",
+      "attribution": "CHGIS V6, Harvard University / Fudan University, 2016.",
+      "license": "保留官方CHGIS V6 README与Harvard Dataverse元数据中的来源及条款。"
+    },
+    {
+      "id": "chgis-v6-temporal-prefecture",
+      "title": "CHGIS V6 时序府州级治所点",
+      "url": "https://doi.org/10.7910/DVN/WW1PD6",
+      "snapshotPath": "data/evidence/tang-detail/chgis/prefecture-wgs84.zip",
+      "snapshotSha256": "48f6a50bcc3dd9cf4391efab2153f0e333f2040a08cf96c4d4b950cf9977d1fc",
+      "metadataPath": "data/evidence/tang-detail/chgis/prefecture-metadata.json",
+      "metadataSha256": "ca25f596b996c6639fad685b5c226ac0116055bfd5ed5099f789b6978ff9fbda",
+      "attribution": "CHGIS V6, Harvard University / Fudan University, 2016.",
+      "license": "保留官方CHGIS V6 README与Harvard Dataverse元数据中的来源及条款。"
+    }
+  ],
+  "inputHashes": {
+    "public/data/song-settlements/settlements-1200.geojson": "599ebaf558606dde90815a1f8888419d5e734bd1202a6025e67ead9c19616919",
+    "data/evidence/temporal-settlements/period-definitions.json": "80f2fd958d6a9c622b8f0fd98e4d5bac87c45b9760146915e08ac0b762c94ff5",
+    "data/evidence/tang-detail/chgis/county-wgs84.zip": "3b431d2e587bcb738e632385703824d252e0b4744ddd726fc5eb10364dd2d8c5",
+    "data/evidence/tang-detail/chgis/county-metadata.json": "5e447fbcf21c94ae8b20bd6742932e66de1c1c9c4e6e088516e299ca0249787c",
+    "data/evidence/tang-detail/chgis/prefecture-wgs84.zip": "48f6a50bcc3dd9cf4391efab2153f0e333f2040a08cf96c4d4b950cf9977d1fc",
+    "data/evidence/tang-detail/chgis/prefecture-metadata.json": "ca25f596b996c6639fad685b5c226ac0116055bfd5ed5099f789b6978ff9fbda"
+  },
+  "dateNote": "按原始起讫年闭区间筛选浏览年份；明确端点也不等于逐年核验。宽时段与缺失规则分别说明，迁治或改名按不同源记录保留。",
+  "coverageNote": "CHGIS官方说明1350年前空间覆盖仍有缺口；此包不是任何朝代的全部城镇。分包按时间范围，不代表每条记录都属所选政权。源记录终年多为1911，1912年仅显示少量源记录，不能外推沿用。",
+  "polityNote": "源文件没有政权与上级隶属字段。既有20条文献身份关系只在1200年提供；其他年份不能套用其辖区、政权或城池档案关系。"
+}

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { BookOpen, MapPin, Waves, X } from "lucide-react";
-import type { HistoricalContextData, HistoricalContextEvidence, HistoricalContextSource, HistoricalGeographyEntry, HistoricalGeographyKind } from "../../shared/historical-context";
+import type { CityTimelineEntry, HistoricalContextData, HistoricalContextEvidence, HistoricalContextSource, HistoricalGeographyEntry, HistoricalGeographyKind } from "../../shared/historical-context";
 import type { Period } from "../../shared/types";
 import "../historical-context.css";
 
@@ -19,9 +19,10 @@ export function ContextEvidence({ evidence, sources }: { evidence: HistoricalCon
   </details>;
 }
 
-export function CityChronicle({ placeId, period, data, error }: { placeId: string; period?: Period; data: HistoricalContextData | null; error: string }) {
+export function CityChronicle({ placeId, period, data, error, activeYear, onEntrySelect }: { placeId: string; period?: Period; data: HistoricalContextData | null; error: string; activeYear?: number; onEntrySelect?: (entry: CityTimelineEntry) => void }) {
   const [scope, setScope] = useState<"all" | "period">(period?.id === "song" ? "period" : "all");
-  useEffect(() => { setScope(period?.id === "song" ? "period" : "all"); }, [period?.id]);
+  // Scope is the reader's choice. A timeline jump can change the period while
+  // keeping this city open; resetting scope would hide the cross-period nodes.
   const timeline = data?.cityTimelines.find(item => item.placeId === placeId);
   const allEntries = timeline?.entries ?? [];
   const periodEntries = period ? allEntries.filter(entry => entry.year >= period.startYear && entry.year <= period.endYear) : [];
@@ -34,10 +35,12 @@ export function CityChronicle({ placeId, period, data, error }: { placeId: strin
       <button type="button" aria-pressed={periodOnly} onClick={() => setScope("period")}>{period.id === "song" ? "本期" : "本朝"} · {period.label}{data && <span>{periodEntries.length}</span>}</button>
       <button type="button" aria-pressed={!periodOnly} onClick={() => setScope("all")}>历代{data && <span>{allEntries.length}</span>}</button>
     </div>}
-    <p className="chronicle-intro">{periodOnly ? period.id === "song" ? "筛选960—1279年的已收录节点，包含北宋、南宋与同期其他政权的事件；各条年代不同，不都发生于地图截面1200年。" : `按${period.name}起止年份筛选已收录节点，覆盖整个时期，不限于地图代表年。` : "跨越当前时期，查看这座城的关键转折。"}精选节点持续补充，古今城址未必相同。</p>
+    <p className="chronicle-intro">{periodOnly ? period.id === "song" ? "筛选960—1279年的已收录节点，包含北宋、南宋与同期其他政权的事件。" : `按${period.name}起止年份筛选已收录节点，覆盖整个时期。` : "跨越当前时期，查看这座城的关键转折。"}点击节点切换到记载年份；边界仍以已收录截面为参考。古今城址未必相同。</p>
     {!data ? <p className="quiet-text" role="status">{error || "大事记加载中…"}</p> : !entries.length ? <p className="quiet-text" role="status">{periodOnly ? `此地已收录的${period.name}大事记为 0 条。${allEntries.length ? `历代大事记有 ${allEntries.length} 条，可切换查看。` : "此地的其他时期大事记也尚待补充，可先查看下方相关事件。"}` : "此地的历代大事记尚待补充，可先查看下方已收录的相关事件。"}</p> :
-      <ol className="chronicle-list">{entries.map(entry => <li key={entry.id}>
-        <time>{entry.dateLabel}</time><h4>{entry.title}</h4><p>{entry.summary}</p>
+      <ol className="chronicle-list">{entries.map(entry => <li key={entry.id} className={activeYear === entry.year ? "chronicle-active" : undefined}>
+        <button type="button" className="chronicle-entry" aria-pressed={activeYear === entry.year} aria-label={`查看${entry.dateLabel}：${entry.title}`} onClick={() => onEntrySelect?.(entry)}>
+          <time>{entry.dateLabel}</time><strong>{entry.title}</strong><span>{entry.summary}</span><small>{activeYear === entry.year ? "当前年份" : "查看这一年 →"}</small>
+        </button>
         <ContextEvidence evidence={entry.evidence} sources={data.sources} />
       </li>)}</ol>}
   </section>;

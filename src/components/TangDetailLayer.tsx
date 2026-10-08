@@ -36,7 +36,8 @@ async function fetchCollection(url: string, signal: AbortSignal): Promise<TangDe
   return new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream("gzip"))).json().then(localize);
 }
 
-export default function TangDetailLayer({ map, ready, enabled, periodId, mode, zoom, modernNames, controlsContainer, resetKey, replaceYellowLower, places, onPlaceSelect, onFocus, onChoose, onCoverageChange, tangBoundaries, onBoundaryRequest, mountainFeatureIds, crosswalkLoading, countyDiagnostics, countyDiagnosticsError }: {
+export default function TangDetailLayer({ map, ready, enabled, periodId, mode, zoom, modernNames, controlsContainer, resetKey, replaceYellowLower, places, onPlaceSelect, onFocus, onChoose, onCoverageChange, tangBoundaries, onBoundaryRequest, mountainFeatureIds, crosswalkLoading, countyDiagnostics, countyDiagnosticsError, historicalSeats = true }: {
+  historicalSeats?: boolean;
   map: MapInstance | null; ready: boolean; enabled: boolean; periodId: string; mode: MapInteractionMode; zoom: number; modernNames: boolean;
   controlsContainer: HTMLElement | null; resetKey: string; replaceYellowLower: boolean; places: Place[];
   onPlaceSelect: (id: string) => void; onFocus: (points: [number, number][], maxZoom?: number) => void; onChoose: () => void;
@@ -46,7 +47,7 @@ export default function TangDetailLayer({ map, ready, enabled, periodId, mode, z
   countyDiagnostics?: TangCountyDiagnostics;
   countyDiagnosticsError?: string;
 }) {
-  const historicalEnabled = periodId === "tang";
+  const historicalEnabled = historicalSeats && periodId === "tang";
   const explorerTitle = historicalEnabled ? "唐代城镇与精细地理" : "河湖与山峰细节";
   const [manifest, setManifest] = useState<TangDetailManifest>();
   const [historical, setHistorical] = useState<TangDetailCollection>(empty);

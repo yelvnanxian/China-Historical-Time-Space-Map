@@ -1,0 +1,113 @@
+.boundary-comparison-dialog {
+  --comparison-ink: #304a43;
+  --comparison-muted: #65776d;
+  position: fixed;
+  inset: 0;
+  width: min(1420px, calc(100vw - 44px));
+  max-width: none;
+  height: min(940px, calc(100dvh - 40px));
+  max-height: none;
+  margin: auto;
+  padding: 0;
+  overflow: auto;
+  color: var(--comparison-ink);
+  border: 1px solid #c4cbbd;
+  border-radius: 18px;
+  background: #f7f7ef;
+  box-shadow: 0 24px 90px #203b3866;
+}
+.boundary-comparison-dialog[open] { display: flex; flex-direction: column; }
+.boundary-comparison-dialog::backdrop { background: #183e3b80; backdrop-filter: blur(4px); }
+.boundary-comparison-dialog button, .boundary-comparison-dialog select, .boundary-comparison-minimized button {
+  font: inherit;
+  color: inherit;
+}
+.boundary-comparison-dialog button, .boundary-comparison-minimized button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 34px;
+  border: 1px solid #cbd2c6;
+  border-radius: 8px;
+  padding: 5px 10px;
+  background: #fafbf5;
+  cursor: pointer;
+}
+.boundary-comparison-dialog button:hover, .boundary-comparison-minimized button:hover { background: #e8eee4; }
+.boundary-comparison-dialog :is(button, select, summary, a):focus-visible, .boundary-comparison-minimized button:focus-visible {
+  outline: 3px solid #397c6c;
+  outline-offset: 3px;
+}
+.boundary-comparison-header { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 20px 24px 14px; }
+.boundary-comparison-eyebrow { margin: 0 0 5px; color: var(--comparison-muted); font-size: 11px; letter-spacing: .08em; }
+.boundary-comparison-header h2 { margin: 0; font-size: 23px; font-weight: 650; letter-spacing: -.02em; }
+.boundary-comparison-actions, .boundary-comparison-toolbar { display: flex; align-items: center; gap: 8px; }
+.boundary-comparison-actions { flex-shrink: 0; }
+.boundary-comparison-toolbar { flex-wrap: wrap; padding: 0 24px 12px; font-size: 12px; }
+.boundary-comparison-modes { display: flex; border: 1px solid #c6cec1; border-radius: 9px; padding: 3px; gap: 3px; }
+.boundary-comparison-modes button { border-color: transparent; background: transparent; }
+.boundary-comparison-modes button[aria-pressed="true"] { background: #365e50; color: #fff; }
+.boundary-comparison-sync { display: inline-flex; align-items: center; gap: 5px; margin-left: auto; color: var(--comparison-muted); }
+.boundary-comparison-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; padding: 0 24px 12px; }
+.boundary-comparison-card { min-width: 0; padding: 11px 13px; border: 1px solid #dce0d4; border-radius: 10px; background: #f0f2e9; }
+.boundary-comparison-card.is-active { border-color: #9aaa97; background: #fffef5; }
+.boundary-comparison-card strong { font-size: 13px; }
+.boundary-comparison-card p { margin: 5px 0 9px; min-height: 17px; color: var(--comparison-muted); font-size: 12px; line-height: 1.5; }
+.boundary-comparison-card > div { display: flex; gap: 6px; }
+.boundary-comparison-card button { font-size: 11px; min-height: 28px; padding: 3px 8px; }
+.boundary-comparison-card button[aria-pressed="true"] { border-color: #8fa891; background: #e2ebdf; }
+.boundary-comparison-notice { margin: 0; padding: 0 24px 11px; color: var(--comparison-muted); font-size: 11px; line-height: 1.65; }
+.boundary-comparison-panes { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 1px; flex: 1; min-height: 350px; background: #bec9bd; border-top: 1px solid #c8d0c2; border-bottom: 1px solid #c8d0c2; }
+.boundary-comparison-pane { display: flex; flex-direction: column; min-width: 0; background: #f9f9f2; }
+.boundary-comparison-pane-heading { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; min-height: 54px; padding: 9px 13px; border-top: 3px solid #557f73; }
+.boundary-comparison-pane.is-right .boundary-comparison-pane-heading { border-top-color: #a18151; }
+.boundary-comparison-pane-heading label { font-size: 11px; color: var(--comparison-muted); }
+.boundary-comparison-pane-heading select { min-width: 0; max-width: 100%; border: 1px solid #c8d1c3; border-radius: 6px; background: #fffef7; padding: 5px 7px; font-size: 13px; font-weight: 600; }
+.boundary-comparison-source-type { margin-left: auto; font-size: 10px; border-radius: 5px; padding: 4px 6px; background: #edf0e5; color: #60745d; }
+.boundary-comparison-map-wrap { position: relative; flex: 1; min-height: 245px; overflow: hidden; background: #dce7e6; }
+.boundary-comparison-map { position: absolute; inset: 0; }
+.boundary-comparison-map .maplibregl-canvas:focus-visible { outline: 3px solid #387e6c; outline-offset: -4px; }
+.boundary-comparison-zoom { position: absolute; right: 12px; bottom: 15px; display: flex; flex-direction: column; gap: 3px; }
+.boundary-comparison-zoom button { width: 32px; min-height: 32px; padding: 0; background: #fffff4ed; box-shadow: 0 2px 6px #334c4920; }
+.boundary-comparison-map-label { pointer-events: none; display: block; max-width: 170px; font-size: 11px; color: #3c5647; text-shadow: -1px -1px #fffcf0, 1px 1px #fffcf0, 0 0 4px #fffff5, 0 0 6px #fffff5; white-space: nowrap; }
+.boundary-comparison-city-point { width: 10px; height: 10px; border: 2px solid #fffdf0; border-radius: 50%; background: #af5b3a; box-shadow: 0 0 0 2px #8d52385e; }
+.boundary-comparison-map-message { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: min(320px, calc(100% - 52px)); padding: 16px; border: 1px solid #c3d0c5; border-radius: 10px; background: #fffef4f2; box-shadow: 0 5px 18px #34504615; text-align: center; font-size: 12px; line-height: 1.8; }
+.boundary-comparison-map-message p { margin: 5px 0 10px; }
+.boundary-comparison-map-message strong { font-weight: 600; }
+.boundary-comparison-map-loading, .boundary-comparison-level { position: absolute; left: 10px; top: 10px; padding: 5px 8px; border-radius: 5px; background: #fafbf0e8; color: #4b6353; font-size: 10px; pointer-events: none; }
+.boundary-comparison-level { top: auto; bottom: 12px; max-width: calc(100% - 70px); }
+.boundary-comparison-pane-caption { min-height: 60px; padding: 10px 14px; font-size: 11px; line-height: 1.7; overflow-wrap: anywhere; }
+.boundary-comparison-pane-caption p { margin: 0 0 4px; }
+.boundary-comparison-pane-caption strong { color: #3d5d4b; }
+.boundary-comparison-pane-caption details { margin-top: 5px; }
+.boundary-comparison-pane-caption summary { cursor: pointer; color: #63765b; }
+.boundary-comparison-pane-caption details p { padding-top: 6px; }
+.boundary-comparison-pane-caption a { color: #426c52; }
+.boundary-comparison-footer { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 9px 24px; color: #748272; font-size: 10px; }
+.boundary-comparison-footer button { min-height: 24px; padding: 2px 7px; }
+.boundary-comparison-loading, .boundary-comparison-error { flex: 1; min-height: 220px; display: flex; align-items: center; justify-content: center; gap: 12px; padding: 24px; }
+.boundary-comparison-minimized { position: fixed; z-index: 90; right: 24px; bottom: 24px; display: flex; align-items: center; gap: 8px; max-width: calc(100vw - 32px); padding: 8px 10px 8px 14px; color: #345442; border: 1px solid #afc1ac; border-radius: 12px; background: #fafaf0; box-shadow: 0 7px 24px #27463830; font-size: 12px; }
+.boundary-comparison-minimized span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+@media (max-width: 740px) {
+  .boundary-comparison-dialog { width: calc(100vw - 16px); height: calc(100dvh - 16px); border-radius: 12px; }
+  .boundary-comparison-header { padding: 14px 13px 12px; align-items: flex-start; gap: 8px; }
+  .boundary-comparison-header h2 { font-size: 19px; }
+  .boundary-comparison-eyebrow { font-size: 10px; }
+  .boundary-comparison-actions button { padding: 4px 7px; }
+  .boundary-comparison-toolbar { padding: 0 13px 10px; gap: 7px; }
+  .boundary-comparison-sync { font-size: 10px; }
+  .boundary-comparison-cards { padding: 0 13px 10px; gap: 6px; }
+  .boundary-comparison-card { padding: 8px; }
+  .boundary-comparison-card strong { font-size: 11px; }
+  .boundary-comparison-card p { font-size: 10px; }
+  .boundary-comparison-card > div { flex-wrap: wrap; gap: 4px; }
+  .boundary-comparison-card button { font-size: 10px; padding: 2px 5px; }
+  .boundary-comparison-notice { padding: 0 13px 10px; }
+  .boundary-comparison-panes { display: flex; flex-direction: column; min-height: 720px; flex: 0 0 auto; }
+  .boundary-comparison-pane { flex: 1; }
+  .boundary-comparison-map-wrap { min-height: 275px; }
+  .boundary-comparison-pane-caption { min-height: auto; }
+  .boundary-comparison-footer { padding: 9px 13px; }
+  .boundary-comparison-minimized { right: 16px; bottom: 16px; }
+}

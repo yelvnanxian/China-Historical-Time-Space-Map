@@ -1,0 +1,26 @@
+.year-navigator { display: grid; grid-template-columns: minmax(125px, 200px) minmax(180px, 1fr) auto; align-items: center; gap: 14px; padding: 10px 18px 8px; border-top: 1px solid #dce2cf; background: #f5f7ed; color: #536e53; }
+.year-navigator-current { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.year-navigator-current strong { font: 16px/1.1 var(--serif); font-variant-numeric: tabular-nums; }
+.year-navigator-current strong > small { padding-left: 7px; font: 9px/1.2 sans-serif; color: #8f784e; }
+.year-navigator-current > span { font-size: 10px; line-height: 1.4; color: #7f8d74; }
+.year-navigator-track { display: flex; align-items: flex-start; gap: 9px; min-width: 0; }
+.year-navigator-track > button { display: flex; align-items: center; justify-content: center; flex: 0 0 28px; width: 28px; height: 28px; border: 1px solid #ccd6be; border-radius: 4px; background: #fbfcf5; color: #5b754f; }
+.year-navigator-track > button:disabled { opacity: .35; cursor: default; }
+.year-navigator-track > button:focus-visible, .year-navigator-range > input:focus-visible { outline: 2px solid #8ea372; outline-offset: 3px; }
+.year-navigator-range { position: relative; flex: 1; min-width: 0; }
+.year-navigator-range > input { position: relative; display: block; width: 100%; height: 22px; margin: 0; accent-color: #647e53; cursor: pointer; }
+.year-navigator-ticks { position: absolute; top: 19px; right: 7px; left: 7px; height: 4px; pointer-events: none; }
+.year-navigator-ticks > span { position: absolute; width: 1px; height: 3px; background: #b4c3a0; }
+.year-navigator-ticks > .has-boundary { height: 5px; width: 2px; background: #b88650; }
+.year-navigator-endpoints { display: flex; justify-content: space-between; padding-top: 4px; color: #89937e; font-size: 9px; }
+.year-navigator-source { margin: 0; font-size: 10px; line-height: 1.5; color: #8f784e; text-align: right; }
+.year-navigator-source > span { display: block; color: #8a957e; }
+.year-navigator-tools { display: grid; gap: 3px; max-width: 245px; }
+.year-navigator-tools select { width: 100%; min-width: 0; padding: 4px 6px; border: 1px solid #ccd6be; border-radius: 4px; color: #647d55; background: #fbfcf5; font-size: 10px; }
+@media (max-width: 760px) {
+  .year-navigator { grid-template-columns: 92px minmax(140px, 1fr); gap: 6px 10px; padding: 8px 12px; }
+  .year-navigator-tools { grid-column: 1 / -1; display: flex; align-items: center; gap: 10px; max-width: none; }
+  .year-navigator-tools select { flex: 1; width: 0; }
+  .year-navigator-source { flex: 1; text-align: right; }
+  .year-navigator-current > span { font-size: 9px; }
+}

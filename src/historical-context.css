@@ -46,6 +46,13 @@
 .chronicle-list time { font: 12px Georgia, var(--serif); color: #a47e52; }
 .chronicle-list h4 { font: 16px/1.6 var(--serif); color: #4a6652; margin: 8px 0; }
 .chronicle-list li > p { font-size: 12px; line-height: 1.9; color: #7b8874; margin: 7px 0 14px; }
+.chronicle-entry { display: block; width: 100%; padding: 8px 10px; margin: -8px 0 10px -10px; border-radius: 5px; text-align: left; }
+.chronicle-entry > strong { display: block; font: 16px/1.6 var(--serif); color: #4a6652; margin: 8px 0; }
+.chronicle-entry > span { display: block; font-size: 12px; line-height: 1.9; color: #7b8874; margin: 7px 0 8px; }
+.chronicle-entry > small { color: #7f925f; font-size: 10px; }
+.chronicle-entry:hover, .chronicle-entry[aria-pressed=true] { background: #eaf0dc; }
+.chronicle-entry:focus-visible { outline: 2px solid #8fa772; outline-offset: 2px; }
+.chronicle-active::before { background: #557746 !important; box-shadow: 0 0 0 4px #e2ebd3 !important; }
 .geography-reference-marker { padding: 8px 10px; border: 1px solid #457c8a; border-radius: 20px; background: #f4fcf9; color: #386e7c; font-size: 11px; box-shadow: 0 3px 10px #33575f30; z-index: 35; cursor: pointer; white-space: nowrap; }
 .geography-reference-note { position: absolute; left: 50%; top: 18px; transform: translateX(-50%); z-index: 7; display: flex; align-items: center; gap: 8px; max-width: calc(100% - 90px); border: 1px solid #b9d0ca; border-radius: 5px; background: #f4fbf5f5; padding: 9px 11px; color: #456f69; box-shadow: 0 4px 15px #344d4120; font-size: 11px; }
 .geography-reference-note button:first-child { text-align: left; line-height: 1.8; }

@@ -1,0 +1,79 @@
+[
+  {
+    "id": "qin",
+    "name": "秦统一时期",
+    "startYear": -221,
+    "endYear": -207,
+    "year": -221
+  },
+  {
+    "id": "han",
+    "name": "两汉",
+    "startYear": -202,
+    "endYear": 220,
+    "year": 2
+  },
+  {
+    "id": "sanguo",
+    "name": "三国并立",
+    "startYear": 220,
+    "endYear": 280,
+    "year": 230
+  },
+  {
+    "id": "jin",
+    "name": "两晋",
+    "startYear": 266,
+    "endYear": 420,
+    "year": 280
+  },
+  {
+    "id": "nanbei",
+    "name": "南北朝",
+    "startYear": 420,
+    "endYear": 589,
+    "year": 500
+  },
+  {
+    "id": "sui",
+    "name": "隋朝",
+    "startYear": 581,
+    "endYear": 618,
+    "year": 609
+  },
+  {
+    "id": "tang",
+    "name": "唐朝",
+    "startYear": 618,
+    "endYear": 907,
+    "year": 755
+  },
+  {
+    "id": "song",
+    "name": "宋代诸政权",
+    "startYear": 960,
+    "endYear": 1279,
+    "year": 1200
+  },
+  {
+    "id": "yuan",
+    "name": "元朝",
+    "startYear": 1271,
+    "endYear": 1368,
+    "year": 1330
+  },
+  {
+    "id": "ming",
+    "name": "明朝",
+    "startYear": 1368,
+    "endYear": 1644,
+    "year": 1582
+  },
+  {
+    "id": "qing",
+    "name": "清朝",
+    "startYear": 1636,
+    "endYear": 1912,
+    "year": 1820
+  }
+]

@@ -15,6 +15,7 @@ const targets: { layer: string; category: MapTargetCategory; onlyMode?: MapInter
   { layer: "physical-river-hit", category: "rivers" },
   { layer: "physical-lake-fill", category: "rivers" },
   { layer: "song-settlement-hit", category: "cities" },
+  { layer: "temporal-settlement-hit", category: "cities" },
   // In all mode the broad region leaves area clicks to administrative polygons.
   { layer: "mountain-region-hit", category: "mountains", onlyMode: "mountains" },
 ];

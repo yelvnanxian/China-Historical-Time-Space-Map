@@ -5,11 +5,12 @@ import "../onboarding.css";
 
 const storageKey = "shanheji:onboarding:v1";
 const steps = [
-  { anchor: "period-picker", title: "先选一个时代", body: "朝代菜单展示代表年份。地图收录的是精选地点；行政边界的资料年份另有标注，未必与代表年相同。" },
+  { anchor: "period-picker", title: "先选时代，再选资料年份", body: "朝代菜单展示起止年份。下方时间条会吸附到已收录的事件、大事记或资料年份，拖动后松开查看，也可用前后按钮或年份菜单切换。治所按当前年份筛选；边界另标实际参考年，未必与当前年相同。" },
   { anchor: "display-mode", title: "选择要点选的对象", body: "“城池、山川、河流、全部”只筛选名称和可点击对象，底图、山地、河湖仍保留。只想查水系时选“河流”，就不会误点行政区；“全部”可直接点击河线、湖面或山脊，空白处再查行政区。" },
   { anchor: "map-canvas", title: "放大地图，逐级看辖区", body: "层级随缩放从已有国家、省道切换到府州、县域与城池。唐代州郡、宋代府州军监通常在县之上；从城市详情的“参考范围”查看已核查关联。圆点不是辖区，也不是城墙范围。宋代有1080年与1200年两套参考模型，无法可靠关联的城市会说明原因。" },
-  { anchor: "map-tools", title: "比较黄河不同时期的流向", body: "打开“地图工具→黄河改道”选择河道年代，再用“叠加对比”选另一时期。蓝色实线是所选河道，棕色虚线用于对比。唐代默认11—1048年，宋代1200年默认1128—1368年，明代默认1368—1855年。河道年代独立于行政边界年份；图集只反映时期流向，不表示逐年河岸或真实河宽。" },
-  { anchor: "map-tools", title: "放大查看河湖与城镇资料", body: "宋代放大到6级出现府州治所，8级出现县级点；“地图工具→宋代同期城镇”可按古名、今录位置查找，点开看存续年和来源。它们按1200年筛选，资料存疑处另标；唐代755年治所单独显示。“本朝名城”提供更完整的史料和大事记。唐、宋、明还可在工具中搜索视野内现代河湖、山峰。" },
+  { anchor: "map-tools", title: "比较黄河不同时期的流向", body: "打开“地图工具→黄河改道”查看当前选用的河道年代，再用“叠加对比”选择另一时期。蓝色实线是所选河道，棕色虚线用于对比。河道年代和行政边界年份分别标明；历史图集概括时期流向，不表示逐年河岸或真实河宽。" },
+  { anchor: "map-tools", title: "查当年治所，沿大事记跳转", body: "府州级治所从6级、县级从8级逐步出现。“地图工具→同期治所”按当前年份筛选，可查古名、今录位置或源编号；未收录不代表当时不存在。城市详情可切换“本朝／本期”和“历代”大事记，点击节点跳到记载年份；边界仍使用已收录的参考截面。" },
+  { anchor: "map-canvas", title: "并排比较两年的辖区", body: "地图旁的“边界对比”可任选两套已收录年份，左右地图同步拖动和缩放。城市详情中的“对比此城唐、宋、明辖区”可在三朝间切换，缺少可靠关联时留空。来源年份和近似模型标注始终可见；对比窗口可以收起或关闭。" },
   { anchor: "map-canvas", title: "先看山系区域，再近览山形", body: "淡绿色山纹表示资料中的山地概略分布。点名称或左上的“山系概略分布”可定位秦岭、太行等整片山系；山川模式也能直接点区域。全部模式的区域点击仍查看行政区。“地图工具→山地近览”可定位已收录的等高线窗口，9级起显示。它们都是现代参照，山系概括外沿不是精确山脚界线。" },
   { anchor: "map-tools", title: "查看来源，再理解地图", body: "历史治所、图集黄河线和现代河湖都有各自的资料说明。详情中的“查看原始记录”或来源链接可核查依据；现代水系不能据此认作所选朝代的河道和湖岸，无名地物不会补造名称。地图下方的“历史地图原图”和“历史地理”还能继续阅读。" },
 ];
@@ -109,7 +110,7 @@ export default function OnboardingGuide() {
       <section ref={card} className="guide-card" style={position} role="dialog" aria-modal="false" aria-labelledby={titleId} aria-describedby={descriptionId}>
         <div className="guide-caption"><span>{step < 0 ? "第一次来到山河纪" : `使用引导 · ${step + 1} / ${steps.length}`}</span><button type="button" aria-label="跳过使用引导" onClick={() => close(false)}><X size={17} /></button></div>
         <h2 ref={heading} id={titleId} tabIndex={-1}>{step < 0 ? "从一个时代，走近一座城" : steps[step].title}</h2>
-        <p id={descriptionId}>{step < 0 ? "用七步认识朝代、辖区、黄河改道与山川河湖细节。也可以直接开始，随时从“使用帮助”重看。" : steps[step].body}</p>
+        <p id={descriptionId}>{step < 0 ? "认识年份导航、同期治所、城市大事记和边界对比，再探索山川河湖。也可以直接开始，随时从“使用帮助”重看。" : steps[step].body}</p>
         <div className="guide-actions">
           {step > 0 ? <button type="button" className="guide-back" onClick={() => move(step - 1)}><ArrowLeft size={13} />上一步</button> : <button type="button" className="guide-back" onClick={() => close(false)}>先自己看看</button>}
           <button type="button" className="guide-next" onClick={() => step === steps.length - 1 ? close(true) : move(step + 1)}>{step < 0 ? "开始导览" : step === steps.length - 1 ? "开始探索" : "下一步"}<ArrowRight size={14} /></button>

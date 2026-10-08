@@ -17,7 +17,7 @@
     "outsideInBoth741And755": 235
   },
   "publishedPath": "public/data/tang-county-diagnostics.json",
-  "publishedSha256": "ff446e201f21d0b35cdf32f89f7b9a7a5aa49a424f7addfed4a44bdaecf4e8c7",
+  "publishedSha256": "80f91a179d502c9260ce61e0db694d2905ce98a11e68950dddf2a728ebb798b6",
   "sourceVerification": {
     "publishedCountyPointsComparedToOriginalZip": 1365,
     "pointCoordinatesAndFieldsEqualSource": true,
@@ -15919,7 +15919,7 @@
       "title": "已核对的唐代名称链与原始县面隶属",
       "url": "https://doi.org/10.7910/DVN/29302",
       "path": "public/data/tang-boundary-crosswalk.json",
-      "sha256": "253bf07e15939550e84c44df09414923cb5eed524f83626a68cbad89ca73493a"
+      "sha256": "4aae3155377d230ac387f2029be19198f69dafecdd62f9d70741f7a09b95a0c8"
     },
     {
       "id": "county-historical-references",

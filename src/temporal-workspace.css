@@ -1,0 +1,8 @@
+.temporal-gap { display: flex; gap: 16px; align-items: center; margin: 0 18px 10px; padding: 10px 15px; border: 1px solid #ddd3b8; border-radius: 6px; background: #faf5e6; color: #735f40; font-size: 12px; }
+.temporal-gap strong { white-space: nowrap; }
+.temporal-profile-note { padding: 10px 12px; background: #f4f2e5; border-left: 2px solid #aa996a; color: #716b52; font-size: 11px; line-height: 1.8; margin: 10px 0; }
+.temporal-load-note { margin: 0 20px 8px; font-size: 11px; color: #926447; }
+.boundary-compare-launch { white-space: nowrap; }
+.map-first main > .year-navigator + .atlas-workspace { height: calc(100svh - 207px); }
+@media(max-width: 760px) { .map-first main > .year-navigator + .atlas-workspace { height: calc(100svh - 247px); min-height: 360px; } }
+@media(max-width: 600px) { .temporal-gap { align-items: flex-start; gap: 8px; margin: 0 10px 8px; font-size: 11px; } }

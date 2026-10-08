@@ -7,7 +7,7 @@ const catalog = exampleCatalog();
 
 test('空链接打开专题首事件，地点链接与显式关闭事件不会重开首事件', () => {
   const initial = parseExploration('', catalog);
-  assert.deepEqual(initial, { periodId: 'tang', topicId: 'anshi', placeId: 'fanyang', eventId: 'first', detailsView: 'events', modernNames: false, routeVisible: true });
+  assert.deepEqual(initial, { periodId: 'tang', year: 755, topicId: 'anshi', placeId: 'fanyang', eventId: 'first', detailsView: 'events', modernNames: false, routeVisible: true });
   assert.equal(parseExploration('?topic=anshi', catalog).eventId, 'first');
   assert.equal(parseExploration('?topic=anshi&place=changan', catalog).eventId, null);
   assert.equal(normalizeExploration({ ...initial, eventId: null }, catalog).eventId, null);
@@ -102,4 +102,36 @@ test('手写专题列表链接不指定地点时，显式列表优先于默认�
   const invalidView = parseExploration('?topic=anshi&view=unknown', catalog);
   assert.equal(invalidView.eventId, null);
   assert.equal(invalidView.detailsView, 'place');
+});
+
+test('分享和浏览器前后退保留精确年份及跨期同城入口，旧链接保持原有默认行为', () => {
+  const legacy = parseExploration('?period=tang&place=changan', catalog);
+  assert.equal(legacy.year, undefined);
+  const history = [legacy, normalizeExploration({ ...legacy, year: 1127 }, catalog), normalizeExploration({ ...legacy, year: 618 }, catalog)];
+  assert.equal(history[1].periodId, 'song');
+  assert.equal(history[1].placeId, 'changan', '同城跨期入口即使该期档案未收录也不应被替换');
+  for (const state of [...history, ...[...history].reverse()]) assert.deepEqual(parseExploration(serializeExploration(state), catalog), state);
+  assert.equal(normalizeExploration({ periodId: 'tang', year: 762 }, catalog).year, 762, '显式年份不被默认专题首事件覆盖');
+});
+
+test('所选事件使用自己发生年而不是朝代代表年或冲突URL年份', () => {
+  const exact = parseExploration('?period=tang&year=1200&event=second', catalog);
+  assert.equal(exact.year, 756);
+  assert.equal(exact.periodId, 'tang');
+  assert.equal(exact.eventId, 'second');
+  assert.equal(parseExploration('?period=tang&event=qin-event', catalog).year, -221);
+  assert.equal(parseExploration(serializeExploration(exact), catalog).year, 756);
+});
+
+test('非法年份、零年、重复、超范围与非十进制写法被忽略，未覆盖年代保留供UI明确说明', () => {
+  for (const value of ['0', '-0', '0755', '755.5', 'NaN', 'Infinity', '1e3', '0x300', '10000', '-10000', '755&year=756', '%20%20', '+755']) {
+    assert.equal(parseExploration(`?period=tang&place=changan&year=${value}`, catalog).year, undefined, value);
+  }
+  for (const year of [-1046, 920, 1932]) {
+    const state = parseExploration(`?period=tang&place=changan&year=${year}`, catalog);
+    assert.equal(state.year, year);
+    assert.equal(state.placeId, 'changan');
+    assert.deepEqual(parseExploration(serializeExploration(state), catalog), state);
+  }
+  assert.equal(parseExploration('?period=qin&year=-221&place=qin-city', catalog).year, -221);
 });

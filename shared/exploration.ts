@@ -1,7 +1,9 @@
 import type { Catalog } from "./types";
+import { periodForYear, validExplorationYear } from "./temporal-navigation";
 
 export interface ExplorationState {
   periodId: string;
+  year?: number;
   topicId: string | null;
   placeId: string | null;
   eventId: string | null;
@@ -29,13 +31,14 @@ export function normalizeExploration(
     catalog.periods.find((item) => item.id === safeId(input.periodId)) ??
     defaultPeriod;
   let topic =
-    input.topicId === undefined
+    input.topicId === undefined && !validExplorationYear(input.year)
       ? catalog.topics?.find(
           (item) => item.id === "anshi" && item.periodId === period?.id,
         )
       : catalog.topics?.find((item) => item.id === safeId(input.topicId));
   let event = catalog.events.find((item) => item.id === safeId(input.eventId));
   let place = catalog.places.find((item) => item.id === safeId(input.placeId));
+  let year = validExplorationYear(input.year) ? input.year : undefined;
 
   if (topic)
     period =
@@ -45,6 +48,7 @@ export function normalizeExploration(
     event = catalog.events.find((item) => item.id === topic!.eventIds[0]);
   }
   if (event) {
+    if (validExplorationYear(event.year)) year = event.year;
     if (topic && !topic.eventIds.includes(event.id)) topic = undefined;
     if (!event.periodIds.includes(period?.id ?? "")) {
       period =
@@ -54,21 +58,25 @@ export function normalizeExploration(
     if (
       !place ||
       !event.placeIds.includes(place.id) ||
-      !place.periodIds.includes(period?.id ?? "")
+      year === undefined && !place.periodIds.includes(period?.id ?? "")
     ) {
       place = catalog.places.find(
         (item) =>
           event!.placeIds.includes(item.id) &&
           item.periodIds.includes(period?.id ?? ""),
-      );
+      ) ?? (year !== undefined ? catalog.places.find(item => event!.placeIds.includes(item.id)) : undefined);
     }
   } else if (place) {
     if (topic && !topic.placeIds.includes(place.id)) topic = undefined;
-    if (!place.periodIds.includes(period?.id ?? "")) {
+    if (year === undefined && !place.periodIds.includes(period?.id ?? "")) {
       period =
         catalog.periods.find((item) => place!.periodIds.includes(item.id)) ??
         period;
     }
+  }
+  if (year !== undefined) {
+    period = periodForYear(year, catalog.periods, { preferredPeriodId: period?.id, periodIds: event?.periodIds }) ?? period;
+    if (topic && topic.periodId !== period?.id) topic = undefined;
   }
   if (!place && period) {
     const available = catalog.places.filter(
@@ -85,6 +93,7 @@ export function normalizeExploration(
   }
   return {
     periodId: period?.id ?? "",
+    ...(year === undefined ? {} : { year }),
     topicId: topic?.id ?? null,
     placeId: place?.id ?? null,
     eventId: event?.id ?? null,
@@ -104,7 +113,7 @@ export function parseExploration(
   );
   const id = (key: string) =>
     parameters.getAll(key).length === 1 ? safeId(parameters.get(key)) : null;
-  const hasView = ["period", "topic", "place", "event", "view"].some((key) =>
+  const hasView = ["period", "year", "topic", "place", "event", "view"].some((key) =>
     parameters.has(key),
   );
   const input: Partial<ExplorationState> = {
@@ -120,6 +129,8 @@ export function parseExploration(
       parameters.getAll("route").length === 1 && parameters.get("route") === "0"
     ),
   };
+  const rawYear = parameters.getAll("year").length === 1 ? parameters.get("year") : null;
+  if (rawYear && /^-?[1-9]\d{0,3}$/.test(rawYear) && validExplorationYear(Number(rawYear))) input.year = Number(rawYear);
   if (hasView) {
     input.periodId = id("period") ?? undefined;
     input.topicId = id("topic");
@@ -138,6 +149,7 @@ export function parseExploration(
 export function serializeExploration(state: ExplorationState): string {
   const parameters = new URLSearchParams();
   if (safeId(state.periodId)) parameters.set("period", state.periodId);
+  if (validExplorationYear(state.year)) parameters.set("year", String(state.year));
   if (safeId(state.topicId)) parameters.set("topic", state.topicId!);
   if (safeId(state.placeId)) parameters.set("place", state.placeId!);
   if (safeId(state.eventId)) parameters.set("event", state.eventId!);
