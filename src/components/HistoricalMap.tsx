@@ -27,6 +27,7 @@ import type { TangBoundaryCrosswalk } from "../../shared/tang-boundary-crosswalk
 import MountainDetailLayer from "./MountainDetailLayer";
 import MountainShapeLayer from "./MountainShapeLayer";
 import type { TangCountyDiagnostics } from "../../shared/tang-county-diagnostics";
+import { loadJson } from "../lib/load-json";
 import { hasDetailedGeography } from "../../shared/tang-detail-display";
 
 type Props = {
@@ -106,9 +107,8 @@ export default function HistoricalMap(props: Props) {
     if (props.period.id !== "tang" || countyDiagnostics) return;
     const controller = new AbortController();
     setCountyDiagnosticsError("");
-    fetch("/data/tang-county-diagnostics.json", { signal: controller.signal })
-      .then(response => { if (!response.ok) throw Error(); return response.json(); })
-      .then(data => { setCountyDiagnostics(data); setCountyDiagnosticsError(""); })
+    loadJson<TangCountyDiagnostics>("/data/tang-county-diagnostics.json", { signal: controller.signal })
+      .then(data => { if (!controller.signal.aborted) { setCountyDiagnostics(data); setCountyDiagnosticsError(""); } })
       .catch(error => { if (error.name !== "AbortError") setCountyDiagnosticsError("县治与参考面的核查资料暂时未能加载，不能据此判断两者一致。请刷新重试。"); });
     return () => controller.abort();
   }, [props.period.id, countyDiagnostics]);

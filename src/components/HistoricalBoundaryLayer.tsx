@@ -16,6 +16,7 @@ import type { TangCountyDiagnostics } from "../../shared/tang-county-diagnostics
 import type { MingBoundaryResearchDocument } from "../../shared/ming-boundary-research";
 import type { SongBoundaryResearchDocument } from "../../shared/song-boundary-research";
 import { boundaryReliability, boundaryReliabilitySourceNote, reliabilityColors, reliabilityLabels, reliabilityStatuses, type DataReliabilityStatus } from "../../shared/data-reliability";
+import { evictJson, loadJson } from "../lib/load-json";
 
 type RegionProperties = BoundarySelection & { color?: string; labelCoordinates?: [number, number]; reliabilityStatus?: DataReliabilityStatus };
 type Regions = FeatureCollection<Polygon | MultiPolygon, RegionProperties>;
@@ -73,11 +74,10 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
     if (periodId !== "ming" || mingResearch) return;
     const controller = new AbortController();
     setMingResearchError("");
-    fetch("/data/ming-boundary-research.json", { signal: controller.signal })
-      .then(response => { if (!response.ok) throw Error(); return response.json(); })
+    loadJson<MingBoundaryResearchDocument>("/data/ming-boundary-research.json", { signal: controller.signal })
       .then(data => {
-        if (data.periodId !== "ming" || !data.byBoundary || !Array.isArray(data.unlinkedEntries)) throw Error();
-        setMingResearch(data);
+        if (data.periodId !== "ming" || !data.byBoundary || !Array.isArray(data.unlinkedEntries)) { evictJson("/data/ming-boundary-research.json"); throw Error(); }
+        if (!controller.signal.aborted) setMingResearch(data);
       })
       .catch(error => { if (error.name !== "AbortError") setMingResearchError("明代建置史料暂时未能加载，请刷新重试。"); });
     return () => controller.abort();
@@ -88,11 +88,10 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
     if (periodId !== "song" || songResearch) return;
     const controller = new AbortController();
     setSongResearchError("");
-    fetch("/data/song-boundary-research.json", { signal: controller.signal })
-      .then(response => { if (!response.ok) throw Error(); return response.json(); })
+    loadJson<SongBoundaryResearchDocument>("/data/song-boundary-research.json", { signal: controller.signal })
       .then(data => {
-        if (data.periodId !== "song" || data.boundaryYear !== 1200 || !data.byBoundary || !Array.isArray(data.unlinkedEntries)) throw Error();
-        setSongResearch(data);
+        if (data.periodId !== "song" || data.boundaryYear !== 1200 || !data.byBoundary || !Array.isArray(data.unlinkedEntries)) { evictJson("/data/song-boundary-research.json"); throw Error(); }
+        if (!controller.signal.aborted) setSongResearch(data);
       })
       .catch(error => { if (error.name !== "AbortError") setSongResearchError("宋代同期建置史料暂时未能加载，请刷新重试。"); });
     return () => controller.abort();
@@ -115,19 +114,17 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
 
   useEffect(() => {
     const abort = new AbortController();
-    fetch("/data/boundaries/manifest.json", { signal: abort.signal })
-      .then(response => { if (!response.ok) throw new Error("边界资料目录加载失败"); return response.json(); })
-      .then(setManifest)
-      .catch(error => { if (error.name !== "AbortError") setManifestError(error.message); });
+    loadJson<BoundaryManifest>("/data/boundaries/manifest.json", { signal: abort.signal })
+      .then(data => { if (!abort.signal.aborted) setManifest(data); })
+      .catch(error => { if (error.name !== "AbortError") setManifestError("边界资料目录加载失败"); });
     return () => abort.abort();
   }, []);
 
   useEffect(() => {
     const controller = new AbortController();
-    fetch("/data/modern-correspondence.json", { signal: controller.signal })
-      .then(response => { if (!response.ok) throw new Error("区域古今对照暂时无法加载"); return response.json(); })
-      .then(setCorrespondences)
-      .catch(error => { if (error.name !== "AbortError") setCorrespondenceError(error.message); });
+    loadJson<ModernCorrespondenceData>("/data/modern-correspondence.json", { signal: controller.signal })
+      .then(data => { if (!controller.signal.aborted) setCorrespondences(data); })
+      .catch(error => { if (error.name !== "AbortError") setCorrespondenceError("区域古今对照暂时无法加载"); });
     return () => controller.abort();
   }, []);
 

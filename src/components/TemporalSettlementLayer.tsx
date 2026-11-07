@@ -14,6 +14,7 @@ import { settlementReliability, reliabilityColors, reliabilityLabels, reliabilit
 import TangJurisdictionInfo from "./TangJurisdictionInfo";
 import CountyGeometryNotice from "./CountyGeometryNotice";
 import "../map-detail.css";
+import { evictJson, loadJson } from "../lib/load-json";
 
 const empty: TemporalSettlementsCollection = { type: "FeatureCollection", features: [] };
 type Settlement = TemporalSettlementsCollection["features"][number];
@@ -56,12 +57,12 @@ export default function TemporalSettlementLayer({ map, ready, periodId, year, zo
     if (year !== 755 || tangCrosswalk && tangDiagnostics) return;
     const abort = new AbortController();
     setTangError("");
-    Promise.all(["/data/tang-boundary-crosswalk.json", "/data/tang-county-diagnostics.json"].map(async url => {
-      const response = await fetch(url, { signal: abort.signal });
-      if (!response.ok) throw Error();
-      return response.json();
-    })).then(([crosswalk, diagnostics]) => {
-      if (crosswalk.boundaryYear !== 741 || !crosswalk.settlements || diagnostics.sourceYear !== 755 || diagnostics.boundaryYear !== 741 || !diagnostics.bySettlement) throw Error();
+    Promise.all([
+      loadJson<TangBoundaryCrosswalk>("/data/tang-boundary-crosswalk.json", { signal: abort.signal }),
+      loadJson<TangCountyDiagnostics>("/data/tang-county-diagnostics.json", { signal: abort.signal }),
+    ]).then(([crosswalk, diagnostics]) => {
+      if (crosswalk.boundaryYear !== 741 || !crosswalk.settlements) { evictJson("/data/tang-boundary-crosswalk.json"); throw Error(); }
+      if (diagnostics.sourceYear !== 755 || diagnostics.boundaryYear !== 741 || !diagnostics.bySettlement) { evictJson("/data/tang-county-diagnostics.json"); throw Error(); }
       if (!abort.signal.aborted) { setTangCrosswalk(crosswalk); setTangDiagnostics(diagnostics); }
     }).catch(() => { if (!abort.signal.aborted) setTangError("755年治所与741年参考范围的既有核查资料未能加载，可重试。"); });
     return () => abort.abort();
@@ -69,10 +70,9 @@ export default function TemporalSettlementLayer({ map, ready, periodId, year, zo
   useEffect(() => {
     const abort = new AbortController();
     setError("");
-    fetch("/data/temporal-settlements/manifest.json", { signal: abort.signal })
-      .then(response => { if (!response.ok) throw Error(); return response.json(); })
+    loadJson<TemporalSettlementsManifest>("/data/temporal-settlements/manifest.json", { signal: abort.signal })
       .then((index: TemporalSettlementsManifest) => {
-        if (index.kind !== "chgis-temporal-settlements" || !Array.isArray(index.packages)) throw Error();
+        if (index.kind !== "chgis-temporal-settlements" || !Array.isArray(index.packages)) { evictJson("/data/temporal-settlements/manifest.json"); throw Error(); }
         if (!abort.signal.aborted) setManifest(index);
       }).catch(cause => { if (!abort.signal.aborted) setError("历史时序治所目录未能加载，请重试。"); });
     return () => abort.abort();

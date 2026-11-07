@@ -17,6 +17,7 @@ import {
   type ComparisonCityRecord, type ComparisonRegion, type ComparisonRegions, type ComparisonSide,
 } from "../../shared/boundary-comparison";
 import "../boundary-comparison.css";
+import { evictJson, loadJson } from "../lib/load-json";
 
 maplibregl.setWorkerUrl(workerUrl);
 const EMPTY: ComparisonRegions = { type: "FeatureCollection", features: [] };
@@ -29,23 +30,23 @@ type Props = { open: boolean; onClose: () => void; place?: Place; initialYear: n
 type Resource<T> = { data?: T; loading: boolean; error: string; retry: () => void };
 type TargetReport = { token: string; ready: boolean; features: ComparisonRegion[] };
 
-/** Cache only completed responses within this open comparison. Abort every superseded request. */
 function useResource<T>(url: string, active: boolean, validate: (data: T) => boolean): Resource<T> {
   const cache = useRef<T | undefined>(undefined);
   const [attempt, setAttempt] = useState(0);
   const [data, setData] = useState<T>();
   const [loading, setLoading] = useState(active);
   const [error, setError] = useState("");
-  const retry = useCallback(() => { cache.current = undefined; setAttempt(value => value + 1); }, []);
+  const retry = useCallback(() => { cache.current = undefined; evictJson(url); setAttempt(value => value + 1); }, [url]);
   useEffect(() => {
     if (!active) { setLoading(false); return; }
     if (cache.current) { setData(cache.current); setLoading(false); return; }
     const controller = new AbortController();
     setLoading(true); setError("");
-    fetch(url, { signal: controller.signal }).then(async response => {
-      if (!response.ok) throw Error("资料暂时无法加载");
-      const result = await response.json() as T;
-      if (!validate(result)) throw Error("资料格式不完整");
+    loadJson<T>(url, { signal: controller.signal }).catch(cause => {
+      if (controller.signal.aborted) throw cause;
+      throw Error("资料暂时无法加载");
+    }).then(result => {
+      if (!validate(result)) { evictJson(url); throw Error("资料格式不完整"); }
       if (!controller.signal.aborted) { cache.current = result; setData(result); }
     }).catch(cause => {
       if (!controller.signal.aborted) setError(cause instanceof Error ? cause.message : "资料暂时无法加载");

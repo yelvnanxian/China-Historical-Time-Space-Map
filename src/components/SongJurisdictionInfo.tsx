@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import type { SongBoundaryResearchDocument } from "../../shared/song-boundary-research";
+import { evictJson, loadJson } from "../lib/load-json";
 
 /** Reviewed names, administrative levels and chronology; never nearest polygon. */
 export default function SongJurisdictionInfo({ placeId, onView }: { placeId: string; onView: (id: string) => void }) {
@@ -7,11 +8,10 @@ export default function SongJurisdictionInfo({ placeId, onView }: { placeId: str
   const [error, setError] = useState("");
   useEffect(() => {
     const controller = new AbortController();
-    fetch("/data/song-boundary-research.json", { signal: controller.signal })
-      .then(response => { if (!response.ok) throw Error(); return response.json(); })
+    loadJson<SongBoundaryResearchDocument>("/data/song-boundary-research.json", { signal: controller.signal })
       .then(document => {
-        if (document.periodId !== "song" || document.boundaryYear !== 1200 || !document.byBoundary || !Array.isArray(document.unlinkedEntries)) throw Error();
-        setData(document);
+        if (document.periodId !== "song" || document.boundaryYear !== 1200 || !document.byBoundary || !Array.isArray(document.unlinkedEntries)) { evictJson("/data/song-boundary-research.json"); throw Error(); }
+        if (!controller.signal.aborted) setData(document);
       })
       .catch(cause => { if (cause.name !== "AbortError") setError("宋代建置关联资料暂时无法加载，请刷新重试。"); });
     return () => controller.abort();

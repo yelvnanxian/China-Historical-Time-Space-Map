@@ -19,6 +19,7 @@ import { localizeTangDetailFeature } from "../../shared/tang-detail-names";
 import type { TangCountyDiagnostics } from "../../shared/tang-county-diagnostics";
 import CountyGeometryNotice from "./CountyGeometryNotice";
 import { canOpenCountyModel } from "../../shared/county-model-interaction";
+import { loadJson } from "../lib/load-json";
 
 const empty: TangDetailCollection = { type: "FeatureCollection", features: [] };
 const layerIds = ["tang-detail-water", "tang-detail-water-edge", "tang-detail-rivers", "tang-detail-hit", "tang-detail-peaks", "tang-detail-towns", "tang-detail-selected-line", "tang-detail-selected-water", "tang-detail-selected-point", "tang-detail-underground", "tang-detail-water-edge-seasonal"];
@@ -81,8 +82,8 @@ export default function TangDetailLayer({ map, ready, enabled, periodId, mode, z
   useEffect(() => { setSearchKind("all"); setQuery(""); }, [mode, periodId]);
   useEffect(() => {
     const abort = new AbortController();
-    fetch("/data/physical-interactions.json", { signal: abort.signal }).then(r => { if (!r.ok) throw Error(); return r.json(); })
-      .then((index: PhysicalInteractionIndex) => setContextGroups(index.groups.map(localizePhysicalGroup)))
+    loadJson<PhysicalInteractionIndex>("/data/physical-interactions.json", { signal: abort.signal })
+      .then((index: PhysicalInteractionIndex) => { if (!abort.signal.aborted) setContextGroups(index.groups.map(localizePhysicalGroup)); })
       .catch(() => { /* Without a confirmed name match, retain the overview. */ });
     return () => abort.abort();
   }, []);

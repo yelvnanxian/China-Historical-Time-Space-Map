@@ -42,6 +42,7 @@ import {
 import "./map-topline.css";
 import { canInteract, mapInteractionOptions, type MapInteractionMode } from "../shared/map-interactions";
 import type { TangBoundaryCrosswalk } from "../shared/tang-boundary-crosswalk";
+import { loadJson } from "./lib/load-json";
 import TangJurisdictionInfo from "./components/TangJurisdictionInfo";
 import MingJurisdictionInfo from "./components/MingJurisdictionInfo";
 import SongJurisdictionInfo from "./components/SongJurisdictionInfo";
@@ -157,23 +158,21 @@ export default function App() {
   const detailScroll = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const controller = new AbortController();
-    fetch("/data/temporal-settlements/manifest.json", { signal: controller.signal })
-      .then(response => { if (!response.ok) throw Error(); return response.json(); })
+    loadJson<TemporalSettlementsManifest>("/data/temporal-settlements/manifest.json", { signal: controller.signal })
       .then((data: TemporalSettlementsManifest) => { if (!controller.signal.aborted && data.kind === "chgis-temporal-settlements" && Array.isArray(data.packages)) setSettlementManifest(data); })
       .catch(() => { /* The map's settlement panel provides loading errors and retry. */ });
     return () => controller.abort();
   }, []);
   useEffect(() => {
     const controller = new AbortController();
-    fetch("/data/boundaries/manifest.json", { signal: controller.signal })
-      .then(response => { if (!response.ok) throw Error(); return response.json(); })
-      .then(setBoundaryManifest).catch(cause => { if (cause.name !== "AbortError") setBoundaryManifestError("年份资料目录暂未加载，边界图层可独立加载。"); });
+    loadJson<BoundaryManifest>("/data/boundaries/manifest.json", { signal: controller.signal })
+      .then(data => { if (!controller.signal.aborted) setBoundaryManifest(data); }).catch(cause => { if (cause.name !== "AbortError") setBoundaryManifestError("年份资料目录暂未加载，边界图层可独立加载。"); });
     return () => controller.abort();
   }, []);
   useEffect(() => {
     const controller = new AbortController();
-    fetch("/data/tang-boundary-crosswalk.json", { signal: controller.signal }).then(r => { if (!r.ok) throw Error(); return r.json(); })
-      .then(data => { setTangBoundaries(data); setCrosswalkLoaded(true); })
+    loadJson<TangBoundaryCrosswalk>("/data/tang-boundary-crosswalk.json", { signal: controller.signal })
+      .then(data => { if (!controller.signal.aborted) { setTangBoundaries(data); setCrosswalkLoaded(true); } })
       .catch(error => { if (error.name !== "AbortError") setCrosswalkLoaded(true); });
     return () => controller.abort();
   }, []);

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import type { MingBoundaryResearchDocument } from "../../shared/ming-boundary-research";
+import { evictJson, loadJson } from "../lib/load-json";
 
 /** A documented administrative association, never point-in-polygon inference. */
 export default function MingJurisdictionInfo({ placeId, onView }: { placeId: string; onView: (id: string) => void }) {
@@ -7,11 +8,10 @@ export default function MingJurisdictionInfo({ placeId, onView }: { placeId: str
   const [error, setError] = useState("");
   useEffect(() => {
     const controller = new AbortController();
-    fetch("/data/ming-boundary-research.json", { signal: controller.signal })
-      .then(response => { if (!response.ok) throw Error(); return response.json(); })
+    loadJson<MingBoundaryResearchDocument>("/data/ming-boundary-research.json", { signal: controller.signal })
       .then(document => {
-        if (document.periodId !== "ming" || !document.byBoundary) throw Error();
-        setData(document);
+        if (document.periodId !== "ming" || !document.byBoundary) { evictJson("/data/ming-boundary-research.json"); throw Error(); }
+        if (!controller.signal.aborted) setData(document);
       })
       .catch(cause => { if (cause.name !== "AbortError") setError("建置关联资料暂时无法加载，请刷新重试。"); });
     return () => controller.abort();

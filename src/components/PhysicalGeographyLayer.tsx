@@ -12,6 +12,7 @@ import { localizePhysicalGroup, type LocalizedPhysicalGroup } from "../../shared
 import { contextWaterGeometry, type WaterDetailReplacement } from "../../shared/historical-rivers";
 import { majorMountainRegionIds, mountainRegionFeatures, mountainRegionHitLayer, mountainRegionLabelMinZoom, mountainRegionShortcuts, mountainRegionSourceId, visibleMountainRegionLabelPoint } from "../../shared/mountain-regions";
 import "../mountain-regions.css";
+import { loadJson } from "../lib/load-json";
 
 const sourceId = "physical-interactive";
 const directionSourceId = "mountain-directions";
@@ -66,11 +67,11 @@ export default function PhysicalGeographyLayer({ map, ready, visible, mode, cont
 
   useEffect(() => {
     const abort = new AbortController();
-    Promise.all(["/data/physical-interactive.geojson", "/data/physical-interactions.json"].map(url => fetch(url, { signal: abort.signal }).then(response => {
-      if (!response.ok) throw new Error("山川河流资料暂时无法加载，请刷新重试。");
-      return response.json();
-    }))).then(([collection, index]) => {
-      setData(collection as PhysicalFeatureCollection); setGroups((index as PhysicalInteractionIndex).groups.map(localizePhysicalGroup)); setLoaded(true);
+    Promise.all([
+      loadJson<PhysicalFeatureCollection>("/data/physical-interactive.geojson", { signal: abort.signal }),
+      loadJson<PhysicalInteractionIndex>("/data/physical-interactions.json", { signal: abort.signal }),
+    ]).then(([collection, index]) => {
+      if (!abort.signal.aborted) { setData(collection); setGroups(index.groups.map(localizePhysicalGroup)); setLoaded(true); }
     }).catch(error => { if (error.name !== "AbortError") setError("山川河流资料暂时无法加载，请刷新重试。"); });
     fetch("/data/mountain-directions.geojson", { signal: abort.signal }).then(response => {
       if (!response.ok) throw new Error("山系走向暂时未能加载，名称定位和河湖仍可使用。");
