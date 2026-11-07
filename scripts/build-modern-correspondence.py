@@ -3,6 +3,7 @@
 
 Requires shapely>=2.1 and opencc-python-reimplemented.
 Run with --offline to require the retained, SHA256-verified source snapshots.
+Use --split-existing to package the retained output offline without spatial dependencies.
 """
 from __future__ import annotations
 
@@ -15,14 +16,10 @@ import zipfile
 from collections import Counter
 from pathlib import Path
 
-from opencc import OpenCC
-from shapely import STRtree, make_valid
-from shapely.geometry import Point, shape
-
 ROOT = Path(__file__).resolve().parents[1]
 EVIDENCE = ROOT / "data/evidence/modern-correspondence"
 OUT = ROOT / "public/data/modern-correspondence.json"
-CC = OpenCC("t2s")
+SLICE_OUT = ROOT / "public/data/modern-correspondence"
 PROVINCE_TRANSLATIONS = {"HongKong": "香港特别行政区", "Macau": "澳门特别行政区"}
 GB_TRANSLATIONS = {
     "Hainan Province": "海南省", "Taiwan Province": "台湾省",
@@ -74,6 +71,99 @@ def write_json(path, value, compact=False):
                                separators=(",", ":") if compact else None) + "\n", encoding="utf-8")
 
 
+def json_bytes(value):
+    return (json.dumps(value, ensure_ascii=False, allow_nan=False, separators=(",", ":")) + "\n").encode("utf-8")
+
+
+class ValueDictionary:
+    def __init__(self):
+        self.values = []
+        self.indexes = {}
+
+    def reference(self, value):
+        key = json_bytes(value)
+        if key not in self.indexes:
+            self.indexes[key] = len(self.values)
+            self.values.append(value)
+        return self.indexes[key]
+
+
+def write_slices(document, boundary_manifest, output_directory):
+    entries = document["entries"]
+    metadata = {key: value for key, value in document.items() if key != "entries"}
+    reserved_metadata = {"schemaVersion", "notes", "sourceIdSets", "datasets"}
+    if reserved_metadata.intersection(metadata):
+        raise ValueError("Input metadata collides with slice format fields")
+    datasets = boundary_manifest["datasets"]
+    groups = {dataset["id"]: {} for dataset in datasets}
+    if len(groups) != len(datasets):
+        raise ValueError("Duplicate dataset IDs in boundary manifest")
+    notes, source_sets = ValueDictionary(), ValueDictionary()
+    for feature_id, entry in entries.items():
+        if entry["historicalDatasetId"] not in groups:
+            raise ValueError(f"Unknown historical dataset for {feature_id}")
+        if {"noteRef", "sourceIdsRef", "modernRegionsRef"}.intersection(entry):
+            raise ValueError(f"Input entry collides with slice reference fields: {feature_id}")
+        groups[entry["historicalDatasetId"]][feature_id] = entry
+        notes.reference(entry["note"])
+        source_sets.reference(entry["sourceIds"])
+    manifest = {"schemaVersion": 1, **metadata, "notes": notes.values,
+                "sourceIdSets": source_sets.values, "datasets": []}
+    outputs, restored_entries = {}, {}
+    removed_fields = {"note", "sourceIds", "modernRegions", "historicalDatasetId", "historicalYear", "method"}
+    for dataset in datasets:
+        dataset_id = dataset["id"]
+        if not dataset_id or any(character not in "abcdefghijklmnopqrstuvwxyz0123456789-_" for character in dataset_id):
+            raise ValueError(f"Invalid dataset ID: {dataset_id}")
+        regions = ValueDictionary()
+        packed_entries = {}
+        for feature_id, entry in groups[dataset_id].items():
+            if entry["historicalYear"] != dataset["year"] or entry["method"] != "representative-point":
+                raise ValueError(f"Entry disagrees with slice defaults: {feature_id}")
+            packed_entries[feature_id] = {
+                **{key: value for key, value in entry.items() if key not in removed_fields},
+                "noteRef": notes.reference(entry["note"]),
+                "sourceIdsRef": source_sets.reference(entry["sourceIds"]),
+                "modernRegionsRef": regions.reference(entry["modernRegions"]),
+            }
+        if len(packed_entries) != sum(layer["featureCount"] for layer in dataset["layers"]):
+            raise ValueError(f"Entry count differs from boundary manifest: {dataset_id}")
+        packed = {"schemaVersion": 1, "datasetId": dataset_id, "year": dataset["year"],
+                  "method": "representative-point", "modernRegionSets": regions.values, "entries": packed_entries}
+        encoded = json_bytes(packed)
+        decoded = json.loads(encoded)
+        for feature_id, entry in decoded["entries"].items():
+            restored = {key: value for key, value in entry.items()
+                        if key not in {"noteRef", "sourceIdsRef", "modernRegionsRef"}}
+            restored.update(historicalDatasetId=decoded["datasetId"], historicalYear=decoded["year"],
+                            method=decoded["method"], note=manifest["notes"][entry["noteRef"]],
+                            sourceIds=manifest["sourceIdSets"][entry["sourceIdsRef"]],
+                            modernRegions=decoded["modernRegionSets"][entry["modernRegionsRef"]])
+            if restored != entries[feature_id]:
+                raise ValueError(f"Slice round trip changes historical correspondence: {feature_id}")
+            restored_entries[feature_id] = restored
+        outputs[f"{dataset_id}.json"] = encoded
+        manifest["datasets"].append({"id": dataset_id, "year": dataset["year"],
+                                     "url": f"/data/modern-correspondence/{dataset_id}.json",
+                                     "entryCount": len(packed_entries)})
+    if list(restored_entries) != list(entries):
+        raise ValueError("Slice ordering differs from the retained correspondence file")
+    manifest_bytes = json_bytes(manifest)
+    measurements = []
+    for descriptor in manifest["datasets"]:
+        size = len(outputs[f"{descriptor['id']}.json"])
+        if size + len(manifest_bytes) >= 1_000_000:
+            raise ValueError(f"Slice plus manifest exceeds 1 MB: {descriptor['id']}")
+        measurements.append({"datasetId": descriptor["id"], "entries": descriptor["entryCount"],
+                             "bytes": size, "bytesWithManifest": size + len(manifest_bytes)})
+    output_directory.mkdir(parents=True, exist_ok=True)
+    for filename, content in outputs.items():
+        (output_directory / filename).write_bytes(content)
+    (output_directory / "manifest.json").write_bytes(manifest_bytes)
+    return {"outputDirectory": str(output_directory), "manifestBytes": len(manifest_bytes),
+            "entryCount": len(entries), "datasets": measurements}
+
+
 def ensure_sources(offline):
     manifest = json.loads((EVIDENCE / "download-manifest.json").read_text())
     for item in manifest["assets"]:
@@ -111,6 +201,9 @@ def load_geojson(filename):
 
 class SpatialIndex:
     def __init__(self, document, source_id, level, names):
+        from shapely import STRtree, make_valid
+        from shapely.geometry import shape
+
         self.features, self.geometries, self.repairs = [], [], []
         self.source_id, self.level = source_id, level
         for index, feature in enumerate(document["features"]):
@@ -158,14 +251,27 @@ def region(feature, source_id, level, year=None, parent_relation=False):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--offline", action="store_true")
+    parser.add_argument("--split-existing", action="store_true",
+                        help="Package the retained correspondence file without downloads or spatial recomputation")
+    parser.add_argument("--slice-output", type=Path, default=SLICE_OUT,
+                        help="Destination for generated correspondence slices")
     args = parser.parse_args()
+    boundary_manifest = json.loads((ROOT / "public/data/boundaries/manifest.json").read_text(encoding="utf-8"))
+    if args.split_existing:
+        document = json.loads(OUT.read_text(encoding="utf-8"))
+        print(json.dumps(write_slices(document, boundary_manifest, args.slice_output), ensure_ascii=False))
+        return
+    from opencc import OpenCC
+    from shapely.geometry import Point
+
+    global CC
+    CC = OpenCC("t2s")
     source_manifest = ensure_sources(args.offline)
     provinces = SpatialIndex(load_geojson("gadm41_CHN_1.json.zip"), SOURCES[0]["id"], "province", lambda p: local_name(p, 1))
     prefectures = SpatialIndex(load_geojson("gadm41_CHN_2.json.zip"), SOURCES[1]["id"], "prefecture", lambda p: local_name(p, 2))
     supplement = SpatialIndex(load_geojson("chn-adm1.geojson"), SOURCES[2]["id"], "province", lambda p: GB_TRANSLATIONS[p["shapeName"]])
     countries = SpatialIndex(load_geojson("ne-countries.geojson"), SOURCES[3]["id"], "country-or-area", lambda p: CC.convert(p.get("NAME_ZH") or p["ADMIN"]))
     province_by_id = {f["properties"]["GID_1"]: f for f in provinces.features}
-    boundary_manifest = json.loads((ROOT / "public/data/boundaries/manifest.json").read_text())
     entries, layer_stats, unmatched, historical_hashes = {}, [], [], []
     global_counts = Counter()
     for dataset in boundary_manifest["datasets"]:
@@ -260,6 +366,7 @@ def main():
     output = {"version": "modern-correspondence-1", "coordinateSystem": "WGS84 longitude/latitude",
               "sources": SOURCES, "statistics": statistics, "entries": entries}
     write_json(OUT, output, compact=True)
+    slice_report = write_slices(output, boundary_manifest, args.slice_output)
     report = {"statistics": statistics, "unmatched": unmatched, "historicalInputs": historical_hashes,
               "sourceFeatureCounts": {index.source_id: len(index.features) for index in [provinces, prefectures, supplement, countries]},
               "sourceGeometryRepairs": {index.source_id: index.repairs for index in [provinces, prefectures, supplement, countries]},
@@ -269,7 +376,7 @@ def main():
               "historicalGeoJSONUnchanged": all(hashlib.sha256((ROOT / item["file"]).read_bytes()).hexdigest() == item["sha256"] for item in historical_hashes)}
     write_json(EVIDENCE / "coverage-report.json", report)
     print(json.dumps({"total": total, "matched": total - len(unmatched), "unmatched": len(unmatched),
-                      "coverageRate": statistics["coverageRate"], "bytes": OUT.stat().st_size}))
+                      "coverageRate": statistics["coverageRate"], "bytes": OUT.stat().st_size, "slices": slice_report}))
 
 
 if __name__ == "__main__":

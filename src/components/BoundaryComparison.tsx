@@ -19,6 +19,7 @@ import {
 import "../boundary-comparison.css";
 import { evictJson, loadJson } from "../lib/load-json";
 import { loadBoundaryLayer, retainBoundaryDataset } from "../lib/boundary-data";
+import { evictModernCorrespondence, loadModernCorrespondence } from "../lib/modern-correspondence";
 
 maplibregl.setWorkerUrl(workerUrl);
 const EMPTY: ComparisonRegions = { type: "FeatureCollection", features: [] };
@@ -59,7 +60,6 @@ function useResource<T>(url: string, active: boolean, validate: (data: T) => boo
 
 const validManifest = (data: BoundaryManifest) => Array.isArray(data?.datasets) && data.datasets.every(dataset => Number.isFinite(dataset.year) && Array.isArray(dataset.layers));
 const validLand = (data: FeatureCollection) => data?.type === "FeatureCollection" && Array.isArray(data.features);
-const validModern = (data: ModernCorrespondenceData) => !!data?.entries;
 const validTang = (data: TangBoundaryCrosswalk) => data?.boundaryYear === 741 && !!data.places;
 const validSong = (data: SongBoundaryResearchDocument) => data?.boundaryYear === 1200 && !!data.byBoundary && Array.isArray(data.unlinkedEntries);
 const validMing = (data: MingBoundaryResearchDocument) => data?.boundaryYear === 1391 && !!data.byBoundary && Array.isArray(data.unlinkedEntries);
@@ -85,7 +85,6 @@ function ComparisonSession({ onClose, place, initialYear }: Props) {
   const active = !collapsed;
   const manifest = useResource("/data/boundaries/manifest.json", active, validManifest);
   const land = useResource("/data/land.geojson", active, validLand);
-  const modern = useResource("/data/modern-correspondence.json", active, validModern);
   const tang = useResource("/data/tang-boundary-crosswalk.json", active && !!place, validTang);
   const song = useResource("/data/song-boundary-research.json", active, validSong);
   const ming = useResource("/data/ming-boundary-research.json", active && !!place, validMing);
@@ -181,22 +180,21 @@ function ComparisonSession({ onClose, place, initialYear }: Props) {
           optionYears={optionYears} onYear={year => chooseYear(side, year)} city={mode === "city" ? cityCard : undefined}
           cityReady={mode !== "city" || !!cityResource?.data} cityError={mode === "city" ? cityResource?.error : undefined} retryCity={cityResource?.retry}
           token={token(years[side])} onTargets={reportTargets} place={mode === "city" ? place : undefined}
-          land={land.data} modern={modern.data} song={song.data} onMap={registerMap} onMove={syncView} />;
+          land={land.data} song={song.data} onMap={registerMap} onMove={syncView} />;
       })}
     </div>}
     <footer className="boundary-comparison-footer"><span>土地底图仅供定位 · 城市点为目录参考位置</span>
       {land.error && <button type="button" onClick={land.retry}>土地底图加载失败，重试</button>}
-      {modern.error && <button type="button" onClick={modern.retry}>古今名称对照加载失败，重试</button>}
       {song.error && mode === "region" && <button type="button" onClick={song.retry}>宋代名称核查加载失败，重试</button>}
     </footer>
   </dialog>;
 }
 
-function ComparisonPane({ side, dataset, year, optionYears, onYear, city, cityReady, cityError, retryCity, token, onTargets, place, land, modern, song, onMap, onMove }: {
+function ComparisonPane({ side, dataset, year, optionYears, onYear, city, cityReady, cityError, retryCity, token, onTargets, place, land, song, onMap, onMove }: {
   side: ComparisonSide; dataset?: BoundaryDataset; year: number; optionYears: readonly number[]; onYear: (year: number) => void;
   city?: ComparisonCityRecord; cityReady: boolean; cityError?: string; retryCity?: () => void; token: string;
   onTargets: (side: ComparisonSide, report: TargetReport) => void; place?: Place; land?: FeatureCollection;
-  modern?: ModernCorrespondenceData; song?: SongBoundaryResearchDocument;
+  song?: SongBoundaryResearchDocument;
   onMap: (side: ComparisonSide, map: MapInstance | null) => void; onMove: (side: ComparisonSide) => void;
 }) {
   const container = useRef<HTMLDivElement>(null);
@@ -205,6 +203,8 @@ function ComparisonPane({ side, dataset, year, optionYears, onYear, city, cityRe
   const [mapError, setMapError] = useState("");
   const [mapAttempt, setMapAttempt] = useState(0);
   const [dataAttempt, setDataAttempt] = useState(0);
+  const [modernAttempt, setModernAttempt] = useState(0);
+  const [modernResult, setModernResult] = useState<{ datasetId: string; data?: ModernCorrespondenceData; error: boolean }>();
   const [zoom, setZoom] = useState(DEFAULT_CAMERA.zoom);
   const [viewport, setViewport] = useState(0);
   const [result, setResult] = useState<{ key: string; data: ComparisonRegions; error: string; ready: boolean }>({ key: "", data: EMPTY, error: "", ready: false });
@@ -214,15 +214,35 @@ function ComparisonPane({ side, dataset, year, optionYears, onYear, city, cityRe
   const levelKey = wantedLevels.join("|");
   const requestKey = `${token}:${dataset?.id ?? ""}:${levelKey}:${cityReady}`;
   const regions = result.key === requestKey ? result.data : EMPTY;
-  const loaded = result.key === requestKey && result.ready;
+  const currentModern = modernResult?.datasetId === dataset?.id ? modernResult : undefined;
+  const modern = currentModern?.data;
+  const modernError = currentModern?.error ?? false;
+  const loaded = result.key === requestKey && result.ready && !!modern;
   const error = result.key === requestKey ? result.error : "";
-  const labels = useMemo(() => localizeComparisonRegions(regions, modern, song), [regions, modern, song]);
+  const labels = useMemo(() => modern ? localizeComparisonRegions(regions, modern, song) : EMPTY, [regions, modern, song]);
   const selected = useMemo(() => city ? labels.features.filter(feature => city.links.some(link => link.boundaryId === feature.properties.id)) : labels.features.filter(feature => feature.properties.id === pickedId), [labels, city, pickedId]);
   const selectedIds = selected.map(feature => feature.properties.id);
   const renderData = useMemo(() => city ? { ...labels, features: selected } : labels, [city, labels, selected]);
   const selectId = useId();
 
   useEffect(() => dataset ? retainBoundaryDataset(dataset) : undefined, [dataset]);
+
+  useEffect(() => {
+    if (!dataset) { setModernResult(undefined); return; }
+    const abort = new AbortController();
+    setModernResult({ datasetId: dataset.id, error: false });
+    loadModernCorrespondence(dataset.id, { signal: abort.signal })
+      .then(data => { if (!abort.signal.aborted) setModernResult({ datasetId: dataset.id, data, error: false }); })
+      .catch(() => { if (!abort.signal.aborted) setModernResult({ datasetId: dataset.id, error: true }); });
+    return () => abort.abort();
+  }, [dataset?.id, modernAttempt]);
+
+  const retryModern = () => {
+    if (!dataset) return;
+    evictModernCorrespondence(dataset.id);
+    setModernResult({ datasetId: dataset.id, error: false });
+    setModernAttempt(value => value + 1);
+  };
 
   useEffect(() => {
     const abort = new AbortController();
@@ -342,6 +362,7 @@ function ComparisonPane({ side, dataset, year, optionYears, onYear, city, cityRe
         : !dataset ? <div className="boundary-comparison-map-message">此年份没有已接入边界。</div>
         : cityError ? <div className="boundary-comparison-map-message" role="alert"><p>城市关联加载失败。</p><button type="button" onClick={retryCity}>重试关联</button></div>
         : error ? <div className="boundary-comparison-map-message" role="alert"><p>{error}</p><button type="button" onClick={() => setDataAttempt(value => value + 1)}>重试边界</button></div>
+        : modernError ? <div className="boundary-comparison-map-message" role="alert"><button type="button" onClick={retryModern}>古今名称对照加载失败，重试</button></div>
         : !loaded || !mapReady ? <div className="boundary-comparison-map-loading" role="status">{!cityReady ? "正在核对城市关联…" : !mapReady ? "正在准备地图…" : "正在读取边界…"}</div>
         : city && !city.links.length ? <div className="boundary-comparison-map-message"><strong>暂无关联辖区</strong><p>{city.missingReason}</p></div>
         : missingGeometry ? <div className="boundary-comparison-map-message" role="alert">关联记录的原始几何缺失，已留空；未以邻近区域代替。</div> : null}
