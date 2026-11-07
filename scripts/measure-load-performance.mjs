@@ -99,6 +99,21 @@ if (!mainScript) throw new Error("Built index JavaScript was not found; run npm 
 const gzipSample = dataFiles.find(file => file.path.startsWith("tang-detail/") && file.path.endsWith(".geojson.gz") && !file.precompressedVariant);
 if (!gzipSample) throw new Error("No original tang-detail gzip file found");
 const modernFile = byDataPath.get("modern-correspondence.json");
+const boundaryIndexes = datasets.flatMap(dataset => {
+  const file = byDataPath.get(`boundaries/indexes/${dataset.id}.json`);
+  return file ? [{ id: dataset.id, url: `/data/${file.path}`, rawBytes: file.bytes }] : [];
+});
+const modernSliceManifestFile = byDataPath.get("modern-correspondence/manifest.json");
+const modernSlices = [];
+if (modernSliceManifestFile) {
+  modernSlices.push({ id: "manifest", url: "/data/modern-correspondence/manifest.json", rawBytes: modernSliceManifestFile.bytes });
+  const sliceManifest = JSON.parse(await readFile(path.join(dataRoot, modernSliceManifestFile.path), "utf8"));
+  for (const dataset of sliceManifest.datasets) {
+    const file = byDataPath.get(new URL(dataset.url, baseUrl).pathname.slice("/data/".length));
+    if (!file) throw new Error(`Missing correspondence slice: ${dataset.url}`);
+    modernSlices.push({ id: dataset.id, url: dataset.url, rawBytes: file.bytes });
+  }
+}
 const report = {
   measuredAt: new Date().toISOString(),
   dataRoot: path.relative(root, dataRoot).split(path.sep).join("/"),
@@ -109,6 +124,8 @@ const report = {
   data: { ...summarize(dataFiles), directories: Object.fromEntries(dataDirectories.map(directory => [directory, summarize(dataFiles.filter(file => directory === "(root)" ? !file.path.includes("/") : file.path.startsWith(directory + "/")))])) },
   boundaries: { ...summarize(dataFiles.filter(file => file.path.startsWith("boundaries/"))), datasetLayerBytes: datasets.reduce((total, dataset) => total + dataset.rawBytes, 0), datasets },
   modernCorrespondence: { url: "/data/modern-correspondence.json", rawBytes: modernFile.bytes, entryCount: Object.keys(correspondence.entries).length },
+  boundaryIndexes,
+  modernSlices,
   assetStorage: summarize(assetFiles),
   assets,
   originalGzipSample: { url: `/data/${gzipSample.path}`, rawBytes: gzipSample.bytes },
@@ -141,7 +158,7 @@ if (!options.inventoryOnly) {
       }
     }
     report.boundaries.datasetLayerTransferBytes = datasets.reduce((total, dataset) => total + dataset.transferBytes, 0);
-    for (const item of [report.modernCorrespondence, ...assets, report.originalGzipSample]) {
+    for (const item of [report.modernCorrespondence, ...boundaryIndexes, ...modernSlices, ...assets, report.originalGzipSample]) {
       const response = await measure(item.url, "br,gzip");
       item.transferBytes = response.transferBytes;
       item.contentEncoding = response.headers["content-encoding"] ?? null;

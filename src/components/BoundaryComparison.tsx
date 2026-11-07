@@ -18,6 +18,7 @@ import {
 } from "../../shared/boundary-comparison";
 import "../boundary-comparison.css";
 import { evictJson, loadJson } from "../lib/load-json";
+import { loadBoundaryLayer, retainBoundaryDataset } from "../lib/boundary-data";
 
 maplibregl.setWorkerUrl(workerUrl);
 const EMPTY: ComparisonRegions = { type: "FeatureCollection", features: [] };
@@ -81,7 +82,6 @@ function ComparisonSession({ onClose, place, initialYear }: Props) {
   const cameraSync = useRef<ReturnType<typeof createComparisonCameraSync> | null>(null);
   if (!cameraSync.current) cameraSync.current = createComparisonCameraSync({ ...DEFAULT_CAMERA, ...(place ? { center: place.coordinates, zoom: 6 } : {}) });
   const fitted = useRef("");
-  const geometryCache = useRef(new Map<string, ComparisonRegions>());
   const active = !collapsed;
   const manifest = useResource("/data/boundaries/manifest.json", active, validManifest);
   const land = useResource("/data/land.geojson", active, validLand);
@@ -181,7 +181,7 @@ function ComparisonSession({ onClose, place, initialYear }: Props) {
           optionYears={optionYears} onYear={year => chooseYear(side, year)} city={mode === "city" ? cityCard : undefined}
           cityReady={mode !== "city" || !!cityResource?.data} cityError={mode === "city" ? cityResource?.error : undefined} retryCity={cityResource?.retry}
           token={token(years[side])} onTargets={reportTargets} place={mode === "city" ? place : undefined}
-          land={land.data} modern={modern.data} song={song.data} cache={geometryCache.current} onMap={registerMap} onMove={syncView} />;
+          land={land.data} modern={modern.data} song={song.data} onMap={registerMap} onMove={syncView} />;
       })}
     </div>}
     <footer className="boundary-comparison-footer"><span>土地底图仅供定位 · 城市点为目录参考位置</span>
@@ -192,11 +192,11 @@ function ComparisonSession({ onClose, place, initialYear }: Props) {
   </dialog>;
 }
 
-function ComparisonPane({ side, dataset, year, optionYears, onYear, city, cityReady, cityError, retryCity, token, onTargets, place, land, modern, song, cache, onMap, onMove }: {
+function ComparisonPane({ side, dataset, year, optionYears, onYear, city, cityReady, cityError, retryCity, token, onTargets, place, land, modern, song, onMap, onMove }: {
   side: ComparisonSide; dataset?: BoundaryDataset; year: number; optionYears: readonly number[]; onYear: (year: number) => void;
   city?: ComparisonCityRecord; cityReady: boolean; cityError?: string; retryCity?: () => void; token: string;
   onTargets: (side: ComparisonSide, report: TargetReport) => void; place?: Place; land?: FeatureCollection;
-  modern?: ModernCorrespondenceData; song?: SongBoundaryResearchDocument; cache: Map<string, ComparisonRegions>;
+  modern?: ModernCorrespondenceData; song?: SongBoundaryResearchDocument;
   onMap: (side: ComparisonSide, map: MapInstance | null) => void; onMove: (side: ComparisonSide) => void;
 }) {
   const container = useRef<HTMLDivElement>(null);
@@ -222,6 +222,8 @@ function ComparisonPane({ side, dataset, year, optionYears, onYear, city, cityRe
   const renderData = useMemo(() => city ? { ...labels, features: selected } : labels, [city, labels, selected]);
   const selectId = useId();
 
+  useEffect(() => dataset ? retainBoundaryDataset(dataset) : undefined, [dataset]);
+
   useEffect(() => {
     const abort = new AbortController();
     setPickedId("");
@@ -229,14 +231,12 @@ function ComparisonPane({ side, dataset, year, optionYears, onYear, city, cityRe
     if (!dataset || !cityReady) return () => abort.abort();
     const layers = dataset.layers.filter(layer => wantedLevels.includes(layer.level) && layer.featureCount > 0);
     Promise.all(layers.map(async layer => {
-      const cached = cache.get(layer.url);
-      if (cached) return cached;
-      const response = await fetch(layer.url, { signal: abort.signal });
-      if (!response.ok) throw Error(`${boundaryLevelName(layer.level, dataset.periodId)}资料加载失败`);
-      const data = await response.json() as ComparisonRegions;
-      if (!validLand(data) || data.features.some(feature => !feature.properties?.id || !["Polygon", "MultiPolygon"].includes(feature.geometry?.type))) throw Error("边界文件格式不完整");
-      if (!abort.signal.aborted) cache.set(layer.url, data);
-      return data;
+      try {
+        return await loadBoundaryLayer(layer, { signal: abort.signal });
+      } catch (error) {
+        if (abort.signal.aborted) throw error;
+        throw Error(error instanceof Error && error.message === "边界文件格式错误" ? "边界文件格式不完整" : `${boundaryLevelName(layer.level, dataset.periodId)}资料加载失败`);
+      }
     })).then(batches => {
       if (!abort.signal.aborted) setResult({ key: requestKey, data: { type: "FeatureCollection", features: batches.flatMap(data => data.features) }, error: "", ready: true });
     }).catch(cause => {
@@ -247,7 +247,7 @@ function ComparisonPane({ side, dataset, year, optionYears, onYear, city, cityRe
     });
     return () => abort.abort();
     // The serialized levels cover zoom changes without re-fetching on every move.
-  }, [dataset, requestKey, levelKey, dataAttempt, cache]);
+  }, [dataset, requestKey, levelKey, dataAttempt]);
 
   useEffect(() => { onTargets(side, { token, ready: loaded, features: selected }); }, [side, token, loaded, selected, onTargets]);
 

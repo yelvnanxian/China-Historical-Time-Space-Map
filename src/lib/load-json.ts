@@ -42,6 +42,6 @@ export function loadJson<T>(url: string, options: { signal?: AbortSignal } = {})
   });
 }
 
-export function evictJson(url: string): void {
-  jsonRequests.delete(url);
+export function evictJson(url: string, expectedRequest?: Promise<unknown>): void {
+  if (!expectedRequest || jsonRequests.get(url) === expectedRequest) jsonRequests.delete(url);
 }

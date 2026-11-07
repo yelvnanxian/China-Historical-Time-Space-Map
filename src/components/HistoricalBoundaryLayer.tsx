@@ -17,6 +17,9 @@ import type { MingBoundaryResearchDocument } from "../../shared/ming-boundary-re
 import type { SongBoundaryResearchDocument } from "../../shared/song-boundary-research";
 import { boundaryReliability, boundaryReliabilitySourceNote, reliabilityColors, reliabilityLabels, reliabilityStatuses, type DataReliabilityStatus } from "../../shared/data-reliability";
 import { evictJson, loadJson } from "../lib/load-json";
+import { loadBoundaryIndex, loadBoundaryLayer, retainBoundaryDataset } from "../lib/boundary-data";
+import type { BoundaryIndex } from "../../shared/boundary-index";
+import { boundaryTargetReady, neededBoundaryLayers } from "../../shared/boundary-loading";
 
 type RegionProperties = BoundarySelection & { color?: string; labelCoordinates?: [number, number]; reliabilityStatus?: DataReliabilityStatus };
 type Regions = FeatureCollection<Polygon | MultiPolygon, RegionProperties>;
@@ -47,8 +50,10 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
   onReliabilityModeChange?: (enabled: boolean) => void;
 }) {
   const [manifest, setManifest] = useState<BoundaryManifest | null>(null);
-  const [regions, setRegions] = useState<Regions>(empty);
-  const [loadedDatasetId, setLoadedDatasetId] = useState<string>();
+  const [boundaryIndex, setBoundaryIndex] = useState<BoundaryIndex>();
+  const [layerData, setLayerData] = useState<{ datasetId: string; layers: Record<string, Regions> }>();
+  const [dataAttempt, setDataAttempt] = useState(0);
+  const [pendingSearch, setPendingSearch] = useState<{ id: string; datasetId: string; resetKey?: string; externalRequestId?: number; focus?: boolean; quiet?: boolean }>();
   const [zoom, setZoom] = useState(map?.getZoom() ?? 3);
   const interactive = interactionMode === "cities" || interactionMode === "all";
   const [selection, setSelection] = useState<BoundarySelection | null>(null);
@@ -58,14 +63,17 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
   const focusCallback = useRef(onRegionFocus); focusCallback.current = onRegionFocus;
   const requestState = useRef<BoundaryRequestState | undefined>(undefined);
   const focusedLabelId = useRef<string | undefined>(undefined);
-  useEffect(() => { setSelection(null); }, [resetKey]);
+  useEffect(() => { setSelection(null); setPendingSearch(undefined); }, [resetKey]);
   // Hiding the overlay must not discard a completed quiet selection: reopening
   // restores its highlight without replaying the request or moving the camera.
   useEffect(() => { if (!interactive) setSelection(null); }, [interactive]);
-  const [loading, setLoading] = useState(false);
-  const [dataError, setDataError] = useState("");
+  const [indexLoading, setIndexLoading] = useState(false);
+  const [layersLoading, setLayersLoading] = useState(false);
+  const loading = indexLoading || layersLoading;
+  const [indexError, setIndexError] = useState("");
+  const [layerError, setLayerError] = useState("");
   const [manifestError, setManifestError] = useState("");
-  const error = manifestError || dataError;
+  const error = manifestError || indexError || layerError;
   const [correspondences, setCorrespondences] = useState<ModernCorrespondenceData | null>(null);
   const [correspondenceError, setCorrespondenceError] = useState("");
   const [mingResearch, setMingResearch] = useState<MingBoundaryResearchDocument>();
@@ -103,6 +111,16 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
   const detail = useMemo(() => resolveMapDetailLevel("auto", zoom, availableLevels, { primaryCountryCoverage: !boundaryCountryCoverage(dataset).incomplete }), [zoom, availableLevels, dataset]);
   const visibleLevelKey = detail.visibleLevels.join("|");
   const visibleLevels = useMemo(() => visibleLevelKey ? visibleLevelKey.split("|") as BoundaryLevel[] : [], [visibleLevelKey]);
+  const currentIndex = boundaryIndex?.datasetId === dataset?.id ? boundaryIndex : undefined;
+  const currentLayers = layerData?.datasetId === dataset?.id ? layerData?.layers : undefined;
+  const regions = useMemo<Regions>(() => ({ type: "FeatureCollection", features: dataset?.layers.flatMap(layer => currentLayers?.[layer.id]?.features ?? []) ?? [] }), [dataset, currentLayers]);
+  const pendingExternal = resolveBoundarySelectionRequest(requestState.current, {
+    request: selectionRequest, resetKey, datasetId: dataset?.id, dataReady: false, interactive: enabled && interactive, targetExists: false,
+  }).state;
+  const externalTarget = selectionRequest && !pendingExternal?.completed && (!requestedSongDataset || requestedSongDataset.id === dataset?.id) ? selectionRequest.id : undefined;
+  const searchTarget = pendingSearch?.datasetId === dataset?.id && pendingSearch?.resetKey === resetKey && pendingSearch?.externalRequestId === selectionRequest?.requestId ? pendingSearch?.id : undefined;
+  const neededLayers = neededBoundaryLayers(dataset, visibleLevels, currentIndex, [externalTarget, searchTarget].filter((id): id is string => !!id));
+  const neededLayerKey = neededLayers.map(layer => layer.id).join("|");
 
   useEffect(() => {
     if (!map || !ready) return;
@@ -128,20 +146,18 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
     return () => controller.abort();
   }, []);
 
-  const renderedRegions = useMemo<Regions>(() => ({ ...regions, features: regions.features.map(feature => ({
-    ...feature, properties: { ...feature.properties, geometryStatus: countyDiagnostics?.byBoundary[feature.properties.id]?.status },
-  })) }), [regions, countyDiagnostics]);
-  const displayRegions = useMemo<Regions>(() => ({ ...renderedRegions, features: renderedRegions.features.map(feature => {
-    const match = correspondences?.entries[feature.properties.id];
-    const correction = songResearch?.byBoundary[feature.properties.id]?.displayCorrection;
-    const properties = { ...feature.properties, ...getBoundaryDisplayLabel(feature.properties, match?.simplifiedName),
+  const localizeRegion = useCallback((region: RegionProperties): RegionProperties => {
+    const match = correspondences?.entries[region.id];
+    const correction = songResearch?.byBoundary[region.id]?.displayCorrection;
+    const properties = { ...region, geometryStatus: countyDiagnostics?.byBoundary[region.id]?.status, ...getBoundaryDisplayLabel(region, match?.simplifiedName),
       ...(correction ? { name: correction.name, nameCorrectionNote: correction.note, nameSourceUrl: correction.sourceUrl } : {}),
-      polity: localizedPolity(feature.properties.sourceHierarchy?.polity), originalPolity: feature.properties.sourceHierarchy?.polity,
-      sourceAdminType: localizedAdminType(feature.properties.sourceAdminType), originalAdminType: feature.properties.sourceAdminType,
+      polity: localizedPolity(region.sourceHierarchy?.polity), originalPolity: region.sourceHierarchy?.polity,
+      sourceAdminType: localizedAdminType(region.sourceAdminType), originalAdminType: region.sourceAdminType,
       modernNames: (match?.modernNames ?? []).map(name => chinesePlaceName(name, "现代地区名称待核定")),
       correspondenceNote: match?.note ?? "现代地区对应尚未收录。", correspondenceSourceIds: match?.sourceIds ?? [] };
-    return { ...feature, properties: { ...properties, reliabilityStatus: boundaryReliability(properties, songResearch?.byBoundary[properties.id]?.catalogPointComparison.status).status } };
-  }) }), [renderedRegions, correspondences, songResearch]);
+    return { ...properties, reliabilityStatus: boundaryReliability(properties, songResearch?.byBoundary[properties.id]?.catalogPointComparison.status).status };
+  }, [countyDiagnostics, correspondences, songResearch]);
+  const displayRegions = useMemo<Regions>(() => ({ ...regions, features: regions.features.map(feature => ({ ...feature, properties: localizeRegion(feature.properties) })) }), [regions, localizeRegion]);
   const selectedDiagnostic = selection ? countyDiagnostics?.byBoundary[selection.id] : undefined;
 
   useEffect(() => {
@@ -153,29 +169,46 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
   }, [displayRegions]);
 
   useEffect(() => {
-    setRegions(empty);
-    setLoadedDatasetId(undefined);
+    setBoundaryIndex(undefined);
+    setLayerData(undefined);
     setSelection(null);
-    setDataError("");
-    if (!dataset) { setLoading(false); return; }
+    setPendingSearch(undefined);
+    setIndexError("");
+    if (!dataset) { setIndexLoading(false); return; }
+    const release = retainBoundaryDataset(dataset);
     const abort = new AbortController();
-    setLoading(true);
-    Promise.all(dataset.layers.map(async layer => {
-      const response = await fetch(layer.url, { signal: abort.signal });
-      if (!response.ok) throw new Error(`${layer.label}加载失败，请刷新重试`);
-      const data: Regions = await response.json();
-      if (data.type !== "FeatureCollection" || !Array.isArray(data.features)) throw new Error("边界文件格式错误");
-      return data.features;
-    })).then(batches => {
-      if (!abort.signal.aborted) {
-        setRegions({ type: "FeatureCollection", features: batches.flat() });
-        setLoadedDatasetId(dataset.id);
-      }
+    setIndexLoading(true);
+    loadBoundaryIndex(dataset, { signal: abort.signal }).then(data => {
+      if (!abort.signal.aborted) setBoundaryIndex(data);
     }).catch(error => {
-      if (error.name !== "AbortError") setDataError(error.message);
-    }).finally(() => { if (!abort.signal.aborted) setLoading(false); });
-    return () => abort.abort();
+      if (!abort.signal.aborted) setIndexError(error.message === "边界文件格式错误" ? error.message : "边界资料目录加载失败");
+    }).finally(() => { if (!abort.signal.aborted) setIndexLoading(false); });
+    return () => { abort.abort(); release(); };
   }, [dataset?.id]);
+
+  useEffect(() => {
+    setLayerError("");
+    const missing = neededLayers.filter(layer => !currentLayers?.[layer.id]);
+    if (!dataset || !missing.length) { setLayersLoading(false); return; }
+    const abort = new AbortController();
+    setLayersLoading(true);
+    Promise.all(missing.map(async layer => {
+      try {
+        return [layer.id, await loadBoundaryLayer(layer, { signal: abort.signal })] as const;
+      } catch (error) {
+        if (abort.signal.aborted) throw error;
+        throw new Error(error instanceof Error && error.message === "边界文件格式错误" ? error.message : `${layer.label}加载失败，请刷新重试`);
+      }
+    })).then(batches => {
+      if (!abort.signal.aborted) setLayerData(previous => ({
+        datasetId: dataset.id,
+        layers: { ...(previous?.datasetId === dataset.id ? previous.layers : {}), ...Object.fromEntries(batches) },
+      }));
+    }).catch(error => {
+      if (!abort.signal.aborted) setLayerError(error.message);
+    }).finally(() => { if (!abort.signal.aborted) setLayersLoading(false); });
+    return () => abort.abort();
+  }, [dataset?.id, neededLayerKey, dataAttempt, selectionRequest?.requestId]);
 
   useEffect(() => {
     onStatusChange(error ? "历史边界加载失败" : !manifest || loading ? "历史边界加载中…" : !dataset ? "本时期尚无已接入边界" : `${dataset.year} 年${dataset.accuracy === "approximate-model" ? "近似行政模型" : "历史行政边界"}`);
@@ -261,6 +294,7 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
       const feature = layers.flatMap(layer => found.filter(item => item.layer.id === layer))[0];
       const props = feature?.properties;
       const original = displayRegions.features.find(item => item.properties.id === props?.id)?.properties;
+      setPendingSearch(undefined);
       setSelection(original ?? null);
       if (original) { selectionCallback.current?.(); regionCallback.current?.(original); }
     };
@@ -304,6 +338,7 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
         element.addEventListener("pointerdown", event => event.stopPropagation());
         element.addEventListener("click", event => {
           event.stopPropagation();
+          setPendingSearch(undefined);
           setSelection(p);
           selectionCallback.current?.();
           regionCallback.current?.(p);
@@ -324,10 +359,10 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
     };
   }, [map, ready, displayRegions, visibleLevels, modernNames, enabled, interactive, selection?.id, periodId]);
 
-  const regionOptions = useMemo(() => displayRegions.features.map(feature => feature.properties), [displayRegions]);
-  const focusRegion = useCallback((id: string, options: { focus?: boolean; quiet?: boolean } = {}) => {
+  const regionOptions = useMemo(() => currentIndex?.entries.map(localizeRegion) ?? [], [currentIndex, localizeRegion]);
+  const applyRegionSelection = useCallback((id: string, options: { focus?: boolean; quiet?: boolean } = {}) => {
     const feature = displayRegions.features.find(item => item.properties.id === id);
-    if (!feature || !map || !ready || !enabled || !interactive || loadedDatasetId !== dataset?.id) return false;
+    if (!feature || !map || !ready || !enabled || !interactive) return false;
     setSelection(feature.properties);
     if (!options.quiet) { selectionCallback.current?.(); regionCallback.current?.(feature.properties); }
     if (options.focus !== false) {
@@ -336,21 +371,35 @@ export default function HistoricalBoundaryLayer({ map, ready, periodId, currentY
       focusCallback.current([...coordinates.map(point => [point[0], point[1]] as [number, number]), ...sourcePoints]);
     }
     return true;
-  }, [displayRegions, map, ready, enabled, interactive, loadedDatasetId, dataset?.id, countyDiagnostics]);
+  }, [displayRegions, map, ready, enabled, interactive, countyDiagnostics]);
+  const focusRegion = useCallback((id: string, options: { focus?: boolean; quiet?: boolean } = {}) => {
+    if (!dataset || !currentIndex?.entries.some(entry => entry.id === id) || !enabled || !interactive) return false;
+    if (requestState.current) requestState.current = { ...requestState.current, completed: true };
+    if (applyRegionSelection(id, options)) { setPendingSearch(undefined); return true; }
+    setPendingSearch({ id, datasetId: dataset.id, resetKey, externalRequestId: selectionRequest?.requestId, ...options });
+    setDataAttempt(value => value + 1);
+    return true;
+  }, [dataset, currentIndex, enabled, interactive, applyRegionSelection, resetKey, selectionRequest?.requestId]);
+  useEffect(() => {
+    if (!pendingSearch || !searchTarget) return;
+    if (!boundaryTargetReady(dataset, currentIndex, Object.keys(currentLayers ?? {}), searchTarget)) return;
+    if (applyRegionSelection(searchTarget, pendingSearch)) setPendingSearch(undefined);
+  }, [pendingSearch, searchTarget, dataset, currentIndex, currentLayers, applyRegionSelection]);
+  useEffect(() => { setPendingSearch(undefined); }, [selectionRequest?.requestId]);
   useEffect(() => {
     // A reviewed Song city link selects its matching snapshot before resolving
     // the polygon; a pending 1200 request must not be consumed against 1080.
     if (requestedSongDataset && dataset?.id !== requestedSongDataset.id) return;
     const result = resolveBoundarySelectionRequest(requestState.current, {
       request: selectionRequest, resetKey, datasetId: dataset?.id,
-      dataReady: !!map && ready && !!dataset && loadedDatasetId === dataset.id,
+      dataReady: !!map && ready && boundaryTargetReady(dataset, currentIndex, Object.keys(currentLayers ?? {}), selectionRequest?.id),
       interactive: enabled && interactive,
       targetExists: !!selectionRequest && displayRegions.features.some(feature => feature.properties.id === selectionRequest.id),
     });
     requestState.current = result.state;
     if (result.clearSelection) setSelection(null);
-    if (result.apply) focusRegion(result.apply.id, result.apply);
-  }, [selectionRequest, resetKey, dataset?.id, loadedDatasetId, map, ready, enabled, interactive, displayRegions, focusRegion, requestedSongDataset?.id]);
+    if (result.apply) applyRegionSelection(result.apply.id, result.apply);
+  }, [selectionRequest, resetKey, dataset, currentIndex, currentLayers, map, ready, enabled, interactive, displayRegions, applyRegionSelection, requestedSongDataset?.id]);
   return <><BoundaryControls embedded={embedded} enabled={enabled} datasets={datasets} selectedDataset={dataset} onDatasetChange={id => { const next = datasets.find(item => item.id === id); if (next) onYearChange(next.year); }}
     visibleLevels={visibleLevels} interactive={interactive} activeLevel={detail.activeLevel} zoom={zoom} onOpenAtlas={onOpenAtlas}
     selection={selection} onSelectionClose={() => setSelection(null)} currentYear={currentYear} loading={loading || !manifest && !error} error={error}
