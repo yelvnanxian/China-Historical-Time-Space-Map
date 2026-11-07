@@ -3,6 +3,7 @@ import { existsSync } from 'node:fs';
 import path from 'node:path';
 import type { Catalog } from '../shared/types';
 import { getEventDetail, getPlaceDetail, getTopicDetail, searchCatalog } from './catalog';
+import { precompressedStatic } from './precompressed-static';
 
 export function createApp(catalog: Catalog, options: { distDir?: string } = {}) {
   const app = express();
@@ -54,6 +55,7 @@ export function createApp(catalog: Catalog, options: { distDir?: string } = {}) 
 
   if (options.distDir && existsSync(path.join(options.distDir, 'index.html'))) {
     const distDir = path.resolve(options.distDir);
+    app.use(precompressedStatic(distDir));
     app.use(express.static(distDir));
     app.get('/{*path}', (request, response, next) => {
       if (path.extname(request.path) || !request.accepts('html')) return next();
