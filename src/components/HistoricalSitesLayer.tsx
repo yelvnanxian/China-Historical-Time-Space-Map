@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { fetchResource } from "../lib/resource-url";
 import { createPortal } from "react-dom";
 import { Marker, type Map as MapInstance } from "maplibre-gl";
 import { Landmark, X } from "lucide-react";
@@ -30,7 +31,7 @@ export default function HistoricalSitesLayer({ map, ready, periodId, year, mode,
     const controller = new AbortController();
     setError("");
     setData(undefined);
-    fetch("/data/historical-sites.json", { signal: controller.signal })
+    fetchResource("/data/historical-sites.json", { signal: controller.signal })
       .then(response => { if (!response.ok) throw Error(); return response.json(); })
       .then(value => { if (!isHistoricalSitesData(value)) throw Error(); if (!controller.signal.aborted) setData(value); }).catch(reason => { if (reason.name !== "AbortError") setError("史迹地点暂时无法加载。"); });
     return () => controller.abort();

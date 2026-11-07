@@ -50,7 +50,8 @@ test('单个消费者取消只拒绝其等待，其余消费者继续共享请�
   assert.equal(getEventListeners(firstController.signal, 'abort').length, 0);
   assert.equal(getEventListeners(secondController.signal, 'abort').length, 1);
   assert.equal(fetchMock.mock.callCount(), 1);
-  assert.deepEqual(fetchMock.mock.calls[0].arguments, [url]);
+  assert.equal(fetchMock.mock.calls[0].arguments[0], url);
+  assert.equal(fetchMock.mock.calls[0].arguments[1], undefined);
   network.resolve(new Response('{"year":755}'));
   assert.deepEqual(await second, { year: 755 });
   assert.equal(await second, await shared);

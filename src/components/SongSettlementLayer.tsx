@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { fetchResource } from "../lib/resource-url";
 import { createPortal } from "react-dom";
 import { Marker, type GeoJSONSource, type Map as MapInstance, type MapMouseEvent } from "maplibre-gl";
 import { MapPin, Search, X } from "lucide-react";
@@ -41,11 +42,11 @@ export default function SongSettlementLayer({ map, ready, periodId, zoom, mode, 
     const abort = new AbortController();
     setLoading(true); setError("");
     (async () => {
-      const response = await fetch("/data/song-settlements/manifest.json", { signal: abort.signal });
+      const response = await fetchResource("/data/song-settlements/manifest.json", { signal: abort.signal });
       if (!response.ok) throw Error();
       const index: SongSettlementsManifest = await response.json();
       if (index.periodId !== "song" || index.year !== 1200 || !index.url.startsWith("/data/song-settlements/")) throw Error();
-      const records = await fetch(index.url, { signal: abort.signal });
+      const records = await fetchResource(index.url, { signal: abort.signal });
       if (!records.ok) throw Error();
       const collection: SongSettlementsCollection = await records.json();
       if (collection.type !== "FeatureCollection" || collection.features.length !== index.featureCount || collection.features.some(f => f.geometry.type !== "Point" || f.properties.year !== 1200)) throw Error();

@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { fetchResource } from "../lib/resource-url";
 import { createPortal } from "react-dom";
 import { Marker, type FilterSpecification, type GeoJSONSource, type Map as MapInstance, type MapMouseEvent } from "maplibre-gl";
 import { MapPin, Search, X } from "lucide-react";
@@ -26,7 +27,7 @@ const layerIds = ["tang-detail-water", "tang-detail-water-edge", "tang-detail-ri
 type DetailFeature = Feature<Geometry, TangDetailProperties>;
 
 async function fetchCollection(url: string, signal: AbortSignal): Promise<TangDetailCollection> {
-  const response = await fetch(url, { signal });
+  const response = await fetchResource(url, { signal });
   if (!response.ok) throw Error();
   const localize = (data: TangDetailCollection): TangDetailCollection => ({ ...data, features: data.features.map(localizeTangDetailFeature) });
   if (!url.endsWith(".gz")) return response.json().then(localize);
@@ -91,11 +92,11 @@ export default function TangDetailLayer({ map, ready, enabled, periodId, mode, z
     if (!enabled) return;
     const abort = new AbortController();
     setError("");
-    fetch("/data/tang-detail/manifest.json", { signal: abort.signal }).then(r => { if (!r.ok) throw Error(); return r.json(); })
+    fetchResource("/data/tang-detail/manifest.json", { signal: abort.signal }).then(r => { if (!r.ok) throw Error(); return r.json(); })
       .then(async (index: TangDetailManifest) => {
         setManifest(index);
         if (!historicalEnabled) { setHistorical(empty); return; }
-        const response = await fetch(index.historical.url, { signal: abort.signal });
+        const response = await fetchResource(index.historical.url, { signal: abort.signal });
         if (!response.ok) throw Error();
         const collection = await response.json();
         if (collection.type !== "FeatureCollection" || collection.features.length !== index.historical.featureCount) throw Error();
@@ -106,7 +107,7 @@ export default function TangDetailLayer({ map, ready, enabled, periodId, mode, z
   useEffect(() => {
     if (!enabled) return;
     const abort = new AbortController();
-    fetch("/data/tang-detail/yellow-river-water-associations.json", { signal: abort.signal })
+    fetchResource("/data/tang-detail/yellow-river-water-associations.json", { signal: abort.signal })
       .then(r => { if (!r.ok) throw Error(); return r.json(); })
       .then(data => setYellowWaterIds(new Set(data.associations.map((item: { waterId: string }) => item.waterId))))
       .catch(e => { if (e.name !== "AbortError") setError("黄河现代水面关联资料未能加载，水面遮蔽可能不完整，请重试。"); });

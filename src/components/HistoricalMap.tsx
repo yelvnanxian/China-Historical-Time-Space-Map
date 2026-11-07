@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { resourceUrl } from "../lib/resource-url";
 import * as maplibregl from "maplibre-gl";
 import type { GeoJSONSource, Map as MapInstance } from "maplibre-gl";
 import workerUrl from "maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url";
@@ -236,6 +237,7 @@ export default function HistoricalMap(props: Props) {
         attributionControl: false,
         dragRotate: false,
         pitchWithRotate: false,
+        transformRequest: url => ({ url: resourceUrl(url) }),
         style: {
           version: 8,
           sources: {

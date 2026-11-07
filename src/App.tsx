@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { fetchResource } from "./lib/resource-url";
 import {
   ArrowLeft,
   ArrowRight,
@@ -179,7 +180,7 @@ export default function App() {
 
   useEffect(() => {
     const controller = new AbortController();
-    fetch("/data/historical-context.json", { signal: controller.signal })
+    fetchResource("/data/historical-context.json", { signal: controller.signal })
       .then(response => { if (!response.ok) throw new Error("历史地理与大事记暂时无法加载，请刷新重试。"); return response.json(); })
       .then(setHistoricalContext)
       .catch(error => { if (error.name !== "AbortError") setContextError(error.message); });
@@ -189,7 +190,7 @@ export default function App() {
   useEffect(() => {
     const controller = new AbortController();
     setCityProfilesError("");
-    fetch("/data/city-period-profiles.json", { signal: controller.signal })
+    fetchResource("/data/city-period-profiles.json", { signal: controller.signal })
       .then(response => { if (!response.ok) throw new Error("本朝看点暂时无法加载"); return response.json() as Promise<CityPeriodProfilesData>; })
       .then(data => {
         if (!data || !Array.isArray(data.profiles) || !Array.isArray(data.sources)) throw new Error("本朝看点资料格式有误");

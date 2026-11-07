@@ -20,6 +20,7 @@ import "../boundary-comparison.css";
 import { evictJson, loadJson } from "../lib/load-json";
 import { loadBoundaryLayer, retainBoundaryDataset } from "../lib/boundary-data";
 import { evictModernCorrespondence, loadModernCorrespondence } from "../lib/modern-correspondence";
+import { resourceUrl } from "../lib/resource-url";
 
 maplibregl.setWorkerUrl(workerUrl);
 const EMPTY: ComparisonRegions = { type: "FeatureCollection", features: [] };
@@ -279,6 +280,7 @@ function ComparisonPane({ side, dataset, year, optionYears, onYear, city, cityRe
     try {
       map = new maplibregl.Map({ container: container.current, ...DEFAULT_CAMERA, minZoom: 2, maxZoom: 11,
         attributionControl: false, dragRotate: false, pitchWithRotate: false, touchPitch: false,
+        transformRequest: url => ({ url: resourceUrl(url) }),
         style: { version: 8, sources: { land: { type: "geojson", data: EMPTY } }, layers: [
           { id: "comparison-background", type: "background", paint: { "background-color": "#dce7e6" } },
           { id: "comparison-land-fill", type: "fill", source: "land", paint: { "fill-color": "#efeee5" } },

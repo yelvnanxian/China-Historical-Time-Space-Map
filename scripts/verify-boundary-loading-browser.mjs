@@ -109,6 +109,17 @@ try {
     await expectSelection(expected);
     checks.push({ name: `${period}城池辖区面板跳转`, selection: await page.locator('.boundary-selection h3').innerText() });
   }
+  await page.getByRole('button', { name: '历史地图原图', exact: true }).click();
+  const atlasImage = page.locator('.atlas-image-stage img');
+  await atlasImage.waitFor();
+  await page.waitForFunction(() => {
+    const image = document.querySelector('.atlas-image-stage img');
+    return image instanceof HTMLImageElement && image.complete && image.naturalWidth > 0;
+  }, null, { timeout: 60000 });
+  const atlasUrl = await atlasImage.getAttribute('src');
+  assert.match(new URL(atlasUrl, values['base-url']).searchParams.get('v') ?? '', /^[a-f0-9]{64}$/);
+  checks.push({ name: '历史地图原图使用内容版本并成功显示', url: atlasUrl });
+  await page.getByRole('button', { name: '关闭历史地图原图', exact: true }).click();
   assert.deepEqual(errors, []);
   await writeFile(path.join(outputDir, 'summary.json'), JSON.stringify({ checks, errors, requests }, null, 2) + '\n');
   console.log(JSON.stringify({ checks, errors }, null, 2));

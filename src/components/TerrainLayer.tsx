@@ -1,4 +1,5 @@
 import { useEffect, useId, useRef, useState } from "react";
+import { resourceUrl } from "../lib/resource-url";
 import type { Map as MapInstance, MapSourceDataEvent } from "maplibre-gl";
 import { ChevronDown, ExternalLink, Info, Layers2, LoaderCircle, Mountain, RotateCcw } from "lucide-react";
 import { isTerrainError, TERRAIN_SOURCE_ID } from "../../shared/terrain";
@@ -60,7 +61,7 @@ export default function TerrainLayer({ map, ready, onExplore, compact = false, e
           maxzoom: 6,
           bounds: COVERAGE,
           encoding: "terrarium",
-          attribution: 'Modern terrain: Mapzen / Tilezen, USGS, NOAA. <a href="/data/terrain/attribution.md" target="_blank">All data providers</a>',
+          attribution: `Modern terrain: Mapzen / Tilezen, USGS, NOAA. <a href="${resourceUrl("/data/terrain/attribution.md")}" target="_blank">All data providers</a>`,
         });
         ownedSources.push(id);
       }
@@ -173,7 +174,7 @@ export default function TerrainLayer({ map, ready, onExplore, compact = false, e
           <p>Mapzen / Tilezen 高程，源自 USGS、NOAA 等公开资料。覆盖中国及周边；山影由真实高差计算，立体高度夸张 1.5 倍。</p>
           <p>仅作现代自然地形参考，不代表历史河道、海岸或地貌。当前资料适合区域观察，放大不会增加原始精度。</p>
           <a href="https://registry.opendata.aws/terrain-tiles/" target="_blank" rel="noreferrer">数据来源<ExternalLink size={11} /></a>
-          <a href="/data/terrain/attribution.md" target="_blank" rel="noreferrer">完整来源署名<ExternalLink size={11} /></a>
+          <a href={resourceUrl("/data/terrain/attribution.md")} target="_blank" rel="noreferrer">完整来源署名<ExternalLink size={11} /></a>
         </div>
       </details>
       </div>

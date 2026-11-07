@@ -3,6 +3,7 @@ import Negotiator from 'negotiator';
 import { stat } from 'node:fs/promises';
 import path from 'node:path';
 import { staticCacheControl } from './static-cache';
+import { verifiedDataCacheControl } from './versioned-data';
 
 const compressible = /\.(?:json|geojson|js|css|svg|txt)$/i;
 
@@ -52,7 +53,7 @@ export function precompressedStatic(directory: string): RequestHandler {
       response.type(path.extname(filename));
       response.set('Content-Encoding', encoding);
       response.set('ETag', `W/"${selected.details.size.toString(16)}-${selected.details.mtimeMs.toString(16)}-${encoding}"`);
-      response.sendFile(selected.target, { headers: { 'Cache-Control': staticCacheControl(root, filename) } }, error => {
+      response.sendFile(selected.target, { headers: { 'Cache-Control': verifiedDataCacheControl(response) ?? staticCacheControl(root, filename) } }, error => {
         if (!error) return;
         if (!response.headersSent) {
           response.removeHeader('Content-Encoding');

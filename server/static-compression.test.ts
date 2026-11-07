@@ -14,6 +14,11 @@ import { exampleCatalog } from './fixtures';
 const root = fileURLToPath(new URL('../', import.meta.url));
 const source = Buffer.from(JSON.stringify({ type: 'FeatureCollection', features: Array.from({ length: 500 }, (_, index) => ({ id: index, name: '测试河流', coordinates: [112.125, 35.123] })) }));
 const originalGzip = gzipSync(source);
+const dataVersions = {
+  '/data/map.geojson': createHash('sha256').update(source).digest('hex'),
+  '/data/tang-detail/map.geojson.gz': createHash('sha256').update(originalGzip).digest('hex'),
+  '/data/missing.geojson': createHash('sha256').update('missing').digest('hex'),
+};
 let directory: string;
 let base: string;
 let server: Server;
@@ -45,6 +50,7 @@ before(async () => {
   await writeFile(path.join(directory, 'assets/index-ABC1234.js'), 'const label="地图";'.repeat(300));
   await writeFile(path.join(directory, 'assets/index-ABC123456.js'), 'const label="地图";'.repeat(300));
   await writeFile(path.join(directory, 'data/index-ABC12345.json'), source);
+  await writeFile(path.join(directory, 'content-versions.json'), JSON.stringify(dataVersions));
   execFileSync(process.execPath, [path.join(root, 'scripts/precompress-static.mjs'), directory]);
   await writeFile(path.join(directory, 'data/stale.json'), '{"fresh":true}');
   await writeFile(path.join(directory, 'data/stale.json.br'), Buffer.from('outdated'));
@@ -108,6 +114,64 @@ test('HEAD、编码独立ETag和304保留正确的协商语义', async () => {
   assert.equal(other.status, 200);
   assert.notEqual(other.headers.etag, brotli.headers.etag);
   assert.deepEqual(gunzipSync(other.body), source);
+});
+
+test('真实createApp对版本化数据的br/gzip/原文统一长期缓存，HEAD和304保持语义', async () => {
+  const url = `/data/map.geojson?v=${dataVersions['/data/map.geojson']}`;
+  for (const encoding of ['br', 'gzip', 'identity']) {
+    const headers = { 'Accept-Encoding': encoding };
+    const response = await get(url, headers);
+    assert.equal(response.status, 200);
+    assert.equal(response.headers['content-encoding'], encoding === 'identity' ? undefined : encoding);
+    assert.equal(response.headers['cache-control'], 'public, max-age=31536000, immutable');
+    assert.match(String(response.headers.vary), /Accept-Encoding/);
+    const decoded = encoding === 'br' ? brotliDecompressSync(response.body) : encoding === 'gzip' ? gunzipSync(response.body) : response.body;
+    assert.deepEqual(decoded, source);
+    const head = await get(url, headers, 'HEAD');
+    assert.equal(head.status, 200);
+    assert.equal(head.body.length, 0);
+    assert.equal(head.headers.etag, response.headers.etag);
+    assert.equal(head.headers['content-length'], response.headers['content-length']);
+    assert.equal(head.headers['cache-control'], response.headers['cache-control']);
+    const cached = await get(url, { ...headers, 'If-None-Match': response.headers.etag! });
+    assert.equal(cached.status, 304);
+    assert.equal(cached.body.length, 0);
+    assert.equal(cached.headers['cache-control'], response.headers['cache-control']);
+    const partial = await get(url, { ...headers, Range: 'bytes=0-9' });
+    assert.equal(partial.status, 206);
+    assert.deepEqual(partial.body, response.body.subarray(0, 10));
+    assert.equal(partial.headers['cache-control'], response.headers['cache-control']);
+    const invalid = await get(url, { ...headers, Range: 'bytes=999999-' });
+    assert.equal(invalid.status, 416);
+    assert.equal(invalid.headers['cache-control'], undefined);
+    assert.equal(invalid.headers['content-encoding'], undefined);
+  }
+  const nativeGzip = await get(`/data/tang-detail/map.geojson.gz?v=${dataVersions['/data/tang-detail/map.geojson.gz']}`, { 'Accept-Encoding': 'br,gzip' });
+  assert.equal(nativeGzip.status, 200);
+  assert.equal(nativeGzip.headers['cache-control'], 'public, max-age=31536000, immutable');
+  assert.equal(nativeGzip.headers['content-encoding'], undefined);
+  assert.deepEqual(nativeGzip.body, originalGzip);
+  assert.deepEqual([...nativeGzip.body.subarray(0, 2)], [0x1f, 0x8b]);
+});
+
+test('真实createApp拒绝错误版本且不压缩错误体，缺文件和协商错误不长期缓存', async () => {
+  for (const url of ['/data/map.geojson?v=arbitrary', `/data/map.geojson?v=${'f'.repeat(64)}`,
+    `/data/map.geojson?v=${dataVersions['/data/map.geojson']}&v=${dataVersions['/data/map.geojson']}`,
+    `/data/unknown.geojson?v=${dataVersions['/data/map.geojson']}`]) {
+    const response = await get(url, { 'Accept-Encoding': 'br,gzip' });
+    assert.equal(response.status, 410);
+    assert.equal(response.headers['cache-control'], 'no-store');
+    assert.equal(response.headers['content-encoding'], undefined);
+    assert.equal(JSON.parse(response.body.toString()).error.code, 'DATA_VERSION_UNAVAILABLE');
+  }
+  const missing = await get(`/data/missing.geojson?v=${dataVersions['/data/missing.geojson']}`, { 'Accept-Encoding': 'br' });
+  assert.equal(missing.status, 404);
+  assert.equal(missing.headers['cache-control'], undefined);
+  const rejected = await get(`/data/map.geojson?v=${dataVersions['/data/map.geojson']}`, { 'Accept-Encoding': '*;q=0' });
+  assert.equal(rejected.status, 406);
+  assert.equal(rejected.headers['cache-control'], undefined);
+  assert.equal((await get('/api/health?v=arbitrary')).status, 200);
+  assert.equal((await get('/?v=arbitrary', { Accept: 'text/html' })).headers['cache-control'], 'no-cache');
 });
 
 test('哈希资产的原文与压缩响应均长期缓存，HEAD和304沿用缓存策略', async () => {

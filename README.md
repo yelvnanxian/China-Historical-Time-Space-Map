@@ -41,9 +41,13 @@ npm start
 
 构建后访问 http://127.0.0.1:3001 。先停止开发服务器，避免占用同一端口。
 
-生产构建会在 `dist/` 为可压缩的静态文本生成 Brotli / gzip 副本，Express 按浏览器支持直接返回；原有 `.geojson.gz` 保持原样。发布时请部署完整 `dist/` 并重启 `npm start`。这项传输优化不适用于 `npm run dev`；测量脚本、浏览器回归与前后数据见[加载性能 P0 验收](docs/加载性能P0验收.md)。
+生产构建会在 `dist/` 为可压缩的静态文本生成 Brotli / gzip 副本，Express 按浏览器支持直接返回；原有 `.geojson.gz` 保持原样。这项传输优化不适用于 `npm run dev`；测量脚本、浏览器回归与前后数据见[加载性能 P0 验收](docs/加载性能P0验收.md)与[P1 验收](docs/加载性能P1验收.md)。
 
-`dist/assets/` 内带 Vite 哈希的文件缓存一年；首页与 SPA 页面使用 `no-cache`，发布后会重新验证入口。`/data/` 仍使用 `public, max-age=0`。请重新构建生成新哈希，不要原地替换同名哈希资源。
+`dist/assets/` 内带 Vite 哈希的文件缓存一年；首页与 SPA 页面使用 `no-cache`，发布后会重新验证入口。构建按文件内容计算 SHA256，生成 `dist/content-versions.json`，前端自动为 `/data/` 请求附加 `?v=<哈希>`。服务端验证版本一致后才缓存一年；未带版本的资料仍使用 `public, max-age=0`，过期或未知版本返回 `410` 和 `no-store`。开发模式不附加版本。
+
+发布和更新资料时，务必先停止 `npm start`，再执行 `npm run build`，最后重新运行 `npm start`。异机部署需在停止服务后替换完整 `dist/` 再启动。运行期间不要覆盖 `dist/`，否则旧进程的版本表可能与新文件不一致。旧标签页在更新后加载尚未缓存的旧版资料可能收到 `410`，刷新页面即可取得新版本；其他静态托管服务需自行配置等效的压缩、版本校验与缓存规则。
+
+构建会自动生成完整行政区搜索索引，地图只下载当前可见或选中的边界层。古今对应按资料年份加载无损切片；`public/data/modern-correspondence.json` 保留为审计原件。更新完整古今对应资料后，若生成流程尚未输出切片，可先运行 `python scripts/build-modern-correspondence.py --offline --split-existing`，再执行 build；不要手工修改数据产物。
 
 ## V0.12 县域来源冲突与山系分布
 

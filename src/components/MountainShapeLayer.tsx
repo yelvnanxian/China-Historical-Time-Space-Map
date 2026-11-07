@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { fetchResource } from "../lib/resource-url";
 import { createPortal } from "react-dom";
 import { Marker, type GeoJSONSource, type Map as MapInstance, type MapMouseEvent } from "maplibre-gl";
 import type { FeatureCollection, LineString } from "geojson";
@@ -18,7 +19,7 @@ const lineLayers = ["mountain-shape-contours", "mountain-shape-contour-hit", "mo
 const contourDetailZoom = 9.5;
 const overlap = (a: number[], b: number[]) => a[0] <= b[2] && a[2] >= b[0] && a[1] <= b[3] && a[3] >= b[1];
 async function loadContours(url: string, signal: AbortSignal): Promise<Contours> {
-  const response = await fetch(url, { signal });
+  const response = await fetchResource(url, { signal });
   if (!response.ok) throw Error("等高线未能加载");
   const bytes = new Uint8Array(await response.arrayBuffer());
   return bytes[0] === 0x1f && bytes[1] === 0x8b
@@ -50,7 +51,7 @@ export default function MountainShapeLayer({ map, ready, enabled, mode, controls
     if (!enabled) return;
     const abort = new AbortController();
     setError("");
-    fetch("/data/mountain-shapes/manifest.json", { signal: abort.signal })
+    fetchResource("/data/mountain-shapes/manifest.json", { signal: abort.signal })
       .then(response => { if (!response.ok) throw Error(); return response.json(); })
       .then(setManifest).catch(e => { if (e.name !== "AbortError") setError("山地近览资料未能加载，请重试。"); });
     return () => abort.abort();

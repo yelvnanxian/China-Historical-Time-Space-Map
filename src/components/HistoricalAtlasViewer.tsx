@@ -1,4 +1,5 @@
 import type { Coordinates } from "../../shared/types";
+import { fetchResource, resourceUrl } from "../lib/resource-url";
 import {
   useEffect,
   useId,
@@ -113,7 +114,7 @@ export default function HistoricalAtlasViewer({
     const controller = new AbortController();
     setLoading(true);
     setError("");
-    fetch("/data/atlas/manifest.json", { signal: controller.signal })
+    fetchResource("/data/atlas/manifest.json", { signal: controller.signal })
       .then((response) => {
         if (!response.ok) throw new Error("原图目录暂时无法加载");
         return response.json() as Promise<AtlasManifest>;
@@ -135,7 +136,7 @@ export default function HistoricalAtlasViewer({
   useEffect(() => {
     const controller = new AbortController();
     setControlPointError("");
-    fetch("/data/atlas/control-points.json", { signal: controller.signal })
+    fetchResource("/data/atlas/control-points.json", { signal: controller.signal })
       .then(response => { if (!response.ok) throw Error(); return response.json() as Promise<AtlasControlPointsData>; })
       .then(data => { if (!Array.isArray(data.images)) throw Error(); setControlPointData(data); })
       .catch(reason => { if (reason.name !== "AbortError") setControlPointError("近似对位锚点暂未加载；仍可阅读原图。"); });
@@ -301,7 +302,7 @@ export default function HistoricalAtlasViewer({
                     {isOpen && <div className="atlas-image-stage" style={{ width: imageWidth, height: imageHeight }}>
                       <img
                         key={selected.id}
-                        src={selected.imageUrl}
+                        src={resourceUrl(selected.imageUrl)}
                         alt={`${selected.title}完整纸图扫描，含政权部族界及原图图例。${selected.imageDate?.label ?? "具体年代见原图"}`}
                         style={{ width: imageWidth, height: imageHeight }}
                         draggable={false}
@@ -325,7 +326,7 @@ export default function HistoricalAtlasViewer({
                 <div><strong>《中国历史地图集》· 谭其骧主编</strong><p title={manifest?.sourceNote}>第三方保存的纸图扫描，非官方数字发布</p></div>
                 <div className="atlas-source-links">
                   <a href={selected.sourceUrl} target="_blank" rel="noreferrer">来源原图<ExternalLink size={12} /></a>
-                  <a href={manifest?.readmeUrl} target="_blank" rel="noreferrer">来源说明<ExternalLink size={12} /></a>
+                  <a href={manifest?.readmeUrl ? resourceUrl(manifest.readmeUrl) : undefined} target="_blank" rel="noreferrer">来源说明<ExternalLink size={12} /></a>
                 </div>
               </footer>
             </>

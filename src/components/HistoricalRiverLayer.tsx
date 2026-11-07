@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { fetchResource } from "../lib/resource-url";
 import { createPortal } from "react-dom";
 import { Marker, type GeoJSONSource, type Map as MapInstance, type MapMouseEvent } from "maplibre-gl";
 import { Waves, X } from "lucide-react";
@@ -39,7 +40,7 @@ export default function HistoricalRiverLayer({ map, ready, visible, mode, year, 
   }, [referenceYear, referenceRequest]);
   useEffect(() => {
     const abort = new AbortController();
-    fetch("/data/historical-rivers/manifest.json", { signal: abort.signal }).then(r => { if (!r.ok) throw Error(); return r.json(); })
+    fetchResource("/data/historical-rivers/manifest.json", { signal: abort.signal }).then(r => { if (!r.ok) throw Error(); return r.json(); })
       .then(setManifest).catch(e => { if (e.name !== "AbortError") setError("历史河道资料未能加载，当前显示现代参照。"); });
     return () => abort.abort();
   }, []);
@@ -50,7 +51,7 @@ export default function HistoricalRiverLayer({ map, ready, visible, mode, year, 
     setError("");
     Promise.allSettled(needed.split(",").filter(id => id && !data[id]).map(async id => {
       const item = manifest.epochs.find(value => value.id === id)!;
-      const response = await fetch(item.url, { signal: abort.signal });
+      const response = await fetchResource(item.url, { signal: abort.signal });
       if (!response.ok) throw Error();
       const collection = await response.json() as RiverCollection;
       if (collection.type !== "FeatureCollection" || collection.features.length !== item.featureCount) throw Error();

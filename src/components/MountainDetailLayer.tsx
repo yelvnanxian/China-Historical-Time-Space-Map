@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { fetchResource } from "../lib/resource-url";
 import { createPortal } from "react-dom";
 import { Marker, type GeoJSONSource, type Map as MapInstance, type MapMouseEvent } from "maplibre-gl";
 import type { Feature, LineString, Point } from "geojson";
@@ -16,7 +17,7 @@ const layers = ["mountain-detail-lines", "mountain-detail-cliffs", "mountain-det
 const overlaps = (a: MountainDetailBounds, b: MountainDetailBounds) => a[0] <= b[2] && a[2] >= b[0] && a[1] <= b[3] && a[3] >= b[1];
 
 async function fetchCollection(url: string, signal: AbortSignal): Promise<MountainDetailCollection> {
-  const response = await fetch(url, { signal });
+  const response = await fetchResource(url, { signal });
   if (!response.ok) throw Error();
   const bytes = new Uint8Array(await response.arrayBuffer());
   if (bytes[0] !== 0x1f || bytes[1] !== 0x8b) return JSON.parse(new TextDecoder().decode(bytes));
@@ -54,7 +55,7 @@ export default function MountainDetailLayer({ map, ready, enabled, mode, control
     if (!enabled) return;
     const abort = new AbortController();
     setError("");
-    fetch("/data/mountain-detail/manifest.json", { signal: abort.signal })
+    fetchResource("/data/mountain-detail/manifest.json", { signal: abort.signal })
       .then(response => { if (!response.ok) throw Error(); return response.json(); })
       .then(setManifest).catch(error => { if (error.name !== "AbortError") setError("山地资料未能加载，请重试。"); });
     return () => abort.abort();

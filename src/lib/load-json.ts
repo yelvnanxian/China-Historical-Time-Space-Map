@@ -1,7 +1,9 @@
+import { fetchResource } from './resource-url';
+
 const jsonRequests = new Map<string, Promise<unknown>>();
 
 async function fetchJson(url: string): Promise<unknown> {
-  const response = await fetch(url);
+  const response = await fetchResource(url);
   if (!response.ok) throw new Error(`JSON request failed (${response.status}): ${url}`);
   return response.json();
 }

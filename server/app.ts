@@ -1,10 +1,11 @@
-import express, { type ErrorRequestHandler } from 'express';
+import express, { type ErrorRequestHandler, type Response } from 'express';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import type { Catalog } from '../shared/types';
 import { getEventDetail, getPlaceDetail, getTopicDetail, searchCatalog } from './catalog';
 import { precompressedStatic } from './precompressed-static';
 import { staticCacheControl } from './static-cache';
+import { verifiedDataCacheControl, versionedData } from './versioned-data';
 
 export function createApp(catalog: Catalog, options: { distDir?: string } = {}) {
   const app = express();
@@ -56,9 +57,10 @@ export function createApp(catalog: Catalog, options: { distDir?: string } = {}) 
 
   if (options.distDir && existsSync(path.join(options.distDir, 'index.html'))) {
     const distDir = path.resolve(options.distDir);
+    app.use(versionedData(distDir));
     app.use(precompressedStatic(distDir));
     app.use(express.static(distDir, {
-      setHeaders: (response, filename) => response.setHeader('Cache-Control', staticCacheControl(distDir, filename)),
+      setHeaders: (response, filename) => response.setHeader('Cache-Control', verifiedDataCacheControl(response as Response) ?? staticCacheControl(distDir, filename)),
     }));
     app.get('/{*path}', (request, response, next) => {
       if (path.extname(request.path) || !request.accepts('html')) return next();
@@ -73,6 +75,10 @@ export function createApp(catalog: Catalog, options: { distDir?: string } = {}) 
     response.removeHeader('Cache-Control');
     if (error instanceof URIError) {
       response.status(400).json({ error: { code: 'INVALID_URL', message: '请求地址格式不正确。' } });
+      return;
+    }
+    if ((error as { status?: number } | null)?.status === 416) {
+      response.status(416).end();
       return;
     }
     console.error('[api]', error);

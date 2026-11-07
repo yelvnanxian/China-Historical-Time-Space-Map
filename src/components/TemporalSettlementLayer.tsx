@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { fetchResource } from "../lib/resource-url";
 import { createPortal } from "react-dom";
 import { Marker, type GeoJSONSource, type Map as MapInstance, type MapMouseEvent } from "maplibre-gl";
 import { MapPin, Search, X } from "lucide-react";
@@ -86,7 +87,7 @@ export default function TemporalSettlementLayer({ map, ready, periodId, year, zo
       if (!pack.url.startsWith("/data/temporal-settlements/")) throw Error();
       let collection = cache.current.get(pack.periodId);
       if (!collection) {
-        const response = await fetch(pack.url, { signal: abort.signal });
+        const response = await fetchResource(pack.url, { signal: abort.signal });
         if (!response.ok) throw Error();
         const bytes = new Uint8Array(await response.arrayBuffer());
         collection = bytes[0] === 0x1f && bytes[1] === 0x8b

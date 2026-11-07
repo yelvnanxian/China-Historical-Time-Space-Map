@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { fetchResource } from "../lib/resource-url";
 import { createPortal } from "react-dom";
 import { Marker, type GeoJSONSource, type Map as MapInstance, type MapMouseEvent } from "maplibre-gl";
 import { ChevronDown, ExternalLink, LocateFixed, Mountain, Search, Waves, X } from "lucide-react";
@@ -73,7 +74,7 @@ export default function PhysicalGeographyLayer({ map, ready, visible, mode, cont
     ]).then(([collection, index]) => {
       if (!abort.signal.aborted) { setData(collection); setGroups(index.groups.map(localizePhysicalGroup)); setLoaded(true); }
     }).catch(error => { if (error.name !== "AbortError") setError("山川河流资料暂时无法加载，请刷新重试。"); });
-    fetch("/data/mountain-directions.geojson", { signal: abort.signal }).then(response => {
+    fetchResource("/data/mountain-directions.geojson", { signal: abort.signal }).then(response => {
       if (!response.ok) throw new Error("山系走向暂时未能加载，名称定位和河湖仍可使用。");
       return response.json();
     }).then(collection => {

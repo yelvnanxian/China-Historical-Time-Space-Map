@@ -7,15 +7,17 @@ import { promisify } from "node:util";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 const execute = promisify(execFile);
-const options = { dataRoot: "public/data", distDir: "dist", baseUrl: "http://127.0.0.1:3001", output: null, inventoryOnly: false };
+const options = { dataRoot: "public/data", distDir: "dist", baseUrl: "http://127.0.0.1:3001", output: null, inventoryOnly: false, versioned: false };
 const optionNames = new Map([["--data-root", "dataRoot"], ["--dist-dir", "distDir"], ["--base-url", "baseUrl"], ["--output", "output"]]);
 
 for (let index = 2; index < process.argv.length; index++) {
   const argument = process.argv[index];
   if (argument === "--inventory-only") {
     options.inventoryOnly = true;
+  } else if (argument === "--versioned") {
+    options.versioned = true;
   } else if (argument === "--help") {
-    console.log("Usage: node scripts/measure-load-performance.mjs [--data-root public/data|dist/data] [--dist-dir dist] [--base-url http://127.0.0.1:3001] [--output report.json] [--inventory-only]");
+    console.log("Usage: node scripts/measure-load-performance.mjs [--data-root public/data|dist/data] [--dist-dir dist] [--base-url http://127.0.0.1:3001] [--output report.json] [--inventory-only] [--versioned]");
     process.exit(0);
   } else {
     const name = optionNames.get(argument);
@@ -27,6 +29,7 @@ for (let index = 2; index < process.argv.length; index++) {
 
 const dataRoot = path.resolve(root, options.dataRoot);
 const distDir = path.resolve(root, options.distDir);
+const contentVersions = options.versioned ? JSON.parse(await readFile(path.join(distDir, "content-versions.json"), "utf8")) : {};
 const baseUrl = new URL(options.baseUrl);
 if (!["http:", "https:"].includes(baseUrl.protocol) || baseUrl.search || baseUrl.hash || baseUrl.pathname !== "/") {
   throw new Error("--base-url must be an HTTP(S) origin without a path, query, or fragment");
@@ -119,6 +122,7 @@ const report = {
   dataRoot: path.relative(root, dataRoot).split(path.sep).join("/"),
   distDir: path.relative(root, distDir).split(path.sep).join("/"),
   baseUrl: baseUrl.origin,
+  versioned: options.versioned,
   units: "bytes (decimal MB = bytes / 1000000; MiB = bytes / 1048576)",
   measurement: "File sizes from recursive filesystem stat. HTTP body transfer bytes from curl size_download without --compressed; headers are recorded separately, not used as size estimates. First-screen browser HAR is a separate measurement.",
   data: { ...summarize(dataFiles), directories: Object.fromEntries(dataDirectories.map(directory => [directory, summarize(dataFiles.filter(file => directory === "(root)" ? !file.path.includes("/") : file.path.startsWith(directory + "/")))])) },
@@ -139,11 +143,17 @@ if (!options.inventoryOnly) {
     const headerPath = path.join(temporaryDirectory, `${sequence++}.headers`);
     const args = ["--silent", "--show-error", "--fail", "--max-time", "120", "--dump-header", headerPath, "--output", process.platform === "win32" ? "NUL" : "/dev/null", "--write-out", "%{size_download} %{http_code} %{time_total}\n"];
     if (acceptEncoding) args.push("--header", `Accept-Encoding: ${acceptEncoding}`);
-    args.push(new URL(urlPath, baseUrl).href);
+    const requestedUrl = new URL(urlPath, baseUrl);
+    if (options.versioned && requestedUrl.pathname.startsWith("/data/")) {
+      const version = contentVersions[requestedUrl.pathname];
+      if (!version) throw new Error(`Missing content version: ${urlPath}`);
+      requestedUrl.searchParams.set("v", version);
+    }
+    args.push(requestedUrl.href);
     const { stdout } = await execute("curl", args, { encoding: "utf8" });
     const [transferBytes, statusCode, seconds] = stdout.trim().split(/\s+/).map(Number);
     if (![transferBytes, statusCode, seconds].every(Number.isFinite)) throw new Error(`Invalid curl metrics for ${urlPath}: ${stdout}`);
-    const result = { url: urlPath, acceptEncoding: acceptEncoding ?? null, transferBytes, statusCode, seconds, ...parseHeaders(await readFile(headerPath, "utf8")) };
+    const result = { url: urlPath, requestedUrl: requestedUrl.href, acceptEncoding: acceptEncoding ?? null, transferBytes, statusCode, seconds, ...parseHeaders(await readFile(headerPath, "utf8")) };
     report.requests.push(result);
     return result;
   }
