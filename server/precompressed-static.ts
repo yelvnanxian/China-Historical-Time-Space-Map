@@ -2,6 +2,7 @@ import type { RequestHandler } from 'express';
 import Negotiator from 'negotiator';
 import { stat } from 'node:fs/promises';
 import path from 'node:path';
+import { staticCacheControl } from './static-cache';
 
 const compressible = /\.(?:json|geojson|js|css|svg|txt)$/i;
 
@@ -51,12 +52,13 @@ export function precompressedStatic(directory: string): RequestHandler {
       response.type(path.extname(filename));
       response.set('Content-Encoding', encoding);
       response.set('ETag', `W/"${selected.details.size.toString(16)}-${selected.details.mtimeMs.toString(16)}-${encoding}"`);
-      response.sendFile(selected.target, error => {
+      response.sendFile(selected.target, { headers: { 'Cache-Control': staticCacheControl(root, filename) } }, error => {
         if (!error) return;
         if (!response.headersSent) {
           response.removeHeader('Content-Encoding');
           response.removeHeader('Content-Type');
           response.removeHeader('ETag');
+          response.removeHeader('Cache-Control');
           const status = (error as NodeJS.ErrnoException & { status?: number }).status;
           if (status && status >= 400 && status < 500) {
             response.status(status).end();

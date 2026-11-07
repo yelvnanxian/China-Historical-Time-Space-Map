@@ -40,6 +40,11 @@ before(async () => {
   await writeFile(path.join(directory, 'data/tang-detail/map.geojson.gz'), originalGzip);
   await writeFile(path.join(directory, 'data/image.png'), Buffer.from([137, 80, 78, 71]));
   await writeFile(path.join(directory, 'assets/index-ABC12345.js'), 'const label="地图";'.repeat(300));
+  await writeFile(path.join(directory, 'assets/index-ABC12345.css'), '.map{color:black}'.repeat(300));
+  await writeFile(path.join(directory, 'assets/plain.js'), 'const label="地图";'.repeat(300));
+  await writeFile(path.join(directory, 'assets/index-ABC1234.js'), 'const label="地图";'.repeat(300));
+  await writeFile(path.join(directory, 'assets/index-ABC123456.js'), 'const label="地图";'.repeat(300));
+  await writeFile(path.join(directory, 'data/index-ABC12345.json'), source);
   execFileSync(process.execPath, [path.join(root, 'scripts/precompress-static.mjs'), directory]);
   await writeFile(path.join(directory, 'data/stale.json'), '{"fresh":true}');
   await writeFile(path.join(directory, 'data/stale.json.br'), Buffer.from('outdated'));
@@ -103,6 +108,76 @@ test('HEAD、编码独立ETag和304保留正确的协商语义', async () => {
   assert.equal(other.status, 200);
   assert.notEqual(other.headers.etag, brotli.headers.etag);
   assert.deepEqual(gunzipSync(other.body), source);
+});
+
+test('哈希资产的原文与压缩响应均长期缓存，HEAD和304沿用缓存策略', async () => {
+  const cacheControl = 'public, max-age=31536000, immutable';
+  for (const extension of ['js', 'css']) {
+    for (const encoding of ['identity', 'br', 'gzip']) {
+      const url = `/assets/index-ABC12345.${extension}?v=test`;
+      const headers = { 'Accept-Encoding': encoding };
+      const response = await get(url, headers);
+      assert.equal(response.status, 200);
+      assert.equal(response.headers['content-encoding'], encoding === 'identity' ? undefined : encoding);
+      assert.equal(response.headers['cache-control'], cacheControl);
+      const head = await get(url, headers, 'HEAD');
+      assert.equal(head.status, 200);
+      assert.equal(head.headers['cache-control'], cacheControl);
+      assert.equal(head.body.length, 0);
+      const cached = await get(url, { ...headers, 'If-None-Match': response.headers.etag! });
+      assert.equal(cached.status, 304);
+      assert.equal(cached.headers['cache-control'], cacheControl);
+      assert.equal(cached.body.length, 0);
+    }
+  }
+});
+
+test('HTML入口和SPA刷新使用no-cache，数据与无哈希资源仍需重新验证', async () => {
+  for (const url of ['/', '/index.html', '/explore/tang?year=755']) {
+    const response = await get(url, { Accept: 'text/html' });
+    assert.equal(response.status, 200);
+    assert.equal(response.headers['cache-control'], 'no-cache');
+    assert.match(response.body.toString(), /History Atlas/);
+    const cached = await get(url, { Accept: 'text/html', 'If-None-Match': response.headers.etag! });
+    assert.equal(cached.status, 304);
+    assert.equal(cached.headers['cache-control'], 'no-cache');
+  }
+  for (const url of ['/data/map.geojson', '/data/index-ABC12345.json', '/data/tang-detail/map.geojson.gz', '/assets/plain.js', '/assets/index-ABC1234.js', '/assets/index-ABC123456.js']) {
+    for (const encoding of ['identity', 'br', 'gzip']) {
+      const response = await get(url, { 'Accept-Encoding': encoding });
+      assert.equal(response.status, 200);
+      assert.equal(response.headers['cache-control'], 'public, max-age=0');
+      const cached = await get(url, { 'Accept-Encoding': encoding, 'If-None-Match': response.headers.etag! });
+      assert.equal(cached.status, 304);
+      assert.equal(cached.headers['cache-control'], 'public, max-age=0');
+      if (url.endsWith('.gz')) {
+        assert.equal(response.headers['content-encoding'], undefined);
+        assert.deepEqual(response.body, originalGzip);
+      }
+    }
+  }
+});
+
+test('缓存策略不影响API，也不会给缺失或拒绝的哈希资源设置长期缓存', async () => {
+  for (const url of ['/assets/missing-ABC12345.js', '/assets/missing-ABC12345.js.br', '/api/missing']) {
+    const response = await get(url, { 'Accept-Encoding': 'br' });
+    assert.equal(response.status, 404);
+    assert.equal(response.headers['cache-control'], undefined);
+    assert.equal(response.headers['content-encoding'], undefined);
+  }
+  for (const url of ['/api/health', '/api/catalog']) {
+    const response = await get(url, { 'Accept-Encoding': 'br' });
+    assert.equal(response.status, 200);
+    assert.equal(response.headers['cache-control'], undefined);
+    assert.equal(response.headers['content-encoding'], undefined);
+    assert.match(String(response.headers['content-type']), /application\/json/);
+  }
+  const rejected = await get('/assets/index-ABC12345.js', { 'Accept-Encoding': '*;q=0' });
+  assert.equal(rejected.status, 406);
+  assert.equal(rejected.headers['cache-control'], undefined);
+  const invalidRange = await get('/assets/index-ABC12345.js', { 'Accept-Encoding': 'br', Range: 'bytes=999999-' });
+  assert.equal(invalidRange.status, 416);
+  assert.equal(invalidRange.headers['cache-control'], undefined);
 });
 
 test('Range针对所选表示，范围不满足时返回416而非HTML或500', async () => {
