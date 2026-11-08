@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "concurrently -k -n api,web \"tsx watch --include data/catalog.json server/index.ts\" \"vite --host 127.0.0.1\"",
-    "build": "tsx scripts/build-boundary-indexes.ts && tsc --noEmit && vite build && node scripts/precompress-static.mjs",
+    "build": "node scripts/build-production.mjs",
+    "setup:geometry": "node scripts/geometry-runtime.mjs",
     "test": "tsx --test server/*.test.ts",
     "start": "tsx server/index.ts"
   },

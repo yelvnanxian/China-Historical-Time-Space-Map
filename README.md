@@ -41,7 +41,7 @@ npm start
 
 构建后访问 http://127.0.0.1:3001 。先停止开发服务器，避免占用同一端口。
 
-生产构建会在 `dist/` 为可压缩的静态文本生成 Brotli / gzip 副本，Express 按浏览器支持直接返回；原有 `.geojson.gz` 保持原样。这项传输优化不适用于 `npm run dev`；测量脚本、浏览器回归与前后数据见[加载性能 P0 验收](docs/加载性能P0验收.md)与[P1 验收](docs/加载性能P1验收.md)。
+生产构建会在 `dist/` 为可压缩的静态文本生成 Brotli / gzip 副本，Express 按浏览器支持直接返回；原有 `.geojson.gz` 保持原样。首次构建前运行 `npm run setup:geometry` 创建隔离的 Shapely / pyproj 环境；几何修复在临时 staging 中完成，不改 `public/data`。这项传输优化不适用于 `npm run dev`；测量脚本、浏览器回归与前后数据见[加载性能 P0 验收](docs/加载性能P0验收.md)、[P1 验收](docs/加载性能P1验收.md)与[P2-1 验收](docs/加载性能P2-1验收.md)。
 
 `dist/assets/` 内带 Vite 哈希的文件缓存一年；首页与 SPA 页面使用 `no-cache`，发布后会重新验证入口。构建按文件内容计算 SHA256，生成 `dist/content-versions.json`，前端自动为 `/data/` 请求附加 `?v=<哈希>`。服务端验证版本一致后才缓存一年；未带版本的资料仍使用 `public, max-age=0`，过期或未知版本返回 `410` 和 `no-store`。开发模式不附加版本。
 

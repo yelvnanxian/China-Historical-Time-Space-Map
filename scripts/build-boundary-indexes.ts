@@ -6,8 +6,16 @@ import type { BoundaryManifest } from '../shared/boundaries';
 import { boundaryIndexPropertyKeys, type BoundaryIndex, type BoundaryIndexEntry } from '../shared/boundary-index';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
-const output = path.resolve(process.argv[2] ?? path.join(root, 'public/data/boundaries/indexes'));
-const manifest: BoundaryManifest = JSON.parse(await readFile(path.join(root, 'public/data/boundaries/manifest.json'), 'utf8'));
+const positionals: string[] = [];
+let inputRoot = path.join(root, 'public');
+for (let index = 2; index < process.argv.length; index++) {
+  const argument = process.argv[index];
+  if (argument === '--input-root') inputRoot = path.resolve(process.argv[++index]);
+  else positionals.push(argument);
+}
+if (positionals.length > 1) throw new Error('Usage: build-boundary-indexes.ts [output] [--input-root public-directory]');
+const output = path.resolve(positionals[0] ?? path.join(inputRoot, 'data/boundaries/indexes'));
+const manifest: BoundaryManifest = JSON.parse(await readFile(path.join(inputRoot, 'data/boundaries/manifest.json'), 'utf8'));
 
 function geometryBounds(geometry: Polygon | MultiPolygon): BoundaryIndexEntry['bbox'] {
   const bounds: BoundaryIndexEntry['bbox'] = [Infinity, Infinity, -Infinity, -Infinity];
@@ -29,7 +37,7 @@ for (const dataset of manifest.datasets) {
   const entries: BoundaryIndexEntry[] = [];
   const identifiers = new Set<string>();
   for (const layer of dataset.layers) {
-    const collection: FeatureCollection<Polygon | MultiPolygon, Record<string, unknown>> = JSON.parse(await readFile(path.join(root, 'public', layer.url), 'utf8'));
+    const collection: FeatureCollection<Polygon | MultiPolygon, Record<string, unknown>> = JSON.parse(await readFile(path.join(inputRoot, layer.url.slice(1)), 'utf8'));
     if (collection.type !== 'FeatureCollection' || !Array.isArray(collection.features) || collection.features.length !== layer.featureCount) {
       throw new Error(`Invalid boundary layer: ${layer.url}`);
     }
